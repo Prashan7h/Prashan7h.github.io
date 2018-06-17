@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head><meta charset="utf-8" />
-<title>14 310x Intro to R</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
+<title>R Basics</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
 
 <style type="text/css">
@@ -8451,15 +8451,15 @@ label {
 }
 /* Flexible box model classes */
 /* Taken from Alex Russell http://infrequently.org/2009/08/css-3-progress/ */
-/* This file is a compatability layer.  It allows the usage of flexible box 
+/* This file is a compatability layer.  It allows the usage of flexible box
 model layouts accross multiple browsers, including older browsers.  The newest,
 universal implementation of the flexible box model is used when available (see
-`Modern browsers` comments below).  Browsers that are known to implement this 
+`Modern browsers` comments below).  Browsers that are known to implement this
 new spec completely include:
 
     Firefox 28.0+
     Chrome 29.0+
-    Internet Explorer 11+ 
+    Internet Explorer 11+
     Opera 17.0+
 
 Browsers not listed, including Safari, are supported via the styling under the
@@ -11233,7 +11233,7 @@ div#pager .ui-resizable-handle {
   background: #f7f7f7;
   border-top: 1px solid #cfcfcf;
   border-bottom: 1px solid #cfcfcf;
-  /* This injects handle bars (a short, wide = symbol) for 
+  /* This injects handle bars (a short, wide = symbol) for
         the resize handle. */
 }
 div#pager .ui-resizable-handle::after {
@@ -11676,7 +11676,7 @@ ul.typeahead-list > li > a {
 .highlight .il { color: #666666 } /* Literal.Number.Integer.Long */
     </style>
 <style type="text/css">
-    
+
 /* Temporary definitions which will become obsolete with Notebook release 5.0 */
 .ansi-black-fg { color: #3E424D; }
 .ansi-black-bg { background-color: #3E424D; }
@@ -11730,14 +11730,14 @@ div#notebook {
   div.cell {
     display: block;
     page-break-inside: avoid;
-  } 
-  div.output_wrapper { 
-    display: block;
-    page-break-inside: avoid; 
   }
-  div.output { 
+  div.output_wrapper {
     display: block;
-    page-break-inside: avoid; 
+    page-break-inside: avoid;
+  }
+  div.output {
+    display: block;
+    page-break-inside: avoid;
   }
 }
 </style>
@@ -12395,7 +12395,7 @@ my_div
 
 
 <div class="output_html rendered_html output_subarea ">
-<pre class=language-r><code>function (path = ".", pattern = NULL, all.files = FALSE, full.names = FALSE, 
+<pre class=language-r><code>function (path = ".", pattern = NULL, all.files = FALSE, full.names = FALSE,
 <span style=white-space:pre-wrap>    recursive = FALSE, ignore.case = FALSE, include.dirs = FALSE, </span>
 <span style=white-space:pre-wrap>    no.. = FALSE) </span>
 NULL</code></pre>
@@ -16570,133 +16570,133 @@ my_data
 
 
 <div class="output_text output_subarea ">
-<pre>  Div            Date           HomeTeam         AwayTeam        FTHG      
- SP1:380   12/05/18:  8   Alaves    : 19   Alaves    : 19   Min.   :0.000  
-           19/05/18:  6   Ath Bilbao: 19   Ath Bilbao: 19   1st Qu.:0.750  
-           01/04/18:  5   Ath Madrid: 19   Ath Madrid: 19   Median :1.000  
-           01/10/17:  5   Barcelona : 19   Barcelona : 19   Mean   :1.547  
-           03/03/18:  5   Betis     : 19   Betis     : 19   3rd Qu.:2.000  
-           05/11/17:  5   Celta     : 19   Celta     : 19   Max.   :7.000  
-           (Other) :346   (Other)   :266   (Other)   :266                  
-      FTAG       FTR          HTHG             HTAG        HTR    
- Min.   :0.000   A:115   Min.   :0.0000   Min.   :0.0000   A: 93  
- 1st Qu.:0.000   D: 86   1st Qu.:0.0000   1st Qu.:0.0000   D:159  
- Median :1.000   H:179   Median :0.0000   Median :0.0000   H:128  
- Mean   :1.147           Mean   :0.6605   Mean   :0.4868          
- 3rd Qu.:2.000           3rd Qu.:1.0000   3rd Qu.:1.0000          
- Max.   :6.000           Max.   :5.0000   Max.   :3.0000          
-                                                                  
-       HS              AS             HST              AST        
- Min.   : 2.00   Min.   : 1.00   Min.   : 0.000   Min.   : 0.000  
- 1st Qu.:10.00   1st Qu.: 8.00   1st Qu.: 3.000   1st Qu.: 2.000  
- Median :13.00   Median :10.00   Median : 4.500   Median : 3.000  
- Mean   :13.53   Mean   :10.47   Mean   : 4.758   Mean   : 3.805  
- 3rd Qu.:16.00   3rd Qu.:13.00   3rd Qu.: 6.000   3rd Qu.: 5.000  
- Max.   :30.00   Max.   :24.00   Max.   :14.000   Max.   :13.000  
-                                                                  
-       HF              AF              HC               AC        
- Min.   : 4.00   Min.   : 0.00   Min.   : 0.000   Min.   : 0.000  
- 1st Qu.:11.00   1st Qu.:11.00   1st Qu.: 4.000   1st Qu.: 2.000  
- Median :13.00   Median :14.00   Median : 5.000   Median : 4.000  
- Mean   :13.73   Mean   :13.95   Mean   : 5.613   Mean   : 4.192  
- 3rd Qu.:17.00   3rd Qu.:17.00   3rd Qu.: 7.000   3rd Qu.: 6.000  
- Max.   :29.00   Max.   :29.00   Max.   :16.000   Max.   :14.000  
-                                                                  
-       HY              AY              HR               AR         
- Min.   :0.000   Min.   :0.000   Min.   :0.0000   Min.   :0.00000  
- 1st Qu.:1.000   1st Qu.:2.000   1st Qu.:0.0000   1st Qu.:0.00000  
- Median :2.000   Median :3.000   Median :0.0000   Median :0.00000  
- Mean   :2.339   Mean   :2.676   Mean   :0.1105   Mean   :0.07895  
- 3rd Qu.:3.000   3rd Qu.:4.000   3rd Qu.:0.0000   3rd Qu.:0.00000  
- Max.   :8.000   Max.   :9.000   Max.   :2.0000   Max.   :2.00000  
-                                                                   
-     B365H            B365D            B365A             BWH        
- Min.   : 1.050   Min.   : 2.790   Min.   : 1.170   Min.   : 1.050  
- 1st Qu.: 1.617   1st Qu.: 3.290   1st Qu.: 2.600   1st Qu.: 1.650  
- Median : 2.075   Median : 3.500   Median : 3.700   Median : 2.100  
- Mean   : 2.777   Mean   : 4.259   Mean   : 5.192   Mean   : 2.744  
- 3rd Qu.: 2.790   3rd Qu.: 4.330   3rd Qu.: 5.500   3rd Qu.: 2.750  
- Max.   :17.000   Max.   :15.000   Max.   :34.000   Max.   :14.500  
-                                                                    
-      BWD              BWA              IWH              IWD        
- Min.   : 2.950   Min.   : 1.180   Min.   : 1.070   Min.   : 3.050  
- 1st Qu.: 3.300   1st Qu.: 2.600   1st Qu.: 1.650   1st Qu.: 3.300  
- Median : 3.600   Median : 3.700   Median : 2.100   Median : 3.500  
- Mean   : 4.278   Mean   : 5.204   Mean   : 2.721   Mean   : 4.161  
- 3rd Qu.: 4.330   3rd Qu.: 5.500   3rd Qu.: 2.700   3rd Qu.: 4.200  
- Max.   :15.500   Max.   :34.000   Max.   :15.000   Max.   :12.000  
-                                                                    
-      IWA              LBH              LBD              LBA        
- Min.   : 1.200   Min.   : 1.050   Min.   : 2.900   Min.   : 1.170  
- 1st Qu.: 2.600   1st Qu.: 1.610   1st Qu.: 3.250   1st Qu.: 2.575  
- Median : 3.500   Median : 2.050   Median : 3.500   Median : 3.600  
- Mean   : 5.041   Mean   : 2.742   Mean   : 4.152   Mean   : 5.375  
- 3rd Qu.: 5.300   3rd Qu.: 2.750   3rd Qu.: 4.200   3rd Qu.: 5.500  
- Max.   :27.000   Max.   :19.000   Max.   :17.000   Max.   :41.000  
-                  NA&#39;s   :1        NA&#39;s   :1        NA&#39;s   :1       
-      PSH              PSD              PSA              WHH        
- Min.   : 1.050   Min.   : 3.020   Min.   : 1.180   Min.   : 1.060  
- 1st Qu.: 1.660   1st Qu.: 3.410   1st Qu.: 2.670   1st Qu.: 1.665  
- Median : 2.120   Median : 3.705   Median : 3.845   Median : 2.100  
- Mean   : 2.857   Mean   : 4.539   Mean   : 5.522   Mean   : 2.738  
- 3rd Qu.: 2.850   3rd Qu.: 4.455   3rd Qu.: 5.942   3rd Qu.: 2.750  
- Max.   :19.650   Max.   :20.380   Max.   :36.500   Max.   :17.000  
-                                                                    
-      WHD              WHA              VCH              VCD        
- Min.   : 2.900   Min.   : 1.170   Min.   : 1.040   Min.   : 3.000  
- 1st Qu.: 3.250   1st Qu.: 2.600   1st Qu.: 1.650   1st Qu.: 3.400  
- Median : 3.500   Median : 3.550   Median : 2.100   Median : 3.700  
- Mean   : 4.092   Mean   : 5.041   Mean   : 2.762   Mean   : 4.416  
- 3rd Qu.: 4.200   3rd Qu.: 5.500   3rd Qu.: 2.800   3rd Qu.: 4.400  
- Max.   :15.000   Max.   :26.000   Max.   :15.000   Max.   :17.000  
-                                                                    
-      VCA             Bb1X2           BbMxH            BbAvH       
- Min.   : 1.180   Min.   : 3.00   Min.   : 1.080   Min.   : 1.050  
- 1st Qu.: 2.630   1st Qu.:35.00   1st Qu.: 1.700   1st Qu.: 1.640  
- Median : 3.700   Median :37.00   Median : 2.200   Median : 2.090  
- Mean   : 5.472   Mean   :37.71   Mean   : 2.966   Mean   : 2.743  
- 3rd Qu.: 5.750   3rd Qu.:40.00   3rd Qu.: 2.882   3rd Qu.: 2.765  
- Max.   :36.000   Max.   :43.00   Max.   :19.650   Max.   :16.300  
-                                                                   
-     BbMxD            BbAvD            BbMxA            BbAvA       
- Min.   : 3.110   Min.   : 2.940   Min.   : 1.210   Min.   : 1.170  
- 1st Qu.: 3.478   1st Qu.: 3.328   1st Qu.: 2.728   1st Qu.: 2.607  
- Median : 3.750   Median : 3.570   Median : 3.920   Median : 3.665  
- Mean   : 4.636   Mean   : 4.261   Mean   : 6.107   Mean   : 5.190  
- 3rd Qu.: 4.553   3rd Qu.: 4.272   3rd Qu.: 6.105   3rd Qu.: 5.543  
- Max.   :20.380   Max.   :15.320   Max.   :67.000   Max.   :33.420  
-                                                                    
-      BbOU          BbMx.2.5        BbAv.2.5       BbMx.2.5.1   
- Min.   : 3.00   Min.   :1.130   Min.   :1.120   Min.   :1.470  
- 1st Qu.:31.75   1st Qu.:1.667   1st Qu.:1.617   1st Qu.:1.780  
- Median :34.00   Median :1.960   Median :1.880   Median :2.000  
- Mean   :34.06   Mean   :1.950   Mean   :1.872   Mean   :2.284  
- 3rd Qu.:37.00   3rd Qu.:2.203   3rd Qu.:2.120   3rd Qu.:2.402  
- Max.   :42.00   Max.   :3.080   Max.   :2.850   Max.   :7.000  
-                                                                
-   BbAv.2.5.1         BbAH           BbAHh            BbMxAHH     
- Min.   :1.410   Min.   : 1.00   Min.   :-3.2500   Min.   :1.610  
- 1st Qu.:1.718   1st Qu.:17.00   1st Qu.:-0.7500   1st Qu.:1.890  
- Median :1.920   Median :18.00   Median :-0.2500   Median :1.985  
- Mean   :2.162   Mean   :18.16   Mean   :-0.4059   Mean   :1.988  
- 3rd Qu.:2.283   3rd Qu.:19.00   3rd Qu.: 0.0625   3rd Qu.:2.070  
- Max.   :5.970   Max.   :24.00   Max.   : 2.0000   Max.   :2.420  
-                                                                  
-    BbAvAHH         BbMxAHA         BbAvAHA           PSCH       
- Min.   :1.580   Min.   :1.680   Min.   :1.630   Min.   : 1.060  
- 1st Qu.:1.840   1st Qu.:1.897   1st Qu.:1.850   1st Qu.: 1.640  
- Median :1.930   Median :1.970   Median :1.930   Median : 2.120  
- Mean   :1.938   Mean   :1.988   Mean   :1.937   Mean   : 2.839  
- 3rd Qu.:2.020   3rd Qu.:2.080   3rd Qu.:2.030   3rd Qu.: 2.980  
- Max.   :2.340   Max.   :2.520   Max.   :2.440   Max.   :18.700  
-                                                 NA&#39;s   :1       
-      PSCD             PSCA       
- Min.   : 2.930   Min.   : 1.160  
- 1st Qu.: 3.410   1st Qu.: 2.590  
- Median : 3.700   Median : 3.850  
- Mean   : 4.508   Mean   : 5.695  
- 3rd Qu.: 4.560   3rd Qu.: 6.095  
- Max.   :18.500   Max.   :46.000  
+<pre>  Div            Date           HomeTeam         AwayTeam        FTHG
+ SP1:380   12/05/18:  8   Alaves    : 19   Alaves    : 19   Min.   :0.000
+           19/05/18:  6   Ath Bilbao: 19   Ath Bilbao: 19   1st Qu.:0.750
+           01/04/18:  5   Ath Madrid: 19   Ath Madrid: 19   Median :1.000
+           01/10/17:  5   Barcelona : 19   Barcelona : 19   Mean   :1.547
+           03/03/18:  5   Betis     : 19   Betis     : 19   3rd Qu.:2.000
+           05/11/17:  5   Celta     : 19   Celta     : 19   Max.   :7.000
+           (Other) :346   (Other)   :266   (Other)   :266
+      FTAG       FTR          HTHG             HTAG        HTR
+ Min.   :0.000   A:115   Min.   :0.0000   Min.   :0.0000   A: 93
+ 1st Qu.:0.000   D: 86   1st Qu.:0.0000   1st Qu.:0.0000   D:159
+ Median :1.000   H:179   Median :0.0000   Median :0.0000   H:128
+ Mean   :1.147           Mean   :0.6605   Mean   :0.4868
+ 3rd Qu.:2.000           3rd Qu.:1.0000   3rd Qu.:1.0000
+ Max.   :6.000           Max.   :5.0000   Max.   :3.0000
+
+       HS              AS             HST              AST
+ Min.   : 2.00   Min.   : 1.00   Min.   : 0.000   Min.   : 0.000
+ 1st Qu.:10.00   1st Qu.: 8.00   1st Qu.: 3.000   1st Qu.: 2.000
+ Median :13.00   Median :10.00   Median : 4.500   Median : 3.000
+ Mean   :13.53   Mean   :10.47   Mean   : 4.758   Mean   : 3.805
+ 3rd Qu.:16.00   3rd Qu.:13.00   3rd Qu.: 6.000   3rd Qu.: 5.000
+ Max.   :30.00   Max.   :24.00   Max.   :14.000   Max.   :13.000
+
+       HF              AF              HC               AC
+ Min.   : 4.00   Min.   : 0.00   Min.   : 0.000   Min.   : 0.000
+ 1st Qu.:11.00   1st Qu.:11.00   1st Qu.: 4.000   1st Qu.: 2.000
+ Median :13.00   Median :14.00   Median : 5.000   Median : 4.000
+ Mean   :13.73   Mean   :13.95   Mean   : 5.613   Mean   : 4.192
+ 3rd Qu.:17.00   3rd Qu.:17.00   3rd Qu.: 7.000   3rd Qu.: 6.000
+ Max.   :29.00   Max.   :29.00   Max.   :16.000   Max.   :14.000
+
+       HY              AY              HR               AR
+ Min.   :0.000   Min.   :0.000   Min.   :0.0000   Min.   :0.00000
+ 1st Qu.:1.000   1st Qu.:2.000   1st Qu.:0.0000   1st Qu.:0.00000
+ Median :2.000   Median :3.000   Median :0.0000   Median :0.00000
+ Mean   :2.339   Mean   :2.676   Mean   :0.1105   Mean   :0.07895
+ 3rd Qu.:3.000   3rd Qu.:4.000   3rd Qu.:0.0000   3rd Qu.:0.00000
+ Max.   :8.000   Max.   :9.000   Max.   :2.0000   Max.   :2.00000
+
+     B365H            B365D            B365A             BWH
+ Min.   : 1.050   Min.   : 2.790   Min.   : 1.170   Min.   : 1.050
+ 1st Qu.: 1.617   1st Qu.: 3.290   1st Qu.: 2.600   1st Qu.: 1.650
+ Median : 2.075   Median : 3.500   Median : 3.700   Median : 2.100
+ Mean   : 2.777   Mean   : 4.259   Mean   : 5.192   Mean   : 2.744
+ 3rd Qu.: 2.790   3rd Qu.: 4.330   3rd Qu.: 5.500   3rd Qu.: 2.750
+ Max.   :17.000   Max.   :15.000   Max.   :34.000   Max.   :14.500
+
+      BWD              BWA              IWH              IWD
+ Min.   : 2.950   Min.   : 1.180   Min.   : 1.070   Min.   : 3.050
+ 1st Qu.: 3.300   1st Qu.: 2.600   1st Qu.: 1.650   1st Qu.: 3.300
+ Median : 3.600   Median : 3.700   Median : 2.100   Median : 3.500
+ Mean   : 4.278   Mean   : 5.204   Mean   : 2.721   Mean   : 4.161
+ 3rd Qu.: 4.330   3rd Qu.: 5.500   3rd Qu.: 2.700   3rd Qu.: 4.200
+ Max.   :15.500   Max.   :34.000   Max.   :15.000   Max.   :12.000
+
+      IWA              LBH              LBD              LBA
+ Min.   : 1.200   Min.   : 1.050   Min.   : 2.900   Min.   : 1.170
+ 1st Qu.: 2.600   1st Qu.: 1.610   1st Qu.: 3.250   1st Qu.: 2.575
+ Median : 3.500   Median : 2.050   Median : 3.500   Median : 3.600
+ Mean   : 5.041   Mean   : 2.742   Mean   : 4.152   Mean   : 5.375
+ 3rd Qu.: 5.300   3rd Qu.: 2.750   3rd Qu.: 4.200   3rd Qu.: 5.500
+ Max.   :27.000   Max.   :19.000   Max.   :17.000   Max.   :41.000
+                  NA&#39;s   :1        NA&#39;s   :1        NA&#39;s   :1
+      PSH              PSD              PSA              WHH
+ Min.   : 1.050   Min.   : 3.020   Min.   : 1.180   Min.   : 1.060
+ 1st Qu.: 1.660   1st Qu.: 3.410   1st Qu.: 2.670   1st Qu.: 1.665
+ Median : 2.120   Median : 3.705   Median : 3.845   Median : 2.100
+ Mean   : 2.857   Mean   : 4.539   Mean   : 5.522   Mean   : 2.738
+ 3rd Qu.: 2.850   3rd Qu.: 4.455   3rd Qu.: 5.942   3rd Qu.: 2.750
+ Max.   :19.650   Max.   :20.380   Max.   :36.500   Max.   :17.000
+
+      WHD              WHA              VCH              VCD
+ Min.   : 2.900   Min.   : 1.170   Min.   : 1.040   Min.   : 3.000
+ 1st Qu.: 3.250   1st Qu.: 2.600   1st Qu.: 1.650   1st Qu.: 3.400
+ Median : 3.500   Median : 3.550   Median : 2.100   Median : 3.700
+ Mean   : 4.092   Mean   : 5.041   Mean   : 2.762   Mean   : 4.416
+ 3rd Qu.: 4.200   3rd Qu.: 5.500   3rd Qu.: 2.800   3rd Qu.: 4.400
+ Max.   :15.000   Max.   :26.000   Max.   :15.000   Max.   :17.000
+
+      VCA             Bb1X2           BbMxH            BbAvH
+ Min.   : 1.180   Min.   : 3.00   Min.   : 1.080   Min.   : 1.050
+ 1st Qu.: 2.630   1st Qu.:35.00   1st Qu.: 1.700   1st Qu.: 1.640
+ Median : 3.700   Median :37.00   Median : 2.200   Median : 2.090
+ Mean   : 5.472   Mean   :37.71   Mean   : 2.966   Mean   : 2.743
+ 3rd Qu.: 5.750   3rd Qu.:40.00   3rd Qu.: 2.882   3rd Qu.: 2.765
+ Max.   :36.000   Max.   :43.00   Max.   :19.650   Max.   :16.300
+
+     BbMxD            BbAvD            BbMxA            BbAvA
+ Min.   : 3.110   Min.   : 2.940   Min.   : 1.210   Min.   : 1.170
+ 1st Qu.: 3.478   1st Qu.: 3.328   1st Qu.: 2.728   1st Qu.: 2.607
+ Median : 3.750   Median : 3.570   Median : 3.920   Median : 3.665
+ Mean   : 4.636   Mean   : 4.261   Mean   : 6.107   Mean   : 5.190
+ 3rd Qu.: 4.553   3rd Qu.: 4.272   3rd Qu.: 6.105   3rd Qu.: 5.543
+ Max.   :20.380   Max.   :15.320   Max.   :67.000   Max.   :33.420
+
+      BbOU          BbMx.2.5        BbAv.2.5       BbMx.2.5.1
+ Min.   : 3.00   Min.   :1.130   Min.   :1.120   Min.   :1.470
+ 1st Qu.:31.75   1st Qu.:1.667   1st Qu.:1.617   1st Qu.:1.780
+ Median :34.00   Median :1.960   Median :1.880   Median :2.000
+ Mean   :34.06   Mean   :1.950   Mean   :1.872   Mean   :2.284
+ 3rd Qu.:37.00   3rd Qu.:2.203   3rd Qu.:2.120   3rd Qu.:2.402
+ Max.   :42.00   Max.   :3.080   Max.   :2.850   Max.   :7.000
+
+   BbAv.2.5.1         BbAH           BbAHh            BbMxAHH
+ Min.   :1.410   Min.   : 1.00   Min.   :-3.2500   Min.   :1.610
+ 1st Qu.:1.718   1st Qu.:17.00   1st Qu.:-0.7500   1st Qu.:1.890
+ Median :1.920   Median :18.00   Median :-0.2500   Median :1.985
+ Mean   :2.162   Mean   :18.16   Mean   :-0.4059   Mean   :1.988
+ 3rd Qu.:2.283   3rd Qu.:19.00   3rd Qu.: 0.0625   3rd Qu.:2.070
+ Max.   :5.970   Max.   :24.00   Max.   : 2.0000   Max.   :2.420
+
+    BbAvAHH         BbMxAHA         BbAvAHA           PSCH
+ Min.   :1.580   Min.   :1.680   Min.   :1.630   Min.   : 1.060
+ 1st Qu.:1.840   1st Qu.:1.897   1st Qu.:1.850   1st Qu.: 1.640
+ Median :1.930   Median :1.970   Median :1.930   Median : 2.120
+ Mean   :1.938   Mean   :1.988   Mean   :1.937   Mean   : 2.839
+ 3rd Qu.:2.020   3rd Qu.:2.080   3rd Qu.:2.030   3rd Qu.: 2.980
+ Max.   :2.340   Max.   :2.520   Max.   :2.440   Max.   :18.700
+                                                 NA&#39;s   :1
+      PSCD             PSCA
+ Min.   : 2.930   Min.   : 1.160
+ 1st Qu.: 3.410   1st Qu.: 2.590
+ Median : 3.700   Median : 3.850
+ Mean   : 4.508   Mean   : 5.695
+ 3rd Qu.: 4.560   3rd Qu.: 6.095
+ Max.   :18.500   Max.   :46.000
  NA&#39;s   :1        NA&#39;s   :1       </pre>
 </div>
 
@@ -16731,13 +16731,13 @@ my_data
 
 <div class="output_text output_subarea ">
 <pre>
-     Alaves  Ath Bilbao  Ath Madrid   Barcelona       Betis       Celta 
-         19          19          19          19          19          19 
-      Eibar     Espanol      Getafe      Girona   La Coruna  Las Palmas 
-         19          19          19          19          19          19 
-    Leganes     Levante      Malaga Real Madrid     Sevilla    Sociedad 
-         19          19          19          19          19          19 
-   Valencia  Villarreal 
+     Alaves  Ath Bilbao  Ath Madrid   Barcelona       Betis       Celta
+         19          19          19          19          19          19
+      Eibar     Espanol      Getafe      Girona   La Coruna  Las Palmas
+         19          19          19          19          19          19
+    Leganes     Levante      Malaga Real Madrid     Sevilla    Sociedad
+         19          19          19          19          19          19
+   Valencia  Villarreal
          19          19 </pre>
 </div>
 
@@ -23311,7 +23311,7 @@ AAIQgAAEIAABCEAAAhCAAAQgAIHGI/B/Afgc9XGi9/4AAAAASUVORK5CYII="
   </div>
 </body>
 
- 
+
 
 
 </html>
