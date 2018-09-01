@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head><meta charset="utf-8" />
-<title>2 - Simple algorithms, Functions and Files.</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
+<title>8 -  Computational Complexity </title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
 
 <style type="text/css">
@@ -11775,7 +11775,198 @@ div#notebook {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Some-more-Strings">Some more Strings<a class="anchor-link" href="#Some-more-Strings">&#182;</a></h2>
+<h4 id="WANT-TO-UNDERSTAND-EFFICIENCY-OF-PROGRAMS">WANT TO UNDERSTAND EFFICIENCY OF PROGRAMS<a class="anchor-link" href="#WANT-TO-UNDERSTAND-EFFICIENCY-OF-PROGRAMS">&#182;</a></h4><p>Challenges in understanding efficiency of solution to a computational problem:</p>
+<ul>
+<li>a program can be <strong>implemented in many different ways</strong></li>
+<li>you can solve a problem using only a handful of different <strong>algorithms</strong></li>
+<li>would like to separate choices of implementation from choices of more abstract algorithm</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h4 id="HOW-TO-EVALUATE-EFFICIENCY-OF-PROGRAMS">HOW TO EVALUATE EFFICIENCY OF PROGRAMS<a class="anchor-link" href="#HOW-TO-EVALUATE-EFFICIENCY-OF-PROGRAMS">&#182;</a></h4><ul>
+<li>measure with a <strong>timer</strong></li>
+<li><strong>count</strong> the operations</li>
+<li>abstract notion of <strong>order of growth</strong></li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h4 id="ORDERS-OF-GROWTH">ORDERS OF GROWTH<a class="anchor-link" href="#ORDERS-OF-GROWTH">&#182;</a></h4><p>Goals:</p>
+<ul>
+<li>want to evaluate program’s efficiency when input is very big</li>
+<li>want to express the growth of program’s run time as input size grows</li>
+<li>want to put an upper bound on growth</li>
+<li>do not need to be precise: “order of” not “exact” growth</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h4 id="MEASURING-ORDER-OF-GROWTH:-BIG-OH-NOTATION">MEASURING ORDER OF GROWTH: BIG OH NOTATION<a class="anchor-link" href="#MEASURING-ORDER-OF-GROWTH:-BIG-OH-NOTATION">&#182;</a></h4><ul>
+<li>Big Oh notation measures an upper bound on the asymptotic growth, often called order of growth</li>
+<li>Big Oh or O() is used to describe worst case<ul>
+<li>worst case occurs often and is the bottleneck when a program runs</li>
+<li>express rate of growth of program relative to the input size</li>
+<li>evaluate algorithm not machine or implementation</li>
+</ul>
+</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h4 id="SIMPLIFICATION-EXAMPLES">SIMPLIFICATION EXAMPLES<a class="anchor-link" href="#SIMPLIFICATION-EXAMPLES">&#182;</a></h4><ul>
+<li><p>drop constants and multiplicative factors</p>
+</li>
+<li><p>focus on dominant terms</p>
+</li>
+</ul>
+<p><strong>O(n^2):  n^2+ 2n + 2</strong> - highest order n^2</p>
+<p><strong>O(n^2):  n^2+ 100000n + 3^1000</strong> - highest order n^2</p>
+<p><strong>O(n):  log(n) + n + 4</strong> - n grows faster than log(n) for large numbers</p>
+<p><strong>O(n log(n)):  0.0001<em>n</em>log(n) + 300n</strong> - nlog(n) is higher at large values</p>
+<p><strong>O(3^n):  2n^30+ 3^n</strong> - 3^n is larger than n^30 at larger values</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="COMPLEXITY-CLASSES-ORDERED-LOW-TO-HIGH">COMPLEXITY CLASSES ORDERED LOW TO HIGH<a class="anchor-link" href="#COMPLEXITY-CLASSES-ORDERED-LOW-TO-HIGH">&#182;</a></h3>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+
+<pre><code>    O(1) : constant
+
+</code></pre>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&darr;</p>
+
+<pre><code>    O(log n) : logarithmic
+
+</code></pre>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&darr;</p>
+
+<pre><code>    O(n) : linear
+
+</code></pre>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&darr;</p>
+
+<pre><code>    O(n log n): loglinear
+
+</code></pre>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&darr;</p>
+
+<pre><code>    O(n^c) : polynomial
+
+</code></pre>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&darr;</p>
+
+<pre><code>    O(c^n) : exponential</code></pre>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h4 id="ANALYZING-PROGRAMS-AND-THEIR-COMPLEXITY">ANALYZING PROGRAMS AND THEIR COMPLEXITY<a class="anchor-link" href="#ANALYZING-PROGRAMS-AND-THEIR-COMPLEXITY">&#182;</a></h4><ul>
+<li><p>combinecomplexity classes</p>
+<ul>
+<li>analyze statements inside functions</li>
+<li>apply some rules, focus on dominant term</li>
+</ul>
+</li>
+<li><p>Law of Addition for O():</p>
+<ul>
+<li>used with sequential statements</li>
+<li><strong>O(f(n)) + O(g(n)) is O( f(n) + g(n) )</strong></li>
+</ul>
+</li>
+</ul>
+
+</div>
+</div>
+</div>#for example,
+for i in range(n):
+    print('a')
+for j in range(n*n):
+    print('b')
+    
+is O(n) + O(n*n) = O(n+n^2) = O(n^2) because of dominant term
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>Law of Multiplication for O():<ul>
+<li>used with nestedstatements/loops</li>
+<li><strong> O(f(n)) X O(g(n)) is O( f(n) X g(n) )</strong> </li>
+</ul>
+</li>
+</ul>
+
+</div>
+</div>
+</div>for example,
+
+for i in range(n):
+    for j in range(n):
+        print('a')
+        
+is O(n)*O(n) = O(n*n) = O(n^2) because the outer loop goes n times and the inner loop goes n times for every outer loop iter.
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h4 id="CONSTANT-COMPLEXITY">CONSTANT COMPLEXITY<a class="anchor-link" href="#CONSTANT-COMPLEXITY">&#182;</a></h4><ul>
+<li>complexity independent of inputs</li>
+<li>very few interesting algorithms in this class, but can often have pieces that fit this class</li>
+<li>can have loops or recursive calls, but number of iterations or calls independent of size of input</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h4 id="LOGARITHMIC-COMPLEXITY">LOGARITHMIC COMPLEXITY<a class="anchor-link" href="#LOGARITHMIC-COMPLEXITY">&#182;</a></h4><ul>
+<li>complexity grows as log of size of one of its inputs</li>
+<li>example:<ul>
+<li>bisection search</li>
+<li>binary search of a list</li>
+</ul>
+</li>
+</ul>
+
 </div>
 </div>
 </div>
@@ -11784,37 +11975,208 @@ div#notebook {
 <div class="prompt input_prompt">In&nbsp;[4]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#Strings are &#39;immutable&#39; meaning </span>
-<span class="n">s</span> <span class="o">=</span> <span class="s1">&#39;hello&#39;</span>
-<span class="n">s</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;y&#39;</span> <span class="c1">#gives an error</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">intToStr</span><span class="p">(</span><span class="n">i</span><span class="p">):</span>
+    <span class="n">digits</span> <span class="o">=</span> <span class="s1">&#39;0123456789&#39;</span>
+    <span class="k">if</span> <span class="n">i</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="k">return</span> <span class="s1">&#39;0&#39;</span>
+    <span class="n">result</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span>
+    <span class="k">while</span> <span class="n">i</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="n">result</span> <span class="o">=</span> <span class="n">digits</span><span class="p">[</span><span class="n">i</span><span class="o">%</span><span class="k">10</span>] + result
+        <span class="n">i</span><span class="o">=</span> <span class="n">i</span><span class="o">//</span><span class="mi">10</span>
+    <span class="k">return</span> <span class="n">result</span>
 </pre></div>
 
 </div>
 </div>
 </div>
 
-<div class="output_wrapper">
-<div class="output">
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h4 id="LINEAR-COMPLEXITY">LINEAR COMPLEXITY<a class="anchor-link" href="#LINEAR-COMPLEXITY">&#182;</a></h4><ul>
+<li>searching a list in sequence to see if an element is present</li>
+<li>add characters of a string, assumed to be composed of decimal digits</li>
+</ul>
 
-
-<div class="output_area">
-
-<div class="prompt"></div>
-
-
-<div class="output_subarea output_text output_error">
-<pre>
-<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
-<span class="ansi-red-fg">TypeError</span>                                 Traceback (most recent call last)
-<span class="ansi-green-fg">&lt;ipython-input-4-f45c478b8328&gt;</span> in <span class="ansi-cyan-fg">&lt;module&gt;</span><span class="ansi-blue-fg">()</span>
-<span class="ansi-green-intense-fg ansi-bold">      1</span> <span class="ansi-red-fg">#Strings are &#39;immutable&#39; meaning</span>
-<span class="ansi-green-intense-fg ansi-bold">      2</span> s <span class="ansi-blue-fg">=</span> <span class="ansi-blue-fg">&#39;hello&#39;</span>
-<span class="ansi-green-fg">----&gt; 3</span><span class="ansi-red-fg"> </span>s<span class="ansi-blue-fg">[</span><span class="ansi-cyan-fg">0</span><span class="ansi-blue-fg">]</span> <span class="ansi-blue-fg">=</span> <span class="ansi-blue-fg">&#39;y&#39;</span> <span class="ansi-red-fg">#gives an error</span>
-
-<span class="ansi-red-fg">TypeError</span>: &#39;str&#39; object does not support item assignment</pre>
 </div>
 </div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[6]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">addDigits</span><span class="p">(</span><span class="n">s</span><span class="p">):</span>
+    <span class="n">val</span><span class="o">=</span> <span class="mi">0</span>
+    <span class="k">for</span> <span class="n">c</span> <span class="ow">in</span> <span class="n">s</span><span class="p">:</span>
+        <span class="n">val</span> <span class="o">+=</span> <span class="nb">int</span><span class="p">(</span><span class="n">c</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">val</span>
+</pre></div>
 
+</div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[7]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">fact_iter</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+    <span class="n">prod</span> <span class="o">=</span> <span class="mi">1</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">n</span><span class="o">+</span><span class="mi">1</span><span class="p">):</span>
+        <span class="n">prod</span> <span class="o">*=</span> <span class="n">i</span>
+    <span class="k">return</span> <span class="n">prod</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[13]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#recusive fucntion</span>
+<span class="k">def</span> <span class="nf">fact_recur</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot; assume n &gt;= 0 &quot;&quot;&quot;</span>
+    <span class="k">if</span> <span class="n">n</span> <span class="o">&lt;=</span> <span class="mi">1</span><span class="p">:</span>
+        <span class="k">return</span> <span class="mi">1</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="k">return</span> <span class="n">n</span><span class="o">*</span><span class="n">fact_recur</span><span class="p">(</span><span class="n">n</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span>
+<span class="c1">#iterative and recursive factorial implementations are the same order of growth</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h4 id="POLYNOMIAL-COMPLEXITY">POLYNOMIAL COMPLEXITY<a class="anchor-link" href="#POLYNOMIAL-COMPLEXITY">&#182;</a></h4><ul>
+<li>most common polynomial algorithms are quadratic, i.e., complexity grows with square of size of input</li>
+<li>commonly occurs when we have nested loops or recursive function calls</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[15]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># QUADRATIC COMPLEXITY</span>
+
+<span class="k">def</span> <span class="nf">isSubset</span><span class="p">(</span><span class="n">L1</span><span class="p">,</span> <span class="n">L2</span><span class="p">):</span>
+    <span class="k">for</span> <span class="n">e1</span> <span class="ow">in</span> <span class="n">L1</span><span class="p">:</span>
+        <span class="n">matched</span> <span class="o">=</span> <span class="kc">False</span>
+        <span class="k">for</span> <span class="n">e2</span> <span class="ow">in</span> <span class="n">L2</span><span class="p">:</span>
+            <span class="k">if</span> <span class="n">e1</span> <span class="o">==</span> <span class="n">e2</span><span class="p">:</span>
+                <span class="n">matched</span> <span class="o">=</span> <span class="kc">True</span>
+                <span class="k">break</span>
+            <span class="k">if</span> <span class="ow">not</span> <span class="n">matched</span><span class="p">:</span>
+                <span class="k">return</span> <span class="kc">False</span>
+        <span class="k">return</span> <span class="kc">True</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[16]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">g</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot; assume n &gt;= 0 &quot;&quot;&quot;</span>
+    <span class="n">x</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+        <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+            <span class="n">x</span> <span class="o">+=</span> <span class="mi">1</span>
+        <span class="k">return</span> <span class="n">x</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h4 id="EXPONENTIAL-COMPLEXITY">EXPONENTIAL COMPLEXITY<a class="anchor-link" href="#EXPONENTIAL-COMPLEXITY">&#182;</a></h4><ul>
+<li><p>recursive functions where more than one recursive call for each size of problem</p>
+<ul>
+<li>Towers of Hanoi</li>
+</ul>
+</li>
+<li><p>many important problems are inherently exponential</p>
+<ul>
+<li>unfortunate, as cost can be high</li>
+<li>will lead us to consider approximate solutions more quickly</li>
+</ul>
+</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[17]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">genSubsets</span><span class="p">(</span><span class="n">L</span><span class="p">):</span>
+    <span class="n">res</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">L</span><span class="p">)</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="k">return</span><span class="p">[[]]</span>
+    <span class="n">smaller</span> <span class="o">=</span> <span class="n">genSubsets</span><span class="p">(</span><span class="n">L</span><span class="p">[:</span><span class="o">-</span><span class="mi">1</span><span class="p">])</span>
+    <span class="n">extra</span> <span class="o">=</span> <span class="n">L</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">:]</span>
+    <span class="n">new</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="k">for</span> <span class="n">small</span> <span class="ow">in</span> <span class="n">smaller</span><span class="p">:</span>
+        <span class="n">new</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">small</span><span class="o">+</span><span class="n">extra</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">smaller</span><span class="o">+</span><span class="n">new</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[1]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#Fibinnoci linear complexity _ O(n)</span>
+<span class="k">def</span> <span class="nf">fib_iter</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+    <span class="k">if</span> <span class="n">n</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="k">return</span> <span class="mi">0</span>
+    <span class="k">elif</span> <span class="n">n</span> <span class="o">==</span> <span class="mi">1</span><span class="p">:</span>
+        <span class="k">return</span> <span class="mi">1</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">fib_i</span><span class="o">=</span> <span class="mi">0</span>
+        <span class="n">fib_ii</span><span class="o">=</span> <span class="mi">1</span>
+        <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n</span><span class="o">-</span><span class="mi">1</span><span class="p">):</span>
+            <span class="n">tmp</span><span class="o">=</span> <span class="n">fib_i</span>
+            <span class="n">fib_i</span><span class="o">=</span> <span class="n">fib_ii</span>
+            <span class="n">fib_ii</span><span class="o">=</span> <span class="n">tmp</span><span class="o">+</span> <span class="n">fib_ii</span>
+        <span class="k">return</span> <span class="n">fib_ii</span>
+</pre></div>
+
+</div>
 </div>
 </div>
 
@@ -11824,328 +12186,64 @@ div#notebook {
 <div class="prompt input_prompt">In&nbsp;[3]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#but can be changed like below </span>
-<span class="n">s</span> <span class="o">=</span> <span class="s1">&#39;y&#39;</span> <span class="o">+</span> <span class="n">s</span><span class="p">[</span><span class="mi">1</span><span class="p">:]</span>
-<span class="n">s</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-<div class="prompt output_prompt">Out[3]:</div>
-
-
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>&#39;yello&#39;</pre>
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<hr>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Different-ways-of-approching-a-problems-(algorithms)">Different ways of approching a problems (algorithms)<a class="anchor-link" href="#Different-ways-of-approching-a-problems-(algorithms)">&#182;</a></h1><blockquote><ul>
-<li>Approximation (guess and check)<ul>
-<li>You assume a number and check with small increments </li>
-</ul>
-</li>
-</ul>
-</blockquote>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Guess-and-Check">Guess and Check<a class="anchor-link" href="#Guess-and-Check">&#182;</a></h2>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[27]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#example for guess and check</span>
-<span class="n">x</span> <span class="o">=</span> <span class="mi">1678</span>
-<span class="n">epsilon</span> <span class="o">=</span> <span class="mf">0.01</span>
-<span class="n">step</span> <span class="o">=</span> <span class="mf">0.1</span>
-<span class="n">guess</span> <span class="o">=</span> <span class="mf">0.0</span>
-<span class="n">num_steps</span> <span class="o">=</span> <span class="mi">0</span>
-
-<span class="k">while</span> <span class="n">guess</span> <span class="o">&lt;=</span> <span class="n">x</span><span class="p">:</span>
-    <span class="n">num_steps</span> <span class="o">+=</span> <span class="mi">1</span>
-    <span class="k">if</span> <span class="nb">abs</span><span class="p">(</span><span class="n">guess</span><span class="o">**</span><span class="mi">2</span> <span class="o">-</span><span class="n">x</span><span class="p">)</span> <span class="o">&lt;</span> <span class="n">epsilon</span><span class="p">:</span>
-        <span class="k">break</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#Fibinnoci exponetial complexity  - O(2^n)</span>
+<span class="k">def</span> <span class="nf">fib_recur</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot; assumes n an int&gt;= 0 &quot;&quot;&quot;</span>
+    <span class="k">if</span> <span class="n">n</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="k">return</span> <span class="mi">0</span>
+    <span class="k">elif</span> <span class="n">n</span> <span class="o">==</span> <span class="mi">1</span><span class="p">:</span>
+        <span class="k">return</span> <span class="mi">1</span> 
     <span class="k">else</span><span class="p">:</span>
-        <span class="n">guess</span> <span class="o">+=</span> <span class="n">step</span>
-        
-
-<span class="k">if</span> <span class="nb">abs</span><span class="p">(</span><span class="n">guess</span><span class="o">**</span><span class="mi">2</span> <span class="o">-</span> <span class="n">x</span><span class="p">)</span> <span class="o">&gt;=</span> <span class="n">epsilon</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;failed&#39;</span><span class="p">)</span>
-<span class="k">else</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;succeeded: &#39;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">guess</span><span class="p">))</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Number of steps taken is &quot;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">num_steps</span><span class="p">))</span>
+        <span class="k">return</span> <span class="n">fib_recur</span><span class="p">(</span><span class="n">n</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span> <span class="o">+</span> <span class="n">fib_recur</span><span class="p">(</span><span class="n">n</span><span class="o">-</span><span class="mi">2</span><span class="p">)</span>
 </pre></div>
 
 </div>
 </div>
 </div>
 
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-<div class="prompt"></div>
-
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>failed
-Number of steps taken is 16781
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Bisection-search">Bisection search<a class="anchor-link" href="#Bisection-search">&#182;</a></h2>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<blockquote><ul>
-<li>Bisection search <ul>
-<li>eleminate half of the range based on the input </li>
+<h4 id="COMPLEXITY-OF-COMMON-PYTHON-FUNCTIONS">COMPLEXITY OF COMMON PYTHON FUNCTIONS<a class="anchor-link" href="#COMPLEXITY-OF-COMMON-PYTHON-FUNCTIONS">&#182;</a></h4><p><strong>Lists</strong>: n is len(L)</p>
+<ul>
+<li>index O(1)</li>
+<li>store O(1)</li>
+<li>length O(1)</li>
+<li>append O(1)</li>
+<li>== O(n)</li>
+<li>remove O(n)</li>
+<li>copy O(n)</li>
+<li>reverse O(n)</li>
+<li>iteration O(n)</li>
+<li>in listO(n)</li>
 </ul>
-</li>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>Dictionaries</strong>: n is len(d)</p>
+<p>worst case</p>
+<ul>
+<li>index O(n)</li>
+<li>store O(n)</li>
+<li>length O(n)</li>
+<li>delete O(n)</li>
+<li>iteration O(n)</li>
 </ul>
-</blockquote>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[26]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#example for bisection search </span>
-<span class="n">x</span> <span class="o">=</span> <span class="mi">1678</span>
-<span class="n">high</span> <span class="o">=</span> <span class="n">x</span>
-<span class="n">low</span> <span class="o">=</span> <span class="mi">0</span>
-<span class="n">ans</span> <span class="o">=</span> <span class="mi">0</span>
-<span class="n">num_steps</span> <span class="o">=</span> <span class="mi">0</span>
-
-<span class="k">while</span> <span class="n">ans</span> <span class="o">&lt;=</span> <span class="n">x</span><span class="p">:</span>
-    <span class="n">num_steps</span> <span class="o">+=</span> <span class="mi">1</span>
-    <span class="n">ans</span> <span class="o">=</span> <span class="p">(</span><span class="n">high</span><span class="o">+</span><span class="n">low</span><span class="p">)</span><span class="o">/</span><span class="mi">2</span>
-    <span class="k">if</span> <span class="nb">abs</span><span class="p">(</span><span class="n">ans</span><span class="o">**</span><span class="mi">2</span> <span class="o">-</span><span class="n">x</span><span class="p">)</span> <span class="o">&lt;</span> <span class="n">epsilon</span><span class="p">:</span>
-        <span class="k">break</span>
-    <span class="k">elif</span> <span class="p">(</span><span class="n">ans</span><span class="o">**</span><span class="mi">2</span> <span class="o">-</span><span class="n">x</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
-        <span class="n">high</span> <span class="o">=</span> <span class="n">ans</span>
-    <span class="k">else</span><span class="p">:</span>
-        <span class="n">low</span> <span class="o">=</span> <span class="n">ans</span>
-
-<span class="k">if</span> <span class="nb">abs</span><span class="p">(</span><span class="n">ans</span><span class="o">**</span><span class="mi">2</span> <span class="o">-</span> <span class="n">x</span><span class="p">)</span> <span class="o">&gt;=</span> <span class="n">epsilon</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;failed&#39;</span><span class="p">)</span>
-<span class="k">else</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;succeeded: &#39;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">ans</span><span class="p">))</span>
-
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Number of steps taken is &quot;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">num_steps</span><span class="p">))</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-<div class="prompt"></div>
-
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>succeeded: 40.963396310806274
-Number of steps taken is 23
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Bisection-search-reduces-the-number-of-steps-by-a-lot.-For-example-to-find-a-square-root-of-1678-guess-and-check-method-takes-16781-steps-while-bisection-takes-23.">Bisection search reduces the number of steps by a lot. For example to find a square root of 1678 guess and check method takes 16781 steps while bisection takes 23.<a class="anchor-link" href="#Bisection-search-reduces-the-number-of-steps-by-a-lot.-For-example-to-find-a-square-root-of-1678-guess-and-check-method-takes-16781-steps-while-bisection-takes-23.">&#182;</a></h3>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Newton-raphson">Newton-raphson<a class="anchor-link" href="#Newton-raphson">&#182;</a></h2>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<blockquote><ul>
-<li>If g is an approximation to the root, then </li>
+<p>average case</p>
+<ul>
+<li>index O(1)</li>
+<li>store O(1)</li>
+<li>delete O(1)</li>
+<li>iteration O(n)</li>
 </ul>
-</blockquote>
 
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<blockquote><blockquote><p>$$ g-p(g)/p'(g)$$</p>
-</blockquote>
-</blockquote>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<blockquote><p>is a better approximation where p' is derivative of p</p>
-</blockquote>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<blockquote><p>for square root $$ F(x)= x^2 - 24 $$ solutions to this equation is the square root of 24.</p>
-</blockquote>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<blockquote><blockquote><p>$$ F'(x)= 2*x $$</p>
-</blockquote>
-</blockquote>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<blockquote><p>there fore we have, when for 24 $$x=g$$ 
-$$ g - (g^2-24)/(2*g)$$</p>
-</blockquote>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[120]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">x</span> <span class="o">=</span> <span class="mi">1678</span>
-<span class="n">epsilon</span> <span class="o">=</span> <span class="mf">0.01</span>
-<span class="n">guess</span> <span class="o">=</span> <span class="n">x</span><span class="o">/</span><span class="mi">2</span>
-<span class="n">num_steps</span> <span class="o">=</span> <span class="mi">0</span>
-<span class="k">while</span> <span class="nb">abs</span><span class="p">(</span><span class="n">guess</span><span class="o">**</span><span class="mi">2</span> <span class="o">-</span><span class="n">x</span><span class="p">)</span> <span class="o">&gt;=</span> <span class="n">epsilon</span><span class="p">:</span>
-    <span class="n">num_steps</span> <span class="o">+=</span> <span class="mi">1</span>
-    <span class="n">guess</span> <span class="o">=</span> <span class="n">guess</span> <span class="o">-</span> <span class="p">((</span><span class="n">guess</span><span class="o">**</span><span class="mi">2</span> <span class="o">-</span> <span class="n">x</span><span class="p">)</span><span class="o">/</span><span class="p">(</span><span class="mi">2</span><span class="o">*</span><span class="n">guess</span><span class="p">))</span>
-
-<span class="k">if</span> <span class="nb">abs</span><span class="p">(</span><span class="n">guess</span><span class="o">**</span><span class="mi">2</span> <span class="o">-</span> <span class="n">x</span><span class="p">)</span> <span class="o">&gt;=</span> <span class="n">epsilon</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;failed&#39;</span><span class="p">)</span>
-<span class="k">else</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;succeeded: &#39;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">guess</span><span class="p">))</span>
-
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Number of steps taken is &quot;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">num_steps</span><span class="p">))</span>
-    
-</pre></div>
-
-</div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-<div class="prompt"></div>
-
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>succeeded: 40.96339829764579
-Number of steps taken is 8
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="To-compute-square-root-of-1678-number-of-steps-taken-by">To compute square root of 1678 number of steps taken by<a class="anchor-link" href="#To-compute-square-root-of-1678-number-of-steps-taken-by">&#182;</a></h3><h3 id="1)-Guess-and-check--16781">1) Guess and check- 16781<a class="anchor-link" href="#1)-Guess-and-check--16781">&#182;</a></h3><h3 id="2)-Bisection-Search--23">2) Bisection Search- 23<a class="anchor-link" href="#2)-Bisection-Search--23">&#182;</a></h3><h3 id="3)-Newton-Raphson--8">3) Newton-Raphson- 8<a class="anchor-link" href="#3)-Newton-Raphson--8">&#182;</a></h3>
 </div>
 </div>
 </div>
@@ -12162,463 +12260,11 @@ Number of steps taken is 8
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Floats-and-Fractions">Floats and Fractions<a class="anchor-link" href="#Floats-and-Fractions">&#182;</a></h2>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Note:-decimal-numbers-are-convertred-to-integers-by-multiplying-'2^p'-then-the-integer-is-converted-to-binary-and-then-the-binary-number-is-divided-by-same-'2^p'-(binary-divison).">Note: decimal numbers are convertred to integers by multiplying '2^p' then the integer is converted to binary and then the binary number is divided by same '2^p' (binary divison).<a class="anchor-link" href="#Note:-decimal-numbers-are-convertred-to-integers-by-multiplying-'2^p'-then-the-integer-is-converted-to-binary-and-then-the-binary-number-is-divided-by-same-'2^p'-(binary-divison).">&#182;</a></h3>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[37]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># converting fraction into binary </span>
-<span class="n">x</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s1">&#39;Enter a decimal number between 0 and 1: &#39;</span><span class="p">))</span>
-
-<span class="n">p</span> <span class="o">=</span> <span class="mi">0</span>
-<span class="k">while</span> <span class="p">((</span><span class="mi">2</span><span class="o">**</span><span class="n">p</span><span class="p">)</span><span class="o">*</span><span class="n">x</span><span class="p">)</span><span class="o">%</span><span class="k">1</span> != 0:
-    <span class="n">p</span> <span class="o">+=</span> <span class="mi">1</span>
-
-<span class="n">num</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">x</span><span class="o">*</span><span class="p">(</span><span class="mi">2</span><span class="o">**</span><span class="n">p</span><span class="p">))</span>
-
-<span class="n">result</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span>
-<span class="k">if</span> <span class="n">num</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
-    <span class="n">result</span> <span class="o">=</span> <span class="s1">&#39;0&#39;</span>
-<span class="k">while</span> <span class="n">num</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
-    <span class="n">result</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">num</span><span class="o">%</span><span class="k">2</span>) + result
-    <span class="n">num</span> <span class="o">=</span> <span class="n">num</span><span class="o">//</span><span class="mi">2</span>
-
-<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">p</span> <span class="o">-</span> <span class="nb">len</span><span class="p">(</span><span class="n">result</span><span class="p">)):</span>
-    <span class="n">result</span> <span class="o">=</span> <span class="s1">&#39;0&#39;</span> <span class="o">+</span> <span class="n">result</span>
-
-<span class="n">result</span> <span class="o">=</span> <span class="n">result</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="o">-</span><span class="n">p</span><span class="p">]</span> <span class="o">+</span> <span class="s1">&#39;.&#39;</span> <span class="o">+</span> <span class="n">result</span><span class="p">[</span><span class="o">-</span><span class="n">p</span><span class="p">:]</span>
-<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;The binary representation of the decimal &#39;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="o">+</span> <span class="s1">&#39; is &#39;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">result</span><span class="p">))</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-<div class="prompt"></div>
-
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>Enter a decimal number between 0 and 1: 0.6
-The binary representation of the decimal 0.6 is .10011001100110011001100110011001100110011001100110011
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Functions">Functions<a class="anchor-link" href="#Functions">&#182;</a></h2>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<blockquote><h3 id="Decomposition-:-Break-a-problem-into-different-self-contained-pieces.">Decomposition : Break a problem into different self contained pieces.<a class="anchor-link" href="#Decomposition-:-Break-a-problem-into-different-self-contained-pieces.">&#182;</a></h3><h3 id="Abstraction-:-Trying-to-understand-the-behaviour-without-nessasrily-knowing-how-it-works.">Abstraction : Trying to understand the behaviour without nessasrily knowing how it works.<a class="anchor-link" href="#Abstraction-:-Trying-to-understand-the-behaviour-without-nessasrily-knowing-how-it-works.">&#182;</a></h3>
-</blockquote>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<blockquote><h3 id="Reuseable-piece-of-code-is-called-Function.">Reuseable piece of code is called Function.<a class="anchor-link" href="#Reuseable-piece-of-code-is-called-Function.">&#182;</a></h3>
-</blockquote>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[18]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">f</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">):</span>
-    <span class="sd">&#39;&#39;&#39;</span>
-<span class="sd">    This is how comments inside a functions are written</span>
-<span class="sd">    </span>
-<span class="sd">    &#39;&#39;&#39;</span>
-    <span class="nb">print</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="s2">&quot;Inside fucntion X&quot;</span><span class="p">)</span>
-    <span class="k">return</span> <span class="n">x</span> <span class="o">+</span> <span class="n">y</span> <span class="o">-</span> <span class="mi">2</span> <span class="c1">#values of x and y are only valid inside the function - local variable</span>
-
-<span class="n">x</span><span class="o">=</span><span class="mi">5</span> <span class="c1">#globel variable </span>
-
-<span class="nb">print</span><span class="p">(</span><span class="n">f</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">),</span><span class="s2">&quot;Function return value&quot;</span><span class="p">)</span> <span class="c1">#calling the function </span>
-
-<span class="nb">print</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="s2">&quot;Outside Function X&quot;</span><span class="p">)</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-<div class="prompt"></div>
-
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>2 Inside fucntion X
-3 Function return value
-5 Outside Function X
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Recursive-Functions">Recursive Functions<a class="anchor-link" href="#Recursive-Functions">&#182;</a></h3>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<blockquote><h4 id="Function-is-called-in-itself-in-loop-to-perform-certain-tasks">Function is called in itself in loop to perform certain tasks<a class="anchor-link" href="#Function-is-called-in-itself-in-loop-to-perform-certain-tasks">&#182;</a></h4>
-</blockquote>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># multiplication a*b</span>
-<span class="k">def</span> <span class="nf">mult</span><span class="p">(</span><span class="n">a</span><span class="p">,</span><span class="n">b</span><span class="p">):</span>
-    <span class="k">if</span> <span class="n">b</span><span class="o">==</span><span class="mi">1</span><span class="p">:</span> <span class="c1">#last condition</span>
-        <span class="k">return</span> <span class="n">a</span>
-    <span class="k">else</span><span class="p">:</span>
-        <span class="k">return</span> <span class="n">a</span> <span class="o">+</span> <span class="n">mutl</span><span class="p">(</span><span class="n">a</span><span class="p">,</span><span class="n">b</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span> <span class="c1">#same function is called for reduced variable </span>
-<span class="n">mult</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span><span class="mi">5</span><span class="p">)</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[28]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#finding factorial of a number </span>
-<span class="k">def</span> <span class="nf">fact</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
-    <span class="k">if</span> <span class="n">n</span> <span class="o">==</span> <span class="mi">1</span> <span class="ow">or</span> <span class="n">n</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span> <span class="c1"># last condition</span>
-        <span class="k">return</span> <span class="mi">1</span>
-    <span class="k">else</span><span class="p">:</span>
-        <span class="k">return</span> <span class="n">n</span><span class="o">*</span><span class="n">fact</span><span class="p">(</span><span class="n">n</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span> <span class="c1">#same function is called for reduced variable </span>
-<span class="n">fact</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-<div class="prompt output_prompt">Out[28]:</div>
-
-
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>120</pre>
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<blockquote><h3 id="Modules-or-functions-can-be-called-and-used-from-other-files">Modules or functions can be called and used from other files<a class="anchor-link" href="#Modules-or-functions-can-be-called-and-used-from-other-files">&#182;</a></h3><h3 id="This-can-be-done-by-using-'import'">This can be done by using 'import'<a class="anchor-link" href="#This-can-be-done-by-using-'import'">&#182;</a></h3>
-</blockquote>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<blockquote><p>Suppose module circle.py has two function area and circumference it can be use as below</p>
-<blockquote><p>import circle</p>
-<p>print(circle.area(3))</p>
-</blockquote>
-<p>and</p>
-<blockquote><p>print(circle.circumference(3))</p>
-</blockquote>
-</blockquote>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<blockquote><p>Different way of importing</p>
-<blockquote><p>from circle import * # will import all the modules</p>
-</blockquote>
-</blockquote>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Files">Files<a class="anchor-link" href="#Files">&#182;</a></h2>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<blockquote><ul>
-<li>every operating system has its own way of handling files; Python provides an operating-system independent means to access files, using a file handle</li>
-<li>nameHandle= open(‘kids’, ‘w’)</li>
-<li>creates a file named kids and returns file handle which we can name and thus reference. The windicates that the file is to opened for writing into.</li>
+<p>Reference</p>
+<ul>
+<li>edX course offered by MIT</li>
+<li>6.00.1x Introduction to Computer Science and Programming Using Python</li>
 </ul>
-</blockquote>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[33]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">nameHandle</span><span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;kids&#39;</span><span class="p">,</span> <span class="s1">&#39;w&#39;</span><span class="p">)</span> <span class="c1">#creats and opens file named kids with write option</span>
-<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">2</span><span class="p">):</span>
-    <span class="n">name</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s1">&#39;Enter name: &#39;</span><span class="p">)</span>
-    <span class="n">nameHandle</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">name</span> <span class="o">+</span> <span class="s2">&quot;  &quot;</span><span class="p">)</span>
-<span class="n">nameHandle</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-<div class="prompt"></div>
-
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>Enter name: A
-Enter name: B
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[36]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">nameHandle</span><span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;kids&#39;</span><span class="p">,</span> <span class="s1">&#39;r&#39;</span><span class="p">)</span> <span class="c1">#opens file in read access and prints the information</span>
-<span class="k">for</span> <span class="n">line</span> <span class="ow">in</span> <span class="n">nameHandle</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="n">line</span><span class="p">)</span>
-<span class="n">nameHandle</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-<div class="prompt"></div>
-
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>A  B  
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Some-use-of-built-in-functions">Some use of built in functions<a class="anchor-link" href="#Some-use-of-built-in-functions">&#182;</a></h3>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[11]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">A</span> <span class="o">=</span> <span class="s1">&#39;ABC&#39;</span>
-<span class="n">A</span><span class="o">.</span><span class="n">index</span><span class="p">(</span><span class="s2">&quot;B&quot;</span><span class="p">)</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-<div class="prompt output_prompt">Out[11]:</div>
-
-
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>1</pre>
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[12]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">str2</span> <span class="o">=</span> <span class="s1">&#39;Number one - the larch&#39;</span>
-<span class="n">str2</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s1">&#39;n&#39;</span><span class="p">)</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-<div class="prompt output_prompt">Out[12]:</div>
-
-
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>8</pre>
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[15]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">len</span><span class="p">(</span><span class="s2">&quot;abc&quot;</span><span class="p">)</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-<div class="prompt output_prompt">Out[15]:</div>
-
-
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>3</pre>
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<hr>
 
 </div>
 </div>
