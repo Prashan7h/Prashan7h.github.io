@@ -1,5 +1,17 @@
 <!DOCTYPE html>
 <html>
+
+<head>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-124334883-1"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+	  gtag('config', 'UA-124334883-1');
+	</script>
+  </head>
+  
 <head><meta charset="utf-8" />
 <title>1- Basic operations, strings and loops.</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
@@ -8451,15 +8463,15 @@ label {
 }
 /* Flexible box model classes */
 /* Taken from Alex Russell http://infrequently.org/2009/08/css-3-progress/ */
-/* This file is a compatability layer.  It allows the usage of flexible box 
+/* This file is a compatability layer.  It allows the usage of flexible box
 model layouts accross multiple browsers, including older browsers.  The newest,
 universal implementation of the flexible box model is used when available (see
-`Modern browsers` comments below).  Browsers that are known to implement this 
+`Modern browsers` comments below).  Browsers that are known to implement this
 new spec completely include:
 
     Firefox 28.0+
     Chrome 29.0+
-    Internet Explorer 11+ 
+    Internet Explorer 11+
     Opera 17.0+
 
 Browsers not listed, including Safari, are supported via the styling under the
@@ -11233,7 +11245,7 @@ div#pager .ui-resizable-handle {
   background: #f7f7f7;
   border-top: 1px solid #cfcfcf;
   border-bottom: 1px solid #cfcfcf;
-  /* This injects handle bars (a short, wide = symbol) for 
+  /* This injects handle bars (a short, wide = symbol) for
         the resize handle. */
 }
 div#pager .ui-resizable-handle::after {
@@ -11676,7 +11688,7 @@ ul.typeahead-list > li > a {
 .highlight .il { color: #666666 } /* Literal.Number.Integer.Long */
     </style>
 <style type="text/css">
-    
+
 /* Temporary definitions which will become obsolete with Notebook release 5.0 */
 .ansi-black-fg { color: #3E424D; }
 .ansi-black-bg { background-color: #3E424D; }
@@ -11730,14 +11742,14 @@ div#notebook {
   div.cell {
     display: block;
     page-break-inside: avoid;
-  } 
-  div.output_wrapper { 
-    display: block;
-    page-break-inside: avoid; 
   }
-  div.output { 
+  div.output_wrapper {
     display: block;
-    page-break-inside: avoid; 
+    page-break-inside: avoid;
+  }
+  div.output {
+    display: block;
+    page-break-inside: avoid;
   }
 }
 </style>
@@ -12483,7 +12495,7 @@ div#notebook {
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">pi</span><span class="o">=</span> <span class="mf">3.14</span> <span class="c1"># varibales store values here pi is a variable </span>
 <span class="n">r</span> <span class="o">=</span> <span class="mi">3</span> <span class="c1"># always value on the right is assigned to left like in math a = 1 and 1 = a  second will not work in programing </span>
 <span class="n">area</span> <span class="o">=</span> <span class="n">pi</span> <span class="o">*</span> <span class="n">r</span><span class="o">**</span><span class="mi">2</span>
-<span class="n">area</span> 
+<span class="n">area</span>
 </pre></div>
 
 </div>
@@ -13159,7 +13171,7 @@ div#notebook {
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">x</span> <span class="o">=</span> <span class="mi">4</span>
-<span class="k">if</span> <span class="n">x</span><span class="o">%</span><span class="k">2</span> ==0: # statement should end with a &#39;:&#39; 
+<span class="k">if</span> <span class="n">x</span><span class="o">%</span><span class="k">2</span> ==0: # statement should end with a &#39;:&#39;
     <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;even&quot;</span><span class="p">)</span> <span class="c1">#indentation is imporant hence use tab after if statement </span>
 <span class="k">else</span><span class="p">:</span>
     <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;odd&quot;</span><span class="p">)</span>
@@ -13195,7 +13207,7 @@ div#notebook {
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#same code as before with x assigned to odd</span>
 <span class="n">x</span> <span class="o">=</span> <span class="mi">7</span>
-<span class="k">if</span> <span class="n">x</span><span class="o">%</span><span class="k">2</span> ==0: # statement should end with a &#39;:&#39; 
+<span class="k">if</span> <span class="n">x</span><span class="o">%</span><span class="k">2</span> ==0: # statement should end with a &#39;:&#39;
     <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;even&quot;</span><span class="p">)</span>
 <span class="k">else</span><span class="p">:</span>
     <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;odd&quot;</span><span class="p">)</span>
@@ -13230,7 +13242,7 @@ div#notebook {
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">x</span> <span class="o">=</span> <span class="mi">0</span> <span class="c1"># just an another one</span>
-<span class="k">if</span> <span class="n">x</span><span class="o">%</span><span class="k">2</span> ==0: # statement should end with a &#39;:&#39; 
+<span class="k">if</span> <span class="n">x</span><span class="o">%</span><span class="k">2</span> ==0: # statement should end with a &#39;:&#39;
     <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;even&quot;</span><span class="p">)</span>
 <span class="k">else</span><span class="p">:</span>
     <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;odd&quot;</span><span class="p">)</span>
@@ -13265,11 +13277,11 @@ div#notebook {
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#Nested if conditions and notice the indendations </span>
-<span class="n">x</span> <span class="o">=</span> <span class="mi">9</span> 
+<span class="n">x</span> <span class="o">=</span> <span class="mi">9</span>
 <span class="k">if</span> <span class="n">x</span><span class="o">%</span><span class="k">2</span> ==0:
     <span class="k">if</span> <span class="n">x</span><span class="o">%</span><span class="k">3</span> ==0:
         <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Divisible by both 2 and 3&quot;</span><span class="p">)</span>
-    <span class="k">else</span><span class="p">:</span> 
+    <span class="k">else</span><span class="p">:</span>
         <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Divisible by 2 but not 3&quot;</span><span class="p">)</span>
 <span class="k">else</span><span class="p">:</span>
     <span class="k">if</span> <span class="n">x</span><span class="o">%</span><span class="k">3</span>==0:
@@ -13311,7 +13323,7 @@ div#notebook {
 <span class="k">if</span> <span class="n">x</span><span class="o">%</span><span class="k">2</span> ==0:
     <span class="k">if</span> <span class="n">x</span><span class="o">%</span><span class="k">3</span> ==0:
         <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Divisible by both 2 and 3&quot;</span><span class="p">)</span>
-    <span class="k">else</span><span class="p">:</span> 
+    <span class="k">else</span><span class="p">:</span>
         <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Divisible by 2 but not 3&quot;</span><span class="p">)</span>
 <span class="k">else</span><span class="p">:</span>
     <span class="k">if</span> <span class="n">x</span><span class="o">%</span><span class="k">3</span>==0:
@@ -13396,10 +13408,10 @@ div#notebook {
 
 <span class="k">if</span> <span class="n">x</span><span class="o">&lt;</span><span class="n">y</span> <span class="ow">and</span> <span class="n">x</span><span class="o">&lt;</span><span class="n">z</span><span class="p">:</span>
     <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;x is smallest&quot;</span><span class="p">)</span>
-<span class="k">elif</span> <span class="n">y</span><span class="o">&lt;</span><span class="n">z</span> <span class="ow">and</span> <span class="n">y</span><span class="o">&lt;</span><span class="n">x</span><span class="p">:</span>          
+<span class="k">elif</span> <span class="n">y</span><span class="o">&lt;</span><span class="n">z</span> <span class="ow">and</span> <span class="n">y</span><span class="o">&lt;</span><span class="n">x</span><span class="p">:</span>
     <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;y is smallest&quot;</span><span class="p">)</span>
 <span class="k">else</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;z is smallest&quot;</span><span class="p">)</span> 
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;z is smallest&quot;</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -13491,7 +13503,7 @@ x is smallest
 <span class="n">y</span><span class="o">=</span><span class="mi">3</span>
 <span class="n">temp</span> <span class="o">=</span> <span class="n">x</span> <span class="c1">#using  extra &#39;temp&#39; varibale </span>
 <span class="n">x</span> <span class="o">=</span> <span class="n">y</span>
-<span class="n">y</span> <span class="o">=</span> <span class="n">temp</span> 
+<span class="n">y</span> <span class="o">=</span> <span class="n">temp</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;x=&quot;</span><span class="p">,</span><span class="n">x</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;y=&quot;</span><span class="p">,</span><span class="n">y</span><span class="p">)</span>
 </pre></div>
@@ -14767,7 +14779,7 @@ o
   </div>
 </body>
 
- 
+
 
 
 </html>
