@@ -127,7 +127,7 @@ body.page-template-page-fullsingle-split {
           flex-wrap: wrap; } }
   .fs-split .split-image {
     width: 50%;
-    height: 80vh;
+    height: 100vh;
     background-image: url("../../images/IMG_8239.JPG");
     background-position: center center;
     background-size: cover; }
