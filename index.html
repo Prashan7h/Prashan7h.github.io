@@ -1,131 +1,191 @@
 <!DOCTYPE html>
-<html lang="en-US">
-
+<html lang="en">
 <head>
-	<!-- Global site tag (gtag.js) - Google Analytics -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-124334883-1"></script>
-	<script>
-	  window.dataLayer = window.dataLayer || [];
-	  function gtag(){dataLayer.push(arguments);}
-	  gtag('js', new Date());
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" type="image/favicon2.png" href="image/favicon2.png">
+    <title>Prashanth Shankar</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&family=Open+Sans:wght@400&display=swap');
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            background: #fff;
+            color: #000;
+            display: flex;
+            height: 100vh;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            padding: 0;
+            font-family: 'Open Sans', sans-serif;
+        }
+        .container {
+            max-width: 100%;
+            display: flex;
+            width: 90%;
+            padding: 10px;
+        }
+        .left {
+            width: 45%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding-right: 10px;
+        }
+        .left img {
+            width: 85%;
+            height: auto;
+            border: 2px solid #000;
+            border-radius: 3px;
+        }
+        .right {
+            width: 55%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            text-align: left;
+            padding-left: 60px;
+            height: 100%;
+        }
+        h1 {
+            font-size: 3rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            margin-top: 120px;
+            margin-bottom: 30px;
+            /* border-bottom: 2px solid #000; */
+            display: inline-block;
+            align-self: flex-start;
+            font-family: 'Oswald', sans-serif;
+        }
+        .text-content {
+            max-width: 100%;
+            text-align: left;
+            align-self: center;
+            margin-bottom: 40px;
+            margin-right: 100px;
+            margin-top: 20px;
+            font-family: 'Plantin', serif;
+            font-weight: 400;
 
-	  gtag('config', 'UA-124334883-1');
-	</script>
+        }
+        p {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            opacity: 0.9;
+            margin-bottom: 20px;
+        }
+        .links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: flex-start;
+            align-self: flex-start;
+            margin-top: 20px;
+            margin-left: -25px;
+        }
+   
+        .links a {
+            color: #000;
+            text-decoration: none;
+            padding: 14px 28px;
+            /* border: 2px solid #000; */
+            border-radius: 3px;
+            transition: all 0.3s ease;
+            font-weight: bold;
+            background: none;
+            display: inline-block;
+            font-size: 1rem;
+            font-family: 'Oswald', sans-serif;
+        }
+        .links a:hover {
+            background: #000;
+            color: #fff;
+        }
+        footer {
+            position: absolute;
+            bottom: 20px;
+            right: 20px;
+            font-size: 0.8rem;
+            opacity: 0.8;
+        }
+		 /* Mobile Styles */
+         @media (max-width: 768px) {
+            body {
+                padding: 1rem;
+            }
 
+            .container {
+                flex-direction: column;
+                padding: 1rem;
+                gap: 1rem;
+                align-items: center;
+            }
 
-	<meta charset="UTF-8" />
-	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+            .left, .right {
+                width: 100%;
+                padding: 0;
+                text-align: center;
+            }
 
-	<!-- SEO -->
-	<title>Prashanth</title>
-	<meta name="description" content="Split is a centrally-divided layout for a professional online presence with a big image or video left with alongside content." />
-	<meta name="robots" content="index, follow" />
-	<meta name="referrer" content="always" />
+            .left img {
+                margin-top: 200px;
+                max-width: 100%;
+            }
 
-	<!-- Social & Open Graph -->
-	<meta property="og:title" content="Split - HTML Template Demo" />
-	<meta property="og:description" content="Split is a centrally-divided layout for a professional online presence with a big image or video left with alongside content." />
-	<meta property="og:image" content="https://demo.onepagelove.com/fullsingle-html/split/images/social.jpg"> <!-- include your hosted image full URL -->
-	<meta property="og:url" content="https://demo.onepagelove.com/fullsingle-html/split/" />
-	<meta name="twitter:title" content="Split - HTML Template Demo" >
-	<meta name="twitter:description" content="Split is a centrally-divided layout for a professional online presence with a big image or video left with alongside content." />
-	<meta name="twitter:image" content="https://demo.onepagelove.com/fullsingle-html/split/images/social.jpg" /> <!-- include your hosted image full URL -->
-	<meta name="twitter:card" content="summary_large_image" />
-	<meta name="twitter:site" content="@onepagelove" />
-	<meta name="twitter:creator" content="@robhope" />
+            h1 {
+                text-align: center;
+                margin-top: 1rem;
+            }
 
-	<!-- Favicon -->
-	<link rel="icon" type="image/png" href="images/favicon.png" sizes="32x32">
+            .text-content {
+                text-align: center;
+                margin: 10px 0;
+            }
 
-	<!-- Styles -->
-	<link rel='stylesheet' href='assets/css/split.css' type='text/css' media='screen' />
-	<meta name="viewport" content="width=device-width,initial-scale=1" />
+            .links {
+                justify-content: center;
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                gap: 10px;
+            }
 
+            .links a {
+                width: 100%;
+                text-align: center;
+            }
+
+            footer {
+                display: none;
+            }
+        }
+    </style>
 </head>
-
-<body id="fullsingle" class="page-template-page-fullsingle-split">
-
-<div class="fs-split">
-
-	<!-- Image Side -->
-	<div class="split-image">
-
-	</div>
-
-	<!-- Content Side -->
-	<div class="split-content">
-
-		<div class="split-content-vertically-center">
-
-			<div class="split-intro">
-
-				<h1>Prashanth Shankar</h1>
-
-				<span class="tagline">Autodidact. Teacher. Analyst. </span>
-
-			</div>
-
-			<div class="split-bio">
-
-				<p>I enjoy studying, teaching, and discussing - Physics, Philosophy, Economics, Mathematics, Computer Science, Psychology, Biology - you get the idea!<br>
-					<br>
-				  My other intrests are Football, Longivity, Technology, Composing EDM's, Rationality, Existential risk, Consciousness, Peak performance and Progress.<br>
-				</p>
-
-			</div>
-
-			<div class="split-lists">
-
-				<div class="split-list">
-
-					<h3>More</h3>
-
-					<ul>
-						<li><a href="certificate/certificate.html">Certifications</a></li>
-						<li><a href="blog.html">Python & R - Notes</a></li>
-						<!--  <li><a href="https://www.meetup.com/sciencingdata/">Meetup group</a></li> -->
-					</ul>
-
-				</div>
-
-				<div class="split-list">
-
-					<h3>Connect</h3>
-
-					<ul>
-						<!-- <li><a href="Resume - Prashanth Shankar.pdf">Resume</a></li> -->
-						<li><a href="https://www.linkedin.com/in/prashan7h/">LinkedIn</a></li>
-						<li><a href="https://medium.com/@prashanths827">Medium</a></li>
-					</ul>
-
-				</div>
-
-				<div class="split-list">
-
-					<h3></h3>
-
-					<ul>
-						<li><a href="#"></a></li>
-						<li><a href="#"></a></li>
-						<li><a href="#"></a></li>
-					</ul>
-
-				</div>
-
-			</div>
-
-			<div class="split-credit">
-
-				<p>&copy;2025 <a href="#">Prashanth</a></a></p>
-
-
-			</div>
-
-		</div>
-
-	</div>
-
-</div>
-
+<body>
+    <div class="container">
+        <div class="left">
+            <img src="images/blacktie2.jpg" alt="Prashanth Shankar">
+        </div>
+        <div class="right">
+            <h1>Prashanth Shankar</h1>
+            <div class="text-content">
+                <p>I enjoy studying, teaching, and discussing - Physics, Philosophy, Economics, Mathematics, Computer Science, Psychology, Biology - you get the idea!</p>
+                <p>My other interests are Football, Longevity, Technology, Composing EDMs, Rationality, Existential risk, Consciousness, Peak performance, and Progress.</p>
+            </div>
+            <div class="links">
+                <a href="certificate/certificate.html">Certifications</a>
+                <a href="blog.html">Python & R Notes</a>
+                <a href="https://www.linkedin.com/in/prashan7h/">LinkedIn</a>
+                <a href="https://medium.com/@prashanths827">Medium</a>
+            </div>
+        </div>
+    </div>
+    <footer>&copy; 2025 Prashanth Shankar</footer>
 </body>
 </html>
