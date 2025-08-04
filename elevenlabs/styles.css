@@ -376,113 +376,272 @@ p {
 /* Mobile Responsive */
 @media (max-width: 768px) {
     .slide {
-        padding: 20px 16px;
+        padding: 16px 12px;
         min-height: 100vh;
+        overflow-y: auto;
+        align-items: flex-start;
     }
     
     .slide-content {
-        padding: 20px 0;
-    }
-    
-    h1 {
-        font-size: 2.5rem;
-    }
-    
-    h2 {
-        font-size: 2rem;
-    }
-    
-    h3 {
-        font-size: 1.25rem;
-    }
-    
-    .title {
-        font-size: 3rem;
-    }
-    
-    .nav-dots {
-        right: 8px;
-        gap: 8px;
-    }
-    
-    .dot {
-        width: 8px;
-        height: 8px;
-    }
-    
-    .navigation {
-        bottom: 20px;
-        gap: 1rem;
-    }
-    
-    .nav-arrow {
-        width: 50px;
-        height: 50px;
-        font-size: 1.25rem;
-    }
-    
-    .arrow {
-        width: 60px;
-        height: 60px;
-        font-size: 2rem;
-    }
-    
-    .comparison-container,
-    .audio-comparison {
-        grid-template-columns: 1fr;
-        gap: 1.5rem;
-    }
-    
-    .text-box {
-        max-height: 200px;
-    }
-    
-    .emotion-metrics {
-        grid-template-columns: 1fr;
-        gap: 1rem;
-    }
-}
-
-@media (max-width: 480px) {
-    .slide {
-        padding: 16px 12px;
+        padding: 16px 0;
+        justify-content: flex-start;
+        height: auto;
+        min-height: 100vh;
     }
     
     h1 {
         font-size: 2rem;
+        margin-bottom: 1rem;
     }
     
     h2 {
         font-size: 1.75rem;
+        margin-bottom: 1rem;
+    }
+    
+    h3 {
+        font-size: 1.1rem;
+        margin-bottom: 0.75rem;
     }
     
     .title {
         font-size: 2.5rem;
+        margin-bottom: 2rem;
+    }
+    
+    p {
+        font-size: 1rem;
+        line-height: 1.6;
+        margin-bottom: 0.75rem;
     }
     
     .nav-dots {
-        right: 4px;
+        right: 6px;
+        gap: 6px;
+        top: 50%;
+        transform: translateY(-50%);
     }
     
     .dot {
         width: 6px;
         height: 6px;
+        border-width: 1px;
     }
     
     .navigation {
         bottom: 16px;
+        gap: 0.75rem;
+        left: 50%;
+        transform: translateX(-50%);
     }
     
     .nav-arrow {
         width: 44px;
         height: 44px;
         font-size: 1rem;
+        min-width: 44px;
+        min-height: 44px;
     }
     
     .arrow {
         width: 50px;
         height: 50px;
         font-size: 1.5rem;
+    }
+    
+    .comparison-container,
+    .audio-comparison {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+        margin: 1rem 0;
+    }
+    
+    .comparison-item {
+        padding: 1rem;
+    }
+    
+    .text-box {
+        max-height: 150px;
+        padding: 0.75rem;
+    }
+    
+    .text-box p {
+        font-size: 0.85rem;
+        line-height: 1.4;
+    }
+    
+    .emotion-metrics {
+        grid-template-columns: 1fr;
+        gap: 0.75rem;
+    }
+    
+    .metric {
+        padding: 0.75rem;
+    }
+    
+    .metric-label {
+        font-size: 0.8rem;
+    }
+    
+    .metric-value {
+        font-size: 1.1rem;
+    }
+    
+    /* Fix for inline styles in HTML */
+    div[style*="grid-template-columns: 1fr 1fr"] {
+        grid-template-columns: 1fr !important;
+        gap: 1rem !important;
+    }
+    
+    div[style*="display: grid"] {
+        grid-template-columns: 1fr !important;
+        gap: 1rem !important;
+    }
+    
+    div[style*="background: #f8f9fa"] {
+        padding: 1rem !important;
+        margin: 1rem 0 !important;
+        font-size: 0.9rem !important;
+    }
+    
+    div[style*="background: #fff3cd"] {
+        padding: 0.75rem !important;
+        margin: 0.75rem 0 !important;
+        font-size: 0.85rem !important;
+    }
+    
+    div[style*="background: #fff3cd"] ul {
+        margin: 0.5rem 0 !important;
+        padding-left: 1rem !important;
+    }
+    
+    div[style*="background: #fff3cd"] li {
+        margin-bottom: 0.4rem !important;
+        line-height: 1.4 !important;
+    }
+    
+    /* Audio player mobile fixes */
+    audio {
+        width: 100% !important;
+        max-width: none !important;
+        height: 40px !important;
+    }
+    
+    /* Table mobile fixes */
+    table {
+        font-size: 0.85rem !important;
+    }
+    
+    table th,
+    table td {
+        padding: 0.5rem 0.75rem !important;
+    }
+}
+
+@media (max-width: 480px) {
+    .slide {
+        padding: 12px 8px;
+    }
+    
+    .slide-content {
+        padding: 12px 0;
+    }
+    
+    h1 {
+        font-size: 1.75rem;
+        margin-bottom: 0.75rem;
+    }
+    
+    h2 {
+        font-size: 1.5rem;
+        margin-bottom: 0.75rem;
+    }
+    
+    h3 {
+        font-size: 1rem;
+        margin-bottom: 0.5rem;
+    }
+    
+    .title {
+        font-size: 2rem;
+        margin-bottom: 1.5rem;
+    }
+    
+    p {
+        font-size: 0.9rem;
+        line-height: 1.5;
+        margin-bottom: 0.5rem;
+    }
+    
+    .nav-dots {
+        right: 4px;
+        gap: 4px;
+    }
+    
+    .dot {
+        width: 5px;
+        height: 5px;
+    }
+    
+    .navigation {
+        bottom: 12px;
+        gap: 0.5rem;
+    }
+    
+    .nav-arrow {
+        width: 40px;
+        height: 40px;
+        font-size: 0.9rem;
+        min-width: 40px;
+        min-height: 40px;
+    }
+    
+    .arrow {
+        width: 45px;
+        height: 45px;
+        font-size: 1.25rem;
+    }
+    
+    .comparison-container,
+    .audio-comparison {
+        gap: 0.75rem;
+        margin: 0.75rem 0;
+    }
+    
+    .comparison-item {
+        padding: 0.75rem;
+    }
+    
+    .text-box {
+        max-height: 120px;
+        padding: 0.5rem;
+    }
+    
+    .text-box p {
+        font-size: 0.8rem;
+        line-height: 1.3;
+    }
+    
+    /* Even smaller text for very small screens */
+    div[style*="background: #f8f9fa"] {
+        padding: 0.75rem !important;
+        margin: 0.75rem 0 !important;
+        font-size: 0.85rem !important;
+    }
+    
+    div[style*="background: #fff3cd"] {
+        padding: 0.5rem !important;
+        margin: 0.5rem 0 !important;
+        font-size: 0.8rem !important;
+    }
+    
+    table {
+        font-size: 0.8rem !important;
+    }
+    
+    table th,
+    table td {
+        padding: 0.4rem 0.5rem !important;
     }
 }
 
