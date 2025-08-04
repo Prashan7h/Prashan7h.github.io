@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="theme-color" content="#fafafa">
+    <title>ElevenLabs Dubbing Studio Analysis</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="presentation-container">
+        <!-- Navigation -->
+        <nav class="nav-dots">
+            <div class="dot active" data-slide="1"></div>
+            <div class="dot" data-slide="2"></div>
+            <div class="dot" data-slide="3"></div>
+            <div class="dot" data-slide="4"></div>
+            <div class="dot" data-slide="5"></div>
+            <div class="dot" data-slide="6"></div>
+            <div class="dot" data-slide="7"></div>
+            <div class="dot" data-slide="8"></div>
+            <div class="dot" data-slide="9"></div>
+        </nav>
+
+        <!-- Slide 1: Title -->
+        <section class="slide active" id="slide-1">
+            <div class="slide-content">
+                <h1 class="title">My Analysis of ElevenLabs Dubbing Studio</h1>
+                <div class="arrow-container">
+                    <div class="arrow">→</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Slide 2: Context -->
+        <section class="slide" id="slide-2">
+            <div class="slide-content">
+                <h2>Context</h2>
+                <div class="text-content" style="font-size: 1.2em; line-height: 1.8;">
+                    <p>For customers, dubbing is:</p>
+                    <p><strong>Video In &nbsp;→&nbsp; Video Out</strong> (new audio track)</p>
+                    <p>Delivery this involves multiple stages:</p>
+                    <p>
+                        <strong>Extracting Audio &nbsp;→&nbsp; Transcription &nbsp;→&nbsp; Translation &nbsp;→&nbsp; AI Voice &nbsp;→&nbsp; Mapping Back to Video </strong>
+                    </p>
+                    <p style="font-size:1em; color:#555;">
+                        (This is a simplified view — in reality, there are multiple loops between these stages.)
+                    </p>
+                </div>
+                <div class="navigation">
+                    <div class="nav-arrow prev">←</div>
+                    <div class="nav-arrow next">→</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Slide 3: Additional Context -->
+        <section class="slide" id="slide-3">
+            <div class="slide-content">
+                <h2>Transcription Analysis Setup</h2>
+                <div class="text-content">
+                    <p>I took a small portion of <strong>Carl Sagan's Pale Blue Dot Speech</strong> and used their TTS model to generate AI voice, then transcribed it back to text.</p>
+                    
+                    <p><strong>Comparing both texts</strong></p>
+                    <p>
+                        Text:
+                    </p>
+                    
+                    <div style="background: #f8f9fa; padding: 1.5rem; border-radius: 12px; border: 1px solid rgba(26, 26, 26, 0.1); margin: 1.5rem 0; text-align: left; font-style: italic; line-height: 1.6;">
+                        <p style="margin: 0; color: #4a4a4a;">"Look again at that dot. That's here. That's home. That's us. On it everyone you love, everyone you know, everyone you ever heard of, every human being who ever was, lived out their lives. The aggregate of our joy and suffering, thousands of confident religions, ideologies, and economic doctrines, every hunter and forager, every hero and coward, every creator and destroyer of civilization, every king and peasant, every young couple in love, every mother and father, hopeful child, inventor and explorer, every teacher of morals, every corrupt politician, every "superstar," every "supreme leader," every saint and sinner in the history of our species lived there--on a mote of dust suspended in a sunbeam."</p>
+                    </div>
+                    
+                </div>
+                <div class="navigation">
+                    <div class="nav-arrow prev">←</div>
+                    <div class="nav-arrow next">→</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Slide 4: Transcription Measures -->
+        <section class="slide" id="slide-4">
+            <div class="slide-content">
+                <h2>Transcription Measures</h2>
+                
+                <!-- Audio Section -->
+                <div style="text-align: center; margin: 1rem 0;">
+                    <h3>AI-Generated Audio (TTS)</h3>
+                    <audio controls style="width: 100%; max-width: 400px; margin: 0.5rem 0;">
+                        <source src="ElevenLabs_2025-08-04T10_32_02_Liam_pre_sp100_s50_sb75_v3.mp3" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+                
+                <!-- Differences Highlighted -->
+                <div style="background: #fff3cd; border: 1px solid #ffeaa7; border-radius: 8px; padding: 1rem; margin: 1rem 0; text-align: left;">
+                    <h3 style="color: #856404; margin-bottom: 0.5rem; font-size: 1rem;">Key Differences Found:</h3>
+                    <ul style="color: #856404; margin: 0; padding-left: 1rem; font-size: 0.9rem;">
+                        <li><strong>Punctuation:</strong> "That's here." → "That's here," (period to comma)</li>
+                        <li><strong>Punctuation:</strong> "That's home." → "That's home," (period to comma)</li>
+                        <li><strong>Punctuation:</strong> "That's us." → "That's us," (period to comma)</li>
+                        <li><strong>Quotes:</strong> "superstar," → superstar (removed quotes)</li>
+                        <li><strong>Quotes:</strong> "supreme leader," → supreme leader, (removed quotes)</li>
+                        <li><strong>Punctuation:</strong> "lived there--on" → "lived there, on" (em dash to comma)</li>
+                    </ul>
+                </div>
+                
+                <div class="comparison-container">
+                    <div class="comparison-item">
+                        <h3>Original Text (Carl Sagan)</h3>
+                        <div class="text-box" style="height: 200px; overflow-y: auto; padding: 1rem;">
+                            <p style="font-size: 0.9rem; line-height: 1.4; margin: 0;">"Look again at that dot. That's here. That's home. That's us. On it everyone you love, everyone you know, everyone you ever heard of, every human being who ever was, lived out their lives. The aggregate of our joy and suffering, thousands of confident religions, ideologies, and economic doctrines, every hunter and forager, every hero and coward, every creator and destroyer of civilization, every king and peasant, every young couple in love, every mother and father, hopeful child, inventor and explorer, every teacher of morals, every corrupt politician, every "superstar," every "supreme leader," every saint and sinner in the history of our species lived there--on a mote of dust suspended in a sunbeam."</p>
+                        </div>
+                    </div>
+                    <div class="comparison-item">
+                        <h3>AI TTS → Transcription</h3>
+                        <div class="text-box" style="height: 200px; overflow-y: auto; padding: 1rem;">
+                            <p style="font-size: 0.9rem; line-height: 1.4; margin: 0;">"Look again at that dot. That's here, that's home, that's us. On it everyone you love, everyone you know, everyone you ever heard of, every human being who ever was lived out their lives. The aggregate of our joy and suffering, thousands of confident religions, ideologies, and economic doctrines, every hunter and forager, every hero and coward, every creator and destroyer of civilization, every king and peasant, every young couple in love, every mother and father, hopeful child, inventor and explorer, every teacher of morals, every corrupt politician, every superstar, every supreme leader, every saint and sinner in the history of our species lived there, on a mote of dust suspended in a sunbeam."</p>
+                        </div>
+                    </div>
+                </div>
+                
+
+                <div class="navigation">
+                    <div class="nav-arrow prev">←</div>
+                    <div class="nav-arrow next">→</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Slide 5: Transcription Results & Metrics -->
+        <section class="slide" id="slide-5">
+            <div class="slide-content">
+                <h2>Transcription Results & Metrics</h2>
+                <h3 style="text-align: center; font-weight: 600; color: #333; margin-bottom: 2rem; font-size: 1.2rem;">Summary: Near Perfect Transcription</h3>
+                
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; margin: 1rem 0; align-items: start;">
+                    <!-- Table on the left -->
+                    <div>
+                        <table style="width:100%; border-collapse:collapse; font-size:1.05em; background:#fff; box-shadow:0 2px 8px rgba(0,0,0,0.03); border-radius:12px; overflow:hidden;">
+                            <thead>
+                                <tr style="background:#f7f7f7;">
+                                    <th style="padding:0.75em 1em; text-align:left; font-weight:600; border-bottom:1px solid #eee;">Metric</th>
+                                    <th style="padding:0.75em 1em; text-align:left; font-weight:600; border-bottom:1px solid #eee;">Value</th>
+                                    <th style="padding:0.75em 1em; text-align:left; font-weight:400; border-bottom:1px solid #eee;">Notes</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td style="padding:0.75em 1em; border-bottom:1px solid #f2f2f2;">Levenshtein Distance</td>
+                                    <td style="padding:0.75em 1em; border-bottom:1px solid #f2f2f2;">23 / 714</td>
+                                    <td style="padding:0.75em 1em; border-bottom:1px solid #f2f2f2;">~3% of characters differ (all punctuation/spacing)</td>
+                                </tr>
+                                <tr>
+                                    <td style="padding:0.75em 1em; border-bottom:1px solid #f2f2f2;">BLEU Score</td>
+                                    <td style="padding:0.75em 1em; border-bottom:1px solid #f2f2f2;">0.87</td>
+                                    <td style="padding:0.75em 1em; border-bottom:1px solid #f2f2f2;">1-gram precision: 98.6%</td>
+                                </tr>
+                                <tr>
+                                    <td style="padding:0.75em 1em; border-bottom:1px solid #f2f2f2;">Match Score (no punctuation/spaces)</td>
+                                    <td style="padding:0.75em 1em; border-bottom:1px solid #f2f2f2;">100%</td>
+                                    <td style="padding:0.75em 1em; border-bottom:1px solid #f2f2f2;">Perfect word preservation</td>
+                                </tr>
+                                <tr>
+                                    <td style="padding:0.75em 1em; border-bottom:1px solid #f2f2f2;">BERTScore_F1</td>
+                                    <td style="padding:0.75em 1em; border-bottom:1px solid #f2f2f2;">0.96</td>
+                                    <td style="padding:0.75em 1em; border-bottom:1px solid #f2f2f2;">Excellent semantic similarity</td>
+                                </tr>
+                                <tr>
+                                    <td style="padding:0.75em 1em;">SentenceBERT Cosine</td>
+                                    <td style="padding:0.75em 1em;">0.99</td>
+                                    <td style="padding:0.75em 1em;">Very high similarity</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <!-- Text on the right -->
+                    <div style="font-size:1.05em; color:#222;">
+                        <ul style="margin-bottom:1.2em;">
+                            <li>Levenshtein distance of 23 over 714 characters means that only ~3% of characters differ, all entirely due to punctuation and spacing rather than actual words.</li>
+                            <li>The overall BLEU score is 0.87, with a near‑perfect 1‑gram precision of 98.6%, showing that almost every word was preserved in the round‑trip text.</li>
+                            <li>After removing all punctuation and spaces, the match score between the two texts is 100%!</li>
+                        </ul>
+
+                        <div style="font-size:0.98em; color:#555; margin-top:1em;">
+                            Note: This was a simple single‑speaker audio; with more complex dialogue, results may differ — but 100% word preservation here is impressive!!
+                        </div>
+                    </div>
+                </div>
+
+                <div class="navigation">
+                    <div class="nav-arrow prev">←</div>
+                    <div class="nav-arrow next">→</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Slide 6: Translation Metrics - English to Spanish -->
+        <section class="slide" id="slide-6">
+            <div class="slide-content">
+                <h2>Translation Metrics: English → Spanish</h2>
+                <h3 style="text-align: center; font-weight: 600; color: #333; margin-bottom: 2rem; font-size: 1.2rem;">Summary:Strong Semantic Alignment</h3>
+                
+                <!-- Summary Section -->
+                <div style="margin: 1rem 0;">
+                    <h3 style="text-align: center; margin-bottom: 1.5rem; color: #333;">Translation Quality Metrics</h3>
+                    
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: start;">
+                        <!-- Metrics Table -->
+                        <div>
+                            <table style="width:100%; border-collapse:collapse; font-size:1.05em; background:#fff; box-shadow:0 2px 8px rgba(0,0,0,0.03); border-radius:12px; overflow:hidden;">
+                                <thead>
+                                    <tr style="background:#f7f7f7;">
+                                        <th style="padding:0.75em 1em; text-align:left; font-weight:600; border-bottom:1px solid #eee;">Metric</th>
+                                        <th style="padding:0.75em 1em; text-align:left; font-weight:600; border-bottom:1px solid #eee;">Score</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td style="padding:0.75em 1em; border-bottom:1px solid #f2f2f2;">BERT</td>
+                                        <td style="padding:0.75em 1em; border-bottom:1px solid #f2f2f2;">0.82545</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="padding:0.75em 1em;">LaBSE Cosine</td>
+                                        <td style="padding:0.75em 1em;">0.9464</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        
+                        <!-- Summary Text -->
+                        <div style="font-size:1.05em; color:#222;">
+                            <p style="margin-bottom: 1rem; line-height: 1.6;">
+                                The Spanish translation preserves the original meaning well, with a BERTScore of 0.83 and a LaBSE cosine similarity of 0.95, indicating strong semantic alignment.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Audio Section -->
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; margin: 1rem 0;">
+                    <div style="text-align: center;">
+                        <h3>Original Audio (English)</h3>
+                        <audio controls style="width: 100%; max-width: 300px; margin: 0.5rem 0;">
+                            <source src="ElevenLabs_2025-08-04T10_32_02_Liam_pre_sp100_s50_sb75_v3.mp3" type="audio/mpeg">
+                            Your browser does not support the audio element.
+                        </audio>
+                    </div>
+                    <div style="text-align: center;">
+                        <h3>Translated Audio (Spanish)</h3>
+                        <audio controls style="width: 100%; max-width: 300px; margin: 0.5rem 0;">
+                            <source src="render_ijdYexpbKGKCvzxkj4lB.mp3" type="audio/mpeg">
+                            Your browser does not support the audio element.
+                        </audio>
+                    </div>
+                </div>
+                
+                <div class="comparison-container">
+                    <div class="comparison-item">
+                        <h3>Original Text (English)</h3>
+                        <div class="text-box" style="height: 200px; overflow-y: auto; padding: 1rem;">
+                            <p style="font-size: 0.9rem; line-height: 1.4; margin: 0;">"Look again at that dot. That's here, that's home, that's us. On it everyone you love, everyone you know, everyone you ever heard of, every human being who ever was lived out their lives. The aggregate of our joy and suffering, thousands of confident religions, ideologies, and economic doctrines, every hunter and forager, every hero and coward, every creator and destroyer of civilization, every king and peasant, every young couple in love, every mother and father, hopeful child, inventor and explorer, every teacher of morals, every corrupt politician, every superstar, every supreme leader, every saint and sinner in the history of our species lived there, on a mote of dust suspended in a sunbeam."</p>
+                        </div>
+                    </div>
+                    <div class="comparison-item">
+                        <h3>Translated Text (Spanish)</h3>
+                        <div class="text-box" style="height: 200px; overflow-y: auto; padding: 1rem;">
+                            <p style="font-size: 0.9rem; line-height: 1.4; margin: 0;">"Mira de nuevo ese punto. Ahí está aquí, ahí está el hogar, ahí estamos nosotros. En él, todos los que amas, todos los que conoces, todos de quienes has oído hablar, todos los seres humanos que han existido vivieron sus vidas. El conjunto de nuestra alegría y sufrimiento, miles de religiones, ideologías y doctrinas económicas confiadas, cada cazador y recolector, cada héroe y cobarde, cada creador y destructor de civilización, cada rey y campesino, cada pareja joven enamorada, cada madre y padre, niño esperanzado, inventor y explorador, cada maestro de moral, cada político corrupto, cada superestrella, cada líder supremo, cada santo y pecador en la historia de nuestra especie vivieron allí, en una mota de polvo suspendida en un rayo de sol."</p>
+                        </div>
+                    </div>
+
+                
+                <div class="navigation">
+                    <div class="nav-arrow prev">←</div>
+                    <div class="nav-arrow next">→</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Slide 7: Translation Metrics - English to Hindi -->
+        <section class="slide" id="slide-7">
+            <div class="slide-content">
+                <h2>Translation Metrics: English → Hindi</h2>
+                <h3 style="text-align: center; font-weight: 600; color: #333; margin-bottom: 2rem; font-size: 1.2rem;">Summary: Decent Translation Quality</h3>
+                
+                <!-- Summary Section -->
+                <div style="margin: 1rem 0;">
+                    <h3 style="text-align: center; margin-bottom: 1.5rem; color: #333;">Translation Quality Metrics</h3>
+                    
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: start;">
+                        <!-- Metrics Table -->
+                        <div>
+                            <table style="width:100%; border-collapse:collapse; font-size:1.05em; background:#fff; box-shadow:0 2px 8px rgba(0,0,0,0.03); border-radius:12px; overflow:hidden;">
+                                <thead>
+                                    <tr style="background:#f7f7f7;">
+                                        <th style="padding:0.75em 1em; text-align:left; font-weight:600; border-bottom:1px solid #eee;">Metric</th>
+                                        <th style="padding:0.75em 1em; text-align:left; font-weight:600; border-bottom:1px solid #eee;">Score</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td style="padding:0.75em 1em; border-bottom:1px solid #f2f2f2;">BERT</td>
+                                        <td style="padding:0.75em 1em; border-bottom:1px solid #f2f2f2;">0.6559</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="padding:0.75em 1em;">LaBSE Cosine</td>
+                                        <td style="padding:0.75em 1em;">0.8214</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        
+                        <!-- Summary Text -->
+                        <div style="font-size:1.05em; color:#222;">
+                            <p style="margin-bottom: 1rem; line-height: 1.6;">
+                                Not as good as Spanish but still great! As I speak Hindi, I thought it was overall a decent translation.
+                            </p>
+                            <p style="margin-bottom: 1rem; line-height: 1.6;">
+                                "Messi is turning around Tim Parker" is translated to "Messi is turning Tim Parker around" which is not bad but that's scope for improvement I guess.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+                
+                <div class="comparison-container">
+                    <div class="comparison-item">
+                        <h3>Original Text (English)</h3>
+                        <div class="text-box" style="height: 200px; overflow-y: auto; padding: 1rem;">
+                            <p style="font-size: 0.9rem; line-height: 1.4; margin: 0;">"For Dortmund. Here's Messi, trying to turn around Tim Parker, who's chasing after him, and then spinning again. Still Lionel Messi surveying, finding Jordi Alba. Back to Messi!"</p>
+                        </div>
+                    </div>
+                    <div class="comparison-item">
+                        <h3>Translated Text (Hindi)</h3>
+                        <div class="text-box" style="height: 200px; overflow-y: auto; padding: 1rem;">
+                            <p style="font-size: 0.9rem; line-height: 1.4; margin: 0;">"डॉर्टमुंड के लिए। यहाँ मेसी हैं, टिम पार्कर को घुमाने की कोशिश कर रहे हैं, जो उनका पीछा कर रहे हैं, और फिर से घूम रहे हैं। फिर भी लियोनेल मेसी देख रहे हैं, जोर्डी अल्बा को ढूंढ रहे हैं। वापस मेसी के पास!"</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="navigation">
+                    <div class="nav-arrow prev">←</div>
+                    <div class="nav-arrow next">→</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Slide 8: AI Voice Generation Comparison -->
+        <section class="slide" id="slide-8">
+            <div class="slide-content">
+                <h2>AI Voice Generation Analysis</h2>
+                <h3 style="text-align: center; font-weight: 600; color: #333; margin-bottom: 2rem; font-size: 1.2rem;">Summary: Emotional Expression Differences</h3>
+                
+                <!-- Audio Comparison -->
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; margin: 2rem 0;">
+                    <div style="text-align: center;">
+                        <h3>Original English Audio</h3>
+                        <audio controls style="width: 100%; max-width: 350px; margin: 1rem 0;">
+                            <source src="clip-njTEmeXKQ6cPYa43tSC7.wav" type="audio/wav">
+                            Your browser does not support the audio element.
+                        </audio>
+                        <p style="font-size: 0.95rem; color: #666; margin-top: 1rem;">
+                            <strong>Key Feature:</strong> Screams "Meeeessssiiii" with high emotional intensity
+                        </p>
+                    </div>
+                    <div style="text-align: center;">
+                        <h3>Hindi AI Voice Generation</h3>
+                        <audio controls style="width: 100%; max-width: 350px; margin: 1rem 0;">
+                            <source src="render_V5Rwawa6ZjDeGiCULZCC (1).mp3" type="audio/mpeg">
+                            Your browser does not support the audio element.
+                        </audio>
+                        <p style="font-size: 0.95rem; color: #666; margin-top: 1rem;">
+                            <strong>Key Feature:</strong> Says "Messi" with neutral tone
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- Analysis Section -->
+                <div style="background: #f8f9fa; padding: 2rem; border-radius: 12px; margin: 2rem 0; text-align: center;">
+                    <h3 style="margin-bottom: 1.5rem; color: #333;">Analysis: Emotional Expression Gap</h3>
+                    <div style="max-width: 600px; margin: 0 auto; font-size: 1.05em; color: #222; line-height: 1.6;">
+                        <p style="margin-bottom: 1rem;">
+                            The English commentary captures the excitement and emotion of the moment with an elongated, passionate "Meeeessssiiii", while the Hindi AI voice generation produces a more neutral "Messi" pronunciation.
+                        </p>
+   
+                    </div>
+                </div>
+                
+                <div class="navigation">
+                    <div class="nav-arrow prev">←</div>
+                    <div class="nav-arrow next">→</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Slide 9: Overview and Suggestions -->
+        <section class="slide" id="slide-9">
+            <div class="slide-content">
+                <h2 style="color: #000; font-weight: 300; letter-spacing: -0.02em;">Overview & Suggestions</h2>
+                <h3 style="text-align: center; font-weight: 400; color: #333; margin-bottom: 3rem; font-size: 1.1rem; letter-spacing: 0.01em;">Key Findings and Future Improvements</h3>
+                
+                <!-- Overall Assessment -->
+                <div style="margin: 3rem 0;">
+                    <h3 style="margin-bottom: 2rem; color: #000; text-align: center; font-weight: 400; font-size: 1.3rem;">Overall Assessment</h3>
+                    
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: start;">
+                        <!-- Strengths -->
+                        <div style="background: #fff; border: 1px solid #e0e0e0; border-radius: 8px; padding: 2rem; box-shadow: 0 2px 8px rgba(0,0,0,0.05);">
+                            <h4 style="color: #000; margin-bottom: 1.5rem; font-size: 1rem; font-weight: 500; text-transform: uppercase; letter-spacing: 0.05em;">Strengths</h4>
+                            <ul style="color: #333; margin: 0; padding-left: 1.5rem; line-height: 1.8; font-size: 0.95rem;">
+                                <li style="margin-bottom: 0.8rem;"><strong>Highly capable transcription and translation</strong> - Near perfect accuracy in our tests</li>
+                                <li style="margin-bottom: 0.8rem;"><strong>Excellent sound effects integration</strong> - Great ability to add audio enhancements</li>
+                                <li style="margin-bottom: 0.8rem;"><strong>Strong semantic preservation</strong> - Maintains meaning across languages</li>
+                            </ul>
+                        </div>
+                        
+                        <!-- Areas for Improvement -->
+                        <div style="background: #fff; border: 1px solid #e0e0e0; border-radius: 8px; padding: 2rem; box-shadow: 0 2px 8px rgba(0,0,0,0.05);">
+                            <h4 style="color: #000; margin-bottom: 1.5rem; font-size: 1rem; font-weight: 500; text-transform: uppercase; letter-spacing: 0.05em;">Areas for Improvement</h4>
+                            <ul style="color: #333; margin: 0; padding-left: 1.5rem; line-height: 1.8; font-size: 0.95rem;">
+                                <li style="margin-bottom: 0.8rem;"><strong>AI voices sometimes fall short of expressivity</strong> - Emotional intensity gaps</li>
+                                <li style="margin-bottom: 0.8rem;"><strong>Limited emotional modulation</strong> - Neutral tone in passionate contexts</li>
+                                <li style="margin-bottom: 0.8rem;"><strong>Audio track synchronization challenges</strong></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Suggestions -->
+                <div style="margin: 3rem 0;">
+                    <h3 style="margin-bottom: 2rem; color: #000; text-align: center; font-weight: 400; font-size: 1.3rem;">Suggestions for Enhancement</h3>
+                    
+                    <div style="background: #fff; border: 1px solid #e0e0e0; border-radius: 8px; padding: 2.5rem; box-shadow: 0 2px 8px rgba(0,0,0,0.05);">
+                        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 3rem;">
+                            <!-- Technical Improvements -->
+                            <div>
+                                <h4 style="color: #000; margin-bottom: 1.5rem; font-size: 1rem; font-weight: 500; text-transform: uppercase; letter-spacing: 0.05em;">Technical Improvements</h4>
+                                <ul style="color: #333; margin: 0; padding-left: 1.5rem; line-height: 1.8; font-size: 0.95rem;">
+                                    <li style="margin-bottom: 0.8rem;"><strong>Word-level emotion modulation</strong> - Leverage v3's [happy] type tags for granular control</li>
+                                    <li style="margin-bottom: 0.8rem;"><strong>Audio track synchronization</strong> - Automatic cutting and overlapping of long tracks</li>
+                                    <li style="margin-bottom: 0.8rem;"><strong>Segment-based processing</strong> - Break content into smaller, manageable segments</li>
+                                    <li style="margin-bottom: 0.8rem;"><strong>Enhanced audio features</strong> - Better control over pace, timing, and rhythm</li>
+                                </ul>
+                            </div>
+                            
+                            <!-- Workflow Enhancements -->
+                            <div>
+                                <h4 style="color: #000; margin-bottom: 1.5rem; font-size: 1rem; font-weight: 500; text-transform: uppercase; letter-spacing: 0.05em;">Workflow Enhancements</h4>
+                                <ul style="color: #333; margin: 0; padding-left: 1.5rem; line-height: 1.8; font-size: 0.95rem;">
+                                    <li style="margin-bottom: 0.8rem;"><strong>Frame-to-frame video control</strong> - Precise synchronization with visual elements</li>
+                                    <li style="margin-bottom: 0.8rem;"><strong>Real-time preview capabilities</strong> - Instant feedback during editing</li>
+                                    <li style="margin-bottom: 0.8rem;"><strong>Batch processing options</strong> - Handle multiple segments simultaneously</li>
+                                    <li style="margin-bottom: 0.8rem;"><strong>Custom emotion libraries</strong> - Pre-defined emotional expressions</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Final Thoughts -->
+                <div style="background: #fff; border: 1px solid #e0e0e0; border-radius: 8px; padding: 2rem; margin: 3rem 0; text-align: center; box-shadow: 0 2px 8px rgba(0,0,0,0.05);">
+                    <h4 style="color: #000; margin-bottom: 1.5rem; font-size: 1rem; font-weight: 500; text-transform: uppercase; letter-spacing: 0.05em;">Final Thoughts</h4>
+                    <p style="color: #333; margin: 0; line-height: 1.8; font-size: 1rem; max-width: 600px; margin: 0 auto;">
+                        ElevenLabs Dubbing Studio is amazing with its strong foundation in transcription and translation and amazing voice models. 
+                        The key to unlocking its full potential lies in bridging the emotional expression gap and providing more granular control over audio and video features.
+                    </p>
+                </div>
+                
+                <div class="navigation">
+                    <div class="nav-arrow prev">←</div>
+                    <div class="nav-arrow next">→</div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html> 
