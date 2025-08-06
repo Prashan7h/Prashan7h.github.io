@@ -804,13 +804,6 @@
 
     </div>
 
-    <!-- Test script to verify JavaScript is working -->
-    <script>
-        console.log('Inline script test - JavaScript is working');
-        console.log('Current page URL:', window.location.href);
-        console.log('Script.js should be at:', window.location.href.replace(/\/[^\/]*$/, '/script.js'));
-    </script>
-    
-    <script src="script.js" onerror="console.error('Failed to load script.js')" onload="console.log('script.js loaded successfully via onload')"></script>
+    <script src="script.js"></script>
 </body>
 </html> 
