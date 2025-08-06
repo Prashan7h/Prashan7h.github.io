@@ -25,33 +25,83 @@
             <div class="dot" data-slide="8"></div>
             <div class="dot" data-slide="9"></div>
             <div class="dot" data-slide="10"></div>
+            <div class="dot" data-slide="11"></div>
+            <div class="dot" data-slide="12"></div>
+            <div class="dot" data-slide="13"></div>
         </nav>
 
         <!-- Slide 1: Title -->
         <section class="slide active" id="slide-1">
             <div class="slide-content">
                 <h1 class="title">My Analysis of ElevenLabs Dubbing Studio</h1>
+                <div style="text-align: center; margin-top: 2rem;">
+                    <h2 style="font-size: 1.5rem; font-weight: 400; color: #333; margin-bottom: 0.5rem;">Prashanth Shankar</h2>
+                    <p style="font-size: 1.1rem; color: #666; margin: 0;">Analyst, formerly with Papercup (AI dubbing startup).</p>
+                    <p style="font-size: 1rem; color: #0077b5; margin: 0.5rem 0 0 0;">
+                        <a href="https://www.linkedin.com/in/prashan7h/" target="_blank" style="color: #0077b5; text-decoration: none; border-bottom: 1px solid #0077b5;">LinkedIn</a>
+                    </p>
+                </div>
                 <div class="arrow-container">
                     <div class="arrow">→</div>
                 </div>
             </div>
         </section>
 
-        <!-- Slide 2: Context -->
+        <!-- Slide 2: Overview and Suggestions -->
         <section class="slide" id="slide-2">
             <div class="slide-content">
-                <h2>Context</h2>
-                <div class="text-content" style="font-size: 1.2em; line-height: 1.8;">
-                    <p>For customers, dubbing is:</p>
-                    <p><strong>Video In &nbsp;→&nbsp; Video Out</strong> (new audio track)</p>
-                    <p>Delivery this involves multiple stages:</p>
-                    <p>
-                        <strong>Extracting Audio &nbsp;→&nbsp; Transcription &nbsp;→&nbsp; Translation &nbsp;→&nbsp; AI Voice &nbsp;→&nbsp; Mapping Back to Video </strong>
-                    </p>
-                    <p style="font-size:1em; color:#555;">
-                        (This is a simplified view — in reality, there are multiple loops between these stages.)
-                    </p>
+                <h2 style="color: #000; font-weight: 300; letter-spacing: -0.02em;">Overview & Suggestions</h2>
+                <h3 style="text-align: center; font-weight: 400; color: #333; margin-bottom: 3rem; font-size: 1.1rem; letter-spacing: 0.01em;">My Thoughts</h3>
+                
+                <!-- My Thoughts -->
+                <div style="margin: 2rem 0;">
+                    <div style="background: #fff; border: 1px solid #e0e0e0; border-radius: 8px; padding: 1.5rem; box-shadow: 0 2px 8px rgba(0,0,0,0.05); text-align: center;">
+                                                <p style="color: #333; margin: 0; line-height: 1.6; font-size: 1.1rem; max-width: 800px; margin: 0 auto;">
+                            <strong>Overall:</strong> The platform achieved ~80% accuracy on the first attempt, but refining the remaining small errors proved challenging due to some product limitations I encountered.
+                        </p>
+ 
+                        <div style="margin: 2rem 0;"></div>
+
+                        <p style="color: #333; margin: 0; line-height: 1.6; font-size: 1.1rem; max-width: 800px; margin: 0 auto;">
+                            <strong>Approach:</strong> I analysed each stage of the dubbing pipeline transcription, translation, AI voice generation, and lip-sync—independently. The next slides break down the setup and findings from each step.
+                        </p>
+                        
+                    </div>
                 </div>
+
+                <!-- Overall Assessment -->
+                <div style="margin: 2rem 0;">
+                    <h3 style="margin-bottom: 1.5rem; color: #000; text-align: center; font-weight: 400; font-size: 1.3rem;">Strengths & Areas for Improvement</h3>
+                    
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: start;">
+                        <!-- Strengths -->
+                        <div style="background: #fff; border: 1px solid #e0e0e0; border-radius: 8px; padding: 1.5rem; box-shadow: 0 2px 8px rgba(0,0,0,0.05);">
+                            <h4 style="color: #000; margin-bottom: 1rem; font-size: 1rem; font-weight: 500; text-transform: uppercase; letter-spacing: 0.05em;">Strengths</h4>
+                            <ul style="color: #333; margin: 0; padding-left: 1.5rem; line-height: 1.6; font-size: 0.95rem;">
+                                <li style="margin-bottom: 0.6rem;"><strong>Highly expressive and diverse voice models</strong></li>
+                                <li style="margin-bottom: 0.6rem;"><strong>Excellent transcription accuracy</strong></li>
+                                <li style="margin-bottom: 0.6rem;"><strong>Very high-quality translations</strong></li>
+                                <li style="margin-bottom: 0.6rem;"><strong>Minimal lip-sync errors</strong></li>
+                                <li style="margin-bottom: 0.6rem;"><strong>Effective background sound separation</strong></li>
+                            </ul>
+                        </div>
+                        
+                        <!-- Areas for Improvement -->
+                        <div style="background: #fff; border: 1px solid #e0e0e0; border-radius: 8px; padding: 1.5rem; box-shadow: 0 2px 8px rgba(0,0,0,0.05);">
+                            <h4 style="color: #000; margin-bottom: 1rem; font-size: 1rem; font-weight: 500; text-transform: uppercase; letter-spacing: 0.05em;">Areas for Improvement</h4>
+                            <ul style="color: #333; margin: 0; padding-left: 1.5rem; line-height: 1.6; font-size: 0.95rem;">
+                                <li style="margin-bottom: 0.6rem;"><strong>Enhance expressivity for non-cloned voices</strong> – currently less natural compared to cloned voices</li>
+                                <li style="margin-bottom: 0.6rem;"><strong>Introduce more granular controls for expressivity at the word level</strong> – e.g., integrate the advanced v3 [tags] into dubbing</li>
+                                <li style="margin-bottom: 0.6rem;"><strong>Increase text editing flexibility</strong> – enable splitting and merging using text alongside audio and pacing adjustments</li>
+                                <li style="margin-bottom: 0.6rem;"><strong>Improve speaker detection</strong> – leveraging video analytics could make this more accurate</li>
+                                <li style="margin-bottom: 0.6rem;"><strong>Enable frame-by-frame editing</strong> – to allow finer adjustments in dubbing</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+
+                
                 <div class="navigation">
                     <div class="nav-arrow prev">←</div>
                     <div class="nav-arrow next">→</div>
@@ -64,7 +114,7 @@
             <div class="slide-content">
                 <h2>Transcription Analysis Setup</h2>
                 <div class="text-content">
-                    <p>I took a small portion of <strong>Carl Sagan's Pale Blue Dot Speech</strong> and used their TTS model to generate AI voice, then transcribed it back to text to compare both texts</p>
+                    <p>I took a small portion of <strong>Carl Sagan's <a href="https://en.wikipedia.org/wiki/Pale_Blue_Dot" target="_blank" style="color: #0077b5; text-decoration: none; border-bottom: 1px solid #0077b5;">Pale Blue Dot</a> Speech</strong> as an example and used their TTS model to generate AI voice, then transcribed it back to text to compare both texts</p>
                     
                     <p><strong></strong></p>
                     <p>
@@ -90,7 +140,7 @@
                 
                 <!-- Audio Section -->
                 <div style="text-align: center; margin: 1rem 0;">
-                    <h3>AI-Generated Audio (TTS)</h3>
+                    <h3>AI Voice (Generated via ElevenLabs)</h3>
                     <audio controls style="width: 100%; max-width: 400px; margin: 0.5rem 0;">
                         <source src="ElevenLabs_2025-08-04T10_32_02_Liam_pre_sp100_s50_sb75_v3.mp3" type="audio/mpeg">
                         Your browser does not support the audio element.
@@ -118,7 +168,7 @@
                         </div>
                     </div>
                     <div class="comparison-item">
-                        <h3>AI TTS → Transcription</h3>
+                        <h3>AI TTS → Transcription (Generated via ElevenLabs)</h3>
                         <div class="text-box" style="height: 200px; overflow-y: auto; padding: 1rem;">
                             <p style="font-size: 0.9rem; line-height: 1.4; margin: 0;">"Look again at that dot. That's here, that's home, that's us. On it everyone you love, everyone you know, everyone you ever heard of, every human being who ever was lived out their lives. The aggregate of our joy and suffering, thousands of confident religions, ideologies, and economic doctrines, every hunter and forager, every hero and coward, every creator and destroyer of civilization, every king and peasant, every young couple in love, every mother and father, hopeful child, inventor and explorer, every teacher of morals, every corrupt politician, every superstar, every supreme leader, every saint and sinner in the history of our species lived there, on a mote of dust suspended in a sunbeam."</p>
                         </div>
@@ -355,7 +405,7 @@
         <section class="slide" id="slide-8">
             <div class="slide-content">
                 <h2>Zero-Shot Dubbing Comparison</h2>
-                <h3 style="text-align: center; font-weight: 600; color: #333; margin-bottom: 2rem; font-size: 1.2rem;">Impressive Localization with no edits. Translation was great. I did not need to edit anything.</h3>
+                <h3 style="text-align: center; font-weight: 600; color: #000; margin-bottom: 2rem; font-size: 1.2rem;">Impressive Localization with no edits. Translation was great. I did not need to edit anything.</h3>
             
                 
                 <!-- Video Comparison -->
@@ -388,11 +438,184 @@
             </div>
         </section>
 
-        <!-- Slide 9: AI Voice Generation Comparison -->
+        <!-- Slide 9: Complex Dubbing Analysis - Seinfeld -->
         <section class="slide" id="slide-9">
             <div class="slide-content">
+                <h2>Complex Dubbing Analysis: Seinfeld</h2>
+                <h3 style="text-align: center; font-weight: 600; color: #000; margin-bottom: 2rem; font-size: 1.2rem;">Multi-Speaker Scene with expressivity</h3>
+                
+                <!-- Three Section Layout -->
+                <div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 2rem; margin: 2rem 0; height: 60vh;">
+                    <!-- English Video Section -->
+                    <div style="text-align: center; display: flex; flex-direction: column;">
+                        <h3 style="margin-bottom: 1rem; color: #000;">English Original</h3>
+                        <video controls style="width: 100%; height: 100%; object-fit: cover; border-radius: 8px;">
+                            <source src="yt1z.net - Jerry Gets Mad At Kramer Shorts Seinfeld (720p).mp4" type="video/mp4">
+                            Your browser does not support the video element.
+                        </video>
+                    </div>
+                    
+                    <!-- Hindi Dubbed Section -->
+                    <div style="text-align: center; display: flex; flex-direction: column;">
+                        <h3 style="margin-bottom: 1rem; color: #000;">Hindi Dubbed</h3>
+                        <video controls style="width: 100%; height: 100%; object-fit: cover; border-radius: 8px;">
+                            <source src="render_jFhpoxHPwoLdRHCaW6oR.mp4" type="video/mp4">
+                            Your browser does not support the video element.
+                        </video>
+                    </div>
+                    
+                    <!-- Comments Section -->
+                    <div style="display: flex; flex-direction: column; height: 100%; overflow-y: auto;">
+                        <h3 style="margin-bottom: 1rem; color: #000;">Analysis & Comments</h3>
+                        
+                        <!-- Overview -->
+                        <div style="background: #f5f5f5; border: 1px solid #000; border-radius: 8px; padding: 1rem; margin-bottom: 1rem;">
+                            <h4 style="color: #000; margin-bottom: 0.5rem; font-size: 0.9rem;">Overview</h4>
+                            <p style="font-size: 0.85rem; color: #000; margin: 0; line-height: 1.4;">
+                                While the first output was good (got to 80%), it was difficult to improve with current features.
+                            </p>
+                        </div>
+                        
+                        <!-- Issues Section -->
+                        <div style="background: #f5f5f5; border: 1px solid #000; border-radius: 8px; padding: 1rem; margin-bottom: 1rem;">
+                            <h4 style="color: #000; margin-bottom: 0.5rem; font-size: 0.9rem;">Issues Found</h4>
+                            <ul style="font-size: 0.8rem; color: #000; margin: 0; padding-left: 1rem; line-height: 1.3;">
+                                <li style="margin-bottom: 0.3rem;">Detected 2 speakers instead of 3, even when specified 3 speakers</li>
+                                <li style="margin-bottom: 0.3rem;">Cloned voices have higher expressivity than non-cloned voices</li>
+                                <li style="margin-bottom: 0.3rem;">Retranslate button is not obvious</li>
+                                <li style="margin-bottom: 0.3rem;">Can't manipulate emotions of specific words</li>
+                                <li style="margin-bottom: 0.3rem;">Certain portions in Hindi seem rushed; expanding audio duration changes voice and sounds muffled</li>
+                                <li style="margin-bottom: 0.3rem;">Could not split segments into smaller segments or combine them based on text</li>
+                                <li style="margin-bottom: 0.3rem;">Small translation errors mainly on expressions</li>
+                            </ul>
+                        </div>
+                        
+                        <!-- Strengths Section -->
+                        <div style="background: #f5f5f5; border: 1px solid #000; border-radius: 8px; padding: 1rem; margin-bottom: 1rem;">
+                            <h4 style="color: #000; margin-bottom: 0.5rem; font-size: 0.9rem;">Things It Did Well</h4>
+                            <ul style="font-size: 0.8rem; color: #000; margin: 0; padding-left: 1rem; line-height: 1.3;">
+                                <li style="margin-bottom: 0.3rem;">Nice background separation</li>
+                                <li style="margin-bottom: 0.3rem;">Good lip sync since original and dubbed audio match in length and are aligned</li>
+                                <li style="margin-bottom: 0.3rem;">80% of dubbing was zero-shot</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="navigation">
+                    <div class="nav-arrow prev">←</div>
+                    <div class="nav-arrow next">→</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Slide 10: Deep Dive Analysis & Improvement Suggestions -->
+        <section class="slide" id="slide-10">
+            <div class="slide-content">
+                <h2>Deep Dive: Issues & Improvement Suggestions</h2>
+                <h3 style="text-align: center; font-weight: 600; color: #000; margin-bottom: 2rem; font-size: 1.2rem;">Detailed Analysis with Audio Comparisons & UI Screenshots</h3>
+                
+                <!-- Issue 1: Cloned vs Non-Cloned Voice Expressivity -->
+                <div style="margin: 2rem 0;">
+                    <h3 style="color: #000; margin-bottom: 1.5rem; font-size: 1.3rem;">Issue 1: Cloned Voices Have Higher Expressivity</h3>
+                    
+                    <!-- Audio Comparison -->
+                    <div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 1.5rem; margin: 1.5rem 0;">
+                        <div style="text-align: center; background: #fff; border-radius: 8px; padding: 1rem; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+                            <h4 style="margin-bottom: 0.5rem; color: #000; font-size: 0.9rem;">Original (English)</h4>
+                            <audio controls style="width: 100%; max-width: 200px;">
+                                <source src="clip-McnbrSnkQRXEth0MZq97.wav" type="audio/wav">
+                                Your browser does not support the audio element.
+                            </audio>
+                        </div>
+                        <div style="text-align: center; background: #fff; border-radius: 8px; padding: 1rem; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+                            <h4 style="margin-bottom: 0.5rem; color: #000; font-size: 0.9rem;">Hindi (Cloned Voice)</h4>
+                            <audio controls style="width: 100%; max-width: 200px;">
+                                <source src="clip-LojyoToOeYUMbMZh7wbS.wav" type="audio/wav">
+                                Your browser does not support the audio element.
+                            </audio>
+                        </div>
+                        <div style="text-align: center; background: #fff; border-radius: 8px; padding: 1rem; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+                            <h4 style="margin-bottom: 0.5rem; color: #000; font-size: 0.9rem;">Hindi (Non-Cloned Voice)</h4>
+                            <audio controls style="width: 100%; max-width: 200px;">
+                                <source src="clip-huNcGSCQ34zCMpFhb7qf.wav" type="audio/wav">
+                                Your browser does not support the audio element.
+                            </audio>
+                        </div>
+                    </div>
+                    
+                    <!-- Suggestion -->
+                    <div style="background: #f5f5f5; border: 1px solid #000; border-radius: 8px; padding: 1rem; margin: 1rem 0;">
+                        <h4 style="color: #000; margin-bottom: 0.5rem; font-size: 0.9rem;">Suggestion</h4>
+                        <p style="font-size: 0.85rem; color: #000; margin: 0; line-height: 1.4;">
+                            A potential approach could be to clone the voice multiple times with gradually reduced similarity scores this might help retain emotional expressiveness while making the voice sound more distinct from the original.
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- Issue 2: UI/UX Problems -->
+                <div style="margin: 2rem 0;">
+                    <h3 style="color: #000; margin-bottom: 1.5rem; font-size: 1.3rem;">Issue 2: UI/UX & Control Limitations</h3>
+                    
+                    <!-- Screenshot and Analysis -->
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; margin: 1.5rem 0;">
+                        <div style="text-align: center;">
+                            <h4 style="margin-bottom: 1rem; color: #000;">Current Interface Issues</h4>
+                            <img src="Screenshot 2025-08-06 at 11.59.42.png" alt="UI Screenshot showing retranslate button and control limitations" style="width: 100%; max-width: 400px; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+                            <p style="font-size: 0.8rem; color: #666; margin-top: 0.5rem;">Retranslate button is not obvious to find and can't manipulate specific word emotions</p>
+                        </div>
+                        <div style="background: #f5f5f5; border: 1px solid #000; border-radius: 8px; padding: 1rem;">
+                            <h4 style="color: #000; margin-bottom: 0.5rem; font-size: 0.9rem;">Suggested Improvement</h4>
+                            <p style="font-size: 0.85rem; color: #000; margin: 0; line-height: 1.4;">
+                                Add a control panel at segment level on texts with:
+                            </p>
+                            <ul style="font-size: 0.8rem; color: #000; margin: 0.5rem 0 0 0; padding-left: 1rem; line-height: 1.3;">
+                                <li>Word-level emotion controls</li>
+                                <li>Prominent retranslate buttons - it was not obvious to find</li>
+                                <li>Segment splitting/combining tools</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Issue 3: Speaker Detection -->
+                <div style="margin: 2rem 0;">
+                    <h3 style="color: #000; margin-bottom: 1.5rem; font-size: 1.3rem;">Issue 3: Speaker Detection Problems</h3>
+                    
+                    <!-- Gemini Analysis Screenshot -->
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; margin: 1.5rem 0;">
+                        <div style="text-align: center;">
+                            <h4 style="margin-bottom: 1rem; color: #000;">AI Video Analysis</h4>
+                            <img src="Screenshot 2025-08-06 at 13.55.24.png" alt="Gemini detecting speakers in video" style="width: 100%; max-width: 400px; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+                            <p style="font-size: 0.8rem; color: #666; margin-top: 0.5rem;">Gemini model detecting current number of speakers</p>
+                        </div>
+                        <div style="background: #f5f5f5; border: 1px solid #000; border-radius: 8px; padding: 1rem;">
+                            <h4 style="color: #000; margin-bottom: 0.5rem; font-size: 0.9rem;">Suggested Enhancement</h4>
+                            <p style="font-size: 0.85rem; color: #000; margin: 0; line-height: 1.4;">
+                                Integrate video analytics using Gemini models that can perform video analysis of characters to:
+                            </p>
+                            <ul style="font-size: 0.8rem; color: #000; margin: 0.5rem 0 0 0; padding-left: 1rem; line-height: 1.3;">
+                                <li>Automatically detect number of speakers</li>
+                                <li>Identify individual characters</li>
+                                <li>Map speakers to visual characters</li>
+                                <li>Improve speaker segmentation accuracy</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="navigation">
+                    <div class="nav-arrow prev">←</div>
+                    <div class="nav-arrow next">→</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Slide 11: AI Voice Generation Comparison -->
+        <section class="slide" id="slide-11">
+            <div class="slide-content">
                 <h2>AI Voice Generation Analysis</h2>
-                <h3 style="text-align: center; font-weight: 600; color: #333; margin-bottom: 2rem; font-size: 1.2rem;">Summary: Emotional Expression Differences</h3>
+                <h3 style="text-align: center; font-weight: 600; color: #000; margin-bottom: 2rem; font-size: 1.2rem;">Summary: Emotional Expression Differences</h3>
                 
                 <!-- Audio Comparison -->
                 <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; margin: 2rem 0;">
@@ -402,7 +625,7 @@
                             <source src="clip-njTEmeXKQ6cPYa43tSC7.wav" type="audio/wav">
                             Your browser does not support the audio element.
                         </audio>
-                        <p style="font-size: 0.95rem; color: #666; margin-top: 1rem;">
+                        <p style="font-size: 0.95rem; color: #000; margin-top: 1rem;">
                             <strong>Key Feature:</strong> Screams "Meeeessssiiii" with high emotional intensity
                         </p>
                     </div>
@@ -412,16 +635,16 @@
                             <source src="render_V5Rwawa6ZjDeGiCULZCC (1).mp3" type="audio/mpeg">
                             Your browser does not support the audio element.
                         </audio>
-                        <p style="font-size: 0.95rem; color: #666; margin-top: 1rem;">
+                        <p style="font-size: 0.95rem; color: #000; margin-top: 1rem;">
                             <strong>Key Feature:</strong> Says "Messi" with neutral tone
                         </p>
                     </div>
                 </div>
                 
                 <!-- Analysis Section -->
-                <div style="background: #f8f9fa; padding: 2rem; border-radius: 12px; margin: 2rem 0; text-align: center;">
-                    <h3 style="margin-bottom: 1.5rem; color: #333;">Analysis: Emotional Expression Gap</h3>
-                    <div style="max-width: 600px; margin: 0 auto; font-size: 1.05em; color: #222; line-height: 1.6;">
+                <div style="background: #f5f5f5; padding: 2rem; border-radius: 12px; margin: 2rem 0; text-align: center;">
+                    <h3 style="margin-bottom: 1.5rem; color: #000;">Analysis: Emotional Expression Gap</h3>
+                    <div style="max-width: 600px; margin: 0 auto; font-size: 1.05em; color: #000; line-height: 1.6;">
                         <p style="margin-bottom: 1rem;">
                             The English commentary captures the excitement and emotion of the moment with an elongated, passionate "Meeeessssiiii", while the Hindi AI voice generation produces a more neutral "Messi" pronunciation.
                         </p>
@@ -436,86 +659,152 @@
             </div>
         </section>
 
-        <!-- Slide 10: Overview and Suggestions -->
-        <section class="slide" id="slide-10">
+        <!-- Slide 12: Audio Comparison Analysis -->
+        <section class="slide" id="slide-12">
             <div class="slide-content">
-                <h2 style="color: #000; font-weight: 300; letter-spacing: -0.02em;">Overview & Suggestions</h2>
-                <h3 style="text-align: center; font-weight: 400; color: #333; margin-bottom: 3rem; font-size: 1.1rem; letter-spacing: 0.01em;">Key Findings and Future Improvements</h3>
+                <h2>Trade-off: Speaker Similarity vs Prosody</h2>
+                <h3 style="text-align: center; font-weight: 600; color: #000; margin-bottom: 1rem; font-size: 1.2rem;">Analysis of 7 Voice Generations</h3>
+                <p style="text-align: center; color: #666; margin-bottom: 2rem; font-size: 1rem; max-width: 800px; margin-left: auto; margin-right: auto;">
+                    The audio regeneration maintains speaker similarity but shows low variation in prosody across all samples.
+                </p>
                 
-                <!-- Overall Assessment -->
-                <div style="margin: 3rem 0;">
-                    <h3 style="margin-bottom: 2rem; color: #000; text-align: center; font-weight: 400; font-size: 1.3rem;">Overall Assessment</h3>
-                    
-                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: start;">
-                        <!-- Strengths -->
-                        <div style="background: #fff; border: 1px solid #e0e0e0; border-radius: 8px; padding: 2rem; box-shadow: 0 2px 8px rgba(0,0,0,0.05);">
-                            <h4 style="color: #000; margin-bottom: 1.5rem; font-size: 1rem; font-weight: 500; text-transform: uppercase; letter-spacing: 0.05em;">Strengths</h4>
-                            <ul style="color: #333; margin: 0; padding-left: 1.5rem; line-height: 1.8; font-size: 0.95rem;">
-                                <li style="margin-bottom: 0.8rem;"><strong>Highly capable transcription and translation</strong> - Near perfect accuracy in our tests</li>
-                                <li style="margin-bottom: 0.8rem;"><strong>Excellent sound effects integration</strong> - Great ability to add audio enhancements</li>
-                                <li style="margin-bottom: 0.8rem;"><strong>Strong voice model</strong> - Ability to generate diverse voices with different accents and languages</li>
-                            </ul>
+                <!-- Two Column Layout: Audio Samples + Analysis -->
+                <div style="display: grid; grid-template-columns: 1fr 2fr; gap: 2rem; margin: 1.5rem 0;">
+                    <!-- Audio Samples Column -->
+                    <div>
+                        <h3 style="margin-bottom: 1rem; color: #000; font-size: 1.1rem;">Audio Samples</h3>
+                        <div style="display: flex; flex-direction: column; gap: 1rem;">
+                            <div style="text-align: left;">
+                                <h4 style="margin-bottom: 0.5rem; color: #000; font-size: 0.9rem;">Sample 1</h4>
+                                <audio controls style="width: 100%; max-width: 300px;">
+                                    <source src="Au-1.wav" type="audio/wav">
+                                    Your browser does not support the audio element.
+                                </audio>
+                            </div>
+                            <div style="text-align: left;">
+                                <h4 style="margin-bottom: 0.5rem; color: #000; font-size: 0.9rem;">Sample 2</h4>
+                                <audio controls style="width: 100%; max-width: 300px;">
+                                    <source src="Au-2.wav" type="audio/wav">
+                                    Your browser does not support the audio element.
+                                </audio>
+                            </div>
+                            <div style="text-align: left;">
+                                <h4 style="margin-bottom: 0.5rem; color: #000; font-size: 0.9rem;">Sample 3</h4>
+                                <audio controls style="width: 100%; max-width: 300px;">
+                                    <source src="Au-3.wav" type="audio/wav">
+                                    Your browser does not support the audio element.
+                                </audio>
+                            </div>
+                            <div style="text-align: left;">
+                                <h4 style="margin-bottom: 0.5rem; color: #000; font-size: 0.9rem;">Sample 4</h4>
+                                <audio controls style="width: 100%; max-width: 300px;">
+                                    <source src="Au-4.wav" type="audio/wav">
+                                    Your browser does not support the audio element.
+                                </audio>
+                            </div>
+                            <div style="text-align: left;">
+                                <h4 style="margin-bottom: 0.5rem; color: #000; font-size: 0.9rem;">Sample 5</h4>
+                                <audio controls style="width: 100%; max-width: 300px;">
+                                    <source src="Au-5.wav" type="audio/wav">
+                                    Your browser does not support the audio element.
+                                </audio>
+                            </div>
+                            <div style="text-align: left;">
+                                <h4 style="margin-bottom: 0.5rem; color: #000; font-size: 0.9rem;">Sample 6</h4>
+                                <audio controls style="width: 100%; max-width: 300px;">
+                                    <source src="Au-6.wav" type="audio/wav">
+                                    Your browser does not support the audio element.
+                                </audio>
+                            </div>
+                            <div style="text-align: left;">
+                                <h4 style="margin-bottom: 0.5rem; color: #000; font-size: 0.9rem;">Sample 7</h4>
+                                <audio controls style="width: 100%; max-width: 300px;">
+                                    <source src="Au-7.wav" type="audio/wav">
+                                    Your browser does not support the audio element.
+                                </audio>
+                            </div>
                         </div>
+                    </div>
+
+                    <!-- Analysis Results Column -->
+                    <div>
+                        <h3 style="margin-bottom: 1rem; color: #000; font-size: 1.1rem;">Analysis Results</h3>
                         
-                        <!-- Areas for Improvement -->
-                        <div style="background: #fff; border: 1px solid #e0e0e0; border-radius: 8px; padding: 2rem; box-shadow: 0 2px 8px rgba(0,0,0,0.05);">
-                            <h4 style="color: #000; margin-bottom: 1.5rem; font-size: 1rem; font-weight: 500; text-transform: uppercase; letter-spacing: 0.05em;">Areas for Improvement</h4>
-                            <ul style="color: #333; margin: 0; padding-left: 1.5rem; line-height: 1.8; font-size: 0.95rem;">
-                                <li style="margin-bottom: 0.8rem;"><strong>AI voices sometimes fall short of expressivity</strong> - does not carry expressivity from source audio</li>
-                                <li style="margin-bottom: 0.8rem;"><strong>Granular control is harder</strong> - Segments are larger</li>
-                                <li style="margin-bottom: 0.8rem;"><strong>Video andAudio track synchronization challenges</strong></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Suggestions -->
-                <div style="margin: 3rem 0;">
-                    <h3 style="margin-bottom: 2rem; color: #000; text-align: center; font-weight: 400; font-size: 1.3rem;">Suggestions for Enhancement</h3>
-                    
-                    <div style="background: #fff; border: 1px solid #e0e0e0; border-radius: 8px; padding: 2.5rem; box-shadow: 0 2px 8px rgba(0,0,0,0.05);">
-                        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 3rem;">
-                            <!-- Technical Improvements -->
-                            <div>
-                                <h4 style="color: #000; margin-bottom: 1.5rem; font-size: 1rem; font-weight: 500; text-transform: uppercase; letter-spacing: 0.05em;">Technical Improvements</h4>
-                                <ul style="color: #333; margin: 0; padding-left: 1.5rem; line-height: 1.8; font-size: 0.95rem;">
-                                    <li style="margin-bottom: 0.8rem;"><strong>Word-level emotion modulation</strong> - Leverage v3's [happy] type tags for granular control</li>
-                                    <li style="margin-bottom: 0.8rem;"><strong>Segment-based processing</strong> - Break content into smaller, manageable segments</li>
-                                    <li style="margin-bottom: 0.8rem;"><strong>Enhanced audio features</strong> - Better control over pace, timing, and rhythm at each segment</li>
-                                </ul>
+                        <!-- Speaker Similarity -->
+                        <div style="margin: 1rem 0;">
+                            <h4 style="color: #000; margin-bottom: 0.8rem; font-size: 1rem;">1. Speaker Similarity Performance</h4>
+                            <div style="text-align: center; margin: 0.8rem 0;">
+                                <img src="speaker_similarity_heatmap.png" alt="Speaker similarity heatmap showing good performance" style="width: 100%; max-width: 400px; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+                                <p style="font-size: 0.85rem; color: #666; margin-top: 0.5rem;">Speaker similarity with audio generation is consistently good across samples</p>
                             </div>
-                            
-                            <!-- Workflow Enhancements -->
+                        </div>
+
+                        <!-- Pitch and Energy Variation -->
+                        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin: 1rem 0;">
                             <div>
-                                <h4 style="color: #000; margin-bottom: 1.5rem; font-size: 1rem; font-weight: 500; text-transform: uppercase; letter-spacing: 0.05em;">Workflow Enhancements</h4>
-                                <ul style="color: #333; margin: 0; padding-left: 1.5rem; line-height: 1.8; font-size: 0.95rem;">
-                                    <li style="margin-bottom: 0.8rem;"><strong>Frame-to-frame video control</strong> - Precise synchronization with visual elements</li>
-                                    <li style="margin-bottom: 0.8rem;"><strong>Batch processing options</strong> - Handle multiple segments simultaneously</li>
-                                    <li style="margin-bottom: 0.8rem;"><strong>Custom emotion libraries</strong> - Pre-defined emotional expressions</li>
-                                </ul>
+                                <h4 style="color: #000; margin-bottom: 0.8rem; font-size: 1rem;">2. Pitch Variation</h4>
+                                <div style="text-align: center;">
+                                    <img src="pitch_variation.png" alt="Pitch standard deviation graph" style="width: 100%; max-width: 250px; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+                                    <p style="font-size: 0.8rem; color: #666; margin-top: 0.5rem;">All samples show very similar pitch expressivity patterns</p>
+                                </div>
+                            </div>
+                            <div>
+                                <h4 style="color: #000; margin-bottom: 0.8rem; font-size: 1rem;">3. Energy Variation</h4>
+                                <div style="text-align: center;">
+                                    <img src="energy_variation.png" alt="Energy standard deviation graph" style="width: 100%; max-width: 250px; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+                                    <p style="font-size: 0.8rem; color: #666; margin-top: 0.5rem;">Energy patterns remain consistent across all voice generations</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Detailed Metrics -->
+                        <div style="margin: 1rem 0;">
+                            <h4 style="color: #000; margin-bottom: 0.8rem; font-size: 1rem;">Detailed Metrics</h4>
+                            <div style="text-align: center;">
+                                <img src="Screenshot 2025-08-07 at 00.02.06.png" alt="Detailed metrics analysis" style="width: 100%; max-width: 500px; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
                             </div>
                         </div>
                     </div>
                 </div>
                 
-                <!-- Final Thoughts -->
-                <div style="background: #fff; border: 1px solid #e0e0e0; border-radius: 8px; padding: 2rem; margin: 3rem 0; text-align: center; box-shadow: 0 2px 8px rgba(0,0,0,0.05);">
-                    <h4 style="color: #000; margin-bottom: 1.5rem; font-size: 1rem; font-weight: 500; text-transform: uppercase; letter-spacing: 0.05em;">Final Thoughts</h4>
-                    <p style="color: #333; margin: 0; line-height: 1.8; font-size: 1rem; max-width: 600px; margin: 0 auto;">
-                        ElevenLabs Dubbing Studio is amazing with its strong foundation in transcription and translation and amazing voice models. 
-                        The key to unlocking its full potential lies in bridging the emotional expression gap and providing more granular control over audio and video features.
+                <div class="navigation">
+                    <div class="nav-arrow prev">←</div>
+                    <div class="nav-arrow next">→</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Slide 13: Design Philosophy -->
+        <section class="slide" id="slide-13">
+            <div class="slide-content">
+                <h2>Finally, my Thoughts on Design Philosophy</h2>
+                
+                <div class="text-content" style="font-size: 1.2em; line-height: 1.7; margin-bottom: 2rem;">
+                    <p style="margin-bottom: 1.5rem; text-align: center; max-width: 800px; margin: 0 auto;">
+                        I found it interesting that the core controls like splitting and regenerating are <strong>built around manipulating audio files rather than text segments</strong>. This audio-first design works well for ensuring precise lip-sync, managing speaker transitions, and controlling pacing.
+                    </p>
+                    <p style="margin-bottom: 0; text-align: center; max-width: 800px; margin: 0 auto;">
+                        However, it may fall short when trying to achieve <strong>granular emotional control at the word level</strong>, where a text-first approach could offer more flexibility. It reflects a trade-off between low-level precision and high-level expressivity.
                     </p>
                 </div>
                 
-
+                <!-- Interface Image -->
+                <div style="text-align: center; margin: 2rem 0;">
+                    <img src="Screenshot 2025-08-06 at 22.46.38.png" alt="ElevenLabs Dubbing Interface showing audio-first design with timeline controls" style="width: 100%; max-width: 800px; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+                </div>
                 
                 <div class="navigation">
                     <div class="nav-arrow prev">←</div>
                 </div>
             </div>
         </section>
+
+
+
+
     </div>
 
     <script src="script.js"></script>
 </body>
+</html> 
 </html> 

@@ -1,6 +1,6 @@
 // Slide navigation functionality
 let currentSlide = 1;
-const totalSlides = 10;
+const totalSlides = 13;
 
 // Initialize the presentation
 document.addEventListener('DOMContentLoaded', function() {
