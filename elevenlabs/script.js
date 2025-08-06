@@ -1,23 +1,32 @@
 // Slide navigation functionality
+console.log('Script.js loaded successfully');
 let currentSlide = 1;
 const totalSlides = 13;
 
 // Initialize the presentation
 document.addEventListener('DOMContentLoaded', function() {
+    console.log('DOM loaded, initializing navigation...');
+    
     // Set up navigation dots
     const dots = document.querySelectorAll('.dot');
+    console.log('Found navigation dots:', dots.length);
     dots.forEach((dot, index) => {
         dot.addEventListener('click', () => {
+            console.log('Dot clicked, going to slide:', index + 1);
             goToSlide(index + 1);
         });
     });
 
     // Set up navigation arrows
     document.addEventListener('click', function(e) {
+        console.log('Click event on:', e.target, 'Classes:', e.target.classList);
         if (e.target.classList.contains('nav-arrow')) {
+            console.log('Nav arrow clicked');
             if (e.target.classList.contains('next')) {
+                console.log('Next arrow clicked, current slide:', currentSlide);
                 nextSlide();
             } else if (e.target.classList.contains('prev')) {
+                console.log('Prev arrow clicked, current slide:', currentSlide);
                 prevSlide();
             }
         }
@@ -26,18 +35,22 @@ document.addEventListener('DOMContentLoaded', function() {
     // Set up main arrow on first slide
     document.addEventListener('click', function(e) {
         if (e.target.classList.contains('arrow')) {
+            console.log('Main arrow clicked');
             nextSlide();
         }
     });
 
     // Set up keyboard navigation
     document.addEventListener('keydown', function(e) {
+        console.log('Key pressed:', e.key);
         switch(e.key) {
             case 'ArrowRight':
             case ' ':
+                console.log('Right arrow or space pressed');
                 nextSlide();
                 break;
             case 'ArrowLeft':
+                console.log('Left arrow pressed');
                 prevSlide();
                 break;
             case 'Home':
@@ -108,20 +121,28 @@ document.addEventListener('DOMContentLoaded', function() {
 
 // Navigation functions
 function nextSlide() {
+    console.log('nextSlide called, currentSlide:', currentSlide, 'totalSlides:', totalSlides);
     if (currentSlide < totalSlides) {
         goToSlide(currentSlide + 1);
+    } else {
+        console.log('Already at last slide');
     }
 }
 
 function prevSlide() {
+    console.log('prevSlide called, currentSlide:', currentSlide);
     if (currentSlide > 1) {
         goToSlide(currentSlide - 1);
+    } else {
+        console.log('Already at first slide');
     }
 }
 
 function goToSlide(slideNumber) {
+    console.log('goToSlide called with:', slideNumber);
     // Validate slide number
     if (slideNumber < 1 || slideNumber > totalSlides) {
+        console.log('Invalid slide number:', slideNumber);
         return;
     }
 
@@ -129,15 +150,22 @@ function goToSlide(slideNumber) {
     const currentSlideElement = document.getElementById(`slide-${currentSlide}`);
     if (currentSlideElement) {
         currentSlideElement.classList.remove('active');
+        console.log('Hidden slide:', currentSlide);
+    } else {
+        console.log('Could not find current slide element:', `slide-${currentSlide}`);
     }
 
     // Update current slide
     currentSlide = slideNumber;
+    console.log('Updated currentSlide to:', currentSlide);
 
     // Show new slide
     const newSlideElement = document.getElementById(`slide-${currentSlide}`);
     if (newSlideElement) {
         newSlideElement.classList.add('active');
+        console.log('Showed slide:', currentSlide);
+    } else {
+        console.log('Could not find new slide element:', `slide-${currentSlide}`);
     }
 
     // Update navigation dots
