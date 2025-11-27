@@ -311,5 +311,25 @@
             }
         });
     </script>
+    <script>
+        document.querySelectorAll(".sidebar ul li").forEach((item, index) => {
+            item.addEventListener("click", function () {
+    
+                amplitude.track("Topic Clicked", {
+                    topic_name: this.innerText.trim(),
+                    topic_id: this.dataset.topicId || null,
+                    click_position: index + 1,
+                    device_type: window.innerWidth > 768 ? "desktop" : "mobile",
+                    page_url: window.location.href,
+                    page_title: document.title,
+                    referrer: document.referrer || "direct",
+                    time_since_page_load: Math.round(performance.now())
+                });
+    
+            });
+        });
+    </script>
+    
+    
 </body>
 </html>
