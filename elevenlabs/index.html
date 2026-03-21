@@ -2,808 +2,994 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
-    <meta name="mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="default">
-    <meta name="theme-color" content="#fafafa">
-    <title>ElevenLabs Dubbing Studio Analysis</title>
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ElevenLabs Dubbing Studio Analysis | Prashanth Shankar</title>
+    <link rel="icon" type="image/png" href="../images/favicon2.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+
+    <style>
+        *, *::before, *::after {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            font-size: 16px;
+        }
+
+        body {
+            background: #fff;
+            color: #000;
+            font-family: 'Inter', -apple-system, sans-serif;
+            font-weight: 400;
+            line-height: 1.6;
+        }
+
+        ::selection {
+            background: #000;
+            color: #fff;
+        }
+
+        .page {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        /* ─── HEADER ─── */
+        header {
+            padding: 2.5rem 0 0;
+        }
+
+        .back-link {
+            font-size: 0.75rem;
+            font-weight: 400;
+            letter-spacing: 0.04em;
+            color: #000;
+            text-decoration: none;
+            transition: opacity 0.2s ease;
+        }
+
+        .back-link:hover {
+            opacity: 0.5;
+        }
+
+        /* ─── PAGE TITLE ─── */
+        .page-title {
+            padding: 3rem 0 1rem;
+        }
+
+        .page-title h1 {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 2.4rem;
+            font-weight: 600;
+            line-height: 1.2;
+            margin-bottom: 0.5rem;
+        }
+
+        .page-title p {
+            font-size: 0.88rem;
+            line-height: 1.6;
+        }
+
+        /* ─── DIVIDER ─── */
+        .divider {
+            border: none;
+            border-top: 1px solid #000;
+            margin: 2.5rem 0;
+        }
+
+        /* ─── SECTIONS ─── */
+        .section {
+            margin-top: 3rem;
+        }
+
+        .section-title {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.6rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+        }
+
+        .section-subtitle {
+            font-size: 0.92rem;
+            font-weight: 500;
+            margin-bottom: 1.5rem;
+        }
+
+        .section p, .section li {
+            font-size: 0.92rem;
+            line-height: 1.75;
+        }
+
+        .section ul, .section ol {
+            padding-left: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .section li {
+            margin-bottom: 0.4rem;
+        }
+
+        /* ─── TWO COLUMNS ─── */
+        .two-col {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+            margin: 1.5rem 0;
+        }
+
+        .three-col {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 1.5rem;
+            margin: 1.5rem 0;
+        }
+
+        /* ─── CARD ─── */
+        .card {
+            border: 1px solid #000;
+            padding: 1.5rem;
+        }
+
+        .card h3 {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin-bottom: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 0.03em;
+        }
+
+        .card ul {
+            padding-left: 1.2rem;
+            margin: 0;
+        }
+
+        .card li {
+            font-size: 0.85rem;
+            line-height: 1.6;
+            margin-bottom: 0.4rem;
+        }
+
+        .card p {
+            font-size: 0.85rem;
+            line-height: 1.6;
+            margin: 0;
+        }
+
+        /* ─── QUOTE BLOCK ─── */
+        .quote-block {
+            border-left: 3px solid #000;
+            padding: 1.5rem 1.5rem 1.5rem 2rem;
+            margin: 1.5rem 0;
+            font-style: italic;
+            font-size: 0.92rem;
+            line-height: 1.7;
+            color: #333;
+        }
+
+        /* ─── HIGHLIGHT BOX ─── */
+        .highlight-box {
+            background: #f5f5f5;
+            border: 1px solid #000;
+            padding: 1.2rem 1.5rem;
+            margin: 1.5rem 0;
+        }
+
+        .highlight-box h4 {
+            font-size: 0.85rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.04em;
+            margin-bottom: 0.5rem;
+        }
+
+        .highlight-box ul {
+            padding-left: 1.2rem;
+            margin: 0;
+        }
+
+        .highlight-box li {
+            font-size: 0.85rem;
+            line-height: 1.5;
+            margin-bottom: 0.3rem;
+        }
+
+        .highlight-box p {
+            font-size: 0.85rem;
+            line-height: 1.6;
+            margin: 0;
+        }
+
+        /* ─── TABLE ─── */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1.5rem 0;
+            font-size: 0.88rem;
+        }
+
+        thead tr {
+            border-bottom: 2px solid #000;
+        }
+
+        th {
+            text-align: left;
+            padding: 0.6rem 1rem;
+            font-weight: 600;
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 0.04em;
+        }
+
+        td {
+            padding: 0.6rem 1rem;
+            border-bottom: 1px solid #ddd;
+        }
+
+        /* ─── TEXT BOX (for side-by-side text) ─── */
+        .text-box {
+            border: 1px solid #000;
+            padding: 1.2rem;
+            max-height: 250px;
+            overflow-y: auto;
+        }
+
+        .text-box-label {
+            font-size: 0.8rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.04em;
+            margin-bottom: 0.5rem;
+        }
+
+        .text-box p {
+            font-size: 0.85rem;
+            line-height: 1.6;
+            margin: 0;
+        }
+
+        /* ─── MEDIA ─── */
+        .audio-label {
+            font-size: 0.8rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.04em;
+            margin-bottom: 0.5rem;
+            text-align: center;
+        }
+
+        audio {
+            width: 100%;
+            max-width: 400px;
+            display: block;
+            margin: 0 auto 1rem;
+        }
+
+        video {
+            width: 100%;
+            display: block;
+            margin: 0.5rem 0 1rem;
+        }
+
+        .video-label {
+            font-size: 0.8rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.04em;
+            margin-bottom: 0.5rem;
+            text-align: center;
+        }
+
+        .media-caption {
+            font-size: 0.78rem;
+            color: #666;
+            text-align: center;
+            margin-top: 0.3rem;
+        }
+
+        img.analysis-img {
+            width: 100%;
+            max-width: 500px;
+            display: block;
+            margin: 1rem auto;
+            border: 1px solid #ddd;
+        }
+
+        img.analysis-img-sm {
+            width: 100%;
+            max-width: 300px;
+            display: block;
+            margin: 1rem auto;
+            border: 1px solid #ddd;
+        }
+
+        /* ─── ISSUE BLOCK ─── */
+        .issue-block {
+            margin: 2rem 0;
+            padding-top: 1.5rem;
+            border-top: 1px solid #ddd;
+        }
+
+        .issue-block:first-of-type {
+            border-top: none;
+            padding-top: 0;
+        }
+
+        .issue-title {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.2rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+        }
+
+        /* ─── AUDIO GRID ─── */
+        .audio-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 1rem;
+            margin: 1.5rem 0;
+        }
+
+        .audio-grid-item {
+            text-align: center;
+        }
+
+        .audio-grid-item audio {
+            max-width: 100%;
+        }
+
+        .audio-grid-item .audio-label {
+            font-size: 0.75rem;
+        }
+
+        /* ─── FADE IN ─── */
+        .fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.6s ease, transform 0.6s ease;
+        }
+
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* ─── BOTTOM SPACING ─── */
+        .bottom-space {
+            padding-bottom: 6rem;
+        }
+
+        /* ─── RESPONSIVE ─── */
+        @media (max-width: 768px) {
+            .page {
+                padding: 0 1.25rem;
+            }
+
+            header {
+                padding-top: 1.5rem;
+            }
+
+            .page-title {
+                padding: 2rem 0 0.5rem;
+            }
+
+            .page-title h1 {
+                font-size: 1.8rem;
+            }
+
+            .two-col {
+                grid-template-columns: 1fr;
+            }
+
+            .three-col {
+                grid-template-columns: 1fr;
+            }
+
+            .audio-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .audio-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+
+    <script src="https://cdn.amplitude.com/script/59010539cde9503811b2e9a80e47e0b4.js"></script>
+    <script>window.amplitude.add(window.sessionReplay.plugin({sampleRate: 1}));window.amplitude.init('59010539cde9503811b2e9a80e47e0b4', {"fetchRemoteConfig":true,"autocapture":{"attribution":true,"fileDownloads":true,"formInteractions":true,"pageViews":true,"sessions":true,"elementInteractions":true,"networkTracking":true,"webVitals":true,"frustrationInteractions":true}});</script>
 </head>
 <body>
-    <div class="presentation-container">
-        <!-- Navigation -->
-        <nav class="nav-dots">
-            <div class="dot active" data-slide="1"></div>
-            <div class="dot" data-slide="2"></div>
-            <div class="dot" data-slide="3"></div>
-            <div class="dot" data-slide="4"></div>
-            <div class="dot" data-slide="5"></div>
-            <div class="dot" data-slide="6"></div>
-            <div class="dot" data-slide="7"></div>
-            <div class="dot" data-slide="8"></div>
-            <div class="dot" data-slide="9"></div>
-            <div class="dot" data-slide="10"></div>
-            <div class="dot" data-slide="11"></div>
-            <div class="dot" data-slide="12"></div>
-            <div class="dot" data-slide="13"></div>
-        </nav>
 
-        <!-- Slide 1: Title -->
-        <section class="slide active" id="slide-1">
-            <div class="slide-content">
-                <h1 class="title">My Analysis of ElevenLabs Dubbing Studio</h1>
-                <div style="text-align: center; margin-top: 2rem;">
-                    <h2 style="font-size: 1.5rem; font-weight: 400; color: #333; margin-bottom: 0.5rem;">Prashanth Shankar</h2>
-                    <p style="font-size: 1.1rem; color: #666; margin: 0;">Analyst, formerly with Papercup (AI dubbing startup).</p>
-                    <p style="font-size: 1rem; color: #0077b5; margin: 0.5rem 0 0 0;">
-                        <a href="https://www.linkedin.com/in/prashan7h/" target="_blank" style="color: #0077b5; text-decoration: none; border-bottom: 1px solid #0077b5;">LinkedIn</a>
-                    </p>
-                </div>
-                <div class="arrow-container">
-                    <div class="arrow">→</div>
-                </div>
-            </div>
-        </section>
+    <div class="page">
 
-        <!-- Slide 2: Overview and Suggestions -->
-        <section class="slide" id="slide-2">
-            <div class="slide-content">
-                <h2 style="color: #000; font-weight: 300; letter-spacing: -0.02em;">Overview & Suggestions</h2>
-                <h3 style="text-align: center; font-weight: 400; color: #333; margin-bottom: 3rem; font-size: 1.1rem; letter-spacing: 0.01em;">My Thoughts</h3>
-                
-                <!-- My Thoughts -->
-                <div style="margin: 2rem 0;">
-                    <div style="background: #fff; border: 1px solid #e0e0e0; border-radius: 8px; padding: 1.5rem; box-shadow: 0 2px 8px rgba(0,0,0,0.05); text-align: center;">
-                                                <p style="color: #333; margin: 0; line-height: 1.6; font-size: 1.1rem; max-width: 800px; margin: 0 auto;">
-                            <strong>Overall:</strong> The platform achieved ~80% accuracy on the first attempt, but refining the remaining small errors proved challenging due to some product limitations I encountered.
-                        </p>
- 
-                        <div style="margin: 2rem 0;"></div>
+        <header>
+            <a href="../" class="back-link">&larr; Back</a>
+        </header>
 
-                        <p style="color: #333; margin: 0; line-height: 1.6; font-size: 1.1rem; max-width: 800px; margin: 0 auto;">
-                            <strong>Approach:</strong> I analysed each stage of the dubbing pipeline transcription, translation, AI voice generation, and lip-sync—independently. The next slides break down the setup and findings from each step.
-                        </p>
-                        
-                    </div>
-                </div>
+        <div class="page-title">
+            <h1>ElevenLabs Dubbing Studio Analysis</h1>
+            <p>A detailed analysis of the AI dubbing pipeline — transcription, translation, voice generation, and lip-sync — with metrics, audio comparisons, and improvement suggestions.</p>
+        </div>
 
-                <!-- Overall Assessment -->
-                <div style="margin: 2rem 0;">
-                    <h3 style="margin-bottom: 1.5rem; color: #000; text-align: center; font-weight: 400; font-size: 1.3rem;">Strengths & Areas for Improvement</h3>
-                    
-                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: start;">
-                        <!-- Strengths -->
-                        <div style="background: #fff; border: 1px solid #e0e0e0; border-radius: 8px; padding: 1.5rem; box-shadow: 0 2px 8px rgba(0,0,0,0.05);">
-                            <h4 style="color: #000; margin-bottom: 1rem; font-size: 1rem; font-weight: 500; text-transform: uppercase; letter-spacing: 0.05em;">Strengths</h4>
-                            <ul style="color: #333; margin: 0; padding-left: 1.5rem; line-height: 1.6; font-size: 0.95rem;">
-                                <li style="margin-bottom: 0.6rem;"><strong>Highly expressive and diverse voice models</strong></li>
-                                <li style="margin-bottom: 0.6rem;"><strong>Excellent transcription accuracy</strong></li>
-                                <li style="margin-bottom: 0.6rem;"><strong>Very high-quality translations</strong></li>
-                                <li style="margin-bottom: 0.6rem;"><strong>Minimal lip-sync errors</strong></li>
-                                <li style="margin-bottom: 0.6rem;"><strong>Effective background sound separation</strong></li>
-                            </ul>
-                        </div>
-                        
-                        <!-- Areas for Improvement -->
-                        <div style="background: #fff; border: 1px solid #e0e0e0; border-radius: 8px; padding: 1.5rem; box-shadow: 0 2px 8px rgba(0,0,0,0.05);">
-                            <h4 style="color: #000; margin-bottom: 1rem; font-size: 1rem; font-weight: 500; text-transform: uppercase; letter-spacing: 0.05em;">Areas for Improvement</h4>
-                            <ul style="color: #333; margin: 0; padding-left: 1.5rem; line-height: 1.6; font-size: 0.95rem;">
-                                <li style="margin-bottom: 0.6rem;"><strong>Enhance expressivity for non-cloned voices</strong> – currently less natural compared to cloned voices</li>
-                                <li style="margin-bottom: 0.6rem;"><strong>Introduce more granular controls for expressivity at the word level</strong> – e.g., integrate the advanced v3 [tags] into dubbing</li>
-                                <li style="margin-bottom: 0.6rem;"><strong>Increase text editing flexibility</strong> – enable splitting and merging using text alongside audio and pacing adjustments</li>
-                                <li style="margin-bottom: 0.6rem;"><strong>Improve speaker detection</strong> – leveraging video analytics could make this more accurate</li>
-                                <li style="margin-bottom: 0.6rem;"><strong>Enable frame-by-frame editing</strong> – to allow finer adjustments in dubbing</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                
+        <hr class="divider">
 
-                
-                <div class="navigation">
-                    <div class="nav-arrow prev">←</div>
-                    <div class="nav-arrow next">→</div>
-                </div>
-            </div>
-        </section>
+        <!-- ═══════════════════════════════════════════ -->
+        <!-- OVERVIEW & SUGGESTIONS                      -->
+        <!-- ═══════════════════════════════════════════ -->
+        <div class="section fade-in">
+            <h2 class="section-title">Overview</h2>
 
-        <!-- Slide 3: Additional Context -->
-        <section class="slide" id="slide-3">
-            <div class="slide-content">
-                <h2>Transcription Analysis Setup</h2>
-                <div class="text-content">
-                    <p>I took a small portion of <strong>Carl Sagan's <a href="https://en.wikipedia.org/wiki/Pale_Blue_Dot" target="_blank" style="color: #0077b5; text-decoration: none; border-bottom: 1px solid #0077b5;">Pale Blue Dot</a> Speech</strong> as an example and used their TTS model to generate AI voice, then transcribed it back to text to compare both texts</p>
-                    
-                    <p><strong></strong></p>
-                    <p>
-                        Original text:
-                    </p>
-                    
-                    <div style="background: #f8f9fa; padding: 1.5rem; border-radius: 12px; border: 1px solid rgba(26, 26, 26, 0.1); margin: 1.5rem 0; text-align: left; font-style: italic; line-height: 1.6;">
-                        <p style="margin: 0; color: #4a4a4a;">"Look again at that dot. That's here. That's home. That's us. On it everyone you love, everyone you know, everyone you ever heard of, every human being who ever was, lived out their lives. The aggregate of our joy and suffering, thousands of confident religions, ideologies, and economic doctrines, every hunter and forager, every hero and coward, every creator and destroyer of civilization, every king and peasant, every young couple in love, every mother and father, hopeful child, inventor and explorer, every teacher of morals, every corrupt politician, every "superstar," every "supreme leader," every saint and sinner in the history of our species lived there--on a mote of dust suspended in a sunbeam."</p>
-                    </div>
-                    
-                </div>
-                <div class="navigation">
-                    <div class="nav-arrow prev">←</div>
-                    <div class="nav-arrow next">→</div>
-                </div>
-            </div>
-        </section>
+            <p>The platform achieved ~80% accuracy on the first attempt, but refining the remaining small errors proved challenging due to some product limitations I encountered.</p>
 
-        <!-- Slide 4: Transcription Measures -->
-        <section class="slide" id="slide-4">
-            <div class="slide-content">
-                <h2>Transcription Measures</h2>
-                
-                <!-- Audio Section -->
-                <div style="text-align: center; margin: 1rem 0;">
-                    <h3>AI Voice (Generated via ElevenLabs)</h3>
-                    <audio controls style="width: 100%; max-width: 400px; margin: 0.5rem 0;">
-                        <source src="ElevenLabs_2025-08-04T10_32_02_Liam_pre_sp100_s50_sb75_v3.mp3" type="audio/mpeg">
-                        Your browser does not support the audio element.
-                    </audio>
-                </div>
-                
-                <!-- Differences Highlighted -->
-                <div style="background: #fff3cd; border: 1px solid #ffeaa7; border-radius: 8px; padding: 1rem; margin: 1rem 0; text-align: left;">
-                    <h3 style="color: #856404; margin-bottom: 0.5rem; font-size: 1rem;">Key Differences Found:</h3>
-                    <ul style="color: #856404; margin: 0; padding-left: 1rem; font-size: 0.9rem;">
-                        <li><strong>Punctuation:</strong> "That's here." → "That's here," (period to comma)</li>
-                        <li><strong>Punctuation:</strong> "That's home." → "That's home," (period to comma)</li>
-                        <li><strong>Punctuation:</strong> "That's us." → "That's us," (period to comma)</li>
-                        <li><strong>Quotes:</strong> "superstar," → superstar (removed quotes)</li>
-                        <li><strong>Quotes:</strong> "supreme leader," → supreme leader, (removed quotes)</li>
-                        <li><strong>Punctuation:</strong> "lived there--on" → "lived there, on" (em dash to comma)</li>
+            <p><strong>Approach:</strong> I analysed each stage of the dubbing pipeline — transcription, translation, AI voice generation, and lip-sync — independently. The sections below break down the setup and findings from each step.</p>
+
+            <div class="two-col" style="margin-top: 2rem;">
+                <div class="card">
+                    <h3>Strengths</h3>
+                    <ul>
+                        <li><strong>Highly expressive and diverse voice models</strong></li>
+                        <li><strong>Excellent transcription accuracy</strong></li>
+                        <li><strong>Very high-quality translations</strong></li>
+                        <li><strong>Minimal lip-sync errors</strong></li>
+                        <li><strong>Effective background sound separation</strong></li>
                     </ul>
                 </div>
-                
-                <div class="comparison-container">
-                    <div class="comparison-item">
-                        <h3>Original Text (Carl Sagan)</h3>
-                        <div class="text-box" style="height: 200px; overflow-y: auto; padding: 1rem;">
-                            <p style="font-size: 0.9rem; line-height: 1.4; margin: 0;">"Look again at that dot. That's here. That's home. That's us. On it everyone you love, everyone you know, everyone you ever heard of, every human being who ever was, lived out their lives. The aggregate of our joy and suffering, thousands of confident religions, ideologies, and economic doctrines, every hunter and forager, every hero and coward, every creator and destroyer of civilization, every king and peasant, every young couple in love, every mother and father, hopeful child, inventor and explorer, every teacher of morals, every corrupt politician, every "superstar," every "supreme leader," every saint and sinner in the history of our species lived there--on a mote of dust suspended in a sunbeam."</p>
-                        </div>
-                    </div>
-                    <div class="comparison-item">
-                        <h3>AI TTS → Transcription (Generated via ElevenLabs)</h3>
-                        <div class="text-box" style="height: 200px; overflow-y: auto; padding: 1rem;">
-                            <p style="font-size: 0.9rem; line-height: 1.4; margin: 0;">"Look again at that dot. That's here, that's home, that's us. On it everyone you love, everyone you know, everyone you ever heard of, every human being who ever was lived out their lives. The aggregate of our joy and suffering, thousands of confident religions, ideologies, and economic doctrines, every hunter and forager, every hero and coward, every creator and destroyer of civilization, every king and peasant, every young couple in love, every mother and father, hopeful child, inventor and explorer, every teacher of morals, every corrupt politician, every superstar, every supreme leader, every saint and sinner in the history of our species lived there, on a mote of dust suspended in a sunbeam."</p>
-                        </div>
-                    </div>
-                </div>
-                
-
-                <div class="navigation">
-                    <div class="nav-arrow prev">←</div>
-                    <div class="nav-arrow next">→</div>
+                <div class="card">
+                    <h3>Areas for Improvement</h3>
+                    <ul>
+                        <li><strong>Enhance expressivity for non-cloned voices</strong> — currently less natural compared to cloned voices</li>
+                        <li><strong>Introduce more granular controls for expressivity at the word level</strong> — e.g., integrate the advanced v3 [tags] into dubbing</li>
+                        <li><strong>Increase text editing flexibility</strong> — enable splitting and merging using text alongside audio and pacing adjustments</li>
+                        <li><strong>Improve speaker detection</strong> — leveraging video analytics could make this more accurate</li>
+                        <li><strong>Enable frame-by-frame editing</strong> — to allow finer adjustments in dubbing</li>
+                    </ul>
                 </div>
             </div>
-        </section>
+        </div>
 
-        <!-- Slide 5: Transcription Results & Metrics -->
-        <section class="slide" id="slide-5">
-            <div class="slide-content">
-                <h2>Transcription Results & Metrics</h2>
-                <h3 style="text-align: center; font-weight: 600; color: #333; margin-bottom: 2rem; font-size: 1.2rem;">Summary: Near Perfect Transcription</h3>
-                
-                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; margin: 1rem 0; align-items: start;">
-                    <!-- Table on the left -->
-                    <div>
-                        <table style="width:100%; border-collapse:collapse; font-size:1.05em; background:#fff; box-shadow:0 2px 8px rgba(0,0,0,0.03); border-radius:12px; overflow:hidden;">
-                            <thead>
-                                <tr style="background:#f7f7f7;">
-                                    <th style="padding:0.75em 1em; text-align:left; font-weight:600; border-bottom:1px solid #eee;">Metric</th>
-                                    <th style="padding:0.75em 1em; text-align:left; font-weight:600; border-bottom:1px solid #eee;">Value</th>
-                                    <th style="padding:0.75em 1em; text-align:left; font-weight:400; border-bottom:1px solid #eee;">Notes</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td style="padding:0.75em 1em; border-bottom:1px solid #f2f2f2;">Levenshtein Distance</td>
-                                    <td style="padding:0.75em 1em; border-bottom:1px solid #f2f2f2;">23 / 714</td>
-                                    <td style="padding:0.75em 1em; border-bottom:1px solid #f2f2f2;">~3% of characters differ (all punctuation/spacing)</td>
-                                </tr>
-                                <tr>
-                                    <td style="padding:0.75em 1em; border-bottom:1px solid #f2f2f2;">BLEU Score</td>
-                                    <td style="padding:0.75em 1em; border-bottom:1px solid #f2f2f2;">0.87</td>
-                                    <td style="padding:0.75em 1em; border-bottom:1px solid #f2f2f2;">1-gram precision: 98.6%</td>
-                                </tr>
-                                <tr>
-                                    <td style="padding:0.75em 1em; border-bottom:1px solid #f2f2f2;">Match Score (no punctuation/spaces)</td>
-                                    <td style="padding:0.75em 1em; border-bottom:1px solid #f2f2f2;">100%</td>
-                                    <td style="padding:0.75em 1em; border-bottom:1px solid #f2f2f2;">Perfect word preservation</td>
-                                </tr>
-                                <tr>
-                                    <td style="padding:0.75em 1em; border-bottom:1px solid #f2f2f2;">BERTScore_F1</td>
-                                    <td style="padding:0.75em 1em; border-bottom:1px solid #f2f2f2;">0.96</td>
-                                    <td style="padding:0.75em 1em; border-bottom:1px solid #f2f2f2;">Excellent semantic similarity</td>
-                                </tr>
-                                <tr>
-                                    <td style="padding:0.75em 1em;">SentenceBERT Cosine</td>
-                                    <td style="padding:0.75em 1em;">0.99</td>
-                                    <td style="padding:0.75em 1em;">Very high similarity</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
+        <hr class="divider">
 
-                    <!-- Text on the right -->
-                    <div style="font-size:1.05em; color:#222;">
-                        <ul style="margin-bottom:1.2em;">
-                            <li>Levenshtein distance of 23 over 714 characters means that only ~3% of characters differ, all entirely due to punctuation and spacing rather than actual words.</li>
-                            <li>The overall BLEU score is 0.87, with a near‑perfect 1‑gram precision of 98.6%, showing that almost every word was preserved in the round‑trip text.</li>
-                            <li>After removing all punctuation and spaces, the match score between the two texts is 100%!</li>
-                        </ul>
+        <!-- ═══════════════════════════════════════════ -->
+        <!-- TRANSCRIPTION ANALYSIS                      -->
+        <!-- ═══════════════════════════════════════════ -->
+        <div class="section fade-in">
+            <h2 class="section-title">Transcription Analysis</h2>
+            <p class="section-subtitle">Setup &amp; Methodology</p>
 
-                        <div style="font-size:0.98em; color:#555; margin-top:1em;">
-                            Note: This was a simple single‑speaker audio; with more complex dialogue, results may differ — but 100% word preservation here is impressive!!
-                        </div>
+            <p>I took a small portion of <strong>Carl Sagan's <a href="https://en.wikipedia.org/wiki/Pale_Blue_Dot" target="_blank" style="color: #000; border-bottom: 1px solid #000; text-decoration: none;">Pale Blue Dot</a> Speech</strong> as an example and used their TTS model to generate AI voice, then transcribed it back to text to compare both texts.</p>
+
+            <p><strong>Original text:</strong></p>
+            <div class="quote-block">
+                "Look again at that dot. That's here. That's home. That's us. On it everyone you love, everyone you know, everyone you ever heard of, every human being who ever was, lived out their lives. The aggregate of our joy and suffering, thousands of confident religions, ideologies, and economic doctrines, every hunter and forager, every hero and coward, every creator and destroyer of civilization, every king and peasant, every young couple in love, every mother and father, hopeful child, inventor and explorer, every teacher of morals, every corrupt politician, every "superstar," every "supreme leader," every saint and sinner in the history of our species lived there--on a mote of dust suspended in a sunbeam."
+            </div>
+
+            <!-- Audio -->
+            <div style="margin: 2rem 0;">
+                <p class="audio-label">AI Voice (Generated via ElevenLabs)</p>
+                <audio controls>
+                    <source src="ElevenLabs_2025-08-04T10_32_02_Liam_pre_sp100_s50_sb75_v3.mp3" type="audio/mpeg">
+                </audio>
+            </div>
+
+            <!-- Differences -->
+            <div class="highlight-box">
+                <h4>Key Differences Found</h4>
+                <ul>
+                    <li><strong>Punctuation:</strong> "That's here." &rarr; "That's here," (period to comma)</li>
+                    <li><strong>Punctuation:</strong> "That's home." &rarr; "That's home," (period to comma)</li>
+                    <li><strong>Punctuation:</strong> "That's us." &rarr; "That's us," (period to comma)</li>
+                    <li><strong>Quotes:</strong> "superstar," &rarr; superstar (removed quotes)</li>
+                    <li><strong>Quotes:</strong> "supreme leader," &rarr; supreme leader, (removed quotes)</li>
+                    <li><strong>Punctuation:</strong> "lived there--on" &rarr; "lived there, on" (em dash to comma)</li>
+                </ul>
+            </div>
+
+            <!-- Side-by-side text comparison -->
+            <div class="two-col">
+                <div>
+                    <p class="text-box-label">Original Text (Carl Sagan)</p>
+                    <div class="text-box">
+                        <p>"Look again at that dot. That's here. That's home. That's us. On it everyone you love, everyone you know, everyone you ever heard of, every human being who ever was, lived out their lives. The aggregate of our joy and suffering, thousands of confident religions, ideologies, and economic doctrines, every hunter and forager, every hero and coward, every creator and destroyer of civilization, every king and peasant, every young couple in love, every mother and father, hopeful child, inventor and explorer, every teacher of morals, every corrupt politician, every "superstar," every "supreme leader," every saint and sinner in the history of our species lived there--on a mote of dust suspended in a sunbeam."</p>
                     </div>
                 </div>
-
-                <div class="navigation">
-                    <div class="nav-arrow prev">←</div>
-                    <div class="nav-arrow next">→</div>
+                <div>
+                    <p class="text-box-label">AI TTS &rarr; Transcription (ElevenLabs)</p>
+                    <div class="text-box">
+                        <p>"Look again at that dot. That's here, that's home, that's us. On it everyone you love, everyone you know, everyone you ever heard of, every human being who ever was lived out their lives. The aggregate of our joy and suffering, thousands of confident religions, ideologies, and economic doctrines, every hunter and forager, every hero and coward, every creator and destroyer of civilization, every king and peasant, every young couple in love, every mother and father, hopeful child, inventor and explorer, every teacher of morals, every corrupt politician, every superstar, every supreme leader, every saint and sinner in the history of our species lived there, on a mote of dust suspended in a sunbeam."</p>
+                    </div>
                 </div>
             </div>
-        </section>
+        </div>
 
-        <!-- Slide 6: Translation Metrics - English to Spanish -->
-        <section class="slide" id="slide-6">
-            <div class="slide-content">
-                <h2>Translation Metrics: English → Spanish</h2>
-                <h3 style="text-align: center; font-weight: 600; color: #333; margin-bottom: 2rem; font-size: 1.2rem;">Summary:Strong Semantic Alignment</h3>
-                
-                <!-- Summary Section -->
-                <div style="margin: 1rem 0;">
-                    <h3 style="text-align: center; margin-bottom: 1.5rem; color: #333;">Translation Quality Metrics</h3>
-                    
-                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: start;">
-                        <!-- Metrics Table -->
-                        <div>
-                            <table style="width:100%; border-collapse:collapse; font-size:1.05em; background:#fff; box-shadow:0 2px 8px rgba(0,0,0,0.03); border-radius:12px; overflow:hidden;">
-                                <thead>
-                                    <tr style="background:#f7f7f7;">
-                                        <th style="padding:0.75em 1em; text-align:left; font-weight:600; border-bottom:1px solid #eee;">Metric</th>
-                                        <th style="padding:0.75em 1em; text-align:left; font-weight:600; border-bottom:1px solid #eee;">Score</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td style="padding:0.75em 1em; border-bottom:1px solid #f2f2f2;">BERT</td>
-                                        <td style="padding:0.75em 1em; border-bottom:1px solid #f2f2f2;">0.82545</td>
-                                    </tr>
-                                    <tr>
-                                        <td style="padding:0.75em 1em;">LaBSE Cosine</td>
-                                        <td style="padding:0.75em 1em;">0.9464</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                        
-                        <!-- Summary Text -->
-                        <div style="font-size:1.05em; color:#222;">
-                            <p style="margin-bottom: 1rem; line-height: 1.6;">
-                                The Spanish translation preserves the original meaning well, with a BERTScore of 0.83 and a LaBSE cosine similarity of 0.95, indicating strong semantic alignment.
-                            </p>
-                        </div>
-                    </div>
+        <hr class="divider">
+
+        <!-- ═══════════════════════════════════════════ -->
+        <!-- TRANSCRIPTION RESULTS & METRICS             -->
+        <!-- ═══════════════════════════════════════════ -->
+        <div class="section fade-in">
+            <h2 class="section-title">Transcription Results</h2>
+            <p class="section-subtitle">Near Perfect Transcription</p>
+
+            <div class="two-col">
+                <div>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Metric</th>
+                                <th>Value</th>
+                                <th>Notes</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Levenshtein Distance</td>
+                                <td>23 / 714</td>
+                                <td>~3% of characters differ (all punctuation/spacing)</td>
+                            </tr>
+                            <tr>
+                                <td>BLEU Score</td>
+                                <td>0.87</td>
+                                <td>1-gram precision: 98.6%</td>
+                            </tr>
+                            <tr>
+                                <td>Match Score (no punct/spaces)</td>
+                                <td>100%</td>
+                                <td>Perfect word preservation</td>
+                            </tr>
+                            <tr>
+                                <td>BERTScore F1</td>
+                                <td>0.96</td>
+                                <td>Excellent semantic similarity</td>
+                            </tr>
+                            <tr>
+                                <td>SentenceBERT Cosine</td>
+                                <td>0.99</td>
+                                <td>Very high similarity</td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
-                
-                <!-- Audio Section -->
-                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; margin: 1rem 0;">
-                    <div style="text-align: center;">
-                        <h3>Original Audio (English)</h3>
-                        <audio controls style="width: 100%; max-width: 300px; margin: 0.5rem 0;">
+                <div>
+                    <ul>
+                        <li>Levenshtein distance of 23 over 714 characters means that only ~3% of characters differ, all entirely due to punctuation and spacing rather than actual words.</li>
+                        <li>The overall BLEU score is 0.87, with a near-perfect 1-gram precision of 98.6%, showing that almost every word was preserved in the round-trip text.</li>
+                        <li>After removing all punctuation and spaces, the match score between the two texts is 100%.</li>
+                    </ul>
+                    <p style="color: #666; font-size: 0.85rem; margin-top: 1rem;"><em>Note: This was a simple single-speaker audio; with more complex dialogue, results may differ — but 100% word preservation here is impressive.</em></p>
+                </div>
+            </div>
+        </div>
+
+        <hr class="divider">
+
+        <!-- ═══════════════════════════════════════════ -->
+        <!-- TRANSLATION: ENGLISH → SPANISH              -->
+        <!-- ═══════════════════════════════════════════ -->
+        <div class="section fade-in">
+            <h2 class="section-title">Translation: English &rarr; Spanish</h2>
+            <p class="section-subtitle">Strong Semantic Alignment</p>
+
+            <div class="two-col">
+                <div>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Metric</th>
+                                <th>Score</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>BERTScore</td>
+                                <td>0.8255</td>
+                            </tr>
+                            <tr>
+                                <td>LaBSE Cosine</td>
+                                <td>0.9464</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <p style="font-size: 0.88rem; line-height: 1.6;">The Spanish translation preserves the original meaning well, with a BERTScore of 0.83 and a LaBSE cosine similarity of 0.95, indicating strong semantic alignment.</p>
+                </div>
+                <div>
+                    <div style="margin-bottom: 1.5rem;">
+                        <p class="audio-label">Original Audio (English)</p>
+                        <audio controls>
                             <source src="ElevenLabs_2025-08-04T10_32_02_Liam_pre_sp100_s50_sb75_v3.mp3" type="audio/mpeg">
-                            Your browser does not support the audio element.
                         </audio>
                     </div>
-                    <div style="text-align: center;">
-                        <h3>Translated Audio (Spanish)</h3>
-                        <audio controls style="width: 100%; max-width: 300px; margin: 0.5rem 0;">
+                    <div>
+                        <p class="audio-label">Translated Audio (Spanish)</p>
+                        <audio controls>
                             <source src="render_ijdYexpbKGKCvzxkj4lB.mp3" type="audio/mpeg">
-                            Your browser does not support the audio element.
                         </audio>
                     </div>
                 </div>
-                
-                <div class="comparison-container">
-                    <div class="comparison-item">
-                        <h3>Original Text (English)</h3>
-                        <div class="text-box" style="height: 200px; overflow-y: auto; padding: 1rem;">
-                            <p style="font-size: 0.9rem; line-height: 1.4; margin: 0;">"Look again at that dot. That's here, that's home, that's us. On it everyone you love, everyone you know, everyone you ever heard of, every human being who ever was lived out their lives. The aggregate of our joy and suffering, thousands of confident religions, ideologies, and economic doctrines, every hunter and forager, every hero and coward, every creator and destroyer of civilization, every king and peasant, every young couple in love, every mother and father, hopeful child, inventor and explorer, every teacher of morals, every corrupt politician, every superstar, every supreme leader, every saint and sinner in the history of our species lived there, on a mote of dust suspended in a sunbeam."</p>
-                        </div>
-                    </div>
-                    <div class="comparison-item">
-                        <h3>Translated Text (Spanish)</h3>
-                        <div class="text-box" style="height: 200px; overflow-y: auto; padding: 1rem;">
-                            <p style="font-size: 0.9rem; line-height: 1.4; margin: 0;">"Mira de nuevo ese punto. Ahí está aquí, ahí está el hogar, ahí estamos nosotros. En él, todos los que amas, todos los que conoces, todos de quienes has oído hablar, todos los seres humanos que han existido vivieron sus vidas. El conjunto de nuestra alegría y sufrimiento, miles de religiones, ideologías y doctrinas económicas confiadas, cada cazador y recolector, cada héroe y cobarde, cada creador y destructor de civilización, cada rey y campesino, cada pareja joven enamorada, cada madre y padre, niño esperanzado, inventor y explorador, cada maestro de moral, cada político corrupto, cada superestrella, cada líder supremo, cada santo y pecador en la historia de nuestra especie vivieron allí, en una mota de polvo suspendida en un rayo de sol."</p>
-                        </div>
-                    </div>
+            </div>
 
-                
-                <div class="navigation">
-                    <div class="nav-arrow prev">←</div>
-                    <div class="nav-arrow next">→</div>
+            <div class="two-col">
+                <div>
+                    <p class="text-box-label">Original Text (English)</p>
+                    <div class="text-box">
+                        <p>"Look again at that dot. That's here, that's home, that's us. On it everyone you love, everyone you know, everyone you ever heard of, every human being who ever was lived out their lives. The aggregate of our joy and suffering, thousands of confident religions, ideologies, and economic doctrines, every hunter and forager, every hero and coward, every creator and destroyer of civilization, every king and peasant, every young couple in love, every mother and father, hopeful child, inventor and explorer, every teacher of morals, every corrupt politician, every superstar, every supreme leader, every saint and sinner in the history of our species lived there, on a mote of dust suspended in a sunbeam."</p>
+                    </div>
+                </div>
+                <div>
+                    <p class="text-box-label">Translated Text (Spanish)</p>
+                    <div class="text-box">
+                        <p>"Mira de nuevo ese punto. Ah&iacute; est&aacute; aqu&iacute;, ah&iacute; est&aacute; el hogar, ah&iacute; estamos nosotros. En &eacute;l, todos los que amas, todos los que conoces, todos de quienes has o&iacute;do hablar, todos los seres humanos que han existido vivieron sus vidas. El conjunto de nuestra alegr&iacute;a y sufrimiento, miles de religiones, ideolog&iacute;as y doctrinas econ&oacute;micas confiadas, cada cazador y recolector, cada h&eacute;roe y cobarde, cada creador y destructor de civilizaci&oacute;n, cada rey y campesino, cada pareja joven enamorada, cada madre y padre, ni&ntilde;o esperanzado, inventor y explorador, cada maestro de moral, cada pol&iacute;tico corrupto, cada superestrella, cada l&iacute;der supremo, cada santo y pecador en la historia de nuestra especie vivieron all&iacute;, en una mota de polvo suspendida en un rayo de sol."</p>
+                    </div>
                 </div>
             </div>
-        </section>
+        </div>
 
-        <!-- Slide 7: Translation Metrics - English to Hindi -->
-        <section class="slide" id="slide-7">
-            <div class="slide-content">
-                <h2>Translation Metrics: English → Hindi</h2>
-                <h3 style="text-align: center; font-weight: 600; color: #333; margin-bottom: 2rem; font-size: 1.2rem;">Summary: Decent Translation Quality</h3>
-                
-                <!-- Summary Section -->
-                <div style="margin: 1rem 0;">
-                    <h3 style="text-align: center; margin-bottom: 1.5rem; color: #333;">Translation Quality Metrics</h3>
-                    
-                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: start;">
-                        <!-- Metrics Table -->
-                        <div>
-                            <table style="width:100%; border-collapse:collapse; font-size:1.05em; background:#fff; box-shadow:0 2px 8px rgba(0,0,0,0.03); border-radius:12px; overflow:hidden;">
-                                <thead>
-                                    <tr style="background:#f7f7f7;">
-                                        <th style="padding:0.75em 1em; text-align:left; font-weight:600; border-bottom:1px solid #eee;">Metric</th>
-                                        <th style="padding:0.75em 1em; text-align:left; font-weight:600; border-bottom:1px solid #eee;">Score</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td style="padding:0.75em 1em; border-bottom:1px solid #f2f2f2;">BERT</td>
-                                        <td style="padding:0.75em 1em; border-bottom:1px solid #f2f2f2;">0.6559</td>
-                                    </tr>
-                                    <tr>
-                                        <td style="padding:0.75em 1em;">LaBSE Cosine</td>
-                                        <td style="padding:0.75em 1em;">0.8214</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                        
-                        <!-- Summary Text -->
-                        <div style="font-size:1.05em; color:#222;">
-                            <p style="margin-bottom: 1rem; line-height: 1.6;">
-                                Not as good as Spanish but still great! As I speak Hindi, I thought it was overall a decent translation.
-                            </p>
-                            <p style="margin-bottom: 1rem; line-height: 1.6;">
-                                "Messi is turning around Tim Parker" is translated to "Messi is turning Tim Parker around" which is not bad but that's scope for improvement I guess.
-                            </p>
-                        </div>
-                    </div>
+        <hr class="divider">
+
+        <!-- ═══════════════════════════════════════════ -->
+        <!-- TRANSLATION: ENGLISH → HINDI                -->
+        <!-- ═══════════════════════════════════════════ -->
+        <div class="section fade-in">
+            <h2 class="section-title">Translation: English &rarr; Hindi</h2>
+            <p class="section-subtitle">Decent Translation Quality</p>
+
+            <div class="two-col">
+                <div>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Metric</th>
+                                <th>Score</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>BERTScore</td>
+                                <td>0.6559</td>
+                            </tr>
+                            <tr>
+                                <td>LaBSE Cosine</td>
+                                <td>0.8214</td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
-                
-                
-                <div class="comparison-container">
-                    <div class="comparison-item">
-                        <h3>Original Text (English)</h3>
-                        <div class="text-box" style="height: 200px; overflow-y: auto; padding: 1rem;">
-                            <p style="font-size: 0.9rem; line-height: 1.4; margin: 0;">"For Dortmund. Here's Messi, trying to turn around Tim Parker, who's chasing after him, and then spinning again. Still Lionel Messi surveying, finding Jordi Alba. Back to Messi!"</p>
-                        </div>
-                    </div>
-                    <div class="comparison-item">
-                        <h3>Translated Text (Hindi)</h3>
-                        <div class="text-box" style="height: 200px; overflow-y: auto; padding: 1rem;">
-                            <p style="font-size: 0.9rem; line-height: 1.4; margin: 0;">"डॉर्टमुंड के लिए। यहाँ मेसी हैं, टिम पार्कर को घुमाने की कोशिश कर रहे हैं, जो उनका पीछा कर रहे हैं, और फिर से घूम रहे हैं। फिर भी लियोनेल मेसी देख रहे हैं, जोर्डी अल्बा को ढूंढ रहे हैं। वापस मेसी के पास!"</p>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="navigation">
-                    <div class="nav-arrow prev">←</div>
-                    <div class="nav-arrow next">→</div>
+                <div>
+                    <p style="font-size: 0.88rem; line-height: 1.6;">Not as good as Spanish but still great! As I speak Hindi, I thought it was overall a decent translation.</p>
+                    <p style="font-size: 0.88rem; line-height: 1.6;">"Messi is turning around Tim Parker" is translated to "Messi is turning Tim Parker around" which is not bad but that's scope for improvement I guess.</p>
                 </div>
             </div>
-        </section>
 
-        <!-- Slide 8: Zero-Shot Dubbing Comparison -->
-        <section class="slide" id="slide-8">
-            <div class="slide-content">
-                <h2>Zero-Shot Dubbing Comparison</h2>
-                <h3 style="text-align: center; font-weight: 600; color: #000; margin-bottom: 2rem; font-size: 1.2rem;">Impressive Localization with no edits. Translation was great. I did not need to edit anything.</h3>
-            
-                
-                <!-- Video Comparison -->
-                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; margin: 2rem 0;">
-                    <!-- English Original -->
-                    <div style="text-align: center;">
-                        <h3>English</h3>
-                        <video controls style="width: 100%; max-width: 350px; margin: 1rem 0;">
-                            <source src="How do we know what we know (3).mp4" type="video/mp4">
-                            Your browser does not support the video element.
-                        </video>
-
-                    </div>
-                    
-                    <!-- Hindi Dubbed -->
-                    <div style="text-align: center;">
-                        <h3>Hindi Dubbed </h3>
-                        <video controls style="width: 100%; max-width: 350px; margin: 1rem 0;">
-                            <source src="render_p2aULazkuBeZHAyaAVCl.mp4" type="video/mp4">
-                            Your browser does not support the video element.
-                        </video>
+            <div class="two-col">
+                <div>
+                    <p class="text-box-label">Original Text (English)</p>
+                    <div class="text-box">
+                        <p>"For Dortmund. Here's Messi, trying to turn around Tim Parker, who's chasing after him, and then spinning again. Still Lionel Messi surveying, finding Jordi Alba. Back to Messi!"</p>
                     </div>
                 </div>
-                
-                
-                <div class="navigation">
-                    <div class="nav-arrow prev">←</div>
-                    <div class="nav-arrow next">→</div>
+                <div>
+                    <p class="text-box-label">Translated Text (Hindi)</p>
+                    <div class="text-box">
+                        <p>"&#x0921;&#x0949;&#x0930;&#x094D;&#x091F;&#x092E;&#x0941;&#x0902;&#x0921; &#x0915;&#x0947; &#x0932;&#x093F;&#x090F;&#x0964; &#x092F;&#x0939;&#x093E;&#x0901; &#x092E;&#x0947;&#x0938;&#x0940; &#x0939;&#x0948;&#x0902;, &#x091F;&#x093F;&#x092E; &#x092A;&#x093E;&#x0930;&#x094D;&#x0915;&#x0930; &#x0915;&#x094B; &#x0918;&#x0941;&#x092E;&#x093E;&#x0928;&#x0947; &#x0915;&#x0940; &#x0915;&#x094B;&#x0936;&#x093F;&#x0936; &#x0915;&#x0930; &#x0930;&#x0939;&#x0947; &#x0939;&#x0948;&#x0902;, &#x091C;&#x094B; &#x0909;&#x0928;&#x0915;&#x093E; &#x092A;&#x0940;&#x091B;&#x093E; &#x0915;&#x0930; &#x0930;&#x0939;&#x0947; &#x0939;&#x0948;&#x0902;, &#x0914;&#x0930; &#x092B;&#x093F;&#x0930; &#x0938;&#x0947; &#x0918;&#x0942;&#x092E; &#x0930;&#x0939;&#x0947; &#x0939;&#x0948;&#x0902;&#x0964; &#x092B;&#x093F;&#x0930; &#x092D;&#x0940; &#x0932;&#x093F;&#x092F;&#x094B;&#x0928;&#x0947;&#x0932; &#x092E;&#x0947;&#x0938;&#x0940; &#x0926;&#x0947;&#x0916; &#x0930;&#x0939;&#x0947; &#x0939;&#x0948;&#x0902;, &#x091C;&#x094B;&#x0930;&#x094D;&#x0921;&#x0940; &#x0905;&#x0932;&#x094D;&#x092C;&#x093E; &#x0915;&#x094B; &#x0922;&#x0942;&#x0902;&#x0922; &#x0930;&#x0939;&#x0947; &#x0939;&#x0948;&#x0902;&#x0964; &#x0935;&#x093E;&#x092A;&#x0938; &#x092E;&#x0947;&#x0938;&#x0940; &#x0915;&#x0947; &#x092A;&#x093E;&#x0938;!"</p>
+                    </div>
                 </div>
             </div>
-        </section>
+        </div>
 
-        <!-- Slide 9: Complex Dubbing Analysis - Seinfeld -->
-        <section class="slide" id="slide-9">
-            <div class="slide-content">
-                <h2>Complex Dubbing Analysis: Seinfeld</h2>
-                <h3 style="text-align: center; font-weight: 600; color: #000; margin-bottom: 2rem; font-size: 1.2rem;">Multi-Speaker Scene with expressivity</h3>
-                
-                <!-- Three Section Layout -->
-                <div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 2rem; margin: 2rem 0; height: 60vh;">
-                    <!-- English Video Section -->
-                    <div style="text-align: center; display: flex; flex-direction: column;">
-                        <h3 style="margin-bottom: 1rem; color: #000;">English Original</h3>
-                        <video controls style="width: 100%; height: 100%; object-fit: cover; border-radius: 8px;">
-                            <source src="yt1z.net - Jerry Gets Mad At Kramer Shorts Seinfeld (720p).mp4" type="video/mp4">
-                            Your browser does not support the video element.
-                        </video>
-                    </div>
-                    
-                    <!-- Hindi Dubbed Section -->
-                    <div style="text-align: center; display: flex; flex-direction: column;">
-                        <h3 style="margin-bottom: 1rem; color: #000;">Hindi Dubbed</h3>
-                        <video controls style="width: 100%; height: 100%; object-fit: cover; border-radius: 8px;">
-                            <source src="render_jFhpoxHPwoLdRHCaW6oR.mp4" type="video/mp4">
-                            Your browser does not support the video element.
-                        </video>
-                    </div>
-                    
-                    <!-- Comments Section -->
-                    <div style="display: flex; flex-direction: column; height: 100%; overflow-y: auto;">
-                        <h3 style="margin-bottom: 1rem; color: #000;">Analysis & Comments</h3>
-                        
-                        <!-- Overview -->
-                        <div style="background: #f5f5f5; border: 1px solid #000; border-radius: 8px; padding: 1rem; margin-bottom: 1rem;">
-                            <h4 style="color: #000; margin-bottom: 0.5rem; font-size: 0.9rem;">Overview</h4>
-                            <p style="font-size: 0.85rem; color: #000; margin: 0; line-height: 1.4;">
-                                While the first output was good (got to 80%), it was difficult to improve with current features.
-                            </p>
-                        </div>
-                        
-                        <!-- Issues Section -->
-                        <div style="background: #f5f5f5; border: 1px solid #000; border-radius: 8px; padding: 1rem; margin-bottom: 1rem;">
-                            <h4 style="color: #000; margin-bottom: 0.5rem; font-size: 0.9rem;">Issues Found</h4>
-                            <ul style="font-size: 0.8rem; color: #000; margin: 0; padding-left: 1rem; line-height: 1.3;">
-                                <li style="margin-bottom: 0.3rem;">Detected 2 speakers instead of 3, even when specified 3 speakers</li>
-                                <li style="margin-bottom: 0.3rem;">Cloned voices have higher expressivity than non-cloned voices</li>
-                                <li style="margin-bottom: 0.3rem;">Retranslate button is not obvious</li>
-                                <li style="margin-bottom: 0.3rem;">Can't manipulate emotions of specific words</li>
-                                <li style="margin-bottom: 0.3rem;">Certain portions in Hindi seem rushed; expanding audio duration changes voice and sounds muffled</li>
-                                <li style="margin-bottom: 0.3rem;">Could not split segments into smaller segments or combine them based on text</li>
-                                <li style="margin-bottom: 0.3rem;">Small translation errors mainly on expressions</li>
-                            </ul>
-                        </div>
-                        
-                        <!-- Strengths Section -->
-                        <div style="background: #f5f5f5; border: 1px solid #000; border-radius: 8px; padding: 1rem; margin-bottom: 1rem;">
-                            <h4 style="color: #000; margin-bottom: 0.5rem; font-size: 0.9rem;">Things It Did Well</h4>
-                            <ul style="font-size: 0.8rem; color: #000; margin: 0; padding-left: 1rem; line-height: 1.3;">
-                                <li style="margin-bottom: 0.3rem;">Nice background separation</li>
-                                <li style="margin-bottom: 0.3rem;">Good lip sync since original and dubbed audio match in length and are aligned</li>
-                                <li style="margin-bottom: 0.3rem;">80% of dubbing was zero-shot</li>
-                            </ul>
-                        </div>
-                    </div>
+        <hr class="divider">
+
+        <!-- ═══════════════════════════════════════════ -->
+        <!-- ZERO-SHOT DUBBING COMPARISON                -->
+        <!-- ═══════════════════════════════════════════ -->
+        <div class="section fade-in">
+            <h2 class="section-title">Zero-Shot Dubbing Comparison</h2>
+            <p class="section-subtitle">Impressive Localization with No Edits</p>
+
+            <p>Translation was great. I did not need to edit anything.</p>
+
+            <div class="two-col">
+                <div>
+                    <p class="video-label">English Original</p>
+                    <video controls>
+                        <source src="How do we know what we know (3).mp4" type="video/mp4">
+                    </video>
                 </div>
-                
-                <div class="navigation">
-                    <div class="nav-arrow prev">←</div>
-                    <div class="nav-arrow next">→</div>
+                <div>
+                    <p class="video-label">Hindi Dubbed</p>
+                    <video controls>
+                        <source src="render_p2aULazkuBeZHAyaAVCl.mp4" type="video/mp4">
+                    </video>
                 </div>
             </div>
-        </section>
+        </div>
 
-        <!-- Slide 10: Deep Dive Analysis & Improvement Suggestions -->
-        <section class="slide" id="slide-10">
-            <div class="slide-content">
-                <h2>Deep Dive: Issues & Improvement Suggestions</h2>
-                <h3 style="text-align: center; font-weight: 600; color: #000; margin-bottom: 2rem; font-size: 1.2rem;">Detailed Analysis with Audio Comparisons & UI Screenshots</h3>
-                
-                <!-- Issue 1: Cloned vs Non-Cloned Voice Expressivity -->
-                <div style="margin: 2rem 0;">
-                    <h3 style="color: #000; margin-bottom: 1.5rem; font-size: 1.3rem;">Issue 1: Cloned Voices Have Higher Expressivity</h3>
-                    
-                    <!-- Audio Comparison -->
-                    <div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 1.5rem; margin: 1.5rem 0;">
-                        <div style="text-align: center; background: #fff; border-radius: 8px; padding: 1rem; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
-                            <h4 style="margin-bottom: 0.5rem; color: #000; font-size: 0.9rem;">Original (English)</h4>
-                            <audio controls style="width: 100%; max-width: 200px;">
-                                <source src="clip-McnbrSnkQRXEth0MZq97.wav" type="audio/wav">
-                                Your browser does not support the audio element.
-                            </audio>
-                        </div>
-                        <div style="text-align: center; background: #fff; border-radius: 8px; padding: 1rem; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
-                            <h4 style="margin-bottom: 0.5rem; color: #000; font-size: 0.9rem;">Hindi (Cloned Voice)</h4>
-                            <audio controls style="width: 100%; max-width: 200px;">
-                                <source src="clip-LojyoToOeYUMbMZh7wbS.wav" type="audio/wav">
-                                Your browser does not support the audio element.
-                            </audio>
-                        </div>
-                        <div style="text-align: center; background: #fff; border-radius: 8px; padding: 1rem; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
-                            <h4 style="margin-bottom: 0.5rem; color: #000; font-size: 0.9rem;">Hindi (Non-Cloned Voice)</h4>
-                            <audio controls style="width: 100%; max-width: 200px;">
-                                <source src="clip-huNcGSCQ34zCMpFhb7qf.wav" type="audio/wav">
-                                Your browser does not support the audio element.
-                            </audio>
-                        </div>
-                    </div>
-                    
-                    <!-- Suggestion -->
-                    <div style="background: #f5f5f5; border: 1px solid #000; border-radius: 8px; padding: 1rem; margin: 1rem 0;">
-                        <h4 style="color: #000; margin-bottom: 0.5rem; font-size: 0.9rem;">Suggestion</h4>
-                        <p style="font-size: 0.85rem; color: #000; margin: 0; line-height: 1.4;">
-                            A potential approach could be to clone the voice multiple times with gradually reduced similarity scores this might help retain emotional expressiveness while making the voice sound more distinct from the original.
-                        </p>
-                    </div>
+        <hr class="divider">
+
+        <!-- ═══════════════════════════════════════════ -->
+        <!-- COMPLEX DUBBING: SEINFELD                   -->
+        <!-- ═══════════════════════════════════════════ -->
+        <div class="section fade-in">
+            <h2 class="section-title">Complex Dubbing: Seinfeld</h2>
+            <p class="section-subtitle">Multi-Speaker Scene with Expressivity</p>
+
+            <div class="two-col">
+                <div>
+                    <p class="video-label">English Original</p>
+                    <video controls>
+                        <source src="yt1z.net - Jerry Gets Mad At Kramer Shorts Seinfeld (720p).mp4" type="video/mp4">
+                    </video>
                 </div>
-                
-                <!-- Issue 2: UI/UX Problems -->
-                <div style="margin: 2rem 0;">
-                    <h3 style="color: #000; margin-bottom: 1.5rem; font-size: 1.3rem;">Issue 2: UI/UX & Control Limitations</h3>
-                    
-                    <!-- Screenshot and Analysis -->
-                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; margin: 1.5rem 0;">
-                        <div style="text-align: center;">
-                            <h4 style="margin-bottom: 1rem; color: #000;">Current Interface Issues</h4>
-                            <img src="Screenshot 2025-08-06 at 11.59.42.png" alt="UI Screenshot showing retranslate button and control limitations" style="width: 100%; max-width: 400px; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
-                            <p style="font-size: 0.8rem; color: #666; margin-top: 0.5rem;">Retranslate button is not obvious to find and can't manipulate specific word emotions</p>
-                        </div>
-                        <div style="background: #f5f5f5; border: 1px solid #000; border-radius: 8px; padding: 1rem;">
-                            <h4 style="color: #000; margin-bottom: 0.5rem; font-size: 0.9rem;">Suggested Improvement</h4>
-                            <p style="font-size: 0.85rem; color: #000; margin: 0; line-height: 1.4;">
-                                Add a control panel at segment level on texts with:
-                            </p>
-                            <ul style="font-size: 0.8rem; color: #000; margin: 0.5rem 0 0 0; padding-left: 1rem; line-height: 1.3;">
-                                <li>Word-level emotion controls</li>
-                                <li>Prominent retranslate buttons - it was not obvious to find</li>
-                                <li>Segment splitting/combining tools</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Issue 3: Speaker Detection -->
-                <div style="margin: 2rem 0;">
-                    <h3 style="color: #000; margin-bottom: 1.5rem; font-size: 1.3rem;">Issue 3: Speaker Detection Problems</h3>
-                    
-                    <!-- Gemini Analysis Screenshot -->
-                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; margin: 1.5rem 0;">
-                        <div style="text-align: center;">
-                            <h4 style="margin-bottom: 1rem; color: #000;">AI Video Analysis</h4>
-                            <img src="Screenshot 2025-08-06 at 13.55.24.png" alt="Gemini detecting speakers in video" style="width: 100%; max-width: 400px; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
-                            <p style="font-size: 0.8rem; color: #666; margin-top: 0.5rem;">Gemini model detecting current number of speakers</p>
-                        </div>
-                        <div style="background: #f5f5f5; border: 1px solid #000; border-radius: 8px; padding: 1rem;">
-                            <h4 style="color: #000; margin-bottom: 0.5rem; font-size: 0.9rem;">Suggested Enhancement</h4>
-                            <p style="font-size: 0.85rem; color: #000; margin: 0; line-height: 1.4;">
-                                Integrate video analytics using Gemini models that can perform video analysis of characters to:
-                            </p>
-                            <ul style="font-size: 0.8rem; color: #000; margin: 0.5rem 0 0 0; padding-left: 1rem; line-height: 1.3;">
-                                <li>Automatically detect number of speakers</li>
-                                <li>Identify individual characters</li>
-                                <li>Map speakers to visual characters</li>
-                                <li>Improve speaker segmentation accuracy</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="navigation">
-                    <div class="nav-arrow prev">←</div>
-                    <div class="nav-arrow next">→</div>
+                <div>
+                    <p class="video-label">Hindi Dubbed</p>
+                    <video controls>
+                        <source src="render_jFhpoxHPwoLdRHCaW6oR.mp4" type="video/mp4">
+                    </video>
                 </div>
             </div>
-        </section>
 
-        <!-- Slide 11: AI Voice Generation Comparison -->
-        <section class="slide" id="slide-11">
-            <div class="slide-content">
-                <h2>AI Voice Generation Analysis</h2>
-                <h3 style="text-align: center; font-weight: 600; color: #000; margin-bottom: 2rem; font-size: 1.2rem;">Summary: Emotional Expression Differences</h3>
-                
-                <!-- Audio Comparison -->
-                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; margin: 2rem 0;">
-                    <div style="text-align: center;">
-                        <h3>Original English Audio</h3>
-                        <audio controls style="width: 100%; max-width: 350px; margin: 1rem 0;">
-                            <source src="clip-njTEmeXKQ6cPYa43tSC7.wav" type="audio/wav">
-                            Your browser does not support the audio element.
-                        </audio>
-                        <p style="font-size: 0.95rem; color: #000; margin-top: 1rem;">
-                            <strong>Key Feature:</strong> Screams "Meeeessssiiii" with high emotional intensity
-                        </p>
-                    </div>
-                    <div style="text-align: center;">
-                        <h3>Hindi AI Voice Generation</h3>
-                        <audio controls style="width: 100%; max-width: 350px; margin: 1rem 0;">
-                            <source src="render_V5Rwawa6ZjDeGiCULZCC (1).mp3" type="audio/mpeg">
-                            Your browser does not support the audio element.
-                        </audio>
-                        <p style="font-size: 0.95rem; color: #000; margin-top: 1rem;">
-                            <strong>Key Feature:</strong> Says "Messi" with neutral tone
-                        </p>
-                    </div>
+            <div class="two-col" style="margin-top: 1rem;">
+                <div class="card">
+                    <h3>Issues Found</h3>
+                    <ul>
+                        <li>Detected 2 speakers instead of 3, even when specified 3 speakers</li>
+                        <li>Cloned voices have higher expressivity than non-cloned voices</li>
+                        <li>Retranslate button is not obvious</li>
+                        <li>Can't manipulate emotions of specific words</li>
+                        <li>Certain portions in Hindi seem rushed; expanding audio duration changes voice and sounds muffled</li>
+                        <li>Could not split segments into smaller segments or combine them based on text</li>
+                        <li>Small translation errors mainly on expressions</li>
+                    </ul>
                 </div>
-                
-                <!-- Analysis Section -->
-                <div style="background: #f5f5f5; padding: 2rem; border-radius: 12px; margin: 2rem 0; text-align: center;">
-                    <h3 style="margin-bottom: 1.5rem; color: #000;">Analysis: Emotional Expression Gap</h3>
-                    <div style="max-width: 600px; margin: 0 auto; font-size: 1.05em; color: #000; line-height: 1.6;">
-                        <p style="margin-bottom: 1rem;">
-                            The English commentary captures the excitement and emotion of the moment with an elongated, passionate "Meeeessssiiii", while the Hindi AI voice generation produces a more neutral "Messi" pronunciation.
-                        </p>
-   
-                    </div>
-                </div>
-                
-                <div class="navigation">
-                    <div class="nav-arrow prev">←</div>
-                    <div class="nav-arrow next">→</div>
+                <div class="card">
+                    <h3>Things It Did Well</h3>
+                    <ul>
+                        <li>Nice background separation</li>
+                        <li>Good lip sync since original and dubbed audio match in length and are aligned</li>
+                        <li>80% of dubbing was zero-shot</li>
+                    </ul>
+                    <p style="margin-top: 1rem;">While the first output was good (got to 80%), it was difficult to improve with current features.</p>
                 </div>
             </div>
-        </section>
+        </div>
 
-        <!-- Slide 12: Audio Comparison Analysis -->
-        <section class="slide" id="slide-12">
-            <div class="slide-content">
-                <h2>Trade-off: Speaker Similarity vs Prosody</h2>
-                <h3 style="text-align: center; font-weight: 600; color: #000; margin-bottom: 1rem; font-size: 1.2rem;">Analysis of 7 Voice Generations</h3>
-                <p style="text-align: center; color: #666; margin-bottom: 2rem; font-size: 1rem; max-width: 800px; margin-left: auto; margin-right: auto;">
-                    The audio regeneration maintains speaker similarity but shows low variation in prosody across all samples.
-                </p>
-                
-                <!-- Two Column Layout: Audio Samples + Analysis -->
-                <div style="display: grid; grid-template-columns: 1fr 2fr; gap: 2rem; margin: 1.5rem 0;">
-                    <!-- Audio Samples Column -->
+        <hr class="divider">
+
+        <!-- ═══════════════════════════════════════════ -->
+        <!-- DEEP DIVE: ISSUES & SUGGESTIONS             -->
+        <!-- ═══════════════════════════════════════════ -->
+        <div class="section fade-in">
+            <h2 class="section-title">Deep Dive: Issues &amp; Suggestions</h2>
+            <p class="section-subtitle">Detailed Analysis with Audio Comparisons &amp; UI Screenshots</p>
+
+            <!-- Issue 1 -->
+            <div class="issue-block">
+                <h3 class="issue-title">Issue 1: Cloned Voices Have Higher Expressivity</h3>
+
+                <div class="three-col">
                     <div>
-                        <h3 style="margin-bottom: 1rem; color: #000; font-size: 1.1rem;">Audio Samples</h3>
-                        <div style="display: flex; flex-direction: column; gap: 1rem;">
-                            <div style="text-align: left;">
-                                <h4 style="margin-bottom: 0.5rem; color: #000; font-size: 0.9rem;">Sample 1</h4>
-                                <audio controls style="width: 100%; max-width: 300px;">
-                                    <source src="Au-1.wav" type="audio/wav">
-                                    Your browser does not support the audio element.
-                                </audio>
-                            </div>
-                            <div style="text-align: left;">
-                                <h4 style="margin-bottom: 0.5rem; color: #000; font-size: 0.9rem;">Sample 2</h4>
-                                <audio controls style="width: 100%; max-width: 300px;">
-                                    <source src="Au-2.wav" type="audio/wav">
-                                    Your browser does not support the audio element.
-                                </audio>
-                            </div>
-                            <div style="text-align: left;">
-                                <h4 style="margin-bottom: 0.5rem; color: #000; font-size: 0.9rem;">Sample 3</h4>
-                                <audio controls style="width: 100%; max-width: 300px;">
-                                    <source src="Au-3.wav" type="audio/wav">
-                                    Your browser does not support the audio element.
-                                </audio>
-                            </div>
-                            <div style="text-align: left;">
-                                <h4 style="margin-bottom: 0.5rem; color: #000; font-size: 0.9rem;">Sample 4</h4>
-                                <audio controls style="width: 100%; max-width: 300px;">
-                                    <source src="Au-4.wav" type="audio/wav">
-                                    Your browser does not support the audio element.
-                                </audio>
-                            </div>
-                            <div style="text-align: left;">
-                                <h4 style="margin-bottom: 0.5rem; color: #000; font-size: 0.9rem;">Sample 5</h4>
-                                <audio controls style="width: 100%; max-width: 300px;">
-                                    <source src="Au-5.wav" type="audio/wav">
-                                    Your browser does not support the audio element.
-                                </audio>
-                            </div>
-                            <div style="text-align: left;">
-                                <h4 style="margin-bottom: 0.5rem; color: #000; font-size: 0.9rem;">Sample 6</h4>
-                                <audio controls style="width: 100%; max-width: 300px;">
-                                    <source src="Au-6.wav" type="audio/wav">
-                                    Your browser does not support the audio element.
-                                </audio>
-                            </div>
-                            <div style="text-align: left;">
-                                <h4 style="margin-bottom: 0.5rem; color: #000; font-size: 0.9rem;">Sample 7</h4>
-                                <audio controls style="width: 100%; max-width: 300px;">
-                                    <source src="Au-7.wav" type="audio/wav">
-                                    Your browser does not support the audio element.
-                                </audio>
-                            </div>
-                        </div>
+                        <p class="audio-label">Original (English)</p>
+                        <audio controls>
+                            <source src="clip-McnbrSnkQRXEth0MZq97.wav" type="audio/wav">
+                        </audio>
                     </div>
-
-                    <!-- Analysis Results Column -->
                     <div>
-                        <h3 style="margin-bottom: 1rem; color: #000; font-size: 1.1rem;">Analysis Results</h3>
-                        
-                        <!-- Speaker Similarity -->
-                        <div style="margin: 1rem 0;">
-                            <h4 style="color: #000; margin-bottom: 0.8rem; font-size: 1rem;">1. Speaker Similarity Performance</h4>
-                            <div style="text-align: center; margin: 0.8rem 0;">
-                                <img src="speaker_similarity_heatmap.png" alt="Speaker similarity heatmap showing good performance" style="width: 100%; max-width: 400px; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
-                                <p style="font-size: 0.85rem; color: #666; margin-top: 0.5rem;">Speaker similarity with audio generation is consistently good across samples</p>
-                            </div>
-                        </div>
-
-                        <!-- Pitch and Energy Variation -->
-                        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin: 1rem 0;">
-                            <div>
-                                <h4 style="color: #000; margin-bottom: 0.8rem; font-size: 1rem;">2. Pitch Variation</h4>
-                                <div style="text-align: center;">
-                                    <img src="pitch_variation.png" alt="Pitch standard deviation graph" style="width: 100%; max-width: 250px; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
-                                    <p style="font-size: 0.8rem; color: #666; margin-top: 0.5rem;">All samples show very similar pitch expressivity patterns</p>
-                                </div>
-                            </div>
-                            <div>
-                                <h4 style="color: #000; margin-bottom: 0.8rem; font-size: 1rem;">3. Energy Variation</h4>
-                                <div style="text-align: center;">
-                                    <img src="energy_variation.png" alt="Energy standard deviation graph" style="width: 100%; max-width: 250px; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
-                                    <p style="font-size: 0.8rem; color: #666; margin-top: 0.5rem;">Energy patterns remain consistent across all voice generations</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Detailed Metrics -->
-                        <div style="margin: 1rem 0;">
-                            <h4 style="color: #000; margin-bottom: 0.8rem; font-size: 1rem;">Detailed Metrics</h4>
-                            <div style="text-align: center;">
-                                <img src="Screenshot 2025-08-07 at 00.02.06.png" alt="Detailed metrics analysis" style="width: 100%; max-width: 500px; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
-                            </div>
-                        </div>
+                        <p class="audio-label">Hindi (Cloned Voice)</p>
+                        <audio controls>
+                            <source src="clip-LojyoToOeYUMbMZh7wbS.wav" type="audio/wav">
+                        </audio>
+                    </div>
+                    <div>
+                        <p class="audio-label">Hindi (Non-Cloned Voice)</p>
+                        <audio controls>
+                            <source src="clip-huNcGSCQ34zCMpFhb7qf.wav" type="audio/wav">
+                        </audio>
                     </div>
                 </div>
-                
-                <div class="navigation">
-                    <div class="nav-arrow prev">←</div>
-                    <div class="nav-arrow next">→</div>
+
+                <div class="highlight-box">
+                    <h4>Suggestion</h4>
+                    <p>A potential approach could be to clone the voice multiple times with gradually reduced similarity scores — this might help retain emotional expressiveness while making the voice sound more distinct from the original.</p>
                 </div>
             </div>
-        </section>
 
-        <!-- Slide 13: Design Philosophy -->
-        <section class="slide" id="slide-13">
-            <div class="slide-content">
-                <h2>Finally, my Thoughts on Design Philosophy</h2>
-                
-                <div class="text-content" style="font-size: 1.2em; line-height: 1.7; margin-bottom: 2rem;">
-                    <p style="margin-bottom: 1.5rem; text-align: center; max-width: 800px; margin: 0 auto;">
-                        I found it interesting that the core controls like splitting and regenerating are <strong>built around manipulating audio files rather than text segments</strong>. This audio-first design works well for ensuring precise lip-sync, managing speaker transitions, and controlling pacing.
-                    </p>
-                    <p style="margin-bottom: 0; text-align: center; max-width: 800px; margin: 0 auto;">
-                        However, it may fall short when trying to achieve <strong>granular emotional control at the word level</strong>, where a text-first approach could offer more flexibility. It reflects a trade-off between low-level precision and high-level expressivity.
-                    </p>
-                </div>
-                
-                <!-- Interface Image -->
-                <div style="text-align: center; margin: 2rem 0;">
-                    <img src="Screenshot 2025-08-06 at 22.46.38.png" alt="ElevenLabs Dubbing Interface showing audio-first design with timeline controls" style="width: 100%; max-width: 800px; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
-                </div>
-                
-                <div class="navigation">
-                    <div class="nav-arrow prev">←</div>
+            <!-- Issue 2 -->
+            <div class="issue-block">
+                <h3 class="issue-title">Issue 2: UI/UX &amp; Control Limitations</h3>
+
+                <div class="two-col">
+                    <div>
+                        <img src="Screenshot 2025-08-06 at 11.59.42.png" alt="UI Screenshot showing retranslate button and control limitations" class="analysis-img">
+                        <p class="media-caption">Retranslate button is not obvious to find and can't manipulate specific word emotions</p>
+                    </div>
+                    <div class="highlight-box">
+                        <h4>Suggested Improvement</h4>
+                        <p>Add a control panel at segment level on texts with:</p>
+                        <ul>
+                            <li>Word-level emotion controls</li>
+                            <li>Prominent retranslate buttons — it was not obvious to find</li>
+                            <li>Segment splitting/combining tools</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-        </section>
 
+            <!-- Issue 3 -->
+            <div class="issue-block">
+                <h3 class="issue-title">Issue 3: Speaker Detection Problems</h3>
 
+                <div class="two-col">
+                    <div>
+                        <img src="Screenshot 2025-08-06 at 13.55.24.png" alt="Gemini detecting speakers in video" class="analysis-img">
+                        <p class="media-caption">Gemini model detecting current number of speakers</p>
+                    </div>
+                    <div class="highlight-box">
+                        <h4>Suggested Enhancement</h4>
+                        <p>Integrate video analytics using Gemini models that can perform video analysis of characters to:</p>
+                        <ul>
+                            <li>Automatically detect number of speakers</li>
+                            <li>Identify individual characters</li>
+                            <li>Map speakers to visual characters</li>
+                            <li>Improve speaker segmentation accuracy</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
 
+        <hr class="divider">
+
+        <!-- ═══════════════════════════════════════════ -->
+        <!-- AI VOICE GENERATION ANALYSIS                -->
+        <!-- ═══════════════════════════════════════════ -->
+        <div class="section fade-in">
+            <h2 class="section-title">AI Voice Generation Analysis</h2>
+            <p class="section-subtitle">Emotional Expression Differences</p>
+
+            <div class="two-col">
+                <div>
+                    <p class="audio-label">Original English Audio</p>
+                    <audio controls>
+                        <source src="clip-njTEmeXKQ6cPYa43tSC7.wav" type="audio/wav">
+                    </audio>
+                    <p style="font-size: 0.88rem; text-align: center; margin-top: 0.5rem;"><strong>Key Feature:</strong> Screams "Meeeessssiiii" with high emotional intensity</p>
+                </div>
+                <div>
+                    <p class="audio-label">Hindi AI Voice Generation</p>
+                    <audio controls>
+                        <source src="render_V5Rwawa6ZjDeGiCULZCC (1).mp3" type="audio/mpeg">
+                    </audio>
+                    <p style="font-size: 0.88rem; text-align: center; margin-top: 0.5rem;"><strong>Key Feature:</strong> Says "Messi" with neutral tone</p>
+                </div>
+            </div>
+
+            <div class="highlight-box" style="text-align: center;">
+                <h4>Emotional Expression Gap</h4>
+                <p style="max-width: 600px; margin: 0.5rem auto 0;">The English commentary captures the excitement and emotion of the moment with an elongated, passionate "Meeeessssiiii", while the Hindi AI voice generation produces a more neutral "Messi" pronunciation.</p>
+            </div>
+        </div>
+
+        <hr class="divider">
+
+        <!-- ═══════════════════════════════════════════ -->
+        <!-- SPEAKER SIMILARITY VS PROSODY               -->
+        <!-- ═══════════════════════════════════════════ -->
+        <div class="section fade-in">
+            <h2 class="section-title">Speaker Similarity vs Prosody</h2>
+            <p class="section-subtitle">Analysis of 7 Voice Regenerations</p>
+
+            <p>The audio regeneration maintains speaker similarity but shows low variation in prosody across all samples.</p>
+
+            <!-- Audio Samples Grid -->
+            <div class="audio-grid">
+                <div class="audio-grid-item">
+                    <p class="audio-label">Sample 1</p>
+                    <audio controls>
+                        <source src="Au-1.wav" type="audio/wav">
+                    </audio>
+                </div>
+                <div class="audio-grid-item">
+                    <p class="audio-label">Sample 2</p>
+                    <audio controls>
+                        <source src="Au-2.wav" type="audio/wav">
+                    </audio>
+                </div>
+                <div class="audio-grid-item">
+                    <p class="audio-label">Sample 3</p>
+                    <audio controls>
+                        <source src="Au-3.wav" type="audio/wav">
+                    </audio>
+                </div>
+                <div class="audio-grid-item">
+                    <p class="audio-label">Sample 4</p>
+                    <audio controls>
+                        <source src="Au-4.wav" type="audio/wav">
+                    </audio>
+                </div>
+                <div class="audio-grid-item">
+                    <p class="audio-label">Sample 5</p>
+                    <audio controls>
+                        <source src="Au-5.wav" type="audio/wav">
+                    </audio>
+                </div>
+                <div class="audio-grid-item">
+                    <p class="audio-label">Sample 6</p>
+                    <audio controls>
+                        <source src="Au-6.wav" type="audio/wav">
+                    </audio>
+                </div>
+                <div class="audio-grid-item">
+                    <p class="audio-label">Sample 7</p>
+                    <audio controls>
+                        <source src="Au-7.wav" type="audio/wav">
+                    </audio>
+                </div>
+            </div>
+
+            <!-- Analysis Charts -->
+            <h3 class="issue-title" style="margin-top: 2rem;">Analysis Results</h3>
+
+            <div style="margin: 1.5rem 0;">
+                <p style="font-size: 0.88rem; font-weight: 600; margin-bottom: 0.5rem;">1. Speaker Similarity Performance</p>
+                <img src="speaker_similarity_heatmap.png" alt="Speaker similarity heatmap" class="analysis-img">
+                <p class="media-caption">Speaker similarity with audio generation is consistently good across samples</p>
+            </div>
+
+            <div class="two-col">
+                <div>
+                    <p style="font-size: 0.88rem; font-weight: 600; margin-bottom: 0.5rem;">2. Pitch Variation</p>
+                    <img src="pitch_variation.png" alt="Pitch standard deviation graph" class="analysis-img-sm">
+                    <p class="media-caption">All samples show very similar pitch expressivity patterns</p>
+                </div>
+                <div>
+                    <p style="font-size: 0.88rem; font-weight: 600; margin-bottom: 0.5rem;">3. Energy Variation</p>
+                    <img src="energy_variation.png" alt="Energy standard deviation graph" class="analysis-img-sm">
+                    <p class="media-caption">Energy patterns remain consistent across all voice generations</p>
+                </div>
+            </div>
+
+            <div style="margin: 1.5rem 0;">
+                <p style="font-size: 0.88rem; font-weight: 600; margin-bottom: 0.5rem;">Detailed Metrics</p>
+                <img src="Screenshot 2025-08-07 at 00.02.06.png" alt="Detailed metrics analysis" class="analysis-img">
+            </div>
+        </div>
+
+        <hr class="divider">
+
+        <!-- ═══════════════════════════════════════════ -->
+        <!-- DESIGN PHILOSOPHY                           -->
+        <!-- ═══════════════════════════════════════════ -->
+        <div class="section fade-in">
+            <h2 class="section-title">Thoughts on Design Philosophy</h2>
+
+            <p>I found it interesting that the core controls like splitting and regenerating are <strong>built around manipulating audio files rather than text segments</strong>. This audio-first design works well for ensuring precise lip-sync, managing speaker transitions, and controlling pacing.</p>
+
+            <p>However, it may fall short when trying to achieve <strong>granular emotional control at the word level</strong>, where a text-first approach could offer more flexibility. It reflects a trade-off between low-level precision and high-level expressivity.</p>
+
+            <img src="Screenshot 2025-08-06 at 22.46.38.png" alt="ElevenLabs Dubbing Interface showing audio-first design with timeline controls" class="analysis-img" style="max-width: 700px; margin-top: 2rem;">
+        </div>
+
+        <div class="bottom-space"></div>
 
     </div>
 
-    <script src="script.js"></script>
+    <script>
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+    </script>
 </body>
-</html> 
+</html>
