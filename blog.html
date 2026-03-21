@@ -1,210 +1,231 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notebooks | Prashanth Shankar</title>
+    <link rel="icon" type="image/png" href="images/favicon2.png">
 
-	<!-- Global site tag (gtag.js) - Google Analytics -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-124334883-1"></script>
-	<script>
-	  window.dataLayer = window.dataLayer || [];
-	  function gtag(){dataLayer.push(arguments);}
-	  gtag('js', new Date());
-	  gtag('config', 'UA-124334883-1');
-	</script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
 
-<script src="https://cdn.amplitude.com/script/59010539cde9503811b2e9a80e47e0b4.js"></script><script>window.amplitude.add(window.sessionReplay.plugin({sampleRate: 1}));window.amplitude.init('59010539cde9503811b2e9a80e47e0b4', {"fetchRemoteConfig":true,"autocapture":{"attribution":true,"fileDownloads":true,"formInteractions":true,"pageViews":true,"sessions":true,"elementInteractions":true,"networkTracking":true,"webVitals":true,"frustrationInteractions":true}});</script>
+    <style>
+        *, *::before, *::after {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-  </head>
+        html {
+            scroll-behavior: smooth;
+            font-size: 16px;
+        }
 
-<title>Notes</title>
+        body {
+            background: #fff;
+            color: #000;
+            font-family: 'Inter', -apple-system, sans-serif;
+            font-weight: 400;
+            line-height: 1.6;
+        }
 
-<!-- Favicon -->
-<link rel="icon" type="image/png" href="images/favicon.png" sizes="32x32">
+        ::selection {
+            background: #000;
+            color: #fff;
+        }
 
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Karma">
-<style>
-body,h1,h2,h3,h4,h5,h6 {font-family: "Karma", sans-serif}
-.w3-bar-block .w3-bar-item {padding:20px}
-</style>
+        .page {
+            max-width: 720px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        /* ─── HEADER ─── */
+        header {
+            padding: 2.5rem 0 0;
+        }
+
+        .back-link {
+            font-size: 0.75rem;
+            font-weight: 400;
+            letter-spacing: 0.04em;
+            color: #000;
+            text-decoration: none;
+            transition: opacity 0.2s ease;
+        }
+
+        .back-link:hover {
+            opacity: 0.5;
+        }
+
+        /* ─── PAGE TITLE ─── */
+        .page-title {
+            padding: 3rem 0 1rem;
+        }
+
+        .page-title h1 {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 2.2rem;
+            font-weight: 600;
+            line-height: 1.2;
+            margin-bottom: 0.5rem;
+        }
+
+        .page-title p {
+            font-size: 0.88rem;
+            line-height: 1.6;
+        }
+
+        /* ─── SECTIONS ─── */
+        .topic-section {
+            margin-top: 2.5rem;
+        }
+
+        .topic-header {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+        }
+
+        /* ─── NOTE LIST ─── */
+        .note-list {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .note-item {
+            display: block;
+            padding: 1rem 0;
+            border-bottom: 1px solid #000;
+            text-decoration: none;
+            color: inherit;
+            transition: opacity 0.2s ease;
+        }
+
+        .note-item:first-child {
+            border-top: 1px solid #000;
+        }
+
+        .note-item:hover {
+            opacity: 0.6;
+        }
+
+        .note-title {
+            font-size: 0.92rem;
+            font-weight: 500;
+            margin-bottom: 0.2rem;
+        }
+
+        .note-desc {
+            font-size: 0.8rem;
+            color: #444;
+            line-height: 1.5;
+        }
+
+        /* ─── BOTTOM SPACING ─── */
+        .bottom-space {
+            padding-bottom: 6rem;
+        }
+
+        /* ─── RESPONSIVE ─── */
+        @media (max-width: 600px) {
+            .page {
+                padding: 0 1.25rem;
+            }
+
+            header {
+                padding-top: 1.5rem;
+            }
+
+            .page-title {
+                padding: 2rem 0 0.5rem;
+            }
+
+            .page-title h1 {
+                font-size: 1.8rem;
+            }
+        }
+    </style>
+
+    <script src="https://cdn.amplitude.com/script/59010539cde9503811b2e9a80e47e0b4.js"></script>
+    <script>window.amplitude.add(window.sessionReplay.plugin({sampleRate: 1}));window.amplitude.init('59010539cde9503811b2e9a80e47e0b4', {"fetchRemoteConfig":true,"autocapture":{"attribution":true,"fileDownloads":true,"formInteractions":true,"pageViews":true,"sessions":true,"elementInteractions":true,"networkTracking":true,"webVitals":true,"frustrationInteractions":true}});</script>
+</head>
 <body>
 
-<!-- Sidebar (hidden by default)
-<nav class="w3-sidebar w3-bar-block w3-card w3-top w3-xlarge w3-animate-left" style="display:none;z-index:2;width:40%;min-width:300px" id="mySidebar">
-  <a href="javascript:void(0)" onclick="w3_close()"
-  class="w3-bar-item w3-button">Close Menu</a>
-  <a href="#food" onclick="w3_close()" class="w3-bar-item w3-button">Food</a>
-  <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">About</a>
-</nav> -->
+    <div class="page">
 
+        <header>
+            <a href="./" class="back-link">&larr; Back</a>
+        </header>
 
-<!-- Top menu -->
-<div class="w3-top">
-  <div class="w3-white w3-xlarge" style="max-width:1200px;margin:auto">
-    <div class="w3-button w3-padding-16 w3-left" onclick="w3_open()"></div>
-    <div class="w3-right w3-padding-16"></div>
-    <div class="w3-center w3-padding-16">Programming notes</div>
-  </div>
-</div>
+        <div class="page-title">
+            <h1>Notebooks</h1>
+            <p>Programming notes and tutorials in Python and R.</p>
+        </div>
 
-<!-- !PAGE CONTENT! -->
-<div class="w3-main w3-content w3-padding" style="max-width:1200px;margin-top:100px">
+        <!-- R -->
+        <div class="topic-section">
+            <h2 class="topic-header">R</h2>
+            <div class="note-list">
+                <a href="Posts/14 310x Intro to R.html" class="note-item">
+                    <div class="note-title">R Basics</div>
+                    <div class="note-desc">Introduction to R. From simple addition to handling data frames.</div>
+                </a>
+            </div>
+        </div>
 
-  <!-- First Photo Grid-->
-  <div class="w3-row-padding w3-padding-16 w3-center" id="food">
-    <div class="w3-quarter">
-      <img src="images/blogs/R_basics.png" alt="Sandwich" style="width:70%">
-      <h3><a href="Posts/14 310x Intro to R.html">R basics</a></h3>
-      <p>Introduction to R. First few basics commands to learn. From simple addition to handeling data frames.</p>
+        <!-- Python -->
+        <div class="topic-section">
+            <h2 class="topic-header">Python</h2>
+            <div class="note-list">
+                <a href="Posts/1- Basic operations, strings and loops.html" class="note-item">
+                    <div class="note-title">1. Basic Operations, Strings and Loops</div>
+                    <div class="note-desc">First lesson in Python. Basic operations, strings, and loops.</div>
+                </a>
+                <a href="Posts/2 - Simple algorithms, Functions and Files.html" class="note-item">
+                    <div class="note-title">2. Simple Algorithms, Functions and Files</div>
+                    <div class="note-desc">Simple algorithms, functions, and file handling.</div>
+                </a>
+                <a href="Posts/3 - tuples, list, maps and dictionary.html" class="note-item">
+                    <div class="note-title">3. Tuples, Lists, Maps and Dictionaries</div>
+                    <div class="note-desc">Working with tuples, lists, maps, and dictionaries.</div>
+                </a>
+                <a href="Posts/4 - Testing and Debugging.html" class="note-item">
+                    <div class="note-title">4. Testing and Debugging</div>
+                    <div class="note-desc">Techniques for testing and debugging Python code.</div>
+                </a>
+                <a href="Posts/5 - Exceptions and Assertions.html" class="note-item">
+                    <div class="note-title">5. Exceptions and Assertions</div>
+                    <div class="note-desc">Error handling with exceptions and assertions.</div>
+                </a>
+                <a href="Posts/6 - Classes and Inheritance.html" class="note-item">
+                    <div class="note-title">6. Classes and Inheritance</div>
+                    <div class="note-desc">Object-oriented programming with classes and inheritance.</div>
+                </a>
+                <a href="Posts/7 - Classes  Extended Examples and GENERATORS.html" class="note-item">
+                    <div class="note-title">7. Classes, Extended Examples and Generators</div>
+                    <div class="note-desc">Advanced class patterns and generator functions.</div>
+                </a>
+                <a href="Posts/8 -  Computational Complexity .html" class="note-item">
+                    <div class="note-title">8. Computational Complexity</div>
+                    <div class="note-desc">Understanding algorithmic complexity and Big O notation.</div>
+                </a>
+                <a href="Posts/9. Searching and Sorting Algorithms.html" class="note-item">
+                    <div class="note-title">9. Searching and Sorting Algorithms</div>
+                    <div class="note-desc">Implementations of common searching and sorting algorithms.</div>
+                </a>
+                <a href="Posts/10. VISUALIZATION OF DATA.html" class="note-item">
+                    <div class="note-title">10. Visualization of Data</div>
+                    <div class="note-desc">Data visualization techniques in Python.</div>
+                </a>
+            </div>
+        </div>
+
+        <div class="bottom-space"></div>
+
     </div>
-
-    <div class="w3-quarter">
-      <img src="images/blogs/python.png" alt="Steak" style="width:60%">
-      <h3><a href="Posts/1- Basic operations, strings and loops.html">Python - 1 </a></h3>
-      <p>First lession in Python. Learn Basic operations, string and loops.</p>
-    </div>
-
-    <div class="w3-quarter">
-      <img src="images/blogs/python.png" alt="Cherries" style="width:60%">
-      <h3><a href="Posts/2 - Simple algorithms, Functions and Files.html">Python - 2 </a></h3>
-      <p>Learn simple algorithms, Functions and Files.</p>
-
-    </div>
-    <div class="w3-quarter">
-      <img src="images/blogs/python.png" alt="Pasta and Wine" style="width:60%">
-      <h3><a href="Posts/3 - tuples, list, maps and dictionary.html">Python - 3 </a></h3>
-      <p>Learn tuples, list, maps and dictonary.</p>
-    </div>
-  </div>
-
-
-  <!-- Second Photo Grid -->
-<div class="w3-row-padding w3-padding-16 w3-center" id="food">
-	<div class="w3-quarter">
-		<img src="images/blogs/python.png" alt="Steak" style="width:60%">
-		<h3><a href="Posts/4 - Testing and Debugging.html">Python - 4 </a></h3>
-		<p>Testing and Debugging.</p>
-	</div>
-
-	<div class="w3-quarter">
-		<img src="images/blogs/python.png" alt="Steak" style="width:60%">
-		<h3><a href="Posts/5 - Exceptions and Assertions.html">Python - 5 </a></h3>
-		<p>Exceptions and Assertions</p>
-	</div>
-
-	<div class="w3-quarter">
-		<img src="images/blogs/python.png" alt="Steak" style="width:60%">
-		<h3><a href="Posts/6 - Classes and Inheritance.html">Python - 6 </a></h3>
-		<p>Classes and Inheritance</p>
-	</div>
-
-	<div class="w3-quarter">
-		<img src="images/blogs/python.png" alt="Steak" style="width:60%">
-		<h3><a href="Posts/7 - Classes  Extended Examples and GENERATORS.html">Python - 7 </a></h3>
-		<p>Classes  Extended Examples and GENERATORS</p>
-	</div>
-
-  </div>
-
-	<!-- Third Photo Grid -->
-	<div class="w3-row-padding w3-padding-16 w3-center" id="food">
-		<div class="w3-quarter">
-			<img src="images/blogs/python.png" alt="Steak" style="width:60%">
-			<h3><a href="Posts/8 -  Computational Complexity .html">Python - 8 </a></h3>
-			<p>Computational Complexity</p>
-		</div>
-
-		<div class="w3-quarter">
-			<img src="images/blogs/python.png" alt="Steak" style="width:60%">
-			<h3><a href="Posts/9. Searching and Sorting Algorithms.html">Python - 9 </a></h3>
-			<p>Searching and Sorting Algorithms</p>
-		</div>
-
-		<div class="w3-quarter">
-			<img src="images/blogs/python.png" alt="Steak" style="width:60%">
-			<h3><a href="Posts/10. VISUALIZATION OF DATA.html">Python - 10 </a></h3>
-			<p>Visualization of Data</p>
-		</div>
-
-
-	  </div>
-
-  <!-- Pagination
-  <div class="w3-center w3-padding-32">
-    <div class="w3-bar">
-      <a href="#" class="w3-bar-item w3-button w3-hover-black">«</a>
-      <a href="#" class="w3-bar-item w3-black w3-button">1</a>
-      <a href="#" class="w3-bar-item w3-button w3-hover-black">2</a>
-      <a href="#" class="w3-bar-item w3-button w3-hover-black">3</a>
-      <a href="#" class="w3-bar-item w3-button w3-hover-black">4</a>
-      <a href="#" class="w3-bar-item w3-button w3-hover-black">»</a>
-    </div>
-  </div>
-
-  <hr id="about">
-
-  <!-- About Section
-  <div class="w3-container w3-padding-32 w3-center">
-    <h3>About Me, The Food Man</h3><br>
-    <img src="/w3images/chef.jpg" alt="Me" class="w3-image" style="display:block;margin:auto" width="800" height="533">
-    <div class="w3-padding-32">
-      <h4><b>I am Who I Am!</b></h4>
-      <h6><i>With Passion For Real, Good Food</i></h6>
-      <p>Just me, myself and I, exploring the universe of unknownment. I have a heart of love and an interest of lorem ipsum and mauris neque quam blog. I want to share my world with you. Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla. Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
-    </div>
-  </div>
-  <hr>
-
-  <!-- Footer
-  <footer class="w3-row-padding w3-padding-32">
-    <div class="w3-third">
-      <h3>FOOTER</h3>
-      <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
-      <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
-    </div>
-
-    <div class="w3-third">
-      <h3>BLOG POSTS</h3>
-      <ul class="w3-ul w3-hoverable">
-        <li class="w3-padding-16">
-          <img src="/w3images/workshop.jpg" class="w3-left w3-margin-right" style="width:50px">
-          <span class="w3-large">Lorem</span><br>
-          <span>Sed mattis nunc</span>
-        </li>
-        <li class="w3-padding-16">
-          <img src="/w3images/gondol.jpg" class="w3-left w3-margin-right" style="width:50px">
-          <span class="w3-large">Ipsum</span><br>
-          <span>Praes tinci sed</span>
-        </li>
-      </ul>
-    </div>
-
-    <div class="w3-third w3-serif">
-      <h3>POPULAR TAGS</h3>
-      <p>
-        <span class="w3-tag w3-black w3-margin-bottom">Travel</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">New York</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Dinner</span>
-        <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Salmon</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">France</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Drinks</span>
-        <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Ideas</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Flavors</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Cuisine</span>
-        <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Chicken</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Dressing</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Fried</span>
-        <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Fish</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Duck</span>
-      </p>
-    </div>
-  </footer> -->
-
-<!-- End page content -->
-</div>
-
-<script>
-// Script to open and close sidebar
-function w3_open() {
-    document.getElementById("mySidebar").style.display = "block";
-}
-
-function w3_close() {
-    document.getElementById("mySidebar").style.display = "none";
-}
-</script>
 
 </body>
 </html>

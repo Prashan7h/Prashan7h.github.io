@@ -3,139 +3,195 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Certificates | Prashanth Shankar</title>
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&family=Open+Sans:wght@400&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <title>Learning Journey | Prashanth Shankar</title>
+    <link rel="icon" type="image/png" href="../images/favicon2.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+
     <style>
-        body {
-            font-family: 'Open Sans', sans-serif;
+        *, *::before, *::after {
             margin: 0;
             padding: 0;
-            background-color: #f9f9f9;
-            display: flex;
-        }
-        .sidebar {
-            width: 150px;
-            background: white;
-            color: black;
-            height: 100vh;
-            padding: 20px;
-            position: fixed;
-            border-right: 1px solid #ccc;
-            overflow-y: auto;
-        }
-        .sidebar h2 {
-            font-family: 'Oswald', sans-serif;
-            font-size: 20px;
-            margin-bottom: 10px;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-        }
-        .sidebar ul {
-            list-style: none;
-            padding: 0;
-        }
-        .sidebar ul li {
-            margin: 10px 0;
-            cursor: pointer;
-            padding: 5px;
-            transition: 0.3s;
-        }
-        .sidebar ul li:hover {
-            text-decoration: underline;
-        }
-        .container {
-            max-width: 1500px;
-            margin: 5px auto;
-            padding: 5px;
-            margin-left: 200px;
-        }
-        h1 {
-            font-size: 36px;
-            font-weight: 700;
-            color: #222;
-            margin-bottom: 0px;
-        }
-        .topic-section {
-            margin-bottom: 10px;
-            padding-top: 5px;
-        }
-        .topic-section h2 {
-            font-family: 'Oswald', sans-serif;
-            font-size: 28px;
-            border-bottom: 0px solid #333;
-            padding-bottom: 5px;
-            margin-bottom: 20px;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-        }
-        .certificate-grid {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 20px;
-            justify-content: flex-start;
-            width: 100%;
-        }
-        .certificate-item {
-            background: white;
-            box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.1);
-            border-radius: 3px;
-            overflow: hidden;
-            width: 250px;
-            min-width: unset;
-            height: 350px;
-            display: flex;
-            flex-direction: column;
-            align-items: flex-start;
-            justify-content: flex-start;
-            transition: transform 0.3s ease-in-out, border 0.3s ease-in-out;
-            border: 1px solid transparent;
-        }
-        .certificate-item:hover {
-            transform: scale(1.05);
-            border: 1px solid #000;
-        }
-        .certificate-item img {
-            width: 100%;
-            height: 260px;
-            object-fit: contain;
-            filter: grayscale(100%);
-            transition: 0.3s;
-        }
-        .certificate-item:hover img {
-            filter: grayscale(0%);
-        }
-        .certificate-text {
-            padding: 10px;
-            text-align: left;
-            width: 100%;
             box-sizing: border-box;
         }
-        .certificate-text h2 {
-            font-family: 'Open Sans', sans-serif;
+
+        html {
+            scroll-behavior: smooth;
             font-size: 16px;
-            margin: 5px 0;
-            color: #333;
+        }
+
+        body {
+            background: #fff;
+            color: #000;
+            font-family: 'Inter', -apple-system, sans-serif;
+            font-weight: 400;
+            line-height: 1.6;
+            display: flex;
+        }
+
+        ::selection {
+            background: #000;
+            color: #fff;
+        }
+
+        /* ─── SIDEBAR ─── */
+        .sidebar {
+            width: 180px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 100vh;
+            padding: 2.5rem 1.5rem;
+            border-right: 1px solid #000;
+            overflow-y: auto;
+        }
+
+        .sidebar-name {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: #000;
             text-decoration: none;
-            text-align: left;
-            text-transform: none;
-        }
-        .certificate-text h2::first-letter {
-            text-transform: none;
-        }
-        .certificate-text span {
-            font-family: 'Open Sans', sans-serif;
-            font-size: 14px;
-            color: #777;
-            text-align: left;
             display: block;
+            margin-bottom: 0.4rem;
         }
-        @media (max-width: 768px) {
-            .certificate-item {
-                width: calc((100% - 20px) / 2);
-                min-width: 250px;
-            }
+
+        .sidebar-back {
+            font-size: 0.7rem;
+            color: #000;
+            text-decoration: none;
+            transition: opacity 0.2s ease;
+            display: block;
+            margin-bottom: 2.5rem;
         }
+
+        .sidebar-back:hover {
+            opacity: 0.5;
+        }
+
+        .sidebar-title {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 0.85rem;
+            font-weight: 600;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+            margin-bottom: 1rem;
+            color: #000;
+        }
+
+        .sidebar-nav {
+            list-style: none;
+        }
+
+        .sidebar-nav li {
+            margin-bottom: 0.6rem;
+        }
+
+        .sidebar-nav a {
+            font-size: 0.8rem;
+            color: #000;
+            text-decoration: none;
+            transition: opacity 0.2s ease;
+        }
+
+        .sidebar-nav a:hover {
+            opacity: 0.5;
+        }
+
+        /* ─── MAIN CONTENT ─── */
+        .main {
+            margin-left: 180px;
+            flex: 1;
+            padding: 2.5rem 2.5rem 4rem;
+            max-width: 1200px;
+        }
+
+        /* ─── PAGE TITLE ─── */
+        .page-title h1 {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 2.2rem;
+            font-weight: 600;
+            line-height: 1.2;
+            margin-bottom: 0.5rem;
+        }
+
+        .page-title p {
+            font-size: 0.88rem;
+            line-height: 1.6;
+            margin-bottom: 2.5rem;
+        }
+
+        /* ─── SECTIONS ─── */
+        .topic-section {
+            margin-bottom: 2.5rem;
+        }
+
+        .topic-header {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+        }
+
+        /* ─── CERTIFICATE GALLERY ─── */
+        .cert-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.25rem;
+        }
+
+        .cert-item {
+            width: 220px;
+            height: 320px;
+            display: flex;
+            flex-direction: column;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+            overflow: hidden;
+        }
+
+        .cert-item:hover {
+            transform: scale(1.05);
+        }
+
+        .cert-thumb {
+            width: 100%;
+            height: 240px;
+            overflow: hidden;
+            background: #f5f5f5;
+        }
+
+        .cert-thumb img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            filter: grayscale(100%);
+            transition: filter 0.3s ease;
+        }
+
+        .cert-item:hover .cert-thumb img {
+            filter: grayscale(0%);
+        }
+
+        .cert-info {
+            padding: 0.5rem 0;
+        }
+
+        .cert-name {
+            font-size: 0.82rem;
+            font-weight: 500;
+            line-height: 1.3;
+        }
+
+        .cert-source {
+            font-size: 0.7rem;
+            color: #666;
+            margin-top: 0.1rem;
+        }
+
+        /* ─── MODAL ─── */
         .modal {
             display: none;
             position: fixed;
@@ -144,11 +200,12 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background-color: rgba(0, 0, 0, 0.9);
+            background: rgba(0, 0, 0, 0.92);
             padding: 20px;
             box-sizing: border-box;
-            overflow: auto;
+            cursor: pointer;
         }
+
         .modal img {
             max-width: 90%;
             max-height: 90vh;
@@ -159,177 +216,296 @@
             transform: translateY(-50%);
             object-fit: contain;
         }
+
         .close-button {
             position: fixed;
-            right: 35px;
-            top: 25px;
-            color: #f1f1f1;
-            font-size: 40px;
-            font-weight: bold;
+            right: 2rem;
+            top: 1.5rem;
+            color: #fff;
+            font-size: 1.5rem;
+            font-family: 'Inter', sans-serif;
+            font-weight: 300;
             cursor: pointer;
             z-index: 1001;
+            transition: opacity 0.2s ease;
         }
-        .close-button:hover {
-            color: #bbb;
-        }
-        .certificate-item {
-            cursor: pointer;
-        }
-    </style>
-    <script src="https://cdn.amplitude.com/script/59010539cde9503811b2e9a80e47e0b4.js"></script><script>window.amplitude.add(window.sessionReplay.plugin({sampleRate: 1}));window.amplitude.init('59010539cde9503811b2e9a80e47e0b4', {"fetchRemoteConfig":true,"autocapture":{"attribution":true,"fileDownloads":true,"formInteractions":true,"pageViews":true,"sessions":true,"elementInteractions":true,"networkTracking":true,"webVitals":true,"frustrationInteractions":true}});</script>
 
-</head>
-<body>
-    <div class="sidebar">
-        <h2>Categories</h2>
-        <ul>
-            <li onclick="scrollToSection('machine-learning')">Machine Learning</li>
-            <li onclick="scrollToSection('mathematics')">Mathematics</li>
-            <li onclick="scrollToSection('physics')">Physics</li>
-            <li onclick="scrollToSection('philosophy')">Philosophy</li>
-            <li onclick="scrollToSection('economics')">Economics</li>
-            <li onclick="scrollToSection('computer-science')">Computer Science</li>
-            <li onclick="scrollToSection('music')">Music</li>
-        </ul>
-    </div>
-    <div class="container">
-        <div id="certificates-content">
-            <div class="topic-section" id="machine-learning">
-                <h2>Machine Learning</h2>
-                <div class="certificate-grid">
-                    <div class="certificate-item"><img src="images/21 - Machine Learning MITx.jpg" alt="Machine Learning"><div class="certificate-text"><h2>Machine Learning</h2><span>MITx</span></div></div>
-                    <div class="certificate-item"><img src="images/0-Neural networks and deep learning.jpg" alt="Neural Networks and Deep Learning"><div class="certificate-text"><h2>Neural Networks and Deep Learning</h2><span>deeplearning.ai</span></div></div>
-                    <div class="certificate-item"><img src="images/3 - How Google does ML.jpg" alt="How Google does ML"><div class="certificate-text"><h2>How Google does ML</h2><span>Google</span></div></div>
-                    <div class="certificate-item"><img src="images/1 - Launching into Machine Learning.jpg" alt="Launching into Machine Learning"><div class="certificate-text"><h2>Launching into Machine Learning</h2><span>Google</span></div></div>
-                    <div class="certificate-item"><img src="images/4 - Data Scientist's Toolbox.jpg" alt="Data Scientist's Toolbox"><div class="certificate-text"><h2>Data Scientist's Toolbox</h2><span>Johns Hopkins</span></div></div>
-                </div>
-            </div>
-            <div class="topic-section" id="mathematics">
-                <h2>Mathematics</h2>
-                <div class="certificate-grid">
-                    <div class="certificate-item"><img src="images/23 - Fundamentals of Statistics.png" alt="Fundamentals of Statistics"><div class="certificate-text"><h2>Fundamentals of Statistics</h2><span>MITx</span></div></div>
-                    <div class="certificate-item"><img src="images/20 - Probability MITx.jpg" alt="Probability"><div class="certificate-text"><h2>Probability</h2><span>MITx</span></div></div>
-                    <div class="certificate-item"><img src="images/29 - StatModel.png" alt="Statistical Modeling"><div class="certificate-text"><h2>Statistical Modeling</h2><span>MITx</span></div></div>
-                    <div class="certificate-item"><img src="images/5 - Intro Math Thinking.jpg" alt="Introduction to Mathematical Thinking"><div class="certificate-text"><h2>Introduction to Mathematical Thinking</h2><span>Stanford</span></div></div>
-                    <div class="certificate-item"><img src="images/6 - Differentiation.jpg" alt="Differentiation"><div class="certificate-text"><h2>Differentiation</h2><span>MITx</span></div></div>
-                    <div class="certificate-item"><img src="images/7 - Integration.jpg" alt="Integration"><div class="certificate-text"><h2>Integration</h2><span>MITx</span></div></div>
-                    <div class="certificate-item"><img src="images/9 - Cordinate system.jpg" alt="Coordinate System"><div class="certificate-text"><h2>Coordinate System</h2><span>MITx</span></div></div>
-                    <div class="certificate-item"><img src="images/18- Exploreing statistics with R.jpg" alt="Exploring Statistics with R"><div class="certificate-text"><h2>Exploring Statistics with R</h2><span>Harvard</span></div></div>
-                </div>
-            </div>
-            <div class="topic-section" id="physics">
-                <h2>Physics</h2>
-                <div class="certificate-grid">
-                    <div class="certificate-item"><img src="images/11 -  Quantum Mechanics.jpg" alt="Quantum Mechanics"><div class="certificate-text"><h2>Quantum Mechanics</h2><span>Stanford</span></div></div>
-                    <div class="certificate-item"><img src="images/12 - Special Relativity.jpg" alt="Special Relativity"><div class="certificate-text"><h2>Special Relativity</h2><span>World Science U</span></div></div>
-                    <div class="certificate-item"><img src="images/14 - Classical Mechanics.jpg" alt="Classical Mechanics"><div class="certificate-text"><h2>Classical Mechanics</h2><span>MITx</span></div></div>
-                    <div class="certificate-item"><img src="images/15 - Momentum and Energy.jpg" alt="Momentum and Energy"><div class="certificate-text"><h2>Momentum and Energy</h2><span>MITx</span></div></div>
-                    <div class="certificate-item"><img src="images/13 - Kinematics and Dynamics.jpg" alt="Kinematics and Dynamics"><div class="certificate-text"><h2>Kinematics and Dynamics</h2><span>MITx</span></div></div>
-                    <div class="certificate-item"><img src="images/17 - Thermodynamics.jpg" alt="Thermodynamics"><div class="certificate-text"><h2>Thermodynamics</h2><span>University of Michigan</span></div></div>
-                    <div class="certificate-item"><img src="images/16 - Robotics.jpg" alt="Robotics"><div class="certificate-text"><h2>Robotics</h2><span>Georgia Tech</span></div></div>
-                    
-                </div>
-            </div>
-            <div class="topic-section" id="philosophy">
-                <h2>Philosophy</h2>
-                <div class="certificate-grid">
-                    <div class="certificate-item"><img src="images/28 - IntroPhilosophy.png" alt="Introduction to Philosophy"><div class="certificate-text"><h2>Introduction to Philosophy</h2><span>MITx</span></div></div>
-                    <div class="certificate-item"><img src="images/26 - Minds and Machines.png" alt="Minds and Machines"><div class="certificate-text"><h2>Minds and Machines</h2><span>MITx</span></div></div>
-                    <div class="certificate-item"><img src="images/24 - Know Thyself .png" alt="Know Thyself"><div class="certificate-text"><h2>Know Thyself</h2><span>University of Edinburgh</span></div></div>
-                    
-                    
-                </div>
-            </div>
-            <div class="topic-section" id="economics">
-                <h2>Economics</h2>
-                <div class="certificate-grid">
-                    <div class="certificate-item"><img src="images/27 - Microeconomics.png" alt="Microeconomics"><div class="certificate-text"><h2>Microeconomics</h2><span>MITx</span></div></div>
-                </div>
-            </div>
-            <div class="topic-section" id="computer-science">
-                <h2>Computer Science</h2>
-                <div class="certificate-grid">
-                    <div class="certificate-item"><img src="images/2- Intro to CS.jpg" alt="Introduction to Computer Science"><div class="certificate-text"><h2>Introduction to Computer Science</h2><span>MITx</span></div></div>
-                    <div class="certificate-item"><img src="images/10 - Intro to HTML.jpg" alt="Introduction to HTML"><div class="certificate-text"><h2>Introduction to HTML</h2><span>University of Michigan</span></div></div>
-                    <div class="certificate-item"><img src="images/22 - SQL for data science.jpg" alt="SQL for Data Science"><div class="certificate-text"><h2>SQL for Data Science</h2><span>UC Davis</span></div></div>
-                </div>
-            </div>
-            <div class="topic-section" id="music">
-                <h2>Music</h2>
-                <div class="certificate-grid">
-                    <div class="certificate-item"><img src="images/25 - The Art Of Music Production.png" alt="The Art of Music Production"><div class="certificate-text"><h2>The Art of Music Production</h2><span>Berklee</span></div></div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div id="certificate-modal" class="modal">
-        <span class="close-button">&times;</span>
-        <img id="modal-image" src="" alt="Certificate">
-    </div>
-    <script>
-        function scrollToSection(category) {
-            let element = document.getElementById(category);
-            if (element) {
-                element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        .close-button:hover {
+            opacity: 0.6;
+        }
+
+        /* ─── RESPONSIVE ─── */
+        @media (max-width: 768px) {
+            .sidebar {
+                display: none;
+            }
+
+            .main {
+                margin-left: 0;
+                padding: 1.5rem 1.25rem 4rem;
+            }
+
+            .cert-grid {
+                gap: 1rem;
+            }
+
+            .cert-item {
+                width: calc(50% - 0.5rem);
+                height: auto;
+            }
+
+            .cert-thumb {
+                height: 180px;
+            }
+
+            .page-title h1 {
+                font-size: 1.8rem;
             }
         }
 
-        // Modal functionality
+        @media (max-width: 480px) {
+            .cert-item {
+                width: 100%;
+            }
+
+            .cert-thumb {
+                height: 220px;
+            }
+        }
+    </style>
+
+    <script src="https://cdn.amplitude.com/script/59010539cde9503811b2e9a80e47e0b4.js"></script>
+    <script>window.amplitude.add(window.sessionReplay.plugin({sampleRate: 1}));window.amplitude.init('59010539cde9503811b2e9a80e47e0b4', {"fetchRemoteConfig":true,"autocapture":{"attribution":true,"fileDownloads":true,"formInteractions":true,"pageViews":true,"sessions":true,"elementInteractions":true,"networkTracking":true,"webVitals":true,"frustrationInteractions":true}});</script>
+</head>
+<body>
+
+    <!-- ─── SIDEBAR ─── -->
+    <aside class="sidebar">
+        <a href="../" class="sidebar-name">Prashanth Shankar</a>
+        <a href="../" class="sidebar-back">&larr; Back</a>
+
+        <div class="sidebar-title">Categories</div>
+        <ul class="sidebar-nav">
+            <li><a href="#machine-learning">Machine Learning</a></li>
+            <li><a href="#mathematics">Mathematics</a></li>
+            <li><a href="#physics">Physics</a></li>
+            <li><a href="#philosophy">Philosophy</a></li>
+            <li><a href="#economics">Economics</a></li>
+            <li><a href="#computer-science">Computer Science</a></li>
+            <li><a href="#music">Music</a></li>
+        </ul>
+    </aside>
+
+    <!-- ─── MAIN ─── -->
+    <div class="main">
+
+        <div class="page-title">
+            <h1>Learning Journey</h1>
+            <p>A collection of courses and certifications across physics, mathematics, philosophy, machine learning, and more.</p>
+        </div>
+
+        <!-- Machine Learning -->
+        <div class="topic-section" id="machine-learning">
+            <h2 class="topic-header">Machine Learning</h2>
+            <div class="cert-grid">
+                <div class="cert-item" data-img="images/21 - Machine Learning MITx.jpg">
+                    <div class="cert-thumb"><img src="images/21 - Machine Learning MITx.jpg" alt="Machine Learning"></div>
+                    <div class="cert-info"><div class="cert-name">Machine Learning</div><div class="cert-source">MITx</div></div>
+                </div>
+                <div class="cert-item" data-img="images/0-Neural networks and deep learning.jpg">
+                    <div class="cert-thumb"><img src="images/0-Neural networks and deep learning.jpg" alt="Neural Networks and Deep Learning"></div>
+                    <div class="cert-info"><div class="cert-name">Neural Networks and Deep Learning</div><div class="cert-source">deeplearning.ai</div></div>
+                </div>
+                <div class="cert-item" data-img="images/3 - How Google does ML.jpg">
+                    <div class="cert-thumb"><img src="images/3 - How Google does ML.jpg" alt="How Google does ML"></div>
+                    <div class="cert-info"><div class="cert-name">How Google Does ML</div><div class="cert-source">Google</div></div>
+                </div>
+                <div class="cert-item" data-img="images/1 - Launching into Machine Learning.jpg">
+                    <div class="cert-thumb"><img src="images/1 - Launching into Machine Learning.jpg" alt="Launching into Machine Learning"></div>
+                    <div class="cert-info"><div class="cert-name">Launching into Machine Learning</div><div class="cert-source">Google</div></div>
+                </div>
+                <div class="cert-item" data-img="images/4 - Data Scientist's Toolbox.jpg">
+                    <div class="cert-thumb"><img src="images/4 - Data Scientist's Toolbox.jpg" alt="Data Scientist's Toolbox"></div>
+                    <div class="cert-info"><div class="cert-name">Data Scientist's Toolbox</div><div class="cert-source">Johns Hopkins</div></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mathematics -->
+        <div class="topic-section" id="mathematics">
+            <h2 class="topic-header">Mathematics</h2>
+            <div class="cert-grid">
+                <div class="cert-item" data-img="images/23 - Fundamentals of Statistics.png">
+                    <div class="cert-thumb"><img src="images/23 - Fundamentals of Statistics.png" alt="Fundamentals of Statistics"></div>
+                    <div class="cert-info"><div class="cert-name">Fundamentals of Statistics</div><div class="cert-source">MITx</div></div>
+                </div>
+                <div class="cert-item" data-img="images/20 - Probability MITx.jpg">
+                    <div class="cert-thumb"><img src="images/20 - Probability MITx.jpg" alt="Probability"></div>
+                    <div class="cert-info"><div class="cert-name">Probability</div><div class="cert-source">MITx</div></div>
+                </div>
+                <div class="cert-item" data-img="images/29 - StatModel.png">
+                    <div class="cert-thumb"><img src="images/29 - StatModel.png" alt="Statistical Modeling"></div>
+                    <div class="cert-info"><div class="cert-name">Statistical Modeling</div><div class="cert-source">MITx</div></div>
+                </div>
+                <div class="cert-item" data-img="images/5 - Intro Math Thinking.jpg">
+                    <div class="cert-thumb"><img src="images/5 - Intro Math Thinking.jpg" alt="Introduction to Mathematical Thinking"></div>
+                    <div class="cert-info"><div class="cert-name">Introduction to Mathematical Thinking</div><div class="cert-source">Stanford</div></div>
+                </div>
+                <div class="cert-item" data-img="images/6 - Differentiation.jpg">
+                    <div class="cert-thumb"><img src="images/6 - Differentiation.jpg" alt="Differentiation"></div>
+                    <div class="cert-info"><div class="cert-name">Differentiation</div><div class="cert-source">MITx</div></div>
+                </div>
+                <div class="cert-item" data-img="images/7 - Integration.jpg">
+                    <div class="cert-thumb"><img src="images/7 - Integration.jpg" alt="Integration"></div>
+                    <div class="cert-info"><div class="cert-name">Integration</div><div class="cert-source">MITx</div></div>
+                </div>
+                <div class="cert-item" data-img="images/9 - Cordinate system.jpg">
+                    <div class="cert-thumb"><img src="images/9 - Cordinate system.jpg" alt="Coordinate System"></div>
+                    <div class="cert-info"><div class="cert-name">Coordinate System</div><div class="cert-source">MITx</div></div>
+                </div>
+                <div class="cert-item" data-img="images/18- Exploreing statistics with R.jpg">
+                    <div class="cert-thumb"><img src="images/18- Exploreing statistics with R.jpg" alt="Exploring Statistics with R"></div>
+                    <div class="cert-info"><div class="cert-name">Exploring Statistics with R</div><div class="cert-source">Harvard</div></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Physics -->
+        <div class="topic-section" id="physics">
+            <h2 class="topic-header">Physics</h2>
+            <div class="cert-grid">
+                <div class="cert-item" data-img="images/11 -  Quantum Mechanics.jpg">
+                    <div class="cert-thumb"><img src="images/11 -  Quantum Mechanics.jpg" alt="Quantum Mechanics"></div>
+                    <div class="cert-info"><div class="cert-name">Quantum Mechanics</div><div class="cert-source">Stanford</div></div>
+                </div>
+                <div class="cert-item" data-img="images/12 - Special Relativity.jpg">
+                    <div class="cert-thumb"><img src="images/12 - Special Relativity.jpg" alt="Special Relativity"></div>
+                    <div class="cert-info"><div class="cert-name">Special Relativity</div><div class="cert-source">World Science U</div></div>
+                </div>
+                <div class="cert-item" data-img="images/14 - Classical Mechanics.jpg">
+                    <div class="cert-thumb"><img src="images/14 - Classical Mechanics.jpg" alt="Classical Mechanics"></div>
+                    <div class="cert-info"><div class="cert-name">Classical Mechanics</div><div class="cert-source">MITx</div></div>
+                </div>
+                <div class="cert-item" data-img="images/15 - Momentum and Energy.jpg">
+                    <div class="cert-thumb"><img src="images/15 - Momentum and Energy.jpg" alt="Momentum and Energy"></div>
+                    <div class="cert-info"><div class="cert-name">Momentum and Energy</div><div class="cert-source">MITx</div></div>
+                </div>
+                <div class="cert-item" data-img="images/13 - Kinematics and Dynamics.jpg">
+                    <div class="cert-thumb"><img src="images/13 - Kinematics and Dynamics.jpg" alt="Kinematics and Dynamics"></div>
+                    <div class="cert-info"><div class="cert-name">Kinematics and Dynamics</div><div class="cert-source">MITx</div></div>
+                </div>
+                <div class="cert-item" data-img="images/17 - Thermodynamics.jpg">
+                    <div class="cert-thumb"><img src="images/17 - Thermodynamics.jpg" alt="Thermodynamics"></div>
+                    <div class="cert-info"><div class="cert-name">Thermodynamics</div><div class="cert-source">University of Michigan</div></div>
+                </div>
+                <div class="cert-item" data-img="images/16 - Robotics.jpg">
+                    <div class="cert-thumb"><img src="images/16 - Robotics.jpg" alt="Robotics"></div>
+                    <div class="cert-info"><div class="cert-name">Robotics</div><div class="cert-source">Georgia Tech</div></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Philosophy -->
+        <div class="topic-section" id="philosophy">
+            <h2 class="topic-header">Philosophy</h2>
+            <div class="cert-grid">
+                <div class="cert-item" data-img="images/28 - IntroPhilosophy.png">
+                    <div class="cert-thumb"><img src="images/28 - IntroPhilosophy.png" alt="Introduction to Philosophy"></div>
+                    <div class="cert-info"><div class="cert-name">Introduction to Philosophy</div><div class="cert-source">MITx</div></div>
+                </div>
+                <div class="cert-item" data-img="images/26 - Minds and Machines.png">
+                    <div class="cert-thumb"><img src="images/26 - Minds and Machines.png" alt="Minds and Machines"></div>
+                    <div class="cert-info"><div class="cert-name">Minds and Machines</div><div class="cert-source">MITx</div></div>
+                </div>
+                <div class="cert-item" data-img="images/24 - Know Thyself .png">
+                    <div class="cert-thumb"><img src="images/24 - Know Thyself .png" alt="Know Thyself"></div>
+                    <div class="cert-info"><div class="cert-name">Know Thyself</div><div class="cert-source">University of Edinburgh</div></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Economics -->
+        <div class="topic-section" id="economics">
+            <h2 class="topic-header">Economics</h2>
+            <div class="cert-grid">
+                <div class="cert-item" data-img="images/27 - Microeconomics.png">
+                    <div class="cert-thumb"><img src="images/27 - Microeconomics.png" alt="Microeconomics"></div>
+                    <div class="cert-info"><div class="cert-name">Microeconomics</div><div class="cert-source">MITx</div></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Computer Science -->
+        <div class="topic-section" id="computer-science">
+            <h2 class="topic-header">Computer Science</h2>
+            <div class="cert-grid">
+                <div class="cert-item" data-img="images/2- Intro to CS.jpg">
+                    <div class="cert-thumb"><img src="images/2- Intro to CS.jpg" alt="Introduction to Computer Science"></div>
+                    <div class="cert-info"><div class="cert-name">Introduction to Computer Science</div><div class="cert-source">MITx</div></div>
+                </div>
+                <div class="cert-item" data-img="images/10 - Intro to HTML.jpg">
+                    <div class="cert-thumb"><img src="images/10 - Intro to HTML.jpg" alt="Introduction to HTML"></div>
+                    <div class="cert-info"><div class="cert-name">Introduction to HTML</div><div class="cert-source">University of Michigan</div></div>
+                </div>
+                <div class="cert-item" data-img="images/22 - SQL for data science.jpg">
+                    <div class="cert-thumb"><img src="images/22 - SQL for data science.jpg" alt="SQL for Data Science"></div>
+                    <div class="cert-info"><div class="cert-name">SQL for Data Science</div><div class="cert-source">UC Davis</div></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Music -->
+        <div class="topic-section" id="music">
+            <h2 class="topic-header">Music</h2>
+            <div class="cert-grid">
+                <div class="cert-item" data-img="images/25 - The Art Of Music Production.png">
+                    <div class="cert-thumb"><img src="images/25 - The Art Of Music Production.png" alt="The Art of Music Production"></div>
+                    <div class="cert-info"><div class="cert-name">The Art of Music Production</div><div class="cert-source">Berklee</div></div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Modal -->
+    <div id="certificate-modal" class="modal">
+        <span class="close-button">Close</span>
+        <img id="modal-image" src="" alt="Certificate">
+    </div>
+
+    <script>
         const modal = document.getElementById('certificate-modal');
         const modalImg = document.getElementById('modal-image');
         const closeButton = document.querySelector('.close-button');
 
-        // Add click event to all certificate items
-        document.querySelectorAll('.certificate-item').forEach(item => {
+        document.querySelectorAll('.cert-item').forEach(item => {
             item.addEventListener('click', function() {
-                const imgSrc = this.querySelector('img').src;
+                const imgSrc = this.dataset.img;
                 modal.style.display = 'block';
                 modalImg.src = imgSrc;
-                document.body.style.overflow = 'hidden'; // Prevent scrolling when modal is open
+                document.body.style.overflow = 'hidden';
             });
         });
 
-        // Close modal when clicking the X button
-        closeButton.addEventListener('click', function() {
+        closeButton.addEventListener('click', function(e) {
+            e.stopPropagation();
             modal.style.display = 'none';
-            document.body.style.overflow = 'auto'; // Restore scrolling
+            document.body.style.overflow = 'auto';
         });
 
-        // Close modal when clicking outside the image
         modal.addEventListener('click', function(e) {
             if (e.target === modal) {
                 modal.style.display = 'none';
-                document.body.style.overflow = 'auto'; // Restore scrolling
+                document.body.style.overflow = 'auto';
             }
         });
 
-        // Close modal when pressing Escape key
         document.addEventListener('keydown', function(e) {
             if (e.key === 'Escape' && modal.style.display === 'block') {
                 modal.style.display = 'none';
-                document.body.style.overflow = 'auto'; // Restore scrolling
+                document.body.style.overflow = 'auto';
             }
         });
     </script>
-    <script>
-        document.querySelectorAll(".sidebar ul li").forEach((item, index) => {
-            item.addEventListener("click", function () {
-    
-                amplitude.track("Topic Clicked", {
-                    topic_name: this.innerText.trim(),
-                    topic_id: this.dataset.topicId || null,
-                    click_position: index + 1,
-                    device_type: window.innerWidth > 768 ? "desktop" : "mobile",
-                    page_url: window.location.href,
-                    page_title: document.title,
-                    referrer: document.referrer || "direct",
-                    time_since_page_load: Math.round(performance.now())
-                });
-    
-            });
-        });
-    </script>
-    
-    
 </body>
 </html>

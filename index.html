@@ -1,211 +1,392 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
     <!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
     new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
     j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
     })(window,document,'script','dataLayer','GTM-KVBPX8VW');</script>
     <!-- End Google Tag Manager -->
 
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="icon" type="image/favicon2.png" href="image/favicon2.png">
+    <meta name="description" content="Prashanth Shankar — Fascinated by Startups, Theoretical Physics, Philosophy, and the Mind.">
+    <link rel="icon" type="image/png" href="images/favicon2.png">
     <title>Prashanth Shankar</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&family=Open+Sans:wght@400&display=swap');
-        * {
+        *, *::before, *::after {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
+
+        html {
+            scroll-behavior: smooth;
+            font-size: 16px;
+            overflow-x: hidden;
+        }
+
         body {
             background: #fff;
             color: #000;
-            display: flex;
-            height: 100vh;
-            justify-content: center;
-            align-items: center;
-            width: 100%;
-            padding: 0;
-            font-family: 'Open Sans', sans-serif;
-        }
-        .container {
-            max-width: 100%;
-            display: flex;
-            width: 90%;
-            padding: 10px;
-        }
-        .left {
-            width: 45%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            padding-right: 10px;
-        }
-        .left img {
-            width: 85%;
-            height: auto;
-            border: 2px solid #000;
-            border-radius: 3px;
-        }
-        .right {
-            width: 55%;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: space-between;
-            text-align: left;
-            padding-left: 60px;
-            height: 100%;
-        }
-        h1 {
-            font-size: 3rem;
-            font-weight: bold;
-            text-transform: uppercase;
-            letter-spacing: 3px;
-            margin-top: 120px;
-            margin-bottom: 30px;
-            /* border-bottom: 2px solid #000; */
-            display: inline-block;
-            align-self: flex-start;
-            font-family: 'Oswald', sans-serif;
-        }
-        .text-content {
-            max-width: 100%;
-            text-align: left;
-            align-self: center;
-            margin-bottom: 40px;
-            margin-right: 100px;
-            margin-top: 20px;
-            font-family: 'Plantin', serif;
+            font-family: 'Inter', -apple-system, sans-serif;
             font-weight: 400;
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
 
-        }
-        p {
-            font-size: 1.1rem;
-            line-height: 1.8;
-            opacity: 0.9;
-            margin-bottom: 20px;
-        }
-        .links {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 20px;
-            justify-content: flex-start;
-            align-self: flex-start;
-            margin-top: 20px;
-            margin-left: -25px;
-        }
-   
-        .links a {
-            color: #000;
-            text-decoration: none;
-            padding: 14px 28px;
-            /* border: 2px solid #000; */
-            border-radius: 3px;
-            transition: all 0.3s ease;
-            font-weight: bold;
-            background: none;
-            display: inline-block;
-            font-size: 1rem;
-            font-family: 'Oswald', sans-serif;
-        }
-        .links a:hover {
+        ::selection {
             background: #000;
             color: #fff;
         }
-        footer {
-            position: absolute;
-            bottom: 20px;
-            right: 20px;
+
+        .page {
+            max-width: 720px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        /* ─── HEADER ─── */
+        header {
+            padding: 2.5rem 0 0;
+        }
+
+        .site-name {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: #000;
+            text-decoration: none;
+            letter-spacing: 0.02em;
+            display: block;
+            margin-bottom: 0.6rem;
+        }
+
+        .header-links {
+            display: flex;
+            gap: 1.2rem;
+            flex-wrap: wrap;
+        }
+
+        .header-links a {
+            font-size: 0.75rem;
+            font-weight: 400;
+            letter-spacing: 0.04em;
+            color: #000;
+            text-decoration: none;
+            transition: opacity 0.2s ease;
+        }
+
+        .header-links a:hover {
+            opacity: 0.5;
+        }
+
+        /* ─── HERO / ABOUT ─── */
+        .hero {
+            padding: 4rem 0 3rem;
+        }
+
+        .hero-name {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 2.2rem;
+            font-weight: 600;
+            line-height: 1.2;
+            margin-bottom: 1rem;
+        }
+
+        .hero-tagline {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.15rem;
+            font-style: italic;
+            color: #000;
+            line-height: 1.6;
+            margin-bottom: 2rem;
+        }
+
+        .hero-bio p {
+            font-size: 0.92rem;
+            line-height: 1.75;
+            margin-bottom: 0.8rem;
+            color: #000;
+        }
+
+        /* ─── DIVIDER ─── */
+        .divider {
+            border: none;
+            border-top: 1px solid #000;
+            margin: 3rem 0;
+        }
+
+        /* ─── SECTION HEADERS ─── */
+        .section-header {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.6rem;
+            font-weight: 600;
+            margin-bottom: 2rem;
+        }
+
+        .fade-in + .fade-in {
+            margin-top: 3rem;
+        }
+
+        /* ─── WRITING ─── */
+        .writing-list {
+            display: flex;
+            flex-direction: column;
+            gap: 0;
+        }
+
+        .writing-item {
+            padding: 1.5rem 0;
+            border-bottom: 1px solid #000;
+            text-decoration: none;
+            color: inherit;
+            display: block;
+            transition: opacity 0.2s ease;
+        }
+
+        .writing-item:first-child {
+            border-top: 1px solid #000;
+        }
+
+        .writing-item:hover {
+            opacity: 0.7;
+        }
+
+        .writing-item-title {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.3rem;
+            font-weight: 500;
+            line-height: 1.3;
+            margin-bottom: 0.4rem;
+        }
+
+        .writing-item-desc {
+            font-size: 0.85rem;
+            line-height: 1.5;
+        }
+
+        .writing-item-arrow {
+            display: inline-block;
+            margin-top: 0.6rem;
             font-size: 0.8rem;
+            font-weight: 500;
+            letter-spacing: 0.05em;
+            color: #000;
+        }
+
+        /* ─── VIDEOS ─── */
+        .video-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1.2rem;
+        }
+
+        .video-item {
+            display: flex;
+            flex-direction: column;
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .video-item-title {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 0.9rem;
+            font-weight: 500;
+            line-height: 1.3;
+            margin-top: 0.6rem;
+        }
+
+        .video-thumb {
+            position: relative;
+            width: 100%;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+        }
+
+        .video-thumb img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: opacity 0.2s ease;
+        }
+
+        .video-item:hover .video-thumb img {
             opacity: 0.8;
         }
-		 /* Mobile Styles */
-         @media (max-width: 768px) {
-            body {
-                padding: 1rem;
+
+        /* ─── BOTTOM SPACING ─── */
+        .bottom-space {
+            padding-bottom: 6rem;
+        }
+
+        /* ─── FADE IN ─── */
+        .fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.6s ease, transform 0.6s ease;
+        }
+
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* ─── RESPONSIVE ─── */
+        @media (max-width: 600px) {
+            .page {
+                padding: 0 1.25rem;
             }
 
-            .container {
-                flex-direction: column;
-                padding: 1rem;
-                gap: 1rem;
-                align-items: center;
+            header {
+                padding-top: 1.5rem;
             }
 
-            .left, .right {
-                width: 100%;
-                padding: 0;
-                text-align: center;
+            .header-links {
+                gap: 0.8rem;
             }
 
-            .left img {
-                margin-top: 200px;
-                max-width: 100%;
+            .header-links a {
+                font-size: 0.7rem;
             }
 
-            h1 {
-                text-align: center;
-                margin-top: 1rem;
+            .hero {
+                padding: 2.5rem 0 2rem;
             }
 
-            .text-content {
-                text-align: center;
-                margin: 10px 0;
+            .hero-name {
+                font-size: 1.8rem;
             }
 
-            .links {
-                justify-content: center;
-                display: grid;
-                grid-template-columns: repeat(2, 1fr);
-                gap: 10px;
+            .hero-tagline {
+                font-size: 1rem;
             }
 
-            .links a {
-                width: 100%;
-                text-align: center;
+            .writing-item-title {
+                font-size: 1.15rem;
             }
 
-            footer {
-                display: none;
+            .video-grid {
+                grid-template-columns: 1fr;
+                gap: 1.5rem;
+            }
+
+            .video-item-title {
+                font-size: 1rem;
+            }
+
+            .divider {
+                margin: 2rem 0;
             }
         }
     </style>
 
-<script src="https://cdn.amplitude.com/script/59010539cde9503811b2e9a80e47e0b4.js"></script><script>window.amplitude.add(window.sessionReplay.plugin({sampleRate: 1}));window.amplitude.init('59010539cde9503811b2e9a80e47e0b4', {"fetchRemoteConfig":true,"autocapture":{"attribution":true,"fileDownloads":true,"formInteractions":true,"pageViews":true,"sessions":true,"elementInteractions":true,"networkTracking":true,"webVitals":true,"frustrationInteractions":true}});</script>
+    <script src="https://cdn.amplitude.com/script/59010539cde9503811b2e9a80e47e0b4.js"></script>
+    <script>window.amplitude.add(window.sessionReplay.plugin({sampleRate: 1}));window.amplitude.init('59010539cde9503811b2e9a80e47e0b4', {"fetchRemoteConfig":true,"autocapture":{"attribution":true,"fileDownloads":true,"formInteractions":true,"pageViews":true,"sessions":true,"elementInteractions":true,"networkTracking":true,"webVitals":true,"frustrationInteractions":true}});</script>
 </head>
 <body>
 
     <!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KVBPX8VW"
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KVBPX8VW"
     height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
 
-    
-    <div class="container">
-        <div class="left">
-            <img src="images/blacktie.jpg" alt="Prashanth Shankar">
-        </div>
-        <div class="right">
-            <h1>Prashanth Shankar</h1>
-            <div class="text-content">
-                <p>I enjoy studying, teaching, and discussing - Physics, Philosophy, Economics, Mathematics, Computer Science, Psychology, Biology - you get the idea!</p>
-                <p>My other interests are Football, Longevity, Technology, Composing EDMs, Rationality, Existential risk, Consciousness, Peak performance, and Progress.</p>
-            </div>
-            <div class="links">
-                <a href="certificate/certificate.html">Certifications</a>
+    <div class="page">
+
+        <!-- ─── HEADER ─── -->
+        <header>
+            <div class="header-links">
+                <a href="https://www.linkedin.com/in/prashan7h/" target="_blank">LinkedIn</a>
+                <a href="https://prashanthshankar.substack.com/" target="_blank">Substack</a>
+                <a href="certificate/certificate.html">Learning Journey</a>
+                <a href="blog.html">Notebooks</a>
                 <a href="dissertation.pdf" target="_blank">Dissertation</a>
-                <a href="blog.html">Python & R Notes</a>
-                <a href="https://www.linkedin.com/in/prashan7h/">LinkedIn</a>
-                <a href="https://medium.com/@prashanths827">Medium</a>
+            </div>
+        </header>
+
+        <!-- ─── HERO / ABOUT ─── -->
+        <div class="hero">
+            <h1 class="hero-name">I'm Prashanth Shankar</h1>
+            <p class="hero-tagline">Fascinated by Startups, Theoretical Physics, Philosophy, Information, Computation, Rationality, Human Computer Interface, Neuroscience, and Mind.</p>
+            <div class="hero-bio">
+                <p>Worked across <strong>three Series A startups</strong>, often as the first or sole analyst, and helped scale a <strong>marketing agency</strong> while heading analytics.</p>
+                <p>Also took a couple of shots at building things, including a <strong>startup</strong> and a <strong>podcasting agency</strong>.</p>
+                <p>Ran <strong>technical book clubs</strong> and <strong>analytics community events</strong> across Bangalore, London, and Berlin.</p>
+                <p>Studied <strong>Theoretical Physics</strong> at <strong>King's College London</strong>, and still hopeful of retiring as a physicist someday.</p>
             </div>
         </div>
+
+        <!-- ─── WRITING ─── -->
+        <div class="fade-in">
+            <h2 class="section-header">Writing</h2>
+            <div class="writing-list">
+                <a href="https://prashanthshankar.substack.com/p/ai-and-education" target="_blank" class="writing-item">
+                    <div class="writing-item-title">AI and Education</div>
+                    <div class="writing-item-desc">AI could impact education as profoundly as the printing press or the internet, but first we need to embrace the Popper-Deutsch view of the theory of mind.</div>
+                    <div class="writing-item-arrow">Read &rarr;</div>
+                </a>
+                <a href="https://prashanthshankar.substack.com/p/criticism" target="_blank" class="writing-item">
+                    <div class="writing-item-title">Criticism</div>
+                    <div class="writing-item-desc">Criticism is essential for progress, but it is important to understand the different kinds of criticism.</div>
+                    <div class="writing-item-arrow">Read &rarr;</div>
+                </a>
+                <a href="https://prashanthshankar.substack.com/p/why-do-i-like-teaching" target="_blank" class="writing-item">
+                    <div class="writing-item-title">Why Do I Like Teaching?</div>
+                    <div class="writing-item-desc">Tracing back a passion for teaching to the very first moment of instructing someone in chemistry.</div>
+                    <div class="writing-item-arrow">Read &rarr;</div>
+                </a>
+            </div>
+        </div>
+
+        <!-- ─── VIDEOS ─── -->
+        <div class="fade-in">
+            <h2 class="section-header">Videos</h2>
+            <div class="video-grid">
+                <a href="https://www.youtube.com/watch?v=DT09x0Almlw" target="_blank" class="video-item">
+                    <div class="video-thumb">
+                        <img src="https://img.youtube.com/vi/DT09x0Almlw/maxresdefault.jpg" alt="My Interview with David Deutsch" loading="lazy">
+                    </div>
+                    <div class="video-item-title">My Interview with David Deutsch</div>
+                </a>
+                <a href="https://www.youtube.com/watch?v=4hP4Cm5rcAg" target="_blank" class="video-item">
+                    <div class="video-thumb">
+                        <img src="https://img.youtube.com/vi/4hP4Cm5rcAg/maxresdefault.jpg" alt="Horizontal vs Vertical Causation" loading="lazy">
+                    </div>
+                    <div class="video-item-title">Horizontal vs Vertical Causation</div>
+                </a>
+                <a href="https://www.youtube.com/watch?v=r-ED535W8_E" target="_blank" class="video-item">
+                    <div class="video-thumb">
+                        <img src="https://img.youtube.com/vi/r-ED535W8_E/maxresdefault.jpg" alt="Problem with the Trolley Problem" loading="lazy">
+                    </div>
+                    <div class="video-item-title">Problem with the Trolley Problem</div>
+                </a>
+            </div>
+        </div>
+
+        <div class="bottom-space"></div>
+
     </div>
-    <footer>&copy; 2025 Prashanth Shankar</footer>
+
+    <script>
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+    </script>
 </body>
 </html>
