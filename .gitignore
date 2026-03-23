@@ -1,0 +1,16 @@
+# macOS
+.DS_Store
+
+# Claude Code
+.claude/
+
+# Editor
+*.swp
+*.swo
+*~
+
+# Backups
+*.backup
+
+# Test files
+test_*.html
