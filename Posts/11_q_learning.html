@@ -8101,7 +8101,8 @@ a.anchor-link {
                 <span class="n">action</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">argmax</span><span class="p">(</span><span class="n">Q</span><span class="p">[</span><span class="n">r</span><span class="p">,</span> <span class="n">c</span><span class="p">])</span>
             <span class="n">next_state</span><span class="p">,</span> <span class="n">reward</span><span class="p">,</span> <span class="n">done</span> <span class="o">=</span> <span class="n">step</span><span class="p">(</span><span class="n">state</span><span class="p">,</span> <span class="n">action</span><span class="p">)</span>
             <span class="n">nr</span><span class="p">,</span> <span class="n">nc</span> <span class="o">=</span> <span class="n">next_state</span>
-            <span class="n">td_error</span> <span class="o">=</span> <span class="n">reward</span> <span class="o">+</span> <span class="n">gamma</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">max</span><span class="p">(</span><span class="n">Q</span><span class="p">[</span><span class="n">nr</span><span class="p">,</span> <span class="n">nc</span><span class="p">])</span> <span class="o">-</span> <span class="n">Q</span><span class="p">[</span><span class="n">r</span><span class="p">,</span> <span class="n">c</span><span class="p">,</span> <span class="n">action</span><span class="p">]</span>
+            <span class="n">td_target</span> <span class="o">=</span> <span class="n">reward</span> <span class="k">if</span> <span class="n">done</span> <span class="k">else</span> <span class="n">reward</span> <span class="o">+</span> <span class="n">gamma</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">max</span><span class="p">(</span><span class="n">Q</span><span class="p">[</span><span class="n">nr</span><span class="p">,</span> <span class="n">nc</span><span class="p">])</span>
+            <span class="n">td_error</span> <span class="o">=</span> <span class="n">td_target</span> <span class="o">-</span> <span class="n">Q</span><span class="p">[</span><span class="n">r</span><span class="p">,</span> <span class="n">c</span><span class="p">,</span> <span class="n">action</span><span class="p">]</span>
             <span class="n">Q</span><span class="p">[</span><span class="n">r</span><span class="p">,</span> <span class="n">c</span><span class="p">,</span> <span class="n">action</span><span class="p">]</span> <span class="o">+=</span> <span class="n">eta</span> <span class="o">*</span> <span class="n">td_error</span>
             <span class="n">total_reward</span> <span class="o">+=</span> <span class="n">reward</span>
             <span class="n">n_steps</span> <span class="o">+=</span> <span class="mi">1</span>
@@ -8303,14 +8304,14 @@ Goal reached: True
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
 <pre>γ=0.5  avg_reward=6.205  avg_steps=8.9  path_len=8  goal=True
+γ=0.7  avg_reward=6.170  avg_steps=9.3  path_len=8  goal=True
 </pre>
 </div>
 </div>
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>γ=0.7  avg_reward=6.170  avg_steps=9.3  path_len=8  goal=True
-γ=0.9  avg_reward=4.424  avg_steps=8.8  path_len=8  goal=True
+<pre>γ=0.9  avg_reward=4.424  avg_steps=8.8  path_len=8  goal=True
 γ=0.99  avg_reward=6.448  avg_steps=9.5  path_len=8  goal=True
 </pre>
 </div>
