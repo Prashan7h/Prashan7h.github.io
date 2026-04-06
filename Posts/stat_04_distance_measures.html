@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Distance Measures — Statistics From Scratch</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+    <style>
+        *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+        body { background: #fff; color: #000; font-family: 'Inter', sans-serif; font-weight: 300; line-height: 1.6; max-width: 720px; margin: 0 auto; padding: 2rem 2rem 6rem; }
+        nav { margin-bottom: 3rem; font-size: 0.75rem; letter-spacing: 0.04em; }
+        nav a { color: #000; text-decoration: none; }
+        nav a:hover { opacity: 0.5; }
+        nav span { margin: 0 0.5rem; opacity: 0.3; }
+        h1 { font-family: 'Cormorant Garamond', serif; font-size: 2.2rem; font-weight: 600; line-height: 1.2; margin-bottom: 0.4rem; }
+        .subtitle { font-family: 'Cormorant Garamond', serif; font-size: 1.1rem; font-style: italic; color: #444; margin-bottom: 3rem; }
+        h2 { font-family: 'Cormorant Garamond', serif; font-size: 1.6rem; font-weight: 600; margin: 3rem 0 1rem; border-bottom: 1px solid #eee; padding-bottom: 0.3rem; }
+        h3 { font-family: 'Inter', sans-serif; font-size: 0.88rem; font-weight: 500; letter-spacing: 0.04em; text-transform: uppercase; margin: 2rem 0 0.6rem; }
+        p { font-size: 0.92rem; line-height: 1.8; margin-bottom: 0.9rem; }
+        ul { font-size: 0.92rem; line-height: 1.8; padding-left: 1.4rem; margin-bottom: 0.9rem; }
+        li { margin-bottom: 0.25rem; }
+        .box { border-left: 2px solid #000; padding: 0.9rem 1.1rem; margin: 1.5rem 0; }
+        .box-label { font-size: 0.7rem; font-weight: 500; letter-spacing: 0.08em; text-transform: uppercase; margin-bottom: 0.4rem; opacity: 0.5; }
+        .figure { margin: 2rem 0; text-align: center; }
+        .caption { font-size: 0.78rem; color: #666; margin-top: 0.5rem; }
+        table { width: 100%; border-collapse: collapse; font-size: 0.88rem; margin: 1.5rem 0; }
+        th { font-weight: 500; border-bottom: 1px solid #000; padding: 0.5rem 0.8rem; text-align: left; }
+        td { padding: 0.5rem 0.8rem; border-bottom: 1px solid #eee; }
+        mjx-container { overflow-x: auto; }
+    </style>
+    <script src="https://cdn.amplitude.com/script/59010539cde9503811b2e9a80e47e0b4.js"></script>
+    <script>window.amplitude.add(window.sessionReplay.plugin({sampleRate: 1}));window.amplitude.init('59010539cde9503811b2e9a80e47e0b4', {"fetchRemoteConfig":true,"autocapture":{"attribution":true,"fileDownloads":true,"formInteractions":true,"pageViews":true,"sessions":true,"elementInteractions":true,"networkTracking":true,"webVitals":true,"frustrationInteractions":true}});</script>
+</head>
+<body>
+
+<nav><a href="../blog.html">Notebooks</a><span>/</span>Distance Measures</nav>
+
+<h1>Distance Measures</h1>
+<p class="subtitle">Total Variation Distance and KL Divergence — how to measure the gap between probability distributions</p>
+
+<h2>1. Introduction</h2>
+<p>To reason about how close an estimator's distribution is to the truth, or how distinguishable two probability distributions are, we need to measure the "distance" between distributions. Two canonical measures are Total Variation distance and KL Divergence. They have different interpretations, different properties, and are used in different contexts.</p>
+
+<h2>2. Total Variation Distance</h2>
+<div class="box">
+    <div class="box-label">Total Variation Distance</div>
+    <p style="margin-bottom:0.5rem">The TV distance between \(\mathbb{P}\) and \(\mathbb{Q}\) is:</p>
+    <p style="margin-bottom:0.3rem">\[\text{TV}(\mathbb{P},\mathbb{Q}) = \max_{A \subseteq E} |\mathbb{P}(A) - \mathbb{Q}(A)|\]</p>
+    <p style="margin:0">This is the largest possible difference in probability that any event can have under the two distributions.</p>
+</div>
+
+<h3>Computational Formulas</h3>
+<p><strong>Discrete case:</strong> If \(E\) is countable:</p>
+\[\text{TV}(\mathbb{P},\mathbb{Q}) = \frac{1}{2}\sum_{x \in E} |p(x) - q(x)|\]
+<p><strong>Continuous case:</strong> If \(E\) is continuous with densities \(f_\theta, f_{\theta'}\):</p>
+\[\text{TV}(\mathbb{P}_\theta, \mathbb{P}_{\theta'}) = \frac{1}{2}\int_E |f_\theta(x) - f_{\theta'}(x)|\, dx\]
+
+<div class="figure">
+    <svg width="480" height="180" viewBox="0 0 480 180" xmlns="http://www.w3.org/2000/svg">
+        <!-- P distribution (left bell) -->
+        <path d="M30,155 Q80,153 120,110 Q150,70 170,40 Q190,70 210,110 Q240,153 280,155" fill="none" stroke="#000" stroke-width="2"/>
+        <!-- Q distribution (right bell) -->
+        <path d="M200,155 Q240,153 270,115 Q295,75 315,45 Q335,75 355,115 Q380,153 450,155" fill="none" stroke="#000" stroke-width="1.5" stroke-dasharray="5,3"/>
+        <!-- overlap shading -->
+        <path d="M200,155 Q225,148 240,120 Q255,90 265,75 Q255,80 245,95 Q230,120 210,138 Z" fill="#000" opacity="0.08"/>
+        <!-- TV arrow -->
+        <line x1="170" y1="40" x2="315" y2="45" stroke="#000" stroke-width="1" stroke-dasharray="3,2"/>
+        <text x="220" y="36" font-size="10" font-family="Inter,sans-serif" fill="#000">TV distance</text>
+        <!-- axis -->
+        <line x1="20" y1="155" x2="460" y2="155" stroke="#000" stroke-width="1"/>
+        <text x="155" y="172" font-size="10" font-family="Inter,sans-serif" fill="#666">P</text>
+        <text x="315" y="172" font-size="10" font-family="Inter,sans-serif" fill="#666">Q</text>
+    </svg>
+    <div class="caption">Figure 1 — TV distance measures the maximum gap between probabilities. The overlap region contributes to similarity.</div>
+</div>
+
+<h3>Properties of TV Distance</h3>
+<ul>
+    <li><strong>Symmetric:</strong> \(\text{TV}(\mathbb{P},\mathbb{Q}) = \text{TV}(\mathbb{Q},\mathbb{P})\)</li>
+    <li><strong>Non-negative:</strong> \(\text{TV}(\mathbb{P},\mathbb{Q}) \geq 0\), with equality iff \(\mathbb{P} = \mathbb{Q}\)</li>
+    <li><strong>Bounded:</strong> \(\text{TV}(\mathbb{P},\mathbb{Q}) \leq 1\)</li>
+    <li><strong>Triangle inequality:</strong> \(\text{TV}(\mathbb{P},\mathbb{R}) \leq \text{TV}(\mathbb{P},\mathbb{Q}) + \text{TV}(\mathbb{Q},\mathbb{R})\)</li>
+    <li><strong>Definite:</strong> If \(\mathbb{P}_\theta = \mathbb{P}_{\theta'}\), then \(\theta = \theta'\) (when the model is identifiable)</li>
+</ul>
+<p>TV is a true metric on probability distributions. Its operational meaning: if you want to distinguish \(\mathbb{P}\) from \(\mathbb{Q}\) using a single binary test, the best possible probability of error is \(\frac{1}{2}(1 - \text{TV}(\mathbb{P},\mathbb{Q}))\).</p>
+
+<h2>3. KL Divergence</h2>
+<div class="box">
+    <div class="box-label">KL Divergence (Relative Entropy)</div>
+    <p style="margin-bottom:0.5rem">\[\text{KL}(\mathbb{P}_\theta, \mathbb{P}_{\theta'}) = \begin{cases} \sum_{x \in E} p_\theta(x) \log\dfrac{p_\theta(x)}{p_{\theta'}(x)} & E \text{ discrete} \\[10pt] \int_E f_\theta(x) \log\dfrac{f_\theta(x)}{f_{\theta'}(x)}\, dx & E \text{ continuous} \end{cases}\]</p>
+</div>
+<p>KL divergence measures how much information is lost when we use distribution \(\mathbb{P}_{\theta'}\) to approximate the true distribution \(\mathbb{P}_\theta\). Also called relative entropy.</p>
+
+<h3>Properties of KL Divergence</h3>
+<ul>
+    <li><strong>Non-negative:</strong> \(\text{KL}(\mathbb{P},\mathbb{Q}) \geq 0\) (by Jensen's inequality applied to \(-\log\))</li>
+    <li><strong>Definite:</strong> \(\text{KL}(\mathbb{P},\mathbb{Q}) = 0 \iff \mathbb{P} = \mathbb{Q}\)</li>
+    <li><strong>Not symmetric:</strong> \(\text{KL}(\mathbb{P},\mathbb{Q}) \neq \text{KL}(\mathbb{Q},\mathbb{P})\) in general</li>
+    <li><strong>No triangle inequality</strong> — KL is not a metric</li>
+    <li><strong>Sub-additivity:</strong> \(\text{KL}(\mathbb{P},\mathbb{R}) \leq \text{KL}(\mathbb{P},\mathbb{Q}) + \text{KL}(\mathbb{Q},\mathbb{R})\) does not hold in general</li>
+</ul>
+<p>Because KL is asymmetric, \(\text{KL}(\mathbb{P}\|\mathbb{Q})\) ("forward KL") and \(\text{KL}(\mathbb{Q}\|\mathbb{P})\) ("reverse KL") have different uses. Forward KL is used in MLE; reverse KL appears in variational inference.</p>
+
+<h2>4. Connecting TV and KL</h2>
+<p>The two measures are related by Pinsker's inequality:</p>
+\[\text{TV}(\mathbb{P},\mathbb{Q}) \leq \sqrt{\frac{1}{2}\text{KL}(\mathbb{P},\mathbb{Q})}\]
+<p>So small KL divergence implies small TV distance. The converse does not hold — small TV does not imply small KL.</p>
+
+<table>
+    <tr><th></th><th>Total Variation</th><th>KL Divergence</th></tr>
+    <tr><td>Symmetric</td><td>Yes</td><td>No</td></tr>
+    <tr><td>Metric</td><td>Yes</td><td>No</td></tr>
+    <tr><td>Bounded</td><td>[0, 1]</td><td>[0, ∞)</td></tr>
+    <tr><td>Main use</td><td>Hypothesis testing, model distinguishability</td><td>MLE, information theory, variational methods</td></tr>
+</table>
+
+<h2>5. Why KL Appears in MLE</h2>
+<p>Maximum likelihood estimation minimises the KL divergence between the empirical distribution and the model. Maximising the log-likelihood:</p>
+\[\hat{\theta}_n = \arg\max_\theta \frac{1}{n}\sum_{i=1}^n \log p_\theta(X_i)\]
+<p>is equivalent to minimising \(\text{KL}(\hat{\mathbb{P}}_n, \mathbb{P}_\theta)\) where \(\hat{\mathbb{P}}_n\) is the empirical distribution. This is why MLE has such clean information-theoretic properties.</p>
+
+</body>
+</html>

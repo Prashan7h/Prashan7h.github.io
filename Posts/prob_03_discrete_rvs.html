@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discrete Random Variables — Probability From Scratch</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+    <style>
+        *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+        body { background: #fff; color: #000; font-family: 'Inter', sans-serif; font-weight: 300; line-height: 1.6; max-width: 720px; margin: 0 auto; padding: 2rem 2rem 6rem; }
+        nav { margin-bottom: 3rem; font-size: 0.75rem; letter-spacing: 0.04em; }
+        nav a { color: #000; text-decoration: none; }
+        nav a:hover { opacity: 0.5; }
+        nav span { margin: 0 0.5rem; opacity: 0.3; }
+        h1 { font-family: 'Cormorant Garamond', serif; font-size: 2.2rem; font-weight: 600; line-height: 1.2; margin-bottom: 0.4rem; }
+        .subtitle { font-family: 'Cormorant Garamond', serif; font-size: 1.1rem; font-style: italic; color: #444; margin-bottom: 3rem; }
+        h2 { font-family: 'Cormorant Garamond', serif; font-size: 1.6rem; font-weight: 600; margin: 3rem 0 1rem; border-bottom: 1px solid #eee; padding-bottom: 0.3rem; }
+        h3 { font-family: 'Inter', sans-serif; font-size: 0.88rem; font-weight: 500; letter-spacing: 0.04em; text-transform: uppercase; margin: 2rem 0 0.6rem; }
+        p { font-size: 0.92rem; line-height: 1.8; margin-bottom: 0.9rem; }
+        ul { font-size: 0.92rem; line-height: 1.8; padding-left: 1.4rem; margin-bottom: 0.9rem; }
+        li { margin-bottom: 0.25rem; }
+        .box { border-left: 2px solid #000; padding: 0.9rem 1.1rem; margin: 1.5rem 0; }
+        .box-label { font-size: 0.7rem; font-weight: 500; letter-spacing: 0.08em; text-transform: uppercase; margin-bottom: 0.4rem; opacity: 0.5; }
+        .figure { margin: 2rem 0; text-align: center; }
+        .caption { font-size: 0.78rem; color: #666; margin-top: 0.5rem; }
+        table { width: 100%; border-collapse: collapse; font-size: 0.88rem; margin: 1.5rem 0; }
+        th { font-weight: 500; border-bottom: 1px solid #000; padding: 0.5rem 0.8rem; text-align: left; }
+        td { padding: 0.5rem 0.8rem; border-bottom: 1px solid #eee; }
+        mjx-container { overflow-x: auto; }
+    </style>
+    <script src="https://cdn.amplitude.com/script/59010539cde9503811b2e9a80e47e0b4.js"></script>
+    <script>window.amplitude.add(window.sessionReplay.plugin({sampleRate: 1}));window.amplitude.init('59010539cde9503811b2e9a80e47e0b4', {"fetchRemoteConfig":true,"autocapture":{"attribution":true,"fileDownloads":true,"formInteractions":true,"pageViews":true,"sessions":true,"elementInteractions":true,"networkTracking":true,"webVitals":true,"frustrationInteractions":true}});</script>
+</head>
+<body>
+<nav><a href="../blog.html">Notebooks</a><span>/</span>Discrete Random Variables</nav>
+<h1>Discrete Random Variables</h1>
+<p class="subtitle">PMF, expectation, variance, and the key discrete distributions</p>
+
+<h2>1. Random Variables</h2>
+<p>A <strong>random variable</strong> \(X\) is a function \(X: \Omega \to \mathbb{R}\) that assigns a real number to each outcome. It converts events into numbers, making probability calculations algebraic.</p>
+
+<h2>2. Probability Mass Function</h2>
+<div class="box">
+    <div class="box-label">PMF</div>
+    <p style="margin-bottom:0.4rem">\(p_X(x) = \mathbb{P}(X = x) = \mathbb{P}(\{\omega \in \Omega : X(\omega) = x\})\)</p>
+    <p style="margin:0">Valid PMFs satisfy: \(p_X(x) \geq 0\) and \(\sum_x p_X(x) = 1\).</p>
+</div>
+
+<h2>3. Expectation</h2>
+\[\mathbb{E}[X] = \sum_x x\, p_X(x)\]
+<p>The expected value is the probability-weighted average. For a function \(g(X)\): \(\mathbb{E}[g(X)] = \sum_x g(x)\, p_X(x)\).</p>
+<div class="box">
+    <div class="box-label">Linearity of Expectation</div>
+    <p style="margin:0">\(\mathbb{E}[aX + b] = a\,\mathbb{E}[X] + b\). Holds even for dependent random variables.</p>
+</div>
+
+<h2>4. Variance</h2>
+\[\text{Var}(X) = \mathbb{E}\!\left[(X - \mathbb{E}[X])^2\right] = \mathbb{E}[X^2] - (\mathbb{E}[X])^2\]
+<ul>
+    <li>\(\text{Var}(aX + b) = a^2\,\text{Var}(X)\)</li>
+    <li>Standard deviation: \(\sigma_X = \sqrt{\text{Var}(X)}\)</li>
+</ul>
+
+<h2>5. Key Discrete Distributions</h2>
+
+<h3>Bernoulli</h3>
+<p>\(X \sim \text{Ber}(p)\): single trial, success with probability \(p\).</p>
+\[p_X(k) = \begin{cases} p & k=1 \\ 1-p & k=0 \end{cases}, \quad \mathbb{E}[X]=p, \quad \text{Var}(X)=p(1-p)\]
+
+<h3>Binomial</h3>
+<p>\(X \sim \text{Bin}(n,p)\): number of successes in \(n\) independent Bernoulli(\(p\)) trials.</p>
+\[p_X(k) = \binom{n}{k}p^k(1-p)^{n-k}, \quad k=0,1,\ldots,n\]
+\[\mathbb{E}[X]=np, \quad \text{Var}(X)=np(1-p)\]
+
+<div class="figure">
+    <svg width="400" height="150" viewBox="0 0 400 150" xmlns="http://www.w3.org/2000/svg">
+        <line x1="20" y1="125" x2="390" y2="125" stroke="#000" stroke-width="1"/>
+        <line x1="20" y1="15" x2="20" y2="125" stroke="#000" stroke-width="1"/>
+        <!-- Bin(10, 0.3) PMF bars -->
+        <rect x="30" y="108" width="20" height="17" fill="#000" opacity="0.15"/>
+        <rect x="58" y="88" width="20" height="37" fill="#000" opacity="0.35"/>
+        <rect x="86" y="65" width="20" height="60" fill="#000" opacity="0.6"/>
+        <rect x="114" y="52" width="20" height="73" fill="#000" opacity="0.8"/>
+        <rect x="142" y="60" width="20" height="65" fill="#000"/>
+        <rect x="170" y="78" width="20" height="47" fill="#000" opacity="0.7"/>
+        <rect x="198" y="98" width="20" height="27" fill="#000" opacity="0.45"/>
+        <rect x="226" y="112" width="20" height="13" fill="#000" opacity="0.25"/>
+        <rect x="254" y="120" width="20" height="5" fill="#000" opacity="0.15"/>
+        <text x="40" y="140" font-size="8" font-family="Inter,sans-serif" text-anchor="middle" fill="#666">0</text>
+        <text x="68" y="140" font-size="8" font-family="Inter,sans-serif" text-anchor="middle" fill="#666">1</text>
+        <text x="96" y="140" font-size="8" font-family="Inter,sans-serif" text-anchor="middle" fill="#666">2</text>
+        <text x="124" y="140" font-size="8" font-family="Inter,sans-serif" text-anchor="middle" fill="#666">3</text>
+        <text x="152" y="140" font-size="8" font-family="Inter,sans-serif" text-anchor="middle" fill="#666">4</text>
+        <text x="200" y="140" font-size="8" font-family="Inter,sans-serif" text-anchor="middle" fill="#666">k</text>
+        <text x="200" y="12" font-size="9" font-family="Inter,sans-serif" text-anchor="middle" fill="#666">Bin(10, 0.3) — peaked near np = 3</text>
+    </svg>
+    <div class="caption">Figure 1 — Binomial PMF. The distribution is peaked near the mean np.</div>
+</div>
+
+<h3>Geometric</h3>
+<p>\(X \sim \text{Geo}(p)\): number of failures before first success. \(X \in \{0, 1, 2, \ldots\}\).</p>
+\[p_X(k) = (1-p)^k p, \quad \mathbb{E}[X] = \frac{1-p}{p}, \quad \text{Var}(X) = \frac{1-p}{p^2}\]
+<p><strong>Memorylessness:</strong> \(\mathbb{P}(X > s+t \mid X > s) = \mathbb{P}(X > t)\). Past failures carry no information about future trials.</p>
+
+<h3>Discrete Uniform</h3>
+<p>\(X \sim \text{Unif}(a, b)\): equally likely values \(\{a, a+1, \ldots, b\}\).</p>
+\[\mathbb{E}[X] = \frac{a+b}{2}, \quad \text{Var}(X) = \frac{(b-a)(b-a+2)}{12}\]
+
+<h2>6. Conditional PMF and Total Expectation</h2>
+<p>The conditional PMF of \(X\) given event \(A\): \(p_{X|A}(x) = \mathbb{P}(X=x \mid A)\).</p>
+<div class="box">
+    <div class="box-label">Total Expectation Theorem</div>
+    <p style="margin-bottom:0.4rem">For a partition \(A_1, \ldots, A_n\) of \(\Omega\):</p>
+    <p style="margin:0">\[\mathbb{E}[X] = \sum_i \mathbb{P}(A_i)\,\mathbb{E}[X \mid A_i]\]</p>
+</div>
+<p>The expected value is a weighted average of conditional expectations — one of the most useful tools for computing expectations of complex processes.</p>
+
+<h2>7. Summary Table</h2>
+<table>
+    <tr><th>Distribution</th><th>PMF \(p_X(k)\)</th><th>\(\mathbb{E}[X]\)</th><th>\(\text{Var}(X)\)</th></tr>
+    <tr><td>Bernoulli(\(p\))</td><td>\(p^k(1-p)^{1-k}\)</td><td>\(p\)</td><td>\(p(1-p)\)</td></tr>
+    <tr><td>Binomial(\(n,p\))</td><td>\(\binom{n}{k}p^k(1-p)^{n-k}\)</td><td>\(np\)</td><td>\(np(1-p)\)</td></tr>
+    <tr><td>Geometric(\(p\))</td><td>\((1-p)^k p\)</td><td>\((1-p)/p\)</td><td>\((1-p)/p^2\)</td></tr>
+    <tr><td>Discrete Uniform(\(a,b\))</td><td>\(1/(b-a+1)\)</td><td>\((a+b)/2\)</td><td>\((b-a)(b-a+2)/12\)</td></tr>
+</table>
+
+</body>
+</html>

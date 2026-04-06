@@ -1,4 +1,18 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
-  <rect width="64" height="64" fill="#000"/>
-  <text x="32" y="44" font-family="Georgia, 'Times New Roman', serif" font-size="32" font-weight="bold" fill="#fff" text-anchor="middle" letter-spacing="-1">PS</text>
+  <!-- white background -->
+  <rect width="64" height="64" fill="#fff"/>
+  <!-- outer black border -->
+  <rect x="2" y="2" width="60" height="60" fill="none" stroke="#000" stroke-width="3"/>
+  <!-- P — serifed, left-anchored -->
+  <text x="10" y="47"
+        font-family="Georgia, 'Times New Roman', serif"
+        font-size="38"
+        font-weight="700"
+        fill="#000">P</text>
+  <!-- S — smaller, sits bottom-right as a subtle second initial -->
+  <text x="38" y="54"
+        font-family="Georgia, 'Times New Roman', serif"
+        font-size="22"
+        font-weight="400"
+        fill="#000">S</text>
 </svg>

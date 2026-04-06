@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Named Distributions — Probability From Scratch</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+    <style>
+        *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+        body { background: #fff; color: #000; font-family: 'Inter', sans-serif; font-weight: 300; line-height: 1.6; max-width: 720px; margin: 0 auto; padding: 2rem 2rem 6rem; }
+        nav { margin-bottom: 3rem; font-size: 0.75rem; letter-spacing: 0.04em; }
+        nav a { color: #000; text-decoration: none; }
+        nav a:hover { opacity: 0.5; }
+        nav span { margin: 0 0.5rem; opacity: 0.3; }
+        h1 { font-family: 'Cormorant Garamond', serif; font-size: 2.2rem; font-weight: 600; line-height: 1.2; margin-bottom: 0.4rem; }
+        .subtitle { font-family: 'Cormorant Garamond', serif; font-size: 1.1rem; font-style: italic; color: #444; margin-bottom: 3rem; }
+        h2 { font-family: 'Cormorant Garamond', serif; font-size: 1.6rem; font-weight: 600; margin: 3rem 0 1rem; border-bottom: 1px solid #eee; padding-bottom: 0.3rem; }
+        h3 { font-family: 'Inter', sans-serif; font-size: 0.88rem; font-weight: 500; letter-spacing: 0.04em; text-transform: uppercase; margin: 2rem 0 0.6rem; }
+        p { font-size: 0.92rem; line-height: 1.8; margin-bottom: 0.9rem; }
+        ul { font-size: 0.92rem; line-height: 1.8; padding-left: 1.4rem; margin-bottom: 0.9rem; }
+        li { margin-bottom: 0.25rem; }
+        .box { border-left: 2px solid #000; padding: 0.9rem 1.1rem; margin: 1.5rem 0; }
+        .box-label { font-size: 0.7rem; font-weight: 500; letter-spacing: 0.08em; text-transform: uppercase; margin-bottom: 0.4rem; opacity: 0.5; }
+        table { width: 100%; border-collapse: collapse; font-size: 0.85rem; margin: 1.5rem 0; }
+        th { font-weight: 500; border-bottom: 1px solid #000; padding: 0.5rem 0.8rem; text-align: left; }
+        td { padding: 0.45rem 0.8rem; border-bottom: 1px solid #eee; vertical-align: top; }
+        mjx-container { overflow-x: auto; }
+    </style>
+    <script src="https://cdn.amplitude.com/script/59010539cde9503811b2e9a80e47e0b4.js"></script>
+    <script>window.amplitude.add(window.sessionReplay.plugin({sampleRate: 1}));window.amplitude.init('59010539cde9503811b2e9a80e47e0b4', {"fetchRemoteConfig":true,"autocapture":{"attribution":true,"fileDownloads":true,"formInteractions":true,"pageViews":true,"sessions":true,"elementInteractions":true,"networkTracking":true,"webVitals":true,"frustrationInteractions":true}});</script>
+</head>
+<body>
+<nav><a href="../blog.html">Notebooks</a><span>/</span>Named Distributions</nav>
+<h1>Named Distributions</h1>
+<p class="subtitle">The standard families — their stories, parameters, properties, and relationships</p>
+
+<h2>1. Introduction</h2>
+<p>Named distributions are recurring patterns that appear across many applications. Each has a story — a natural process that generates it. Learning the story is more important than memorising formulas: it tells you when to use each distribution.</p>
+
+<h2>2. Continuous Distributions</h2>
+
+<h3>Normal (Gaussian)</h3>
+<p>\(X \sim \mathcal{N}(\mu, \sigma^2)\). The universal distribution by the CLT. PDF:</p>
+\[f(x) = \frac{1}{\sigma\sqrt{2\pi}}\exp\!\left(-\frac{(x-\mu)^2}{2\sigma^2}\right)\]
+<p>Key: any linear combination of independent Normals is Normal. Standardise: \(Z = (X-\mu)/\sigma \sim \mathcal{N}(0,1)\).</p>
+
+<h3>Exponential</h3>
+<p>\(X \sim \text{Expo}(\lambda)\). Waiting time until first event in a Poisson process with rate \(\lambda\).</p>
+\[f(x) = \lambda e^{-\lambda x},\; x \geq 0 \qquad F(x) = 1 - e^{-\lambda x}\]
+\[\mathbb{E}[X] = 1/\lambda, \quad \text{Var}(X) = 1/\lambda^2\]
+<p><strong>Memorylessness:</strong> \(\mathbb{P}(X > s+t \mid X > s) = \mathbb{P}(X > t)\). The only continuous memoryless distribution.</p>
+
+<h3>Gamma</h3>
+<p>\(X \sim \text{Gamma}(a, \lambda)\). Waiting time until the \(a\)-th event in a Poisson process.</p>
+\[\mathbb{E}[X] = a/\lambda, \quad \text{Var}(X) = a/\lambda^2\]
+<p>\(\text{Expo}(\lambda) = \text{Gamma}(1, \lambda)\). If \(X_1, \ldots, X_n\) are i.i.d. \(\text{Expo}(\lambda)\), then \(X_1 + \cdots + X_n \sim \text{Gamma}(n, \lambda)\).</p>
+
+<h3>Beta</h3>
+<p>\(X \sim \text{Beta}(a, b)\). Supported on \([0,1]\); natural model for probabilities.</p>
+\[\mathbb{E}[X] = \frac{a}{a+b}, \quad \text{Var}(X) = \frac{ab}{(a+b)^2(a+b+1)}\]
+<p><strong>Conjugate prior for the Binomial:</strong> if \(p \sim \text{Beta}(a,b)\) and we observe \(x\) successes in \(n\) trials, then \(p \mid X=x \sim \text{Beta}(a+x, b+n-x)\).</p>
+
+<h3>Uniform</h3>
+<p>\(X \sim \text{Unif}(a,b)\). Equal density across \([a,b]\): \(f(x) = 1/(b-a)\).</p>
+\[\mathbb{E}[X] = (a+b)/2, \quad \text{Var}(X) = (b-a)^2/12\]
+
+<h2>3. Discrete Distributions</h2>
+
+<h3>Poisson</h3>
+<p>\(X \sim \text{Pois}(\lambda)\). Number of events in a fixed interval when events occur at constant rate \(\lambda\).</p>
+\[p_X(k) = \frac{e^{-\lambda}\lambda^k}{k!}, \; k=0,1,2,\ldots \qquad \mathbb{E}[X] = \text{Var}(X) = \lambda\]
+<p><strong>Sum:</strong> If \(X \sim \text{Pois}(\lambda_1)\), \(Y \sim \text{Pois}(\lambda_2)\) independent, then \(X+Y \sim \text{Pois}(\lambda_1+\lambda_2)\).</p>
+<p><strong>Binomial-Poisson approximation:</strong> \(\text{Bin}(n,p) \approx \text{Pois}(np)\) when \(n\) is large and \(p\) is small.</p>
+
+<h3>Negative Binomial</h3>
+<p>\(X \sim \text{NBin}(r,p)\). Number of failures before the \(r\)-th success. \(\text{Geo}(p) = \text{NBin}(1,p)\).</p>
+\[p_X(k) = \binom{k+r-1}{k}(1-p)^k p^r, \quad \mathbb{E}[X] = \frac{r(1-p)}{p}\]
+
+<h3>Hypergeometric</h3>
+<p>\(X \sim \text{HGeom}(w, b, n)\). Drawing \(n\) objects without replacement from \(w\) white and \(b\) black objects. \(X\) = number of white drawn.</p>
+\[\mathbb{E}[X] = \frac{nw}{w+b}\]
+<p>Like Binomial but sampling without replacement — \(\text{HGeom}\) accounts for dependence between draws.</p>
+
+<h2>4. Multivariate Distributions</h2>
+
+<h3>Multinomial</h3>
+<p>\(\vec{X} \sim \text{Mult}_k(n, \vec{p})\). Generalisation of Binomial to \(k\) categories. \(n\) items each independently fall into category \(j\) with probability \(p_j\).</p>
+\[\mathbb{P}(\vec{X} = \vec{n}) = \frac{n!}{n_1!\cdots n_k!}\,p_1^{n_1}\cdots p_k^{n_k}, \quad \sum n_j = n\]
+<p>Marginals: \(X_i \sim \text{Bin}(n, p_i)\). Any subset of categories lumped together is still Multinomial.</p>
+
+<h3>Multivariate Normal (MVN)</h3>
+<p>\(\vec{X} \sim \mathcal{N}_d(\vec{\mu}, \Sigma)\). Any linear combination of components is Normal. Any subvector is MVN. Uncorrelated components of an MVN are independent (unique to Normal!).</p>
+<p>Joint PDF: \(f(\vec{x}) = \frac{1}{(2\pi)^{d/2}|\Sigma|^{1/2}}\exp\!\left(-\frac{1}{2}(\vec{x}-\vec{\mu})^\top\Sigma^{-1}(\vec{x}-\vec{\mu})\right)\).</p>
+
+<h2>5. Distribution Relationships</h2>
+<table>
+    <tr><th>Relationship</th><th>Details</th></tr>
+    <tr><td>Bernoulli → Binomial</td><td>Sum of \(n\) i.i.d. Ber(\(p\)) = Bin(\(n,p\))</td></tr>
+    <tr><td>Geometric → Neg. Binomial</td><td>Sum of \(r\) i.i.d. Geo(\(p\)) = NBin(\(r,p\))</td></tr>
+    <tr><td>Expo → Gamma</td><td>Sum of \(n\) i.i.d. Expo(\(\lambda\)) = Gamma(\(n,\lambda\))</td></tr>
+    <tr><td>Binomial → Poisson</td><td>Bin(\(n,p\)) → Pois(\(np\)) as \(n\to\infty\), \(p\to0\)</td></tr>
+    <tr><td>Beta-Gamma</td><td>If \(X \sim \text{Gamma}(a,\lambda)\), \(Y \sim \text{Gamma}(b,\lambda)\) indep., then \(X/(X+Y) \sim \text{Beta}(a,b)\)</td></tr>
+    <tr><td>Normal → Chi-Square</td><td>\(Z_1^2+\cdots+Z_n^2 \sim \chi^2_n\) for i.i.d. \(Z_i \sim \mathcal{N}(0,1)\)</td></tr>
+</table>
+
+</body>
+</html>

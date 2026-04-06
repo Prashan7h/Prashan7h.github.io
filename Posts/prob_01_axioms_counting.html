@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Probability Axioms & Counting — Probability From Scratch</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+    <style>
+        *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+        body { background: #fff; color: #000; font-family: 'Inter', sans-serif; font-weight: 300; line-height: 1.6; max-width: 720px; margin: 0 auto; padding: 2rem 2rem 6rem; }
+        nav { margin-bottom: 3rem; font-size: 0.75rem; letter-spacing: 0.04em; }
+        nav a { color: #000; text-decoration: none; }
+        nav a:hover { opacity: 0.5; }
+        nav span { margin: 0 0.5rem; opacity: 0.3; }
+        h1 { font-family: 'Cormorant Garamond', serif; font-size: 2.2rem; font-weight: 600; line-height: 1.2; margin-bottom: 0.4rem; }
+        .subtitle { font-family: 'Cormorant Garamond', serif; font-size: 1.1rem; font-style: italic; color: #444; margin-bottom: 3rem; }
+        h2 { font-family: 'Cormorant Garamond', serif; font-size: 1.6rem; font-weight: 600; margin: 3rem 0 1rem; border-bottom: 1px solid #eee; padding-bottom: 0.3rem; }
+        h3 { font-family: 'Inter', sans-serif; font-size: 0.88rem; font-weight: 500; letter-spacing: 0.04em; text-transform: uppercase; margin: 2rem 0 0.6rem; }
+        p { font-size: 0.92rem; line-height: 1.8; margin-bottom: 0.9rem; }
+        ul, ol { font-size: 0.92rem; line-height: 1.8; padding-left: 1.4rem; margin-bottom: 0.9rem; }
+        li { margin-bottom: 0.25rem; }
+        .box { border-left: 2px solid #000; padding: 0.9rem 1.1rem; margin: 1.5rem 0; }
+        .box-label { font-size: 0.7rem; font-weight: 500; letter-spacing: 0.08em; text-transform: uppercase; margin-bottom: 0.4rem; opacity: 0.5; }
+        .figure { margin: 2rem 0; text-align: center; }
+        .caption { font-size: 0.78rem; color: #666; margin-top: 0.5rem; }
+        mjx-container { overflow-x: auto; }
+        table { width: 100%; border-collapse: collapse; font-size: 0.88rem; margin: 1.5rem 0; }
+        th { font-weight: 500; border-bottom: 1px solid #000; padding: 0.5rem 0.8rem; text-align: left; }
+        td { padding: 0.5rem 0.8rem; border-bottom: 1px solid #eee; }
+    </style>
+    <script src="https://cdn.amplitude.com/script/59010539cde9503811b2e9a80e47e0b4.js"></script>
+    <script>window.amplitude.add(window.sessionReplay.plugin({sampleRate: 1}));window.amplitude.init('59010539cde9503811b2e9a80e47e0b4', {"fetchRemoteConfig":true,"autocapture":{"attribution":true,"fileDownloads":true,"formInteractions":true,"pageViews":true,"sessions":true,"elementInteractions":true,"networkTracking":true,"webVitals":true,"frustrationInteractions":true}});</script>
+</head>
+<body>
+<nav><a href="../blog.html">Notebooks</a><span>/</span>Probability Axioms & Counting</nav>
+<h1>Probability Axioms & Counting</h1>
+<p class="subtitle">Sample space, the axioms of probability, set theory tools, and combinatorics</p>
+
+<h2>1. Introduction</h2>
+<p>Probability theory begins by making precise what we mean by "an experiment" and "how likely an outcome is." Everything follows from three simple axioms and a rigorous definition of a sample space. Counting techniques then let us compute probabilities when outcomes are equally likely.</p>
+
+<h2>2. Sample Space & Events</h2>
+<p>An <strong>experiment</strong> is any process with an uncertain outcome. The <strong>sample space</strong> \(\Omega\) is the set of all possible outcomes. A good sample space must be:</p>
+<ul>
+    <li><strong>Mutually exclusive</strong> — at most one outcome occurs per trial.</li>
+    <li><strong>Collectively exhaustive</strong> — at least one outcome always occurs.</li>
+    <li>At the <strong>right granularity</strong> — fine enough to answer the questions of interest.</li>
+</ul>
+<p>An <strong>event</strong> \(A\) is any subset of \(\Omega\). Probability is assigned to events, not individual outcomes (except in discrete spaces).</p>
+
+<h2>3. Probability Axioms</h2>
+<div class="box">
+    <div class="box-label">Kolmogorov Axioms</div>
+    <ul style="margin:0">
+        <li><strong>Non-negativity:</strong> \(\mathbb{P}(A) \geq 0\) for all events \(A\).</li>
+        <li><strong>Normalisation:</strong> \(\mathbb{P}(\Omega) = 1\).</li>
+        <li><strong>Countable Additivity:</strong> If \(A_1, A_2, \ldots\) are disjoint, then \(\mathbb{P}\!\left(\bigcup_i A_i\right) = \sum_i \mathbb{P}(A_i)\).</li>
+    </ul>
+</div>
+<p>Everything else in probability theory follows from these three axioms. Key consequences:</p>
+<ul>
+    <li>\(\mathbb{P}(\emptyset) = 0\)</li>
+    <li>\(\mathbb{P}(A) \leq 1\)</li>
+    <li>\(\mathbb{P}(A) + \mathbb{P}(A^c) = 1\)</li>
+    <li>If \(A \subseteq B\), then \(\mathbb{P}(A) \leq \mathbb{P}(B)\)</li>
+    <li><strong>Union bound:</strong> \(\mathbb{P}(A \cup B) \leq \mathbb{P}(A) + \mathbb{P}(B)\)</li>
+</ul>
+
+<h3>Inclusion-Exclusion</h3>
+\[\mathbb{P}(A \cup B) = \mathbb{P}(A) + \mathbb{P}(B) - \mathbb{P}(A \cap B)\]
+<p><strong>Bonferroni's Inequality:</strong> \(\mathbb{P}(A_1 \cap \cdots \cap A_n) \geq \mathbb{P}(A_1) + \cdots + \mathbb{P}(A_n) - (n-1)\).</p>
+
+<h2>4. Discrete Uniform Law</h2>
+<p>If \(\Omega\) is finite with \(n\) equally likely outcomes, and event \(A\) contains \(k\) outcomes:</p>
+\[\mathbb{P}(A) = \frac{k}{n} = \frac{\text{number of elements in } A}{\text{total number of outcomes}}\]
+<p>This is the classical probability model. Computing \(\mathbb{P}(A)\) reduces to counting.</p>
+
+<h2>5. Set Theory & De Morgan's Laws</h2>
+<p>Events are sets, so set operations carry direct probability interpretations:</p>
+<ul>
+    <li>\(A \cap B\): both \(A\) and \(B\) occur.</li>
+    <li>\(A \cup B\): at least one of \(A\), \(B\) occurs.</li>
+    <li>\(A^c\): \(A\) does not occur.</li>
+</ul>
+<div class="box">
+    <div class="box-label">De Morgan's Laws</div>
+    <p style="margin-bottom:0.3rem">\(\left(\bigcup_n S_n\right)^c = \bigcap_n S_n^c\) — the complement of a union is the intersection of complements.</p>
+    <p style="margin:0">\(\left(\bigcap_n S_n\right)^c = \bigcup_n S_n^c\) — the complement of an intersection is the union of complements.</p>
+</div>
+
+<h2>6. Counting</h2>
+
+<h3>Basic Counting Principle</h3>
+<p>If a selection is made in \(r\) stages with \(n_i\) choices at stage \(i\), the total number of selections is \(n_1 n_2 \cdots n_r\).</p>
+
+<h3>Permutations</h3>
+<p>The number of ways to order \(n\) distinct elements: \(n! = 1 \cdot 2 \cdot 3 \cdots n\).</p>
+
+<h3>Combinations</h3>
+<p>The number of ways to choose \(k\) elements from \(n\) (order doesn't matter):</p>
+\[\binom{n}{k} = \frac{n!}{k!(n-k)!}\]
+
+<h3>Partitions</h3>
+<p>Given an \(n\)-element set and nonnegative integers \(n_1, \ldots, n_r\) summing to \(n\), the number of ways to partition into \(r\) disjoint subsets of sizes \(n_1, \ldots, n_r\) is:</p>
+\[\frac{n!}{n_1!\, n_2!\, \cdots\, n_r!}\]
+
+<div class="figure">
+    <svg width="460" height="130" viewBox="0 0 460 130" xmlns="http://www.w3.org/2000/svg">
+        <!-- Permutations -->
+        <text x="70" y="20" text-anchor="middle" font-size="11" font-family="Inter,sans-serif" font-weight="500">Permutations</text>
+        <rect x="20" y="30" width="24" height="24" fill="#000"/>
+        <rect x="48" y="30" width="24" height="24" fill="#000" opacity="0.6"/>
+        <rect x="76" y="30" width="24" height="24" fill="#000" opacity="0.3"/>
+        <text x="22" y="47" font-size="11" font-family="Inter,sans-serif" fill="#fff">A</text>
+        <text x="50" y="47" font-size="11" font-family="Inter,sans-serif" fill="#fff">B</text>
+        <text x="78" y="47" font-size="11" font-family="Inter,sans-serif" fill="#fff">C</text>
+        <text x="70" y="72" text-anchor="middle" font-size="9" font-family="Inter,sans-serif" fill="#666">3! = 6 orderings</text>
+        <!-- Combinations -->
+        <text x="270" y="20" text-anchor="middle" font-size="11" font-family="Inter,sans-serif" font-weight="500">Combinations</text>
+        <circle cx="220" cy="65" r="12" fill="none" stroke="#000" stroke-width="1.5"/>
+        <circle cx="248" cy="65" r="12" fill="none" stroke="#000" stroke-width="1.5"/>
+        <circle cx="276" cy="65" r="12" fill="none" stroke="#000" stroke-width="1.5"/>
+        <circle cx="304" cy="65" r="12" fill="none" stroke="#000" stroke-width="1.5"/>
+        <text x="220" y="69" text-anchor="middle" font-size="10" font-family="Inter,sans-serif">1</text>
+        <text x="248" y="69" text-anchor="middle" font-size="10" font-family="Inter,sans-serif">2</text>
+        <text x="276" y="69" text-anchor="middle" font-size="10" font-family="Inter,sans-serif">3</text>
+        <text x="304" y="69" text-anchor="middle" font-size="10" font-family="Inter,sans-serif">4</text>
+        <path d="M210,82 Q248,100 286,82" fill="none" stroke="#000" stroke-width="1.2" stroke-dasharray="3,2"/>
+        <text x="270" y="100" text-anchor="middle" font-size="9" font-family="Inter,sans-serif" fill="#666">C(4,2) = 6 subsets of size 2</text>
+    </svg>
+    <div class="caption">Figure 1 — Permutations count ordered arrangements; combinations count unordered subsets.</div>
+</div>
+
+<h2>7. Useful Series</h2>
+<div class="box">
+    <div class="box-label">Geometric Series</div>
+    <p style="margin:0">\(S = \sum_{i=0}^{\infty} \alpha^i = \frac{1}{1-\alpha}\) for \(|\alpha| < 1\). Finite version: \(\sum_{i=0}^{n-1}\alpha^i = \frac{1-\alpha^n}{1-\alpha}\).</p>
+</div>
+<p>Geometric series appear constantly in probability — summing over a geometric random variable's PMF, computing expected values, and verifying that PMFs normalise to 1.</p>
+
+</body>
+</html>

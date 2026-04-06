@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quantum Key Distribution & Cryptography — Quantum Computing</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+    <style>
+        *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+        body { background: #fff; color: #000; font-family: 'Inter', sans-serif; font-weight: 300; line-height: 1.6; max-width: 740px; margin: 0 auto; padding: 2rem 2rem 8rem; }
+        nav { margin-bottom: 3rem; font-size: 0.75rem; letter-spacing: 0.04em; }
+        nav a { color: #000; text-decoration: none; }
+        nav a:hover { opacity: 0.5; }
+        nav span { margin: 0 0.5rem; opacity: 0.3; }
+        h1 { font-family: 'Cormorant Garamond', serif; font-size: 2.3rem; font-weight: 600; line-height: 1.2; margin-bottom: 0.4rem; }
+        .subtitle { font-family: 'Cormorant Garamond', serif; font-size: 1.1rem; font-style: italic; color: #444; margin-bottom: 0.6rem; }
+        .meta { font-size: 0.75rem; color: #999; letter-spacing: 0.03em; margin-bottom: 3rem; }
+        h2 { font-family: 'Cormorant Garamond', serif; font-size: 1.65rem; font-weight: 600; margin: 3.5rem 0 1rem; border-bottom: 1px solid #eee; padding-bottom: 0.3rem; }
+        h3 { font-family: 'Inter', sans-serif; font-size: 0.88rem; font-weight: 500; letter-spacing: 0.04em; text-transform: uppercase; margin: 2.2rem 0 0.7rem; }
+        h4 { font-family: 'Cormorant Garamond', serif; font-size: 1.1rem; font-weight: 600; margin: 1.8rem 0 0.5rem; }
+        p { font-size: 0.93rem; line-height: 1.85; margin-bottom: 1rem; }
+        ul, ol { font-size: 0.93rem; line-height: 1.85; padding-left: 1.5rem; margin-bottom: 1rem; }
+        li { margin-bottom: 0.35rem; }
+        strong { font-weight: 500; }
+        .box { border-left: 2px solid #000; padding: 0.9rem 1.2rem; margin: 1.8rem 0; }
+        .box-label { font-size: 0.68rem; font-weight: 500; letter-spacing: 0.1em; text-transform: uppercase; margin-bottom: 0.5rem; opacity: 0.45; }
+        .insight { border-left: 2px solid #000; border-right: 2px solid #000; padding: 0.9rem 1.2rem; margin: 1.8rem 0; background: #f9f9f9; }
+        .insight-label { font-size: 0.68rem; font-weight: 500; letter-spacing: 0.1em; text-transform: uppercase; margin-bottom: 0.5rem; opacity: 0.5; }
+        .figure { margin: 2.5rem 0; display: flex; flex-direction: column; align-items: center; }
+        .caption { font-size: 0.78rem; color: #555; margin-top: 0.8rem; font-style: italic; line-height: 1.6; max-width: 540px; text-align: center; }
+        table { width: 100%; border-collapse: collapse; font-size: 0.86rem; margin: 1.5rem 0; }
+        th { font-weight: 500; border-bottom: 1px solid #000; padding: 0.5rem 0.8rem; text-align: left; font-size: 0.82rem; letter-spacing: 0.02em; }
+        td { padding: 0.45rem 0.8rem; border-bottom: 1px solid #eee; vertical-align: top; font-family: 'Inter', monospace; }
+        td.label { font-family: 'Inter', sans-serif; font-weight: 400; }
+        .appendix-divider { border: none; border-top: 2px solid #000; margin: 5rem 0 2rem; }
+        .appendix-header { font-family: 'Cormorant Garamond', serif; font-size: 1.1rem; font-weight: 500; letter-spacing: 0.06em; text-transform: uppercase; text-align: center; margin-bottom: 0.5rem; opacity: 0.5; }
+        .section-rule { border: none; border-top: 1px solid #eee; margin: 3rem 0; }
+        mjx-container { overflow-x: auto; }
+        code { font-family: 'SF Mono', 'Fira Code', monospace; font-size: 0.85rem; background: #f4f4f4; padding: 0.1rem 0.35rem; border-radius: 2px; }
+        @media (max-width: 600px) { body { padding: 1.5rem 1.25rem 6rem; } }
+    </style>
+    <script src="https://cdn.amplitude.com/script/59010539cde9503811b2e9a80e47e0b4.js"></script>
+    <script>window.amplitude.add(window.sessionReplay.plugin({sampleRate: 1}));window.amplitude.init('59010539cde9503811b2e9a80e47e0b4', {"fetchRemoteConfig":true,"autocapture":{"attribution":true,"fileDownloads":true,"formInteractions":true,"pageViews":true,"sessions":true,"elementInteractions":true,"networkTracking":true,"webVitals":true,"frustrationInteractions":true}});</script>
+</head>
+<body>
+
+<nav><a href="../blog.html">Notebooks</a><span>/</span>Quantum Computing<span>/</span>Lecture 2</nav>
+
+<h1>Quantum Key Distribution & Cryptography</h1>
+<p class="subtitle">BB84, eavesdropper detection, and the classical protocols quantum computers will break</p>
+
+
+<!-- ═══════════════════════════════════════════ -->
+<h2>1. The Central Aim of Cryptography</h2>
+
+<p>Every secret communication between two parties — call them Alice and Bob — relies on a shared key. The key could be a physical object (a padlock), but in the digital world it is a random bit-string known only to them. The message is encrypted using the key and decrypted by anyone who holds the same key.</p>
+
+<p>The problem: Alice and Bob are physically separated. They must somehow agree on a key without meeting — and they must do so over a public channel that an eavesdropper (Eve) can observe. This is the <strong>key distribution problem</strong>, and it is the central unsolved problem of classical cryptography for 2000 years.</p>
+
+<p>Critically, the goal is not just to keep the key secret — it is to <strong>detect</strong> Eve's presence. If Alice and Bob can confirm that Eve has not learned the key (even partially), they can use it safely. If they detect too much interference, they discard the key and try again. Quantum key distribution (QKD) is the first method in history that makes eavesdropper detection physically guaranteed — not just computationally hard to avoid, but provably impossible.</p>
+
+<!-- ═══════════════════════════════════════════ -->
+<h2>2. The One-Time Pad</h2>
+
+<p>The ideal encryption scheme is the <strong>one-time pad</strong> (OTP), proved by Claude Shannon in 1949 to be the only <em>perfectly secret</em> cipher. If Alice and Bob share a random key string \(k\) of the same length as the message \(m\), encryption is simply XOR:</p>
+
+\[c = m \oplus k, \qquad m = c \oplus k\]
+
+<p>An adversary who sees the ciphertext \(c\) but not \(k\) gains zero information about \(m\) — every possible plaintext is equally likely. Shannon proved this rigorously: perfect secrecy requires a key at least as long as the message, and the key must never be reused.</p>
+
+<p>The one-time pad is useless in practice on its own: Alice and Bob would need to securely exchange a key as long as every message they ever send. QKD solves exactly this — it generates a fresh shared random key on demand, detected as unexploited by Eve. Combined with the one-time pad, it achieves <em>information-theoretic security</em>: security that holds even against an adversary with unlimited computing power.</p>
+
+<!-- ═══════════════════════════════════════════ -->
+<h2>3. BB84: The First Quantum Key Distribution Protocol</h2>
+
+<p>Proposed by Charles Bennett and Gilles Brassard in 1984, BB84 exploits two fundamental quantum facts:</p>
+<ol>
+    <li><strong>Measurement disturbs state.</strong> Eve cannot measure a qubit without risking changing it.</li>
+    <li><strong>Non-orthogonal states cannot be perfectly distinguished.</strong> If Eve doesn't know the correct measurement basis, she can't read the qubit without introducing detectable errors.</li>
+</ol>
+
+<h3>State Encoding</h3>
+
+<p>BB84 uses four states drawn from two conjugate bases. Alice encodes each bit using a randomly chosen basis:</p>
+
+<table>
+    <tr><th>Bit (aᵢ)</th><th>Basis (bᵢ)</th><th>State sent</th><th>Photon polarisation</th></tr>
+    <tr><td class="label">0</td><td class="label">Z (rectilinear)</td><td>|0⟩</td><td>Horizontal |H⟩</td></tr>
+    <tr><td class="label">1</td><td class="label">Z (rectilinear)</td><td>|1⟩</td><td>Vertical |V⟩</td></tr>
+    <tr><td class="label">0</td><td class="label">X (diagonal)</td><td>|+⟩</td><td>+45° diagonal |45⟩</td></tr>
+    <tr><td class="label">1</td><td class="label">X (diagonal)</td><td>|−⟩</td><td>−45° diagonal |135⟩</td></tr>
+</table>
+
+<p>States within the same basis are orthogonal and perfectly distinguishable. States from different bases — say |0⟩ and |+⟩ — are non-orthogonal: \(\langle 0|+\rangle = 1/\sqrt{2} \neq 0\). This non-orthogonality is the source of BB84's security.</p>
+
+<h3>The Protocol: Seven Steps</h3>
+
+<div class="figure">
+    <!-- BB84 Protocol Flow SVG -->
+    <svg viewBox="0 0 560 380" width="100%" style="max-width:560px" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+            <marker id="ar" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+                <path d="M0,0 L7,3 L0,6 Z" fill="#000"/>
+            </marker>
+            <marker id="ar2" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+                <path d="M0,0 L7,3 L0,6 Z" fill="#555"/>
+            </marker>
+        </defs>
+
+        <!-- Alice box -->
+        <rect x="10" y="10" width="120" height="360" fill="#f7f7f7" stroke="#000" stroke-width="1.2" rx="3"/>
+        <text x="70" y="34" font-size="13" font-family="Cormorant Garamond, serif" font-weight="600" text-anchor="middle">Alice</text>
+
+        <!-- Bob box -->
+        <rect x="430" y="10" width="120" height="360" fill="#f7f7f7" stroke="#000" stroke-width="1.2" rx="3"/>
+        <text x="490" y="34" font-size="13" font-family="Cormorant Garamond, serif" font-weight="600" text-anchor="middle">Bob</text>
+
+        <!-- Eve (intercept) -->
+        <rect x="220" y="120" width="120" height="60" fill="#fff" stroke="#000" stroke-width="1" rx="3" stroke-dasharray="4,3"/>
+        <text x="280" y="144" font-size="11" font-family="Inter, sans-serif" text-anchor="middle" fill="#555">Eve?</text>
+        <text x="280" y="160" font-size="9" font-family="Inter, sans-serif" text-anchor="middle" fill="#888">intercept-resend</text>
+
+        <!-- Step 1: Alice prepares -->
+        <rect x="22" y="50" width="96" height="38" fill="#fff" stroke="#000" stroke-width="0.8" rx="2"/>
+        <text x="70" y="66" font-size="9" font-family="Inter, sans-serif" text-anchor="middle">① random bits aᵢ</text>
+        <text x="70" y="80" font-size="9" font-family="Inter, sans-serif" text-anchor="middle">random bases bᵢ</text>
+
+        <!-- Step 2: Quantum channel -->
+        <text x="280" y="100" font-size="9" font-family="Inter, sans-serif" text-anchor="middle" fill="#000">quantum channel</text>
+        <line x1="118" y1="95" x2="220" y2="140" stroke="#000" stroke-width="1.2" marker-end="url(#ar)"/>
+        <line x1="340" y1="140" x2="430" y2="95" stroke="#000" stroke-width="1.2" marker-end="url(#ar)"/>
+        <text x="148" y="108" font-size="8" font-family="Inter,sans-serif" fill="#555">qubit states</text>
+        <text x="360" y="108" font-size="8" font-family="Inter,sans-serif" fill="#555">to Bob</text>
+
+        <!-- Step 3: Bob measures -->
+        <rect x="442" y="50" width="96" height="38" fill="#fff" stroke="#000" stroke-width="0.8" rx="2"/>
+        <text x="490" y="66" font-size="9" font-family="Inter, sans-serif" text-anchor="middle">③ random bases b'ᵢ</text>
+        <text x="490" y="80" font-size="9" font-family="Inter, sans-serif" text-anchor="middle">measure each qubit</text>
+
+        <!-- Classical channel (bottom) -->
+        <line x1="130" y1="220" x2="430" y2="220" stroke="#555" stroke-width="1" stroke-dasharray="5,3" marker-end="url(#ar2)"/>
+        <line x1="430" y1="230" x2="130" y2="230" stroke="#555" stroke-width="1" stroke-dasharray="5,3" marker-end="url(#ar2)"/>
+        <text x="280" y="213" font-size="9" font-family="Inter,sans-serif" text-anchor="middle" fill="#555">public classical channel</text>
+
+        <!-- Steps in classical channel zone -->
+        <!-- Step 4 -->
+        <rect x="170" y="240" width="220" height="26" fill="#f0f0f0" stroke="#ccc" stroke-width="0.8" rx="2"/>
+        <text x="280" y="258" font-size="9" font-family="Inter,sans-serif" text-anchor="middle">④ compare bases publicly → keep matches (~½)</text>
+
+        <!-- Step 5 -->
+        <rect x="170" y="272" width="220" height="26" fill="#f0f0f0" stroke="#ccc" stroke-width="0.8" rx="2"/>
+        <text x="280" y="290" font-size="9" font-family="Inter,sans-serif" text-anchor="middle">⑤ reveal subset → measure error rate f/4</text>
+
+        <!-- Step 6 -->
+        <rect x="170" y="304" width="220" height="26" fill="#f0f0f0" stroke="#ccc" stroke-width="0.8" rx="2"/>
+        <text x="280" y="322" font-size="9" font-family="Inter,sans-serif" text-anchor="middle">⑥ error reconciliation (bisective search)</text>
+
+        <!-- Step 7 -->
+        <rect x="170" y="336" width="220" height="26" fill="#000" stroke="#000" stroke-width="0.8" rx="2"/>
+        <text x="280" y="354" font-size="9" font-family="Inter,sans-serif" text-anchor="middle" fill="#fff">⑦ privacy amplification → shared key</text>
+
+        <!-- Alice step labels -->
+        <text x="70" y="108" font-size="9" font-family="Inter,sans-serif" text-anchor="middle">② send states</text>
+        <text x="70" y="185" font-size="9" font-family="Inter,sans-serif" text-anchor="middle" fill="#555">↕ participate in</text>
+        <text x="70" y="198" font-size="9" font-family="Inter,sans-serif" text-anchor="middle" fill="#555">classical steps</text>
+
+        <!-- Bob step labels -->
+        <text x="490" y="108" font-size="9" font-family="Inter,sans-serif" text-anchor="middle">receive &amp; measure</text>
+        <text x="490" y="185" font-size="9" font-family="Inter,sans-serif" text-anchor="middle" fill="#555">↕ participate in</text>
+        <text x="490" y="198" font-size="9" font-family="Inter,sans-serif" text-anchor="middle" fill="#555">classical steps</text>
+    </svg>
+    <div class="caption">Figure 1 — BB84 protocol flow. The quantum channel transmits qubit states (Steps 1–2). Eve can intercept but leaves a detectable trace. Classical communication (Steps 4–7) sifts the key and eliminates Eve's information.</div>
+</div>
+
+<h4>Step 1 — Alice prepares quantum states</h4>
+<p>Alice generates two random bit-strings: \(a = a_1 a_2 \ldots a_n\) (her secret bits) and \(b = b_1 b_2 \ldots b_n\) (her random basis choices, each X or Z). She encodes qubit \(i\) according to the table above. In a photonic implementation, each qubit is a single photon whose polarisation carries the state.</p>
+
+<h4>Step 2 — Transmission</h4>
+<p>Alice sends the prepared qubit states to Bob over a quantum channel (e.g. optical fibre). The states are fragile — any interaction with the environment disturbs them, potentially in a detectable way.</p>
+
+<h4>Step 2.5 — Eve's attack (if present)</h4>
+<p>Eve intercepts a fraction \(f\) of the transmitted qubits. For each intercepted qubit, she guesses a basis (X or Z) at random, measures the qubit in that basis, then resends the (now post-measurement) state to Bob. Eve has probability 1/2 of guessing the correct basis. When she guesses correctly, the state passes through undisturbed. When she guesses wrong, she collapses the qubit to a random state in the wrong basis, introducing errors at Bob's end.</p>
+
+<h4>Step 3 — Bob measures</h4>
+<p>Bob independently generates his own random basis string \(b' = b'_1 b'_2 \ldots b'_n\) and measures each received qubit in his chosen basis, recording the outcome (0 or 1).</p>
+
+<h4>Step 4 — Basis sifting (public)</h4>
+<p>Alice and Bob publicly announce their basis strings \(b\) and \(b'\) (but <em>not</em> the measurement results). They discard every bit position where their bases differ. Only matching-basis positions are retained — approximately half. In matching positions, if Eve was absent, Bob's result perfectly agrees with Alice's bit. This subset is the <strong>sifted key</strong>.</p>
+
+<h4>Step 5 — Eavesdropper detection</h4>
+<p>Alice and Bob publicly reveal a random sample of their sifted key bits and compare them. If Eve intercepted a fraction \(f\) of qubits, the expected error rate in this sample is:</p>
+
+\[\text{error rate} = \frac{f}{4}\]
+
+<p>Derivation: Eve guesses the wrong basis with probability 1/2. Of those wrong-basis measurements, 1/2 produce an incorrect state that causes Bob's result to differ from Alice's. So errors appear in \(f \times \frac{1}{2} \times \frac{1}{2} = f/4\) of all sifted bits. If the observed error rate exceeds a threshold, Alice and Bob abort and start over. If it is acceptably low, they proceed.</p>
+
+<h4>Step 6 — Error reconciliation</h4>
+<p>Even with a small \(f\), a fraction \(f/4\) of the remaining key bits may have errors. Alice and Bob must identify and eliminate these without leaking information to Eve. The standard method is <strong>bisective search</strong>: divide the key string into halves, publicly compare parities (XOR of each half), and recurse into whichever half has a parity mismatch. The first bit of each block compared is discarded (to prevent Eve gaining information from the parity announcements). This continues until all errors are localised and removed.</p>
+
+<h4>Step 7 — Privacy amplification</h4>
+<p>After error reconciliation Alice and Bob have nearly identical strings, but Eve has partial knowledge of some bits (from her correct-basis measurements). Privacy amplification compresses the string to a shorter one from which Eve's information is provably negligible. If the string has length \(L\) and Eve is estimated to know at most \(k\) bits, the compressed key of length \(L - k - s\) (for a security parameter \(s\)) is information-theoretically safe. This is typically done by hashing: publicly agreeing on a random hash function and taking its output as the final key.</p>
+
+<!-- ═══════════════════════════════════════════ -->
+<h2>4. BB84 — A Worked Mini-Example</h2>
+
+<p>A small trace through the protocol with 10 bits shows the mechanics clearly. Steps are rows; each column is one transmitted qubit.</p>
+
+<div style="overflow-x:auto; margin:1.5rem 0;">
+<table style="font-size:0.82rem; min-width:560px;">
+    <tr>
+        <th style="width:160px">Row</th>
+        <th>1</th><th>2</th><th>3</th><th>4</th><th>5</th><th>6</th><th>7</th><th>8</th><th>9</th><th>10</th>
+    </tr>
+    <tr>
+        <td class="label">Alice's bits (aᵢ)</td>
+        <td>1</td><td>0</td><td>1</td><td>0</td><td>1</td><td>1</td><td>0</td><td>0</td><td>1</td><td>0</td>
+    </tr>
+    <tr>
+        <td class="label">Alice's bases (bᵢ)</td>
+        <td>Z</td><td>X</td><td>X</td><td>Z</td><td>Z</td><td>X</td><td>Z</td><td>X</td><td>Z</td><td>X</td>
+    </tr>
+    <tr>
+        <td class="label">State Alice sends</td>
+        <td>|1⟩</td><td>|+⟩</td><td>|−⟩</td><td>|0⟩</td><td>|1⟩</td><td>|−⟩</td><td>|0⟩</td><td>|+⟩</td><td>|1⟩</td><td>|+⟩</td>
+    </tr>
+    <tr>
+        <td class="label">Bob's bases (b'ᵢ)</td>
+        <td>Z</td><td>Z</td><td>X</td><td>X</td><td>Z</td><td>X</td><td>X</td><td>X</td><td>X</td><td>Z</td>
+    </tr>
+    <tr>
+        <td class="label">Bob's results</td>
+        <td>1</td><td>rand</td><td>1</td><td>rand</td><td>1</td><td>1</td><td>rand</td><td>0</td><td>rand</td><td>rand</td>
+    </tr>
+    <tr>
+        <td class="label">Bases match?</td>
+        <td>✓</td><td>✗</td><td>✓</td><td>✗</td><td>✓</td><td>✓</td><td>✗</td><td>✓</td><td>✗</td><td>✗</td>
+    </tr>
+    <tr style="background:#f4f4f4; font-weight:500;">
+        <td class="label">Sifted key</td>
+        <td>1</td><td>—</td><td>1</td><td>—</td><td>1</td><td>1</td><td>—</td><td>0</td><td>—</td><td>—</td>
+    </tr>
+</table>
+</div>
+
+<p>Alice and Bob retain bits 1, 3, 5, 6, 8 — where their bases matched. The sifted key is <code>1 1 1 1 0</code>. Without Eve, these agree perfectly. A subset (say bits 1 and 3) is publicly revealed to check for errors. The remainder becomes the secret key after error reconciliation and privacy amplification.</p>
+
+<!-- ═══════════════════════════════════════════ -->
+<h2>5. Security: Why Eve Cannot Hide</h2>
+
+<p>The security of BB84 rests entirely on quantum mechanics, not computational hardness. Let's trace exactly why Eve's intervention is unavoidable.</p>
+
+<p>When Eve intercepts a qubit, she must measure it in some basis. She doesn't know Alice's basis \(b_i\). Two cases:</p>
+
+<ul>
+    <li><strong>Eve guesses the right basis (probability 1/2):</strong> Eve's measurement gives the correct result and collapses the qubit to the same state Alice intended. Bob receives the correct state and sees no error. Eve has learned the bit.</li>
+    <li><strong>Eve guesses the wrong basis (probability 1/2):</strong> Eve measures in the wrong basis. The qubit collapses to a random eigenstate of that wrong basis — say \(|+\rangle\) or \(|-\rangle\) when Alice sent \(|0\rangle\) or \(|1\rangle\). Eve resends this state. When Bob measures in the correct (Z) basis, he now gets a random result with probability 1/2 — introducing an error with probability 1/2 in wrong-basis cases.</li>
+</ul>
+
+<p>Combined: for each qubit Eve intercepts, there is a probability \(\frac{1}{2} \times \frac{1}{2} = \frac{1}{4}\) of introducing an error in Bob's sifted key. If Eve intercepts a fraction \(f\), Alice and Bob observe an error rate of \(f/4\).</p>
+
+<div class="insight">
+    <div class="insight-label">The Key Quantum Fact</div>
+    <p style="margin:0">Eve cannot do better than this by any classical strategy. The only way to get information without introducing errors would be to <em>clone</em> the qubit — copy it perfectly and forward the original. But the <strong>no-cloning theorem</strong> (proved later in the course) shows this is impossible for quantum states. Any attempt to extract information necessarily disturbs the state. Security here is not a computational assumption — it is a law of physics.</p>
+</div>
+
+<!-- ═══════════════════════════════════════════ -->
+<h2>6. Photonic Qubits</h2>
+
+<p>In practice, BB84 is implemented with photons. A photon's polarisation is a natural qubit: horizontal \(|H\rangle \equiv |0\rangle\), vertical \(|V\rangle \equiv |1\rangle\), and ±45° diagonals \(|45\rangle \equiv |+\rangle\), \(|135\rangle \equiv |-\rangle\).</p>
+
+<p>Photons are ideal for QKD for two reasons:</p>
+<ul>
+    <li><strong>Long-distance travel.</strong> Photons travel through optical fibres or free space with minimal interaction with their environment, preserving polarisation state over kilometres.</li>
+    <li><strong>No mutual interaction.</strong> Photons do not interact with each other directly, which means the qubit state is safe from perturbation by neighbouring photons in the channel.</li>
+</ul>
+
+<p>The same property that makes photons ideal for QKD makes them challenging for quantum <em>computation</em>: implementing two-qubit gates requires photon-photon interactions, which need indirect schemes (linear optical quantum computing, measurement-based computation) and are less efficient than, say, superconducting qubits. The right physical platform depends on the application.</p>
+
+<!-- ═══════════════════════════════════════════ -->
+<!-- APPENDIX -->
+<!-- ═══════════════════════════════════════════ -->
+
+<hr class="appendix-divider">
+<p class="appendix-header">Classical Cryptography — Reference Appendix</p>
+<p style="font-size:0.88rem; color:#555; text-align:center; margin-bottom:3rem;">The protocols below underpin today's internet security. All of them are threatened by quantum computers running Shor's algorithm.</p>
+
+<!-- A. ONE-TIME PAD -->
+<h2>A. The One-Time Pad — Perfect Secrecy</h2>
+
+<p>The one-time pad (Vernam cipher, 1917) is the only encryption scheme with information-theoretic security. Given message \(m\) and a uniformly random key \(k\) of the same length, never reused:</p>
+
+\[c = m \oplus k \qquad \text{(encrypt)}, \qquad m = c \oplus k \qquad \text{(decrypt)}\]
+
+<p>where \(\oplus\) is bitwise XOR. Shannon's theorem (1949) states: an adversary who sees \(c\) but not \(k\) has <em>zero</em> information about \(m\) — the posterior distribution over \(m\) given \(c\) is identical to the prior. Every plaintext is equally likely regardless of the ciphertext. This is perfect secrecy by definition.</p>
+
+<div class="box">
+    <div class="box-label">Why the One-Time Pad Is Impractical</div>
+    <ul style="margin:0">
+        <li>The key must be as long as the message — impractical for large data.</li>
+        <li>The key must be truly random — pseudorandom generators are not sufficient for information-theoretic security.</li>
+        <li>The key must <strong>never be reused</strong>. Reuse (as done with the Lorenz cipher in WWII) allows XOR-ing two ciphertexts to cancel the key: \(c_1 \oplus c_2 = m_1 \oplus m_2\), exposing patterns in the messages.</li>
+        <li>The key must be distributed securely — which brings us back to the key distribution problem.</li>
+    </ul>
+</div>
+
+<p>QKD solves the distribution problem by generating the OTP key securely. Together, BB84 + OTP is the only end-to-end information-theoretically secure communication system.</p>
+
+<!-- B. RSA -->
+<h2>B. RSA — Security from Integer Factoring</h2>
+
+<p>RSA (Rivest, Shamir, Adleman, 1977) is the most widely deployed public-key cryptosystem. Its security rests on the practical difficulty of <strong>factoring large integers</strong>: given \(n = p \times q\) where \(p\) and \(q\) are large primes, recovering \(p\) and \(q\) from \(n\) alone takes exponential time on a classical computer.</p>
+
+<h4>Key Generation</h4>
+<ol>
+    <li>Choose two large primes \(p\) and \(q\) (each ~2000 bits in modern RSA).</li>
+    <li>Compute \(n = pq\) and \(\phi(n) = (p-1)(q-1)\) (Euler's totient).</li>
+    <li>Choose \(e\) coprime to \(\phi(n)\) — commonly \(e = 65537\).</li>
+    <li>Compute \(d \equiv e^{-1} \pmod{\phi(n)}\) using the extended Euclidean algorithm.</li>
+    <li>Public key: \((n, e)\). Private key: \(d\). Discard \(p\), \(q\), \(\phi(n)\).</li>
+</ol>
+
+<h4>Encryption and Decryption</h4>
+\[\text{Encrypt: } c \equiv m^e \pmod{n} \qquad \text{Decrypt: } m \equiv c^d \pmod{n}\]
+
+<p>Correctness follows from Euler's theorem: \(m^{\phi(n)} \equiv 1 \pmod{n}\), so \(m^{ed} = m^{1+k\phi(n)} \equiv m \pmod{n}\).</p>
+
+<div class="box">
+    <div class="box-label">Quantum Threat</div>
+    <p style="margin:0">Shor's algorithm (1994) factors an \(n\)-bit integer in \(O(n^3)\) quantum gate operations — exponentially faster than the best classical algorithms. A sufficiently large quantum computer breaks RSA-2048 in hours. The NSA has already announced that RSA will be deprecated as quantum hardware matures.</p>
+</div>
+
+<!-- C. DIFFIE-HELLMAN -->
+<h2>C. Diffie-Hellman Key Exchange</h2>
+
+<p>Proposed in 1976, Diffie-Hellman (DH) was the first public-key protocol — it allows two parties to agree on a shared secret over a completely public channel, with no prior shared information. Its security relies on the <strong>discrete logarithm problem</strong>: given \(g\), \(p\), and \(A = g^a \bmod p\), finding \(a\) is computationally hard.</p>
+
+<h4>The Protocol</h4>
+
+<div class="figure">
+    <!-- DH Exchange SVG -->
+    <svg viewBox="0 0 520 280" width="100%" style="max-width:520px" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+            <marker id="dhar" markerWidth="7" markerHeight="7" refX="5" refY="3" orient="auto">
+                <path d="M0,0 L6,3 L0,6 Z" fill="#000"/>
+            </marker>
+        </defs>
+
+        <!-- Public parameters banner -->
+        <rect x="140" y="10" width="240" height="30" fill="#f0f0f0" stroke="#000" stroke-width="0.8" rx="2"/>
+        <text x="260" y="30" font-size="10" font-family="Inter,sans-serif" text-anchor="middle">Public: prime p, generator g</text>
+
+        <!-- Alice -->
+        <rect x="10" y="60" width="130" height="200" fill="#f7f7f7" stroke="#000" stroke-width="1" rx="3"/>
+        <text x="75" y="82" font-size="12" font-family="Cormorant Garamond,serif" font-weight="600" text-anchor="middle">Alice</text>
+        <text x="75" y="105" font-size="9" font-family="Inter,sans-serif" text-anchor="middle">Secret: a (random)</text>
+        <rect x="20" y="115" width="110" height="22" fill="#fff" stroke="#aaa" stroke-width="0.8" rx="2"/>
+        <text x="75" y="130" font-size="9" font-family="Inter,sans-serif" text-anchor="middle">A = gᵃ mod p</text>
+        <text x="75" y="165" font-size="9" font-family="Inter,sans-serif" text-anchor="middle" fill="#555">Receives B from Bob</text>
+        <rect x="20" y="175" width="110" height="22" fill="#fff" stroke="#aaa" stroke-width="0.8" rx="2"/>
+        <text x="75" y="190" font-size="9" font-family="Inter,sans-serif" text-anchor="middle">K = Bᵃ mod p</text>
+        <text x="75" y="220" font-size="8" font-family="Inter,sans-serif" text-anchor="middle" fill="#888">= gᵃᵇ mod p</text>
+        <text x="75" y="248" font-size="10" font-family="Cormorant Garamond,serif" text-anchor="middle">Shared secret K ✓</text>
+
+        <!-- Bob -->
+        <rect x="380" y="60" width="130" height="200" fill="#f7f7f7" stroke="#000" stroke-width="1" rx="3"/>
+        <text x="445" y="82" font-size="12" font-family="Cormorant Garamond,serif" font-weight="600" text-anchor="middle">Bob</text>
+        <text x="445" y="105" font-size="9" font-family="Inter,sans-serif" text-anchor="middle">Secret: b (random)</text>
+        <rect x="390" y="115" width="110" height="22" fill="#fff" stroke="#aaa" stroke-width="0.8" rx="2"/>
+        <text x="445" y="130" font-size="9" font-family="Inter,sans-serif" text-anchor="middle">B = gᵇ mod p</text>
+        <text x="445" y="165" font-size="9" font-family="Inter,sans-serif" text-anchor="middle" fill="#555">Receives A from Alice</text>
+        <rect x="390" y="175" width="110" height="22" fill="#fff" stroke="#aaa" stroke-width="0.8" rx="2"/>
+        <text x="445" y="190" font-size="9" font-family="Inter,sans-serif" text-anchor="middle">K = Aᵇ mod p</text>
+        <text x="445" y="220" font-size="8" font-family="Inter,sans-serif" text-anchor="middle" fill="#888">= gᵃᵇ mod p</text>
+        <text x="445" y="248" font-size="10" font-family="Cormorant Garamond,serif" text-anchor="middle">Shared secret K ✓</text>
+
+        <!-- Public channel: exchange A and B -->
+        <line x1="140" y1="126" x2="380" y2="126" stroke="#000" stroke-width="1" marker-end="url(#dhar)"/>
+        <text x="260" y="120" font-size="9" font-family="Inter,sans-serif" text-anchor="middle">A = gᵃ mod p (public)</text>
+        <line x1="380" y1="140" x2="140" y2="140" stroke="#000" stroke-width="1" marker-end="url(#dhar)"/>
+        <text x="260" y="155" font-size="9" font-family="Inter,sans-serif" text-anchor="middle">B = gᵇ mod p (public)</text>
+
+        <!-- Eve label -->
+        <text x="260" y="105" font-size="9" font-family="Inter,sans-serif" text-anchor="middle" fill="#888">Eve sees: g, p, A, B</text>
+        <text x="260" y="118" font-size="8" font-family="Inter,sans-serif" text-anchor="middle" fill="#aaa">cannot compute gᵃᵇ (classical)</text>
+    </svg>
+    <div class="caption">Figure 2 — Diffie-Hellman key exchange. Eve sees g, p, A, B publicly but cannot compute the shared secret K = gᵃᵇ mod p without solving the discrete logarithm — classically hard, quantumly broken by Shor's algorithm.</div>
+</div>
+
+<p>The shared secret \(K = g^{ab} \bmod p\) is identical for Alice and Bob because \((g^a)^b \equiv (g^b)^a \equiv g^{ab} \pmod{p}\). Eve sees \(g\), \(p\), \(A = g^a\), and \(B = g^b\), but computing \(g^{ab}\) from these without knowing \(a\) or \(b\) is the discrete logarithm problem — believed to require sub-exponential but super-polynomial time classically, and broken in polynomial time by Shor's algorithm on a quantum computer.</p>
+
+<!-- D. ELLIPTIC CURVE -->
+<h2>D. Elliptic Curve Cryptography</h2>
+
+<p>Elliptic Curve Cryptography (ECC, 1985) achieves the same security as RSA and DH but with much smaller keys — a 256-bit ECC key provides roughly the same security as a 3072-bit RSA key. This makes ECC the preferred standard for mobile devices, TLS certificates, and Bitcoin signatures.</p>
+
+<h4>What Is an Elliptic Curve?</h4>
+
+<p>An elliptic curve over a field (in cryptography, a finite field \(\mathbb{F}_p\)) is the set of points \((x, y)\) satisfying:</p>
+
+\[y^2 \equiv x^3 + ax + b \pmod{p}, \qquad 4a^3 + 27b^2 \neq 0\]
+
+<p>together with a special "point at infinity" \(\mathcal{O}\) that acts as the group identity. The condition \(4a^3 + 27b^2 \neq 0\) ensures the curve has no cusps or self-intersections (it is non-singular).</p>
+
+<h4>Point Addition: The Group Law</h4>
+
+<p>Points on an elliptic curve form an abelian group under a geometric addition rule. Given two points \(P\) and \(Q\):</p>
+
+<div class="figure">
+    <!-- Elliptic Curve SVG -->
+    <svg viewBox="60 20 280 290" width="100%" style="max-width:360px" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+            <marker id="ecar" markerWidth="7" markerHeight="7" refX="5" refY="3" orient="auto">
+                <path d="M0,0 L6,3 L0,6 Z" fill="#000"/>
+            </marker>
+        </defs>
+
+        <!-- Axes -->
+        <line x1="80" y1="30" x2="80" y2="280" stroke="#ccc" stroke-width="1"/>
+        <line x1="70" y1="165" x2="340" y2="165" stroke="#ccc" stroke-width="1"/>
+        <text x="82" y="28" font-size="10" font-family="serif" fill="#aaa">y</text>
+        <text x="342" y="169" font-size="10" font-family="serif" fill="#aaa">x</text>
+
+        <!-- Elliptic curve: y² = x³ - x + 1 -->
+        <!-- Upper branch: computed points scaled -->
+        <!-- Transform: svg_x = 80 + 55*x, svg_y = 165 - 40*y -->
+        <!-- At x=-1.325 (root): y=0, svg=(7.125, 165) → off screen since we start at x=80 (svg_x=80 when x=0) -->
+        <!-- Actually: svg_x = 80 + 55*(x+1) for x in [-1.3, 2.5] ... let me use svg_x = 80 + 70*(x+1.3) -->
+        <!-- svg_x = 80 + 70*(x+1.3), svg_y = 165 - 45*y -->
+
+        <!-- Upper branch path (y > 0) -->
+        <!-- x=-1.3: y≈0.24: svg(80, 154.2) -->
+        <!-- x=-1: y=1: svg(101, 120) -->
+        <!-- x=-0.5: y≈1.17: svg(135.5, 112.4) -->
+        <!-- x=0: y=1: svg(171, 120) -->
+        <!-- x=0.5: y≈0.79: svg(206.5, 129.5) -->
+        <!-- x=1: y=1: svg(242, 120) -->
+        <!-- x=1.5: y≈1.70: svg(277.5, 88.5) -->
+        <!-- x=2: y≈2.65: svg(313, 46.8) -->
+        <!-- x=2.3: y≈3.1: svg(334, 25) -->
+        <path d="M 80,154 C 88,140 96,122 101,120 C 120,112 152,112 171,120 C 190,128 207,130 242,120 C 260,115 270,97 277,89 C 285,80 295,60 313,47 C 322,40 330,30 340,22"
+              fill="none" stroke="#000" stroke-width="2"/>
+
+        <!-- Lower branch path (y < 0, mirror) -->
+        <!-- svg_y = 165 + 45*|y| -->
+        <path d="M 80,176 C 88,190 96,208 101,210 C 120,218 152,218 171,210 C 190,202 207,200 242,210 C 260,215 270,233 277,241 C 285,250 295,270 313,283 C 322,290 330,300 340,308"
+              fill="none" stroke="#000" stroke-width="2"/>
+
+        <!-- Points P, Q, -(P+Q), P+Q -->
+        <!-- P = (-1, 1): svg(101, 120) -->
+        <!-- Q = (0, 1): svg(171, 120) -->
+        <!-- -(P+Q) = (1, 1): svg(242, 120) -->
+        <!-- P+Q = (1, -1): svg(242, 210) -->
+
+        <!-- Chord through P, Q, -(P+Q): horizontal line at y=1, svg_y=120 -->
+        <line x1="88" y1="120" x2="260" y2="120" stroke="#000" stroke-width="1" stroke-dasharray="5,3"/>
+
+        <!-- Vertical line from -(P+Q) down to P+Q -->
+        <line x1="242" y1="120" x2="242" y2="210" stroke="#000" stroke-width="1.2" marker-end="url(#ecar)"/>
+
+        <!-- Points -->
+        <circle cx="101" cy="120" r="5" fill="#000"/>
+        <text x="92" y="112" font-size="12" font-family="serif" fill="#000">P</text>
+
+        <circle cx="171" cy="120" r="5" fill="#000"/>
+        <text x="175" y="112" font-size="12" font-family="serif" fill="#000">Q</text>
+
+        <circle cx="242" cy="120" r="5" fill="#fff" stroke="#000" stroke-width="1.5"/>
+        <text x="248" y="112" font-size="11" font-family="serif" fill="#555">−(P+Q)</text>
+
+        <circle cx="242" cy="210" r="5" fill="#000"/>
+        <text x="248" y="225" font-size="12" font-family="serif" fill="#000">P+Q</text>
+
+        <!-- Label for secant line -->
+        <text x="90" y="136" font-size="9" font-family="Inter,sans-serif" fill="#888">chord through P,Q</text>
+        <text x="247" y="165" font-size="9" font-family="Inter,sans-serif" fill="#888">reflect</text>
+    </svg>
+    <div class="caption">Figure 3 — Point addition on the elliptic curve y² = x³ − x + 1. Draw the chord through P and Q; it intersects the curve at a third point −(P+Q). Reflect across the x-axis to get P+Q. This reflection-of-intersection rule gives the group law.</div>
+</div>
+
+<p>The addition rule defines a group \((E(\mathbb{F}_p), +)\). <strong>Scalar multiplication</strong> \(kP = P + P + \cdots + P\) (\(k\) times) can be computed efficiently using repeated doubling in \(O(\log k)\) steps. The <strong>Elliptic Curve Discrete Logarithm Problem (ECDLP)</strong>: given \(P\) and \(Q = kP\), find \(k\). This is believed harder than the standard discrete log (no sub-exponential algorithm is known for generic curves).</p>
+
+<h4>ECDH — Elliptic Curve Diffie-Hellman</h4>
+
+<p>The protocol is identical to DH but scalar multiplication on the curve replaces modular exponentiation:</p>
+<ul>
+    <li>Public: curve \(E\), base point \(G\), prime \(p\).</li>
+    <li>Alice: picks secret \(a\), computes \(A = aG\), sends \(A\).</li>
+    <li>Bob: picks secret \(b\), computes \(B = bG\), sends \(B\).</li>
+    <li>Shared secret: \(K = aB = bA = abG\). Eve has \(G\), \(A = aG\), \(B = bG\) — the ECDLP.</li>
+</ul>
+
+<p>Bitcoin's ECDSA signature scheme uses the curve <code>secp256k1</code> (\(y^2 = x^3 + 7\) over \(\mathbb{F}_p\) for a specific 256-bit prime \(p\)). The private key is a scalar \(k\); the public key is the curve point \(K = kG\).</p>
+
+<!-- E. QUANTUM THREAT -->
+<h2>E. The Quantum Threat — Why This All Matters</h2>
+
+<p>Shor's algorithm (1994) runs on a quantum computer and solves both integer factoring and discrete logarithm in polynomial time. This breaks:</p>
+
+<table>
+    <tr><th>Protocol</th><th>Hard Problem</th><th>Quantum Attack</th><th>Status</th></tr>
+    <tr><td class="label">RSA</td><td class="label">Integer factoring</td><td class="label">Shor's algorithm</td><td class="label">Broken</td></tr>
+    <tr><td class="label">Diffie-Hellman</td><td class="label">Discrete log (mod p)</td><td class="label">Shor's algorithm</td><td class="label">Broken</td></tr>
+    <tr><td class="label">ECDH / ECDSA</td><td class="label">Elliptic curve discrete log</td><td class="label">Shor's algorithm</td><td class="label">Broken</td></tr>
+    <tr><td class="label">AES-256 (symmetric)</td><td class="label">Brute-force key search</td><td class="label">Grover's algorithm (√ speedup only)</td><td class="label">Weakened, not broken</td></tr>
+    <tr><td class="label">BB84 + OTP</td><td class="label">Laws of physics</td><td class="label">None — information-theoretic</td><td class="label">Secure</td></tr>
+</table>
+
+<p>Grover's algorithm searches an unsorted database of \(N\) items in \(O(\sqrt{N})\) steps — a quadratic speedup over classical \(O(N)\). For AES-256 with \(N = 2^{256}\) possible keys, Grover gives \(O(2^{128})\) — still enormous, so doubling key lengths suffices for symmetric crypto. But RSA, DH, and ECC face complete polynomial-time attacks.</p>
+
+<div class="insight">
+    <div class="insight-label">"Harvest Now, Decrypt Later"</div>
+    <p style="margin:0">Nation-state adversaries are already collecting encrypted internet traffic today, storing it, and waiting for a large enough quantum computer to decrypt it retroactively. Any data that must remain secret for more than 10–15 years — classified government communications, medical records, long-term financial data — is vulnerable to this strategy now. This is the primary driver behind NIST's post-quantum cryptography standardisation effort, which selected its first four algorithms in 2024 (CRYSTALS-Kyber, CRYSTALS-Dilithium, FALCON, SPHINCS+), all based on lattice or hash problems believed hard even for quantum computers.</p>
+</div>
+
+</body>
+</html>

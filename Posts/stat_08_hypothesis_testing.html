@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hypothesis Testing — Statistics From Scratch</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+    <style>
+        *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+        body { background: #fff; color: #000; font-family: 'Inter', sans-serif; font-weight: 300; line-height: 1.6; max-width: 720px; margin: 0 auto; padding: 2rem 2rem 6rem; }
+        nav { margin-bottom: 3rem; font-size: 0.75rem; letter-spacing: 0.04em; }
+        nav a { color: #000; text-decoration: none; }
+        nav a:hover { opacity: 0.5; }
+        nav span { margin: 0 0.5rem; opacity: 0.3; }
+        h1 { font-family: 'Cormorant Garamond', serif; font-size: 2.2rem; font-weight: 600; line-height: 1.2; margin-bottom: 0.4rem; }
+        .subtitle { font-family: 'Cormorant Garamond', serif; font-size: 1.1rem; font-style: italic; color: #444; margin-bottom: 3rem; }
+        h2 { font-family: 'Cormorant Garamond', serif; font-size: 1.6rem; font-weight: 600; margin: 3rem 0 1rem; border-bottom: 1px solid #eee; padding-bottom: 0.3rem; }
+        h3 { font-family: 'Inter', sans-serif; font-size: 0.88rem; font-weight: 500; letter-spacing: 0.04em; text-transform: uppercase; margin: 2rem 0 0.6rem; }
+        p { font-size: 0.92rem; line-height: 1.8; margin-bottom: 0.9rem; }
+        ul, ol { font-size: 0.92rem; line-height: 1.8; padding-left: 1.4rem; margin-bottom: 0.9rem; }
+        li { margin-bottom: 0.25rem; }
+        .box { border-left: 2px solid #000; padding: 0.9rem 1.1rem; margin: 1.5rem 0; }
+        .box-label { font-size: 0.7rem; font-weight: 500; letter-spacing: 0.08em; text-transform: uppercase; margin-bottom: 0.4rem; opacity: 0.5; }
+        .figure { margin: 2rem 0; text-align: center; }
+        .caption { font-size: 0.78rem; color: #666; margin-top: 0.5rem; }
+        table { width: 100%; border-collapse: collapse; font-size: 0.88rem; margin: 1.5rem 0; }
+        th { font-weight: 500; border-bottom: 1px solid #000; padding: 0.5rem 0.8rem; text-align: left; }
+        td { padding: 0.5rem 0.8rem; border-bottom: 1px solid #eee; }
+        mjx-container { overflow-x: auto; }
+    </style>
+    <script src="https://cdn.amplitude.com/script/59010539cde9503811b2e9a80e47e0b4.js"></script>
+    <script>window.amplitude.add(window.sessionReplay.plugin({sampleRate: 1}));window.amplitude.init('59010539cde9503811b2e9a80e47e0b4', {"fetchRemoteConfig":true,"autocapture":{"attribution":true,"fileDownloads":true,"formInteractions":true,"pageViews":true,"sessions":true,"elementInteractions":true,"networkTracking":true,"webVitals":true,"frustrationInteractions":true}});</script>
+</head>
+<body>
+
+<nav><a href="../blog.html">Notebooks</a><span>/</span>Hypothesis Testing</nav>
+
+<h1>Hypothesis Testing</h1>
+<p class="subtitle">Parametric tests, t-tests, Wald's test, and the Likelihood Ratio test</p>
+
+<h2>1. The Framework</h2>
+<p>Hypothesis testing provides a principled way to make binary decisions from data. We formulate two competing hypotheses about the parameter \(\theta^*\) and use the data to decide between them.</p>
+<div class="box">
+    <div class="box-label">Setup</div>
+    <p style="margin-bottom:0.3rem">\(H_0: \theta^* \in \Theta_0\) — the null hypothesis (status quo)</p>
+    <p style="margin:0">\(H_1: \theta^* \in \Theta_1\) — the alternative hypothesis</p>
+</div>
+<p>A test is a statistic \(\psi: E^n \to \{0,1\}\) where \(\psi = 1\) means reject \(H_0\) and \(\psi = 0\) means fail to reject \(H_0\). The test takes the form \(\psi = \mathbf{1}[T_n > c]\) for a test statistic \(T_n\) and threshold \(c\). The rejection region is \(R_\psi = \{x : \psi(x) = 1\}\).</p>
+
+<h2>2. Errors and Power</h2>
+<table>
+    <tr><th></th><th>H₀ true</th><th>H₁ true</th></tr>
+    <tr><td>Reject H₀</td><td>Type I error (false positive)</td><td>Correct</td></tr>
+    <tr><td>Fail to reject H₀</td><td>Correct</td><td>Type II error (false negative)</td></tr>
+</table>
+<ul>
+    <li><strong>Type I error rate (level):</strong> \(\alpha_\psi(\theta) = \mathbb{P}_\theta[\psi = 1]\) for \(\theta \in \Theta_0\). We control this: a test has level \(\alpha\) if \(\alpha_\psi(\theta) \leq \alpha\) for all \(\theta \in \Theta_0\).</li>
+    <li><strong>Type II error rate:</strong> \(\beta_\psi(\theta) = \mathbb{P}_\theta[\psi = 0]\) for \(\theta \in \Theta_1\).</li>
+    <li><strong>Power:</strong> \(\pi_\psi(\theta) = 1 - \beta_\psi(\theta) = \mathbb{P}_\theta[\psi = 1]\) for \(\theta \in \Theta_1\). We want this to be high.</li>
+    <li><strong>p-value:</strong> The smallest level \(\alpha\) at which \(\psi\) rejects \(H_0\). Reject if p-value \(\leq \alpha\).</li>
+</ul>
+
+<div class="figure">
+    <svg width="460" height="190" viewBox="0 0 460 190" xmlns="http://www.w3.org/2000/svg">
+        <!-- null distribution -->
+        <path d="M30,160 Q80,158 120,120 Q155,75 175,45 Q195,75 220,120 Q255,158 300,160" fill="none" stroke="#000" stroke-width="1.8"/>
+        <!-- alt distribution -->
+        <path d="M180,160 Q230,158 265,125 Q295,85 315,55 Q335,85 355,125 Q385,158 430,160" fill="none" stroke="#000" stroke-width="1.5" stroke-dasharray="5,3"/>
+        <!-- rejection region shading -->
+        <path d="M270,160 Q285,155 300,130 Q310,108 315,98 L315,160Z" fill="#000" opacity="0.12"/>
+        <path d="M270,160 L430,160 Q430,160 430,160 L430,160Z" fill="#000" opacity="0.06"/>
+        <!-- critical value line -->
+        <line x1="270" y1="100" x2="270" y2="165" stroke="#000" stroke-width="1.2" stroke-dasharray="3,2"/>
+        <text x="262" y="178" font-size="9" font-family="Inter,sans-serif" fill="#666">c</text>
+        <!-- labels -->
+        <text x="145" y="172" font-size="10" font-family="Inter,sans-serif" fill="#666">H₀</text>
+        <text x="330" y="172" font-size="10" font-family="Inter,sans-serif" fill="#666">H₁</text>
+        <text x="310" y="90" font-size="9" font-family="Inter,sans-serif" fill="#666">α</text>
+        <!-- axis -->
+        <line x1="20" y1="160" x2="445" y2="160" stroke="#000" stroke-width="1"/>
+    </svg>
+    <div class="caption">Figure 1 — The critical value c sets the rejection region. The shaded area (right tail of H₀) is the Type I error rate α.</div>
+</div>
+
+<h2>3. Student's t-test</h2>
+<p>Let \(X_1,\ldots,X_n \stackrel{iid}{\sim} \mathcal{N}(\mu, \sigma^2)\) with both \(\mu\) and \(\sigma^2\) unknown.</p>
+
+<h3>One-Sample (Two-Sided)</h3>
+<p>\(H_0: \mu = \mu_0\) vs \(H_1: \mu \neq \mu_0\). The test statistic is:</p>
+\[T_n = \sqrt{n}\,\frac{\bar{X}_n - \mu_0}{\sqrt{S_n}} \sim t_{n-1} \quad \text{under } H_0\]
+<p>where \(S_n = \frac{1}{n-1}\sum(X_i - \bar{X}_n)^2\). The Student's T distribution \(t_{n-1}\) has heavier tails than Gaussian, accounting for uncertainty in estimating \(\sigma\). Reject if \(|T_n| > q_{\alpha/2}\) of \(t_{n-1}\).</p>
+
+<h3>Two-Sample t-test</h3>
+<p>Compare means of two independent samples \(X_1,\ldots,X_n \sim \mathcal{N}(\mu_x,\sigma_x^2)\) and \(Y_1,\ldots,Y_m \sim \mathcal{N}(\mu_y,\sigma_y^2)\):</p>
+\[T = \frac{\bar{X}_n - \bar{Y}_m - (\Delta_0)}{\sqrt{\hat{\sigma}_x^2/n + \hat{\sigma}_y^2/m}} \approx t_N\]
+<p>where \(N\) is given by the Welch-Satterthwaite approximation: \(N = \frac{(\hat{\sigma}_x^2/n + \hat{\sigma}_y^2/m)^2}{\hat{\sigma}_x^4/[n^2(n-1)] + \hat{\sigma}_y^4/[m^2(m-1)]}\).</p>
+
+<h2>4. Chi-Squared and Student's T Distributions</h2>
+<div class="box">
+    <div class="box-label">Chi-Squared Distribution</div>
+    <p style="margin-bottom:0.4rem">If \(Z_1,\ldots,Z_d \stackrel{iid}{\sim} \mathcal{N}(0,1)\), then \(V = Z_1^2 + \cdots + Z_d^2 \sim \chi^2_d\).</p>
+    <p style="margin:0">\(\mathbb{E}[V] = d\), \(\text{Var}(V) = 2d\). Key: \(nS_n^2/\sigma^2 \sim \chi^2_{n-1}\) for Gaussian data.</p>
+</div>
+<div class="box">
+    <div class="box-label">Student's T Distribution</div>
+    <p style="margin-bottom:0.4rem">If \(Z \sim \mathcal{N}(0,1)\), \(V \sim \chi^2_d\), independent: \(T = Z/\sqrt{V/d} \sim t_d\).</p>
+    <p style="margin:0">As \(d \to \infty\), \(t_d \to \mathcal{N}(0,1)\). For small \(d\), \(t_d\) has heavier tails.</p>
+</div>
+
+<h2>5. Wald's Test</h2>
+<p>Wald's test is based on the MLE and the Fisher information, making it applicable beyond Gaussians.</p>
+<div class="box">
+    <div class="box-label">Wald's Test</div>
+    <p style="margin-bottom:0.4rem">Test \(H_0: \theta^* = \theta_0\) vs \(H_1: \theta^* \neq \theta_0\). Test statistic:</p>
+    <p style="margin-bottom:0.4rem">\[T_n = n\,(\hat{\theta}_n^{\text{MLE}} - \theta_0)^\top I(\hat{\theta}_n^{\text{MLE}})\,(\hat{\theta}_n^{\text{MLE}} - \theta_0) \xrightarrow{(d)} \chi^2_d \quad \text{under } H_0\]</p>
+    <p style="margin:0">Reject at level \(\alpha\) if \(T_n > q_\alpha(\chi^2_d)\).</p>
+</div>
+<p>In one dimension, this simplifies to the familiar \(Z\)-test: \(\psi = \mathbf{1}\{|(\hat{\theta}_n - \theta_0)/\sqrt{1/(nI(\hat{\theta}_n))}| > q_{\alpha/2}\}\).</p>
+
+<h2>6. Likelihood Ratio Test</h2>
+<p>The LRT compares the likelihood at the MLE against the likelihood constrained to \(H_0\).</p>
+<div class="box">
+    <div class="box-label">Likelihood Ratio Test Statistic</div>
+    <p style="margin-bottom:0.4rem">Let \(\hat{\theta}_n\) be the unconstrained MLE and \(\tilde{\theta}_n = \arg\max_{\theta \in \Theta_0} \ell_n(\theta)\) the constrained MLE. Then:</p>
+    <p style="margin:0">\[T_n = 2\!\left(\ell_n(\hat{\theta}_n) - \ell_n(\tilde{\theta}_n)\right)\]</p>
+</div>
+<div class="box">
+    <div class="box-label">Wilk's Theorem</div>
+    <p style="margin-bottom:0.4rem">If \(H_0\) constrains \(d\) free parameters to specific values (rank of constraint = \(d\)):</p>
+    <p style="margin:0">\[T_n \xrightarrow{(d)} \chi^2_d \quad \text{under } H_0\]</p>
+</div>
+<p>The LRT is often preferred over Wald's test because it uses the likelihood directly at both points, is invariant to reparametrisation, and can have better finite-sample performance.</p>
+
+<h2>7. The Asymmetry of Hypothesis Testing</h2>
+<p>A crucial point: \(H_0\) and \(H_1\) play asymmetric roles. We design tests to control Type I error (false rejection of \(H_0\)) at level \(\alpha\). Failing to reject \(H_0\) does not mean \(H_0\) is true — it only means the data did not provide sufficient evidence against it. The burden of proof lies with \(H_1\).</p>
+
+</body>
+</html>

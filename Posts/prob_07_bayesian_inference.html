@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bayesian Inference — Probability From Scratch</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+    <style>
+        *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+        body { background: #fff; color: #000; font-family: 'Inter', sans-serif; font-weight: 300; line-height: 1.6; max-width: 720px; margin: 0 auto; padding: 2rem 2rem 6rem; }
+        nav { margin-bottom: 3rem; font-size: 0.75rem; letter-spacing: 0.04em; }
+        nav a { color: #000; text-decoration: none; }
+        nav a:hover { opacity: 0.5; }
+        nav span { margin: 0 0.5rem; opacity: 0.3; }
+        h1 { font-family: 'Cormorant Garamond', serif; font-size: 2.2rem; font-weight: 600; line-height: 1.2; margin-bottom: 0.4rem; }
+        .subtitle { font-family: 'Cormorant Garamond', serif; font-size: 1.1rem; font-style: italic; color: #444; margin-bottom: 3rem; }
+        h2 { font-family: 'Cormorant Garamond', serif; font-size: 1.6rem; font-weight: 600; margin: 3rem 0 1rem; border-bottom: 1px solid #eee; padding-bottom: 0.3rem; }
+        h3 { font-family: 'Inter', sans-serif; font-size: 0.88rem; font-weight: 500; letter-spacing: 0.04em; text-transform: uppercase; margin: 2rem 0 0.6rem; }
+        p { font-size: 0.92rem; line-height: 1.8; margin-bottom: 0.9rem; }
+        ul { font-size: 0.92rem; line-height: 1.8; padding-left: 1.4rem; margin-bottom: 0.9rem; }
+        li { margin-bottom: 0.25rem; }
+        .box { border-left: 2px solid #000; padding: 0.9rem 1.1rem; margin: 1.5rem 0; }
+        .box-label { font-size: 0.7rem; font-weight: 500; letter-spacing: 0.08em; text-transform: uppercase; margin-bottom: 0.4rem; opacity: 0.5; }
+        table { width: 100%; border-collapse: collapse; font-size: 0.85rem; margin: 1.5rem 0; }
+        th { font-weight: 500; border-bottom: 1px solid #000; padding: 0.5rem 0.8rem; text-align: left; }
+        td { padding: 0.45rem 0.8rem; border-bottom: 1px solid #eee; vertical-align: top; }
+        mjx-container { overflow-x: auto; }
+    </style>
+    <script src="https://cdn.amplitude.com/script/59010539cde9503811b2e9a80e47e0b4.js"></script>
+    <script>window.amplitude.add(window.sessionReplay.plugin({sampleRate: 1}));window.amplitude.init('59010539cde9503811b2e9a80e47e0b4', {"fetchRemoteConfig":true,"autocapture":{"attribution":true,"fileDownloads":true,"formInteractions":true,"pageViews":true,"sessions":true,"elementInteractions":true,"networkTracking":true,"webVitals":true,"frustrationInteractions":true}});</script>
+</head>
+<body>
+<nav><a href="../blog.html">Notebooks</a><span>/</span>Bayesian Inference</nav>
+<h1>Bayesian Inference</h1>
+<p class="subtitle">Posterior inference, MAP, LMS estimation, and the linear least-squares estimator</p>
+
+<h2>1. The Bayesian Framework</h2>
+<p>In the Bayesian framework, the unknown parameter \(\Theta\) is treated as a random variable with a <strong>prior distribution</strong> \(f_\Theta(\theta)\). After observing data \(X = x\), we update to the <strong>posterior distribution</strong> via Bayes' rule:</p>
+<div class="box">
+    <div class="box-label">Bayes' Rule (Continuous)</div>
+    <p style="margin:0">\[f_{\Theta \mid X}(\theta \mid x) = \frac{f_X(\theta)\,f_{X \mid \Theta}(x \mid \theta)}{f_X(x)} \propto f_\Theta(\theta)\,f_{X \mid \Theta}(x \mid \theta)\]</p>
+</div>
+<p>The posterior is proportional to prior times likelihood. The denominator \(f_X(x) = \int f_\Theta(\theta) f_{X|\Theta}(x|\theta)\,d\theta\) is a normalising constant that does not depend on \(\theta\).</p>
+
+<h3>Key Quantities</h3>
+<ul>
+    <li><strong>Prior</strong> \(f_\Theta(\theta)\): belief about \(\Theta\) before seeing data.</li>
+    <li><strong>Likelihood</strong> \(f_{X|\Theta}(x|\theta)\): probability of observed data under model \(\theta\).</li>
+    <li><strong>Posterior</strong> \(f_{\Theta|X}(\theta|x)\): updated belief after seeing data.</li>
+    <li><strong>Posterior predictive</strong> \(f_{X_{\text{new}}|X}(x'|x)\): distribution over future observations.</li>
+</ul>
+
+<h2>2. MAP Estimation</h2>
+<div class="box">
+    <div class="box-label">Maximum A Posteriori (MAP) Estimate</div>
+    <p style="margin:0">\[\hat{\theta}_{\text{MAP}} = \arg\max_\theta f_{\Theta \mid X}(\theta \mid x) = \arg\max_\theta \bigl[f_\Theta(\theta)\,f_{X \mid \Theta}(x \mid \theta)\bigr]\]</p>
+</div>
+<p>MAP finds the mode of the posterior. It is the most probable value of \(\Theta\) given the data. Taking logs (which doesn't change the argmax):</p>
+\[\hat{\theta}_{\text{MAP}} = \arg\max_\theta \bigl[\log f_\Theta(\theta) + \log f_{X \mid \Theta}(x \mid \theta)\bigr]\]
+<p>Compared to MLE: MAP adds the log-prior as a regularisation term. With a uniform prior, MAP reduces to MLE.</p>
+
+<h3>MAP as Regularised MLE</h3>
+<ul>
+    <li>Gaussian prior \(\Theta \sim \mathcal{N}(0, v^2)\) leads to \(\ell_2\) (ridge) regularisation.</li>
+    <li>Laplace prior leads to \(\ell_1\) (lasso) regularisation.</li>
+    <li>As data \(n \to \infty\), MAP and MLE converge — the prior is swamped by the likelihood.</li>
+</ul>
+
+<h2>3. LMS Estimation (Conditional Expectation)</h2>
+<div class="box">
+    <div class="box-label">Least Mean Squares (LMS) Estimator</div>
+    <p style="margin:0">\[\hat{\theta}_{\text{LMS}} = \mathbb{E}[\Theta \mid X = x]\]</p>
+</div>
+<p>The LMS estimator minimises the mean squared error \(\mathbb{E}[(\Theta - \hat{\theta})^2 \mid X = x]\). It is the posterior mean — the expected value of \(\Theta\) under the posterior distribution.</p>
+
+<h3>Properties of the LMS Estimator</h3>
+<ul>
+    <li>Minimises \(\mathbb{E}[(\Theta - g(X))^2]\) over all functions \(g\).</li>
+    <li>The estimation error \(\tilde{\Theta} = \Theta - \hat{\Theta}_{\text{LMS}}\) satisfies \(\mathbb{E}[\tilde{\Theta} \mid X] = 0\) (unbiased given \(X\)).</li>
+    <li>\(\tilde{\Theta}\) is uncorrelated with any function of \(X\): \(\text{Cov}(\tilde{\Theta}, h(X)) = 0\) for any \(h\).</li>
+    <li>The MSE of the LMS estimator is \(\mathbb{E}[\text{Var}(\Theta \mid X)]\) — the expected posterior variance.</li>
+</ul>
+
+<h3>Comparison of Estimators</h3>
+<table>
+    <tr><th>Estimator</th><th>Definition</th><th>Optimality</th></tr>
+    <tr><td>MAP</td><td>mode of \(f_{\Theta|X}\)</td><td>Most probable value</td></tr>
+    <tr><td>LMS</td><td>mean of \(f_{\Theta|X}\)</td><td>Minimises MSE</td></tr>
+    <tr><td>Median of posterior</td><td>median of \(f_{\Theta|X}\)</td><td>Minimises mean absolute error</td></tr>
+</table>
+<p>For symmetric unimodal posteriors (e.g. Gaussian), all three coincide.</p>
+
+<h2>4. LLMS Estimation</h2>
+<p>The LMS estimator requires knowledge of the full joint distribution. The <strong>Linear Least Mean Squares (LLMS)</strong> estimator restricts to linear estimators \(\hat{\Theta} = aX + b\):</p>
+<div class="box">
+    <div class="box-label">LLMS Estimator</div>
+    <p style="margin-bottom:0.4rem">\[\hat{\Theta}_{\text{LLMS}} = \mathbb{E}[\Theta] + \frac{\text{Cov}(\Theta, X)}{\text{Var}(X)}\bigl(X - \mathbb{E}[X]\bigr)\]</p>
+    <p style="margin:0">Equivalently: \(\hat{\Theta}_{\text{LLMS}} = \mathbb{E}[\Theta] + \rho\,\frac{\sigma_\Theta}{\sigma_X}\bigl(X - \mathbb{E}[X]\bigr)\), where \(\rho = \text{Corr}(\Theta, X)\).</p>
+</div>
+<p>The coefficients are:</p>
+\[a = \frac{\text{Cov}(\Theta, X)}{\text{Var}(X)}, \qquad b = \mathbb{E}[\Theta] - a\,\mathbb{E}[X]\]
+
+<h3>MSE of LLMS</h3>
+\[\mathbb{E}\bigl[(\Theta - \hat{\Theta}_{\text{LLMS}})^2\bigr] = (1 - \rho^2)\,\text{Var}(\Theta)\]
+<p>When \(\rho = \pm 1\): perfect linear relationship, zero error. When \(\rho = 0\): \(X\) is useless, estimate degrades to the prior mean \(\mathbb{E}[\Theta]\).</p>
+
+<h3>LLMS with Multiple Observations</h3>
+<p>Given observations \(\mathbf{X} = (X_1, \ldots, X_n)\), the LLMS estimator is:</p>
+\[\hat{\Theta}_{\text{LLMS}} = \mathbb{E}[\Theta] + \mathbf{c}^\top(\mathbf{X} - \mathbb{E}[\mathbf{X}])\]
+<p>where \(\mathbf{c} = \text{Cov}(\mathbf{X}, \mathbf{X})^{-1}\,\text{Cov}(\mathbf{X}, \Theta)\). This is exactly the solution from linear regression.</p>
+
+<h2>5. Conjugate Priors</h2>
+<p>A prior is <strong>conjugate</strong> to a likelihood if the posterior is in the same family as the prior. This makes Bayesian updating analytically tractable.</p>
+<table>
+    <tr><th>Likelihood</th><th>Conjugate Prior</th><th>Posterior</th></tr>
+    <tr><td>Binomial(\(n,p\))</td><td>Beta(\(a,b\))</td><td>Beta(\(a+k, b+n-k\))</td></tr>
+    <tr><td>Poisson(\(\lambda\))</td><td>Gamma(\(a,b\))</td><td>Gamma(\(a+\sum x_i, b+n\))</td></tr>
+    <tr><td>Normal(\(\mu, \sigma^2\)) known \(\sigma^2\)</td><td>\(\mathcal{N}(\mu_0, \sigma_0^2)\)</td><td>Normal (precision-weighted average)</td></tr>
+</table>
+<p>With a Beta(\(a,b\)) prior and observing \(k\) successes in \(n\) trials, the posterior mean is \((a+k)/(a+b+n)\) — a weighted combination of the prior mean and the observed fraction \(k/n\).</p>
+
+</body>
+</html>

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Limit Theorems — Probability From Scratch</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+    <style>
+        *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+        body { background: #fff; color: #000; font-family: 'Inter', sans-serif; font-weight: 300; line-height: 1.6; max-width: 720px; margin: 0 auto; padding: 2rem 2rem 6rem; }
+        nav { margin-bottom: 3rem; font-size: 0.75rem; letter-spacing: 0.04em; }
+        nav a { color: #000; text-decoration: none; }
+        nav a:hover { opacity: 0.5; }
+        nav span { margin: 0 0.5rem; opacity: 0.3; }
+        h1 { font-family: 'Cormorant Garamond', serif; font-size: 2.2rem; font-weight: 600; line-height: 1.2; margin-bottom: 0.4rem; }
+        .subtitle { font-family: 'Cormorant Garamond', serif; font-size: 1.1rem; font-style: italic; color: #444; margin-bottom: 3rem; }
+        h2 { font-family: 'Cormorant Garamond', serif; font-size: 1.6rem; font-weight: 600; margin: 3rem 0 1rem; border-bottom: 1px solid #eee; padding-bottom: 0.3rem; }
+        h3 { font-family: 'Inter', sans-serif; font-size: 0.88rem; font-weight: 500; letter-spacing: 0.04em; text-transform: uppercase; margin: 2rem 0 0.6rem; }
+        p { font-size: 0.92rem; line-height: 1.8; margin-bottom: 0.9rem; }
+        ul { font-size: 0.92rem; line-height: 1.8; padding-left: 1.4rem; margin-bottom: 0.9rem; }
+        li { margin-bottom: 0.25rem; }
+        .box { border-left: 2px solid #000; padding: 0.9rem 1.1rem; margin: 1.5rem 0; }
+        .box-label { font-size: 0.7rem; font-weight: 500; letter-spacing: 0.08em; text-transform: uppercase; margin-bottom: 0.4rem; opacity: 0.5; }
+        .figure { margin: 2rem 0; text-align: center; }
+        .caption { font-size: 0.78rem; color: #666; margin-top: 0.5rem; }
+        mjx-container { overflow-x: auto; }
+    </style>
+    <script src="https://cdn.amplitude.com/script/59010539cde9503811b2e9a80e47e0b4.js"></script>
+    <script>window.amplitude.add(window.sessionReplay.plugin({sampleRate: 1}));window.amplitude.init('59010539cde9503811b2e9a80e47e0b4', {"fetchRemoteConfig":true,"autocapture":{"attribution":true,"fileDownloads":true,"formInteractions":true,"pageViews":true,"sessions":true,"elementInteractions":true,"networkTracking":true,"webVitals":true,"frustrationInteractions":true}});</script>
+</head>
+<body>
+<nav><a href="../blog.html">Notebooks</a><span>/</span>Limit Theorems</nav>
+<h1>Limit Theorems</h1>
+<p class="subtitle">Convergence of sequences of random variables, the law of large numbers, and the central limit theorem</p>
+
+<h2>1. Modes of Convergence</h2>
+<p>There are several senses in which a sequence of random variables \(X_n\) can converge to a limit \(X\):</p>
+<ul>
+    <li><strong>Almost sure (a.s.):</strong> \(\mathbb{P}(\lim_{n\to\infty} X_n = X) = 1\). Pathwise convergence.</li>
+    <li><strong>In probability:</strong> \(\mathbb{P}(|X_n - X| > \varepsilon) \to 0\) for all \(\varepsilon > 0\).</li>
+    <li><strong>In distribution (weak):</strong> \(F_{X_n}(x) \to F_X(x)\) at all continuity points of \(F_X\).</li>
+    <li><strong>In mean square (\(L^2\)):</strong> \(\mathbb{E}[(X_n - X)^2] \to 0\).</li>
+</ul>
+<p>Hierarchy: a.s. convergence \(\Rightarrow\) convergence in probability \(\Rightarrow\) convergence in distribution.</p>
+
+<h2>2. Weak Law of Large Numbers</h2>
+<div class="box">
+    <div class="box-label">WLLN</div>
+    <p style="margin-bottom:0.4rem">Let \(X_1, X_2, \ldots\) be i.i.d. with \(\mathbb{E}[X_i] = \mu < \infty\). Then the sample mean</p>
+    <p style="margin:0">\[\bar{X}_n = \frac{1}{n}\sum_{i=1}^n X_i \xrightarrow{\,p\,} \mu \quad \text{as } n \to \infty\]</p>
+</div>
+<p>Proof sketch via Chebyshev's inequality (when \(\text{Var}(X) < \infty\)):</p>
+\[\mathbb{P}(|\bar{X}_n - \mu| > \varepsilon) \leq \frac{\text{Var}(\bar{X}_n)}{\varepsilon^2} = \frac{\text{Var}(X)}{n\varepsilon^2} \to 0\]
+
+<h3>Strong Law of Large Numbers</h3>
+<p>Under the same conditions, \(\bar{X}_n \xrightarrow{\text{a.s.}} \mu\). The strong law requires more careful proof (e.g., Borel-Cantelli) but gives the stronger almost-sure statement.</p>
+
+<h2>3. Central Limit Theorem</h2>
+<div class="box">
+    <div class="box-label">Central Limit Theorem (CLT)</div>
+    <p style="margin-bottom:0.4rem">Let \(X_1, X_2, \ldots\) be i.i.d. with \(\mathbb{E}[X_i] = \mu\) and \(\text{Var}(X_i) = \sigma^2 < \infty\). Then:</p>
+    <p style="margin:0">\[\frac{\sqrt{n}(\bar{X}_n - \mu)}{\sigma} = \frac{S_n - n\mu}{\sigma\sqrt{n}} \xrightarrow{d} \mathcal{N}(0,1)\]</p>
+</div>
+<p>The CLT says the standardised sum converges in distribution to a standard normal — regardless of the underlying distribution of \(X_i\). This is why the normal distribution appears everywhere.</p>
+
+<h3>Practical Approximation</h3>
+<p>For large \(n\):</p>
+\[\bar{X}_n \approx \mathcal{N}\!\left(\mu, \frac{\sigma^2}{n}\right), \qquad S_n = \sum_{i=1}^n X_i \approx \mathcal{N}(n\mu, n\sigma^2)\]
+<p>Rule of thumb: approximation is reasonable when \(n \geq 30\) for symmetric distributions; larger \(n\) needed for skewed distributions.</p>
+
+<div class="figure">
+    <svg width="460" height="160" viewBox="0 0 460 160" xmlns="http://www.w3.org/2000/svg">
+        <!-- n=1 -->
+        <text x="75" y="14" text-anchor="middle" font-size="9" font-family="Inter,sans-serif" fill="#666">n = 1 (Uniform)</text>
+        <line x1="20" y1="130" x2="140" y2="130" stroke="#000" stroke-width="0.8"/>
+        <rect x="40" y="40" width="80" height="90" fill="#000" opacity="0.15" stroke="#000" stroke-width="1"/>
+        <!-- n=5 -->
+        <text x="230" y="14" text-anchor="middle" font-size="9" font-family="Inter,sans-serif" fill="#666">n = 5</text>
+        <line x1="165" y1="130" x2="300" y2="130" stroke="#000" stroke-width="0.8"/>
+        <path d="M170,128 Q185,126 200,110 Q215,80 230,55 Q245,80 260,110 Q275,126 295,128" fill="none" stroke="#000" stroke-width="1.5"/>
+        <path d="M170,128 Q185,126 200,110 Q215,80 230,55 Q245,80 260,110 Q275,126 295,128 L295,128 L170,128Z" fill="#000" opacity="0.1"/>
+        <!-- n=30 -->
+        <text x="390" y="14" text-anchor="middle" font-size="9" font-family="Inter,sans-serif" fill="#666">n = 30 (≈ Normal)</text>
+        <line x1="325" y1="130" x2="450" y2="130" stroke="#000" stroke-width="0.8"/>
+        <path d="M330,128 Q345,127 360,118 Q372,100 385,72 Q390,55 390,48 Q390,55 395,72 Q408,100 420,118 Q435,127 448,128" fill="none" stroke="#000" stroke-width="2"/>
+        <path d="M330,128 Q345,127 360,118 Q372,100 385,72 Q390,55 390,48 Q390,55 395,72 Q408,100 420,118 Q435,127 448,128 L448,128 L330,128Z" fill="#000" opacity="0.12"/>
+        <!-- Arrow -->
+        <text x="230" y="148" font-size="8" font-family="Inter,sans-serif" fill="#666" text-anchor="middle">As n grows, distribution of X̄ approaches Normal</text>
+    </svg>
+    <div class="caption">Figure 1 — CLT in action: the distribution of the sample mean becomes bell-shaped as n increases, regardless of the original distribution.</div>
+</div>
+
+<h2>4. Delta Method</h2>
+<p>If \(\sqrt{n}(\bar{X}_n - \mu) \xrightarrow{d} \mathcal{N}(0, \sigma^2)\) and \(g\) is differentiable at \(\mu\) with \(g'(\mu) \neq 0\), then:</p>
+<div class="box">
+    <div class="box-label">Delta Method</div>
+    <p style="margin:0">\[\sqrt{n}\bigl(g(\bar{X}_n) - g(\mu)\bigr) \xrightarrow{d} \mathcal{N}\bigl(0,\, [g'(\mu)]^2 \sigma^2\bigr)\]</p>
+</div>
+<p>The delta method propagates asymptotic normality through smooth transformations. It is used extensively to find approximate distributions of functions of estimators.</p>
+
+<h2>5. Moment Generating Functions</h2>
+<p>The <strong>MGF</strong> of \(X\) is \(M_X(s) = \mathbb{E}[e^{sX}]\) (when it exists). Key properties:</p>
+<ul>
+    <li>\(M_X^{(k)}(0) = \mathbb{E}[X^k]\) — the \(k\)-th moment.</li>
+    <li>If \(X, Y\) independent: \(M_{X+Y}(s) = M_X(s)\,M_Y(s)\).</li>
+    <li>Uniqueness: if two distributions have the same MGF on an interval around 0, they are identical.</li>
+</ul>
+<p>MGFs provide an elegant proof of the CLT via Taylor expansion of the log-MGF.</p>
+
+<h2>6. Order Statistics</h2>
+<p>Given i.i.d. \(X_1, \ldots, X_n\) with CDF \(F\) and PDF \(f\), let \(X_{(1)} \leq X_{(2)} \leq \cdots \leq X_{(n)}\) be the sorted values. The PDF of the \(k\)-th order statistic is:</p>
+\[f_{X_{(k)}}(x) = \frac{n!}{(k-1)!(n-k)!}\,[F(x)]^{k-1}\,[1-F(x)]^{n-k}\,f(x)\]
+<p>Special cases:</p>
+<ul>
+    <li><strong>Minimum</strong> \(X_{(1)}\): \(F_{X_{(1)}}(x) = 1 - [1-F(x)]^n\). The minimum of \(n\) i.i.d. Expo(\(\lambda\)) is Expo(\(n\lambda\)).</li>
+    <li><strong>Maximum</strong> \(X_{(n)}\): \(F_{X_{(n)}}(x) = [F(x)]^n\).</li>
+    <li>For Uniform(0,1): \(X_{(k)} \sim \text{Beta}(k, n-k+1)\).</li>
+</ul>
+
+</body>
+</html>

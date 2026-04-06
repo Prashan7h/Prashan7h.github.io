@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maximum Likelihood Estimation — Statistics From Scratch</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+    <style>
+        *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+        body { background: #fff; color: #000; font-family: 'Inter', sans-serif; font-weight: 300; line-height: 1.6; max-width: 720px; margin: 0 auto; padding: 2rem 2rem 6rem; }
+        nav { margin-bottom: 3rem; font-size: 0.75rem; letter-spacing: 0.04em; }
+        nav a { color: #000; text-decoration: none; }
+        nav a:hover { opacity: 0.5; }
+        nav span { margin: 0 0.5rem; opacity: 0.3; }
+        h1 { font-family: 'Cormorant Garamond', serif; font-size: 2.2rem; font-weight: 600; line-height: 1.2; margin-bottom: 0.4rem; }
+        .subtitle { font-family: 'Cormorant Garamond', serif; font-size: 1.1rem; font-style: italic; color: #444; margin-bottom: 3rem; }
+        h2 { font-family: 'Cormorant Garamond', serif; font-size: 1.6rem; font-weight: 600; margin: 3rem 0 1rem; border-bottom: 1px solid #eee; padding-bottom: 0.3rem; }
+        h3 { font-family: 'Inter', sans-serif; font-size: 0.88rem; font-weight: 500; letter-spacing: 0.04em; text-transform: uppercase; margin: 2rem 0 0.6rem; }
+        p { font-size: 0.92rem; line-height: 1.8; margin-bottom: 0.9rem; }
+        ul, ol { font-size: 0.92rem; line-height: 1.8; padding-left: 1.4rem; margin-bottom: 0.9rem; }
+        li { margin-bottom: 0.25rem; }
+        .box { border-left: 2px solid #000; padding: 0.9rem 1.1rem; margin: 1.5rem 0; }
+        .box-label { font-size: 0.7rem; font-weight: 500; letter-spacing: 0.08em; text-transform: uppercase; margin-bottom: 0.4rem; opacity: 0.5; }
+        .figure { margin: 2rem 0; text-align: center; }
+        .caption { font-size: 0.78rem; color: #666; margin-top: 0.5rem; }
+        mjx-container { overflow-x: auto; }
+    </style>
+    <script src="https://cdn.amplitude.com/script/59010539cde9503811b2e9a80e47e0b4.js"></script>
+    <script>window.amplitude.add(window.sessionReplay.plugin({sampleRate: 1}));window.amplitude.init('59010539cde9503811b2e9a80e47e0b4', {"fetchRemoteConfig":true,"autocapture":{"attribution":true,"fileDownloads":true,"formInteractions":true,"pageViews":true,"sessions":true,"elementInteractions":true,"networkTracking":true,"webVitals":true,"frustrationInteractions":true}});</script>
+</head>
+<body>
+
+<nav><a href="../blog.html">Notebooks</a><span>/</span>Maximum Likelihood Estimation</nav>
+
+<h1>Maximum Likelihood Estimation</h1>
+<p class="subtitle">The likelihood function, MLE derivation, Fisher information, and asymptotic normality</p>
+
+<h2>1. Introduction</h2>
+<p>Maximum Likelihood Estimation is the workhorse of parametric statistics. The core idea is simple: given observed data, find the parameter value that makes the data most probable. Despite this simplicity, MLE has deep theoretical guarantees — it is consistent, asymptotically normal, and achieves the Cramér-Rao lower bound in large samples.</p>
+
+<h2>2. The Likelihood Function</h2>
+<div class="box">
+    <div class="box-label">Discrete Case</div>
+    <p style="margin-bottom:0.4rem">The likelihood of the model given sample \(x_1, \ldots, x_n\):</p>
+    <p style="margin:0">\[L_n(x_1,\ldots,x_n;\theta) = \prod_{i=1}^n \mathbb{P}_\theta[X_i = x_i]\]</p>
+</div>
+<div class="box">
+    <div class="box-label">Continuous Case</div>
+    <p style="margin-bottom:0.4rem">When \(\mathbb{P}_\theta\) has density \(f_\theta\):</p>
+    <p style="margin:0">\[L(x_1,\ldots,x_n;\theta) = \prod_{i=1}^n f_\theta(x_i)\]</p>
+</div>
+<p>The likelihood is a function of \(\theta\) for fixed data — not a probability over \(\theta\). In practice we work with the <strong>log-likelihood</strong> \(\ell(\theta) = \log L(\theta) = \sum_i \log f_\theta(x_i)\), which converts products into sums and is numerically stable.</p>
+
+<h2>3. The MLE</h2>
+<div class="box">
+    <div class="box-label">Maximum Likelihood Estimator</div>
+    <p style="margin:0">\[\hat{\theta}_n^{\text{MLE}} = \arg\max_{\theta \in \Theta}\, L(x_1,\ldots,x_n;\theta) = \arg\max_{\theta \in \Theta}\, \ell(\theta)\]</p>
+</div>
+
+<div class="figure">
+    <svg width="460" height="190" viewBox="0 0 460 190" xmlns="http://www.w3.org/2000/svg">
+        <!-- axes -->
+        <line x1="40" y1="160" x2="430" y2="160" stroke="#000" stroke-width="1"/>
+        <line x1="40" y1="20" x2="40" y2="160" stroke="#000" stroke-width="1"/>
+        <!-- log-likelihood curve -->
+        <path d="M60,150 Q120,100 180,60 Q230,30 270,25 Q310,28 340,50 Q380,90 420,155" fill="none" stroke="#000" stroke-width="2"/>
+        <!-- peak marker -->
+        <line x1="270" y1="25" x2="270" y2="160" stroke="#000" stroke-width="1" stroke-dasharray="3,3" opacity="0.5"/>
+        <circle cx="270" cy="25" r="4" fill="#000"/>
+        <text x="262" y="178" font-size="11" font-family="Inter,sans-serif" fill="#000">θ̂ᴹᴸᴱ</text>
+        <!-- labels -->
+        <text x="10" y="95" font-size="10" font-family="Inter,sans-serif" fill="#666" transform="rotate(-90,10,95)">ℓ(θ)</text>
+        <text x="415" y="174" font-size="10" font-family="Inter,sans-serif" fill="#666">θ</text>
+        <text x="42" y="14" font-size="10" font-family="Inter,sans-serif" fill="#666">ℓ(θ̂)</text>
+    </svg>
+    <div class="caption">Figure 1 — The MLE is the parameter value at which the log-likelihood is maximised.</div>
+</div>
+
+<h3>Example: Gaussian MLE</h3>
+<p>For \(X_1,\ldots,X_n \sim \mathcal{N}(\mu, \sigma^2)\), taking the derivative of the log-likelihood and setting to zero gives: \(\hat{\mu}^{\text{MLE}} = \bar{X}_n\) and \(\hat{\sigma}^2{}^{\text{MLE}} = \frac{1}{n}\sum(X_i - \bar{X}_n)^2\). The MLE for the mean is the sample mean (unbiased), but the MLE for variance divides by \(n\) (biased).</p>
+
+<h2>4. Consistency of MLE</h2>
+<p>Under mild regularity conditions, the MLE is consistent:</p>
+\[\hat{\theta}_n^{\text{MLE}} \xrightarrow{\mathbb{P}} \theta^* \quad \text{as } n \to \infty\]
+<p>Intuition: maximising \(\frac{1}{n}\ell(\theta) = \frac{1}{n}\sum \log f_\theta(X_i)\) is equivalent (by the LLN) to maximising \(\mathbb{E}_{\theta^*}[\log f_\theta(X)]\), which is maximised at \(\theta = \theta^*\) by the properties of KL divergence.</p>
+
+<h2>5. Fisher Information</h2>
+<div class="box">
+    <div class="box-label">Fisher Information</div>
+    <p style="margin-bottom:0.4rem">For a one-dimensional parameter, define the score function \(\ell(\theta) = \log L_1(X,\theta)\). The Fisher information is:</p>
+    <p style="margin:0">\[I(\theta) = \mathbb{E}\!\left[\nabla\ell(\theta)\nabla\ell(\theta)^\top\right] - \mathbb{E}[\nabla\ell(\theta)]\mathbb{E}[\nabla\ell(\theta)^\top] = -\mathbb{E}[\ell''(\theta)]\]</p>
+    <p style="margin-top:0.4rem">In one dimension: \(I(\theta) = \text{Var}[\ell'(\theta)] = -\mathbb{E}[\ell''(\theta)]\).</p>
+</div>
+<p>Fisher information measures how much information the data carries about \(\theta\). High Fisher information means the likelihood is sharply peaked — the data is highly informative. Low Fisher information means the likelihood is flat — many parameter values are nearly equally plausible.</p>
+<p>The Cramér-Rao bound states that for any unbiased estimator \(\hat{\theta}\): \(\text{Var}(\hat{\theta}) \geq 1/I(\theta)\). The MLE achieves this bound asymptotically.</p>
+
+<h2>6. Asymptotic Normality of MLE</h2>
+<div class="box">
+    <div class="box-label">Asymptotic Normality of MLE</div>
+    <p style="margin-bottom:0.4rem">Under regularity conditions, with \(\theta^*\) the true parameter:</p>
+    <p style="margin:0">\[\sqrt{n}\!\left(\hat{\theta}_n^{\text{MLE}} - \theta^*\right) \xrightarrow{(d)} \mathcal{N}\!\left(0,\, I(\theta^*)^{-1}\right)\]</p>
+</div>
+<p>Two remarkable facts: (1) the MLE converges at rate \(1/\sqrt{n}\), the fastest possible for regular estimators; (2) its asymptotic variance equals the Cramér-Rao lower bound — the MLE is <em>asymptotically efficient</em>.</p>
+
+<h2>7. Multivariate Gaussian Distribution</h2>
+<p>A random vector \(X \sim \mathcal{N}_d(\mu, \Sigma)\) has density:</p>
+\[f(x) = \frac{1}{(2\pi)^{d/2}\det(\Sigma)^{1/2}}\exp\!\left(-\frac{1}{2}(x-\mu)^\top\Sigma^{-1}(x-\mu)\right)\]
+<p>where \(\mu \in \mathbb{R}^d\) is the mean vector and \(\Sigma \in \mathbb{R}^{d\times d}\) is the positive definite covariance matrix.</p>
+
+<h3>Covariance Matrix</h3>
+<p>For a random vector \(X = (X^{(1)}, \ldots, X^{(d)})^\top\):</p>
+\[\Sigma = \text{Cov}(X) = \mathbb{E}\!\left[(X - \mathbb{E}[X])(X - \mathbb{E}[X])^\top\right]\]
+<p>For matrices \(A, B\): \(\text{Cov}(AX + B) = A\,\text{Cov}(X)\,A^\top\). The diagonal entries are variances; off-diagonal entries are covariances.</p>
+
+<h3>Multivariate CLT</h3>
+<p>If \(X_1, \ldots, X_n\) are i.i.d. copies of a random vector with mean \(\mu\) and covariance \(\Sigma\):</p>
+\[\sqrt{n}(\bar{X}_n - \mu) \xrightarrow{(d)} \mathcal{N}_d(0, \Sigma)\]
+
+</body>
+</html>

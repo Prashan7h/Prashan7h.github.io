@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Method of Moments & M-Estimation — Statistics From Scratch</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+    <style>
+        *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+        body { background: #fff; color: #000; font-family: 'Inter', sans-serif; font-weight: 300; line-height: 1.6; max-width: 720px; margin: 0 auto; padding: 2rem 2rem 6rem; }
+        nav { margin-bottom: 3rem; font-size: 0.75rem; letter-spacing: 0.04em; }
+        nav a { color: #000; text-decoration: none; }
+        nav a:hover { opacity: 0.5; }
+        nav span { margin: 0 0.5rem; opacity: 0.3; }
+        h1 { font-family: 'Cormorant Garamond', serif; font-size: 2.2rem; font-weight: 600; line-height: 1.2; margin-bottom: 0.4rem; }
+        .subtitle { font-family: 'Cormorant Garamond', serif; font-size: 1.1rem; font-style: italic; color: #444; margin-bottom: 3rem; }
+        h2 { font-family: 'Cormorant Garamond', serif; font-size: 1.6rem; font-weight: 600; margin: 3rem 0 1rem; border-bottom: 1px solid #eee; padding-bottom: 0.3rem; }
+        h3 { font-family: 'Inter', sans-serif; font-size: 0.88rem; font-weight: 500; letter-spacing: 0.04em; text-transform: uppercase; margin: 2rem 0 0.6rem; }
+        p { font-size: 0.92rem; line-height: 1.8; margin-bottom: 0.9rem; }
+        ul, ol { font-size: 0.92rem; line-height: 1.8; padding-left: 1.4rem; margin-bottom: 0.9rem; }
+        li { margin-bottom: 0.25rem; }
+        .box { border-left: 2px solid #000; padding: 0.9rem 1.1rem; margin: 1.5rem 0; }
+        .box-label { font-size: 0.7rem; font-weight: 500; letter-spacing: 0.08em; text-transform: uppercase; margin-bottom: 0.4rem; opacity: 0.5; }
+        .figure { margin: 2rem 0; text-align: center; }
+        .caption { font-size: 0.78rem; color: #666; margin-top: 0.5rem; }
+        table { width: 100%; border-collapse: collapse; font-size: 0.88rem; margin: 1.5rem 0; }
+        th { font-weight: 500; border-bottom: 1px solid #000; padding: 0.5rem 0.8rem; text-align: left; }
+        td { padding: 0.5rem 0.8rem; border-bottom: 1px solid #eee; }
+        mjx-container { overflow-x: auto; }
+    </style>
+    <script src="https://cdn.amplitude.com/script/59010539cde9503811b2e9a80e47e0b4.js"></script>
+    <script>window.amplitude.add(window.sessionReplay.plugin({sampleRate: 1}));window.amplitude.init('59010539cde9503811b2e9a80e47e0b4', {"fetchRemoteConfig":true,"autocapture":{"attribution":true,"fileDownloads":true,"formInteractions":true,"pageViews":true,"sessions":true,"elementInteractions":true,"networkTracking":true,"webVitals":true,"frustrationInteractions":true}});</script>
+</head>
+<body>
+
+<nav><a href="../blog.html">Notebooks</a><span>/</span>Method of Moments & M-Estimation</nav>
+
+<h1>Method of Moments & M-Estimation</h1>
+<p class="subtitle">Matching sample moments to population moments, and a unified framework for loss-based estimators</p>
+
+<h2>1. Introduction</h2>
+<p>Maximum likelihood is not the only way to construct estimators. The Method of Moments (MoM) is older, simpler, and sometimes computationally tractable when MLE is not. M-Estimation generalises both MLE and MoM into a single framework of optimisation-based estimators.</p>
+
+<h2>2. Moments</h2>
+<div class="box">
+    <div class="box-label">Population Moments</div>
+    <p style="margin:0">The \(k\)-th population moment is \(m_k(\theta) = \mathbb{E}_\theta[X_1^k]\), for \(1 \leq k \leq d\).</p>
+</div>
+<div class="box">
+    <div class="box-label">Empirical Moments</div>
+    <p style="margin:0">The \(k\)-th sample moment is \(\hat{m}_k = \bar{X^k} = \frac{1}{n}\sum_{i=1}^n X_i^k\).</p>
+</div>
+<p>By the LLN: \(\hat{m}_k \xrightarrow{\mathbb{P}} m_k(\theta^*)\). By the multivariate CLT: \(\sqrt{n}(\hat{m}_1,\ldots,\hat{m}_d) \xrightarrow{(d)} (m_1(\theta^*),\ldots,m_d(\theta^*))\).</p>
+
+<h2>3. Method of Moments Estimator</h2>
+<p>The idea: if \(\theta \in \mathbb{R}^d\), match \(d\) sample moments to their population counterparts and solve.</p>
+<div class="box">
+    <div class="box-label">MoM Estimator</div>
+    <p style="margin-bottom:0.4rem">Define \(M: \Theta \to \mathbb{R}^d\) by \(M(\theta) = (m_1(\theta), \ldots, m_d(\theta))\). Assuming \(M\) is one-to-one:</p>
+    <p style="margin:0">\[\hat{\theta}_n^{\text{MM}} = M^{-1}(\hat{m}_1, \ldots, \hat{m}_d)\]</p>
+</div>
+
+<h3>Example: Gaussian MoM</h3>
+<p>For \(X \sim \mathcal{N}(\mu, \sigma^2)\), we have \(m_1 = \mu\) and \(m_2 = \mu^2 + \sigma^2\). Setting sample moments equal:</p>
+<ul>
+    <li>\(\hat{\mu}^{\text{MM}} = \bar{X}_n\)</li>
+    <li>\(\hat{\sigma}^2{}^{\text{MM}} = \hat{m}_2 - \hat{m}_1^2 = \frac{1}{n}\sum X_i^2 - \bar{X}_n^2\)</li>
+</ul>
+<p>These happen to match the MLE here, but that's not always the case.</p>
+
+<h3>Asymptotic Normality of MoM</h3>
+<p>By the multivariate Delta method, if \(M^{-1}\) is differentiable:</p>
+\[\sqrt{n}(\hat{\theta}_n^{\text{MM}} - \theta^*) \xrightarrow{(d)} \mathcal{N}_d(0,\, \Gamma(\theta^*))\]
+<p>where \(\Gamma = \left[\frac{\partial M^{-1}}{\partial \theta}\right]\Sigma\left[\frac{\partial M^{-1}}{\partial \theta}\right]^\top\) and \(\Sigma\) is the covariance of the sample moments.</p>
+
+<h2>4. MLE vs Method of Moments</h2>
+<table>
+    <tr><th></th><th>MLE</th><th>MoM</th></tr>
+    <tr><td>Consistency</td><td>Yes (regularity conditions)</td><td>Yes</td></tr>
+    <tr><td>Asymptotic efficiency</td><td>Yes (Cramér-Rao)</td><td>Not in general</td></tr>
+    <tr><td>Computation</td><td>Can be hard (non-convex)</td><td>Often easier (solve equations)</td></tr>
+    <tr><td>Misspecification</td><td>May fail badly</td><td>More robust</td></tr>
+</table>
+
+<h2>5. M-Estimation: A Unified Framework</h2>
+<p>M-Estimation unifies MLE, MoM, and many robust estimators under one framework: find the parameter that minimises an average loss over the data.</p>
+<div class="box">
+    <div class="box-label">M-Estimator</div>
+    <p style="margin-bottom:0.4rem">Let \(\rho: E \times \mathcal{M} \to \mathbb{R}\) be a loss function. The population minimiser is:</p>
+    <p style="margin-bottom:0.4rem">\[\mu^* = \arg\min_{\mu \in \mathcal{M}}\, Q(\mu) \quad \text{where } Q(\mu) = \mathbb{E}[\rho(X_1, \mu)]\]</p>
+    <p style="margin-bottom:0.4rem">The M-estimator plugs in the empirical average:</p>
+    <p style="margin:0">\[\hat{\mu}_n = \arg\min_{\mu \in \mathcal{M}}\, Q_n(\mu) \quad \text{where } Q_n(\mu) = \frac{1}{n}\sum_{i=1}^n\rho(X_i, \mu)\]</p>
+</div>
+
+<h3>MLE is an M-Estimator</h3>
+<p>With \(\rho(x, \mu) = -\log L_1(x, \mu)\), \(Q(\mu) = -\mathbb{E}[\log f_\mu(X)]\). The population minimiser is \(\mu^* = \theta^*\) (by KL divergence minimisation). So MLE is an M-estimator with the negative log-likelihood as the loss.</p>
+
+<h3>Examples of Loss Functions</h3>
+<ul>
+    <li>\(\rho(x,\mu) = (x-\mu)^2\): minimiser is \(\mu^* = \mathbb{E}[X]\) — gives the sample mean.</li>
+    <li>\(\rho(x,\mu) = |x-\mu|\): minimiser is \(\mu^* = \text{median}(\mathbb{P})\) — gives the sample median.</li>
+    <li>Check function \(\rho(x,\mu) = C_\alpha(x-\mu)\): gives quantile regression.</li>
+</ul>
+
+<h3>Check Function (Quantile Regression)</h3>
+<p>For \(\alpha \in (0,1)\), the check function is:</p>
+\[C_\alpha(u) = \begin{cases} -(1-\alpha)u & u < 0 \\ \alpha u & u \geq 0 \end{cases}\]
+<p>The population minimiser \(\mu^*\) is the \(\alpha\)-quantile of \(\mathbb{P}\). M-estimation with the check loss gives a robust quantile estimator that doesn't require any distributional assumptions.</p>
+
+<h2>6. Asymptotic Normality of M-Estimators</h2>
+<div class="box">
+    <div class="box-label">Asymptotic Normality</div>
+    <p style="margin-bottom:0.4rem">Under regularity conditions (uniqueness of \(\mu^*\), invertibility of the Hessian \(J(\mu^*)\)):</p>
+    <p style="margin:0">\[\sqrt{n}(\hat{\mu}_n - \mu^*) \xrightarrow{(d)} \mathcal{N}\!\left(0,\, J(\mu^*)^{-1}K(\mu^*)J(\mu^*)^{-1}\right)\]</p>
+    <p style="margin-top:0.5rem">where \(J(\mu) = \mathbb{E}\!\left[\frac{\partial^2\rho(X_1,\mu)}{\partial\mu\partial\mu^\top}\right]\) (Hessian) and \(K(\mu) = \text{Cov}\!\left(\frac{\partial\rho(X_1,\mu)}{\partial\mu}\right)\).</p>
+</div>
+<p>In the log-likelihood case, \(J(\mu) = K(\mu) = I(\theta)\) (Fisher information), so the sandwich reduces to \(I(\theta)^{-1}\) — recovering the MLE's asymptotic variance.</p>
+
+</body>
+</html>

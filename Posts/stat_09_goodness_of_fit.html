@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Goodness of Fit & Empirical Processes — Statistics From Scratch</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+    <style>
+        *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+        body { background: #fff; color: #000; font-family: 'Inter', sans-serif; font-weight: 300; line-height: 1.6; max-width: 720px; margin: 0 auto; padding: 2rem 2rem 6rem; }
+        nav { margin-bottom: 3rem; font-size: 0.75rem; letter-spacing: 0.04em; }
+        nav a { color: #000; text-decoration: none; }
+        nav a:hover { opacity: 0.5; }
+        nav span { margin: 0 0.5rem; opacity: 0.3; }
+        h1 { font-family: 'Cormorant Garamond', serif; font-size: 2.2rem; font-weight: 600; line-height: 1.2; margin-bottom: 0.4rem; }
+        .subtitle { font-family: 'Cormorant Garamond', serif; font-size: 1.1rem; font-style: italic; color: #444; margin-bottom: 3rem; }
+        h2 { font-family: 'Cormorant Garamond', serif; font-size: 1.6rem; font-weight: 600; margin: 3rem 0 1rem; border-bottom: 1px solid #eee; padding-bottom: 0.3rem; }
+        h3 { font-family: 'Inter', sans-serif; font-size: 0.88rem; font-weight: 500; letter-spacing: 0.04em; text-transform: uppercase; margin: 2rem 0 0.6rem; }
+        p { font-size: 0.92rem; line-height: 1.8; margin-bottom: 0.9rem; }
+        ul, ol { font-size: 0.92rem; line-height: 1.8; padding-left: 1.4rem; margin-bottom: 0.9rem; }
+        li { margin-bottom: 0.25rem; }
+        .box { border-left: 2px solid #000; padding: 0.9rem 1.1rem; margin: 1.5rem 0; }
+        .box-label { font-size: 0.7rem; font-weight: 500; letter-spacing: 0.08em; text-transform: uppercase; margin-bottom: 0.4rem; opacity: 0.5; }
+        .figure { margin: 2rem 0; text-align: center; }
+        .caption { font-size: 0.78rem; color: #666; margin-top: 0.5rem; }
+        mjx-container { overflow-x: auto; }
+    </style>
+    <script src="https://cdn.amplitude.com/script/59010539cde9503811b2e9a80e47e0b4.js"></script>
+    <script>window.amplitude.add(window.sessionReplay.plugin({sampleRate: 1}));window.amplitude.init('59010539cde9503811b2e9a80e47e0b4', {"fetchRemoteConfig":true,"autocapture":{"attribution":true,"fileDownloads":true,"formInteractions":true,"pageViews":true,"sessions":true,"elementInteractions":true,"networkTracking":true,"webVitals":true,"frustrationInteractions":true}});</script>
+</head>
+<body>
+
+<nav><a href="../blog.html">Notebooks</a><span>/</span>Goodness of Fit & Empirical Processes</nav>
+
+<h1>Goodness of Fit & Empirical Processes</h1>
+<p class="subtitle">Testing whether data follows a hypothesised distribution — KS test, chi-squared test, and the empirical CDF</p>
+
+<h2>1. Introduction</h2>
+<p>So far we've tested hypotheses about parameters within a fixed distributional family. Goodness-of-fit tests ask a harder question: does the data follow a specific distribution at all? These tests require no parametric assumptions and are nonparametric at heart.</p>
+
+<h2>2. The Empirical CDF</h2>
+<div class="box">
+    <div class="box-label">Empirical CDF</div>
+    <p style="margin-bottom:0.4rem">Given i.i.d. observations \(X_1,\ldots,X_n\), the empirical CDF is:</p>
+    <p style="margin:0">\[F_n(t) = \frac{1}{n}\sum_{i=1}^n \mathbf{1}[X_i \leq t] = \frac{\#\{i : X_i \leq t\}}{n}\]</p>
+</div>
+<p>The empirical CDF is a step function that jumps by \(1/n\) at each observation. It completely characterises the sample and is the natural nonparametric estimator of the true CDF \(F\).</p>
+
+<div class="figure">
+    <svg width="460" height="190" viewBox="0 0 460 190" xmlns="http://www.w3.org/2000/svg">
+        <!-- axes -->
+        <line x1="40" y1="160" x2="440" y2="160" stroke="#000" stroke-width="1"/>
+        <line x1="40" y1="20" x2="40" y2="160" stroke="#000" stroke-width="1"/>
+        <!-- true CDF (smooth) -->
+        <path d="M40,155 Q120,145 180,110 Q240,65 300,35 Q360,18 440,15" fill="none" stroke="#000" stroke-width="1.5" stroke-dasharray="5,3"/>
+        <!-- empirical CDF (step function) -->
+        <line x1="40" y1="155" x2="100" y2="155" stroke="#000" stroke-width="2"/>
+        <line x1="100" y1="155" x2="100" y2="128" stroke="#000" stroke-width="2"/>
+        <line x1="100" y1="128" x2="160" y2="128" stroke="#000" stroke-width="2"/>
+        <line x1="160" y1="128" x2="160" y2="101" stroke="#000" stroke-width="2"/>
+        <line x1="160" y1="101" x2="220" y2="101" stroke="#000" stroke-width="2"/>
+        <line x1="220" y1="101" x2="220" y2="74" stroke="#000" stroke-width="2"/>
+        <line x1="220" y1="74" x2="290" y2="74" stroke="#000" stroke-width="2"/>
+        <line x1="290" y1="74" x2="290" y2="47" stroke="#000" stroke-width="2"/>
+        <line x1="290" y1="47" x2="360" y2="47" stroke="#000" stroke-width="2"/>
+        <line x1="360" y1="47" x2="360" y2="20" stroke="#000" stroke-width="2"/>
+        <line x1="360" y1="20" x2="440" y2="20" stroke="#000" stroke-width="2"/>
+        <!-- labels -->
+        <text x="18" y="23" font-size="9" font-family="Inter,sans-serif" fill="#666">1</text>
+        <text x="28" y="162" font-size="9" font-family="Inter,sans-serif" fill="#666">0</text>
+        <text x="200" y="178" font-size="10" font-family="Inter,sans-serif" fill="#666">t</text>
+        <text x="380" y="30" font-size="10" font-family="Inter,sans-serif" fill="#666">Fₙ(t)</text>
+        <text x="380" y="48" font-size="10" font-family="Inter,sans-serif" fill="#999">F(t)</text>
+    </svg>
+    <div class="caption">Figure 1 — The empirical CDF (solid steps) approximates the true CDF (dashed). The maximum gap is the KS statistic.</div>
+</div>
+
+<h2>3. Glivenko-Cantelli Theorem</h2>
+<div class="box">
+    <div class="box-label">Glivenko-Cantelli (Fundamental Theorem of Statistics)</div>
+    <p style="margin:0">\[\sup_{t \in \mathbb{R}} |F_n(t) - F(t)| \xrightarrow{a.s.} 0 \quad \text{as } n \to \infty\]</p>
+</div>
+<p>The empirical CDF converges to the true CDF uniformly over all \(t\), almost surely. This is a strong result: not just pointwise convergence, but simultaneous convergence everywhere. It justifies using \(F_n\) as a nonparametric estimate of \(F\).</p>
+
+<h2>4. Donsker's Theorem</h2>
+<p>Glivenko-Cantelli gives convergence. Donsker's theorem gives the <em>rate</em> and the limiting distribution of the scaled process:</p>
+<div class="box">
+    <div class="box-label">Donsker's Theorem</div>
+    <p style="margin-bottom:0.4rem">If \(F\) is continuous:</p>
+    <p style="margin:0">\[\sqrt{n}\,\sup_{t \in \mathbb{R}} |F_n(t) - F(t)| \xrightarrow{(d)} \sup_{0 \leq t \leq 1} |\mathbf{B}(t)|\]</p>
+    <p style="margin-top:0.4rem">where \(\mathbf{B}(t)\) is a Brownian bridge on \([0,1]\).</p>
+</div>
+<p>This limiting distribution is distribution-free — it doesn't depend on \(F\). This makes KS-type tests universally applicable.</p>
+
+<h2>5. The Kolmogorov-Smirnov Test</h2>
+<p>Test \(H_0: F = F^0\) (data follows a specific hypothesised CDF \(F^0\)) vs \(H_1: F \neq F^0\).</p>
+<div class="box">
+    <div class="box-label">KS Test Statistic</div>
+    <p style="margin-bottom:0.4rem">\[T_n = \sqrt{n}\,\sup_{t \in \mathbb{R}} |F_n(t) - F^0(t)|\]</p>
+    <p style="margin-bottom:0.4rem">For ordered sample \(X_{(1)} \leq \cdots \leq X_{(n)}\):</p>
+    <p style="margin:0">\[T_n = \sqrt{n}\,\max_{i=1}^n \max\!\left(\left|\frac{i-1}{n} - F^0(X_{(i)})\right|, \left|\frac{i}{n} - F^0(X_{(i)})\right|\right)\]</p>
+</div>
+<p>Reject \(H_0\) at level \(\alpha\) if \(T_n > q_\alpha\) where \(q_\alpha\) is the \((1-\alpha)\)-quantile of the Kolmogorov-Smirnov distribution. The critical values are tabulated or computed from the Brownian bridge distribution.</p>
+<p><strong>Key property:</strong> If \(F^0\) is fully specified (no estimated parameters), the test is exact for continuous \(F^0\). If parameters are estimated from the data, the test is conservative and corrections are needed.</p>
+
+<h2>6. Chi-Squared Goodness-of-Fit Test</h2>
+<p>For discrete or binned data. Observe \(X_1,\ldots,X_n \stackrel{iid}{\sim} \mathbb{P}_\mathbf{p}\) on \(\{a_1,\ldots,a_K\}\). Test \(H_0: \mathbf{p} = \mathbf{p}^0\).</p>
+<div class="box">
+    <div class="box-label">Chi-Squared Test Statistic</div>
+    <p style="margin-bottom:0.4rem">\[T_n = n\sum_{j=1}^K \frac{(\hat{p}_j - p_j^0)^2}{p_j^0} \xrightarrow{(d)} \chi^2_{K-1} \quad \text{under } H_0\]</p>
+    <p style="margin:0">where \(\hat{p}_j = N_j/n\) is the observed proportion and \(N_j = \#\{i: X_i = a_j\}\).</p>
+</div>
+<p>The test has \(K-1\) (not \(K\)) degrees of freedom because the proportions sum to 1, removing one degree of freedom. The chi-squared approximation requires \(n p_j^0 \geq 5\) for all \(j\).</p>
+
+<h3>Categorical Likelihood Ratio Test</h3>
+<p>An alternative to chi-squared for categorical data. The likelihood ratio statistic is:</p>
+\[T_n = 2\!\left(\ell_n(\hat{\mathbf{p}}) - \ell_n(\mathbf{p}^0)\right) = 2\sum_{j=1}^K N_j \log\frac{\hat{p}_j}{p_j^0} \xrightarrow{(d)} \chi^2_{K-1}\]
+<p>Both tests have the same asymptotic distribution. The Pearson chi-squared is simpler; the likelihood ratio test has better power in some settings and connects more directly to information-theoretic ideas.</p>
+
+<h2>7. Comparing the Tests</h2>
+<ul>
+    <li><strong>KS test:</strong> Works for any continuous distribution, fully nonparametric, sensitive to differences in the middle of the distribution.</li>
+    <li><strong>Chi-squared test:</strong> Works for discrete/categorical data or binned continuous data, straightforward to interpret.</li>
+    <li>Both are consistent: as \(n \to \infty\), any fixed alternative will be detected with probability approaching 1.</li>
+    <li>For small samples, the KS test is exact (for fully specified \(F^0\)); the chi-squared approximation breaks down when cell counts are small.</li>
+</ul>
+
+</body>
+</html>

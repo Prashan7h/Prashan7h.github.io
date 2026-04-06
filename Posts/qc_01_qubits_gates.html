@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Qubits, Gates & the Language of Quantum — Quantum Computing</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+    <style>
+        *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+        body { background: #fff; color: #000; font-family: 'Inter', sans-serif; font-weight: 300; line-height: 1.6; max-width: 740px; margin: 0 auto; padding: 2rem 2rem 8rem; }
+        nav { margin-bottom: 3rem; font-size: 0.75rem; letter-spacing: 0.04em; }
+        nav a { color: #000; text-decoration: none; }
+        nav a:hover { opacity: 0.5; }
+        nav span { margin: 0 0.5rem; opacity: 0.3; }
+        h1 { font-family: 'Cormorant Garamond', serif; font-size: 2.3rem; font-weight: 600; line-height: 1.2; margin-bottom: 0.4rem; }
+        .subtitle { font-family: 'Cormorant Garamond', serif; font-size: 1.1rem; font-style: italic; color: #444; margin-bottom: 0.6rem; }
+        .meta { font-size: 0.75rem; color: #999; letter-spacing: 0.03em; margin-bottom: 3rem; }
+        h2 { font-family: 'Cormorant Garamond', serif; font-size: 1.65rem; font-weight: 600; margin: 3.5rem 0 1rem; border-bottom: 1px solid #eee; padding-bottom: 0.3rem; }
+        h3 { font-family: 'Inter', sans-serif; font-size: 0.88rem; font-weight: 500; letter-spacing: 0.04em; text-transform: uppercase; margin: 2.2rem 0 0.7rem; }
+        p { font-size: 0.93rem; line-height: 1.85; margin-bottom: 1rem; }
+        ul, ol { font-size: 0.93rem; line-height: 1.85; padding-left: 1.5rem; margin-bottom: 1rem; }
+        li { margin-bottom: 0.3rem; }
+        strong { font-weight: 500; }
+        /* Boxes */
+        .box { border-left: 2px solid #000; padding: 0.9rem 1.2rem; margin: 1.8rem 0; }
+        .box-label { font-size: 0.68rem; font-weight: 500; letter-spacing: 0.1em; text-transform: uppercase; margin-bottom: 0.5rem; opacity: 0.45; }
+        .insight { border-left: 2px solid #000; border-right: 2px solid #000; padding: 0.9rem 1.2rem; margin: 1.8rem 0; background: #f9f9f9; }
+        .insight-label { font-size: 0.68rem; font-weight: 500; letter-spacing: 0.1em; text-transform: uppercase; margin-bottom: 0.5rem; opacity: 0.5; }
+        /* Figures */
+        .figure { margin: 2.5rem 0; display: flex; flex-direction: column; align-items: center; }
+        .caption { font-size: 0.78rem; color: #555; margin-top: 0.8rem; font-style: italic; line-height: 1.6; max-width: 520px; text-align: center; }
+        /* Two-column layout for gate matrices */
+        .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin: 1.5rem 0; align-items: start; }
+        /* Gate table */
+        table { width: 100%; border-collapse: collapse; font-size: 0.86rem; margin: 1.5rem 0; }
+        th { font-weight: 500; border-bottom: 1px solid #000; padding: 0.5rem 0.8rem; text-align: left; }
+        td { padding: 0.5rem 0.8rem; border-bottom: 1px solid #eee; vertical-align: top; }
+        /* Divider */
+        .section-rule { border: none; border-top: 1px solid #eee; margin: 3rem 0; }
+        mjx-container { overflow-x: auto; }
+        @media (max-width: 600px) { .two-col { grid-template-columns: 1fr; } }
+    </style>
+</head>
+<body>
+
+<nav><a href="../blog.html">Notebooks</a><span>/</span>Quantum Computing<span>/</span>Lecture 1</nav>
+
+<h1>Qubits, Gates & the Language of Quantum</h1>
+<p class="subtitle">Classical bits, the matrix formalism, Landauer's principle, and the geometry of a qubit's world</p>
+
+
+<!-- ═══════════════════════════════════════════ -->
+<h2>1. What Is a Bit — and Why It Matters</h2>
+
+<p>Information cannot be stored in a system that is always the same. A sky that is perpetually blue tells you nothing; a coin that always shows heads cannot encode a message. The minimal requirement for encoding any information is that the system has <strong>at least two distinguishable states</strong>. We call such a system a <em>bit</em>.</p>
+
+<p>Familiar examples: a coin (heads / tails), a switch (on / off), a magnetic domain (polarised up / down). The key insight from information theory is quantitative:</p>
+
+\[\text{If } n \text{ bits are conveyed, the receiver can distinguish between } N = 2^n \text{ possible situations.}\]
+
+<p>Conversely, to encode a message that selects one of \(N\) equally likely options, you need \(\log_2 N\) bits. Eight bits (one byte) can represent \(2^8 = 256\) distinct values — enough for every character on an English keyboard.</p>
+
+<p>Classical computers operate by <strong>Boolean information processing</strong>: manipulating strings of bits according to logical rules. The question driving this course is: what happens when we miniaturise a bit down to a single electron spin or a photon's polarisation? The answer is quantum mechanics, and it changes everything.</p>
+
+<!-- ═══════════════════════════════════════════ -->
+<h2>2. Bits as Vectors, Gates as Matrices</h2>
+
+<p>To describe gates systematically — especially once we move to qubits — we need a language that handles both single- and multi-bit operations. The right language is <strong>linear algebra</strong>. We represent each bit state as a column vector:</p>
+
+\[0 \equiv \begin{bmatrix}1\\0\end{bmatrix}, \qquad 1 \equiv \begin{bmatrix}0\\1\end{bmatrix}\]
+
+<p>This looks wasteful — two numbers to represent one bit — but the payoff is immediate: <strong>logic gates become matrix multiplications</strong>. Whatever a gate does to a bit, it can be written as a matrix acting on the column vector.</p>
+
+<h3>Single-Bit Gates</h3>
+
+<p>There are only two operations you can perform on a single bit: do nothing (Identity), or flip it (NOT). In matrix form:</p>
+
+<div class="two-col">
+    <div class="box" style="text-align:center">
+        <div class="box-label">Identity Gate I</div>
+        \[I = \begin{bmatrix}1 & 0\\0 & 1\end{bmatrix}\]
+        <p style="margin:0.5rem 0 0; font-size:0.85rem">\(I|0\rangle = |0\rangle,\quad I|1\rangle = |1\rangle\)</p>
+    </div>
+    <div class="box" style="text-align:center">
+        <div class="box-label">NOT Gate X (also written X)</div>
+        \[\text{NOT} = X = \begin{bmatrix}0 & 1\\1 & 0\end{bmatrix}\]
+        <p style="margin:0.5rem 0 0; font-size:0.85rem">\(X|0\rangle = |1\rangle,\quad X|1\rangle = |0\rangle\)</p>
+    </div>
+</div>
+
+<p>Verify: \(X \begin{bmatrix}1\\0\end{bmatrix} = \begin{bmatrix}0\\1\end{bmatrix}\). The matrix flips the two components, which is exactly a bit-flip. We use the name \(X\) because in quantum information this gate is also called the Pauli-X operator — more on that later.</p>
+
+<h3>Multi-Bit States: Tensor Products</h3>
+
+<p>For two bits, there are four possible states: 00, 01, 10, 11. We represent these as 4-component column vectors via the <strong>tensor product</strong> (also called the Kronecker product, denoted \(\otimes\)):</p>
+
+\[00 \equiv \begin{bmatrix}1\\0\end{bmatrix}\otimes\begin{bmatrix}1\\0\end{bmatrix} = \begin{bmatrix}1\\0\\0\\0\end{bmatrix}, \quad 01 \equiv \begin{bmatrix}0\\1\\0\\0\end{bmatrix}, \quad 10 \equiv \begin{bmatrix}0\\0\\1\\0\end{bmatrix}, \quad 11 \equiv \begin{bmatrix}0\\0\\0\\1\end{bmatrix}\]
+
+<p>In general, \(n\) bits require a \(2^n\)-component column vector. A six-bit string like 001011 is the tensor product of all six individual vectors. This exponential growth in the classical description is one reason quantum computing is powerful — a qubit system of \(n\) qubits also lives in a \(2^n\)-dimensional space, but the quantum state can encode superpositions of <em>all</em> \(2^n\) basis states simultaneously.</p>
+
+<h3>The CNOT Gate: A Two-Bit Gate</h3>
+
+<p>The most important two-bit gate is the <strong>Controlled-NOT (CNOT)</strong>, also called CX. It flips the <em>target</em> bit if and only if the <em>control</em> bit is 1. The truth table and matrix:</p>
+
+<table>
+    <tr><th>Input (control, target)</th><th>Output (control, target)</th></tr>
+    <tr><td>00</td><td>00</td></tr>
+    <tr><td>01</td><td>01</td></tr>
+    <tr><td>10</td><td>11 ← target flipped</td></tr>
+    <tr><td>11</td><td>10 ← target flipped</td></tr>
+</table>
+
+\[\text{CNOT} = \begin{bmatrix}1&0&0&0\\0&1&0&0\\0&0&0&1\\0&0&1&0\end{bmatrix}\]
+
+<p>This is the quantum analogue of XOR. Later we will see that CNOT is the key gate for generating <em>entanglement</em> between qubits — one of the genuinely non-classical resources of quantum computing.</p>
+
+<div class="figure">
+    <!-- CNOT Circuit Diagram -->
+    <svg viewBox="0 0 340 110" width="340" height="110" xmlns="http://www.w3.org/2000/svg">
+        <!-- Labels -->
+        <text x="10" y="42" font-size="12" font-family="serif" fill="#000">q₁ (control)</text>
+        <text x="10" y="82" font-size="12" font-family="serif" fill="#000">q₂ (target)</text>
+        <!-- Wires -->
+        <line x1="118" y1="38" x2="320" y2="38" stroke="#000" stroke-width="1.5"/>
+        <line x1="118" y1="78" x2="320" y2="78" stroke="#000" stroke-width="1.5"/>
+        <!-- Vertical connector -->
+        <line x1="210" y1="38" x2="210" y2="65" stroke="#000" stroke-width="1.5"/>
+        <!-- Control dot -->
+        <circle cx="210" cy="38" r="6" fill="#000"/>
+        <!-- Target: circle with plus -->
+        <circle cx="210" cy="78" r="13" fill="#fff" stroke="#000" stroke-width="1.5"/>
+        <line x1="210" y1="65" x2="210" y2="91" stroke="#000" stroke-width="1.5"/>
+        <line x1="197" y1="78" x2="223" y2="78" stroke="#000" stroke-width="1.5"/>
+        <!-- "CNOT" label above -->
+        <text x="198" y="14" font-size="10" font-family="Inter, sans-serif" fill="#666" text-anchor="middle">CNOT</text>
+        <rect x="175" y="18" width="70" height="2" fill="#eee"/>
+    </svg>
+    <div class="caption">Figure 1 — CNOT circuit: the filled dot marks the control qubit. The ⊕ (circle-plus) symbol marks the target, which flips only when the control is |1⟩. The vertical line is the gate connector.</div>
+</div>
+
+<!-- ═══════════════════════════════════════════ -->
+<h2>3. The Physics of Forgetting: Landauer's Principle</h2>
+
+<p>Here is a subtle but profound question: does computation require energy? In principle, gates like NOT and CNOT don't need to dissipate energy — they are reversible operations (you can always undo them). Billiard-ball computers, where elastic collisions of balls implement logic gates, illustrate that reversible computation can in principle be frictionless.</p>
+
+<p>But there is one operation that <em>cannot</em> be made reversible: <strong>erasing a bit</strong>. Erasing means taking a bit from some unknown state (0 or 1) and resetting it unconditionally to 0. This is irreversible — knowing the output (always 0) tells you nothing about the input.</p>
+
+<div class="box">
+    <div class="box-label">Landauer's Principle (1961)</div>
+    <p style="margin:0">Erasing one bit of information at temperature \(T\) necessarily dissipates at least</p>
+    \[E_{\min} = k_B T \ln 2\]
+    <p style="margin-top:0.5rem; margin-bottom:0">as heat into the environment, where \(k_B\) is Boltzmann's constant.</p>
+</div>
+
+<p>This is not an engineering limitation — it is a fundamental thermodynamic fact. The argument: a bit can be in the left half (state 0) or right half (state 1) of a one-molecule gas cylinder. Erasing means compressing the gas from volume \(V\) to \(V/2\), regardless of which half it was in. An isothermal compression from \(V\) to \(V/2\) at temperature \(T\) releases exactly \(k_B T \ln 2\) as heat:</p>
+
+\[W = \int_{V}^{V/2} P\,dV = k_B T \ln\frac{V/2}{V} = -k_B T \ln 2\]
+
+<p>The magnitude \(k_B T \ln 2\) is the minimum energy cost of bit erasure. At room temperature (\(T \approx 300\) K), this is around \(3 \times 10^{-21}\) joules — tiny, but nonzero.</p>
+
+<div class="insight">
+    <div class="insight-label">Why This Matters for Computing</div>
+    <p style="margin:0">As transistors shrink toward atomic scales, the energy cost of bit erasure becomes a hard physical limit. This is why reversible and quantum computation, which avoid unnecessary erasure, are not just elegant — they may be thermodynamically necessary at the nanoscale. It also resolves Maxwell's Demon: the demon must erase its memory of each measurement, paying the Landauer cost and preserving the second law.</p>
+</div>
+
+<!-- ═══════════════════════════════════════════ -->
+<h2>4. Enter the Qubit: The Stern-Gerlach Experiment</h2>
+
+<p>What happens when we push a bit down to the smallest possible physical system — a single electron spin, or a single photon? The object stops behaving like a classical bit and becomes a <strong>qubit</strong> (quantum bit). To understand why, we need to look at how spins actually behave in experiments.</p>
+
+<p>A spin-1/2 particle (like an electron or a silver atom) has a tiny magnetic moment — it acts like a miniature bar magnet. Classically, you'd expect this magnetic moment to point in some arbitrary direction, giving a continuous range of values when measured. The <strong>Stern-Gerlach experiment</strong> (1922) tests exactly this.</p>
+
+<div class="figure">
+    <!-- Stern-Gerlach SVG -->
+    <svg viewBox="0 0 480 200" width="100%" style="max-width:480px" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+            <marker id="arr" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+                <path d="M0,0 L7,3 L0,6 Z" fill="#000"/>
+            </marker>
+            <marker id="arr-gray" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+                <path d="M0,0 L7,3 L0,6 Z" fill="#aaa"/>
+            </marker>
+        </defs>
+        <!-- Source label -->
+        <rect x="5" y="85" width="55" height="30" fill="none" stroke="#000" stroke-width="1" rx="2"/>
+        <text x="32" y="104" font-size="9" font-family="Inter, sans-serif" text-anchor="middle" fill="#000">Source</text>
+        <!-- Beam entering -->
+        <line x1="60" y1="100" x2="110" y2="100" stroke="#000" stroke-width="1.5" marker-end="url(#arr)"/>
+        <!-- Magnet poles -->
+        <rect x="120" y="30" width="90" height="55" fill="#555" rx="2"/>
+        <text x="165" y="64" font-size="12" font-family="serif" fill="#fff" text-anchor="middle" font-weight="bold">N</text>
+        <rect x="120" y="115" width="90" height="55" fill="#333" rx="2"/>
+        <text x="165" y="148" font-size="12" font-family="serif" fill="#fff" text-anchor="middle" font-weight="bold">S</text>
+        <!-- Gradient field indicator -->
+        <text x="165" y="22" font-size="9" font-family="Inter, sans-serif" text-anchor="middle" fill="#666">inhomogeneous B field</text>
+        <text x="165" y="178" font-size="9" font-family="Inter, sans-serif" text-anchor="middle" fill="#666">(gradient along z)</text>
+        <!-- Classical expectation: smear (dashed fan) -->
+        <path d="M 210,100 L 340,50 L 340,150 Z" fill="#000" opacity="0.04" stroke="none"/>
+        <line x1="210" y1="100" x2="340" y2="55" stroke="#bbb" stroke-width="1" stroke-dasharray="4,3" marker-end="url(#arr-gray)"/>
+        <line x1="210" y1="100" x2="340" y2="100" stroke="#bbb" stroke-width="1" stroke-dasharray="4,3" marker-end="url(#arr-gray)"/>
+        <line x1="210" y1="100" x2="340" y2="145" stroke="#bbb" stroke-width="1" stroke-dasharray="4,3" marker-end="url(#arr-gray)"/>
+        <text x="346" y="104" font-size="8" font-family="Inter, sans-serif" fill="#aaa">classical</text>
+        <text x="346" y="113" font-size="8" font-family="Inter, sans-serif" fill="#aaa">smear</text>
+        <!-- Quantum result: only two beams -->
+        <line x1="210" y1="100" x2="390" y2="48" stroke="#000" stroke-width="2" marker-end="url(#arr)"/>
+        <line x1="210" y1="100" x2="390" y2="152" stroke="#000" stroke-width="2" marker-end="url(#arr)"/>
+        <!-- Screen -->
+        <line x1="396" y1="20" x2="396" y2="180" stroke="#000" stroke-width="2"/>
+        <!-- Dots on screen -->
+        <circle cx="396" cy="48" r="5" fill="#000"/>
+        <circle cx="396" cy="152" r="5" fill="#000"/>
+        <!-- Labels -->
+        <text x="406" y="52" font-size="12" font-family="serif" fill="#000">+μ<tspan font-size="8" dy="3">B</tspan></text>
+        <text x="406" y="156" font-size="12" font-family="serif" fill="#000">−μ<tspan font-size="8" dy="3">B</tspan></text>
+    </svg>
+    <div class="caption">Figure 2 — The Stern-Gerlach experiment. A beam of spin-1/2 particles passes through an inhomogeneous magnetic field. Classical physics predicts a continuous smear of deflections (grey dashes). The experiment shows only two discrete spots: spin "up" (+μ<sub>B</sub>) and spin "down" (−μ<sub>B</sub>). This is quantisation.</div>
+</div>
+
+<p>The experiment reveals two shattering results:</p>
+
+<ol>
+    <li><strong>Quantisation:</strong> No matter what direction you orient the apparatus, you always get exactly two outcomes, never a continuous spread. The magnetic moment is quantised to \(\pm\mu_B\).</li>
+    <li><strong>Measurement disturbs the state:</strong> If a spin exits the first apparatus pointing in the \(+z\) direction and you then measure it with a second apparatus tilted at angle \(\theta\) to \(z\), the spin <em>jumps</em> to either \(+\theta\) or \(-\theta\). Measuring it has changed it. This is impossible for a classical bit.</li>
+</ol>
+
+<p>These facts mean the spin cannot be described as a classical bit. It occupies a richer, inherently quantum space of states — and that space is exactly what the qubit formalism captures.</p>
+
+<!-- ═══════════════════════════════════════════ -->
+<h2>5. Dirac Notation: The Language of Quantum Mechanics</h2>
+
+<p>Paul Dirac devised a compact, elegant notation for quantum states that is now universal in the field. The two key objects are:</p>
+
+<ul>
+    <li>A <strong>ket</strong> \(|\psi\rangle\) — a column vector representing a quantum state.</li>
+    <li>A <strong>bra</strong> \(\langle\psi|\) — the corresponding row vector, with all complex entries conjugated: if \(|\psi\rangle = \begin{bmatrix}\alpha\\\beta\end{bmatrix}\) then \(\langle\psi| = [\alpha^* \;\; \beta^*]\).</li>
+</ul>
+
+<p>For a qubit, the two computational basis states are:</p>
+
+\[|0\rangle \equiv \begin{bmatrix}1\\0\end{bmatrix}, \qquad |1\rangle \equiv \begin{bmatrix}0\\1\end{bmatrix}\]
+
+<p>These are the quantum analogues of classical 0 and 1. The reason we call them a "basis" is that <em>any</em> qubit state can be written as a linear combination of them.</p>
+
+<h3>Inner Products and Orthonormality</h3>
+
+<p>The <strong>inner product</strong> of two kets \(|\chi\rangle\) and \(|\xi\rangle\) is \(\langle\chi|\xi\rangle\) — multiply the bra of the first by the ket of the second to get a number (possibly complex). The basis states satisfy:</p>
+
+\[\langle 0|0\rangle = 1, \quad \langle 1|1\rangle = 1, \quad \langle 0|1\rangle = 0, \quad \langle 1|0\rangle = 0\]
+
+<p>They are <strong>orthonormal</strong> — normalised (inner product with themselves = 1) and orthogonal to each other (inner product between them = 0). A state is normalised when \(\langle\psi|\psi\rangle = 1\), which requires \(|\alpha|^2 + |\beta|^2 = 1\).</p>
+
+<div class="box">
+    <div class="box-label">Key Notation Summary</div>
+    <ul style="margin:0">
+        <li>\(|\psi\rangle\) — ket (column vector, state of system)</li>
+        <li>\(\langle\psi|\) — bra (row vector, complex conjugate of ket)</li>
+        <li>\(\langle\chi|\xi\rangle\) — braket (inner product, a number)</li>
+        <li>\(|\chi\rangle\langle\xi|\) — outer product (a matrix, represents an operator)</li>
+    </ul>
+</div>
+
+<!-- ═══════════════════════════════════════════ -->
+<h2>6. The General Qubit State & The Born Rule</h2>
+
+<p>From the Stern-Gerlach results, we know a qubit can be in any of infinitely many states — one for each direction on the unit sphere. Let the state be parameterised by two angles \(\theta \in [0, \pi]\) and \(\phi \in [0, 2\pi)\). The <strong>state vector</strong> of a general qubit is:</p>
+
+<div class="box">
+    <div class="box-label">General Qubit State</div>
+    \[|\psi(\theta,\phi)\rangle = \cos\frac{\theta}{2}\,|0\rangle + e^{i\phi}\sin\frac{\theta}{2}\,|1\rangle = \begin{bmatrix}\cos\frac{\theta}{2}\\[4pt] e^{i\phi}\sin\frac{\theta}{2}\end{bmatrix}\]
+    <p style="margin-top:0.5rem; margin-bottom:0">where \(\alpha = \cos\frac{\theta}{2}\) and \(\beta = e^{i\phi}\sin\frac{\theta}{2}\) are complex amplitudes satisfying \(|\alpha|^2 + |\beta|^2 = 1\).</p>
+</div>
+
+<p>This is the most important equation in this lecture. A few things to notice:</p>
+<ul>
+    <li>When \(\theta = 0\): the state is \(|0\rangle\) — spin "up" along \(z\). When \(\theta = \pi\): the state is \(|1\rangle\) — spin "down".</li>
+    <li>When \(\theta = \pi/2\): \(|\alpha|^2 = |\beta|^2 = 1/2\) — equal probability of measuring either outcome.</li>
+    <li>The angle \(\phi\) is the <strong>relative phase</strong> between the two components. It has no classical analogue and it is the source of quantum interference.</li>
+    <li>An overall phase factor \(e^{i\delta}|\psi\rangle\) is physically indistinguishable from \(|\psi\rangle\), but a <em>relative</em> phase between \(|0\rangle\) and \(|1\rangle\) is measurable.</li>
+</ul>
+
+<h3>The Born Rule</h3>
+
+<p>How do we extract probabilities from this state vector? The <strong>Born rule</strong> is the fundamental postulate connecting quantum states to measurable outcomes:</p>
+
+<div class="box">
+    <div class="box-label">Born Rule</div>
+    <p style="margin-bottom:0.4rem">The probability that a system in state \(|\chi\rangle\) is found in state \(|\xi\rangle\) upon measurement is:</p>
+    \[P_{|\chi\rangle \to |\xi\rangle} = |\langle\chi|\xi\rangle|^2\]
+</div>
+
+<p>This immediately reproduces the Stern-Gerlach result: a spin prepared at angle \(\theta\) to the \(z\)-axis, when measured along \(z\), jumps to \(|0\rangle\) with probability \(\cos^2(\theta/2)\) and to \(|1\rangle\) with probability \(\sin^2(\theta/2)\). The probabilities sum to 1 because the state is normalised.</p>
+
+<div class="insight">
+    <div class="insight-label">Superposition ≠ Classical Uncertainty</div>
+    <p style="margin:0">The state \(|+\rangle = \frac{1}{\sqrt{2}}(|0\rangle + |1\rangle)\) is often described as "50% chance of 0, 50% chance of 1." But this is misleading. A classical coin that lands heads with probability 1/2 has a definite state — we just don't know it. The qubit in \(|+\rangle\) genuinely has no definite value of spin-z before measurement. The difference is observable: measure the qubit along the \(x\)-axis instead, and you get a definite result of \(+1\) every time (since \(|+\rangle\) is the \(x\)-eigenstate). Classical uncertainty gives a different prediction. Quantum superposition is a fundamentally different ontological state — not ignorance, but genuine indefiniteness.</p>
+</div>
+
+<h3>Why Complex Numbers Are Necessary</h3>
+
+<p>Could we get away with real amplitudes? In principle the probabilities only care about \(|\alpha|^2\) and \(|\beta|^2\), so real numbers seem sufficient. The reason we need complex numbers is that quantum gates act on states by <strong>matrix multiplication</strong>. If we want the modulus and phase of the amplitudes to change under gate operations in a linear (hence tractable) way, we need complex numbers. Restricting to reals gives highly non-linear dependences — the algebra breaks.</p>
+
+<!-- ═══════════════════════════════════════════ -->
+<h2>7. Hilbert Space and Completeness</h2>
+
+<p>The general qubit state can always be written as:</p>
+
+\[|\psi(\theta,\phi)\rangle = \cos\frac{\theta}{2}|0\rangle + e^{i\phi}\sin\frac{\theta}{2}|1\rangle = |0\rangle\langle 0|\psi\rangle + |1\rangle\langle 1|\psi\rangle\]
+
+<p>This means \(|0\rangle\) and \(|1\rangle\) form a <strong>complete basis</strong>: any qubit state can be expressed as a linear combination of them. Extracting the coefficient of each basis state is done by the inner product: the coefficient of \(|0\rangle\) is \(\langle 0|\psi\rangle = \cos(\theta/2)\).</p>
+
+<p>The operator \(|0\rangle\langle 0| + |1\rangle\langle 1|\) acting on any state returns that state unchanged. This is the <strong>completeness relation</strong>:</p>
+
+\[|0\rangle\langle 0| + |1\rangle\langle 1| = \mathbb{I}\]
+
+<p>The space of all normalised qubit states — 2-component complex column vectors with unit norm — is called the <strong>Hilbert space</strong> of the qubit, denoted \(\mathcal{H} \cong \mathbb{C}^2\). Any two linearly independent states (states with non-zero inner product with each other) span this space and can serve as a basis. The choice of basis is just a choice of measurement axis.</p>
+
+<p>The qubit has a <em>pure state</em> description: the state vector \(|\psi\rangle\) gives a complete description when the system is in a definite quantum state. When the state is uncertain (a statistical mixture), one needs the <em>density operator</em> \(\rho = |\psi\rangle\langle\psi|\) — a generalisation introduced in later lectures.</p>
+
+<!-- ═══════════════════════════════════════════ -->
+<h2>8. The Bloch Sphere</h2>
+
+<p>The two angles \(\theta\) and \(\phi\) in the state vector define a point on the surface of a unit sphere. This is the <strong>Bloch sphere</strong> — a complete geometric picture of all pure qubit states. Every point on the surface corresponds to a distinct qubit state; no two points correspond to the same physical state (up to the irrelevant global phase).</p>
+
+<div class="figure">
+    <!-- Bloch Sphere SVG -->
+    <svg viewBox="0 0 360 370" width="100%" style="max-width:380px" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+            <marker id="ax" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+                <path d="M0,0 L7,3 L0,6 Z" fill="#000"/>
+            </marker>
+        </defs>
+        <!-- Sphere fill -->
+        <circle cx="175" cy="185" r="115" fill="#f7f7f7" stroke="#000" stroke-width="1.5"/>
+
+        <!-- Back half of equatorial ellipse (dashed, goes over top) -->
+        <path d="M 60,185 A 115,36 0 0,0 290,185" fill="none" stroke="#888" stroke-width="1" stroke-dasharray="5,3"/>
+        <!-- Front half of equatorial ellipse (solid, goes under bottom) -->
+        <path d="M 60,185 A 115,36 0 0,1 290,185" fill="none" stroke="#888" stroke-width="1"/>
+
+        <!-- Back half meridian (xz plane, going away from viewer, dashed) -->
+        <path d="M 175,70 A 115,115 0 0,0 175,300" fill="none" stroke="#ccc" stroke-width="0.8" stroke-dasharray="4,3"/>
+
+        <!-- Z-axis -->
+        <line x1="175" y1="62" x2="175" y2="308" stroke="#000" stroke-width="1.3" stroke-dasharray="none"/>
+        <polygon points="175,52 170,68 180,68" fill="#000"/>
+        <polygon points="175,318 170,302 180,302" fill="#000"/>
+
+        <!-- X-axis -->
+        <line x1="50" y1="185" x2="305" y2="185" stroke="#000" stroke-width="1.3"/>
+        <polygon points="315,185 299,180 299,190" fill="#000"/>
+        <polygon points="40,185 56,180 56,190" fill="#000"/>
+
+        <!-- Y-axis (oblique, going into page → lower-right) -->
+        <line x1="175" y1="185" x2="230" y2="227" stroke="#000" stroke-width="1.3" stroke-dasharray="5,3"/>
+        <polygon points="236,232 222,224 232,216" fill="#000"/>
+        <text x="242" y="240" font-size="12" font-family="serif" fill="#000" font-style="italic">y</text>
+
+        <!-- Axis labels -->
+        <text x="182" y="46" font-size="13" font-family="serif" fill="#000" font-weight="bold">z</text>
+        <text x="320" y="190" font-size="13" font-family="serif" fill="#000" font-weight="bold">x</text>
+
+        <!-- State vector |0⟩ at north pole -->
+        <circle cx="175" cy="70" r="4" fill="#000"/>
+        <text x="185" y="66" font-size="14" font-family="serif" fill="#000">|0⟩</text>
+
+        <!-- State vector |1⟩ at south pole -->
+        <circle cx="175" cy="300" r="4" fill="#000"/>
+        <text x="185" y="316" font-size="14" font-family="serif" fill="#000">|1⟩</text>
+
+        <!-- |+⟩ at right equator -->
+        <circle cx="290" cy="185" r="4" fill="#000"/>
+        <text x="298" y="180" font-size="13" font-family="serif" fill="#000">|+⟩</text>
+
+        <!-- |−⟩ at left equator -->
+        <circle cx="60" cy="185" r="4" fill="#000"/>
+        <text x="15" y="180" font-size="13" font-family="serif" fill="#000">|−⟩</text>
+
+        <!-- General state vector |ψ⟩ at θ≈45°, φ=0 (in xz plane) -->
+        <!-- Endpoint: (175 + 115*sin(45°), 185 - 115*cos(45°)) = (175+81, 185-81) = (256, 104) -->
+        <line x1="175" y1="185" x2="252" y2="108" stroke="#000" stroke-width="2.2"/>
+        <polygon points="256,102 247,114 258,117" fill="#000"/>
+        <text x="262" y="100" font-size="14" font-family="serif" fill="#000">|ψ(θ,φ)⟩</text>
+
+        <!-- θ arc from z-axis to state vector (at radius 50) -->
+        <!-- z-direction point at r=50: (175, 185-50)=(175,135) -->
+        <!-- state direction at r=50: (175+50*sin45, 185-50*cos45) = (175+35, 185-35) = (210, 150) -->
+        <path d="M 175,135 A 50,50 0 0,1 210,150" fill="none" stroke="#000" stroke-width="1.1"/>
+        <text x="190" y="134" font-size="13" font-family="serif" fill="#000" font-style="italic">θ</text>
+
+        <!-- φ indicator — small arc in equatorial plane from x-axis -->
+        <!-- Since φ=0, state is in xz plane: just show φ=0 label near x-axis -->
+        <text x="220" y="200" font-size="12" font-family="serif" fill="#888" font-style="italic">φ</text>
+        <path d="M 210,185 A 35,11 0 0,0 218,196" fill="none" stroke="#888" stroke-width="1" stroke-dasharray="3,2"/>
+
+        <!-- Pole labels: north = |0⟩, south = |1⟩ are classical states -->
+        <!-- Equatorial ring annotation -->
+        <text x="80" y="238" font-size="9" font-family="Inter, sans-serif" fill="#999">superposition states</text>
+        <path d="M 115,233 Q 90,215 72,200" fill="none" stroke="#ccc" stroke-width="0.8" stroke-dasharray="3,2"/>
+    </svg>
+    <div class="caption">Figure 3 — The Bloch sphere. Every pure qubit state corresponds to a unique point on the surface. The poles |0⟩ and |1⟩ are the classical basis states. States on the equator are equal superpositions with different phases. The angle θ sets the measurement probabilities; φ sets the relative phase. Rotations on the Bloch sphere correspond to quantum gate operations.</div>
+</div>
+
+<p>Key geometric facts to remember:</p>
+<ul>
+    <li><strong>Poles</strong> \(|0\rangle\) (north) and \(|1\rangle\) (south): these are the classical bit values. They are antipodal — maximum distance apart, zero inner product.</li>
+    <li><strong>Equator</strong> (\(\theta = \pi/2\)): equal-probability superpositions. The state \(|+\rangle = \frac{1}{\sqrt{2}}(|0\rangle + |1\rangle)\) is at the right of the equator (\(\phi=0\)), and \(|-\rangle = \frac{1}{\sqrt{2}}(|0\rangle - |1\rangle)\) is at the left (\(\phi=\pi\)).</li>
+    <li><strong>Antipodal points</strong> on the Bloch sphere are orthogonal states: \(\langle 0|1\rangle = 0\), \(\langle +|-\rangle = 0\), and so on.</li>
+    <li><strong>Quantum gates are rotations</strong> on the Bloch sphere. This is the geometric content of unitary operations.</li>
+</ul>
+
+<!-- ═══════════════════════════════════════════ -->
+<h2>9. Fidelity: How Close Are Two Quantum States?</h2>
+
+<p>Suppose you try to prepare the state \(|\psi\rangle\) but end up with \(|\phi\rangle\) instead (due to imperfections in your lab). How well did you do? The natural measure is the <strong>fidelity</strong>:</p>
+
+<div class="box">
+    <div class="box-label">Fidelity</div>
+    \[F(|\phi\rangle, |\psi\rangle) = |\langle\phi|\psi\rangle|^2\]
+    <p style="margin-top:0.5rem; margin-bottom:0">Ranges from 0 (orthogonal states, no overlap) to 1 (identical states, perfect preparation).</p>
+</div>
+
+<p>Fidelity equals the probability that the prepared state \(|\phi\rangle\) would pass a test for being \(|\psi\rangle\) — i.e., the probability it gives the right answer when measured in the \(\{|\psi\rangle, |\psi^\perp\rangle\}\) basis. It is the standard figure of merit for state preparation in quantum experiments and quantum error correction.</p>
+
+<p>An important limitation: if you are given an unknown qubit state and can only measure in a fixed basis (say the Z basis \(\{|0\rangle, |1\rangle\}\)), you cannot fully reconstruct it from one measurement. Averaged over all possible qubit states, the fidelity of single-measurement reconstruction is only \(2/3\). Full reconstruction — <em>quantum state tomography</em> — requires measurements in multiple bases.</p>
+
+<!-- ═══════════════════════════════════════════ -->
+<h2>10. The Hadamard Gate: Creating Superposition</h2>
+
+<p>The Hadamard gate \(H\) is arguably the most important single-qubit gate in quantum computing. It maps the computational basis states \(\{|0\rangle, |1\rangle\}\) to the equal superposition states \(\{|+\rangle, |-\rangle\}\):</p>
+
+<div class="box">
+    <div class="box-label">Hadamard Gate</div>
+    \[H|0\rangle = \frac{1}{\sqrt{2}}(|0\rangle + |1\rangle) = |+\rangle\]
+    \[H|1\rangle = \frac{1}{\sqrt{2}}(|0\rangle - |1\rangle) = |-\rangle\]
+    \[H = \frac{1}{\sqrt{2}}\begin{bmatrix}1 & 1\\1 & -1\end{bmatrix}\]
+</div>
+
+<p>The matrix form shows that \(H\) takes a bit in a definite state and creates a perfect quantum superposition. Applied to all \(n\) qubits of a register simultaneously, Hadamard creates a uniform superposition of all \(2^n\) computational basis states — this is the starting point for Grover's search algorithm and Deutsch-Jozsa.</p>
+
+<p>A crucial property: \(H^2 = \mathbb{I}\). The Hadamard is its own inverse — applying it twice returns you to the original state. Geometrically, \(H\) corresponds to a \(\pi\) rotation about the axis midway between \(x\) and \(z\) on the Bloch sphere.</p>
+
+<div class="insight">
+    <div class="insight-label">Hadamard Is Not a Rotation by π/2</div>
+    <p style="margin:0">Beginner intuition says: if H creates a 50-50 superposition, it must be a half-turn (\(\pi/2\) rotation). Wrong. A \(\pi/2\) rotation about the \(x\)-axis would give \((H_{x/2})^2 = R_x(\pi) = -iX\), not the identity. Hadamard squares to the identity, so it must be a \(\pi\) rotation — just about a diagonal axis (the \((x+z)/\sqrt{2}\) axis). This is why applying H twice recovers the original state, not a further rotation.</p>
+</div>
+
+<!-- ═══════════════════════════════════════════ -->
+<h2>11. The Pauli Operators: Rotations on the Bloch Sphere</h2>
+
+<p>The three Pauli operators \(X\), \(Y\), \(Z\) are the fundamental single-qubit gates. Each one implements a \(\pi\)-rotation (180°) about its corresponding axis on the Bloch sphere.</p>
+
+<div class="two-col">
+    <div class="box" style="text-align:center">
+        <div class="box-label">Pauli-X (NOT / bit-flip)</div>
+        \[X = \begin{bmatrix}0 & 1\\1 & 0\end{bmatrix}\]
+        <p style="margin:0.4rem 0 0; font-size:0.84rem">π rotation about <strong>x-axis</strong>.<br>Maps |0⟩↔|1⟩, |+⟩→|+⟩, |−⟩→−|−⟩</p>
+    </div>
+    <div class="box" style="text-align:center">
+        <div class="box-label">Pauli-Z (phase-flip)</div>
+        \[Z = \begin{bmatrix}1 & 0\\0 & -1\end{bmatrix}\]
+        <p style="margin:0.4rem 0 0; font-size:0.84rem">π rotation about <strong>z-axis</strong>.<br>Maps |0⟩→|0⟩, |1⟩→−|1⟩, |+⟩↔|−⟩</p>
+    </div>
+</div>
+
+<div class="box" style="text-align:center">
+    <div class="box-label">Pauli-Y (combined flip)</div>
+    \[Y = \begin{bmatrix}0 & -i\\i & 0\end{bmatrix}\]
+    <p style="margin:0.4rem 0 0; font-size:0.84rem">π rotation about <strong>y-axis</strong>. Note: \(Y = -iZX\).</p>
+</div>
+
+<p>The Pauli operators satisfy a set of elegant algebraic identities that are indispensable in quantum circuit design:</p>
+
+\[X^2 = Y^2 = Z^2 = \mathbb{I}, \qquad Y = -iZX\]
+
+<p>The first identity (\(P^2 = \mathbb{I}\)) says each Pauli is its own inverse — applying it twice returns to the original state, since a \(2\pi\) rotation returns to the start. The second identity connects the three Paulis and is useful for simplifying circuits.</p>
+
+<p>The Hadamard interconverts the \(X\) and \(Z\) bases:</p>
+\[HZH = X, \qquad HXH = Z\]
+
+<p>Reading this geometrically: conjugating by \(H\) swaps the \(x\)- and \(z\)-axes on the Bloch sphere. This is the transformation that converts a \(Z\)-basis measurement into an \(X\)-basis measurement — which is exactly how you measure in the \(\{|+\rangle, |-\rangle\}\) basis using standard \(Z\) detectors.</p>
+
+<div class="figure">
+    <!-- Pauli rotation diagram on Bloch sphere -->
+    <svg viewBox="0 0 480 180" width="100%" style="max-width:500px" xmlns="http://www.w3.org/2000/svg">
+        <!-- Three mini Bloch spheres showing X, Y, Z rotations -->
+        <!-- X rotation -->
+        <circle cx="75" cy="90" r="60" fill="#f7f7f7" stroke="#000" stroke-width="1.2"/>
+        <path d="M 15,90 A 60,19 0 0,0 135,90" fill="none" stroke="#aaa" stroke-width="0.8" stroke-dasharray="3,2"/>
+        <path d="M 15,90 A 60,19 0 0,1 135,90" fill="none" stroke="#aaa" stroke-width="0.8"/>
+        <line x1="75" y1="30" x2="75" y2="150" stroke="#000" stroke-width="1"/>
+        <!-- X axis highlighted in red/bold -->
+        <line x1="10" y1="90" x2="140" y2="90" stroke="#000" stroke-width="2"/>
+        <polygon points="145,90 133,86 133,94" fill="#000"/>
+        <text x="148" y="94" font-size="11" font-family="serif" fill="#000">x</text>
+        <!-- |0> and |1> dots -->
+        <circle cx="75" cy="30" r="3" fill="#000"/>
+        <circle cx="75" cy="150" r="3" fill="#000"/>
+        <text x="80" y="28" font-size="10" font-family="serif">|0⟩</text>
+        <text x="80" y="163" font-size="10" font-family="serif">|1⟩</text>
+        <!-- Rotation arc -->
+        <path d="M 75,35 A 55,55 0 0,1 75,145" fill="none" stroke="#000" stroke-width="1.2" stroke-dasharray="4,2"/>
+        <text x="26" y="95" font-size="10" font-family="sans-serif" fill="#555">X: π about x</text>
+
+        <!-- Y rotation -->
+        <circle cx="240" cy="90" r="60" fill="#f7f7f7" stroke="#000" stroke-width="1.2"/>
+        <path d="M 180,90 A 60,19 0 0,0 300,90" fill="none" stroke="#aaa" stroke-width="0.8" stroke-dasharray="3,2"/>
+        <path d="M 180,90 A 60,19 0 0,1 300,90" fill="none" stroke="#aaa" stroke-width="0.8"/>
+        <line x1="240" y1="30" x2="240" y2="150" stroke="#000" stroke-width="1"/>
+        <line x1="175" y1="90" x2="305" y2="90" stroke="#000" stroke-width="1"/>
+        <!-- Y axis highlighted (oblique) -->
+        <line x1="240" y1="90" x2="275" y2="118" stroke="#000" stroke-width="2"/>
+        <polygon points="280,122 268,114 277,107" fill="#000"/>
+        <text x="282" y="126" font-size="11" font-family="serif" fill="#000">y</text>
+        <circle cx="240" cy="30" r="3" fill="#000"/>
+        <circle cx="240" cy="150" r="3" fill="#000"/>
+        <text x="245" y="28" font-size="10" font-family="serif">|0⟩</text>
+        <text x="245" y="163" font-size="10" font-family="serif">|1⟩</text>
+        <path d="M 240,35 A 55,55 0 0,1 240,145" fill="none" stroke="#000" stroke-width="1.2" stroke-dasharray="4,2"/>
+        <text x="188" y="95" font-size="10" font-family="sans-serif" fill="#555">Y: π about y</text>
+
+        <!-- Z rotation -->
+        <circle cx="405" cy="90" r="60" fill="#f7f7f7" stroke="#000" stroke-width="1.2"/>
+        <path d="M 345,90 A 60,19 0 0,0 465,90" fill="none" stroke="#aaa" stroke-width="0.8" stroke-dasharray="3,2"/>
+        <path d="M 345,90 A 60,19 0 0,1 465,90" fill="none" stroke="#aaa" stroke-width="0.8"/>
+        <!-- Z axis highlighted -->
+        <line x1="405" y1="25" x2="405" y2="155" stroke="#000" stroke-width="2"/>
+        <polygon points="405,20 400,34 410,34" fill="#000"/>
+        <text x="410" y="18" font-size="11" font-family="serif" fill="#000">z</text>
+        <line x1="340" y1="90" x2="470" y2="90" stroke="#000" stroke-width="1"/>
+        <circle cx="405" cy="30" r="3" fill="#000"/>
+        <circle cx="405" cy="150" r="3" fill="#000"/>
+        <text x="410" y="28" font-size="10" font-family="serif">|0⟩</text>
+        <text x="410" y="163" font-size="10" font-family="serif">|1⟩</text>
+        <!-- Rotation arc on equatorial ellipse -->
+        <path d="M 360,90 A 40,12 0 0,0 450,90" fill="none" stroke="#000" stroke-width="1.2" stroke-dasharray="4,2"/>
+        <text x="355" y="95" font-size="10" font-family="sans-serif" fill="#555">Z: π about z</text>
+    </svg>
+    <div class="caption">Figure 4 — The three Pauli gates as π-rotations on the Bloch sphere. X flips |0⟩ ↔ |1⟩ (rotation about x-axis). Z flips the phase |+⟩ ↔ |−⟩ (rotation about z-axis). Y combines both. Each gate squares to the identity because a 2π rotation returns to the start.</div>
+</div>
+
+<!-- ═══════════════════════════════════════════ -->
+<h2>12. Qudits: Beyond Two States</h2>
+
+<p>A qubit is a 2-state quantum system. Most physical systems are not 2-state — for example, an electron's position in space has a continuous (infinite-dimensional) state space. A system with exactly \(d\) fully distinguishable states is called a <strong>qudit</strong> (quantum \(d\)-it).</p>
+
+<p>A qudit has basis states \(|0\rangle, |1\rangle, \ldots, |d-1\rangle\) and its most general pure state is:</p>
+
+\[|\psi\rangle = \sum_{j=0}^{d-1} c_j\,|j\rangle, \qquad \sum_{j=0}^{d-1} |c_j|^2 = 1\]
+
+<p>The generalisations of the Pauli matrices to a qudit are the operators \(X_d\) and \(Z_d\), defined by their action on basis states:</p>
+
+\[X_d|j\rangle = |j \oplus 1\rangle, \qquad Z_d|j\rangle = e^{i\frac{2\pi j}{d}}|j\rangle\]
+
+<p>where \(\oplus\) denotes addition modulo \(d\). For \(d=2\), these reduce to the usual Pauli \(X\) and \(Z\). A qudit needs \(d^2 - 1\) real parameters to specify its state fully, compared to 2 for a qubit. The interest in qudits — particularly qutrits (\(d=3\)) — has grown in recent years as physical implementations (photon orbital angular momentum, molecular spin states, superconducting transmons) have made them accessible.</p>
+
+<!-- ═══════════════════════════════════════════ -->
+<hr class="section-rule">
+
+<h2>Summary</h2>
+
+<table>
+    <tr><th>Concept</th><th>Key Equation / Fact</th></tr>
+    <tr><td>Bit representation</td><td>\(0 \equiv \begin{bmatrix}1\\0\end{bmatrix},\; 1 \equiv \begin{bmatrix}0\\1\end{bmatrix}\)</td></tr>
+    <tr><td>NOT gate</td><td>\(X = \begin{bmatrix}0&1\\1&0\end{bmatrix}\); \(X|0\rangle=|1\rangle\)</td></tr>
+    <tr><td>CNOT gate</td><td>Flips target iff control is \(|1\rangle\); 4×4 matrix</td></tr>
+    <tr><td>Landauer's principle</td><td>Erasing one bit dissipates \(\geq k_BT\ln 2\) as heat</td></tr>
+    <tr><td>General qubit state</td><td>\(|\psi\rangle = \cos\frac{\theta}{2}|0\rangle + e^{i\phi}\sin\frac{\theta}{2}|1\rangle\)</td></tr>
+    <tr><td>Born rule</td><td>\(P_{|\chi\rangle\to|\xi\rangle} = |\langle\chi|\xi\rangle|^2\)</td></tr>
+    <tr><td>Completeness</td><td>\(|0\rangle\langle 0| + |1\rangle\langle 1| = \mathbb{I}\)</td></tr>
+    <tr><td>Bloch sphere</td><td>Every pure qubit state is a point on the unit sphere</td></tr>
+    <tr><td>Hadamard</td><td>\(H|0\rangle = |{+}\rangle,\; H|1\rangle = |{-}\rangle,\; H^2 = \mathbb{I}\)</td></tr>
+    <tr><td>Pauli operators</td><td>\(X^2=Y^2=Z^2=\mathbb{I}\); each is a π-rotation on Bloch sphere</td></tr>
+    <tr><td>Fidelity</td><td>\(F(|\phi\rangle,|\psi\rangle) = |\langle\phi|\psi\rangle|^2 \in [0,1]\)</td></tr>
+</table>
+
+</body>
+</html>

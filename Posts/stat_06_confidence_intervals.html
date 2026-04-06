@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confidence Intervals & Delta Method — Statistics From Scratch</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+    <style>
+        *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+        body { background: #fff; color: #000; font-family: 'Inter', sans-serif; font-weight: 300; line-height: 1.6; max-width: 720px; margin: 0 auto; padding: 2rem 2rem 6rem; }
+        nav { margin-bottom: 3rem; font-size: 0.75rem; letter-spacing: 0.04em; }
+        nav a { color: #000; text-decoration: none; }
+        nav a:hover { opacity: 0.5; }
+        nav span { margin: 0 0.5rem; opacity: 0.3; }
+        h1 { font-family: 'Cormorant Garamond', serif; font-size: 2.2rem; font-weight: 600; line-height: 1.2; margin-bottom: 0.4rem; }
+        .subtitle { font-family: 'Cormorant Garamond', serif; font-size: 1.1rem; font-style: italic; color: #444; margin-bottom: 3rem; }
+        h2 { font-family: 'Cormorant Garamond', serif; font-size: 1.6rem; font-weight: 600; margin: 3rem 0 1rem; border-bottom: 1px solid #eee; padding-bottom: 0.3rem; }
+        h3 { font-family: 'Inter', sans-serif; font-size: 0.88rem; font-weight: 500; letter-spacing: 0.04em; text-transform: uppercase; margin: 2rem 0 0.6rem; }
+        p { font-size: 0.92rem; line-height: 1.8; margin-bottom: 0.9rem; }
+        ul, ol { font-size: 0.92rem; line-height: 1.8; padding-left: 1.4rem; margin-bottom: 0.9rem; }
+        li { margin-bottom: 0.25rem; }
+        .box { border-left: 2px solid #000; padding: 0.9rem 1.1rem; margin: 1.5rem 0; }
+        .box-label { font-size: 0.7rem; font-weight: 500; letter-spacing: 0.08em; text-transform: uppercase; margin-bottom: 0.4rem; opacity: 0.5; }
+        .figure { margin: 2rem 0; text-align: center; }
+        .caption { font-size: 0.78rem; color: #666; margin-top: 0.5rem; }
+        mjx-container { overflow-x: auto; }
+        .warn { border-left: 2px solid #888; padding: 0.8rem 1rem; margin: 1.5rem 0; background: #fafafa; font-size: 0.88rem; }
+    </style>
+    <script src="https://cdn.amplitude.com/script/59010539cde9503811b2e9a80e47e0b4.js"></script>
+    <script>window.amplitude.add(window.sessionReplay.plugin({sampleRate: 1}));window.amplitude.init('59010539cde9503811b2e9a80e47e0b4', {"fetchRemoteConfig":true,"autocapture":{"attribution":true,"fileDownloads":true,"formInteractions":true,"pageViews":true,"sessions":true,"elementInteractions":true,"networkTracking":true,"webVitals":true,"frustrationInteractions":true}});</script>
+</head>
+<body>
+
+<nav><a href="../blog.html">Notebooks</a><span>/</span>Confidence Intervals & Delta Method</nav>
+
+<h1>Confidence Intervals & Delta Method</h1>
+<p class="subtitle">How to quantify estimation uncertainty and propagate it through transformations</p>
+
+<h2>1. Introduction</h2>
+<p>A point estimate gives one number; a confidence interval gives a range that communicates uncertainty. The Delta method lets us derive confidence intervals for transformed parameters when we know the asymptotic distribution of the original estimator.</p>
+
+<h2>2. Confidence Intervals</h2>
+<div class="box">
+    <div class="box-label">Confidence Interval (Level 1−α)</div>
+    <p style="margin-bottom:0.5rem">A confidence interval \(\mathcal{I}\) of level \(1-\alpha\) for \(\theta\) is a random interval such that:</p>
+    <p style="margin:0">\[\mathbb{P}_\theta(\theta \in \mathcal{I}) \geq 1-\alpha \quad \forall\,\theta \in \Theta\]</p>
+</div>
+
+<div class="warn">
+    <strong>Common misconception:</strong> "There is a 95% probability that θ lies in this interval." Wrong — θ is fixed (not random). The correct interpretation: if we repeated the experiment many times and computed a CI each time, at least 95% of those intervals would contain θ.
+</div>
+
+<div class="figure">
+    <svg width="460" height="160" viewBox="0 0 460 160" xmlns="http://www.w3.org/2000/svg">
+        <!-- true theta line -->
+        <line x1="230" y1="10" x2="230" y2="150" stroke="#000" stroke-width="1" stroke-dasharray="4,3"/>
+        <text x="232" y="20" font-size="10" font-family="Inter,sans-serif" fill="#666">θ*</text>
+        <!-- CI bars (some miss theta) -->
+        <!-- row 1: contains -->
+        <line x1="170" y1="35" x2="300" y2="35" stroke="#000" stroke-width="2"/>
+        <line x1="170" y1="30" x2="170" y2="40" stroke="#000" stroke-width="1.5"/>
+        <line x1="300" y1="30" x2="300" y2="40" stroke="#000" stroke-width="1.5"/>
+        <!-- row 2: contains -->
+        <line x1="150" y1="55" x2="280" y2="55" stroke="#000" stroke-width="2"/>
+        <line x1="150" y1="50" x2="150" y2="60" stroke="#000" stroke-width="1.5"/>
+        <line x1="280" y1="50" x2="280" y2="60" stroke="#000" stroke-width="1.5"/>
+        <!-- row 3: misses (shifted right) -->
+        <line x1="260" y1="75" x2="380" y2="75" stroke="#000" stroke-width="2" opacity="0.35"/>
+        <line x1="260" y1="70" x2="260" y2="80" stroke="#000" stroke-width="1.5" opacity="0.35"/>
+        <line x1="380" y1="70" x2="380" y2="80" stroke="#000" stroke-width="1.5" opacity="0.35"/>
+        <text x="385" y="79" font-size="9" font-family="Inter,sans-serif" fill="#888">miss</text>
+        <!-- row 4: contains -->
+        <line x1="140" y1="95" x2="310" y2="95" stroke="#000" stroke-width="2"/>
+        <line x1="140" y1="90" x2="140" y2="100" stroke="#000" stroke-width="1.5"/>
+        <line x1="310" y1="90" x2="310" y2="100" stroke="#000" stroke-width="1.5"/>
+        <!-- row 5: contains -->
+        <line x1="180" y1="115" x2="320" y2="115" stroke="#000" stroke-width="2"/>
+        <line x1="180" y1="110" x2="180" y2="120" stroke="#000" stroke-width="1.5"/>
+        <line x1="320" y1="110" x2="320" y2="120" stroke="#000" stroke-width="1.5"/>
+        <!-- row 6: contains -->
+        <line x1="160" y1="135" x2="290" y2="135" stroke="#000" stroke-width="2"/>
+        <line x1="160" y1="130" x2="160" y2="140" stroke="#000" stroke-width="1.5"/>
+        <line x1="290" y1="130" x2="290" y2="140" stroke="#000" stroke-width="1.5"/>
+    </svg>
+    <div class="caption">Figure 1 — Many CIs computed from repeated experiments. Most contain θ* (5/6 shown = 83%). With enough repetitions, the fraction approaches 1−α.</div>
+</div>
+
+<h2>3. Constructing Asymptotic CIs</h2>
+<p>An asymptotic CI of level \(1-\alpha\) satisfies \(\lim_{n\to\infty}\mathbb{P}_\theta(\theta \in \mathcal{I}) \geq 1-\alpha\).</p>
+
+<h3>Standard Construction (CLT-based)</h3>
+<p>If \(\sqrt{n}(\hat{\theta}_n - \theta^*) \xrightarrow{(d)} \mathcal{N}(0,\sigma^2)\), then an asymptotic \(1-\alpha\) CI is:</p>
+\[\mathcal{I} = \left[\hat{\theta}_n - q_{\alpha/2}\frac{\hat{\sigma}}{\sqrt{n}},\;\; \hat{\theta}_n + q_{\alpha/2}\frac{\hat{\sigma}}{\sqrt{n}}\right]\]
+<p>where \(q_{\alpha/2}\) is the \((1-\alpha/2)\)-quantile of \(\mathcal{N}(0,1)\) and \(\hat{\sigma}\) is a consistent estimator of \(\sigma\).</p>
+
+<h3>Example: CI for a Proportion</h3>
+<p>Observe \(R_1,\ldots,R_n \stackrel{iid}{\sim} \text{Ber}(p)\). By CLT: \(\sqrt{n}(\bar{R}_n - p)/\sqrt{p(1-p)} \xrightarrow{(d)} \mathcal{N}(0,1)\). The 95% CI for \(p\) uses \(\hat{p} = \bar{R}_n\):</p>
+\[\mathcal{I} = \left[\hat{p} - 1.96\sqrt{\frac{\hat{p}(1-\hat{p})}{n}},\;\; \hat{p} + 1.96\sqrt{\frac{\hat{p}(1-\hat{p})}{n}}\right]\]
+
+<h2>4. The Delta Method</h2>
+<p>The Delta method propagates asymptotic normality through smooth transformations. If we know the distribution of \(\hat{\theta}_n\), and we want the distribution of \(g(\hat{\theta}_n)\) for some smooth function \(g\):</p>
+<div class="box">
+    <div class="box-label">Delta Method</div>
+    <p style="margin-bottom:0.5rem">Let \((Z_n)_{n\geq1}\) be a sequence such that \(\sqrt{n}(Z_n - \theta) \xrightarrow{(d)} \mathcal{N}(0,\sigma^2)\). Let \(g: \mathbb{R}\to\mathbb{R}\) be continuously differentiable at \(\theta\). Then:</p>
+    <p style="margin:0">\[\sqrt{n}(g(Z_n) - g(\theta)) \xrightarrow{(d)} \mathcal{N}(0,\, (g'(\theta))^2\sigma^2)\]</p>
+</div>
+<p>Intuition: Taylor-expand \(g\) around \(\theta\): \(g(Z_n) \approx g(\theta) + g'(\theta)(Z_n - \theta)\). Since the linear term dominates, the asymptotic variance scales by \((g'(\theta))^2\).</p>
+
+<h3>Example</h3>
+<p>From \(\bar{X}_n \approx \mathcal{N}(\mu, \sigma^2/n)\), what is the distribution of \(\bar{X}_n^2\)?</p>
+<p>Apply \(g(x) = x^2\), so \(g'(x) = 2x\), \(g'(\mu) = 2\mu\). By the Delta method:</p>
+\[\sqrt{n}(\bar{X}_n^2 - \mu^2) \xrightarrow{(d)} \mathcal{N}(0, 4\mu^2\sigma^2)\]
+<p>So the asymptotic variance of \(\bar{X}_n^2\) is \(4\mu^2\sigma^2/n\).</p>
+
+<h2>5. Multivariate Delta Method</h2>
+<div class="box">
+    <div class="box-label">Multivariate Delta Method</div>
+    <p style="margin-bottom:0.5rem">Let \((T_n)\) be a sequence of random vectors such that \(\sqrt{n}(T_n - \theta) \xrightarrow{(d)} \mathcal{N}_d(0,\Sigma)\). Let \(g: \mathbb{R}^d \to \mathbb{R}^k\) be continuously differentiable. Then:</p>
+    <p style="margin:0">\[\sqrt{n}(g(T_n) - g(\theta)) \xrightarrow{(d)} \mathcal{N}_k\!\left(0,\, \nabla g(\theta)^\top \Sigma\, \nabla g(\theta)\right)\]</p>
+</div>
+<p>The gradient \(\nabla g(\theta)\) replaces \(g'(\theta)\), and the covariance transforms by the Jacobian. This is used to derive CIs for functions of multiple parameters, like ratios or products.</p>
+
+<h2>6. Limitations</h2>
+<ul>
+    <li>The Delta method requires \(g'(\theta) \neq 0\). When \(g'(\theta) = 0\), the first-order approximation vanishes and a second-order expansion is needed.</li>
+    <li>Asymptotic CIs require \(n\) to be "large enough" — for small \(n\) or heavy-tailed data, the CLT approximation may be poor.</li>
+    <li>Bootstrap methods provide an alternative that can be more accurate in finite samples.</li>
+</ul>
+
+</body>
+</html>

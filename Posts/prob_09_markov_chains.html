@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Markov Chains — Probability From Scratch</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+    <style>
+        *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+        body { background: #fff; color: #000; font-family: 'Inter', sans-serif; font-weight: 300; line-height: 1.6; max-width: 720px; margin: 0 auto; padding: 2rem 2rem 6rem; }
+        nav { margin-bottom: 3rem; font-size: 0.75rem; letter-spacing: 0.04em; }
+        nav a { color: #000; text-decoration: none; }
+        nav a:hover { opacity: 0.5; }
+        nav span { margin: 0 0.5rem; opacity: 0.3; }
+        h1 { font-family: 'Cormorant Garamond', serif; font-size: 2.2rem; font-weight: 600; line-height: 1.2; margin-bottom: 0.4rem; }
+        .subtitle { font-family: 'Cormorant Garamond', serif; font-size: 1.1rem; font-style: italic; color: #444; margin-bottom: 3rem; }
+        h2 { font-family: 'Cormorant Garamond', serif; font-size: 1.6rem; font-weight: 600; margin: 3rem 0 1rem; border-bottom: 1px solid #eee; padding-bottom: 0.3rem; }
+        h3 { font-family: 'Inter', sans-serif; font-size: 0.88rem; font-weight: 500; letter-spacing: 0.04em; text-transform: uppercase; margin: 2rem 0 0.6rem; }
+        p { font-size: 0.92rem; line-height: 1.8; margin-bottom: 0.9rem; }
+        ul { font-size: 0.92rem; line-height: 1.8; padding-left: 1.4rem; margin-bottom: 0.9rem; }
+        li { margin-bottom: 0.25rem; }
+        .box { border-left: 2px solid #000; padding: 0.9rem 1.1rem; margin: 1.5rem 0; }
+        .box-label { font-size: 0.7rem; font-weight: 500; letter-spacing: 0.08em; text-transform: uppercase; margin-bottom: 0.4rem; opacity: 0.5; }
+        .figure { margin: 2rem 0; text-align: center; }
+        .caption { font-size: 0.78rem; color: #666; margin-top: 0.5rem; }
+        mjx-container { overflow-x: auto; }
+    </style>
+    <script src="https://cdn.amplitude.com/script/59010539cde9503811b2e9a80e47e0b4.js"></script>
+    <script>window.amplitude.add(window.sessionReplay.plugin({sampleRate: 1}));window.amplitude.init('59010539cde9503811b2e9a80e47e0b4', {"fetchRemoteConfig":true,"autocapture":{"attribution":true,"fileDownloads":true,"formInteractions":true,"pageViews":true,"sessions":true,"elementInteractions":true,"networkTracking":true,"webVitals":true,"frustrationInteractions":true}});</script>
+</head>
+<body>
+<nav><a href="../blog.html">Notebooks</a><span>/</span>Markov Chains</nav>
+<h1>Markov Chains</h1>
+<p class="subtitle">The Markov property, transition matrices, recurrence, and convergence to stationarity</p>
+
+<h2>1. The Markov Property</h2>
+<p>A sequence of random variables \(X_0, X_1, X_2, \ldots\) taking values in a state space \(\mathcal{S}\) is a <strong>Markov chain</strong> if the future depends on the present only — not on the past:</p>
+<div class="box">
+    <div class="box-label">Markov Property</div>
+    <p style="margin:0">\[\mathbb{P}(X_{n+1} = j \mid X_0, X_1, \ldots, X_n) = \mathbb{P}(X_{n+1} = j \mid X_n)\]</p>
+</div>
+<p>The chain is <strong>time-homogeneous</strong> if the transition probabilities do not depend on \(n\). We assume this throughout. The transition probability from state \(i\) to state \(j\) is \(p_{ij} = \mathbb{P}(X_{n+1} = j \mid X_n = i)\).</p>
+
+<h2>2. Transition Matrix</h2>
+<p>The <strong>transition matrix</strong> \(P\) collects all one-step transition probabilities: \(P_{ij} = p_{ij}\). Properties:</p>
+<ul>
+    <li>Each row sums to 1: \(\sum_j P_{ij} = 1\) (stochastic matrix).</li>
+    <li>All entries are non-negative: \(P_{ij} \geq 0\).</li>
+</ul>
+<p>The \(n\)-step transition probability is given by the \(n\)-th matrix power: \(\mathbb{P}(X_n = j \mid X_0 = i) = (P^n)_{ij}\).</p>
+
+<div class="figure">
+    <svg width="380" height="180" viewBox="0 0 380 180" xmlns="http://www.w3.org/2000/svg">
+        <!-- State 1 -->
+        <circle cx="80" cy="90" r="28" fill="none" stroke="#000" stroke-width="1.5"/>
+        <text x="80" y="94" text-anchor="middle" font-size="13" font-family="Cormorant Garamond, serif">1</text>
+        <!-- State 2 -->
+        <circle cx="200" cy="45" r="28" fill="none" stroke="#000" stroke-width="1.5"/>
+        <text x="200" y="49" text-anchor="middle" font-size="13" font-family="Cormorant Garamond, serif">2</text>
+        <!-- State 3 -->
+        <circle cx="320" cy="90" r="28" fill="none" stroke="#000" stroke-width="1.5"/>
+        <text x="320" y="94" text-anchor="middle" font-size="13" font-family="Cormorant Garamond, serif">3</text>
+        <!-- 1 -> 2 -->
+        <path d="M104,75 Q152,38 172,43" fill="none" stroke="#000" stroke-width="1.2" marker-end="url(#arr)"/>
+        <text x="132" y="47" font-size="9" font-family="Inter,sans-serif" text-anchor="middle">0.6</text>
+        <!-- 2 -> 3 -->
+        <path d="M228,43 Q276,38 292,68" fill="none" stroke="#000" stroke-width="1.2" marker-end="url(#arr)"/>
+        <text x="268" y="42" font-size="9" font-family="Inter,sans-serif" text-anchor="middle">0.7</text>
+        <!-- 3 -> 1 -->
+        <path d="M295,108 Q200,160 105,105" fill="none" stroke="#000" stroke-width="1.2" marker-end="url(#arr)"/>
+        <text x="200" y="158" font-size="9" font-family="Inter,sans-serif" text-anchor="middle">0.5</text>
+        <!-- 1 self loop -->
+        <path d="M58,66 Q30,30 62,68" fill="none" stroke="#000" stroke-width="1.2" marker-end="url(#arr)"/>
+        <text x="30" y="52" font-size="9" font-family="Inter,sans-serif">0.4</text>
+        <!-- 2 -> 1 -->
+        <path d="M175,55 Q130,80 110,85" fill="none" stroke="#000" stroke-width="1.2" stroke-dasharray="3,2" marker-end="url(#arr)"/>
+        <text x="138" y="85" font-size="9" font-family="Inter,sans-serif">0.3</text>
+        <!-- 3 self loop -->
+        <path d="M343,65 Q380,30 347,65" fill="none" stroke="#000" stroke-width="1.2" marker-end="url(#arr)"/>
+        <text x="372" y="45" font-size="9" font-family="Inter,sans-serif">0.5</text>
+        <defs>
+            <marker id="arr" markerWidth="6" markerHeight="6" refX="5" refY="3" orient="auto">
+                <path d="M0,0 L6,3 L0,6Z" fill="#000"/>
+            </marker>
+        </defs>
+    </svg>
+    <div class="caption">Figure 1 — A 3-state Markov chain. Each arrow is labeled with its transition probability; each row of probabilities sums to 1.</div>
+</div>
+
+<h2>3. State Classification</h2>
+
+<h3>Accessibility and Communication</h3>
+<p>State \(j\) is <strong>accessible</strong> from \(i\) (written \(i \to j\)) if \((P^n)_{ij} > 0\) for some \(n \geq 0\). States \(i\) and \(j\) <strong>communicate</strong> (\(i \leftrightarrow j\)) if each is accessible from the other. Communication is an equivalence relation; it partitions the state space into <strong>communicating classes</strong>.</p>
+
+<h3>Recurrence and Transience</h3>
+<ul>
+    <li><strong>Recurrent:</strong> Starting from \(i\), the chain returns to \(i\) with probability 1. The chain visits \(i\) infinitely often.</li>
+    <li><strong>Transient:</strong> There is positive probability of never returning to \(i\). The chain visits \(i\) finitely many times.</li>
+</ul>
+<p>A finite irreducible Markov chain is always recurrent. If one state in a communicating class is recurrent (or transient), all states in that class are.</p>
+
+<h3>Periodicity</h3>
+<p>The <strong>period</strong> of state \(i\) is \(d(i) = \gcd\{n \geq 1 : (P^n)_{ii} > 0\}\). A state is <strong>aperiodic</strong> if \(d(i) = 1\). An irreducible chain is aperiodic if any state is aperiodic (e.g., if it has a self-loop).</p>
+
+<h2>4. Stationary Distribution</h2>
+<div class="box">
+    <div class="box-label">Stationary Distribution</div>
+    <p style="margin-bottom:0.4rem">A distribution \(\pi = (\pi_1, \pi_2, \ldots)\) is stationary if \(\pi P = \pi\), i.e.:</p>
+    <p style="margin:0">\[\pi_j = \sum_i \pi_i \, p_{ij} \quad \text{for all } j, \qquad \sum_j \pi_j = 1\]</p>
+</div>
+<p>If the chain starts in the stationary distribution, it stays there at all future times. For an irreducible chain, a unique stationary distribution always exists, with \(\pi_i = 1/\mathbb{E}[T_i]\) where \(T_i\) is the mean return time to state \(i\).</p>
+
+<h2>5. Convergence to Stationarity</h2>
+<div class="box">
+    <div class="box-label">Convergence Theorem</div>
+    <p style="margin:0">For an irreducible, aperiodic chain with stationary distribution \(\pi\):</p>
+    \[(P^n)_{ij} \to \pi_j \quad \text{as } n \to \infty \quad \text{for all } i, j\]
+</div>
+<p>The chain "forgets" its starting state. The convergence rate is geometric in \(n\), governed by the second-largest eigenvalue of \(P\) (spectral gap).</p>
+
+<h3>Detailed Balance</h3>
+<p>If there exists a distribution \(\pi\) such that:</p>
+\[\pi_i \, p_{ij} = \pi_j \, p_{ji} \quad \text{for all } i, j\]
+<p>then \(\pi\) is the stationary distribution. This is the <strong>detailed balance</strong> (or reversibility) condition — the probability flux from \(i\) to \(j\) equals the flux from \(j\) to \(i\). Chains satisfying this are called <strong>reversible</strong>.</p>
+
+<h2>6. Random Walk on a Graph</h2>
+<p>The simple random walk on a graph \(G = (V, E)\): at each step, move uniformly to one of the current node's neighbours. The transition probability is \(p_{ij} = 1/\deg(i)\) for each neighbour \(j\).</p>
+<p>The stationary distribution is \(\pi_i = \deg(i) / (2|E|)\) — nodes with higher degree are visited more often. This satisfies detailed balance.</p>
+
+<h2>7. Random Walk on \(\mathbb{Z}\)</h2>
+<p>The simple random walk on the integers: at each step, move right (+1) with probability \(p\) or left (−1) with probability \(q = 1 - p\).</p>
+<ul>
+    <li><strong>\(p = 1/2\) (symmetric):</strong> Recurrent in 1D and 2D; transient in 3D and higher.</li>
+    <li><strong>\(p \neq 1/2\) (asymmetric):</strong> Transient — drifts to \(+\infty\) if \(p > 1/2\).</li>
+    <li><strong>Gambler's ruin:</strong> Starting at position \(k\), probability of reaching \(N\) before 0 is \(\frac{1-(q/p)^k}{1-(q/p)^N}\) for \(p \neq 1/2\), and \(k/N\) for \(p = 1/2\).</li>
+</ul>
+
+<h2>8. Absorption Probabilities</h2>
+<p>In a chain with absorbing states (states the chain can never leave), define \(a_i = \mathbb{P}(\text{absorbed into state } s \mid X_0 = i)\). The absorption probabilities satisfy:</p>
+\[a_i = p_{is} + \sum_{j \notin \{s\}} p_{ij}\,a_j\]
+<p>This gives a linear system that can be solved for all transient states. Expected absorption times satisfy an analogous linear system.</p>
+
+</body>
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Covariance, Correlation & Conditioning — Probability From Scratch</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+    <style>
+        *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+        body { background: #fff; color: #000; font-family: 'Inter', sans-serif; font-weight: 300; line-height: 1.6; max-width: 720px; margin: 0 auto; padding: 2rem 2rem 6rem; }
+        nav { margin-bottom: 3rem; font-size: 0.75rem; letter-spacing: 0.04em; }
+        nav a { color: #000; text-decoration: none; }
+        nav a:hover { opacity: 0.5; }
+        nav span { margin: 0 0.5rem; opacity: 0.3; }
+        h1 { font-family: 'Cormorant Garamond', serif; font-size: 2.2rem; font-weight: 600; line-height: 1.2; margin-bottom: 0.4rem; }
+        .subtitle { font-family: 'Cormorant Garamond', serif; font-size: 1.1rem; font-style: italic; color: #444; margin-bottom: 3rem; }
+        h2 { font-family: 'Cormorant Garamond', serif; font-size: 1.6rem; font-weight: 600; margin: 3rem 0 1rem; border-bottom: 1px solid #eee; padding-bottom: 0.3rem; }
+        h3 { font-family: 'Inter', sans-serif; font-size: 0.88rem; font-weight: 500; letter-spacing: 0.04em; text-transform: uppercase; margin: 2rem 0 0.6rem; }
+        p { font-size: 0.92rem; line-height: 1.8; margin-bottom: 0.9rem; }
+        ul { font-size: 0.92rem; line-height: 1.8; padding-left: 1.4rem; margin-bottom: 0.9rem; }
+        li { margin-bottom: 0.25rem; }
+        .box { border-left: 2px solid #000; padding: 0.9rem 1.1rem; margin: 1.5rem 0; }
+        .box-label { font-size: 0.7rem; font-weight: 500; letter-spacing: 0.08em; text-transform: uppercase; margin-bottom: 0.4rem; opacity: 0.5; }
+        mjx-container { overflow-x: auto; }
+    </style>
+    <script src="https://cdn.amplitude.com/script/59010539cde9503811b2e9a80e47e0b4.js"></script>
+    <script>window.amplitude.add(window.sessionReplay.plugin({sampleRate: 1}));window.amplitude.init('59010539cde9503811b2e9a80e47e0b4', {"fetchRemoteConfig":true,"autocapture":{"attribution":true,"fileDownloads":true,"formInteractions":true,"pageViews":true,"sessions":true,"elementInteractions":true,"networkTracking":true,"webVitals":true,"frustrationInteractions":true}});</script>
+</head>
+<body>
+<nav><a href="../blog.html">Notebooks</a><span>/</span>Covariance, Correlation & Conditioning</nav>
+<h1>Covariance, Correlation & Conditioning</h1>
+<p class="subtitle">Measuring dependence, conditional expectation as a random variable, and the law of total variance</p>
+
+<h2>1. Covariance</h2>
+<div class="box">
+    <div class="box-label">Definition</div>
+    <p style="margin:0">\[\text{Cov}(X,Y) = \mathbb{E}[(X-\mathbb{E}[X])(Y-\mathbb{E}[Y])] = \mathbb{E}[XY] - \mathbb{E}[X]\mathbb{E}[Y]\]</p>
+</div>
+<p>Covariance measures how \(X\) and \(Y\) vary together. Positive: they tend to move in the same direction. Negative: opposite directions. Zero: uncorrelated (but not necessarily independent).</p>
+
+<h3>Properties</h3>
+<ul>
+    <li>\(\text{Cov}(X,X) = \text{Var}(X)\)</li>
+    <li>\(\text{Cov}(X,Y) = \text{Cov}(Y,X)\)</li>
+    <li>\(\text{Cov}(X,a) = 0\) for constant \(a\)</li>
+    <li>\(\text{Cov}(aX, bY) = ab\,\text{Cov}(X,Y)\)</li>
+    <li>\(\text{Cov}(W+X, Y+Z) = \text{Cov}(W,Y) + \text{Cov}(W,Z) + \text{Cov}(X,Y) + \text{Cov}(X,Z)\)</li>
+    <li>If \(X \perp Y\): \(\text{Cov}(X,Y) = 0\). Converse is false in general.</li>
+</ul>
+
+<h3>Variance of a Sum</h3>
+\[\text{Var}(X+Y) = \text{Var}(X) + \text{Var}(Y) + 2\,\text{Cov}(X,Y)\]
+<p>For \(n\) random variables (identical distribution, same pairwise covariance):</p>
+\[\text{Var}(X_1 + \cdots + X_n) = n\,\text{Var}(X_1) + 2\binom{n}{2}\text{Cov}(X_1, X_2)\]
+
+<h2>2. Correlation</h2>
+<div class="box">
+    <div class="box-label">Correlation</div>
+    <p style="margin:0">\[\text{Corr}(X,Y) = \frac{\text{Cov}(X,Y)}{\sqrt{\text{Var}(X)\,\text{Var}(Y)}}\]</p>
+</div>
+<p>Correlation is a dimensionless, scale-invariant measure of linear dependence: \(-1 \leq \text{Corr}(X,Y) \leq 1\). \(\text{Corr} = \pm 1\) iff one is an exact linear function of the other. For any constants \(a,b,c,d\) with \(ac > 0\): \(\text{Corr}(aX+b, cY+d) = \text{Corr}(X,Y)\).</p>
+
+<h2>3. Conditional Expectation as a Random Variable</h2>
+<p>When we condition on a random variable \(Y\) rather than a fixed value, \(\mathbb{E}[X \mid Y]\) is itself a random variable — a function of \(Y\). Write \(\mathbb{E}[X \mid Y] = g(Y)\) where \(g(y) = \mathbb{E}[X \mid Y=y]\).</p>
+<div class="box">
+    <div class="box-label">Law of Iterated Expectations (Tower Property)</div>
+    <p style="margin:0">\[\mathbb{E}[X] = \mathbb{E}[\mathbb{E}[X \mid Y]]\]</p>
+</div>
+<p>The expected value of the conditional expectation equals the unconditional expectation. Outer \(\mathbb{E}\) averages over the randomness in \(Y\).</p>
+
+<h2>4. Law of Total Variance</h2>
+<div class="box">
+    <div class="box-label">Law of Total Variance (Eve's Law)</div>
+    <p style="margin:0">\[\text{Var}(X) = \mathbb{E}[\text{Var}(X \mid Y)] + \text{Var}(\mathbb{E}[X \mid Y])\]</p>
+</div>
+<p>The total variance of \(X\) splits into two parts:</p>
+<ul>
+    <li><strong>Within-group variance:</strong> \(\mathbb{E}[\text{Var}(X \mid Y)]\) — average variability within each value of \(Y\).</li>
+    <li><strong>Between-group variance:</strong> \(\text{Var}(\mathbb{E}[X \mid Y])\) — variability of the group means.</li>
+</ul>
+<p>Exactly the same decomposition as ANOVA in statistics.</p>
+
+<h2>5. Sum of a Random Number of Random Variables</h2>
+<p>Let \(Y = X_1 + \cdots + X_N\) where \(N\) is itself a random variable independent of the i.i.d. \(X_i\). Then:</p>
+\[\mathbb{E}[Y] = \mathbb{E}[N]\,\mathbb{E}[X]\]
+\[\text{Var}(Y) = \mathbb{E}[N]\,\text{Var}(X) + (\mathbb{E}[X])^2\,\text{Var}(N)\]
+<p>Derived by conditioning on \(N\) and applying the laws of total expectation and total variance.</p>
+
+<h2>6. Key Inequalities</h2>
+<div class="box">
+    <div class="box-label">Cauchy-Schwarz</div>
+    <p style="margin:0">\(|\mathbb{E}[XY]| \leq \sqrt{\mathbb{E}[X^2]\,\mathbb{E}[Y^2]}\). Equivalently, \(|\text{Corr}(X,Y)| \leq 1\).</p>
+</div>
+<div class="box">
+    <div class="box-label">Markov's Inequality</div>
+    <p style="margin:0">For \(X \geq 0\) and \(a > 0\): \(\mathbb{P}(X \geq a) \leq \mathbb{E}[X]/a\).</p>
+</div>
+<div class="box">
+    <div class="box-label">Chebyshev's Inequality</div>
+    <p style="margin:0">\(\mathbb{P}(|X - \mu| \geq c) \leq \sigma^2/c^2\) for \(\mathbb{E}[X]=\mu\), \(\text{Var}(X)=\sigma^2\).</p>
+</div>
+<p>Chebyshev follows from Markov applied to \((X-\mu)^2\). Both are distribution-free but loose — they hold for any distribution, which is why they can't be tight.</p>
+
+</body>
+</html>

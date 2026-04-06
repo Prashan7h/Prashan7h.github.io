@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Statistical Models & Estimation — Statistics From Scratch</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+    <style>
+        *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+        body { background: #fff; color: #000; font-family: 'Inter', sans-serif; font-weight: 300; line-height: 1.6; max-width: 720px; margin: 0 auto; padding: 2rem 2rem 6rem; }
+        nav { margin-bottom: 3rem; font-size: 0.75rem; letter-spacing: 0.04em; }
+        nav a { color: #000; text-decoration: none; }
+        nav a:hover { opacity: 0.5; }
+        nav span { margin: 0 0.5rem; opacity: 0.3; }
+        h1 { font-family: 'Cormorant Garamond', serif; font-size: 2.2rem; font-weight: 600; line-height: 1.2; margin-bottom: 0.4rem; }
+        .subtitle { font-family: 'Cormorant Garamond', serif; font-size: 1.1rem; font-style: italic; color: #444; margin-bottom: 3rem; }
+        h2 { font-family: 'Cormorant Garamond', serif; font-size: 1.6rem; font-weight: 600; margin: 3rem 0 1rem; border-bottom: 1px solid #eee; padding-bottom: 0.3rem; }
+        h3 { font-family: 'Inter', sans-serif; font-size: 0.88rem; font-weight: 500; letter-spacing: 0.04em; text-transform: uppercase; margin: 2rem 0 0.6rem; }
+        p { font-size: 0.92rem; line-height: 1.8; margin-bottom: 0.9rem; }
+        ul, ol { font-size: 0.92rem; line-height: 1.8; padding-left: 1.4rem; margin-bottom: 0.9rem; }
+        li { margin-bottom: 0.25rem; }
+        .box { border-left: 2px solid #000; padding: 0.9rem 1.1rem; margin: 1.5rem 0; }
+        .box-label { font-size: 0.7rem; font-weight: 500; letter-spacing: 0.08em; text-transform: uppercase; margin-bottom: 0.4rem; opacity: 0.5; }
+        .figure { margin: 2rem 0; text-align: center; }
+        .caption { font-size: 0.78rem; color: #666; margin-top: 0.5rem; }
+        mjx-container { overflow-x: auto; }
+    </style>
+    <script src="https://cdn.amplitude.com/script/59010539cde9503811b2e9a80e47e0b4.js"></script>
+    <script>window.amplitude.add(window.sessionReplay.plugin({sampleRate: 1}));window.amplitude.init('59010539cde9503811b2e9a80e47e0b4', {"fetchRemoteConfig":true,"autocapture":{"attribution":true,"fileDownloads":true,"formInteractions":true,"pageViews":true,"sessions":true,"elementInteractions":true,"networkTracking":true,"webVitals":true,"frustrationInteractions":true}});</script>
+</head>
+<body>
+
+<nav><a href="../blog.html">Notebooks</a><span>/</span>Statistical Models & Estimation</nav>
+
+<h1>Statistical Models & Estimation</h1>
+<p class="subtitle">What a statistical model is, identifiability, and the properties that make a good estimator</p>
+
+<h2>1. Introduction</h2>
+<p>Before we can estimate anything, we need a formal framework for what we're trying to do. A statistical model specifies the family of distributions we believe generated our data. An estimator is a function of the data that produces a guess for the unknown parameter. The question is: what makes an estimator good?</p>
+
+<h2>2. The Statistical Model</h2>
+<div class="box">
+    <div class="box-label">Statistical Model</div>
+    <p style="margin:0">A statistical experiment is described by a pair \((E, (\mathbb{P}_\theta)_{\theta \in \Theta})\) where \(E\) is the sample space, \(\Theta\) is the parameter space, and \(\mathbb{P}_\theta\) is the distribution of the data when the true parameter is \(\theta\).</p>
+</div>
+<p>We observe a sample \(X_1, \ldots, X_n \sim \mathbb{P}_{\theta^*}\) for some unknown true parameter \(\theta^*\). The goal of statistics is to recover information about \(\theta^*\) from the data.</p>
+
+<h3>Types of Models</h3>
+<ul>
+    <li><strong>Parametric:</strong> \(\Theta \subseteq \mathbb{R}^d\) for finite \(d\). The model is described by a finite number of parameters. Example: \(X \sim \mathcal{N}(\mu, \sigma^2)\) with \(\theta = (\mu, \sigma^2)\).</li>
+    <li><strong>Nonparametric:</strong> \(\Theta\) is infinite-dimensional. No assumption on the distributional form. Example: estimating an arbitrary CDF.</li>
+    <li><strong>Semiparametric:</strong> \(\Theta = \Theta_1 \times \Theta_2\) where \(\Theta_1\) is finite-dimensional (the parameter of interest) and \(\Theta_2\) is infinite-dimensional (a nuisance). Example: Cox proportional hazards model.</li>
+</ul>
+
+<h2>3. Identifiability</h2>
+<div class="box">
+    <div class="box-label">Definition</div>
+    <p style="margin:0">The parameter \(\theta\) is <strong>identifiable</strong> if the map \(\theta \mapsto \mathbb{P}_\theta\) is injective: \(\theta \neq \theta' \implies \mathbb{P}_\theta \neq \mathbb{P}_{\theta'}\).</p>
+</div>
+<p>If the model is not identifiable, two different parameter values produce exactly the same distribution — we cannot distinguish them even with infinite data. Identifiability is a necessary condition for consistent estimation.</p>
+<p><strong>Example:</strong> In a mixture model \(\alpha \mathcal{N}(\mu_1, 1) + (1-\alpha)\mathcal{N}(\mu_2, 1)\), swapping labels \((\alpha, \mu_1, \mu_2) \leftrightarrow (1-\alpha, \mu_2, \mu_1)\) gives the same distribution. The model is not identifiable without additional constraints (e.g., \(\mu_1 < \mu_2\)).</p>
+
+<h2>4. Statistics and Estimators</h2>
+<div class="box">
+    <div class="box-label">Statistic</div>
+    <p style="margin:0">Any measurable function of the data \(X_1, \ldots, X_n\). Examples: \(\bar{X}_n\), \(\max_i X_i\), \(\sum_i X_i^2\).</p>
+</div>
+<div class="box">
+    <div class="box-label">Estimator</div>
+    <p style="margin:0">A statistic \(\hat{\theta}_n = \hat{\theta}(X_1, \ldots, X_n)\) used to estimate the unknown parameter \(\theta^*\). Its expression must not depend on \(\theta^*\).</p>
+</div>
+
+<h2>5. Bias</h2>
+<div class="box">
+    <div class="box-label">Bias</div>
+    <p style="margin:0">\(\text{bias}(\hat{\theta}_n) = \mathbb{E}[\hat{\theta}_n] - \theta^*\)</p>
+</div>
+<p>An estimator is <strong>unbiased</strong> if \(\text{bias}(\hat{\theta}_n) = 0\), i.e., it gets the right answer on average. Unbiasedness is not always possible and is sometimes not even desirable (biased estimators can have lower total error).</p>
+<p><strong>Example:</strong> The sample mean \(\bar{X}_n\) is unbiased for \(\mu\). The sample variance \(S_n^2 = \frac{1}{n}\sum(X_i - \bar{X})^2\) is biased — the unbiased version divides by \(n-1\).</p>
+
+<h2>6. Quadratic Risk</h2>
+<div class="box">
+    <div class="box-label">Quadratic Risk (MSE)</div>
+    <p style="margin:0">\(R(\hat{\theta}_n) = \mathbb{E}\!\left[(\hat{\theta}_n - \theta^*)^2\right] = \text{Var}(\hat{\theta}_n) + \text{bias}(\hat{\theta}_n)^2\)</p>
+</div>
+<p>This bias-variance decomposition is fundamental. Reducing bias often increases variance and vice versa. The optimal estimator minimises total risk, which may accept some bias in exchange for lower variance.</p>
+
+<div class="figure">
+    <svg width="400" height="160" viewBox="0 0 400 160" xmlns="http://www.w3.org/2000/svg">
+        <!-- axes -->
+        <line x1="40" y1="130" x2="370" y2="130" stroke="#000" stroke-width="1"/>
+        <line x1="40" y1="20" x2="40" y2="130" stroke="#000" stroke-width="1"/>
+        <!-- bias curve -->
+        <path d="M40,20 Q180,40 360,125" fill="none" stroke="#000" stroke-width="1.5" stroke-dasharray="5,3"/>
+        <!-- variance curve -->
+        <path d="M40,125 Q100,30 200,25 Q300,25 360,120" fill="none" stroke="#000" stroke-width="1.5"/>
+        <!-- total risk -->
+        <path d="M40,120 Q120,50 200,45 Q280,45 360,120" fill="none" stroke="#000" stroke-width="2" opacity="0.35"/>
+        <!-- labels -->
+        <text x="345" y="120" font-size="10" font-family="Inter,sans-serif" fill="#000">Variance</text>
+        <text x="280" y="75" font-size="10" font-family="Inter,sans-serif" fill="#000">Bias²</text>
+        <text x="165" y="38" font-size="10" font-family="Inter,sans-serif" fill="#666">Total MSE</text>
+        <text x="30" y="145" font-size="10" font-family="Inter,sans-serif" fill="#666">Simple</text>
+        <text x="330" y="145" font-size="10" font-family="Inter,sans-serif" fill="#666">Complex</text>
+        <text x="170" y="148" font-size="10" font-family="Inter,sans-serif" fill="#666">Model complexity →</text>
+    </svg>
+    <div class="caption">Figure 1 — Bias-variance trade-off. Total MSE is minimised at intermediate complexity.</div>
+</div>
+
+<h2>7. Consistency</h2>
+<div class="box">
+    <div class="box-label">Consistency</div>
+    <p style="margin-bottom:0.4rem">An estimator \(\hat{\theta}_n\) is <strong>weakly consistent</strong> for \(\theta^*\) if:</p>
+    <p style="margin:0">\(\hat{\theta}_n \xrightarrow{\mathbb{P}} \theta^* \quad \text{as } n \to \infty\)</p>
+</div>
+<p>Consistency is a minimum requirement: as we collect more data, we should eventually recover the truth. A sufficient condition: \(\text{bias}(\hat{\theta}_n) \to 0\) and \(\text{Var}(\hat{\theta}_n) \to 0\).</p>
+
+<h2>8. Asymptotic Normality</h2>
+<div class="box">
+    <div class="box-label">Asymptotic Normality</div>
+    <p style="margin:0">An estimator \(\hat{\theta}_n\) is asymptotically normal if:</p>
+    <p style="margin-top:0.4rem">\(\sqrt{n}(\hat{\theta}_n - \theta^*) \xrightarrow{(d)} \mathcal{N}(0, \sigma^2)\)</p>
+    <p style="margin-top:0.4rem">for some asymptotic variance \(\sigma^2\). We write \(\hat{\theta}_n \approx \mathcal{N}(\theta^*, \sigma^2/n)\) for large \(n\).</p>
+</div>
+<p>Asymptotic normality is the key result that enables confidence intervals and hypothesis tests. We don't need to know the exact distribution of the estimator — only its limiting behaviour.</p>
+
+<h2>9. Jensen's Inequality</h2>
+<div class="box">
+    <div class="box-label">Jensen's Inequality</div>
+    <ul style="margin:0">
+        <li>If \(f\) is convex: \(\mathbb{E}[f(X)] \geq f(\mathbb{E}[X])\)</li>
+        <li>If \(f\) is concave: \(\mathbb{E}[f(X)] \leq f(\mathbb{E}[X])\)</li>
+    </ul>
+</div>
+<p>Jensen's inequality appears throughout statistics — it shows that the log-likelihood is concave in the parameters (enabling optimisation), and that certain estimators are necessarily biased. For example, \(\mathbb{E}[1/X] \geq 1/\mathbb{E}[X]\) since \(1/x\) is convex.</p>
+
+</body>
+</html>

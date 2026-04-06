@@ -174,7 +174,7 @@
 <body>
 
     <!-- Google Tag Manager (noscript) -->
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KVBPX8VW"
+    <noscript><iframe aria-hidden="true" title="Google Tag Manager" src="https://www.googletagmanager.com/ns.html?id=GTM-KVBPX8VW"
     height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     <div class="page">
@@ -625,45 +625,473 @@
             </div>
         </div>
 
-        <hr class="divider">
-
         <!-- ════════════════════════════════════════════
-             R
+             STATISTICS
         ════════════════════════════════════════════ -->
         <div class="topic-section fade-in">
-            <h2 class="topic-header">R</h2>
-            <p class="topic-desc">Introduction to R for data analysis.</p>
-            <div class="card-grid" style="grid-template-columns: repeat(5,1fr);">
+            <h2 class="topic-header">Statistics</h2>
+            <p class="topic-desc">Nine topics from MIT 18.6501x — convergence, MLE, hypothesis testing, and more.</p>
+            <div class="card-grid">
 
-                <a href="Posts/14 310x Intro to R.html" class="nb-card">
+                <a href="Posts/stat_01_probability_foundations.html" class="nb-card">
                     <div class="nb-chart">
                         <svg viewBox="0 0 120 90" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%">
-                            <!-- R logo-inspired: data frame grid -->
-                            <!-- Axes -->
-                            <line x1="14" y1="12" x2="14" y2="72" stroke="#000" stroke-width="1.2"/>
-                            <line x1="14" y1="72" x2="108" y2="72" stroke="#000" stroke-width="1.2"/>
-                            <!-- Bars (like a basic barplot in R) -->
-                            <rect x="22" y="44" width="14" height="28" fill="#000"/>
-                            <rect x="42" y="30" width="14" height="42" fill="#000"/>
-                            <rect x="62" y="52" width="14" height="20" fill="#000"/>
-                            <rect x="82" y="22" width="14" height="50" fill="#000"/>
-                            <!-- grid lines -->
-                            <line x1="14" y1="52" x2="108" y2="52" stroke="#000" stroke-width="0.4" stroke-dasharray="2,3" opacity="0.5"/>
-                            <line x1="14" y1="32" x2="108" y2="32" stroke="#000" stroke-width="0.4" stroke-dasharray="2,3" opacity="0.5"/>
-                            <!-- R label -->
-                            <text x="108" y="18" font-size="22" font-family="serif" fill="#000" text-anchor="end" font-weight="bold" opacity="0.12">R</text>
+                            <path d="M8,82 Q30,80 48,58 Q58,36 60,20 Q62,36 72,58 Q90,80 112,82" fill="none" stroke="#000" stroke-width="2"/>
+                            <line x1="60" y1="18" x2="60" y2="83" stroke="#000" stroke-width="0.8" stroke-dasharray="3,2" opacity="0.4"/>
+                            <path d="M8,82 Q30,80 48,58 Q56,42 59,32 L59,83Z" fill="#000" opacity="0.08"/>
+                            <path d="M61,32 Q64,42 72,58 Q90,80 112,82 L112,83Z" fill="#000" opacity="0.08"/>
+                            <line x1="8" y1="83" x2="112" y2="83" stroke="#000" stroke-width="1"/>
                         </svg>
                     </div>
                     <div class="nb-info">
-                        <div class="nb-title">R Basics</div>
-                        <div class="nb-tag">Intro to R</div>
+                        <div class="nb-title">Probability Foundations</div>
+                        <div class="nb-tag">Statistics 1</div>
+                    </div>
+                </a>
+
+                <a href="Posts/stat_02_convergence.html" class="nb-card">
+                    <div class="nb-chart">
+                        <svg viewBox="0 0 120 90" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%">
+                            <defs><marker id="ca" markerWidth="5" markerHeight="5" refX="3" refY="2.5" orient="auto"><path d="M0,0.5 L5,2.5 L0,4.5Z" fill="#000"/></marker></defs>
+                            <rect x="6" y="32" width="30" height="22" fill="none" stroke="#000" stroke-width="1.5"/>
+                            <text x="21" y="47" text-anchor="middle" font-size="7" font-family="Inter,sans-serif">a.s.</text>
+                            <line x1="36" y1="43" x2="46" y2="43" stroke="#000" stroke-width="1.5" marker-end="url(#ca)"/>
+                            <rect x="46" y="32" width="32" height="22" fill="none" stroke="#000" stroke-width="1.5"/>
+                            <text x="62" y="47" text-anchor="middle" font-size="6.5" font-family="Inter,sans-serif">in prob.</text>
+                            <line x1="78" y1="43" x2="88" y2="43" stroke="#000" stroke-width="1.5" marker-end="url(#ca)"/>
+                            <rect x="88" y="32" width="26" height="22" fill="none" stroke="#000" stroke-width="1.5"/>
+                            <text x="101" y="47" text-anchor="middle" font-size="6.5" font-family="Inter,sans-serif">dist.</text>
+                            <text x="60" y="20" text-anchor="middle" font-size="7" font-family="Inter,sans-serif" fill="#666">convergence hierarchy</text>
+                        </svg>
+                    </div>
+                    <div class="nb-info">
+                        <div class="nb-title">Convergence Theory</div>
+                        <div class="nb-tag">Statistics 2</div>
+                    </div>
+                </a>
+
+                <a href="Posts/stat_03_statistical_models.html" class="nb-card">
+                    <div class="nb-chart">
+                        <svg viewBox="0 0 120 90" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%">
+                            <ellipse cx="60" cy="45" rx="46" ry="30" fill="none" stroke="#000" stroke-width="1.5"/>
+                            <ellipse cx="60" cy="45" rx="24" ry="16" fill="none" stroke="#000" stroke-width="1.2" stroke-dasharray="3,2"/>
+                            <circle cx="60" cy="45" r="3.5" fill="#000"/>
+                            <text x="70" y="43" font-size="8" font-family="Inter,sans-serif">θ*</text>
+                            <text x="96" y="28" font-size="9" font-family="Inter,sans-serif" fill="#999">Θ</text>
+                        </svg>
+                    </div>
+                    <div class="nb-info">
+                        <div class="nb-title">Statistical Models & Estimation</div>
+                        <div class="nb-tag">Statistics 3</div>
+                    </div>
+                </a>
+
+                <a href="Posts/stat_04_distance_measures.html" class="nb-card">
+                    <div class="nb-chart">
+                        <svg viewBox="0 0 120 90" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%">
+                            <path d="M6,82 Q28,78 44,52 Q54,30 60,16 Q66,30 76,52 Q88,78 102,82" fill="none" stroke="#000" stroke-width="2"/>
+                            <path d="M28,82 Q46,78 60,56 Q70,36 76,22 Q82,36 90,56 Q102,78 114,82" fill="none" stroke="#000" stroke-width="1.5" stroke-dasharray="4,2"/>
+                            <line x1="6" y1="83" x2="114" y2="83" stroke="#000" stroke-width="1"/>
+                            <text x="72" y="14" font-size="7" font-family="Inter,sans-serif" fill="#666">TV / KL</text>
+                        </svg>
+                    </div>
+                    <div class="nb-info">
+                        <div class="nb-title">Distance Measures</div>
+                        <div class="nb-tag">Statistics 4</div>
+                    </div>
+                </a>
+
+                <a href="Posts/stat_05_mle.html" class="nb-card">
+                    <div class="nb-chart">
+                        <svg viewBox="0 0 120 90" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%">
+                            <line x1="12" y1="78" x2="112" y2="78" stroke="#000" stroke-width="1"/>
+                            <line x1="12" y1="8" x2="12" y2="78" stroke="#000" stroke-width="1"/>
+                            <path d="M16,74 Q38,64 58,40 Q70,20 72,14 Q74,20 82,42 Q96,68 112,76" fill="none" stroke="#000" stroke-width="2"/>
+                            <line x1="72" y1="14" x2="72" y2="80" stroke="#000" stroke-width="0.8" stroke-dasharray="3,3" opacity="0.5"/>
+                            <circle cx="72" cy="14" r="3.5" fill="#000"/>
+                            <text x="66" y="86" font-size="8" font-family="Inter,sans-serif" fill="#666">θ̂</text>
+                            <text x="14" y="16" font-size="7" font-family="Inter,sans-serif" fill="#666">ℓ(θ)</text>
+                        </svg>
+                    </div>
+                    <div class="nb-info">
+                        <div class="nb-title">Maximum Likelihood Estimation</div>
+                        <div class="nb-tag">Statistics 5</div>
+                    </div>
+                </a>
+
+                <a href="Posts/stat_06_confidence_intervals.html" class="nb-card">
+                    <div class="nb-chart">
+                        <svg viewBox="0 0 120 90" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%">
+                            <line x1="60" y1="8" x2="60" y2="82" stroke="#000" stroke-width="0.8" stroke-dasharray="3,3"/>
+                            <line x1="22" y1="28" x2="90" y2="28" stroke="#000" stroke-width="2.2"/>
+                            <line x1="22" y1="22" x2="22" y2="34" stroke="#000" stroke-width="1.8"/>
+                            <line x1="90" y1="22" x2="90" y2="34" stroke="#000" stroke-width="1.8"/>
+                            <line x1="16" y1="50" x2="98" y2="50" stroke="#000" stroke-width="2.2"/>
+                            <line x1="16" y1="44" x2="16" y2="56" stroke="#000" stroke-width="1.8"/>
+                            <line x1="98" y1="44" x2="98" y2="56" stroke="#000" stroke-width="1.8"/>
+                            <line x1="75" y1="70" x2="114" y2="70" stroke="#000" stroke-width="2.2" opacity="0.3"/>
+                            <line x1="75" y1="64" x2="75" y2="76" stroke="#000" stroke-width="1.8" opacity="0.3"/>
+                            <line x1="114" y1="64" x2="114" y2="76" stroke="#000" stroke-width="1.8" opacity="0.3"/>
+                            <text x="116" y="74" font-size="6" font-family="Inter,sans-serif" fill="#bbb">✗</text>
+                        </svg>
+                    </div>
+                    <div class="nb-info">
+                        <div class="nb-title">Confidence Intervals & Delta Method</div>
+                        <div class="nb-tag">Statistics 6</div>
+                    </div>
+                </a>
+
+                <a href="Posts/stat_07_mom_mestimation.html" class="nb-card">
+                    <div class="nb-chart">
+                        <svg viewBox="0 0 120 90" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%">
+                            <line x1="12" y1="76" x2="112" y2="76" stroke="#000" stroke-width="1"/>
+                            <line x1="12" y1="8" x2="12" y2="76" stroke="#000" stroke-width="1"/>
+                            <rect x="18" y="50" width="14" height="26" fill="#000" opacity="0.7"/>
+                            <rect x="36" y="36" width="14" height="40" fill="#000" opacity="0.5"/>
+                            <rect x="54" y="24" width="14" height="52" fill="#000" opacity="0.35"/>
+                            <rect x="72" y="38" width="14" height="38" fill="#000" opacity="0.2"/>
+                            <rect x="90" y="58" width="14" height="18" fill="#000" opacity="0.12"/>
+                            <path d="M12,68 Q36,42 60,18 Q84,6 112,28" fill="none" stroke="#000" stroke-width="1.5" stroke-dasharray="3,2"/>
+                        </svg>
+                    </div>
+                    <div class="nb-info">
+                        <div class="nb-title">Method of Moments & M-Estimation</div>
+                        <div class="nb-tag">Statistics 7</div>
+                    </div>
+                </a>
+
+                <a href="Posts/stat_08_hypothesis_testing.html" class="nb-card">
+                    <div class="nb-chart">
+                        <svg viewBox="0 0 120 90" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%">
+                            <line x1="8" y1="82" x2="112" y2="82" stroke="#000" stroke-width="1"/>
+                            <path d="M8,82 Q28,80 44,58 Q54,36 58,22 Q62,36 72,58 Q86,80 104,82" fill="none" stroke="#000" stroke-width="1.8"/>
+                            <line x1="80" y1="58" x2="80" y2="84" stroke="#000" stroke-width="1" stroke-dasharray="2,2"/>
+                            <path d="M80,84 L112,84 L112,72 Q106,56 98,42 Q92,54 86,68 Q83,76 80,82Z" fill="#000" opacity="0.12"/>
+                            <text x="96" y="78" font-size="7" font-family="Inter,sans-serif" fill="#666">α</text>
+                            <text x="50" y="16" font-size="7" font-family="Inter,sans-serif" fill="#666">H₀</text>
+                        </svg>
+                    </div>
+                    <div class="nb-info">
+                        <div class="nb-title">Hypothesis Testing</div>
+                        <div class="nb-tag">Statistics 8</div>
+                    </div>
+                </a>
+
+                <a href="Posts/stat_09_goodness_of_fit.html" class="nb-card">
+                    <div class="nb-chart">
+                        <svg viewBox="0 0 120 90" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%">
+                            <line x1="12" y1="80" x2="112" y2="80" stroke="#000" stroke-width="1"/>
+                            <line x1="12" y1="10" x2="12" y2="80" stroke="#000" stroke-width="1"/>
+                            <polyline points="12,80 32,80 32,62 54,62 54,44 76,44 76,26 98,26 98,10 112,10" fill="none" stroke="#000" stroke-width="2"/>
+                            <path d="M12,80 Q32,76 54,56 Q76,36 98,18 Q108,12 112,10" fill="none" stroke="#000" stroke-width="1.2" stroke-dasharray="3,2" opacity="0.5"/>
+                            <line x1="54" y1="44" x2="54" y2="56" stroke="#000" stroke-width="1.5"/>
+                            <text x="57" y="52" font-size="6.5" font-family="Inter,sans-serif">KS</text>
+                            <text x="13" y="18" font-size="7" font-family="Inter,sans-serif" fill="#666">1</text>
+                        </svg>
+                    </div>
+                    <div class="nb-info">
+                        <div class="nb-title">Goodness of Fit & Empirical Processes</div>
+                        <div class="nb-tag">Statistics 9</div>
                     </div>
                 </a>
 
             </div>
         </div>
 
-        <hr class="divider">
+        <!-- ════════════════════════════════════════════
+             PROBABILITY
+        ════════════════════════════════════════════ -->
+        <div class="topic-section fade-in">
+            <h2 class="topic-header">Probability</h2>
+            <p class="topic-desc">MIT 6.431x — sample spaces, random variables, Bayesian inference, and Markov chains.</p>
+            <div class="card-grid">
+
+                <!-- 1. Axioms & Counting -->
+                <a href="Posts/prob_01_axioms_counting.html" class="nb-card">
+                    <div class="nb-chart">
+                        <svg viewBox="0 0 120 90" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="8" y="8" width="104" height="74" rx="3" fill="none" stroke="#000" stroke-width="1.2"/>
+                            <text x="14" y="24" font-size="11" font-family="serif" fill="#000">Ω</text>
+                            <ellipse cx="52" cy="52" rx="30" ry="22" fill="none" stroke="#000" stroke-width="1"/>
+                            <text x="46" y="56" font-size="10" font-family="serif" fill="#000">A</text>
+                            <ellipse cx="75" cy="50" rx="28" ry="20" fill="none" stroke="#000" stroke-width="1" stroke-dasharray="3,2"/>
+                            <text x="90" y="44" font-size="10" font-family="serif" fill="#000">B</text>
+                            <text x="62" y="54" font-size="8" font-family="sans-serif" fill="#000">∩</text>
+                        </svg>
+                    </div>
+                    <div class="nb-title">Axioms & Counting</div>
+                    <div class="nb-tag">Probability 1</div>
+                </a>
+
+                <!-- 2. Conditioning & Bayes -->
+                <a href="Posts/prob_02_conditioning_bayes.html" class="nb-card">
+                    <div class="nb-chart">
+                        <svg viewBox="0 0 120 90" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="8" y="12" width="104" height="66" rx="3" fill="none" stroke="#000" stroke-width="1.2"/>
+                            <rect x="8" y="12" width="52" height="66" fill="#000" opacity="0.06"/>
+                            <text x="24" y="50" font-size="10" font-family="serif" fill="#000">A₁</text>
+                            <text x="72" y="50" font-size="10" font-family="serif" fill="#000">A₂</text>
+                            <ellipse cx="60" cy="46" rx="28" ry="20" fill="none" stroke="#000" stroke-width="1.2"/>
+                            <text x="54" y="50" font-size="9" font-family="serif" fill="#000">B</text>
+                            <text x="34" y="82" font-size="7" font-family="sans-serif" fill="#666">P(A|B) = P(A∩B)/P(B)</text>
+                        </svg>
+                    </div>
+                    <div class="nb-title">Conditioning & Bayes' Rule</div>
+                    <div class="nb-tag">Probability 2</div>
+                </a>
+
+                <!-- 3. Discrete RVs -->
+                <a href="Posts/prob_03_discrete_rvs.html" class="nb-card">
+                    <div class="nb-chart">
+                        <svg viewBox="0 0 120 90" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+                            <line x1="12" y1="75" x2="108" y2="75" stroke="#000" stroke-width="1"/>
+                            <line x1="12" y1="10" x2="12" y2="75" stroke="#000" stroke-width="1"/>
+                            <rect x="22" y="58" width="10" height="17" fill="#000" opacity="0.2"/>
+                            <rect x="38" y="42" width="10" height="33" fill="#000" opacity="0.45"/>
+                            <rect x="54" y="28" width="10" height="47" fill="#000" opacity="0.7"/>
+                            <rect x="70" y="38" width="10" height="37" fill="#000" opacity="0.55"/>
+                            <rect x="86" y="55" width="10" height="20" fill="#000" opacity="0.3"/>
+                            <text x="60" y="88" font-size="7" font-family="sans-serif" fill="#666" text-anchor="middle">PMF: Binomial</text>
+                        </svg>
+                    </div>
+                    <div class="nb-title">Discrete Random Variables</div>
+                    <div class="nb-tag">Probability 3</div>
+                </a>
+
+                <!-- 4. Continuous RVs -->
+                <a href="Posts/prob_04_continuous_rvs.html" class="nb-card">
+                    <div class="nb-chart">
+                        <svg viewBox="0 0 120 90" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+                            <line x1="10" y1="72" x2="110" y2="72" stroke="#000" stroke-width="1"/>
+                            <line x1="10" y1="10" x2="10" y2="72" stroke="#000" stroke-width="1"/>
+                            <path d="M15,70 Q35,68 50,45 Q60,28 65,20 Q70,28 80,45 Q95,68 112,70" fill="none" stroke="#000" stroke-width="1.8"/>
+                            <path d="M50,45 Q60,28 65,20 Q70,28 80,45 L80,72 L50,72Z" fill="#000" opacity="0.12"/>
+                            <text x="60" y="85" font-size="7" font-family="sans-serif" fill="#666" text-anchor="middle">PDF — area = probability</text>
+                        </svg>
+                    </div>
+                    <div class="nb-title">Continuous Random Variables</div>
+                    <div class="nb-tag">Probability 4</div>
+                </a>
+
+                <!-- 5. Named Distributions -->
+                <a href="Posts/prob_05_named_distributions.html" class="nb-card">
+                    <div class="nb-chart">
+                        <svg viewBox="0 0 120 90" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M10,68 Q30,66 50,35 Q60,18 65,12 Q70,18 80,35 Q100,66 112,68" fill="none" stroke="#000" stroke-width="1.8"/>
+                            <line x1="10" y1="68" x2="112" y2="68" stroke="#000" stroke-width="0.8"/>
+                            <text x="25" y="30" font-size="7" font-family="sans-serif" fill="#666">N(μ,σ²)</text>
+                            <path d="M10,68 Q25,50 35,30 Q40,20 45,68" fill="none" stroke="#000" stroke-width="1" stroke-dasharray="3,2" opacity="0.5"/>
+                            <text x="14" y="25" font-size="7" font-family="sans-serif" fill="#999">Expo</text>
+                            <text x="60" y="85" font-size="7" font-family="sans-serif" fill="#666" text-anchor="middle">Standard families</text>
+                        </svg>
+                    </div>
+                    <div class="nb-title">Named Distributions</div>
+                    <div class="nb-tag">Probability 5</div>
+                </a>
+
+                <!-- 6. Covariance & Conditioning -->
+                <a href="Posts/prob_06_covariance_conditioning.html" class="nb-card">
+                    <div class="nb-chart">
+                        <svg viewBox="0 0 120 90" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+                            <line x1="10" y1="75" x2="110" y2="75" stroke="#000" stroke-width="0.8"/>
+                            <line x1="10" y1="10" x2="10" y2="75" stroke="#000" stroke-width="0.8"/>
+                            <circle cx="25" cy="60" r="2" fill="#000" opacity="0.6"/>
+                            <circle cx="38" cy="52" r="2" fill="#000" opacity="0.6"/>
+                            <circle cx="50" cy="44" r="2" fill="#000" opacity="0.6"/>
+                            <circle cx="62" cy="36" r="2" fill="#000" opacity="0.6"/>
+                            <circle cx="75" cy="28" r="2" fill="#000" opacity="0.6"/>
+                            <circle cx="88" cy="20" r="2" fill="#000" opacity="0.6"/>
+                            <line x1="20" y1="65" x2="95" y2="14" stroke="#000" stroke-width="1.2"/>
+                            <text x="60" y="88" font-size="7" font-family="sans-serif" fill="#666" text-anchor="middle">Cov, Corr, E[X|Y]</text>
+                        </svg>
+                    </div>
+                    <div class="nb-title">Covariance & Conditioning</div>
+                    <div class="nb-tag">Probability 6</div>
+                </a>
+
+                <!-- 7. Bayesian Inference -->
+                <a href="Posts/prob_07_bayesian_inference.html" class="nb-card">
+                    <div class="nb-chart">
+                        <svg viewBox="0 0 120 90" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M10,68 Q30,66 45,40 Q52,25 58,18 Q64,25 70,40 Q82,66 108,68" fill="none" stroke="#000" stroke-width="1.2" stroke-dasharray="4,2"/>
+                            <text x="32" y="34" font-size="7" font-family="sans-serif" fill="#999">prior</text>
+                            <path d="M30,68 Q50,62 65,32 Q70,18 72,12 Q74,18 78,32 Q88,62 112,68" fill="none" stroke="#000" stroke-width="1.8"/>
+                            <text x="76" y="22" font-size="7" font-family="sans-serif" fill="#000">posterior</text>
+                            <line x1="10" y1="68" x2="112" y2="68" stroke="#000" stroke-width="0.8"/>
+                            <text x="60" y="85" font-size="7" font-family="sans-serif" fill="#666" text-anchor="middle">MAP · LMS · LLMS</text>
+                        </svg>
+                    </div>
+                    <div class="nb-title">Bayesian Inference</div>
+                    <div class="nb-tag">Probability 7</div>
+                </a>
+
+                <!-- 8. Limit Theorems -->
+                <a href="Posts/prob_08_limit_theorems.html" class="nb-card">
+                    <div class="nb-chart">
+                        <svg viewBox="0 0 120 90" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+                            <line x1="10" y1="72" x2="110" y2="72" stroke="#000" stroke-width="0.8"/>
+                            <rect x="15" y="30" width="18" height="42" fill="#000" opacity="0.12" stroke="#000" stroke-width="0.8"/>
+                            <rect x="38" y="20" width="18" height="52" fill="#000" opacity="0.18" stroke="#000" stroke-width="0.8"/>
+                            <path d="M55,70 Q68,66 80,42 Q86,28 90,20 Q94,28 98,42 Q106,66 112,70" fill="none" stroke="#000" stroke-width="1.8"/>
+                            <text x="60" y="85" font-size="7" font-family="sans-serif" fill="#666" text-anchor="middle">LLN · CLT · Delta Method</text>
+                        </svg>
+                    </div>
+                    <div class="nb-title">Limit Theorems</div>
+                    <div class="nb-tag">Probability 8</div>
+                </a>
+
+                <!-- 9. Markov Chains -->
+                <a href="Posts/prob_09_markov_chains.html" class="nb-card">
+                    <div class="nb-chart">
+                        <svg viewBox="0 0 120 90" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="30" cy="45" r="14" fill="none" stroke="#000" stroke-width="1.2"/>
+                            <text x="30" y="49" text-anchor="middle" font-size="10" font-family="serif" fill="#000">1</text>
+                            <circle cx="90" cy="25" r="14" fill="none" stroke="#000" stroke-width="1.2"/>
+                            <text x="90" y="29" text-anchor="middle" font-size="10" font-family="serif" fill="#000">2</text>
+                            <circle cx="90" cy="65" r="14" fill="none" stroke="#000" stroke-width="1.2"/>
+                            <text x="90" y="69" text-anchor="middle" font-size="10" font-family="serif" fill="#000">3</text>
+                            <line x1="44" y1="38" x2="76" y2="28" stroke="#000" stroke-width="1" marker-end="url(#a2)"/>
+                            <line x1="44" y1="52" x2="76" y2="62" stroke="#000" stroke-width="1" marker-end="url(#a2)"/>
+                            <line x1="90" y1="39" x2="90" y2="51" stroke="#000" stroke-width="1" marker-end="url(#a2)"/>
+                            <defs><marker id="a2" markerWidth="5" markerHeight="5" refX="4" refY="2.5" orient="auto"><path d="M0,0 L5,2.5 L0,5Z" fill="#000"/></marker></defs>
+                            <text x="60" y="85" font-size="7" font-family="sans-serif" fill="#666" text-anchor="middle">Transition · Stationary π</text>
+                        </svg>
+                    </div>
+                    <div class="nb-title">Markov Chains</div>
+                    <div class="nb-tag">Probability 9</div>
+                </a>
+
+            </div>
+        </div>
+
+        <!-- ════════════════════════════════════════════
+             QUANTUM COMPUTING
+        ════════════════════════════════════════════ -->
+        <div class="topic-section fade-in">
+            <h2 class="topic-header">Quantum Computing</h2>
+            <p class="topic-desc">Quantum information and algorithms — qubits, gates, cryptography, and Qiskit implementations.</p>
+            <div class="card-grid">
+
+                <!-- 1. Qubits & Gates -->
+                <a href="Posts/qc_01_qubits_gates.html" class="nb-card">
+                    <div class="nb-chart">
+                        <svg viewBox="0 0 120 90" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+                            <!-- Bloch sphere -->
+                            <ellipse cx="60" cy="52" rx="30" ry="30" fill="none" stroke="#000" stroke-width="1.2"/>
+                            <ellipse cx="60" cy="52" rx="30" ry="8" fill="none" stroke="#000" stroke-width="0.7" stroke-dasharray="3,2"/>
+                            <line x1="60" y1="22" x2="60" y2="82" stroke="#000" stroke-width="0.7" stroke-dasharray="2,2"/>
+                            <line x1="30" y1="52" x2="90" y2="52" stroke="#000" stroke-width="0.7" stroke-dasharray="2,2"/>
+                            <!-- state vector -->
+                            <line x1="60" y1="52" x2="78" y2="32" stroke="#000" stroke-width="1.5" marker-end="url(#bl-arr)"/>
+                            <text x="57" y="19" font-size="8" font-family="serif" fill="#000">|0⟩</text>
+                            <text x="57" y="88" font-size="8" font-family="serif" fill="#000">|1⟩</text>
+                            <defs><marker id="bl-arr" markerWidth="5" markerHeight="5" refX="4" refY="2.5" orient="auto"><path d="M0,0 L5,2.5 L0,5Z" fill="#000"/></marker></defs>
+                        </svg>
+                    </div>
+                    <div class="nb-title">Qubits &amp; Quantum Gates</div>
+                    <div class="nb-tag">Quantum 1</div>
+                </a>
+
+                <!-- 2. QKD & Cryptography -->
+                <a href="Posts/qc_02_qkd_cryptography.html" class="nb-card">
+                    <div class="nb-chart">
+                        <svg viewBox="0 0 120 90" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+                            <!-- Alice box -->
+                            <rect x="8" y="32" width="28" height="26" rx="2" fill="none" stroke="#000" stroke-width="1.2"/>
+                            <text x="22" y="49" font-size="8" font-family="sans-serif" text-anchor="middle" fill="#000">Alice</text>
+                            <!-- Bob box -->
+                            <rect x="84" y="32" width="28" height="26" rx="2" fill="none" stroke="#000" stroke-width="1.2"/>
+                            <text x="98" y="49" font-size="8" font-family="sans-serif" text-anchor="middle" fill="#000">Bob</text>
+                            <!-- photon line -->
+                            <line x1="36" y1="45" x2="84" y2="45" stroke="#000" stroke-width="1" stroke-dasharray="4,2"/>
+                            <!-- key icon -->
+                            <circle cx="60" cy="45" r="6" fill="none" stroke="#000" stroke-width="1"/>
+                            <line x1="66" y1="45" x2="74" y2="45" stroke="#000" stroke-width="1.2"/>
+                            <line x1="71" y1="45" x2="71" y2="41" stroke="#000" stroke-width="1"/>
+                            <!-- BB84 label -->
+                            <text x="60" y="72" font-size="7" font-family="sans-serif" text-anchor="middle" fill="#555">BB84</text>
+                        </svg>
+                    </div>
+                    <div class="nb-title">QKD &amp; Cryptography</div>
+                    <div class="nb-tag">Quantum 2</div>
+                </a>
+
+                <!-- 3. Deutsch-Jozsa (notebook) -->
+                <a href="Posts/qc_03_deutsch_jozsa.html" class="nb-card">
+                    <div class="nb-chart">
+                        <svg viewBox="0 0 120 90" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+                            <!-- circuit lines -->
+                            <line x1="10" y1="35" x2="110" y2="35" stroke="#000" stroke-width="0.8"/>
+                            <line x1="10" y1="55" x2="110" y2="55" stroke="#000" stroke-width="0.8"/>
+                            <!-- H gates -->
+                            <rect x="18" y="28" width="14" height="14" fill="#fff" stroke="#000" stroke-width="1"/>
+                            <text x="25" y="38" font-size="8" font-family="sans-serif" text-anchor="middle" fill="#000">H</text>
+                            <rect x="18" y="48" width="14" height="14" fill="#fff" stroke="#000" stroke-width="1"/>
+                            <text x="25" y="58" font-size="8" font-family="sans-serif" text-anchor="middle" fill="#000">H</text>
+                            <!-- Oracle Uf -->
+                            <rect x="44" y="25" width="24" height="40" fill="#fff" stroke="#000" stroke-width="1.2"/>
+                            <text x="56" y="48" font-size="8" font-family="sans-serif" text-anchor="middle" fill="#000">Uf</text>
+                            <!-- H after -->
+                            <rect x="80" y="28" width="14" height="14" fill="#fff" stroke="#000" stroke-width="1"/>
+                            <text x="87" y="38" font-size="8" font-family="sans-serif" text-anchor="middle" fill="#000">H</text>
+                            <!-- measure -->
+                            <rect x="98" y="28" width="10" height="14" fill="#fff" stroke="#000" stroke-width="1"/>
+                            <text x="103" y="38" font-size="7" font-family="sans-serif" text-anchor="middle" fill="#000">M</text>
+                        </svg>
+                    </div>
+                    <div class="nb-title">Deutsch–Jozsa Algorithm</div>
+                    <div class="nb-tag">Quantum 3 · Notebook</div>
+                </a>
+
+                <!-- 4. Grover's (notebook) -->
+                <a href="Posts/qc_04_grover.html" class="nb-card">
+                    <div class="nb-chart">
+                        <svg viewBox="0 0 120 90" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+                            <!-- amplitude bars -->
+                            <line x1="10" y1="75" x2="110" y2="75" stroke="#000" stroke-width="0.8"/>
+                            <rect x="18" y="40" width="10" height="35" fill="#000" opacity="0.15"/>
+                            <rect x="32" y="50" width="10" height="25" fill="#000" opacity="0.15"/>
+                            <rect x="46" y="20" width="10" height="55" fill="#000" opacity="0.85"/>
+                            <rect x="60" y="50" width="10" height="25" fill="#000" opacity="0.15"/>
+                            <rect x="74" y="45" width="10" height="30" fill="#000" opacity="0.15"/>
+                            <rect x="88" y="55" width="10" height="20" fill="#000" opacity="0.15"/>
+                            <!-- target marker -->
+                            <text x="51" y="16" font-size="8" font-family="sans-serif" text-anchor="middle" fill="#000">★</text>
+                            <text x="60" y="86" font-size="7" font-family="sans-serif" text-anchor="middle" fill="#555">Grover's</text>
+                        </svg>
+                    </div>
+                    <div class="nb-title">Grover's Search Algorithm</div>
+                    <div class="nb-tag">Quantum 4 · Notebook</div>
+                </a>
+
+                <!-- 5. Shor's (notebook) -->
+                <a href="Posts/qc_05_shor.html" class="nb-card">
+                    <div class="nb-chart">
+                        <svg viewBox="0 0 120 90" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+                            <!-- QFT label -->
+                            <text x="60" y="20" font-size="9" font-family="sans-serif" text-anchor="middle" fill="#000">QFT</text>
+                            <!-- circuit lines x4 -->
+                            <line x1="10" y1="32" x2="110" y2="32" stroke="#000" stroke-width="0.7"/>
+                            <line x1="10" y1="44" x2="110" y2="44" stroke="#000" stroke-width="0.7"/>
+                            <line x1="10" y1="56" x2="110" y2="56" stroke="#000" stroke-width="0.7"/>
+                            <line x1="10" y1="68" x2="110" y2="68" stroke="#000" stroke-width="0.7"/>
+                            <!-- H + controlled rotations -->
+                            <rect x="18" y="26" width="10" height="12" fill="#fff" stroke="#000" stroke-width="1"/>
+                            <text x="23" y="35" font-size="7" font-family="sans-serif" text-anchor="middle" fill="#000">H</text>
+                            <rect x="34" y="38" width="10" height="12" fill="#fff" stroke="#000" stroke-width="1"/>
+                            <text x="39" y="47" font-size="6" font-family="sans-serif" text-anchor="middle" fill="#000">R₂</text>
+                            <line x1="23" y1="38" x2="39" y2="38" stroke="#000" stroke-width="0.8"/>
+                            <circle cx="23" cy="38" r="2" fill="#000"/>
+                            <!-- 15 = 3 x 5 -->
+                            <text x="60" y="83" font-size="7" font-family="sans-serif" text-anchor="middle" fill="#555">15 = 3 × 5</text>
+                        </svg>
+                    </div>
+                    <div class="nb-title">Shor's Factoring Algorithm</div>
+                    <div class="nb-tag">Quantum 5 · Notebook</div>
+                </a>
+
+            </div>
+        </div>
 
         <!-- ════════════════════════════════════════════
              PYTHON
@@ -960,6 +1388,37 @@
                     <div class="nb-info">
                         <div class="nb-title">Visualization of Data</div>
                         <div class="nb-tag">Python 10</div>
+                    </div>
+                </a>
+
+            </div>
+        </div>
+
+        <!-- ════════════════════════════════════════════
+             R
+        ════════════════════════════════════════════ -->
+        <div class="topic-section fade-in">
+            <h2 class="topic-header">R</h2>
+            <p class="topic-desc">Introduction to R for data analysis.</p>
+            <div class="card-grid">
+
+                <a href="Posts/14 310x Intro to R.html" class="nb-card">
+                    <div class="nb-chart">
+                        <svg viewBox="0 0 120 90" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%">
+                            <line x1="14" y1="12" x2="14" y2="72" stroke="#000" stroke-width="1.2"/>
+                            <line x1="14" y1="72" x2="108" y2="72" stroke="#000" stroke-width="1.2"/>
+                            <rect x="22" y="44" width="14" height="28" fill="#000"/>
+                            <rect x="42" y="30" width="14" height="42" fill="#000"/>
+                            <rect x="62" y="52" width="14" height="20" fill="#000"/>
+                            <rect x="82" y="22" width="14" height="50" fill="#000"/>
+                            <line x1="14" y1="52" x2="108" y2="52" stroke="#000" stroke-width="0.4" stroke-dasharray="2,3" opacity="0.5"/>
+                            <line x1="14" y1="32" x2="108" y2="32" stroke="#000" stroke-width="0.4" stroke-dasharray="2,3" opacity="0.5"/>
+                            <text x="108" y="18" font-size="22" font-family="serif" fill="#000" text-anchor="end" font-weight="bold" opacity="0.12">R</text>
+                        </svg>
+                    </div>
+                    <div class="nb-info">
+                        <div class="nb-title">R Basics</div>
+                        <div class="nb-tag">Intro to R</div>
                     </div>
                 </a>
 

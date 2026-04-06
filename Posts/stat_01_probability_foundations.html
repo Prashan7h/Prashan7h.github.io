@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Probability Foundations — Statistics From Scratch</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+    <style>
+        *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+        body { background: #fff; color: #000; font-family: 'Inter', sans-serif; font-weight: 300; line-height: 1.6; max-width: 720px; margin: 0 auto; padding: 2rem 2rem 6rem; }
+        nav { margin-bottom: 3rem; font-size: 0.75rem; letter-spacing: 0.04em; }
+        nav a { color: #000; text-decoration: none; }
+        nav a:hover { opacity: 0.5; }
+        nav span { margin: 0 0.5rem; opacity: 0.3; }
+        h1 { font-family: 'Cormorant Garamond', serif; font-size: 2.2rem; font-weight: 600; line-height: 1.2; margin-bottom: 0.4rem; }
+        .subtitle { font-family: 'Cormorant Garamond', serif; font-size: 1.1rem; font-style: italic; color: #444; margin-bottom: 3rem; }
+        h2 { font-family: 'Cormorant Garamond', serif; font-size: 1.6rem; font-weight: 600; margin: 3rem 0 1rem; border-bottom: 1px solid #eee; padding-bottom: 0.3rem; }
+        h3 { font-family: 'Inter', sans-serif; font-size: 0.88rem; font-weight: 500; letter-spacing: 0.04em; text-transform: uppercase; margin: 2rem 0 0.6rem; }
+        p { font-size: 0.92rem; line-height: 1.8; margin-bottom: 0.9rem; }
+        ul, ol { font-size: 0.92rem; line-height: 1.8; padding-left: 1.4rem; margin-bottom: 0.9rem; }
+        li { margin-bottom: 0.25rem; }
+        .box { border-left: 2px solid #000; padding: 0.9rem 1.1rem; margin: 1.5rem 0; }
+        .box-label { font-size: 0.7rem; font-weight: 500; letter-spacing: 0.08em; text-transform: uppercase; margin-bottom: 0.4rem; opacity: 0.5; }
+        .figure { margin: 2rem 0; text-align: center; }
+        .figure svg { display: inline-block; }
+        .caption { font-size: 0.78rem; color: #666; margin-top: 0.5rem; }
+        mjx-container { overflow-x: auto; }
+    </style>
+    <script src="https://cdn.amplitude.com/script/59010539cde9503811b2e9a80e47e0b4.js"></script>
+    <script>window.amplitude.add(window.sessionReplay.plugin({sampleRate: 1}));window.amplitude.init('59010539cde9503811b2e9a80e47e0b4', {"fetchRemoteConfig":true,"autocapture":{"attribution":true,"fileDownloads":true,"formInteractions":true,"pageViews":true,"sessions":true,"elementInteractions":true,"networkTracking":true,"webVitals":true,"frustrationInteractions":true}});</script>
+</head>
+<body>
+
+<nav><a href="../blog.html">Notebooks</a><span>/</span>Probability Foundations</nav>
+
+<h1>Probability Foundations</h1>
+<p class="subtitle">Law of Large Numbers, Central Limit Theorem, Hoeffding's Inequality, and the Gaussian Distribution</p>
+
+<h2>1. Introduction</h2>
+<p>Statistics and probability are deeply intertwined but answer different questions. <strong>Probability</strong> starts from a known data-generating process and asks: what outcomes should we expect? <strong>Statistics</strong> starts from observed data and asks: what process could have generated this?</p>
+<p>This notebook covers the foundational probability results that underpin all of statistical inference — how sample averages behave, how they concentrate around their mean, and why the Gaussian distribution appears everywhere.</p>
+
+<h2>2. The Law of Large Numbers</h2>
+<p>Let \(X_1, X_2, \ldots, X_n\) be i.i.d. random variables with \(\mathbb{E}[X] = \mu\) and \(\text{Var}(X) = \sigma^2\). The sample mean is:</p>
+\[\bar{X}_n = \frac{1}{n}\sum_{i=1}^n X_i\]
+<div class="box">
+    <div class="box-label">Weak Law of Large Numbers</div>
+    <p style="margin:0">\(\bar{X}_n \xrightarrow{\mathbb{P}} \mu \quad \text{as } n \to \infty\)</p>
+</div>
+<p>The sample average converges in probability to the true mean. No matter how noisy individual observations are, averaging enough of them drives the error to zero. This is why we can estimate population parameters from samples at all.</p>
+
+<div class="figure">
+    <svg width="540" height="180" viewBox="0 0 540 180" xmlns="http://www.w3.org/2000/svg">
+        <!-- axes -->
+        <line x1="40" y1="150" x2="520" y2="150" stroke="#000" stroke-width="1"/>
+        <line x1="40" y1="20" x2="40" y2="150" stroke="#000" stroke-width="1"/>
+        <!-- mu line -->
+        <line x1="40" y1="90" x2="520" y2="90" stroke="#000" stroke-width="0.8" stroke-dasharray="4,3" opacity="0.4"/>
+        <text x="522" y="93" font-size="11" font-family="Inter,sans-serif" fill="#666">μ</text>
+        <!-- converging band -->
+        <path d="M40,30 Q150,70 300,82 Q420,87 520,89" fill="none" stroke="#000" stroke-width="1.5"/>
+        <path d="M40,148 Q150,120 300,98 Q420,93 520,91" fill="none" stroke="#000" stroke-width="1.5" opacity="0.4"/>
+        <!-- labels -->
+        <text x="40" y="168" font-size="10" font-family="Inter,sans-serif" fill="#666">n=1</text>
+        <text x="490" y="168" font-size="10" font-family="Inter,sans-serif" fill="#666">n→∞</text>
+        <text x="15" y="93" font-size="10" font-family="Inter,sans-serif" fill="#666" transform="rotate(-90,15,93)">X̄ₙ</text>
+    </svg>
+    <div class="caption">Figure 1 — The sample mean concentrates around μ as n grows. The band of variability collapses.</div>
+</div>
+
+<h2>3. The Central Limit Theorem</h2>
+<p>The LLN tells us the sample mean converges to μ. The CLT tells us <em>how fast</em> and in <em>what shape</em>.</p>
+<div class="box">
+    <div class="box-label">Central Limit Theorem</div>
+    <p style="margin:0">\(\sqrt{n}\,\frac{\bar{X}_n - \mu}{\sigma} \xrightarrow{(d)} \mathcal{N}(0,1) \quad \text{as } n \to \infty\)</p>
+</div>
+<p>Equivalently, \(\sqrt{n}(\bar{X}_n - \mu) \xrightarrow{(d)} \mathcal{N}(0, \sigma^2)\). The normalised sample mean is approximately Gaussian regardless of the original distribution of \(X_i\). This is why Gaussian assumptions are so pervasive — they emerge naturally from averaging.</p>
+<p>Practical implication: for large \(n\), we can treat \(\bar{X}_n\) as approximately \(\mathcal{N}(\mu, \sigma^2/n)\), enabling confidence intervals and hypothesis tests without knowing the true distribution.</p>
+
+<div class="figure">
+    <svg width="540" height="200" viewBox="0 0 540 200" xmlns="http://www.w3.org/2000/svg">
+        <!-- three histograms becoming bell curves -->
+        <!-- n=1: uniform-ish -->
+        <rect x="50" y="60" width="30" height="100" fill="none" stroke="#000" stroke-width="1" opacity="0.5"/>
+        <text x="52" y="175" font-size="10" font-family="Inter,sans-serif" fill="#666">n=1</text>
+        <!-- n=5: triangular -->
+        <path d="M120,160 L135,80 L145,60 L155,80 L170,160Z" fill="none" stroke="#000" stroke-width="1.2" opacity="0.6"/>
+        <text x="128" y="175" font-size="10" font-family="Inter,sans-serif" fill="#666">n=5</text>
+        <!-- n=30: bell curve -->
+        <path d="M220,160 Q240,158 260,120 Q270,80 280,50 Q290,80 300,120 Q320,158 340,160" fill="none" stroke="#000" stroke-width="1.8"/>
+        <text x="265" y="175" font-size="10" font-family="Inter,sans-serif" fill="#666">n=30</text>
+        <!-- n=100: narrow bell -->
+        <path d="M380,160 Q400,159 420,130 Q430,100 440,60 Q450,100 460,130 Q480,159 500,160" fill="none" stroke="#000" stroke-width="1.8"/>
+        <text x="425" y="175" font-size="10" font-family="Inter,sans-serif" fill="#666">n=100</text>
+        <!-- axis -->
+        <line x1="40" y1="160" x2="520" y2="160" stroke="#000" stroke-width="1"/>
+        <text x="200" y="195" font-size="10" font-family="Inter,sans-serif" fill="#666">Distribution of X̄ₙ converges to Gaussian</text>
+    </svg>
+    <div class="caption">Figure 2 — As n increases, the distribution of the sample mean approaches a Gaussian regardless of the original distribution.</div>
+</div>
+
+<h2>4. Hoeffding's Inequality</h2>
+<p>The CLT is asymptotic. Hoeffding gives a <em>finite-sample</em> guarantee on how far \(\bar{X}_n\) can deviate from \(\mu\).</p>
+<div class="box">
+    <div class="box-label">Hoeffding's Inequality</div>
+    <p style="margin-bottom:0.4rem">Let \(X_1, \ldots, X_n\) be i.i.d. with \(\mathbb{E}[X]=\mu\) and \(X \in [a,b]\) almost surely. Then for all \(\epsilon > 0\):</p>
+    <p style="margin:0">\[\mathbb{P}\!\left(|\bar{X}_n - \mu| \geq \epsilon\right) \leq 2\exp\!\left(\frac{-2n\epsilon^2}{(b-a)^2}\right)\]</p>
+</div>
+<p>Key observations:</p>
+<ul>
+    <li>The bound decays <em>exponentially</em> in \(n\) and in \(\epsilon^2\) — much faster than Markov or Chebyshev bounds.</li>
+    <li>It requires bounded support \([a,b]\); wider range means weaker bound.</li>
+    <li>No knowledge of \(\sigma^2\) is needed — only the range.</li>
+    <li>Used heavily in machine learning theory to bound generalisation error.</li>
+</ul>
+
+<h2>5. The Gaussian Distribution</h2>
+<p>A random variable \(X \sim \mathcal{N}(\mu, \sigma^2)\) has probability density:</p>
+\[f_{\mu,\sigma^2}(x) = \frac{1}{\sigma\sqrt{2\pi}}\exp\!\left(-\frac{(x-\mu)^2}{2\sigma^2}\right)\]
+<p>with \(\mathbb{E}[X] = \mu\) and \(\text{Var}(X) = \sigma^2\).</p>
+
+<h3>Key Properties</h3>
+<ul>
+    <li><strong>Affine invariance:</strong> If \(X \sim \mathcal{N}(\mu, \sigma^2)\), then \(aX + b \sim \mathcal{N}(a\mu+b,\; a^2\sigma^2)\).</li>
+    <li><strong>Standardisation:</strong> \(Z = (X-\mu)/\sigma \sim \mathcal{N}(0,1)\).</li>
+    <li><strong>Symmetry:</strong> If \(X \sim \mathcal{N}(0,\sigma^2)\), then \(-X \sim \mathcal{N}(0,\sigma^2)\), so \(\mathbb{P}(|X|>x) = 2\mathbb{P}(X>x)\) for \(x>0\).</li>
+    <li><strong>Sum closure:</strong> If \(X \sim \mathcal{N}(\mu_1,\sigma_1^2)\) and \(Y \sim \mathcal{N}(\mu_2,\sigma_2^2)\) are independent, then \(X+Y \sim \mathcal{N}(\mu_1+\mu_2,\, \sigma_1^2+\sigma_2^2)\).</li>
+</ul>
+
+<h3>Quantiles</h3>
+<p>The quantile of order \(1-\alpha\) of a random variable \(X\) is the number \(q_\alpha\) such that \(\mathbb{P}(X \leq q_\alpha) = 1-\alpha\). For \(Z \sim \mathcal{N}(0,1)\): \(\mathbb{P}(|Z| > q_{\alpha/2}) = \alpha\). Common values: \(q_{0.025} \approx 1.96\), \(q_{0.05} \approx 1.645\).</p>
+
+<div class="figure">
+    <svg width="440" height="200" viewBox="0 0 440 200" xmlns="http://www.w3.org/2000/svg">
+        <line x1="20" y1="170" x2="420" y2="170" stroke="#000" stroke-width="1"/>
+        <!-- bell curve -->
+        <path d="M20,170 Q80,168 130,140 Q180,90 220,40 Q260,90 310,140 Q360,168 420,170" fill="none" stroke="#000" stroke-width="2"/>
+        <!-- shaded tails -->
+        <path d="M20,170 Q80,168 130,140 Q145,120 155,108 L155,170Z" fill="#000" opacity="0.15"/>
+        <path d="M285,108 Q295,120 310,140 Q360,168 420,170 L420,170Z" fill="#000" opacity="0.15"/>
+        <!-- labels -->
+        <text x="205" y="165" font-size="11" font-family="Inter,sans-serif" fill="#000">μ</text>
+        <line x1="220" y1="38" x2="220" y2="170" stroke="#000" stroke-width="0.8" stroke-dasharray="3,3" opacity="0.4"/>
+        <text x="70" y="185" font-size="10" font-family="Inter,sans-serif" fill="#666">α/2</text>
+        <text x="355" y="185" font-size="10" font-family="Inter,sans-serif" fill="#666">α/2</text>
+        <text x="160" y="188" font-size="10" font-family="Inter,sans-serif" fill="#666">-q<tspan baseline-shift="sub" font-size="8">α/2</tspan></text>
+        <text x="270" y="188" font-size="10" font-family="Inter,sans-serif" fill="#666">q<tspan baseline-shift="sub" font-size="8">α/2</tspan></text>
+        <line x1="155" y1="108" x2="155" y2="170" stroke="#000" stroke-width="0.8" stroke-dasharray="2,2"/>
+        <line x1="285" y1="108" x2="285" y2="170" stroke="#000" stroke-width="0.8" stroke-dasharray="2,2"/>
+        <text x="165" y="95" font-size="10" font-family="Inter,sans-serif" fill="#000">1 - α</text>
+    </svg>
+    <div class="caption">Figure 3 — The central 1−α probability mass lies between −q<sub>α/2</sub> and q<sub>α/2</sub>.</div>
+</div>
+
+<h2>6. Why It Matters</h2>
+<p>These three results form the backbone of all frequentist statistics:</p>
+<ul>
+    <li>The <strong>LLN</strong> guarantees estimators are consistent — they converge to the truth.</li>
+    <li>The <strong>CLT</strong> gives the limiting distribution — enabling confidence intervals and p-values.</li>
+    <li><strong>Hoeffding</strong> gives non-asymptotic guarantees — essential when \(n\) is small or we need hard bounds.</li>
+    <li>The <strong>Gaussian</strong> is the universal limiting distribution that makes inference tractable.</li>
+</ul>
+
+</body>
+</html>

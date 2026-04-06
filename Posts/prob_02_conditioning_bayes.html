@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conditioning & Bayes' Rule — Probability From Scratch</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+    <style>
+        *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+        body { background: #fff; color: #000; font-family: 'Inter', sans-serif; font-weight: 300; line-height: 1.6; max-width: 720px; margin: 0 auto; padding: 2rem 2rem 6rem; }
+        nav { margin-bottom: 3rem; font-size: 0.75rem; letter-spacing: 0.04em; }
+        nav a { color: #000; text-decoration: none; }
+        nav a:hover { opacity: 0.5; }
+        nav span { margin: 0 0.5rem; opacity: 0.3; }
+        h1 { font-family: 'Cormorant Garamond', serif; font-size: 2.2rem; font-weight: 600; line-height: 1.2; margin-bottom: 0.4rem; }
+        .subtitle { font-family: 'Cormorant Garamond', serif; font-size: 1.1rem; font-style: italic; color: #444; margin-bottom: 3rem; }
+        h2 { font-family: 'Cormorant Garamond', serif; font-size: 1.6rem; font-weight: 600; margin: 3rem 0 1rem; border-bottom: 1px solid #eee; padding-bottom: 0.3rem; }
+        h3 { font-family: 'Inter', sans-serif; font-size: 0.88rem; font-weight: 500; letter-spacing: 0.04em; text-transform: uppercase; margin: 2rem 0 0.6rem; }
+        p { font-size: 0.92rem; line-height: 1.8; margin-bottom: 0.9rem; }
+        ul { font-size: 0.92rem; line-height: 1.8; padding-left: 1.4rem; margin-bottom: 0.9rem; }
+        li { margin-bottom: 0.25rem; }
+        .box { border-left: 2px solid #000; padding: 0.9rem 1.1rem; margin: 1.5rem 0; }
+        .box-label { font-size: 0.7rem; font-weight: 500; letter-spacing: 0.08em; text-transform: uppercase; margin-bottom: 0.4rem; opacity: 0.5; }
+        .figure { margin: 2rem 0; text-align: center; }
+        .caption { font-size: 0.78rem; color: #666; margin-top: 0.5rem; }
+        mjx-container { overflow-x: auto; }
+    </style>
+    <script src="https://cdn.amplitude.com/script/59010539cde9503811b2e9a80e47e0b4.js"></script>
+    <script>window.amplitude.add(window.sessionReplay.plugin({sampleRate: 1}));window.amplitude.init('59010539cde9503811b2e9a80e47e0b4', {"fetchRemoteConfig":true,"autocapture":{"attribution":true,"fileDownloads":true,"formInteractions":true,"pageViews":true,"sessions":true,"elementInteractions":true,"networkTracking":true,"webVitals":true,"frustrationInteractions":true}});</script>
+</head>
+<body>
+<nav><a href="../blog.html">Notebooks</a><span>/</span>Conditioning & Bayes' Rule</nav>
+<h1>Conditioning & Bayes' Rule</h1>
+<p class="subtitle">Conditional probability, the multiplication rule, total probability, Bayes' rule, and independence</p>
+
+<h2>1. Introduction</h2>
+<p>Conditioning is the single most important operation in probability. When we learn that some event \(B\) has occurred, we update our beliefs about other events. Bayes' rule tells us how to reverse the direction of conditioning — inferring causes from effects.</p>
+
+<h2>2. Conditional Probability</h2>
+<div class="box">
+    <div class="box-label">Definition</div>
+    <p style="margin:0">\[\mathbb{P}(A \mid B) = \frac{\mathbb{P}(A \cap B)}{\mathbb{P}(B)}, \quad \mathbb{P}(B) > 0\]</p>
+</div>
+<p>Read: "the probability of \(A\) given that \(B\) occurred." Conditioning restricts the sample space to \(B\) and renormalises. Conditional probabilities satisfy all the standard probability axioms within the reduced space.</p>
+
+<div class="figure">
+    <svg width="340" height="160" viewBox="0 0 340 160" xmlns="http://www.w3.org/2000/svg">
+        <!-- Omega rectangle -->
+        <rect x="10" y="10" width="320" height="140" fill="none" stroke="#000" stroke-width="1.5" rx="4"/>
+        <text x="18" y="28" font-size="11" font-family="Inter,sans-serif">Ω</text>
+        <!-- B ellipse -->
+        <ellipse cx="190" cy="80" rx="110" ry="55" fill="none" stroke="#000" stroke-width="1.5" stroke-dasharray="5,3"/>
+        <text x="280" y="55" font-size="11" font-family="Inter,sans-serif">B</text>
+        <!-- A ellipse -->
+        <ellipse cx="150" cy="80" rx="90" ry="45" fill="none" stroke="#000" stroke-width="1.5"/>
+        <text x="65" y="60" font-size="11" font-family="Inter,sans-serif">A</text>
+        <!-- Intersection label -->
+        <text x="170" y="84" font-size="10" font-family="Inter,sans-serif" fill="#000" text-anchor="middle">A∩B</text>
+        <!-- Arrow showing conditioning -->
+        <text x="170" y="145" font-size="9" font-family="Inter,sans-serif" fill="#666" text-anchor="middle">P(A|B): restrict to B, renormalise</text>
+    </svg>
+    <div class="caption">Figure 1 — Conditioning on B restricts the sample space to B. P(A|B) is the fraction of B occupied by A∩B.</div>
+</div>
+
+<h2>3. Multiplication Rule</h2>
+\[\mathbb{P}(A \cap B) = \mathbb{P}(B)\,\mathbb{P}(A \mid B) = \mathbb{P}(A)\,\mathbb{P}(B \mid A)\]
+<p>Generalised to \(n\) events:</p>
+\[\mathbb{P}(A_1 \cap \cdots \cap A_n) = \mathbb{P}(A_1)\prod_{i=2}^n \mathbb{P}(A_i \mid A_1 \cap \cdots \cap A_{i-1})\]
+
+<h2>4. Total Probability Theorem</h2>
+<p>Partition \(\Omega\) into disjoint events \(A_1, A_2, A_3, \ldots\) Then for any event \(B\):</p>
+<div class="box">
+    <div class="box-label">Total Probability Theorem</div>
+    <p style="margin:0">\[\mathbb{P}(B) = \sum_i \mathbb{P}(A_i)\,\mathbb{P}(B \mid A_i)\]</p>
+</div>
+<p>This decomposes a hard probability into simpler conditional ones. Think of \(A_i\) as scenarios: the total probability of \(B\) is the weighted average of its conditional probability under each scenario.</p>
+
+<h2>5. Bayes' Rule</h2>
+<div class="box">
+    <div class="box-label">Bayes' Rule</div>
+    <p style="margin:0">\[\mathbb{P}(A_i \mid B) = \frac{\mathbb{P}(A_i)\,\mathbb{P}(B \mid A_i)}{\sum_j \mathbb{P}(A_j)\,\mathbb{P}(B \mid A_j)}\]</p>
+</div>
+<p>Bayes' rule reverses the direction of conditioning. Given a cause \(A_i\) and an effect \(B\), it computes the probability of the cause given the effect. The key quantities:</p>
+<ul>
+    <li>\(\mathbb{P}(A_i)\): the <strong>prior</strong> — what we believed before observing \(B\).</li>
+    <li>\(\mathbb{P}(B \mid A_i)\): the <strong>likelihood</strong> — how probable is \(B\) if \(A_i\) is true.</li>
+    <li>\(\mathbb{P}(A_i \mid B)\): the <strong>posterior</strong> — updated belief after observing \(B\).</li>
+    <li>Denominator \(\mathbb{P}(B)\): the <strong>normalising constant</strong>.</li>
+</ul>
+
+<h2>6. Independence</h2>
+<div class="box">
+    <div class="box-label">Independence of Two Events</div>
+    <p style="margin-bottom:0.4rem">\(A\) and \(B\) are independent iff any of these equivalent conditions hold:</p>
+    <ul style="margin:0">
+        <li>\(\mathbb{P}(A \cap B) = \mathbb{P}(A)\,\mathbb{P}(B)\)</li>
+        <li>\(\mathbb{P}(A \mid B) = \mathbb{P}(A)\)</li>
+        <li>\(\mathbb{P}(B \mid A) = \mathbb{P}(B)\)</li>
+    </ul>
+</div>
+<p>Independence means knowing \(B\) gives no information about \(A\). Key fact: if \(A\) and \(B\) are independent, then so are \(A\) and \(B^c\), \(A^c\) and \(B\), and \(A^c\) and \(B^c\).</p>
+<p><strong>Caution:</strong> Mutually exclusive events (with positive probability) are <em>not</em> independent — if \(A\) occurs you know \(B\) did not.</p>
+
+<h3>Conditional Independence</h3>
+<p>\(A\) and \(B\) are conditionally independent given \(C\) if:</p>
+\[\mathbb{P}(A \cap B \mid C) = \mathbb{P}(A \mid C)\,\mathbb{P}(B \mid C)\]
+<p>Conditional independence does not imply (unconditional) independence, and vice versa.</p>
+
+<h3>Independence of Multiple Events</h3>
+<p>Events \(A_1, \ldots, A_n\) are (mutually) independent if for every subset \(S \subseteq \{1,\ldots,n\}\):</p>
+\[\mathbb{P}\!\left(\bigcap_{i \in S} A_i\right) = \prod_{i \in S} \mathbb{P}(A_i)\]
+<p>Pairwise independence does not imply mutual independence.</p>
+
+<h2>7. Why Bayes' Rule Matters</h2>
+<p>Bayes' rule is the foundation of Bayesian inference, medical diagnostics, spam filtering, and machine learning. A classic example: a disease test with 99% accuracy sounds reliable, but if the disease affects 1 in 1000 people, a positive test result still has only ~9% chance of being correct (most positives are false alarms from the healthy majority). Bayes' rule makes this precise.</p>
+
+</body>
+</html>
