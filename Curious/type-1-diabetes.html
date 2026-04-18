@@ -1,0 +1,875 @@
+<!doctype html>
+<html lang="en">
+<head>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-KVBPX8VW');</script>
+<!-- End Google Tag Manager -->
+
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<meta name="description" content="Type 1 Diabetes — a visual explainer covering the biology, history, and latest research behind the autoimmune disease." />
+<link rel="icon" type="image/svg+xml" href="../images/favicon.svg">
+<link rel="icon" type="image/png" sizes="32x32" href="../images/favicon-32.png">
+<link rel="apple-touch-icon" href="../images/apple-touch-icon.png">
+<title>Type 1 Diabetes — An Explainer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Newsreader:ital,opsz,wght@0,6..72,300..700;1,6..72,300..700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:        oklch(98.2% 0.008 85);   /* warm cream */
+    --bg-2:      oklch(95.5% 0.012 80);   /* card */
+    --ink:       oklch(18% 0.015 60);     /* near black, warm */
+    --ink-2:     oklch(38% 0.02 60);
+    --ink-3:     oklch(55% 0.015 60);
+    --rule:      oklch(82% 0.012 70);
+    --rule-2:    oklch(88% 0.01 70);
+    --crimson:   oklch(52% 0.18 25);      /* blood / attack */
+    --crimson-2: oklch(64% 0.15 25);
+    --cyan:      oklch(58% 0.12 220);     /* data / insulin */
+    --cyan-2:    oklch(72% 0.09 220);
+    --gold:      oklch(72% 0.13 85);      /* glucose / accent */
+    --paper:     oklch(99% 0.005 85);
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0;padding:0;background:var(--bg);color:var(--ink);font-family:'Newsreader',Georgia,serif;font-weight:380;font-size:19px;line-height:1.55;-webkit-font-smoothing:antialiased}
+  .serif{font-family:'Instrument Serif',Georgia,serif;font-weight:400;letter-spacing:-0.01em}
+  .mono{font-family:'JetBrains Mono',ui-monospace,Menlo,monospace;font-weight:500;letter-spacing:0;font-size:.72em;text-transform:uppercase}
+  a{color:inherit}
+  .wrap{max-width:1180px;margin:0 auto;padding:0 48px}
+  .narrow{max-width:760px;margin:0 auto;padding:0 48px}
+  hr.rule{border:0;border-top:1px solid var(--rule);margin:0}
+  .kicker{display:flex;align-items:center;gap:12px;color:var(--ink-3);margin-bottom:32px}
+  .kicker .dot{width:7px;height:7px;background:var(--crimson);border-radius:50%;display:inline-block}
+  .kicker .line{flex:1;height:1px;background:var(--rule)}
+
+  /* ---------- TOP BAR ---------- */
+  .topbar{display:flex;justify-content:space-between;align-items:center;padding:22px 48px;border-bottom:1px solid var(--rule);background:var(--bg);position:sticky;top:0;z-index:20;backdrop-filter:blur(6px)}
+  .topbar .brand{font-family:'Instrument Serif',serif;font-size:22px;letter-spacing:-0.01em}
+  .topbar .brand em{font-style:italic;color:var(--crimson)}
+  .topbar nav{display:flex;gap:28px}
+  .topbar nav a{text-decoration:none;color:var(--ink-2);font-family:'JetBrains Mono',monospace;font-size:11px;text-transform:uppercase;letter-spacing:0.08em}
+  .topbar nav a:hover{color:var(--crimson)}
+  .topbar .back{text-decoration:none;color:var(--ink-3);font-family:'JetBrains Mono',monospace;font-size:11px;text-transform:uppercase;letter-spacing:0.08em;display:flex;align-items:center;gap:6px}
+  .topbar .back:hover{color:var(--crimson)}
+
+  /* ---------- HERO ---------- */
+  .hero{padding:120px 48px 80px;max-width:1180px;margin:0 auto;position:relative}
+  .hero .eyebrow{font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:0.16em;text-transform:uppercase;color:var(--crimson);margin-bottom:28px;display:flex;align-items:center;gap:12px}
+  .hero .eyebrow .tag{border:1px solid var(--crimson);padding:4px 10px;border-radius:2px}
+  .hero h1{font-family:'Instrument Serif',serif;font-weight:400;font-size:clamp(64px,9vw,148px);line-height:0.92;letter-spacing:-0.035em;margin:0 0 40px;color:var(--ink)}
+  .hero h1 em{font-style:italic;color:var(--crimson)}
+  .hero h1 .small{font-size:0.48em;font-style:italic;color:var(--ink-3);letter-spacing:-0.01em}
+  .hero .deck{font-size:24px;line-height:1.4;max-width:680px;color:var(--ink-2);font-weight:380}
+  .hero .deck::first-letter{font-family:'Instrument Serif',serif;font-size:3.4em;float:left;line-height:0.9;margin:6px 12px 0 0;color:var(--crimson)}
+  .hero .meta{margin-top:60px;display:flex;gap:48px;flex-wrap:wrap;padding-top:28px;border-top:1px solid var(--rule)}
+  .hero .meta div{flex:0 0 auto}
+  .hero .meta .k{font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:0.14em;text-transform:uppercase;color:var(--ink-3);margin-bottom:6px}
+  .hero .meta .v{font-family:'Instrument Serif',serif;font-size:28px;color:var(--ink)}
+
+  /* running medical "chart lines" decoration in hero */
+  .hero .chart-bg{position:absolute;right:-40px;top:80px;width:520px;height:380px;opacity:0.35;pointer-events:none}
+
+  /* ---------- SECTION SHELL ---------- */
+  section{padding:120px 0;position:relative}
+  section.dark{background:var(--ink);color:var(--paper)}
+  section.dark .kicker{color:oklch(75% 0.01 70)}
+  section.dark .kicker .line{background:oklch(30% 0.01 70)}
+  section.dark h2{color:var(--paper)}
+  section.dark hr.rule{border-top-color:oklch(28% 0.01 70)}
+  h2{font-family:'Instrument Serif',serif;font-weight:400;font-size:clamp(44px,6vw,84px);line-height:0.95;letter-spacing:-0.025em;margin:0 0 28px}
+  h2 em{font-style:italic;color:var(--crimson)}
+  h3{font-family:'Instrument Serif',serif;font-weight:400;font-size:36px;letter-spacing:-0.015em;margin:0 0 12px}
+  .lede{font-size:22px;line-height:1.5;color:var(--ink-2);max-width:620px}
+  section.dark .lede{color:oklch(82% 0.01 70)}
+  .caption{font-family:'JetBrains Mono',monospace;font-size:10.5px;line-height:1.5;letter-spacing:0.06em;text-transform:uppercase;color:var(--ink-3)}
+  section.dark .caption{color:oklch(65% 0.01 70)}
+
+  /* ---------- WHAT-IS / BODY EXPLAINER ---------- */
+  .body-diagram{display:grid;grid-template-columns:1.1fr 1fr;gap:64px;align-items:center;margin-top:64px}
+  .diag-card{background:var(--paper);border:1px solid var(--rule);padding:32px;position:relative}
+  .diag-card .corners::before,.diag-card .corners::after,
+  .diag-card .corners > span::before,.diag-card .corners > span::after{content:"";position:absolute;width:10px;height:10px;border:1px solid var(--crimson)}
+  .diag-card .corners::before{top:-1px;left:-1px;border-right:0;border-bottom:0}
+  .diag-card .corners::after{top:-1px;right:-1px;border-left:0;border-bottom:0}
+  .diag-card .corners > span::before{bottom:-1px;left:-1px;border-right:0;border-top:0}
+  .diag-card .corners > span::after{bottom:-1px;right:-1px;border-left:0;border-top:0}
+
+  .explainer-list{display:grid;grid-template-columns:auto 1fr;gap:20px 28px;margin-top:32px}
+  .explainer-list .num{font-family:'Instrument Serif',serif;font-style:italic;font-size:32px;color:var(--crimson);line-height:1}
+  .explainer-list .txt{font-size:18px;color:var(--ink-2);line-height:1.5;padding-bottom:18px;border-bottom:1px solid var(--rule-2)}
+  .explainer-list .txt b{color:var(--ink);font-weight:600}
+
+  /* ---------- TIMELINE ---------- */
+  .timeline{margin-top:72px;position:relative}
+  .timeline .axis{position:absolute;left:160px;top:0;bottom:0;width:1px;background:oklch(35% 0.01 70)}
+  .tl-row{display:grid;grid-template-columns:160px 1fr;gap:32px;padding:28px 0 28px 0;position:relative;border-top:1px solid oklch(28% 0.01 70)}
+  .tl-row:last-child{border-bottom:1px solid oklch(28% 0.01 70)}
+  .tl-year{font-family:'Instrument Serif',serif;font-size:44px;line-height:1;letter-spacing:-0.02em;color:var(--paper)}
+  .tl-year em{color:oklch(72% 0.13 25);font-style:italic}
+  .tl-dot{position:absolute;left:156px;top:42px;width:9px;height:9px;background:var(--crimson-2);border-radius:50%;box-shadow:0 0 0 4px var(--ink)}
+  .tl-body{padding-left:40px}
+  .tl-body .tl-title{font-family:'Instrument Serif',serif;font-size:28px;line-height:1.1;margin-bottom:8px;color:var(--paper)}
+  .tl-body p{margin:0;color:oklch(80% 0.01 70);font-size:17px;line-height:1.55;max-width:680px}
+  .tl-body .tag{display:inline-block;font-family:'JetBrains Mono',monospace;font-size:10px;text-transform:uppercase;letter-spacing:0.1em;color:oklch(72% 0.13 25);margin-bottom:10px;padding:3px 8px;border:1px solid oklch(45% 0.08 25)}
+
+  /* ---------- PROBLEM / BIOLOGY ---------- */
+  .problem-grid{display:grid;grid-template-columns:repeat(12,1fr);gap:24px;margin-top:72px}
+  .pc{background:var(--paper);border:1px solid var(--rule);padding:28px;position:relative}
+  .pc .n{position:absolute;top:20px;right:24px;font-family:'JetBrains Mono',monospace;font-size:10px;color:var(--ink-3);letter-spacing:0.12em}
+  .pc h4{font-family:'Instrument Serif',serif;font-weight:400;font-size:28px;margin:0 0 10px;letter-spacing:-0.01em}
+  .pc p{margin:0;color:var(--ink-2);font-size:16.5px;line-height:1.5}
+
+  /* ---------- GLUCOSE CHART ---------- */
+  .chart-wrap{margin-top:72px;background:var(--paper);border:1px solid var(--rule);padding:40px 40px 32px}
+  .chart-head{display:flex;justify-content:space-between;align-items:flex-end;margin-bottom:20px;flex-wrap:wrap;gap:20px}
+  .chart-head h3{margin:0}
+  .legend{display:flex;gap:24px;font-family:'JetBrains Mono',monospace;font-size:10.5px;text-transform:uppercase;letter-spacing:0.08em;color:var(--ink-2)}
+  .legend .sw{display:inline-block;width:18px;height:2px;margin-right:8px;vertical-align:middle}
+
+  /* ---------- INCIDENCE / STATS ---------- */
+  .stat-row{display:grid;grid-template-columns:repeat(4,1fr);gap:0;margin-top:72px;border-top:1px solid var(--rule);border-bottom:1px solid var(--rule)}
+  .stat{padding:36px 28px;border-right:1px solid var(--rule)}
+  .stat:last-child{border-right:0}
+  .stat .big{font-family:'Instrument Serif',serif;font-size:72px;line-height:1;letter-spacing:-0.03em;color:var(--ink)}
+  .stat .big em{font-style:italic;color:var(--crimson)}
+  .stat .lbl{margin-top:10px;font-size:15px;color:var(--ink-2);line-height:1.45}
+  .stat .src{margin-top:14px;font-family:'JetBrains Mono',monospace;font-size:9.5px;letter-spacing:0.1em;text-transform:uppercase;color:var(--ink-3)}
+
+  /* ---------- RESEARCH FRONTIER ---------- */
+  .labs{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:64px}
+  .lab{border:1px solid var(--rule);background:var(--paper);padding:28px;display:flex;flex-direction:column;gap:12px;min-height:280px}
+  .lab .badge{font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:0.12em;text-transform:uppercase;color:var(--crimson);border:1px solid var(--crimson);padding:3px 8px;align-self:flex-start}
+  .lab h4{font-family:'Instrument Serif',serif;font-weight:400;font-size:30px;letter-spacing:-0.015em;margin:4px 0 4px}
+  .lab .who{font-family:'JetBrains Mono',monospace;font-size:10.5px;letter-spacing:0.08em;color:var(--ink-3);text-transform:uppercase;margin-bottom:6px}
+  .lab p{margin:0;font-size:16.5px;color:var(--ink-2);line-height:1.5}
+  .lab .more{margin-top:auto;font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:0.1em;text-transform:uppercase;color:var(--ink)}
+
+  /* ---------- QUOTE / PULLQUOTE ---------- */
+  .pull{margin:120px auto;max-width:900px;padding:0 48px;text-align:center}
+  .pull blockquote{font-family:'Instrument Serif',serif;font-size:clamp(40px,5vw,72px);line-height:1.05;letter-spacing:-0.02em;margin:0;font-style:italic;color:var(--ink)}
+  .pull blockquote em{color:var(--crimson)}
+  .pull cite{display:block;margin-top:28px;font-family:'JetBrains Mono',monospace;font-size:11px;text-transform:uppercase;letter-spacing:0.14em;color:var(--ink-3);font-style:normal}
+
+  /* ---------- PLACEHOLDER IMAGE ---------- */
+  .placeholder{background:repeating-linear-gradient(135deg,oklch(92% 0.01 60) 0 10px,oklch(90% 0.015 60) 10px 20px);border:1px solid var(--rule);display:flex;align-items:center;justify-content:center;text-align:center;padding:18px;color:var(--ink-3);font-family:'JetBrains Mono',monospace;font-size:10.5px;letter-spacing:0.08em;text-transform:uppercase;line-height:1.5}
+  section.dark .placeholder{background:repeating-linear-gradient(135deg,oklch(23% 0.01 60) 0 10px,oklch(26% 0.012 60) 10px 20px);border-color:oklch(35% 0.01 70);color:oklch(65% 0.01 70)}
+
+  /* ---------- FOOTER ---------- */
+  footer{padding:80px 48px 60px;border-top:1px solid var(--rule);margin-top:80px}
+  footer .foot{display:grid;grid-template-columns:1fr 1fr 1fr;gap:40px;max-width:1180px;margin:0 auto}
+  footer h5{font-family:'JetBrains Mono',monospace;font-size:10.5px;letter-spacing:0.14em;text-transform:uppercase;color:var(--ink-3);margin:0 0 14px;font-weight:500}
+  footer p,footer li{font-size:15px;color:var(--ink-2);line-height:1.55}
+  footer ul{list-style:none;padding:0;margin:0}
+  footer li{padding:6px 0;border-bottom:1px solid var(--rule-2)}
+  .signoff{margin:60px auto 0;max-width:1180px;display:flex;justify-content:space-between;align-items:center;font-family:'JetBrains Mono',monospace;font-size:10.5px;letter-spacing:0.1em;text-transform:uppercase;color:var(--ink-3)}
+
+  /* ---------- RESPONSIVE ---------- */
+  @media (max-width: 960px){
+    .wrap,.narrow,.hero,footer{padding-left:24px;padding-right:24px}
+    .topbar{padding:18px 24px}
+    .topbar nav{display:none}
+    .body-diagram{grid-template-columns:1fr;gap:40px}
+    .problem-grid{grid-template-columns:1fr}
+    .stat-row{grid-template-columns:1fr 1fr}
+    .stat:nth-child(2){border-right:0}
+    .stat:nth-child(1),.stat:nth-child(2){border-bottom:1px solid var(--rule)}
+    .labs{grid-template-columns:1fr}
+    .timeline .axis{left:0}
+    .tl-row{grid-template-columns:1fr}
+    .tl-dot{left:-4px;top:36px}
+    .tl-body{padding-left:24px}
+    .hero h1{font-size:64px}
+  }
+
+  /* subtle page-enter feel */
+  .fade{opacity:0;transform:translateY(14px);transition:opacity .9s ease, transform .9s ease}
+  .fade.in{opacity:1;transform:none}
+</style>
+</head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KVBPX8VW"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<!-- TOP BAR -->
+<div class="topbar">
+  <div class="brand">The <em>Sugar</em> File</div>
+  <nav>
+    <a href="#what">01 / What</a>
+    <a href="#history">02 / History</a>
+    <a href="#problem">03 / The Problem</a>
+    <a href="#living">04 / Living With It</a>
+    <a href="#research">05 / Research</a>
+  </nav>
+  <a class="back" href="index.html">← Wonderland</a>
+</div>
+
+<!-- HERO -->
+<header class="hero">
+  <svg class="chart-bg" viewBox="0 0 520 380" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <defs>
+      <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+        <path d="M40 0H0V40" stroke="oklch(82% 0.015 70)" stroke-width="0.5"/>
+      </pattern>
+    </defs>
+    <rect width="520" height="380" fill="url(#grid)"/>
+    <!-- glucose-like erratic line -->
+    <path d="M0 220 L30 200 L55 235 L80 160 L110 275 L140 210 L170 120 L200 250 L230 180 L265 310 L300 155 L330 220 L365 90 L400 260 L440 175 L475 225 L520 140"
+          fill="none" stroke="oklch(52% 0.18 25)" stroke-width="1.6" stroke-linejoin="round"/>
+    <!-- target band -->
+    <rect x="0" y="190" width="520" height="50" fill="oklch(58% 0.12 220 / 0.12)" stroke="oklch(58% 0.12 220 / 0.4)" stroke-dasharray="2 3" stroke-width="0.8"/>
+  </svg>
+
+  <div class="eyebrow">
+    <span class="tag">A Medical Explainer</span>
+    <span>No. 001 — Autoimmune Disease</span>
+  </div>
+
+  <h1>
+    The body<br>
+    turning on<br>
+    <em>itself.</em>
+    <span class="small">&nbsp;a story of 1 in 300</span>
+  </h1>
+
+  <p class="deck">
+    Type 1 diabetes is not caused by sugar, nor lifestyle, nor anything a child could have done differently. It is the immune system — our body's defender — quietly mistaking the pancreas for an invader, and spending months silently destroying the cells that keep us alive. This is what we know, what we don't, and who is racing to fix it.
+  </p>
+
+  <div class="meta">
+    <div><div class="k">Also known as</div><div class="v">Juvenile · T1D · IDDM</div></div>
+    <div><div class="k">First described</div><div class="v">~1552 BCE</div></div>
+    <div><div class="k">First survivable</div><div class="v">January 1922</div></div>
+    <div><div class="k">Known cure</div><div class="v" style="color:var(--crimson)">None — yet</div></div>
+  </div>
+</header>
+
+<hr class="rule"/>
+
+<!-- ================================================== -->
+<!-- SECTION 01 — WHAT IT IS                             -->
+<!-- ================================================== -->
+<section id="what">
+  <div class="wrap">
+    <div class="kicker"><span class="dot"></span><span class="mono">§ 01 — Mechanism</span><span class="line"></span><span class="mono">The Biology</span></div>
+
+    <h2>A hormone <em>stops arriving.</em><br>Everything downstream breaks.</h2>
+    <p class="lede">Every cell in your body runs on glucose. Insulin is the key that unlocks the door. In Type 1 diabetes, the factory that makes the key — a cluster of beta cells tucked inside the pancreas — is demolished by the immune system. The doors stay locked. Glucose piles up in the blood. Cells, starved, begin to cannibalize fat for fuel, releasing acidic byproducts that, untreated, kill within weeks.</p>
+
+    <div class="body-diagram">
+      <!-- SVG: pancreas → beta cell → T-cell attack -->
+      <div class="diag-card">
+        <div class="corners"><span></span></div>
+        <svg viewBox="0 0 560 420" width="100%" xmlns="http://www.w3.org/2000/svg" aria-label="Diagram: T-cells attacking beta cells in a pancreatic islet">
+          <!-- labels -->
+          <text x="20" y="30" font-family="JetBrains Mono" font-size="10" fill="#6b6561" letter-spacing="1.6">FIG. 1 — THE AUTOIMMUNE ATTACK</text>
+
+          <!-- Islet of Langerhans boundary -->
+          <circle cx="280" cy="230" r="150" fill="oklch(96% 0.01 60)" stroke="oklch(70% 0.02 60)" stroke-dasharray="3 4"/>
+          <text x="280" y="95" text-anchor="middle" font-family="Instrument Serif" font-style="italic" font-size="15" fill="oklch(40% 0.02 60)">Islet of Langerhans</text>
+          <text x="280" y="110" text-anchor="middle" font-family="JetBrains Mono" font-size="9" letter-spacing="1.4" fill="oklch(55% 0.01 60)">~1–2 MILLION PER PANCREAS</text>
+
+          <!-- beta cells (healthy and damaged) -->
+          <g>
+            <!-- healthy beta cells (cyan = insulin) -->
+            <circle cx="235" cy="205" r="22" fill="oklch(72% 0.09 220)" stroke="oklch(45% 0.12 220)" stroke-width="1"/>
+            <circle cx="280" cy="175" r="24" fill="oklch(72% 0.09 220)" stroke="oklch(45% 0.12 220)" stroke-width="1"/>
+            <circle cx="320" cy="215" r="20" fill="oklch(72% 0.09 220)" stroke="oklch(45% 0.12 220)" stroke-width="1"/>
+            <circle cx="260" cy="255" r="21" fill="oklch(72% 0.09 220)" stroke="oklch(45% 0.12 220)" stroke-width="1"/>
+            <!-- damaged / dying -->
+            <circle cx="305" cy="270" r="18" fill="oklch(68% 0.02 60)" stroke="oklch(52% 0.18 25)" stroke-width="1.4" stroke-dasharray="3 2"/>
+            <circle cx="230" cy="260" r="14" fill="oklch(68% 0.02 60)" stroke="oklch(52% 0.18 25)" stroke-width="1.4" stroke-dasharray="3 2"/>
+            <!-- insulin dots emitting -->
+            <circle cx="225" cy="185" r="2.5" fill="oklch(45% 0.12 220)"/>
+            <circle cx="215" cy="175" r="2" fill="oklch(45% 0.12 220)"/>
+            <circle cx="285" cy="150" r="2.5" fill="oklch(45% 0.12 220)"/>
+            <circle cx="295" cy="140" r="2" fill="oklch(45% 0.12 220)"/>
+            <circle cx="340" cy="200" r="2" fill="oklch(45% 0.12 220)"/>
+          </g>
+
+          <!-- T-cells (attackers - crimson) surrounding -->
+          <g>
+            <polygon points="130,180 148,172 148,188" fill="oklch(52% 0.18 25)"/>
+            <polygon points="400,200 418,192 418,208" fill="oklch(52% 0.18 25)" transform="rotate(180 409 200)"/>
+            <polygon points="175,340 193,332 193,348" fill="oklch(52% 0.18 25)" transform="rotate(-30 184 340)"/>
+            <polygon points="360,320 378,312 378,328" fill="oklch(52% 0.18 25)" transform="rotate(200 369 320)"/>
+            <polygon points="200,110 218,102 218,118" fill="oklch(52% 0.18 25)" transform="rotate(45 209 110)"/>
+            <!-- arrows -->
+            <path d="M152 180 L205 205" stroke="oklch(52% 0.18 25)" stroke-width="1.2" marker-end="url(#arrh)" fill="none"/>
+            <path d="M395 200 L340 215" stroke="oklch(52% 0.18 25)" stroke-width="1.2" marker-end="url(#arrh)" fill="none"/>
+            <path d="M195 330 L240 275" stroke="oklch(52% 0.18 25)" stroke-width="1.2" marker-end="url(#arrh)" fill="none"/>
+            <path d="M360 315 L320 275" stroke="oklch(52% 0.18 25)" stroke-width="1.2" marker-end="url(#arrh)" fill="none"/>
+            <path d="M220 120 L255 160" stroke="oklch(52% 0.18 25)" stroke-width="1.2" marker-end="url(#arrh)" fill="none"/>
+          </g>
+
+          <defs>
+            <marker id="arrh" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto">
+              <path d="M0 0 L10 5 L0 10 z" fill="oklch(52% 0.18 25)"/>
+            </marker>
+          </defs>
+
+          <!-- callouts -->
+          <line x1="440" y1="175" x2="495" y2="155" stroke="oklch(55% 0.01 60)" stroke-width="0.8"/>
+          <text x="500" y="150" font-family="JetBrains Mono" font-size="9" letter-spacing="1" fill="oklch(40% 0.02 60)">T-CELL</text>
+          <text x="500" y="163" font-family="Instrument Serif" font-style="italic" font-size="12" fill="oklch(30% 0.02 60)">(the attacker)</text>
+
+          <line x1="280" y1="175" x2="65" y2="135" stroke="oklch(55% 0.01 60)" stroke-width="0.8"/>
+          <text x="12" y="125" font-family="JetBrains Mono" font-size="9" letter-spacing="1" fill="oklch(40% 0.02 60)">BETA CELL</text>
+          <text x="12" y="138" font-family="Instrument Serif" font-style="italic" font-size="12" fill="oklch(30% 0.02 60)">(makes insulin)</text>
+
+          <line x1="305" y1="270" x2="505" y2="330" stroke="oklch(55% 0.01 60)" stroke-width="0.8"/>
+          <text x="495" y="328" font-family="JetBrains Mono" font-size="9" letter-spacing="1" fill="oklch(40% 0.02 60)" text-anchor="end">DESTROYED CELL</text>
+          <text x="495" y="341" font-family="Instrument Serif" font-style="italic" font-size="12" fill="oklch(30% 0.02 60)" text-anchor="end">(factory down)</text>
+
+          <text x="280" y="400" text-anchor="middle" font-family="Instrument Serif" font-style="italic" font-size="14" fill="oklch(35% 0.02 60)">By the time symptoms appear, ~80% of beta cells are already gone.</text>
+        </svg>
+      </div>
+
+      <div>
+        <div class="caption">FOUR THINGS HAPPENING AT ONCE</div>
+        <div class="explainer-list">
+          <div class="num">i.</div>
+          <div class="txt"><b>The trigger.</b> In a genetically susceptible person, some event — likely viral, possibly environmental — flips the immune system's recognition of beta cells from "self" to "foreign." The exact trigger is still unknown.</div>
+
+          <div class="num">ii.</div>
+          <div class="txt"><b>The silent war.</b> T-cells infiltrate the pancreas and begin destroying beta cells. This phase can last months to years with no outward symptoms.</div>
+
+          <div class="num">iii.</div>
+          <div class="txt"><b>Collapse.</b> Once roughly four-fifths of insulin production is gone, blood sugar rises fast. Thirst, weight loss, exhaustion, and the fruity-breathed emergency called <em>ketoacidosis</em> arrive — often in weeks.</div>
+
+          <div class="num">iv.</div>
+          <div class="txt"><b>The new baseline.</b> Without external insulin, death. With it, a lifetime of replacing, by hand or pump, a hormone the body used to dose with millisecond precision.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr class="rule"/>
+
+<!-- ================================================== -->
+<!-- SECTION 02 — HISTORY TIMELINE                       -->
+<!-- ================================================== -->
+<section id="history" class="dark">
+  <div class="wrap">
+    <div class="kicker"><span class="dot" style="background:var(--crimson-2)"></span><span class="mono">§ 02 — History</span><span class="line"></span><span class="mono">3,500 Years of Trying</span></div>
+
+    <h2>Once, a diagnosis<br>was a <em>death sentence.</em></h2>
+    <p class="lede">For most of human history, Type 1 diabetes was an obituary with a countdown. The only question was how long. The story below spans the Ebers Papyrus to CRISPR — every dot a life extended.</p>
+
+    <div class="timeline">
+      <div class="axis"></div>
+
+      <div class="tl-row">
+        <div class="tl-year"><em>1552 BC</em></div>
+        <div class="tl-dot"></div>
+        <div class="tl-body">
+          <span class="tag">Antiquity</span>
+          <div class="tl-title">The Ebers Papyrus</div>
+          <p>Ancient Egyptian physicians describe a mysterious condition of "too-great emptying of urine" — the first written record of what we now recognize as diabetes. Treatment: wheat grains, lead, and earth.</p>
+        </div>
+      </div>
+
+      <div class="tl-row">
+        <div class="tl-year">~200</div>
+        <div class="tl-dot"></div>
+        <div class="tl-body">
+          <span class="tag">Naming</span>
+          <div class="tl-title">"Diabetes" — to flow through</div>
+          <p>Greek physician Aretaeus of Cappadocia names the condition, observing that patients seemed to melt away into their own urine. The name sticks for two millennia.</p>
+        </div>
+      </div>
+
+      <div class="tl-row">
+        <div class="tl-year">1889</div>
+        <div class="tl-dot"></div>
+        <div class="tl-body">
+          <span class="tag">Localized</span>
+          <div class="tl-title">Minkowski &amp; von Mering's dog</div>
+          <p>Two German researchers remove a dog's pancreas to study digestion. The dog develops diabetes. The source of the disease, after thousands of years, has an address.</p>
+        </div>
+      </div>
+
+      <div class="tl-row">
+        <div class="tl-year">1910</div>
+        <div class="tl-dot"></div>
+        <div class="tl-body">
+          <span class="tag">Named</span>
+          <div class="tl-title">Sharpey-Shafer coins <em>"insulin"</em></div>
+          <p>The missing pancreatic substance gets a name — from the Latin <em>insula</em>, for island, after the pancreatic islet cells it was presumed to come from. Finding it is another matter.</p>
+        </div>
+      </div>
+
+      <div class="tl-row">
+        <div class="tl-year"><em>1921</em></div>
+        <div class="tl-dot" style="background:oklch(72% 0.13 85)"></div>
+        <div class="tl-body">
+          <span class="tag" style="color:oklch(72% 0.13 85);border-color:oklch(50% 0.1 85)">The Breakthrough</span>
+          <div class="tl-title">Banting, Best, Macleod &amp; Collip</div>
+          <p>In a Toronto lab, a Canadian surgeon, a medical student, a professor, and a biochemist isolate insulin from dog pancreases. Early batches look like "thick brown muck." Collip purifies it.</p>
+        </div>
+      </div>
+
+      <div class="tl-row">
+        <div class="tl-year"><em>1922</em></div>
+        <div class="tl-dot" style="background:oklch(72% 0.13 85)"></div>
+        <div class="tl-body">
+          <span class="tag" style="color:oklch(72% 0.13 85);border-color:oklch(50% 0.1 85)">First Life Saved</span>
+          <div class="tl-title">Leonard Thompson, 14</div>
+          <p>January 11th. A dying Toronto teenager weighing 29kg receives the world's first human insulin injection. The first dose, impure, fails. Twelve days later, a purer dose restores him. Banting and Macleod receive the Nobel Prize within 18 months — still the fastest ever for a medical breakthrough.</p>
+        </div>
+      </div>
+
+      <div class="tl-row">
+        <div class="tl-year">1923</div>
+        <div class="tl-dot"></div>
+        <div class="tl-body">
+          <span class="tag">Access</span>
+          <div class="tl-title">Sold to the University for $1</div>
+          <p>Banting, Best and Collip sell their insulin patent to the University of Toronto for a single dollar each. They want no one excluded by price. Eli Lilly begins mass production.</p>
+        </div>
+      </div>
+
+      <div class="tl-row">
+        <div class="tl-year">1978</div>
+        <div class="tl-dot"></div>
+        <div class="tl-body">
+          <span class="tag">Synthetic</span>
+          <div class="tl-title">Human insulin, made by bacteria</div>
+          <p>Genentech engineers E. coli to produce human insulin — the first commercial recombinant-DNA drug. By 1982, Humulin replaces the cow and pig pancreases that had been supplying the world.</p>
+        </div>
+      </div>
+
+      <div class="tl-row">
+        <div class="tl-year">1999</div>
+        <div class="tl-dot"></div>
+        <div class="tl-body">
+          <span class="tag">Monitoring</span>
+          <div class="tl-title">Continuous glucose monitors</div>
+          <p>The first CGM is approved. Instead of pricking a finger 6 times a day, a sensor under the skin reads glucose every few minutes. Combined with pumps, this eventually becomes an "artificial pancreas."</p>
+        </div>
+      </div>
+
+      <div class="tl-row">
+        <div class="tl-year">2022</div>
+        <div class="tl-dot"></div>
+        <div class="tl-body">
+          <span class="tag">Delay</span>
+          <div class="tl-title">Teplizumab — the first to <em>prevent</em></div>
+          <p>The FDA approves the first drug that can <em>delay</em> the onset of Type 1 diabetes in at-risk patients by an average of two years. Not a cure — but the first time we intervened upstream of the attack.</p>
+        </div>
+      </div>
+
+      <div class="tl-row">
+        <div class="tl-year"><em>2024</em></div>
+        <div class="tl-dot" style="background:oklch(72% 0.13 85)"></div>
+        <div class="tl-body">
+          <span class="tag" style="color:oklch(72% 0.13 85);border-color:oklch(50% 0.1 85)">Proof of Cure</span>
+          <div class="tl-title">Stem cells make insulin, in humans</div>
+          <p>A 25-year-old woman in China, infused with islet cells grown from her own reprogrammed stem cells, begins producing her own insulin again — becoming the first person functionally cured by stem-cell therapy. Vertex Pharma announces similar results in 12 more.</p>
+        </div>
+      </div>
+
+      <div class="tl-row">
+        <div class="tl-year">2025</div>
+        <div class="tl-dot"></div>
+        <div class="tl-body">
+          <span class="tag">Ongoing</span>
+          <div class="tl-title">19 out of 19 mice, cured</div>
+          <p>Stanford researchers cure autoimmune diabetes in every mouse they try, using a gentle blood-stem-cell plus islet transplant. Translation to humans now within reach. The 104-year story continues.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ================================================== -->
+<!-- PULLQUOTE                                           -->
+<!-- ================================================== -->
+<div class="pull">
+  <blockquote>"We need not insulin, <em>but the cells that make it.</em>"</blockquote>
+  <cite>— Douglas Melton, Harvard Stem Cell Institute</cite>
+</div>
+
+<hr class="rule"/>
+
+<!-- ================================================== -->
+<!-- SECTION 03 — WHY IT'S HARD                          -->
+<!-- ================================================== -->
+<section id="problem">
+  <div class="wrap">
+    <div class="kicker"><span class="dot"></span><span class="mono">§ 03 — Complexity</span><span class="line"></span><span class="mono">Why It's So Hard To Cure</span></div>
+
+    <h2>One disease,<br><em>many locked doors.</em></h2>
+    <p class="lede">Replacing insulin kept people alive — but did nothing to stop the immune attack, restore the pancreas, or match the exquisite moment-to-moment precision of a healthy body. Every cure attempt has had to solve at least three of these problems at once.</p>
+
+    <div class="problem-grid">
+      <div class="pc" style="grid-column:span 4">
+        <div class="n">01</div>
+        <h4>The immune system won't forget.</h4>
+        <p>Even if you grew a whole new pancreas, the immune system — trained to see beta cells as enemies — would destroy it again. You have to re-educate immunity itself.</p>
+      </div>
+      <div class="pc" style="grid-column:span 4">
+        <div class="n">02</div>
+        <h4>Insulin is narrow, and death is on both sides.</h4>
+        <p>Too little: organs fail over years. Too much: brain damage within minutes. A healthy pancreas dosed by milligrams, per second. A syringe can only approximate.</p>
+      </div>
+      <div class="pc" style="grid-column:span 4">
+        <div class="n">03</div>
+        <h4>We cannot find the trigger.</h4>
+        <p>A virus? A gut bacterium? A random recombination in the thymus? A century of studies points in many directions. Without a cause, prevention stays out of reach.</p>
+      </div>
+      <div class="pc" style="grid-column:span 6">
+        <div class="n">04</div>
+        <h4>Beta cells are uniquely fragile.</h4>
+        <p>Other organs regenerate. Beta cells barely do. Growing enough of them in a lab — billions, the same size, the same behavior — is an industrial problem nearly as hard as the biological one.</p>
+      </div>
+      <div class="pc" style="grid-column:span 6">
+        <div class="n">05</div>
+        <h4>Immunosuppression trades one illness for another.</h4>
+        <p>We <em>can</em> transplant islet cells from organ donors today — but recipients must take immunosuppressants for life, swapping diabetes for vulnerability to infection and cancer. A half-cure.</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<hr class="rule"/>
+
+<!-- ================================================== -->
+<!-- SECTION 04 — LIVING WITH IT (GLUCOSE CHART + STATS) -->
+<!-- ================================================== -->
+<section id="living">
+  <div class="wrap">
+    <div class="kicker"><span class="dot"></span><span class="mono">§ 04 — The Daily Reality</span><span class="line"></span><span class="mono">A Day In Numbers</span></div>
+
+    <h2>The pancreas you'll<br>need to <em>be</em>.</h2>
+    <p class="lede">Without a functioning pancreas, every meal, every workout, every night of sleep becomes a calculation. Below: one real day's blood glucose for a person with T1D (anonymized, hypothetical reconstruction), versus the narrow band a healthy body holds without you ever noticing.</p>
+
+    <!-- GLUCOSE CHART -->
+    <div class="chart-wrap">
+      <div class="chart-head">
+        <div>
+          <h3>24 hours of blood glucose</h3>
+          <div class="caption" style="margin-top:6px">mg/dL · one person with Type 1 · vs. healthy target band</div>
+        </div>
+        <div class="legend">
+          <div><span class="sw" style="background:var(--crimson)"></span>T1D reading</div>
+          <div><span class="sw" style="background:var(--cyan)"></span>Healthy range</div>
+          <div><span class="sw" style="background:var(--gold)"></span>Meal / bolus</div>
+        </div>
+      </div>
+
+      <svg viewBox="0 0 1100 380" width="100%" xmlns="http://www.w3.org/2000/svg" aria-label="24-hour blood glucose trace for Type 1 diabetic versus healthy range">
+        <!-- grid -->
+        <g stroke="oklch(88% 0.01 70)" stroke-width="0.7">
+          <line x1="50" y1="40"  x2="1080" y2="40"/>
+          <line x1="50" y1="110" x2="1080" y2="110"/>
+          <line x1="50" y1="180" x2="1080" y2="180"/>
+          <line x1="50" y1="250" x2="1080" y2="250"/>
+          <line x1="50" y1="320" x2="1080" y2="320"/>
+        </g>
+
+        <!-- y labels -->
+        <g font-family="JetBrains Mono" font-size="10" fill="oklch(50% 0.01 70)" text-anchor="end">
+          <text x="42" y="44">400</text>
+          <text x="42" y="114">300</text>
+          <text x="42" y="184">200</text>
+          <text x="42" y="254">100</text>
+          <text x="42" y="324">0</text>
+        </g>
+
+        <!-- healthy target band (70-140 mg/dL) -->
+        <rect x="50" y="222" width="1030" height="56" fill="oklch(58% 0.12 220 / 0.12)" stroke="oklch(58% 0.12 220 / 0.5)" stroke-dasharray="3 4" stroke-width="0.8"/>
+        <text x="1070" y="242" text-anchor="end" font-family="JetBrains Mono" font-size="9" fill="oklch(45% 0.12 220)" letter-spacing="1">TARGET · 70–180 mg/dL</text>
+
+        <!-- healthy baseline (flat-ish) -->
+        <path d="M50 252 C 180 246, 280 258, 380 250 C 460 244, 560 260, 680 248 C 800 238, 900 256, 1080 250"
+              fill="none" stroke="oklch(58% 0.12 220)" stroke-width="1.8" stroke-dasharray="0" opacity="0.85"/>
+
+        <!-- T1D trace: erratic w/ spikes and lows -->
+        <path d="M50 250
+                 L110 242
+                 L150 235
+                 L180 140
+                 L220 90
+                 L260 150
+                 L300 215
+                 L340 270
+                 L380 285
+                 L420 200
+                 L450 95
+                 L490 60
+                 L530 165
+                 L570 230
+                 L610 260
+                 L640 250
+                 L680 230
+                 L720 175
+                 L760 120
+                 L800 210
+                 L840 280
+                 L870 300
+                 L900 250
+                 L930 200
+                 L970 155
+                 L1010 220
+                 L1050 260
+                 L1080 245"
+              fill="none" stroke="oklch(52% 0.18 25)" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round"/>
+
+        <!-- meal markers (gold triangles) -->
+        <g fill="oklch(72% 0.13 85)">
+          <polygon points="180,328 190,340 170,340"/>
+          <polygon points="450,328 460,340 440,340"/>
+          <polygon points="760,328 770,340 750,340"/>
+        </g>
+        <g font-family="JetBrains Mono" font-size="9" fill="oklch(45% 0.08 85)" text-anchor="middle" letter-spacing="1">
+          <text x="180" y="355">BREAKFAST</text>
+          <text x="450" y="355">LUNCH</text>
+          <text x="760" y="355">DINNER</text>
+        </g>
+
+        <!-- event callouts -->
+        <g font-family="JetBrains Mono" font-size="9" fill="oklch(52% 0.18 25)" letter-spacing="1">
+          <line x1="220" y1="90" x2="220" y2="20" stroke="oklch(52% 0.18 25)" stroke-width="0.6" stroke-dasharray="2 2"/>
+          <text x="220" y="15" text-anchor="middle">SPIKE · 340</text>
+          <line x1="490" y1="60" x2="490" y2="20" stroke="oklch(52% 0.18 25)" stroke-width="0.6" stroke-dasharray="2 2"/>
+          <text x="490" y="15" text-anchor="middle">STRESS RESPONSE</text>
+          <line x1="870" y1="300" x2="870" y2="360" stroke="oklch(52% 0.18 25)" stroke-width="0.6" stroke-dasharray="2 2"/>
+          <text x="870" y="378" text-anchor="middle" fill="oklch(45% 0.15 25)">LOW · 58 · JUICE!</text>
+        </g>
+
+        <!-- x axis hours -->
+        <g font-family="JetBrains Mono" font-size="9" fill="oklch(55% 0.01 70)" text-anchor="middle" letter-spacing="1">
+          <text x="50" y="375">00:00</text>
+          <text x="222" y="375">06:00</text>
+          <text x="394" y="375">09:00</text>
+          <text x="566" y="375">12:00</text>
+          <text x="738" y="375">18:00</text>
+          <text x="910" y="375">21:00</text>
+          <text x="1080" y="375">24:00</text>
+        </g>
+      </svg>
+
+      <div class="caption" style="margin-top:18px;line-height:1.6">
+        SOURCE: ILLUSTRATIVE TRACE BASED ON PUBLISHED CGM CASE DATA · THE JOB OF A T1D PATIENT IS TO HAND-STEER THE RED LINE INTO THE BLUE BAND, EVERY HOUR, FOR LIFE.
+      </div>
+    </div>
+
+    <!-- STATS -->
+    <div class="stat-row">
+      <div class="stat">
+        <div class="big"><em>~9M</em></div>
+        <div class="lbl">people worldwide live with Type 1 diabetes.</div>
+        <div class="src">IDF / WHO 2024</div>
+      </div>
+      <div class="stat">
+        <div class="big">4×</div>
+        <div class="lbl">the global incidence has roughly quadrupled since 1950 — no one knows exactly why.</div>
+        <div class="src">Epidemiological reviews</div>
+      </div>
+      <div class="stat">
+        <div class="big">180+</div>
+        <div class="lbl">daily decisions a person with T1D makes about food, activity and insulin — most people make zero.</div>
+        <div class="src">Stanford Medicine</div>
+      </div>
+      <div class="stat">
+        <div class="big"><em>$0</em></div>
+        <div class="lbl">price Banting, Best and Collip charged the world for their insulin patent.</div>
+        <div class="src">University of Toronto, 1923</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr class="rule"/>
+
+<!-- ================================================== -->
+<!-- SECTION 05 — RESEARCH                               -->
+<!-- ================================================== -->
+<section id="research" class="dark">
+  <div class="wrap">
+    <div class="kicker"><span class="dot" style="background:var(--crimson-2)"></span><span class="mono">§ 05 — The Frontier</span><span class="line"></span><span class="mono">Who Is Racing To The Cure</span></div>
+
+    <h2>Six groups, five <em>strategies</em>,<br>one moving finish line.</h2>
+    <p class="lede">For the first time in 104 years, the question has shifted from <em>can we manage this</em> to <em>can we end it</em>. Below is a snapshot of the labs and companies with the most momentum as of 2025–2026.</p>
+
+    <div class="labs">
+
+      <div class="lab">
+        <span class="badge">Stem cells</span>
+        <h4>Vertex Pharmaceuticals</h4>
+        <div class="who">Doug Melton · Harvard spinout</div>
+        <p>Their therapy <em>VX-880</em> grows insulin-producing islet cells from embryonic stem cells and infuses them into patients. First-in-human trials show sustained insulin production in 12 people — the first real demonstration of stem-cell replacement for T1D.</p>
+        <div class="more">→ Phase 1/2 · Ongoing</div>
+      </div>
+
+      <div class="lab">
+        <span class="badge">Autologous cells</span>
+        <h4>Deng Hongkui Lab</h4>
+        <div class="who">Peking University · Tianjin</div>
+        <p>In 2024, reprogrammed a 25-year-old patient's own cells into islets and implanted them. She is the first person cured by <em>her own</em> stem cells — no donor, no rejection, no lifelong immunosuppression needed.</p>
+        <div class="more">→ Case Report · Cell, 2024</div>
+      </div>
+
+      <div class="lab">
+        <span class="badge">Immune reset</span>
+        <h4>Stanford Medicine</h4>
+        <div class="who">Seung Kim · Judith Shizuru</div>
+        <p>A gentle blood-stem-cell + islet transplant that builds a <em>hybrid</em> immune system — donor + recipient — and stops the autoimmune attack at its source. Cured 19/19 diabetic mice in 2025. Tools already exist clinically; human trials next.</p>
+        <div class="more">→ J. Clin. Invest., Nov 2025</div>
+      </div>
+
+      <div class="lab">
+        <span class="badge">Prevention</span>
+        <h4>Provention Bio / Sanofi</h4>
+        <div class="who">Teplizumab · FDA-approved 2022</div>
+        <p>The first drug ever to <em>delay</em> the onset of T1D in at-risk children. A 14-day IV course blunts the T-cell attack and buys patients, on average, an extra 2+ years before insulin dependence.</p>
+        <div class="more">→ Approved · Expanding trials</div>
+      </div>
+
+      <div class="lab">
+        <span class="badge">Engineered immunity</span>
+        <h4>Ferreira Lab · MUSC</h4>
+        <div class="who">Leonardo Ferreira · w/ UF &amp; UMass</div>
+        <p>Engineering regulatory T-cells (Tregs) with chimeric antigen receptors (CARs) that act as <em>bodyguards</em> — guarding transplanted islet cells from autoimmune destruction without systemic immunosuppression.</p>
+        <div class="more">→ Preclinical · Breakthrough T1D funded</div>
+      </div>
+
+      <div class="lab">
+        <span class="badge">Smart insulin</span>
+        <h4>T1D Grand Challenge</h4>
+        <div class="who">Diabetes UK · Steve Morgan Foundation</div>
+        <p>£50M global push funding 23 projects across 49 institutions in 8 countries. Focus: glucose-responsive "smart" insulins that activate only when sugar is high, plus insulin-glucagon hybrids that prevent dangerous lows.</p>
+        <div class="more">→ 189 researchers · Live</div>
+      </div>
+
+    </div>
+
+    <!-- World map / distribution -->
+    <div style="margin-top:80px;display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center">
+      <div>
+        <h3 style="color:var(--paper)">A global effort, unevenly distributed.</h3>
+        <p style="color:oklch(78% 0.01 70);font-size:18px;line-height:1.55;margin-top:18px">Research concentrates in the US, Canada, UK and China. Care — and access to modern insulin — does not. In parts of sub-Saharan Africa, life expectancy after diagnosis can still be measured in <em>months</em>. The century since Banting has unevenly reached everyone.</p>
+      </div>
+      <!-- abstract world-map-as-dots -->
+      <svg viewBox="0 0 600 300" xmlns="http://www.w3.org/2000/svg" aria-label="Abstract world map showing concentration of T1D research centers">
+        <defs>
+          <pattern id="dots" width="10" height="10" patternUnits="userSpaceOnUse">
+            <circle cx="2" cy="2" r="0.8" fill="oklch(40% 0.02 70)"/>
+          </pattern>
+        </defs>
+        <!-- continent blobs (very abstract) -->
+        <g fill="url(#dots)" opacity="0.9">
+          <!-- N America -->
+          <path d="M40 70 Q 80 50 140 55 Q 180 60 200 100 Q 185 145 155 160 Q 100 170 70 150 Q 35 130 40 70Z"/>
+          <!-- S America -->
+          <path d="M160 175 Q 185 165 200 185 Q 210 220 195 260 Q 175 280 155 265 Q 140 225 160 175Z"/>
+          <!-- Europe -->
+          <path d="M260 55 Q 300 45 330 60 Q 335 95 310 110 Q 270 115 255 90 Q 248 70 260 55Z"/>
+          <!-- Africa -->
+          <path d="M275 130 Q 315 125 335 155 Q 340 215 310 245 Q 280 245 265 215 Q 255 170 275 130Z"/>
+          <!-- Asia -->
+          <path d="M360 60 Q 450 50 510 70 Q 540 105 520 145 Q 470 165 410 150 Q 360 135 355 100 Q 352 75 360 60Z"/>
+          <!-- Australia -->
+          <path d="M470 215 Q 510 210 530 230 Q 525 255 495 260 Q 465 255 465 235 Q 465 220 470 215Z"/>
+        </g>
+
+        <!-- research hubs (crimson markers) -->
+        <g>
+          <!-- Toronto -->
+          <circle cx="120" cy="95" r="6" fill="oklch(52% 0.18 25)"/>
+          <circle cx="120" cy="95" r="14" fill="none" stroke="oklch(52% 0.18 25)" stroke-opacity="0.45"/>
+          <text x="130" y="92" font-family="JetBrains Mono" font-size="9" fill="oklch(75% 0.05 25)">TORONTO</text>
+
+          <!-- Boston / Harvard -->
+          <circle cx="155" cy="100" r="5" fill="oklch(52% 0.18 25)"/>
+          <text x="165" y="112" font-family="JetBrains Mono" font-size="9" fill="oklch(75% 0.05 25)">BOSTON</text>
+
+          <!-- Stanford -->
+          <circle cx="75" cy="115" r="5" fill="oklch(52% 0.18 25)"/>
+          <text x="15" y="112" font-family="JetBrains Mono" font-size="9" fill="oklch(75% 0.05 25)">STANFORD</text>
+
+          <!-- Charleston MUSC -->
+          <circle cx="140" cy="130" r="4" fill="oklch(52% 0.18 25)"/>
+          <text x="90" y="148" font-family="JetBrains Mono" font-size="9" fill="oklch(75% 0.05 25)">MUSC</text>
+
+          <!-- London -->
+          <circle cx="278" cy="80" r="5" fill="oklch(52% 0.18 25)"/>
+          <text x="230" y="72" font-family="JetBrains Mono" font-size="9" fill="oklch(75% 0.05 25)">LONDON</text>
+
+          <!-- Beijing -->
+          <circle cx="475" cy="90" r="6" fill="oklch(52% 0.18 25)"/>
+          <circle cx="475" cy="90" r="14" fill="none" stroke="oklch(52% 0.18 25)" stroke-opacity="0.45"/>
+          <text x="485" y="88" font-family="JetBrains Mono" font-size="9" fill="oklch(75% 0.05 25)">BEIJING</text>
+        </g>
+
+        <text x="300" y="290" text-anchor="middle" font-family="JetBrains Mono" font-size="9" fill="oklch(60% 0.01 70)" letter-spacing="1.4">FIG. 3 — MAJOR ACTIVE T1D RESEARCH HUBS · ILLUSTRATIVE</text>
+      </svg>
+    </div>
+
+  </div>
+</section>
+
+<!-- ================================================== -->
+<!-- CLOSING                                             -->
+<!-- ================================================== -->
+<section>
+  <div class="narrow" style="text-align:center">
+    <div class="caption" style="margin-bottom:20px">§ CODA</div>
+    <h2 style="font-size:clamp(40px,6vw,80px)">104 years after the <em>brown muck,</em><br>we may finally be close.</h2>
+    <p class="lede" style="margin:32px auto 0;max-width:620px">
+      The story began with a surgeon waking at 2 a.m. to scribble a hypothesis, and a 14-year-old boy given a second chance on a Toronto hospital ward. It continues now — in South Carolina, in Palo Alto, in a small lab in Beijing — with scientists trying not just to treat the body's accidental war on itself, but to end it.
+    </p>
+    <p style="margin-top:36px;font-family:'Instrument Serif',serif;font-style:italic;font-size:24px;color:var(--crimson)">
+      The finish line moves. So do they.
+    </p>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="foot">
+    <div>
+      <h5>About This Explainer</h5>
+      <p>A one-page primer on Type 1 diabetes — its biology, its history, and the scientists trying to cure it. Compiled April 2026 from peer-reviewed research and reporting.</p>
+    </div>
+    <div>
+      <h5>Primary Sources</h5>
+      <ul>
+        <li>Banting &amp; Best, J. Lab. Clin. Med. (1922)</li>
+        <li>Bhagchandani et al., J. Clin. Invest. (2025)</li>
+        <li>Breakthrough T1D — 2025 Annual Review</li>
+        <li>Stanford Medicine · Penn Today · Nobel Archive</li>
+        <li>Type 1 Diabetes Grand Challenge (UK)</li>
+      </ul>
+    </div>
+    <div>
+      <h5>Not Medical Advice</h5>
+      <p>Nothing here is a substitute for a physician's care. If you or someone you love has been recently diagnosed, the best starting points are <em>Breakthrough T1D</em>, the <em>American Diabetes Association</em>, and <em>Diabetes UK</em>.</p>
+    </div>
+  </div>
+  <div class="signoff">
+    <div>The Sugar File · Vol. 01 · 2026</div>
+    <div>— End —</div>
+  </div>
+</footer>
+
+<script>
+  // simple fade-in on scroll
+  const io = new IntersectionObserver((entries)=>{
+    entries.forEach(e=>{ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target) } });
+  },{threshold:0.08});
+  document.querySelectorAll('section, .hero, .pull').forEach(el=>{ el.classList.add('fade'); io.observe(el); });
+</script>
+
+</body>
+</html>

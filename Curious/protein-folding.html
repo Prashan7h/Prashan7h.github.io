@@ -1,0 +1,1219 @@
+<!doctype html>
+<html lang="en">
+<head>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-KVBPX8VW');</script>
+<meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/>
+<meta name="description" content="Proteins — what they are, what they do, and why solving the folding problem may be the most important scientific achievement of our time."/>
+<link rel="icon" type="image/svg+xml" href="../images/favicon.svg">
+<link rel="icon" type="image/png" sizes="32x32" href="../images/favicon-32.png">
+<link rel="apple-touch-icon" href="../images/apple-touch-icon.png">
+<title>The Fold — Proteins &amp; Why Their Shape is Everything</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Newsreader:ital,opsz,wght@0,6..72,300..700;1,6..72,300..700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<script src="https://3Dmol.csb.pitt.edu/build/3Dmol-min.js"></script>
+<style>
+:root{
+  --bg:oklch(98.2% 0.008 85);--bg-2:oklch(95.5% 0.012 80);
+  --ink:oklch(18% 0.015 60);--ink-2:oklch(38% 0.02 60);--ink-3:oklch(55% 0.015 60);
+  --rule:oklch(82% 0.012 70);--rule-2:oklch(88% 0.01 70);--paper:oklch(99% 0.005 85);
+  --violet:oklch(50% 0.22 290);--violet-2:oklch(66% 0.18 290);--violet-bg:oklch(96% 0.04 290);
+  --amber:oklch(70% 0.15 75);--emerald:oklch(54% 0.16 155);--emerald-2:oklch(68% 0.12 155);
+}
+*{box-sizing:border-box}
+html,body{margin:0;padding:0;background:var(--bg);color:var(--ink);font-family:'Newsreader',Georgia,serif;font-weight:380;font-size:19px;line-height:1.55;-webkit-font-smoothing:antialiased}
+a{color:inherit}.wrap{max-width:1180px;margin:0 auto;padding:0 48px}.narrow{max-width:760px;margin:0 auto;padding:0 48px}
+hr.rule{border:0;border-top:1px solid var(--rule);margin:0}
+.kicker{display:flex;align-items:center;gap:12px;color:var(--ink-3);margin-bottom:32px}
+.kicker .dot{width:7px;height:7px;background:var(--violet);border-radius:50%;display:inline-block}
+.kicker .line{flex:1;height:1px;background:var(--rule)}
+.mono{font-family:'JetBrains Mono',monospace;font-weight:500;font-size:.72em;text-transform:uppercase;letter-spacing:0}
+.caption{font-family:'JetBrains Mono',monospace;font-size:10.5px;line-height:1.5;letter-spacing:0.06em;text-transform:uppercase;color:var(--ink-3)}
+
+/* TOPBAR */
+.topbar{display:flex;justify-content:space-between;align-items:center;padding:22px 48px;border-bottom:1px solid var(--rule);background:var(--bg);position:sticky;top:0;z-index:20;backdrop-filter:blur(6px)}
+.topbar .brand{font-family:'Instrument Serif',serif;font-size:22px;letter-spacing:-0.01em}
+.topbar .brand em{font-style:italic;color:var(--violet)}
+.topbar nav{display:flex;gap:28px}
+.topbar nav a{text-decoration:none;color:var(--ink-2);font-family:'JetBrains Mono',monospace;font-size:11px;text-transform:uppercase;letter-spacing:0.08em}
+.topbar nav a:hover,.topbar .back:hover{color:var(--violet)}
+.topbar .back{text-decoration:none;color:var(--ink-3);font-family:'JetBrains Mono',monospace;font-size:11px;text-transform:uppercase;letter-spacing:0.08em}
+
+/* HERO */
+.hero{padding:120px 48px 80px;max-width:1180px;margin:0 auto;position:relative;overflow:hidden}
+.hero .bg-svg{position:absolute;right:-60px;top:40px;width:580px;height:440px;opacity:0.2;pointer-events:none}
+.hero .eyebrow{font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:0.16em;text-transform:uppercase;color:var(--violet);margin-bottom:28px;display:flex;align-items:center;gap:12px}
+.hero .eyebrow .tag{border:1px solid var(--violet);padding:4px 10px;border-radius:2px}
+.hero h1{font-family:'Instrument Serif',serif;font-weight:400;font-size:clamp(64px,9vw,148px);line-height:0.92;letter-spacing:-0.035em;margin:0 0 40px;color:var(--ink)}
+.hero h1 em{font-style:italic;color:var(--violet)}
+.hero .deck{font-size:24px;line-height:1.4;max-width:680px;color:var(--ink-2);font-weight:380}
+.hero .deck::first-letter{font-family:'Instrument Serif',serif;font-size:3.4em;float:left;line-height:0.9;margin:6px 12px 0 0;color:var(--violet)}
+.hero .meta{margin-top:60px;display:flex;gap:48px;flex-wrap:wrap;padding-top:28px;border-top:1px solid var(--rule)}
+.hero .meta .k{font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:0.14em;text-transform:uppercase;color:var(--ink-3);margin-bottom:6px}
+.hero .meta .v{font-family:'Instrument Serif',serif;font-size:28px;color:var(--ink)}
+
+/* SECTIONS */
+section{padding:120px 0;position:relative}
+section.dark{background:var(--ink);color:var(--paper)}
+section.dark .kicker{color:oklch(75% 0.01 70)}
+section.dark .kicker .dot{background:var(--violet-2)}
+section.dark .kicker .line{background:oklch(30% 0.01 70)}
+section.dark h2{color:var(--paper)}
+h2{font-family:'Instrument Serif',serif;font-weight:400;font-size:clamp(44px,6vw,84px);line-height:0.95;letter-spacing:-0.025em;margin:0 0 28px}
+h2 em{font-style:italic;color:var(--violet)}
+section.dark h2 em{color:var(--violet-2)}
+h3{font-family:'Instrument Serif',serif;font-weight:400;font-size:36px;letter-spacing:-0.015em;margin:0 0 12px}
+.lede{font-size:22px;line-height:1.5;color:var(--ink-2);max-width:680px}
+section.dark .lede{color:oklch(80% 0.01 70)}
+section.dark .caption{color:oklch(60% 0.01 70)}
+
+/* HIERARCHY */
+.hierarchy{margin-top:64px;display:grid;grid-template-columns:repeat(4,1fr);border:1px solid var(--rule)}
+.h-level{padding:32px 24px;border-right:1px solid var(--rule)}
+.h-level:last-child{border-right:0}
+.h-level .lv{font-family:'JetBrains Mono',monospace;font-size:9.5px;letter-spacing:0.14em;text-transform:uppercase;color:var(--violet);margin-bottom:8px}
+.h-level h4{font-family:'Instrument Serif',serif;font-weight:400;font-size:24px;margin:0 0 8px}
+.h-level p{margin:0;color:var(--ink-2);font-size:15px;line-height:1.5}
+.h-level .viz{margin-bottom:18px}
+
+/* HP FOLDER */
+.folder-box{margin-top:64px;background:var(--paper);border:1px solid var(--rule);padding:40px}
+.folder-head{display:flex;justify-content:space-between;align-items:center;margin-bottom:24px;flex-wrap:wrap;gap:16px}
+.folder-controls{display:flex;gap:10px;align-items:center;flex-wrap:wrap}
+.btn{font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:0.1em;text-transform:uppercase;padding:10px 20px;border:1px solid var(--ink);background:transparent;color:var(--ink);cursor:pointer;transition:all 0.2s}
+.btn:hover{background:var(--ink);color:var(--paper)}
+.btn.v-btn{border-color:var(--violet);color:var(--violet)}
+.btn.v-btn:hover,.btn.v-btn.active{background:var(--violet);color:white;border-color:var(--violet)}
+.energy-label{font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:0.1em;text-transform:uppercase;color:var(--ink-3)}
+.energy-val{color:var(--violet);font-weight:700;font-size:16px;margin-left:6px}
+canvas#hp-canvas{width:100%;display:block;cursor:pointer}
+.hp-legend{display:flex;gap:24px;margin-top:16px}
+.hp-leg-item{display:flex;align-items:center;gap:8px;font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:0.1em;text-transform:uppercase;color:var(--ink-3)}
+.hp-dot{width:12px;height:12px;border-radius:50%}
+
+/* FUNCTION CARDS */
+.func-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:64px}
+.func-card{background:var(--paper);border:1px solid var(--rule);padding:32px 28px}
+.func-card .fc-icon{margin-bottom:20px;height:90px;display:flex;align-items:center}
+.func-card .fc-type{font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:0.14em;text-transform:uppercase;color:var(--violet);margin-bottom:6px}
+.func-card h4{font-family:'Instrument Serif',serif;font-weight:400;font-size:26px;margin:0 0 8px}
+.func-card p{margin:0;color:var(--ink-2);font-size:16px;line-height:1.5}
+.func-card .example{margin-top:10px;font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:0.1em;text-transform:uppercase;color:var(--ink-3)}
+
+/* 3D VIEWER */
+.viewer-layout{display:grid;grid-template-columns:240px 1fr;gap:0;margin-top:64px;border:1px solid var(--rule)}
+.prot-list{display:flex;flex-direction:column;border-right:1px solid var(--rule)}
+.prot-btn{display:block;width:100%;padding:16px 18px;background:transparent;border:0;border-bottom:1px solid var(--rule);cursor:pointer;text-align:left;transition:background 0.15s}
+.prot-btn:last-child{border-bottom:0}
+.prot-btn:hover{background:var(--bg-2)}
+.prot-btn.active{background:var(--violet);color:white}
+.prot-btn .pn{font-family:'Instrument Serif',serif;font-size:19px;display:block;margin-bottom:2px}
+.prot-btn .pd{font-family:'JetBrains Mono',monospace;font-size:9px;letter-spacing:0.1em;text-transform:uppercase;opacity:0.65}
+.viewer-right{display:flex;flex-direction:column}
+.viewer-box{position:relative;background:var(--paper)}
+#mol-viewer{width:100%;height:480px;position:relative}
+.viewer-loading{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px;font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:0.1em;text-transform:uppercase;color:var(--ink-3);background:var(--paper);z-index:10;transition:opacity 0.4s}
+.viewer-loading.hidden{opacity:0;pointer-events:none}
+.spin-ring{width:32px;height:32px;border:2px solid var(--rule);border-top-color:var(--violet);border-radius:50%;animation:spin 1s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
+.viewer-controls{display:flex;flex-wrap:wrap;border-top:1px solid var(--rule)}
+.vc-btn{font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:0.1em;text-transform:uppercase;padding:12px 14px;border:0;border-right:1px solid var(--rule);background:transparent;color:var(--ink-2);cursor:pointer;transition:all 0.15s}
+.vc-btn:last-child{border-right:0}
+.vc-btn:hover{background:var(--bg-2);color:var(--ink)}
+.vc-btn.active{background:var(--violet);color:white}
+.viewer-info{padding:20px 24px;border-top:1px solid var(--rule);background:var(--bg-2)}
+.viewer-info .vi-name{font-family:'Instrument Serif',serif;font-size:26px;margin-bottom:2px}
+.viewer-info .vi-desc{font-size:16px;color:var(--ink-2)}
+.viewer-info .vi-meta{margin-top:8px;font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:0.1em;text-transform:uppercase;color:var(--ink-3)}
+
+/* LEVINTHAL */
+.levinthal-box{margin-top:72px;padding:48px;border:1px solid oklch(30% 0.01 70)}
+.lev-counter{font-family:'Instrument Serif',serif;font-size:clamp(40px,6vw,88px);line-height:1;letter-spacing:-0.03em;color:var(--paper);margin:20px 0}
+.lev-counter em{color:var(--violet-2);font-style:italic}
+.lev-label{font-family:'JetBrains Mono',monospace;font-size:10.5px;letter-spacing:0.12em;text-transform:uppercase;color:oklch(65% 0.01 70)}
+.lev-btn{font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:0.1em;text-transform:uppercase;padding:10px 20px;border:1px solid var(--violet-2);background:transparent;color:var(--violet-2);cursor:pointer;margin-top:20px;transition:all 0.2s}
+.lev-btn:hover{background:var(--violet-2);color:var(--ink)}
+.vs-row{display:grid;grid-template-columns:1fr auto 1fr;gap:32px;align-items:center;margin-top:48px;padding-top:48px;border-top:1px solid oklch(28% 0.01 70)}
+.vs-num{font-family:'Instrument Serif',serif;font-size:56px;line-height:1;letter-spacing:-0.025em;color:var(--paper)}
+.vs-desc{font-size:16px;color:oklch(78% 0.01 70);margin-top:8px;line-height:1.4}
+.vs-div{font-family:'Instrument Serif',serif;font-style:italic;font-size:32px;color:oklch(50% 0.01 70);text-align:center}
+
+/* DISEASE CARDS */
+.disease-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:64px}
+.disease-card{border:1px solid oklch(30% 0.01 70);padding:28px}
+.disease-card .d-badge{font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:0.12em;text-transform:uppercase;color:var(--violet-2);border:1px solid oklch(40% 0.12 290);padding:3px 8px;display:inline-block;margin-bottom:12px}
+.disease-card h4{font-family:'Instrument Serif',serif;font-weight:400;font-size:26px;margin:0 0 8px;color:var(--paper)}
+.disease-card p{margin:0;font-size:16px;color:oklch(78% 0.01 70);line-height:1.5}
+
+/* TIMELINE */
+.timeline{margin-top:72px;position:relative}
+.timeline .axis{position:absolute;left:160px;top:0;bottom:0;width:1px;background:oklch(35% 0.01 70)}
+.tl-row{display:grid;grid-template-columns:160px 1fr;gap:32px;padding:28px 0;position:relative;border-top:1px solid oklch(28% 0.01 70)}
+.tl-row:last-child{border-bottom:1px solid oklch(28% 0.01 70)}
+.tl-year{font-family:'Instrument Serif',serif;font-size:44px;line-height:1;letter-spacing:-0.02em;color:var(--paper)}
+.tl-year em{color:var(--violet-2);font-style:italic}
+.tl-dot{position:absolute;left:156px;top:42px;width:9px;height:9px;background:var(--violet-2);border-radius:50%;box-shadow:0 0 0 4px var(--ink)}
+.tl-body{padding-left:40px}
+.tl-body .tl-title{font-family:'Instrument Serif',serif;font-size:28px;line-height:1.1;margin-bottom:8px;color:var(--paper)}
+.tl-body p{margin:0;color:oklch(80% 0.01 70);font-size:17px;line-height:1.55;max-width:680px}
+.tl-body .tag{display:inline-block;font-family:'JetBrains Mono',monospace;font-size:10px;text-transform:uppercase;letter-spacing:0.1em;color:var(--violet-2);margin-bottom:10px;padding:3px 8px;border:1px solid oklch(40% 0.12 290)}
+.tl-body .tag.gold{color:oklch(72% 0.13 85);border-color:oklch(50% 0.1 85)}
+
+/* CASP CHART */
+.casp-box{margin-top:72px;background:var(--paper);border:1px solid var(--rule);padding:40px 40px 32px;position:relative}
+.casp-tooltip{position:absolute;background:var(--ink);color:var(--paper);padding:10px 14px;font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:0.08em;text-transform:uppercase;pointer-events:none;opacity:0;transition:opacity 0.15s;white-space:nowrap;z-index:10}
+
+/* ALPHAFOLD */
+.af-grid{display:grid;grid-template-columns:1fr 1fr;gap:64px;margin-top:64px;align-items:start}
+.af-step{display:grid;grid-template-columns:52px 1fr;gap:20px;padding:24px 0;border-bottom:1px solid var(--rule)}
+.af-step:first-child{padding-top:0}
+.af-step:last-child{border-bottom:0}
+.af-num{font-family:'Instrument Serif',serif;font-style:italic;font-size:52px;color:var(--violet);line-height:1}
+.af-step h5{font-family:'Instrument Serif',serif;font-size:24px;font-weight:400;margin:0 0 6px}
+.af-step p{margin:0;font-size:16px;color:var(--ink-2);line-height:1.5}
+
+/* APPS */
+.apps-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:64px}
+.app-card{background:var(--paper);border:1px solid var(--rule);padding:28px;position:relative}
+.app-n{position:absolute;top:20px;right:24px;font-family:'JetBrains Mono',monospace;font-size:10px;color:var(--ink-3);letter-spacing:0.12em}
+.app-card h4{font-family:'Instrument Serif',serif;font-weight:400;font-size:24px;margin:0 0 6px}
+.app-card .app-sub{font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:0.1em;text-transform:uppercase;color:var(--emerald);margin-bottom:10px}
+.app-card p{margin:0;color:var(--ink-2);font-size:16px;line-height:1.5}
+
+/* PULL */
+.pull{margin:120px auto;max-width:900px;padding:0 48px;text-align:center}
+.pull blockquote{font-family:'Instrument Serif',serif;font-size:clamp(36px,5vw,68px);line-height:1.05;letter-spacing:-0.02em;margin:0;font-style:italic;color:var(--ink)}
+.pull blockquote em{color:var(--violet)}
+.pull cite{display:block;margin-top:28px;font-family:'JetBrains Mono',monospace;font-size:11px;text-transform:uppercase;letter-spacing:0.14em;color:var(--ink-3);font-style:normal}
+
+/* FOOTER */
+footer{padding:80px 48px 60px;border-top:1px solid var(--rule);margin-top:80px}
+footer .foot{display:grid;grid-template-columns:1fr 1fr 1fr;gap:40px;max-width:1180px;margin:0 auto}
+footer h5{font-family:'JetBrains Mono',monospace;font-size:10.5px;letter-spacing:0.14em;text-transform:uppercase;color:var(--ink-3);margin:0 0 14px;font-weight:500}
+footer p,footer li{font-size:15px;color:var(--ink-2);line-height:1.55}
+footer ul{list-style:none;padding:0;margin:0}
+footer li{padding:6px 0;border-bottom:1px solid var(--rule-2)}
+.signoff{margin:60px auto 0;max-width:1180px;display:flex;justify-content:space-between;align-items:center;font-family:'JetBrains Mono',monospace;font-size:10.5px;letter-spacing:0.1em;text-transform:uppercase;color:var(--ink-3)}
+
+@media(max-width:960px){
+  .wrap,.narrow,.hero,footer{padding-left:24px;padding-right:24px}
+  .topbar{padding:18px 24px}.topbar nav{display:none}
+  .hierarchy{grid-template-columns:1fr 1fr}
+  .func-grid,.disease-grid,.apps-grid{grid-template-columns:1fr}
+  .viewer-layout{grid-template-columns:1fr}.prot-list{flex-direction:row;flex-wrap:wrap;border-right:0;border-bottom:1px solid var(--rule)}
+  .prot-btn{flex:1;min-width:120px;border-right:1px solid var(--rule)}
+  #mol-viewer{height:340px}
+  .af-grid{grid-template-columns:1fr}
+  .vs-row{grid-template-columns:1fr;text-align:center}
+  .tl-row{grid-template-columns:1fr}.timeline .axis{display:none}.tl-body{padding-left:0}
+  .hero h1{font-size:64px}
+}
+.fade{opacity:0;transform:translateY(14px);transition:opacity .9s ease,transform .9s ease}
+.fade.in{opacity:1;transform:none}
+</style>
+</head>
+<body>
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KVBPX8VW" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+<!-- TOPBAR -->
+<div class="topbar">
+  <div class="brand">The <em>Fold</em></div>
+  <nav>
+    <a href="#what">01 / What</a>
+    <a href="#does">02 / Function</a>
+    <a href="#explorer">03 / Explorer</a>
+    <a href="#problem">04 / The Problem</a>
+    <a href="#alphafold">05 / AlphaFold</a>
+    <a href="#impact">06 / Impact</a>
+  </nav>
+  <a class="back" href="index.html">← Wonderland</a>
+</div>
+
+<!-- HERO -->
+<header class="hero">
+  <svg class="bg-svg" viewBox="0 0 580 440" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <!-- abstract protein backbone ribbons -->
+    <path d="M40 220 C 80 180, 120 260, 160 200 C 200 140, 220 300, 260 240 C 300 180, 320 100, 360 160 C 400 220, 420 320, 460 260 C 500 200, 530 280, 570 220" fill="none" stroke="oklch(50% 0.22 290)" stroke-width="2.5" stroke-linecap="round"/>
+    <path d="M20 280 C 60 240, 100 320, 140 270 C 180 220, 200 360, 250 300 C 300 240, 340 160, 380 220 C 420 280, 450 380, 490 320 C 520 260, 550 340, 580 290" fill="none" stroke="oklch(50% 0.22 290)" stroke-width="1.5" stroke-linecap="round" opacity="0.5"/>
+    <!-- helix coils -->
+    <ellipse cx="160" cy="200" rx="28" ry="12" fill="none" stroke="oklch(50% 0.22 290)" stroke-width="1" opacity="0.6"/>
+    <ellipse cx="260" cy="240" rx="28" ry="12" fill="none" stroke="oklch(50% 0.22 290)" stroke-width="1" opacity="0.6"/>
+    <ellipse cx="360" cy="160" rx="28" ry="12" fill="none" stroke="oklch(50% 0.22 290)" stroke-width="1" opacity="0.6"/>
+    <ellipse cx="460" cy="260" rx="28" ry="12" fill="none" stroke="oklch(50% 0.22 290)" stroke-width="1" opacity="0.6"/>
+    <!-- amino acid dots -->
+    <circle cx="100" cy="250" r="5" fill="oklch(70% 0.15 75)" opacity="0.7"/>
+    <circle cx="200" cy="180" r="4" fill="oklch(54% 0.16 155)" opacity="0.7"/>
+    <circle cx="300" cy="280" r="5" fill="oklch(70% 0.15 75)" opacity="0.7"/>
+    <circle cx="420" cy="200" r="4" fill="oklch(54% 0.16 155)" opacity="0.7"/>
+    <circle cx="500" cy="300" r="5" fill="oklch(70% 0.15 75)" opacity="0.7"/>
+  </svg>
+
+  <div class="eyebrow">
+    <span class="tag">A Science Explainer</span>
+    <span>No. 002 — Structural Biology</span>
+  </div>
+
+  <h1>
+    Shape is<br>
+    <em>everything.</em>
+    <span style="font-size:0.48em;font-style:italic;color:var(--ink-3);letter-spacing:-0.01em">&nbsp;a story of 20,000 proteins</span>
+  </h1>
+
+  <p class="deck">
+    Proteins are the machines of life — enzymes, scaffolds, signals, motors, immune weapons. Every one of them works because of its shape. And for 50 years, predicting that shape from a genetic sequence alone was considered one of the hardest problems in science. Then, in 2020, a neural network solved it in an afternoon.
+  </p>
+
+  <div class="meta">
+    <div><div class="k">Unique human proteins</div><div class="v">~20,000</div></div>
+    <div><div class="k">Possible folds</div><div class="v">10³⁰⁰</div></div>
+    <div><div class="k">Time to fold (real)</div><div class="v">Microseconds</div></div>
+    <div><div class="k">AlphaFold DB structures</div><div class="v" style="color:var(--violet)">200M+</div></div>
+  </div>
+</header>
+
+<hr class="rule"/>
+
+<!-- ===== §01 WHAT IS A PROTEIN ===== -->
+<section id="what">
+<div class="wrap">
+  <div class="kicker"><span class="dot"></span><span class="mono">§ 01 — The Basics</span><span class="line"></span><span class="mono">What a Protein Is</span></div>
+  <h2>Twenty letters.<br><em>Infinite sentences.</em></h2>
+  <p class="lede">A protein is a chain of amino acids — small molecules strung together like beads on a string. There are 20 kinds of amino acid. That's the entire alphabet. From those 20 letters, evolution wrote every enzyme, every hormone, every muscle fiber, every antibody that has ever existed on Earth.</p>
+
+  <!-- 4-level hierarchy -->
+  <div class="hierarchy">
+    <div class="h-level">
+      <div class="lv">Primary</div>
+      <div class="viz">
+        <svg viewBox="0 0 200 60" width="100%" xmlns="http://www.w3.org/2000/svg">
+          <g>
+            <line x1="20" y1="30" x2="180" y2="30" stroke="oklch(82% 0.012 70)" stroke-width="2"/>
+            <circle cx="20" cy="30" r="10" fill="oklch(72% 0.09 220)"/><text x="20" y="34" text-anchor="middle" font-family="JetBrains Mono" font-size="9" fill="white">A</text>
+            <circle cx="48" cy="30" r="10" fill="oklch(70% 0.15 75)"/><text x="48" y="34" text-anchor="middle" font-family="JetBrains Mono" font-size="9" fill="white">G</text>
+            <circle cx="76" cy="30" r="10" fill="oklch(72% 0.09 220)"/><text x="76" y="34" text-anchor="middle" font-family="JetBrains Mono" font-size="9" fill="white">V</text>
+            <circle cx="104" cy="30" r="10" fill="oklch(54% 0.16 155)"/><text x="104" y="34" text-anchor="middle" font-family="JetBrains Mono" font-size="9" fill="white">K</text>
+            <circle cx="132" cy="30" r="10" fill="oklch(70% 0.15 75)"/><text x="132" y="34" text-anchor="middle" font-family="JetBrains Mono" font-size="9" fill="white">L</text>
+            <circle cx="160" cy="30" r="10" fill="oklch(72% 0.09 220)"/><text x="160" y="34" text-anchor="middle" font-family="JetBrains Mono" font-size="9" fill="white">P</text>
+            <text x="188" y="34" font-family="JetBrains Mono" font-size="12" fill="oklch(55% 0.015 60)">…</text>
+          </g>
+        </svg>
+      </div>
+      <h4>Amino acid sequence</h4>
+      <p>The linear order of amino acids, encoded directly by DNA. This alone determines everything that follows.</p>
+    </div>
+    <div class="h-level">
+      <div class="lv">Secondary</div>
+      <div class="viz">
+        <svg viewBox="0 0 200 60" width="100%" xmlns="http://www.w3.org/2000/svg">
+          <!-- alpha helix coil representation -->
+          <path d="M10 30 C 20 15, 35 15, 45 30 C 55 45, 70 45, 80 30 C 90 15, 105 15, 115 30 C 125 45, 140 45, 150 30 C 160 15, 175 15, 185 30" fill="none" stroke="oklch(50% 0.22 290)" stroke-width="3" stroke-linecap="round"/>
+          <text x="100" y="55" text-anchor="middle" font-family="JetBrains Mono" font-size="8" fill="oklch(55% 0.015 60)" letter-spacing="1">α-HELIX</text>
+        </svg>
+      </div>
+      <h4>Local structures</h4>
+      <p>Nearby amino acids hydrogen-bond into regular repeating shapes: alpha-helices (spirals) and beta-sheets (pleated planks).</p>
+    </div>
+    <div class="h-level">
+      <div class="lv">Tertiary</div>
+      <div class="viz">
+        <svg viewBox="0 0 200 60" width="100%" xmlns="http://www.w3.org/2000/svg">
+          <!-- folded blob with internal helix hint -->
+          <ellipse cx="100" cy="30" rx="75" ry="24" fill="oklch(96% 0.04 290)" stroke="oklch(50% 0.22 290)" stroke-width="1.5"/>
+          <path d="M45 28 C 55 18, 65 18, 75 28 C 85 38, 95 38, 105 28 C 115 18, 125 18, 135 28" fill="none" stroke="oklch(50% 0.22 290)" stroke-width="2" stroke-linecap="round" opacity="0.5"/>
+          <circle cx="60" cy="30" r="5" fill="oklch(70% 0.15 75)" opacity="0.7"/>
+          <circle cx="140" cy="30" r="5" fill="oklch(54% 0.16 155)" opacity="0.7"/>
+          <text x="100" y="55" text-anchor="middle" font-family="JetBrains Mono" font-size="8" fill="oklch(55% 0.015 60)" letter-spacing="1">3-D FOLD</text>
+        </svg>
+      </div>
+      <h4>The full 3D shape</h4>
+      <p>The entire chain folds into a compact, specific 3D structure. This shape is the protein's identity — it determines what it can bind, what it catalyzes, what it builds.</p>
+    </div>
+    <div class="h-level">
+      <div class="lv">Quaternary</div>
+      <div class="viz">
+        <svg viewBox="0 0 200 60" width="100%" xmlns="http://www.w3.org/2000/svg">
+          <ellipse cx="65" cy="25" rx="50" ry="17" fill="oklch(96% 0.04 290)" stroke="oklch(50% 0.22 290)" stroke-width="1.5"/>
+          <ellipse cx="135" cy="25" rx="50" ry="17" fill="oklch(96% 0.06 155)" stroke="oklch(54% 0.16 155)" stroke-width="1.5"/>
+          <ellipse cx="65" cy="42" rx="50" ry="17" fill="oklch(96% 0.06 75)" stroke="oklch(70% 0.15 75)" stroke-width="1.5" opacity="0.8"/>
+          <ellipse cx="135" cy="42" rx="50" ry="17" fill="oklch(96% 0.04 290)" stroke="oklch(50% 0.22 290)" stroke-width="1.5" opacity="0.8"/>
+          <text x="100" y="58" text-anchor="middle" font-family="JetBrains Mono" font-size="8" fill="oklch(55% 0.015 60)" letter-spacing="1">MULTI-CHAIN</text>
+        </svg>
+      </div>
+      <h4>Multi-chain assembly</h4>
+      <p>Some proteins are complexes of multiple chains working together. Hemoglobin has four. The ribosome has dozens. Each subunit folds independently, then docks.</p>
+    </div>
+  </div>
+
+  <!-- HP FOLDING SIMULATION -->
+  <div class="folder-box">
+    <div class="folder-head">
+      <div>
+        <h3 style="margin:0">Fold it yourself</h3>
+        <div class="caption" style="margin-top:4px">Hydrophobic-Polar model · 20 residues · real physics simulation</div>
+      </div>
+      <div class="folder-controls">
+        <span class="energy-label">H-H contacts: <span class="energy-val" id="energy-val">0</span></span>
+        <button class="btn v-btn" id="fold-btn">Fold</button>
+        <button class="btn" id="unfold-btn">Unfold</button>
+        <button class="btn" id="rand-btn">Randomize</button>
+      </div>
+    </div>
+    <canvas id="hp-canvas" height="260"></canvas>
+    <div class="hp-legend">
+      <div class="hp-leg-item"><div class="hp-dot" style="background:oklch(52% 0.18 25)"></div>Hydrophobic (H) — wants to hide from water</div>
+      <div class="hp-leg-item"><div class="hp-dot" style="background:oklch(58% 0.12 220)"></div>Polar (P) — happy on the surface</div>
+      <div class="hp-leg-item"><div class="hp-dot" style="background:oklch(70% 0.15 75)"></div>H-H contact (stabilising)</div>
+    </div>
+    <p style="margin:16px 0 0;font-size:16px;color:var(--ink-2);line-height:1.5">The driving force of folding: <strong>hydrophobic collapse</strong>. Amino acids that hate water bury themselves in the centre, dragging the chain into a compact shape. Polar residues stay on the outside. This simple principle governs the folding of every protein in your body.</p>
+  </div>
+</div>
+</section>
+
+<hr class="rule"/>
+
+<!-- ===== §02 WHAT PROTEINS DO ===== -->
+<section id="does">
+<div class="wrap">
+  <div class="kicker"><span class="dot"></span><span class="mono">§ 02 — Function</span><span class="line"></span><span class="mono">Six Things Proteins Do</span></div>
+  <h2>The molecule that<br><em>does everything.</em></h2>
+  <p class="lede">Proteins don't just do one thing. They are simultaneously your muscles, your enzymes, your hormones, your immune system, and the motors inside every cell. Shape determines function — and evolution has found a shape for nearly every job that needs doing.</p>
+
+  <div class="func-grid">
+    <div class="func-card">
+      <div class="fc-icon">
+        <svg viewBox="0 0 120 90" xmlns="http://www.w3.org/2000/svg" width="120">
+          <!-- enzyme lock and key -->
+          <ellipse cx="50" cy="45" rx="38" ry="30" fill="oklch(96% 0.04 290)" stroke="oklch(50% 0.22 290)" stroke-width="1.5"/>
+          <!-- active site notch -->
+          <path d="M62 32 L75 32 L75 58 L62 58" fill="var(--bg)" stroke="oklch(50% 0.22 290)" stroke-width="1.5"/>
+          <!-- substrate -->
+          <rect x="78" y="36" width="28" height="18" rx="4" fill="oklch(70% 0.15 75)" stroke="oklch(52% 0.1 75)" stroke-width="1"/>
+          <!-- arrow -->
+          <path d="M68 45 L76 45" stroke="oklch(50% 0.22 290)" stroke-width="1.5" marker-end="url(#arr1)"/>
+          <defs><marker id="arr1" viewBox="0 0 8 8" refX="6" refY="4" markerWidth="4" markerHeight="4" orient="auto"><path d="M0 0 L8 4 L0 8z" fill="oklch(50% 0.22 290)"/></marker></defs>
+          <text x="60" y="82" text-anchor="middle" font-family="JetBrains Mono" font-size="8" fill="oklch(55% 0.015 60)" letter-spacing="1">LOCK + KEY</text>
+        </svg>
+      </div>
+      <div class="fc-type">Catalysis</div>
+      <h4>Enzymes</h4>
+      <p>Proteins that accelerate chemical reactions — often by factors of a million or more. Every metabolic reaction in your body is catalysed by an enzyme. Without them, life-chemistry would be too slow to support life.</p>
+      <div class="example">eg. Amylase (digest starch) · DNA Polymerase (copy DNA)</div>
+    </div>
+
+    <div class="func-card">
+      <div class="fc-icon">
+        <svg viewBox="0 0 120 90" xmlns="http://www.w3.org/2000/svg" width="120">
+          <!-- collagen triple helix -->
+          <path d="M20 45 C 30 30, 40 60, 50 45 C 60 30, 70 60, 80 45 C 90 30, 100 60, 110 45" fill="none" stroke="oklch(50% 0.22 290)" stroke-width="3" stroke-linecap="round"/>
+          <path d="M20 50 C 30 35, 40 65, 50 50 C 60 35, 70 65, 80 50 C 90 35, 100 65, 110 50" fill="none" stroke="oklch(54% 0.16 155)" stroke-width="2.5" stroke-linecap="round"/>
+          <path d="M20 40 C 30 25, 40 55, 50 40 C 60 25, 70 55, 80 40 C 90 25, 100 55, 110 40" fill="none" stroke="oklch(70% 0.15 75)" stroke-width="2" stroke-linecap="round"/>
+          <text x="60" y="82" text-anchor="middle" font-family="JetBrains Mono" font-size="8" fill="oklch(55% 0.015 60)" letter-spacing="1">COLLAGEN HELIX</text>
+        </svg>
+      </div>
+      <div class="fc-type">Architecture</div>
+      <h4>Structural proteins</h4>
+      <p>The scaffolding of life. Collagen builds tendons, skin, and bone. Keratin makes hair and nails. Actin and tubulin form the internal skeleton of every cell, giving it shape and letting it move.</p>
+      <div class="example">eg. Collagen · Keratin · Actin · Tubulin</div>
+    </div>
+
+    <div class="func-card">
+      <div class="fc-icon">
+        <svg viewBox="0 0 120 90" xmlns="http://www.w3.org/2000/svg" width="120">
+          <!-- hemoglobin with O2 dots -->
+          <ellipse cx="45" cy="38" rx="22" ry="16" fill="oklch(96% 0.04 290)" stroke="oklch(50% 0.22 290)" stroke-width="1.5"/>
+          <ellipse cx="75" cy="38" rx="22" ry="16" fill="oklch(96% 0.04 290)" stroke="oklch(50% 0.22 290)" stroke-width="1.5"/>
+          <ellipse cx="45" cy="60" rx="22" ry="16" fill="oklch(96% 0.06 155)" stroke="oklch(54% 0.16 155)" stroke-width="1.5"/>
+          <ellipse cx="75" cy="60" rx="22" ry="16" fill="oklch(96% 0.06 155)" stroke="oklch(54% 0.16 155)" stroke-width="1.5"/>
+          <circle cx="45" cy="35" r="5" fill="oklch(52% 0.18 25)"/>
+          <circle cx="75" cy="35" r="5" fill="oklch(52% 0.18 25)"/>
+          <circle cx="45" cy="57" r="5" fill="oklch(52% 0.18 25)"/>
+          <circle cx="75" cy="57" r="5" fill="oklch(52% 0.18 25)"/>
+          <text x="60" y="84" text-anchor="middle" font-family="JetBrains Mono" font-size="8" fill="oklch(55% 0.015 60)" letter-spacing="1">HEMOGLOBIN</text>
+        </svg>
+      </div>
+      <div class="fc-type">Transport</div>
+      <h4>Carriers</h4>
+      <p>Proteins that bind small molecules and carry them around. Hemoglobin picks up oxygen in the lungs and drops it at tissues. Albumin ferries fatty acids through the blood. Channels in cell membranes move ions across.</p>
+      <div class="example">eg. Hemoglobin · Albumin · Ion channels</div>
+    </div>
+
+    <div class="func-card">
+      <div class="fc-icon">
+        <svg viewBox="0 0 120 90" xmlns="http://www.w3.org/2000/svg" width="120">
+          <!-- receptor in membrane -->
+          <rect x="10" y="38" width="100" height="14" fill="oklch(94% 0.02 70)" stroke="oklch(78% 0.015 70)" stroke-width="1"/>
+          <!-- receptor protein spanning -->
+          <rect x="50" y="18" width="20" height="54" rx="4" fill="oklch(96% 0.04 290)" stroke="oklch(50% 0.22 290)" stroke-width="1.5"/>
+          <!-- hormone -->
+          <circle cx="60" cy="10" r="7" fill="oklch(70% 0.15 75)" stroke="oklch(52% 0.1 75)" stroke-width="1"/>
+          <path d="M60 17 L60 20" stroke="oklch(70% 0.15 75)" stroke-width="1.5"/>
+          <!-- signal output -->
+          <path d="M60 72 L60 80 L90 80" stroke="oklch(54% 0.16 155)" stroke-width="1.5" marker-end="url(#arr2)" fill="none"/>
+          <defs><marker id="arr2" viewBox="0 0 8 8" refX="6" refY="4" markerWidth="4" markerHeight="4" orient="auto"><path d="M0 0 L8 4 L0 8z" fill="oklch(54% 0.16 155)"/></marker></defs>
+          <text x="60" y="89" text-anchor="middle" font-family="JetBrains Mono" font-size="8" fill="oklch(55% 0.015 60)" letter-spacing="1">RECEPTOR</text>
+        </svg>
+      </div>
+      <div class="fc-type">Communication</div>
+      <h4>Signalling proteins</h4>
+      <p>Hormones are proteins (insulin, growth hormone). Receptors are proteins. The entire conversation between cells — from "grow" to "die" to "release glucose" — is proteins talking to proteins.</p>
+      <div class="example">eg. Insulin · GH receptor · GPCR · Kinases</div>
+    </div>
+
+    <div class="func-card">
+      <div class="fc-icon">
+        <svg viewBox="0 0 120 90" xmlns="http://www.w3.org/2000/svg" width="120">
+          <!-- Y-shaped antibody -->
+          <path d="M60 75 L60 50 L35 25" fill="none" stroke="oklch(50% 0.22 290)" stroke-width="3" stroke-linecap="round"/>
+          <path d="M60 50 L85 25" fill="none" stroke="oklch(50% 0.22 290)" stroke-width="3" stroke-linecap="round"/>
+          <!-- binding sites -->
+          <circle cx="35" cy="25" r="10" fill="oklch(96% 0.04 290)" stroke="oklch(50% 0.22 290)" stroke-width="1.5"/>
+          <circle cx="85" cy="25" r="10" fill="oklch(96% 0.04 290)" stroke="oklch(50% 0.22 290)" stroke-width="1.5"/>
+          <!-- antigens -->
+          <rect x="28" y="8" width="14" height="10" rx="2" fill="oklch(52% 0.18 25)"/>
+          <rect x="78" y="8" width="14" height="10" rx="2" fill="oklch(52% 0.18 25)"/>
+          <text x="60" y="87" text-anchor="middle" font-family="JetBrains Mono" font-size="8" fill="oklch(55% 0.015 60)" letter-spacing="1">IgG ANTIBODY</text>
+        </svg>
+      </div>
+      <div class="fc-type">Defence</div>
+      <h4>Immune proteins</h4>
+      <p>Antibodies are proteins shaped precisely to grab pathogens. The MHC complex is a protein that presents pathogen fragments to T-cells. Complement proteins punch holes in bacteria. The immune system is essentially a protein army.</p>
+      <div class="example">eg. IgG antibodies · MHC · Complement</div>
+    </div>
+
+    <div class="func-card">
+      <div class="fc-icon">
+        <svg viewBox="0 0 120 90" xmlns="http://www.w3.org/2000/svg" width="120">
+          <!-- myosin walking on actin -->
+          <line x1="10" y1="60" x2="110" y2="60" stroke="oklch(54% 0.16 155)" stroke-width="4" stroke-linecap="round"/>
+          <!-- actin beads -->
+          <circle cx="25" cy="60" r="6" fill="oklch(68% 0.12 155)"/>
+          <circle cx="45" cy="60" r="6" fill="oklch(68% 0.12 155)"/>
+          <circle cx="65" cy="60" r="6" fill="oklch(68% 0.12 155)"/>
+          <circle cx="85" cy="60" r="6" fill="oklch(68% 0.12 155)"/>
+          <circle cx="105" cy="60" r="6" fill="oklch(68% 0.12 155)"/>
+          <!-- myosin head + lever arm -->
+          <ellipse cx="55" cy="38" rx="14" ry="10" fill="oklch(96% 0.04 290)" stroke="oklch(50% 0.22 290)" stroke-width="1.5"/>
+          <line x1="55" y1="48" x2="55" y2="56" stroke="oklch(50% 0.22 290)" stroke-width="2"/>
+          <path d="M55 35 L55 20 L75 20" stroke="oklch(70% 0.15 75)" stroke-width="2" fill="none" marker-end="url(#arr3)"/>
+          <defs><marker id="arr3" viewBox="0 0 8 8" refX="6" refY="4" markerWidth="4" markerHeight="4" orient="auto"><path d="M0 0 L8 4 L0 8z" fill="oklch(70% 0.15 75)"/></marker></defs>
+          <text x="60" y="82" text-anchor="middle" font-family="JetBrains Mono" font-size="8" fill="oklch(55% 0.015 60)" letter-spacing="1">MYOSIN MOTOR</text>
+        </svg>
+      </div>
+      <div class="fc-type">Movement</div>
+      <h4>Motor proteins</h4>
+      <p>Myosin literally walks along actin filaments, converting ATP energy into mechanical steps. This is how muscles contract. Kinesin and dynein carry cargo along microtubule highways inside cells — protein trucks on protein roads.</p>
+      <div class="example">eg. Myosin · Kinesin · Dynein · ATP synthase</div>
+    </div>
+  </div>
+</div>
+</section>
+
+<hr class="rule"/>
+
+<!-- ===== §03 INTERACTIVE 3D EXPLORER ===== -->
+<section id="explorer">
+<div class="wrap">
+  <div class="kicker"><span class="dot"></span><span class="mono">§ 03 — Explorer</span><span class="line"></span><span class="mono">Real Molecular Structures</span></div>
+  <h2>Drag. Rotate.<br><em>Actually look.</em></h2>
+  <p class="lede">Every structure below is real, determined by X-ray crystallography or cryo-EM and deposited in the Protein Data Bank. Drag to rotate. Scroll to zoom. Switch proteins and view modes with the controls.</p>
+
+  <div class="viewer-layout">
+    <div class="prot-list">
+      <button class="prot-btn active" data-pdb="4INS" data-name="Insulin" data-desc="Glucose-regulating hormone, 51 amino acids" data-fun="Signalling · Pancreatic β-cells · Nobel 1958">
+        <span class="pn">Insulin</span><span class="pd">Hormone · 51 aa</span>
+      </button>
+      <button class="prot-btn" data-pdb="1HHO" data-name="Oxyhemoglobin" data-desc="Oxygen-carrying blood protein, 4 subunits" data-fun="Transport · Red blood cells · 4 heme groups">
+        <span class="pn">Hemoglobin</span><span class="pd">Transport · 4 chains</span>
+      </button>
+      <button class="prot-btn" data-pdb="1EMA" data-name="Green Fluorescent Protein" data-desc="Beta-barrel that glows green, from jellyfish" data-fun="Fluorescence · Research tool · Nobel 2008">
+        <span class="pn">GFP</span><span class="pd">Fluorescent · Jellyfish</span>
+      </button>
+      <button class="prot-btn" data-pdb="1LYZ" data-name="Lysozyme" data-desc="Antimicrobial enzyme in tears and saliva" data-fun="Enzyme · Cleaves bacterial cell walls · 1st enzyme solved by X-ray">
+        <span class="pn">Lysozyme</span><span class="pd">Enzyme · Classic</span>
+      </button>
+      <button class="prot-btn" data-pdb="1IGT" data-name="Antibody IgG" data-desc="Y-shaped immune defence protein" data-fun="Immune · Binds pathogens · Basis of all antibody drugs">
+        <span class="pn">Antibody IgG</span><span class="pd">Immune · Y-shape</span>
+      </button>
+      <button class="prot-btn" data-pdb="1ATP" data-name="ATP Synthase subunit" data-desc="Rotary motor that makes cellular energy (ATP)" data-fun="Motor · Mitochondria · Spins at 9000 rpm">
+        <span class="pn">ATP Synthase</span><span class="pd">Motor · Energy</span>
+      </button>
+    </div>
+    <div class="viewer-right">
+      <div class="viewer-box">
+        <div id="mol-viewer"></div>
+        <div class="viewer-loading" id="viewer-loading">
+          <div class="spin-ring"></div>
+          <span>Fetching from Protein Data Bank…</span>
+        </div>
+      </div>
+      <div class="viewer-controls">
+        <button class="vc-btn active" data-style="cartoon">Cartoon</button>
+        <button class="vc-btn" data-style="surface">Surface</button>
+        <button class="vc-btn" data-style="stick">Stick</button>
+        <button class="vc-btn" data-style="sphere">Spheres</button>
+        <button class="vc-btn" id="color-btn" data-color="spectrum">Rainbow</button>
+        <button class="vc-btn" id="spin-btn">⟳ Spin</button>
+      </div>
+      <div class="viewer-info">
+        <div class="vi-name" id="vi-name">Insulin</div>
+        <div class="vi-desc" id="vi-desc">Glucose-regulating hormone, 51 amino acids</div>
+        <div class="vi-meta" id="vi-meta">Signalling · Pancreatic β-cells · Nobel 1958</div>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+
+<hr class="rule"/>
+
+<!-- ===== §04 THE FOLDING PROBLEM ===== -->
+<section id="problem" class="dark">
+<div class="wrap">
+  <div class="kicker"><span class="dot"></span><span class="mono">§ 04 — The Problem</span><span class="line"></span><span class="mono">50 Years of Impossible</span></div>
+  <h2>It folds in microseconds.<br>We couldn't predict it in <em>a lifetime.</em></h2>
+  <p class="lede">The sequence determines the shape — Christian Anfinsen proved this in 1972. But computing the shape from the sequence? That was a different matter. The search space is so vast it became its own paradox.</p>
+
+  <!-- LEVINTHAL'S PARADOX -->
+  <div class="levinthal-box">
+    <div class="caption">Levinthal's Paradox — 1969</div>
+    <div class="lev-counter" id="lev-counter">10<em>⁰</em></div>
+    <div class="lev-label">possible conformations checked so far — at 10¹³ per second</div>
+    <div style="margin-top:12px">
+      <button class="lev-btn" id="lev-start">Start the search</button>
+      <button class="lev-btn" id="lev-reset" style="margin-left:10px;display:none">Reset</button>
+    </div>
+    <div class="vs-row">
+      <div>
+        <div class="caption" style="color:oklch(65% 0.01 70)">Search space</div>
+        <div class="vs-num" style="color:var(--violet-2)">10³⁰⁰</div>
+        <div class="vs-desc">Possible conformations for a typical 100-residue protein if each bond can rotate freely. More than atoms in the observable universe.</div>
+      </div>
+      <div class="vs-div">vs</div>
+      <div>
+        <div class="caption" style="color:oklch(65% 0.01 70)">Actual folding time</div>
+        <div class="vs-num" style="color:oklch(72% 0.13 85)">10⁻⁶s</div>
+        <div class="vs-desc">One microsecond. The protein doesn't search randomly — it follows a funnel-shaped energy landscape, collapsing directly toward the minimum-energy structure.</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- MISFOLDING DISEASES -->
+  <div style="margin-top:80px">
+    <div class="caption" style="margin-bottom:20px;color:oklch(65% 0.01 70)">When folding goes wrong</div>
+    <h3 style="color:var(--paper);font-size:clamp(32px,4vw,56px)">Misfolding is not an edge case. <em>It's a disease category.</em></h3>
+    <p class="lede" style="margin-top:16px">When a protein folds into the wrong shape, it can become toxic — aggregating into sticky clumps that damage cells. These "proteopathies" are among the hardest diseases to treat, because the culprit is structurally almost identical to the normal protein.</p>
+    <div class="disease-grid">
+      <div class="disease-card">
+        <span class="d-badge">Neurodegeneration</span>
+        <h4>Alzheimer's disease</h4>
+        <p>Amyloid-β peptides misfold and aggregate into plaques between neurons. Tau protein also misfolds into tangles inside them. Both are hallmarks of the disease, detected decades before symptoms.</p>
+      </div>
+      <div class="disease-card">
+        <span class="d-badge">Neurodegeneration</span>
+        <h4>Parkinson's disease</h4>
+        <p>Alpha-synuclein misfolds and forms Lewy bodies inside dopaminergic neurons. Why it misfolds in some people and not others remains unknown. Genetic variants in the protein itself are one risk factor.</p>
+      </div>
+      <div class="disease-card">
+        <span class="d-badge">Prion disease</span>
+        <h4>CJD &amp; BSE</h4>
+        <p>Prion proteins are infectious misfolded proteins — the only known biological entity that replicates with no DNA or RNA. They convert normal proteins into their misfolded shape on contact. There is no cure.</p>
+      </div>
+      <div class="disease-card">
+        <span class="d-badge">Genetic</span>
+        <h4>Cystic fibrosis</h4>
+        <p>A single amino acid mutation (F508del) causes the CFTR protein to misfold and be destroyed before reaching the cell surface. No channel protein → no ion transport → thick mucus in lungs. The most common life-shortening mutation in people of European descent.</p>
+      </div>
+      <div class="disease-card">
+        <span class="d-badge">Metabolic</span>
+        <h4>Type 2 diabetes</h4>
+        <p>IAPP (islet amyloid polypeptide) misfolds and deposits in the pancreas, contributing to β-cell death. A different disease than Type 1, but protein aggregation is central to both.</p>
+      </div>
+      <div class="disease-card">
+        <span class="d-badge">Cancer</span>
+        <h4>p53 mutations</h4>
+        <p>p53 is the "guardian of the genome" — a protein that triggers cell death when DNA is damaged. 50% of all cancers carry a p53 mutation that causes it to misfold, lose its shape, and fail to function. Restoring its fold is an active drug target.</p>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- PULL QUOTE -->
+<div class="pull">
+  <blockquote>"If you know the sequence of a protein, <em>you should be able to predict its structure</em> — and from structure, its function."</blockquote>
+  <cite>— Christian Anfinsen, Nobel Lecture, 1972</cite>
+</div>
+
+<hr class="rule"/>
+
+<!-- ===== §05 HISTORY ===== -->
+<section id="history" class="dark">
+<div class="wrap">
+  <div class="kicker"><span class="dot"></span><span class="mono">§ 05 — History</span><span class="line"></span><span class="mono">The 60-Year Race</span></div>
+  <h2>From sequences<br>to <em>AlphaFold.</em></h2>
+  <div class="timeline">
+    <div class="axis"></div>
+    <div class="tl-row">
+      <div class="tl-year">1958</div><div class="tl-dot"></div>
+      <div class="tl-body"><span class="tag">First sequence</span><div class="tl-title">Sanger sequences insulin</div><p>Frederick Sanger determines the complete amino acid sequence of insulin — the first protein ever sequenced. He wins the Nobel Prize. We can now read the letters. Predicting what they fold into is another matter entirely.</p></div>
+    </div>
+    <div class="tl-row">
+      <div class="tl-year">1962</div><div class="tl-dot"></div>
+      <div class="tl-body"><span class="tag">First structure</span><div class="tl-title">Kendrew &amp; Perutz solve myoglobin</div><p>X-ray crystallography gives us the first 3D protein structure. Myoglobin, the oxygen-storage protein in muscle, is resolved at atomic resolution. The structure takes years of data collection and months of hand-calculation. Kendrew and Perutz share the Nobel Prize in Chemistry.</p></div>
+    </div>
+    <div class="tl-row">
+      <div class="tl-year"><em>1972</em></div><div class="tl-dot" style="background:oklch(72% 0.13 85)"></div>
+      <div class="tl-body"><span class="tag gold">The Axiom</span><div class="tl-title">Anfinsen's thermodynamic hypothesis</div><p>Christian Anfinsen demonstrates that a denatured protein can refold spontaneously into its correct shape. His conclusion: the native structure is entirely determined by the amino acid sequence. This is the founding axiom of the folding problem — and his Nobel Prize. It also means: if you could compute it, you could predict any protein structure from its gene.</p></div>
+    </div>
+    <div class="tl-row">
+      <div class="tl-year">1969</div><div class="tl-dot"></div>
+      <div class="tl-body"><span class="tag">The Paradox</span><div class="tl-title">Levinthal — the problem is impossibly hard</div><p>Cyrus Levinthal calculates that if a protein sampled random conformations, it would take longer than the age of the universe. Yet proteins fold in microseconds. This "Levinthal Paradox" defines the problem: there must be a guided pathway, but we don't know what it is.</p></div>
+    </div>
+    <div class="tl-row">
+      <div class="tl-year">1994</div><div class="tl-dot"></div>
+      <div class="tl-body"><span class="tag">Competition</span><div class="tl-title">CASP begins — the protein Olympics</div><p>Critical Assessment of Structure Prediction: a biennial competition where teams predict protein structures from sequences alone, then real structures are revealed. The scoring system (GDT — Global Distance Test, 0–100) becomes the benchmark. Early winners score around 20–30. Human experts cluster around 90.</p></div>
+    </div>
+    <div class="tl-row">
+      <div class="tl-year">2018</div><div class="tl-dot"></div>
+      <div class="tl-body"><span class="tag">Signal</span><div class="tl-title">AlphaFold 1 wins CASP13</div><p>DeepMind enters a neural network trained on evolutionary sequence data. It wins the competition with a GDT score of ~61, far ahead of all traditional methods. The biology community notices. Two years of intense development follow.</p></div>
+    </div>
+    <div class="tl-row">
+      <div class="tl-year"><em>2020</em></div><div class="tl-dot" style="background:oklch(72% 0.13 85)"></div>
+      <div class="tl-body"><span class="tag gold">Solved</span><div class="tl-title">AlphaFold 2 — GDT 92.4</div><p>At CASP14, AlphaFold 2 predicts structures with median GDT of 92.4 — exceeding human expert performance on many targets. John Moult, who co-founded CASP, says: "This is a watershed moment for biology." The 50-year-old problem is effectively solved. <em>Science</em> names it Breakthrough of the Year.</p></div>
+    </div>
+    <div class="tl-row">
+      <div class="tl-year">2021</div><div class="tl-dot"></div>
+      <div class="tl-body"><span class="tag">Nature paper</span><div class="tl-title">The method is published</div><p>DeepMind and EMBL-EBI publish the AlphaFold 2 paper in Nature and simultaneously release the code. The architecture — attention-based neural network processing multiple sequence alignments into 3D geometry — becomes the most read structural biology paper ever.</p></div>
+    </div>
+    <div class="tl-row">
+      <div class="tl-year">2022</div><div class="tl-dot"></div>
+      <div class="tl-body"><span class="tag">Database</span><div class="tl-title">200 million structures, free</div><p>The AlphaFold Protein Structure Database launches with predicted structures for nearly every known protein — including all 20,000 human proteins, all proteins in key model organisms, and UniProt's 200M+ entries. All free. All downloadable. The "dark proteome" — proteins never structurally characterised — is largely illuminated overnight.</p></div>
+    </div>
+    <div class="tl-row">
+      <div class="tl-year">2024</div><div class="tl-dot"></div>
+      <div class="tl-body"><span class="tag">AlphaFold 3</span><div class="tl-title">Proteins + DNA + RNA + small molecules</div><p>AlphaFold 3 extends prediction to protein complexes, DNA, RNA, and small molecules — the full cast of biology. Drug discovery changes overnight. Hassabis and Jumper receive the Nobel Prize in Chemistry. The other half goes to David Baker for computational protein design — not just predicting natural proteins, but designing new ones from scratch.</p></div>
+    </div>
+  </div>
+</div>
+</section>
+
+<hr class="rule"/>
+
+<!-- ===== §05b CASP CHART ===== -->
+<section id="alphafold">
+<div class="wrap">
+  <div class="kicker"><span class="dot"></span><span class="mono">§ 06 — The CASP Race</span><span class="line"></span><span class="mono">26 Years of Progress, Then a Cliff</span></div>
+  <h2>Decades of inches.<br>Then <em>AlphaFold.</em></h2>
+  <p class="lede">The CASP competition ran every two years from 1994. For 24 years, the best human methods improved by fractions of a point per competition. Then in 2020, AlphaFold 2 scored 92.4 — leaping past human expert performance in a single jump. Hover each point to see the story.</p>
+
+  <div class="casp-box">
+    <div class="chart-head">
+      <div><h3>CASP competition — best GDT score by year</h3>
+      <div class="caption" style="margin-top:6px">GDT (Global Distance Test) · 0 = random · 100 = perfect · ~90 = human expert</div></div>
+    </div>
+    <svg id="casp-svg" viewBox="0 0 1100 380" width="100%" xmlns="http://www.w3.org/2000/svg" style="overflow:visible">
+      <!-- grid -->
+      <g stroke="oklch(88% 0.01 70)" stroke-width="0.7">
+        <line x1="70" y1="40" x2="1080" y2="40"/>
+        <line x1="70" y1="100" x2="1080" y2="100"/>
+        <line x1="70" y1="160" x2="1080" y2="160"/>
+        <line x1="70" y1="220" x2="1080" y2="220"/>
+        <line x1="70" y1="280" x2="1080" y2="280"/>
+        <line x1="70" y1="340" x2="1080" y2="340"/>
+      </g>
+      <!-- y-labels -->
+      <g font-family="JetBrains Mono" font-size="10" fill="oklch(50% 0.01 70)" text-anchor="end">
+        <text x="62" y="44">100</text>
+        <text x="62" y="104">83</text>
+        <text x="62" y="164">67</text>
+        <text x="62" y="224">50</text>
+        <text x="62" y="284">33</text>
+        <text x="62" y="344">0</text>
+      </g>
+      <!-- human expert line -->
+      <line x1="70" y1="58" x2="1080" y2="58" stroke="oklch(54% 0.16 155)" stroke-width="1" stroke-dasharray="4 4"/>
+      <text x="1082" y="62" font-family="JetBrains Mono" font-size="9" fill="oklch(54% 0.16 155)" letter-spacing="1">HUMAN EXPERT ~90</text>
+      <!-- chart line drawn by JS -->
+      <polyline id="casp-line" fill="none" stroke="oklch(50% 0.22 290)" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round"/>
+      <polyline id="casp-line-af" fill="none" stroke="oklch(52% 0.18 25)" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+      <!-- dots rendered by JS -->
+      <g id="casp-dots"></g>
+      <!-- x labels rendered by JS -->
+      <g id="casp-xlabels"></g>
+      <!-- AF2 annotation -->
+      <line id="af-vline" x1="0" y1="40" x2="0" y2="340" stroke="oklch(52% 0.18 25)" stroke-width="1" stroke-dasharray="3 3" opacity="0"/>
+    </svg>
+    <div class="casp-tooltip" id="casp-tip"></div>
+  </div>
+
+  <!-- AlphaFold HOW IT WORKS -->
+  <div style="margin-top:80px">
+    <h3>How AlphaFold 2 works — conceptually</h3>
+    <div class="af-grid">
+      <div>
+        <div class="af-step">
+          <div class="af-num">1</div>
+          <div>
+            <h5>Multiple Sequence Alignment</h5>
+            <p>Start with your protein sequence. Search all known sequences across evolution for similar proteins. Co-evolving positions — pairs of residues that mutate together — reveal which pairs are physically close in 3D space. This is evolutionary geometry.</p>
+          </div>
+        </div>
+        <div class="af-step">
+          <div class="af-num">2</div>
+          <div>
+            <h5>Attention over residues</h5>
+            <p>A transformer-like attention mechanism processes every residue pair simultaneously, learning which positions constrain each other. Unlike older methods that looked locally, this sees the whole sequence globally at once. This is the key architectural insight.</p>
+          </div>
+        </div>
+        <div class="af-step">
+          <div class="af-num">3</div>
+          <div>
+            <h5>Structure module — direct geometry</h5>
+            <p>Instead of predicting distances and then assembling a structure, AlphaFold 2 directly outputs 3D rotation and translation for each residue using equivariant neural networks. Iterative refinement cycles ("recycling") tighten the prediction.</p>
+          </div>
+        </div>
+        <div class="af-step">
+          <div class="af-num">4</div>
+          <div>
+            <h5>Confidence scoring (pLDDT)</h5>
+            <p>For every residue, AlphaFold predicts its own confidence (pLDDT, 0–100). High confidence = reliable. Low confidence often means the region is intrinsically disordered in real life — which is itself biologically meaningful information.</p>
+          </div>
+        </div>
+      </div>
+      <!-- Confidence viz SVG -->
+      <div>
+        <div style="background:var(--paper);border:1px solid var(--rule);padding:32px">
+          <div class="caption" style="margin-bottom:16px">pLDDT confidence coloring — example protein</div>
+          <svg viewBox="0 0 400 280" width="100%" xmlns="http://www.w3.org/2000/svg">
+            <!-- protein ribbon colored by confidence -->
+            <!-- high confidence section (blue) -->
+            <path d="M40 140 C 60 100, 80 180, 100 140 C 120 100, 140 180, 160 140 C 180 100, 200 180, 220 140" fill="none" stroke="oklch(58% 0.18 240)" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+            <!-- medium (yellow) -->
+            <path d="M220 140 C 240 120, 255 160, 270 140" fill="none" stroke="oklch(75% 0.15 80)" stroke-width="10" stroke-linecap="round"/>
+            <!-- low confidence (orange/red) = disordered -->
+            <path d="M270 140 C 285 110, 295 165, 310 135 C 320 115, 330 155, 345 140 C 355 128, 365 148, 375 138" fill="none" stroke="oklch(60% 0.2 40)" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+
+            <!-- legend -->
+            <rect x="40" y="220" width="14" height="14" fill="oklch(58% 0.18 240)"/>
+            <text x="60" y="231" font-family="JetBrains Mono" font-size="9" fill="oklch(38% 0.02 60)" letter-spacing="0.5">Very high (>90) — confident</text>
+            <rect x="40" y="240" width="14" height="14" fill="oklch(75% 0.15 80)"/>
+            <text x="60" y="251" font-family="JetBrains Mono" font-size="9" fill="oklch(38% 0.02 60)" letter-spacing="0.5">Medium (70–90)</text>
+            <rect x="40" y="260" width="14" height="14" fill="oklch(60% 0.2 40)"/>
+            <text x="60" y="271" font-family="JetBrains Mono" font-size="9" fill="oklch(38% 0.02 60)" letter-spacing="0.5">Low (&lt;70) — intrinsically disordered</text>
+
+            <text x="270" y="165" text-anchor="middle" font-family="Instrument Serif" font-style="italic" font-size="11" fill="oklch(50% 0.01 60)">disorder ≠ wrong prediction</text>
+            <text x="270" y="178" text-anchor="middle" font-family="Instrument Serif" font-style="italic" font-size="11" fill="oklch(50% 0.01 60)">it's often real biology</text>
+          </svg>
+          <p style="margin:16px 0 0;font-size:15px;color:var(--ink-2);line-height:1.5">Disordered regions often become structured only when they bind a partner. AlphaFold's low-confidence flag is not a failure — it's pointing at something biologically interesting.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+
+<hr class="rule"/>
+
+<!-- ===== §06 IMPACT ===== -->
+<section id="impact">
+<div class="wrap">
+  <div class="kicker"><span class="dot"></span><span class="mono">§ 07 — Impact</span><span class="line"></span><span class="mono">What Solving It Unlocks</span></div>
+  <h2>A tool for<br><em>every disease.</em></h2>
+  <p class="lede">The protein folding problem was not just an intellectual puzzle. It was the key blocking scientific progress in drug discovery, vaccine design, enzyme engineering, and our understanding of virtually every disease. Now that key turns.</p>
+  <div class="apps-grid">
+    <div class="app-card"><span class="app-n">01</span>
+      <h4>Drug discovery</h4><div class="app-sub">Immediate · Pharma + Biotech</div>
+      <p>Knowing a pathogen's protein structure immediately reveals binding pockets for drug molecules. AlphaFold structures have already been used to design drug candidates for malaria, tuberculosis, and antibiotic-resistant bacteria — in weeks rather than years.</p>
+    </div>
+    <div class="app-card"><span class="app-n">02</span>
+      <h4>Plastic-eating enzymes</h4><div class="app-sub">Environment · Enzyme engineering</div>
+      <p>PETase, a bacterial enzyme that breaks down plastic bottles, was redesigned using structural knowledge for 6× better efficiency. AlphaFold structures of related enzymes now accelerate this further. Enzymatic plastic recycling may be economically viable within a decade.</p>
+    </div>
+    <div class="app-card"><span class="app-n">03</span>
+      <h4>mRNA vaccine design</h4><div class="app-sub">Public health · Immunology</div>
+      <p>Designing vaccines requires knowing the exact shape of the antigen your immune system will train against. COVID mRNA vaccines were designed using knowledge of the spike protein structure. Future vaccines for RSV, HIV, and cancer will be faster to design.</p>
+    </div>
+    <div class="app-card"><span class="app-n">04</span>
+      <h4>Venom antidotes</h4><div class="app-sub">Neglected disease · Global health</div>
+      <p>~138,000 people die from snakebite annually, mostly in the Global South. Antivenoms require milking live snakes and are expensive to produce. AlphaFold structures of venom proteins are enabling rational design of cheap, synthetic, broadly effective antidotes.</p>
+    </div>
+    <div class="app-card"><span class="app-n">05</span>
+      <h4>De novo protein design</h4><div class="app-sub">David Baker · University of Washington</div>
+      <p>AlphaFold's inverse problem: given a desired function, design a sequence that folds into a shape that achieves it. Baker's lab (Nobel 2024) has designed proteins that don't exist in nature — vaccines, nanomachines, self-assembling materials — purely from first principles.</p>
+    </div>
+    <div class="app-card"><span class="app-n">06</span>
+      <h4>The dark proteome</h4><div class="app-sub">Basic science · All diseases</div>
+      <p>Before AlphaFold, roughly 1/3 of human proteins had no known structure. These "dark proteome" proteins were often the most interesting — disease-relevant, drug targets, but too difficult to crystallise. AlphaFold predicted nearly all of them. Thousands of papers are being written about proteins that were structurally invisible last year.</p>
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- PULL -->
+<div class="pull">
+  <blockquote>"AlphaFold is a <em>once in a generation</em> advance — one of the most important scientific achievements in decades."</blockquote>
+  <cite>— Edith Heard, EMBL Director-General, 2021</cite>
+</div>
+
+<!-- CODA -->
+<section>
+<div class="narrow" style="text-align:center">
+  <div class="caption" style="margin-bottom:20px">§ Coda</div>
+  <h2 style="font-size:clamp(40px,6vw,80px)">50 years of impossible.<br>Then one <em>afternoon.</em></h2>
+  <p class="lede" style="margin:32px auto 0;max-width:620px">The protein folding problem seemed intractable because we tried to solve it as a physics problem — simulate every atom. AlphaFold solved it as a pattern recognition problem: 200 million years of evolution had already run the experiment. The answers were hidden in the sequences all along. We just needed to learn to read them.</p>
+  <p style="margin-top:36px;font-family:'Instrument Serif',serif;font-style:italic;font-size:24px;color:var(--violet)">Evolution is the world's longest running simulation. AlphaFold learned to play it back.</p>
+</div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="foot">
+    <div>
+      <h5>About This Explainer</h5>
+      <p>A visual guide to proteins, protein folding, and the AlphaFold revolution. Compiled April 2026 from peer-reviewed research. Interactive 3D structures courtesy of the RCSB Protein Data Bank and 3Dmol.js.</p>
+    </div>
+    <div>
+      <h5>Key Sources</h5>
+      <ul>
+        <li>Jumper et al., Nature 2021 (AlphaFold 2)</li>
+        <li>Anfinsen, Science 1973 (Thermodynamic hypothesis)</li>
+        <li>AlphaFold Protein Structure Database, EMBL-EBI</li>
+        <li>CASP — predictioncenter.org</li>
+        <li>Baker &amp; Church, Nobel Lectures 2024</li>
+      </ul>
+    </div>
+    <div>
+      <h5>Explore Further</h5>
+      <p>The <em>AlphaFold DB</em> (alphafold.ebi.ac.uk) has predicted structures for every protein in your body. The <em>RCSB PDB</em> (rcsb.org) has experimental structures. <em>Foldit</em> (fold.it) lets you fold proteins as a game.</p>
+    </div>
+  </div>
+  <div class="signoff">
+    <div>The Fold · Vol. 01 · 2026</div>
+    <div><a href="type-1-diabetes.html" style="color:inherit;text-decoration:none">← Also: The Sugar File (T1D Explainer)</a></div>
+    <div>— End —</div>
+  </div>
+</footer>
+
+<script>
+// ─── SCROLL FADE ───
+const io = new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:0.06});
+document.querySelectorAll('section,.hero,.pull').forEach(el=>{el.classList.add('fade');io.observe(el);});
+
+// ─── HP FOLDING SIMULATION ───
+(function(){
+  const canvas = document.getElementById('hp-canvas');
+  const ctx = canvas.getContext('2d');
+  const SEQ = 'HPPHHHPPHPPHHHPPHPPH'; // H=hydrophobic P=polar
+  const N = SEQ.length;
+  const BOND_LEN = 32, BOND_K = 0.25, REPEL_R = 28, REPEL_K = 800, HH_R = 80, HH_K = 0.6, DAMP = 0.88;
+  let nodes=[], folding=false, animId=null, W=0, H=0;
+
+  function resize(){
+    W = canvas.parentElement.clientWidth - 80;
+    H = 260;
+    canvas.width = W * window.devicePixelRatio;
+    canvas.height = H * window.devicePixelRatio;
+    canvas.style.width = W+'px';
+    canvas.style.height = H+'px';
+    ctx.scale(window.devicePixelRatio, window.devicePixelRatio);
+  }
+
+  function init(){
+    resize();
+    const startX = (W - (N-1)*BOND_LEN) / 2;
+    nodes = SEQ.split('').map((t,i)=>({
+      x: startX + i*BOND_LEN, y: H/2 + (Math.random()-0.5)*4,
+      vx:0, vy:0, type:t
+    }));
+    folding = false;
+    draw();
+  }
+
+  function step(){
+    // bond springs
+    for(let i=0;i<N-1;i++){
+      const a=nodes[i],b=nodes[i+1];
+      const dx=b.x-a.x, dy=b.y-a.y, d=Math.hypot(dx,dy)||0.001;
+      const f=(d-BOND_LEN)*BOND_K, nx=dx/d, ny=dy/d;
+      a.vx+=f*nx; a.vy+=f*ny; b.vx-=f*nx; b.vy-=f*ny;
+    }
+    // pairwise
+    for(let i=0;i<N;i++) for(let j=i+2;j<N;j++){
+      const a=nodes[i],b=nodes[j];
+      const dx=b.x-a.x, dy=b.y-a.y, d=Math.hypot(dx,dy)||0.001, nx=dx/d, ny=dy/d;
+      if(d<REPEL_R){const f=REPEL_K/(d*d); a.vx-=f*nx*8; a.vy-=f*ny*8; b.vx+=f*nx*8; b.vy+=f*ny*8;}
+      if(folding && a.type==='H' && b.type==='H' && d<HH_R){
+        const f=HH_K*(1-d/HH_R); a.vx+=f*nx; a.vy+=f*ny; b.vx-=f*nx; b.vy-=f*ny;
+      }
+    }
+    // centering
+    let cx=0,cy=0; nodes.forEach(n=>{cx+=n.x;cy+=n.y}); cx/=N; cy/=N;
+    nodes.forEach(n=>{n.vx+=(W/2-cx)*0.012; n.vy+=(H/2-cy)*0.012;});
+    // integrate
+    nodes.forEach(n=>{n.vx*=DAMP; n.vy*=DAMP; n.x+=n.vx; n.y+=n.vy;});
+  }
+
+  function countHH(){
+    let c=0;
+    for(let i=0;i<N;i++) for(let j=i+2;j<N;j++){
+      if(nodes[i].type==='H'&&nodes[j].type==='H'&&Math.hypot(nodes[i].x-nodes[j].x,nodes[i].y-nodes[j].y)<REPEL_R*2) c++;
+    }
+    return c;
+  }
+
+  function draw(){
+    ctx.clearRect(0,0,W,H);
+    // HH contact lines (highlight)
+    for(let i=0;i<N;i++) for(let j=i+2;j<N;j++){
+      if(nodes[i].type==='H'&&nodes[j].type==='H'){
+        const d=Math.hypot(nodes[i].x-nodes[j].x,nodes[i].y-nodes[j].y);
+        if(d<REPEL_R*2){
+          ctx.beginPath();ctx.moveTo(nodes[i].x,nodes[i].y);ctx.lineTo(nodes[j].x,nodes[j].y);
+          ctx.strokeStyle='oklch(70% 0.15 75 / 0.35)';ctx.lineWidth=2;ctx.stroke();
+        }
+      }
+    }
+    // bonds
+    ctx.lineWidth=2.5; ctx.strokeStyle='oklch(82% 0.012 70)';
+    for(let i=0;i<N-1;i++){
+      ctx.beginPath();ctx.moveTo(nodes[i].x,nodes[i].y);ctx.lineTo(nodes[i+1].x,nodes[i+1].y);ctx.stroke();
+    }
+    // nodes
+    nodes.forEach((n,i)=>{
+      const r=13;
+      ctx.beginPath();ctx.arc(n.x,n.y,r,0,Math.PI*2);
+      ctx.fillStyle = n.type==='H' ? 'oklch(52% 0.18 25)' : 'oklch(58% 0.12 220)';
+      ctx.fill();
+      ctx.strokeStyle = n.type==='H' ? 'oklch(38% 0.16 25)' : 'oklch(40% 0.14 220)';
+      ctx.lineWidth=1.5; ctx.stroke();
+      ctx.fillStyle='white'; ctx.font='bold 9px JetBrains Mono';
+      ctx.textAlign='center'; ctx.textBaseline='middle';
+      ctx.fillText(n.type,n.x,n.y);
+    });
+    document.getElementById('energy-val').textContent = countHH();
+  }
+
+  function animate(){
+    for(let i=0;i<4;i++) step();
+    draw();
+    animId=requestAnimationFrame(animate);
+  }
+
+  document.getElementById('fold-btn').onclick=()=>{folding=true; if(!animId) animId=requestAnimationFrame(animate);};
+  document.getElementById('unfold-btn').onclick=()=>{ cancelAnimationFrame(animId); animId=null; init(); };
+  document.getElementById('rand-btn').onclick=()=>{
+    cancelAnimationFrame(animId); animId=null;
+    resize();
+    nodes = SEQ.split('').map((t,i)=>({
+      x: W/2+(Math.random()-0.5)*W*0.6, y: H/2+(Math.random()-0.5)*H*0.7,
+      vx:(Math.random()-0.5)*2, vy:(Math.random()-0.5)*2, type:t
+    }));
+    folding=false; animId=requestAnimationFrame(animate);
+  };
+
+  window.addEventListener('resize',()=>{cancelAnimationFrame(animId); animId=null; init();});
+  init();
+})();
+
+// ─── 3DMOL VIEWER ───
+(function(){
+  let viewer=null, spinning=false, currentStyle='cartoon', currentColor='spectrum', spinInterval=null;
+
+  function initViewer(){
+    if(typeof $3Dmol === 'undefined'){
+      document.getElementById('viewer-loading').innerHTML='<span style="color:var(--ink-3);font-family:JetBrains Mono;font-size:11px;text-transform:uppercase;letter-spacing:0.1em">3Dmol.js unavailable — check your connection</span>';
+      return;
+    }
+    viewer = $3Dmol.createViewer(document.getElementById('mol-viewer'), {backgroundColor:'#faf8f3'});
+    loadProtein('4INS');
+  }
+
+  function loadProtein(pdb){
+    if(!viewer) return;
+    const loading = document.getElementById('viewer-loading');
+    loading.classList.remove('hidden');
+    loading.innerHTML='<div class="spin-ring"></div><span>Fetching '+pdb+' from Protein Data Bank…</span>';
+    if(spinInterval){clearInterval(spinInterval); spinInterval=null; spinning=false; document.getElementById('spin-btn').classList.remove('active');}
+    viewer.clear();
+    $3Dmol.download('pdb:'+pdb, viewer, {}, function(){
+      applyStyle();
+      viewer.zoomTo();
+      viewer.zoom(0.85);
+      viewer.render();
+      setTimeout(()=>loading.classList.add('hidden'), 400);
+    });
+  }
+
+  function applyStyle(){
+    if(!viewer) return;
+    viewer.setStyle({},{});
+    if(currentStyle==='cartoon') viewer.setStyle({},{cartoon:{color:currentColor}});
+    else if(currentStyle==='surface'){viewer.setStyle({},{cartoon:{color:currentColor,opacity:0.3}});viewer.addSurface($3Dmol.SurfaceType.VDW,{opacity:0.75,colorscheme:'whiteCarbon'});}
+    else if(currentStyle==='stick') viewer.setStyle({},{stick:{colorscheme:currentColor==='spectrum'?'Jmol':currentColor}});
+    else if(currentStyle==='sphere') viewer.setStyle({},{sphere:{colorscheme:currentColor==='spectrum'?'Jmol':currentColor,radius:0.6}});
+    viewer.render();
+  }
+
+  document.querySelectorAll('.prot-btn').forEach(btn=>{
+    btn.addEventListener('click',function(){
+      document.querySelectorAll('.prot-btn').forEach(b=>b.classList.remove('active'));
+      this.classList.add('active');
+      document.getElementById('vi-name').textContent=this.dataset.name;
+      document.getElementById('vi-desc').textContent=this.dataset.desc;
+      document.getElementById('vi-meta').textContent=this.dataset.fun;
+      loadProtein(this.dataset.pdb);
+    });
+  });
+
+  document.querySelectorAll('.vc-btn[data-style]').forEach(btn=>{
+    btn.addEventListener('click',function(){
+      document.querySelectorAll('.vc-btn[data-style]').forEach(b=>b.classList.remove('active'));
+      this.classList.add('active');
+      currentStyle=this.dataset.style;
+      applyStyle();
+    });
+  });
+
+  document.getElementById('color-btn').addEventListener('click',function(){
+    const colors=['spectrum','chainHetatm','ssJmol'];
+    const labels=['Rainbow','By chain','By structure'];
+    const idx=(colors.indexOf(currentColor)+1)%colors.length;
+    currentColor=colors[idx];
+    this.textContent=labels[idx];
+    applyStyle();
+  });
+
+  document.getElementById('spin-btn').addEventListener('click',function(){
+    if(!viewer) return;
+    spinning=!spinning;
+    this.classList.toggle('active',spinning);
+    if(spinning){spinInterval=setInterval(()=>{viewer.rotate(1,'y');viewer.render();},30);}
+    else{clearInterval(spinInterval);spinInterval=null;}
+  });
+
+  // Init after page loads
+  if(document.readyState==='complete') initViewer();
+  else window.addEventListener('load', initViewer);
+})();
+
+// ─── LEVINTHAL COUNTER ───
+(function(){
+  let running=false, animId=null, exponent=0;
+  const el = document.getElementById('lev-counter');
+  const startBtn = document.getElementById('lev-start');
+  const resetBtn = document.getElementById('lev-reset');
+
+  function format(exp){
+    if(exp<10) return '10<em>'+exp+'</em>';
+    return '10<em>'+String(exp).split('').join('')+'</em>';
+  }
+
+  startBtn.addEventListener('click',()=>{
+    if(running) return;
+    running=true; startBtn.textContent='Searching…'; resetBtn.style.display='inline-block';
+    function tick(){
+      exponent = Math.min(exponent + 0.8, 300);
+      el.innerHTML = '10<em>' + Math.floor(exponent) + '</em>';
+      if(exponent<300) animId=requestAnimationFrame(tick);
+      else { startBtn.textContent='Still searching…'; }
+    }
+    animId=requestAnimationFrame(tick);
+  });
+
+  resetBtn.addEventListener('click',()=>{
+    cancelAnimationFrame(animId); running=false; exponent=0;
+    el.innerHTML='10<em>0</em>';
+    startBtn.textContent='Start the search'; resetBtn.style.display='none';
+  });
+})();
+
+// ─── CASP CHART ───
+(function(){
+  const data = [
+    {year:1994,gdt:22,name:'CASP1',note:'First competition. Best methods score ~22.'},
+    {year:1996,gdt:27,name:'CASP2',note:'Homology modelling improves.'},
+    {year:1998,gdt:31,name:'CASP3',note:'Threading methods emerge.'},
+    {year:2000,gdt:36,name:'CASP4',note:'Slow but steady progress.'},
+    {year:2002,gdt:40,name:'CASP5',note:'Fragment assembly methods (Rosetta) gain ground.'},
+    {year:2004,gdt:43,name:'CASP6',note:'Rosetta wins several categories.'},
+    {year:2006,gdt:44,name:'CASP7',note:'Progress plateauing for hard targets.'},
+    {year:2008,gdt:46,name:'CASP8',note:'Consensus methods improve slightly.'},
+    {year:2010,gdt:47,name:'CASP9',note:'The "hard problem" remains unsolved.'},
+    {year:2012,gdt:49,name:'CASP10',note:'Deep learning approaches begin appearing.'},
+    {year:2014,gdt:51,name:'CASP11',note:'Co-evolutionary methods (EVfold) show promise.'},
+    {year:2016,gdt:53,name:'CASP12',note:'Neural nets applied to contact prediction.'},
+    {year:2018,gdt:61,name:'CASP13',note:'AlphaFold 1 wins — a 8-point jump shocks the field.'},
+    {year:2020,gdt:92.4,name:'CASP14',note:'AlphaFold 2 — 92.4 GDT. Problem solved. Field stunned.',special:true},
+  ];
+
+  const svg = document.getElementById('casp-svg');
+  const tip = document.getElementById('casp-tip');
+  const svgBox = svg.parentElement;
+  const xMin=1994, xMax=2020, yMin=0, yMax=100;
+  const px={l:70,r:1080,t:40,b:340};
+  const W=px.r-px.l, H=px.b-px.t;
+
+  function sx(year){return px.l + (year-xMin)/(xMax-xMin)*W;}
+  function sy(gdt){return px.b - (gdt-yMin)/(yMax-yMin)*H;}
+
+  // draw lines
+  const normalPts = data.filter(d=>!d.special);
+  const afPts = data.slice(-2); // CASP13 → CASP14
+  document.getElementById('casp-line').setAttribute('points', normalPts.map(d=>sx(d.year)+','+sy(d.gdt)).join(' '));
+  document.getElementById('casp-line-af').setAttribute('points', afPts.map(d=>sx(d.year)+','+sy(d.gdt)).join(' '));
+
+  // vertical line for AF2
+  const af2 = data[data.length-1];
+  const vl = document.getElementById('af-vline');
+  vl.setAttribute('x1', sx(af2.year)); vl.setAttribute('x2', sx(af2.year));
+  vl.setAttribute('opacity','1');
+
+  // dots + x labels
+  const dotsG = document.getElementById('casp-dots');
+  const xlabG = document.getElementById('casp-xlabels');
+  data.forEach(d=>{
+    const x=sx(d.year), y=sy(d.gdt);
+    // dot
+    const c = document.createElementNS('http://www.w3.org/2000/svg','circle');
+    c.setAttribute('cx',x); c.setAttribute('cy',y);
+    c.setAttribute('r', d.special?10:6);
+    c.setAttribute('fill', d.special?'oklch(52% 0.18 25)':'oklch(50% 0.22 290)');
+    c.setAttribute('stroke','white'); c.setAttribute('stroke-width','2');
+    c.style.cursor='pointer';
+    // hover
+    c.addEventListener('mouseenter',function(e){
+      tip.innerHTML='<strong>'+d.name+' ('+d.year+')</strong><br>'+d.gdt+' GDT<br>'+d.note;
+      tip.style.opacity='1';
+    });
+    c.addEventListener('mouseleave',()=>tip.style.opacity='0');
+    c.addEventListener('mousemove',function(e){
+      const rect=svgBox.getBoundingClientRect();
+      tip.style.left=(e.clientX-rect.left+12)+'px';
+      tip.style.top=(e.clientY-rect.top-10)+'px';
+    });
+    dotsG.appendChild(c);
+
+    // x label (every other year)
+    if([1994,2000,2006,2012,2018,2020].includes(d.year)){
+      const t = document.createElementNS('http://www.w3.org/2000/svg','text');
+      t.setAttribute('x',x); t.setAttribute('y',px.b+18);
+      t.setAttribute('text-anchor','middle'); t.setAttribute('font-family','JetBrains Mono');
+      t.setAttribute('font-size','10'); t.setAttribute('fill','oklch(50% 0.01 70)');
+      t.setAttribute('letter-spacing','1'); t.textContent=d.year;
+      xlabG.appendChild(t);
+    }
+
+    // AF2 label
+    if(d.special){
+      const t = document.createElementNS('http://www.w3.org/2000/svg','text');
+      t.setAttribute('x',x-8); t.setAttribute('y',y-18);
+      t.setAttribute('text-anchor','end'); t.setAttribute('font-family','JetBrains Mono');
+      t.setAttribute('font-size','9'); t.setAttribute('fill','oklch(52% 0.18 25)');
+      t.setAttribute('letter-spacing','1'); t.textContent='ALPHAFOLD 2 · 92.4';
+      dotsG.appendChild(t);
+    }
+  });
+})();
+</script>
+</body>
+</html>
