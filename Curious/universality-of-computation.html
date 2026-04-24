@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-KVBPX8VW');</script>
+    <!-- End Google Tag Manager -->
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="The universality of computation — from Ada Lovelace to Turing to David Deutsch — and its surprising connection to physics and virtual reality.">
+    <link rel="icon" type="image/svg+xml" href="../images/favicon.svg">
+    <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon-32.png">
+    <link rel="apple-touch-icon" href="../images/apple-touch-icon.png">
+    <title>Universality of Computation | Prashanth Shankar</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+
+    <style>
+        *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+        html { font-size: 16px; scroll-behavior: smooth; }
+        body {
+            background: #fff;
+            color: #000;
+            font-family: 'Inter', -apple-system, sans-serif;
+            font-weight: 400;
+            line-height: 1.7;
+        }
+        ::selection { background: #000; color: #fff; }
+
+        .page {
+            max-width: 720px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        header {
+            padding: 2.5rem 0 0;
+        }
+
+        .back-link {
+            font-size: 0.75rem;
+            font-weight: 400;
+            letter-spacing: 0.04em;
+            color: #000;
+            text-decoration: none;
+            transition: opacity 0.2s ease;
+        }
+        .back-link:hover { opacity: 0.5; }
+
+        article {
+            padding: 4rem 0 3rem;
+        }
+
+        article h1 {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 2.6rem;
+            font-weight: 600;
+            line-height: 1.15;
+            margin-bottom: 1rem;
+        }
+
+        .deck {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.25rem;
+            font-style: italic;
+            line-height: 1.5;
+            color: #000;
+            margin-bottom: 2.5rem;
+        }
+
+        article h2 {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.8rem;
+            font-weight: 600;
+            line-height: 1.2;
+            margin: 3rem 0 1rem;
+        }
+
+        article p {
+            font-size: 0.95rem;
+            font-weight: 300;
+            line-height: 1.75;
+            margin-bottom: 1rem;
+        }
+
+        article em {
+            font-style: italic;
+        }
+
+        .pullquote {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.35rem;
+            font-style: italic;
+            line-height: 1.45;
+            padding: 1.5rem 0 1.5rem 1.5rem;
+            border-left: 2px solid #000;
+            margin: 2rem 0;
+            color: #000;
+        }
+
+        .figure {
+            margin: 2.5rem 0;
+        }
+        .figure svg {
+            display: block;
+            width: 100%;
+            height: auto;
+            max-width: 640px;
+            margin: 0 auto;
+        }
+        .caption {
+            font-size: 0.78rem;
+            color: #666;
+            text-align: center;
+            margin-top: 0.8rem;
+            line-height: 1.5;
+            font-style: italic;
+            font-family: 'Cormorant Garamond', serif;
+        }
+
+        hr.divider {
+            border: none;
+            border-top: 1px solid #000;
+            margin: 3rem 0;
+        }
+
+        .references {
+            font-size: 0.8rem;
+            color: #555;
+            line-height: 1.7;
+            margin-top: 2rem;
+        }
+        .references h3 {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: #000;
+            margin-bottom: 0.75rem;
+        }
+        .references ol {
+            padding-left: 1.2rem;
+        }
+        .references li {
+            margin-bottom: 0.35rem;
+        }
+
+        footer {
+            padding: 2rem 0 3rem;
+            font-size: 0.75rem;
+            color: #666;
+        }
+        footer a { color: inherit; text-decoration: underline; text-underline-offset: 0.2em; }
+    </style>
+</head>
+<body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KVBPX8VW" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+    <div class="page">
+        <header>
+            <a href="index.html" class="back-link">&larr; Wonderland</a>
+        </header>
+
+        <article>
+            <h1>Universality of Computation</h1>
+            <p class="deck">One idea ties together Ada Lovelace's notes, Turing's abstract tape, Deutsch's quantum computer, and the possibility of virtual reality.</p>
+
+            <p>There is an idea so strange that it took a century to stumble into, and so deep that once you see it you cannot unsee it: a single machine, built once, can compute anything that can be computed at all. It can be a calculator, a word processor, a chess engine, a weather model, a brain simulator &mdash; all without changing a wire. This is the <em>universality of computation</em>, and it is arguably the most consequential idea of the last two hundred years.</p>
+
+            <p>Its story runs through three people.</p>
+
+            <h2>Ada Lovelace &mdash; the first glimpse</h2>
+
+            <p>In 1843, Ada Lovelace was translating an Italian paper about Charles Babbage's unbuilt Analytical Engine. She appended her own notes. They ended up being more than twice as long as the original paper.</p>
+
+            <p>Hidden in Note G is an algorithm for computing the Bernoulli numbers &mdash; widely considered the first computer program. But the more radical move is elsewhere. Babbage saw his machine as a fast calculator. Lovelace saw further:</p>
+
+            <p class="pullquote">&ldquo;The Analytical Engine... might act upon other things besides number. Supposing, for instance, that the fundamental relations of pitched sounds in the science of harmony... were susceptible of such expression, the engine might compose elaborate and scientific pieces of music of any degree of complexity or extent.&rdquo;</p>
+
+            <p>She understood that a machine shuffling symbols isn't really about numbers at all. If you can encode something &mdash; music, logic, language &mdash; as symbols, a machine that manipulates symbols can manipulate <em>it</em>. This is the seed of universality, a century before the word.</p>
+
+            <h2>Alan Turing &mdash; the proof</h2>
+
+            <p>In 1936, Alan Turing wrote a paper called &ldquo;On Computable Numbers.&rdquo; He was 24. He was trying to answer a question in logic &mdash; is there a mechanical procedure that can decide whether any given mathematical statement is true? &mdash; and to answer it, he had to first define what &ldquo;mechanical procedure&rdquo; even meant.</p>
+
+            <p>So he invented a machine. Not a real one. An idealized abstraction: an infinite tape divided into cells, a head that could read and write symbols, and a little rulebook of states. Primitive. Utterly simple. And yet:</p>
+
+            <div class="figure">
+                <svg viewBox="0 0 640 180" xmlns="http://www.w3.org/2000/svg">
+                    <!-- Tape cells -->
+                    <g stroke="#000" stroke-width="1" fill="#fff">
+                        <rect x="40" y="80" width="56" height="56"/>
+                        <rect x="96" y="80" width="56" height="56"/>
+                        <rect x="152" y="80" width="56" height="56"/>
+                        <rect x="208" y="80" width="56" height="56"/>
+                        <rect x="264" y="80" width="56" height="56"/>
+                        <rect x="320" y="80" width="56" height="56"/>
+                        <rect x="376" y="80" width="56" height="56"/>
+                        <rect x="432" y="80" width="56" height="56"/>
+                        <rect x="488" y="80" width="56" height="56"/>
+                        <rect x="544" y="80" width="56" height="56"/>
+                    </g>
+                    <!-- Symbols -->
+                    <g font-family="'Cormorant Garamond', serif" font-size="26" text-anchor="middle" fill="#000">
+                        <text x="68" y="117">1</text>
+                        <text x="124" y="117">0</text>
+                        <text x="180" y="117">1</text>
+                        <text x="236" y="117">1</text>
+                        <text x="292" y="117">0</text>
+                        <text x="348" y="117">1</text>
+                        <text x="404" y="117">0</text>
+                        <text x="460" y="117">0</text>
+                        <text x="516" y="117">1</text>
+                        <text x="572" y="117">&#8230;</text>
+                    </g>
+                    <!-- Head -->
+                    <g>
+                        <rect x="320" y="30" width="56" height="36" fill="#000"/>
+                        <polygon points="348,66 336,78 360,78" fill="#000"/>
+                        <text x="348" y="54" font-family="Inter, sans-serif" font-size="11" fill="#fff" text-anchor="middle" font-weight="500">HEAD</text>
+                    </g>
+                    <!-- Arrows -->
+                    <g stroke="#000" stroke-width="1" fill="none">
+                        <path d="M 60 158 L 60 150 L 100 150 L 100 142" marker-end="url(#arrow)"/>
+                        <path d="M 580 158 L 580 150 L 540 150 L 540 142" marker-end="url(#arrow)"/>
+                    </g>
+                    <defs>
+                        <marker id="arrow" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse">
+                            <path d="M 0 0 L 10 5 L 0 10 z" fill="#000"/>
+                        </marker>
+                    </defs>
+                    <text x="320" y="170" font-family="'Cormorant Garamond', serif" font-style="italic" font-size="14" fill="#666" text-anchor="middle">move left, move right, read, write, change state</text>
+                </svg>
+                <p class="caption">A Turing machine. Infinite tape, a head that reads and writes one symbol at a time, and a rulebook.</p>
+            </div>
+
+            <p>Turing proved something astonishing. There exists a specific Turing machine &mdash; a <em>universal</em> one &mdash; that, if you write the description of any other Turing machine on its tape, will perfectly simulate that machine. One fixed machine, simulating all possible machines. This is universality.</p>
+
+            <p>Together with Alonzo Church, he went further. The <em>Church&ndash;Turing thesis</em> claims that anything that can be computed by any effective procedure whatsoever &mdash; by a person with pencil and paper, by an abacus, by a factory of clerks, by any conceivable mechanism &mdash; can be computed by a Turing machine. The laptop you're reading this on is a physical approximation of one. So is your phone. So, in principle, is a system of water pipes, or a swarm of ants passing chemical signals. The substrate doesn't matter. The <em>computation</em> does.</p>
+
+            <h2>David Deutsch &mdash; the physics</h2>
+
+            <p>For decades, computer scientists treated Church&ndash;Turing as a statement about mathematics. In 1985, the physicist David Deutsch pointed out that this was a category error. Computation is not abstract. Every computation happens somewhere, using something, obeying the laws of physics. A claim about what can be computed is, whether you like it or not, a claim about physics.</p>
+
+            <p>Deutsch proposed a stronger principle &mdash; the <em>physical</em> Church&ndash;Turing thesis:</p>
+
+            <p class="pullquote">Every finitely realizable physical system can be perfectly simulated by a universal computing device operating by finite means.</p>
+
+            <p>Turing's machine, Deutsch showed, doesn't quite qualify. It's classical. Our universe isn't. When he worked out the implications, he had to invent a new kind of machine &mdash; the universal <em>quantum</em> computer &mdash; to patch the gap. A classical Turing machine cannot efficiently simulate an electron; a quantum computer can. The laws of physics, it turns out, dictate what universality really looks like.</p>
+
+            <div class="figure">
+                <svg viewBox="0 0 640 260" xmlns="http://www.w3.org/2000/svg">
+                    <!-- Outer: physical reality -->
+                    <rect x="20" y="20" width="600" height="220" stroke="#000" stroke-width="1" fill="#fff"/>
+                    <text x="40" y="48" font-family="'Cormorant Garamond', serif" font-size="18" font-style="italic" fill="#000">Physical reality</text>
+                    <text x="40" y="68" font-family="Inter, sans-serif" font-size="11" fill="#666">governed by laws of physics</text>
+
+                    <!-- Middle: universal computer -->
+                    <rect x="80" y="90" width="480" height="130" stroke="#000" stroke-width="1" fill="#fff"/>
+                    <text x="100" y="118" font-family="'Cormorant Garamond', serif" font-size="16" font-style="italic" fill="#000">Universal (quantum) computer</text>
+                    <text x="100" y="136" font-family="Inter, sans-serif" font-size="11" fill="#666">a physical device that can simulate any physical process</text>
+
+                    <!-- Inner: simulated physics -->
+                    <rect x="140" y="152" width="360" height="56" stroke="#000" stroke-width="1" stroke-dasharray="3 3" fill="#fff"/>
+                    <text x="160" y="176" font-family="'Cormorant Garamond', serif" font-size="15" font-style="italic" fill="#000">Simulated worlds</text>
+                    <text x="160" y="194" font-family="Inter, sans-serif" font-size="11" fill="#666">virtual physics, weather, brains, other universes&hellip;</text>
+                </svg>
+                <p class="caption">Deutsch's hierarchy. Physics permits a universal machine; the machine permits any physics inside it.</p>
+            </div>
+
+            <h2>Why this matters: virtual reality</h2>
+
+            <p>Here is the punchline that Deutsch drew out in <em>The Fabric of Reality</em>. If a universal quantum computer can simulate any physical system, then in principle it can simulate the experience of being anywhere, in any environment, under any physics &mdash; real or imagined. A universal simulator of environments. That is what virtual reality is, taken to its logical conclusion. Not a toy. A consequence of the laws of physics.</p>
+
+            <p>This flips something in how you think about the world. The reason a program can be a chess engine on Tuesday and a weather model on Wednesday is the same reason physics permits rendering any world inside a machine: <em>the universe is the kind of place where universality is possible</em>. That is a highly non-trivial fact about physics. A different universe &mdash; with different laws &mdash; might not have allowed it. Ours does.</p>
+
+            <p>And so a thread runs from Lovelace's note about music in 1843, to Turing's tape in 1936, to Deutsch's quantum gates in 1985, to the headset on your desk. The same thread. One idea. A single machine &mdash; provided the universe is a computable sort of place &mdash; that can be anything.</p>
+
+            <hr class="divider">
+
+            <div class="references">
+                <h3>Further reading</h3>
+                <ol>
+                    <li>Lovelace, A. (1843). <em>Notes on the Analytical Engine</em>, Note G.</li>
+                    <li>Turing, A. (1936). <em>On Computable Numbers, with an Application to the Entscheidungsproblem</em>.</li>
+                    <li>Deutsch, D. (1985). <em>Quantum Theory, the Church&ndash;Turing Principle and the Universal Quantum Computer</em>.</li>
+                    <li>Deutsch, D. (1997). <em>The Fabric of Reality</em>, chapter 5 &mdash; Virtual Reality.</li>
+                </ol>
+            </div>
+        </article>
+
+        <footer>
+            <a href="index.html">&larr; Back to Wonderland</a>
+        </footer>
+    </div>
+</body>
+</html>
