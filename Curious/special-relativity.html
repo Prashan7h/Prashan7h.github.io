@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-KVBPX8VW');</script>
+    <!-- End Google Tag Manager -->
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Special relativity — Einstein's two postulates, time dilation, the geometry of spacetime, and why mass is energy.">
+    <link rel="icon" type="image/svg+xml" href="../images/favicon.svg">
+    <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon-32.png">
+    <link rel="apple-touch-icon" href="../images/apple-touch-icon.png">
+    <title>Special Relativity | Prashanth Shankar</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+
+    <style>
+        *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+        html { font-size: 16px; scroll-behavior: smooth; }
+        body {
+            background: #fff;
+            color: #000;
+            font-family: 'Inter', -apple-system, sans-serif;
+            font-weight: 400;
+            line-height: 1.7;
+        }
+        ::selection { background: #000; color: #fff; }
+
+        .page {
+            max-width: 720px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        header {
+            padding: 2.5rem 0 0;
+        }
+
+        .back-link {
+            font-size: 0.75rem;
+            font-weight: 400;
+            letter-spacing: 0.04em;
+            color: #000;
+            text-decoration: none;
+            transition: opacity 0.2s ease;
+        }
+        .back-link:hover { opacity: 0.5; }
+
+        article {
+            padding: 4rem 0 3rem;
+        }
+
+        article h1 {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 2.6rem;
+            font-weight: 600;
+            line-height: 1.15;
+            margin-bottom: 1rem;
+        }
+
+        .deck {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.25rem;
+            font-style: italic;
+            line-height: 1.5;
+            color: #000;
+            margin-bottom: 2.5rem;
+        }
+
+        article h2 {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.8rem;
+            font-weight: 600;
+            line-height: 1.2;
+            margin: 3rem 0 1rem;
+        }
+
+        article p {
+            font-size: 0.95rem;
+            font-weight: 300;
+            line-height: 1.75;
+            margin-bottom: 1rem;
+        }
+
+        article em {
+            font-style: italic;
+        }
+
+        .pullquote {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.35rem;
+            font-style: italic;
+            line-height: 1.45;
+            padding: 1.5rem 0 1.5rem 1.5rem;
+            border-left: 2px solid #000;
+            margin: 2rem 0;
+            color: #000;
+        }
+
+        .figure {
+            margin: 2.5rem 0;
+        }
+        .figure svg {
+            display: block;
+            width: 100%;
+            height: auto;
+            max-width: 640px;
+            margin: 0 auto;
+        }
+        .caption {
+            font-size: 0.78rem;
+            color: #666;
+            text-align: center;
+            margin-top: 0.8rem;
+            line-height: 1.5;
+            font-style: italic;
+            font-family: 'Cormorant Garamond', serif;
+        }
+
+        hr.divider {
+            border: none;
+            border-top: 1px solid #000;
+            margin: 3rem 0;
+        }
+
+        .references {
+            font-size: 0.8rem;
+            color: #555;
+            line-height: 1.7;
+            margin-top: 2rem;
+        }
+        .references h3 {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: #000;
+            margin-bottom: 0.75rem;
+        }
+        .references ol {
+            padding-left: 1.2rem;
+        }
+        .references li {
+            margin-bottom: 0.35rem;
+        }
+
+        footer {
+            padding: 2rem 0 3rem;
+            font-size: 0.75rem;
+            color: #666;
+        }
+        footer a { color: inherit; text-decoration: underline; text-underline-offset: 0.2em; }
+    </style>
+</head>
+<body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KVBPX8VW" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+    <div class="page">
+        <header>
+            <a href="index.html" class="back-link">&larr; Wonderland</a>
+        </header>
+
+        <article>
+            <h1>Special Relativity</h1>
+            <p class="deck">Two simple postulates, taken seriously, dissolve the difference between space and time and reveal that mass is energy.</p>
+
+            <p>By 1900, physics looked nearly finished. Newton's mechanics described falling apples and orbiting planets with absurd precision. Maxwell's equations had unified electricity, magnetism, and light. The remaining cracks were small. One of those cracks &mdash; a pedantic-looking inconsistency between the two theories &mdash; was about to swallow the building.</p>
+
+            <p>Einstein's 1905 paper, <em>On the Electrodynamics of Moving Bodies</em>, started from two assumptions a schoolchild can state, and derived consequences that should be impossible. They turned out not to be.</p>
+
+            <h2>Two postulates</h2>
+
+            <p>The trouble was this. Newton's mechanics is the same in any inertial frame: ride a smooth train at constant velocity, and your coffee, your billiard balls, and your equations behave exactly as they would on the platform. There is no experiment that picks out an absolute rest. Galileo had already made the point.</p>
+
+            <p>Maxwell's equations, however, predict that light is a wave with a single, specific speed in vacuum &mdash; call it <em>c</em>, about 300,000 km/s. They do not say <em>relative to what</em>. The natural fix was to imagine a medium &mdash; the &ldquo;luminiferous aether&rdquo; &mdash; through which light propagates, with <em>c</em> measured against that medium. Earth, hurtling through the aether, ought to feel a wind. In 1887, Michelson and Morley built an exquisite interferometer to detect that wind. They detected nothing.</p>
+
+            <p>Einstein took the null result at face value and proposed:</p>
+
+            <p class="pullquote">1. The laws of physics are the same in every inertial frame.<br>2. The speed of light in vacuum is the same constant <em>c</em> for every inertial observer, regardless of how the source or the observer is moving.</p>
+
+            <p>The first postulate is a generalization of Galileo &mdash; now applied to all of physics, not just mechanics. The second is the radical one. If you chase a light beam at 99% of <em>c</em>, the beam still recedes from you at <em>c</em>. There is no catching up. Common sense protests; nature doesn't care.</p>
+
+            <h2>Time dilates</h2>
+
+            <p>The cleanest way to see what the postulates force is the &ldquo;light clock.&rdquo; Imagine a clock made of two parallel mirrors with a single photon bouncing between them. One tick is one round trip. Now compare its behaviour at rest with its behaviour when the whole clock is sailing past you sideways at speed <em>v</em>.</p>
+
+            <div class="figure">
+                <svg viewBox="0 0 640 240" xmlns="http://www.w3.org/2000/svg">
+                    <!-- Left clock: at rest -->
+                    <g stroke="#000" stroke-width="1.5" fill="none">
+                        <line x1="80" y1="60" x2="200" y2="60"/>
+                        <line x1="80" y1="180" x2="200" y2="180"/>
+                    </g>
+                    <text x="140" y="48" font-family="Inter, sans-serif" font-size="11" fill="#666" text-anchor="middle">mirror</text>
+                    <text x="140" y="200" font-family="Inter, sans-serif" font-size="11" fill="#666" text-anchor="middle">mirror</text>
+                    <!-- Vertical photon path -->
+                    <line x1="140" y1="60" x2="140" y2="180" stroke="#000" stroke-width="1" stroke-dasharray="4 3"/>
+                    <circle cx="140" cy="120" r="4" fill="#000"/>
+                    <text x="140" y="225" font-family="'Cormorant Garamond', serif" font-style="italic" font-size="14" fill="#000" text-anchor="middle">Clock at rest &mdash; tick = t&#8320;</text>
+
+                    <!-- Right clock: moving -->
+                    <g stroke="#000" stroke-width="1.5" fill="none">
+                        <line x1="320" y1="60" x2="440" y2="60"/>
+                        <line x1="440" y1="180" x2="560" y2="180"/>
+                    </g>
+                    <text x="380" y="48" font-family="Inter, sans-serif" font-size="11" fill="#666" text-anchor="middle">mirror (start)</text>
+                    <text x="500" y="200" font-family="Inter, sans-serif" font-size="11" fill="#666" text-anchor="middle">mirror (later)</text>
+                    <!-- Diagonal photon path -->
+                    <line x1="380" y1="60" x2="500" y2="180" stroke="#000" stroke-width="1" stroke-dasharray="4 3"/>
+                    <circle cx="440" cy="120" r="4" fill="#000"/>
+                    <!-- Velocity arrow -->
+                    <g stroke="#000" stroke-width="1" fill="none">
+                        <line x1="320" y1="30" x2="440" y2="30"/>
+                        <polygon points="440,30 432,26 432,34" fill="#000" stroke="none"/>
+                    </g>
+                    <text x="380" y="22" font-family="'Cormorant Garamond', serif" font-style="italic" font-size="13" fill="#000" text-anchor="middle">v</text>
+                    <text x="440" y="225" font-family="'Cormorant Garamond', serif" font-style="italic" font-size="14" fill="#000" text-anchor="middle">Same clock, moving &mdash; tick = &#947;t&#8320;</text>
+                </svg>
+                <p class="caption">A light clock at rest (left) and the same clock moving sideways (right). Light covers a longer diagonal path, so each tick takes longer.</p>
+            </div>
+
+            <p>In the rest frame, the photon goes straight up and down. In a frame where the clock is moving, the photon's path is a zig-zag of diagonals, each leg longer than the vertical gap between mirrors. Light still travels at <em>c</em> in either frame &mdash; postulate 2 &mdash; so a longer path means a longer tick. The moving clock runs slow.</p>
+
+            <p>A little geometry gives the factor. If the rest tick is <em>t</em><sub>0</sub>, the moving tick is <em>t</em> = <em>t</em><sub>0</sub>&nbsp;/&nbsp;&radic;(1&nbsp;&minus;&nbsp;<em>v</em><sup>2</sup>/<em>c</em><sup>2</sup>). That ugly factor &mdash; called &gamma; &mdash; is essentially 1 at everyday speeds, which is why nobody noticed before 1905. At 87% of <em>c</em>, &gamma; = 2: the moving clock ticks half as often.</p>
+
+            <p>If light clocks slowed but other clocks didn't, you could compare them and detect absolute motion, breaking postulate 1. So <em>all</em> clocks slow &mdash; biological, atomic, mechanical. Cosmic-ray muons created high in the atmosphere should decay long before reaching the ground; they reach it because, in our frame, their internal clock is dilated. From their frame the atmosphere is squashed (length contraction), and the journey is short. Both stories agree on what hits the detector.</p>
+
+            <h2>The geometry of spacetime</h2>
+
+            <p>Three years later, Einstein's old teacher Hermann Minkowski reformulated the theory in geometric language. Time and space, he said, are not separate axes onto which events get plotted; they mix the way north and east mix when you rotate a map. A change of velocity is a kind of rotation in spacetime.</p>
+
+            <div class="figure">
+                <svg viewBox="0 0 640 320" xmlns="http://www.w3.org/2000/svg">
+                    <!-- Axes -->
+                    <g stroke="#000" stroke-width="1" fill="none">
+                        <line x1="60" y1="280" x2="580" y2="280"/>
+                        <line x1="320" y1="20" x2="320" y2="300"/>
+                    </g>
+                    <polygon points="580,280 572,276 572,284" fill="#000"/>
+                    <polygon points="320,20 316,28 324,28" fill="#000"/>
+                    <text x="588" y="285" font-family="'Cormorant Garamond', serif" font-style="italic" font-size="14" fill="#000">x</text>
+                    <text x="328" y="18" font-family="'Cormorant Garamond', serif" font-style="italic" font-size="14" fill="#000">ct</text>
+
+                    <!-- Light cone (45 deg) -->
+                    <g stroke="#000" stroke-width="1" stroke-dasharray="4 3" fill="none">
+                        <line x1="320" y1="150" x2="190" y2="20"/>
+                        <line x1="320" y1="150" x2="450" y2="20"/>
+                        <line x1="320" y1="150" x2="190" y2="280"/>
+                        <line x1="320" y1="150" x2="450" y2="280"/>
+                    </g>
+
+                    <!-- Region labels -->
+                    <text x="320" y="60" font-family="'Cormorant Garamond', serif" font-style="italic" font-size="15" fill="#000" text-anchor="middle">future</text>
+                    <text x="320" y="265" font-family="'Cormorant Garamond', serif" font-style="italic" font-size="15" fill="#000" text-anchor="middle">past</text>
+                    <text x="120" y="155" font-family="'Cormorant Garamond', serif" font-style="italic" font-size="14" fill="#666" text-anchor="middle">elsewhere</text>
+                    <text x="520" y="155" font-family="'Cormorant Garamond', serif" font-style="italic" font-size="14" fill="#666" text-anchor="middle">elsewhere</text>
+
+                    <!-- Origin event -->
+                    <circle cx="320" cy="150" r="4" fill="#000"/>
+                    <text x="332" y="146" font-family="Inter, sans-serif" font-size="11" fill="#000">event O</text>
+
+                    <!-- Tilted axis of moving observer -->
+                    <g stroke="#000" stroke-width="1" fill="none">
+                        <line x1="240" y1="290" x2="380" y2="20" stroke-dasharray="2 2"/>
+                    </g>
+                    <text x="378" y="36" font-family="'Cormorant Garamond', serif" font-style="italic" font-size="13" fill="#000">ct&prime; (moving observer)</text>
+
+                    <!-- Light ray label -->
+                    <text x="200" y="38" font-family="Inter, sans-serif" font-size="11" fill="#666">light ray</text>
+                    <text x="430" y="38" font-family="Inter, sans-serif" font-size="11" fill="#666">light ray</text>
+                </svg>
+                <p class="caption">A spacetime diagram. Light traces 45&deg; lines; a moving observer's time axis tilts toward them. Events outside the cone have no observer-independent ordering.</p>
+            </div>
+
+            <p>In a Minkowski diagram, time runs up, space runs sideways, and a flash of light traces a 45&deg; line. Boosting &mdash; changing your velocity relative to the events &mdash; tilts the time axis. Events you call &ldquo;simultaneous&rdquo; are events that someone moving relative to you considers to happen at different times. Simultaneity is not absolute. Causal order is preserved only for events connected by a signal at speed at most <em>c</em>; that's the structure of the &ldquo;light cone.&rdquo;</p>
+
+            <p>What everyone agrees on is the spacetime <em>interval</em>:</p>
+
+            <p style="text-align:center; font-style:italic;">s<sup>2</sup> = (c&Delta;t)<sup>2</sup> &minus; &Delta;x<sup>2</sup> &minus; &Delta;y<sup>2</sup> &minus; &Delta;z<sup>2</sup></p>
+
+            <p>Different observers split the interval into time and space differently, the way differently rotated maps split a single straight line into different north and east components. They disagree on the components; they agree on the line.</p>
+
+            <h2>E = mc<sup>2</sup></h2>
+
+            <p>The most famous equation arrived two months later, in a three-page addendum titled <em>Does the Inertia of a Body Depend Upon Its Energy-Content?</em> Einstein imagined a body emitting two equal pulses of light in opposite directions. In its rest frame, momentum is conserved trivially. In a frame where the body is moving, the same conservation law forces a small loss of mass exactly equal to the emitted energy divided by <em>c</em><sup>2</sup>.</p>
+
+            <p>Rest mass, in other words, is itself a form of energy:</p>
+
+            <p style="text-align:center; font-style:italic;">E = mc<sup>2</sup></p>
+
+            <p>The constant <em>c</em><sup>2</sup> is enormous (~ 9 &times; 10<sup>16</sup> m<sup>2</sup>/s<sup>2</sup>), so a tiny mass corresponds to a colossal energy. This is what powers the Sun &mdash; fusion turns about 0.7% of hydrogen mass into radiation &mdash; what runs nuclear reactors, and what makes nuclear weapons obscene.</p>
+
+            <p>The deeper point is unification. What Newton called mass and what 19th-century physics called energy are the same accounting entry, viewed from different angles. The two separate conservation laws collapse into one: total mass-energy is conserved. Just as simultaneity, the apparent independence of mass and energy was a parochial mistake of slow-moving observers.</p>
+
+            <p>A century later, every GPS satellite carries a clock corrected for relativistic time dilation; every particle accelerator routes beams whose energy comes mostly from being heavier-when-fast; every star burns by trading mass for light. Two postulates. Whole universe rearranged.</p>
+
+            <hr class="divider">
+
+            <div class="references">
+                <h3>Further reading</h3>
+                <ol>
+                    <li>Einstein, A. (1905). <em>On the Electrodynamics of Moving Bodies</em>.</li>
+                    <li>Einstein, A. (1905). <em>Does the Inertia of a Body Depend Upon Its Energy-Content?</em></li>
+                    <li>Minkowski, H. (1908). <em>Space and Time</em> (Cologne lecture).</li>
+                    <li>Taylor, E. F. &amp; Wheeler, J. A. (1992). <em>Spacetime Physics</em>.</li>
+                </ol>
+            </div>
+        </article>
+
+        <footer>
+            <a href="index.html">&larr; Back to Wonderland</a>
+        </footer>
+    </div>
+</body>
+</html>
