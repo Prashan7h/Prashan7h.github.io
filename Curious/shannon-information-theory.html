@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-KVBPX8VW');</script>
+    <!-- End Google Tag Manager -->
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Shannon's information theory — how a single 1948 paper defined what information is and proved you can transmit it perfectly through a noisy world.">
+    <link rel="icon" type="image/svg+xml" href="../images/favicon.svg">
+    <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon-32.png">
+    <link rel="apple-touch-icon" href="../images/apple-touch-icon.png">
+    <title>Shannon's Information Theory | Prashanth Shankar</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+
+    <style>
+        *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+        html { font-size: 16px; scroll-behavior: smooth; }
+        body {
+            background: #fff;
+            color: #000;
+            font-family: 'Inter', -apple-system, sans-serif;
+            font-weight: 400;
+            line-height: 1.7;
+        }
+        ::selection { background: #000; color: #fff; }
+
+        .page {
+            max-width: 720px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        header {
+            padding: 2.5rem 0 0;
+        }
+
+        .back-link {
+            font-size: 0.75rem;
+            font-weight: 400;
+            letter-spacing: 0.04em;
+            color: #000;
+            text-decoration: none;
+            transition: opacity 0.2s ease;
+        }
+        .back-link:hover { opacity: 0.5; }
+
+        article {
+            padding: 4rem 0 3rem;
+        }
+
+        article h1 {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 2.6rem;
+            font-weight: 600;
+            line-height: 1.15;
+            margin-bottom: 1rem;
+        }
+
+        .deck {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.25rem;
+            font-style: italic;
+            line-height: 1.5;
+            color: #000;
+            margin-bottom: 2.5rem;
+        }
+
+        article h2 {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.8rem;
+            font-weight: 600;
+            line-height: 1.2;
+            margin: 3rem 0 1rem;
+        }
+
+        article p {
+            font-size: 0.95rem;
+            font-weight: 300;
+            line-height: 1.75;
+            margin-bottom: 1rem;
+        }
+
+        article em {
+            font-style: italic;
+        }
+
+        .pullquote {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.35rem;
+            font-style: italic;
+            line-height: 1.45;
+            padding: 1.5rem 0 1.5rem 1.5rem;
+            border-left: 2px solid #000;
+            margin: 2rem 0;
+            color: #000;
+        }
+
+        .figure {
+            margin: 2.5rem 0;
+        }
+        .figure svg {
+            display: block;
+            width: 100%;
+            height: auto;
+            max-width: 640px;
+            margin: 0 auto;
+        }
+        .caption {
+            font-size: 0.78rem;
+            color: #666;
+            text-align: center;
+            margin-top: 0.8rem;
+            line-height: 1.5;
+            font-style: italic;
+            font-family: 'Cormorant Garamond', serif;
+        }
+
+        hr.divider {
+            border: none;
+            border-top: 1px solid #000;
+            margin: 3rem 0;
+        }
+
+        .references {
+            font-size: 0.8rem;
+            color: #555;
+            line-height: 1.7;
+            margin-top: 2rem;
+        }
+        .references h3 {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: #000;
+            margin-bottom: 0.75rem;
+        }
+        .references ol {
+            padding-left: 1.2rem;
+        }
+        .references li {
+            margin-bottom: 0.35rem;
+        }
+
+        footer {
+            padding: 2rem 0 3rem;
+            font-size: 0.75rem;
+            color: #666;
+        }
+        footer a { color: inherit; text-decoration: underline; text-underline-offset: 0.2em; }
+    </style>
+</head>
+<body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KVBPX8VW" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+    <div class="page">
+        <header>
+            <a href="index.html" class="back-link">&larr; Wonderland</a>
+        </header>
+
+        <article>
+            <h1>Shannon's Information Theory</h1>
+            <p class="deck">In a single 1948 paper, Claude Shannon defined what information <em>is</em> &mdash; and proved you can send it perfectly through a noisy world.</p>
+
+            <p>Before 1948, &ldquo;information&rdquo; was a fuzzy word. Engineers building telephones and telegraphs had no quantitative grip on what they were sending. They had hunches: longer messages were heavier, important messages were bigger, noise made things worse. They had no formula. There was no number you could attach to a sentence and say, <em>this contains exactly that much information</em>.</p>
+
+            <p>Then Claude Shannon, a 32-year-old at Bell Labs, published <em>A Mathematical Theory of Communication</em>. Almost overnight, information became a measurable physical quantity, like mass or charge. The paper laid down two theorems that still bound everything from your Wi-Fi router to a probe at the edge of the solar system, and a definition of information that has since migrated into physics, biology and neuroscience. It is the most consequential paper most people have never read.</p>
+
+            <h2>The trick: ignore meaning</h2>
+
+            <p>Shannon's first move was to throw away the thing everyone thought information was about. The meaning of a message, he wrote, is &ldquo;irrelevant to the engineering problem.&rdquo; What matters is only that the receiver reconstructs which message, out of all the possible messages, the sender chose.</p>
+
+            <p>This is liberating. It turns information into a question about <em>uncertainty</em>. If I am about to tell you whether my coin came up heads or tails, you have one bit of uncertainty. After I tell you, you have none. The message resolved one bit of uncertainty &mdash; so it carried one bit of information. If I am about to tell you whether the sun rose this morning, you have approximately zero uncertainty. The message carries approximately zero information, regardless of how loudly I shout it.</p>
+
+            <p>Shannon made this precise. For a source that emits symbol <em>i</em> with probability <em>p<sub>i</sub></em>, define</p>
+
+            <p style="text-align:center; font-family:'Cormorant Garamond', serif; font-size:1.2rem; font-style:italic; margin:1.2rem 0;">H = &minus; &Sigma; p<sub>i</sub> log<sub>2</sub> p<sub>i</sub></p>
+
+            <p>This is the <em>entropy</em> of the source, measured in bits per symbol. It is the average surprise of the next symbol. A fair coin has entropy 1 bit. A coin that lands heads 90% of the time has entropy about 0.47 bits &mdash; less surprising on average, less informative. A coin glued to heads has entropy 0.</p>
+
+            <div class="figure">
+                <svg viewBox="0 0 640 320" xmlns="http://www.w3.org/2000/svg">
+                    <!-- axes -->
+                    <g stroke="#000" stroke-width="1" fill="none">
+                        <line x1="80" y1="270" x2="600" y2="270"/>
+                        <line x1="80" y1="270" x2="80" y2="40"/>
+                    </g>
+                    <!-- gridlines -->
+                    <g stroke="#000" stroke-width="0.5" stroke-dasharray="2 3" opacity="0.25">
+                        <line x1="80" y1="170" x2="600" y2="170"/>
+                        <line x1="340" y1="270" x2="340" y2="40"/>
+                    </g>
+                    <!-- y ticks -->
+                    <g font-family="Inter, sans-serif" font-size="10" fill="#666" text-anchor="end">
+                        <text x="72" y="274">0</text>
+                        <text x="72" y="174">0.5</text>
+                        <text x="72" y="74">1.0</text>
+                    </g>
+                    <!-- x ticks -->
+                    <g font-family="Inter, sans-serif" font-size="10" fill="#666" text-anchor="middle">
+                        <text x="80" y="288">0</text>
+                        <text x="210" y="288">0.25</text>
+                        <text x="340" y="288">0.5</text>
+                        <text x="470" y="288">0.75</text>
+                        <text x="600" y="288">1</text>
+                    </g>
+                    <!-- axis labels -->
+                    <text x="340" y="310" font-family="'Cormorant Garamond', serif" font-style="italic" font-size="14" fill="#000" text-anchor="middle">probability of heads, p</text>
+                    <text x="30" y="155" font-family="'Cormorant Garamond', serif" font-style="italic" font-size="14" fill="#000" text-anchor="middle" transform="rotate(-90 30 155)">entropy H(p), bits</text>
+                    <!-- entropy curve -->
+                    <polyline fill="none" stroke="#000" stroke-width="1.6" points="80,270 106,213.4 132,176.2 158,148 184,125.6 210,107.8 236,93.8 262,83.2 288,75.8 314,71.4 340,70 366,71.4 392,75.8 418,83.2 444,93.8 470,107.8 496,125.6 522,148 548,176.2 574,213.4 600,270"/>
+                    <!-- max marker -->
+                    <circle cx="340" cy="70" r="3" fill="#000"/>
+                    <text x="340" y="58" font-family="'Cormorant Garamond', serif" font-style="italic" font-size="13" fill="#000" text-anchor="middle">H = 1 bit</text>
+                </svg>
+                <p class="caption">Binary entropy. A fair coin (p = 0.5) is maximally surprising. A loaded coin carries less information per flip; a fixed coin, none.</p>
+            </div>
+
+            <p>Once you have entropy, the first big result follows almost as bookkeeping. Shannon's <em>source coding theorem</em> says: any source of entropy <em>H</em> can be losslessly compressed to an average of <em>H</em> bits per symbol, and no further. English text has an entropy of roughly one bit per letter, even though we usually write it with five. The other four bits are redundancy &mdash; the slack that lets you read a smudged page or autocomplete a half-typed word. Every ZIP, JPEG and MP3 in the world is, at heart, an attempt to scrape away that redundancy and squeeze a stream toward its entropy floor.</p>
+
+            <h2>The impossible result: noise without errors</h2>
+
+            <p>The second theorem is the strange one. Engineers in the 1940s assumed an obvious tradeoff: the noisier the channel, the more errors you make, and the only fix is to slow down or shout louder. Reliability was bought at the price of speed. It felt like a law.</p>
+
+            <p>Shannon proved it is not. For every channel &mdash; every wire, every radio link, every fibre &mdash; there is a number <em>C</em>, the <em>capacity</em>, measured in bits per second. As long as you transmit information at any rate <em>R</em> below <em>C</em>, you can drive your error rate as close to zero as you like, by choosing a clever enough code. The catch is the codes have to be long. But there is no trade. Reliability and speed come apart.</p>
+
+            <div class="figure">
+                <svg viewBox="0 0 640 220" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                        <marker id="arr" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+                            <path d="M 0 0 L 10 5 L 0 10 z" fill="#000"/>
+                        </marker>
+                    </defs>
+                    <!-- boxes -->
+                    <g stroke="#000" stroke-width="1" fill="#fff">
+                        <rect x="20" y="100" width="90" height="50"/>
+                        <rect x="150" y="100" width="100" height="50"/>
+                        <rect x="290" y="100" width="120" height="50"/>
+                        <rect x="450" y="100" width="100" height="50"/>
+                        <rect x="560" y="100" width="60" height="50"/>
+                    </g>
+                    <!-- labels -->
+                    <g font-family="'Cormorant Garamond', serif" font-style="italic" font-size="14" fill="#000" text-anchor="middle">
+                        <text x="65" y="130">source</text>
+                        <text x="200" y="130">encoder</text>
+                        <text x="350" y="130">channel</text>
+                        <text x="500" y="130">decoder</text>
+                        <text x="590" y="130">sink</text>
+                    </g>
+                    <!-- arrows -->
+                    <g stroke="#000" stroke-width="1" fill="none">
+                        <line x1="110" y1="125" x2="148" y2="125" marker-end="url(#arr)"/>
+                        <line x1="250" y1="125" x2="288" y2="125" marker-end="url(#arr)"/>
+                        <line x1="410" y1="125" x2="448" y2="125" marker-end="url(#arr)"/>
+                        <line x1="550" y1="125" x2="558" y2="125" marker-end="url(#arr)"/>
+                    </g>
+                    <!-- arrow labels -->
+                    <g font-family="Inter, sans-serif" font-size="11" fill="#666" text-anchor="middle">
+                        <text x="129" y="118">M</text>
+                        <text x="269" y="118">X</text>
+                        <text x="429" y="118">Y</text>
+                    </g>
+                    <!-- noise -->
+                    <g stroke="#000" stroke-width="1" fill="#fff">
+                        <rect x="310" y="20" width="80" height="36"/>
+                    </g>
+                    <text x="350" y="44" font-family="'Cormorant Garamond', serif" font-style="italic" font-size="14" fill="#000" text-anchor="middle">noise</text>
+                    <line x1="350" y1="56" x2="350" y2="98" stroke="#000" stroke-width="1" fill="none" marker-end="url(#arr)"/>
+                    <!-- capacity caption -->
+                    <text x="320" y="195" font-family="'Cormorant Garamond', serif" font-style="italic" font-size="14" fill="#000" text-anchor="middle">below capacity C, errors can be driven to zero &mdash; above C, they cannot</text>
+                </svg>
+                <p class="caption">Shannon's communication system. The encoder pads the message <em>M</em> into a longer codeword <em>X</em>; noise corrupts it into <em>Y</em>; the decoder uses the redundancy to recover <em>M</em>.</p>
+            </div>
+
+            <p>The proof is famously non-constructive. Shannon showed that <em>random</em> codes hit the limit on average, which means good codes must exist &mdash; without telling anyone how to build one. The next sixty years of coding theory were a search for codes that could actually be encoded and decoded by physical hardware while staying near <em>C</em>. Hamming codes, convolutional codes, Reed&ndash;Solomon, turbo codes, LDPC, polar codes &mdash; each generation crept closer to the wall Shannon drew.</p>
+
+            <p class="pullquote">&ldquo;The fundamental problem of communication is that of reproducing at one point either exactly or approximately a message selected at another point.&rdquo;</p>
+
+            <h2>Why it underwrites the modern world</h2>
+
+            <p>If you want to feel the weight of the theorem, look up at Voyager 1. It is more than 24 light-hours from Earth, transmitting with the power of a refrigerator bulb across a noise floor that swamps its signal billions of times over. By any pre-Shannon intuition, the link is impossible. It works because the spacecraft uses a code &mdash; a concatenation of Reed&ndash;Solomon and convolutional codes &mdash; chosen specifically to operate near the channel's Shannon capacity. The same is true of every cellular handset, every satellite phone, every hard drive, every DVD scratch you don't notice. The redundancy was designed in by people who were aiming at <em>C</em>.</p>
+
+            <p>The other half of the paper, source coding, runs the modern web. JPEG compresses photos by stripping their entropy down toward the limit. MP3 and Opus do the same for sound. Genome sequencers, weather satellites, and database systems all lean on the fact that real data has lower entropy than its raw representation, and that the gap can be reclaimed.</p>
+
+            <p>And the framework escaped its container. Once you accept that information is &minus;log probability, the same machinery starts to apply to physics (Landauer's principle, that erasing a bit costs <em>kT</em> ln 2 of heat; Bekenstein's bound on the bits a region of space can hold), to biology (the channel capacity of a synapse, the bits encoded in a strand of DNA), and to inference itself (Bayesian updating is, in a precise sense, the consumption of bits). Shannon thought he was solving a problem about telephones. He had quietly handed the rest of science a new fundamental quantity.</p>
+
+            <p>That is the strangest thing about the 1948 paper. It reads like an engineering report. There are no philosophical flourishes, no claims about meaning or mind. And yet, by the time you reach the end, the world has been re-described. Information stops being a metaphor and becomes a thing you can count.</p>
+
+            <hr class="divider">
+
+            <div class="references">
+                <h3>Further reading</h3>
+                <ol>
+                    <li>Shannon, C. E. (1948). <em>A Mathematical Theory of Communication</em>. Bell System Technical Journal, 27.</li>
+                    <li>Cover, T. M. &amp; Thomas, J. A. (2006). <em>Elements of Information Theory</em>, 2nd ed.</li>
+                    <li>Gleick, J. (2011). <em>The Information: A History, a Theory, a Flood</em>.</li>
+                    <li>MacKay, D. J. C. (2003). <em>Information Theory, Inference, and Learning Algorithms</em>.</li>
+                    <li>Soni, J. &amp; Goodman, R. (2017). <em>A Mind at Play: How Claude Shannon Invented the Information Age</em>.</li>
+                </ol>
+            </div>
+        </article>
+
+        <footer>
+            <a href="index.html">&larr; Back to Wonderland</a>
+        </footer>
+    </div>
+</body>
+</html>
