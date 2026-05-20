@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-KVBPX8VW');</script>
+    <!-- End Google Tag Manager -->
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="The Church–Turing thesis and the limits of computation — why three different definitions of 'computable' all agree, and what problems lie forever beyond any machine.">
+    <link rel="icon" type="image/svg+xml" href="../images/favicon.svg">
+    <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon-32.png">
+    <link rel="apple-touch-icon" href="../images/apple-touch-icon.png">
+    <title>The Church&ndash;Turing Thesis and the Limits of Computation | Prashanth Shankar</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+
+    <style>
+        *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+        html { font-size: 16px; scroll-behavior: smooth; }
+        body {
+            background: #fff;
+            color: #000;
+            font-family: 'Inter', -apple-system, sans-serif;
+            font-weight: 400;
+            line-height: 1.7;
+        }
+        ::selection { background: #000; color: #fff; }
+
+        .page {
+            max-width: 720px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        header {
+            padding: 2.5rem 0 0;
+        }
+
+        .back-link {
+            font-size: 0.75rem;
+            font-weight: 400;
+            letter-spacing: 0.04em;
+            color: #000;
+            text-decoration: none;
+            transition: opacity 0.2s ease;
+        }
+        .back-link:hover { opacity: 0.5; }
+
+        article {
+            padding: 4rem 0 3rem;
+        }
+
+        article h1 {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 2.6rem;
+            font-weight: 600;
+            line-height: 1.15;
+            margin-bottom: 1rem;
+        }
+
+        .deck {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.25rem;
+            font-style: italic;
+            line-height: 1.5;
+            color: #000;
+            margin-bottom: 2.5rem;
+        }
+
+        article h2 {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.8rem;
+            font-weight: 600;
+            line-height: 1.2;
+            margin: 3rem 0 1rem;
+        }
+
+        article p {
+            font-size: 0.95rem;
+            font-weight: 300;
+            line-height: 1.75;
+            margin-bottom: 1rem;
+        }
+
+        article em {
+            font-style: italic;
+        }
+
+        .pullquote {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.35rem;
+            font-style: italic;
+            line-height: 1.45;
+            padding: 1.5rem 0 1.5rem 1.5rem;
+            border-left: 2px solid #000;
+            margin: 2rem 0;
+            color: #000;
+        }
+
+        .figure {
+            margin: 2.5rem 0;
+        }
+        .figure svg {
+            display: block;
+            width: 100%;
+            height: auto;
+            max-width: 640px;
+            margin: 0 auto;
+        }
+        .caption {
+            font-size: 0.78rem;
+            color: #666;
+            text-align: center;
+            margin-top: 0.8rem;
+            line-height: 1.5;
+            font-style: italic;
+            font-family: 'Cormorant Garamond', serif;
+        }
+
+        hr.divider {
+            border: none;
+            border-top: 1px solid #000;
+            margin: 3rem 0;
+        }
+
+        .references {
+            font-size: 0.8rem;
+            color: #555;
+            line-height: 1.7;
+            margin-top: 2rem;
+        }
+        .references h3 {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: #000;
+            margin-bottom: 0.75rem;
+        }
+        .references ol {
+            padding-left: 1.2rem;
+        }
+        .references li {
+            margin-bottom: 0.35rem;
+        }
+
+        footer {
+            padding: 2rem 0 3rem;
+            font-size: 0.75rem;
+            color: #666;
+        }
+        footer a { color: inherit; text-decoration: underline; text-underline-offset: 0.2em; }
+    </style>
+</head>
+<body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KVBPX8VW" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+    <div class="page">
+        <header>
+            <a href="index.html" class="back-link">&larr; Wonderland</a>
+        </header>
+
+        <article>
+            <h1>The Church&ndash;Turing Thesis and the Limits of Computation</h1>
+            <p class="deck">Three mathematicians, working separately, asked what it means to &ldquo;compute&rdquo; something. Their answers agreed exactly &mdash; and revealed an entire landscape of problems no machine will ever solve.</p>
+
+            <p>In the spring of 1936, three papers landed in three different journals. Alonzo Church at Princeton had invented the <em>&lambda;-calculus</em>, a notation for defining functions by pure substitution. Stephen Kleene was formalising the <em>&mu;-recursive functions</em>, building up computable functions from a handful of arithmetic primitives. And a young British student named Alan Turing was describing an imaginary machine with a tape and a head.</p>
+
+            <p>None of them had seen the others' work in time. Each had set out to capture, in mathematical terms, the everyday idea of an <em>effective procedure</em>: something a clerk with paper and rules could carry out, given long enough, with no creativity required. And each had produced what looked like an entirely different definition.</p>
+
+            <p>Then someone noticed something strange. The three definitions defined exactly the same set of functions. Anything you could compute in one, you could compute in the others. Three roads, three landscapes, same destination.</p>
+
+            <h2>One idea behind three faces</h2>
+
+            <p>That convergence is what the <em>Church&ndash;Turing thesis</em> is really about. It is not a theorem &mdash; you cannot prove it in the strict sense, because one of its terms (&ldquo;effectively computable&rdquo;) is informal. It is a conjecture about the match between an intuitive notion and a precise one. It says:</p>
+
+            <p class="pullquote">Any function that can be calculated by a finite, mechanical procedure can be calculated by a Turing machine.</p>
+
+            <p>The reason it is taken so seriously, despite being unprovable, is the embarrassment of agreement. Since 1936, dozens of other formalisms have been proposed: register machines, cellular automata, tag systems, combinatory logic, Markov algorithms, modern programming languages. Every single one, when its computational power is carefully measured, lands on the same set of functions. A different definition has never produced more.</p>
+
+            <div class="figure">
+                <svg viewBox="0 0 640 280" xmlns="http://www.w3.org/2000/svg">
+                    <!-- Three boxes -->
+                    <g stroke="#000" stroke-width="1" fill="#fff">
+                        <rect x="40" y="40" width="160" height="60"/>
+                        <rect x="240" y="40" width="160" height="60"/>
+                        <rect x="440" y="40" width="160" height="60"/>
+                    </g>
+                    <g font-family="'Cormorant Garamond', serif" font-size="16" font-style="italic" text-anchor="middle" fill="#000">
+                        <text x="120" y="70">Turing machine</text>
+                        <text x="320" y="70">&lambda;-calculus</text>
+                        <text x="520" y="70">&mu;-recursive functions</text>
+                    </g>
+                    <g font-family="Inter, sans-serif" font-size="11" text-anchor="middle" fill="#666">
+                        <text x="120" y="88">Turing, 1936</text>
+                        <text x="320" y="88">Church, 1936</text>
+                        <text x="520" y="88">Kleene, 1936</text>
+                    </g>
+                    <!-- Arrows down -->
+                    <g stroke="#000" stroke-width="1" fill="none">
+                        <path d="M 120 100 L 120 140 L 270 140 L 270 170" marker-end="url(#ar)"/>
+                        <path d="M 320 100 L 320 170" marker-end="url(#ar)"/>
+                        <path d="M 520 100 L 520 140 L 370 140 L 370 170" marker-end="url(#ar)"/>
+                    </g>
+                    <defs>
+                        <marker id="ar" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="5" markerHeight="5" orient="auto">
+                            <path d="M 0 0 L 10 5 L 0 10 z" fill="#000"/>
+                        </marker>
+                    </defs>
+                    <!-- Central oval -->
+                    <ellipse cx="320" cy="210" rx="180" ry="40" stroke="#000" stroke-width="1" fill="#fff"/>
+                    <text x="320" y="208" font-family="'Cormorant Garamond', serif" font-size="18" font-style="italic" text-anchor="middle" fill="#000">the computable functions</text>
+                    <text x="320" y="228" font-family="Inter, sans-serif" font-size="11" text-anchor="middle" fill="#666">a single, definite set</text>
+                </svg>
+                <p class="caption">Three independent definitions, one common output. The thesis lives in that coincidence.</p>
+            </div>
+
+            <p>It is as if three groups of cartographers, mapping wilderness from opposite directions, had each drawn the same coastline without ever comparing notes. At some point you stop suspecting accident and start believing the coastline is real.</p>
+
+            <h2>The first impossible problem</h2>
+
+            <p>The thesis tells you what computation <em>is</em>. The next question is what it <em>cannot do</em>. And the answer, also from 1936, is surprisingly precise: some perfectly well-posed questions cannot be answered by any machine that will ever be built.</p>
+
+            <p>The cleanest example is the <em>halting problem</em>. Given a program <em>P</em> and an input <em>x</em>, will <em>P</em> eventually stop, or will it run forever? It sounds like the kind of thing a clever enough analyser should crack. Sometimes it can &mdash; for many programs we can tell. But Turing proved that no general algorithm exists. No future compiler, no future AI, no future mathematician with infinite patience can ever produce a method that always works for every program.</p>
+
+            <p>The proof is a short, perfect piece of self-reference. Suppose, for contradiction, that a halt-detector <em>H</em> exists: feed it the source code of any program <em>P</em> and an input <em>x</em>, and it answers &ldquo;halts&rdquo; or &ldquo;loops.&rdquo; Then build a small mischief-maker <em>D</em>. <em>D</em> takes a single argument, a program <em>P</em>, and does the following: it asks <em>H</em> what <em>P</em> would do if given its own source code; then <em>D</em> does the opposite.</p>
+
+            <div class="figure">
+                <svg viewBox="0 0 640 260" xmlns="http://www.w3.org/2000/svg">
+                    <!-- Input -->
+                    <rect x="30" y="110" width="100" height="40" stroke="#000" stroke-width="1" fill="#fff"/>
+                    <text x="80" y="135" font-family="'Cormorant Garamond', serif" font-size="15" font-style="italic" text-anchor="middle" fill="#000">D(D)</text>
+
+                    <!-- H box -->
+                    <rect x="200" y="90" width="140" height="80" stroke="#000" stroke-width="1" fill="#fff"/>
+                    <text x="270" y="120" font-family="'Cormorant Garamond', serif" font-size="16" font-style="italic" text-anchor="middle" fill="#000">H(D, D)</text>
+                    <text x="270" y="142" font-family="Inter, sans-serif" font-size="11" text-anchor="middle" fill="#666">the supposed halt</text>
+                    <text x="270" y="156" font-family="Inter, sans-serif" font-size="11" text-anchor="middle" fill="#666">detector</text>
+
+                    <!-- Two branches -->
+                    <g stroke="#000" stroke-width="1" fill="none">
+                        <path d="M 130 130 L 200 130" marker-end="url(#ar2)"/>
+                        <path d="M 340 110 L 430 60" marker-end="url(#ar2)"/>
+                        <path d="M 340 150 L 430 200" marker-end="url(#ar2)"/>
+                    </g>
+                    <defs>
+                        <marker id="ar2" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="5" markerHeight="5" orient="auto">
+                            <path d="M 0 0 L 10 5 L 0 10 z" fill="#000"/>
+                        </marker>
+                    </defs>
+
+                    <!-- Branch labels -->
+                    <text x="375" y="80" font-family="Inter, sans-serif" font-size="11" fill="#666">says &ldquo;halts&rdquo;</text>
+                    <text x="375" y="190" font-family="Inter, sans-serif" font-size="11" fill="#666">says &ldquo;loops&rdquo;</text>
+
+                    <!-- Results -->
+                    <rect x="440" y="30" width="170" height="60" stroke="#000" stroke-width="1" fill="#fff"/>
+                    <text x="525" y="56" font-family="'Cormorant Garamond', serif" font-size="14" font-style="italic" text-anchor="middle" fill="#000">so D loops forever</text>
+                    <text x="525" y="78" font-family="Inter, sans-serif" font-size="11" text-anchor="middle" fill="#666">&mdash; contradicting H</text>
+
+                    <rect x="440" y="170" width="170" height="60" stroke="#000" stroke-width="1" fill="#fff"/>
+                    <text x="525" y="196" font-family="'Cormorant Garamond', serif" font-size="14" font-style="italic" text-anchor="middle" fill="#000">so D halts at once</text>
+                    <text x="525" y="218" font-family="Inter, sans-serif" font-size="11" text-anchor="middle" fill="#666">&mdash; contradicting H</text>
+                </svg>
+                <p class="caption">Feed <em>D</em> its own description. Either answer <em>H</em> gives is wrong. So <em>H</em> cannot exist.</p>
+            </div>
+
+            <p>Now feed <em>D</em> its own source code. If <em>H</em> claims <em>D</em> halts on itself, <em>D</em> loops; if <em>H</em> claims <em>D</em> loops on itself, <em>D</em> halts. Either way, <em>H</em> is wrong. So <em>H</em> cannot exist. The halting problem is <em>undecidable</em>.</p>
+
+            <p>This is not a statement about today's computers being too slow. It is a statement about the structure of computation itself. Build a faster machine, run it for longer, throw more researchers at it &mdash; nothing helps. The wall is logical, not technological.</p>
+
+            <h2>A wider landscape of the uncomputable</h2>
+
+            <p>Once the halting problem fell, others tumbled out behind it. <em>Rice's theorem</em>, proved in 1953, generalises the result startlingly: <em>every</em> non-trivial property of a program's behaviour is undecidable. You cannot in general decide if two programs compute the same function, whether a program ever prints &ldquo;hello&rdquo;, whether it is virus-free, whether it terminates on at least one input. These are not edge cases. They are the rule.</p>
+
+            <p>Elsewhere, Hilbert's tenth problem &mdash; is there an algorithm to decide whether a polynomial equation with integer coefficients has integer solutions? &mdash; was answered by Yuri Matiyasevich in 1970. The answer is no, and the route runs through Turing's argument. Tarski's high-school algebra problem, the word problem for groups, the determination of whether a given tile set can cover the plane: all uncomputable.</p>
+
+            <p>The <em>busy beaver</em> function offers perhaps the most vivid demonstration. Define BB(n) as the largest number of steps a halting Turing machine with n states can run before stopping. BB grows faster than any computable function. BB(5) is at least 47,176,870 and is now known exactly; BB(6) was recently shown to exceed a tower of exponentials thousands of layers high; BB(7) and beyond are forever sealed off. We can prove they exist. We cannot, ever, write them down.</p>
+
+            <h2>What the thesis does not say</h2>
+
+            <p>It is easy to over-read all this. Three clarifications.</p>
+
+            <p>First, the Church&ndash;Turing thesis is about what can be computed <em>in principle</em>, with unlimited time and memory. It says nothing about <em>efficiency</em>. Whether a problem is solvable in polynomial time, whether P equals NP &mdash; these are questions of complexity, not computability. A problem can be perfectly decidable and yet require more steps than there are atoms in the universe.</p>
+
+            <p>Second, the thesis is about a single Turing machine viewed mathematically. There is a related but distinct claim &mdash; the <em>physical</em> Church&ndash;Turing thesis &mdash; that asks whether any physical process whatsoever could compute something a Turing machine cannot. Some exotic proposals (relativistic &ldquo;hypercomputers&rdquo; that exploit black-hole geometries, machines that pack infinitely many steps into finite time) attempt to break the barrier. None has ever been built, and most physicists doubt the universe permits them.</p>
+
+            <p>Third, undecidability does not mean unknowability. We can prove, of any <em>specific</em> program, what it does, often quite easily. What is impossible is the universal procedure that handles every program at once. There is room for cleverness in every individual case. Just no general method to settle them all.</p>
+
+            <p>That is the picture the thesis leaves us with. Computation is one definite thing, the same in every formalism. Inside its boundary lies a vast country of solvable problems &mdash; arithmetic, search, simulation, much of mathematics. And outside it, mapped only by the proofs that show we cannot enter, lies a larger country still: the questions whose answers exist, whose meaning is clear, and which no machine will ever decide for us.</p>
+
+            <hr class="divider">
+
+            <div class="references">
+                <h3>Further reading</h3>
+                <ol>
+                    <li>Turing, A. (1936). <em>On Computable Numbers, with an Application to the Entscheidungsproblem</em>.</li>
+                    <li>Church, A. (1936). <em>An Unsolvable Problem of Elementary Number Theory</em>.</li>
+                    <li>Kleene, S. C. (1952). <em>Introduction to Metamathematics</em>.</li>
+                    <li>Rice, H. G. (1953). <em>Classes of Recursively Enumerable Sets and Their Decision Problems</em>.</li>
+                    <li>Davis, M. (2000). <em>The Universal Computer: The Road from Leibniz to Turing</em>.</li>
+                    <li>Aaronson, S. (2013). <em>Quantum Computing Since Democritus</em>, chapters on computability.</li>
+                </ol>
+            </div>
+        </article>
+
+        <footer>
+            <a href="index.html">&larr; Back to Wonderland</a>
+        </footer>
+    </div>
+</body>
+</html>
