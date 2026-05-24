@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-KVBPX8VW');</script>
+    <!-- End Google Tag Manager -->
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Chaos theory and the butterfly effect — how perfectly deterministic equations can become impossible to predict, from Lorenz's weather model to the logistic map.">
+    <link rel="icon" type="image/svg+xml" href="../images/favicon.svg">
+    <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon-32.png">
+    <link rel="apple-touch-icon" href="../images/apple-touch-icon.png">
+    <title>Chaos Theory and the Butterfly Effect | Prashanth Shankar</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+
+    <style>
+        *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+        html { font-size: 16px; scroll-behavior: smooth; }
+        body {
+            background: #fff;
+            color: #000;
+            font-family: 'Inter', -apple-system, sans-serif;
+            font-weight: 400;
+            line-height: 1.7;
+        }
+        ::selection { background: #000; color: #fff; }
+
+        .page {
+            max-width: 720px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        header {
+            padding: 2.5rem 0 0;
+        }
+
+        .back-link {
+            font-size: 0.75rem;
+            font-weight: 400;
+            letter-spacing: 0.04em;
+            color: #000;
+            text-decoration: none;
+            transition: opacity 0.2s ease;
+        }
+        .back-link:hover { opacity: 0.5; }
+
+        article {
+            padding: 4rem 0 3rem;
+        }
+
+        article h1 {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 2.6rem;
+            font-weight: 600;
+            line-height: 1.15;
+            margin-bottom: 1rem;
+        }
+
+        .deck {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.25rem;
+            font-style: italic;
+            line-height: 1.5;
+            color: #000;
+            margin-bottom: 2.5rem;
+        }
+
+        article h2 {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.8rem;
+            font-weight: 600;
+            line-height: 1.2;
+            margin: 3rem 0 1rem;
+        }
+
+        article p {
+            font-size: 0.95rem;
+            font-weight: 300;
+            line-height: 1.75;
+            margin-bottom: 1rem;
+        }
+
+        article em {
+            font-style: italic;
+        }
+
+        .pullquote {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.35rem;
+            font-style: italic;
+            line-height: 1.45;
+            padding: 1.5rem 0 1.5rem 1.5rem;
+            border-left: 2px solid #000;
+            margin: 2rem 0;
+            color: #000;
+        }
+
+        .figure {
+            margin: 2.5rem 0;
+        }
+        .figure svg {
+            display: block;
+            width: 100%;
+            height: auto;
+            max-width: 640px;
+            margin: 0 auto;
+        }
+        .caption {
+            font-size: 0.78rem;
+            color: #666;
+            text-align: center;
+            margin-top: 0.8rem;
+            line-height: 1.5;
+            font-style: italic;
+            font-family: 'Cormorant Garamond', serif;
+        }
+
+        hr.divider {
+            border: none;
+            border-top: 1px solid #000;
+            margin: 3rem 0;
+        }
+
+        .references {
+            font-size: 0.8rem;
+            color: #555;
+            line-height: 1.7;
+            margin-top: 2rem;
+        }
+        .references h3 {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: #000;
+            margin-bottom: 0.75rem;
+        }
+        .references ol {
+            padding-left: 1.2rem;
+        }
+        .references li {
+            margin-bottom: 0.35rem;
+        }
+
+        footer {
+            padding: 2rem 0 3rem;
+            font-size: 0.75rem;
+            color: #666;
+        }
+        footer a { color: inherit; text-decoration: underline; text-underline-offset: 0.2em; }
+    </style>
+</head>
+<body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KVBPX8VW" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+    <div class="page">
+        <header>
+            <a href="index.html" class="back-link">&larr; Wonderland</a>
+        </header>
+
+        <article>
+            <h1>Chaos Theory and the Butterfly Effect</h1>
+            <p class="deck">A set of equations can be perfectly deterministic &mdash; the present fixing the future with iron certainty &mdash; and still be impossible to predict. That paradox is the whole subject.</p>
+
+            <p>For three centuries after Newton, science ran on a quiet assumption: if you know the laws and the starting conditions, the future is yours. The solar system was a clock. Given today's positions and velocities, you could in principle compute every eclipse until the heat death of the universe. Pierre-Simon Laplace turned this into a creed &mdash; an intellect that knew the state of every particle &ldquo;would embrace in a single formula the movements of the greatest bodies and those of the tiniest atom; for such an intellect nothing would be uncertain and the future, just like the past, would be present before its eyes.&rdquo;</p>
+
+            <p>Chaos theory is the discovery that this is wrong &mdash; not because the world is random, but because of something far stranger. Some perfectly deterministic systems amplify the tiniest uncertainty so fiercely that prediction collapses anyway. Determinism and predictability, long assumed to be the same thing, turn out to be entirely different.</p>
+
+            <h2>Lorenz and the butterfly</h2>
+
+            <p>The modern story starts in 1961 with a meteorologist named Edward Lorenz. He was running a simple computer model of the weather &mdash; twelve equations, a primitive machine. One day he wanted to re-examine a run, so he restarted it from the middle, typing in the numbers from a printout. He went for coffee. When he came back the new run had diverged wildly from the original, until the two weathers bore no resemblance to each other at all.</p>
+
+            <p>The cause was almost comic. The computer held six decimal places internally, but the printout showed only three. Lorenz had typed <em>0.506</em> instead of <em>0.506127</em>. A difference of one part in a thousand &mdash; the kind of error a puff of air would make &mdash; had grown, doubling and redoubling, until it swallowed the entire forecast.</p>
+
+            <p>This is <em>sensitive dependence on initial conditions</em>. Two states almost identical today drift apart exponentially fast, so that any error in your knowledge of the present, however microscopic, blows up to dominate the future within a fixed span of time. Lorenz dramatised it in a 1972 talk with a title that named a field: <em>Does the flap of a butterfly's wings in Brazil set off a tornado in Texas?</em></p>
+
+            <div class="figure">
+                <svg viewBox="0 0 640 250" xmlns="http://www.w3.org/2000/svg">
+                    <!-- axes -->
+                    <g stroke="#000" stroke-width="1" fill="none">
+                        <path d="M 55 30 L 55 210 L 605 210"/>
+                    </g>
+                    <text x="48" y="36" font-family="Inter, sans-serif" font-size="10" fill="#666" text-anchor="end">state</text>
+                    <text x="600" y="228" font-family="Inter, sans-serif" font-size="10" fill="#666" text-anchor="end">time &rarr;</text>
+
+                    <!-- trajectory A (solid) -->
+                    <path d="M 70 118 C 120 98 150 138 200 118 C 250 98 285 130 320 116 C 380 95 470 70 590 52" stroke="#000" stroke-width="1.6" fill="none"/>
+                    <!-- trajectory B (dashed) -->
+                    <path d="M 70 121 C 120 101 150 141 200 121 C 250 101 285 133 320 120 C 380 142 475 176 590 198" stroke="#000" stroke-width="1.4" fill="none" stroke-dasharray="4 3"/>
+
+                    <!-- tiny initial gap bracket -->
+                    <line x1="70" y1="113" x2="70" y2="126" stroke="#000" stroke-width="1"/>
+                    <text x="78" y="150" font-family="'Cormorant Garamond', serif" font-style="italic" font-size="13" fill="#000">two starts a hairsbreadth apart</text>
+
+                    <!-- large final gap bracket -->
+                    <g stroke="#000" stroke-width="1">
+                        <line x1="600" y1="52" x2="600" y2="198"/>
+                        <line x1="596" y1="52" x2="604" y2="52"/>
+                        <line x1="596" y1="198" x2="604" y2="198"/>
+                    </g>
+                    <text x="588" y="128" font-family="'Cormorant Garamond', serif" font-style="italic" font-size="13" fill="#000" text-anchor="end">a whole world apart</text>
+
+                    <!-- divergence onset marker -->
+                    <line x1="320" y1="30" x2="320" y2="210" stroke="#999" stroke-width="0.8" stroke-dasharray="2 3"/>
+                </svg>
+                <p class="caption">Two trajectories of the same deterministic system, started a hairsbreadth apart, track each other &mdash; until they don't. The gap grows exponentially.</p>
+            </div>
+
+            <p>Crucially, Lorenz's equations contained no chance, no noise, no dice. Run them twice from <em>exactly</em> the same numbers and you get exactly the same weather, forever. The unpredictability lives entirely in our inability to ever specify the present with infinite precision &mdash; and in nature's refusal to let small things stay small.</p>
+
+            <p class="pullquote">&ldquo;Chaos: when the present determines the future, but the approximate present does not approximately determine the future.&rdquo;</p>
+
+            <h2>Order folding into chaos</h2>
+
+            <p>You might expect such behaviour to require something elaborate. It does not. In 1976 the biologist Robert May studied an equation a schoolchild could write down &mdash; a model of how an animal population changes from one year to the next:</p>
+
+            <p style="text-align:center; font-family:'Cormorant Garamond', serif; font-size:1.2rem; font-style:italic;">x<sub>next</sub> = r &middot; x &middot; (1 &minus; x)</p>
+
+            <p>Here <em>x</em> is this year's population as a fraction of the maximum, and <em>r</em> is a growth rate. Feed the output back in as the next input, over and over. What happens depends entirely on the single knob <em>r</em>. For small <em>r</em>, the population settles to one steady value. Turn <em>r</em> up, and that steady value suddenly splits in two: the population starts alternating between a high year and a low year. Turn it up more, and each of those splits again &mdash; a four-year cycle. Then eight. Then sixteen. The splittings come faster and faster, piling up, until past a certain point the cycle never repeats at all. The output jumps around forever, never settling, never recurring. Deterministic chaos &mdash; from one line of arithmetic.</p>
+
+            <div class="figure">
+                <svg viewBox="0 0 640 320" xmlns="http://www.w3.org/2000/svg">
+                    <!-- axes -->
+                    <g stroke="#000" stroke-width="1" fill="none">
+                        <path d="M 55 25 L 55 265 L 610 265"/>
+                    </g>
+                    <text x="48" y="32" font-family="Inter, sans-serif" font-size="10" fill="#666" text-anchor="end">x</text>
+                    <text x="605" y="283" font-family="Inter, sans-serif" font-size="10" fill="#666" text-anchor="end">growth rate r &rarr;</text>
+
+                    <!-- single branch (period 1) -->
+                    <path d="M 60 150 C 130 150 190 150 235 150" stroke="#000" stroke-width="1.5" fill="none"/>
+                    <!-- first split: period 2 -->
+                    <path d="M 235 150 C 285 128 330 108 375 95" stroke="#000" stroke-width="1.4" fill="none"/>
+                    <path d="M 235 150 C 285 172 330 192 375 205" stroke="#000" stroke-width="1.4" fill="none"/>
+                    <!-- second split: period 4 -->
+                    <path d="M 375 95 C 405 88 425 80 448 76" stroke="#000" stroke-width="1.2" fill="none"/>
+                    <path d="M 375 95 C 405 102 425 110 448 116" stroke="#000" stroke-width="1.2" fill="none"/>
+                    <path d="M 375 205 C 405 198 425 191 448 187" stroke="#000" stroke-width="1.2" fill="none"/>
+                    <path d="M 375 205 C 405 212 425 220 448 226" stroke="#000" stroke-width="1.2" fill="none"/>
+
+                    <!-- chaos region: scattered vertical strokes -->
+                    <g stroke="#000" stroke-width="0.8">
+                        <line x1="470" y1="70" x2="470" y2="232"/>
+                        <line x1="482" y1="78" x2="482" y2="228"/>
+                        <line x1="494" y1="66" x2="494" y2="236"/>
+                        <line x1="506" y1="82" x2="506" y2="225"/>
+                        <!-- a period-3 window (collapses to three bands) -->
+                        <line x1="520" y1="95" x2="520" y2="100"/>
+                        <line x1="520" y1="150" x2="520" y2="155"/>
+                        <line x1="520" y1="208" x2="520" y2="213"/>
+                        <line x1="528" y1="92" x2="528" y2="98"/>
+                        <line x1="528" y1="148" x2="528" y2="157"/>
+                        <line x1="528" y1="206" x2="528" y2="215"/>
+                        <!-- back to chaos -->
+                        <line x1="544" y1="64" x2="544" y2="238"/>
+                        <line x1="556" y1="72" x2="556" y2="231"/>
+                        <line x1="568" y1="62" x2="568" y2="239"/>
+                        <line x1="580" y1="76" x2="580" y2="234"/>
+                        <line x1="592" y1="60" x2="592" y2="240"/>
+                    </g>
+
+                    <!-- labels under the regimes -->
+                    <g font-family="'Cormorant Garamond', serif" font-style="italic" font-size="12" fill="#666" text-anchor="middle">
+                        <text x="145" y="288">1 value</text>
+                        <text x="305" y="288">2-cycle</text>
+                        <text x="412" y="288">4</text>
+                        <text x="530" y="288">chaos (with windows of order)</text>
+                    </g>
+                </svg>
+                <p class="caption">The bifurcation diagram of the logistic map. As the growth rate <em>r</em> rises, a single steady state splits &mdash; 2, 4, 8&hellip; &mdash; in a cascade that ends in chaos, shot through with narrow windows where order briefly returns.</p>
+            </div>
+
+            <p>The most beautiful part came next. The physicist Mitchell Feigenbaum measured how fast the splittings pile up and found a number &mdash; about <em>4.669</em> &mdash; that governs the rhythm of the cascade. Then he found the <em>same</em> number in completely different equations: in dripping taps, in oscillating circuits, in heated fluids. The route from order to chaos has a universal shape, indifferent to what is actually doing the splitting. Chaos has laws of its own.</p>
+
+            <h2>Strange attractors and the shape of disorder</h2>
+
+            <p>If a chaotic system never repeats and never settles, you might picture its long-term behaviour as a featureless smear. It is the opposite. Plot the trajectory of Lorenz's weather model in three dimensions and it traces out an exquisite structure &mdash; two spiralling lobes, like the wings of a butterfly, that the path loops around endlessly without ever crossing itself or closing into a cycle. This is a <em>strange attractor</em>: the system is drawn irresistibly onto a fixed, intricate shape, yet wanders that shape forever in a way that never recurs. Order in the large, chaos in the small.</p>
+
+            <p>So chaos is not noise and it is not randomness. It is something subtler that sits between rigid order and pure chance: behaviour that is fully determined by its rules, confined to a definite pattern, and yet permanently unpredictable in its detail. The system is its own best forecaster, and even it must be run forward step by step &mdash; there is no shortcut formula that leaps to the answer.</p>
+
+            <p>The practical reach is enormous. It is why weather forecasts are reliable for days but hopeless for months &mdash; not for want of better computers, but because the atmosphere is chaotic and our snapshot of it is never perfect. It shapes how we think about heartbeats and brainwaves, about turbulence and dripping faucets, about populations and markets. And it humbles the Laplacean dream. The laws can be exact, the determinism total, and the future still hidden behind a veil that no amount of precision can lift. The clockwork is real &mdash; we simply can never read the dial finely enough.</p>
+
+            <hr class="divider">
+
+            <div class="references">
+                <h3>Further reading</h3>
+                <ol>
+                    <li>Lorenz, E. N. (1963). <em>Deterministic Nonperiodic Flow</em>. Journal of the Atmospheric Sciences.</li>
+                    <li>Lorenz, E. N. (1972). <em>Predictability: Does the Flap of a Butterfly's Wings in Brazil Set Off a Tornado in Texas?</em> (address to the AAAS).</li>
+                    <li>May, R. M. (1976). <em>Simple Mathematical Models with Very Complicated Dynamics</em>. Nature.</li>
+                    <li>Feigenbaum, M. J. (1978). <em>Quantitative Universality for a Class of Nonlinear Transformations</em>. Journal of Statistical Physics.</li>
+                    <li>Gleick, J. (1987). <em>Chaos: Making a New Science</em>.</li>
+                </ol>
+            </div>
+        </article>
+
+        <footer>
+            <a href="index.html">&larr; Back to Wonderland</a>
+        </footer>
+    </div>
+</body>
+</html>
