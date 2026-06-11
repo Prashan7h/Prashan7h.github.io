@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A/B Testing — Experiments & Causal Inference</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+    <style>
+        *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+        body { background: #fff; color: #000; font-family: 'Inter', sans-serif; font-weight: 300; line-height: 1.6; max-width: 720px; margin: 0 auto; padding: 2rem 2rem 6rem; }
+        nav { margin-bottom: 3rem; font-size: 0.75rem; letter-spacing: 0.04em; }
+        nav a { color: #000; text-decoration: none; }
+        nav a:hover { opacity: 0.5; }
+        nav span { margin: 0 0.5rem; opacity: 0.3; }
+        h1 { font-family: 'Cormorant Garamond', serif; font-size: 2.2rem; font-weight: 600; line-height: 1.2; margin-bottom: 0.4rem; }
+        .subtitle { font-family: 'Cormorant Garamond', serif; font-size: 1.1rem; font-style: italic; color: #444; margin-bottom: 3rem; }
+        h2 { font-family: 'Cormorant Garamond', serif; font-size: 1.6rem; font-weight: 600; margin: 3rem 0 1rem; border-bottom: 1px solid #eee; padding-bottom: 0.3rem; }
+        h3 { font-family: 'Inter', sans-serif; font-size: 0.88rem; font-weight: 500; letter-spacing: 0.04em; text-transform: uppercase; margin: 2rem 0 0.6rem; }
+        p { font-size: 0.92rem; line-height: 1.8; margin-bottom: 0.9rem; }
+        ul, ol { font-size: 0.92rem; line-height: 1.8; padding-left: 1.4rem; margin-bottom: 0.9rem; }
+        li { margin-bottom: 0.3rem; }
+        a { color: #000; }
+        a:hover { opacity: 0.5; }
+        .box { border-left: 2px solid #000; padding: 0.9rem 1.1rem; margin: 1.5rem 0; }
+        .box-label { font-size: 0.7rem; font-weight: 500; letter-spacing: 0.08em; text-transform: uppercase; margin-bottom: 0.4rem; opacity: 0.5; }
+        .callout { background: #fafafa; border: 1px solid #000; padding: 0.9rem 1.1rem; margin: 1.5rem 0; }
+        .callout-label { font-size: 0.7rem; font-weight: 500; letter-spacing: 0.08em; text-transform: uppercase; margin-bottom: 0.4rem; }
+        .figure { margin: 2rem 0; text-align: center; }
+        .caption { font-size: 0.78rem; color: #666; margin-top: 0.6rem; line-height: 1.5; }
+        table { width: 100%; border-collapse: collapse; font-size: 0.88rem; margin: 1.5rem 0; }
+        th { font-weight: 500; border-bottom: 1px solid #000; padding: 0.5rem 0.8rem; text-align: left; }
+        td { padding: 0.5rem 0.8rem; border-bottom: 1px solid #eee; vertical-align: top; }
+        mjx-container { overflow-x: auto; }
+    </style>
+    <script src="https://cdn.amplitude.com/script/59010539cde9503811b2e9a80e47e0b4.js"></script>
+    <script>window.amplitude.add(window.sessionReplay.plugin({sampleRate: 1}));window.amplitude.init('59010539cde9503811b2e9a80e47e0b4', {"fetchRemoteConfig":true,"autocapture":{"attribution":true,"fileDownloads":true,"formInteractions":true,"pageViews":true,"sessions":true,"elementInteractions":true,"networkTracking":true,"webVitals":true,"frustrationInteractions":true}});</script>
+</head>
+<body>
+
+<nav><a href="../blog.html">Notebooks</a><span>/</span>A/B Testing</nav>
+
+<h1>A/B Testing</h1>
+<p class="subtitle">Designing experiments that establish cause, not just correlation</p>
+
+<p>Most analysis is observational: you look at what happened and find patterns. A/B testing is different — it lets you deliberately <em>make</em> something happen to a random subset of users and measure the causal effect. That distinction matters enormously. The fact that users who engage with Feature X retain better doesn't mean Feature X <em>causes</em> retention — both could be driven by a third factor like user intent. A properly randomised experiment eliminates that confound and establishes causation directly.</p>
+
+<p>This notebook builds the complete picture: the statistical machinery from first principles, the practical engineering of experiments at scale, and the structured reasoning needed to walk through an A/B testing case in an interview. It draws on the hypothesis testing framework from <a href="stat_08_hypothesis_testing.html">Statistics 8</a>, confidence intervals from <a href="stat_06_confidence_intervals.html">Statistics 6</a>, and goodness-of-fit tests from <a href="stat_09_goodness_of_fit.html">Statistics 9</a>.</p>
+
+
+<h2>1. When to Use — and Not Use — A/B Testing</h2>
+
+<p>A/B testing works when you can randomise users into groups, measure an outcome within a reasonable timeframe, and the treatment affects only the unit it's assigned to. Common use cases: UI changes, recommendation or ranking algorithm changes, notification copy, onboarding flows, pricing.</p>
+
+<p>It gives misleading results in several situations worth knowing cold:</p>
+
+<ul>
+    <li><strong>Missing-item problems.</strong> You want to test whether <em>adding</em> new content helps, but there's no pre-experiment baseline for user response to content that didn't exist.</li>
+    <li><strong>Entirely new experiences.</strong> When the change is so fundamental (e.g. a full navigation redesign) that no valid historical comparison exists.</li>
+    <li><strong>Change aversion.</strong> Users sometimes react negatively to any change, even an improvement. The short-term dip doesn't reflect long-run value; you can't easily distinguish real harm from temporary friction.</li>
+    <li><strong>Novelty effect.</strong> The inverse: users engage with something new simply because it's new. A short experiment will capture inflated treatment effects that decay once users adapt back to baseline behaviour.</li>
+    <li><strong>Network effects / interference.</strong> When treatment users and control users interact — on a social platform or a marketplace — the behaviour of one group affects the other. This violates the core independence assumption the test relies on. More on this in §8.</li>
+</ul>
+
+<div class="callout">
+    <div class="callout-label">Worth noting</div>
+    <p style="margin:0">Always flag change aversion and novelty effect as threats to validity. A significant result in week one can't always be trusted — you need sufficient duration for these effects to wash out before drawing conclusions.</p>
+</div>
+
+
+<h2>2. The Seven-Step Framework</h2>
+
+<p>Every A/B test follows the same logical arc, whether at a startup or at Google. Walk through each step in order — skipping ahead is how experiments go wrong.</p>
+
+<div class="figure">
+    <svg width="480" height="390" viewBox="0 0 480 390" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+            <marker id="arrow" markerWidth="6" markerHeight="6" refX="3" refY="3" orient="auto">
+                <path d="M0,1 L6,3 L0,5Z" fill="#000"/>
+            </marker>
+        </defs>
+        <!-- Step 1 -->
+        <rect x="140" y="8" width="180" height="38" rx="19" fill="#000"/>
+        <text x="230" y="32" font-size="11.5" font-family="Inter,sans-serif" fill="#fff" text-anchor="middle" font-weight="500">1. Problem Statement</text>
+        <line x1="230" y1="46" x2="230" y2="60" stroke="#000" stroke-width="1.5" marker-end="url(#arrow)"/>
+        <!-- Step 2 -->
+        <rect x="140" y="60" width="180" height="38" rx="19" fill="#000"/>
+        <text x="230" y="84" font-size="11.5" font-family="Inter,sans-serif" fill="#fff" text-anchor="middle" font-weight="500">2. Hypothesis &amp; Metrics</text>
+        <line x1="230" y1="98" x2="230" y2="112" stroke="#000" stroke-width="1.5" marker-end="url(#arrow)"/>
+        <!-- Step 3 -->
+        <rect x="140" y="112" width="180" height="38" rx="19" fill="#000"/>
+        <text x="230" y="136" font-size="11.5" font-family="Inter,sans-serif" fill="#fff" text-anchor="middle" font-weight="500">3. Design Experiment</text>
+        <line x1="230" y1="150" x2="230" y2="164" stroke="#000" stroke-width="1.5" marker-end="url(#arrow)"/>
+        <!-- Step 4 -->
+        <rect x="140" y="164" width="180" height="38" rx="19" fill="#000"/>
+        <text x="230" y="188" font-size="11.5" font-family="Inter,sans-serif" fill="#fff" text-anchor="middle" font-weight="500">4. Run Experiment</text>
+        <line x1="230" y1="202" x2="230" y2="216" stroke="#000" stroke-width="1.5" marker-end="url(#arrow)"/>
+        <!-- Step 5 -->
+        <rect x="140" y="216" width="180" height="38" rx="19" fill="#000"/>
+        <text x="230" y="240" font-size="11.5" font-family="Inter,sans-serif" fill="#fff" text-anchor="middle" font-weight="500">5. Validity Checks</text>
+        <line x1="230" y1="254" x2="230" y2="268" stroke="#000" stroke-width="1.5" marker-end="url(#arrow)"/>
+        <!-- Step 6 -->
+        <rect x="140" y="268" width="180" height="38" rx="19" fill="#000"/>
+        <text x="230" y="292" font-size="11.5" font-family="Inter,sans-serif" fill="#fff" text-anchor="middle" font-weight="500">6. Interpret Results</text>
+        <line x1="230" y1="306" x2="230" y2="320" stroke="#000" stroke-width="1.5" marker-end="url(#arrow)"/>
+        <!-- Step 7 -->
+        <rect x="140" y="320" width="180" height="38" rx="19" fill="#000"/>
+        <text x="230" y="344" font-size="11.5" font-family="Inter,sans-serif" fill="#fff" text-anchor="middle" font-weight="500">7. Launch Decision</text>
+        <!-- Annotations -->
+        <text x="336" y="32" font-size="9.5" font-family="Inter,sans-serif" fill="#666">What is the goal?</text>
+        <text x="336" y="84" font-size="9.5" font-family="Inter,sans-serif" fill="#666">What are you measuring?</text>
+        <text x="336" y="136" font-size="9.5" font-family="Inter,sans-serif" fill="#666">Unit, size, duration</text>
+        <text x="336" y="188" font-size="9.5" font-family="Inter,sans-serif" fill="#666">Instrument &amp; collect data</text>
+        <text x="336" y="240" font-size="9.5" font-family="Inter,sans-serif" fill="#666">Did it run cleanly?</text>
+        <text x="336" y="292" font-size="9.5" font-family="Inter,sans-serif" fill="#666">p-value, lift, CI</text>
+        <text x="336" y="344" font-size="9.5" font-family="Inter,sans-serif" fill="#666">Ship, iterate, or scrap?</text>
+    </svg>
+    <div class="caption">Figure 1 — The seven-step framework. Each step has a corresponding question that anchors the decision before moving to the next.</div>
+</div>
+
+
+<h2>3. Problem Statement &amp; Metrics</h2>
+
+<p>Before touching statistics you need to understand what success looks like. This means mapping the user funnel, identifying where the change intervenes, and translating business goals into measurable quantities.</p>
+
+<h3>The user funnel</h3>
+
+<p>A user funnel is the sequence of actions from first contact to the desired outcome. For a search-and-purchase product: <em>visit → search → browse → click → purchase.</em> The funnel matters for two reasons: it tells you <em>where the treatment kicks in</em> — defining which users should even be enrolled in the experiment — and it surfaces the right metric to measure at each stage. Don't enroll users who were never exposed to the change; they dilute your effect size and inflate the sample size you need.</p>
+
+<h3>Metric taxonomy</h3>
+
+<p>Every experiment needs three types of metrics defined upfront:</p>
+
+<table>
+    <tr><th>Type</th><th>Description</th><th>Example</th></tr>
+    <tr>
+        <td><strong>Success metric</strong></td>
+        <td>The primary north-star. Should be simple, stable, and causally connected to the treatment. Rarely changes between experiments.</td>
+        <td>Revenue per user per day</td>
+    </tr>
+    <tr>
+        <td><strong>Driver metric</strong></td>
+        <td>Short-term, faster-moving proxy for the success metric. Sensitive to the specific change. Actionable — you can directly engineer it.</td>
+        <td>Click-through rate on search results</td>
+    </tr>
+    <tr>
+        <td><strong>Guardrail metric</strong></td>
+        <td>Must not degrade. Protects against winning on one dimension while breaking something important elsewhere.</td>
+        <td>Page load time, error rate, unsubscribe rate</td>
+    </tr>
+</table>
+
+<p>When multiple metrics compete, a single <strong>Overall Evaluation Criterion (OEC)</strong> forces trade-offs to be explicit: normalise each metric to a fixed range, assign weights, and sum. \(\text{OEC} = \sum_i w_i \cdot \tilde{m}_i.\) The weights should be agreed with stakeholders before the experiment runs, not chosen after you see which version of the weights makes the result look good.</p>
+
+<h3>Properties of a good metric (MAST)</h3>
+
+<ul>
+    <li><strong>Measurable</strong> — collectable within the experiment window via available instrumentation.</li>
+    <li><strong>Attributable</strong> — a clear causal chain links the treatment to changes in this metric, not some third factor.</li>
+    <li><strong>Sensitive</strong> — low enough variance to detect effect sizes that matter in practice. A metric like "total time on site" has enormous variance across users; it requires huge samples. A metric like CTR on search results is far more sensitive to a ranking change.</li>
+    <li><strong>Timely</strong> — observable within days or weeks. A/B testing is an iterative loop; a metric that takes months to manifest defeats the purpose.</li>
+</ul>
+
+
+<h2>4. Hypothesis Testing Setup</h2>
+
+<p>With a metric chosen, formalise what you're testing. The statistical machinery is the two-sample t-test from <a href="stat_08_hypothesis_testing.html">Statistics 8</a>.</p>
+
+<div class="box">
+    <div class="box-label">Hypotheses</div>
+    <p style="margin-bottom:0.35rem">\(H_0: \mu_T = \mu_C\) — treatment has no effect on the mean metric</p>
+    <p style="margin:0">\(H_1: \mu_T \neq \mu_C\) — treatment shifts the mean metric (two-sided)</p>
+</div>
+
+<p>Two parameters bound the test before it starts:</p>
+
+<ul>
+    <li><strong>Significance level \(\alpha\).</strong> The maximum acceptable Type I error rate — the probability of concluding there's an effect when the null is actually true (false positive). Convention: \(\alpha = 0.05\).</li>
+    <li><strong>Statistical power \(1 - \beta\).</strong> The probability of correctly detecting a real effect when one exists. Convention: 0.80. \(\beta\) is the Type II error rate — missing a true effect (false negative).</li>
+</ul>
+
+<div class="figure">
+    <svg width="500" height="200" viewBox="0 0 500 200" xmlns="http://www.w3.org/2000/svg">
+        <!-- H0 distribution -->
+        <path d="M20,172 Q65,170 100,145 Q130,110 158,68 Q172,42 185,20 Q198,42 212,68 Q240,110 268,145 Q300,170 350,172" fill="none" stroke="#000" stroke-width="1.8"/>
+        <!-- H1 distribution shifted right -->
+        <path d="M175,172 Q210,170 240,148 Q265,122 285,96 Q298,78 310,58 Q322,78 334,98 Q358,128 388,155 Q420,170 480,172" fill="none" stroke="#000" stroke-width="1.5" stroke-dasharray="5,3"/>
+        <!-- Beta region (left tail of H1, missed detections) -->
+        <path d="M175,172 Q200,170 222,158 Q245,144 265,128 Q282,113 295,96 L295,172Z" fill="#000" opacity="0.06"/>
+        <!-- Alpha region (right tail of H0) -->
+        <path d="M295,172 Q310,168 328,148 Q345,126 358,106 Q368,90 375,78 L375,172Z" fill="#000" opacity="0.12"/>
+        <!-- Critical value line -->
+        <line x1="295" y1="100" x2="295" y2="176" stroke="#000" stroke-width="1.2" stroke-dasharray="3,2"/>
+        <!-- Axis -->
+        <line x1="12" y1="172" x2="490" y2="172" stroke="#000" stroke-width="1"/>
+        <!-- Labels -->
+        <text x="145" y="186" font-size="10" font-family="Inter,sans-serif" fill="#666" text-anchor="middle">H₀</text>
+        <text x="350" y="186" font-size="10" font-family="Inter,sans-serif" fill="#666" text-anchor="middle">H₁</text>
+        <text x="298" y="186" font-size="9" font-family="Inter,sans-serif" fill="#000">c</text>
+        <text x="355" y="138" font-size="9.5" font-family="Inter,sans-serif" fill="#555">α (Type I)</text>
+        <text x="205" y="162" font-size="9.5" font-family="Inter,sans-serif" fill="#555">β (Type II)</text>
+    </svg>
+    <div class="caption">Figure 2 — Two distributions under H₀ (solid) and H₁ (dashed). The critical value c partitions the axis. α is the right tail of H₀ — the false positive rate we control. β is the left tail of H₁ — the false negative rate. Increasing sample size pushes H₁ further right, shrinking β and increasing power.</div>
+</div>
+
+<table>
+    <tr><th></th><th>H₀ true (no effect)</th><th>H₁ true (real effect)</th></tr>
+    <tr><td><strong>Reject H₀</strong></td><td>Type I error — false positive (rate = α)</td><td>Correct — true positive (rate = power)</td></tr>
+    <tr><td><strong>Fail to reject H₀</strong></td><td>Correct — true negative</td><td>Type II error — false negative (rate = β)</td></tr>
+</table>
+
+
+<h2>5. Experiment Design</h2>
+
+<h3>Randomisation unit</h3>
+
+<p>The randomisation unit is what gets assigned to control or treatment. Choosing it correctly has both practical and statistical consequences.</p>
+
+<table>
+    <tr><th>Unit</th><th>Pros</th><th>Cons</th></tr>
+    <tr><td><strong>User ID</strong></td><td>Stable across sessions and devices; enables long-run measurement (retention, LTV)</td><td>Requires login; identifiable</td></tr>
+    <tr><td><strong>Cookie</strong></td><td>Anonymous; works for logged-out users</td><td>Lost if user clears browser; not portable across devices</td></tr>
+    <tr><td><strong>Session</strong></td><td>Higher granularity → more units → more power for short-horizon metrics</td><td>Same user can see both variants; inconsistent experience</td></tr>
+    <tr><td><strong>Device ID</strong></td><td>Immutable per device; stable</td><td>Mobile only; identifiable</td></tr>
+    <tr><td><strong>IP address</strong></td><td>Sometimes the only option for infrastructure experiments (e.g. latency)</td><td>Shared IPs common; changes with location</td></tr>
+</table>
+
+<p>There is one hard constraint: <strong>the randomisation unit must be the same as, or coarser than, the unit of analysis.</strong> Here's why.</p>
+
+<p>The variance formula \(\text{Var}(\bar X) = \sigma^2/n\) assumes the \(n\) observations are independent. If you randomise by user but count page views, page views from the same user are correlated — they share treatment assignment. Treating correlated observations as independent deflates the estimated standard error, makes confidence intervals too narrow, and inflates the Type I error rate above your chosen \(\alpha\). The effective sample size is somewhere between \(n_{\text{views}}\) and \(n_{\text{users}}\), not \(n_{\text{views}}\). User-level randomisation is the default precisely because it guarantees independence at the most common unit of analysis.</p>
+
+<div class="callout">
+    <div class="callout-label">Common mistake</div>
+    <p style="margin:0">The randomisation unit vs. unit of analysis mismatch is the most common source of inflated false positive rates in practice. It matters that you understand <em>why</em> the rule exists — not just that randomisation unit must be ≥ unit of analysis, but that violating it breaks the independence assumption the variance formula depends on.</p>
+</div>
+
+<h3>Target population (cohort)</h3>
+
+<p>Only enroll users at the point where they actually encounter the treatment. If you are testing a new search ranking algorithm, users should enter the experiment when they submit a search query — not when they land on the homepage. Enrolling users who never hit the treated surface dilutes the measured effect and forces you to collect far more data than necessary.</p>
+
+<p>One caution: be careful if your enrollment criterion is itself affected by the treatment. If you filter on "active users" and the treatment changes what counts as active, you've introduced selection bias that makes control and treatment groups incomparable before the treatment even starts. This violates the <em>Stable Unit Treatment Value Assumption (SUTVA)</em>: the outcome for any unit should depend only on that unit's treatment assignment, not on other units' assignments or on the measurement process itself.</p>
+
+<h3>Sample size</h3>
+
+<p>The required sample size per variant follows from inverting the power condition. We want \(\mathbb{P}[\text{reject } H_0 \mid H_1 \text{ true}] = 1 - \beta.\) Working through the two-sample z-test:</p>
+
+\[n = \frac{(\sigma_T^2 + \sigma_C^2)(z_{1-\alpha/2} + z_{1-\beta})^2}{\delta^2}\]
+
+<p>For the standard choices \(\alpha = 0.05\) and \(1 - \beta = 0.80\): \(z_{0.975} \approx 1.96\), \(z_{0.80} \approx 0.84\), so \((1.96 + 0.84)^2 \approx 7.84.\) With equal-sized groups (\(\sigma_T^2 \approx \sigma_C^2 = \sigma^2\)) this gives the rule of thumb you should memorise:</p>
+
+\[n \approx \frac{16\sigma^2}{\delta^2}\]
+
+<p>where \(\sigma^2\) is the metric variance (estimated from historical data or an A/A test) and \(\delta\) is the <strong>minimum detectable effect (MDE)</strong> — the smallest change that would be meaningful in practice. For binary metrics like click-through rate, the maximum variance is 0.25 (when the base rate is 0.5).</p>
+
+<div class="box">
+    <div class="box-label">How the knobs interact</div>
+    <ul style="margin:0">
+        <li>Larger MDE (you only care about big effects) → smaller \(n\)</li>
+        <li>Higher metric variance → larger \(n\)</li>
+        <li>Stricter \(\alpha\) (fewer false positives) → larger \(n\)</li>
+        <li>Higher power (fewer missed effects) → larger \(n\)</li>
+    </ul>
+</div>
+
+<p>If the sample size is too large to collect in a reasonable time, you have three levers: relax the MDE (test only for larger effects), reduce metric variance (use a more targeted metric or cap outliers), or reduce power (accept a higher miss rate).</p>
+
+<h3>Test duration</h3>
+
+\[\text{Duration (days)} = \frac{n}{\text{randomisation units per day}}\]
+
+<p>Two constraints on duration:</p>
+
+<ul>
+    <li><strong>Minimum one full week.</strong> User behaviour follows a seven-day cycle. An experiment that runs Monday to Wednesday overrepresents weekday behaviour. You need at least one complete cycle for your sample to reflect the population's natural rhythm. In practice, 1–2 weeks is the norm.</li>
+    <li><strong>Ramp gradually.</strong> Don't expose 50% of traffic immediately. Start at 1–5% with forgiving users (employees, loyal users) to catch bugs, then scale to the full power ramp (typically 5–50%), then optionally keep a long-term holdout group to measure whether effects persist or decay over months.</li>
+</ul>
+
+<div class="callout">
+    <div class="callout-label">Practical constraint</div>
+    <p style="margin:0">The one-week minimum is easy to forget when sample size calculations suggest you can finish in three days. The formula gives you statistical sample size; the day-of-week effect gives you the minimum calendar duration. Novelty and primacy effects are additional reasons to run longer — short experiments capture atypical behaviour.</p>
+</div>
+
+
+<h2>6. Validity Checks</h2>
+
+<p>Before interpreting any number, confirm the experiment ran as designed. A flawed experiment produces results that should be ignored regardless of how significant they look. This step comes <em>before</em> the statistical interpretation — not after.</p>
+
+<h3>Sample ratio mismatch (SRM)</h3>
+
+<p>With 50/50 randomisation you expect approximately equal group sizes. A large discrepancy signals a bug in the assignment pipeline, a logging issue, or a differential dropout rate between variants. Test with a chi-squared goodness-of-fit test — the same machinery as <a href="stat_09_goodness_of_fit.html">Statistics 9</a>:</p>
+
+\[\chi^2 = \sum_{i \in \{C,T\}} \frac{(O_i - E_i)^2}{E_i}, \quad E_i = \frac{N}{2}\]
+
+<p>Under the null of fair assignment this follows \(\chi^2_1\). A significant result (p &lt; 0.05) is a red flag — stop and debug before proceeding. Do not try to correct for an SRM post-hoc; the bias in which users ended up in each group cannot be removed by reweighting.</p>
+
+<h3>A/A test</h3>
+
+<p>Before running the real experiment, run a pre-period where both groups receive identical treatment (both see control). This validates that your instrumentation is unbiased, that the randomisation is working correctly, and that the groups are statistically homogeneous before any treatment is applied. If an A/A test finds a significant difference, something is broken upstream — investigate before trusting any A/B results.</p>
+
+<h3>External factors</h3>
+
+<p>Audit whether major external events fell within the experiment window: competitor launches, marketing campaigns, public holidays, economic disruptions. If a confounding event is coincident with the treatment rollout, the effects are inseparable. Rerun the experiment in a cleaner window rather than try to estimate and subtract the external effect.</p>
+
+<h3>Novelty and primacy effects</h3>
+
+<p>Segment results by new users vs. returning users. Novelty effect shows up as a large treatment effect for returning users that decays over time — they're engaging because something changed, not because it's better. Primacy effect is the opposite: returning users resist change, suppressing the true treatment effect. A genuine improvement should show a consistent signal across both segments and across time within the experiment window.</p>
+
+
+<h2>7. Interpreting Results</h2>
+
+<h3>The p-value and statistical significance</h3>
+
+<p>The p-value is the probability, under \(H_0\), of observing a test statistic at least as extreme as the one you computed. It is emphatically <em>not</em> the probability that \(H_1\) is true. If \(p &lt; \alpha\), reject \(H_0\) and conclude the effect is statistically significant. See <a href="stat_08_hypothesis_testing.html">Statistics 8</a> for the full mechanics of the two-sample t-test and Wald's test.</p>
+
+<h3>Statistical vs. practical significance</h3>
+
+<p>Statistical significance means the observed effect is unlikely under the null. Practical significance means the effect is <em>large enough to matter</em> in the real world. With very large samples you can detect effects that are statistically significant but economically negligible. Always evaluate the confidence interval against the MDE \(\delta_{\min}\), not just against zero.</p>
+
+<h3>The four CI patterns</h3>
+
+<p>The key output is the 95% confidence interval for the lift \(\hat\delta = \bar X_T - \bar X_C\), read against two reference lines: zero and the practical significance boundary \(\delta_{\min}\).</p>
+
+<div class="figure">
+    <svg width="440" height="270" viewBox="0 0 440 270" xmlns="http://www.w3.org/2000/svg">
+        <!-- Reference lines -->
+        <line x1="185" y1="18" x2="185" y2="250" stroke="#000" stroke-width="0.8" stroke-dasharray="3,2"/>
+        <line x1="295" y1="18" x2="295" y2="250" stroke="#000" stroke-width="0.8" stroke-dasharray="3,2"/>
+        <text x="185" y="13" font-size="9" font-family="Inter,sans-serif" fill="#888" text-anchor="middle">0</text>
+        <text x="295" y="13" font-size="9" font-family="Inter,sans-serif" fill="#888" text-anchor="middle">δ_min</text>
+        <!-- Case 1: both bounds above δ_min → Launch -->
+        <line x1="325" y1="60" x2="415" y2="60" stroke="#000" stroke-width="2.2"/>
+        <rect x="366" y="56" width="8" height="8" fill="#000"/>
+        <line x1="325" y1="55" x2="325" y2="65" stroke="#000" stroke-width="1.8"/>
+        <line x1="415" y1="55" x2="415" y2="65" stroke="#000" stroke-width="1.8"/>
+        <text x="12" y="57" font-size="10" font-family="Inter,sans-serif" fill="#000" font-weight="500">1. Launch</text>
+        <text x="12" y="70" font-size="9" font-family="Inter,sans-serif" fill="#666">Stat. &amp; practically significant</text>
+        <!-- Case 2: above 0 but below δ_min → probably not worth it -->
+        <line x1="200" y1="120" x2="278" y2="120" stroke="#000" stroke-width="2.2"/>
+        <rect x="234" y="116" width="8" height="8" fill="#000"/>
+        <line x1="200" y1="115" x2="200" y2="125" stroke="#000" stroke-width="1.8"/>
+        <line x1="278" y1="115" x2="278" y2="125" stroke="#000" stroke-width="1.8"/>
+        <text x="12" y="117" font-size="10" font-family="Inter,sans-serif" fill="#000" font-weight="500">2. No launch</text>
+        <text x="12" y="130" font-size="9" font-family="Inter,sans-serif" fill="#666">Stat. significant, not practical</text>
+        <!-- Case 3: wide CI straddling both → underpowered, rerun -->
+        <line x1="130" y1="180" x2="365" y2="180" stroke="#000" stroke-width="2.2"/>
+        <rect x="243" y="176" width="8" height="8" fill="#000"/>
+        <line x1="130" y1="175" x2="130" y2="185" stroke="#000" stroke-width="1.8"/>
+        <line x1="365" y1="175" x2="365" y2="185" stroke="#000" stroke-width="1.8"/>
+        <text x="12" y="177" font-size="10" font-family="Inter,sans-serif" fill="#000" font-weight="500">3. Rerun</text>
+        <text x="12" y="190" font-size="9" font-family="Inter,sans-serif" fill="#666">Underpowered — collect more data</text>
+        <!-- Case 4: entirely negative → scrap or iterate -->
+        <line x1="72" y1="240" x2="170" y2="240" stroke="#000" stroke-width="2.2"/>
+        <rect x="116" y="236" width="8" height="8" fill="#000"/>
+        <line x1="72" y1="235" x2="72" y2="245" stroke="#000" stroke-width="1.8"/>
+        <line x1="170" y1="235" x2="170" y2="245" stroke="#000" stroke-width="1.8"/>
+        <text x="12" y="237" font-size="10" font-family="Inter,sans-serif" fill="#000" font-weight="500">4. Scrap</text>
+        <text x="12" y="250" font-size="9" font-family="Inter,sans-serif" fill="#666">Negative lift — iterate or abandon</text>
+    </svg>
+    <div class="caption">Figure 3 — The four CI patterns relative to zero and δ_min. The square is the point estimate; bars are the 95% CI. Case 3 (wide CI straddling both reference lines) is the most common failure mode — the experiment was underpowered. Increase sample size and rerun; don't claim the effect is real or absent.</div>
+</div>
+
+<h3>Multiple metrics and the multiple comparison problem</h3>
+
+<p>Testing \(N\) metrics simultaneously each at level \(\alpha = 0.05\) inflates the family-wise error rate:</p>
+
+\[\mathbb{P}[\text{at least one false positive}] = 1 - (1 - 0.05)^N\]
+
+<p>For \(N = 10\) this is 40%; for \(N = 20\) it's 64%. Three responses, in order of conservatism:</p>
+
+<ul>
+    <li><strong>Classify metrics upfront</strong> — "expected to change", "not sure", "guardrails". Apply stricter thresholds to the latter two. This is often enough in practice.</li>
+    <li><strong>Bonferroni correction</strong> — set \(\alpha_{\text{individual}} = \alpha / N\). Simple and correct, but conservative; may miss real effects when \(N\) is large.</li>
+    <li><strong>Benjamini-Hochberg (FDR control)</strong> — better when \(N\) is very large (hundreds of metrics). Controls the expected proportion of false positives rather than the probability of any false positive.</li>
+</ul>
+
+<h3>Simpson's Paradox</h3>
+
+<p>A trend visible in aggregate data can reverse in every subgroup when a confounding variable is correlated with both group assignment and the outcome. This is why post-hoc segmentation is dangerous: segment across 20 dimensions and you'll find at least one slice that shows the opposite result. Pre-register your subgroup analyses before the experiment runs — decide which segments you care about based on the hypothesis, not based on what the data shows after the fact.</p>
+
+
+<h2>8. Common Pitfalls</h2>
+
+<h3>P-hacking (peeking)</h3>
+
+<p>Stopping an experiment as soon as \(p &lt; 0.05\) inflates the Type I error rate far above 5%. The reason is sequential testing: each time you peek at the data and run a significance test, you're making a new implicit decision. Across 20 peeks all under \(H_0\), the probability that at least one peek yields \(p &lt; 0.05\) is close to 64% — even with no real effect. <strong>Commit to your sample size and duration before the experiment starts, and do not stop early based on the p-value.</strong></p>
+
+<p>If you genuinely need interim analyses (for safety monitoring or resource constraints), use sequential testing methods (e.g. alpha spending functions) that correct for multiple looks while preserving the overall Type I error rate.</p>
+
+<h3>Network effects and SUTVA violations</h3>
+
+<p>On social or marketplace platforms, treatment and control users interact. If a better search ranking in the treatment arm converts more buyers, it depletes inventory for control users — creating a negative spillover that makes the treatment look even better relative to control. The effect you measure is not the effect you'd see at full rollout. Mitigations:</p>
+
+<ul>
+    <li><strong>Cluster-based randomisation</strong> — randomise by geographic region, social cluster, or organisational unit rather than by individual user. Users within a cluster share treatment assignment, preventing cross-contamination.</li>
+    <li><strong>Time-based holdout</strong> — hold out a fraction of users entirely outside any experiment for at least 3 months to measure the true steady-state effect without interference.</li>
+    <li><strong>Switchback experiments</strong> — alternate all users between control and treatment across short time windows, controlling for temporal confounds.</li>
+</ul>
+
+<h3>Post-hoc segmentation</h3>
+
+<p>Slicing results across many dimensions after the fact is equivalent to running many parallel hypothesis tests. Each additional segment multiplies the chance of a false positive. If subgroup analysis is scientifically important, pre-register the specific segments with clear hypotheses about direction and magnitude before collecting data.</p>
+
+
+<h2>9. Launch Decision</h2>
+
+<p>Statistical significance is necessary but not sufficient to ship. Three additional factors always enter the decision:</p>
+
+<ol>
+    <li><strong>Metric trade-offs.</strong> Did the success metric improve while guardrail metrics held? A feature that increases clicks but also increases error rates, page load time, or unsubscribes is not a net win. Every guardrail metric that moved in the wrong direction requires a judgment call about whether the trade-off is acceptable.</li>
+    <li><strong>Cost of launch.</strong> Engineering complexity, ongoing maintenance burden, and opportunity cost all weigh against marginal improvements. A 0.4% lift in CTR may not justify three months of infra work plus the ongoing cost of maintaining a more complex system.</li>
+    <li><strong>Risk of the wrong call.</strong> If wrongly launching the change would harm user experience at scale, demand a higher confidence bar (e.g. \(\alpha = 0.01\)) or run a longer experiment. The asymmetry between the cost of a false positive and a false negative should influence your threshold.</li>
+</ol>
+
+<p>When you do ship, always ramp gradually rather than flipping to 100% immediately. Real-world behaviour at full traffic differs from 10% traffic in ways that are hard to predict: event-driven seasonality, interaction effects with concurrent experiments, and infrastructure load can all shift the metrics. Monitor guardrail metrics closely during ramp-up and be ready to roll back.</p>
+
+
+<h2>10. Alternatives When A/B Testing Fails</h2>
+
+<p>When randomisation is impossible — historical data, ethical constraints, marketplace interference — causal inference methods offer structured alternatives. All require assumptions that A/B testing avoids by design; the key is knowing which assumption you're making and whether it's defensible.</p>
+
+<ul>
+    <li><strong>Difference-in-differences (DiD).</strong> Compare the change in outcome in the treated group to the change in a control group over the same period. Assumes "parallel trends": without the treatment, both groups would have evolved identically. Sensitive to violations of this assumption.</li>
+    <li><strong>Regression discontinuity design (RDD).</strong> Exploit a threshold rule — users above 100 lifetime purchases get a loyalty benefit; users just below don't. Users near the boundary are essentially randomised by measurement noise, giving a clean local causal estimate.</li>
+    <li><strong>Interrupted time series.</strong> A single group passes through a pre-period (control) then a post-period (treatment). Valid only when no other events coincide with the intervention and the time series is long enough to model the pre-trend reliably.</li>
+    <li><strong>Propensity score matching.</strong> Construct a synthetic control group by matching treated units to similar untreated units on observable characteristics. Requires the unconfoundedness assumption: there are no unmeasured confounders — which is strong and often questionable.</li>
+</ul>
+
+
+<h2>Quick Reference</h2>
+
+<div class="box">
+    <div class="box-label">Key numbers to memorise</div>
+    <ul style="margin:0">
+        <li>\(\alpha = 0.05\) — standard significance level (Type I error rate)</li>
+        <li>\(1 - \beta = 0.80\) — standard power; \(\beta = 0.20\) Type II error rate</li>
+        <li>\(z_{0.975} = 1.96\), \(z_{0.80} = 0.84\) — the two critical z-scores</li>
+        <li>\((1.96 + 0.84)^2 \approx 7.84\) → rounds to 8 → leading constant 16 for equal-group formula</li>
+        <li>\(n \approx 16\sigma^2 / \delta^2\) per variant (equal sizes, standard \(\alpha\) and power)</li>
+        <li>Duration = \(n\) ÷ units per day; minimum 1 week</li>
+        <li>SRM test: \(\chi^2_1\) goodness-of-fit on observed vs. expected 50/50 split</li>
+        <li>Multiple testing with \(N\) metrics: Bonferroni sets \(\alpha_{\text{individual}} = 0.05/N\)</li>
+    </ul>
+</div>
+
+<div class="box">
+    <div class="box-label">A/B testing framework — 8-step walkthrough</div>
+    <ol style="margin:0">
+        <li>Clarify the business goal; sketch the user funnel and identify where the treatment intervenes.</li>
+        <li>Define success metric (MAST criteria), driver metrics, and guardrail metrics.</li>
+        <li>State H₀ and H₁; set \(\alpha = 0.05\), power \(= 0.80\), MDE from the business context.</li>
+        <li>Choose randomisation unit (user-level preferred); confirm it matches or is coarser than the unit of analysis.</li>
+        <li>Estimate \(n\) using \(16\sigma^2/\delta^2\); compute duration; flag the one-week minimum.</li>
+        <li>Describe validity checks before looking at results: SRM, A/A test, external factors, novelty and primacy.</li>
+        <li>Interpret: p-value vs. α, CI vs. δ_min, which of the four CI patterns applies, multiple comparison correction if needed.</li>
+        <li>Make a launch decision: metric trade-offs, cost of shipping, risk appetite, gradual ramp-up plan.</li>
+    </ol>
+</div>
+
+</body>
+</html>

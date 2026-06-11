@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-KVBPX8VW');</script>
+    <!-- End Google Tag Manager -->
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="John Searle's Chinese Room argument — the thought experiment that asks whether a machine perfectly mimicking understanding actually understands anything at all.">
+    <link rel="icon" type="image/svg+xml" href="../images/favicon.svg">
+    <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon-32.png">
+    <link rel="apple-touch-icon" href="../images/apple-touch-icon.png">
+    <title>Searle's Chinese Room | Prashanth Shankar</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+
+    <style>
+        *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+        html { font-size: 16px; scroll-behavior: smooth; }
+        body {
+            background: #fff;
+            color: #000;
+            font-family: 'Inter', -apple-system, sans-serif;
+            font-weight: 400;
+            line-height: 1.7;
+        }
+        ::selection { background: #000; color: #fff; }
+
+        .page {
+            max-width: 720px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        header {
+            padding: 2.5rem 0 0;
+        }
+
+        .back-link {
+            font-size: 0.75rem;
+            font-weight: 400;
+            letter-spacing: 0.04em;
+            color: #000;
+            text-decoration: none;
+            transition: opacity 0.2s ease;
+        }
+        .back-link:hover { opacity: 0.5; }
+
+        article {
+            padding: 4rem 0 3rem;
+        }
+
+        article h1 {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 2.6rem;
+            font-weight: 600;
+            line-height: 1.15;
+            margin-bottom: 1rem;
+        }
+
+        .deck {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.25rem;
+            font-style: italic;
+            line-height: 1.5;
+            color: #000;
+            margin-bottom: 2.5rem;
+        }
+
+        article h2 {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.8rem;
+            font-weight: 600;
+            line-height: 1.2;
+            margin: 3rem 0 1rem;
+        }
+
+        article p {
+            font-size: 0.95rem;
+            font-weight: 300;
+            line-height: 1.75;
+            margin-bottom: 1rem;
+        }
+
+        article em {
+            font-style: italic;
+        }
+
+        .pullquote {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.35rem;
+            font-style: italic;
+            line-height: 1.45;
+            padding: 1.5rem 0 1.5rem 1.5rem;
+            border-left: 2px solid #000;
+            margin: 2rem 0;
+            color: #000;
+        }
+
+        .figure {
+            margin: 2.5rem 0;
+        }
+        .figure svg {
+            display: block;
+            width: 100%;
+            height: auto;
+            max-width: 640px;
+            margin: 0 auto;
+        }
+        .caption {
+            font-size: 0.78rem;
+            color: #666;
+            text-align: center;
+            margin-top: 0.8rem;
+            line-height: 1.5;
+            font-style: italic;
+            font-family: 'Cormorant Garamond', serif;
+        }
+
+        hr.divider {
+            border: none;
+            border-top: 1px solid #000;
+            margin: 3rem 0;
+        }
+
+        .references {
+            font-size: 0.8rem;
+            color: #555;
+            line-height: 1.7;
+            margin-top: 2rem;
+        }
+        .references h3 {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: #000;
+            margin-bottom: 0.75rem;
+        }
+        .references ol {
+            padding-left: 1.2rem;
+        }
+        .references li {
+            margin-bottom: 0.35rem;
+        }
+
+        footer {
+            padding: 2rem 0 3rem;
+            font-size: 0.75rem;
+            color: #666;
+        }
+        footer a { color: inherit; text-decoration: underline; text-underline-offset: 0.2em; }
+    </style>
+</head>
+<body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KVBPX8VW" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+    <div class="page">
+        <header>
+            <a href="index.html" class="back-link">&larr; Wonderland</a>
+        </header>
+
+        <article>
+            <h1>Searle's Chinese Room</h1>
+            <p class="deck">In 1980, John Searle locked an English speaker in a room with a stack of Chinese symbols and a rulebook, and asked whether the room could think. The answer turned out to be the most contested sentence in the philosophy of mind.</p>
+
+            <p>By the late 1970s, a particular optimism had taken hold in artificial intelligence. If the mind was a kind of program &mdash; if thinking was the manipulation of symbols according to formal rules &mdash; then a computer running the right program would not merely <em>simulate</em> a mind. It would <em>be</em> one. The position was called <em>strong AI</em>, and its champions were not shy about it. Marvin Minsky declared that the brain is a meat machine. Allen Newell and Herbert Simon offered the &ldquo;physical symbol system hypothesis&rdquo;: symbol manipulation, properly arranged, is necessary and sufficient for intelligent action.</p>
+
+            <p>In 1980, the philosopher John Searle published an eight-page paper in <em>Behavioral and Brain Sciences</em> titled &ldquo;Minds, Brains, and Programs.&rdquo; It contained a thought experiment, an argument from that thought experiment, and a flat denial. The argument has been picked over for forty-five years. The denial has not gone away.</p>
+
+            <h2>The room</h2>
+
+            <p>Imagine, Searle says, that you &mdash; a monoglot English speaker who knows no Chinese &mdash; are shut inside a room. Through one slot, slips of paper come in. They are covered in Chinese characters. Through another slot, you push slips back out. You have, inside the room, an enormous rulebook, written in English. The rulebook tells you, for any sequence of symbols you might receive, exactly which sequence of symbols to send back. You do not understand the symbols. You shuffle them by shape.</p>
+
+            <p>From outside the room, things look different. The slips going in are questions in Chinese. The slips coming out are answers, in fluent and apt Chinese, indistinguishable from those of a native speaker. The room passes the Turing test. The room appears to understand.</p>
+
+            <div class="figure">
+                <svg viewBox="0 0 640 300" xmlns="http://www.w3.org/2000/svg">
+                    <!-- The room -->
+                    <rect x="170" y="50" width="300" height="200" stroke="#000" stroke-width="1.5" fill="#fff"/>
+                    <text x="320" y="38" font-family="'Cormorant Garamond', serif" font-style="italic" font-size="14" fill="#666" text-anchor="middle">the room</text>
+
+                    <!-- Person inside -->
+                    <circle cx="320" cy="130" r="18" stroke="#000" stroke-width="1.2" fill="#fff"/>
+                    <path d="M 302 168 L 302 200 L 338 200 L 338 168" stroke="#000" stroke-width="1.2" fill="none"/>
+                    <text x="320" y="225" font-family="'Cormorant Garamond', serif" font-style="italic" font-size="13" fill="#000" text-anchor="middle">monoglot English speaker</text>
+
+                    <!-- Rulebook -->
+                    <rect x="240" y="90" width="40" height="28" stroke="#000" stroke-width="1" fill="#fff"/>
+                    <line x1="246" y1="98" x2="274" y2="98" stroke="#000" stroke-width="0.6"/>
+                    <line x1="246" y1="104" x2="274" y2="104" stroke="#000" stroke-width="0.6"/>
+                    <line x1="246" y1="110" x2="274" y2="110" stroke="#000" stroke-width="0.6"/>
+                    <text x="260" y="135" font-family="'Cormorant Garamond', serif" font-style="italic" font-size="11" fill="#666" text-anchor="middle">rulebook</text>
+
+                    <!-- Symbol baskets -->
+                    <rect x="360" y="86" width="40" height="32" stroke="#000" stroke-width="1" fill="#fff"/>
+                    <text x="380" y="106" font-family="serif" font-size="14" fill="#000" text-anchor="middle">&#26159;</text>
+                    <text x="380" y="135" font-family="'Cormorant Garamond', serif" font-style="italic" font-size="11" fill="#666" text-anchor="middle">symbols</text>
+
+                    <!-- Input slot -->
+                    <line x1="100" y1="120" x2="170" y2="120" stroke="#000" stroke-width="1" marker-end="url(#sarrow)"/>
+                    <text x="60" y="108" font-family="'Cormorant Garamond', serif" font-style="italic" font-size="13" fill="#000">question</text>
+                    <text x="60" y="124" font-family="serif" font-size="13" fill="#000">&#20320;&#22909;?</text>
+
+                    <!-- Output slot -->
+                    <line x1="470" y1="180" x2="540" y2="180" stroke="#000" stroke-width="1" marker-end="url(#sarrow)"/>
+                    <text x="555" y="168" font-family="'Cormorant Garamond', serif" font-style="italic" font-size="13" fill="#000">answer</text>
+                    <text x="555" y="184" font-family="serif" font-size="13" fill="#000">&#25105;&#24456;&#22909;</text>
+
+                    <defs>
+                        <marker id="sarrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+                            <path d="M 0 0 L 10 5 L 0 10 z" fill="#000"/>
+                        </marker>
+                    </defs>
+
+                    <text x="320" y="278" font-family="'Cormorant Garamond', serif" font-style="italic" font-size="14" fill="#666" text-anchor="middle">syntactic input &rarr; syntactic output, with no understanding inside</text>
+                </svg>
+                <p class="caption">The Chinese Room. From outside, the room speaks Chinese. From inside, no one does.</p>
+            </div>
+
+            <p>Searle's question is brutal in its simplicity. <em>Do you understand Chinese?</em> Obviously not. You never see meanings; you see only shapes. You consult the book, you copy out an answer, you push it through the slot. The book understands nothing &mdash; it is paper. The room as a whole produces correct Chinese output, but the only candidate for an understander, the person inside, is by stipulation lost.</p>
+
+            <p>Yet you, in that room, are doing exactly what a digital computer does when it runs a natural-language program: receiving symbols, applying formal rules, emitting symbols. If you don't understand Chinese while doing it, neither does the computer.</p>
+
+            <h2>Syntax is not semantics</h2>
+
+            <p>The argument compresses into three premises and a conclusion that Searle laid out almost as a syllogism:</p>
+
+            <p class="pullquote">Programs are formal (syntactic). Minds have content (semantic). Syntax by itself is neither sufficient for, nor constitutive of, semantics. Therefore programs are not minds.</p>
+
+            <p>The middle premise is the one Searle keeps coming back to. A program, viewed properly, is a specification of how to push symbols around based on their shapes alone. Meaning &mdash; what those symbols are <em>about</em>, what they <em>refer to</em>, why the word &ldquo;water&rdquo; latches onto water and not onto whisky &mdash; is not anywhere in the rulebook. The rulebook is just more shapes. You can stack shapes as high as you like and never reach reference, and reference is what thinking traffics in.</p>
+
+            <div class="figure">
+                <svg viewBox="0 0 640 240" xmlns="http://www.w3.org/2000/svg">
+                    <!-- Left side: syntax -->
+                    <rect x="40" y="50" width="240" height="150" stroke="#000" stroke-width="1" fill="#fff"/>
+                    <text x="160" y="80" font-family="'Cormorant Garamond', serif" font-size="18" font-style="italic" fill="#000" text-anchor="middle">Syntax</text>
+                    <text x="160" y="100" font-family="Inter, sans-serif" font-size="11" fill="#666" text-anchor="middle">rules on shapes</text>
+                    <g font-family="serif" font-size="20" fill="#000" text-anchor="middle">
+                        <text x="90" y="145">&#9650;</text>
+                        <text x="130" y="145">&#9670;</text>
+                        <text x="170" y="145">&#9632;</text>
+                        <text x="210" y="145">&#9711;</text>
+                        <text x="250" y="145">&#9651;</text>
+                    </g>
+                    <text x="160" y="180" font-family="'Cormorant Garamond', serif" font-style="italic" font-size="12" fill="#666" text-anchor="middle">&ldquo;if &#9650; then &#9632;&rdquo;</text>
+
+                    <!-- Wall between -->
+                    <line x1="320" y1="40" x2="320" y2="210" stroke="#000" stroke-width="1" stroke-dasharray="4 4"/>
+                    <text x="320" y="30" font-family="'Cormorant Garamond', serif" font-style="italic" font-size="13" fill="#666" text-anchor="middle">no bridge</text>
+
+                    <!-- Right side: semantics -->
+                    <rect x="360" y="50" width="240" height="150" stroke="#000" stroke-width="1" fill="#fff"/>
+                    <text x="480" y="80" font-family="'Cormorant Garamond', serif" font-size="18" font-style="italic" fill="#000" text-anchor="middle">Semantics</text>
+                    <text x="480" y="100" font-family="Inter, sans-serif" font-size="11" fill="#666" text-anchor="middle">aboutness, reference, content</text>
+                    <text x="480" y="150" font-family="'Cormorant Garamond', serif" font-style="italic" font-size="14" fill="#000" text-anchor="middle">&#9650; &mdash;&rarr; mountain</text>
+                    <text x="480" y="178" font-family="'Cormorant Garamond', serif" font-style="italic" font-size="14" fill="#000" text-anchor="middle">&#9632; &mdash;&rarr; house</text>
+
+                    <text x="320" y="225" font-family="'Cormorant Garamond', serif" font-style="italic" font-size="14" fill="#666" text-anchor="middle">Searle's claim: rules on the left never deliver content on the right.</text>
+                </svg>
+                <p class="caption">Two columns. A program lives entirely in the left one. A mind, Searle argues, requires the right one.</p>
+            </div>
+
+            <p>This is what makes the experiment more than a complaint. It is meant to <em>show</em>, by direct intuition, that you can have all the syntax in the world &mdash; perfect input&ndash;output mimicry, a flawless Turing-test pass &mdash; and still be missing the thing that mind is. The room is a counterexample to strong AI, not a polemic against it.</p>
+
+            <h2>The replies</h2>
+
+            <p>The paper was published with twenty-seven commentaries by other philosophers and scientists; Searle's responses ran to almost the length of the original article. The objections clustered into a few families.</p>
+
+            <p>The <em>systems reply</em> says: of course the person inside the room doesn't understand Chinese. Neither does any one neuron in your head understand English. It is the system as a whole &mdash; person, book, paper, room &mdash; that understands. Searle's response: fine, internalise the system. Have the person memorise the rulebook, throw the room away, perform the algorithm in their head. Now the &ldquo;system&rdquo; just is the person. The person still doesn't understand Chinese. Nothing changed but the location of the paper.</p>
+
+            <p>The <em>robot reply</em> says: the failure is that the room has no body, no senses, no traffic with the world. Wire the program to cameras, microphones and motors and meaning will flow in. Searle says imagine the robot's perceptions are themselves just more Chinese symbols handed through the slot. You, still in the room, still shuffle shapes. Causal connection to the world isn't, by itself, comprehension; if it were, a thermostat would understand temperature.</p>
+
+            <p>The <em>brain simulator reply</em> says: build the program to simulate, neuron by neuron, the firing pattern of an actual Chinese speaker's brain. Searle replies with a now-famous image &mdash; replace the rulebook with a vast plumbing network of water pipes and valves, with the person opening and closing them according to a manual. Where, in all that gurgling, is the understanding? Behaviour is duplicated. Mind, he insists, is not.</p>
+
+            <h2>What the room is still doing in the room</h2>
+
+            <p>Searle's argument has not won the field; opinion remains split, and a generation of AI researchers and philosophers &mdash; Dennett, Chalmers, Hofstadter, the Churchlands &mdash; have argued for the reverse. But the room has done something that is more useful than winning. It has forced a distinction that the discourse around machine intelligence still needs.</p>
+
+            <p>It separates <em>performance</em> from <em>understanding</em>. The Turing test rewards the first. Searle insists the second is a different question and that we should not let the first quietly answer it. Whether or not you accept his conclusion, the gap he opened is real, and it is the gap into which every modern conversation about large language models eventually falls. A system that produces fluent, contextual, often correct Chinese &mdash; or English &mdash; is not, by that fact alone, a system that knows what its words are about. It may be. It may not. The behaviour does not settle the matter.</p>
+
+            <p>The room also picks a fight with substrate independence. Strong AI assumed the medium didn't matter: a program is a program whether implemented in silicon, neurons, or a Chinese-shuffling Englishman. Searle disagrees. He thinks intentionality &mdash; the mind's capacity to be about things &mdash; is a biological phenomenon, the way photosynthesis is. We don't yet know what about brains generates it. We do know, he thinks, that mere symbol-pushing isn't enough, because if it were, then he, in the room, would understand Chinese. He doesn't. So it isn't.</p>
+
+            <p>Forty-five years on, no one has produced a refutation that everyone finds convincing, and no one has produced a system whose understanding everyone finds convincing. Both halves of that sentence keep the room locked.</p>
+
+            <hr class="divider">
+
+            <div class="references">
+                <h3>Further reading</h3>
+                <ol>
+                    <li>Searle, J. R. (1980). <em>Minds, Brains, and Programs</em>. Behavioral and Brain Sciences, 3(3), 417&ndash;457.</li>
+                    <li>Searle, J. R. (1984). <em>Minds, Brains and Science</em> &mdash; the Reith Lectures.</li>
+                    <li>Dennett, D. C. (1991). <em>Consciousness Explained</em>, chapter on Searle.</li>
+                    <li>Hofstadter, D. R. &amp; Dennett, D. C. (1981). <em>The Mind's I</em>, with reflections on Searle.</li>
+                    <li>Cole, D. (2020). &ldquo;The Chinese Room Argument,&rdquo; <em>Stanford Encyclopedia of Philosophy</em>.</li>
+                </ol>
+            </div>
+        </article>
+
+        <footer>
+            <a href="index.html">&larr; Back to Wonderland</a>
+        </footer>
+    </div>
+</body>
+</html>

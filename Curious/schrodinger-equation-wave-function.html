@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-KVBPX8VW');</script>
+    <!-- End Google Tag Manager -->
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Schr&ouml;dinger's equation, the wave function, and the quiet weirdness at the heart of quantum mechanics &mdash; what &psi; is, what it means, and why it changed physics.">
+    <link rel="icon" type="image/svg+xml" href="../images/favicon.svg">
+    <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon-32.png">
+    <link rel="apple-touch-icon" href="../images/apple-touch-icon.png">
+    <title>Schr&ouml;dinger's Equation and the Wave Function | Prashanth Shankar</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+
+    <style>
+        *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+        html { font-size: 16px; scroll-behavior: smooth; }
+        body {
+            background: #fff;
+            color: #000;
+            font-family: 'Inter', -apple-system, sans-serif;
+            font-weight: 400;
+            line-height: 1.7;
+        }
+        ::selection { background: #000; color: #fff; }
+
+        .page {
+            max-width: 720px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        header {
+            padding: 2.5rem 0 0;
+        }
+
+        .back-link {
+            font-size: 0.75rem;
+            font-weight: 400;
+            letter-spacing: 0.04em;
+            color: #000;
+            text-decoration: none;
+            transition: opacity 0.2s ease;
+        }
+        .back-link:hover { opacity: 0.5; }
+
+        article {
+            padding: 4rem 0 3rem;
+        }
+
+        article h1 {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 2.6rem;
+            font-weight: 600;
+            line-height: 1.15;
+            margin-bottom: 1rem;
+        }
+
+        .deck {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.25rem;
+            font-style: italic;
+            line-height: 1.5;
+            color: #000;
+            margin-bottom: 2.5rem;
+        }
+
+        article h2 {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.8rem;
+            font-weight: 600;
+            line-height: 1.2;
+            margin: 3rem 0 1rem;
+        }
+
+        article p {
+            font-size: 0.95rem;
+            font-weight: 300;
+            line-height: 1.75;
+            margin-bottom: 1rem;
+        }
+
+        article em {
+            font-style: italic;
+        }
+
+        .pullquote {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.35rem;
+            font-style: italic;
+            line-height: 1.45;
+            padding: 1.5rem 0 1.5rem 1.5rem;
+            border-left: 2px solid #000;
+            margin: 2rem 0;
+            color: #000;
+        }
+
+        .figure {
+            margin: 2.5rem 0;
+        }
+        .figure svg {
+            display: block;
+            width: 100%;
+            height: auto;
+            max-width: 640px;
+            margin: 0 auto;
+        }
+        .caption {
+            font-size: 0.78rem;
+            color: #666;
+            text-align: center;
+            margin-top: 0.8rem;
+            line-height: 1.5;
+            font-style: italic;
+            font-family: 'Cormorant Garamond', serif;
+        }
+
+        hr.divider {
+            border: none;
+            border-top: 1px solid #000;
+            margin: 3rem 0;
+        }
+
+        .references {
+            font-size: 0.8rem;
+            color: #555;
+            line-height: 1.7;
+            margin-top: 2rem;
+        }
+        .references h3 {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: #000;
+            margin-bottom: 0.75rem;
+        }
+        .references ol {
+            padding-left: 1.2rem;
+        }
+        .references li {
+            margin-bottom: 0.35rem;
+        }
+
+        footer {
+            padding: 2rem 0 3rem;
+            font-size: 0.75rem;
+            color: #666;
+        }
+        footer a { color: inherit; text-decoration: underline; text-underline-offset: 0.2em; }
+    </style>
+</head>
+<body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KVBPX8VW" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+    <div class="page">
+        <header>
+            <a href="index.html" class="back-link">&larr; Wonderland</a>
+        </header>
+
+        <article>
+            <h1>Schr&ouml;dinger's Equation and the Wave Function</h1>
+            <p class="deck">In 1926, Erwin Schr&ouml;dinger wrote down an equation that gave matter a wave. A century later, we still argue about what the wave is &mdash; but we cannot do physics without it.</p>
+
+            <p>Classical physics is a story about <em>things</em>: a planet has a position, a velocity, an energy, and given the forces acting on it, Newton's laws tell you exactly where it will be next. The whole edifice rests on the assumption that an object has properties of its own &mdash; sharp, definite, waiting to be measured.</p>
+
+            <p>In 1926, Erwin Schr&ouml;dinger wrote down an equation that quietly demolished this picture. It did not say things had no properties. It said something stranger: the properties of a thing are not numbers but a <em>wave</em>. From that wave, and from that wave alone, every observable fact about the system can be extracted &mdash; but only as a probability. Atoms, molecules, lasers, transistors, MRI scanners and the chemistry that holds you together all rest on this equation. Almost no one agrees on what it means.</p>
+
+            <h2>The equation Schr&ouml;dinger wrote down</h2>
+
+            <p>By 1925, physics had a problem. Light, supposedly a wave since Maxwell, was behaving like a particle in Einstein's account of the photoelectric effect. Electrons, supposedly particles since Thomson, had been shown by de Broglie to carry a wavelength of their own. Niels Bohr's model of the atom worked beautifully for hydrogen and failed embarrassingly for anything bigger. The community needed a theory.</p>
+
+            <p>Schr&ouml;dinger, on a holiday in the Swiss Alps with a mistress whose name has not survived, took de Broglie's idea seriously. If an electron is a wave, what equation governs the wave? He guessed his way to one. In one dimension, for a particle of mass <em>m</em> moving in a potential <em>V</em>, the time-dependent Schr&ouml;dinger equation reads:</p>
+
+            <p class="pullquote">i&#8463; &part;&psi;/&part;t = &minus;(&#8463;&sup2;/2m) &part;&sup2;&psi;/&part;x&sup2; + V(x) &psi;</p>
+
+            <p>The left side is how the wave changes in time. The right side, recognisably, is energy: a kinetic term and a potential term. The whole equation is, in a sense, a quantum restatement of <em>energy is conserved and waves propagate</em>. Solve it and you do not get the particle's position; you get a function, &psi;(x, t), defined everywhere in space, evolving smoothly and deterministically. The Schr&ouml;dinger equation is, by itself, as orderly as Newton's. The weirdness comes from what &psi; <em>is</em>.</p>
+
+            <h2>What &psi; means: the Born rule</h2>
+
+            <p>Schr&ouml;dinger himself thought &psi; described a smeared-out cloud of charge &mdash; an actual physical density. Within months that interpretation collapsed: a free electron, on his theory, should spread out forever, yet electrons hit photographic plates as compact dots. Max Born saw the way out. The wave is not the electron. The wave is the electron's <em>betting odds</em>.</p>
+
+            <p>Born proposed that the square of the wave function's magnitude, |&psi;(x)|&sup2;, gives the probability density of finding the particle at position <em>x</em>. The particle still arrives somewhere definite. But where it arrives is governed by an underlying wave that, until you look, spreads, interferes, and sloshes through space like ripples on a pond.</p>
+
+            <div class="figure">
+                <svg viewBox="0 0 640 260" xmlns="http://www.w3.org/2000/svg">
+                    <!-- Axes -->
+                    <g stroke="#000" stroke-width="1" fill="none">
+                        <line x1="60" y1="130" x2="600" y2="130"/>
+                        <line x1="60" y1="40" x2="60" y2="230"/>
+                    </g>
+                    <text x="610" y="134" font-family="'Cormorant Garamond', serif" font-style="italic" font-size="14" fill="#000">x</text>
+                    <text x="40" y="46" font-family="'Cormorant Garamond', serif" font-style="italic" font-size="14" fill="#000">&psi;</text>
+
+                    <!-- Wave function psi(x): damped oscillation -->
+                    <path d="M 60 130 Q 110 70 160 130 Q 210 190 260 130 Q 310 50 360 130 Q 410 210 460 130 Q 510 90 560 130"
+                          stroke="#000" stroke-width="1.5" fill="none"/>
+
+                    <!-- Probability density |psi|^2: positive bumps -->
+                    <path d="M 60 200 Q 110 155 160 200 Q 210 155 260 200 Q 310 140 360 200 Q 410 150 460 200 Q 510 170 560 200"
+                          stroke="#000" stroke-width="1" stroke-dasharray="4 3" fill="none"/>
+
+                    <!-- Labels -->
+                    <text x="190" y="62" font-family="'Cormorant Garamond', serif" font-style="italic" font-size="14" fill="#000">&psi;(x) &mdash; the wave</text>
+                    <text x="190" y="248" font-family="'Cormorant Garamond', serif" font-style="italic" font-size="14" fill="#000">|&psi;(x)|&sup2; &mdash; the probability density</text>
+                </svg>
+                <p class="caption">The wave function &psi; oscillates and goes negative. Its squared magnitude is always positive &mdash; that is what you can actually measure.</p>
+            </div>
+
+            <p>This single rule &mdash; the <em>Born rule</em> &mdash; is the bridge between the smooth quantum world and the lumpy classical one. The wave evolves deterministically. The measurement does not. Take a million identically prepared electrons, fire each one at a screen, and the dots they make trace out, with astonishing fidelity, exactly the shape of |&psi;|&sup2;.</p>
+
+            <h2>Standing waves and why atoms have shells</h2>
+
+            <p>The Schr&ouml;dinger equation explains its first miracle almost for free. Confine a particle &mdash; an electron stuck to a proton, say, or trapped between two walls &mdash; and the equation only admits certain wave shapes as solutions, the way a guitar string only admits certain harmonics. The wave has to fit. Each shape carries a definite energy. So the energies of a confined quantum system are not a continuum. They are a <em>ladder</em>.</p>
+
+            <div class="figure">
+                <svg viewBox="0 0 640 260" xmlns="http://www.w3.org/2000/svg">
+                    <!-- The "box" walls -->
+                    <line x1="80" y1="30" x2="80" y2="230" stroke="#000" stroke-width="2"/>
+                    <line x1="560" y1="30" x2="560" y2="230" stroke="#000" stroke-width="2"/>
+                    <line x1="80" y1="230" x2="560" y2="230" stroke="#000" stroke-width="1"/>
+
+                    <!-- n = 1: half a sine -->
+                    <path d="M 80 80 Q 320 30 560 80" stroke="#000" stroke-width="1.5" fill="none"/>
+                    <text x="40" y="84" font-family="'Cormorant Garamond', serif" font-style="italic" font-size="14" fill="#000">n=1</text>
+
+                    <!-- n = 2: one full sine -->
+                    <path d="M 80 140 Q 200 90 320 140 Q 440 190 560 140" stroke="#000" stroke-width="1.5" fill="none"/>
+                    <text x="40" y="144" font-family="'Cormorant Garamond', serif" font-style="italic" font-size="14" fill="#000">n=2</text>
+
+                    <!-- n = 3: 1.5 sines -->
+                    <path d="M 80 200 Q 160 160 240 200 Q 320 240 400 200 Q 480 160 560 200" stroke="#000" stroke-width="1.5" fill="none"/>
+                    <text x="40" y="204" font-family="'Cormorant Garamond', serif" font-style="italic" font-size="14" fill="#000">n=3</text>
+
+                    <!-- Caption inside -->
+                    <text x="320" y="22" font-family="'Cormorant Garamond', serif" font-style="italic" font-size="14" fill="#666" text-anchor="middle">allowed wave shapes inside a box</text>
+                </svg>
+                <p class="caption">A particle confined to a box can only carry wave shapes that vanish at the walls. Each shape is one rung on an energy ladder.</p>
+            </div>
+
+            <p>This is, mechanically, why atoms have discrete spectra. An electron bound to a nucleus is a confined wave; only certain three-dimensional shapes &mdash; the famous <em>orbitals</em> &mdash; are allowed; each shape has its own energy; jumps between them emit or absorb photons of fixed colour. Bohr's mysterious quantum leaps stop being mysterious. They are notes on a string. Chemistry becomes a branch of acoustics.</p>
+
+            <h2>What the equation refuses to tell us</h2>
+
+            <p>For all its predictive power, the Schr&ouml;dinger equation leaves a hole. It tells you how &psi; evolves between measurements, perfectly. It does not tell you what happens <em>during</em> a measurement. Before you look, &psi; is spread over many possibilities at once. After, the detector clicks at one location. Where did the rest of the wave go? Did it collapse? Was the collapse physical? Was there ever a collapse at all?</p>
+
+            <p>A century of attempted answers &mdash; Copenhagen's pragmatic shrug, Everett's many worlds, Bohm's hidden trajectories, the spontaneous-collapse theories of Ghirardi, Rimini and Weber &mdash; have all made the same predictions and none have closed the question. The mathematics is unchallenged. The metaphysics is open. Schr&ouml;dinger himself, who never accepted Born's probabilistic interpretation, dreamed up his cat in 1935 precisely to dramatise how absurd the situation looked when you scaled it up.</p>
+
+            <p>And yet the equation runs the world. Every transistor in the device you're reading this on is a Schr&ouml;dinger problem solved in silicon. Every drug that binds to a receptor binds because the orbitals fit. The most successful equation in the history of physics is also the one whose meaning we understand least &mdash; a reminder that prediction and comprehension are not the same thing, and that nature, when pushed, has a habit of being weirder than we are willing to imagine.</p>
+
+            <hr class="divider">
+
+            <div class="references">
+                <h3>Further reading</h3>
+                <ol>
+                    <li>Schr&ouml;dinger, E. (1926). <em>An Undulatory Theory of the Mechanics of Atoms and Molecules</em>. Physical Review, 28(6).</li>
+                    <li>Born, M. (1926). <em>Zur Quantenmechanik der Sto&szlig;vorg&auml;nge</em> (On the quantum mechanics of collisions).</li>
+                    <li>Feynman, R. P., Leighton, R. B. &amp; Sands, M. (1965). <em>The Feynman Lectures on Physics</em>, Volume III, chapters 1&ndash;3.</li>
+                    <li>Griffiths, D. J. (2018). <em>Introduction to Quantum Mechanics</em>, 3rd edition.</li>
+                    <li>Becker, A. (2018). <em>What Is Real? The Unfinished Quest for the Meaning of Quantum Physics</em>.</li>
+                </ol>
+            </div>
+        </article>
+
+        <footer>
+            <a href="index.html">&larr; Back to Wonderland</a>
+        </footer>
+    </div>
+</body>
+</html>

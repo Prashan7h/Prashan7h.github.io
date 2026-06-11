@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-KVBPX8VW');</script>
+    <!-- End Google Tag Manager -->
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Noether's theorem — how Emmy Noether proved that every continuous symmetry of nature gives rise to a conservation law, reorganising the whole of physics.">
+    <link rel="icon" type="image/svg+xml" href="../images/favicon.svg">
+    <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon-32.png">
+    <link rel="apple-touch-icon" href="../images/apple-touch-icon.png">
+    <title>Noether's Theorem | Prashanth Shankar</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+
+    <style>
+        *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+        html { font-size: 16px; scroll-behavior: smooth; }
+        body {
+            background: #fff;
+            color: #000;
+            font-family: 'Inter', -apple-system, sans-serif;
+            font-weight: 400;
+            line-height: 1.7;
+        }
+        ::selection { background: #000; color: #fff; }
+
+        .page {
+            max-width: 720px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        header {
+            padding: 2.5rem 0 0;
+        }
+
+        .back-link {
+            font-size: 0.75rem;
+            font-weight: 400;
+            letter-spacing: 0.04em;
+            color: #000;
+            text-decoration: none;
+            transition: opacity 0.2s ease;
+        }
+        .back-link:hover { opacity: 0.5; }
+
+        article {
+            padding: 4rem 0 3rem;
+        }
+
+        article h1 {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 2.6rem;
+            font-weight: 600;
+            line-height: 1.15;
+            margin-bottom: 1rem;
+        }
+
+        .deck {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.25rem;
+            font-style: italic;
+            line-height: 1.5;
+            color: #000;
+            margin-bottom: 2.5rem;
+        }
+
+        article h2 {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.8rem;
+            font-weight: 600;
+            line-height: 1.2;
+            margin: 3rem 0 1rem;
+        }
+
+        article p {
+            font-size: 0.95rem;
+            font-weight: 300;
+            line-height: 1.75;
+            margin-bottom: 1rem;
+        }
+
+        article em {
+            font-style: italic;
+        }
+
+        .pullquote {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.35rem;
+            font-style: italic;
+            line-height: 1.45;
+            padding: 1.5rem 0 1.5rem 1.5rem;
+            border-left: 2px solid #000;
+            margin: 2rem 0;
+            color: #000;
+        }
+
+        .figure {
+            margin: 2.5rem 0;
+        }
+        .figure svg {
+            display: block;
+            width: 100%;
+            height: auto;
+            max-width: 640px;
+            margin: 0 auto;
+        }
+        .caption {
+            font-size: 0.78rem;
+            color: #666;
+            text-align: center;
+            margin-top: 0.8rem;
+            line-height: 1.5;
+            font-style: italic;
+            font-family: 'Cormorant Garamond', serif;
+        }
+
+        hr.divider {
+            border: none;
+            border-top: 1px solid #000;
+            margin: 3rem 0;
+        }
+
+        .references {
+            font-size: 0.8rem;
+            color: #555;
+            line-height: 1.7;
+            margin-top: 2rem;
+        }
+        .references h3 {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: #000;
+            margin-bottom: 0.75rem;
+        }
+        .references ol {
+            padding-left: 1.2rem;
+        }
+        .references li {
+            margin-bottom: 0.35rem;
+        }
+
+        footer {
+            padding: 2rem 0 3rem;
+            font-size: 0.75rem;
+            color: #666;
+        }
+        footer a { color: inherit; text-decoration: underline; text-underline-offset: 0.2em; }
+    </style>
+</head>
+<body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KVBPX8VW" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+    <div class="page">
+        <header>
+            <a href="index.html" class="back-link">&larr; Wonderland</a>
+        </header>
+
+        <article>
+            <h1>Noether's Theorem</h1>
+            <p class="deck">In 1918 a mathematician barred from a paid professorship proved why energy, momentum and electric charge can never simply vanish &mdash; and in doing so handed physics a new way to think.</p>
+
+            <p>Conservation laws are the bedrock of physics. Energy is never created or destroyed; momentum is conserved; so is angular momentum, and electric charge. Students learn them as separate commandments, each backed by its own pile of experimental evidence. For most of history that is exactly how physicists treated them &mdash; as brute facts about the world, discovered one by one, true because we keep checking and they keep holding.</p>
+
+            <p>Then Emmy Noether asked a deeper question: <em>why</em> are these particular quantities conserved, and not others? Her answer, published in 1918, is one of the most beautiful results in all of science. Every conservation law, she showed, is the shadow of a symmetry. They are not independent facts at all. They are the same fact, seen from different angles.</p>
+
+            <h2>A puzzle about energy</h2>
+
+            <p>The theorem was born out of a crisis. Einstein had just published general relativity, and something seemed wrong with energy. In the curved, dynamic spacetime of the new theory, the familiar law of energy conservation became slippery &mdash; it was not even clear it held. David Hilbert and Felix Klein, two of the greatest mathematicians of the age, were stuck. So they invited Emmy Noether to G&ouml;ttingen to sort it out.</p>
+
+            <p>Noether was already a formidable algebraist, but the University of G&ouml;ttingen would not grant a woman a professorship. Hilbert was reduced to advertising her lectures under his own name. &ldquo;I do not see that the sex of the candidate is an argument against her admission,&rdquo; he reportedly told the faculty senate. &ldquo;We are a university, not a bathhouse.&rdquo; Working from this absurd position, Noether produced a theorem that dissolved the energy puzzle and reached far beyond it.</p>
+
+            <p>What she found was that the troublesome behaviour of energy in general relativity was not a flaw. It was a clue. Conservation laws are tied to symmetries, and general relativity has a richer, more flexible kind of symmetry than older theories &mdash; which is exactly why its energy bookkeeping looks so different.</p>
+
+            <h2>The theorem in one sentence</h2>
+
+            <p>Here is the whole idea, stripped to its core:</p>
+
+            <p class="pullquote">For every continuous symmetry of the laws of nature, there is a corresponding quantity that is conserved.</p>
+
+            <p>A &ldquo;symmetry&rdquo; here means a change you can make that leaves the laws looking exactly the same. &ldquo;Continuous&rdquo; means you can make the change by any amount, however small &mdash; sliding, rotating, waiting &mdash; rather than a discrete flip. Each such symmetry pairs off with one conserved quantity, and the pairing is exact.</p>
+
+            <div class="figure">
+                <svg viewBox="0 0 640 290" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                        <marker id="arrowA" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+                            <path d="M 0 0 L 10 5 L 0 10 z" fill="#000"/>
+                        </marker>
+                    </defs>
+                    <text x="320" y="28" font-family="'Cormorant Garamond', serif" font-style="italic" font-size="16" fill="#000" text-anchor="middle">A symmetry of the laws &#8594; a quantity that never changes</text>
+                    <!-- left boxes: symmetries -->
+                    <g stroke="#000" stroke-width="1" fill="#fff">
+                        <rect x="40" y="56" width="250" height="56"/>
+                        <rect x="40" y="134" width="250" height="56"/>
+                        <rect x="40" y="212" width="250" height="56"/>
+                    </g>
+                    <g font-family="'Cormorant Garamond', serif" font-size="17" fill="#000">
+                        <text x="58" y="80">Symmetry in time</text>
+                        <text x="58" y="158">Symmetry in space</text>
+                        <text x="58" y="236">Symmetry in direction</text>
+                    </g>
+                    <g font-family="Inter, sans-serif" font-size="11" fill="#666">
+                        <text x="58" y="100">the laws hold the same tomorrow</text>
+                        <text x="58" y="178">the laws hold the same elsewhere</text>
+                        <text x="58" y="256">no direction is special (rotation)</text>
+                    </g>
+                    <!-- right boxes: conserved quantities -->
+                    <g stroke="#000" stroke-width="1" fill="#fff">
+                        <rect x="420" y="56" width="180" height="56"/>
+                        <rect x="420" y="134" width="180" height="56"/>
+                        <rect x="420" y="212" width="180" height="56"/>
+                    </g>
+                    <g font-family="'Cormorant Garamond', serif" font-size="17" fill="#000" text-anchor="middle">
+                        <text x="510" y="90">Energy</text>
+                        <text x="510" y="168">Momentum</text>
+                        <text x="510" y="246">Angular momentum</text>
+                    </g>
+                    <!-- arrows -->
+                    <g stroke="#000" stroke-width="1.5" fill="none">
+                        <path d="M 300 84 L 412 84" marker-end="url(#arrowA)"/>
+                        <path d="M 300 162 L 412 162" marker-end="url(#arrowA)"/>
+                        <path d="M 300 240 L 412 240" marker-end="url(#arrowA)"/>
+                    </g>
+                </svg>
+                <p class="caption">Noether's pairing. Each continuous symmetry of the laws of physics corresponds to exactly one conserved quantity.</p>
+            </div>
+
+            <p>The three classic cases are worth holding in your head, because they turn vague physical intuitions into something precise. If the laws of physics are the same today as they will be tomorrow &mdash; if there is no special moment in time &mdash; then <em>energy</em> is conserved. If the laws are the same here as they are a metre to the left &mdash; if space has no special place &mdash; then <em>momentum</em> is conserved. And if no direction in space is privileged over another, so that you can rotate your whole experiment and get the same result, then <em>angular momentum</em> is conserved.</p>
+
+            <p>Read that again and notice how strange it is. The reason a spinning skater speeds up as she pulls her arms in &mdash; conservation of angular momentum &mdash; turns out to be a statement that the universe has no preferred direction. The conservation of energy is a statement that the laws do not care what time it is. These are not coincidences that happen to line up. Noether proved they are logically welded together.</p>
+
+            <h2>Why a symmetry hides a conservation law</h2>
+
+            <p>You can feel the mechanism with a simple picture. Imagine a ball rolling on a landscape, where the height of the landscape stands for the ball's potential energy.</p>
+
+            <div class="figure">
+                <svg viewBox="0 0 640 250" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                        <marker id="arrowB" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+                            <path d="M 0 0 L 10 5 L 0 10 z" fill="#000"/>
+                        </marker>
+                    </defs>
+                    <text x="175" y="34" font-family="'Cormorant Garamond', serif" font-style="italic" font-size="16" fill="#000" text-anchor="middle">Flat ground</text>
+                    <text x="470" y="34" font-family="'Cormorant Garamond', serif" font-style="italic" font-size="16" fill="#000" text-anchor="middle">Tilted ground</text>
+
+                    <!-- Panel A: flat -->
+                    <line x1="40" y1="150" x2="310" y2="150" stroke="#000" stroke-width="1.5"/>
+                    <circle cx="95" cy="138" r="12" fill="#fff" stroke="#000" stroke-width="1"/>
+                    <circle cx="225" cy="138" r="12" fill="#fff" stroke="#000" stroke-width="1" stroke-dasharray="3 3"/>
+                    <g stroke="#000" stroke-width="1.5" fill="none">
+                        <path d="M 112 138 L 168 138" marker-end="url(#arrowB)"/>
+                        <path d="M 242 138 L 298 138" marker-end="url(#arrowB)"/>
+                    </g>
+                    <text x="175" y="205" font-family="'Cormorant Garamond', serif" font-style="italic" font-size="15" fill="#000" text-anchor="middle">Same everywhere &#8594; no force along it</text>
+                    <text x="175" y="227" font-family="Inter, sans-serif" font-size="11" fill="#666" text-anchor="middle">momentum stays constant</text>
+
+                    <!-- Panel B: tilted -->
+                    <line x1="350" y1="120" x2="610" y2="182" stroke="#000" stroke-width="1.5"/>
+                    <circle cx="392" cy="118" r="12" fill="#fff" stroke="#000" stroke-width="1"/>
+                    <g stroke="#000" stroke-width="1.5" fill="none">
+                        <path d="M 410 132 L 452 142" marker-end="url(#arrowB)"/>
+                        <path d="M 470 150 L 548 170" marker-end="url(#arrowB)"/>
+                    </g>
+                    <text x="470" y="205" font-family="'Cormorant Garamond', serif" font-style="italic" font-size="15" fill="#000" text-anchor="middle">Slopes &#8594; a force appears</text>
+                    <text x="470" y="227" font-family="Inter, sans-serif" font-size="11" fill="#666" text-anchor="middle">momentum keeps changing</text>
+                </svg>
+                <p class="caption">The mechanism. Where the landscape looks the same wherever you slide it, momentum is conserved; tilt it and the symmetry &mdash; and the conservation law &mdash; break together.</p>
+            </div>
+
+            <p>If the landscape is perfectly flat &mdash; the same height everywhere &mdash; then it looks identical no matter how far you slide it sideways. That is a translation symmetry. A ball on flat ground feels no force along it, so it keeps whatever momentum it has, forever. Now tilt the landscape. The moment it slopes, sliding it sideways changes things: the symmetry is broken. And precisely then the ball feels a force, accelerates, and its momentum starts to change. <em>Where the symmetry breaks, the conservation law breaks with it.</em></p>
+
+            <p>This is the engine of Noether's proof, made rigorous through the mathematics of the <em>action</em> &mdash; a single quantity that nature appears to extremise along any real path. If the action is left unchanged by some continuous tweak, a short calculation squeezes out a quantity whose rate of change is exactly zero. Symmetry in, conservation out, with no room for argument.</p>
+
+            <h2>How it reorganized physics</h2>
+
+            <p>Before Noether, symmetry was an aesthetic afterthought &mdash; a pleasing feature some equations happened to have. After her, the logic ran the other way. If you want to know what a theory conserves, look at its symmetries first. Symmetry became the starting point, and conservation laws the consequence.</p>
+
+            <p>This reversal is how modern physics is actually built. Twentieth-century particle physics uncovered more abstract symmetries &mdash; not shifts in space or time, but rotations in internal mathematical spaces that describe the fields themselves. These are the <em>gauge symmetries</em>. Run them through Noether's theorem and out drops the conservation of electric charge, and then the very form of the forces between particles. The Standard Model, our deepest current theory of matter, is essentially a catalogue of symmetries with Noether's theorem applied to each one.</p>
+
+            <p>It also explains absences. If a symmetry is only approximate, the matching conservation law is only approximately true &mdash; a loophole physicists actively hunt for, because a broken symmetry can betray new physics. And in general relativity, where Noether's story began, the flexible symmetry of curved spacetime is exactly why global energy conservation behaves so subtly: the theorem told us to expect it.</p>
+
+            <p>Emmy Noether died in 1935, still without the academic standing her work deserved. Einstein, in a letter to the <em>New York Times</em>, called her the most significant creative mathematical genius produced since the higher education of women began. More than a century on, every physicist who reaches for a conservation law is, knowingly or not, leaning on her insight: that the deepest regularities of the universe are not arbitrary gifts, but the visible signature of what stays the same when everything else moves.</p>
+
+            <hr class="divider">
+
+            <div class="references">
+                <h3>Further reading</h3>
+                <ol>
+                    <li>Noether, E. (1918). <em>Invariante Variationsprobleme</em>. Nachrichten der Gesellschaft der Wissenschaften zu G&ouml;ttingen.</li>
+                    <li>Byers, N. (1996). <em>E. Noether's Discovery of the Deep Connection Between Symmetries and Conservation Laws</em>.</li>
+                    <li>Feynman, R. (1965). <em>The Character of Physical Law</em>, chapter 4 &mdash; Symmetry in Physical Law.</li>
+                    <li>Neuenschwander, D. E. (2011). <em>Emmy Noether's Wonderful Theorem</em>. Johns Hopkins University Press.</li>
+                </ol>
+            </div>
+        </article>
+
+        <footer>
+            <a href="index.html">&larr; Back to Wonderland</a>
+        </footer>
+    </div>
+</body>
+</html>

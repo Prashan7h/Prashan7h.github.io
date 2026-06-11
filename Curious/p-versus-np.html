@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-KVBPX8VW');</script>
+    <!-- End Google Tag Manager -->
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="P versus NP — why some problems are easy to check but seem impossibly hard to solve, what NP-completeness means, and the million-dollar question at the heart of computer science.">
+    <link rel="icon" type="image/svg+xml" href="../images/favicon.svg">
+    <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon-32.png">
+    <link rel="apple-touch-icon" href="../images/apple-touch-icon.png">
+    <title>P versus NP | Prashanth Shankar</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+
+    <style>
+        *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+        html { font-size: 16px; scroll-behavior: smooth; }
+        body {
+            background: #fff;
+            color: #000;
+            font-family: 'Inter', -apple-system, sans-serif;
+            font-weight: 400;
+            line-height: 1.7;
+        }
+        ::selection { background: #000; color: #fff; }
+
+        .page {
+            max-width: 720px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        header {
+            padding: 2.5rem 0 0;
+        }
+
+        .back-link {
+            font-size: 0.75rem;
+            font-weight: 400;
+            letter-spacing: 0.04em;
+            color: #000;
+            text-decoration: none;
+            transition: opacity 0.2s ease;
+        }
+        .back-link:hover { opacity: 0.5; }
+
+        article {
+            padding: 4rem 0 3rem;
+        }
+
+        article h1 {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 2.6rem;
+            font-weight: 600;
+            line-height: 1.15;
+            margin-bottom: 1rem;
+        }
+
+        .deck {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.25rem;
+            font-style: italic;
+            line-height: 1.5;
+            color: #000;
+            margin-bottom: 2.5rem;
+        }
+
+        article h2 {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.8rem;
+            font-weight: 600;
+            line-height: 1.2;
+            margin: 3rem 0 1rem;
+        }
+
+        article p {
+            font-size: 0.95rem;
+            font-weight: 300;
+            line-height: 1.75;
+            margin-bottom: 1rem;
+        }
+
+        article em {
+            font-style: italic;
+        }
+
+        .pullquote {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.35rem;
+            font-style: italic;
+            line-height: 1.45;
+            padding: 1.5rem 0 1.5rem 1.5rem;
+            border-left: 2px solid #000;
+            margin: 2rem 0;
+            color: #000;
+        }
+
+        .figure {
+            margin: 2.5rem 0;
+        }
+        .figure svg {
+            display: block;
+            width: 100%;
+            height: auto;
+            max-width: 640px;
+            margin: 0 auto;
+        }
+        .caption {
+            font-size: 0.78rem;
+            color: #666;
+            text-align: center;
+            margin-top: 0.8rem;
+            line-height: 1.5;
+            font-style: italic;
+            font-family: 'Cormorant Garamond', serif;
+        }
+
+        hr.divider {
+            border: none;
+            border-top: 1px solid #000;
+            margin: 3rem 0;
+        }
+
+        .references {
+            font-size: 0.8rem;
+            color: #555;
+            line-height: 1.7;
+            margin-top: 2rem;
+        }
+        .references h3 {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: #000;
+            margin-bottom: 0.75rem;
+        }
+        .references ol {
+            padding-left: 1.2rem;
+        }
+        .references li {
+            margin-bottom: 0.35rem;
+        }
+
+        footer {
+            padding: 2rem 0 3rem;
+            font-size: 0.75rem;
+            color: #666;
+        }
+        footer a { color: inherit; text-decoration: underline; text-underline-offset: 0.2em; }
+    </style>
+</head>
+<body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KVBPX8VW" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+    <div class="page">
+        <header>
+            <a href="index.html" class="back-link">&larr; Wonderland</a>
+        </header>
+
+        <article>
+            <h1>P versus NP</h1>
+            <p class="deck">Some problems are easy to check but seem impossibly hard to solve. Whether those two things are secretly the same is the deepest open question in computer science &mdash; and worth a million dollars.</p>
+
+            <p>Picture a finished jigsaw puzzle. Glance at it and you can tell in a second whether it's correct: every piece fits, the picture is whole. Now picture the same puzzle dumped out in a heap. Assembling it from scratch is an afternoon of patient, exhausting trial and error. <em>Checking</em> a solution is trivial; <em>finding</em> one is hard.</p>
+
+            <p>That gap &mdash; between recognising an answer and producing one &mdash; is not a quirk of jigsaws. It shows up in scheduling, in circuit design, in protein structure, in cracking codes. And it hides a question that has resisted the world's best minds for half a century: when something is easy to check, must it also, somewhere, be easy to solve? That question is called <strong>P versus NP</strong>. The Clay Mathematics Institute lists it among its seven Millennium Prize Problems, with a million-dollar reward for a proof either way. Almost every expert bets the answer is &ldquo;no.&rdquo; Nobody can prove it.</p>
+
+            <h2>Easy to check, hard to find</h2>
+
+            <p>Consider a Sudoku grid. If I hand you a completed grid, you can verify it in moments: scan each row, column, and box for repeats. But if I hand you a blank one &mdash; or a large, fiendish variant &mdash; finding the solution may demand a great deal of searching. The same asymmetry runs through multiplication and its inverse. Multiplying two large prime numbers is the work of an instant. Going backwards &mdash; taking the product and recovering the original primes, the problem of <em>factoring</em> &mdash; is so hard that much of the internet's encryption rests on the difficulty.</p>
+
+            <p>Computer scientists make this precise with two classes of problem. <strong>P</strong> is the set of problems a computer can <em>solve</em> quickly &mdash; loosely, in a number of steps that grows as a polynomial in the size of the input (like <em>n</em>, <em>n</em>&sup2;, or <em>n</em>&sup3;). <strong>NP</strong> is the set of problems whose answers a computer can <em>check</em> quickly, given a candidate solution. The Sudoku grid, the assembled jigsaw, the factored number: each is hard to find but fast to verify, so each lives in NP.</p>
+
+            <p>One direction is obvious. If you can solve a problem quickly, you can certainly check an answer quickly &mdash; just solve it yourself and compare. So everything in P is also in NP; P sits inside NP. The trillion-dollar question is whether the reverse holds. Is every quickly-checkable problem also quickly-solvable? Is NP really just P wearing a disguise?</p>
+
+            <div class="figure">
+                <svg viewBox="0 0 640 340" xmlns="http://www.w3.org/2000/svg">
+                    <!-- Outer ellipse: NP -->
+                    <ellipse cx="320" cy="180" rx="300" ry="150" stroke="#000" stroke-width="1" fill="#fff"/>
+                    <text x="320" y="48" font-family="'Cormorant Garamond', serif" font-size="22" font-style="italic" fill="#000" text-anchor="middle">NP &mdash; easy to check</text>
+                    <!-- Inner ellipse: P -->
+                    <ellipse cx="205" cy="215" rx="135" ry="85" stroke="#000" stroke-width="1" fill="#fff"/>
+                    <text x="205" y="210" font-family="'Cormorant Garamond', serif" font-size="22" font-style="italic" fill="#000" text-anchor="middle">P</text>
+                    <text x="205" y="232" font-family="Inter, sans-serif" font-size="11" fill="#666" text-anchor="middle">easy to solve</text>
+                    <!-- Inner ellipse: NP-complete -->
+                    <ellipse cx="468" cy="160" rx="128" ry="78" stroke="#000" stroke-width="1" fill="#fff"/>
+                    <text x="468" y="150" font-family="'Cormorant Garamond', serif" font-size="18" font-style="italic" fill="#000" text-anchor="middle">NP-complete</text>
+                    <text x="468" y="172" font-family="Inter, sans-serif" font-size="11" fill="#666" text-anchor="middle">the hardest in NP</text>
+                </svg>
+                <p class="caption">Drawn the way almost everyone bets it looks: P sits strictly inside NP, with the NP-complete problems marooned at the hard frontier, outside P. If it turned out that P&nbsp;=&nbsp;NP, all three regions would collapse into one.</p>
+            </div>
+
+            <h2>The keystone: NP-completeness</h2>
+
+            <p>For a while these were just two interesting categories. Then, in 1971, Stephen Cook proved something that reorganised the whole landscape. He showed that one particular problem &mdash; <em>Boolean satisfiability</em>, or SAT, the question of whether a logical formula can be made true by some choice of true/false inputs &mdash; is, in a precise sense, the <em>hardest</em> problem in NP. Every other problem in NP can be efficiently translated into it. Leonid Levin reached the same conclusion independently in the Soviet Union, and we call the result the Cook&ndash;Levin theorem.</p>
+
+            <p>The translation trick is called a <em>reduction</em>. If problem A can be rewritten as problem B using only a quick, polynomial-time transformation, then any fast solution to B hands you a fast solution to A for free. The year after Cook's paper, Richard Karp showed that twenty-one famous problems &mdash; among them the Travelling Salesman problem, graph colouring, and the knapsack problem &mdash; all reduce to one another in this way. They form an interlocked club: the <strong>NP-complete</strong> problems.</p>
+
+            <p>Here is what makes the club extraordinary. Because every NP-complete problem reduces to every other, and because every problem in NP reduces to any one of them, they rise or fall together. Discover a genuinely fast algorithm for a <em>single</em> NP-complete problem and you would, in one stroke, have a fast algorithm for all of them &mdash; and for every problem in NP. P would equal NP. Conversely, prove that just one of them cannot have a fast algorithm, and they are all condemned, and P is forever smaller than NP. Thousands of problems across mathematics, biology, logistics, and economics have since been shown to be NP-complete. They are, deep down, the same problem.</p>
+
+            <div class="figure">
+                <svg viewBox="0 0 640 320" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                        <marker id="ar2" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+                            <path d="M 0 0 L 10 5 L 0 10 z" fill="#000"/>
+                        </marker>
+                    </defs>
+                    <!-- Edges -->
+                    <g stroke="#000" stroke-width="1" fill="none">
+                        <line x1="288" y1="72" x2="160" y2="130" marker-end="url(#ar2)"/>
+                        <line x1="352" y1="72" x2="490" y2="130" marker-end="url(#ar2)"/>
+                        <line x1="110" y1="166" x2="170" y2="246" marker-end="url(#ar2)"/>
+                        <line x1="525" y1="166" x2="475" y2="246" marker-end="url(#ar2)"/>
+                        <line x1="262" y1="264" x2="404" y2="264" marker-end="url(#ar2)"/>
+                    </g>
+                    <!-- Nodes -->
+                    <g stroke="#000" stroke-width="1" fill="#fff">
+                        <rect x="275" y="38" width="90" height="34" rx="6"/>
+                        <rect x="48" y="130" width="124" height="34" rx="6"/>
+                        <rect x="485" y="130" width="92" height="34" rx="6"/>
+                        <rect x="98" y="246" width="164" height="34" rx="6"/>
+                        <rect x="404" y="246" width="120" height="34" rx="6"/>
+                    </g>
+                    <g font-family="Inter, sans-serif" font-size="13" fill="#000" text-anchor="middle">
+                        <text x="320" y="60">SAT</text>
+                        <text x="110" y="152">3-Colouring</text>
+                        <text x="531" y="152">Clique</text>
+                        <text x="180" y="268" font-size="12">Travelling Salesman</text>
+                        <text x="464" y="268">Subset Sum</text>
+                    </g>
+                    <text x="320" y="308" font-family="'Cormorant Garamond', serif" font-style="italic" font-size="14" fill="#666" text-anchor="middle">arrow = &ldquo;reduces to&rdquo; (a fast polynomial-time translation)</text>
+                </svg>
+                <p class="caption">A handful of NP-complete problems. Each can be translated into the others, so a single fast algorithm anywhere in this web would solve every problem in it &mdash; and all of NP besides.</p>
+            </div>
+
+            <h2>Why anyone should care</h2>
+
+            <p>It would be easy to mistake this for an abstraction that only logicians could love. It is the opposite. Suppose, against all expectation, that P&nbsp;=&nbsp;NP, and that the fast algorithm is not just theoretical but practical. The consequences would be staggering. Most modern cryptography assumes that certain problems &mdash; factoring, discrete logarithms &mdash; are hard to solve but easy to check. If solving became as easy as checking, secure communication as we know it would dissolve overnight.</p>
+
+            <p>But the upheaval would cut both ways, and the second edge is stranger. A vast range of human endeavour comes down to searching an enormous space of possibilities for one that satisfies a condition we can recognise. Designing a more efficient aircraft wing; finding a mathematical proof; folding a protein into its lowest-energy shape; composing a melody that obeys the rules of harmony. In each case we can <em>check</em> a candidate far more easily than we can <em>conceive</em> it. If P&nbsp;=&nbsp;NP, that gap closes. The computer scientist Scott Aaronson put the point memorably:</p>
+
+            <p class="pullquote">&ldquo;If P&nbsp;=&nbsp;NP, then the world would be a profoundly different place than we usually assume it to be. There would be no special value in &lsquo;creative leaps,&rsquo; no fundamental gap between solving a problem and recognizing the solution once it's found.&rdquo;</p>
+
+            <p>To appreciate a symphony would be to be able to compose one; to follow a proof would be to be able to discover it. The very texture of creativity rests, quietly, on the assumption that finding is harder than checking.</p>
+
+            <p>Which is why the consensus runs the other way: P almost certainly does <em>not</em> equal NP. The world looks like a place where some things are genuinely hard. The harder question is why, after fifty years, we cannot prove it. The trouble is that proving a problem has <em>no</em> fast algorithm means ruling out every possible clever shortcut, including ones nobody has imagined. Researchers have even mapped out why their own tools keep failing &mdash; results with names like <em>relativization</em> and the <em>natural proofs</em> barrier show that the obvious techniques cannot, in principle, settle the matter. A proof, when it comes, will need an idea we do not yet have.</p>
+
+            <p>So the question sits there: simple to state, understood by a curious teenager in an afternoon, and utterly immovable. It marks the boundary between what we can dream up and what we can merely admire &mdash; and we still do not know exactly where that boundary lies.</p>
+
+            <hr class="divider">
+
+            <div class="references">
+                <h3>Further reading</h3>
+                <ol>
+                    <li>Cook, S. (1971). <em>The Complexity of Theorem-Proving Procedures</em>.</li>
+                    <li>Karp, R. (1972). <em>Reducibility Among Combinatorial Problems</em>.</li>
+                    <li>Clay Mathematics Institute (2000). <em>The Millennium Prize Problems &mdash; P vs NP</em>.</li>
+                    <li>Aaronson, S. (2016). <em>P =? NP</em>, in <em>Open Problems in Mathematics</em>.</li>
+                    <li>Sipser, M. (2012). <em>Introduction to the Theory of Computation</em>, ch. 7.</li>
+                </ol>
+            </div>
+        </article>
+
+        <footer>
+            <a href="index.html">&larr; Back to Wonderland</a>
+        </footer>
+    </div>
+</body>
+</html>

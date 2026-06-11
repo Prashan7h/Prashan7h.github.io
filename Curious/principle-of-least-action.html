@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-KVBPX8VW');</script>
+    <!-- End Google Tag Manager -->
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="The principle of least action — from Fermat's light rays to Lagrangian mechanics to Feynman's path integral — how a single idea quietly underwrites all of physics.">
+    <link rel="icon" type="image/svg+xml" href="../images/favicon.svg">
+    <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon-32.png">
+    <link rel="apple-touch-icon" href="../images/apple-touch-icon.png">
+    <title>The Principle of Least Action | Prashanth Shankar</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+
+    <style>
+        *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+        html { font-size: 16px; scroll-behavior: smooth; }
+        body {
+            background: #fff;
+            color: #000;
+            font-family: 'Inter', -apple-system, sans-serif;
+            font-weight: 400;
+            line-height: 1.7;
+        }
+        ::selection { background: #000; color: #fff; }
+
+        .page {
+            max-width: 720px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        header {
+            padding: 2.5rem 0 0;
+        }
+
+        .back-link {
+            font-size: 0.75rem;
+            font-weight: 400;
+            letter-spacing: 0.04em;
+            color: #000;
+            text-decoration: none;
+            transition: opacity 0.2s ease;
+        }
+        .back-link:hover { opacity: 0.5; }
+
+        article {
+            padding: 4rem 0 3rem;
+        }
+
+        article h1 {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 2.6rem;
+            font-weight: 600;
+            line-height: 1.15;
+            margin-bottom: 1rem;
+        }
+
+        .deck {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.25rem;
+            font-style: italic;
+            line-height: 1.5;
+            color: #000;
+            margin-bottom: 2.5rem;
+        }
+
+        article h2 {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.8rem;
+            font-weight: 600;
+            line-height: 1.2;
+            margin: 3rem 0 1rem;
+        }
+
+        article p {
+            font-size: 0.95rem;
+            font-weight: 300;
+            line-height: 1.75;
+            margin-bottom: 1rem;
+        }
+
+        article em {
+            font-style: italic;
+        }
+
+        .pullquote {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.35rem;
+            font-style: italic;
+            line-height: 1.45;
+            padding: 1.5rem 0 1.5rem 1.5rem;
+            border-left: 2px solid #000;
+            margin: 2rem 0;
+            color: #000;
+        }
+
+        .figure {
+            margin: 2.5rem 0;
+        }
+        .figure svg {
+            display: block;
+            width: 100%;
+            height: auto;
+            max-width: 640px;
+            margin: 0 auto;
+        }
+        .caption {
+            font-size: 0.78rem;
+            color: #666;
+            text-align: center;
+            margin-top: 0.8rem;
+            line-height: 1.5;
+            font-style: italic;
+            font-family: 'Cormorant Garamond', serif;
+        }
+
+        hr.divider {
+            border: none;
+            border-top: 1px solid #000;
+            margin: 3rem 0;
+        }
+
+        .references {
+            font-size: 0.8rem;
+            color: #555;
+            line-height: 1.7;
+            margin-top: 2rem;
+        }
+        .references h3 {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: #000;
+            margin-bottom: 0.75rem;
+        }
+        .references ol {
+            padding-left: 1.2rem;
+        }
+        .references li {
+            margin-bottom: 0.35rem;
+        }
+
+        footer {
+            padding: 2rem 0 3rem;
+            font-size: 0.75rem;
+            color: #666;
+        }
+        footer a { color: inherit; text-decoration: underline; text-underline-offset: 0.2em; }
+    </style>
+</head>
+<body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KVBPX8VW" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+    <div class="page">
+        <header>
+            <a href="index.html" class="back-link">&larr; Wonderland</a>
+        </header>
+
+        <article>
+            <h1>The Principle of Least Action</h1>
+            <p class="deck">Nature appears to be lazy. Out of every conceivable path, light, planets, and electrons all seem to pick the one that costs the least of a single quantity &mdash; and from that one fact, almost all of physics falls out.</p>
+
+            <p>Newton tells you to follow the forces. Push, pull, accelerate; integrate the equations forward in time. It is a local, step-by-step story. It works. But beneath it lies a stranger, older idea that says you do not need to track the forces at all. You can describe the entire history of a system by asking a single global question: of all the conceivable ways the system could have gone from where it started to where it ends, which one makes a certain quantity &mdash; the <em>action</em> &mdash; as small as possible?</p>
+
+            <p>That is the principle of least action. And, remarkably, you can rebuild Newton, Maxwell, Einstein, and even quantum mechanics on top of it.</p>
+
+            <h2>Fermat: light takes the fastest path</h2>
+
+            <p>The first hint came from optics. In the 1660s, Pierre de Fermat noticed that the law of refraction &mdash; the bending of light at the boundary between water and air &mdash; could be derived from a startlingly economical assumption: light travels between two points along whichever route takes the least time.</p>
+
+            <p>In a uniform medium the fastest route is a straight line, which is why light appears to travel in straight lines. But when light has to cross from a fast medium (air) into a slow one (water), it can save total travel time by entering the water at a shallower angle, even though that lengthens the path. This is exactly Snell's law &mdash; not as a piece of bookkeeping about angles, but as a consequence of a deeper economy.</p>
+
+            <div class="figure">
+                <svg viewBox="0 0 640 280" xmlns="http://www.w3.org/2000/svg">
+                    <!-- Air / Water boundary -->
+                    <rect x="20" y="20" width="600" height="120" fill="#fff" stroke="#000" stroke-width="1"/>
+                    <rect x="20" y="140" width="600" height="120" fill="#fafafa" stroke="#000" stroke-width="1"/>
+                    <text x="34" y="42" font-family="'Cormorant Garamond', serif" font-style="italic" font-size="15" fill="#666">air &mdash; light fast</text>
+                    <text x="34" y="160" font-family="'Cormorant Garamond', serif" font-style="italic" font-size="15" fill="#666">water &mdash; light slow</text>
+
+                    <!-- Start point A -->
+                    <circle cx="120" cy="60" r="5" fill="#000"/>
+                    <text x="120" y="48" font-family="'Cormorant Garamond', serif" font-size="16" text-anchor="middle" fill="#000">A</text>
+
+                    <!-- End point B -->
+                    <circle cx="520" cy="220" r="5" fill="#000"/>
+                    <text x="520" y="244" font-family="'Cormorant Garamond', serif" font-size="16" text-anchor="middle" fill="#000">B</text>
+
+                    <!-- Candidate path 1: straight line (too slow) -->
+                    <line x1="120" y1="60" x2="520" y2="220" stroke="#bbb" stroke-width="1" stroke-dasharray="4 4"/>
+                    <text x="280" y="128" font-family="'Cormorant Garamond', serif" font-style="italic" font-size="12" fill="#999">straight: slow overall</text>
+
+                    <!-- Candidate path 2: too sharp a kink -->
+                    <polyline points="120,60 380,140 520,220" fill="none" stroke="#bbb" stroke-width="1" stroke-dasharray="4 4"/>
+
+                    <!-- True path: Fermat / Snell -->
+                    <polyline points="120,60 320,140 520,220" fill="none" stroke="#000" stroke-width="2"/>
+                    <text x="200" y="105" font-family="'Cormorant Garamond', serif" font-style="italic" font-size="13" fill="#000">least-time path</text>
+
+                    <!-- Interface label -->
+                    <text x="600" y="138" font-family="Inter, sans-serif" font-size="10" fill="#666" text-anchor="end">interface</text>
+                </svg>
+                <p class="caption">Fermat's principle. Every dashed line is a path light <em>could</em> take. The black line is the one it does &mdash; the path of least time. Snell's law of refraction is exactly the condition that makes the total time stationary.</p>
+            </div>
+
+            <h2>From light to matter: Maupertuis, Euler, Lagrange</h2>
+
+            <p>If light minimises time, asked Pierre-Louis Maupertuis in the 1740s, perhaps matter minimises something too. He proposed that a moving body picks the path that minimises the integral of its momentum across the distance travelled. The argument was metaphysical (he thought it proved God preferred efficiency) and the formula was a little off. But the instinct was right.</p>
+
+            <p>Leonhard Euler tightened the maths. And in 1788, Joseph-Louis Lagrange &mdash; in his <em>M&eacute;canique analytique</em> &mdash; gave the principle its modern form. Define, for any candidate trajectory, the <em>action</em>:</p>
+
+            <p class="pullquote">S = &int; (kinetic energy &minus; potential energy) dt</p>
+
+            <p>That difference, T &minus; V, is called the Lagrangian, written <em>L</em>. The action is its accumulated total over the whole journey. The principle says: out of every imaginable wiggly path from A to B, the path nature actually takes is the one for which S is stationary &mdash; a minimum, almost always.</p>
+
+            <p>This sounds vague until you turn the crank. Demanding that S be stationary against tiny variations of the path gives you a single, beautiful equation &mdash; the Euler&ndash;Lagrange equation &mdash; and out of that equation pour <em>all</em> of Newton's laws. F = ma is not the bedrock. It is a corollary.</p>
+
+            <div class="figure">
+                <svg viewBox="0 0 640 260" xmlns="http://www.w3.org/2000/svg">
+                    <!-- Axes -->
+                    <line x1="60" y1="220" x2="600" y2="220" stroke="#000" stroke-width="1"/>
+                    <line x1="60" y1="220" x2="60" y2="40" stroke="#000" stroke-width="1"/>
+                    <text x="610" y="224" font-family="'Cormorant Garamond', serif" font-style="italic" font-size="13" fill="#000">t</text>
+                    <text x="48" y="40" font-family="'Cormorant Garamond', serif" font-style="italic" font-size="13" fill="#000">x</text>
+
+                    <!-- Endpoints A and B -->
+                    <circle cx="100" cy="190" r="5" fill="#000"/>
+                    <text x="100" y="210" font-family="'Cormorant Garamond', serif" font-size="14" text-anchor="middle" fill="#000">A</text>
+                    <circle cx="560" cy="80" r="5" fill="#000"/>
+                    <text x="560" y="70" font-family="'Cormorant Garamond', serif" font-size="14" text-anchor="middle" fill="#000">B</text>
+
+                    <!-- Candidate paths -->
+                    <path d="M 100 190 Q 330 60 560 80" fill="none" stroke="#bbb" stroke-width="1" stroke-dasharray="3 3"/>
+                    <path d="M 100 190 Q 330 220 560 80" fill="none" stroke="#bbb" stroke-width="1" stroke-dasharray="3 3"/>
+                    <path d="M 100 190 Q 220 90 360 150 Q 460 200 560 80" fill="none" stroke="#bbb" stroke-width="1" stroke-dasharray="3 3"/>
+                    <path d="M 100 190 Q 330 280 560 80" fill="none" stroke="#bbb" stroke-width="1" stroke-dasharray="3 3"/>
+
+                    <!-- True path -->
+                    <path d="M 100 190 Q 330 130 560 80" fill="none" stroke="#000" stroke-width="2"/>
+                    <text x="370" y="118" font-family="'Cormorant Garamond', serif" font-style="italic" font-size="13" fill="#000">stationary action: S minimal</text>
+
+                    <!-- Caption legend -->
+                    <line x1="80" y1="246" x2="120" y2="246" stroke="#bbb" stroke-width="1" stroke-dasharray="3 3"/>
+                    <text x="128" y="250" font-family="Inter, sans-serif" font-size="11" fill="#666">imagined paths</text>
+                    <line x1="280" y1="246" x2="320" y2="246" stroke="#000" stroke-width="2"/>
+                    <text x="328" y="250" font-family="Inter, sans-serif" font-size="11" fill="#666">actual trajectory</text>
+                </svg>
+                <p class="caption">All paths from A to B carry an action. Nature picks the one where S is stationary &mdash; nudging the path slightly in any direction barely changes S at all.</p>
+            </div>
+
+            <p>Why is this such a big deal? Because the Lagrangian is just a number. It doesn't care about your coordinate system. You can switch from Cartesian to polar to whatever-you-like, and the principle still works, mechanically, by following the same recipe. Where Newton's vectors get tangled in a rotating bowl or a swinging pendulum, the Lagrangian glides through.</p>
+
+            <h2>The same principle, in every theory we have</h2>
+
+            <p>Then it kept happening. Hamilton recast all of mechanics in this language in the 1830s. Maxwell's equations for electromagnetism can be derived from an action principle. So can Einstein's field equations of general relativity &mdash; from the Einstein&ndash;Hilbert action, a single line of mathematics whose stationary points <em>are</em> curved spacetimes. Every successful field theory in modern physics &mdash; quantum electrodynamics, the Standard Model &mdash; is specified, fundamentally, by writing down its action.</p>
+
+            <p>A physicist hunting a new theory does not start by guessing equations of motion. They guess a Lagrangian. The equations of motion fall out.</p>
+
+            <p>The deepest twist came from Richard Feynman. In classical mechanics, only the path of least action is taken &mdash; the others are imaginary. Feynman showed that, in quantum mechanics, <em>all</em> paths are taken, each weighted by a complex number whose phase is the action divided by Planck's constant. When you add up the contributions of all those paths, the ones near the classical least-action trajectory interfere constructively, and almost everything else cancels out. The classical principle becomes a statistical illusion produced by quantum interference. The reason a thrown ball follows a parabola is that, on the scale of Planck's constant, every other path it might have taken is busy cancelling its neighbours.</p>
+
+            <h2>Why this matters</h2>
+
+            <p>It is one of the strangest facts in physics that nature seems to be teleological: the path the system takes depends on where it is going. Newton's local push-and-pull is what you see; the global accounting of action is what the universe seems to be doing. The two descriptions are mathematically equivalent, but they suggest quite different intuitions about what is fundamental.</p>
+
+            <p>Whatever you make of that philosophically, the practical lesson is plain. Find the right Lagrangian, and the laws of motion are no longer something you postulate. They are something you derive. From Fermat's bent light ray to the curvature of spacetime to the path integral that underwrites every quantum field theory we have, the same instruction repeats: write down a number; make it stationary; let nature do the rest.</p>
+
+            <hr class="divider">
+
+            <div class="references">
+                <h3>Further reading</h3>
+                <ol>
+                    <li>Lagrange, J.-L. (1788). <em>M&eacute;canique analytique</em>.</li>
+                    <li>Feynman, R. P. (1964). <em>The Feynman Lectures on Physics</em>, vol. II, ch. 19 &mdash; The Principle of Least Action.</li>
+                    <li>Landau, L. D. &amp; Lifshitz, E. M. (1976). <em>Mechanics</em>, &sect;2 &mdash; The principle of least action.</li>
+                    <li>Goldstein, H., Poole, C. &amp; Safko, J. (2001). <em>Classical Mechanics</em>, 3rd ed., chapters 2 and 8.</li>
+                    <li>Feynman, R. P. &amp; Hibbs, A. R. (1965). <em>Quantum Mechanics and Path Integrals</em>.</li>
+                </ol>
+            </div>
+        </article>
+
+        <footer>
+            <a href="index.html">&larr; Back to Wonderland</a>
+        </footer>
+    </div>
+</body>
+</html>
