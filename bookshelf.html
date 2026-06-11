@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-KVBPX8VW');</script>
+    <!-- End Google Tag Manager -->
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Bookshelf — favourite books of Prashanth Shankar.">
+    <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+    <title>Bookshelf | Prashanth Shankar</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+
+    <style>
+        *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+        html { font-size: 16px; scroll-behavior: smooth; }
+        body {
+            background: #fff;
+            color: #000;
+            font-family: 'Inter', -apple-system, sans-serif;
+            font-weight: 400;
+            line-height: 1.6;
+        }
+        ::selection { background: #000; color: #fff; }
+
+        .page {
+            max-width: 720px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        header { padding: 2.5rem 0 0; }
+
+        .back-link {
+            font-size: 0.75rem;
+            font-weight: 400;
+            letter-spacing: 0.04em;
+            color: #000;
+            text-decoration: none;
+            transition: opacity 0.2s ease;
+        }
+        .back-link:hover { opacity: 0.5; }
+
+        .hero {
+            padding: 4rem 0 3rem;
+        }
+        .hero h1 {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 2.6rem;
+            font-weight: 600;
+            line-height: 1.2;
+        }
+
+        .section {
+            margin-bottom: 2.2rem;
+        }
+
+        .section-title {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.3rem;
+            font-weight: 600;
+            border-bottom: 1px solid #000;
+            padding-bottom: 0.3rem;
+            margin-bottom: 0.65rem;
+        }
+
+        .book-list {
+            list-style: disc;
+            padding-left: 1.2rem;
+            display: flex;
+            flex-direction: column;
+            gap: 0.25rem;
+        }
+
+        .book-list li {
+            font-size: 0.9rem;
+            font-weight: 300;
+            line-height: 1.6;
+        }
+
+        .book-list li span {
+            color: #666;
+        }
+
+        .book-list li.featured {
+            font-weight: 500;
+        }
+        .book-list li.featured span {
+            font-weight: 300;
+            color: #666;
+        }
+
+        .bottom-space { padding-bottom: 6rem; }
+
+        @media (max-width: 600px) {
+            .page { padding: 0 1.25rem; }
+            .hero { padding: 2.5rem 0 2rem; }
+            .hero h1 { font-size: 2rem; }
+        }
+    </style>
+
+    <script src="https://cdn.amplitude.com/script/59010539cde9503811b2e9a80e47e0b4.js"></script>
+    <script>window.amplitude.add(window.sessionReplay.plugin({sampleRate: 1}));window.amplitude.init('59010539cde9503811b2e9a80e47e0b4', {"fetchRemoteConfig":true,"autocapture":{"attribution":true,"fileDownloads":true,"formInteractions":true,"pageViews":true,"sessions":true,"elementInteractions":true}});</script>
+</head>
+<body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe aria-hidden="true" title="Google Tag Manager" src="https://www.googletagmanager.com/ns.html?id=GTM-KVBPX8VW"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+    <div class="page">
+
+        <header>
+            <a href="index.html" class="back-link">&larr; Back</a>
+        </header>
+
+        <div class="hero">
+            <h1>Bookshelf</h1>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">Ideas</h2>
+            <ul class="book-list">
+                <li class="featured">The Beginning of Infinity <span>— David Deutsch</span></li>
+                <li class="featured">The Fabric of Reality <span>— David Deutsch</span></li>
+                <li>The Science of Can and Can't <span>— Chiara Marletto</span></li>
+                <li>Gödel, Escher, Bach <span>— Douglas Hofstadter</span></li>
+                <li>The Ascent of Man <span>— Jacob Bronowski</span></li>
+                <li class="featured">A Brief History of Time <span>— Stephen Hawking</span></li>
+                <li>The Man from the Future <span>— Ananyo Bhattacharya</span></li>
+                <li>The Character of Physical Law <span>— Richard Feynman</span></li>
+                <li>Six Easy Pieces <span>— Richard Feynman</span></li>
+                <li>Six Not-So-Easy Pieces <span>— Richard Feynman</span></li>
+                <li class="featured">Surely You're Joking, Mr. Feynman! <span>— Richard Feynman</span></li>
+                <li>Decoding Reality <span>— Vlatko Vedral</span></li>
+                <li>How Language Began <span>— Daniel Everett</span></li>
+                <li>How Innovation Works <span>— Matt Ridley</span></li>
+                <li>The Wealth of Nations <span>— Adam Smith</span></li>
+                <li>The Constitution of Liberty <span>— F.A. Hayek</span></li>
+                <li>Knowledge, Evolution, and Society <span>— F.A. Hayek</span></li>
+                <li>Basic Economics <span>— Thomas Sowell</span></li>
+                <li>Artificial Intelligence: A Modern Approach <span>— Stuart Russell &amp; Peter Norvig</span></li>
+                <li>The Infinity Machine <span>— Sebastian Mallaby</span></li>
+                <li>Possible Minds <span>— John Brockman (ed.)</span></li>
+                <li>Inventing Freedom <span>— Daniel Hannan</span></li>
+                <li>The History of England <span>— Thomas Babington Macaulay</span></li>
+                <li>Principles for Dealing with the Changing World Order <span>— Ray Dalio</span></li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">Philosophy</h2>
+            <ul class="book-list">
+                <li>The Republic <span>— Plato</span></li>
+                <li>Nicomachean Ethics <span>— Aristotle</span></li>
+                <li>Politics <span>— Aristotle</span></li>
+                <li>On the Shortness of Life <span>— Seneca</span></li>
+                <li>An Enquiry Concerning Human Understanding <span>— David Hume</span></li>
+                <li>Critique of Pure Reason <span>— Immanuel Kant</span></li>
+                <li>Beyond Good and Evil <span>— Friedrich Nietzsche</span></li>
+                <li>Problems of Philosophy <span>— Bertrand Russell</span></li>
+                <li>The Story of Philosophy <span>— Will Durant</span></li>
+                <li>The Logic of Scientific Discovery <span>— Karl Popper</span></li>
+                <li class="featured">Conjectures and Refutations <span>— Karl Popper</span></li>
+                <li>Objective Knowledge <span>— Karl Popper</span></li>
+                <li class="featured">The Open Society and Its Enemies (Vol. 1 &amp; 2) <span>— Karl Popper</span></li>
+                <li>The Structure of Scientific Revolutions <span>— Thomas Kuhn</span></li>
+                <li>Physics and Philosophy <span>— Werner Heisenberg</span></li>
+                <li>What Is It Like to Be a Bat? <span>— Thomas Nagel</span></li>
+                <li>Minds, Brains, and Science <span>— John Searle</span></li>
+                <li>Consciousness Explained <span>— Daniel Dennett</span></li>
+                <li>The Emperor's New Mind <span>— Roger Penrose</span></li>
+                <li>The Limits of Thought <span>— J. Krishnamurti &amp; David Bohm</span></li>
+                <li>The Awakening of Intelligence <span>— J. Krishnamurti</span></li>
+                <li>Zen Mind, Beginner's Mind <span>— Shunryu Suzuki</span></li>
+                <li>The Roaring Silence <span>— Ngakpa Chögyam &amp; Khandro Déchen</span></li>
+                <li>Zen in the Martial Arts <span>— Joe Hyams</span></li>
+                <li>Know Thyself <span>— Mitchell S. Green</span></li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">Physics</h2>
+            <ul class="book-list">
+                <li>An Introduction to Mechanics <span>— Kleppner &amp; Kolenkow</span></li>
+                <li>Introduction to Classical Mechanics <span>— David Morin</span></li>
+                <li>The Theoretical Minimum <span>(series) — Leonard Susskind</span></li>
+                <li>Spacetime and Geometry <span>— Sean Carroll</span></li>
+                <li>Principles of Quantum Mechanics <span>— R. Shankar</span></li>
+                <li>Mastering Quantum Mechanics <span>— Barton Zwiebach</span></li>
+                <li>Introduction to Electrodynamics <span>— David J. Griffiths</span></li>
+                <li>Vibrations and Waves <span>— A.P. French</span></li>
+                <li>The Feynman Lectures on Physics <span>(Vol. 1 &amp; 2) — Feynman, Leighton &amp; Sands</span></li>
+                <li>The End of Time <span>— Julian Barbour</span></li>
+                <li>Quantum Computation and Quantum Information <span>— Nielsen &amp; Chuang</span></li>
+                <li>Quantum in Pictures <span>— Bob Coecke &amp; Stefano Gogioso</span></li>
+                <li>An Introduction to Quantum Field Theory <span>— Peskin &amp; Schroeder</span></li>
+                <li>Quantum Field Theory: Lectures of Sidney Coleman</li>
+                <li>String Theory (Vol. 1 &amp; 2) <span>— Joseph Polchinski</span></li>
+                <li>Conformal Field Theory <span>— Di Francesco, Mathieu &amp; Sénéchal</span></li>
+                <li>Introduction to Conformal Field Theory <span>— Blumenhagen &amp; Plauschinn</span></li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">Biology</h2>
+            <ul class="book-list">
+                <li class="featured">The Selfish Gene <span>— Richard Dawkins</span></li>
+                <li>The Extended Phenotype <span>— Richard Dawkins</span></li>
+                <li>The Blind Watchmaker <span>— Richard Dawkins</span></li>
+                <li>Life on the Edge <span>— Jim Al-Khalili &amp; Johnjoe McFadden</span></li>
+                <li>What Is Life? <span>— Erwin Schrödinger</span></li>
+                <li>A Thousand Brains <span>— Jeff Hawkins</span></li>
+                <li>Lifespan <span>— David Sinclair</span></li>
+                <li>Why We Die <span>— Venki Ramakrishnan</span></li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">Work</h2>
+            <ul class="book-list">
+                <li>The Almanack of Naval Ravikant <span>— Eric Jorgenson</span></li>
+                <li>Zero to One <span>— Peter Thiel</span></li>
+                <li>The Hard Thing About Hard Things <span>— Ben Horowitz</span></li>
+                <li>The Lean Startup <span>— Eric Ries</span></li>
+                <li>Rework <span>— Jason Fried &amp; David Heinemeier Hansson</span></li>
+                <li>Deep Work <span>— Cal Newport</span></li>
+                <li>So Good They Can't Ignore You <span>— Cal Newport</span></li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">Sports</h2>
+            <ul class="book-list">
+                <li>The Numbers Game <span>— Chris Anderson &amp; David Sally</span></li>
+                <li>Inverting the Pyramid <span>— Jonathan Wilson</span></li>
+                <li>Alex Ferguson: My Autobiography <span>— Alex Ferguson</span></li>
+                <li class="featured">Leading <span>— Alex Ferguson &amp; Michael Moritz</span></li>
+                <li>Bobby Fischer Teaches Chess <span>— Bobby Fischer</span></li>
+            </ul>
+        </div>
+
+        <div class="bottom-space"></div>
+
+    </div>
+</body>
+</html>
