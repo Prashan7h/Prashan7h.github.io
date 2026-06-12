@@ -34,8 +34,10 @@ jobs:
           git config user.name "worldcup-bot"
           git config user.email "actions@github.com"
           git add worldcup/
-          if git diff --cached --quiet; then
-            echo "no changes"
+          # only the build timestamp changes when there's no new data — skip those
+          if git diff --cached --quiet -- worldcup/data worldcup/matches; then
+            echo "no data changes"
+            git reset
           else
             git commit -m "worldcup: automated data refresh [skip ci]"
             git push
