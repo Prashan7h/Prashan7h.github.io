@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-KVBPX8VW');</script>
+    <!-- End Google Tag Manager -->
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="The Halting Problem — Turing's 1936 proof that some questions a computer can ask about itself can never be answered, and the long shadow it has cast across mathematics and software.">
+    <link rel="icon" type="image/svg+xml" href="../images/favicon.svg">
+    <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon-32.png">
+    <link rel="apple-touch-icon" href="../images/apple-touch-icon.png">
+    <title>The Halting Problem | Prashanth Shankar</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+
+    <style>
+        *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+        html { font-size: 16px; scroll-behavior: smooth; }
+        body {
+            background: #fff;
+            color: #000;
+            font-family: 'Inter', -apple-system, sans-serif;
+            font-weight: 400;
+            line-height: 1.7;
+        }
+        ::selection { background: #000; color: #fff; }
+
+        .page {
+            max-width: 720px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        header {
+            padding: 2.5rem 0 0;
+        }
+
+        .back-link {
+            font-size: 0.75rem;
+            font-weight: 400;
+            letter-spacing: 0.04em;
+            color: #000;
+            text-decoration: none;
+            transition: opacity 0.2s ease;
+        }
+        .back-link:hover { opacity: 0.5; }
+
+        article {
+            padding: 4rem 0 3rem;
+        }
+
+        article h1 {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 2.6rem;
+            font-weight: 600;
+            line-height: 1.15;
+            margin-bottom: 1rem;
+        }
+
+        .deck {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.25rem;
+            font-style: italic;
+            line-height: 1.5;
+            color: #000;
+            margin-bottom: 2.5rem;
+        }
+
+        article h2 {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.8rem;
+            font-weight: 600;
+            line-height: 1.2;
+            margin: 3rem 0 1rem;
+        }
+
+        article p {
+            font-size: 0.95rem;
+            font-weight: 300;
+            line-height: 1.75;
+            margin-bottom: 1rem;
+        }
+
+        article em {
+            font-style: italic;
+        }
+
+        .pullquote {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.35rem;
+            font-style: italic;
+            line-height: 1.45;
+            padding: 1.5rem 0 1.5rem 1.5rem;
+            border-left: 2px solid #000;
+            margin: 2rem 0;
+            color: #000;
+        }
+
+        .figure {
+            margin: 2.5rem 0;
+        }
+        .figure svg {
+            display: block;
+            width: 100%;
+            height: auto;
+            max-width: 640px;
+            margin: 0 auto;
+        }
+        .caption {
+            font-size: 0.78rem;
+            color: #666;
+            text-align: center;
+            margin-top: 0.8rem;
+            line-height: 1.5;
+            font-style: italic;
+            font-family: 'Cormorant Garamond', serif;
+        }
+
+        hr.divider {
+            border: none;
+            border-top: 1px solid #000;
+            margin: 3rem 0;
+        }
+
+        .references {
+            font-size: 0.8rem;
+            color: #555;
+            line-height: 1.7;
+            margin-top: 2rem;
+        }
+        .references h3 {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: #000;
+            margin-bottom: 0.75rem;
+        }
+        .references ol {
+            padding-left: 1.2rem;
+        }
+        .references li {
+            margin-bottom: 0.35rem;
+        }
+
+        footer {
+            padding: 2rem 0 3rem;
+            font-size: 0.75rem;
+            color: #666;
+        }
+        footer a { color: inherit; text-decoration: underline; text-underline-offset: 0.2em; }
+    </style>
+</head>
+<body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KVBPX8VW" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+    <div class="page">
+        <header>
+            <a href="index.html" class="back-link">&larr; Wonderland</a>
+        </header>
+
+        <article>
+            <h1>The Halting Problem</h1>
+            <p class="deck">There are questions about computers that no computer can ever answer &mdash; and a single self-referential argument shows why.</p>
+
+            <p>There is a question you can ask about any computer program that sounds completely innocent. <em>Given the program, and some input, will it eventually stop? Or will it run forever?</em></p>
+
+            <p>You would think this would be answerable. After all, computers are deterministic. The program is sitting right in front of you. The input is sitting right next to it. Surely some sufficiently clever piece of software could take both and decide.</p>
+
+            <p>In 1936, Alan Turing proved that no such software can ever exist. Not because we haven't been smart enough. Because the question, taken in full generality, is logically impossible to answer. This is the <em>Halting Problem</em>, and it remains one of the most surprising results in computer science.</p>
+
+            <h2>A reasonable-sounding question</h2>
+
+            <p>Start with what an answer would buy us. Imagine a tool &mdash; call it <em>HALTS?</em> &mdash; that takes any program P and any input x, and after some finite time tells you <em>yes, P halts on x</em>, or <em>no, P loops forever on x</em>. Just a function, returning a Boolean. Nothing exotic.</p>
+
+            <p>That tool would be miraculous. With it, your editor could warn you whenever you write an infinite loop. Mathematics would change: many famous conjectures &mdash; Goldbach's, the twin primes, the Collatz problem &mdash; can be encoded as the question of whether a particular search program ever halts. Feed them to <em>HALTS?</em> and we would know. So would any operating system; so would any contract verifier.</p>
+
+            <p>For some programs <em>HALTS?</em> is easy. A for-loop that runs ten times plainly halts. A <em>while True: pass</em> plainly doesn't. The question is whether there is <em>one general algorithm</em> that works for every program and every input. Turing showed there isn't.</p>
+
+            <div class="figure">
+                <svg viewBox="0 0 640 220" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                        <marker id="hp-arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+                            <path d="M 0 0 L 10 5 L 0 10 z" fill="#000"/>
+                        </marker>
+                    </defs>
+
+                    <!-- Inputs -->
+                    <g stroke="#000" stroke-width="1" fill="#fff">
+                        <rect x="30" y="50" width="140" height="40"/>
+                        <rect x="30" y="130" width="140" height="40"/>
+                    </g>
+                    <g font-family="'Cormorant Garamond', serif" font-size="16" font-style="italic" text-anchor="middle" fill="#000">
+                        <text x="100" y="75">program P</text>
+                        <text x="100" y="155">input x</text>
+                    </g>
+
+                    <!-- Decider box -->
+                    <rect x="240" y="70" width="160" height="80" stroke="#000" stroke-width="1.5" fill="#fff"/>
+                    <text x="320" y="105" font-family="'Cormorant Garamond', serif" font-size="22" font-weight="600" text-anchor="middle" fill="#000">HALTS?</text>
+                    <text x="320" y="128" font-family="Inter, sans-serif" font-size="11" fill="#666" text-anchor="middle">finite time, always answers</text>
+
+                    <!-- Outputs -->
+                    <g stroke="#000" stroke-width="1" fill="#fff">
+                        <rect x="470" y="50" width="140" height="40"/>
+                        <rect x="470" y="130" width="140" height="40"/>
+                    </g>
+                    <g font-family="'Cormorant Garamond', serif" font-size="16" font-style="italic" text-anchor="middle" fill="#000">
+                        <text x="540" y="75">yes &mdash; halts</text>
+                        <text x="540" y="155">no &mdash; loops</text>
+                    </g>
+
+                    <!-- Arrows in -->
+                    <g stroke="#000" stroke-width="1" fill="none">
+                        <path d="M 170 70 L 240 90" marker-end="url(#hp-arrow)"/>
+                        <path d="M 170 150 L 240 130" marker-end="url(#hp-arrow)"/>
+                        <path d="M 400 90 L 470 70" marker-end="url(#hp-arrow)"/>
+                        <path d="M 400 130 L 470 150" marker-end="url(#hp-arrow)"/>
+                    </g>
+
+                    <text x="320" y="200" font-family="'Cormorant Garamond', serif" font-style="italic" font-size="14" fill="#666" text-anchor="middle">the decider we'd love to have</text>
+                </svg>
+                <p class="caption">A hypothetical universal halt-detector. Turing's argument shows that no such machine can exist.</p>
+            </div>
+
+            <h2>Turing's diagonal trick</h2>
+
+            <p>Turing's argument is short and dazzling. It goes like this.</p>
+
+            <p><em>Suppose</em> <em>HALTS?</em> exists. We don't have to know how it works inside. We just assume it is some program that, given P and x as inputs, finishes in finite time and answers correctly.</p>
+
+            <p>Now we build a new program out of it. Call it <em>TROUBLE</em>. It takes a single input &mdash; a program P &mdash; and behaves like this:</p>
+
+            <p>Ask <em>HALTS?</em> whether P, run on itself as input, would halt. If <em>HALTS?</em> answers <em>yes</em>, deliberately enter an infinite loop. If <em>HALTS?</em> answers <em>no</em>, halt immediately.</p>
+
+            <p><em>TROUBLE</em> is just regular code. Nothing magical. It is allowed to exist if <em>HALTS?</em> is allowed to exist.</p>
+
+            <p>Now ask the fatal question: what happens when you feed <em>TROUBLE</em> itself as input to <em>TROUBLE</em>?</p>
+
+            <div class="figure">
+                <svg viewBox="0 0 640 280" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                        <marker id="hp2-arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+                            <path d="M 0 0 L 10 5 L 0 10 z" fill="#000"/>
+                        </marker>
+                    </defs>
+
+                    <!-- Central question -->
+                    <rect x="180" y="20" width="280" height="60" stroke="#000" stroke-width="1.5" fill="#fff"/>
+                    <text x="320" y="45" font-family="'Cormorant Garamond', serif" font-size="16" font-style="italic" text-anchor="middle" fill="#000">Run TROUBLE on TROUBLE</text>
+                    <text x="320" y="65" font-family="Inter, sans-serif" font-size="11" fill="#666" text-anchor="middle">ask HALTS?(TROUBLE, TROUBLE)</text>
+
+                    <!-- Branch arrows -->
+                    <g stroke="#000" stroke-width="1" fill="none">
+                        <path d="M 260 80 L 160 130" marker-end="url(#hp2-arrow)"/>
+                        <path d="M 380 80 L 480 130" marker-end="url(#hp2-arrow)"/>
+                    </g>
+                    <text x="200" y="105" font-family="Inter, sans-serif" font-size="11" fill="#666">answer: YES</text>
+                    <text x="440" y="105" font-family="Inter, sans-serif" font-size="11" fill="#666">answer: NO</text>
+
+                    <!-- Left branch -->
+                    <rect x="30" y="135" width="260" height="50" stroke="#000" stroke-width="1" fill="#fff"/>
+                    <text x="160" y="156" font-family="'Cormorant Garamond', serif" font-size="14" font-style="italic" text-anchor="middle" fill="#000">so TROUBLE was supposed to halt&hellip;</text>
+                    <text x="160" y="174" font-family="Inter, sans-serif" font-size="11" fill="#666" text-anchor="middle">but by construction it now loops forever</text>
+
+                    <!-- Right branch -->
+                    <rect x="350" y="135" width="260" height="50" stroke="#000" stroke-width="1" fill="#fff"/>
+                    <text x="480" y="156" font-family="'Cormorant Garamond', serif" font-size="14" font-style="italic" text-anchor="middle" fill="#000">so TROUBLE was supposed to loop&hellip;</text>
+                    <text x="480" y="174" font-family="Inter, sans-serif" font-size="11" fill="#666" text-anchor="middle">but by construction it now halts immediately</text>
+
+                    <!-- Arrows down to contradiction -->
+                    <g stroke="#000" stroke-width="1" fill="none">
+                        <path d="M 160 185 L 280 230" marker-end="url(#hp2-arrow)"/>
+                        <path d="M 480 185 L 360 230" marker-end="url(#hp2-arrow)"/>
+                    </g>
+
+                    <!-- Contradiction box -->
+                    <rect x="220" y="235" width="200" height="36" stroke="#000" stroke-width="1.5" fill="#000"/>
+                    <text x="320" y="259" font-family="'Cormorant Garamond', serif" font-size="16" font-style="italic" font-weight="600" text-anchor="middle" fill="#fff">contradiction</text>
+                </svg>
+                <p class="caption">Whichever way <em>HALTS?</em> answers, <em>TROUBLE</em> does the opposite. The only escape is to deny that <em>HALTS?</em> ever existed.</p>
+            </div>
+
+            <p>Either branch contradicts itself. The assumption that broke the world was that <em>HALTS?</em> exists in the first place. Therefore it does not.</p>
+
+            <p>The trick is essentially Cantor's diagonal argument re-dressed for computation. Cantor used it to show there are more real numbers than integers. Turing used the same self-referential structure to show there are more <em>problems</em> than there are programs that can solve them. Most of mathematics, in a precise sense, is not decidable by any machine.</p>
+
+            <h2>What &ldquo;undecidable&rdquo; really means</h2>
+
+            <p>It is important to be careful here. The Halting Problem is <em>not</em> saying that programs are mysterious &mdash; many specific programs are perfectly easy to analyse. It is not saying that compilers can't find bugs &mdash; many bugs are found. And it is not saying that artificial intelligence will eventually become smart enough to crack it. No amount of cleverness helps. It is not a difficulty problem; it is a logical impossibility.</p>
+
+            <p class="pullquote">For any halt-detector you build, there will always exist a program that fools it.</p>
+
+            <p>What it <em>is</em> saying: there is no single algorithm that works for <em>every</em> program. For any halt-detector you build, there will always exist a program that fools it. This sets a hard ceiling on what any tool, any verifier, any superintelligent system can ever do. It means program verification will always be partial. It means there can be no perfect antivirus that decides, for every executable, whether it will eventually misbehave. It means there are mathematical truths no formal system can ever prove &mdash; a result Kurt G&ouml;del had reached by a different route five years earlier, and which Turing's argument made vivid and mechanical.</p>
+
+            <p>It also means something subtly cheering. Computation is <em>not</em> trivial. Turing's machines are powerful enough to encode questions whose answers their own kind cannot find. They contain genuine mystery. A purely mechanical universe can still be a deep one.</p>
+
+            <h2>The shadow it casts</h2>
+
+            <p>Once Turing opened this door, undecidability spread.</p>
+
+            <p>In 1953, Henry Rice showed that <em>any non-trivial property of a program's eventual behaviour</em> is undecidable. Not just &ldquo;does it halt&rdquo; but &ldquo;does it ever print the number 5&rdquo;, &ldquo;does it ever exceed 1MB of memory&rdquo;, &ldquo;is it equivalent to this other program&rdquo;. Rice's theorem is the Halting Problem dressed up in different clothes: if you could decide any of those, you could decide halting, and we already know you can't.</p>
+
+            <p>The same idea reached complexity theory in the 1970s. Some problems are decidable in principle but require absurd resources in practice; we still don't know whether <em>P&nbsp;=&nbsp;NP</em>, and undecidability hovers behind that question too. Static analysers, type checkers and model checkers &mdash; every modern tool that reasons about programs &mdash; explicitly carves out a sublanguage where decidability is recovered. Rust's borrow checker, for instance, deliberately rejects some perfectly safe programs, because deciding safety in full generality is impossible.</p>
+
+            <p>And then there is the philosophical aftershock. The Halting Problem is the first clean place where a <em>mechanical</em> system reasons about itself and discovers a question about itself it cannot answer. It is the same structure that surfaces in G&ouml;del's incompleteness theorems, in Russell's paradox, in the liar's &ldquo;this sentence is false&rdquo;. Self-reference, taken seriously, always leaves something undecidable behind.</p>
+
+            <p>That is perhaps the deepest lesson. The world is not only stranger than we think; it is stranger than computation itself can ever decide.</p>
+
+            <hr class="divider">
+
+            <div class="references">
+                <h3>Further reading</h3>
+                <ol>
+                    <li>Turing, A. (1936). <em>On Computable Numbers, with an Application to the Entscheidungsproblem</em>.</li>
+                    <li>G&ouml;del, K. (1931). <em>On Formally Undecidable Propositions of Principia Mathematica and Related Systems</em>.</li>
+                    <li>Rice, H. (1953). <em>Classes of Recursively Enumerable Sets and Their Decision Problems</em>.</li>
+                    <li>Hofstadter, D. (1979). <em>G&ouml;del, Escher, Bach: An Eternal Golden Braid</em>.</li>
+                    <li>Sipser, M. (1996). <em>Introduction to the Theory of Computation</em>, chapter 5.</li>
+                </ol>
+            </div>
+        </article>
+
+        <footer>
+            <a href="index.html">&larr; Back to Wonderland</a>
+        </footer>
+    </div>
+</body>
+</html>
