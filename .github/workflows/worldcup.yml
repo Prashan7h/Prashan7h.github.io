@@ -1,0 +1,42 @@
+name: Update World Cup 2026 pages
+
+on:
+  schedule:
+    # every 6 hours during the tournament (Jun 11 – Jul 19, 2026)
+    - cron: "0 2,8,14,20 * 6,7 *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install -r worldcup/pipeline/requirements.txt
+
+      - name: Run pipeline
+        run: |
+          python worldcup/pipeline/fetch.py
+          python worldcup/pipeline/espn.py
+          python worldcup/pipeline/analytics.py
+          python worldcup/pipeline/render.py
+
+      - name: Commit and push if changed
+        run: |
+          git config user.name "worldcup-bot"
+          git config user.email "actions@github.com"
+          git add worldcup/
+          if git diff --cached --quiet; then
+            echo "no changes"
+          else
+            git commit -m "worldcup: automated data refresh [skip ci]"
+            git push
+          fi

@@ -1,0 +1,2873 @@
+{
+ "elo": [
+  {
+   "team": "Argentina",
+   "elo": 2120,
+   "delta": 0
+  },
+  {
+   "team": "Spain",
+   "elo": 2100,
+   "delta": 0
+  },
+  {
+   "team": "France",
+   "elo": 2050,
+   "delta": 0
+  },
+  {
+   "team": "England",
+   "elo": 2040,
+   "delta": 0
+  },
+  {
+   "team": "Brazil",
+   "elo": 2020,
+   "delta": 0
+  },
+  {
+   "team": "Portugal",
+   "elo": 2010,
+   "delta": 0
+  },
+  {
+   "team": "Netherlands",
+   "elo": 1990,
+   "delta": 0
+  },
+  {
+   "team": "Germany",
+   "elo": 1960,
+   "delta": 0
+  },
+  {
+   "team": "Belgium",
+   "elo": 1950,
+   "delta": 0
+  },
+  {
+   "team": "Croatia",
+   "elo": 1930,
+   "delta": 0
+  },
+  {
+   "team": "Morocco",
+   "elo": 1920,
+   "delta": 0
+  },
+  {
+   "team": "Uruguay",
+   "elo": 1900,
+   "delta": 0
+  },
+  {
+   "team": "Colombia",
+   "elo": 1900,
+   "delta": 0
+  },
+  {
+   "team": "Japan",
+   "elo": 1880,
+   "delta": 0
+  },
+  {
+   "team": "Mexico",
+   "elo": 1879,
+   "delta": 19
+  },
+  {
+   "team": "Ecuador",
+   "elo": 1860,
+   "delta": 0
+  },
+  {
+   "team": "Switzerland",
+   "elo": 1850,
+   "delta": 0
+  },
+  {
+   "team": "Turkey",
+   "elo": 1850,
+   "delta": 0
+  },
+  {
+   "team": "Norway",
+   "elo": 1850,
+   "delta": 0
+  },
+  {
+   "team": "South Korea",
+   "elo": 1841,
+   "delta": 21
+  },
+  {
+   "team": "USA",
+   "elo": 1840,
+   "delta": 0
+  },
+  {
+   "team": "Senegal",
+   "elo": 1840,
+   "delta": 0
+  },
+  {
+   "team": "Austria",
+   "elo": 1830,
+   "delta": 0
+  },
+  {
+   "team": "Iran",
+   "elo": 1820,
+   "delta": 0
+  },
+  {
+   "team": "Sweden",
+   "elo": 1800,
+   "delta": 0
+  },
+  {
+   "team": "Canada",
+   "elo": 1790,
+   "delta": 0
+  },
+  {
+   "team": "Egypt",
+   "elo": 1790,
+   "delta": 0
+  },
+  {
+   "team": "Algeria",
+   "elo": 1780,
+   "delta": 0
+  },
+  {
+   "team": "Ivory Coast",
+   "elo": 1780,
+   "delta": 0
+  },
+  {
+   "team": "Paraguay",
+   "elo": 1780,
+   "delta": 0
+  },
+  {
+   "team": "Australia",
+   "elo": 1780,
+   "delta": 0
+  },
+  {
+   "team": "Scotland",
+   "elo": 1760,
+   "delta": 0
+  },
+  {
+   "team": "Tunisia",
+   "elo": 1760,
+   "delta": 0
+  },
+  {
+   "team": "Bosnia & Herzegovina",
+   "elo": 1760,
+   "delta": 0
+  },
+  {
+   "team": "Ghana",
+   "elo": 1750,
+   "delta": 0
+  },
+  {
+   "team": "Czech Republic",
+   "elo": 1749,
+   "delta": -21
+  },
+  {
+   "team": "Panama",
+   "elo": 1730,
+   "delta": 0
+  },
+  {
+   "team": "South Africa",
+   "elo": 1701,
+   "delta": -19
+  },
+  {
+   "team": "Saudi Arabia",
+   "elo": 1700,
+   "delta": 0
+  },
+  {
+   "team": "Uzbekistan",
+   "elo": 1700,
+   "delta": 0
+  },
+  {
+   "team": "DR Congo",
+   "elo": 1700,
+   "delta": 0
+  },
+  {
+   "team": "Qatar",
+   "elo": 1680,
+   "delta": 0
+  },
+  {
+   "team": "New Zealand",
+   "elo": 1670,
+   "delta": 0
+  },
+  {
+   "team": "Jordan",
+   "elo": 1670,
+   "delta": 0
+  },
+  {
+   "team": "Iraq",
+   "elo": 1660,
+   "delta": 0
+  },
+  {
+   "team": "Cape Verde",
+   "elo": 1650,
+   "delta": 0
+  },
+  {
+   "team": "Curaçao",
+   "elo": 1640,
+   "delta": 0
+  },
+  {
+   "team": "Haiti",
+   "elo": 1600,
+   "delta": 0
+  }
+ ],
+ "elo_history": {
+  "Argentina": [
+   2120
+  ],
+  "Spain": [
+   2100
+  ],
+  "France": [
+   2050
+  ],
+  "England": [
+   2040
+  ],
+  "Brazil": [
+   2020
+  ],
+  "Portugal": [
+   2010
+  ],
+  "Netherlands": [
+   1990
+  ],
+  "Germany": [
+   1960
+  ],
+  "Belgium": [
+   1950
+  ],
+  "Croatia": [
+   1930
+  ],
+  "Morocco": [
+   1920
+  ],
+  "Uruguay": [
+   1900
+  ],
+  "Colombia": [
+   1900
+  ],
+  "Japan": [
+   1880
+  ],
+  "Mexico": [
+   1860,
+   1879
+  ],
+  "Ecuador": [
+   1860
+  ],
+  "Switzerland": [
+   1850
+  ],
+  "Turkey": [
+   1850
+  ],
+  "Norway": [
+   1850
+  ],
+  "USA": [
+   1840
+  ],
+  "Senegal": [
+   1840
+  ],
+  "Austria": [
+   1830
+  ],
+  "Iran": [
+   1820
+  ],
+  "South Korea": [
+   1820,
+   1841
+  ],
+  "Sweden": [
+   1800
+  ],
+  "Canada": [
+   1790
+  ],
+  "Egypt": [
+   1790
+  ],
+  "Algeria": [
+   1780
+  ],
+  "Ivory Coast": [
+   1780
+  ],
+  "Paraguay": [
+   1780
+  ],
+  "Australia": [
+   1780
+  ],
+  "Czech Republic": [
+   1770,
+   1749
+  ],
+  "Scotland": [
+   1760
+  ],
+  "Tunisia": [
+   1760
+  ],
+  "Bosnia & Herzegovina": [
+   1760
+  ],
+  "Ghana": [
+   1750
+  ],
+  "Panama": [
+   1730
+  ],
+  "South Africa": [
+   1720,
+   1701
+  ],
+  "Saudi Arabia": [
+   1700
+  ],
+  "Uzbekistan": [
+   1700
+  ],
+  "DR Congo": [
+   1700
+  ],
+  "Qatar": [
+   1680
+  ],
+  "New Zealand": [
+   1670
+  ],
+  "Jordan": [
+   1670
+  ],
+  "Iraq": [
+   1660
+  ],
+  "Cape Verde": [
+   1650
+  ],
+  "Curaçao": [
+   1640
+  ],
+  "Haiti": [
+   1600
+  ]
+ },
+ "per_match": {
+  "1": {
+   "prediction": {
+    "p1": 0.6418,
+    "pd": 0.2035,
+    "p2": 0.1544,
+    "score": [
+     2,
+     0
+    ],
+    "lambdas": [
+     2.05,
+     0.89
+    ]
+   },
+   "elo_before": [
+    1860,
+    1720
+   ],
+   "elo_delta": 18.8
+  },
+  "2": {
+   "prediction": {
+    "p1": 0.4409,
+    "pd": 0.254,
+    "p2": 0.3051,
+    "score": [
+     1,
+     1
+    ],
+    "lambdas": [
+     1.51,
+     1.21
+    ]
+   },
+   "elo_before": [
+    1820,
+    1770
+   ],
+   "elo_delta": 21.4
+  },
+  "3": {
+   "prediction": {
+    "p1": 0.4372,
+    "pd": 0.2544,
+    "p2": 0.3084,
+    "score": [
+     1,
+     1
+    ],
+    "lambdas": [
+     1.5,
+     1.22
+    ]
+   },
+   "elo_before": [
+    1749,
+    1701
+   ],
+   "elo_delta": null
+  },
+  "4": {
+   "prediction": {
+    "p1": 0.4948,
+    "pd": 0.2457,
+    "p2": 0.2595,
+    "score": [
+     1,
+     1
+    ],
+    "lambdas": [
+     1.64,
+     1.11
+    ]
+   },
+   "elo_before": [
+    1929,
+    1841
+   ],
+   "elo_delta": null
+  },
+  "5": {
+   "prediction": {
+    "p1": 0.163,
+    "pd": 0.2085,
+    "p2": 0.6283,
+    "score": [
+     0,
+     2
+    ],
+    "lambdas": [
+     0.91,
+     2.0
+    ]
+   },
+   "elo_before": [
+    1749,
+    1929
+   ],
+   "elo_delta": null
+  },
+  "6": {
+   "prediction": {
+    "p1": 0.2014,
+    "pd": 0.227,
+    "p2": 0.5714,
+    "score": [
+     0,
+     1
+    ],
+    "lambdas": [
+     0.99,
+     1.84
+    ]
+   },
+   "elo_before": [
+    1701,
+    1841
+   ],
+   "elo_delta": null
+  },
+  "7": {
+   "prediction": {
+    "p1": 0.4841,
+    "pd": 0.2476,
+    "p2": 0.2682,
+    "score": [
+     1,
+     1
+    ],
+    "lambdas": [
+     1.61,
+     1.13
+    ]
+   },
+   "elo_before": [
+    1840,
+    1760
+   ],
+   "elo_delta": null
+  },
+  "8": {
+   "prediction": {
+    "p1": 0.1724,
+    "pd": 0.2135,
+    "p2": 0.6139,
+    "score": [
+     0,
+     1
+    ],
+    "lambdas": [
+     0.93,
+     1.96
+    ]
+   },
+   "elo_before": [
+    1680,
+    1850
+   ],
+   "elo_delta": null
+  },
+  "9": {
+   "prediction": {
+    "p1": 0.4986,
+    "pd": 0.2449,
+    "p2": 0.2564,
+    "score": [
+     1,
+     1
+    ],
+    "lambdas": [
+     1.64,
+     1.11
+    ]
+   },
+   "elo_before": [
+    1850,
+    1760
+   ],
+   "elo_delta": null
+  },
+  "10": {
+   "prediction": {
+    "p1": 0.5997,
+    "pd": 0.2183,
+    "p2": 0.1819,
+    "score": [
+     1,
+     0
+    ],
+    "lambdas": [
+     1.92,
+     0.95
+    ]
+   },
+   "elo_before": [
+    1840,
+    1680
+   ],
+   "elo_delta": null
+  },
+  "11": {
+   "prediction": {
+    "p1": 0.3846,
+    "pd": 0.258,
+    "p2": 0.3573,
+    "score": [
+     1,
+     1
+    ],
+    "lambdas": [
+     1.38,
+     1.32
+    ]
+   },
+   "elo_before": [
+    1850,
+    1840
+   ],
+   "elo_delta": null
+  },
+  "12": {
+   "prediction": {
+    "p1": 0.4841,
+    "pd": 0.2476,
+    "p2": 0.2682,
+    "score": [
+     1,
+     1
+    ],
+    "lambdas": [
+     1.61,
+     1.13
+    ]
+   },
+   "elo_before": [
+    1760,
+    1680
+   ],
+   "elo_delta": null
+  },
+  "13": {
+   "prediction": {
+    "p1": 0.5131,
+    "pd": 0.2419,
+    "p2": 0.2449,
+    "score": [
+     1,
+     1
+    ],
+    "lambdas": [
+     1.68,
+     1.08
+    ]
+   },
+   "elo_before": [
+    2020,
+    1920
+   ],
+   "elo_delta": null
+  },
+  "14": {
+   "prediction": {
+    "p1": 0.1819,
+    "pd": 0.2183,
+    "p2": 0.5997,
+    "score": [
+     0,
+     1
+    ],
+    "lambdas": [
+     0.95,
+     1.92
+    ]
+   },
+   "elo_before": [
+    1600,
+    1760
+   ],
+   "elo_delta": null
+  },
+  "15": {
+   "prediction": {
+    "p1": 0.1819,
+    "pd": 0.2183,
+    "p2": 0.5997,
+    "score": [
+     0,
+     1
+    ],
+    "lambdas": [
+     0.95,
+     1.92
+    ]
+   },
+   "elo_before": [
+    1760,
+    1920
+   ],
+   "elo_delta": null
+  },
+  "16": {
+   "prediction": {
+    "p1": 0.8867,
+    "pd": 0.0756,
+    "p2": 0.0295,
+    "score": [
+     3,
+     0
+    ],
+    "lambdas": [
+     3.39,
+     0.54
+    ]
+   },
+   "elo_before": [
+    2020,
+    1600
+   ],
+   "elo_delta": null
+  },
+  "17": {
+   "prediction": {
+    "p1": 0.1009,
+    "pd": 0.1645,
+    "p2": 0.7338,
+    "score": [
+     0,
+     2
+    ],
+    "lambdas": [
+     0.76,
+     2.39
+    ]
+   },
+   "elo_before": [
+    1760,
+    2020
+   ],
+   "elo_delta": null
+  },
+  "18": {
+   "prediction": {
+    "p1": 0.8022,
+    "pd": 0.1292,
+    "p2": 0.0666,
+    "score": [
+     2,
+     0
+    ],
+    "lambdas": [
+     2.72,
+     0.67
+    ]
+   },
+   "elo_before": [
+    1920,
+    1600
+   ],
+   "elo_delta": null
+  },
+  "19": {
+   "prediction": {
+    "p1": 0.5276,
+    "pd": 0.2386,
+    "p2": 0.2337,
+    "score": [
+     1,
+     1
+    ],
+    "lambdas": [
+     1.72,
+     1.06
+    ]
+   },
+   "elo_before": [
+    1890,
+    1780
+   ],
+   "elo_delta": null
+  },
+  "20": {
+   "prediction": {
+    "p1": 0.2802,
+    "pd": 0.2501,
+    "p2": 0.4696,
+    "score": [
+     1,
+     1
+    ],
+    "lambdas": [
+     1.16,
+     1.57
+    ]
+   },
+   "elo_before": [
+    1780,
+    1850
+   ],
+   "elo_delta": null
+  },
+  "21": {
+   "prediction": {
+    "p1": 0.5276,
+    "pd": 0.2386,
+    "p2": 0.2337,
+    "score": [
+     1,
+     1
+    ],
+    "lambdas": [
+     1.72,
+     1.06
+    ]
+   },
+   "elo_before": [
+    1890,
+    1780
+   ],
+   "elo_delta": null
+  },
+  "22": {
+   "prediction": {
+    "p1": 0.4696,
+    "pd": 0.2501,
+    "p2": 0.2802,
+    "score": [
+     1,
+     1
+    ],
+    "lambdas": [
+     1.57,
+     1.16
+    ]
+   },
+   "elo_before": [
+    1850,
+    1780
+   ],
+   "elo_delta": null
+  },
+  "23": {
+   "prediction": {
+    "p1": 0.3178,
+    "pd": 0.2555,
+    "p2": 0.4266,
+    "score": [
+     1,
+     1
+    ],
+    "lambdas": [
+     1.24,
+     1.47
+    ]
+   },
+   "elo_before": [
+    1850,
+    1890
+   ],
+   "elo_delta": null
+  },
+  "24": {
+   "prediction": {
+    "p1": 0.3709,
+    "pd": 0.2582,
+    "p2": 0.3709,
+    "score": [
+     1,
+     1
+    ],
+    "lambdas": [
+     1.35,
+     1.35
+    ]
+   },
+   "elo_before": [
+    1780,
+    1780
+   ],
+   "elo_delta": null
+  },
+  "25": {
+   "prediction": {
+    "p1": 0.8022,
+    "pd": 0.1292,
+    "p2": 0.0666,
+    "score": [
+     2,
+     0
+    ],
+    "lambdas": [
+     2.72,
+     0.67
+    ]
+   },
+   "elo_before": [
+    1960,
+    1640
+   ],
+   "elo_delta": null
+  },
+  "26": {
+   "prediction": {
+    "p1": 0.2682,
+    "pd": 0.2476,
+    "p2": 0.4841,
+    "score": [
+     1,
+     1
+    ],
+    "lambdas": [
+     1.13,
+     1.61
+    ]
+   },
+   "elo_before": [
+    1780,
+    1860
+   ],
+   "elo_delta": null
+  },
+  "27": {
+   "prediction": {
+    "p1": 0.6279,
+    "pd": 0.2086,
+    "p2": 0.1632,
+    "score": [
+     2,
+     0
+    ],
+    "lambdas": [
+     2.0,
+     0.91
+    ]
+   },
+   "elo_before": [
+    1960,
+    1780
+   ],
+   "elo_delta": null
+  },
+  "28": {
+   "prediction": {
+    "p1": 0.6825,
+    "pd": 0.1874,
+    "p2": 0.1296,
+    "score": [
+     2,
+     0
+    ],
+    "lambdas": [
+     2.19,
+     0.83
+    ]
+   },
+   "elo_before": [
+    1860,
+    1640
+   ],
+   "elo_delta": null
+  },
+  "29": {
+   "prediction": {
+    "p1": 0.2017,
+    "pd": 0.2271,
+    "p2": 0.5711,
+    "score": [
+     0,
+     1
+    ],
+    "lambdas": [
+     0.99,
+     1.84
+    ]
+   },
+   "elo_before": [
+    1640,
+    1780
+   ],
+   "elo_delta": null
+  },
+  "30": {
+   "prediction": {
+    "p1": 0.2449,
+    "pd": 0.2419,
+    "p2": 0.5131,
+    "score": [
+     1,
+     1
+    ],
+    "lambdas": [
+     1.08,
+     1.68
+    ]
+   },
+   "elo_before": [
+    1860,
+    1960
+   ],
+   "elo_delta": null
+  },
+  "31": {
+   "prediction": {
+    "p1": 0.5276,
+    "pd": 0.2386,
+    "p2": 0.2337,
+    "score": [
+     1,
+     1
+    ],
+    "lambdas": [
+     1.72,
+     1.06
+    ]
+   },
+   "elo_before": [
+    1990,
+    1880
+   ],
+   "elo_delta": null
+  },
+  "32": {
+   "prediction": {
+    "p1": 0.4266,
+    "pd": 0.2555,
+    "p2": 0.3178,
+    "score": [
+     1,
+     1
+    ],
+    "lambdas": [
+     1.47,
+     1.24
+    ]
+   },
+   "elo_before": [
+    1800,
+    1760
+   ],
+   "elo_delta": null
+  },
+  "33": {
+   "prediction": {
+    "p1": 0.6418,
+    "pd": 0.2035,
+    "p2": 0.1544,
+    "score": [
+     2,
+     0
+    ],
+    "lambdas": [
+     2.05,
+     0.89
+    ]
+   },
+   "elo_before": [
+    1990,
+    1800
+   ],
+   "elo_delta": null
+  },
+  "34": {
+   "prediction": {
+    "p1": 0.2227,
+    "pd": 0.235,
+    "p2": 0.5422,
+    "score": [
+     1,
+     1
+    ],
+    "lambdas": [
+     1.04,
+     1.76
+    ]
+   },
+   "elo_before": [
+    1760,
+    1880
+   ],
+   "elo_delta": null
+  },
+  "35": {
+   "prediction": {
+    "p1": 0.4841,
+    "pd": 0.2476,
+    "p2": 0.2682,
+    "score": [
+     1,
+     1
+    ],
+    "lambdas": [
+     1.61,
+     1.13
+    ]
+   },
+   "elo_before": [
+    1880,
+    1800
+   ],
+   "elo_delta": null
+  },
+  "36": {
+   "prediction": {
+    "p1": 0.122,
+    "pd": 0.1818,
+    "p2": 0.6957,
+    "score": [
+     0,
+     2
+    ],
+    "lambdas": [
+     0.82,
+     2.24
+    ]
+   },
+   "elo_before": [
+    1760,
+    1990
+   ],
+   "elo_delta": null
+  },
+  "37": {
+   "prediction": {
+    "p1": 0.5997,
+    "pd": 0.2183,
+    "p2": 0.1819,
+    "score": [
+     1,
+     0
+    ],
+    "lambdas": [
+     1.92,
+     0.95
+    ]
+   },
+   "elo_before": [
+    1950,
+    1790
+   ],
+   "elo_delta": null
+  },
+  "38": {
+   "prediction": {
+    "p1": 0.5854,
+    "pd": 0.2228,
+    "p2": 0.1916,
+    "score": [
+     1,
+     0
+    ],
+    "lambdas": [
+     1.88,
+     0.97
+    ]
+   },
+   "elo_before": [
+    1820,
+    1670
+   ],
+   "elo_delta": null
+  },
+  "39": {
+   "prediction": {
+    "p1": 0.5566,
+    "pd": 0.2312,
+    "p2": 0.2121,
+    "score": [
+     1,
+     1
+    ],
+    "lambdas": [
+     1.8,
+     1.02
+    ]
+   },
+   "elo_before": [
+    1950,
+    1820
+   ],
+   "elo_delta": null
+  },
+  "40": {
+   "prediction": {
+    "p1": 0.2227,
+    "pd": 0.235,
+    "p2": 0.5422,
+    "score": [
+     1,
+     1
+    ],
+    "lambdas": [
+     1.04,
+     1.76
+    ]
+   },
+   "elo_before": [
+    1670,
+    1790
+   ],
+   "elo_delta": null
+  },
+  "41": {
+   "prediction": {
+    "p1": 0.3308,
+    "pd": 0.2567,
+    "p2": 0.4125,
+    "score": [
+     1,
+     1
+    ],
+    "lambdas": [
+     1.26,
+     1.44
+    ]
+   },
+   "elo_before": [
+    1790,
+    1820
+   ],
+   "elo_delta": null
+  },
+  "42": {
+   "prediction": {
+    "p1": 0.0884,
+    "pd": 0.1527,
+    "p2": 0.7578,
+    "score": [
+     0,
+     2
+    ],
+    "lambdas": [
+     0.73,
+     2.49
+    ]
+   },
+   "elo_before": [
+    1670,
+    1950
+   ],
+   "elo_delta": null
+  },
+  "43": {
+   "prediction": {
+    "p1": 0.9034,
+    "pd": 0.0621,
+    "p2": 0.0224,
+    "score": [
+     3,
+     0
+    ],
+    "lambdas": [
+     3.62,
+     0.5
+    ]
+   },
+   "elo_before": [
+    2100,
+    1650
+   ],
+   "elo_delta": null
+  },
+  "44": {
+   "prediction": {
+    "p1": 0.1458,
+    "pd": 0.1983,
+    "p2": 0.6556,
+    "score": [
+     0,
+     2
+    ],
+    "lambdas": [
+     0.87,
+     2.09
+    ]
+   },
+   "elo_before": [
+    1700,
+    1900
+   ],
+   "elo_delta": null
+  },
+  "45": {
+   "prediction": {
+    "p1": 0.8732,
+    "pd": 0.0853,
+    "p2": 0.0352,
+    "score": [
+     3,
+     0
+    ],
+    "lambdas": [
+     3.25,
+     0.56
+    ]
+   },
+   "elo_before": [
+    2100,
+    1700
+   ],
+   "elo_delta": null
+  },
+  "46": {
+   "prediction": {
+    "p1": 0.7213,
+    "pd": 0.1703,
+    "p2": 0.1077,
+    "score": [
+     2,
+     0
+    ],
+    "lambdas": [
+     2.34,
+     0.78
+    ]
+   },
+   "elo_before": [
+    1900,
+    1650
+   ],
+   "elo_delta": null
+  },
+  "47": {
+   "prediction": {
+    "p1": 0.3051,
+    "pd": 0.254,
+    "p2": 0.4409,
+    "score": [
+     1,
+     1
+    ],
+    "lambdas": [
+     1.21,
+     1.51
+    ]
+   },
+   "elo_before": [
+    1650,
+    1700
+   ],
+   "elo_delta": null
+  },
+  "48": {
+   "prediction": {
+    "p1": 0.1458,
+    "pd": 0.1983,
+    "p2": 0.6556,
+    "score": [
+     0,
+     2
+    ],
+    "lambdas": [
+     0.87,
+     2.09
+    ]
+   },
+   "elo_before": [
+    1900,
+    2100
+   ],
+   "elo_delta": null
+  },
+  "49": {
+   "prediction": {
+    "p1": 0.6691,
+    "pd": 0.1929,
+    "p2": 0.1376,
+    "score": [
+     2,
+     0
+    ],
+    "lambdas": [
+     2.14,
+     0.85
+    ]
+   },
+   "elo_before": [
+    2050,
+    1840
+   ],
+   "elo_delta": null
+  },
+  "50": {
+   "prediction": {
+    "p1": 0.1544,
+    "pd": 0.2035,
+    "p2": 0.6418,
+    "score": [
+     0,
+     2
+    ],
+    "lambdas": [
+     0.89,
+     2.05
+    ]
+   },
+   "elo_before": [
+    1660,
+    1850
+   ],
+   "elo_delta": null
+  },
+  "51": {
+   "prediction": {
+    "p1": 0.8658,
+    "pd": 0.0904,
+    "p2": 0.0383,
+    "score": [
+     3,
+     0
+    ],
+    "lambdas": [
+     3.18,
+     0.57
+    ]
+   },
+   "elo_before": [
+    2050,
+    1660
+   ],
+   "elo_delta": null
+  },
+  "52": {
+   "prediction": {
+    "p1": 0.3846,
+    "pd": 0.258,
+    "p2": 0.3573,
+    "score": [
+     1,
+     1
+    ],
+    "lambdas": [
+     1.38,
+     1.32
+    ]
+   },
+   "elo_before": [
+    1850,
+    1840
+   ],
+   "elo_delta": null
+  },
+  "53": {
+   "prediction": {
+    "p1": 0.1458,
+    "pd": 0.1983,
+    "p2": 0.6556,
+    "score": [
+     0,
+     2
+    ],
+    "lambdas": [
+     0.87,
+     2.09
+    ]
+   },
+   "elo_before": [
+    1850,
+    2050
+   ],
+   "elo_delta": null
+  },
+  "54": {
+   "prediction": {
+    "p1": 0.6279,
+    "pd": 0.2086,
+    "p2": 0.1632,
+    "score": [
+     2,
+     0
+    ],
+    "lambdas": [
+     2.0,
+     0.91
+    ]
+   },
+   "elo_before": [
+    1840,
+    1660
+   ],
+   "elo_delta": null
+  },
+  "55": {
+   "prediction": {
+    "p1": 0.8223,
+    "pd": 0.1177,
+    "p2": 0.0573,
+    "score": [
+     2,
+     0
+    ],
+    "lambdas": [
+     2.85,
+     0.64
+    ]
+   },
+   "elo_before": [
+    2120,
+    1780
+   ],
+   "elo_delta": null
+  },
+  "56": {
+   "prediction": {
+    "p1": 0.5997,
+    "pd": 0.2183,
+    "p2": 0.1819,
+    "score": [
+     1,
+     0
+    ],
+    "lambdas": [
+     1.92,
+     0.95
+    ]
+   },
+   "elo_before": [
+    1830,
+    1670
+   ],
+   "elo_delta": null
+  },
+  "57": {
+   "prediction": {
+    "p1": 0.7694,
+    "pd": 0.1468,
+    "p2": 0.0825,
+    "score": [
+     2,
+     0
+    ],
+    "lambdas": [
+     2.55,
+     0.71
+    ]
+   },
+   "elo_before": [
+    2120,
+    1830
+   ],
+   "elo_delta": null
+  },
+  "58": {
+   "prediction": {
+    "p1": 0.2337,
+    "pd": 0.2386,
+    "p2": 0.5276,
+    "score": [
+     1,
+     1
+    ],
+    "lambdas": [
+     1.06,
+     1.72
+    ]
+   },
+   "elo_before": [
+    1670,
+    1780
+   ],
+   "elo_delta": null
+  },
+  "59": {
+   "prediction": {
+    "p1": 0.3051,
+    "pd": 0.254,
+    "p2": 0.4409,
+    "score": [
+     1,
+     1
+    ],
+    "lambdas": [
+     1.21,
+     1.51
+    ]
+   },
+   "elo_before": [
+    1780,
+    1830
+   ],
+   "elo_delta": null
+  },
+  "60": {
+   "prediction": {
+    "p1": 0.0224,
+    "pd": 0.0621,
+    "p2": 0.9034,
+    "score": [
+     0,
+     3
+    ],
+    "lambdas": [
+     0.5,
+     3.62
+    ]
+   },
+   "elo_before": [
+    1670,
+    2120
+   ],
+   "elo_delta": null
+  },
+  "61": {
+   "prediction": {
+    "p1": 0.7916,
+    "pd": 0.135,
+    "p2": 0.0716,
+    "score": [
+     2,
+     0
+    ],
+    "lambdas": [
+     2.66,
+     0.68
+    ]
+   },
+   "elo_before": [
+    2010,
+    1700
+   ],
+   "elo_delta": null
+  },
+  "62": {
+   "prediction": {
+    "p1": 0.1458,
+    "pd": 0.1983,
+    "p2": 0.6556,
+    "score": [
+     0,
+     2
+    ],
+    "lambdas": [
+     0.87,
+     2.09
+    ]
+   },
+   "elo_before": [
+    1700,
+    1900
+   ],
+   "elo_delta": null
+  },
+  "63": {
+   "prediction": {
+    "p1": 0.7916,
+    "pd": 0.135,
+    "p2": 0.0716,
+    "score": [
+     2,
+     0
+    ],
+    "lambdas": [
+     2.66,
+     0.68
+    ]
+   },
+   "elo_before": [
+    2010,
+    1700
+   ],
+   "elo_delta": null
+  },
+  "64": {
+   "prediction": {
+    "p1": 0.6556,
+    "pd": 0.1983,
+    "p2": 0.1458,
+    "score": [
+     2,
+     0
+    ],
+    "lambdas": [
+     2.09,
+     0.87
+    ]
+   },
+   "elo_before": [
+    1900,
+    1700
+   ],
+   "elo_delta": null
+  },
+  "65": {
+   "prediction": {
+    "p1": 0.2337,
+    "pd": 0.2386,
+    "p2": 0.5276,
+    "score": [
+     1,
+     1
+    ],
+    "lambdas": [
+     1.06,
+     1.72
+    ]
+   },
+   "elo_before": [
+    1900,
+    2010
+   ],
+   "elo_delta": null
+  },
+  "66": {
+   "prediction": {
+    "p1": 0.3709,
+    "pd": 0.2582,
+    "p2": 0.3709,
+    "score": [
+     1,
+     1
+    ],
+    "lambdas": [
+     1.35,
+     1.35
+    ]
+   },
+   "elo_before": [
+    1700,
+    1700
+   ],
+   "elo_delta": null
+  },
+  "67": {
+   "prediction": {
+    "p1": 0.5276,
+    "pd": 0.2386,
+    "p2": 0.2337,
+    "score": [
+     1,
+     1
+    ],
+    "lambdas": [
+     1.72,
+     1.06
+    ]
+   },
+   "elo_before": [
+    2040,
+    1930
+   ],
+   "elo_delta": null
+  },
+  "68": {
+   "prediction": {
+    "p1": 0.3985,
+    "pd": 0.2575,
+    "p2": 0.344,
+    "score": [
+     1,
+     1
+    ],
+    "lambdas": [
+     1.41,
+     1.29
+    ]
+   },
+   "elo_before": [
+    1750,
+    1730
+   ],
+   "elo_delta": null
+  },
+  "69": {
+   "prediction": {
+    "p1": 0.7694,
+    "pd": 0.1468,
+    "p2": 0.0825,
+    "score": [
+     2,
+     0
+    ],
+    "lambdas": [
+     2.55,
+     0.71
+    ]
+   },
+   "elo_before": [
+    2040,
+    1750
+   ],
+   "elo_delta": null
+  },
+  "70": {
+   "prediction": {
+    "p1": 0.1458,
+    "pd": 0.1983,
+    "p2": 0.6556,
+    "score": [
+     0,
+     2
+    ],
+    "lambdas": [
+     0.87,
+     2.09
+    ]
+   },
+   "elo_before": [
+    1730,
+    1930
+   ],
+   "elo_delta": null
+  },
+  "71": {
+   "prediction": {
+    "p1": 0.0716,
+    "pd": 0.135,
+    "p2": 0.7916,
+    "score": [
+     0,
+     2
+    ],
+    "lambdas": [
+     0.68,
+     2.66
+    ]
+   },
+   "elo_before": [
+    1730,
+    2040
+   ],
+   "elo_delta": null
+  },
+  "72": {
+   "prediction": {
+    "p1": 0.6279,
+    "pd": 0.2086,
+    "p2": 0.1632,
+    "score": [
+     2,
+     0
+    ],
+    "lambdas": [
+     2.0,
+     0.91
+    ]
+   },
+   "elo_before": [
+    1930,
+    1750
+   ],
+   "elo_delta": null
+  }
+ },
+ "sims": [
+  {
+   "team": "Spain",
+   "r32": 0.9968,
+   "r16": 0.8594,
+   "qf": 0.6878,
+   "sf": 0.5198,
+   "f": 0.3785,
+   "champ": 0.2353
+  },
+  {
+   "team": "Argentina",
+   "r32": 0.9962,
+   "r16": 0.7977,
+   "qf": 0.567,
+   "sf": 0.3838,
+   "f": 0.2996,
+   "champ": 0.2026
+  },
+  {
+   "team": "Brazil",
+   "r32": 0.9842,
+   "r16": 0.7862,
+   "qf": 0.6061,
+   "sf": 0.4351,
+   "f": 0.2146,
+   "champ": 0.1044
+  },
+  {
+   "team": "France",
+   "r32": 0.9833,
+   "r16": 0.706,
+   "qf": 0.3648,
+   "sf": 0.2161,
+   "f": 0.1454,
+   "champ": 0.0837
+  },
+  {
+   "team": "England",
+   "r32": 0.9752,
+   "r16": 0.6721,
+   "qf": 0.4289,
+   "sf": 0.2032,
+   "f": 0.134,
+   "champ": 0.0741
+  },
+  {
+   "team": "Netherlands",
+   "r32": 0.9385,
+   "r16": 0.7009,
+   "qf": 0.4594,
+   "sf": 0.2415,
+   "f": 0.1312,
+   "champ": 0.0594
+  },
+  {
+   "team": "Portugal",
+   "r32": 0.9766,
+   "r16": 0.59,
+   "qf": 0.3477,
+   "sf": 0.1491,
+   "f": 0.094,
+   "champ": 0.0506
+  },
+  {
+   "team": "Germany",
+   "r32": 0.9584,
+   "r16": 0.6576,
+   "qf": 0.3861,
+   "sf": 0.1906,
+   "f": 0.0952,
+   "champ": 0.0388
+  },
+  {
+   "team": "Belgium",
+   "r32": 0.9505,
+   "r16": 0.6461,
+   "qf": 0.287,
+   "sf": 0.1598,
+   "f": 0.0767,
+   "champ": 0.0282
+  },
+  {
+   "team": "Morocco",
+   "r32": 0.931,
+   "r16": 0.6133,
+   "qf": 0.3774,
+   "sf": 0.2037,
+   "f": 0.0696,
+   "champ": 0.024
+  },
+  {
+   "team": "Uruguay",
+   "r32": 0.8967,
+   "r16": 0.5266,
+   "qf": 0.2814,
+   "sf": 0.1438,
+   "f": 0.0455,
+   "champ": 0.0138
+  },
+  {
+   "team": "Mexico",
+   "r32": 0.9894,
+   "r16": 0.6016,
+   "qf": 0.3394,
+   "sf": 0.1436,
+   "f": 0.0448,
+   "champ": 0.0134
+  },
+  {
+   "team": "Croatia",
+   "r32": 0.8891,
+   "r16": 0.4523,
+   "qf": 0.1934,
+   "sf": 0.0668,
+   "f": 0.0328,
+   "champ": 0.012
+  },
+  {
+   "team": "Japan",
+   "r32": 0.7794,
+   "r16": 0.4442,
+   "qf": 0.2121,
+   "sf": 0.0908,
+   "f": 0.0299,
+   "champ": 0.0083
+  },
+  {
+   "team": "Colombia",
+   "r32": 0.8942,
+   "r16": 0.3818,
+   "qf": 0.1436,
+   "sf": 0.045,
+   "f": 0.0199,
+   "champ": 0.0073
+  },
+  {
+   "team": "Ecuador",
+   "r32": 0.8493,
+   "r16": 0.4275,
+   "qf": 0.1899,
+   "sf": 0.0777,
+   "f": 0.0214,
+   "champ": 0.0061
+  },
+  {
+   "team": "South Korea",
+   "r32": 0.957,
+   "r16": 0.5116,
+   "qf": 0.2404,
+   "sf": 0.0879,
+   "f": 0.0238,
+   "champ": 0.0058
+  },
+  {
+   "team": "Switzerland",
+   "r32": 0.8551,
+   "r16": 0.4239,
+   "qf": 0.2193,
+   "sf": 0.0833,
+   "f": 0.0211,
+   "champ": 0.0052
+  },
+  {
+   "team": "Turkey",
+   "r32": 0.7666,
+   "r16": 0.4045,
+   "qf": 0.161,
+   "sf": 0.0701,
+   "f": 0.0168,
+   "champ": 0.0042
+  },
+  {
+   "team": "USA",
+   "r32": 0.8414,
+   "r16": 0.4364,
+   "qf": 0.1705,
+   "sf": 0.0756,
+   "f": 0.0149,
+   "champ": 0.0032
+  },
+  {
+   "team": "Iran",
+   "r32": 0.7649,
+   "r16": 0.3331,
+   "qf": 0.1135,
+   "sf": 0.0444,
+   "f": 0.0103,
+   "champ": 0.0028
+  },
+  {
+   "team": "Norway",
+   "r32": 0.7634,
+   "r16": 0.2553,
+   "qf": 0.0803,
+   "sf": 0.0296,
+   "f": 0.0097,
+   "champ": 0.0026
+  },
+  {
+   "team": "Senegal",
+   "r32": 0.7423,
+   "r16": 0.2346,
+   "qf": 0.0755,
+   "sf": 0.0269,
+   "f": 0.0087,
+   "champ": 0.0018
+  },
+  {
+   "team": "Sweden",
+   "r32": 0.5658,
+   "r16": 0.2402,
+   "qf": 0.0836,
+   "sf": 0.0294,
+   "f": 0.0067,
+   "champ": 0.0017
+  },
+  {
+   "team": "Austria",
+   "r32": 0.722,
+   "r16": 0.2421,
+   "qf": 0.0591,
+   "sf": 0.0211,
+   "f": 0.006,
+   "champ": 0.0016
+  },
+  {
+   "team": "Egypt",
+   "r32": 0.6856,
+   "r16": 0.2585,
+   "qf": 0.0776,
+   "sf": 0.0283,
+   "f": 0.0064,
+   "champ": 0.0015
+  },
+  {
+   "team": "Ivory Coast",
+   "r32": 0.6695,
+   "r16": 0.2388,
+   "qf": 0.088,
+   "sf": 0.0272,
+   "f": 0.0051,
+   "champ": 0.0012
+  },
+  {
+   "team": "Canada",
+   "r32": 0.8356,
+   "r16": 0.3426,
+   "qf": 0.1412,
+   "sf": 0.044,
+   "f": 0.0081,
+   "champ": 0.0011
+  },
+  {
+   "team": "Paraguay",
+   "r32": 0.5728,
+   "r16": 0.2302,
+   "qf": 0.0691,
+   "sf": 0.0239,
+   "f": 0.0047,
+   "champ": 0.0011
+  },
+  {
+   "team": "Australia",
+   "r32": 0.5771,
+   "r16": 0.2279,
+   "qf": 0.0742,
+   "sf": 0.0227,
+   "f": 0.0049,
+   "champ": 0.001
+  },
+  {
+   "team": "Algeria",
+   "r32": 0.5912,
+   "r16": 0.1568,
+   "qf": 0.0374,
+   "sf": 0.0114,
+   "f": 0.0028,
+   "champ": 0.0008
+  },
+  {
+   "team": "Scotland",
+   "r32": 0.5953,
+   "r16": 0.2236,
+   "qf": 0.0814,
+   "sf": 0.0224,
+   "f": 0.0036,
+   "champ": 0.0006
+  },
+  {
+   "team": "Czech Republic",
+   "r32": 0.4579,
+   "r16": 0.1449,
+   "qf": 0.0473,
+   "sf": 0.0114,
+   "f": 0.0019,
+   "champ": 0.0005
+  },
+  {
+   "team": "Bosnia & Herzegovina",
+   "r32": 0.6568,
+   "r16": 0.2195,
+   "qf": 0.0782,
+   "sf": 0.0216,
+   "f": 0.003,
+   "champ": 0.0005
+  },
+  {
+   "team": "Tunisia",
+   "r32": 0.4299,
+   "r16": 0.1563,
+   "qf": 0.0483,
+   "sf": 0.0145,
+   "f": 0.0031,
+   "champ": 0.0004
+  },
+  {
+   "team": "Ghana",
+   "r32": 0.4168,
+   "r16": 0.1059,
+   "qf": 0.0245,
+   "sf": 0.0047,
+   "f": 0.0008,
+   "champ": 0.0002
+  },
+  {
+   "team": "DR Congo",
+   "r32": 0.3728,
+   "r16": 0.0714,
+   "qf": 0.0148,
+   "sf": 0.0024,
+   "f": 0.0006,
+   "champ": 0.0001
+  },
+  {
+   "team": "Qatar",
+   "r32": 0.401,
+   "r16": 0.0895,
+   "qf": 0.0233,
+   "sf": 0.0039,
+   "f": 0.0005,
+   "champ": 0.0001
+  },
+  {
+   "team": "Panama",
+   "r32": 0.3523,
+   "r16": 0.0876,
+   "qf": 0.0206,
+   "sf": 0.0041,
+   "f": 0.0007,
+   "champ": 0.0
+  },
+  {
+   "team": "South Africa",
+   "r32": 0.3031,
+   "r16": 0.0836,
+   "qf": 0.0207,
+   "sf": 0.0046,
+   "f": 0.0005,
+   "champ": 0.0
+  },
+  {
+   "team": "Saudi Arabia",
+   "r32": 0.3767,
+   "r16": 0.0941,
+   "qf": 0.0216,
+   "sf": 0.0055,
+   "f": 0.0007,
+   "champ": 0.0
+  },
+  {
+   "team": "Uzbekistan",
+   "r32": 0.371,
+   "r16": 0.0724,
+   "qf": 0.014,
+   "sf": 0.0027,
+   "f": 0.0005,
+   "champ": 0.0
+  },
+  {
+   "team": "New Zealand",
+   "r32": 0.3119,
+   "r16": 0.0701,
+   "qf": 0.0121,
+   "sf": 0.002,
+   "f": 0.0002,
+   "champ": 0.0
+  },
+  {
+   "team": "Jordan",
+   "r32": 0.248,
+   "r16": 0.0393,
+   "qf": 0.0048,
+   "sf": 0.0007,
+   "f": 0.0,
+   "champ": 0.0
+  },
+  {
+   "team": "Iraq",
+   "r32": 0.193,
+   "r16": 0.0291,
+   "qf": 0.0051,
+   "sf": 0.0011,
+   "f": 0.0001,
+   "champ": 0.0
+  },
+  {
+   "team": "Cape Verde",
+   "r32": 0.2455,
+   "r16": 0.0482,
+   "qf": 0.0092,
+   "sf": 0.0012,
+   "f": 0.0003,
+   "champ": 0.0
+  },
+  {
+   "team": "Curaçao",
+   "r32": 0.2264,
+   "r16": 0.0418,
+   "qf": 0.0078,
+   "sf": 0.0004,
+   "f": 0.0003,
+   "champ": 0.0
+  },
+  {
+   "team": "Haiti",
+   "r32": 0.1425,
+   "r16": 0.0229,
+   "qf": 0.0036,
+   "sf": 0.0006,
+   "f": 0.0001,
+   "champ": 0.0
+  }
+ ],
+ "n_sims": 10000,
+ "upsets": [
+  {
+   "num": 2,
+   "slug": "2026-06-11-south-korea-vs-czech-republic",
+   "date": "2026-06-11",
+   "winner": "South Korea",
+   "loser": "Czech Republic",
+   "score": "2–1",
+   "win_prob": 0.441
+  }
+ ],
+ "brier": 0.3319,
+ "n_scored": 2,
+ "goal_timing": [
+  1,
+  0,
+  0,
+  1,
+  2,
+  1
+ ],
+ "top_scorers": [
+  {
+   "name": "Hwang In-Beom",
+   "goals": 1,
+   "team": "South Korea"
+  },
+  {
+   "name": "Julián Quiñones",
+   "goals": 1,
+   "team": "Mexico"
+  },
+  {
+   "name": "Ladislav Krejcí",
+   "goals": 1,
+   "team": "Czech Republic"
+  },
+  {
+   "name": "Oh Hyeon-Gyu",
+   "goals": 1,
+   "team": "South Korea"
+  },
+  {
+   "name": "Raúl Jiménez",
+   "goals": 1,
+   "team": "Mexico"
+  }
+ ],
+ "standings": {
+  "Group A": [
+   {
+    "team": "Mexico",
+    "p": 1,
+    "w": 1,
+    "d": 0,
+    "l": 0,
+    "gf": 2,
+    "ga": 0,
+    "pts": 3,
+    "gd": 2
+   },
+   {
+    "team": "South Korea",
+    "p": 1,
+    "w": 1,
+    "d": 0,
+    "l": 0,
+    "gf": 2,
+    "ga": 1,
+    "pts": 3,
+    "gd": 1
+   },
+   {
+    "team": "Czech Republic",
+    "p": 1,
+    "w": 0,
+    "d": 0,
+    "l": 1,
+    "gf": 1,
+    "ga": 2,
+    "pts": 0,
+    "gd": -1
+   },
+   {
+    "team": "South Africa",
+    "p": 1,
+    "w": 0,
+    "d": 0,
+    "l": 1,
+    "gf": 0,
+    "ga": 2,
+    "pts": 0,
+    "gd": -2
+   }
+  ],
+  "Group B": [
+   {
+    "team": "Bosnia & Herzegovina",
+    "p": 0,
+    "w": 0,
+    "d": 0,
+    "l": 0,
+    "gf": 0,
+    "ga": 0,
+    "pts": 0,
+    "gd": 0
+   },
+   {
+    "team": "Canada",
+    "p": 0,
+    "w": 0,
+    "d": 0,
+    "l": 0,
+    "gf": 0,
+    "ga": 0,
+    "pts": 0,
+    "gd": 0
+   },
+   {
+    "team": "Qatar",
+    "p": 0,
+    "w": 0,
+    "d": 0,
+    "l": 0,
+    "gf": 0,
+    "ga": 0,
+    "pts": 0,
+    "gd": 0
+   },
+   {
+    "team": "Switzerland",
+    "p": 0,
+    "w": 0,
+    "d": 0,
+    "l": 0,
+    "gf": 0,
+    "ga": 0,
+    "pts": 0,
+    "gd": 0
+   }
+  ],
+  "Group C": [
+   {
+    "team": "Brazil",
+    "p": 0,
+    "w": 0,
+    "d": 0,
+    "l": 0,
+    "gf": 0,
+    "ga": 0,
+    "pts": 0,
+    "gd": 0
+   },
+   {
+    "team": "Haiti",
+    "p": 0,
+    "w": 0,
+    "d": 0,
+    "l": 0,
+    "gf": 0,
+    "ga": 0,
+    "pts": 0,
+    "gd": 0
+   },
+   {
+    "team": "Morocco",
+    "p": 0,
+    "w": 0,
+    "d": 0,
+    "l": 0,
+    "gf": 0,
+    "ga": 0,
+    "pts": 0,
+    "gd": 0
+   },
+   {
+    "team": "Scotland",
+    "p": 0,
+    "w": 0,
+    "d": 0,
+    "l": 0,
+    "gf": 0,
+    "ga": 0,
+    "pts": 0,
+    "gd": 0
+   }
+  ],
+  "Group D": [
+   {
+    "team": "Australia",
+    "p": 0,
+    "w": 0,
+    "d": 0,
+    "l": 0,
+    "gf": 0,
+    "ga": 0,
+    "pts": 0,
+    "gd": 0
+   },
+   {
+    "team": "Paraguay",
+    "p": 0,
+    "w": 0,
+    "d": 0,
+    "l": 0,
+    "gf": 0,
+    "ga": 0,
+    "pts": 0,
+    "gd": 0
+   },
+   {
+    "team": "Turkey",
+    "p": 0,
+    "w": 0,
+    "d": 0,
+    "l": 0,
+    "gf": 0,
+    "ga": 0,
+    "pts": 0,
+    "gd": 0
+   },
+   {
+    "team": "USA",
+    "p": 0,
+    "w": 0,
+    "d": 0,
+    "l": 0,
+    "gf": 0,
+    "ga": 0,
+    "pts": 0,
+    "gd": 0
+   }
+  ],
+  "Group E": [
+   {
+    "team": "Curaçao",
+    "p": 0,
+    "w": 0,
+    "d": 0,
+    "l": 0,
+    "gf": 0,
+    "ga": 0,
+    "pts": 0,
+    "gd": 0
+   },
+   {
+    "team": "Ecuador",
+    "p": 0,
+    "w": 0,
+    "d": 0,
+    "l": 0,
+    "gf": 0,
+    "ga": 0,
+    "pts": 0,
+    "gd": 0
+   },
+   {
+    "team": "Germany",
+    "p": 0,
+    "w": 0,
+    "d": 0,
+    "l": 0,
+    "gf": 0,
+    "ga": 0,
+    "pts": 0,
+    "gd": 0
+   },
+   {
+    "team": "Ivory Coast",
+    "p": 0,
+    "w": 0,
+    "d": 0,
+    "l": 0,
+    "gf": 0,
+    "ga": 0,
+    "pts": 0,
+    "gd": 0
+   }
+  ],
+  "Group F": [
+   {
+    "team": "Japan",
+    "p": 0,
+    "w": 0,
+    "d": 0,
+    "l": 0,
+    "gf": 0,
+    "ga": 0,
+    "pts": 0,
+    "gd": 0
+   },
+   {
+    "team": "Netherlands",
+    "p": 0,
+    "w": 0,
+    "d": 0,
+    "l": 0,
+    "gf": 0,
+    "ga": 0,
+    "pts": 0,
+    "gd": 0
+   },
+   {
+    "team": "Sweden",
+    "p": 0,
+    "w": 0,
+    "d": 0,
+    "l": 0,
+    "gf": 0,
+    "ga": 0,
+    "pts": 0,
+    "gd": 0
+   },
+   {
+    "team": "Tunisia",
+    "p": 0,
+    "w": 0,
+    "d": 0,
+    "l": 0,
+    "gf": 0,
+    "ga": 0,
+    "pts": 0,
+    "gd": 0
+   }
+  ],
+  "Group G": [
+   {
+    "team": "Belgium",
+    "p": 0,
+    "w": 0,
+    "d": 0,
+    "l": 0,
+    "gf": 0,
+    "ga": 0,
+    "pts": 0,
+    "gd": 0
+   },
+   {
+    "team": "Egypt",
+    "p": 0,
+    "w": 0,
+    "d": 0,
+    "l": 0,
+    "gf": 0,
+    "ga": 0,
+    "pts": 0,
+    "gd": 0
+   },
+   {
+    "team": "Iran",
+    "p": 0,
+    "w": 0,
+    "d": 0,
+    "l": 0,
+    "gf": 0,
+    "ga": 0,
+    "pts": 0,
+    "gd": 0
+   },
+   {
+    "team": "New Zealand",
+    "p": 0,
+    "w": 0,
+    "d": 0,
+    "l": 0,
+    "gf": 0,
+    "ga": 0,
+    "pts": 0,
+    "gd": 0
+   }
+  ],
+  "Group H": [
+   {
+    "team": "Cape Verde",
+    "p": 0,
+    "w": 0,
+    "d": 0,
+    "l": 0,
+    "gf": 0,
+    "ga": 0,
+    "pts": 0,
+    "gd": 0
+   },
+   {
+    "team": "Saudi Arabia",
+    "p": 0,
+    "w": 0,
+    "d": 0,
+    "l": 0,
+    "gf": 0,
+    "ga": 0,
+    "pts": 0,
+    "gd": 0
+   },
+   {
+    "team": "Spain",
+    "p": 0,
+    "w": 0,
+    "d": 0,
+    "l": 0,
+    "gf": 0,
+    "ga": 0,
+    "pts": 0,
+    "gd": 0
+   },
+   {
+    "team": "Uruguay",
+    "p": 0,
+    "w": 0,
+    "d": 0,
+    "l": 0,
+    "gf": 0,
+    "ga": 0,
+    "pts": 0,
+    "gd": 0
+   }
+  ],
+  "Group I": [
+   {
+    "team": "France",
+    "p": 0,
+    "w": 0,
+    "d": 0,
+    "l": 0,
+    "gf": 0,
+    "ga": 0,
+    "pts": 0,
+    "gd": 0
+   },
+   {
+    "team": "Iraq",
+    "p": 0,
+    "w": 0,
+    "d": 0,
+    "l": 0,
+    "gf": 0,
+    "ga": 0,
+    "pts": 0,
+    "gd": 0
+   },
+   {
+    "team": "Norway",
+    "p": 0,
+    "w": 0,
+    "d": 0,
+    "l": 0,
+    "gf": 0,
+    "ga": 0,
+    "pts": 0,
+    "gd": 0
+   },
+   {
+    "team": "Senegal",
+    "p": 0,
+    "w": 0,
+    "d": 0,
+    "l": 0,
+    "gf": 0,
+    "ga": 0,
+    "pts": 0,
+    "gd": 0
+   }
+  ],
+  "Group J": [
+   {
+    "team": "Algeria",
+    "p": 0,
+    "w": 0,
+    "d": 0,
+    "l": 0,
+    "gf": 0,
+    "ga": 0,
+    "pts": 0,
+    "gd": 0
+   },
+   {
+    "team": "Argentina",
+    "p": 0,
+    "w": 0,
+    "d": 0,
+    "l": 0,
+    "gf": 0,
+    "ga": 0,
+    "pts": 0,
+    "gd": 0
+   },
+   {
+    "team": "Austria",
+    "p": 0,
+    "w": 0,
+    "d": 0,
+    "l": 0,
+    "gf": 0,
+    "ga": 0,
+    "pts": 0,
+    "gd": 0
+   },
+   {
+    "team": "Jordan",
+    "p": 0,
+    "w": 0,
+    "d": 0,
+    "l": 0,
+    "gf": 0,
+    "ga": 0,
+    "pts": 0,
+    "gd": 0
+   }
+  ],
+  "Group K": [
+   {
+    "team": "Colombia",
+    "p": 0,
+    "w": 0,
+    "d": 0,
+    "l": 0,
+    "gf": 0,
+    "ga": 0,
+    "pts": 0,
+    "gd": 0
+   },
+   {
+    "team": "DR Congo",
+    "p": 0,
+    "w": 0,
+    "d": 0,
+    "l": 0,
+    "gf": 0,
+    "ga": 0,
+    "pts": 0,
+    "gd": 0
+   },
+   {
+    "team": "Portugal",
+    "p": 0,
+    "w": 0,
+    "d": 0,
+    "l": 0,
+    "gf": 0,
+    "ga": 0,
+    "pts": 0,
+    "gd": 0
+   },
+   {
+    "team": "Uzbekistan",
+    "p": 0,
+    "w": 0,
+    "d": 0,
+    "l": 0,
+    "gf": 0,
+    "ga": 0,
+    "pts": 0,
+    "gd": 0
+   }
+  ],
+  "Group L": [
+   {
+    "team": "Croatia",
+    "p": 0,
+    "w": 0,
+    "d": 0,
+    "l": 0,
+    "gf": 0,
+    "ga": 0,
+    "pts": 0,
+    "gd": 0
+   },
+   {
+    "team": "England",
+    "p": 0,
+    "w": 0,
+    "d": 0,
+    "l": 0,
+    "gf": 0,
+    "ga": 0,
+    "pts": 0,
+    "gd": 0
+   },
+   {
+    "team": "Ghana",
+    "p": 0,
+    "w": 0,
+    "d": 0,
+    "l": 0,
+    "gf": 0,
+    "ga": 0,
+    "pts": 0,
+    "gd": 0
+   },
+   {
+    "team": "Panama",
+    "p": 0,
+    "w": 0,
+    "d": 0,
+    "l": 0,
+    "gf": 0,
+    "ga": 0,
+    "pts": 0,
+    "gd": 0
+   }
+  ]
+ }
+}

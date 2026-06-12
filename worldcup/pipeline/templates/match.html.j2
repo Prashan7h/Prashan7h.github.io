@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-KVBPX8VW');</script>
+    <!-- End Google Tag Manager -->
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="{{ m.team1 }} {{ m.score.ft[0] }}–{{ m.score.ft[1] }} {{ m.team2 }} — full match analytics: shot map, expected goals race, lineups, stats and model verdict.">
+    <link rel="icon" type="image/svg+xml" href="../../images/favicon.svg">
+    <link rel="icon" type="image/png" sizes="32x32" href="../../images/favicon-32.png">
+    <title>{{ m.team1 }} {{ m.score.ft[0] }}–{{ m.score.ft[1] }} {{ m.team2 }} — World Cup 2026</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+{{ style }}
+    </style>
+</head>
+<body>
+    <noscript><iframe aria-hidden="true" title="Google Tag Manager" src="https://www.googletagmanager.com/ns.html?id=GTM-KVBPX8VW"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+    <div class="wrap">
+        <div class="masthead">
+            <div><h1>World Cup 2026</h1></div>
+            <a class="home" href="../index.html">&larr; All matches</a>
+        </div>
+
+        <!-- scoreboard -->
+        <div class="card">
+            <div class="kickline">{{ m.round }} · {{ m.group or "Knockout" }} · {{ m.date }}</div>
+            <div class="board">
+                <div class="team">
+                    <div class="name">{{ m.team1 }}</div>
+                    {% if xg1 is not none %}<div class="xg">xG {{ "%.2f" | format(xg1) }}</div>{% endif %}
+                </div>
+                <div class="score"><span class="ft">{% if m.score.ht %}HT {{ m.score.ht[0] }}–{{ m.score.ht[1] }}{% else %}FULL TIME{% endif %}</span>{{ m.score.ft[0] }}&thinsp;–&thinsp;{{ m.score.ft[1] }}</div>
+                <div class="team">
+                    <div class="name">{{ m.team2 }}</div>
+                    {% if xg2 is not none %}<div class="xg">xG {{ "%.2f" | format(xg2) }}</div>{% endif %}
+                </div>
+            </div>
+            {% if m.scorer_lines %}<div class="goals-line">{{ m.scorer_lines | join(" &nbsp;·&nbsp; ") | safe }}</div>{% endif %}
+            <div class="venue-line">{{ m.venue or m.ground }}{% if m.attendance %} · {{ "{:,}".format(m.attendance) }} attendance{% endif %}</div>
+        </div>
+
+        {% if narrative %}
+        <div class="card">
+            <div class="card-title">The story</div>
+            <p class="narrative">{{ narrative }}</p>
+        </div>
+        {% endif %}
+
+        {% if xg_race_svg %}
+        <div class="card">
+            <div class="card-title">Expected goals race</div>
+            <div class="chart">{{ xg_race_svg | safe }}</div>
+            <div class="legend">
+                <span class="k"><span class="dot" style="background:#0a0a0a"></span>{{ m.team1 }}</span>
+                <span class="k"><span class="dot" style="background:#b5b5b5"></span>{{ m.team2 }}</span>
+                <span class="k">&#9679; goal</span>
+            </div>
+            <p class="card-note">Cumulative expected goals, minute by minute. ESPN's free feed has no xG, so each shot's xG is estimated with a naive distance-and-angle logistic model fitted on shot coordinates from the play-by-play.</p>
+        </div>
+        {% endif %}
+
+        {% if shotmap_svg %}
+        <div class="card">
+            <div class="card-title">Shot map</div>
+            <div class="chart">{{ shotmap_svg | safe }}</div>
+            <div class="legend">
+                <span class="k"><span class="dot" style="background:#0a0a0a"></span>{{ m.team1 }} (attacking &rarr;)</span>
+                <span class="k"><span class="dot" style="background:#fff; border: 1.5px solid #0a0a0a;"></span>{{ m.team2 }} (attacking &larr;)</span>
+                <span class="k">size = xG · star = goal</span>
+            </div>
+        </div>
+        {% endif %}
+
+        {% if stat_rows %}
+        <div class="card">
+            <div class="card-title">{{ m.team1 }} &nbsp;·&nbsp; match stats &nbsp;·&nbsp; {{ m.team2 }}</div>
+            {% for r in stat_rows %}
+            <div class="sb-row">
+                <span class="v l">{{ r.v1 }}</span>
+                <span class="sb-track l"><span style="width: {{ r.w1 }}%"></span></span>
+                <span class="lab">{{ r.label }}</span>
+                <span class="sb-track r"><span style="width: {{ r.w2 }}%"></span></span>
+                <span class="v">{{ r.v2 }}</span>
+            </div>
+            {% endfor %}
+        </div>
+        {% endif %}
+
+        {% if pred %}
+        <div class="card">
+            <div class="card-title">What the model expected</div>
+            <div class="chart">{{ pred_svg | safe }}</div>
+            <p class="narrative" style="margin-top: 0.8rem;">Pre-match Elo: {{ m.team1 }} {{ info.elo_before[0] }}, {{ m.team2 }} {{ info.elo_before[1] }}. The model priced this {{ m.team1 }} <strong>{{ "%.0f" | format(pred.p1 * 100) }}%</strong> / draw <strong>{{ "%.0f" | format(pred.pd * 100) }}%</strong> / {{ m.team2 }} <strong>{{ "%.0f" | format(pred.p2 * 100) }}%</strong>, most likely score {{ pred.score[0] }}–{{ pred.score[1] }}. {{ verdict }}{% if info.elo_delta is not none %} The result moves <strong>{{ "%.0f" | format(info.elo_delta | abs) }} Elo points</strong> {{ elo_direction }} — that flows straight into the next round of tournament simulations.{% endif %}</p>
+        </div>
+        {% endif %}
+
+        {% if timeline %}
+        <div class="card">
+            <div class="card-title">Timeline</div>
+            {% for ev in timeline %}
+            <div class="tl-item">
+                <span class="tl-min">{{ ev.minute }}</span>
+                <span class="tl-text"><span class="tag{{ ' goal' if ev.is_goal }}">{{ ev.tag }}</span>{{ ev.text }}</span>
+            </div>
+            {% endfor %}
+        </div>
+        {% endif %}
+
+        {% if lineups %}
+        <div class="card">
+            <div class="card-title">Lineups</div>
+            <div class="lineups">
+                {% for l in lineups %}
+                <div>
+                    <div class="lu-team">{{ l.team }}</div>
+                    <div class="lu-formation">{{ l.formation }}</div>
+                    <ul class="lu-list">
+                        {% for p in l.starters %}
+                        <li><span class="j">{{ p.jersey }}</span>{{ p.name }} <span style="color:#bbb; font-size:0.66rem;">{{ p.position }}</span></li>
+                        {% endfor %}
+                    </ul>
+                    {% if l.subs_used %}<div class="lu-subs"><strong>Subs:</strong> {{ l.subs_used | join(", ") }}</div>{% endif %}
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+        {% endif %}
+
+        <a class="backlink" href="../index.html">&larr; Fixtures, table &amp; predictions</a>
+        <p class="foot">Generated automatically from public match data. Stats: ESPN · Results: openfootball · xG: own naive model (distance + angle).</p>
+    </div>
+</body>
+</html>

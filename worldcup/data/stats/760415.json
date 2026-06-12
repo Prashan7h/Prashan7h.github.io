@@ -1,0 +1,874 @@
+{
+ "teams": [
+  {
+   "name": "Mexico",
+   "stats": {
+    "possessionPct": "60.5",
+    "totalShots": "16",
+    "shotsOnTarget": "4",
+    "wonCorners": "3",
+    "foulsCommitted": "12",
+    "offsides": "1",
+    "saves": "2",
+    "yellowCards": "1",
+    "redCards": "1"
+   }
+  },
+  {
+   "name": "South Africa",
+   "stats": {
+    "possessionPct": "39.5",
+    "totalShots": "3",
+    "shotsOnTarget": "2",
+    "wonCorners": "1",
+    "foulsCommitted": "11",
+    "offsides": "1",
+    "saves": "2",
+    "yellowCards": "2",
+    "redCards": "2"
+   }
+  }
+ ],
+ "events": [
+  {
+   "type": "Kickoff",
+   "minute": "",
+   "team": null,
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Goal",
+   "minute": "9'",
+   "team": "Mexico",
+   "text": "Goal! Mexico 1, South Africa 0. Julián Quiñones (Mexico) right footed shot from the centre of the box to the centre of the goal. Assisted by Érik Lira.",
+   "players": [
+    "Julián Quiñones",
+    "Érik Lira"
+   ]
+  },
+  {
+   "type": "Yellow Card",
+   "minute": "17'",
+   "team": "South Africa",
+   "text": "Teboho Mokoena (South Africa) is shown the yellow card for a bad foul.",
+   "players": [
+    "Teboho Mokoena"
+   ]
+  },
+  {
+   "type": "Yellow Card",
+   "minute": "23'",
+   "team": "Mexico",
+   "text": "Brian Gutiérrez (Mexico) is shown the yellow card for a bad foul.",
+   "players": [
+    "Brian Gutiérrez"
+   ]
+  },
+  {
+   "type": "Start Delay",
+   "minute": "25'",
+   "team": "Mexico",
+   "text": "Delay in match for a drinks break.",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "25'",
+   "team": "South Africa",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "27'",
+   "team": "Mexico",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "27'",
+   "team": "South Africa",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Halftime",
+   "minute": "45'+4'",
+   "team": null,
+   "text": "First Half ends, Mexico 1, South Africa 0.",
+   "players": []
+  },
+  {
+   "type": "Start 2nd Half",
+   "minute": "45'",
+   "team": null,
+   "text": "Second Half begins Mexico 1, South Africa 0.",
+   "players": []
+  },
+  {
+   "type": "Red Card",
+   "minute": "49'",
+   "team": "South Africa",
+   "text": "Yaya Sithole (South Africa) is shown the red card.",
+   "players": [
+    "Sphephelo Sithole"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "56'",
+   "team": "South Africa",
+   "text": "Substitution, South Africa. Thalente Mbatha replaces Lyle Foster.",
+   "players": [
+    "Thalente Mbatha",
+    "Lyle Foster"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "61'",
+   "team": "South Africa",
+   "text": "Substitution, South Africa. Themba Zwane replaces Jayden Adams.",
+   "players": [
+    "Themba Zwane",
+    "Jayden Adams"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "66'",
+   "team": "Mexico",
+   "text": "Substitution, Mexico. Luis Chávez replaces Brian Gutiérrez.",
+   "players": [
+    "Luis Chávez",
+    "Brian Gutiérrez"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "66'",
+   "team": "Mexico",
+   "text": "Substitution, Mexico. Gilberto Mora replaces Álvaro Fidalgo.",
+   "players": [
+    "Gilberto Mora",
+    "Álvaro Fidalgo"
+   ]
+  },
+  {
+   "type": "Goal - Header",
+   "minute": "67'",
+   "team": "Mexico",
+   "text": "Goal! Mexico 2, South Africa 0. Raúl Jiménez (Mexico) header from very close range to the bottom left corner. Assisted by Roberto Alvarado with a cross.",
+   "players": [
+    "Raúl Jiménez",
+    "Roberto Alvarado"
+   ]
+  },
+  {
+   "type": "Start Delay",
+   "minute": "68'",
+   "team": "Mexico",
+   "text": "Delay in match for a drinks break.",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "68'",
+   "team": "South Africa",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "70'",
+   "team": "Mexico",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "70'",
+   "team": "South Africa",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "73'",
+   "team": "Mexico",
+   "text": "Delay in match because of an injury Raúl Jiménez (Mexico).",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "73'",
+   "team": "South Africa",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "73'",
+   "team": "Mexico",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "73'",
+   "team": "South Africa",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Yellow Card",
+   "minute": "74'",
+   "team": "South Africa",
+   "text": "Nkosinathi Sibisi (South Africa) is shown the yellow card for a bad foul.",
+   "players": [
+    "Nkosinathi Sibisi"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "76'",
+   "team": "Mexico",
+   "text": "Substitution, Mexico. Edson Álvarez replaces Érik Lira.",
+   "players": [
+    "Edson Álvarez",
+    "Érik Lira"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "76'",
+   "team": "Mexico",
+   "text": "Substitution, Mexico. Armando González replaces Raúl Jiménez.",
+   "players": [
+    "Armando González",
+    "Raúl Jiménez"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "76'",
+   "team": "South Africa",
+   "text": "Substitution, South Africa. Evidence Makgopa replaces Iqraam Rayners.",
+   "players": [
+    "Evidence Makgopa",
+    "Iqraam Rayners"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "77'",
+   "team": "South Africa",
+   "text": "Substitution, South Africa. Oswin Appollis replaces Aubrey Modiba.",
+   "players": [
+    "Oswin Appollis",
+    "Aubrey Modiba"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "79'",
+   "team": "Mexico",
+   "text": "Substitution, Mexico. Alexis Vega replaces Julián Quiñones.",
+   "players": [
+    "Alexis Vega",
+    "Julián Quiñones"
+   ]
+  },
+  {
+   "type": "Start Delay",
+   "minute": "81'",
+   "team": "Mexico",
+   "text": "Delay in match because of an injury Roberto Alvarado (Mexico).",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "81'",
+   "team": "South Africa",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "81'",
+   "team": "Mexico",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "81'",
+   "team": "South Africa",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "82'",
+   "team": "South Africa",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "84'",
+   "team": "South Africa",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Red Card",
+   "minute": "84'",
+   "team": "South Africa",
+   "text": "Themba Zwane (South Africa) is shown the red card for violent conduct.",
+   "players": [
+    "Themba Zwane"
+   ]
+  },
+  {
+   "type": "Red Card",
+   "minute": "90'+2'",
+   "team": "Mexico",
+   "text": "César Montes (Mexico) is shown the red card.",
+   "players": [
+    "César Montes"
+   ]
+  },
+  {
+   "type": "End Regular Time",
+   "minute": "90'+8'",
+   "team": null,
+   "text": "",
+   "players": []
+  }
+ ],
+ "shots": [
+  {
+   "minute": "4",
+   "seconds": 210.0,
+   "team": "Mexico",
+   "player": "Brian Gutiérrez",
+   "type": "Shot Blocked",
+   "x": 70.9,
+   "y": 27.6,
+   "goal": false,
+   "xg": 0.038,
+   "text": "Attempt blocked. Brian Gutiérrez (Mexico) right footed shot from outside the box is blocked."
+  },
+  {
+   "minute": "5",
+   "seconds": 245.0,
+   "team": "Mexico",
+   "player": "Raúl Jiménez",
+   "type": "Shot On Target",
+   "x": 84.5,
+   "y": 47.8,
+   "goal": false,
+   "xg": 0.204,
+   "text": "Attempt saved. Raúl Jiménez (Mexico) left footed shot from the centre of the box is saved in the bottom left corner by Ronwen Williams (South Africa). Assisted by Israel Reyes with a cross."
+  },
+  {
+   "minute": "5",
+   "seconds": 284.0,
+   "team": "Mexico",
+   "player": "Johan Vásquez",
+   "type": "Shot Blocked",
+   "x": 81.0,
+   "y": 47.4,
+   "goal": false,
+   "xg": 0.141,
+   "text": "Attempt blocked. Johan Vásquez (Mexico) left footed shot from outside the box is blocked."
+  },
+  {
+   "minute": "9",
+   "seconds": 513.0,
+   "team": "Mexico",
+   "player": "Julián Quiñones",
+   "type": "Goal",
+   "x": 84.4,
+   "y": 56.4,
+   "goal": true,
+   "xg": 0.188,
+   "text": "Goal! Mexico 1, South Africa 0. Julián Quiñones (Mexico) right footed shot from the centre of the box to the centre of the goal. Assisted by Érik Lira."
+  },
+  {
+   "minute": "13",
+   "seconds": 752.0,
+   "team": "Mexico",
+   "player": "Raúl Jiménez",
+   "type": "Shot Off Target",
+   "x": 91.5,
+   "y": 48.9,
+   "goal": false,
+   "xg": 0.314,
+   "text": "Attempt missed. Raúl Jiménez (Mexico) header from the centre of the box is close, but misses to the left. Assisted by Roberto Alvarado with a cross following a corner."
+  },
+  {
+   "minute": "19",
+   "seconds": 1139.0,
+   "team": "Mexico",
+   "player": "Julián Quiñones",
+   "type": "Shot Off Target",
+   "x": 74.4,
+   "y": 34.2,
+   "goal": false,
+   "xg": 0.06,
+   "text": "Attempt missed. Julián Quiñones (Mexico) right footed shot from outside the box is close, but misses the top right corner. Assisted by Israel Reyes."
+  },
+  {
+   "minute": "30",
+   "seconds": 1748.0,
+   "team": "Mexico",
+   "player": "Brian Gutiérrez",
+   "type": "Shot Blocked",
+   "x": 84.8,
+   "y": 63.0,
+   "goal": false,
+   "xg": 0.155,
+   "text": "Attempt blocked. Brian Gutiérrez (Mexico) right footed shot from the centre of the box is blocked. Assisted by Julián Quiñones."
+  },
+  {
+   "minute": "37",
+   "seconds": 2219.0,
+   "team": "South Africa",
+   "player": "Lyle Foster",
+   "type": "Shot Off Target",
+   "x": 89.2,
+   "y": 42.1,
+   "goal": false,
+   "xg": 0.189,
+   "text": "Attempt missed. Lyle Foster (South Africa) header from the centre of the box misses to the right. Assisted by Mbekezeli Mbokazi with a cross."
+  },
+  {
+   "minute": "42",
+   "seconds": 2508.0,
+   "team": "Mexico",
+   "player": "Julián Quiñones",
+   "type": "Shot Blocked",
+   "x": 75.1,
+   "y": 45.0,
+   "goal": false,
+   "xg": 0.078,
+   "text": "Attempt blocked. Julián Quiñones (Mexico) right footed shot from outside the box is blocked. Assisted by Álvaro Fidalgo."
+  },
+  {
+   "minute": "42",
+   "seconds": 2514.0,
+   "team": "Mexico",
+   "player": null,
+   "type": "Shot Hit Woodwork",
+   "x": 86.5,
+   "y": 44.6,
+   "goal": false,
+   "xg": 0.241,
+   "text": "Julián Quiñones (Mexico) hits the right post with a right footed shot from the centre of the box. Assisted by Brian Gutiérrez."
+  },
+  {
+   "minute": "45",
+   "seconds": 2652.0,
+   "team": "South Africa",
+   "player": "Mbekezeli Mbokazi",
+   "type": "Shot On Target",
+   "x": 68.0,
+   "y": 53.6,
+   "goal": false,
+   "xg": 0.041,
+   "text": "Attempt saved. Mbekezeli Mbokazi (South Africa) left footed shot from outside the box is saved in the top left corner by Raúl Rangel (Mexico)."
+  },
+  {
+   "minute": "45'+2",
+   "seconds": 2700.0,
+   "team": "Mexico",
+   "player": "Jesús Gallardo",
+   "type": "Shot Blocked",
+   "x": 69.5,
+   "y": 63.6,
+   "goal": false,
+   "xg": 0.042,
+   "text": "Attempt blocked. Jesús Gallardo (Mexico) left footed shot from outside the box is blocked. Assisted by Raúl Jiménez."
+  },
+  {
+   "minute": "45'+4",
+   "seconds": 2700.0,
+   "team": "Mexico",
+   "player": "Brian Gutiérrez",
+   "type": "Shot Off Target",
+   "x": 88.9,
+   "y": 61.7,
+   "goal": false,
+   "xg": 0.23,
+   "text": "Attempt missed. Brian Gutiérrez (Mexico) right footed shot from the centre of the box misses to the right. Assisted by Julián Quiñones."
+  },
+  {
+   "minute": "46",
+   "seconds": 2735.0,
+   "team": "Mexico",
+   "player": "Brian Gutiérrez",
+   "type": "Shot Off Target",
+   "x": 77.5,
+   "y": 34.0,
+   "goal": false,
+   "xg": 0.077,
+   "text": "Attempt missed. Brian Gutiérrez (Mexico) right footed shot from outside the box is too high."
+  },
+  {
+   "minute": "48",
+   "seconds": 2840.0,
+   "team": "Mexico",
+   "player": "Julián Quiñones",
+   "type": "Shot On Target",
+   "x": 59.5,
+   "y": 70.5,
+   "goal": false,
+   "xg": 0.016,
+   "text": "Attempt saved. Julián Quiñones (Mexico) right footed shot from more than 35 yards is saved in the top centre of the goal by Ronwen Williams (South Africa). Assisted by Raúl Jiménez."
+  },
+  {
+   "minute": "52",
+   "seconds": 3066.0,
+   "team": "Mexico",
+   "player": "Raúl Jiménez",
+   "type": "Shot Blocked",
+   "x": 81.9,
+   "y": 46.0,
+   "goal": false,
+   "xg": 0.152,
+   "text": "Attempt blocked. Raúl Jiménez (Mexico) right footed shot from outside the box is blocked."
+  },
+  {
+   "minute": "52",
+   "seconds": 3070.0,
+   "team": "Mexico",
+   "player": "Jesús Gallardo",
+   "type": "Shot Off Target",
+   "x": 91.8,
+   "y": 69.4,
+   "goal": false,
+   "xg": 0.154,
+   "text": "Attempt missed. Jesús Gallardo (Mexico) left footed shot from the left side of the box is high and wide to the left. Assisted by Brian Gutiérrez following a set piece situation."
+  },
+  {
+   "minute": "55",
+   "seconds": 3300.0,
+   "team": "South Africa",
+   "player": "Aubrey Modiba",
+   "type": "Shot On Target",
+   "x": 69.9,
+   "y": 66.0,
+   "goal": false,
+   "xg": 0.041,
+   "text": "Attempt saved. Aubrey Modiba (South Africa) left footed shot from outside the box is saved in the top left corner by Raúl Rangel (Mexico). Assisted by Teboho Mokoena."
+  },
+  {
+   "minute": "58",
+   "seconds": 3473.0,
+   "team": "Mexico",
+   "player": "Israel Reyes",
+   "type": "Shot Off Target",
+   "x": 88.2,
+   "y": 40.6,
+   "goal": false,
+   "xg": 0.159,
+   "text": "Attempt missed. Israel Reyes (Mexico) header from the centre of the box misses to the left. Assisted by Brian Gutiérrez with a cross following a set piece situation."
+  },
+  {
+   "minute": "67",
+   "seconds": 3996.0,
+   "team": "Mexico",
+   "player": "Raúl Jiménez",
+   "type": "Goal - Header",
+   "x": 95.4,
+   "y": 53.0,
+   "goal": true,
+   "xg": 0.491,
+   "text": "Goal! Mexico 2, South Africa 0. Raúl Jiménez (Mexico) header from very close range to the bottom left corner. Assisted by Roberto Alvarado with a cross."
+  }
+ ],
+ "lineups": [
+  {
+   "team": "Mexico",
+   "formation": "4-1-4-1",
+   "starters": [
+    {
+     "name": "Raúl Rangel",
+     "jersey": "1",
+     "position": "G"
+    },
+    {
+     "name": "Johan Vásquez",
+     "jersey": "5",
+     "position": "CD-L"
+    },
+    {
+     "name": "César Montes",
+     "jersey": "3",
+     "position": "CD-R"
+    },
+    {
+     "name": "Érik Lira",
+     "jersey": "6",
+     "position": "DM"
+    },
+    {
+     "name": "Jesús Gallardo",
+     "jersey": "23",
+     "position": "LB"
+    },
+    {
+     "name": "Israel Reyes",
+     "jersey": "15",
+     "position": "RB"
+    },
+    {
+     "name": "Álvaro Fidalgo",
+     "jersey": "8",
+     "position": "CM-L"
+    },
+    {
+     "name": "Brian Gutiérrez",
+     "jersey": "26",
+     "position": "CM-R"
+    },
+    {
+     "name": "Julián Quiñones",
+     "jersey": "16",
+     "position": "LM"
+    },
+    {
+     "name": "Roberto Alvarado",
+     "jersey": "25",
+     "position": "RM"
+    },
+    {
+     "name": "Raúl Jiménez",
+     "jersey": "9",
+     "position": "F"
+    }
+   ],
+   "subs": [
+    {
+     "name": "Luis Romo",
+     "jersey": "7",
+     "position": "SUB"
+    },
+    {
+     "name": "César Huerta",
+     "jersey": "21",
+     "position": "SUB"
+    },
+    {
+     "name": "Guillermo Ochoa",
+     "jersey": "13",
+     "position": "SUB"
+    },
+    {
+     "name": "Carlos Acevedo",
+     "jersey": "12",
+     "position": "SUB"
+    },
+    {
+     "name": "Luis Chávez",
+     "jersey": "24",
+     "position": "SUB"
+    },
+    {
+     "name": "Mateo Chávez",
+     "jersey": "20",
+     "position": "SUB"
+    },
+    {
+     "name": "Santiago Gimenez",
+     "jersey": "11",
+     "position": "SUB"
+    },
+    {
+     "name": "Obed Vargas",
+     "jersey": "18",
+     "position": "SUB"
+    },
+    {
+     "name": "Alexis Vega",
+     "jersey": "10",
+     "position": "SUB"
+    },
+    {
+     "name": "Guillermo Martínez",
+     "jersey": "22",
+     "position": "SUB"
+    },
+    {
+     "name": "Armando González",
+     "jersey": "14",
+     "position": "SUB"
+    },
+    {
+     "name": "Gilberto Mora",
+     "jersey": "19",
+     "position": "SUB"
+    },
+    {
+     "name": "Edson Álvarez",
+     "jersey": "4",
+     "position": "SUB"
+    },
+    {
+     "name": "Jorge Sánchez",
+     "jersey": "2",
+     "position": "SUB"
+    },
+    {
+     "name": "Orbelín Pineda",
+     "jersey": "17",
+     "position": "SUB"
+    }
+   ]
+  },
+  {
+   "team": "South Africa",
+   "formation": "5-3-2",
+   "starters": [
+    {
+     "name": "Ronwen Williams",
+     "jersey": "1",
+     "position": "G"
+    },
+    {
+     "name": "Ime Okon",
+     "jersey": "21",
+     "position": "CD"
+    },
+    {
+     "name": "Mbekezeli Mbokazi",
+     "jersey": "14",
+     "position": "CD-L"
+    },
+    {
+     "name": "Nkosinathi Sibisi",
+     "jersey": "19",
+     "position": "CD-R"
+    },
+    {
+     "name": "Aubrey Modiba",
+     "jersey": "6",
+     "position": "LB"
+    },
+    {
+     "name": "Khuliso Mudau",
+     "jersey": "20",
+     "position": "RB"
+    },
+    {
+     "name": "Sphephelo Sithole",
+     "jersey": "13",
+     "position": "CM"
+    },
+    {
+     "name": "Jayden Adams",
+     "jersey": "23",
+     "position": "CM-L"
+    },
+    {
+     "name": "Teboho Mokoena",
+     "jersey": "4",
+     "position": "CM-R"
+    },
+    {
+     "name": "Lyle Foster",
+     "jersey": "9",
+     "position": "CF-L"
+    },
+    {
+     "name": "Iqraam Rayners",
+     "jersey": "15",
+     "position": "CF-R"
+    }
+   ],
+   "subs": [
+    {
+     "name": "Oswin Appollis",
+     "jersey": "7",
+     "position": "SUB"
+    },
+    {
+     "name": "Sipho Chaine",
+     "jersey": "16",
+     "position": "SUB"
+    },
+    {
+     "name": "Themba Zwane",
+     "jersey": "11",
+     "position": "SUB"
+    },
+    {
+     "name": "Kamogelo Sebelebele",
+     "jersey": "25",
+     "position": "SUB"
+    },
+    {
+     "name": "Khulumani Ndamane",
+     "jersey": "3",
+     "position": "SUB"
+    },
+    {
+     "name": "Thabang Matuludi",
+     "jersey": "2",
+     "position": "SUB"
+    },
+    {
+     "name": "Samukele Kabini",
+     "jersey": "18",
+     "position": "SUB"
+    },
+    {
+     "name": "Relebohile Mofokeng",
+     "jersey": "10",
+     "position": "SUB"
+    },
+    {
+     "name": "Thalente Mbatha",
+     "jersey": "5",
+     "position": "SUB"
+    },
+    {
+     "name": "Ricardo Goss",
+     "jersey": "22",
+     "position": "SUB"
+    },
+    {
+     "name": "Bradley Cross",
+     "jersey": "26",
+     "position": "SUB"
+    },
+    {
+     "name": "Thapelo Maseko",
+     "jersey": "12",
+     "position": "SUB"
+    },
+    {
+     "name": "Tshepang Moremi",
+     "jersey": "8",
+     "position": "SUB"
+    },
+    {
+     "name": "Evidence Makgopa",
+     "jersey": "17",
+     "position": "SUB"
+    },
+    {
+     "name": "Olwethu Makhanya",
+     "jersey": "24",
+     "position": "SUB"
+    }
+   ]
+  }
+ ],
+ "attendance": 80824,
+ "venue": "Estadio Banorte, Mexico City, Mexico"
+}

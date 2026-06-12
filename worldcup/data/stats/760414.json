@@ -1,0 +1,821 @@
+{
+ "teams": [
+  {
+   "name": "South Korea",
+   "stats": {
+    "possessionPct": "61.5",
+    "totalShots": "15",
+    "shotsOnTarget": "6",
+    "wonCorners": "4",
+    "foulsCommitted": "9",
+    "offsides": "2",
+    "saves": "3",
+    "yellowCards": "1",
+    "redCards": "0"
+   }
+  },
+  {
+   "name": "Czechia",
+   "stats": {
+    "possessionPct": "38.5",
+    "totalShots": "7",
+    "shotsOnTarget": "4",
+    "wonCorners": "5",
+    "foulsCommitted": "16",
+    "offsides": "2",
+    "saves": "4",
+    "yellowCards": "0",
+    "redCards": "0"
+   }
+  }
+ ],
+ "events": [
+  {
+   "type": "Kickoff",
+   "minute": "",
+   "team": null,
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "23'",
+   "team": "South Korea",
+   "text": "Delay in match for a drinks break.",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "23'",
+   "team": "Czechia",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "25'",
+   "team": "South Korea",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "25'",
+   "team": "Czechia",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "26'",
+   "team": "South Korea",
+   "text": "Delay in match (Korea Republic).",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "26'",
+   "team": "Czechia",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "27'",
+   "team": "South Korea",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "27'",
+   "team": "Czechia",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Halftime",
+   "minute": "45'+4'",
+   "team": null,
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Start 2nd Half",
+   "minute": "45'",
+   "team": null,
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Goal - Header",
+   "minute": "59'",
+   "team": "Czechia",
+   "text": "Goal! Korea Republic 0, Czechia 1. Ladislav Krejcí (Czechia) header from very close range to the bottom right corner. Assisted by Vladimír Coufal.",
+   "players": [
+    "Ladislav Krejcí",
+    "Vladimír Coufal"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "62'",
+   "team": "South Korea",
+   "text": "Substitution, Korea Republic. Hwang Hee-Chan replaces Lee Jae-Sung.",
+   "players": [
+    "Hwang Hee-Chan",
+    "Lee Jae-Sung"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "64'",
+   "team": "Czechia",
+   "text": "Substitution, Czechia. Adam Hlozek replaces Pavel Sulc.",
+   "players": [
+    "Adam Hlozek",
+    "Pavel Sulc"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "64'",
+   "team": "Czechia",
+   "text": "Substitution, Czechia. Tomás Chory replaces Patrik Schick.",
+   "players": [
+    "Tomás Chorý",
+    "Patrik Schick"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "64'",
+   "team": "Czechia",
+   "text": "Substitution, Czechia. Michal Sadílek replaces Lukás Provod.",
+   "players": [
+    "Michal Sadílek",
+    "Lukás Provod"
+   ]
+  },
+  {
+   "type": "Goal",
+   "minute": "67'",
+   "team": "South Korea",
+   "text": "Goal! Korea Republic 1, Czechia 1. Hwang In-Beom (Korea Republic) right footed shot from the centre of the box to the bottom right corner. Assisted by Lee Kang-In.",
+   "players": [
+    "Hwang In-Beom",
+    "Lee Kang-In"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "69'",
+   "team": "South Korea",
+   "text": "Substitution, Korea Republic. Eom Ji-Sung replaces Lee Tae-Seok.",
+   "players": [
+    "Eom Ji-Sung",
+    "Lee Tae-Seok"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "69'",
+   "team": "South Korea",
+   "text": "Substitution, Korea Republic. Oh Hyeon-Gyu replaces Son Heung-Min.",
+   "players": [
+    "Oh Hyeon-Gyu",
+    "Son Heung-Min"
+   ]
+  },
+  {
+   "type": "Start Delay",
+   "minute": "70'",
+   "team": "South Korea",
+   "text": "Delay in match for a drinks break.",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "70'",
+   "team": "Czechia",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "72'",
+   "team": "South Korea",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "72'",
+   "team": "Czechia",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Goal",
+   "minute": "80'",
+   "team": "South Korea",
+   "text": "Goal! Korea Republic 2, Czechia 1. Oh Hyeon-Gyu (Korea Republic) left footed shot from very close range to the bottom left corner. Assisted by Hwang In-Beom.",
+   "players": [
+    "Oh Hyeon-Gyu",
+    "Hwang In-Beom"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "84'",
+   "team": "South Korea",
+   "text": "Substitution, Korea Republic. Kim Jin-Gyu replaces Hwang In-Beom.",
+   "players": [
+    "Kim Jin-Gyu",
+    "Hwang In-Beom"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "84'",
+   "team": "South Korea",
+   "text": "Substitution, Korea Republic. Park Jin-Seob replaces Paik Seung-Ho.",
+   "players": [
+    "Park Jin-Seop",
+    "Paik Seung-Ho"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "84'",
+   "team": "Czechia",
+   "text": "Substitution, Czechia. Mojmír Chytil replaces Alexandr Sojka.",
+   "players": [
+    "Mojmír Chytil",
+    "Alexandr Sojka"
+   ]
+  },
+  {
+   "type": "Yellow Card",
+   "minute": "90'+6'",
+   "team": "South Korea",
+   "text": "Lee Gi-Hyuk (Korea Republic) is shown the yellow card for a bad foul.",
+   "players": [
+    "Lee Gi-Hyuk"
+   ]
+  },
+  {
+   "type": "End Regular Time",
+   "minute": "90'+7'",
+   "team": null,
+   "text": "",
+   "players": []
+  }
+ ],
+ "shots": [
+  {
+   "minute": "12",
+   "seconds": 685.0,
+   "team": "South Korea",
+   "player": "Son Heung-Min",
+   "type": "Shot Blocked",
+   "x": 85.6,
+   "y": 58.8,
+   "goal": false,
+   "xg": 0.197,
+   "text": "Attempt blocked. Son Heung-Min (Korea Republic) left footed shot from the centre of the box is blocked. Assisted by Lee Jae-Sung."
+  },
+  {
+   "minute": "12",
+   "seconds": 714.0,
+   "team": "South Korea",
+   "player": "Lee Han-Beom",
+   "type": "Shot Off Target",
+   "x": 91.8,
+   "y": 44.2,
+   "goal": false,
+   "xg": 0.278,
+   "text": "Attempt missed. Lee Han-Beom (Korea Republic) header from the centre of the box is too high. Assisted by Lee Tae-Seok with a cross following a corner."
+  },
+  {
+   "minute": "14",
+   "seconds": 788.0,
+   "team": "South Korea",
+   "player": "Lee Kang-In",
+   "type": "Shot On Target",
+   "x": 70.1,
+   "y": 66.3,
+   "goal": false,
+   "xg": 0.041,
+   "text": "Attempt saved. Lee Kang-In (Korea Republic) left footed shot from outside the box is saved in the bottom right corner by Matej Kovár (Czechia). Assisted by Kim Min-Jae."
+  },
+  {
+   "minute": "14",
+   "seconds": 838.0,
+   "team": "South Korea",
+   "player": "Son Heung-Min",
+   "type": "Shot Blocked",
+   "x": 87.0,
+   "y": 44.8,
+   "goal": false,
+   "xg": 0.255,
+   "text": "Attempt blocked. Son Heung-Min (Korea Republic) right footed shot from the centre of the box is blocked. Assisted by Lee Kang-In."
+  },
+  {
+   "minute": "22",
+   "seconds": 1292.0,
+   "team": "Czechia",
+   "player": "Tomás Soucek",
+   "type": "Shot Off Target",
+   "x": 94.8,
+   "y": 46.6,
+   "goal": false,
+   "xg": 0.693,
+   "text": "Attempt missed. Tomás Soucek (Czechia) left footed shot from very close range misses to the right. Assisted by Alexandr Sojka with a cross following a corner."
+  },
+  {
+   "minute": "32",
+   "seconds": 1882.0,
+   "team": "Czechia",
+   "player": "Pavel Sulc",
+   "type": "Shot Off Target",
+   "x": 69.1,
+   "y": 33.8,
+   "goal": false,
+   "xg": 0.038,
+   "text": "Attempt missed. Pavel Sulc (Czechia) right footed shot from outside the box is just a bit too high."
+  },
+  {
+   "minute": "38",
+   "seconds": 2239.0,
+   "team": "South Korea",
+   "player": "Son Heung-Min",
+   "type": "Shot Off Target",
+   "x": 73.7,
+   "y": 49.9,
+   "goal": false,
+   "xg": 0.07,
+   "text": "Attempt missed. Son Heung-Min (Korea Republic) right footed shot from outside the box is too high. Assisted by Lee Jae-Sung."
+  },
+  {
+   "minute": "39",
+   "seconds": 2313.0,
+   "team": "South Korea",
+   "player": "Son Heung-Min",
+   "type": "Shot Off Target",
+   "x": 80.6,
+   "y": 56.4,
+   "goal": false,
+   "xg": 0.129,
+   "text": "Attempt missed. Son Heung-Min (Korea Republic) left footed shot from outside the box misses to the left. Assisted by Kim Min-Jae."
+  },
+  {
+   "minute": "45'+2",
+   "seconds": 2700.0,
+   "team": "South Korea",
+   "player": "Son Heung-Min",
+   "type": "Shot Blocked",
+   "x": 90.5,
+   "y": 53.8,
+   "goal": false,
+   "xg": 0.4,
+   "text": "Attempt blocked. Son Heung-Min (Korea Republic) right footed shot from the centre of the box is blocked. Assisted by Lee Tae-Seok."
+  },
+  {
+   "minute": "45'+3",
+   "seconds": 2700.0,
+   "team": "South Korea",
+   "player": "Hwang In-Beom",
+   "type": "Shot Off Target",
+   "x": 70.0,
+   "y": 53.0,
+   "goal": false,
+   "xg": 0.049,
+   "text": "Attempt missed. Hwang In-Beom (Korea Republic) right footed shot from outside the box is high and wide to the left. Assisted by Son Heung-Min."
+  },
+  {
+   "minute": "49",
+   "seconds": 2925.0,
+   "team": "South Korea",
+   "player": "Hwang In-Beom",
+   "type": "Shot On Target",
+   "x": 85.6,
+   "y": 30.1,
+   "goal": false,
+   "xg": 0.117,
+   "text": "Attempt saved. Hwang In-Beom (Korea Republic) right footed shot from the right side of the box is saved in the bottom left corner by Matej Kovár (Czechia). Assisted by Lee Kang-In."
+  },
+  {
+   "minute": "49",
+   "seconds": 2928.0,
+   "team": "South Korea",
+   "player": "Lee Jae-Sung",
+   "type": "Shot On Target",
+   "x": 93.1,
+   "y": 47.4,
+   "goal": false,
+   "xg": 0.579,
+   "text": "Attempt saved. Lee Jae-Sung (Korea Republic) left footed shot from the centre of the box is saved in the centre of the goal by Matej Kovár (Czechia)."
+  },
+  {
+   "minute": "56",
+   "seconds": 3311.0,
+   "team": "South Korea",
+   "player": "Son Heung-Min",
+   "type": "Shot On Target",
+   "x": 91.5,
+   "y": 63.2,
+   "goal": false,
+   "xg": 0.244,
+   "text": "Attempt saved. Son Heung-Min (Korea Republic) left footed shot from the left side of the box is saved in the bottom left corner by Matej Kovár (Czechia). Assisted by Lee Jae-Sung."
+  },
+  {
+   "minute": "59",
+   "seconds": 3491.0,
+   "team": "Czechia",
+   "player": "Ladislav Krejcí",
+   "type": "Goal - Header",
+   "x": 95.0,
+   "y": 46.2,
+   "goal": true,
+   "xg": 0.452,
+   "text": "Goal! Korea Republic 0, Czechia 1. Ladislav Krejcí (Czechia) header from very close range to the bottom right corner. Assisted by Vladimír Coufal."
+  },
+  {
+   "minute": "61",
+   "seconds": 3643.0,
+   "team": "South Korea",
+   "player": "Lee Jae-Sung",
+   "type": "Shot Off Target",
+   "x": 90.4,
+   "y": 40.6,
+   "goal": false,
+   "xg": 0.194,
+   "text": "Attempt missed. Lee Jae-Sung (Korea Republic) header from the centre of the box misses to the left. Assisted by Seol Young-Woo with a cross."
+  },
+  {
+   "minute": "67",
+   "seconds": 4004.0,
+   "team": "South Korea",
+   "player": "Hwang In-Beom",
+   "type": "Goal",
+   "x": 89.1,
+   "y": 61.9,
+   "goal": true,
+   "xg": 0.23,
+   "text": "Goal! Korea Republic 1, Czechia 1. Hwang In-Beom (Korea Republic) right footed shot from the centre of the box to the bottom right corner. Assisted by Lee Kang-In."
+  },
+  {
+   "minute": "80",
+   "seconds": 4764.0,
+   "team": "South Korea",
+   "player": "Oh Hyeon-Gyu",
+   "type": "Goal",
+   "x": 95.2,
+   "y": 45.4,
+   "goal": true,
+   "xg": 0.676,
+   "text": "Goal! Korea Republic 2, Czechia 1. Oh Hyeon-Gyu (Korea Republic) left footed shot from very close range to the bottom left corner. Assisted by Hwang In-Beom."
+  },
+  {
+   "minute": "82",
+   "seconds": 4912.0,
+   "team": "Czechia",
+   "player": "Adam Hlozek",
+   "type": "Shot On Target",
+   "x": 96.4,
+   "y": 57.5,
+   "goal": false,
+   "xg": 0.546,
+   "text": "Attempt saved. Adam Hlozek (Czechia) left footed shot from the left side of the six yard box is saved in the bottom left corner by Kim Seung-Gyu (Korea Republic)."
+  },
+  {
+   "minute": "88",
+   "seconds": 5229.0,
+   "team": "Czechia",
+   "player": "Michal Sadílek",
+   "type": "Shot On Target",
+   "x": 68.4,
+   "y": 74.7,
+   "goal": false,
+   "xg": 0.019,
+   "text": "Attempt saved. Michal Sadílek (Czechia) header from outside the box is saved in the bottom right corner by Kim Seung-Gyu (Korea Republic)."
+  },
+  {
+   "minute": "90'+3",
+   "seconds": 5400.0,
+   "team": "Czechia",
+   "player": "Michal Sadílek",
+   "type": "Shot On Target",
+   "x": 84.7,
+   "y": 46.6,
+   "goal": false,
+   "xg": 0.206,
+   "text": "Attempt saved. Michal Sadílek (Czechia) right footed shot from the centre of the box is saved in the bottom left corner by Kim Seung-Gyu (Korea Republic). Assisted by Mojmír Chytil."
+  },
+  {
+   "minute": "90'+4",
+   "seconds": 5400.0,
+   "team": "South Korea",
+   "player": "Kim Jin-Gyu",
+   "type": "Shot Blocked",
+   "x": 79.7,
+   "y": 42.7,
+   "goal": false,
+   "xg": 0.116,
+   "text": "Attempt blocked. Kim Jin-Gyu (Korea Republic) left footed shot from outside the box is blocked. Assisted by Oh Hyeon-Gyu."
+  },
+  {
+   "minute": "90'+4",
+   "seconds": 5400.0,
+   "team": "Czechia",
+   "player": "Adam Hlozek",
+   "type": "Shot Off Target",
+   "x": 91.5,
+   "y": 58.3,
+   "goal": false,
+   "xg": 0.23,
+   "text": "Attempt missed. Adam Hlozek (Czechia) header from the centre of the box misses to the left."
+  }
+ ],
+ "lineups": [
+  {
+   "team": "South Korea",
+   "formation": "3-4-2-1",
+   "starters": [
+    {
+     "name": "Kim Seung-Gyu",
+     "jersey": "1",
+     "position": "G"
+    },
+    {
+     "name": "Kim Min-Jae",
+     "jersey": "4",
+     "position": "CD"
+    },
+    {
+     "name": "Lee Gi-Hyuk",
+     "jersey": "3",
+     "position": "CD-L"
+    },
+    {
+     "name": "Lee Han-Beom",
+     "jersey": "2",
+     "position": "CD-R"
+    },
+    {
+     "name": "Paik Seung-Ho",
+     "jersey": "8",
+     "position": "CM-L"
+    },
+    {
+     "name": "Hwang In-Beom",
+     "jersey": "6",
+     "position": "CM-R"
+    },
+    {
+     "name": "Lee Tae-Seok",
+     "jersey": "13",
+     "position": "LM"
+    },
+    {
+     "name": "Seol Young-Woo",
+     "jersey": "22",
+     "position": "RM"
+    },
+    {
+     "name": "Son Heung-Min",
+     "jersey": "7",
+     "position": "F"
+    },
+    {
+     "name": "Lee Jae-Sung",
+     "jersey": "10",
+     "position": "CF-L"
+    },
+    {
+     "name": "Lee Kang-In",
+     "jersey": "19",
+     "position": "CF-R"
+    }
+   ],
+   "subs": [
+    {
+     "name": "Bae Jun-Ho",
+     "jersey": "17",
+     "position": "SUB"
+    },
+    {
+     "name": "Kim Jin-Gyu",
+     "jersey": "24",
+     "position": "SUB"
+    },
+    {
+     "name": "Kim Tae-Hyeon",
+     "jersey": "5",
+     "position": "SUB"
+    },
+    {
+     "name": "Lee Dong-Gyeong",
+     "jersey": "26",
+     "position": "SUB"
+    },
+    {
+     "name": "Jens Castrop",
+     "jersey": "23",
+     "position": "SUB"
+    },
+    {
+     "name": "Song Bum-Keun",
+     "jersey": "12",
+     "position": "SUB"
+    },
+    {
+     "name": "Hwang Hee-Chan",
+     "jersey": "11",
+     "position": "SUB"
+    },
+    {
+     "name": "Cho Gue-Sung",
+     "jersey": "9",
+     "position": "SUB"
+    },
+    {
+     "name": "Eom Ji-Sung",
+     "jersey": "25",
+     "position": "SUB"
+    },
+    {
+     "name": "Jo Hyeon-Woo",
+     "jersey": "21",
+     "position": "SUB"
+    },
+    {
+     "name": "Yang Hyun-Jun",
+     "jersey": "20",
+     "position": "SUB"
+    },
+    {
+     "name": "Kim Moon-Hwan",
+     "jersey": "15",
+     "position": "SUB"
+    },
+    {
+     "name": "Cho Wi-Je",
+     "jersey": "14",
+     "position": "SUB"
+    },
+    {
+     "name": "Park Jin-Seop",
+     "jersey": "16",
+     "position": "SUB"
+    },
+    {
+     "name": "Oh Hyeon-Gyu",
+     "jersey": "18",
+     "position": "SUB"
+    }
+   ]
+  },
+  {
+   "team": "Czechia",
+   "formation": "3-4-2-1",
+   "starters": [
+    {
+     "name": "Matej Kovár",
+     "jersey": "1",
+     "position": "G"
+    },
+    {
+     "name": "Robin Hranác",
+     "jersey": "4",
+     "position": "CD"
+    },
+    {
+     "name": "Ladislav Krejcí",
+     "jersey": "7",
+     "position": "CD-L"
+    },
+    {
+     "name": "Stepán Chaloupek",
+     "jersey": "6",
+     "position": "CD-R"
+    },
+    {
+     "name": "Alexandr Sojka",
+     "jersey": "24",
+     "position": "CM-L"
+    },
+    {
+     "name": "Tomás Soucek",
+     "jersey": "22",
+     "position": "CM-R"
+    },
+    {
+     "name": "Jaroslav Zelený",
+     "jersey": "20",
+     "position": "LM"
+    },
+    {
+     "name": "Vladimír Coufal",
+     "jersey": "5",
+     "position": "RM"
+    },
+    {
+     "name": "Patrik Schick",
+     "jersey": "10",
+     "position": "F"
+    },
+    {
+     "name": "Pavel Sulc",
+     "jersey": "15",
+     "position": "CF-L"
+    },
+    {
+     "name": "Lukás Provod",
+     "jersey": "17",
+     "position": "CF-R"
+    }
+   ],
+   "subs": [
+    {
+     "name": "Jindrich Stanek",
+     "jersey": "16",
+     "position": "SUB"
+    },
+    {
+     "name": "Adam Hlozek",
+     "jersey": "9",
+     "position": "SUB"
+    },
+    {
+     "name": "Tomás Chorý",
+     "jersey": "19",
+     "position": "SUB"
+    },
+    {
+     "name": "David Doudera",
+     "jersey": "21",
+     "position": "SUB"
+    },
+    {
+     "name": "Lukás Cerv",
+     "jersey": "12",
+     "position": "SUB"
+    },
+    {
+     "name": "Tomás Holes",
+     "jersey": "3",
+     "position": "SUB"
+    },
+    {
+     "name": "Vladimír Darida",
+     "jersey": "8",
+     "position": "SUB"
+    },
+    {
+     "name": "Lukás Hornícek",
+     "jersey": "23",
+     "position": "SUB"
+    },
+    {
+     "name": "Jan Kuchta",
+     "jersey": "11",
+     "position": "SUB"
+    },
+    {
+     "name": "Mojmír Chytil",
+     "jersey": "13",
+     "position": "SUB"
+    },
+    {
+     "name": "Michal Sadílek",
+     "jersey": "18",
+     "position": "SUB"
+    },
+    {
+     "name": "Hugo Sochurek",
+     "jersey": "25",
+     "position": "SUB"
+    },
+    {
+     "name": "David Jurásek",
+     "jersey": "14",
+     "position": "SUB"
+    },
+    {
+     "name": "Denis Visinský",
+     "jersey": "26",
+     "position": "SUB"
+    },
+    {
+     "name": "David Zima",
+     "jersey": "2",
+     "position": "SUB"
+    }
+   ]
+  }
+ ],
+ "attendance": 44985,
+ "venue": "Estadio Akron, Guadalajara, Mexico"
+}
