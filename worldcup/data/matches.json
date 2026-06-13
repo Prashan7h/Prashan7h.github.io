@@ -410,7 +410,7 @@
     },
     {
      "name": "Giovanni Reyna",
-     "minute": "90+7"
+     "minute": "90+8"
     }
    ],
    "goals2": [
@@ -422,6 +422,7 @@
    "espn_id": "760417",
    "status": "finished",
    "utc_date": "2026-06-13T01:00Z",
+   "attendance": 70492,
    "venue": "SoFi Stadium",
    "slug": "2026-06-12-usa-vs-paraguay"
   },
