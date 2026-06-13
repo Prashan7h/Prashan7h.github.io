@@ -1,0 +1,1056 @@
+{
+ "teams": [
+  {
+   "name": "United States",
+   "stats": {
+    "possessionPct": "65.1",
+    "totalShots": "16",
+    "shotsOnTarget": "6",
+    "wonCorners": "3",
+    "foulsCommitted": "13",
+    "offsides": "2",
+    "saves": "1",
+    "yellowCards": "1",
+    "redCards": "0"
+   }
+  },
+  {
+   "name": "Paraguay",
+   "stats": {
+    "possessionPct": "34.9",
+    "totalShots": "9",
+    "shotsOnTarget": "1",
+    "wonCorners": "1",
+    "foulsCommitted": "17",
+    "offsides": "1",
+    "saves": "3",
+    "yellowCards": "5",
+    "redCards": "0"
+   }
+  }
+ ],
+ "events": [
+  {
+   "type": "Kickoff",
+   "minute": "",
+   "team": null,
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Own Goal",
+   "minute": "7'",
+   "team": "United States",
+   "text": "Own Goal by Damián Bobadilla, Paraguay. USA 1, Paraguay 0.",
+   "players": [
+    "Damián Bobadilla"
+   ]
+  },
+  {
+   "type": "Yellow Card",
+   "minute": "10'",
+   "team": "Paraguay",
+   "text": "Juan José Cáceres (Paraguay) is shown the yellow card for a bad foul.",
+   "players": [
+    "Juan Jose Cáceres"
+   ]
+  },
+  {
+   "type": "Start Delay",
+   "minute": "13'",
+   "team": "United States",
+   "text": "Delay in match (USA).",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "13'",
+   "team": "Paraguay",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "13'",
+   "team": "United States",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "13'",
+   "team": "Paraguay",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "17'",
+   "team": "United States",
+   "text": "Delay in match because of an injury Chris Richards (USA).",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "17'",
+   "team": "Paraguay",
+   "text": "Delay in match because of an injury Omar Alderete (Paraguay).",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "19'",
+   "team": "United States",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "19'",
+   "team": "Paraguay",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "24'",
+   "team": "United States",
+   "text": "Delay in match for a drinks break.",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "24'",
+   "team": "Paraguay",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "27'",
+   "team": "United States",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "27'",
+   "team": "Paraguay",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Goal",
+   "minute": "31'",
+   "team": "United States",
+   "text": "Goal! USA 2, Paraguay 0. Folarin Balogun (USA) right footed shot from the centre of the box to the bottom right corner. Assisted by Christian Pulisic.",
+   "players": [
+    "Folarin Balogun",
+    "Christian Pulisic"
+   ]
+  },
+  {
+   "type": "Goal",
+   "minute": "45'+5'",
+   "team": "United States",
+   "text": "Goal! USA 3, Paraguay 0. Folarin Balogun (USA) left footed shot from the centre of the box to the top left corner. Assisted by Malik Tillman.",
+   "players": [
+    "Folarin Balogun",
+    "Malik Tillman"
+   ]
+  },
+  {
+   "type": "Halftime",
+   "minute": "45'+6'",
+   "team": null,
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Substitution",
+   "minute": "45'",
+   "team": "Paraguay",
+   "text": "Substitution, Paraguay. Mauricio replaces Damián Bobadilla.",
+   "players": [
+    "Maurício",
+    "Damián Bobadilla"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "45'",
+   "team": "United States",
+   "text": "Substitution, USA. Sebastian Berhalter replaces Christian Pulisic.",
+   "players": [
+    "Sebastian Berhalter",
+    "Christian Pulisic"
+   ]
+  },
+  {
+   "type": "Start 2nd Half",
+   "minute": "45'",
+   "team": null,
+   "text": "Second Half begins USA 3, Paraguay 0.",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "51'",
+   "team": "United States",
+   "text": "Delay in match (USA). VAR checking.",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "51'",
+   "team": "Paraguay",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "52'",
+   "team": "United States",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "52'",
+   "team": "Paraguay",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "VAR - (Red) Card Upgrade",
+   "minute": "52'",
+   "team": "United States",
+   "text": "VAR Decision: Card Changed.",
+   "players": [
+    "Tim Ream"
+   ]
+  },
+  {
+   "type": "Start Delay",
+   "minute": "52'",
+   "team": "United States",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Yellow Card",
+   "minute": "53'",
+   "team": "Paraguay",
+   "text": "Miguel Almirón (Paraguay) is shown the yellow card.",
+   "players": [
+    "Miguel Almirón"
+   ]
+  },
+  {
+   "type": "End Delay",
+   "minute": "53'",
+   "team": "United States",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Yellow Card",
+   "minute": "59'",
+   "team": "United States",
+   "text": "Tyler Adams (USA) is shown the yellow card for a bad foul.",
+   "players": [
+    "Tyler Adams"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "62'",
+   "team": "Paraguay",
+   "text": "Substitution, Paraguay. Álex Arce replaces Antonio Sanabria.",
+   "players": [
+    "Alex Arce",
+    "Antonio Sanabria"
+   ]
+  },
+  {
+   "type": "Start Delay",
+   "minute": "68'",
+   "team": "United States",
+   "text": "Delay in match for a drinks break.",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "68'",
+   "team": "Paraguay",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "71'",
+   "team": "United States",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "71'",
+   "team": "Paraguay",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "71'",
+   "team": "United States",
+   "text": "Delay in match because of an injury Folarin Balogun (USA).",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "71'",
+   "team": "Paraguay",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "72'",
+   "team": "United States",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "72'",
+   "team": "Paraguay",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Substitution",
+   "minute": "72'",
+   "team": "United States",
+   "text": "Substitution, USA. Timothy Weah replaces Sergiño Dest.",
+   "players": [
+    "Timothy Weah",
+    "Sergiño Dest"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "72'",
+   "team": "United States",
+   "text": "Substitution, USA. Ricardo Pepi replaces Folarin Balogun.",
+   "players": [
+    "Ricardo Pepi",
+    "Folarin Balogun"
+   ]
+  },
+  {
+   "type": "Goal",
+   "minute": "73'",
+   "team": "Paraguay",
+   "text": "Goal! USA 3, Paraguay 1. Mauricio (Paraguay) left footed shot from the centre of the box to the bottom right corner. Assisted by Julio Enciso following a set piece situation.",
+   "players": [
+    "Maurício",
+    "Julio Enciso"
+   ]
+  },
+  {
+   "type": "Yellow Card",
+   "minute": "79'",
+   "team": "Paraguay",
+   "text": "Diego Gómez (Paraguay) is shown the yellow card for a bad foul.",
+   "players": [
+    "Diego Gómez"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "79'",
+   "team": "Paraguay",
+   "text": "Substitution, Paraguay. Ramón Sosa replaces Miguel Almirón.",
+   "players": [
+    "Ramón Sosa",
+    "Miguel Almirón"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "79'",
+   "team": "Paraguay",
+   "text": "Substitution, Paraguay. Gustavo Velázquez replaces Juan José Cáceres.",
+   "players": [
+    "Gustavo Velázquez",
+    "Juan Jose Cáceres"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "80'",
+   "team": "Paraguay",
+   "text": "Substitution, Paraguay. Alejandro Romero replaces Diego Gómez.",
+   "players": [
+    "Alejandro Romero Gamarra",
+    "Diego Gómez"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "82'",
+   "team": "United States",
+   "text": "Substitution, USA. Giovanni Reyna replaces Malik Tillman.",
+   "players": [
+    "Giovanni Reyna",
+    "Malik Tillman"
+   ]
+  },
+  {
+   "type": "Yellow Card",
+   "minute": "88'",
+   "team": "Paraguay",
+   "text": "Álex Arce (Paraguay) is shown the yellow card for a bad foul.",
+   "players": [
+    "Alex Arce"
+   ]
+  },
+  {
+   "type": "Yellow Card",
+   "minute": "90'+3'",
+   "team": "Paraguay",
+   "text": "Júnior Alonso (Paraguay) is shown the yellow card for a bad foul.",
+   "players": [
+    "Júnior Alonso"
+   ]
+  },
+  {
+   "type": "Start Delay",
+   "minute": "90'+3'",
+   "team": "Paraguay",
+   "text": "Delay in match because of an injury Andrés Cubas (Paraguay).",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "90'+3'",
+   "team": "United States",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "90'+4'",
+   "team": "Paraguay",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "90'+4'",
+   "team": "United States",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Goal",
+   "minute": "90'+8'",
+   "team": "United States",
+   "text": "Goal! USA 4, Paraguay 1. Giovanni Reyna (USA) right footed shot from the centre of the box to the bottom left corner. Assisted by Alex Freeman.",
+   "players": [
+    "Giovanni Reyna",
+    "Alex Freeman"
+   ]
+  },
+  {
+   "type": "End Regular Time",
+   "minute": "90'+9'",
+   "team": null,
+   "text": "",
+   "players": []
+  }
+ ],
+ "shots": [
+  {
+   "minute": "2",
+   "seconds": 76.0,
+   "team": "Paraguay",
+   "player": "Diego Gómez",
+   "type": "Shot Off Target",
+   "x": 98.2,
+   "y": 64.6,
+   "goal": false,
+   "xg": 0.18,
+   "text": "Attempt missed. Diego Gómez (Paraguay) left footed shot from a difficult angle on the left is just a bit too high. Assisted by Antonio Sanabria."
+  },
+  {
+   "minute": "3",
+   "seconds": 148.0,
+   "team": "United States",
+   "player": "Folarin Balogun",
+   "type": "Shot On Target",
+   "x": 87.3,
+   "y": 34.3,
+   "goal": false,
+   "xg": 0.163,
+   "text": "Attempt saved. Folarin Balogun (USA) right footed shot from the right side of the box is saved in the centre of the goal by Orlando Gill (Paraguay). Assisted by Weston McKennie with a headed pass."
+  },
+  {
+   "minute": "14",
+   "seconds": 829.0,
+   "team": "Paraguay",
+   "player": "Julio Enciso",
+   "type": "Shot Off Target",
+   "x": 81.9,
+   "y": 32.3,
+   "goal": false,
+   "xg": 0.101,
+   "text": "Attempt missed. Julio Enciso (Paraguay) right footed shot from outside the box misses to the left. Assisted by Miguel Almirón with a headed pass."
+  },
+  {
+   "minute": "31",
+   "seconds": 1819.0,
+   "team": "United States",
+   "player": "Folarin Balogun",
+   "type": "Goal",
+   "x": 87.5,
+   "y": 58.0,
+   "goal": true,
+   "xg": 0.244,
+   "text": "Goal! USA 2, Paraguay 0. Folarin Balogun (USA) right footed shot from the centre of the box to the bottom right corner. Assisted by Christian Pulisic."
+  },
+  {
+   "minute": "35",
+   "seconds": 2088.0,
+   "team": "United States",
+   "player": "Folarin Balogun",
+   "type": "Shot Off Target",
+   "x": 90.8,
+   "y": 55.5,
+   "goal": false,
+   "xg": 0.252,
+   "text": "Attempt missed. Folarin Balogun (USA) header from the centre of the box misses to the right. Assisted by Christian Pulisic with a cross."
+  },
+  {
+   "minute": "37",
+   "seconds": 2176.0,
+   "team": "United States",
+   "player": "Malik Tillman",
+   "type": "Shot Blocked",
+   "x": 81.7,
+   "y": 44.2,
+   "goal": false,
+   "xg": 0.145,
+   "text": "Attempt blocked. Malik Tillman (USA) left footed shot from outside the box is blocked."
+  },
+  {
+   "minute": "37",
+   "seconds": 2220.0,
+   "team": "United States",
+   "player": "Chris Richards",
+   "type": "Shot Off Target",
+   "x": 89.8,
+   "y": 54.6,
+   "goal": false,
+   "xg": 0.233,
+   "text": "Attempt missed. Chris Richards (USA) header from the centre of the box is close, but misses to the right. Assisted by Malik Tillman with a cross following a corner."
+  },
+  {
+   "minute": "43",
+   "seconds": 2570.0,
+   "team": "United States",
+   "player": "Malik Tillman",
+   "type": "Shot On Target",
+   "x": 96.1,
+   "y": 43.2,
+   "goal": false,
+   "xg": 0.592,
+   "text": "Attempt saved. Malik Tillman (USA) right footed shot from the right side of the six yard box is saved in the centre of the goal by Orlando Gill (Paraguay)."
+  },
+  {
+   "minute": "45'+5",
+   "seconds": 2700.0,
+   "team": "United States",
+   "player": "Folarin Balogun",
+   "type": "Goal",
+   "x": 87.2,
+   "y": 43.5,
+   "goal": true,
+   "xg": 0.251,
+   "text": "Goal! USA 3, Paraguay 0. Folarin Balogun (USA) left footed shot from the centre of the box to the top left corner. Assisted by Malik Tillman."
+  },
+  {
+   "minute": "47",
+   "seconds": 2816.0,
+   "team": "United States",
+   "player": "Folarin Balogun",
+   "type": "Shot Blocked",
+   "x": 83.9,
+   "y": 70.5,
+   "goal": false,
+   "xg": 0.102,
+   "text": "Attempt blocked. Folarin Balogun (USA) right footed shot from the left side of the box is blocked. Assisted by Antonee Robinson."
+  },
+  {
+   "minute": "48",
+   "seconds": 2864.0,
+   "team": "Paraguay",
+   "player": "Miguel Almirón",
+   "type": "Shot Blocked",
+   "x": 75.9,
+   "y": 40.3,
+   "goal": false,
+   "xg": 0.078,
+   "text": "Attempt blocked. Miguel Almirón (Paraguay) left footed shot from outside the box is blocked."
+  },
+  {
+   "minute": "49",
+   "seconds": 2907.0,
+   "team": "Paraguay",
+   "player": "Diego Gómez",
+   "type": "Shot Blocked",
+   "x": 87.8,
+   "y": 32.9,
+   "goal": false,
+   "xg": 0.154,
+   "text": "Attempt blocked. Diego Gómez (Paraguay) right footed shot from the right side of the box is blocked."
+  },
+  {
+   "minute": "50",
+   "seconds": 2950.0,
+   "team": "Paraguay",
+   "player": "Diego Gómez",
+   "type": "Shot Blocked",
+   "x": 76.8,
+   "y": 65.7,
+   "goal": false,
+   "xg": 0.073,
+   "text": "Attempt blocked. Diego Gómez (Paraguay) right footed shot from outside the box is blocked. Assisted by Miguel Almirón."
+  },
+  {
+   "minute": "57",
+   "seconds": 3395.0,
+   "team": "United States",
+   "player": "Malik Tillman",
+   "type": "Shot Blocked",
+   "x": 87.3,
+   "y": 39.7,
+   "goal": false,
+   "xg": 0.216,
+   "text": "Attempt blocked. Malik Tillman (USA) right footed shot from the centre of the box is blocked. Assisted by Weston McKennie."
+  },
+  {
+   "minute": "61",
+   "seconds": 3610.0,
+   "team": "United States",
+   "player": "Malik Tillman",
+   "type": "Shot Off Target",
+   "x": 87.3,
+   "y": 57.6,
+   "goal": false,
+   "xg": 0.243,
+   "text": "Attempt missed. Malik Tillman (USA) right footed shot from the centre of the box misses to the right."
+  },
+  {
+   "minute": "65",
+   "seconds": 3870.0,
+   "team": "Paraguay",
+   "player": "Julio Enciso",
+   "type": "Shot Blocked",
+   "x": 86.4,
+   "y": 66.6,
+   "goal": false,
+   "xg": 0.146,
+   "text": "Attempt blocked. Julio Enciso (Paraguay) right footed shot from the left side of the box is blocked. Assisted by Júnior Alonso."
+  },
+  {
+   "minute": "65",
+   "seconds": 3879.0,
+   "team": "Paraguay",
+   "player": "Diego Gómez",
+   "type": "Shot Off Target",
+   "x": 76.0,
+   "y": 45.3,
+   "goal": false,
+   "xg": 0.085,
+   "text": "Attempt missed. Diego Gómez (Paraguay) right footed shot from outside the box is high and wide to the right. Assisted by Álex Arce."
+  },
+  {
+   "minute": "71",
+   "seconds": 4228.0,
+   "team": "Paraguay",
+   "player": "Miguel Almirón",
+   "type": "Shot Blocked",
+   "x": 80.3,
+   "y": 50.2,
+   "goal": false,
+   "xg": 0.132,
+   "text": "Attempt blocked. Miguel Almirón (Paraguay) left footed shot from outside the box is blocked. Assisted by Omar Alderete with a headed pass."
+  },
+  {
+   "minute": "73",
+   "seconds": 4362.0,
+   "team": "Paraguay",
+   "player": "Mauricio",
+   "type": "Goal",
+   "x": 88.1,
+   "y": 58.1,
+   "goal": true,
+   "xg": 0.258,
+   "text": "Goal! USA 3, Paraguay 1. Mauricio (Paraguay) left footed shot from the centre of the box to the bottom right corner. Assisted by Julio Enciso following a set piece situation."
+  },
+  {
+   "minute": "75",
+   "seconds": 4449.0,
+   "team": "United States",
+   "player": "Malik Tillman",
+   "type": "Shot On Target",
+   "x": 86.1,
+   "y": 48.3,
+   "goal": false,
+   "xg": 0.245,
+   "text": "Attempt saved. Malik Tillman (USA) right footed shot from the centre of the box is saved in the bottom right corner by Orlando Gill (Paraguay). Assisted by Ricardo Pepi."
+  },
+  {
+   "minute": "77",
+   "seconds": 4609.0,
+   "team": "United States",
+   "player": "Timothy Weah",
+   "type": "Shot Off Target",
+   "x": 86.6,
+   "y": 27.7,
+   "goal": false,
+   "xg": 0.108,
+   "text": "Attempt missed. Timothy Weah (USA) right footed shot from the right side of the box is high and wide to the left. Assisted by Malik Tillman."
+  },
+  {
+   "minute": "89",
+   "seconds": 5282.0,
+   "team": "United States",
+   "player": "Ricardo Pepi",
+   "type": "Shot Off Target",
+   "x": 89.2,
+   "y": 55.5,
+   "goal": false,
+   "xg": 0.323,
+   "text": "Attempt missed. Ricardo Pepi (USA) left footed shot from the centre of the box is too high. Assisted by Weston McKennie."
+  },
+  {
+   "minute": "90",
+   "seconds": 5370.0,
+   "team": "United States",
+   "player": "Sebastian Berhalter",
+   "type": "Shot Off Target",
+   "x": 62.8,
+   "y": 40.2,
+   "goal": false,
+   "xg": 0.025,
+   "text": "Attempt missed. Sebastian Berhalter (USA) right footed shot from more than 35 yards misses to the right."
+  },
+  {
+   "minute": "90'+7",
+   "seconds": 5400.0,
+   "team": "United States",
+   "player": "Timothy Weah",
+   "type": "Shot Blocked",
+   "x": 67.3,
+   "y": 56.2,
+   "goal": false,
+   "xg": 0.038,
+   "text": "Attempt blocked. Timothy Weah (USA) right footed shot from outside the box is blocked. Assisted by Tyler Adams."
+  },
+  {
+   "minute": "90'+8",
+   "seconds": 5400.0,
+   "team": "United States",
+   "player": "Giovanni Reyna",
+   "type": "Goal",
+   "x": 86.1,
+   "y": 37.1,
+   "goal": true,
+   "xg": 0.173,
+   "text": "Goal! USA 4, Paraguay 1. Giovanni Reyna (USA) right footed shot from the centre of the box to the bottom left corner. Assisted by Alex Freeman."
+  }
+ ],
+ "lineups": [
+  {
+   "team": "United States",
+   "formation": "4-2-3-1",
+   "starters": [
+    {
+     "name": "Matt Freese",
+     "jersey": "24",
+     "position": "G"
+    },
+    {
+     "name": "Tim Ream",
+     "jersey": "13",
+     "position": "CD-L"
+    },
+    {
+     "name": "Chris Richards",
+     "jersey": "3",
+     "position": "CD-R"
+    },
+    {
+     "name": "Antonee Robinson",
+     "jersey": "5",
+     "position": "LB"
+    },
+    {
+     "name": "Alex Freeman",
+     "jersey": "16",
+     "position": "RB"
+    },
+    {
+     "name": "Weston McKennie",
+     "jersey": "8",
+     "position": "AM"
+    },
+    {
+     "name": "Malik Tillman",
+     "jersey": "17",
+     "position": "LM"
+    },
+    {
+     "name": "Tyler Adams",
+     "jersey": "4",
+     "position": "RM"
+    },
+    {
+     "name": "Folarin Balogun",
+     "jersey": "20",
+     "position": "F"
+    },
+    {
+     "name": "Christian Pulisic",
+     "jersey": "10",
+     "position": "AM-L"
+    },
+    {
+     "name": "Sergiño Dest",
+     "jersey": "2",
+     "position": "AM-R"
+    }
+   ],
+   "subs": [
+    {
+     "name": "Alejandro Zendejas",
+     "jersey": "26",
+     "position": "SUB"
+    },
+    {
+     "name": "Sebastian Berhalter",
+     "jersey": "14",
+     "position": "SUB"
+    },
+    {
+     "name": "Ricardo Pepi",
+     "jersey": "9",
+     "position": "SUB"
+    },
+    {
+     "name": "Cristian Roldan",
+     "jersey": "15",
+     "position": "SUB"
+    },
+    {
+     "name": "Mark McKenzie",
+     "jersey": "22",
+     "position": "SUB"
+    },
+    {
+     "name": "Joe Scally",
+     "jersey": "23",
+     "position": "SUB"
+    },
+    {
+     "name": "Max Arfsten",
+     "jersey": "18",
+     "position": "SUB"
+    },
+    {
+     "name": "Matt Turner",
+     "jersey": "1",
+     "position": "SUB"
+    },
+    {
+     "name": "Haji Wright",
+     "jersey": "19",
+     "position": "SUB"
+    },
+    {
+     "name": "Chris Brady",
+     "jersey": "25",
+     "position": "SUB"
+    },
+    {
+     "name": "Brenden Aaronson",
+     "jersey": "11",
+     "position": "SUB"
+    },
+    {
+     "name": "Giovanni Reyna",
+     "jersey": "7",
+     "position": "SUB"
+    },
+    {
+     "name": "Timothy Weah",
+     "jersey": "21",
+     "position": "SUB"
+    },
+    {
+     "name": "Miles Robinson",
+     "jersey": "12",
+     "position": "SUB"
+    },
+    {
+     "name": "Auston Trusty",
+     "jersey": "6",
+     "position": "SUB"
+    }
+   ]
+  },
+  {
+   "team": "Paraguay",
+   "formation": "4-4-2",
+   "starters": [
+    {
+     "name": "Orlando Gil",
+     "jersey": "12",
+     "position": "G"
+    },
+    {
+     "name": "Omar Alderete",
+     "jersey": "3",
+     "position": "CD-L"
+    },
+    {
+     "name": "Gustavo Gómez",
+     "jersey": "15",
+     "position": "CD-R"
+    },
+    {
+     "name": "Júnior Alonso",
+     "jersey": "6",
+     "position": "LB"
+    },
+    {
+     "name": "Juan Jose Cáceres",
+     "jersey": "4",
+     "position": "RB"
+    },
+    {
+     "name": "Damián Bobadilla",
+     "jersey": "16",
+     "position": "CM-L"
+    },
+    {
+     "name": "Andrés Cubas",
+     "jersey": "14",
+     "position": "CM-R"
+    },
+    {
+     "name": "Miguel Almirón",
+     "jersey": "10",
+     "position": "LM"
+    },
+    {
+     "name": "Diego Gómez",
+     "jersey": "8",
+     "position": "RM"
+    },
+    {
+     "name": "Julio Enciso",
+     "jersey": "19",
+     "position": "CF-L"
+    },
+    {
+     "name": "Antonio Sanabria",
+     "jersey": "9",
+     "position": "CF-R"
+    }
+   ],
+   "subs": [
+    {
+     "name": "Alex Arce",
+     "jersey": "18",
+     "position": "SUB"
+    },
+    {
+     "name": "José Canale",
+     "jersey": "13",
+     "position": "SUB"
+    },
+    {
+     "name": "Gabriel Ávalos",
+     "jersey": "21",
+     "position": "SUB"
+    },
+    {
+     "name": "Alexandro Maidana",
+     "jersey": "26",
+     "position": "SUB"
+    },
+    {
+     "name": "Gustavo Caballero",
+     "jersey": "24",
+     "position": "SUB"
+    },
+    {
+     "name": "Alejandro Romero Gamarra",
+     "jersey": "17",
+     "position": "SUB"
+    },
+    {
+     "name": "Braian Ojeda",
+     "jersey": "20",
+     "position": "SUB"
+    },
+    {
+     "name": "Gastón Olveira",
+     "jersey": "22",
+     "position": "SUB"
+    },
+    {
+     "name": "Gatito Fernández",
+     "jersey": "1",
+     "position": "SUB"
+    },
+    {
+     "name": "Isidro Pitta",
+     "jersey": "25",
+     "position": "SUB"
+    },
+    {
+     "name": "Fabián Balbuena",
+     "jersey": "5",
+     "position": "SUB"
+    },
+    {
+     "name": "Matías Galarza",
+     "jersey": "23",
+     "position": "SUB"
+    },
+    {
+     "name": "Ramón Sosa",
+     "jersey": "7",
+     "position": "SUB"
+    },
+    {
+     "name": "Maurício",
+     "jersey": "11",
+     "position": "SUB"
+    },
+    {
+     "name": "Gustavo Velázquez",
+     "jersey": "2",
+     "position": "SUB"
+    }
+   ]
+  }
+ ],
+ "attendance": 0,
+ "venue": "SoFi Stadium, Inglewood, California, USA"
+}

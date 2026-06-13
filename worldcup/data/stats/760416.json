@@ -1,0 +1,941 @@
+{
+ "teams": [
+  {
+   "name": "Canada",
+   "stats": {
+    "possessionPct": "61.1",
+    "totalShots": "13",
+    "shotsOnTarget": "4",
+    "wonCorners": "9",
+    "foulsCommitted": "10",
+    "offsides": "1",
+    "saves": "2",
+    "yellowCards": "2",
+    "redCards": "0"
+   }
+  },
+  {
+   "name": "Bosnia-Herzegovina",
+   "stats": {
+    "possessionPct": "38.9",
+    "totalShots": "8",
+    "shotsOnTarget": "3",
+    "wonCorners": "4",
+    "foulsCommitted": "20",
+    "offsides": "0",
+    "saves": "1",
+    "yellowCards": "3",
+    "redCards": "0"
+   }
+  }
+ ],
+ "events": [
+  {
+   "type": "Kickoff",
+   "minute": "",
+   "team": null,
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Yellow Card",
+   "minute": "11'",
+   "team": "Canada",
+   "text": "Alistair Johnston (Canada) is shown the yellow card for a bad foul.",
+   "players": [
+    "Alistair Johnston"
+   ]
+  },
+  {
+   "type": "Start Delay",
+   "minute": "12'",
+   "team": "Bosnia-Herzegovina",
+   "text": "Delay in match because of an injury Amar Memic (Bosnia and Herzegovina).",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "12'",
+   "team": "Canada",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "12'",
+   "team": "Bosnia-Herzegovina",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "12'",
+   "team": "Canada",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "15'",
+   "team": "Bosnia-Herzegovina",
+   "text": "Delay in match (Bosnia and Herzegovina).",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "15'",
+   "team": "Canada",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "15'",
+   "team": "Bosnia-Herzegovina",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "15'",
+   "team": "Canada",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Goal - Header",
+   "minute": "21'",
+   "team": "Bosnia-Herzegovina",
+   "text": "Goal! Canada 0, Bosnia and Herzegovina 1. Jovo Lukic (Bosnia and Herzegovina) header from very close range to the centre of the goal. Assisted by Sead Kolasinac with a headed pass following a corner.",
+   "players": [
+    "Jovo Lukic",
+    "Sead Kolasinac"
+   ]
+  },
+  {
+   "type": "Start Delay",
+   "minute": "23'",
+   "team": "Canada",
+   "text": "Delay in match for a drinks break.",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "23'",
+   "team": "Bosnia-Herzegovina",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "25'",
+   "team": "Canada",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "25'",
+   "team": "Bosnia-Herzegovina",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Yellow Card",
+   "minute": "45'",
+   "team": "Bosnia-Herzegovina",
+   "text": "Ermedin Demirovic (Bosnia and Herzegovina) is shown the yellow card for a bad foul.",
+   "players": [
+    "Ermedin Demirovic"
+   ]
+  },
+  {
+   "type": "Yellow Card",
+   "minute": "45'+1'",
+   "team": "Bosnia-Herzegovina",
+   "text": "Jovo Lukic (Bosnia and Herzegovina) is shown the yellow card for a bad foul.",
+   "players": [
+    "Jovo Lukic"
+   ]
+  },
+  {
+   "type": "Halftime",
+   "minute": "45'+4'",
+   "team": null,
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Start 2nd Half",
+   "minute": "45'",
+   "team": null,
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "49'",
+   "team": "Bosnia-Herzegovina",
+   "text": "Delay in match because of an injury Nikola Vasilj (Bosnia and Herzegovina).",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "49'",
+   "team": "Canada",
+   "text": "Delay in match because of an injury Tani Oluwaseyi (Canada).",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "50'",
+   "team": "Canada",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "50'",
+   "team": "Bosnia-Herzegovina",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "Yellow Card",
+   "minute": "53'",
+   "team": "Canada",
+   "text": "Luc De Fougerolles (Canada) is shown the yellow card for a bad foul.",
+   "players": [
+    "Luc de Fougerolles"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "61'",
+   "team": "Canada",
+   "text": "Substitution, Canada. Jacob Shaffelburg replaces Liam Millar.",
+   "players": [
+    "Jacob Shaffelburg",
+    "Liam Millar"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "61'",
+   "team": "Canada",
+   "text": "Substitution, Canada. Promise David replaces Jonathan David.",
+   "players": [
+    "Promise David",
+    "Jonathan David"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "61'",
+   "team": "Canada",
+   "text": "Substitution, Canada. Ali Ahmed replaces Tajon Buchanan.",
+   "players": [
+    "Ali Ahmed",
+    "Tajon Buchanan"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "62'",
+   "team": "Bosnia-Herzegovina",
+   "text": "Substitution, Bosnia and Herzegovina. Samed Bazdar replaces Jovo Lukic.",
+   "players": [
+    "Samed Bazdar",
+    "Jovo Lukic"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "62'",
+   "team": "Bosnia-Herzegovina",
+   "text": "Substitution, Bosnia and Herzegovina. Armin Gigovic replaces Ivan Basic.",
+   "players": [
+    "Armin Gigovic",
+    "Ivan Basic"
+   ]
+  },
+  {
+   "type": "Start Delay",
+   "minute": "69'",
+   "team": "Bosnia-Herzegovina",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "69'",
+   "team": "Canada",
+   "text": "Delay in match for a drinks break.",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "71'",
+   "team": "Canada",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "71'",
+   "team": "Bosnia-Herzegovina",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Substitution",
+   "minute": "74'",
+   "team": "Bosnia-Herzegovina",
+   "text": "Substitution, Bosnia and Herzegovina. Ivan Sunjic replaces Esmir Bajraktarevic.",
+   "players": [
+    "Ivan Sunjic",
+    "Esmir Bajraktarevic"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "74'",
+   "team": "Bosnia-Herzegovina",
+   "text": "Substitution, Bosnia and Herzegovina. Kerim Alajbegovic replaces Amar Memic.",
+   "players": [
+    "Kerim Alajbegovic",
+    "Amar Memic"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "76'",
+   "team": "Canada",
+   "text": "Substitution, Canada. Cyle Larin replaces Tani Oluwaseyi.",
+   "players": [
+    "Cyle Larin",
+    "Tani Oluwaseyi"
+   ]
+  },
+  {
+   "type": "Goal",
+   "minute": "78'",
+   "team": "Canada",
+   "text": "Goal! Canada 1, Bosnia and Herzegovina 1. Cyle Larin (Canada) right footed shot from the centre of the box to the bottom right corner. Assisted by Promise David.",
+   "players": [
+    "Cyle Larin",
+    "Promise David"
+   ]
+  },
+  {
+   "type": "Start Delay",
+   "minute": "83'",
+   "team": "Bosnia-Herzegovina",
+   "text": "Delay in match because of an injury Sead Kolasinac (Bosnia and Herzegovina).",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "83'",
+   "team": "Canada",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "84'",
+   "team": "Bosnia-Herzegovina",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "84'",
+   "team": "Canada",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Substitution",
+   "minute": "84'",
+   "team": "Bosnia-Herzegovina",
+   "text": "Substitution, Bosnia and Herzegovina. Dzenis Burnic replaces Sead Kolasinac because of an injury.",
+   "players": [
+    "Dzenis Burnic",
+    "Sead Kolasinac"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "90'+1'",
+   "team": "Canada",
+   "text": "Substitution, Canada. Jonathan Osorio replaces Stephen Eustaquio.",
+   "players": [
+    "Jonathan Osorio",
+    "Stephen Eustáquio"
+   ]
+  },
+  {
+   "type": "Yellow Card",
+   "minute": "90'+3'",
+   "team": "Bosnia-Herzegovina",
+   "text": "Nikola Katic (Bosnia and Herzegovina) is shown the yellow card for a bad foul.",
+   "players": [
+    "Nikola Katic"
+   ]
+  },
+  {
+   "type": "End Regular Time",
+   "minute": "90'+7'",
+   "team": null,
+   "text": "Second Half ends, Canada 1, Bosnia and Herzegovina 1.",
+   "players": []
+  }
+ ],
+ "shots": [
+  {
+   "minute": "3",
+   "seconds": 134.0,
+   "team": "Bosnia-Herzegovina",
+   "player": "Amar Memic",
+   "type": "Shot Off Target",
+   "x": 87.1,
+   "y": 45.8,
+   "goal": false,
+   "xg": 0.265,
+   "text": "Attempt missed. Amar Memic (Bosnia and Herzegovina) right footed shot from the centre of the box is too high following a set piece situation."
+  },
+  {
+   "minute": "5",
+   "seconds": 288.0,
+   "team": "Bosnia-Herzegovina",
+   "player": "Jovo Lukic",
+   "type": "Shot Off Target",
+   "x": 88.9,
+   "y": 59.4,
+   "goal": false,
+   "xg": 0.17,
+   "text": "Attempt missed. Jovo Lukic (Bosnia and Herzegovina) header from the centre of the box misses to the left. Assisted by Ivan Basic with a cross following a set piece situation."
+  },
+  {
+   "minute": "13",
+   "seconds": 728.0,
+   "team": "Bosnia-Herzegovina",
+   "player": "Jovo Lukic",
+   "type": "Shot On Target",
+   "x": 86.1,
+   "y": 52.8,
+   "goal": false,
+   "xg": 0.158,
+   "text": "Attempt saved. Jovo Lukic (Bosnia and Herzegovina) header from the centre of the box is saved in the centre of the goal by Maxime Crépeau (Canada). Assisted by Ivan Basic with a cross."
+  },
+  {
+   "minute": "17",
+   "seconds": 974.0,
+   "team": "Canada",
+   "player": "Jonathan David",
+   "type": "Shot On Target",
+   "x": 86.7,
+   "y": 49.5,
+   "goal": false,
+   "xg": 0.265,
+   "text": "Attempt saved. Jonathan David (Canada) left footed shot from the centre of the box is saved in the centre of the goal by Nikola Vasilj (Bosnia and Herzegovina)."
+  },
+  {
+   "minute": "21",
+   "seconds": 1228.0,
+   "team": "Bosnia-Herzegovina",
+   "player": "Jovo Lukic",
+   "type": "Goal - Header",
+   "x": 98.2,
+   "y": 48.8,
+   "goal": true,
+   "xg": 0.631,
+   "text": "Goal! Canada 0, Bosnia and Herzegovina 1. Jovo Lukic (Bosnia and Herzegovina) header from very close range to the centre of the goal. Assisted by Sead Kolasinac with a headed pass following a corner."
+  },
+  {
+   "minute": "28",
+   "seconds": 1633.0,
+   "team": "Canada",
+   "player": "Jonathan David",
+   "type": "Shot Blocked",
+   "x": 88.6,
+   "y": 36.8,
+   "goal": false,
+   "xg": 0.205,
+   "text": "Attempt blocked. Jonathan David (Canada) left footed shot from the right side of the box is blocked. Assisted by Liam Millar."
+  },
+  {
+   "minute": "30",
+   "seconds": 1751.0,
+   "team": "Canada",
+   "player": "Ismaël Koné",
+   "type": "Shot Blocked",
+   "x": 81.3,
+   "y": 47.8,
+   "goal": false,
+   "xg": 0.145,
+   "text": "Attempt blocked. Ismaël Koné (Canada) right footed shot from outside the box is blocked. Assisted by Stephen Eustaquio."
+  },
+  {
+   "minute": "32",
+   "seconds": 1897.0,
+   "team": "Canada",
+   "player": "Tani Oluwaseyi",
+   "type": "Shot Off Target",
+   "x": 87.1,
+   "y": 31.5,
+   "goal": false,
+   "xg": 0.137,
+   "text": "Attempt missed. Tani Oluwaseyi (Canada) left footed shot from the right side of the box is too high. Assisted by Alistair Johnston."
+  },
+  {
+   "minute": "38",
+   "seconds": 2235.0,
+   "team": "Canada",
+   "player": "Tani Oluwaseyi",
+   "type": "Shot Blocked",
+   "x": 95.1,
+   "y": 50.5,
+   "goal": false,
+   "xg": 0.503,
+   "text": "Attempt blocked. Tani Oluwaseyi (Canada) header from very close range is blocked. Assisted by Stephen Eustaquio with a cross."
+  },
+  {
+   "minute": "38",
+   "seconds": 2236.0,
+   "team": "Canada",
+   "player": "Jonathan David",
+   "type": "Shot Blocked",
+   "x": 95.7,
+   "y": 38.0,
+   "goal": false,
+   "xg": 0.295,
+   "text": "Attempt missed. Jonathan David (Canada) right footed shot from the right side of the six yard box is close, but misses to the right. Assisted by Tani Oluwaseyi following a corner."
+  },
+  {
+   "minute": "44",
+   "seconds": 2613.0,
+   "team": "Bosnia-Herzegovina",
+   "player": "Benjamin Tahirovic",
+   "type": "Shot Off Target",
+   "x": 82.1,
+   "y": 73.0,
+   "goal": false,
+   "xg": 0.081,
+   "text": "Attempt missed. Benjamin Tahirovic (Bosnia and Herzegovina) right footed shot from outside the box is too high."
+  },
+  {
+   "minute": "45'+3",
+   "seconds": 2700.0,
+   "team": "Canada",
+   "player": "Alistair Johnston",
+   "type": "Shot Blocked",
+   "x": 89.6,
+   "y": 32.5,
+   "goal": false,
+   "xg": 0.165,
+   "text": "Attempt blocked. Alistair Johnston (Canada) right footed shot from the right side of the box is blocked. Assisted by Tani Oluwaseyi."
+  },
+  {
+   "minute": "45'+4",
+   "seconds": 2700.0,
+   "team": "Canada",
+   "player": "Derek Cornelius",
+   "type": "Shot Off Target",
+   "x": 90.8,
+   "y": 47.1,
+   "goal": false,
+   "xg": 0.277,
+   "text": "Attempt missed. Derek Cornelius (Canada) header from the centre of the box is high and wide to the right. Assisted by Stephen Eustaquio with a cross following a corner."
+  },
+  {
+   "minute": "46",
+   "seconds": 2711.0,
+   "team": "Bosnia-Herzegovina",
+   "player": "Ermedin Demirovic",
+   "type": "Shot On Target",
+   "x": 76.4,
+   "y": 27.4,
+   "goal": false,
+   "xg": 0.056,
+   "text": "Attempt saved. Ermedin Demirovic (Bosnia and Herzegovina) right footed shot from outside the box is saved in the centre of the goal by Maxime Crépeau (Canada). Assisted by Ivan Basic with a headed pass."
+  },
+  {
+   "minute": "53",
+   "seconds": 3169.0,
+   "team": "Canada",
+   "player": "Richie Laryea",
+   "type": "Shot Blocked",
+   "x": 93.1,
+   "y": 64.2,
+   "goal": false,
+   "xg": 0.237,
+   "text": "Attempt blocked. Richie Laryea (Canada) right footed shot from the left side of the box is blocked. Assisted by Stephen Eustaquio with a through ball."
+  },
+  {
+   "minute": "59",
+   "seconds": 3490.0,
+   "team": "Bosnia-Herzegovina",
+   "player": "Tarik Muharemovic",
+   "type": "Shot Off Target",
+   "x": 94.8,
+   "y": 52.1,
+   "goal": false,
+   "xg": 0.473,
+   "text": "Attempt missed. Tarik Muharemovic (Bosnia and Herzegovina) header from very close range is just a bit too high. Assisted by Ivan Basic with a cross following a corner."
+  },
+  {
+   "minute": "65",
+   "seconds": 3894.0,
+   "team": "Canada",
+   "player": "Stephen Eustaquio",
+   "type": "Shot Off Target",
+   "x": 77.3,
+   "y": 63.7,
+   "goal": false,
+   "xg": 0.081,
+   "text": "Attempt missed. Stephen Eustaquio (Canada) right footed shot from outside the box is high and wide to the right. Assisted by Richie Laryea."
+  },
+  {
+   "minute": "66",
+   "seconds": 3955.0,
+   "team": "Canada",
+   "player": "Tani Oluwaseyi",
+   "type": "Shot Blocked",
+   "x": 95.2,
+   "y": 43.0,
+   "goal": false,
+   "xg": 0.354,
+   "text": "Attempt blocked. Tani Oluwaseyi (Canada) header from the right side of the six yard box is blocked. Assisted by Jacob Shaffelburg with a cross."
+  },
+  {
+   "minute": "78",
+   "seconds": 4679.0,
+   "team": "Canada",
+   "player": "Cyle Larin",
+   "type": "Goal",
+   "x": 85.4,
+   "y": 52.0,
+   "goal": true,
+   "xg": 0.226,
+   "text": "Goal! Canada 1, Bosnia and Herzegovina 1. Cyle Larin (Canada) right footed shot from the centre of the box to the bottom right corner. Assisted by Promise David."
+  },
+  {
+   "minute": "81",
+   "seconds": 4819.0,
+   "team": "Canada",
+   "player": "Promise David",
+   "type": "Shot Off Target",
+   "x": 76.0,
+   "y": 53.4,
+   "goal": false,
+   "xg": 0.086,
+   "text": "Attempt missed. Promise David (Canada) right footed shot from outside the box misses to the left. Assisted by Cyle Larin following a fast break."
+  },
+  {
+   "minute": "85",
+   "seconds": 5097.0,
+   "team": "Bosnia-Herzegovina",
+   "player": "Dzenis Burnic",
+   "type": "Shot Blocked",
+   "x": 76.0,
+   "y": 56.7,
+   "goal": false,
+   "xg": 0.083,
+   "text": "Attempt blocked. Dzenis Burnic (Bosnia and Herzegovina) right footed shot from outside the box is blocked."
+  },
+  {
+   "minute": "90'+6",
+   "seconds": 5400.0,
+   "team": "Canada",
+   "player": "Cyle Larin",
+   "type": "Shot Blocked",
+   "x": 91.8,
+   "y": 53.0,
+   "goal": false,
+   "xg": 0.483,
+   "text": "Attempt blocked. Cyle Larin (Canada) left footed shot from the centre of the box is blocked. Assisted by Richie Laryea."
+  }
+ ],
+ "lineups": [
+  {
+   "team": "Canada",
+   "formation": "4-4-2",
+   "starters": [
+    {
+     "name": "Maxime Crépeau",
+     "jersey": "16",
+     "position": "G"
+    },
+    {
+     "name": "Derek Cornelius",
+     "jersey": "13",
+     "position": "CD-L"
+    },
+    {
+     "name": "Luc de Fougerolles",
+     "jersey": "4",
+     "position": "CD-R"
+    },
+    {
+     "name": "Richie Laryea",
+     "jersey": "22",
+     "position": "LB"
+    },
+    {
+     "name": "Alistair Johnston",
+     "jersey": "2",
+     "position": "RB"
+    },
+    {
+     "name": "Stephen Eustáquio",
+     "jersey": "7",
+     "position": "CM-L"
+    },
+    {
+     "name": "Ismaël Koné",
+     "jersey": "8",
+     "position": "CM-R"
+    },
+    {
+     "name": "Liam Millar",
+     "jersey": "11",
+     "position": "LM"
+    },
+    {
+     "name": "Tajon Buchanan",
+     "jersey": "17",
+     "position": "RM"
+    },
+    {
+     "name": "Tani Oluwaseyi",
+     "jersey": "12",
+     "position": "CF-L"
+    },
+    {
+     "name": "Jonathan David",
+     "jersey": "10",
+     "position": "CF-R"
+    }
+   ],
+   "subs": [
+    {
+     "name": "Alfie Jones",
+     "jersey": "3",
+     "position": "SUB"
+    },
+    {
+     "name": "Niko Sigur",
+     "jersey": "23",
+     "position": "SUB"
+    },
+    {
+     "name": "Jacob Shaffelburg",
+     "jersey": "14",
+     "position": "SUB"
+    },
+    {
+     "name": "Joel Waterman",
+     "jersey": "5",
+     "position": "SUB"
+    },
+    {
+     "name": "Jonathan Osorio",
+     "jersey": "21",
+     "position": "SUB"
+    },
+    {
+     "name": "Jayden Nelson",
+     "jersey": "26",
+     "position": "SUB"
+    },
+    {
+     "name": "Cyle Larin",
+     "jersey": "9",
+     "position": "SUB"
+    },
+    {
+     "name": "Ali Ahmed",
+     "jersey": "20",
+     "position": "SUB"
+    },
+    {
+     "name": "Promise David",
+     "jersey": "24",
+     "position": "SUB"
+    },
+    {
+     "name": "Owen Goodman",
+     "jersey": "18",
+     "position": "SUB"
+    },
+    {
+     "name": "Alphonso Davies",
+     "jersey": "19",
+     "position": "SUB"
+    },
+    {
+     "name": "Dayne St. Clair",
+     "jersey": "1",
+     "position": "SUB"
+    },
+    {
+     "name": "Moïse Bombito",
+     "jersey": "15",
+     "position": "SUB"
+    },
+    {
+     "name": "Nathan Saliba",
+     "jersey": "25",
+     "position": "SUB"
+    },
+    {
+     "name": "Mathieu Choinière",
+     "jersey": "6",
+     "position": "SUB"
+    }
+   ]
+  },
+  {
+   "team": "Bosnia-Herzegovina",
+   "formation": "4-4-2",
+   "starters": [
+    {
+     "name": "Nikola Vasilj",
+     "jersey": "1",
+     "position": "G"
+    },
+    {
+     "name": "Tarik Muharemovic",
+     "jersey": "4",
+     "position": "CD-L"
+    },
+    {
+     "name": "Nikola Katic",
+     "jersey": "18",
+     "position": "CD-R"
+    },
+    {
+     "name": "Sead Kolasinac",
+     "jersey": "5",
+     "position": "LB"
+    },
+    {
+     "name": "Amar Dedic",
+     "jersey": "7",
+     "position": "RB"
+    },
+    {
+     "name": "Ivan Basic",
+     "jersey": "13",
+     "position": "CM-L"
+    },
+    {
+     "name": "Benjamin Tahirovic",
+     "jersey": "6",
+     "position": "CM-R"
+    },
+    {
+     "name": "Amar Memic",
+     "jersey": "15",
+     "position": "LM"
+    },
+    {
+     "name": "Esmir Bajraktarevic",
+     "jersey": "20",
+     "position": "RM"
+    },
+    {
+     "name": "Jovo Lukic",
+     "jersey": "25",
+     "position": "CF-L"
+    },
+    {
+     "name": "Ermedin Demirovic",
+     "jersey": "10",
+     "position": "CF-R"
+    }
+   ],
+   "subs": [
+    {
+     "name": "Edin Dzeko",
+     "jersey": "11",
+     "position": "SUB"
+    },
+    {
+     "name": "Martin Zlomislic",
+     "jersey": "22",
+     "position": "SUB"
+    },
+    {
+     "name": "Mladen Jurkas",
+     "jersey": "12",
+     "position": "SUB"
+    },
+    {
+     "name": "Samed Bazdar",
+     "jersey": "9",
+     "position": "SUB"
+    },
+    {
+     "name": "Amir Hadziahmetovic",
+     "jersey": "16",
+     "position": "SUB"
+    },
+    {
+     "name": "Ermin Mahmic",
+     "jersey": "26",
+     "position": "SUB"
+    },
+    {
+     "name": "Armin Gigovic",
+     "jersey": "8",
+     "position": "SUB"
+    },
+    {
+     "name": "Stjepan Radeljic",
+     "jersey": "21",
+     "position": "SUB"
+    },
+    {
+     "name": "Dzenis Burnic",
+     "jersey": "17",
+     "position": "SUB"
+    },
+    {
+     "name": "Kerim Alajbegovic",
+     "jersey": "19",
+     "position": "SUB"
+    },
+    {
+     "name": "Arjan Malic",
+     "jersey": "24",
+     "position": "SUB"
+    },
+    {
+     "name": "Dennis Hadzikadunic",
+     "jersey": "3",
+     "position": "SUB"
+    },
+    {
+     "name": "Haris Tabakovic",
+     "jersey": "23",
+     "position": "SUB"
+    },
+    {
+     "name": "Ivan Sunjic",
+     "jersey": "14",
+     "position": "SUB"
+    },
+    {
+     "name": "Nihad Mujakic",
+     "jersey": "2",
+     "position": "SUB"
+    }
+   ]
+  }
+ ],
+ "attendance": 43002,
+ "venue": "BMO Field, Toronto, Canada"
+}

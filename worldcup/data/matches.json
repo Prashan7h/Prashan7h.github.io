@@ -156,12 +156,32 @@
    "team2": "Bosnia & Herzegovina",
    "group": "Group B",
    "ground": "Toronto",
-   "score": null,
-   "goals1": [],
-   "goals2": [],
+   "score": {
+    "ft": [
+     1,
+     1
+    ],
+    "ht": [
+     0,
+     1
+    ]
+   },
+   "goals1": [
+    {
+     "name": "Cyle Larin",
+     "minute": "78"
+    }
+   ],
+   "goals2": [
+    {
+     "name": "Jovo Lukić",
+     "minute": "21"
+    }
+   ],
    "espn_id": "760416",
-   "status": "live",
+   "status": "finished",
    "utc_date": "2026-06-12T19:00Z",
+   "attendance": 43002,
    "venue": "BMO Field",
    "slug": "2026-06-12-canada-vs-bosnia-and-herzegovina"
   },
@@ -364,11 +384,43 @@
    "team2": "Paraguay",
    "group": "Group D",
    "ground": "Los Angeles (Inglewood)",
-   "score": null,
-   "goals1": [],
-   "goals2": [],
+   "score": {
+    "ft": [
+     4,
+     1
+    ],
+    "ht": [
+     3,
+     0
+    ]
+   },
+   "goals1": [
+    {
+     "name": "Damian Bobadilla",
+     "minute": "7",
+     "owngoal": true
+    },
+    {
+     "name": "Folarin Balogun",
+     "minute": "31"
+    },
+    {
+     "name": "Folarin Balogun",
+     "minute": "45+5"
+    },
+    {
+     "name": "Giovanni Reyna",
+     "minute": "90+7"
+    }
+   ],
+   "goals2": [
+    {
+     "name": "Mauricio",
+     "minute": "73"
+    }
+   ],
    "espn_id": "760417",
-   "status": "scheduled",
+   "status": "finished",
    "utc_date": "2026-06-13T01:00Z",
    "venue": "SoFi Stadium",
    "slug": "2026-06-12-usa-vs-paraguay"
@@ -507,8 +559,10 @@
    "score": null,
    "goals1": [],
    "goals2": [],
-   "espn_id": null,
+   "espn_id": "760448",
    "status": "scheduled",
+   "utc_date": "2026-06-20T20:00Z",
+   "venue": "BMO Field",
    "slug": "2026-06-20-germany-vs-ivory-coast"
   },
   {
@@ -523,8 +577,10 @@
    "score": null,
    "goals1": [],
    "goals2": [],
-   "espn_id": null,
+   "espn_id": "760446",
    "status": "scheduled",
+   "utc_date": "2026-06-21T00:00Z",
+   "venue": "GEHA Field at Arrowhead Stadium",
    "slug": "2026-06-20-ecuador-vs-curaçao"
   },
   {
@@ -607,8 +663,10 @@
    "score": null,
    "goals1": [],
    "goals2": [],
-   "espn_id": null,
+   "espn_id": "760447",
    "status": "scheduled",
+   "utc_date": "2026-06-20T17:00Z",
+   "venue": "NRG Stadium",
    "slug": "2026-06-20-netherlands-vs-sweden"
   },
   {
