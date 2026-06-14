@@ -2304,10 +2304,10 @@
  "n_scored": 8,
  "goal_timing": [
   2,
-  4,
+  5,
   3,
   1,
-  3,
+  4,
   4
  ],
  "top_scorers": [
@@ -2325,6 +2325,11 @@
    "name": "Breel Embolo",
    "goals": 1,
    "team": "Switzerland"
+  },
+  {
+   "name": "Connor Metcalfe",
+   "goals": 1,
+   "team": "Australia"
   },
   {
    "name": "Cyle Larin",
@@ -2355,11 +2360,6 @@
    "name": "Jovo Lukić",
    "goals": 1,
    "team": "Bosnia & Herzegovina"
-  },
-  {
-   "name": "Julián Quiñones",
-   "goals": 1,
-   "team": "Mexico"
   }
  ],
  "standings": {

@@ -495,9 +495,22 @@
     "ft": [
      2,
      0
+    ],
+    "ht": [
+     1,
+     0
     ]
    },
-   "goals1": [],
+   "goals1": [
+    {
+     "name": "Nestory Irankunda",
+     "minute": "27"
+    },
+    {
+     "name": "Connor Metcalfe",
+     "minute": "75"
+    }
+   ],
    "goals2": [],
    "espn_id": "760421",
    "status": "finished",
