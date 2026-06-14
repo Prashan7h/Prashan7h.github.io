@@ -1,0 +1,915 @@
+{
+ "teams": [
+  {
+   "name": "Brazil",
+   "stats": {
+    "possessionPct": "51.3",
+    "totalShots": "12",
+    "shotsOnTarget": "5",
+    "wonCorners": "6",
+    "foulsCommitted": "16",
+    "offsides": "0",
+    "saves": "2",
+    "yellowCards": "2",
+    "redCards": "0"
+   }
+  },
+  {
+   "name": "Morocco",
+   "stats": {
+    "possessionPct": "48.7",
+    "totalShots": "14",
+    "shotsOnTarget": "3",
+    "wonCorners": "2",
+    "foulsCommitted": "14",
+    "offsides": "1",
+    "saves": "4",
+    "yellowCards": "0",
+    "redCards": "0"
+   }
+  }
+ ],
+ "events": [
+  {
+   "type": "Kickoff",
+   "minute": "",
+   "team": null,
+   "text": "First Half begins.",
+   "players": []
+  },
+  {
+   "type": "Goal",
+   "minute": "21'",
+   "team": "Morocco",
+   "text": "Goal! Brazil 0, Morocco 1. Ismael Saibari (Morocco) right footed shot from outside the box to the centre of the goal. Assisted by Brahim Díaz with a through ball following a fast break.",
+   "players": [
+    "Ismael Saibari",
+    "Brahim Díaz"
+   ]
+  },
+  {
+   "type": "Start Delay",
+   "minute": "23'",
+   "team": "Brazil",
+   "text": "Delay in match for a drinks break.",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "23'",
+   "team": "Morocco",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "26'",
+   "team": "Brazil",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "26'",
+   "team": "Morocco",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Goal",
+   "minute": "32'",
+   "team": "Brazil",
+   "text": "Goal! Brazil 1, Morocco 1. Vinícius Júnior (Brazil) right footed shot from the left side of the box to the top right corner. Assisted by Bruno Guimarães.",
+   "players": [
+    "Vinícius Júnior",
+    "Bruno Guimarães"
+   ]
+  },
+  {
+   "type": "Yellow Card",
+   "minute": "37'",
+   "team": "Brazil",
+   "text": "Casemiro (Brazil) is shown the yellow card for a bad foul.",
+   "players": [
+    "Casemiro"
+   ]
+  },
+  {
+   "type": "Yellow Card",
+   "minute": "43'",
+   "team": "Brazil",
+   "text": "Roger Ibañez (Brazil) is shown the yellow card for a bad foul.",
+   "players": [
+    "Roger Ibañez"
+   ]
+  },
+  {
+   "type": "Halftime",
+   "minute": "45'+5'",
+   "team": null,
+   "text": "First Half ends, Brazil 1, Morocco 1.",
+   "players": []
+  },
+  {
+   "type": "Substitution",
+   "minute": "45'",
+   "team": "Brazil",
+   "text": "Substitution, Brazil. Danilo replaces Roger Ibañez.",
+   "players": [
+    "Danilo",
+    "Roger Ibañez"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "45'",
+   "team": "Brazil",
+   "text": "Substitution, Brazil. Fabinho replaces Casemiro.",
+   "players": [
+    "Fabinho",
+    "Casemiro"
+   ]
+  },
+  {
+   "type": "Start 2nd Half",
+   "minute": "45'",
+   "team": null,
+   "text": "Second Half begins Brazil 1, Morocco 1.",
+   "players": []
+  },
+  {
+   "type": "Substitution",
+   "minute": "61'",
+   "team": "Brazil",
+   "text": "Substitution, Brazil. Matheus Cunha replaces Lucas Paquetá.",
+   "players": [
+    "Matheus Cunha",
+    "Lucas Paquetá"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "62'",
+   "team": "Brazil",
+   "text": "Substitution, Brazil. Luiz Henrique replaces Igor Thiago.",
+   "players": [
+    "Luiz Henrique",
+    "Igor Thiago"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "65'",
+   "team": "Morocco",
+   "text": "Substitution, Morocco. Samir El Mourabet replaces Azzedine Ounahi.",
+   "players": [
+    "Samir El Mourabet",
+    "Azzedine Ounahi"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "65'",
+   "team": "Morocco",
+   "text": "Substitution, Morocco. Chemsdine Talbi replaces Brahim Díaz.",
+   "players": [
+    "Chemsdine Talbi",
+    "Brahim Díaz"
+   ]
+  },
+  {
+   "type": "Start Delay",
+   "minute": "68'",
+   "team": "Brazil",
+   "text": "Delay in match for a drinks break.",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "68'",
+   "team": "Morocco",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "70'",
+   "team": "Brazil",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "70'",
+   "team": "Morocco",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "78'",
+   "team": "Morocco",
+   "text": "Delay in match because of an injury Yassine Bounou (Morocco).",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "78'",
+   "team": "Brazil",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Substitution",
+   "minute": "80'",
+   "team": "Morocco",
+   "text": "Substitution, Morocco. Anass Salah-Eddine replaces Noussair Mazraoui.",
+   "players": [
+    "Anass Salah-Eddine",
+    "Noussair Mazraoui"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "80'",
+   "team": "Morocco",
+   "text": "Substitution, Morocco. Ayoube Amaimouni-Echghouyab replaces Bilal El Khannouss.",
+   "players": [
+    "Ayoube Amaimouni",
+    "Bilal El Khannouss"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "80'",
+   "team": "Brazil",
+   "text": "Substitution, Brazil. Danilo Santos replaces Bruno Guimarães.",
+   "players": [
+    "Danilo Santos",
+    "Bruno Guimarães"
+   ]
+  },
+  {
+   "type": "End Delay",
+   "minute": "80'",
+   "team": "Morocco",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "80'",
+   "team": "Brazil",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "82'",
+   "team": "Brazil",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "83'",
+   "team": "Brazil",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "84'",
+   "team": "Morocco",
+   "text": "Delay in match because of an injury Yassine Bounou (Morocco).",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "84'",
+   "team": "Brazil",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "85'",
+   "team": "Morocco",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "85'",
+   "team": "Brazil",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Substitution",
+   "minute": "89'",
+   "team": "Morocco",
+   "text": "Substitution, Morocco. Soufiane Rahimi replaces Ismael Saibari.",
+   "players": [
+    "Soufiane Rahimi",
+    "Ismael Saibari"
+   ]
+  },
+  {
+   "type": "End Regular Time",
+   "minute": "90'+12'",
+   "team": null,
+   "text": "",
+   "players": []
+  }
+ ],
+ "shots": [
+  {
+   "minute": "6",
+   "seconds": 308.0,
+   "team": "Morocco",
+   "player": "Brahim Díaz",
+   "type": "Shot Blocked",
+   "x": 85.8,
+   "y": 29.7,
+   "goal": false,
+   "xg": 0.115,
+   "text": "Attempt blocked. Brahim Díaz (Morocco) right footed shot from the right side of the box is blocked. Assisted by Achraf Hakimi."
+  },
+  {
+   "minute": "6",
+   "seconds": 347.0,
+   "team": "Morocco",
+   "player": "Neil El Aynaoui",
+   "type": "Shot Blocked",
+   "x": 84.5,
+   "y": 52.1,
+   "goal": false,
+   "xg": 0.204,
+   "text": "Attempt blocked. Neil El Aynaoui (Morocco) right footed shot from the centre of the box is blocked. Assisted by Azzedine Ounahi."
+  },
+  {
+   "minute": "7",
+   "seconds": 379.0,
+   "team": "Morocco",
+   "player": "Bilal El Khannouss",
+   "type": "Shot Blocked",
+   "x": 74.0,
+   "y": 66.9,
+   "goal": false,
+   "xg": 0.056,
+   "text": "Attempt blocked. Bilal El Khannouss (Morocco) right footed shot from outside the box is blocked. Assisted by Achraf Hakimi."
+  },
+  {
+   "minute": "7",
+   "seconds": 393.0,
+   "team": "Morocco",
+   "player": "Achraf Hakimi",
+   "type": "Shot Off Target",
+   "x": 90.8,
+   "y": 25.2,
+   "goal": false,
+   "xg": 0.106,
+   "text": "Attempt missed. Achraf Hakimi (Morocco) right footed shot from the right side of the box misses to the left. Assisted by Azzedine Ounahi."
+  },
+  {
+   "minute": "9",
+   "seconds": 501.0,
+   "team": "Brazil",
+   "player": "Raphinha",
+   "type": "Shot Blocked",
+   "x": 73.8,
+   "y": 62.0,
+   "goal": false,
+   "xg": 0.062,
+   "text": "Attempt blocked. Raphinha (Brazil) left footed shot from outside the box is blocked. Assisted by Casemiro."
+  },
+  {
+   "minute": "9",
+   "seconds": 521.0,
+   "team": "Morocco",
+   "player": "Brahim Díaz",
+   "type": "Shot Blocked",
+   "x": 79.0,
+   "y": 35.2,
+   "goal": false,
+   "xg": 0.09,
+   "text": "Attempt blocked. Brahim Díaz (Morocco) right footed shot from outside the box is blocked. Assisted by Bilal El Khannouss."
+  },
+  {
+   "minute": "11",
+   "seconds": 642.0,
+   "team": "Morocco",
+   "player": "Ismael Saibari",
+   "type": "Shot Blocked",
+   "x": 76.3,
+   "y": 63.8,
+   "goal": false,
+   "xg": 0.074,
+   "text": "Attempt blocked. Ismael Saibari (Morocco) left footed shot from outside the box is blocked. Assisted by Neil El Aynaoui."
+  },
+  {
+   "minute": "14",
+   "seconds": 786.0,
+   "team": "Brazil",
+   "player": "Igor Thiago",
+   "type": "Shot Off Target",
+   "x": 96.5,
+   "y": 51.5,
+   "goal": false,
+   "xg": 0.571,
+   "text": "Attempt missed. Igor Thiago (Brazil) header from very close range misses to the right."
+  },
+  {
+   "minute": "20",
+   "seconds": 1162.0,
+   "team": "Brazil",
+   "player": "Lucas Paquetá",
+   "type": "Shot Blocked",
+   "x": 82.4,
+   "y": 38.5,
+   "goal": false,
+   "xg": 0.134,
+   "text": "Attempt blocked. Lucas Paquetá (Brazil) right footed shot from outside the box is blocked. Assisted by Vinícius Júnior."
+  },
+  {
+   "minute": "21",
+   "seconds": 1215.0,
+   "team": "Morocco",
+   "player": "Ismael Saibari",
+   "type": "Goal",
+   "x": 76.9,
+   "y": 51.7,
+   "goal": true,
+   "xg": 0.094,
+   "text": "Goal! Brazil 0, Morocco 1. Ismael Saibari (Morocco) right footed shot from outside the box to the centre of the goal. Assisted by Brahim Díaz with a through ball following a fast break."
+  },
+  {
+   "minute": "27",
+   "seconds": 1602.0,
+   "team": "Morocco",
+   "player": "Achraf Hakimi",
+   "type": "Shot Off Target",
+   "x": 78.4,
+   "y": 40.1,
+   "goal": false,
+   "xg": 0.098,
+   "text": "Attempt missed. Achraf Hakimi (Morocco) right footed shot from outside the box misses to the left. Assisted by Bilal El Khannouss following a fast break."
+  },
+  {
+   "minute": "29",
+   "seconds": 1733.0,
+   "team": "Morocco",
+   "player": "Neil El Aynaoui",
+   "type": "Shot Off Target",
+   "x": 93.9,
+   "y": 41.2,
+   "goal": false,
+   "xg": 0.268,
+   "text": "Attempt missed. Neil El Aynaoui (Morocco) header from the centre of the box misses to the left. Assisted by Achraf Hakimi with a cross following a set piece situation."
+  },
+  {
+   "minute": "30",
+   "seconds": 1743.0,
+   "team": "Morocco",
+   "player": "Ismael Saibari",
+   "type": "Shot Blocked",
+   "x": 90.5,
+   "y": 62.0,
+   "goal": false,
+   "xg": 0.253,
+   "text": "Attempt blocked. Ismael Saibari (Morocco) right footed shot from the centre of the box is blocked. Assisted by Brahim Díaz."
+  },
+  {
+   "minute": "30",
+   "seconds": 1748.0,
+   "team": "Morocco",
+   "player": "Brahim Díaz",
+   "type": "Shot On Target",
+   "x": 83.2,
+   "y": 61.2,
+   "goal": false,
+   "xg": 0.145,
+   "text": "Attempt saved. Brahim Díaz (Morocco) right footed shot from the centre of the box is saved in the bottom right corner by Alisson Becker (Brazil)."
+  },
+  {
+   "minute": "31",
+   "seconds": 1802.0,
+   "team": "Morocco",
+   "player": "Achraf Hakimi",
+   "type": "Shot Off Target",
+   "x": 81.4,
+   "y": 51.8,
+   "goal": false,
+   "xg": 0.147,
+   "text": "Attempt missed. Achraf Hakimi (Morocco) right footed shot from outside the box is high and wide to the right."
+  },
+  {
+   "minute": "32",
+   "seconds": 1881.0,
+   "team": "Brazil",
+   "player": "Vinícius Júnior",
+   "type": "Goal",
+   "x": 92.3,
+   "y": 66.4,
+   "goal": true,
+   "xg": 0.195,
+   "text": "Goal! Brazil 1, Morocco 1. Vinícius Júnior (Brazil) right footed shot from the left side of the box to the top right corner. Assisted by Bruno Guimarães."
+  },
+  {
+   "minute": "45'+2",
+   "seconds": 2700.0,
+   "team": "Brazil",
+   "player": "Lucas Paquetá",
+   "type": "Shot On Target",
+   "x": 87.8,
+   "y": 58.9,
+   "goal": false,
+   "xg": 0.242,
+   "text": "Attempt saved. Lucas Paquetá (Brazil) left footed shot from the centre of the box is saved in the bottom right corner by Yassine Bounou (Morocco). Assisted by Douglas Santos with a cross."
+  },
+  {
+   "minute": "45'+3",
+   "seconds": 2700.0,
+   "team": "Brazil",
+   "player": "Marquinhos",
+   "type": "Shot Off Target",
+   "x": 95.1,
+   "y": 39.9,
+   "goal": false,
+   "xg": 0.243,
+   "text": "Attempt missed. Marquinhos (Brazil) header from the right side of the six yard box misses to the left. Assisted by Raphinha with a cross following a corner."
+  },
+  {
+   "minute": "46",
+   "seconds": 2711.0,
+   "team": "Brazil",
+   "player": "Bruno Guimarães",
+   "type": "Shot Off Target",
+   "x": 72.9,
+   "y": 27.0,
+   "goal": false,
+   "xg": 0.043,
+   "text": "Attempt missed. Bruno Guimarães (Brazil) right footed shot from outside the box is high and wide to the right."
+  },
+  {
+   "minute": "48",
+   "seconds": 2827.0,
+   "team": "Brazil",
+   "player": "Marquinhos",
+   "type": "Shot Blocked",
+   "x": 96.7,
+   "y": 40.1,
+   "goal": false,
+   "xg": 0.374,
+   "text": "Attempt blocked. Marquinhos (Brazil) right footed shot from the right side of the six yard box is blocked. Assisted by Raphinha with a cross."
+  },
+  {
+   "minute": "52",
+   "seconds": 3117.0,
+   "team": "Brazil",
+   "player": "Igor Thiago",
+   "type": "Shot On Target",
+   "x": 89.5,
+   "y": 67.3,
+   "goal": false,
+   "xg": 0.166,
+   "text": "Attempt saved. Igor Thiago (Brazil) left footed shot from the left side of the box is saved in the top centre of the goal by Yassine Bounou (Morocco). Assisted by Lucas Paquetá."
+  },
+  {
+   "minute": "78",
+   "seconds": 4662.0,
+   "team": "Brazil",
+   "player": "Raphinha",
+   "type": "Shot On Target",
+   "x": 86.7,
+   "y": 60.9,
+   "goal": false,
+   "xg": 0.2,
+   "text": "Attempt saved. Raphinha (Brazil) left footed shot from the centre of the box is saved in the centre of the goal by Yassine Bounou (Morocco). Assisted by Vinícius Júnior."
+  },
+  {
+   "minute": "90'+1",
+   "seconds": 5400.0,
+   "team": "Brazil",
+   "player": "Danilo Santos",
+   "type": "Shot Off Target",
+   "x": 90.4,
+   "y": 45.0,
+   "goal": false,
+   "xg": 0.246,
+   "text": "Attempt missed. Danilo Santos (Brazil) header from the centre of the box misses to the left. Assisted by Raphinha."
+  },
+  {
+   "minute": "90'+3",
+   "seconds": 5400.0,
+   "team": "Brazil",
+   "player": "Danilo Santos",
+   "type": "Shot On Target",
+   "x": 93.1,
+   "y": 30.1,
+   "goal": false,
+   "xg": 0.15,
+   "text": "Attempt saved. Danilo Santos (Brazil) left footed shot from the right side of the box is saved in the centre of the goal by Yassine Bounou (Morocco). Assisted by Luiz Henrique."
+  },
+  {
+   "minute": "90'+9",
+   "seconds": 5400.0,
+   "team": "Morocco",
+   "player": "Neil El Aynaoui",
+   "type": "Shot Off Target",
+   "x": 71.9,
+   "y": 51.3,
+   "goal": false,
+   "xg": 0.059,
+   "text": "Attempt missed. Neil El Aynaoui (Morocco) right footed shot from outside the box is close, but misses to the right."
+  },
+  {
+   "minute": "90'+9",
+   "seconds": 5400.0,
+   "team": "Morocco",
+   "player": "Ayoube Amaimouni-Echghouyab",
+   "type": "Shot On Target",
+   "x": 97.4,
+   "y": 41.7,
+   "goal": false,
+   "xg": 0.469,
+   "text": "Attempt saved. Ayoube Amaimouni-Echghouyab (Morocco) right footed shot from the right side of the six yard box is saved in the bottom right corner by Alisson Becker (Brazil)."
+  }
+ ],
+ "lineups": [
+  {
+   "team": "Brazil",
+   "formation": "4-2-3-1",
+   "starters": [
+    {
+     "name": "Alisson Becker",
+     "jersey": "1",
+     "position": "G"
+    },
+    {
+     "name": "Gabriel Magalhães",
+     "jersey": "3",
+     "position": "CD-L"
+    },
+    {
+     "name": "Marquinhos",
+     "jersey": "4",
+     "position": "CD-R"
+    },
+    {
+     "name": "Douglas Santos",
+     "jersey": "16",
+     "position": "LB"
+    },
+    {
+     "name": "Roger Ibañez",
+     "jersey": "24",
+     "position": "RB"
+    },
+    {
+     "name": "Raphinha",
+     "jersey": "11",
+     "position": "AM"
+    },
+    {
+     "name": "Bruno Guimarães",
+     "jersey": "8",
+     "position": "LM"
+    },
+    {
+     "name": "Casemiro",
+     "jersey": "5",
+     "position": "RM"
+    },
+    {
+     "name": "Igor Thiago",
+     "jersey": "25",
+     "position": "F"
+    },
+    {
+     "name": "Vinícius Júnior",
+     "jersey": "7",
+     "position": "AM-L"
+    },
+    {
+     "name": "Lucas Paquetá",
+     "jersey": "20",
+     "position": "AM-R"
+    }
+   ],
+   "subs": [
+    {
+     "name": "Matheus Cunha",
+     "jersey": "9",
+     "position": "SUB"
+    },
+    {
+     "name": "Ederson",
+     "jersey": "23",
+     "position": "SUB"
+    },
+    {
+     "name": "Rayan",
+     "jersey": "26",
+     "position": "SUB"
+    },
+    {
+     "name": "Léo Pereira",
+     "jersey": "15",
+     "position": "SUB"
+    },
+    {
+     "name": "Fabinho",
+     "jersey": "17",
+     "position": "SUB"
+    },
+    {
+     "name": "Éderson",
+     "jersey": "2",
+     "position": "SUB"
+    },
+    {
+     "name": "Luiz Henrique",
+     "jersey": "21",
+     "position": "SUB"
+    },
+    {
+     "name": "Gabriel Martinelli",
+     "jersey": "22",
+     "position": "SUB"
+    },
+    {
+     "name": "Danilo",
+     "jersey": "13",
+     "position": "SUB"
+    },
+    {
+     "name": "Alex Sandro",
+     "jersey": "6",
+     "position": "SUB"
+    },
+    {
+     "name": "Endrick",
+     "jersey": "19",
+     "position": "SUB"
+    },
+    {
+     "name": "Danilo Santos",
+     "jersey": "18",
+     "position": "SUB"
+    },
+    {
+     "name": "Bremer",
+     "jersey": "14",
+     "position": "SUB"
+    },
+    {
+     "name": "Weverton",
+     "jersey": "12",
+     "position": "SUB"
+    }
+   ]
+  },
+  {
+   "team": "Morocco",
+   "formation": "4-2-3-1",
+   "starters": [
+    {
+     "name": "Yassine Bounou",
+     "jersey": "1",
+     "position": "G"
+    },
+    {
+     "name": "Chadi Riad",
+     "jersey": "18",
+     "position": "CD-L"
+    },
+    {
+     "name": "Issa Diop",
+     "jersey": "14",
+     "position": "CD-R"
+    },
+    {
+     "name": "Noussair Mazraoui",
+     "jersey": "3",
+     "position": "LB"
+    },
+    {
+     "name": "Achraf Hakimi",
+     "jersey": "2",
+     "position": "RB"
+    },
+    {
+     "name": "Azzedine Ounahi",
+     "jersey": "8",
+     "position": "AM"
+    },
+    {
+     "name": "Ayyoub Bouaddi",
+     "jersey": "6",
+     "position": "LM"
+    },
+    {
+     "name": "Neil El Aynaoui",
+     "jersey": "24",
+     "position": "RM"
+    },
+    {
+     "name": "Ismael Saibari",
+     "jersey": "11",
+     "position": "F"
+    },
+    {
+     "name": "Bilal El Khannouss",
+     "jersey": "23",
+     "position": "AM-L"
+    },
+    {
+     "name": "Brahim Díaz",
+     "jersey": "10",
+     "position": "AM-R"
+    }
+   ],
+   "subs": [
+    {
+     "name": "Ahmed Reda Tagnaouti",
+     "jersey": "22",
+     "position": "SUB"
+    },
+    {
+     "name": "Amine Sbaï",
+     "jersey": "17",
+     "position": "SUB"
+    },
+    {
+     "name": "Chemsdine Talbi",
+     "jersey": "7",
+     "position": "SUB"
+    },
+    {
+     "name": "Soufiane Rahimi",
+     "jersey": "9",
+     "position": "SUB"
+    },
+    {
+     "name": "Ayoube Amaimouni",
+     "jersey": "21",
+     "position": "SUB"
+    },
+    {
+     "name": "Gessime Yassine",
+     "jersey": "16",
+     "position": "SUB"
+    },
+    {
+     "name": "Samir El Mourabet",
+     "jersey": "15",
+     "position": "SUB"
+    },
+    {
+     "name": "Anass Salah-Eddine",
+     "jersey": "26",
+     "position": "SUB"
+    },
+    {
+     "name": "Ayoub El Kaabi",
+     "jersey": "20",
+     "position": "SUB"
+    },
+    {
+     "name": "Marwane Saadane",
+     "jersey": "5",
+     "position": "SUB"
+    },
+    {
+     "name": "Sofyan Amrabat",
+     "jersey": "4",
+     "position": "SUB"
+    },
+    {
+     "name": "Youssef Belammari",
+     "jersey": "19",
+     "position": "SUB"
+    },
+    {
+     "name": "Zakaria El Ouahdi",
+     "jersey": "13",
+     "position": "SUB"
+    },
+    {
+     "name": "Munir El Kajoui",
+     "jersey": "12",
+     "position": "SUB"
+    },
+    {
+     "name": "Redouane Halhal",
+     "jersey": "25",
+     "position": "SUB"
+    }
+   ]
+  }
+ ],
+ "attendance": 80663,
+ "venue": "MetLife Stadium, East Rutherford, New Jersey, USA"
+}

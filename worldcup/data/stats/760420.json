@@ -1,0 +1,1038 @@
+{
+ "teams": [
+  {
+   "name": "Qatar",
+   "stats": {
+    "possessionPct": "32",
+    "totalShots": "6",
+    "shotsOnTarget": "3",
+    "wonCorners": "3",
+    "foulsCommitted": "12",
+    "offsides": "0",
+    "saves": "5",
+    "yellowCards": "2",
+    "redCards": "0"
+   }
+  },
+  {
+   "name": "Switzerland",
+   "stats": {
+    "possessionPct": "68",
+    "totalShots": "26",
+    "shotsOnTarget": "7",
+    "wonCorners": "10",
+    "foulsCommitted": "11",
+    "offsides": "1",
+    "saves": "3",
+    "yellowCards": "1",
+    "redCards": "0"
+   }
+  }
+ ],
+ "events": [
+  {
+   "type": "Kickoff",
+   "minute": "",
+   "team": null,
+   "text": "First Half begins.",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "14'",
+   "team": "Qatar",
+   "text": "Delay in match because of an injury Mahmoud Abunada (Qatar).",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "14'",
+   "team": "Switzerland",
+   "text": "Delay in match because of an injury Remo Freuler (Switzerland).",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "16'",
+   "team": "Switzerland",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "16'",
+   "team": "Qatar",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Yellow Card",
+   "minute": "16'",
+   "team": "Qatar",
+   "text": "Mahmoud Abunada (Qatar) is shown the yellow card.",
+   "players": [
+    "Mahmoud Abunada"
+   ]
+  },
+  {
+   "type": "Penalty - Scored",
+   "minute": "17'",
+   "team": "Switzerland",
+   "text": "Goal! Qatar 0, Switzerland 1. Breel Embolo (Switzerland) converts the penalty with a right footed shot to the bottom left corner.",
+   "players": [
+    "Breel Embolo"
+   ]
+  },
+  {
+   "type": "Yellow Card",
+   "minute": "23'",
+   "team": "Qatar",
+   "text": "Jassem Gaber (Qatar) is shown the yellow card for a bad foul.",
+   "players": [
+    "Jassem Gaber"
+   ]
+  },
+  {
+   "type": "Start Delay",
+   "minute": "24'",
+   "team": "Switzerland",
+   "text": "Delay in match for a drinks break.",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "24'",
+   "team": "Qatar",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "26'",
+   "team": "Switzerland",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "26'",
+   "team": "Qatar",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "30'",
+   "team": "Qatar",
+   "text": "Delay in match because of an injury Pedro Miguel (Qatar).",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "30'",
+   "team": "Switzerland",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "31'",
+   "team": "Qatar",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "31'",
+   "team": "Switzerland",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Yellow Card",
+   "minute": "42'",
+   "team": "Switzerland",
+   "text": "Denis Zakaria (Switzerland) is shown the yellow card for a bad foul.",
+   "players": [
+    "Denis Zakaria"
+   ]
+  },
+  {
+   "type": "Halftime",
+   "minute": "45'+7'",
+   "team": null,
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Start 2nd Half",
+   "minute": "45'",
+   "team": null,
+   "text": "Second Half begins Qatar 0, Switzerland 1.",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "57'",
+   "team": "Qatar",
+   "text": "Delay in match because of an injury Boualem Khoukhi (Qatar).",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "57'",
+   "team": "Switzerland",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "58'",
+   "team": "Qatar",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "58'",
+   "team": "Switzerland",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Substitution",
+   "minute": "60'",
+   "team": "Qatar",
+   "text": "Substitution, Qatar. Ahmed Fathy replaces Ayoub Al Oui.",
+   "players": [
+    "Ahmed Fathy",
+    "Ayoub Al-Oui"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "60'",
+   "team": "Qatar",
+   "text": "Substitution, Qatar. Karim Boudiaf replaces Jassem Gaber.",
+   "players": [
+    "Karim Boudiaf",
+    "Jassem Gaber"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "60'",
+   "team": "Qatar",
+   "text": "Substitution, Qatar. Ahmed Alaa replaces Yusuf Abdurisag.",
+   "players": [
+    "Ahmed Alaaeldin",
+    "Yusuf Abdurisag"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "65'",
+   "team": "Switzerland",
+   "text": "Substitution, Switzerland. Fabian Rieder replaces Michel Aebischer.",
+   "players": [
+    "Fabian Rieder",
+    "Michel Aebischer"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "65'",
+   "team": "Switzerland",
+   "text": "Substitution, Switzerland. Johan Manzambi replaces Dan Ndoye.",
+   "players": [
+    "Johan Manzambi",
+    "Dan Ndoye"
+   ]
+  },
+  {
+   "type": "Start Delay",
+   "minute": "68'",
+   "team": "Switzerland",
+   "text": "Delay in match for a drinks break.",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "68'",
+   "team": "Qatar",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "70'",
+   "team": "Switzerland",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "70'",
+   "team": "Qatar",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Substitution",
+   "minute": "79'",
+   "team": "Qatar",
+   "text": "Substitution, Qatar. Mohammad Al Mannai replaces Assim Madibo.",
+   "players": [
+    "Mohamed Manai",
+    "Assim Madibo"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "79'",
+   "team": "Switzerland",
+   "text": "Substitution, Switzerland. Zeki Amdouni replaces Rubén Vargas.",
+   "players": [
+    "Zeki Amdouni",
+    "Rubén Vargas"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "88'",
+   "team": "Qatar",
+   "text": "Substitution, Qatar. Hassan Al Haydos replaces Edmílson Junior.",
+   "players": [
+    "Hassan Al-Haydos",
+    "Edmílson Junior"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "89'",
+   "team": "Switzerland",
+   "text": "Substitution, Switzerland. Ardon Jashari replaces Remo Freuler.",
+   "players": [
+    "Ardon Jashari",
+    "Remo Freuler"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "89'",
+   "team": "Switzerland",
+   "text": "Substitution, Switzerland. Miro Muheim replaces Ricardo Rodríguez.",
+   "players": [
+    "Miro Muheim",
+    "Ricardo Rodríguez"
+   ]
+  },
+  {
+   "type": "Own Goal",
+   "minute": "90'+4'",
+   "team": "Qatar",
+   "text": "Own Goal by Miro Muheim, Switzerland. Qatar 1, Switzerland 1.",
+   "players": [
+    "Miro Muheim",
+    "Homam Ahmed"
+   ]
+  },
+  {
+   "type": "End Regular Time",
+   "minute": "90'+8'",
+   "team": null,
+   "text": "",
+   "players": []
+  }
+ ],
+ "shots": [
+  {
+   "minute": "1",
+   "seconds": 37.0,
+   "team": "Switzerland",
+   "player": "Breel Embolo",
+   "type": "Shot Blocked",
+   "x": 80.5,
+   "y": 50.7,
+   "goal": false,
+   "xg": 0.135,
+   "text": "Attempt blocked. Breel Embolo (Switzerland) right footed shot from outside the box is blocked. Assisted by Michel Aebischer."
+  },
+  {
+   "minute": "2",
+   "seconds": 103.0,
+   "team": "Qatar",
+   "player": "Edmílson Junior",
+   "type": "Shot On Target",
+   "x": 91.2,
+   "y": 64.4,
+   "goal": false,
+   "xg": 0.22,
+   "text": "Attempt saved. Edmílson Junior (Qatar) right footed shot from the left side of the box is saved in the centre of the goal by Gregor Kobel (Switzerland)."
+  },
+  {
+   "minute": "6",
+   "seconds": 308.0,
+   "team": "Switzerland",
+   "player": "Dan Ndoye",
+   "type": "Shot On Target",
+   "x": 87.0,
+   "y": 33.9,
+   "goal": false,
+   "xg": 0.156,
+   "text": "Attempt saved. Dan Ndoye (Switzerland) right footed shot from the right side of the box is saved in the bottom left corner by Mahmoud Abunada (Qatar). Assisted by Michel Aebischer."
+  },
+  {
+   "minute": "10",
+   "seconds": 575.0,
+   "team": "Switzerland",
+   "player": "Dan Ndoye",
+   "type": "Shot Off Target",
+   "x": 88.9,
+   "y": 52.8,
+   "goal": false,
+   "xg": 0.337,
+   "text": "Attempt missed. Dan Ndoye (Switzerland) left footed shot from the centre of the box is just a bit too high. Assisted by Ricardo Rodríguez with a cross."
+  },
+  {
+   "minute": "12",
+   "seconds": 693.0,
+   "team": "Switzerland",
+   "player": "Manuel Akanji",
+   "type": "Shot On Target",
+   "x": 93.0,
+   "y": 54.4,
+   "goal": false,
+   "xg": 0.531,
+   "text": "Attempt saved. Manuel Akanji (Switzerland) left footed shot from the centre of the box is saved in the centre of the goal by Mahmoud Abunada (Qatar). Assisted by Rubén Vargas with a cross."
+  },
+  {
+   "minute": "17",
+   "seconds": 992.0,
+   "team": "Switzerland",
+   "player": "Breel Embolo",
+   "type": "Penalty - Scored",
+   "x": 88.5,
+   "y": 50.0,
+   "goal": true,
+   "xg": 0.76,
+   "text": "Goal! Qatar 0, Switzerland 1. Breel Embolo (Switzerland) converts the penalty with a right footed shot to the bottom left corner."
+  },
+  {
+   "minute": "21",
+   "seconds": 1221.0,
+   "team": "Switzerland",
+   "player": "Denis Zakaria",
+   "type": "Shot On Target",
+   "x": 94.6,
+   "y": 33.9,
+   "goal": false,
+   "xg": 0.2,
+   "text": "Attempt saved. Denis Zakaria (Switzerland) right footed shot from a difficult angle on the right is saved in the bottom right corner by Mahmoud Abunada (Qatar). Assisted by Breel Embolo with a through ball."
+  },
+  {
+   "minute": "21",
+   "seconds": 1247.0,
+   "team": "Switzerland",
+   "player": "Rubén Vargas",
+   "type": "Shot Blocked",
+   "x": 80.6,
+   "y": 78.5,
+   "goal": false,
+   "xg": 0.058,
+   "text": "Attempt blocked. Rubén Vargas (Switzerland) right footed shot from outside the box is blocked. Assisted by Granit Xhaka."
+  },
+  {
+   "minute": "24",
+   "seconds": 1396.0,
+   "team": "Switzerland",
+   "player": "Rubén Vargas",
+   "type": "Shot Blocked",
+   "x": 90.3,
+   "y": 85.4,
+   "goal": false,
+   "xg": 0.056,
+   "text": "Attempt blocked. Rubén Vargas (Switzerland) right footed shot from a difficult angle and long range on the left is blocked."
+  },
+  {
+   "minute": "30",
+   "seconds": 1744.0,
+   "team": "Qatar",
+   "player": "Issa Laye",
+   "type": "Shot Off Target",
+   "x": 92.0,
+   "y": 49.7,
+   "goal": false,
+   "xg": 0.338,
+   "text": "Attempt missed. Issa Laye (Qatar) header from the centre of the box is high and wide to the right. Assisted by Akram Afif with a cross following a corner."
+  },
+  {
+   "minute": "34",
+   "seconds": 2004.0,
+   "team": "Switzerland",
+   "player": "Dan Ndoye",
+   "type": "Shot Blocked",
+   "x": 87.1,
+   "y": 29.3,
+   "goal": false,
+   "xg": 0.121,
+   "text": "Attempt blocked. Dan Ndoye (Switzerland) left footed shot from the right side of the box is blocked. Assisted by Nico Elvedi."
+  },
+  {
+   "minute": "35",
+   "seconds": 2066.0,
+   "team": "Switzerland",
+   "player": "Dan Ndoye",
+   "type": "Shot Off Target",
+   "x": 90.8,
+   "y": 33.6,
+   "goal": false,
+   "xg": 0.186,
+   "text": "Attempt missed. Dan Ndoye (Switzerland) right footed shot from the right side of the box misses to the right. Assisted by Breel Embolo."
+  },
+  {
+   "minute": "42",
+   "seconds": 2473.0,
+   "team": "Switzerland",
+   "player": "Breel Embolo",
+   "type": "Shot Blocked",
+   "x": 88.6,
+   "y": 46.4,
+   "goal": false,
+   "xg": 0.319,
+   "text": "Attempt blocked. Breel Embolo (Switzerland) right footed shot from the centre of the box is blocked. Assisted by Rubén Vargas with a cross."
+  },
+  {
+   "minute": "43",
+   "seconds": 2543.0,
+   "team": "Qatar",
+   "player": "Edmílson Junior",
+   "type": "Shot On Target",
+   "x": 89.6,
+   "y": 40.7,
+   "goal": false,
+   "xg": 0.28,
+   "text": "Attempt saved. Edmílson Junior (Qatar) right footed shot from the centre of the box is saved in the bottom right corner by Gregor Kobel (Switzerland). Assisted by Yusuf Abdurisag."
+  },
+  {
+   "minute": "44",
+   "seconds": 2605.0,
+   "team": "Qatar",
+   "player": "Homam El Amin",
+   "type": "Shot Off Target",
+   "x": 75.6,
+   "y": 63.8,
+   "goal": false,
+   "xg": 0.07,
+   "text": "Attempt missed. Homam El Amin (Qatar) left footed shot from outside the box misses to the right following a corner."
+  },
+  {
+   "minute": "45'+1",
+   "seconds": 2700.0,
+   "team": "Switzerland",
+   "player": "Dan Ndoye",
+   "type": "Shot On Target",
+   "x": 89.7,
+   "y": 64.8,
+   "goal": false,
+   "xg": 0.198,
+   "text": "Attempt saved. Dan Ndoye (Switzerland) left footed shot from the left side of the box is saved in the centre of the goal by Mahmoud Abunada (Qatar). Assisted by Michel Aebischer."
+  },
+  {
+   "minute": "45'+3",
+   "seconds": 2700.0,
+   "team": "Switzerland",
+   "player": "Rubén Vargas",
+   "type": "Shot Off Target",
+   "x": 93.2,
+   "y": 40.0,
+   "goal": false,
+   "xg": 0.351,
+   "text": "Attempt missed. Rubén Vargas (Switzerland) right footed shot from the centre of the box is close, but misses to the right. Assisted by Breel Embolo."
+  },
+  {
+   "minute": "45'+4",
+   "seconds": 2700.0,
+   "team": "Switzerland",
+   "player": "Denis Zakaria",
+   "type": "Shot Blocked",
+   "x": 89.3,
+   "y": 53.8,
+   "goal": false,
+   "xg": 0.346,
+   "text": "Attempt blocked. Denis Zakaria (Switzerland) right footed shot from the centre of the box is blocked. Assisted by Manuel Akanji with a headed pass."
+  },
+  {
+   "minute": "45'+6",
+   "seconds": 2700.0,
+   "team": "Switzerland",
+   "player": "Michel Aebischer",
+   "type": "Shot Blocked",
+   "x": 87.1,
+   "y": 45.2,
+   "goal": false,
+   "xg": 0.261,
+   "text": "Attempt blocked. Michel Aebischer (Switzerland) right footed shot from the centre of the box is blocked. Assisted by Breel Embolo."
+  },
+  {
+   "minute": "48",
+   "seconds": 2853.0,
+   "team": "Switzerland",
+   "player": "Nico Elvedi",
+   "type": "Shot Blocked",
+   "x": 96.1,
+   "y": 52.3,
+   "goal": false,
+   "xg": 0.541,
+   "text": "Attempt missed. Nico Elvedi (Switzerland) header from very close range misses to the right. Assisted by Rubén Vargas with a cross following a set piece situation."
+  },
+  {
+   "minute": "49",
+   "seconds": 2926.0,
+   "team": "Switzerland",
+   "player": "Granit Xhaka",
+   "type": "Shot Off Target",
+   "x": 74.1,
+   "y": 32.2,
+   "goal": false,
+   "xg": 0.055,
+   "text": "Attempt missed. Granit Xhaka (Switzerland) left footed shot from outside the box is just a bit too high. Assisted by Rubén Vargas following a corner."
+  },
+  {
+   "minute": "50",
+   "seconds": 3000.0,
+   "team": "Switzerland",
+   "player": "Dan Ndoye",
+   "type": "Shot Off Target",
+   "x": 96.8,
+   "y": 33.8,
+   "goal": false,
+   "xg": 0.18,
+   "text": "Attempt missed. Dan Ndoye (Switzerland) right footed shot from a difficult angle on the right is close, but misses to the right. Assisted by Remo Freuler with a cross."
+  },
+  {
+   "minute": "53",
+   "seconds": 3128.0,
+   "team": "Switzerland",
+   "player": null,
+   "type": "Shot Blocked",
+   "x": 93.9,
+   "y": 44.6,
+   "goal": false,
+   "xg": 0.554,
+   "text": "Manuel Akanji (Switzerland) Shot Blocked at 53'"
+  },
+  {
+   "minute": "63",
+   "seconds": 3755.0,
+   "team": "Switzerland",
+   "player": "Nico Elvedi",
+   "type": "Shot Blocked",
+   "x": 89.5,
+   "y": 43.1,
+   "goal": false,
+   "xg": 0.315,
+   "text": "Attempt blocked. Nico Elvedi (Switzerland) left footed shot from the centre of the box is blocked. Assisted by Ricardo Rodríguez."
+  },
+  {
+   "minute": "67",
+   "seconds": 3999.0,
+   "team": "Switzerland",
+   "player": "Granit Xhaka",
+   "type": "Shot Off Target",
+   "x": 79.9,
+   "y": 66.4,
+   "goal": false,
+   "xg": 0.092,
+   "text": "Attempt missed. Granit Xhaka (Switzerland) left footed shot from outside the box is close, but misses to the right. Assisted by Rubén Vargas."
+  },
+  {
+   "minute": "72",
+   "seconds": 4269.0,
+   "team": "Switzerland",
+   "player": "Fabian Rieder",
+   "type": "Shot Blocked",
+   "x": 83.6,
+   "y": 51.4,
+   "goal": false,
+   "xg": 0.186,
+   "text": "Attempt blocked. Fabian Rieder (Switzerland) right footed shot from the centre of the box is blocked. Assisted by Manuel Akanji."
+  },
+  {
+   "minute": "75",
+   "seconds": 4464.0,
+   "team": "Qatar",
+   "player": "Karim Boudiaf",
+   "type": "Shot Off Target",
+   "x": 73.5,
+   "y": 67.2,
+   "goal": false,
+   "xg": 0.054,
+   "text": "Attempt missed. Karim Boudiaf (Qatar) right footed shot from outside the box is too high. Assisted by Ahmed Fathy."
+  },
+  {
+   "minute": "75",
+   "seconds": 4487.0,
+   "team": "Switzerland",
+   "player": "Rubén Vargas",
+   "type": "Shot On Target",
+   "x": 89.0,
+   "y": 67.3,
+   "goal": false,
+   "xg": 0.162,
+   "text": "Attempt saved. Rubén Vargas (Switzerland) right footed shot from the left side of the box is saved in the centre of the goal by Mahmoud Abunada (Qatar). Assisted by Fabian Rieder."
+  },
+  {
+   "minute": "76",
+   "seconds": 4515.0,
+   "team": "Switzerland",
+   "player": "Breel Embolo",
+   "type": "Shot Off Target",
+   "x": 92.8,
+   "y": 67.3,
+   "goal": false,
+   "xg": 0.182,
+   "text": "Attempt missed. Breel Embolo (Switzerland) right footed shot from the left side of the box is close, but misses to the left. Assisted by Johan Manzambi with a through ball."
+  },
+  {
+   "minute": "81",
+   "seconds": 4856.0,
+   "team": "Switzerland",
+   "player": "Johan Manzambi",
+   "type": "Shot Off Target",
+   "x": 72.9,
+   "y": 62.4,
+   "goal": false,
+   "xg": 0.057,
+   "text": "Attempt missed. Johan Manzambi (Switzerland) right footed shot from outside the box is close, but misses to the left. Assisted by Zeki Amdouni."
+  },
+  {
+   "minute": "85",
+   "seconds": 5098.0,
+   "team": "Switzerland",
+   "player": "Johan Manzambi",
+   "type": "Shot Blocked",
+   "x": 80.9,
+   "y": 51.0,
+   "goal": false,
+   "xg": 0.14,
+   "text": "Attempt blocked. Johan Manzambi (Switzerland) left footed shot from outside the box is blocked. Assisted by Breel Embolo."
+  },
+  {
+   "minute": "90",
+   "seconds": 5354.0,
+   "team": "Qatar",
+   "player": "Ahmed Alaa",
+   "type": "Shot On Target",
+   "x": 84.0,
+   "y": 55.2,
+   "goal": false,
+   "xg": 0.185,
+   "text": "Attempt saved. Ahmed Alaa (Qatar) right footed shot from the centre of the box is saved in the bottom left corner by Gregor Kobel (Switzerland). Assisted by Akram Afif."
+  },
+  {
+   "minute": "90'+2",
+   "seconds": 5400.0,
+   "team": "Switzerland",
+   "player": "Zeki Amdouni",
+   "type": "Shot Blocked",
+   "x": 78.2,
+   "y": 59.9,
+   "goal": false,
+   "xg": 0.096,
+   "text": "Attempt blocked. Zeki Amdouni (Switzerland) right footed shot from outside the box is blocked. Assisted by Granit Xhaka."
+  },
+  {
+   "minute": "90'+7",
+   "seconds": 5400.0,
+   "team": "Switzerland",
+   "player": "Ardon Jashari",
+   "type": "Shot Off Target",
+   "x": 79.2,
+   "y": 67.9,
+   "goal": false,
+   "xg": 0.082,
+   "text": "Attempt missed. Ardon Jashari (Switzerland) left footed shot from outside the box misses to the right following a corner."
+  }
+ ],
+ "lineups": [
+  {
+   "team": "Qatar",
+   "formation": "4-3-3",
+   "starters": [
+    {
+     "name": "Mahmoud Abunada",
+     "jersey": "1",
+     "position": "G"
+    },
+    {
+     "name": "Boualem Khoukhi",
+     "jersey": "16",
+     "position": "CD-L"
+    },
+    {
+     "name": "Pedro Miguel",
+     "jersey": "2",
+     "position": "CD-R"
+    },
+    {
+     "name": "Homam Ahmed",
+     "jersey": "14",
+     "position": "LB"
+    },
+    {
+     "name": "Ayoub Al-Oui",
+     "jersey": "13",
+     "position": "RB"
+    },
+    {
+     "name": "Assim Madibo",
+     "jersey": "23",
+     "position": "CM"
+    },
+    {
+     "name": "Issa Laye",
+     "jersey": "4",
+     "position": "LM"
+    },
+    {
+     "name": "Jassem Gaber",
+     "jersey": "5",
+     "position": "RM"
+    },
+    {
+     "name": "Yusuf Abdurisag",
+     "jersey": "15",
+     "position": "F"
+    },
+    {
+     "name": "Akram Afif",
+     "jersey": "11",
+     "position": "LF"
+    },
+    {
+     "name": "Edmílson Junior",
+     "jersey": "8",
+     "position": "RF"
+    }
+   ],
+   "subs": [
+    {
+     "name": "Hassan Al-Haydos",
+     "jersey": "10",
+     "position": "SUB"
+    },
+    {
+     "name": "Ahmed Al-Ganehi",
+     "jersey": "17",
+     "position": "SUB"
+    },
+    {
+     "name": "Mohamed Manai",
+     "jersey": "26",
+     "position": "SUB"
+    },
+    {
+     "name": "Mohammed Muntari",
+     "jersey": "9",
+     "position": "SUB"
+    },
+    {
+     "name": "Lucas Mendes",
+     "jersey": "3",
+     "position": "SUB"
+    },
+    {
+     "name": "Al-Hashmi Al-Hussain",
+     "jersey": "25",
+     "position": "SUB"
+    },
+    {
+     "name": "Tahsin Jamshid",
+     "jersey": "24",
+     "position": "SUB"
+    },
+    {
+     "name": "Meshaal Barsham",
+     "jersey": "22",
+     "position": "SUB"
+    },
+    {
+     "name": "Sultan Al-Brake",
+     "jersey": "18",
+     "position": "SUB"
+    },
+    {
+     "name": "Abdulaziz Hatem",
+     "jersey": "6",
+     "position": "SUB"
+    },
+    {
+     "name": "Ahmed Fathy",
+     "jersey": "20",
+     "position": "SUB"
+    },
+    {
+     "name": "Ahmed Alaaeldin",
+     "jersey": "7",
+     "position": "SUB"
+    },
+    {
+     "name": "Almoez Ali",
+     "jersey": "19",
+     "position": "SUB"
+    },
+    {
+     "name": "Salah Zakaria",
+     "jersey": "21",
+     "position": "SUB"
+    },
+    {
+     "name": "Karim Boudiaf",
+     "jersey": "12",
+     "position": "SUB"
+    }
+   ]
+  },
+  {
+   "team": "Switzerland",
+   "formation": "4-3-3",
+   "starters": [
+    {
+     "name": "Gregor Kobel",
+     "jersey": "1",
+     "position": "G"
+    },
+    {
+     "name": "Manuel Akanji",
+     "jersey": "5",
+     "position": "CD-L"
+    },
+    {
+     "name": "Nico Elvedi",
+     "jersey": "4",
+     "position": "CD-R"
+    },
+    {
+     "name": "Ricardo Rodríguez",
+     "jersey": "13",
+     "position": "LB"
+    },
+    {
+     "name": "Denis Zakaria",
+     "jersey": "6",
+     "position": "RB"
+    },
+    {
+     "name": "Granit Xhaka",
+     "jersey": "10",
+     "position": "CM"
+    },
+    {
+     "name": "Remo Freuler",
+     "jersey": "8",
+     "position": "LM"
+    },
+    {
+     "name": "Michel Aebischer",
+     "jersey": "20",
+     "position": "RM"
+    },
+    {
+     "name": "Breel Embolo",
+     "jersey": "7",
+     "position": "F"
+    },
+    {
+     "name": "Rubén Vargas",
+     "jersey": "17",
+     "position": "LF"
+    },
+    {
+     "name": "Dan Ndoye",
+     "jersey": "11",
+     "position": "RF"
+    }
+   ],
+   "subs": [
+    {
+     "name": "Eray Cömert",
+     "jersey": "18",
+     "position": "SUB"
+    },
+    {
+     "name": "Marvin Keller",
+     "jersey": "21",
+     "position": "SUB"
+    },
+    {
+     "name": "Aurèle Amenda",
+     "jersey": "24",
+     "position": "SUB"
+    },
+    {
+     "name": "Miro Muheim",
+     "jersey": "2",
+     "position": "SUB"
+    },
+    {
+     "name": "Silvan Widmer",
+     "jersey": "3",
+     "position": "SUB"
+    },
+    {
+     "name": "Noah Okafor",
+     "jersey": "19",
+     "position": "SUB"
+    },
+    {
+     "name": "Luca Jaquez",
+     "jersey": "25",
+     "position": "SUB"
+    },
+    {
+     "name": "Fabian Rieder",
+     "jersey": "22",
+     "position": "SUB"
+    },
+    {
+     "name": "Djibril Sow",
+     "jersey": "15",
+     "position": "SUB"
+    },
+    {
+     "name": "Zeki Amdouni",
+     "jersey": "23",
+     "position": "SUB"
+    },
+    {
+     "name": "Yvon Mvogo",
+     "jersey": "12",
+     "position": "SUB"
+    },
+    {
+     "name": "Christian Fassnacht",
+     "jersey": "16",
+     "position": "SUB"
+    },
+    {
+     "name": "Johan Manzambi",
+     "jersey": "9",
+     "position": "SUB"
+    },
+    {
+     "name": "Cedric Itten",
+     "jersey": "26",
+     "position": "SUB"
+    },
+    {
+     "name": "Ardon Jashari",
+     "jersey": "14",
+     "position": "SUB"
+    }
+   ]
+  }
+ ],
+ "attendance": 67966,
+ "venue": "Levi's Stadium, Santa Clara, California, USA"
+}
