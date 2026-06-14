@@ -1,0 +1,1038 @@
+{
+ "teams": [
+  {
+   "name": "Australia",
+   "stats": {
+    "possessionPct": "28.4",
+    "totalShots": "9",
+    "shotsOnTarget": "4",
+    "wonCorners": "5",
+    "foulsCommitted": "12",
+    "offsides": "1",
+    "saves": "8",
+    "yellowCards": "0",
+    "redCards": "0"
+   }
+  },
+  {
+   "name": "Türkiye",
+   "stats": {
+    "possessionPct": "71.6",
+    "totalShots": "30",
+    "shotsOnTarget": "8",
+    "wonCorners": "8",
+    "foulsCommitted": "4",
+    "offsides": "3",
+    "saves": "2",
+    "yellowCards": "1",
+    "redCards": "0"
+   }
+  }
+ ],
+ "events": [
+  {
+   "type": "Kickoff",
+   "minute": "",
+   "team": null,
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "23'",
+   "team": "Türkiye",
+   "text": "Delay in match for a drinks break.",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "23'",
+   "team": "Australia",
+   "text": "Delay in match for a drinks break.",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "25'",
+   "team": "Türkiye",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "25'",
+   "team": "Australia",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Goal",
+   "minute": "27'",
+   "team": "Australia",
+   "text": "Goal! Australia 1, Türkiye 0. Nestory Irankunda (Australia) right footed shot from the centre of the box to the bottom left corner. Assisted by Paul Okon-Engstler.",
+   "players": [
+    "Nestory Irankunda",
+    "Paul Okon-Engstler"
+   ]
+  },
+  {
+   "type": "Start Delay",
+   "minute": "39'",
+   "team": "Türkiye",
+   "text": "Delay in match (Türkiye).",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "39'",
+   "team": "Australia",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "39'",
+   "team": "Türkiye",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "39'",
+   "team": "Australia",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "44'",
+   "team": "Türkiye",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "44'",
+   "team": "Türkiye",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Halftime",
+   "minute": "45'+5'",
+   "team": null,
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Substitution",
+   "minute": "45'",
+   "team": "Türkiye",
+   "text": "Substitution, Türkiye. Kenan Yildiz replaces Baris Alper Yilmaz.",
+   "players": [
+    "Kenan Yildiz",
+    "Baris Alper Yilmaz"
+   ]
+  },
+  {
+   "type": "Start 2nd Half",
+   "minute": "45'",
+   "team": null,
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Substitution",
+   "minute": "61'",
+   "team": "Australia",
+   "text": "Substitution, Australia. Nishan Velupillay replaces Nestory Irankunda.",
+   "players": [
+    "Nishan Velupillay",
+    "Nestory Irankunda"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "62'",
+   "team": "Türkiye",
+   "text": "Substitution, Türkiye. Yunus Akgün replaces Orkun Kökçü.",
+   "players": [
+    "Yunus Akgün",
+    "Orkun Kökçü"
+   ]
+  },
+  {
+   "type": "Start Delay",
+   "minute": "68'",
+   "team": "Türkiye",
+   "text": "Delay in match for a drinks break.",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "68'",
+   "team": "Australia",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "70'",
+   "team": "Türkiye",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "70'",
+   "team": "Australia",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Substitution",
+   "minute": "74'",
+   "team": "Australia",
+   "text": "Substitution, Australia. Tete Yengi replaces Mohamed Touré.",
+   "players": [
+    "Tete Yengi",
+    "Mohamed Toure"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "74'",
+   "team": "Australia",
+   "text": "Substitution, Australia. Jason Geria replaces Jacob Italiano.",
+   "players": [
+    "Jason Geria",
+    "Jacob Italiano"
+   ]
+  },
+  {
+   "type": "Goal",
+   "minute": "75'",
+   "team": "Australia",
+   "text": "Goal! Australia 2, Türkiye 0. Connor Metcalfe (Australia) left footed shot from outside the box to the bottom right corner.",
+   "players": [
+    "Connor Metcalfe"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "81'",
+   "team": "Türkiye",
+   "text": "Substitution, Türkiye. Salih Özcan replaces Ismail Yüksek.",
+   "players": [
+    "Salih Özcan",
+    "Ismail Yüksek"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "81'",
+   "team": "Türkiye",
+   "text": "Substitution, Türkiye. Mert Müldür replaces Zeki Çelik.",
+   "players": [
+    "Mert Müldür",
+    "Zeki Çelik"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "84'",
+   "team": "Australia",
+   "text": "Substitution, Australia. Aziz Behich replaces Jordan Bos.",
+   "players": [
+    "Aziz Behich",
+    "Jordan Bos"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "84'",
+   "team": "Australia",
+   "text": "Substitution, Australia. Jackson Irvine replaces Paul Okon-Engstler.",
+   "players": [
+    "Jackson Irvine",
+    "Paul Okon-Engstler"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "85'",
+   "team": "Türkiye",
+   "text": "Substitution, Türkiye. Deniz Gül replaces Kerem Aktürkoglu.",
+   "players": [
+    "Deniz Gül",
+    "Kerem Aktürkoglu"
+   ]
+  },
+  {
+   "type": "Yellow Card",
+   "minute": "86'",
+   "team": "Türkiye",
+   "text": "Yunus Akgün (Türkiye) is shown the yellow card for a bad foul.",
+   "players": [
+    "Yunus Akgün"
+   ]
+  },
+  {
+   "type": "End Regular Time",
+   "minute": "90'+7'",
+   "team": null,
+   "text": "",
+   "players": []
+  }
+ ],
+ "shots": [
+  {
+   "minute": "3",
+   "seconds": 154.0,
+   "team": "Türkiye",
+   "player": "Hakan Çalhanoglu",
+   "type": "Shot Blocked",
+   "x": 73.8,
+   "y": 51.1,
+   "goal": false,
+   "xg": 0.07,
+   "text": "Attempt blocked. Hakan Çalhanoglu (Türkiye) right footed shot from outside the box is blocked. Assisted by Ferdi Kadioglu."
+  },
+  {
+   "minute": "4",
+   "seconds": 197.0,
+   "team": "Türkiye",
+   "player": "Ismail Yüksek",
+   "type": "Shot Blocked",
+   "x": 91.9,
+   "y": 54.5,
+   "goal": false,
+   "xg": 0.3,
+   "text": "Attempt blocked. Ismail Yüksek (Türkiye) header from the centre of the box is blocked. Assisted by Hakan Çalhanoglu with a cross."
+  },
+  {
+   "minute": "7",
+   "seconds": 378.0,
+   "team": "Türkiye",
+   "player": "Arda Güler",
+   "type": "Shot Off Target",
+   "x": 85.3,
+   "y": 28.6,
+   "goal": false,
+   "xg": 0.106,
+   "text": "Attempt missed. Arda Güler (Türkiye) left footed shot from the right side of the box is high and wide to the left. Assisted by Orkun Kökçü."
+  },
+  {
+   "minute": "17",
+   "seconds": 998.0,
+   "team": "Australia",
+   "player": "Alessandro Circati",
+   "type": "Shot Off Target",
+   "x": 94.3,
+   "y": 55.8,
+   "goal": false,
+   "xg": 0.365,
+   "text": "Attempt missed. Alessandro Circati (Australia) header from the left side of the six yard box is high and wide to the left. Assisted by Connor Metcalfe with a cross following a corner."
+  },
+  {
+   "minute": "19",
+   "seconds": 1093.0,
+   "team": "Türkiye",
+   "player": "Ferdi Kadioglu",
+   "type": "Shot Off Target",
+   "x": 78.1,
+   "y": 60.5,
+   "goal": false,
+   "xg": 0.094,
+   "text": "Attempt missed. Ferdi Kadioglu (Türkiye) right footed shot from outside the box is too high. Assisted by Hakan Çalhanoglu."
+  },
+  {
+   "minute": "27",
+   "seconds": 1561.0,
+   "team": "Türkiye",
+   "player": "Arda Güler",
+   "type": "Shot On Target",
+   "x": 86.0,
+   "y": 47.7,
+   "goal": false,
+   "xg": 0.241,
+   "text": "Attempt saved. Arda Güler (Türkiye) right footed shot from the centre of the box is saved in the centre of the goal by Patrick Beach (Australia)."
+  },
+  {
+   "minute": "27",
+   "seconds": 1578.0,
+   "team": "Australia",
+   "player": "Nestory Irankunda",
+   "type": "Goal",
+   "x": 87.0,
+   "y": 56.4,
+   "goal": true,
+   "xg": 0.246,
+   "text": "Goal! Australia 1, Türkiye 0. Nestory Irankunda (Australia) right footed shot from the centre of the box to the bottom left corner. Assisted by Paul Okon-Engstler."
+  },
+  {
+   "minute": "30",
+   "seconds": 1765.0,
+   "team": "Türkiye",
+   "player": "Abdülkerim Bardakci",
+   "type": "Shot On Target",
+   "x": 72.4,
+   "y": 57.2,
+   "goal": false,
+   "xg": 0.059,
+   "text": "Attempt saved. Abdülkerim Bardakci (Türkiye) left footed shot from outside the box is saved in the top left corner by Patrick Beach (Australia)."
+  },
+  {
+   "minute": "30",
+   "seconds": 1782.0,
+   "team": "Türkiye",
+   "player": "Hakan Çalhanoglu",
+   "type": "Shot Off Target",
+   "x": 73.2,
+   "y": 29.3,
+   "goal": false,
+   "xg": 0.047,
+   "text": "Attempt missed. Hakan Çalhanoglu (Türkiye) right footed shot from outside the box is high and wide to the right. Assisted by Orkun Kökçü."
+  },
+  {
+   "minute": "36",
+   "seconds": 2104.0,
+   "team": "Türkiye",
+   "player": "Orkun Kökçü",
+   "type": "Shot Off Target",
+   "x": 87.1,
+   "y": 58.2,
+   "goal": false,
+   "xg": 0.233,
+   "text": "Attempt missed. Orkun Kökçü (Türkiye) right footed shot from the centre of the box misses to the right. Assisted by Kerem Aktürkoglu with a headed pass."
+  },
+  {
+   "minute": "39",
+   "seconds": 2301.0,
+   "team": "Australia",
+   "player": "Jordan Bos",
+   "type": "Shot Off Target",
+   "x": 74.9,
+   "y": 53.8,
+   "goal": false,
+   "xg": 0.077,
+   "text": "Attempt missed. Jordan Bos (Australia) left footed shot from outside the box is high and wide to the left. Assisted by Paul Okon-Engstler."
+  },
+  {
+   "minute": "42",
+   "seconds": 2480.0,
+   "team": "Türkiye",
+   "player": "Arda Güler",
+   "type": "Shot Off Target",
+   "x": 74.7,
+   "y": 45.2,
+   "goal": false,
+   "xg": 0.075,
+   "text": "Attempt missed. Arda Güler (Türkiye) left footed shot from outside the box is high and wide to the left. Assisted by Orkun Kökçü."
+  },
+  {
+   "minute": "45",
+   "seconds": 2672.0,
+   "team": "Australia",
+   "player": "Nestory Irankunda",
+   "type": "Shot On Target",
+   "x": 83.7,
+   "y": 56.2,
+   "goal": false,
+   "xg": 0.176,
+   "text": "Attempt saved. Nestory Irankunda (Australia) right footed shot from the centre of the box is saved in the centre of the goal by Ugurcan Çakir (Türkiye). Assisted by Jordan Bos."
+  },
+  {
+   "minute": "45'+4",
+   "seconds": 2700.0,
+   "team": "Türkiye",
+   "player": "Kerem Aktürkoglu",
+   "type": "Shot Blocked",
+   "x": 87.4,
+   "y": 48.6,
+   "goal": false,
+   "xg": 0.286,
+   "text": "Attempt blocked. Kerem Aktürkoglu (Türkiye) left footed shot from the centre of the box is blocked."
+  },
+  {
+   "minute": "46",
+   "seconds": 2757.0,
+   "team": "Türkiye",
+   "player": "Hakan Çalhanoglu",
+   "type": "Shot On Target",
+   "x": 76.6,
+   "y": 73.8,
+   "goal": false,
+   "xg": 0.055,
+   "text": "Attempt saved. Hakan Çalhanoglu (Türkiye) right footed shot from outside the box is saved in the centre of the goal by Patrick Beach (Australia). Assisted by Ferdi Kadioglu."
+  },
+  {
+   "minute": "48",
+   "seconds": 2850.0,
+   "team": "Australia",
+   "player": "Jordan Bos",
+   "type": "Shot Blocked",
+   "x": 88.5,
+   "y": 67.1,
+   "goal": false,
+   "xg": 0.16,
+   "text": "Attempt blocked. Jordan Bos (Australia) right footed shot from the left side of the box is blocked. Assisted by Mohamed Touré."
+  },
+  {
+   "minute": "49",
+   "seconds": 2896.0,
+   "team": "Australia",
+   "player": "Jacob Italiano",
+   "type": "Shot Off Target",
+   "x": 77.7,
+   "y": 64.6,
+   "goal": false,
+   "xg": 0.081,
+   "text": "Attempt missed. Jacob Italiano (Australia) right footed shot from outside the box is high and wide to the right. Assisted by Harry Souttar following a corner."
+  },
+  {
+   "minute": "50",
+   "seconds": 2973.0,
+   "team": "Türkiye",
+   "player": "Hakan Çalhanoglu",
+   "type": "Shot Blocked",
+   "x": 85.0,
+   "y": 47.6,
+   "goal": false,
+   "xg": 0.215,
+   "text": "Attempt blocked. Hakan Çalhanoglu (Türkiye) right footed shot from the centre of the box is blocked."
+  },
+  {
+   "minute": "50",
+   "seconds": 2974.0,
+   "team": "Türkiye",
+   "player": "Ismail Yüksek",
+   "type": "Shot Blocked",
+   "x": 79.8,
+   "y": 49.2,
+   "goal": false,
+   "xg": 0.126,
+   "text": "Attempt blocked. Ismail Yüksek (Türkiye) left footed shot from outside the box is blocked."
+  },
+  {
+   "minute": "51",
+   "seconds": 3035.0,
+   "team": "Türkiye",
+   "player": "Kerem Aktürkoglu",
+   "type": "Shot Off Target",
+   "x": 76.5,
+   "y": 46.6,
+   "goal": false,
+   "xg": 0.09,
+   "text": "Attempt missed. Kerem Aktürkoglu (Türkiye) right footed shot from outside the box misses to the left following a corner."
+  },
+  {
+   "minute": "54",
+   "seconds": 3183.0,
+   "team": "Australia",
+   "player": "Harry Souttar",
+   "type": "Shot On Target",
+   "x": 89.8,
+   "y": 41.2,
+   "goal": false,
+   "xg": 0.191,
+   "text": "Attempt saved. Harry Souttar (Australia) header from the centre of the box is saved in the centre of the goal by Ugurcan Çakir (Türkiye). Assisted by Aiden O'Neill with a cross."
+  },
+  {
+   "minute": "54",
+   "seconds": 3202.0,
+   "team": "Australia",
+   "player": "Mohamed Touré",
+   "type": "Shot Off Target",
+   "x": 90.5,
+   "y": 44.8,
+   "goal": false,
+   "xg": 0.38,
+   "text": "Attempt missed. Mohamed Touré (Australia) right footed shot from the centre of the box misses to the left. Assisted by Jacob Italiano with a cross following a corner."
+  },
+  {
+   "minute": "57",
+   "seconds": 3370.0,
+   "team": "Türkiye",
+   "player": "Arda Güler",
+   "type": "Shot On Target",
+   "x": 73.2,
+   "y": 43.0,
+   "goal": false,
+   "xg": 0.064,
+   "text": "Attempt saved. Arda Güler (Türkiye) left footed shot from outside the box is saved in the bottom left corner by Patrick Beach (Australia)."
+  },
+  {
+   "minute": "57",
+   "seconds": 3414.0,
+   "team": "Türkiye",
+   "player": "Ismail Yüksek",
+   "type": "Shot Off Target",
+   "x": 87.4,
+   "y": 41.7,
+   "goal": false,
+   "xg": 0.239,
+   "text": "Attempt missed. Ismail Yüksek (Türkiye) right footed shot from the centre of the box is too high. Assisted by Arda Güler with a headed pass following a corner."
+  },
+  {
+   "minute": "60",
+   "seconds": 3563.0,
+   "team": "Türkiye",
+   "player": "Kenan Yildiz",
+   "type": "Shot Blocked",
+   "x": 89.2,
+   "y": 63.2,
+   "goal": false,
+   "xg": 0.214,
+   "text": "Attempt blocked. Kenan Yildiz (Türkiye) right footed shot from the left side of the box is blocked. Assisted by Ferdi Kadioglu."
+  },
+  {
+   "minute": "63",
+   "seconds": 3743.0,
+   "team": "Türkiye",
+   "player": "Kenan Yildiz",
+   "type": "Shot Blocked",
+   "x": 78.7,
+   "y": 72.1,
+   "goal": false,
+   "xg": 0.068,
+   "text": "Attempt blocked. Kenan Yildiz (Türkiye) right footed shot from outside the box is blocked. Assisted by Ferdi Kadioglu."
+  },
+  {
+   "minute": "65",
+   "seconds": 3870.0,
+   "team": "Türkiye",
+   "player": "Arda Güler",
+   "type": "Shot Blocked",
+   "x": 74.5,
+   "y": 63.6,
+   "goal": false,
+   "xg": 0.064,
+   "text": "Attempt blocked. Arda Güler (Türkiye) left footed shot from outside the box is blocked. Assisted by Ferdi Kadioglu."
+  },
+  {
+   "minute": "66",
+   "seconds": 3916.0,
+   "team": "Türkiye",
+   "player": "Kenan Yildiz",
+   "type": "Shot Blocked",
+   "x": 86.8,
+   "y": 75.2,
+   "goal": false,
+   "xg": 0.092,
+   "text": "Attempt blocked. Kenan Yildiz (Türkiye) right footed shot from the left side of the box is blocked. Assisted by Arda Güler."
+  },
+  {
+   "minute": "66",
+   "seconds": 3920.0,
+   "team": "Türkiye",
+   "player": "Kenan Yildiz",
+   "type": "Shot Blocked",
+   "x": 84.9,
+   "y": 64.1,
+   "goal": false,
+   "xg": 0.149,
+   "text": "Attempt blocked. Kenan Yildiz (Türkiye) right footed shot from the left side of the box is blocked."
+  },
+  {
+   "minute": "72",
+   "seconds": 4314.0,
+   "team": "Türkiye",
+   "player": "Zeki Çelik",
+   "type": "Shot On Target",
+   "x": 97.7,
+   "y": 35.6,
+   "goal": false,
+   "xg": 0.194,
+   "text": "Attempt saved. Zeki Çelik (Türkiye) right footed shot from a difficult angle on the right is saved in the bottom right corner by Patrick Beach (Australia). Assisted by Hakan Çalhanoglu with a through ball."
+  },
+  {
+   "minute": "74",
+   "seconds": 4382.0,
+   "team": "Türkiye",
+   "player": "Arda Güler",
+   "type": "Shot Off Target",
+   "x": 76.8,
+   "y": 32.5,
+   "goal": false,
+   "xg": 0.069,
+   "text": "Attempt missed. Arda Güler (Türkiye) left footed shot from outside the box is high and wide to the left. Assisted by Yunus Akgün."
+  },
+  {
+   "minute": "75",
+   "seconds": 4447.0,
+   "team": "Australia",
+   "player": "Connor Metcalfe",
+   "type": "Goal",
+   "x": 75.7,
+   "y": 43.4,
+   "goal": true,
+   "xg": 0.081,
+   "text": "Goal! Australia 2, Türkiye 0. Connor Metcalfe (Australia) left footed shot from outside the box to the bottom right corner."
+  },
+  {
+   "minute": "77",
+   "seconds": 4585.0,
+   "team": "Türkiye",
+   "player": "Kenan Yildiz",
+   "type": "Shot Blocked",
+   "x": 87.6,
+   "y": 31.1,
+   "goal": false,
+   "xg": 0.137,
+   "text": "Attempt blocked. Kenan Yildiz (Türkiye) right footed shot from the right side of the box is blocked. Assisted by Yunus Akgün."
+  },
+  {
+   "minute": "78",
+   "seconds": 4621.0,
+   "team": "Türkiye",
+   "player": "Kerem Aktürkoglu",
+   "type": "Shot On Target",
+   "x": 91.5,
+   "y": 49.1,
+   "goal": false,
+   "xg": 0.484,
+   "text": "Attempt saved. Kerem Aktürkoglu (Türkiye) right footed shot from the centre of the box is saved in the centre of the goal by Patrick Beach (Australia). Assisted by Merih Demiral with a headed pass."
+  },
+  {
+   "minute": "82",
+   "seconds": 4894.0,
+   "team": "Türkiye",
+   "player": "Arda Güler",
+   "type": "Shot Off Target",
+   "x": 77.7,
+   "y": 30.9,
+   "goal": false,
+   "xg": 0.07,
+   "text": "Attempt missed. Arda Güler (Türkiye) left footed shot from outside the box is high and wide to the left. Assisted by Mert Müldür."
+  },
+  {
+   "minute": "86",
+   "seconds": 5112.0,
+   "team": "Türkiye",
+   "player": "Hakan Çalhanoglu",
+   "type": "Shot On Target",
+   "x": 75.6,
+   "y": 62.2,
+   "goal": false,
+   "xg": 0.072,
+   "text": "Attempt saved. Hakan Çalhanoglu (Türkiye) right footed shot from outside the box is saved in the bottom right corner by Patrick Beach (Australia)."
+  },
+  {
+   "minute": "89",
+   "seconds": 5303.0,
+   "team": "Türkiye",
+   "player": "Arda Güler",
+   "type": "Shot On Target",
+   "x": 79.4,
+   "y": 42.7,
+   "goal": false,
+   "xg": 0.113,
+   "text": "Attempt saved. Arda Güler (Türkiye) left footed shot from outside the box is saved in the centre of the goal by Patrick Beach (Australia). Assisted by Kenan Yildiz."
+  },
+  {
+   "minute": "90",
+   "seconds": 5400.0,
+   "team": "Türkiye",
+   "player": "Merih Demiral",
+   "type": "Shot Off Target",
+   "x": 92.1,
+   "y": 37.2,
+   "goal": false,
+   "xg": 0.169,
+   "text": "Attempt missed. Merih Demiral (Türkiye) header from the centre of the box is close, but misses the top right corner. Assisted by Hakan Çalhanoglu."
+  },
+  {
+   "minute": "90'+5",
+   "seconds": 5400.0,
+   "team": "Türkiye",
+   "player": "Kenan Yildiz",
+   "type": "Shot Blocked",
+   "x": 77.8,
+   "y": 63.6,
+   "goal": false,
+   "xg": 0.084,
+   "text": "Attempt blocked. Kenan Yildiz (Türkiye) right footed shot from outside the box is blocked."
+  }
+ ],
+ "lineups": [
+  {
+   "team": "Australia",
+   "formation": "5-4-1",
+   "starters": [
+    {
+     "name": "Patrick Beach",
+     "jersey": "18",
+     "position": "G"
+    },
+    {
+     "name": "Harry Souttar",
+     "jersey": "19",
+     "position": "CD"
+    },
+    {
+     "name": "Cameron Burgess",
+     "jersey": "21",
+     "position": "CD-L"
+    },
+    {
+     "name": "Alessandro Circati",
+     "jersey": "3",
+     "position": "CD-R"
+    },
+    {
+     "name": "Jordan Bos",
+     "jersey": "5",
+     "position": "LB"
+    },
+    {
+     "name": "Jacob Italiano",
+     "jersey": "4",
+     "position": "RB"
+    },
+    {
+     "name": "Paul Okon-Engstler",
+     "jersey": "24",
+     "position": "CM-L"
+    },
+    {
+     "name": "Aiden O'Neill",
+     "jersey": "13",
+     "position": "CM-R"
+    },
+    {
+     "name": "Nestory Irankunda",
+     "jersey": "17",
+     "position": "LM"
+    },
+    {
+     "name": "Connor Metcalfe",
+     "jersey": "8",
+     "position": "RM"
+    },
+    {
+     "name": "Mohamed Toure",
+     "jersey": "9",
+     "position": "F"
+    }
+   ],
+   "subs": [
+    {
+     "name": "Mathew Ryan",
+     "jersey": "1",
+     "position": "SUB"
+    },
+    {
+     "name": "Kai Trewin",
+     "jersey": "15",
+     "position": "SUB"
+    },
+    {
+     "name": "Cameron Devlin",
+     "jersey": "14",
+     "position": "SUB"
+    },
+    {
+     "name": "Paul Izzo",
+     "jersey": "12",
+     "position": "SUB"
+    },
+    {
+     "name": "Cristian Volpato",
+     "jersey": "20",
+     "position": "SUB"
+    },
+    {
+     "name": "Jason Geria",
+     "jersey": "6",
+     "position": "SUB"
+    },
+    {
+     "name": "Awer Mabil",
+     "jersey": "11",
+     "position": "SUB"
+    },
+    {
+     "name": "Aziz Behich",
+     "jersey": "16",
+     "position": "SUB"
+    },
+    {
+     "name": "Mathew Leckie",
+     "jersey": "7",
+     "position": "SUB"
+    },
+    {
+     "name": "Ajdin Hrustic",
+     "jersey": "10",
+     "position": "SUB"
+    },
+    {
+     "name": "Tete Yengi",
+     "jersey": "26",
+     "position": "SUB"
+    },
+    {
+     "name": "Lucas Herrington",
+     "jersey": "25",
+     "position": "SUB"
+    },
+    {
+     "name": "Milos Degenek",
+     "jersey": "2",
+     "position": "SUB"
+    },
+    {
+     "name": "Jackson Irvine",
+     "jersey": "22",
+     "position": "SUB"
+    },
+    {
+     "name": "Nishan Velupillay",
+     "jersey": "23",
+     "position": "SUB"
+    }
+   ]
+  },
+  {
+   "team": "Türkiye",
+   "formation": "4-2-3-1",
+   "starters": [
+    {
+     "name": "Ugurcan Çakir",
+     "jersey": "23",
+     "position": "G"
+    },
+    {
+     "name": "Abdülkerim Bardakçi",
+     "jersey": "14",
+     "position": "CD-L"
+    },
+    {
+     "name": "Merih Demiral",
+     "jersey": "3",
+     "position": "CD-R"
+    },
+    {
+     "name": "Ferdi Kadioglu",
+     "jersey": "20",
+     "position": "LB"
+    },
+    {
+     "name": "Zeki Çelik",
+     "jersey": "2",
+     "position": "RB"
+    },
+    {
+     "name": "Orkun Kökçü",
+     "jersey": "6",
+     "position": "AM"
+    },
+    {
+     "name": "Hakan Çalhanoglu",
+     "jersey": "10",
+     "position": "LM"
+    },
+    {
+     "name": "Ismail Yüksek",
+     "jersey": "16",
+     "position": "RM"
+    },
+    {
+     "name": "Kerem Aktürkoglu",
+     "jersey": "7",
+     "position": "F"
+    },
+    {
+     "name": "Baris Alper Yilmaz",
+     "jersey": "21",
+     "position": "AM-L"
+    },
+    {
+     "name": "Arda Güler",
+     "jersey": "8",
+     "position": "AM-R"
+    }
+   ],
+   "subs": [
+    {
+     "name": "Yunus Akgün",
+     "jersey": "19",
+     "position": "SUB"
+    },
+    {
+     "name": "Deniz Gül",
+     "jersey": "9",
+     "position": "SUB"
+    },
+    {
+     "name": "Kaan Ayhan",
+     "jersey": "22",
+     "position": "SUB"
+    },
+    {
+     "name": "Kenan Yildiz",
+     "jersey": "11",
+     "position": "SUB"
+    },
+    {
+     "name": "Oguz Aydin",
+     "jersey": "24",
+     "position": "SUB"
+    },
+    {
+     "name": "Altay Bayindir",
+     "jersey": "12",
+     "position": "SUB"
+    },
+    {
+     "name": "Salih Özcan",
+     "jersey": "5",
+     "position": "SUB"
+    },
+    {
+     "name": "Can Uzun",
+     "jersey": "26",
+     "position": "SUB"
+    },
+    {
+     "name": "Ozan Kabak",
+     "jersey": "15",
+     "position": "SUB"
+    },
+    {
+     "name": "Samet Akaydin",
+     "jersey": "25",
+     "position": "SUB"
+    },
+    {
+     "name": "Irfan Can Kahveci",
+     "jersey": "17",
+     "position": "SUB"
+    },
+    {
+     "name": "Çaglar Söyüncü",
+     "jersey": "4",
+     "position": "SUB"
+    },
+    {
+     "name": "Eren Elmali",
+     "jersey": "13",
+     "position": "SUB"
+    },
+    {
+     "name": "Mert Müldür",
+     "jersey": "18",
+     "position": "SUB"
+    },
+    {
+     "name": "Mert Günok",
+     "jersey": "1",
+     "position": "SUB"
+    }
+   ]
+  }
+ ],
+ "attendance": 52497,
+ "venue": "BC Place, Vancouver, Canada"
+}

@@ -339,12 +339,27 @@
    "team2": "Scotland",
    "group": "Group C",
    "ground": "Boston (Foxborough)",
-   "score": null,
+   "score": {
+    "ft": [
+     0,
+     1
+    ],
+    "ht": [
+     0,
+     1
+    ]
+   },
    "goals1": [],
-   "goals2": [],
+   "goals2": [
+    {
+     "name": "John McGinn",
+     "minute": "28"
+    }
+   ],
    "espn_id": "760418",
-   "status": "live",
+   "status": "finished",
    "utc_date": "2026-06-14T01:00Z",
+   "attendance": 64146,
    "venue": "Gillette Stadium",
    "slug": "2026-06-13-haiti-vs-scotland"
   },
@@ -476,12 +491,18 @@
    "team2": "Turkey",
    "group": "Group D",
    "ground": "Vancouver",
-   "score": null,
+   "score": {
+    "ft": [
+     2,
+     0
+    ]
+   },
    "goals1": [],
    "goals2": [],
    "espn_id": "760421",
-   "status": "scheduled",
+   "status": "finished",
    "utc_date": "2026-06-14T04:00Z",
+   "attendance": 52497,
    "venue": "BC Place",
    "slug": "2026-06-13-australia-vs-turkey"
   },
