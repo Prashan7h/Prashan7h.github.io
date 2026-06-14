@@ -1,0 +1,966 @@
+{
+ "teams": [
+  {
+   "name": "Germany",
+   "stats": {
+    "possessionPct": "64.7",
+    "totalShots": "26",
+    "shotsOnTarget": "12",
+    "wonCorners": "8",
+    "foulsCommitted": "18",
+    "offsides": "0",
+    "saves": "1",
+    "yellowCards": "0",
+    "redCards": "0"
+   }
+  },
+  {
+   "name": "Curaçao",
+   "stats": {
+    "possessionPct": "35.3",
+    "totalShots": "8",
+    "shotsOnTarget": "2",
+    "wonCorners": "1",
+    "foulsCommitted": "11",
+    "offsides": "1",
+    "saves": "4",
+    "yellowCards": "0",
+    "redCards": "0"
+   }
+  }
+ ],
+ "events": [
+  {
+   "type": "Kickoff",
+   "minute": "",
+   "team": null,
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Goal",
+   "minute": "6'",
+   "team": "Germany",
+   "text": "Goal! Germany 1, Curaçao 0. Felix Nmecha (Germany) right footed shot from the centre of the box to the bottom right corner. Assisted by Florian Wirtz.",
+   "players": [
+    "Felix Nmecha",
+    "Florian Wirtz"
+   ]
+  },
+  {
+   "type": "Goal",
+   "minute": "21'",
+   "team": "Curaçao",
+   "text": "Goal! Germany 1, Curaçao 1. Livano Comenencia (Curaçao) left footed shot from the centre of the box to the bottom left corner.",
+   "players": [
+    "Livano Comenencia"
+   ]
+  },
+  {
+   "type": "Start Delay",
+   "minute": "23'",
+   "team": "Germany",
+   "text": "Delay in match for a drinks break.",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "23'",
+   "team": "Curaçao",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "25'",
+   "team": "Germany",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "25'",
+   "team": "Curaçao",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Goal - Header",
+   "minute": "38'",
+   "team": "Germany",
+   "text": "Goal! Germany 2, Curaçao 1. Nico Schlotterbeck (Germany) header from very close range to the bottom left corner. Assisted by Nathaniel Brown with a cross following a corner.",
+   "players": [
+    "Nico Schlotterbeck",
+    "Nathaniel Brown"
+   ]
+  },
+  {
+   "type": "Penalty - Scored",
+   "minute": "45'+5'",
+   "team": "Germany",
+   "text": "Goal! Germany 3, Curaçao 1. Kai Havertz (Germany) converts the penalty with a left footed shot to the bottom left corner.",
+   "players": [
+    "Kai Havertz"
+   ]
+  },
+  {
+   "type": "Halftime",
+   "minute": "45'+6'",
+   "team": null,
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Substitution",
+   "minute": "45'",
+   "team": "Curaçao",
+   "text": "Substitution, Curaçao. Jeremy Antonisse replaces Sontje Hansen.",
+   "players": [
+    "Jeremy Antonisse",
+    "Sontje Hansen"
+   ]
+  },
+  {
+   "type": "Start 2nd Half",
+   "minute": "45'",
+   "team": null,
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Goal",
+   "minute": "47'",
+   "team": "Germany",
+   "text": "Goal! Germany 4, Curaçao 1. Jamal Musiala (Germany) right footed shot from the right side of the box to the bottom left corner. Assisted by Joshua Kimmich with a through ball.",
+   "players": [
+    "Jamal Musiala",
+    "Joshua Kimmich"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "64'",
+   "team": "Germany",
+   "text": "Substitution, Germany. Deniz Undav replaces Jamal Musiala.",
+   "players": [
+    "Deniz Undav",
+    "Jamal Musiala"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "65'",
+   "team": "Curaçao",
+   "text": "Substitution, Curaçao. Jearl Margaritha replaces Jürgen Locadia.",
+   "players": [
+    "Jearl Margaritha",
+    "Jürgen Locadia"
+   ]
+  },
+  {
+   "type": "Goal - Volley",
+   "minute": "68'",
+   "team": "Germany",
+   "text": "Goal! Germany 5, Curaçao 1. Nathaniel Brown (Germany) right footed shot from the centre of the box to the bottom right corner. Assisted by Deniz Undav.",
+   "players": [
+    "Nathaniel Brown",
+    "Deniz Undav"
+   ]
+  },
+  {
+   "type": "Start Delay",
+   "minute": "69'",
+   "team": "Germany",
+   "text": "Delay in match for a drinks break.",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "69'",
+   "team": "Curaçao",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "72'",
+   "team": "Germany",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "72'",
+   "team": "Curaçao",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Substitution",
+   "minute": "73'",
+   "team": "Germany",
+   "text": "Substitution, Germany. Antonio Rüdiger replaces Jonathan Tah.",
+   "players": [
+    "Antonio Rüdiger",
+    "Jonathan Tah"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "73'",
+   "team": "Germany",
+   "text": "Substitution, Germany. Leon Goretzka replaces Felix Nmecha.",
+   "players": [
+    "Leon Goretzka",
+    "Felix Nmecha"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "73'",
+   "team": "Germany",
+   "text": "Substitution, Germany. David Raum replaces Nathaniel Brown.",
+   "players": [
+    "David Raum",
+    "Nathaniel Brown"
+   ]
+  },
+  {
+   "type": "Goal",
+   "minute": "78'",
+   "team": "Germany",
+   "text": "Goal! Germany 6, Curaçao 1. Deniz Undav (Germany) right footed shot from the centre of the box to the bottom left corner. Assisted by Joshua Kimmich.",
+   "players": [
+    "Deniz Undav",
+    "Joshua Kimmich"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "83'",
+   "team": "Curaçao",
+   "text": "Substitution, Curaçao. Gervane Kastaneer replaces Tahith Chong.",
+   "players": [
+    "Gervane Kastaneer",
+    "Tahith Chong"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "83'",
+   "team": "Germany",
+   "text": "Substitution, Germany. Waldemar Anton replaces Joshua Kimmich.",
+   "players": [
+    "Waldemar Anton",
+    "Joshua Kimmich"
+   ]
+  },
+  {
+   "type": "Goal",
+   "minute": "88'",
+   "team": "Germany",
+   "text": "Goal! Germany 7, Curaçao 1. Kai Havertz (Germany) left footed shot from the centre of the box to the centre of the goal. Assisted by Deniz Undav following a fast break.",
+   "players": [
+    "Kai Havertz",
+    "Deniz Undav"
+   ]
+  },
+  {
+   "type": "End Regular Time",
+   "minute": "90'+6'",
+   "team": null,
+   "text": "",
+   "players": []
+  }
+ ],
+ "shots": [
+  {
+   "minute": "6",
+   "seconds": 304.0,
+   "team": "Germany",
+   "player": "Jamal Musiala",
+   "type": "Shot Blocked",
+   "x": 85.1,
+   "y": 55.5,
+   "goal": false,
+   "xg": 0.207,
+   "text": "Attempt blocked. Jamal Musiala (Germany) right footed shot from the centre of the box is blocked. Assisted by Nathaniel Brown with a through ball."
+  },
+  {
+   "minute": "6",
+   "seconds": 317.0,
+   "team": "Germany",
+   "player": "Felix Nmecha",
+   "type": "Goal",
+   "x": 85.3,
+   "y": 62.0,
+   "goal": true,
+   "xg": 0.169,
+   "text": "Goal! Germany 1, Curaçao 0. Felix Nmecha (Germany) right footed shot from the centre of the box to the bottom right corner. Assisted by Florian Wirtz."
+  },
+  {
+   "minute": "7",
+   "seconds": 405.0,
+   "team": "Germany",
+   "player": "Jamal Musiala",
+   "type": "Shot Blocked",
+   "x": 87.1,
+   "y": 63.2,
+   "goal": false,
+   "xg": 0.184,
+   "text": "Attempt blocked. Jamal Musiala (Germany) right footed shot from the left side of the box is blocked."
+  },
+  {
+   "minute": "9",
+   "seconds": 488.0,
+   "team": "Germany",
+   "player": "Felix Nmecha",
+   "type": "Shot Off Target",
+   "x": 78.4,
+   "y": 35.0,
+   "goal": false,
+   "xg": 0.085,
+   "text": "Attempt missed. Felix Nmecha (Germany) right footed shot from outside the box is close, but misses to the left. Assisted by Jamal Musiala."
+  },
+  {
+   "minute": "10",
+   "seconds": 588.0,
+   "team": "Germany",
+   "player": "Florian Wirtz",
+   "type": "Shot Blocked",
+   "x": 81.2,
+   "y": 45.2,
+   "goal": false,
+   "xg": 0.14,
+   "text": "Attempt blocked. Florian Wirtz (Germany) right footed shot from outside the box is blocked."
+  },
+  {
+   "minute": "11",
+   "seconds": 621.0,
+   "team": "Germany",
+   "player": "Leroy Sané",
+   "type": "Shot Off Target",
+   "x": 88.7,
+   "y": 43.6,
+   "goal": false,
+   "xg": 0.295,
+   "text": "Attempt missed. Leroy Sané (Germany) left footed shot from the centre of the box is close, but misses to the left. Assisted by Jamal Musiala."
+  },
+  {
+   "minute": "12",
+   "seconds": 702.0,
+   "team": "Germany",
+   "player": "Felix Nmecha",
+   "type": "Shot On Target",
+   "x": 89.5,
+   "y": 44.0,
+   "goal": false,
+   "xg": 0.328,
+   "text": "Attempt saved. Felix Nmecha (Germany) right footed shot from the centre of the box is saved in the centre of the goal by Eloy Room (Curaçao). Assisted by Aleksandar Pavlovic with a through ball."
+  },
+  {
+   "minute": "14",
+   "seconds": 827.0,
+   "team": "Germany",
+   "player": "Florian Wirtz",
+   "type": "Shot Off Target",
+   "x": 82.8,
+   "y": 73.6,
+   "goal": false,
+   "xg": 0.082,
+   "text": "Attempt missed. Florian Wirtz (Germany) right footed shot from outside the box is close, but misses to the right. Assisted by Nathaniel Brown."
+  },
+  {
+   "minute": "19",
+   "seconds": 1138.0,
+   "team": "Curaçao",
+   "player": "Leandro Bacuna",
+   "type": "Shot Off Target",
+   "x": 72.5,
+   "y": 51.7,
+   "goal": false,
+   "xg": 0.062,
+   "text": "Attempt missed. Leandro Bacuna (Curaçao) left footed shot from outside the box is high and wide to the left. Assisted by Sontje Hansen."
+  },
+  {
+   "minute": "21",
+   "seconds": 1244.0,
+   "team": "Curaçao",
+   "player": "Livano Comenencia",
+   "type": "Goal",
+   "x": 84.6,
+   "y": 39.1,
+   "goal": true,
+   "xg": 0.166,
+   "text": "Goal! Germany 1, Curaçao 1. Livano Comenencia (Curaçao) left footed shot from the centre of the box to the bottom left corner."
+  },
+  {
+   "minute": "28",
+   "seconds": 1633.0,
+   "team": "Germany",
+   "player": "Nico Schlotterbeck",
+   "type": "Shot On Target",
+   "x": 92.3,
+   "y": 55.6,
+   "goal": false,
+   "xg": 0.297,
+   "text": "Attempt saved. Nico Schlotterbeck (Germany) header from the centre of the box is saved in the top centre of the goal by Eloy Room (Curaçao). Assisted by Joshua Kimmich with a cross."
+  },
+  {
+   "minute": "30",
+   "seconds": 1775.0,
+   "team": "Germany",
+   "player": "Aleksandar Pavlovic",
+   "type": "Shot Blocked",
+   "x": 81.2,
+   "y": 51.9,
+   "goal": false,
+   "xg": 0.144,
+   "text": "Attempt blocked. Aleksandar Pavlovic (Germany) left footed shot from outside the box is blocked. Assisted by Leroy Sané."
+  },
+  {
+   "minute": "32",
+   "seconds": 1919.0,
+   "team": "Germany",
+   "player": "Leroy Sané",
+   "type": "Shot Off Target",
+   "x": 86.6,
+   "y": 56.3,
+   "goal": false,
+   "xg": 0.237,
+   "text": "Attempt missed. Leroy Sané (Germany) left footed shot from the centre of the box misses to the right. Assisted by Florian Wirtz with a through ball."
+  },
+  {
+   "minute": "36",
+   "seconds": 2104.0,
+   "team": "Curaçao",
+   "player": "Juninho Bacuna",
+   "type": "Shot Off Target",
+   "x": 73.4,
+   "y": 56.6,
+   "goal": false,
+   "xg": 0.065,
+   "text": "Attempt missed. Juninho Bacuna (Curaçao) right footed shot from outside the box is high and wide to the right. Assisted by Sontje Hansen."
+  },
+  {
+   "minute": "38",
+   "seconds": 2250.0,
+   "team": "Germany",
+   "player": "Nico Schlotterbeck",
+   "type": "Goal - Header",
+   "x": 95.2,
+   "y": 45.8,
+   "goal": true,
+   "xg": 0.451,
+   "text": "Goal! Germany 2, Curaçao 1. Nico Schlotterbeck (Germany) header from very close range to the bottom left corner. Assisted by Nathaniel Brown with a cross following a corner."
+  },
+  {
+   "minute": "45",
+   "seconds": 2691.0,
+   "team": "Germany",
+   "player": "Nathaniel Brown",
+   "type": "Shot Blocked",
+   "x": 88.7,
+   "y": 57.4,
+   "goal": false,
+   "xg": 0.283,
+   "text": "Attempt blocked. Nathaniel Brown (Germany) right footed shot from the centre of the box is blocked."
+  },
+  {
+   "minute": "45",
+   "seconds": 2693.0,
+   "team": "Germany",
+   "player": "Aleksandar Pavlovic",
+   "type": "Shot Blocked",
+   "x": 84.9,
+   "y": 48.7,
+   "goal": false,
+   "xg": 0.215,
+   "text": "Attempt blocked. Aleksandar Pavlovic (Germany) right footed shot from the centre of the box is blocked. Assisted by Leroy Sané."
+  },
+  {
+   "minute": "45",
+   "seconds": 2696.0,
+   "team": "Germany",
+   "player": "Kai Havertz",
+   "type": "Shot Blocked",
+   "x": 90.8,
+   "y": 59.3,
+   "goal": false,
+   "xg": 0.202,
+   "text": "Attempt blocked. Kai Havertz (Germany) header from the centre of the box is blocked."
+  },
+  {
+   "minute": "45'+2",
+   "seconds": 2700.0,
+   "team": "Curaçao",
+   "player": "Sontje Hansen",
+   "type": "Shot On Target",
+   "x": 79.1,
+   "y": 69.0,
+   "goal": false,
+   "xg": 0.078,
+   "text": "Attempt saved. Sontje Hansen (Curaçao) right footed shot from outside the box is saved in the bottom right corner by Manuel Neuer (Germany). Assisted by Livano Comenencia."
+  },
+  {
+   "minute": "45'+5",
+   "seconds": 2700.0,
+   "team": "Germany",
+   "player": "Kai Havertz",
+   "type": "Penalty - Scored",
+   "x": 88.5,
+   "y": 50.0,
+   "goal": true,
+   "xg": 0.76,
+   "text": "Goal! Germany 3, Curaçao 1. Kai Havertz (Germany) converts the penalty with a left footed shot to the bottom left corner."
+  },
+  {
+   "minute": "47",
+   "seconds": 2768.0,
+   "team": "Germany",
+   "player": "Jamal Musiala",
+   "type": "Goal",
+   "x": 93.6,
+   "y": 34.0,
+   "goal": true,
+   "xg": 0.204,
+   "text": "Goal! Germany 4, Curaçao 1. Jamal Musiala (Germany) right footed shot from the right side of the box to the bottom left corner. Assisted by Joshua Kimmich with a through ball."
+  },
+  {
+   "minute": "50",
+   "seconds": 2972.0,
+   "team": "Germany",
+   "player": "Felix Nmecha",
+   "type": "Shot On Target",
+   "x": 97.3,
+   "y": 29.5,
+   "goal": false,
+   "xg": 0.127,
+   "text": "Attempt saved. Felix Nmecha (Germany) right footed shot from a difficult angle on the right is saved in the top centre of the goal by Eloy Room (Curaçao). Assisted by Joshua Kimmich."
+  },
+  {
+   "minute": "53",
+   "seconds": 3178.0,
+   "team": "Germany",
+   "player": "Florian Wirtz",
+   "type": "Shot Blocked",
+   "x": 88.8,
+   "y": 46.8,
+   "goal": false,
+   "xg": 0.33,
+   "text": "Attempt blocked. Florian Wirtz (Germany) right footed shot from the centre of the box is blocked. Assisted by Joshua Kimmich with a cross."
+  },
+  {
+   "minute": "54",
+   "seconds": 3218.0,
+   "team": "Germany",
+   "player": "Kai Havertz",
+   "type": "Shot Blocked",
+   "x": 89.0,
+   "y": 27.4,
+   "goal": false,
+   "xg": 0.116,
+   "text": "Attempt blocked. Kai Havertz (Germany) left footed shot from the right side of the box is blocked. Assisted by Florian Wirtz."
+  },
+  {
+   "minute": "54",
+   "seconds": 3222.0,
+   "team": "Germany",
+   "player": "Aleksandar Pavlovic",
+   "type": "Shot Off Target",
+   "x": 81.3,
+   "y": 51.9,
+   "goal": false,
+   "xg": 0.146,
+   "text": "Attempt missed. Aleksandar Pavlovic (Germany) right footed shot from outside the box is too high. Assisted by Florian Wirtz."
+  },
+  {
+   "minute": "62",
+   "seconds": 3712.0,
+   "team": "Curaçao",
+   "player": "Leandro Bacuna",
+   "type": "Shot Off Target",
+   "x": 91.7,
+   "y": 53.0,
+   "goal": false,
+   "xg": 0.31,
+   "text": "Attempt missed. Leandro Bacuna (Curaçao) header from the centre of the box is just a bit too high. Assisted by Jeremy Antonisse with a cross following a set piece situation."
+  },
+  {
+   "minute": "63",
+   "seconds": 3753.0,
+   "team": "Germany",
+   "player": "Leroy Sané",
+   "type": "Shot Off Target",
+   "x": 85.6,
+   "y": 43.2,
+   "goal": false,
+   "xg": 0.21,
+   "text": "Attempt missed. Leroy Sané (Germany) left footed shot from the centre of the box is close, but misses to the left. Assisted by Jonathan Tah with a through ball."
+  },
+  {
+   "minute": "67",
+   "seconds": 3964.0,
+   "team": "Curaçao",
+   "player": "Livano Comenencia",
+   "type": "Shot Off Target",
+   "x": 77.2,
+   "y": 48.5,
+   "goal": false,
+   "xg": 0.097,
+   "text": "Attempt missed. Livano Comenencia (Curaçao) right footed shot from outside the box misses to the left following a set piece situation."
+  },
+  {
+   "minute": "68",
+   "seconds": 4062.0,
+   "team": "Germany",
+   "player": "Nathaniel Brown",
+   "type": "Goal - Volley",
+   "x": 89.5,
+   "y": 54.8,
+   "goal": true,
+   "xg": 0.343,
+   "text": "Goal! Germany 5, Curaçao 1. Nathaniel Brown (Germany) right footed shot from the centre of the box to the bottom right corner. Assisted by Deniz Undav."
+  },
+  {
+   "minute": "75",
+   "seconds": 4480.0,
+   "team": "Curaçao",
+   "player": "Tahith Chong",
+   "type": "Shot Off Target",
+   "x": 87.9,
+   "y": 24.6,
+   "goal": false,
+   "xg": 0.095,
+   "text": "Attempt missed. Tahith Chong (Curaçao) left footed shot from the right side of the box misses to the left. Assisted by Leandro Bacuna."
+  },
+  {
+   "minute": "76",
+   "seconds": 4520.0,
+   "team": "Curaçao",
+   "player": "Jearl Margaritha",
+   "type": "Shot Off Target",
+   "x": 88.6,
+   "y": 70.9,
+   "goal": false,
+   "xg": 0.127,
+   "text": "Attempt missed. Jearl Margaritha (Curaçao) right footed shot from the left side of the box is close, but misses the top right corner. Assisted by Livano Comenencia."
+  },
+  {
+   "minute": "78",
+   "seconds": 4626.0,
+   "team": "Germany",
+   "player": "Deniz Undav",
+   "type": "Goal",
+   "x": 93.4,
+   "y": 53.0,
+   "goal": true,
+   "xg": 0.593,
+   "text": "Goal! Germany 6, Curaçao 1. Deniz Undav (Germany) right footed shot from the centre of the box to the bottom left corner. Assisted by Joshua Kimmich."
+  },
+  {
+   "minute": "86",
+   "seconds": 5103.0,
+   "team": "Germany",
+   "player": "David Raum",
+   "type": "Shot On Target",
+   "x": 92.0,
+   "y": 69.1,
+   "goal": false,
+   "xg": 0.158,
+   "text": "Attempt saved. David Raum (Germany) left footed shot from the left side of the box is saved in the bottom left corner by Eloy Room (Curaçao). Assisted by Deniz Undav."
+  },
+  {
+   "minute": "88",
+   "seconds": 5263.0,
+   "team": "Germany",
+   "player": "Kai Havertz",
+   "type": "Goal",
+   "x": 88.6,
+   "y": 63.0,
+   "goal": true,
+   "xg": 0.208,
+   "text": "Goal! Germany 7, Curaçao 1. Kai Havertz (Germany) left footed shot from the centre of the box to the centre of the goal. Assisted by Deniz Undav following a fast break."
+  }
+ ],
+ "lineups": [
+  {
+   "team": "Germany",
+   "formation": "4-2-3-1",
+   "starters": [
+    {
+     "name": "Manuel Neuer",
+     "jersey": "1",
+     "position": "G"
+    },
+    {
+     "name": "Nico Schlotterbeck",
+     "jersey": "15",
+     "position": "CD-L"
+    },
+    {
+     "name": "Jonathan Tah",
+     "jersey": "4",
+     "position": "CD-R"
+    },
+    {
+     "name": "Nathaniel Brown",
+     "jersey": "18",
+     "position": "LB"
+    },
+    {
+     "name": "Joshua Kimmich",
+     "jersey": "6",
+     "position": "RB"
+    },
+    {
+     "name": "Jamal Musiala",
+     "jersey": "10",
+     "position": "AM"
+    },
+    {
+     "name": "Aleksandar Pavlovic",
+     "jersey": "5",
+     "position": "LM"
+    },
+    {
+     "name": "Felix Nmecha",
+     "jersey": "23",
+     "position": "RM"
+    },
+    {
+     "name": "Kai Havertz",
+     "jersey": "7",
+     "position": "F"
+    },
+    {
+     "name": "Florian Wirtz",
+     "jersey": "17",
+     "position": "AM-L"
+    },
+    {
+     "name": "Leroy Sané",
+     "jersey": "19",
+     "position": "AM-R"
+    }
+   ],
+   "subs": [
+    {
+     "name": "David Raum",
+     "jersey": "22",
+     "position": "SUB"
+    },
+    {
+     "name": "Nick Woltemade",
+     "jersey": "11",
+     "position": "SUB"
+    },
+    {
+     "name": "Angelo Stiller",
+     "jersey": "16",
+     "position": "SUB"
+    },
+    {
+     "name": "Deniz Undav",
+     "jersey": "26",
+     "position": "SUB"
+    },
+    {
+     "name": "Waldemar Anton",
+     "jersey": "3",
+     "position": "SUB"
+    },
+    {
+     "name": "Jamie Leweling",
+     "jersey": "9",
+     "position": "SUB"
+    },
+    {
+     "name": "Alexander Nübel",
+     "jersey": "21",
+     "position": "SUB"
+    },
+    {
+     "name": "Leon Goretzka",
+     "jersey": "8",
+     "position": "SUB"
+    },
+    {
+     "name": "Antonio Rüdiger",
+     "jersey": "2",
+     "position": "SUB"
+    },
+    {
+     "name": "Malick Thiaw",
+     "jersey": "24",
+     "position": "SUB"
+    },
+    {
+     "name": "Nadiem Amiri",
+     "jersey": "20",
+     "position": "SUB"
+    },
+    {
+     "name": "Oliver Baumann",
+     "jersey": "12",
+     "position": "SUB"
+    },
+    {
+     "name": "Pascal Gross",
+     "jersey": "13",
+     "position": "SUB"
+    },
+    {
+     "name": "Assan Ouédraogo",
+     "jersey": "25",
+     "position": "SUB"
+    },
+    {
+     "name": "Maximilian Beier",
+     "jersey": "14",
+     "position": "SUB"
+    }
+   ]
+  },
+  {
+   "team": "Curaçao",
+   "formation": "4-3-1-2",
+   "starters": [
+    {
+     "name": "Eloy Room",
+     "jersey": "1",
+     "position": "G"
+    },
+    {
+     "name": "Armando Obispo",
+     "jersey": "18",
+     "position": "CD-L"
+    },
+    {
+     "name": "Riechedly Bazoer",
+     "jersey": "23",
+     "position": "CD-R"
+    },
+    {
+     "name": "Deveron Fonville",
+     "jersey": "24",
+     "position": "LB"
+    },
+    {
+     "name": "Sherel Floranus",
+     "jersey": "5",
+     "position": "RB"
+    },
+    {
+     "name": "Sontje Hansen",
+     "jersey": "12",
+     "position": "M"
+    },
+    {
+     "name": "Leandro Bacuna",
+     "jersey": "10",
+     "position": "CM"
+    },
+    {
+     "name": "Tahith Chong",
+     "jersey": "21",
+     "position": "AM"
+    },
+    {
+     "name": "Juninho Bacuna",
+     "jersey": "7",
+     "position": "LM"
+    },
+    {
+     "name": "Livano Comenencia",
+     "jersey": "8",
+     "position": "RM"
+    },
+    {
+     "name": "Jürgen Locadia",
+     "jersey": "9",
+     "position": "CF-R"
+    }
+   ],
+   "subs": [
+    {
+     "name": "Ar'jany Martha",
+     "jersey": "15",
+     "position": null
+    },
+    {
+     "name": "Juriën Gaari",
+     "jersey": "3",
+     "position": null
+    },
+    {
+     "name": "Tyrick Bodak",
+     "jersey": "25",
+     "position": null
+    },
+    {
+     "name": "Kevin Felida",
+     "jersey": "22",
+     "position": null
+    },
+    {
+     "name": "Joshua Brenet",
+     "jersey": "20",
+     "position": null
+    },
+    {
+     "name": "Gervane Kastaneer",
+     "jersey": "19",
+     "position": null
+    },
+    {
+     "name": "Brandley Kuwas",
+     "jersey": "17",
+     "position": null
+    },
+    {
+     "name": "Tyrese Noslin",
+     "jersey": "13",
+     "position": null
+    },
+    {
+     "name": "Jearl Margaritha",
+     "jersey": "16",
+     "position": null
+    },
+    {
+     "name": "Jeremy Antonisse",
+     "jersey": "11",
+     "position": null
+    },
+    {
+     "name": "Shurandy Sambo",
+     "jersey": "2",
+     "position": null
+    },
+    {
+     "name": "Trevor Doornbusch",
+     "jersey": "26",
+     "position": null
+    },
+    {
+     "name": "Kenji Gorré",
+     "jersey": "14",
+     "position": null
+    },
+    {
+     "name": "Godfried Roemeratoe",
+     "jersey": "6",
+     "position": null
+    },
+    {
+     "name": "Roshon van Eijma",
+     "jersey": "4",
+     "position": null
+    }
+   ]
+  }
+ ],
+ "attendance": 68021,
+ "venue": "NRG Stadium, Houston, Texas, USA"
+}
