@@ -932,7 +932,7 @@
    "goals1": [],
    "goals2": [],
    "espn_id": "760426",
-   "status": "scheduled",
+   "status": "live",
    "utc_date": "2026-06-15T19:00Z",
    "venue": "Lumen Field",
    "slug": "2026-06-15-belgium-vs-egypt"
@@ -1032,12 +1032,22 @@
    "team2": "Cape Verde",
    "group": "Group H",
    "ground": "Atlanta",
-   "score": null,
+   "score": {
+    "ft": [
+     0,
+     0
+    ],
+    "ht": [
+     0,
+     0
+    ]
+   },
    "goals1": [],
    "goals2": [],
    "espn_id": "760428",
-   "status": "scheduled",
+   "status": "finished",
    "utc_date": "2026-06-15T16:00Z",
+   "attendance": 67640,
    "venue": "Mercedes-Benz Stadium",
    "slug": "2026-06-15-spain-vs-cape-verde"
   },

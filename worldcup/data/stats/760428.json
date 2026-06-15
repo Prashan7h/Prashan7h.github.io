@@ -1,0 +1,984 @@
+{
+ "teams": [
+  {
+   "name": "Spain",
+   "stats": {
+    "possessionPct": "74.3",
+    "totalShots": "27",
+    "shotsOnTarget": "7",
+    "wonCorners": "11",
+    "foulsCommitted": "10",
+    "offsides": "2",
+    "saves": "1",
+    "yellowCards": "1",
+    "redCards": "0"
+   }
+  },
+  {
+   "name": "Cape Verde",
+   "stats": {
+    "possessionPct": "25.7",
+    "totalShots": "6",
+    "shotsOnTarget": "1",
+    "wonCorners": "1",
+    "foulsCommitted": "1",
+    "offsides": "3",
+    "saves": "7",
+    "yellowCards": "1",
+    "redCards": "0"
+   }
+  }
+ ],
+ "events": [
+  {
+   "type": "Kickoff",
+   "minute": "",
+   "team": null,
+   "text": "First Half begins.",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "4'",
+   "team": "Spain",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "4'",
+   "team": "Spain",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Yellow Card",
+   "minute": "16'",
+   "team": "Cape Verde",
+   "text": "Sidny Cabral (Cabo Verde) is shown the yellow card for a bad foul.",
+   "players": [
+    "Sidny Lopes Cabral"
+   ]
+  },
+  {
+   "type": "Start Delay",
+   "minute": "23'",
+   "team": "Cape Verde",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "23'",
+   "team": "Spain",
+   "text": "Delay in match for a drinks break.",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "26'",
+   "team": "Spain",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "26'",
+   "team": "Cape Verde",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Halftime",
+   "minute": "45'+5'",
+   "team": null,
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Start 2nd Half",
+   "minute": "45'",
+   "team": null,
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Substitution",
+   "minute": "61'",
+   "team": "Cape Verde",
+   "text": "Substitution, Cabo Verde. Willy Semedo replaces Jovane Cabral because of an injury.",
+   "players": [
+    "Willy Semedo",
+    "Jovane Cabral"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "61'",
+   "team": "Cape Verde",
+   "text": "Substitution, Cabo Verde. Deroy Duarte replaces Laros Duarte.",
+   "players": [
+    "Deroy Duarte",
+    "Laros Duarte"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "61'",
+   "team": "Cape Verde",
+   "text": "Substitution, Cabo Verde. Nuno da Costa replaces Dailon Livramento.",
+   "players": [
+    "Nuno da Costa",
+    "Dailon Livramento"
+   ]
+  },
+  {
+   "type": "Start Delay",
+   "minute": "65'",
+   "team": "Spain",
+   "text": "Delay in match because of an injury Aymeric Laporte (Spain).",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "65'",
+   "team": "Cape Verde",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "65'",
+   "team": "Spain",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "65'",
+   "team": "Cape Verde",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "68'",
+   "team": "Spain",
+   "text": "Delay in match for a drinks break.",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "68'",
+   "team": "Cape Verde",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "71'",
+   "team": "Spain",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "71'",
+   "team": "Cape Verde",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Substitution",
+   "minute": "71'",
+   "team": "Spain",
+   "text": "Substitution, Spain. Mikel Merino replaces Fabián Ruiz.",
+   "players": [
+    "Mikel Merino",
+    "Fabián Ruiz"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "71'",
+   "team": "Spain",
+   "text": "Substitution, Spain. Lamine Yamal replaces Gavi.",
+   "players": [
+    "Lamine Yamal",
+    "Gavi"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "76'",
+   "team": "Cape Verde",
+   "text": "Substitution, Cabo Verde. João Paulo replaces Sidny Cabral.",
+   "players": [
+    "João Paulo",
+    "Sidny Lopes Cabral"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "79'",
+   "team": "Cape Verde",
+   "text": "Substitution, Cabo Verde. Telmo Arcanjo replaces Jamiro Monteiro.",
+   "players": [
+    "Telmo Arcanjo",
+    "Jamiro Monteiro"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "81'",
+   "team": "Spain",
+   "text": "Substitution, Spain. Dani Olmo replaces Ferran Torres.",
+   "players": [
+    "Dani Olmo",
+    "Ferran Torres"
+   ]
+  },
+  {
+   "type": "Start Delay",
+   "minute": "81'",
+   "team": "Spain",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "81'",
+   "team": "Spain",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Substitution",
+   "minute": "87'",
+   "team": "Spain",
+   "text": "Substitution, Spain. Nico Williams replaces Rodri.",
+   "players": [
+    "Nico Williams",
+    "Rodri"
+   ]
+  },
+  {
+   "type": "Yellow Card",
+   "minute": "90'+3'",
+   "team": "Spain",
+   "text": "Pedri (Spain) is shown the yellow card for a bad foul.",
+   "players": [
+    "Pedri"
+   ]
+  },
+  {
+   "type": "End Regular Time",
+   "minute": "90'+6'",
+   "team": null,
+   "text": "",
+   "players": []
+  }
+ ],
+ "shots": [
+  {
+   "minute": "15",
+   "seconds": 895.0,
+   "team": "Spain",
+   "player": "Pedri",
+   "type": "Shot On Target",
+   "x": 78.2,
+   "y": 66.0,
+   "goal": false,
+   "xg": 0.081,
+   "text": "Attempt saved. Pedri (Spain) right footed shot from outside the box is saved in the centre of the goal by Vozinha (Cabo Verde)."
+  },
+  {
+   "minute": "19",
+   "seconds": 1137.0,
+   "team": "Spain",
+   "player": "Fabián Ruiz",
+   "type": "Shot Off Target",
+   "x": 76.6,
+   "y": 46.6,
+   "goal": false,
+   "xg": 0.091,
+   "text": "Attempt missed. Fabián Ruiz (Spain) left footed shot from outside the box misses to the left."
+  },
+  {
+   "minute": "20",
+   "seconds": 1156.0,
+   "team": "Spain",
+   "player": "Pau Cubarsí",
+   "type": "Shot Blocked",
+   "x": 72.8,
+   "y": 43.0,
+   "goal": false,
+   "xg": 0.061,
+   "text": "Attempt blocked. Pau Cubarsí (Spain) right footed shot from outside the box is blocked. Assisted by Rodri."
+  },
+  {
+   "minute": "27",
+   "seconds": 1596.0,
+   "team": "Cape Verde",
+   "player": "Steven Moreira",
+   "type": "Shot Blocked",
+   "x": 89.9,
+   "y": 22.9,
+   "goal": false,
+   "xg": 0.09,
+   "text": "Attempt blocked. Steven Moreira (Cabo Verde) right footed shot from the right side of the box is blocked."
+  },
+  {
+   "minute": "29",
+   "seconds": 1695.0,
+   "team": "Spain",
+   "player": "Gavi",
+   "type": "Shot Blocked",
+   "x": 85.8,
+   "y": 65.2,
+   "goal": false,
+   "xg": 0.151,
+   "text": "Attempt blocked. Gavi (Spain) right footed shot from the left side of the box is blocked. Assisted by Marc Cucurella."
+  },
+  {
+   "minute": "29",
+   "seconds": 1719.0,
+   "team": "Spain",
+   "player": "Marc Cucurella",
+   "type": "Shot Off Target",
+   "x": 84.3,
+   "y": 69.9,
+   "goal": false,
+   "xg": 0.108,
+   "text": "Attempt missed. Marc Cucurella (Spain) right footed shot from the left side of the box is too high."
+  },
+  {
+   "minute": "35",
+   "seconds": 2086.0,
+   "team": "Cape Verde",
+   "player": "Dailon Livramento",
+   "type": "Shot Off Target",
+   "x": 45.5,
+   "y": 48.7,
+   "goal": false,
+   "xg": 0.006,
+   "text": "Attempt missed. Dailon Livramento (Cabo Verde) right footed shot from more than 35 yards misses to the left following a fast break."
+  },
+  {
+   "minute": "38",
+   "seconds": 2222.0,
+   "team": "Cape Verde",
+   "player": "Jovane Cabral",
+   "type": "Shot Off Target",
+   "x": 80.0,
+   "y": 79.7,
+   "goal": false,
+   "xg": 0.053,
+   "text": "Attempt missed. Jovane Cabral (Cabo Verde) right footed shot from long range on the left is too high. Assisted by Sidny Cabral following a set piece situation."
+  },
+  {
+   "minute": "39",
+   "seconds": 2329.0,
+   "team": "Spain",
+   "player": null,
+   "type": "Shot Hit Woodwork",
+   "x": 95.0,
+   "y": 49.1,
+   "goal": false,
+   "xg": 0.762,
+   "text": "Ferran Torres (Spain) hits the bar with a right footed shot from very close range. Assisted by Marc Cucurella with a headed pass."
+  },
+  {
+   "minute": "39",
+   "seconds": 2331.0,
+   "team": "Spain",
+   "player": "Mikel Oyarzabal",
+   "type": "Shot On Target",
+   "x": 91.1,
+   "y": 46.8,
+   "goal": false,
+   "xg": 0.285,
+   "text": "Attempt saved. Mikel Oyarzabal (Spain) header from the centre of the box is saved in the top centre of the goal by Vozinha (Cabo Verde)."
+  },
+  {
+   "minute": "40",
+   "seconds": 2393.0,
+   "team": "Spain",
+   "player": "Ferran Torres",
+   "type": "Shot Blocked",
+   "x": 95.8,
+   "y": 53.4,
+   "goal": false,
+   "xg": 0.504,
+   "text": "Attempt blocked. Ferran Torres (Spain) header from very close range is blocked. Assisted by Pedri with a cross."
+  },
+  {
+   "minute": "40",
+   "seconds": 2393.0,
+   "team": "Cape Verde",
+   "player": null,
+   "type": "Shot Blocked",
+   "x": 3.2,
+   "y": 48.0,
+   "goal": false,
+   "xg": 0.0,
+   "text": "Diney Borges (Cape Verde) Shot Blocked at 40'"
+  },
+  {
+   "minute": "41",
+   "seconds": 2404.0,
+   "team": "Spain",
+   "player": "Fabián Ruiz",
+   "type": "Shot Off Target",
+   "x": 75.0,
+   "y": 54.2,
+   "goal": false,
+   "xg": 0.077,
+   "text": "Attempt missed. Fabián Ruiz (Spain) left footed shot from outside the box is high and wide to the left. Assisted by Mikel Oyarzabal following a corner."
+  },
+  {
+   "minute": "45",
+   "seconds": 2670.0,
+   "team": "Spain",
+   "player": "Ferran Torres",
+   "type": "Shot On Target",
+   "x": 88.2,
+   "y": 44.0,
+   "goal": false,
+   "xg": 0.284,
+   "text": "Attempt saved. Ferran Torres (Spain) left footed shot from the centre of the box is saved in the centre of the goal by Vozinha (Cabo Verde)."
+  },
+  {
+   "minute": "45'+2",
+   "seconds": 2700.0,
+   "team": "Spain",
+   "player": "Aymeric Laporte",
+   "type": "Shot On Target",
+   "x": 91.1,
+   "y": 47.4,
+   "goal": false,
+   "xg": 0.29,
+   "text": "Attempt saved. Aymeric Laporte (Spain) header from the centre of the box is saved in the bottom left corner by Vozinha (Cabo Verde)."
+  },
+  {
+   "minute": "45'+3",
+   "seconds": 2700.0,
+   "team": "Spain",
+   "player": "Rodri",
+   "type": "Shot Blocked",
+   "x": 96.2,
+   "y": 58.4,
+   "goal": false,
+   "xg": 0.309,
+   "text": "Attempt blocked. Rodri (Spain) header from the left side of the six yard box is blocked. Assisted by Pedri with a cross."
+  },
+  {
+   "minute": "45'+3",
+   "seconds": 2700.0,
+   "team": "Cape Verde",
+   "player": null,
+   "type": "Shot Blocked",
+   "x": 2.4,
+   "y": 43.5,
+   "goal": false,
+   "xg": 0.0,
+   "text": "Pico Lopes (Cape Verde) Shot Blocked at 45'+3'"
+  },
+  {
+   "minute": "45'+4",
+   "seconds": 2700.0,
+   "team": "Spain",
+   "player": "Mikel Oyarzabal",
+   "type": "Shot Off Target",
+   "x": 94.6,
+   "y": 55.1,
+   "goal": false,
+   "xg": 0.397,
+   "text": "Attempt missed. Mikel Oyarzabal (Spain) header from very close range misses to the right. Assisted by Marcos Llorente with a cross."
+  },
+  {
+   "minute": "48",
+   "seconds": 2865.0,
+   "team": "Spain",
+   "player": "Mikel Oyarzabal",
+   "type": "Shot Off Target",
+   "x": 90.6,
+   "y": 50.9,
+   "goal": false,
+   "xg": 0.279,
+   "text": "Attempt missed. Mikel Oyarzabal (Spain) header from the centre of the box misses to the right. Assisted by Pedri with a cross."
+  },
+  {
+   "minute": "48",
+   "seconds": 2870.0,
+   "team": "Spain",
+   "player": "Fabián Ruiz",
+   "type": "Shot Off Target",
+   "x": 74.6,
+   "y": 27.6,
+   "goal": false,
+   "xg": 0.05,
+   "text": "Attempt missed. Fabián Ruiz (Spain) left footed shot from outside the box is high and wide to the left. Assisted by Marcos Llorente."
+  },
+  {
+   "minute": "51",
+   "seconds": 3022.0,
+   "team": "Spain",
+   "player": "Fabián Ruiz",
+   "type": "Shot Off Target",
+   "x": 81.3,
+   "y": 36.0,
+   "goal": false,
+   "xg": 0.112,
+   "text": "Attempt missed. Fabián Ruiz (Spain) left footed shot from outside the box is high and wide to the left. Assisted by Pedri."
+  },
+  {
+   "minute": "56",
+   "seconds": 3358.0,
+   "team": "Spain",
+   "player": "Fabián Ruiz",
+   "type": "Shot On Target",
+   "x": 90.9,
+   "y": 50.5,
+   "goal": false,
+   "xg": 0.291,
+   "text": "Attempt saved. Fabián Ruiz (Spain) header from the centre of the box is saved in the centre of the goal by Vozinha (Cabo Verde). Assisted by Pedri with a through ball."
+  },
+  {
+   "minute": "58",
+   "seconds": 3439.0,
+   "team": "Spain",
+   "player": "Aymeric Laporte",
+   "type": "Shot Off Target",
+   "x": 72.9,
+   "y": 61.3,
+   "goal": false,
+   "xg": 0.058,
+   "text": "Attempt missed. Aymeric Laporte (Spain) left footed shot from outside the box is too high. Assisted by Rodri."
+  },
+  {
+   "minute": "73",
+   "seconds": 4359.0,
+   "team": "Spain",
+   "player": "Mikel Merino",
+   "type": "Shot On Target",
+   "x": 89.3,
+   "y": 49.9,
+   "goal": false,
+   "xg": 0.364,
+   "text": "Attempt saved. Mikel Merino (Spain) right footed shot from the centre of the box is saved in the centre of the goal by Vozinha (Cabo Verde). Assisted by Marcos Llorente."
+  },
+  {
+   "minute": "75",
+   "seconds": 4462.0,
+   "team": "Spain",
+   "player": "Ferran Torres",
+   "type": "Shot Blocked",
+   "x": 82.1,
+   "y": 46.2,
+   "goal": false,
+   "xg": 0.156,
+   "text": "Attempt blocked. Ferran Torres (Spain) right footed shot from outside the box is blocked. Assisted by Rodri."
+  },
+  {
+   "minute": "78",
+   "seconds": 4630.0,
+   "team": "Spain",
+   "player": "Pedri",
+   "type": "Shot Blocked",
+   "x": 77.2,
+   "y": 49.1,
+   "goal": false,
+   "xg": 0.097,
+   "text": "Attempt blocked. Pedri (Spain) right footed shot from outside the box is blocked. Assisted by Mikel Merino."
+  },
+  {
+   "minute": "82",
+   "seconds": 4920.0,
+   "team": "Spain",
+   "player": "Marc Cucurella",
+   "type": "Shot On Target",
+   "x": 93.9,
+   "y": 58.4,
+   "goal": false,
+   "xg": 0.278,
+   "text": "Attempt saved. Marc Cucurella (Spain) header from the centre of the box is saved in the centre of the goal by Vozinha (Cabo Verde). Assisted by Mikel Merino with a headed pass."
+  },
+  {
+   "minute": "85",
+   "seconds": 5087.0,
+   "team": "Spain",
+   "player": "Rodri",
+   "type": "Shot Off Target",
+   "x": 78.8,
+   "y": 64.2,
+   "goal": false,
+   "xg": 0.09,
+   "text": "Attempt missed. Rodri (Spain) left footed shot from outside the box misses to the right."
+  },
+  {
+   "minute": "88",
+   "seconds": 5248.0,
+   "team": "Spain",
+   "player": "Mikel Oyarzabal",
+   "type": "Shot Blocked",
+   "x": 86.9,
+   "y": 48.3,
+   "goal": false,
+   "xg": 0.269,
+   "text": "Attempt blocked. Mikel Oyarzabal (Spain) right footed shot from the centre of the box is blocked. Assisted by Dani Olmo."
+  },
+  {
+   "minute": "90",
+   "seconds": 5361.0,
+   "team": "Cape Verde",
+   "player": "Kevin Pina",
+   "type": "Shot Blocked",
+   "x": 70.2,
+   "y": 56.7,
+   "goal": false,
+   "xg": 0.049,
+   "text": "Attempt blocked. Kevin Pina (Cabo Verde) right footed shot from outside the box is blocked. Assisted by Deroy Duarte."
+  },
+  {
+   "minute": "90'+1",
+   "seconds": 5400.0,
+   "team": "Cape Verde",
+   "player": "Diney Borges",
+   "type": "Shot On Target",
+   "x": 93.4,
+   "y": 53.0,
+   "goal": false,
+   "xg": 0.386,
+   "text": "Attempt saved. Diney Borges (Cabo Verde) header from the centre of the box is saved in the centre of the goal by Unai Simón (Spain). Assisted by Telmo Arcanjo with a cross."
+  },
+  {
+   "minute": "90'+2",
+   "seconds": 5400.0,
+   "team": "Spain",
+   "player": "Lamine Yamal",
+   "type": "Shot Blocked",
+   "x": 78.2,
+   "y": 26.8,
+   "goal": false,
+   "xg": 0.063,
+   "text": "Attempt blocked. Lamine Yamal (Spain) left footed shot from outside the box is blocked. Assisted by Pau Cubarsí."
+  },
+  {
+   "minute": "90'+4",
+   "seconds": 5400.0,
+   "team": "Cape Verde",
+   "player": "Ryan Mendes",
+   "type": "Shot Off Target",
+   "x": 70.4,
+   "y": 50.7,
+   "goal": false,
+   "xg": 0.051,
+   "text": "Attempt missed. Ryan Mendes (Cabo Verde) right footed shot from outside the box misses to the right. Assisted by Telmo Arcanjo."
+  },
+  {
+   "minute": "90'+5",
+   "seconds": 5400.0,
+   "team": "Spain",
+   "player": "Lamine Yamal",
+   "type": "Shot Blocked",
+   "x": 88.0,
+   "y": 31.1,
+   "goal": false,
+   "xg": 0.14,
+   "text": "Attempt missed. Lamine Yamal (Spain) left footed shot from the right side of the box misses to the left."
+  },
+  {
+   "minute": "90'+5",
+   "seconds": 5400.0,
+   "team": "Spain",
+   "player": "Mikel Oyarzabal",
+   "type": "Shot Off Target",
+   "x": 95.9,
+   "y": 41.6,
+   "goal": false,
+   "xg": 0.308,
+   "text": "Attempt missed. Mikel Oyarzabal (Spain) header from the right side of the six yard box misses to the left. Assisted by Lamine Yamal with a cross following a corner."
+  }
+ ],
+ "lineups": [
+  {
+   "team": "Spain",
+   "formation": "4-3-3",
+   "starters": [
+    {
+     "name": "Unai Simón",
+     "jersey": "23",
+     "position": "G"
+    },
+    {
+     "name": "Aymeric Laporte",
+     "jersey": "14",
+     "position": "CD-L"
+    },
+    {
+     "name": "Pau Cubarsí",
+     "jersey": "22",
+     "position": "CD-R"
+    },
+    {
+     "name": "Marc Cucurella",
+     "jersey": "24",
+     "position": "LB"
+    },
+    {
+     "name": "Marcos Llorente",
+     "jersey": "5",
+     "position": "RB"
+    },
+    {
+     "name": "Rodri",
+     "jersey": "16",
+     "position": "CM"
+    },
+    {
+     "name": "Pedri",
+     "jersey": "20",
+     "position": "LM"
+    },
+    {
+     "name": "Fabián Ruiz",
+     "jersey": "8",
+     "position": "RM"
+    },
+    {
+     "name": "Mikel Oyarzabal",
+     "jersey": "21",
+     "position": "F"
+    },
+    {
+     "name": "Gavi",
+     "jersey": "9",
+     "position": "LF"
+    },
+    {
+     "name": "Ferran Torres",
+     "jersey": "7",
+     "position": "RF"
+    }
+   ],
+   "subs": [
+    {
+     "name": "David Raya",
+     "jersey": "1",
+     "position": "SUB"
+    },
+    {
+     "name": "Víctor Muñoz",
+     "jersey": "25",
+     "position": "SUB"
+    },
+    {
+     "name": "Lamine Yamal",
+     "jersey": "19",
+     "position": "SUB"
+    },
+    {
+     "name": "Yéremy Pino",
+     "jersey": "11",
+     "position": "SUB"
+    },
+    {
+     "name": "Martín Zubimendi",
+     "jersey": "18",
+     "position": "SUB"
+    },
+    {
+     "name": "Dani Olmo",
+     "jersey": "10",
+     "position": "SUB"
+    },
+    {
+     "name": "Nico Williams",
+     "jersey": "17",
+     "position": "SUB"
+    },
+    {
+     "name": "Mikel Merino",
+     "jersey": "6",
+     "position": "SUB"
+    },
+    {
+     "name": "Pedro Porro",
+     "jersey": "12",
+     "position": "SUB"
+    },
+    {
+     "name": "Borja Iglesias",
+     "jersey": "26",
+     "position": "SUB"
+    },
+    {
+     "name": "Joan García",
+     "jersey": "13",
+     "position": "SUB"
+    },
+    {
+     "name": "Álex Baena",
+     "jersey": "15",
+     "position": "SUB"
+    },
+    {
+     "name": "Alejandro Grimaldo",
+     "jersey": "3",
+     "position": "SUB"
+    },
+    {
+     "name": "Marc Pubill",
+     "jersey": "2",
+     "position": "SUB"
+    },
+    {
+     "name": "Eric García",
+     "jersey": "4",
+     "position": "SUB"
+    }
+   ]
+  },
+  {
+   "team": "Cape Verde",
+   "formation": "4-1-4-1",
+   "starters": [
+    {
+     "name": "Vozinha",
+     "jersey": "1",
+     "position": "G"
+    },
+    {
+     "name": "Diney Borges",
+     "jersey": "3",
+     "position": "CD-L"
+    },
+    {
+     "name": "Pico Lopes",
+     "jersey": "4",
+     "position": "CD-R"
+    },
+    {
+     "name": "Kevin Pina",
+     "jersey": "6",
+     "position": "DM"
+    },
+    {
+     "name": "Sidny Lopes Cabral",
+     "jersey": "13",
+     "position": "LB"
+    },
+    {
+     "name": "Steven Moreira",
+     "jersey": "22",
+     "position": "RB"
+    },
+    {
+     "name": "Jamiro Monteiro",
+     "jersey": "10",
+     "position": "CM-L"
+    },
+    {
+     "name": "Laros Duarte",
+     "jersey": "15",
+     "position": "CM-R"
+    },
+    {
+     "name": "Jovane Cabral",
+     "jersey": "7",
+     "position": "LM"
+    },
+    {
+     "name": "Ryan Mendes",
+     "jersey": "20",
+     "position": "RM"
+    },
+    {
+     "name": "Dailon Livramento",
+     "jersey": "19",
+     "position": "F"
+    }
+   ],
+   "subs": [
+    {
+     "name": "Stopira",
+     "jersey": "2",
+     "position": "SUB"
+    },
+    {
+     "name": "Márcio Rosa",
+     "jersey": "12",
+     "position": "SUB"
+    },
+    {
+     "name": "Hélio Varela",
+     "jersey": "26",
+     "position": "SUB"
+    },
+    {
+     "name": "Wagner Pina",
+     "jersey": "24",
+     "position": "SUB"
+    },
+    {
+     "name": "Gilson Benchimol",
+     "jersey": "9",
+     "position": "SUB"
+    },
+    {
+     "name": "Garry Rodrigues",
+     "jersey": "11",
+     "position": "SUB"
+    },
+    {
+     "name": "Telmo Arcanjo",
+     "jersey": "18",
+     "position": "SUB"
+    },
+    {
+     "name": "Willy Semedo",
+     "jersey": "17",
+     "position": "SUB"
+    },
+    {
+     "name": "Logan Costa",
+     "jersey": "5",
+     "position": "SUB"
+    },
+    {
+     "name": "Yannick Semedo",
+     "jersey": "16",
+     "position": "SUB"
+    },
+    {
+     "name": "Nuno da Costa",
+     "jersey": "21",
+     "position": "SUB"
+    },
+    {
+     "name": "João Paulo",
+     "jersey": "8",
+     "position": "SUB"
+    },
+    {
+     "name": "CJ dos Santos",
+     "jersey": "23",
+     "position": "SUB"
+    },
+    {
+     "name": "Kelvin Pires",
+     "jersey": "25",
+     "position": "SUB"
+    },
+    {
+     "name": "Deroy Duarte",
+     "jersey": "14",
+     "position": "SUB"
+    }
+   ]
+  }
+ ],
+ "attendance": 67640,
+ "venue": "Mercedes-Benz Stadium, Atlanta, Georgia, USA"
+}
