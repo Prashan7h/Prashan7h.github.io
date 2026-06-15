@@ -659,12 +659,27 @@
    "team2": "Ecuador",
    "group": "Group E",
    "ground": "Philadelphia",
-   "score": null,
-   "goals1": [],
+   "score": {
+    "ft": [
+     1,
+     0
+    ],
+    "ht": [
+     0,
+     0
+    ]
+   },
+   "goals1": [
+    {
+     "name": "Amad Diallo",
+     "minute": "90"
+    }
+   ],
    "goals2": [],
    "espn_id": "760423",
-   "status": "scheduled",
+   "status": "finished",
    "utc_date": "2026-06-14T23:00Z",
+   "attendance": 68274,
    "venue": "Lincoln Financial Field",
    "slug": "2026-06-14-ivory-coast-vs-ecuador"
   },
@@ -745,12 +760,40 @@
    "team2": "Japan",
    "group": "Group F",
    "ground": "Dallas (Arlington)",
-   "score": null,
-   "goals1": [],
-   "goals2": [],
+   "score": {
+    "ft": [
+     2,
+     2
+    ],
+    "ht": [
+     0,
+     0
+    ]
+   },
+   "goals1": [
+    {
+     "name": "Virgil van Dijk",
+     "minute": "51"
+    },
+    {
+     "name": "Crysencio Summerville",
+     "minute": "64"
+    }
+   ],
+   "goals2": [
+    {
+     "name": "Keito Nakamura",
+     "minute": "57"
+    },
+    {
+     "name": "Daichi Kamada",
+     "minute": "88"
+    }
+   ],
    "espn_id": "760425",
-   "status": "live",
+   "status": "finished",
    "utc_date": "2026-06-14T20:00Z",
+   "attendance": 69285,
    "venue": "AT&T Stadium",
    "slug": "2026-06-14-netherlands-vs-japan"
   },
@@ -767,7 +810,7 @@
    "goals1": [],
    "goals2": [],
    "espn_id": "760424",
-   "status": "scheduled",
+   "status": "live",
    "utc_date": "2026-06-15T02:00Z",
    "venue": "Estadio BBVA",
    "slug": "2026-06-14-sweden-vs-tunisia"
@@ -1096,8 +1139,10 @@
    "score": null,
    "goals1": [],
    "goals2": [],
-   "espn_id": null,
+   "espn_id": "760457",
    "status": "scheduled",
+   "utc_date": "2026-06-22T21:00Z",
+   "venue": "Lincoln Financial Field",
    "slug": "2026-06-22-france-vs-iraq"
   },
   {
@@ -1112,8 +1157,10 @@
    "score": null,
    "goals1": [],
    "goals2": [],
-   "espn_id": null,
+   "espn_id": "760454",
    "status": "scheduled",
+   "utc_date": "2026-06-23T00:00Z",
+   "venue": "MetLife Stadium",
    "slug": "2026-06-22-norway-vs-senegal"
   },
   {
@@ -1196,8 +1243,10 @@
    "score": null,
    "goals1": [],
    "goals2": [],
-   "espn_id": null,
+   "espn_id": "760456",
    "status": "scheduled",
+   "utc_date": "2026-06-22T17:00Z",
+   "venue": "AT&T Stadium",
    "slug": "2026-06-22-argentina-vs-austria"
   },
   {
@@ -1212,8 +1261,10 @@
    "score": null,
    "goals1": [],
    "goals2": [],
-   "espn_id": null,
+   "espn_id": "760455",
    "status": "scheduled",
+   "utc_date": "2026-06-23T03:00Z",
+   "venue": "Levi's Stadium",
    "slug": "2026-06-22-jordan-vs-algeria"
   },
   {

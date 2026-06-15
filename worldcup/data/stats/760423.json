@@ -1,0 +1,928 @@
+{
+ "teams": [
+  {
+   "name": "Ivory Coast",
+   "stats": {
+    "possessionPct": "48.3",
+    "totalShots": "15",
+    "shotsOnTarget": "4",
+    "wonCorners": "3",
+    "foulsCommitted": "10",
+    "offsides": "0",
+    "saves": "1",
+    "yellowCards": "3",
+    "redCards": "0"
+   }
+  },
+  {
+   "name": "Ecuador",
+   "stats": {
+    "possessionPct": "51.7",
+    "totalShots": "12",
+    "shotsOnTarget": "1",
+    "wonCorners": "6",
+    "foulsCommitted": "13",
+    "offsides": "0",
+    "saves": "3",
+    "yellowCards": "1",
+    "redCards": "0"
+   }
+  }
+ ],
+ "events": [
+  {
+   "type": "Kickoff",
+   "minute": "",
+   "team": null,
+   "text": "First Half begins.",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "20'",
+   "team": "Ecuador",
+   "text": "Delay in match because of an injury Moisés Caicedo (Ecuador).",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "20'",
+   "team": "Ivory Coast",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "20'",
+   "team": "Ecuador",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "20'",
+   "team": "Ivory Coast",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "24'",
+   "team": "Ivory Coast",
+   "text": "Delay in match for a drinks break.",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "24'",
+   "team": "Ecuador",
+   "text": "Delay in match for a drinks break.",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "27'",
+   "team": "Ivory Coast",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "27'",
+   "team": "Ecuador",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "Yellow Card",
+   "minute": "28'",
+   "team": "Ivory Coast",
+   "text": "Seko Fofana (Côte d'Ivoire) is shown the yellow card for a bad foul.",
+   "players": [
+    "Seko Fofana"
+   ]
+  },
+  {
+   "type": "Yellow Card",
+   "minute": "38'",
+   "team": "Ivory Coast",
+   "text": "Franck Kessie (Côte d'Ivoire) is shown the yellow card for a bad foul.",
+   "players": [
+    "Franck Kessié"
+   ]
+  },
+  {
+   "type": "Yellow Card",
+   "minute": "40'",
+   "team": "Ivory Coast",
+   "text": "Guéla Doué (Côte d'Ivoire) is shown the yellow card for a bad foul.",
+   "players": [
+    "Guela Doué"
+   ]
+  },
+  {
+   "type": "Halftime",
+   "minute": "45'+5'",
+   "team": null,
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Start 2nd Half",
+   "minute": "45'",
+   "team": null,
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Substitution",
+   "minute": "56'",
+   "team": "Ecuador",
+   "text": "Substitution, Ecuador. Nilson Angulo replaces Alan Minda.",
+   "players": [
+    "Nilson Angulo",
+    "Alan Minda"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "56'",
+   "team": "Ivory Coast",
+   "text": "Substitution, Côte d'Ivoire. Ange-Yoan Bonny replaces Elye Wahi.",
+   "players": [
+    "Ange-Yoan Bonny",
+    "Elye Wahi"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "56'",
+   "team": "Ivory Coast",
+   "text": "Substitution, Côte d'Ivoire. Amad Diallo replaces Bazoumana Touré.",
+   "players": [
+    "Amad Diallo",
+    "Bazoumana Touré"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "62'",
+   "team": "Ecuador",
+   "text": "Substitution, Ecuador. Jackson Porozo replaces Alan Franco.",
+   "players": [
+    "Jackson Porozo",
+    "Alan Franco"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "62'",
+   "team": "Ecuador",
+   "text": "Substitution, Ecuador. Ángelo Preciado replaces John Yeboah.",
+   "players": [
+    "Ángelo Preciado",
+    "John Yeboah"
+   ]
+  },
+  {
+   "type": "Start Delay",
+   "minute": "69'",
+   "team": "Ecuador",
+   "text": "Delay in match for a drinks break.",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "69'",
+   "team": "Ivory Coast",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "72'",
+   "team": "Ecuador",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "72'",
+   "team": "Ivory Coast",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Yellow Card",
+   "minute": "73'",
+   "team": "Ecuador",
+   "text": "Jackson Porozo (Ecuador) is shown the yellow card for a bad foul.",
+   "players": [
+    "Jackson Porozo"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "77'",
+   "team": "Ivory Coast",
+   "text": "Substitution, Côte d'Ivoire. Ibrahim Sangaré replaces Seko Fofana.",
+   "players": [
+    "Ibrahim Sangaré",
+    "Seko Fofana"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "77'",
+   "team": "Ivory Coast",
+   "text": "Substitution, Côte d'Ivoire. Christ Inao Oulaï replaces Nicolas Pépé.",
+   "players": [
+    "Christ Inao Oulaï",
+    "Nicolas Pépé"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "77'",
+   "team": "Ecuador",
+   "text": "Substitution, Ecuador. Kevin Rodríguez replaces Enner Valencia.",
+   "players": [
+    "Kevin Rodríguez",
+    "Enner Valencia"
+   ]
+  },
+  {
+   "type": "Start Delay",
+   "minute": "83'",
+   "team": "Ecuador",
+   "text": "Delay in match because of an injury Joel Ordóñez (Ecuador).",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "83'",
+   "team": "Ivory Coast",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "84'",
+   "team": "Ecuador",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "84'",
+   "team": "Ivory Coast",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Substitution",
+   "minute": "89'",
+   "team": "Ivory Coast",
+   "text": "Substitution, Côte d'Ivoire. Odilon Kossounou replaces Guéla Doué.",
+   "players": [
+    "Odilon Kossounou",
+    "Guela Doué"
+   ]
+  },
+  {
+   "type": "Goal",
+   "minute": "90'",
+   "team": "Ivory Coast",
+   "text": "Goal! Côte d'Ivoire 1, Ecuador 0. Amad Diallo (Côte d'Ivoire) left footed shot from the centre of the box to the bottom left corner. Assisted by Wilfried Singo.",
+   "players": [
+    "Amad Diallo",
+    "Wilfried Singo"
+   ]
+  },
+  {
+   "type": "End Regular Time",
+   "minute": "90'+9'",
+   "team": null,
+   "text": "Second Half ends, Côte d'Ivoire 1, Ecuador 0.",
+   "players": []
+  }
+ ],
+ "shots": [
+  {
+   "minute": "2",
+   "seconds": 112.0,
+   "team": "Ecuador",
+   "player": "Moisés Caicedo",
+   "type": "Shot Off Target",
+   "x": 79.1,
+   "y": 35.4,
+   "goal": false,
+   "xg": 0.091,
+   "text": "Attempt missed. Moisés Caicedo (Ecuador) right footed shot from outside the box misses to the left. Assisted by Gonzalo Plata."
+  },
+  {
+   "minute": "14",
+   "seconds": 782.0,
+   "team": "Ecuador",
+   "player": "John Yeboah",
+   "type": "Shot Off Target",
+   "x": 80.3,
+   "y": 30.3,
+   "goal": false,
+   "xg": 0.083,
+   "text": "Attempt missed. John Yeboah (Ecuador) left footed shot from outside the box is high and wide to the left. Assisted by Alan Franco."
+  },
+  {
+   "minute": "16",
+   "seconds": 916.0,
+   "team": "Ivory Coast",
+   "player": "Seko Fofana",
+   "type": "Shot Blocked",
+   "x": 79.1,
+   "y": 45.4,
+   "goal": false,
+   "xg": 0.114,
+   "text": "Attempt blocked. Seko Fofana (Côte d'Ivoire) right footed shot from outside the box is blocked. Assisted by Yan Diomande."
+  },
+  {
+   "minute": "18",
+   "seconds": 1054.0,
+   "team": "Ivory Coast",
+   "player": "Elye Wahi",
+   "type": "Shot On Target",
+   "x": 93.3,
+   "y": 40.9,
+   "goal": false,
+   "xg": 0.384,
+   "text": "Attempt saved. Elye Wahi (Côte d'Ivoire) right footed shot from the centre of the box is saved in the bottom right corner by Hernán Galíndez (Ecuador)."
+  },
+  {
+   "minute": "23",
+   "seconds": 1378.0,
+   "team": "Ecuador",
+   "player": null,
+   "type": "Shot Hit Woodwork",
+   "x": 82.1,
+   "y": 33.0,
+   "goal": false,
+   "xg": 0.106,
+   "text": "John Yeboah (Ecuador) hits the bar with a left footed shot from outside the box."
+  },
+  {
+   "minute": "24",
+   "seconds": 1401.0,
+   "team": "Ecuador",
+   "player": "Alan Minda",
+   "type": "Shot Off Target",
+   "x": 76.6,
+   "y": 55.6,
+   "goal": false,
+   "xg": 0.089,
+   "text": "Attempt missed. Alan Minda (Ecuador) right footed shot from outside the box misses to the right."
+  },
+  {
+   "minute": "30",
+   "seconds": 1769.0,
+   "team": "Ecuador",
+   "player": null,
+   "type": "Shot Hit Woodwork",
+   "x": 91.2,
+   "y": 61.5,
+   "goal": false,
+   "xg": 0.274,
+   "text": "Alan Minda (Ecuador) hits the bar with a right footed shot from the centre of the box. Assisted by Pedro Vite with a through ball."
+  },
+  {
+   "minute": "30",
+   "seconds": 1792.0,
+   "team": "Ecuador",
+   "player": "John Yeboah",
+   "type": "Shot Off Target",
+   "x": 82.5,
+   "y": 46.6,
+   "goal": false,
+   "xg": 0.163,
+   "text": "Attempt missed. John Yeboah (Ecuador) left footed shot from outside the box misses to the left. Assisted by Moisés Caicedo."
+  },
+  {
+   "minute": "33",
+   "seconds": 1954.0,
+   "team": "Ivory Coast",
+   "player": "Seko Fofana",
+   "type": "Shot Off Target",
+   "x": 76.8,
+   "y": 49.5,
+   "goal": false,
+   "xg": 0.094,
+   "text": "Attempt missed. Seko Fofana (Côte d'Ivoire) right footed shot from outside the box is high and wide to the right. Assisted by Franck Kessie."
+  },
+  {
+   "minute": "35",
+   "seconds": 2069.0,
+   "team": "Ivory Coast",
+   "player": "Nicolas Pépé",
+   "type": "Shot Blocked",
+   "x": 90.1,
+   "y": 44.9,
+   "goal": false,
+   "xg": 0.364,
+   "text": "Attempt blocked. Nicolas Pépé (Côte d'Ivoire) left footed shot from the centre of the box is blocked. Assisted by Yan Diomande."
+  },
+  {
+   "minute": "45'+2",
+   "seconds": 2700.0,
+   "team": "Ivory Coast",
+   "player": "Wilfried Singo",
+   "type": "Shot Off Target",
+   "x": 90.1,
+   "y": 55.2,
+   "goal": false,
+   "xg": 0.362,
+   "text": "Attempt missed. Wilfried Singo (Côte d'Ivoire) right footed shot from the centre of the box is too high. Assisted by Guéla Doué with a cross following a corner."
+  },
+  {
+   "minute": "45'+3",
+   "seconds": 2700.0,
+   "team": "Ivory Coast",
+   "player": "Nicolas Pépé",
+   "type": "Shot Blocked",
+   "x": 80.5,
+   "y": 40.6,
+   "goal": false,
+   "xg": 0.12,
+   "text": "Attempt blocked. Nicolas Pépé (Côte d'Ivoire) left footed shot from outside the box is blocked. Assisted by Yan Diomande."
+  },
+  {
+   "minute": "46",
+   "seconds": 2748.0,
+   "team": "Ecuador",
+   "player": null,
+   "type": "Shot Hit Woodwork",
+   "x": 98.5,
+   "y": 66.2,
+   "goal": false,
+   "xg": 0.154,
+   "text": "Enner Valencia (Ecuador) hits the left post with a left footed shot from a difficult angle on the left. Assisted by Gonzalo Plata with a through ball."
+  },
+  {
+   "minute": "50",
+   "seconds": 2956.0,
+   "team": "Ivory Coast",
+   "player": "Yan Diomande",
+   "type": "Shot Off Target",
+   "x": 84.7,
+   "y": 48.1,
+   "goal": false,
+   "xg": 0.209,
+   "text": "Attempt missed. Yan Diomande (Côte d'Ivoire) left footed shot from the centre of the box is high and wide to the left. Assisted by Seko Fofana."
+  },
+  {
+   "minute": "52",
+   "seconds": 3096.0,
+   "team": "Ivory Coast",
+   "player": null,
+   "type": "Shot Hit Woodwork",
+   "x": 93.0,
+   "y": 47.8,
+   "goal": false,
+   "xg": 0.578,
+   "text": "Elye Wahi (Côte d'Ivoire) hits the bar with a right footed shot from the centre of the box. Assisted by Yan Diomande with a cross."
+  },
+  {
+   "minute": "53",
+   "seconds": 3156.0,
+   "team": "Ivory Coast",
+   "player": "Seko Fofana",
+   "type": "Shot Off Target",
+   "x": 78.3,
+   "y": 61.7,
+   "goal": false,
+   "xg": 0.093,
+   "text": "Attempt missed. Seko Fofana (Côte d'Ivoire) left footed shot from outside the box misses to the left. Assisted by Guéla Doué."
+  },
+  {
+   "minute": "55",
+   "seconds": 3300.0,
+   "team": "Ecuador",
+   "player": "Pedro Vite",
+   "type": "Shot Off Target",
+   "x": 78.8,
+   "y": 43.6,
+   "goal": false,
+   "xg": 0.108,
+   "text": "Attempt missed. Pedro Vite (Ecuador) left footed shot from outside the box misses to the right. Assisted by Gonzalo Plata."
+  },
+  {
+   "minute": "58",
+   "seconds": 3453.0,
+   "team": "Ivory Coast",
+   "player": "Yan Diomande",
+   "type": "Shot Off Target",
+   "x": 90.2,
+   "y": 64.8,
+   "goal": false,
+   "xg": 0.204,
+   "text": "Attempt missed. Yan Diomande (Côte d'Ivoire) right footed shot from the left side of the box is high and wide to the right."
+  },
+  {
+   "minute": "60",
+   "seconds": 3600.0,
+   "team": "Ivory Coast",
+   "player": "Seko Fofana",
+   "type": "Shot On Target",
+   "x": 78.4,
+   "y": 59.1,
+   "goal": false,
+   "xg": 0.099,
+   "text": "Attempt saved. Seko Fofana (Côte d'Ivoire) right footed shot from outside the box is saved in the centre of the goal by Hernán Galíndez (Ecuador). Assisted by Yan Diomande."
+  },
+  {
+   "minute": "68",
+   "seconds": 4072.0,
+   "team": "Ecuador",
+   "player": "Gonzalo Plata",
+   "type": "Shot On Target",
+   "x": 79.0,
+   "y": 40.6,
+   "goal": false,
+   "xg": 0.104,
+   "text": "Attempt saved. Gonzalo Plata (Ecuador) left footed shot from outside the box is saved in the bottom right corner by Yahia Fofana (Côte d'Ivoire)."
+  },
+  {
+   "minute": "83",
+   "seconds": 4951.0,
+   "team": "Ivory Coast",
+   "player": "Ghislain Konan",
+   "type": "Shot Off Target",
+   "x": 94.8,
+   "y": 64.2,
+   "goal": false,
+   "xg": 0.238,
+   "text": "Attempt missed. Ghislain Konan (Côte d'Ivoire) right footed shot from a difficult angle on the left misses to the left."
+  },
+  {
+   "minute": "87",
+   "seconds": 5201.0,
+   "team": "Ecuador",
+   "player": "Joel Ordóñez",
+   "type": "Shot Blocked",
+   "x": 94.3,
+   "y": 45.8,
+   "goal": false,
+   "xg": 0.407,
+   "text": "Attempt blocked. Joel Ordóñez (Ecuador) header from very close range is blocked. Assisted by Moisés Caicedo with a cross."
+  },
+  {
+   "minute": "88",
+   "seconds": 5256.0,
+   "team": "Ecuador",
+   "player": "Joel Ordóñez",
+   "type": "Shot Blocked",
+   "x": 89.2,
+   "y": 53.8,
+   "goal": false,
+   "xg": 0.341,
+   "text": "Attempt blocked. Joel Ordóñez (Ecuador) right footed shot from the centre of the box is blocked. Assisted by Nilson Angulo with a cross."
+  },
+  {
+   "minute": "90",
+   "seconds": 5372.0,
+   "team": "Ivory Coast",
+   "player": "Amad Diallo",
+   "type": "Goal",
+   "x": 85.0,
+   "y": 47.2,
+   "goal": true,
+   "xg": 0.214,
+   "text": "Goal! Côte d'Ivoire 1, Ecuador 0. Amad Diallo (Côte d'Ivoire) left footed shot from the centre of the box to the bottom left corner. Assisted by Wilfried Singo."
+  },
+  {
+   "minute": "90'+4",
+   "seconds": 5400.0,
+   "team": "Ivory Coast",
+   "player": "Amad Diallo",
+   "type": "Shot On Target",
+   "x": 76.8,
+   "y": 52.7,
+   "goal": false,
+   "xg": 0.093,
+   "text": "Attempt saved. Amad Diallo (Côte d'Ivoire) left footed shot from outside the box is saved in the top centre of the goal by Hernán Galíndez (Ecuador). Assisted by Ghislain Konan."
+  },
+  {
+   "minute": "90'+7",
+   "seconds": 5400.0,
+   "team": "Ivory Coast",
+   "player": "Christ Inao Oulaï",
+   "type": "Shot Off Target",
+   "x": 80.6,
+   "y": 37.6,
+   "goal": false,
+   "xg": 0.111,
+   "text": "Attempt missed. Christ Inao Oulaï (Côte d'Ivoire) right footed shot from outside the box is too high. Assisted by Amad Diallo."
+  },
+  {
+   "minute": "90'+9",
+   "seconds": 5400.0,
+   "team": "Ecuador",
+   "player": "Piero Hincapié",
+   "type": "Shot Blocked",
+   "x": 96.1,
+   "y": 55.0,
+   "goal": false,
+   "xg": 0.467,
+   "text": "Attempt blocked. Piero Hincapié (Ecuador) header from very close range is blocked. Assisted by Moisés Caicedo with a cross."
+  },
+  {
+   "minute": "90'+9",
+   "seconds": 5400.0,
+   "team": "Ivory Coast",
+   "player": null,
+   "type": "Shot Blocked",
+   "x": 4.1,
+   "y": 46.6,
+   "goal": false,
+   "xg": 0.0,
+   "text": "Christ Inao Oulaï (Ivory Coast) Shot Blocked at 90'+9'"
+  }
+ ],
+ "lineups": [
+  {
+   "team": "Ivory Coast",
+   "formation": "4-4-2",
+   "starters": [
+    {
+     "name": "Yahia Fofana",
+     "jersey": "1",
+     "position": "G"
+    },
+    {
+     "name": "Emmanuel Agbadou",
+     "jersey": "20",
+     "position": "CD-L"
+    },
+    {
+     "name": "Wilfried Singo",
+     "jersey": "5",
+     "position": "CD-R"
+    },
+    {
+     "name": "Ghislain Konan",
+     "jersey": "3",
+     "position": "LB"
+    },
+    {
+     "name": "Guela Doué",
+     "jersey": "17",
+     "position": "RB"
+    },
+    {
+     "name": "Seko Fofana",
+     "jersey": "6",
+     "position": "CM-L"
+    },
+    {
+     "name": "Franck Kessié",
+     "jersey": "8",
+     "position": "CM-R"
+    },
+    {
+     "name": "Bazoumana Touré",
+     "jersey": "24",
+     "position": "LM"
+    },
+    {
+     "name": "Yan Diomande",
+     "jersey": "11",
+     "position": "RM"
+    },
+    {
+     "name": "Elye Wahi",
+     "jersey": "12",
+     "position": "CF-L"
+    },
+    {
+     "name": "Nicolas Pépé",
+     "jersey": "19",
+     "position": "CF-R"
+    }
+   ],
+   "subs": [
+    {
+     "name": "Parfait Guiagon",
+     "jersey": "25",
+     "position": "SUB"
+    },
+    {
+     "name": "Christ Inao Oulaï",
+     "jersey": "26",
+     "position": "SUB"
+    },
+    {
+     "name": "Christopher Operi",
+     "jersey": "13",
+     "position": "SUB"
+    },
+    {
+     "name": "Simon Adingra",
+     "jersey": "10",
+     "position": "SUB"
+    },
+    {
+     "name": "Ange-Yoan Bonny",
+     "jersey": "9",
+     "position": "SUB"
+    },
+    {
+     "name": "Oumar Diakité",
+     "jersey": "14",
+     "position": "SUB"
+    },
+    {
+     "name": "Mohamed Koné",
+     "jersey": "16",
+     "position": "SUB"
+    },
+    {
+     "name": "Ibrahim Sangaré",
+     "jersey": "18",
+     "position": "SUB"
+    },
+    {
+     "name": "Ousmane Diomande",
+     "jersey": "2",
+     "position": "SUB"
+    },
+    {
+     "name": "Evan Ndicka",
+     "jersey": "21",
+     "position": "SUB"
+    },
+    {
+     "name": "Alban Lafont",
+     "jersey": "23",
+     "position": "SUB"
+    },
+    {
+     "name": "Evann Guessand",
+     "jersey": "22",
+     "position": "SUB"
+    },
+    {
+     "name": "Jean Michaël Seri",
+     "jersey": "4",
+     "position": "SUB"
+    },
+    {
+     "name": "Amad Diallo",
+     "jersey": "15",
+     "position": "SUB"
+    },
+    {
+     "name": "Odilon Kossounou",
+     "jersey": "7",
+     "position": "SUB"
+    }
+   ]
+  },
+  {
+   "team": "Ecuador",
+   "formation": "4-4-2",
+   "starters": [
+    {
+     "name": "Hernán Galíndez",
+     "jersey": "1",
+     "position": "G"
+    },
+    {
+     "name": "Willian Pacho",
+     "jersey": "6",
+     "position": "CD-L"
+    },
+    {
+     "name": "Joel Ordóñez",
+     "jersey": "4",
+     "position": "CD-R"
+    },
+    {
+     "name": "Piero Hincapié",
+     "jersey": "3",
+     "position": "LB"
+    },
+    {
+     "name": "Alan Franco",
+     "jersey": "21",
+     "position": "RB"
+    },
+    {
+     "name": "Pedro Vite",
+     "jersey": "15",
+     "position": "CM-L"
+    },
+    {
+     "name": "Moisés Caicedo",
+     "jersey": "23",
+     "position": "CM-R"
+    },
+    {
+     "name": "Alan Minda",
+     "jersey": "14",
+     "position": "LM"
+    },
+    {
+     "name": "John Yeboah",
+     "jersey": "9",
+     "position": "RM"
+    },
+    {
+     "name": "Enner Valencia",
+     "jersey": "13",
+     "position": "CF-L"
+    },
+    {
+     "name": "Gonzalo Plata",
+     "jersey": "19",
+     "position": "CF-R"
+    }
+   ],
+   "subs": [
+    {
+     "name": "Kevin Rodríguez",
+     "jersey": "11",
+     "position": "SUB"
+    },
+    {
+     "name": "Gonzalo Valle",
+     "jersey": "22",
+     "position": "SUB"
+    },
+    {
+     "name": "Pervis Estupiñán",
+     "jersey": "7",
+     "position": "SUB"
+    },
+    {
+     "name": "Denil Castillo",
+     "jersey": "18",
+     "position": "SUB"
+    },
+    {
+     "name": "Jordy Caicedo",
+     "jersey": "16",
+     "position": "SUB"
+    },
+    {
+     "name": "Nilson Angulo",
+     "jersey": "20",
+     "position": "SUB"
+    },
+    {
+     "name": "Anthony Valencia",
+     "jersey": "8",
+     "position": "SUB"
+    },
+    {
+     "name": "Ángelo Preciado",
+     "jersey": "17",
+     "position": "SUB"
+    },
+    {
+     "name": "Kendry Páez",
+     "jersey": "10",
+     "position": "SUB"
+    },
+    {
+     "name": "Yaimar Medina",
+     "jersey": "26",
+     "position": "SUB"
+    },
+    {
+     "name": "Jackson Porozo",
+     "jersey": "25",
+     "position": "SUB"
+    },
+    {
+     "name": "Félix Torres",
+     "jersey": "2",
+     "position": "SUB"
+    },
+    {
+     "name": "Jeremy Arévalo",
+     "jersey": "24",
+     "position": "SUB"
+    },
+    {
+     "name": "Jordy Alcívar",
+     "jersey": "5",
+     "position": "SUB"
+    },
+    {
+     "name": "Moisés Ramírez",
+     "jersey": "12",
+     "position": "SUB"
+    }
+   ]
+  }
+ ],
+ "attendance": 68274,
+ "venue": "Lincoln Financial Field, Philadelphia, Pennsylvania, USA"
+}
