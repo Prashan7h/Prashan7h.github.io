@@ -1,0 +1,866 @@
+{
+ "teams": [
+  {
+   "name": "Sweden",
+   "stats": {
+    "possessionPct": "48.7",
+    "totalShots": "13",
+    "shotsOnTarget": "7",
+    "wonCorners": "4",
+    "foulsCommitted": "10",
+    "offsides": "3",
+    "saves": "1",
+    "yellowCards": "0",
+    "redCards": "0"
+   }
+  },
+  {
+   "name": "Tunisia",
+   "stats": {
+    "possessionPct": "51.3",
+    "totalShots": "6",
+    "shotsOnTarget": "2",
+    "wonCorners": "2",
+    "foulsCommitted": "8",
+    "offsides": "6",
+    "saves": "1",
+    "yellowCards": "1",
+    "redCards": "0"
+   }
+  }
+ ],
+ "events": [
+  {
+   "type": "Kickoff",
+   "minute": "",
+   "team": null,
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "6'",
+   "team": "Sweden",
+   "text": "Delay in match (Sweden).",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "6'",
+   "team": "Tunisia",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "6'",
+   "team": "Sweden",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "6'",
+   "team": "Tunisia",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Goal - Volley",
+   "minute": "7'",
+   "team": "Sweden",
+   "text": "Goal! Sweden 1, Tunisia 0. Yasin Ayari (Sweden) right footed shot from outside the box to the top right corner.",
+   "players": [
+    "Yasin Ayari"
+   ]
+  },
+  {
+   "type": "Start Delay",
+   "minute": "22'",
+   "team": "Sweden",
+   "text": "Delay in match for a drinks break.",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "22'",
+   "team": "Tunisia",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "26'",
+   "team": "Sweden",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "26'",
+   "team": "Tunisia",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Goal",
+   "minute": "30'",
+   "team": "Sweden",
+   "text": "Goal! Sweden 2, Tunisia 0. Alexander Isak (Sweden) right footed shot from outside the box to the bottom right corner. Assisted by Viktor Gyökeres following a fast break.",
+   "players": [
+    "Alexander Isak",
+    "Viktor Gyökeres"
+   ]
+  },
+  {
+   "type": "Goal - Header",
+   "minute": "43'",
+   "team": "Tunisia",
+   "text": "Goal! Sweden 2, Tunisia 1. Omar Rekik (Tunisia) header from the centre of the box to the bottom left corner. Assisted by Hannibal Mejbri with a cross.",
+   "players": [
+    "Omar Rekik",
+    "Hannibal Mejbri"
+   ]
+  },
+  {
+   "type": "Halftime",
+   "minute": "45'+4'",
+   "team": null,
+   "text": "First Half ends, Sweden 2, Tunisia 1.",
+   "players": []
+  },
+  {
+   "type": "Start 2nd Half",
+   "minute": "45'",
+   "team": null,
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Yellow Card",
+   "minute": "54'",
+   "team": "Tunisia",
+   "text": "Rani Khedira (Tunisia) is shown the yellow card for a bad foul.",
+   "players": [
+    "Rani Khedira"
+   ]
+  },
+  {
+   "type": "Goal",
+   "minute": "59'",
+   "team": "Sweden",
+   "text": "Goal! Sweden 3, Tunisia 1. Viktor Gyökeres (Sweden) right footed shot from the centre of the box to the bottom left corner. Assisted by Alexander Isak.",
+   "players": [
+    "Viktor Gyökeres",
+    "Alexander Isak"
+   ]
+  },
+  {
+   "type": "Start Delay",
+   "minute": "64'",
+   "team": "Sweden",
+   "text": "Delay in match because of an injury Gabriel Gudmundsson (Sweden).",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "64'",
+   "team": "Tunisia",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Substitution",
+   "minute": "65'",
+   "team": "Sweden",
+   "text": "Substitution, Sweden. Elliot Stroud replaces Gabriel Gudmundsson because of an injury.",
+   "players": [
+    "Elliot Stroud",
+    "Gabriel Gudmundsson"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "65'",
+   "team": "Sweden",
+   "text": "Substitution, Sweden. Lucas Bergvall replaces Benjamin Nygren.",
+   "players": [
+    "Lucas Bergvall",
+    "Benjamin Nygren"
+   ]
+  },
+  {
+   "type": "End Delay",
+   "minute": "65'",
+   "team": "Sweden",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "65'",
+   "team": "Tunisia",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "69'",
+   "team": "Tunisia",
+   "text": "Delay in match for a drinks break.",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "69'",
+   "team": "Sweden",
+   "text": "Delay in match for a drinks break.",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "71'",
+   "team": "Sweden",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "71'",
+   "team": "Tunisia",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "Substitution",
+   "minute": "72'",
+   "team": "Tunisia",
+   "text": "Substitution, Tunisia. Elias Achouri replaces Ellyes Skhiri.",
+   "players": [
+    "Elias Achouri",
+    "Ellyes Skhiri"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "72'",
+   "team": "Tunisia",
+   "text": "Substitution, Tunisia. Sebastian Tounekti replaces Elias Saad.",
+   "players": [
+    "Sebastian Tounekti",
+    "Elias Saad"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "72'",
+   "team": "Tunisia",
+   "text": "Substitution, Tunisia. Hadj Mahmoud replaces Yan Valery.",
+   "players": [
+    "Mohamed Hadj Mahmoud",
+    "Yan Valery"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "83'",
+   "team": "Tunisia",
+   "text": "Substitution, Tunisia. Ismaël Gharbi replaces Rani Khedira.",
+   "players": [
+    "Ismaël Gharbi",
+    "Rani Khedira"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "84'",
+   "team": "Tunisia",
+   "text": "Substitution, Tunisia. Firas Chaouat replaces Anis Ben Slimane.",
+   "players": [
+    "Firas Chaouat",
+    "Anis Slimane"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "84'",
+   "team": "Sweden",
+   "text": "Substitution, Sweden. Mattias Svanberg replaces Jesper Karlström.",
+   "players": [
+    "Mattias Svanberg",
+    "Jesper Karlström"
+   ]
+  },
+  {
+   "type": "Goal",
+   "minute": "84'",
+   "team": "Sweden",
+   "text": "Goal! Sweden 4, Tunisia 1. Mattias Svanberg (Sweden) right footed shot from the centre of the box to the centre of the goal. Assisted by Alexander Isak following a set piece situation.Goal awarded following VAR Review.",
+   "players": [
+    "Mattias Svanberg",
+    "Alexander Isak"
+   ]
+  },
+  {
+   "type": "Start Delay",
+   "minute": "86'",
+   "team": "Sweden",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "86'",
+   "team": "Sweden",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Substitution",
+   "minute": "90'",
+   "team": "Sweden",
+   "text": "Substitution, Sweden. Anthony Elanga replaces Alexander Isak.",
+   "players": [
+    "Anthony Elanga",
+    "Alexander Isak"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "90'+1'",
+   "team": "Sweden",
+   "text": "Substitution, Sweden. Daniel Svensson replaces Alexander Bernhardsson.",
+   "players": [
+    "Daniel Svensson",
+    "Alexander Bernhardsson"
+   ]
+  },
+  {
+   "type": "Goal",
+   "minute": "90'+6'",
+   "team": "Sweden",
+   "text": "Goal! Sweden 5, Tunisia 1. Yasin Ayari (Sweden) right footed shot from outside the box to the bottom left corner. Assisted by Lucas Bergvall.",
+   "players": [
+    "Yasin Ayari",
+    "Lucas Bergvall"
+   ]
+  },
+  {
+   "type": "End Regular Time",
+   "minute": "90'+7'",
+   "team": null,
+   "text": "Second Half ends, Sweden 5, Tunisia 1.",
+   "players": []
+  }
+ ],
+ "shots": [
+  {
+   "minute": "5",
+   "seconds": 255.0,
+   "team": "Sweden",
+   "player": "Viktor Gyökeres",
+   "type": "Shot Off Target",
+   "x": 84.9,
+   "y": 59.7,
+   "goal": false,
+   "xg": 0.178,
+   "text": "Attempt missed. Viktor Gyökeres (Sweden) right footed shot from the centre of the box is high and wide to the right. Assisted by Yasin Ayari following a fast break."
+  },
+  {
+   "minute": "7",
+   "seconds": 379.0,
+   "team": "Sweden",
+   "player": "Viktor Gyökeres",
+   "type": "Shot Blocked",
+   "x": 85.6,
+   "y": 58.6,
+   "goal": false,
+   "xg": 0.198,
+   "text": "Attempt blocked. Viktor Gyökeres (Sweden) left footed shot from the centre of the box is blocked."
+  },
+  {
+   "minute": "7",
+   "seconds": 381.0,
+   "team": "Sweden",
+   "player": "Yasin Ayari",
+   "type": "Goal - Volley",
+   "x": 75.6,
+   "y": 56.9,
+   "goal": true,
+   "xg": 0.08,
+   "text": "Goal! Sweden 1, Tunisia 0. Yasin Ayari (Sweden) right footed shot from outside the box to the top right corner."
+  },
+  {
+   "minute": "18",
+   "seconds": 1053.0,
+   "team": "Tunisia",
+   "player": "Elias Saad",
+   "type": "Shot Off Target",
+   "x": 76.0,
+   "y": 40.7,
+   "goal": false,
+   "xg": 0.079,
+   "text": "Attempt missed. Elias Saad (Tunisia) right footed shot from outside the box is too high. Assisted by Hannibal Mejbri."
+  },
+  {
+   "minute": "30",
+   "seconds": 1748.0,
+   "team": "Sweden",
+   "player": "Alexander Isak",
+   "type": "Goal",
+   "x": 82.4,
+   "y": 69.6,
+   "goal": true,
+   "xg": 0.097,
+   "text": "Goal! Sweden 2, Tunisia 0. Alexander Isak (Sweden) right footed shot from outside the box to the bottom right corner. Assisted by Viktor Gyökeres following a fast break."
+  },
+  {
+   "minute": "31",
+   "seconds": 1855.0,
+   "team": "Tunisia",
+   "player": "Rani Khedira",
+   "type": "Shot Blocked",
+   "x": 75.6,
+   "y": 49.5,
+   "goal": false,
+   "xg": 0.083,
+   "text": "Attempt blocked. Rani Khedira (Tunisia) right footed shot from outside the box is blocked. Assisted by Anis Ben Slimane."
+  },
+  {
+   "minute": "33",
+   "seconds": 1964.0,
+   "team": "Sweden",
+   "player": "Victor Lindelöf",
+   "type": "Shot Off Target",
+   "x": 93.6,
+   "y": 51.5,
+   "goal": false,
+   "xg": 0.413,
+   "text": "Attempt missed. Victor Lindelöf (Sweden) header from the centre of the box is high and wide to the right. Assisted by Benjamin Nygren with a cross following a corner."
+  },
+  {
+   "minute": "43",
+   "seconds": 2550.0,
+   "team": "Tunisia",
+   "player": "Omar Rekik",
+   "type": "Goal - Header",
+   "x": 91.8,
+   "y": 40.1,
+   "goal": true,
+   "xg": 0.21,
+   "text": "Goal! Sweden 2, Tunisia 1. Omar Rekik (Tunisia) header from the centre of the box to the bottom left corner. Assisted by Hannibal Mejbri with a cross."
+  },
+  {
+   "minute": "52",
+   "seconds": 3118.0,
+   "team": "Tunisia",
+   "player": "Hannibal Mejbri",
+   "type": "Shot Off Target",
+   "x": 68.0,
+   "y": 51.0,
+   "goal": false,
+   "xg": 0.041,
+   "text": "Attempt missed. Hannibal Mejbri (Tunisia) right footed shot from outside the box is too high from a direct free kick."
+  },
+  {
+   "minute": "53",
+   "seconds": 3179.0,
+   "team": "Sweden",
+   "player": "Viktor Gyökeres",
+   "type": "Shot Blocked",
+   "x": 79.2,
+   "y": 32.7,
+   "goal": false,
+   "xg": 0.084,
+   "text": "Attempt blocked. Viktor Gyökeres (Sweden) right footed shot from outside the box is blocked. Assisted by Jesper Karlström."
+  },
+  {
+   "minute": "55",
+   "seconds": 3300.0,
+   "team": "Tunisia",
+   "player": "Montassar Talbi",
+   "type": "Shot Off Target",
+   "x": 93.3,
+   "y": 50.1,
+   "goal": false,
+   "xg": 0.402,
+   "text": "Attempt missed. Montassar Talbi (Tunisia) header from the centre of the box misses to the left. Assisted by Hannibal Mejbri with a cross following a corner."
+  },
+  {
+   "minute": "59",
+   "seconds": 3539.0,
+   "team": "Sweden",
+   "player": "Viktor Gyökeres",
+   "type": "Goal",
+   "x": 88.4,
+   "y": 38.6,
+   "goal": true,
+   "xg": 0.225,
+   "text": "Goal! Sweden 3, Tunisia 1. Viktor Gyökeres (Sweden) right footed shot from the centre of the box to the bottom left corner. Assisted by Alexander Isak."
+  },
+  {
+   "minute": "66",
+   "seconds": 3924.0,
+   "team": "Sweden",
+   "player": "Viktor Gyökeres",
+   "type": "Shot Off Target",
+   "x": 90.5,
+   "y": 35.6,
+   "goal": false,
+   "xg": 0.213,
+   "text": "Attempt missed. Viktor Gyökeres (Sweden) right footed shot from the right side of the box is high and wide to the right. Assisted by Gustaf Lagerbielke."
+  },
+  {
+   "minute": "68",
+   "seconds": 4023.0,
+   "team": "Sweden",
+   "player": "Alexander Isak",
+   "type": "Shot Blocked",
+   "x": 87.0,
+   "y": 56.5,
+   "goal": false,
+   "xg": 0.246,
+   "text": "Attempt blocked. Alexander Isak (Sweden) right footed shot from the centre of the box is blocked. Assisted by Viktor Gyökeres."
+  },
+  {
+   "minute": "84",
+   "seconds": 5011.0,
+   "team": "Sweden",
+   "player": "Mattias Svanberg",
+   "type": "Goal",
+   "x": 89.0,
+   "y": 45.6,
+   "goal": true,
+   "xg": 0.328,
+   "text": "Goal! Sweden 4, Tunisia 1. Mattias Svanberg (Sweden) right footed shot from the centre of the box to the centre of the goal. Assisted by Alexander Isak following a set piece situation.Goal awarded following VAR Review."
+  },
+  {
+   "minute": "88",
+   "seconds": 5252.0,
+   "team": "Sweden",
+   "player": "Alexander Isak",
+   "type": "Shot On Target",
+   "x": 85.7,
+   "y": 62.5,
+   "goal": false,
+   "xg": 0.17,
+   "text": "Attempt saved. Alexander Isak (Sweden) right footed shot from the centre of the box is saved in the bottom right corner by Abdelmouhib Chamakh (Tunisia). Assisted by Viktor Gyökeres."
+  },
+  {
+   "minute": "90",
+   "seconds": 5346.0,
+   "team": "Sweden",
+   "player": "Lucas Bergvall",
+   "type": "Shot Blocked",
+   "x": 89.5,
+   "y": 57.0,
+   "goal": false,
+   "xg": 0.313,
+   "text": "Attempt blocked. Lucas Bergvall (Sweden) right footed shot from the centre of the box is blocked. Assisted by Viktor Gyökeres."
+  },
+  {
+   "minute": "90'+3",
+   "seconds": 5400.0,
+   "team": "Tunisia",
+   "player": "Elias Achouri",
+   "type": "Shot On Target",
+   "x": 72.5,
+   "y": 68.5,
+   "goal": false,
+   "xg": 0.048,
+   "text": "Attempt saved. Elias Achouri (Tunisia) right footed shot from outside the box is saved in the top centre of the goal by Kristoffer Nordfeldt (Sweden)."
+  },
+  {
+   "minute": "90'+6",
+   "seconds": 5400.0,
+   "team": "Sweden",
+   "player": "Yasin Ayari",
+   "type": "Goal",
+   "x": 78.6,
+   "y": 31.4,
+   "goal": true,
+   "xg": 0.077,
+   "text": "Goal! Sweden 5, Tunisia 1. Yasin Ayari (Sweden) right footed shot from outside the box to the bottom left corner. Assisted by Lucas Bergvall."
+  }
+ ],
+ "lineups": [
+  {
+   "team": "Sweden",
+   "formation": "3-1-4-2",
+   "starters": [
+    {
+     "name": "Kristoffer Nordfeldt",
+     "jersey": "23",
+     "position": "G"
+    },
+    {
+     "name": "Isak Hien",
+     "jersey": "4",
+     "position": "CD"
+    },
+    {
+     "name": "Victor Lindelöf",
+     "jersey": "3",
+     "position": "CD-L"
+    },
+    {
+     "name": "Gustaf Lagerbielke",
+     "jersey": "2",
+     "position": "CD-R"
+    },
+    {
+     "name": "Jesper Karlström",
+     "jersey": "16",
+     "position": "SW"
+    },
+    {
+     "name": "Yasin Ayari",
+     "jersey": "18",
+     "position": "CM-L"
+    },
+    {
+     "name": "Benjamin Nygren",
+     "jersey": "10",
+     "position": "CM-R"
+    },
+    {
+     "name": "Gabriel Gudmundsson",
+     "jersey": "5",
+     "position": "LM"
+    },
+    {
+     "name": "Alexander Bernhardsson",
+     "jersey": "21",
+     "position": "RM"
+    },
+    {
+     "name": "Alexander Isak",
+     "jersey": "9",
+     "position": "CF-L"
+    },
+    {
+     "name": "Viktor Gyökeres",
+     "jersey": "17",
+     "position": "CF-R"
+    }
+   ],
+   "subs": [
+    {
+     "name": "Mattias Svanberg",
+     "jersey": "19",
+     "position": null
+    },
+    {
+     "name": "Daniel Svensson",
+     "jersey": "8",
+     "position": null
+    },
+    {
+     "name": "Gustaf Nilsson",
+     "jersey": "25",
+     "position": null
+    },
+    {
+     "name": "Elliot Stroud",
+     "jersey": "24",
+     "position": null
+    },
+    {
+     "name": "Viktor Johansson",
+     "jersey": "12",
+     "position": null
+    },
+    {
+     "name": "Besfort Zeneli",
+     "jersey": "22",
+     "position": null
+    },
+    {
+     "name": "Hjalmar Ekdal",
+     "jersey": "14",
+     "position": null
+    },
+    {
+     "name": "Eric Smith",
+     "jersey": "20",
+     "position": null
+    },
+    {
+     "name": "Anthony Elanga",
+     "jersey": "11",
+     "position": null
+    },
+    {
+     "name": "Lucas Bergvall",
+     "jersey": "7",
+     "position": null
+    },
+    {
+     "name": "Herman Johansson",
+     "jersey": "6",
+     "position": null
+    },
+    {
+     "name": "Jacob Widell Zetterström",
+     "jersey": "1",
+     "position": null
+    },
+    {
+     "name": "Taha Ali",
+     "jersey": "26",
+     "position": null
+    },
+    {
+     "name": "Ken Sema",
+     "jersey": "13",
+     "position": null
+    },
+    {
+     "name": "Carl Starfelt",
+     "jersey": "15",
+     "position": null
+    }
+   ]
+  },
+  {
+   "team": "Tunisia",
+   "formation": "5-3-2",
+   "starters": [
+    {
+     "name": "Mouhib Chamakh",
+     "jersey": "1",
+     "position": "G"
+    },
+    {
+     "name": "Montassar Talbi",
+     "jersey": "3",
+     "position": "CD"
+    },
+    {
+     "name": "Mohamed Amine Ben Hamida",
+     "jersey": "21",
+     "position": "CD-L"
+    },
+    {
+     "name": "Omar Rekik",
+     "jersey": "4",
+     "position": "CD-R"
+    },
+    {
+     "name": "Ali Abdi",
+     "jersey": "2",
+     "position": "LB"
+    },
+    {
+     "name": "Yan Valery",
+     "jersey": "20",
+     "position": "RB"
+    },
+    {
+     "name": "Ellyes Skhiri",
+     "jersey": "17",
+     "position": "CM"
+    },
+    {
+     "name": "Hannibal Mejbri",
+     "jersey": "10",
+     "position": "CM-L"
+    },
+    {
+     "name": "Rani Khedira",
+     "jersey": "13",
+     "position": "CM-R"
+    },
+    {
+     "name": "Anis Slimane",
+     "jersey": "25",
+     "position": "CF-L"
+    },
+    {
+     "name": "Elias Saad",
+     "jersey": "8",
+     "position": "CF-R"
+    }
+   ],
+   "subs": [
+    {
+     "name": "Adem Arous",
+     "jersey": "5",
+     "position": "SUB"
+    },
+    {
+     "name": "Khalil Ayari",
+     "jersey": "14",
+     "position": "SUB"
+    },
+    {
+     "name": "Sebastian Tounekti",
+     "jersey": "26",
+     "position": "SUB"
+    },
+    {
+     "name": "Dylan Bronn",
+     "jersey": "6",
+     "position": "SUB"
+    },
+    {
+     "name": "Ismaël Gharbi",
+     "jersey": "11",
+     "position": "SUB"
+    },
+    {
+     "name": "Hazem Mastouri",
+     "jersey": "9",
+     "position": "SUB"
+    },
+    {
+     "name": "Moutaz Neffati",
+     "jersey": "23",
+     "position": "SUB"
+    },
+    {
+     "name": "Elias Achouri",
+     "jersey": "7",
+     "position": "SUB"
+    },
+    {
+     "name": "Raed Chikhaoui",
+     "jersey": "24",
+     "position": "SUB"
+    },
+    {
+     "name": "Mohamed Hadj Mahmoud",
+     "jersey": "15",
+     "position": "SUB"
+    },
+    {
+     "name": "Aymen Dahmen",
+     "jersey": "16",
+     "position": "SUB"
+    },
+    {
+     "name": "Firas Chaouat",
+     "jersey": "19",
+     "position": "SUB"
+    },
+    {
+     "name": "Rayan Elloumi",
+     "jersey": "18",
+     "position": "SUB"
+    },
+    {
+     "name": "Mortadha Ben Ouanes",
+     "jersey": "12",
+     "position": "SUB"
+    },
+    {
+     "name": "Sabri Ben Hessen",
+     "jersey": "22",
+     "position": "SUB"
+    }
+   ]
+  }
+ ],
+ "attendance": 50987,
+ "venue": "Estadio BBVA, Guadalupe, Mexico"
+}
