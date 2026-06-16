@@ -1,0 +1,1017 @@
+{
+ "teams": [
+  {
+   "name": "Iran",
+   "stats": {
+    "possessionPct": "48.5",
+    "totalShots": "17",
+    "shotsOnTarget": "4",
+    "wonCorners": "4",
+    "foulsCommitted": "10",
+    "offsides": "2",
+    "saves": "6",
+    "yellowCards": "1",
+    "redCards": "0"
+   }
+  },
+  {
+   "name": "New Zealand",
+   "stats": {
+    "possessionPct": "51.5",
+    "totalShots": "14",
+    "shotsOnTarget": "8",
+    "wonCorners": "1",
+    "foulsCommitted": "8",
+    "offsides": "0",
+    "saves": "2",
+    "yellowCards": "0",
+    "redCards": "0"
+   }
+  }
+ ],
+ "events": [
+  {
+   "type": "Kickoff",
+   "minute": "",
+   "team": null,
+   "text": "First Half begins.",
+   "players": []
+  },
+  {
+   "type": "Goal - Volley",
+   "minute": "7'",
+   "team": "New Zealand",
+   "text": "Goal! IR Iran 0, New Zealand 1. Elijah Just (New Zealand) right footed shot from the centre of the box to the high centre of the goal. Assisted by Chris Wood.",
+   "players": [
+    "Elijah Just",
+    "Chris Wood"
+   ]
+  },
+  {
+   "type": "Start Delay",
+   "minute": "17'",
+   "team": "Iran",
+   "text": "Delay in match because of an injury Shahriyar Moghanloo (IR Iran).",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "17'",
+   "team": "New Zealand",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "18'",
+   "team": "Iran",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "18'",
+   "team": "New Zealand",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "25'",
+   "team": "New Zealand",
+   "text": "Delay in match for a drinks break.",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "25'",
+   "team": "Iran",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "28'",
+   "team": "New Zealand",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "28'",
+   "team": "Iran",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Goal",
+   "minute": "32'",
+   "team": "Iran",
+   "text": "Goal! IR Iran 1, New Zealand 1. Ramin Rezaeian (IR Iran) right footed shot from the centre of the box to the bottom left corner.",
+   "players": [
+    "Ramin Rezaeian"
+   ]
+  },
+  {
+   "type": "Start Delay",
+   "minute": "35'",
+   "team": "Iran",
+   "text": "Delay in match because of an injury Shahriyar Moghanloo (IR Iran).",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "35'",
+   "team": "New Zealand",
+   "text": "Delay in match because of an injury Marko Stamenic (New Zealand).",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "35'",
+   "team": "Iran",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "35'",
+   "team": "New Zealand",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "39'",
+   "team": "Iran",
+   "text": "Delay in match because of an injury Saeid Ezatolahi (IR Iran).",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "39'",
+   "team": "New Zealand",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "41'",
+   "team": "Iran",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "41'",
+   "team": "New Zealand",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Halftime",
+   "minute": "45'+7'",
+   "team": null,
+   "text": "First Half ends, IR Iran 1, New Zealand 1.",
+   "players": []
+  },
+  {
+   "type": "Substitution",
+   "minute": "45'",
+   "team": "Iran",
+   "text": "Substitution, IR Iran. Mehdi Ghayedi replaces Arya Yousefi.",
+   "players": [
+    "Mehdi Ghayedi",
+    "Arya Yousefi"
+   ]
+  },
+  {
+   "type": "Start 2nd Half",
+   "minute": "45'",
+   "team": null,
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Substitution",
+   "minute": "53'",
+   "team": "Iran",
+   "text": "Substitution, IR Iran. Ali Alipour replaces Shahriyar Moghanloo.",
+   "players": [
+    "Ali Alipour",
+    "Shahriyar Moghanloo"
+   ]
+  },
+  {
+   "type": "Goal",
+   "minute": "54'",
+   "team": "New Zealand",
+   "text": "Goal! IR Iran 1, New Zealand 2. Elijah Just (New Zealand) right footed shot from the right side of the box to the centre of the goal. Assisted by Chris Wood following a fast break.",
+   "players": [
+    "Elijah Just",
+    "Chris Wood"
+   ]
+  },
+  {
+   "type": "Goal - Header",
+   "minute": "64'",
+   "team": "Iran",
+   "text": "Goal! IR Iran 2, New Zealand 2. Mohammad Mohebbi (IR Iran) header from the centre of the box to the bottom left corner. Assisted by Ramin Rezaeian with a cross.",
+   "players": [
+    "Mohammad Mohebbi",
+    "Ramin Rezaeian"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "65'",
+   "team": "Iran",
+   "text": "Substitution, IR Iran. Ehsan Hajisafi replaces Saman Ghoddos.",
+   "players": [
+    "Ehsan Hajsafi",
+    "Saman Ghoddos"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "68'",
+   "team": "New Zealand",
+   "text": "Substitution, New Zealand. Ryan Thomas replaces Callum McCowatt.",
+   "players": [
+    "Ryan Thomas",
+    "Callum McCowatt"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "68'",
+   "team": "New Zealand",
+   "text": "Substitution, New Zealand. Ben Old replaces Liberato Cacace.",
+   "players": [
+    "Ben Old",
+    "Liberato Cacace"
+   ]
+  },
+  {
+   "type": "Start Delay",
+   "minute": "68'",
+   "team": "New Zealand",
+   "text": "Delay in match for a drinks break.",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "68'",
+   "team": "Iran",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "70'",
+   "team": "New Zealand",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "70'",
+   "team": "Iran",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Substitution",
+   "minute": "78'",
+   "team": "New Zealand",
+   "text": "Substitution, New Zealand. Callan Elliot replaces Tim Payne.",
+   "players": [
+    "Callan Elliot",
+    "Tim Payne"
+   ]
+  },
+  {
+   "type": "Start Delay",
+   "minute": "78'",
+   "team": "Iran",
+   "text": "Delay in match because of an injury Saeid Ezatolahi (IR Iran).",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "78'",
+   "team": "New Zealand",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "79'",
+   "team": "New Zealand",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "79'",
+   "team": "Iran",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "Substitution",
+   "minute": "80'",
+   "team": "Iran",
+   "text": "Substitution, IR Iran. Amirhossein Hosseinzadeh replaces Mehdi Taremi.",
+   "players": [
+    "Amirhossein Hosseinzadeh",
+    "Mehdi Taremi"
+   ]
+  },
+  {
+   "type": "Yellow Card",
+   "minute": "89'",
+   "team": "Iran",
+   "text": "Ehsan Hajisafi (IR Iran) is shown the yellow card for a bad foul.",
+   "players": [
+    "Ehsan Hajsafi"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "90'+2'",
+   "team": "New Zealand",
+   "text": "Substitution, New Zealand. Jesse Randall replaces Sarpreet Singh.",
+   "players": [
+    "Jesse Randall",
+    "Sarpreet Singh"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "90'+2'",
+   "team": "New Zealand",
+   "text": "Substitution, New Zealand. Tyler Bindon replaces Marko Stamenic.",
+   "players": [
+    "Tyler Bindon",
+    "Marko Stamenic"
+   ]
+  },
+  {
+   "type": "End Regular Time",
+   "minute": "90'+6'",
+   "team": null,
+   "text": "",
+   "players": []
+  }
+ ],
+ "shots": [
+  {
+   "minute": "6",
+   "seconds": 334.0,
+   "team": "Iran",
+   "player": "Arya Yousefi",
+   "type": "Shot On Target",
+   "x": 89.9,
+   "y": 69.5,
+   "goal": false,
+   "xg": 0.146,
+   "text": "Attempt saved. Arya Yousefi (IR Iran) right footed shot from the left side of the box is saved in the centre of the goal by Max Crocombe (New Zealand). Assisted by Saman Ghoddos."
+  },
+  {
+   "minute": "7",
+   "seconds": 403.0,
+   "team": "New Zealand",
+   "player": "Elijah Just",
+   "type": "Goal - Volley",
+   "x": 90.8,
+   "y": 47.6,
+   "goal": true,
+   "xg": 0.431,
+   "text": "Goal! IR Iran 0, New Zealand 1. Elijah Just (New Zealand) right footed shot from the centre of the box to the high centre of the goal. Assisted by Chris Wood."
+  },
+  {
+   "minute": "12",
+   "seconds": 689.0,
+   "team": "New Zealand",
+   "player": "Sarpreet Singh",
+   "type": "Shot Off Target",
+   "x": 87.5,
+   "y": 61.1,
+   "goal": false,
+   "xg": 0.212,
+   "text": "Attempt missed. Sarpreet Singh (New Zealand) left footed shot from the centre of the box misses to the right. Assisted by Elijah Just."
+  },
+  {
+   "minute": "14",
+   "seconds": 797.0,
+   "team": "New Zealand",
+   "player": "Marko Stamenic",
+   "type": "Shot Blocked",
+   "x": 90.2,
+   "y": 32.3,
+   "goal": false,
+   "xg": 0.166,
+   "text": "Attempt blocked. Marko Stamenic (New Zealand) right footed shot from the right side of the box is blocked."
+  },
+  {
+   "minute": "14",
+   "seconds": 838.0,
+   "team": "New Zealand",
+   "player": "Callum McCowatt",
+   "type": "Shot Off Target",
+   "x": 86.7,
+   "y": 36.2,
+   "goal": false,
+   "xg": 0.173,
+   "text": "Attempt missed. Callum McCowatt (New Zealand) right footed shot from the right side of the box misses to the left following a corner."
+  },
+  {
+   "minute": "14",
+   "seconds": 840.0,
+   "team": "New Zealand",
+   "player": "Chris Wood",
+   "type": "Shot Blocked",
+   "x": 91.9,
+   "y": 49.7,
+   "goal": false,
+   "xg": 0.512,
+   "text": "Attempt blocked. Chris Wood (New Zealand) right footed shot from the centre of the box is blocked."
+  },
+  {
+   "minute": "19",
+   "seconds": 1118.0,
+   "team": "New Zealand",
+   "player": "Sarpreet Singh",
+   "type": "Shot On Target",
+   "x": 73.2,
+   "y": 45.0,
+   "goal": false,
+   "xg": 0.065,
+   "text": "Attempt saved. Sarpreet Singh (New Zealand) left footed shot from outside the box is saved in the centre of the goal by Alireza Beiranvand (IR Iran). Assisted by Finn Surman."
+  },
+  {
+   "minute": "23",
+   "seconds": 1329.0,
+   "team": "Iran",
+   "player": null,
+   "type": "Shot Hit Woodwork",
+   "x": 80.3,
+   "y": 49.3,
+   "goal": false,
+   "xg": 0.132,
+   "text": "Mehdi Taremi (IR Iran) hits the right post with a right footed shot from outside the box. Assisted by Ali Nemati following a fast break."
+  },
+  {
+   "minute": "29",
+   "seconds": 1687.0,
+   "team": "Iran",
+   "player": "Saman Ghoddos",
+   "type": "Shot Off Target",
+   "x": 74.0,
+   "y": 35.2,
+   "goal": false,
+   "xg": 0.059,
+   "text": "Attempt missed. Saman Ghoddos (IR Iran) right footed shot from outside the box is close, but misses to the right."
+  },
+  {
+   "minute": "29",
+   "seconds": 1740.0,
+   "team": "New Zealand",
+   "player": "Liberato Cacace",
+   "type": "Shot On Target",
+   "x": 92.3,
+   "y": 70.5,
+   "goal": false,
+   "xg": 0.143,
+   "text": "Attempt saved. Liberato Cacace (New Zealand) left footed shot from the left side of the box is saved in the bottom right corner by Alireza Beiranvand (IR Iran). Assisted by Sarpreet Singh."
+  },
+  {
+   "minute": "30",
+   "seconds": 1778.0,
+   "team": "Iran",
+   "player": "Saman Ghoddos",
+   "type": "Shot Off Target",
+   "x": 86.9,
+   "y": 35.5,
+   "goal": false,
+   "xg": 0.169,
+   "text": "Attempt missed. Saman Ghoddos (IR Iran) left footed shot from the right side of the box is too high. Assisted by Mohammad Mohebbi."
+  },
+  {
+   "minute": "32",
+   "seconds": 1906.0,
+   "team": "Iran",
+   "player": "Shahriyar Moghanloo",
+   "type": "Shot Blocked",
+   "x": 89.8,
+   "y": 44.2,
+   "goal": false,
+   "xg": 0.342,
+   "text": "Attempt blocked. Shahriyar Moghanloo (IR Iran) right footed shot from the centre of the box is blocked."
+  },
+  {
+   "minute": "32",
+   "seconds": 1908.0,
+   "team": "Iran",
+   "player": "Ramin Rezaeian",
+   "type": "Goal",
+   "x": 93.6,
+   "y": 44.9,
+   "goal": true,
+   "xg": 0.547,
+   "text": "Goal! IR Iran 1, New Zealand 1. Ramin Rezaeian (IR Iran) right footed shot from the centre of the box to the bottom left corner."
+  },
+  {
+   "minute": "44",
+   "seconds": 2640.0,
+   "team": "New Zealand",
+   "player": "Chris Wood",
+   "type": "Shot On Target",
+   "x": 79.7,
+   "y": 76.5,
+   "goal": false,
+   "xg": 0.06,
+   "text": "Attempt saved. Chris Wood (New Zealand) right footed shot from outside the box is saved in the centre of the goal by Alireza Beiranvand (IR Iran)."
+  },
+  {
+   "minute": "45'+1",
+   "seconds": 2700.0,
+   "team": "New Zealand",
+   "player": "Callum McCowatt",
+   "type": "Shot On Target",
+   "x": 73.5,
+   "y": 43.0,
+   "goal": false,
+   "xg": 0.066,
+   "text": "Attempt saved. Callum McCowatt (New Zealand) left footed shot from outside the box is saved in the bottom right corner by Alireza Beiranvand (IR Iran). Assisted by Chris Wood."
+  },
+  {
+   "minute": "45'+3",
+   "seconds": 2700.0,
+   "team": "Iran",
+   "player": "Shahriyar Moghanloo",
+   "type": "Shot Off Target",
+   "x": 95.5,
+   "y": 39.5,
+   "goal": false,
+   "xg": 0.232,
+   "text": "Attempt missed. Shahriyar Moghanloo (IR Iran) header from the right side of the six yard box is close, but misses the top right corner. Assisted by Arya Yousefi."
+  },
+  {
+   "minute": "47",
+   "seconds": 2798.0,
+   "team": "New Zealand",
+   "player": "Chris Wood",
+   "type": "Shot Off Target",
+   "x": 73.6,
+   "y": 43.8,
+   "goal": false,
+   "xg": 0.067,
+   "text": "Attempt missed. Chris Wood (New Zealand) right footed shot from outside the box is high and wide to the right. Assisted by Max Crocombe."
+  },
+  {
+   "minute": "49",
+   "seconds": 2915.0,
+   "team": "Iran",
+   "player": "Mehdi Ghayedi",
+   "type": "Shot Blocked",
+   "x": 81.3,
+   "y": 40.0,
+   "goal": false,
+   "xg": 0.127,
+   "text": "Attempt blocked. Mehdi Ghayedi (IR Iran) right footed shot from outside the box is blocked. Assisted by Ali Nemati with a headed pass."
+  },
+  {
+   "minute": "51",
+   "seconds": 3032.0,
+   "team": "Iran",
+   "player": "Shahriyar Moghanloo",
+   "type": "Shot Off Target",
+   "x": 80.2,
+   "y": 29.7,
+   "goal": false,
+   "xg": 0.081,
+   "text": "Attempt missed. Shahriyar Moghanloo (IR Iran) left footed shot from outside the box is high and wide to the left. Assisted by Ramin Rezaeian."
+  },
+  {
+   "minute": "54",
+   "seconds": 3240.0,
+   "team": "New Zealand",
+   "player": "Elijah Just",
+   "type": "Goal",
+   "x": 89.4,
+   "y": 36.8,
+   "goal": true,
+   "xg": 0.217,
+   "text": "Goal! IR Iran 1, New Zealand 2. Elijah Just (New Zealand) right footed shot from the right side of the box to the centre of the goal. Assisted by Chris Wood following a fast break."
+  },
+  {
+   "minute": "61",
+   "seconds": 3636.0,
+   "team": "New Zealand",
+   "player": "Sarpreet Singh",
+   "type": "Shot On Target",
+   "x": 89.3,
+   "y": 66.3,
+   "goal": false,
+   "xg": 0.176,
+   "text": "Attempt saved. Sarpreet Singh (New Zealand) left footed shot from the left side of the box is saved in the centre of the goal by Alireza Beiranvand (IR Iran). Assisted by Chris Wood."
+  },
+  {
+   "minute": "64",
+   "seconds": 3784.0,
+   "team": "Iran",
+   "player": "Mohammad Mohebbi",
+   "type": "Goal - Header",
+   "x": 91.4,
+   "y": 50.0,
+   "goal": true,
+   "xg": 0.312,
+   "text": "Goal! IR Iran 2, New Zealand 2. Mohammad Mohebbi (IR Iran) header from the centre of the box to the bottom left corner. Assisted by Ramin Rezaeian with a cross."
+  },
+  {
+   "minute": "73",
+   "seconds": 4336.0,
+   "team": "Iran",
+   "player": "Mohammad Mohebbi",
+   "type": "Shot Blocked",
+   "x": 88.6,
+   "y": 65.6,
+   "goal": false,
+   "xg": 0.177,
+   "text": "Attempt blocked. Mohammad Mohebbi (IR Iran) right footed shot from the left side of the box is blocked. Assisted by Mehdi Ghayedi."
+  },
+  {
+   "minute": "76",
+   "seconds": 4521.0,
+   "team": "Iran",
+   "player": "Ehsan Hajisafi",
+   "type": "Shot Blocked",
+   "x": 75.9,
+   "y": 65.0,
+   "goal": false,
+   "xg": 0.069,
+   "text": "Attempt blocked. Ehsan Hajisafi (IR Iran) left footed shot from outside the box is blocked. Assisted by Mehdi Taremi."
+  },
+  {
+   "minute": "80",
+   "seconds": 4741.0,
+   "team": "Iran",
+   "player": "Mehdi Taremi",
+   "type": "Shot Off Target",
+   "x": 92.0,
+   "y": 56.4,
+   "goal": false,
+   "xg": 0.274,
+   "text": "Attempt missed. Mehdi Taremi (IR Iran) header from the centre of the box is high and wide to the right. Assisted by Ramin Rezaeian with a cross."
+  },
+  {
+   "minute": "81",
+   "seconds": 4852.0,
+   "team": "New Zealand",
+   "player": "Finn Surman",
+   "type": "Shot Off Target",
+   "x": 95.2,
+   "y": 48.1,
+   "goal": false,
+   "xg": 0.498,
+   "text": "Attempt missed. Finn Surman (New Zealand) header from very close range is high and wide to the right following a set piece situation."
+  },
+  {
+   "minute": "85",
+   "seconds": 5083.0,
+   "team": "Iran",
+   "player": "Ali Alipour",
+   "type": "Shot Blocked",
+   "x": 86.5,
+   "y": 40.7,
+   "goal": false,
+   "xg": 0.21,
+   "text": "Attempt blocked. Ali Alipour (IR Iran) left footed shot from the centre of the box is blocked."
+  },
+  {
+   "minute": "85",
+   "seconds": 5088.0,
+   "team": "Iran",
+   "player": "Saeid Ezatolahi",
+   "type": "Shot Off Target",
+   "x": 75.2,
+   "y": 37.6,
+   "goal": false,
+   "xg": 0.069,
+   "text": "Attempt missed. Saeid Ezatolahi (IR Iran) right footed shot from outside the box is high and wide to the right."
+  },
+  {
+   "minute": "87",
+   "seconds": 5183.0,
+   "team": "Iran",
+   "player": "Saeid Ezatolahi",
+   "type": "Shot On Target",
+   "x": 74.0,
+   "y": 61.5,
+   "goal": false,
+   "xg": 0.064,
+   "text": "Attempt saved. Saeid Ezatolahi (IR Iran) right footed shot from outside the box is saved in the top centre of the goal by Max Crocombe (New Zealand). Assisted by Amirhossein Hosseinzadeh."
+  },
+  {
+   "minute": "89",
+   "seconds": 5313.0,
+   "team": "Iran",
+   "player": "Ali Nemati",
+   "type": "Shot Off Target",
+   "x": 91.0,
+   "y": 41.6,
+   "goal": false,
+   "xg": 0.336,
+   "text": "Attempt missed. Ali Nemati (IR Iran) left footed shot from the centre of the box misses to the left following a corner."
+  },
+  {
+   "minute": "90'+2",
+   "seconds": 5400.0,
+   "team": "New Zealand",
+   "player": "Chris Wood",
+   "type": "Shot On Target",
+   "x": 90.8,
+   "y": 43.0,
+   "goal": false,
+   "xg": 0.233,
+   "text": "Attempt saved. Chris Wood (New Zealand) header from the centre of the box is saved in the top centre of the goal by Alireza Beiranvand (IR Iran). Assisted by Jesse Randall with a cross."
+  }
+ ],
+ "lineups": [
+  {
+   "team": "Iran",
+   "formation": "4-4-2",
+   "starters": [
+    {
+     "name": "Alireza Beiranvand",
+     "jersey": "1",
+     "position": "G"
+    },
+    {
+     "name": "Ali Nemati",
+     "jersey": "19",
+     "position": "CD-L"
+    },
+    {
+     "name": "Shoja Khalilzadeh",
+     "jersey": "4",
+     "position": "CD-R"
+    },
+    {
+     "name": "Milad Mohammadi",
+     "jersey": "5",
+     "position": "LB"
+    },
+    {
+     "name": "Ramin Rezaeian",
+     "jersey": "23",
+     "position": "RB"
+    },
+    {
+     "name": "Saeid Ezatolahi",
+     "jersey": "6",
+     "position": "CM-L"
+    },
+    {
+     "name": "Saman Ghoddos",
+     "jersey": "14",
+     "position": "CM-R"
+    },
+    {
+     "name": "Arya Yousefi",
+     "jersey": "17",
+     "position": "LM"
+    },
+    {
+     "name": "Mohammad Mohebbi",
+     "jersey": "8",
+     "position": "RM"
+    },
+    {
+     "name": "Mehdi Taremi",
+     "jersey": "9",
+     "position": "CF-L"
+    },
+    {
+     "name": "Shahriyar Moghanloo",
+     "jersey": "20",
+     "position": "CF-R"
+    }
+   ],
+   "subs": [
+    {
+     "name": "Mehdi Ghayedi",
+     "jersey": "10",
+     "position": "SUB"
+    },
+    {
+     "name": "Ali Alipour",
+     "jersey": "11",
+     "position": "SUB"
+    },
+    {
+     "name": "Hossein Hosseini",
+     "jersey": "22",
+     "position": "SUB"
+    },
+    {
+     "name": "Roozbeh Cheshmi",
+     "jersey": "15",
+     "position": "SUB"
+    },
+    {
+     "name": "Alireza Jahanbakhsh",
+     "jersey": "7",
+     "position": "SUB"
+    },
+    {
+     "name": "Amirmohammad Razzaghinia",
+     "jersey": "26",
+     "position": "SUB"
+    },
+    {
+     "name": "Saleh Hardani",
+     "jersey": "2",
+     "position": "SUB"
+    },
+    {
+     "name": "Ehsan Hajsafi",
+     "jersey": "3",
+     "position": "SUB"
+    },
+    {
+     "name": "Payam Niazmand",
+     "jersey": "12",
+     "position": "SUB"
+    },
+    {
+     "name": "Dennis Dargahi",
+     "jersey": "24",
+     "position": "SUB"
+    },
+    {
+     "name": "Amirhossein Hosseinzadeh",
+     "jersey": "18",
+     "position": "SUB"
+    },
+    {
+     "name": "Mehdi Torabi",
+     "jersey": "16",
+     "position": "SUB"
+    },
+    {
+     "name": "Hossein Kanani",
+     "jersey": "13",
+     "position": "SUB"
+    },
+    {
+     "name": "Danial Iri",
+     "jersey": "25",
+     "position": "SUB"
+    },
+    {
+     "name": "Mohammad Ghorbani",
+     "jersey": "21",
+     "position": "SUB"
+    }
+   ]
+  },
+  {
+   "team": "New Zealand",
+   "formation": "4-2-3-1",
+   "starters": [
+    {
+     "name": "Max Crocombe",
+     "jersey": "1",
+     "position": "G"
+    },
+    {
+     "name": "Michael Boxall",
+     "jersey": "5",
+     "position": "CD-L"
+    },
+    {
+     "name": "Finn Surman",
+     "jersey": "16",
+     "position": "CD-R"
+    },
+    {
+     "name": "Liberato Cacace",
+     "jersey": "13",
+     "position": "LB"
+    },
+    {
+     "name": "Tim Payne",
+     "jersey": "2",
+     "position": "RB"
+    },
+    {
+     "name": "Sarpreet Singh",
+     "jersey": "10",
+     "position": "AM"
+    },
+    {
+     "name": "Marko Stamenic",
+     "jersey": "8",
+     "position": "LM"
+    },
+    {
+     "name": "Joe Bell",
+     "jersey": "6",
+     "position": "RM"
+    },
+    {
+     "name": "Chris Wood",
+     "jersey": "9",
+     "position": "F"
+    },
+    {
+     "name": "Elijah Just",
+     "jersey": "11",
+     "position": "AM-L"
+    },
+    {
+     "name": "Callum McCowatt",
+     "jersey": "20",
+     "position": "AM-R"
+    }
+   ],
+   "subs": [
+    {
+     "name": "Alex Paulsen",
+     "jersey": "12",
+     "position": "SUB"
+    },
+    {
+     "name": "Ben Old",
+     "jersey": "19",
+     "position": "SUB"
+    },
+    {
+     "name": "Jesse Randall",
+     "jersey": "21",
+     "position": "SUB"
+    },
+    {
+     "name": "Callan Elliot",
+     "jersey": "24",
+     "position": "SUB"
+    },
+    {
+     "name": "Francis de Vries",
+     "jersey": "3",
+     "position": "SUB"
+    },
+    {
+     "name": "Ben Waine",
+     "jersey": "18",
+     "position": "SUB"
+    },
+    {
+     "name": "Michael Woud",
+     "jersey": "22",
+     "position": "SUB"
+    },
+    {
+     "name": "Tyler Bindon",
+     "jersey": "4",
+     "position": "SUB"
+    },
+    {
+     "name": "Kosta Barbarouses",
+     "jersey": "17",
+     "position": "SUB"
+    },
+    {
+     "name": "Tommy Smith",
+     "jersey": "26",
+     "position": "SUB"
+    },
+    {
+     "name": "Lachlan Bayliss",
+     "jersey": "25",
+     "position": "SUB"
+    },
+    {
+     "name": "Nando Pijnaker",
+     "jersey": "15",
+     "position": "SUB"
+    },
+    {
+     "name": "Ryan Thomas",
+     "jersey": "23",
+     "position": "SUB"
+    },
+    {
+     "name": "Alex Rufer",
+     "jersey": "14",
+     "position": "SUB"
+    }
+   ]
+  }
+ ],
+ "attendance": 70108,
+ "venue": "SoFi Stadium, Inglewood, California, USA"
+}

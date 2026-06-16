@@ -967,12 +967,40 @@
    "team2": "New Zealand",
    "group": "Group G",
    "ground": "Los Angeles (Inglewood)",
-   "score": null,
-   "goals1": [],
-   "goals2": [],
+   "score": {
+    "ft": [
+     2,
+     2
+    ],
+    "ht": [
+     1,
+     1
+    ]
+   },
+   "goals1": [
+    {
+     "name": "Ramin Rezaeian",
+     "minute": "32"
+    },
+    {
+     "name": "Mohammad Mohebbi",
+     "minute": "64"
+    }
+   ],
+   "goals2": [
+    {
+     "name": "Elijah Just",
+     "minute": "7"
+    },
+    {
+     "name": "Elijah Just",
+     "minute": "54"
+    }
+   ],
    "espn_id": "760427",
-   "status": "live",
+   "status": "finished",
    "utc_date": "2026-06-16T01:00Z",
+   "attendance": 70108,
    "venue": "SoFi Stadium",
    "slug": "2026-06-15-iran-vs-new-zealand"
   },
