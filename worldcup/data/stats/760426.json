@@ -1,0 +1,912 @@
+{
+ "teams": [
+  {
+   "name": "Belgium",
+   "stats": {
+    "possessionPct": "53.6",
+    "totalShots": "15",
+    "shotsOnTarget": "3",
+    "wonCorners": "2",
+    "foulsCommitted": "15",
+    "offsides": "0",
+    "saves": "2",
+    "yellowCards": "2",
+    "redCards": "0"
+   }
+  },
+  {
+   "name": "Egypt",
+   "stats": {
+    "possessionPct": "46.4",
+    "totalShots": "14",
+    "shotsOnTarget": "3",
+    "wonCorners": "7",
+    "foulsCommitted": "15",
+    "offsides": "1",
+    "saves": "3",
+    "yellowCards": "2",
+    "redCards": "0"
+   }
+  }
+ ],
+ "events": [
+  {
+   "type": "Kickoff",
+   "minute": "",
+   "team": null,
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "12'",
+   "team": "Belgium",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "12'",
+   "team": "Belgium",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Yellow Card",
+   "minute": "13'",
+   "team": "Egypt",
+   "text": "Marwan Attia (Egypt) is shown the yellow card for a bad foul.",
+   "players": [
+    "Marawan Attia"
+   ]
+  },
+  {
+   "type": "Yellow Card",
+   "minute": "14'",
+   "team": "Belgium",
+   "text": "Timothy Castagne (Belgium) is shown the yellow card for a bad foul.",
+   "players": [
+    "Timothy Castagne"
+   ]
+  },
+  {
+   "type": "Goal",
+   "minute": "20'",
+   "team": "Egypt",
+   "text": "Goal! Belgium 0, Egypt 1. Emam Ashour (Egypt) right footed shot from outside the box to the bottom left corner. Assisted by Mohamed Salah.",
+   "players": [
+    "Emam Ashour",
+    "Mohamed Salah"
+   ]
+  },
+  {
+   "type": "Start Delay",
+   "minute": "22'",
+   "team": "Egypt",
+   "text": "Delay in match for a drinks break.",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "22'",
+   "team": "Belgium",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "25'",
+   "team": "Egypt",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "25'",
+   "team": "Belgium",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Yellow Card",
+   "minute": "34'",
+   "team": "Egypt",
+   "text": "Ahmed Fatouh (Egypt) is shown the yellow card for a bad foul.",
+   "players": [
+    "Ahmed Fatouh"
+   ]
+  },
+  {
+   "type": "Halftime",
+   "minute": "45'+5'",
+   "team": null,
+   "text": "First Half ends, Belgium 0, Egypt 1.",
+   "players": []
+  },
+  {
+   "type": "Start 2nd Half",
+   "minute": "45'",
+   "team": null,
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Substitution",
+   "minute": "56'",
+   "team": "Belgium",
+   "text": "Substitution, Belgium. Nicolas Raskin replaces Timothy Castagne.",
+   "players": [
+    "Nicolas Raskin",
+    "Timothy Castagne"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "56'",
+   "team": "Belgium",
+   "text": "Substitution, Belgium. Maxim De Cuyper replaces Amadou Onana.",
+   "players": [
+    "Maxim De Cuyper",
+    "Amadou Onana"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "66'",
+   "team": "Belgium",
+   "text": "Substitution, Belgium. Romelu Lukaku replaces Charles De Ketelaere.",
+   "players": [
+    "Romelu Lukaku",
+    "Charles De Ketelaere"
+   ]
+  },
+  {
+   "type": "Own Goal",
+   "minute": "66'",
+   "team": "Belgium",
+   "text": "Own Goal by Mohamed Hany, Egypt. Belgium 1, Egypt 1.",
+   "players": [
+    "Mohamed Hany"
+   ]
+  },
+  {
+   "type": "Start Delay",
+   "minute": "67'",
+   "team": "Belgium",
+   "text": "Delay in match for a drinks break.",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "67'",
+   "team": "Egypt",
+   "text": "Delay in match for a drinks break.",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "70'",
+   "team": "Belgium",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "70'",
+   "team": "Egypt",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "Substitution",
+   "minute": "71'",
+   "team": "Egypt",
+   "text": "Substitution, Egypt. Ramy Rabia replaces Emam Ashour.",
+   "players": [
+    "Ramy Rabia",
+    "Emam Ashour"
+   ]
+  },
+  {
+   "type": "Yellow Card",
+   "minute": "75'",
+   "team": "Belgium",
+   "text": "Maxim De Cuyper (Belgium) is shown the yellow card for a bad foul.",
+   "players": [
+    "Maxim De Cuyper"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "76'",
+   "team": "Egypt",
+   "text": "Substitution, Egypt. Zizo replaces Mostafa Zico.",
+   "players": [
+    "Zizo",
+    "Mostafa Zico"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "76'",
+   "team": "Egypt",
+   "text": "Substitution, Egypt. Hamza Abdelkarim replaces Mohamed Salah.",
+   "players": [
+    "Hamza Abdelkarim",
+    "Mohamed Salah"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "86'",
+   "team": "Belgium",
+   "text": "Substitution, Belgium. Matias Fernandez-Pardo replaces Jérémy Doku.",
+   "players": [
+    "Matias Fernandez-Pardo",
+    "Jérémy Doku"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "86'",
+   "team": "Belgium",
+   "text": "Substitution, Belgium. Hans Vanaken replaces Kevin De Bruyne.",
+   "players": [
+    "Hans Vanaken",
+    "Kevin De Bruyne"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "88'",
+   "team": "Egypt",
+   "text": "Substitution, Egypt. Karim Hafez replaces Ahmed Fatouh.",
+   "players": [
+    "Karim Hafez",
+    "Ahmed Fatouh"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "88'",
+   "team": "Egypt",
+   "text": "Substitution, Egypt. Ibrahim Adel replaces Hamdi Fathy.",
+   "players": [
+    "Ibrahim Adel",
+    "Hamdy Fathy"
+   ]
+  },
+  {
+   "type": "End Regular Time",
+   "minute": "90'+6'",
+   "team": null,
+   "text": "Second Half ends, Belgium 1, Egypt 1.",
+   "players": []
+  }
+ ],
+ "shots": [
+  {
+   "minute": "6",
+   "seconds": 347.0,
+   "team": "Belgium",
+   "player": "Leandro Trossard",
+   "type": "Shot Blocked",
+   "x": 77.4,
+   "y": 37.8,
+   "goal": false,
+   "xg": 0.084,
+   "text": "Attempt blocked. Leandro Trossard (Belgium) left footed shot from outside the box is blocked. Assisted by Kevin De Bruyne."
+  },
+  {
+   "minute": "7",
+   "seconds": 377.0,
+   "team": "Belgium",
+   "player": "Kevin De Bruyne",
+   "type": "Shot Off Target",
+   "x": 80.8,
+   "y": 55.2,
+   "goal": false,
+   "xg": 0.134,
+   "text": "Attempt missed. Kevin De Bruyne (Belgium) right footed shot from outside the box is close, but misses to the left. Assisted by Youri Tielemans."
+  },
+  {
+   "minute": "20",
+   "seconds": 1142.0,
+   "team": "Egypt",
+   "player": "Emam Ashour",
+   "type": "Goal",
+   "x": 78.1,
+   "y": 53.8,
+   "goal": true,
+   "xg": 0.104,
+   "text": "Goal! Belgium 0, Egypt 1. Emam Ashour (Egypt) right footed shot from outside the box to the bottom left corner. Assisted by Mohamed Salah."
+  },
+  {
+   "minute": "31",
+   "seconds": 1838.0,
+   "team": "Belgium",
+   "player": "Youri Tielemans",
+   "type": "Shot Off Target",
+   "x": 88.0,
+   "y": 53.6,
+   "goal": false,
+   "xg": 0.193,
+   "text": "Attempt missed. Youri Tielemans (Belgium) header from the centre of the box misses to the right. Assisted by Timothy Castagne with a cross."
+  },
+  {
+   "minute": "33",
+   "seconds": 1963.0,
+   "team": "Egypt",
+   "player": "Mostafa Zico",
+   "type": "Shot On Target",
+   "x": 85.6,
+   "y": 25.3,
+   "goal": false,
+   "xg": 0.09,
+   "text": "Attempt saved. Mostafa Zico (Egypt) right footed shot from the right side of the box is saved in the centre of the goal by Thibaut Courtois (Belgium). Assisted by Marwan Attia."
+  },
+  {
+   "minute": "38",
+   "seconds": 2275.0,
+   "team": "Belgium",
+   "player": "Leandro Trossard",
+   "type": "Shot Blocked",
+   "x": 85.7,
+   "y": 42.1,
+   "goal": false,
+   "xg": 0.205,
+   "text": "Attempt blocked. Leandro Trossard (Belgium) right footed shot from the centre of the box is blocked. Assisted by Jérémy Doku."
+  },
+  {
+   "minute": "39",
+   "seconds": 2312.0,
+   "team": "Belgium",
+   "player": "Leandro Trossard",
+   "type": "Shot Blocked",
+   "x": 81.4,
+   "y": 54.6,
+   "goal": false,
+   "xg": 0.143,
+   "text": "Attempt blocked. Leandro Trossard (Belgium) left footed shot from outside the box is blocked. Assisted by Kevin De Bruyne."
+  },
+  {
+   "minute": "43",
+   "seconds": 2550.0,
+   "team": "Belgium",
+   "player": "Kevin De Bruyne",
+   "type": "Shot Blocked",
+   "x": 75.0,
+   "y": 37.8,
+   "goal": false,
+   "xg": 0.069,
+   "text": "Attempt blocked. Kevin De Bruyne (Belgium) right footed shot from outside the box is blocked. Assisted by Leandro Trossard."
+  },
+  {
+   "minute": "45'+1",
+   "seconds": 2700.0,
+   "team": "Belgium",
+   "player": "Jérémy Doku",
+   "type": "Shot Off Target",
+   "x": 86.1,
+   "y": 49.9,
+   "goal": false,
+   "xg": 0.247,
+   "text": "Attempt missed. Jérémy Doku (Belgium) right footed shot from the centre of the box is high and wide to the right. Assisted by Charles De Ketelaere."
+  },
+  {
+   "minute": "45'+4",
+   "seconds": 2700.0,
+   "team": "Egypt",
+   "player": "Omar Marmoush",
+   "type": "Shot Off Target",
+   "x": 97.6,
+   "y": 70.7,
+   "goal": false,
+   "xg": 0.123,
+   "text": "Attempt missed. Omar Marmoush (Egypt) right footed shot from a difficult angle on the left misses to the right."
+  },
+  {
+   "minute": "45'+4",
+   "seconds": 2700.0,
+   "team": "Egypt",
+   "player": "Mohamed Hany",
+   "type": "Shot Blocked",
+   "x": 75.8,
+   "y": 47.2,
+   "goal": false,
+   "xg": 0.084,
+   "text": "Attempt blocked. Mohamed Hany (Egypt) right footed shot from outside the box is blocked."
+  },
+  {
+   "minute": "48",
+   "seconds": 2846.0,
+   "team": "Egypt",
+   "player": "Mostafa Zico",
+   "type": "Shot Blocked",
+   "x": 86.8,
+   "y": 51.3,
+   "goal": false,
+   "xg": 0.267,
+   "text": "Attempt blocked. Mostafa Zico (Egypt) left footed shot from the centre of the box is blocked."
+  },
+  {
+   "minute": "48",
+   "seconds": 2847.0,
+   "team": "Egypt",
+   "player": "Omar Marmoush",
+   "type": "Shot Blocked",
+   "x": 88.6,
+   "y": 53.2,
+   "goal": false,
+   "xg": 0.322,
+   "text": "Attempt blocked. Omar Marmoush (Egypt) right footed shot from the centre of the box is blocked. Assisted by Mostafa Zico."
+  },
+  {
+   "minute": "53",
+   "seconds": 3166.0,
+   "team": "Belgium",
+   "player": null,
+   "type": "Shot Hit Woodwork",
+   "x": 78.5,
+   "y": 63.8,
+   "goal": false,
+   "xg": 0.089,
+   "text": "Kevin De Bruyne (Belgium) hits the left post with a right footed shot from outside the box from a direct free kick."
+  },
+  {
+   "minute": "55",
+   "seconds": 3295.0,
+   "team": "Egypt",
+   "player": "Mohamed Salah",
+   "type": "Shot On Target",
+   "x": 91.1,
+   "y": 48.9,
+   "goal": false,
+   "xg": 0.298,
+   "text": "Attempt saved. Mohamed Salah (Egypt) header from the centre of the box is saved in the top right corner by Thibaut Courtois (Belgium). Assisted by Ahmed Fatouh with a cross."
+  },
+  {
+   "minute": "55",
+   "seconds": 3299.0,
+   "team": "Egypt",
+   "player": "Emam Ashour",
+   "type": "Shot Off Target",
+   "x": 92.9,
+   "y": 34.0,
+   "goal": false,
+   "xg": 0.203,
+   "text": "Attempt missed. Emam Ashour (Egypt) right footed shot from the right side of the box misses to the left."
+  },
+  {
+   "minute": "57",
+   "seconds": 3390.0,
+   "team": "Egypt",
+   "player": "Marwan Attia",
+   "type": "Shot Blocked",
+   "x": 85.2,
+   "y": 63.8,
+   "goal": false,
+   "xg": 0.154,
+   "text": "Attempt blocked. Marwan Attia (Egypt) left footed shot from the left side of the box is blocked. Assisted by Emam Ashour."
+  },
+  {
+   "minute": "59",
+   "seconds": 3540.0,
+   "team": "Egypt",
+   "player": "Omar Marmoush",
+   "type": "Shot Off Target",
+   "x": 89.0,
+   "y": 33.3,
+   "goal": false,
+   "xg": 0.169,
+   "text": "Attempt missed. Omar Marmoush (Egypt) right footed shot from the right side of the box is high and wide to the right. Assisted by Mohamed Salah following a fast break."
+  },
+  {
+   "minute": "62",
+   "seconds": 3667.0,
+   "team": "Belgium",
+   "player": "Youri Tielemans",
+   "type": "Shot Off Target",
+   "x": 77.1,
+   "y": 46.4,
+   "goal": false,
+   "xg": 0.095,
+   "text": "Attempt missed. Youri Tielemans (Belgium) left footed shot from outside the box is close, but misses to the left following a corner."
+  },
+  {
+   "minute": "62",
+   "seconds": 3709.0,
+   "team": "Belgium",
+   "player": "Kevin De Bruyne",
+   "type": "Shot On Target",
+   "x": 84.9,
+   "y": 49.7,
+   "goal": false,
+   "xg": 0.216,
+   "text": "Attempt saved. Kevin De Bruyne (Belgium) right footed shot from the centre of the box is saved in the centre of the goal by Mostafa Shobeir (Egypt). Assisted by Thomas Meunier."
+  },
+  {
+   "minute": "65",
+   "seconds": 3845.0,
+   "team": "Egypt",
+   "player": "Omar Marmoush",
+   "type": "Shot Blocked",
+   "x": 84.3,
+   "y": 62.6,
+   "goal": false,
+   "xg": 0.151,
+   "text": "Attempt blocked. Omar Marmoush (Egypt) right footed shot from the centre of the box is blocked. Assisted by Mohamed Salah."
+  },
+  {
+   "minute": "73",
+   "seconds": 4328.0,
+   "team": "Belgium",
+   "player": "Thomas Meunier",
+   "type": "Shot On Target",
+   "x": 90.3,
+   "y": 33.3,
+   "goal": false,
+   "xg": 0.179,
+   "text": "Attempt saved. Thomas Meunier (Belgium) left footed shot from the right side of the box is saved in the centre of the goal by Mostafa Shobeir (Egypt). Assisted by Leandro Trossard."
+  },
+  {
+   "minute": "78",
+   "seconds": 4662.0,
+   "team": "Belgium",
+   "player": "Romelu Lukaku",
+   "type": "Shot Blocked",
+   "x": 84.7,
+   "y": 51.7,
+   "goal": false,
+   "xg": 0.21,
+   "text": "Attempt blocked. Romelu Lukaku (Belgium) right footed shot from the centre of the box is blocked. Assisted by Leandro Trossard."
+  },
+  {
+   "minute": "79",
+   "seconds": 4731.0,
+   "team": "Egypt",
+   "player": "Zizo",
+   "type": "Shot Blocked",
+   "x": 75.3,
+   "y": 65.0,
+   "goal": false,
+   "xg": 0.066,
+   "text": "Attempt blocked. Zizo (Egypt) right footed shot from outside the box is blocked. Assisted by Hamdi Fathy."
+  },
+  {
+   "minute": "83",
+   "seconds": 4924.0,
+   "team": "Belgium",
+   "player": "Brandon Mechele",
+   "type": "Shot On Target",
+   "x": 92.0,
+   "y": 55.0,
+   "goal": false,
+   "xg": 0.297,
+   "text": "Attempt saved. Brandon Mechele (Belgium) header from the centre of the box is saved in the bottom right corner by Mostafa Shobeir (Egypt). Assisted by Youri Tielemans."
+  },
+  {
+   "minute": "84",
+   "seconds": 5027.0,
+   "team": "Egypt",
+   "player": "Omar Marmoush",
+   "type": "Shot Blocked",
+   "x": 84.7,
+   "y": 51.7,
+   "goal": false,
+   "xg": 0.21,
+   "text": "Attempt blocked. Omar Marmoush (Egypt) right footed shot from the centre of the box is blocked. Assisted by Hamdi Fathy."
+  },
+  {
+   "minute": "87",
+   "seconds": 5185.0,
+   "team": "Belgium",
+   "player": "Romelu Lukaku",
+   "type": "Shot Off Target",
+   "x": 91.7,
+   "y": 51.3,
+   "goal": false,
+   "xg": 0.322,
+   "text": "Attempt missed. Romelu Lukaku (Belgium) header from the centre of the box is too high. Assisted by Nicolas Raskin with a cross."
+  },
+  {
+   "minute": "90",
+   "seconds": 5375.0,
+   "team": "Egypt",
+   "player": "Mohamed Hany",
+   "type": "Shot Blocked",
+   "x": 82.1,
+   "y": 26.8,
+   "goal": false,
+   "xg": 0.081,
+   "text": "Attempt blocked. Mohamed Hany (Egypt) right footed shot from outside the box is blocked. Assisted by Omar Marmoush."
+  },
+  {
+   "minute": "90'+4",
+   "seconds": 5400.0,
+   "team": "Belgium",
+   "player": "Brandon Mechele",
+   "type": "Shot Off Target",
+   "x": 89.9,
+   "y": 53.8,
+   "goal": false,
+   "xg": 0.372,
+   "text": "Attempt missed. Brandon Mechele (Belgium) right footed shot from the centre of the box is just a bit too high. Assisted by Youri Tielemans with a cross following a set piece situation."
+  }
+ ],
+ "lineups": [
+  {
+   "team": "Belgium",
+   "formation": "4-2-3-1",
+   "starters": [
+    {
+     "name": "Thibaut Courtois",
+     "jersey": "1",
+     "position": "G"
+    },
+    {
+     "name": "Brandon Mechele",
+     "jersey": "4",
+     "position": "CD-L"
+    },
+    {
+     "name": "Nathan Ngoy",
+     "jersey": "25",
+     "position": "CD-R"
+    },
+    {
+     "name": "Timothy Castagne",
+     "jersey": "21",
+     "position": "LB"
+    },
+    {
+     "name": "Thomas Meunier",
+     "jersey": "15",
+     "position": "RB"
+    },
+    {
+     "name": "Kevin De Bruyne",
+     "jersey": "7",
+     "position": "AM"
+    },
+    {
+     "name": "Youri Tielemans",
+     "jersey": "8",
+     "position": "LM"
+    },
+    {
+     "name": "Amadou Onana",
+     "jersey": "24",
+     "position": "RM"
+    },
+    {
+     "name": "Charles De Ketelaere",
+     "jersey": "17",
+     "position": "F"
+    },
+    {
+     "name": "Jérémy Doku",
+     "jersey": "11",
+     "position": "AM-L"
+    },
+    {
+     "name": "Leandro Trossard",
+     "jersey": "10",
+     "position": "AM-R"
+    }
+   ],
+   "subs": [
+    {
+     "name": "Mike Penders",
+     "jersey": "13",
+     "position": "SUB"
+    },
+    {
+     "name": "Nicolas Raskin",
+     "jersey": "23",
+     "position": "SUB"
+    },
+    {
+     "name": "Senne Lammens",
+     "jersey": "12",
+     "position": "SUB"
+    },
+    {
+     "name": "Romelu Lukaku",
+     "jersey": "9",
+     "position": "SUB"
+    },
+    {
+     "name": "Joaquin Seys",
+     "jersey": "18",
+     "position": "SUB"
+    },
+    {
+     "name": "Diego Moreira",
+     "jersey": "19",
+     "position": "SUB"
+    },
+    {
+     "name": "Arthur Theate",
+     "jersey": "3",
+     "position": "SUB"
+    },
+    {
+     "name": "Matias Fernandez-Pardo",
+     "jersey": "26",
+     "position": "SUB"
+    },
+    {
+     "name": "Alexis Saelemaekers",
+     "jersey": "22",
+     "position": "SUB"
+    },
+    {
+     "name": "Dodi Lukébakio",
+     "jersey": "14",
+     "position": "SUB"
+    },
+    {
+     "name": "Hans Vanaken",
+     "jersey": "20",
+     "position": "SUB"
+    },
+    {
+     "name": "Axel Witsel",
+     "jersey": "6",
+     "position": "SUB"
+    },
+    {
+     "name": "Maxim De Cuyper",
+     "jersey": "5",
+     "position": "SUB"
+    },
+    {
+     "name": "Koni De Winter",
+     "jersey": "16",
+     "position": "SUB"
+    }
+   ]
+  },
+  {
+   "team": "Egypt",
+   "formation": "4-2-3-1",
+   "starters": [
+    {
+     "name": "Mostafa Shoubir",
+     "jersey": "23",
+     "position": "G"
+    },
+    {
+     "name": "Hamdy Fathy",
+     "jersey": "14",
+     "position": "CD-L"
+    },
+    {
+     "name": "Yasser Ibrahim",
+     "jersey": "2",
+     "position": "CD-R"
+    },
+    {
+     "name": "Ahmed Fatouh",
+     "jersey": "13",
+     "position": "LB"
+    },
+    {
+     "name": "Mohamed Hany",
+     "jersey": "3",
+     "position": "RB"
+    },
+    {
+     "name": "Mohamed Salah",
+     "jersey": "10",
+     "position": "AM"
+    },
+    {
+     "name": "Mohanad Lashin",
+     "jersey": "17",
+     "position": "LM"
+    },
+    {
+     "name": "Marawan Attia",
+     "jersey": "19",
+     "position": "RM"
+    },
+    {
+     "name": "Omar Marmoush",
+     "jersey": "22",
+     "position": "F"
+    },
+    {
+     "name": "Emam Ashour",
+     "jersey": "8",
+     "position": "AM-L"
+    },
+    {
+     "name": "Mostafa Zico",
+     "jersey": "11",
+     "position": "AM-R"
+    }
+   ],
+   "subs": [
+    {
+     "name": "Ramy Rabia",
+     "jersey": "5",
+     "position": "SUB"
+    },
+    {
+     "name": "Hamza Abdelkarim",
+     "jersey": "9",
+     "position": "SUB"
+    },
+    {
+     "name": "Mohamed Abdelmoneim",
+     "jersey": "6",
+     "position": "SUB"
+    },
+    {
+     "name": "Zizo",
+     "jersey": "25",
+     "position": "SUB"
+    },
+    {
+     "name": "Tarek Alaa",
+     "jersey": "24",
+     "position": "SUB"
+    },
+    {
+     "name": "Hossam Abdelmaguid",
+     "jersey": "4",
+     "position": "SUB"
+    },
+    {
+     "name": "Ibrahim Adel",
+     "jersey": "20",
+     "position": "SUB"
+    },
+    {
+     "name": "Haissem Hassan",
+     "jersey": "12",
+     "position": "SUB"
+    },
+    {
+     "name": "Nabil Donga",
+     "jersey": "18",
+     "position": "SUB"
+    },
+    {
+     "name": "Mahdy Soliman",
+     "jersey": "16",
+     "position": "SUB"
+    },
+    {
+     "name": "Karim Hafez",
+     "jersey": "15",
+     "position": "SUB"
+    },
+    {
+     "name": "Mohamed El Shenawy",
+     "jersey": "1",
+     "position": "SUB"
+    },
+    {
+     "name": "Mohamed Alaa",
+     "jersey": "26",
+     "position": "SUB"
+    },
+    {
+     "name": "Trézéguet",
+     "jersey": "7",
+     "position": "SUB"
+    },
+    {
+     "name": "Mahmoud Saber",
+     "jersey": "21",
+     "position": "SUB"
+    }
+   ]
+  }
+ ],
+ "attendance": 66775,
+ "venue": "Lumen Field, Seattle, Washington, USA"
+}

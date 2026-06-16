@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-KVBPX8VW');</script>
+    <!-- End Google Tag Manager -->
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Saudi Arabia 1–1 Uruguay — full match analytics: shot map, expected goals race, lineups, stats and model verdict.">
+    <link rel="icon" type="image/svg+xml" href="../../images/favicon.svg">
+    <link rel="icon" type="image/png" sizes="32x32" href="../../images/favicon-32.png">
+    <title>Saudi Arabia 1–1 Uruguay — World Cup 2026</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+html { font-size: 16px; }
+body {
+  background: #fff;
+  color: #0a0a0a;
+  font-family: 'Manrope', -apple-system, 'Segoe UI', sans-serif;
+  line-height: 1.5;
+  font-feature-settings: 'tnum';
+  -webkit-font-smoothing: antialiased;
+}
+a { color: inherit; text-decoration: none; }
+.wrap { max-width: 700px; margin: 0 auto; padding: 0 1.1rem 5rem; }
+
+/* ---- masthead ---- */
+.masthead { padding: 2.2rem 0 1.4rem; display: flex; align-items: baseline; justify-content: space-between; gap: 1rem; flex-wrap: wrap; }
+.masthead h1 { font-size: 1.55rem; font-weight: 800; letter-spacing: -0.02em; }
+.masthead .sub { font-size: 0.78rem; color: #777; font-weight: 500; }
+.masthead a.home { font-size: 0.75rem; font-weight: 600; color: #999; }
+.masthead a.home:hover { color: #0a0a0a; }
+
+/* ---- tabs ---- */
+.tabbar {
+  position: sticky; top: 0; z-index: 10;
+  display: flex; gap: 0.4rem;
+  background: rgba(255,255,255,0.94); backdrop-filter: blur(6px);
+  padding: 0.6rem 0 0.8rem;
+}
+.tabbar button {
+  font: inherit; font-size: 0.82rem; font-weight: 700;
+  border: 1px solid #e4e4e4; background: #fff; color: #555;
+  border-radius: 999px; padding: 0.42rem 1.05rem; cursor: pointer;
+  transition: all 0.15s ease;
+}
+.tabbar button:hover { border-color: #0a0a0a; color: #0a0a0a; }
+.tabbar button.active { background: #0a0a0a; border-color: #0a0a0a; color: #fff; }
+.panel { display: none; }
+.panel.active { display: block; }
+
+/* ---- cards ---- */
+.card {
+  border: 1px solid #e9e9e9; border-radius: 16px; background: #fff;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.03);
+  padding: 1.15rem 1.25rem; margin-bottom: 1rem;
+}
+.card-title { font-size: 0.7rem; font-weight: 800; letter-spacing: 0.1em; text-transform: uppercase; color: #999; margin-bottom: 0.9rem; }
+.card-note { font-size: 0.72rem; color: #999; margin-top: 0.7rem; line-height: 1.55; }
+
+/* ---- fixtures feed ---- */
+.day-head {
+  font-size: 0.72rem; font-weight: 800; letter-spacing: 0.08em; text-transform: uppercase;
+  color: #888; margin: 1.6rem 0 0.6rem; padding-left: 0.2rem;
+}
+.day-head.today { color: #0a0a0a; }
+.day-head.today::after { content: 'TODAY'; margin-left: 0.6rem; background: #0a0a0a; color: #fff; border-radius: 5px; padding: 0.1rem 0.45rem; font-size: 0.62rem; }
+.fixture {
+  display: grid; grid-template-columns: 3.4rem 1fr auto; align-items: center; gap: 0.9rem;
+  border: 1px solid #e9e9e9; border-radius: 14px; background: #fff;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.03);
+  padding: 0.8rem 1rem; margin-bottom: 0.55rem;
+}
+a.fixture { transition: border-color 0.15s ease, transform 0.15s ease; }
+a.fixture:hover { border-color: #0a0a0a; transform: translateY(-1px); }
+.fx-status { font-size: 0.68rem; font-weight: 800; color: #999; text-align: center; line-height: 1.3; }
+.fx-status .chip { display: inline-block; background: #f1f1f1; border-radius: 6px; padding: 0.12rem 0.4rem; color: #555; }
+.fx-status .chip.ft { background: #0a0a0a; color: #fff; }
+.fx-teams { min-width: 0; }
+.fx-row { display: flex; justify-content: space-between; align-items: baseline; gap: 0.8rem; }
+.fx-row .t { font-size: 0.92rem; font-weight: 600; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.fx-row .t.win { font-weight: 800; }
+.fx-row .s { font-size: 0.95rem; font-weight: 800; }
+.fx-meta { font-size: 0.68rem; color: #aaa; font-weight: 600; text-align: right; max-width: 8rem; }
+.fx-arrow { color: #ccc; font-size: 0.9rem; }
+
+/* ---- tables ---- */
+table.t { width: 100%; border-collapse: collapse; font-size: 0.82rem; }
+table.t th { font-size: 0.64rem; font-weight: 800; letter-spacing: 0.07em; text-transform: uppercase; color: #aaa; text-align: left; padding: 0.3rem 0.45rem; border-bottom: 1px solid #eee; }
+table.t td { padding: 0.42rem 0.45rem; border-bottom: 1px solid #f4f4f4; font-weight: 500; }
+table.t tr:last-child td { border-bottom: none; }
+table.t .r { text-align: right; }
+table.t .pos { color: #bbb; font-weight: 700; width: 1.4rem; }
+table.t .pts { font-weight: 800; }
+.qual-line td { border-top: 2px solid #0a0a0a; }
+
+/* ---- group grid ---- */
+.group-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 0.9rem; }
+.group-grid .card { margin-bottom: 0; padding: 0.9rem 1rem; }
+
+/* ---- predictions ---- */
+.odds-row { display: grid; grid-template-columns: 8.2rem 1fr 3.2rem; align-items: center; gap: 0.7rem; padding: 0.32rem 0; font-size: 0.84rem; font-weight: 600; }
+.odds-track { height: 0.6rem; background: #f1f1f1; border-radius: 99px; overflow: hidden; }
+.odds-track > span { display: block; height: 100%; background: #0a0a0a; border-radius: 99px; }
+.odds-pct { text-align: right; font-weight: 800; font-size: 0.8rem; }
+.pred-line { font-size: 0.74rem; color: #888; font-weight: 600; margin-top: 0.25rem; }
+.bigstat { display: flex; gap: 0.9rem; }
+.bigstat .cell { flex: 1; border: 1px solid #eee; border-radius: 12px; padding: 0.7rem 0.85rem; }
+.bigstat .n { font-size: 1.35rem; font-weight: 800; letter-spacing: -0.02em; }
+.bigstat .l { font-size: 0.64rem; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; color: #999; margin-top: 0.1rem; }
+
+/* ---- match page: scoreboard ---- */
+.kickline { font-size: 0.72rem; font-weight: 700; color: #999; letter-spacing: 0.05em; text-transform: uppercase; margin-bottom: 0.9rem; }
+.board { display: grid; grid-template-columns: 1fr auto 1fr; align-items: center; gap: 1rem; margin: 0.4rem 0 0.9rem; }
+.board .team { text-align: center; }
+.board .team .name { font-size: 1.05rem; font-weight: 800; letter-spacing: -0.01em; }
+.board .team .xg { font-size: 0.7rem; color: #999; font-weight: 600; margin-top: 0.15rem; }
+.board .score { font-size: 2.6rem; font-weight: 800; letter-spacing: 0.02em; white-space: nowrap; }
+.board .score .ft { display: block; font-size: 0.64rem; font-weight: 800; letter-spacing: 0.15em; color: #999; text-align: center; }
+.goals-line { text-align: center; font-size: 0.76rem; color: #666; font-weight: 600; line-height: 1.7; }
+.venue-line { text-align: center; font-size: 0.7rem; color: #aaa; font-weight: 600; margin-top: 0.6rem; }
+.narrative { font-size: 0.88rem; line-height: 1.65; color: #333; }
+
+/* ---- stat bars ---- */
+.sb-row { display: grid; grid-template-columns: 2.6rem 1fr 7.5rem 1fr 2.6rem; align-items: center; gap: 0.55rem; padding: 0.34rem 0; }
+.sb-row .v { font-size: 0.84rem; font-weight: 800; }
+.sb-row .v.l { text-align: right; }
+.sb-row .lab { font-size: 0.66rem; font-weight: 700; letter-spacing: 0.05em; text-transform: uppercase; color: #999; text-align: center; }
+.sb-track { height: 0.5rem; background: #f1f1f1; border-radius: 99px; position: relative; overflow: hidden; }
+.sb-track > span { position: absolute; top: 0; height: 100%; background: #0a0a0a; border-radius: 99px; }
+.sb-track.l > span { right: 0; }
+.sb-track.r > span { left: 0; }
+
+/* ---- timeline ---- */
+.tl-item { display: grid; grid-template-columns: 3rem 1fr; gap: 0.8rem; padding: 0.45rem 0; border-bottom: 1px solid #f6f6f6; font-size: 0.82rem; }
+.tl-item:last-child { border-bottom: none; }
+.tl-min { font-weight: 800; color: #bbb; text-align: right; }
+.tl-text { font-weight: 500; color: #444; }
+.tl-text .tag { font-size: 0.62rem; font-weight: 800; letter-spacing: 0.06em; text-transform: uppercase; border-radius: 5px; padding: 0.08rem 0.4rem; margin-right: 0.45rem; background: #f1f1f1; color: #666; vertical-align: 1px; }
+.tl-text .tag.goal { background: #0a0a0a; color: #fff; }
+
+/* ---- lineups ---- */
+.lineups { display: grid; grid-template-columns: 1fr 1fr; gap: 1.4rem; }
+.lu-team { font-size: 0.85rem; font-weight: 800; }
+.lu-formation { font-size: 0.68rem; color: #999; font-weight: 700; margin-bottom: 0.5rem; }
+.lu-list { list-style: none; font-size: 0.78rem; font-weight: 500; }
+.lu-list li { padding: 0.18rem 0; border-bottom: 1px solid #f7f7f7; }
+.lu-list .j { display: inline-block; width: 1.7rem; color: #bbb; font-weight: 700; }
+.lu-subs { margin-top: 0.6rem; font-size: 0.7rem; color: #999; line-height: 1.6; }
+
+/* ---- charts ---- */
+.chart { width: 100%; }
+.legend { display: flex; gap: 1.1rem; font-size: 0.7rem; font-weight: 700; color: #777; margin-top: 0.5rem; flex-wrap: wrap; }
+.legend .k { display: inline-flex; align-items: center; gap: 0.35rem; }
+.legend .dot { width: 0.65rem; height: 0.65rem; border-radius: 50%; display: inline-block; }
+
+.backlink { display: inline-block; margin-top: 0.5rem; font-size: 0.8rem; font-weight: 700; color: #888; }
+.backlink:hover { color: #0a0a0a; }
+.foot { font-size: 0.72rem; color: #aaa; line-height: 1.6; margin-top: 2.2rem; font-weight: 500; }
+
+@media (max-width: 560px) {
+  .group-grid { grid-template-columns: 1fr; }
+  .lineups { grid-template-columns: 1fr; }
+  .board .score { font-size: 2rem; }
+  .board .team .name { font-size: 0.9rem; }
+  .odds-row { grid-template-columns: 6.4rem 1fr 3rem; }
+  .sb-row { grid-template-columns: 2.2rem 1fr 5.4rem 1fr 2.2rem; gap: 0.4rem; }
+  .bigstat { flex-wrap: wrap; }
+  .fx-meta { display: none; }
+}
+
+    </style>
+</head>
+<body>
+    <noscript><iframe aria-hidden="true" title="Google Tag Manager" src="https://www.googletagmanager.com/ns.html?id=GTM-KVBPX8VW"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+    <div class="wrap">
+        <div class="masthead">
+            <div><h1>World Cup 2026</h1></div>
+            <a class="home" href="../index.html">&larr; All matches</a>
+        </div>
+
+        <!-- scoreboard -->
+        <div class="card">
+            <div class="kickline">Matchday 5 · Group H · 2026-06-15</div>
+            <div class="board">
+                <div class="team">
+                    <div class="name">Saudi Arabia</div>
+                    <div class="xg">xG 1.85</div>
+                </div>
+                <div class="score"><span class="ft">HT 1–0</span>1&thinsp;–&thinsp;1</div>
+                <div class="team">
+                    <div class="name">Uruguay</div>
+                    <div class="xg">xG 4.95</div>
+                </div>
+            </div>
+            <div class="goals-line"><strong>Saudi Arabia</strong> Abdulelah Al-Amri 41&#8242; &nbsp;·&nbsp; <strong>Uruguay</strong> Maxi Araújo 80&#8242;</div>
+            <div class="venue-line">Hard Rock Stadium · 62,764 attendance</div>
+        </div>
+
+        
+        <div class="card">
+            <div class="card-title">The story</div>
+            <p class="narrative">A 1–1 draw — the model had that at 20%.</p>
+        </div>
+        
+
+        
+        <div class="card">
+            <div class="card-title">Expected goals race</div>
+            <div class="chart"><svg viewBox="0 0 660 240" xmlns="http://www.w3.org/2000/svg" width="100%" role="img" aria-label="Cumulative expected goals"><line x1="34" y1="178.8" x2="646" y2="178.8" stroke="#f0f0f0" stroke-width="1"/><text x="28" y="181.8" font-size="9" font-family="Manrope,sans-serif" fill="#bbb" text-anchor="end">1</text><line x1="34" y1="143.7" x2="646" y2="143.7" stroke="#f0f0f0" stroke-width="1"/><text x="28" y="146.7" font-size="9" font-family="Manrope,sans-serif" fill="#bbb" text-anchor="end">2</text><line x1="34" y1="108.5" x2="646" y2="108.5" stroke="#f0f0f0" stroke-width="1"/><text x="28" y="111.5" font-size="9" font-family="Manrope,sans-serif" fill="#bbb" text-anchor="end">3</text><line x1="34" y1="73.4" x2="646" y2="73.4" stroke="#f0f0f0" stroke-width="1"/><text x="28" y="76.4" font-size="9" font-family="Manrope,sans-serif" fill="#bbb" text-anchor="end">4</text><line x1="34" y1="38.2" x2="646" y2="38.2" stroke="#f0f0f0" stroke-width="1"/><text x="28" y="41.2" font-size="9" font-family="Manrope,sans-serif" fill="#bbb" text-anchor="end">5</text><text x="34.0" y="232" font-size="9" font-family="Manrope,sans-serif" fill="#bbb" text-anchor="middle">0&#8242;</text><text x="130.6" y="232" font-size="9" font-family="Manrope,sans-serif" fill="#bbb" text-anchor="middle">15&#8242;</text><text x="227.3" y="232" font-size="9" font-family="Manrope,sans-serif" fill="#bbb" text-anchor="middle">30&#8242;</text><text x="323.9" y="232" font-size="9" font-family="Manrope,sans-serif" fill="#bbb" text-anchor="middle">45&#8242;</text><text x="420.5" y="232" font-size="9" font-family="Manrope,sans-serif" fill="#bbb" text-anchor="middle">60&#8242;</text><text x="517.2" y="232" font-size="9" font-family="Manrope,sans-serif" fill="#bbb" text-anchor="middle">75&#8242;</text><text x="613.8" y="232" font-size="9" font-family="Manrope,sans-serif" fill="#bbb" text-anchor="middle">90&#8242;</text><line x1="34" y1="214.0" x2="646" y2="214.0" stroke="#ddd" stroke-width="1"/><path d="M 34 214.0 L 150.0 214.0 L 150.0 211.9 L 278.8 211.9 L 278.8 199.4 L 285.2 199.4 L 285.2 197.3 L 291.7 197.3 L 291.7 187.6 L 298.1 187.6 L 298.1 155.7 L 594.5 155.7 L 594.5 153.4 L 594.5 153.4 L 594.5 148.9 L 646 148.9" fill="none" stroke="#0a0a0a" stroke-width="2.2" stroke-linejoin="round"/><text x="646" y="142.9" font-size="10" font-weight="700" font-family="Manrope,sans-serif" fill="#0a0a0a" text-anchor="end">1.85</text><circle cx="298.1" cy="155.7" r="5" fill="#0a0a0a" stroke="#fff" stroke-width="1.5"/><text x="298.1" y="145.7" font-size="9.5" font-weight="700" font-family="Manrope,sans-serif" fill="#0a0a0a" text-anchor="middle">Abdulelah Al Amri 41&#8242;</text><path d="M 34 214.0 L 66.2 214.0 L 66.2 210.1 L 66.2 210.1 L 66.2 200.4 L 169.3 200.4 L 169.3 188.6 L 323.9 188.6 L 323.9 179.8 L 323.9 179.8 L 323.9 165.5 L 330.3 165.5 L 330.3 158.4 L 356.1 158.4 L 356.1 147.9 L 375.4 147.9 L 375.4 138.8 L 381.9 138.8 L 381.9 135.8 L 414.1 135.8 L 414.1 127.6 L 420.5 127.6 L 420.5 125.2 L 420.5 125.2 L 420.5 117.6 L 465.6 117.6 L 465.6 115.6 L 465.6 115.6 L 465.6 112.0 L 542.9 112.0 L 542.9 108.9 L 549.4 108.9 L 549.4 96.6 L 549.4 96.6 L 549.4 86.6 L 562.3 86.6 L 562.3 84.9 L 568.7 84.9 L 568.7 72.9 L 568.7 72.9 L 568.7 70.7 L 613.8 70.7 L 613.8 63.6 L 613.8 63.6 L 613.8 60.5 L 613.8 60.5 L 613.8 53.0 L 613.8 53.0 L 613.8 48.5 L 613.8 48.5 L 613.8 46.2 L 613.8 46.2 L 613.8 44.2 L 613.8 44.2 L 613.8 40.1 L 646 40.1" fill="none" stroke="#b5b5b5" stroke-width="2.2" stroke-linejoin="round"/><text x="646" y="34.1" font-size="10" font-weight="700" font-family="Manrope,sans-serif" fill="#b5b5b5" text-anchor="end">4.95</text><circle cx="549.4" cy="86.6" r="5" fill="#b5b5b5" stroke="#fff" stroke-width="1.5"/><text x="549.4" y="76.6" font-size="9.5" font-weight="700" font-family="Manrope,sans-serif" fill="#0a0a0a" text-anchor="middle">Maxi Araújo 80&#8242;</text></svg></div>
+            <div class="legend">
+                <span class="k"><span class="dot" style="background:#0a0a0a"></span>Saudi Arabia</span>
+                <span class="k"><span class="dot" style="background:#b5b5b5"></span>Uruguay</span>
+                <span class="k">&#9679; goal</span>
+            </div>
+            <p class="card-note">Cumulative expected goals, minute by minute. ESPN's free feed has no xG, so each shot's xG is estimated with a naive distance-and-angle logistic model fitted on shot coordinates from the play-by-play.</p>
+        </div>
+        
+
+        
+        <div class="card">
+            <div class="card-title">Shot map</div>
+            <div class="chart"><svg viewBox="0 0 660 420" xmlns="http://www.w3.org/2000/svg" width="100%" role="img" aria-label="Shot map"><rect x="10" y="10" width="640" height="400" rx="6" stroke="#d8d8d8" stroke-width="1.5" fill="none"/><line x1="330" y1="10" x2="330" y2="410" stroke="#d8d8d8" stroke-width="1.5" fill="none"/><circle cx="330" cy="210" r="52" stroke="#d8d8d8" stroke-width="1.5" fill="none"/><rect x="10" y="94" width="106" height="232" stroke="#d8d8d8" stroke-width="1.5" fill="none"/><rect x="10" y="154" width="35" height="112" stroke="#d8d8d8" stroke-width="1.5" fill="none"/><rect x="544" y="94" width="106" height="232" stroke="#d8d8d8" stroke-width="1.5" fill="none"/><rect x="615" y="154" width="35" height="112" stroke="#d8d8d8" stroke-width="1.5" fill="none"/><circle cx="129.7" cy="154.8" r="5.5" fill="#fff" stroke="#0a0a0a" stroke-width="1.3" opacity="1"><title>Maxi Araújo · 5&#8242; · xG 0.11 · Shot On Target</title></circle><circle cx="68.9" cy="222.0" r="7.6" fill="#fff" stroke="#0a0a0a" stroke-width="1.3" opacity="0.45"><title>Federico Viñas · 5&#8242; · xG 0.28 · Shot Blocked</title></circle><circle cx="509.8" cy="304.4" r="4.8" fill="#0a0a0a" stroke="#0a0a0a" stroke-width="1.3" opacity="0.45"><title>Salem Al Dawsari · 18&#8242; · xG 0.06 · Shot Off Target</title></circle><circle cx="59.9" cy="199.6" r="8.4" fill="#fff" stroke="#0a0a0a" stroke-width="1.3" opacity="0.45"><title>Rodrigo Bentancur · 21&#8242; · xG 0.34 · Shot Off Target</title></circle><circle cx="583.4" cy="226.4" r="8.6" fill="#0a0a0a" stroke="#0a0a0a" stroke-width="1.3" opacity="1"><title>Abdulelah Al Amri · 38&#8242; · xG 0.35 · Shot On Target</title></circle><circle cx="492.6" cy="287.2" r="4.8" fill="#0a0a0a" stroke="#0a0a0a" stroke-width="1.3" opacity="0.45"><title>Abdullah Al Khaibari · 39&#8242; · xG 0.06 · Shot Off Target</title></circle><circle cx="589.8" cy="217.6" r="7.6" fill="#0a0a0a" stroke="#0a0a0a" stroke-width="1.3" opacity="1"><title>Mohamed Kanno · 40&#8242; · xG 0.28 · Shot On Target</title></circle><path d="M629.5,189.8 L634.8,202.4 L648.4,203.5 L638.0,212.4 L641.2,225.6 L629.5,218.5 L617.9,225.6 L621.0,212.4 L610.7,203.5 L624.3,202.4 Z" fill="#0a0a0a" stroke="#0a0a0a" stroke-width="1.5"><title>Abdulelah Al Amri · 41&#8242; · xG 0.91 · Goal</title></path><circle cx="61.8" cy="240.4" r="7.3" fill="#fff" stroke="#0a0a0a" stroke-width="1.3" opacity="1"><title>Federico Viñas · 45&#8242; · xG 0.25 · Shot On Target</title></circle><circle cx="40.7" cy="187.6" r="9.3" fill="#fff" stroke="#0a0a0a" stroke-width="1.3" opacity="0.45"><title>Darwin Núñez · 45'+1&#8242; · xG 0.41 · Shot Off Target</title></circle><circle cx="81.0" cy="232.4" r="6.6" fill="#fff" stroke="#0a0a0a" stroke-width="1.3" opacity="1"><title>Federico Viñas · 46&#8242; · xG 0.20 · Shot On Target</title></circle><circle cx="65.7" cy="200.0" r="7.9" fill="#fff" stroke="#0a0a0a" stroke-width="1.3" opacity="0.45"><title>Federico Viñas · 50&#8242; · xG 0.30 · Shot Off Target</title></circle><circle cx="73.4" cy="203.2" r="7.4" fill="#fff" stroke="#0a0a0a" stroke-width="1.3" opacity="0.45"><title>Mathías Olivera · 53&#8242; · xG 0.26 · Shot Blocked</title></circle><circle cx="161.7" cy="184.4" r="5.1" fill="#fff" stroke="#0a0a0a" stroke-width="1.3" opacity="0.45"><title>Manuel Ugarte · 54&#8242; · xG 0.09 · Shot Off Target</title></circle><circle cx="75.9" cy="259.6" r="7.0" fill="#fff" stroke="#0a0a0a" stroke-width="1.3" opacity="0.45"><title>Agustín Canobbio · 59&#8242; · xG 0.23 · Shot Off Target</title></circle><circle cx="168.7" cy="258.8" r="4.9" fill="#fff" stroke="#0a0a0a" stroke-width="1.3" opacity="1"><title>Manuel Ugarte · 60&#8242; · xG 0.07 · Shot On Target</title></circle><circle cx="72.7" cy="154.0" r="6.8" fill="#fff" stroke="#0a0a0a" stroke-width="1.3" opacity="0.45"><title>Juan Manuel Sanabria · 60&#8242; · xG 0.21 · Shot Off Target</title></circle><circle cx="45.8" cy="69.2" r="4.8" fill="#fff" stroke="#0a0a0a" stroke-width="1.3" opacity="1"><title>Federico Valverde · 67&#8242; · xG 0.06 · Shot On Target</title></circle><circle cx="140.6" cy="259.6" r="5.3" fill="#fff" stroke="#0a0a0a" stroke-width="1.3" opacity="0.45"><title>Guillermo Varela · 67&#8242; · xG 0.10 · Shot Blocked</title></circle><circle cx="154.0" cy="250.4" r="5.2" fill="#fff" stroke="#0a0a0a" stroke-width="1.3" opacity="0.45"><title>Nicolás de la Cruz · 79&#8242; · xG 0.09 · Shot Blocked</title></circle><circle cx="59.3" cy="214.8" r="8.5" fill="#fff" stroke="#0a0a0a" stroke-width="1.3" opacity="1"><title>Federico Viñas · 80&#8242; · xG 0.35 · Shot On Target</title></circle><path d="M36.2,149.1 L39.3,156.5 L47.3,157.2 L41.2,162.4 L43.1,170.2 L36.2,166.1 L29.4,170.2 L31.2,162.4 L25.1,157.2 L33.2,156.5 Z" fill="#fff" stroke="#0a0a0a" stroke-width="1.5"><title>Maxi Araújo · 80&#8242; · xG 0.28 · Goal - Volley</title></path><circle cx="179.6" cy="132.4" r="4.7" fill="#fff" stroke="#0a0a0a" stroke-width="1.3" opacity="0.45"><title>Juan Manuel Sanabria · 82&#8242; · xG 0.05 · Shot Blocked</title></circle><circle cx="55.4" cy="227.6" r="8.4" fill="#fff" stroke="#0a0a0a" stroke-width="1.3" opacity="0.45"><title>Sebastián Cáceres · 83&#8242; · xG 0.34 · Shot Off Target</title></circle><circle cx="143.1" cy="112.0" r="4.8" fill="#fff" stroke="#0a0a0a" stroke-width="1.3" opacity="0.45"><title>Brian Rodríguez · 83&#8242; · xG 0.06 · Shot Off Target</title></circle><circle cx="479.8" cy="178.4" r="4.8" fill="#0a0a0a" stroke="#0a0a0a" stroke-width="1.3" opacity="0.45"><title>Mohamed Kanno · 87&#8242; · xG 0.06 · Shot Blocked</title></circle><circle cx="541.8" cy="154.0" r="5.7" fill="#0a0a0a" stroke="#0a0a0a" stroke-width="1.3" opacity="0.45"><title>Saud Abdulhamid · 87&#8242; · xG 0.13 · Shot Off Target</title></circle><circle cx="102.2" cy="177.6" r="6.6" fill="#fff" stroke="#0a0a0a" stroke-width="1.3" opacity="1"><title>Nicolás de la Cruz · 90'+1&#8242; · xG 0.20 · Shot On Target</title></circle><circle cx="134.2" cy="134.4" r="5.1" fill="#fff" stroke="#0a0a0a" stroke-width="1.3" opacity="1"><title>Federico Valverde · 90'+3&#8242; · xG 0.09 · Shot On Target</title></circle><circle cx="68.9" cy="244.4" r="6.8" fill="#fff" stroke="#0a0a0a" stroke-width="1.3" opacity="0.45"><title>Sebastián Cáceres · 90'+3&#8242; · xG 0.21 · Shot Off Target</title></circle><circle cx="95.1" cy="287.2" r="5.7" fill="#fff" stroke="#0a0a0a" stroke-width="1.3" opacity="0.45"><title>Federico Valverde · 90'+5&#8242; · xG 0.13 · Shot Blocked</title></circle><circle cx="170.6" cy="261.2" r="4.9" fill="#fff" stroke="#0a0a0a" stroke-width="1.3" opacity="0.45"><title>Guillermo Varela · 90'+6&#8242; · xG 0.07 · Shot Off Target</title></circle><circle cx="150.2" cy="109.2" r="4.7" fill="#fff" stroke="#0a0a0a" stroke-width="1.3" opacity="1"><title>Brian Rodríguez · 90'+6&#8242; · xG 0.06 · Shot On Target</title></circle><circle cx="109.8" cy="284.0" r="5.5" fill="#fff" stroke="#0a0a0a" stroke-width="1.3" opacity="0.45"><title>Juan Manuel Sanabria · 90'+8&#8242; · xG 0.12 · Shot Blocked</title></circle></svg></div>
+            <div class="legend">
+                <span class="k"><span class="dot" style="background:#0a0a0a"></span>Saudi Arabia (attacking &rarr;)</span>
+                <span class="k"><span class="dot" style="background:#fff; border: 1.5px solid #0a0a0a;"></span>Uruguay (attacking &larr;)</span>
+                <span class="k">size = xG · star = goal</span>
+            </div>
+        </div>
+        
+
+        
+        <div class="card">
+            <div class="card-title">Saudi Arabia &nbsp;·&nbsp; match stats &nbsp;·&nbsp; Uruguay</div>
+            
+            <div class="sb-row">
+                <span class="v l">33.2</span>
+                <span class="sb-track l"><span style="width: 33.2%"></span></span>
+                <span class="lab">Possession</span>
+                <span class="sb-track r"><span style="width: 66.8%"></span></span>
+                <span class="v">66.8</span>
+            </div>
+            
+            <div class="sb-row">
+                <span class="v l">7</span>
+                <span class="sb-track l"><span style="width: 20.6%"></span></span>
+                <span class="lab">Shots</span>
+                <span class="sb-track r"><span style="width: 79.4%"></span></span>
+                <span class="v">27</span>
+            </div>
+            
+            <div class="sb-row">
+                <span class="v l">3</span>
+                <span class="sb-track l"><span style="width: 23.1%"></span></span>
+                <span class="lab">On Target</span>
+                <span class="sb-track r"><span style="width: 76.9%"></span></span>
+                <span class="v">10</span>
+            </div>
+            
+            <div class="sb-row">
+                <span class="v l">4</span>
+                <span class="sb-track l"><span style="width: 22.2%"></span></span>
+                <span class="lab">Corners</span>
+                <span class="sb-track r"><span style="width: 77.8%"></span></span>
+                <span class="v">14</span>
+            </div>
+            
+            <div class="sb-row">
+                <span class="v l">11</span>
+                <span class="sb-track l"><span style="width: 64.7%"></span></span>
+                <span class="lab">Fouls</span>
+                <span class="sb-track r"><span style="width: 35.3%"></span></span>
+                <span class="v">6</span>
+            </div>
+            
+            <div class="sb-row">
+                <span class="v l">0</span>
+                <span class="sb-track l"><span style="width: 0.0%"></span></span>
+                <span class="lab">Offsides</span>
+                <span class="sb-track r"><span style="width: 100.0%"></span></span>
+                <span class="v">6</span>
+            </div>
+            
+            <div class="sb-row">
+                <span class="v l">9</span>
+                <span class="sb-track l"><span style="width: 81.8%"></span></span>
+                <span class="lab">Saves</span>
+                <span class="sb-track r"><span style="width: 18.2%"></span></span>
+                <span class="v">2</span>
+            </div>
+            
+            <div class="sb-row">
+                <span class="v l">1</span>
+                <span class="sb-track l"><span style="width: 100.0%"></span></span>
+                <span class="lab">Yellows</span>
+                <span class="sb-track r"><span style="width: 0.0%"></span></span>
+                <span class="v">0</span>
+            </div>
+            
+            <div class="sb-row">
+                <span class="v l">0</span>
+                <span class="sb-track l"><span style="width: 0%"></span></span>
+                <span class="lab">Reds</span>
+                <span class="sb-track r"><span style="width: 100%"></span></span>
+                <span class="v">0</span>
+            </div>
+            
+        </div>
+        
+
+        
+        <div class="card">
+            <div class="card-title">What the model expected</div>
+            <div class="chart"><svg viewBox="0 0 660 64" xmlns="http://www.w3.org/2000/svg" width="100%" role="img" aria-label="Pre-match win probabilities"><defs><clipPath id="rnd"><rect x="4" y="26" width="652" height="26" rx="13"/></clipPath></defs><g clip-path="url(#rnd)"><rect x="4.0" y="26" width="95.1" height="26" fill="#0a0a0a"/><text x="51.5" y="43" font-size="11" font-weight="700" font-family="Manrope,sans-serif" fill="#fff" text-anchor="middle">Saudi Arabia 15%</text><rect x="99.1" y="26" width="129.3" height="26" fill="#d9d9d9"/><text x="163.7" y="43" font-size="11" font-weight="700" font-family="Manrope,sans-serif" fill="#555" text-anchor="middle">draw 20%</text><rect x="228.4" y="26" width="427.5" height="26" fill="#f1f1f1"/><text x="442.1" y="43" font-size="11" font-weight="700" font-family="Manrope,sans-serif" fill="#555" text-anchor="middle">Uruguay 66%</text></g><line x1="99.1" y1="26" x2="99.1" y2="52" stroke="#fff" stroke-width="2"/><line x1="228.4" y1="26" x2="228.4" y2="52" stroke="#fff" stroke-width="2"/><path d="M163.7,23 l-5,-9 l10,0 Z" fill="#0a0a0a"/><text x="163.7" y="10" font-size="9.5" font-weight="800" font-family="Manrope,sans-serif" fill="#0a0a0a" text-anchor="middle">ACTUAL</text></svg></div>
+            <p class="narrative" style="margin-top: 0.8rem;">Pre-match Elo: Saudi Arabia 1700, Uruguay 1900. The model priced this Saudi Arabia <strong>15%</strong> / draw <strong>20%</strong> / Uruguay <strong>66%</strong>, most likely score 0–2. Reality had other plans. The result moves <strong>13 Elo points</strong> from Uruguay to Saudi Arabia — that flows straight into the next round of tournament simulations.</p>
+        </div>
+        
+
+        
+        <div class="card">
+            <div class="card-title">Timeline</div>
+            
+            <div class="tl-item">
+                <span class="tl-min">41'</span>
+                <span class="tl-text"><span class="tag goal">GOAL</span>Goal! Saudi Arabia 1, Uruguay 0. Abdulelah Al Amri (Saudi Arabia) right footed shot from very close range to the centre of the goal following a corner.</span>
+            </div>
+            
+            <div class="tl-item">
+                <span class="tl-min">44'</span>
+                <span class="tl-text"><span class="tag">YELLOW</span>Abdulelah Al Amri (Saudi Arabia) is shown the yellow card for a bad foul.</span>
+            </div>
+            
+            <div class="tl-item">
+                <span class="tl-min">45'</span>
+                <span class="tl-text"><span class="tag">SUB</span>Substitution, Uruguay. Juan Manuel Sanabria replaces Matías Viña.</span>
+            </div>
+            
+            <div class="tl-item">
+                <span class="tl-min">45'</span>
+                <span class="tl-text"><span class="tag">SUB</span>Substitution, Uruguay. Agustín Canobbio replaces Darwin Núñez.</span>
+            </div>
+            
+            <div class="tl-item">
+                <span class="tl-min">63'</span>
+                <span class="tl-text"><span class="tag">SUB</span>Substitution, Saudi Arabia. Nasser Al Dawsari replaces Musab Al Juwayr.</span>
+            </div>
+            
+            <div class="tl-item">
+                <span class="tl-min">72'</span>
+                <span class="tl-text"><span class="tag">SUB</span>Substitution, Uruguay. Nicolás de la Cruz replaces Manuel Ugarte.</span>
+            </div>
+            
+            <div class="tl-item">
+                <span class="tl-min">80'</span>
+                <span class="tl-text"><span class="tag goal">GOAL</span>Goal! Saudi Arabia 1, Uruguay 1. Maxi Araújo (Uruguay) left footed shot from the left side of the six yard box to the bottom left corner.</span>
+            </div>
+            
+            <div class="tl-item">
+                <span class="tl-min">81'</span>
+                <span class="tl-text"><span class="tag">SUB</span>Substitution, Uruguay. Brian Rodríguez replaces Maxi Araújo.</span>
+            </div>
+            
+            <div class="tl-item">
+                <span class="tl-min">81'</span>
+                <span class="tl-text"><span class="tag">SUB</span>Substitution, Saudi Arabia. Nawaf Bu Washl replaces Mohammed Abu Al Shamat.</span>
+            </div>
+            
+            <div class="tl-item">
+                <span class="tl-min">90'</span>
+                <span class="tl-text"><span class="tag">SUB</span>Substitution, Uruguay. Rodrigo Aguirre replaces Federico Viñas.</span>
+            </div>
+            
+            <div class="tl-item">
+                <span class="tl-min">90'+3'</span>
+                <span class="tl-text"><span class="tag">SUB</span>Substitution, Saudi Arabia. Abdullah Al Hamddan replaces Moteb Al Harbi.</span>
+            </div>
+            
+            <div class="tl-item">
+                <span class="tl-min">90'+3'</span>
+                <span class="tl-text"><span class="tag">SUB</span>Substitution, Saudi Arabia. Alaa Al Hejji replaces Feras Al Brikan.</span>
+            </div>
+            
+            <div class="tl-item">
+                <span class="tl-min">90'+3'</span>
+                <span class="tl-text"><span class="tag">SUB</span>Substitution, Saudi Arabia. Ali Lajami replaces Saud Abdulhamid.</span>
+            </div>
+            
+        </div>
+        
+
+        
+        <div class="card">
+            <div class="card-title">Lineups</div>
+            <div class="lineups">
+                
+                <div>
+                    <div class="lu-team">Saudi Arabia</div>
+                    <div class="lu-formation">4-4-2</div>
+                    <ul class="lu-list">
+                        
+                        <li><span class="j">21</span>Mohammed Al-Owais <span style="color:#bbb; font-size:0.66rem;">G</span></li>
+                        
+                        <li><span class="j">5</span>Hassan Al-Tambakti <span style="color:#bbb; font-size:0.66rem;">CD-L</span></li>
+                        
+                        <li><span class="j">4</span>Abdulelah Al-Amri <span style="color:#bbb; font-size:0.66rem;">CD-R</span></li>
+                        
+                        <li><span class="j">24</span>Moteb Al-Harbi <span style="color:#bbb; font-size:0.66rem;">LB</span></li>
+                        
+                        <li><span class="j">12</span>Saud Abdulhamid <span style="color:#bbb; font-size:0.66rem;">RB</span></li>
+                        
+                        <li><span class="j">15</span>Abdullah Al-Khaibari <span style="color:#bbb; font-size:0.66rem;">CM-L</span></li>
+                        
+                        <li><span class="j">23</span>Mohamed Kanno <span style="color:#bbb; font-size:0.66rem;">CM-R</span></li>
+                        
+                        <li><span class="j">10</span>Salem Al-Dawsari <span style="color:#bbb; font-size:0.66rem;">LM</span></li>
+                        
+                        <li><span class="j">26</span>Mohammed Abu Al-Shamat <span style="color:#bbb; font-size:0.66rem;">RM</span></li>
+                        
+                        <li><span class="j">7</span>Musab Al-Juwayr <span style="color:#bbb; font-size:0.66rem;">CF-L</span></li>
+                        
+                        <li><span class="j">9</span>Feras Al-Brikan <span style="color:#bbb; font-size:0.66rem;">CF-R</span></li>
+                        
+                    </ul>
+                    <div class="lu-subs"><strong>Subs:</strong> Nasser Al-Dawsari, Nawaf Boushal, Abdullah Al-Hamdan, Ala Al-Hajji, Ali Lajami</div>
+                </div>
+                
+                <div>
+                    <div class="lu-team">Uruguay</div>
+                    <div class="lu-formation">4-2-3-1</div>
+                    <ul class="lu-list">
+                        
+                        <li><span class="j">23</span>Fernando Muslera <span style="color:#bbb; font-size:0.66rem;">G</span></li>
+                        
+                        <li><span class="j">16</span>Mathías Olivera <span style="color:#bbb; font-size:0.66rem;">CD-L</span></li>
+                        
+                        <li><span class="j">3</span>Sebastián Cáceres <span style="color:#bbb; font-size:0.66rem;">CD-R</span></li>
+                        
+                        <li><span class="j">17</span>Matías Viña <span style="color:#bbb; font-size:0.66rem;">LB</span></li>
+                        
+                        <li><span class="j">13</span>Guillermo Varela <span style="color:#bbb; font-size:0.66rem;">RB</span></li>
+                        
+                        <li><span class="j">21</span>Federico Viñas <span style="color:#bbb; font-size:0.66rem;">AM</span></li>
+                        
+                        <li><span class="j">6</span>Rodrigo Bentancur <span style="color:#bbb; font-size:0.66rem;">LM</span></li>
+                        
+                        <li><span class="j">5</span>Manuel Ugarte <span style="color:#bbb; font-size:0.66rem;">RM</span></li>
+                        
+                        <li><span class="j">9</span>Darwin Núñez <span style="color:#bbb; font-size:0.66rem;">F</span></li>
+                        
+                        <li><span class="j">20</span>Maxi Araújo <span style="color:#bbb; font-size:0.66rem;">AM-L</span></li>
+                        
+                        <li><span class="j">8</span>Federico Valverde <span style="color:#bbb; font-size:0.66rem;">AM-R</span></li>
+                        
+                    </ul>
+                    <div class="lu-subs"><strong>Subs:</strong> Juan Manuel Sanabria, Agustín Canobbio, Nicolás de la Cruz, Brian Rodríguez, Rodrigo Aguirre</div>
+                </div>
+                
+            </div>
+        </div>
+        
+
+        <a class="backlink" href="../index.html">&larr; Fixtures, table &amp; predictions</a>
+        <p class="foot">Generated automatically from public match data. Stats: ESPN · Results: openfootball · xG: own naive model (distance + angle).</p>
+    </div>
+</body>
+</html>

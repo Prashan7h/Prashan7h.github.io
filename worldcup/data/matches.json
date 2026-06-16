@@ -928,12 +928,33 @@
    "team2": "Egypt",
    "group": "Group G",
    "ground": "Seattle",
-   "score": null,
-   "goals1": [],
-   "goals2": [],
+   "score": {
+    "ft": [
+     1,
+     1
+    ],
+    "ht": [
+     0,
+     1
+    ]
+   },
+   "goals1": [
+    {
+     "name": "Mohamed Hany",
+     "minute": "66",
+     "owngoal": true
+    }
+   ],
+   "goals2": [
+    {
+     "name": "Emam Ashour",
+     "minute": "19"
+    }
+   ],
    "espn_id": "760426",
-   "status": "live",
+   "status": "finished",
    "utc_date": "2026-06-15T19:00Z",
+   "attendance": 66775,
    "venue": "Lumen Field",
    "slug": "2026-06-15-belgium-vs-egypt"
   },
@@ -950,7 +971,7 @@
    "goals1": [],
    "goals2": [],
    "espn_id": "760427",
-   "status": "scheduled",
+   "status": "live",
    "utc_date": "2026-06-16T01:00Z",
    "venue": "SoFi Stadium",
    "slug": "2026-06-15-iran-vs-new-zealand"
@@ -1060,12 +1081,32 @@
    "team2": "Uruguay",
    "group": "Group H",
    "ground": "Miami (Miami Gardens)",
-   "score": null,
-   "goals1": [],
-   "goals2": [],
+   "score": {
+    "ft": [
+     1,
+     1
+    ],
+    "ht": [
+     1,
+     0
+    ]
+   },
+   "goals1": [
+    {
+     "name": "Abdulelah Al-Amri",
+     "minute": "41"
+    }
+   ],
+   "goals2": [
+    {
+     "name": "Maxi Araújo",
+     "minute": "80"
+    }
+   ],
    "espn_id": "760429",
-   "status": "scheduled",
+   "status": "finished",
    "utc_date": "2026-06-15T22:00Z",
+   "attendance": 62764,
    "venue": "Hard Rock Stadium",
    "slug": "2026-06-15-saudi-arabia-vs-uruguay"
   },
@@ -1391,8 +1432,10 @@
    "score": null,
    "goals1": [],
    "goals2": [],
-   "espn_id": null,
+   "espn_id": "760461",
    "status": "scheduled",
+   "utc_date": "2026-06-23T17:00Z",
+   "venue": "NRG Stadium",
    "slug": "2026-06-23-portugal-vs-uzbekistan"
   },
   {
@@ -1491,8 +1534,10 @@
    "score": null,
    "goals1": [],
    "goals2": [],
-   "espn_id": null,
+   "espn_id": "760458",
    "status": "scheduled",
+   "utc_date": "2026-06-23T20:00Z",
+   "venue": "Gillette Stadium",
    "slug": "2026-06-23-england-vs-ghana"
   },
   {
@@ -1507,8 +1552,10 @@
    "score": null,
    "goals1": [],
    "goals2": [],
-   "espn_id": null,
+   "espn_id": "760460",
    "status": "scheduled",
+   "utc_date": "2026-06-23T23:00Z",
+   "venue": "BMO Field",
    "slug": "2026-06-23-panama-vs-croatia"
   },
   {

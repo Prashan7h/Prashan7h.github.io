@@ -1,0 +1,953 @@
+{
+ "teams": [
+  {
+   "name": "Saudi Arabia",
+   "stats": {
+    "possessionPct": "33.2",
+    "totalShots": "7",
+    "shotsOnTarget": "3",
+    "wonCorners": "4",
+    "foulsCommitted": "11",
+    "offsides": "0",
+    "saves": "9",
+    "yellowCards": "1",
+    "redCards": "0"
+   }
+  },
+  {
+   "name": "Uruguay",
+   "stats": {
+    "possessionPct": "66.8",
+    "totalShots": "27",
+    "shotsOnTarget": "10",
+    "wonCorners": "14",
+    "foulsCommitted": "6",
+    "offsides": "6",
+    "saves": "2",
+    "yellowCards": "0",
+    "redCards": "0"
+   }
+  }
+ ],
+ "events": [
+  {
+   "type": "Kickoff",
+   "minute": "",
+   "team": null,
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "23'",
+   "team": "Uruguay",
+   "text": "Delay in match for a drinks break.",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "23'",
+   "team": "Saudi Arabia",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "27'",
+   "team": "Uruguay",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "27'",
+   "team": "Saudi Arabia",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Goal",
+   "minute": "41'",
+   "team": "Saudi Arabia",
+   "text": "Goal! Saudi Arabia 1, Uruguay 0. Abdulelah Al Amri (Saudi Arabia) right footed shot from very close range to the centre of the goal following a corner.",
+   "players": [
+    "Abdulelah Al-Amri"
+   ]
+  },
+  {
+   "type": "Yellow Card",
+   "minute": "44'",
+   "team": "Saudi Arabia",
+   "text": "Abdulelah Al Amri (Saudi Arabia) is shown the yellow card for a bad foul.",
+   "players": [
+    "Abdulelah Al-Amri"
+   ]
+  },
+  {
+   "type": "Halftime",
+   "minute": "45'+5'",
+   "team": null,
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Substitution",
+   "minute": "45'",
+   "team": "Uruguay",
+   "text": "Substitution, Uruguay. Juan Manuel Sanabria replaces Matías Viña.",
+   "players": [
+    "Juan Manuel Sanabria",
+    "Matías Viña"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "45'",
+   "team": "Uruguay",
+   "text": "Substitution, Uruguay. Agustín Canobbio replaces Darwin Núñez.",
+   "players": [
+    "Agustín Canobbio",
+    "Darwin Núñez"
+   ]
+  },
+  {
+   "type": "Start 2nd Half",
+   "minute": "45'",
+   "team": null,
+   "text": "Second Half begins Saudi Arabia 1, Uruguay 0.",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "61'",
+   "team": "Saudi Arabia",
+   "text": "Delay in match because of an injury Mohammed Al Owais (Saudi Arabia).",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "61'",
+   "team": "Uruguay",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "63'",
+   "team": "Saudi Arabia",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "63'",
+   "team": "Uruguay",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Substitution",
+   "minute": "63'",
+   "team": "Saudi Arabia",
+   "text": "Substitution, Saudi Arabia. Nasser Al Dawsari replaces Musab Al Juwayr.",
+   "players": [
+    "Nasser Al-Dawsari",
+    "Musab Al-Juwayr"
+   ]
+  },
+  {
+   "type": "Start Delay",
+   "minute": "69'",
+   "team": "Uruguay",
+   "text": "Delay in match for a drinks break.",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "69'",
+   "team": "Saudi Arabia",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "72'",
+   "team": "Uruguay",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "72'",
+   "team": "Saudi Arabia",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Substitution",
+   "minute": "72'",
+   "team": "Uruguay",
+   "text": "Substitution, Uruguay. Nicolás de la Cruz replaces Manuel Ugarte.",
+   "players": [
+    "Nicolás de la Cruz",
+    "Manuel Ugarte"
+   ]
+  },
+  {
+   "type": "Goal - Volley",
+   "minute": "80'",
+   "team": "Uruguay",
+   "text": "Goal! Saudi Arabia 1, Uruguay 1. Maxi Araújo (Uruguay) left footed shot from the left side of the six yard box to the bottom left corner.",
+   "players": [
+    "Maxi Araújo"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "81'",
+   "team": "Uruguay",
+   "text": "Substitution, Uruguay. Brian Rodríguez replaces Maxi Araújo.",
+   "players": [
+    "Brian Rodríguez",
+    "Maxi Araújo"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "81'",
+   "team": "Saudi Arabia",
+   "text": "Substitution, Saudi Arabia. Nawaf Bu Washl replaces Mohammed Abu Al Shamat.",
+   "players": [
+    "Nawaf Boushal",
+    "Mohammed Abu Al-Shamat"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "90'",
+   "team": "Uruguay",
+   "text": "Substitution, Uruguay. Rodrigo Aguirre replaces Federico Viñas.",
+   "players": [
+    "Rodrigo Aguirre",
+    "Federico Viñas"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "90'+3'",
+   "team": "Saudi Arabia",
+   "text": "Substitution, Saudi Arabia. Abdullah Al Hamddan replaces Moteb Al Harbi.",
+   "players": [
+    "Abdullah Al-Hamdan",
+    "Moteb Al-Harbi"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "90'+3'",
+   "team": "Saudi Arabia",
+   "text": "Substitution, Saudi Arabia. Alaa Al Hejji replaces Feras Al Brikan.",
+   "players": [
+    "Ala Al-Hajji",
+    "Feras Al-Brikan"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "90'+3'",
+   "team": "Saudi Arabia",
+   "text": "Substitution, Saudi Arabia. Ali Lajami replaces Saud Abdulhamid.",
+   "players": [
+    "Ali Lajami",
+    "Saud Abdulhamid"
+   ]
+  },
+  {
+   "type": "End Regular Time",
+   "minute": "90'+9'",
+   "team": null,
+   "text": "",
+   "players": []
+  }
+ ],
+ "shots": [
+  {
+   "minute": "5",
+   "seconds": 251.0,
+   "team": "Uruguay",
+   "player": "Maxi Araújo",
+   "type": "Shot On Target",
+   "x": 81.3,
+   "y": 63.8,
+   "goal": false,
+   "xg": 0.112,
+   "text": "Attempt saved. Maxi Araújo (Uruguay) left footed shot from outside the box is saved in the centre of the goal by Mohammed Al Owais (Saudi Arabia). Assisted by Matías Viña."
+  },
+  {
+   "minute": "5",
+   "seconds": 299.0,
+   "team": "Uruguay",
+   "player": "Federico Viñas",
+   "type": "Shot Blocked",
+   "x": 90.8,
+   "y": 47.0,
+   "goal": false,
+   "xg": 0.276,
+   "text": "Attempt blocked. Federico Viñas (Uruguay) header from the centre of the box is blocked. Assisted by Maxi Araújo with a cross."
+  },
+  {
+   "minute": "18",
+   "seconds": 1039.0,
+   "team": "Saudi Arabia",
+   "player": "Salem Al Dawsari",
+   "type": "Shot Off Target",
+   "x": 78.1,
+   "y": 73.6,
+   "goal": false,
+   "xg": 0.061,
+   "text": "Attempt missed. Salem Al Dawsari (Saudi Arabia) right footed shot from outside the box is close, but misses to the right."
+  },
+  {
+   "minute": "21",
+   "seconds": 1202.0,
+   "team": "Uruguay",
+   "player": "Rodrigo Bentancur",
+   "type": "Shot Off Target",
+   "x": 92.2,
+   "y": 52.6,
+   "goal": false,
+   "xg": 0.335,
+   "text": "Attempt missed. Rodrigo Bentancur (Uruguay) header from the centre of the box misses to the right following a set piece situation."
+  },
+  {
+   "minute": "38",
+   "seconds": 2234.0,
+   "team": "Saudi Arabia",
+   "player": "Abdulelah Al Amri",
+   "type": "Shot On Target",
+   "x": 89.6,
+   "y": 54.1,
+   "goal": false,
+   "xg": 0.355,
+   "text": "Attempt saved. Abdulelah Al Amri (Saudi Arabia) right footed shot from the centre of the box is saved in the top centre of the goal by Fernando Muslera (Uruguay)."
+  },
+  {
+   "minute": "39",
+   "seconds": 2302.0,
+   "team": "Saudi Arabia",
+   "player": "Abdullah Al Khaibari",
+   "type": "Shot Off Target",
+   "x": 75.4,
+   "y": 69.3,
+   "goal": false,
+   "xg": 0.059,
+   "text": "Attempt missed. Abdullah Al Khaibari (Saudi Arabia) right footed shot from outside the box misses to the right."
+  },
+  {
+   "minute": "40",
+   "seconds": 2399.0,
+   "team": "Saudi Arabia",
+   "player": "Mohamed Kanno",
+   "type": "Shot On Target",
+   "x": 90.6,
+   "y": 51.9,
+   "goal": false,
+   "xg": 0.276,
+   "text": "Attempt saved. Mohamed Kanno (Saudi Arabia) header from the centre of the box is saved in the centre of the goal by Fernando Muslera (Uruguay). Assisted by Musab Al Juwayr with a cross."
+  },
+  {
+   "minute": "41",
+   "seconds": 2403.0,
+   "team": "Saudi Arabia",
+   "player": "Abdulelah Al Amri",
+   "type": "Goal",
+   "x": 96.8,
+   "y": 49.9,
+   "goal": true,
+   "xg": 0.908,
+   "text": "Goal! Saudi Arabia 1, Uruguay 0. Abdulelah Al Amri (Saudi Arabia) right footed shot from very close range to the centre of the goal following a corner."
+  },
+  {
+   "minute": "45",
+   "seconds": 2663.0,
+   "team": "Uruguay",
+   "player": "Federico Viñas",
+   "type": "Shot On Target",
+   "x": 91.9,
+   "y": 42.4,
+   "goal": false,
+   "xg": 0.251,
+   "text": "Attempt saved. Federico Viñas (Uruguay) header from the centre of the box is saved in the top left corner by Mohammed Al Owais (Saudi Arabia). Assisted by Maxi Araújo with a cross."
+  },
+  {
+   "minute": "45'+1",
+   "seconds": 2700.0,
+   "team": "Uruguay",
+   "player": "Darwin Núñez",
+   "type": "Shot Off Target",
+   "x": 95.2,
+   "y": 55.6,
+   "goal": false,
+   "xg": 0.406,
+   "text": "Attempt missed. Darwin Núñez (Uruguay) header from the left side of the six yard box misses to the right. Assisted by Maxi Araújo with a cross following a corner."
+  },
+  {
+   "minute": "46",
+   "seconds": 2750.0,
+   "team": "Uruguay",
+   "player": "Federico Viñas",
+   "type": "Shot On Target",
+   "x": 88.9,
+   "y": 44.4,
+   "goal": false,
+   "xg": 0.202,
+   "text": "Attempt saved. Federico Viñas (Uruguay) header from the centre of the box is saved in the bottom left corner by Mohammed Al Owais (Saudi Arabia). Assisted by Guillermo Varela with a cross."
+  },
+  {
+   "minute": "50",
+   "seconds": 2986.0,
+   "team": "Uruguay",
+   "player": "Federico Viñas",
+   "type": "Shot Off Target",
+   "x": 91.3,
+   "y": 52.5,
+   "goal": false,
+   "xg": 0.298,
+   "text": "Attempt missed. Federico Viñas (Uruguay) header from the centre of the box is close, but misses to the left. Assisted by Maxi Araújo with a cross following a corner."
+  },
+  {
+   "minute": "53",
+   "seconds": 3180.0,
+   "team": "Uruguay",
+   "player": "Mathías Olivera",
+   "type": "Shot Blocked",
+   "x": 90.1,
+   "y": 51.7,
+   "goal": false,
+   "xg": 0.259,
+   "text": "Attempt blocked. Mathías Olivera (Uruguay) header from the centre of the box is blocked. Assisted by Maxi Araújo with a cross."
+  },
+  {
+   "minute": "54",
+   "seconds": 3182.0,
+   "team": "Uruguay",
+   "player": "Manuel Ugarte",
+   "type": "Shot Off Target",
+   "x": 76.3,
+   "y": 56.4,
+   "goal": false,
+   "xg": 0.085,
+   "text": "Attempt missed. Manuel Ugarte (Uruguay) right footed shot from outside the box is close, but misses to the left following a corner."
+  },
+  {
+   "minute": "59",
+   "seconds": 3509.0,
+   "team": "Uruguay",
+   "player": "Agustín Canobbio",
+   "type": "Shot Off Target",
+   "x": 89.7,
+   "y": 37.6,
+   "goal": false,
+   "xg": 0.233,
+   "text": "Attempt missed. Agustín Canobbio (Uruguay) with an attempt from the centre of the box is high and wide to the right. Assisted by Guillermo Varela with a cross."
+  },
+  {
+   "minute": "60",
+   "seconds": 3587.0,
+   "team": "Uruguay",
+   "player": "Manuel Ugarte",
+   "type": "Shot On Target",
+   "x": 75.2,
+   "y": 37.8,
+   "goal": false,
+   "xg": 0.07,
+   "text": "Attempt saved. Manuel Ugarte (Uruguay) right footed shot from outside the box is saved in the bottom left corner by Mohammed Al Owais (Saudi Arabia). Assisted by Rodrigo Bentancur."
+  },
+  {
+   "minute": "60",
+   "seconds": 3591.0,
+   "team": "Uruguay",
+   "player": "Juan Manuel Sanabria",
+   "type": "Shot Off Target",
+   "x": 90.2,
+   "y": 64.0,
+   "goal": false,
+   "xg": 0.215,
+   "text": "Attempt missed. Juan Manuel Sanabria (Uruguay) left footed shot from the left side of the box misses to the left."
+  },
+  {
+   "minute": "67",
+   "seconds": 3983.0,
+   "team": "Uruguay",
+   "player": "Federico Valverde",
+   "type": "Shot On Target",
+   "x": 94.4,
+   "y": 85.2,
+   "goal": false,
+   "xg": 0.058,
+   "text": "Attempt saved. Federico Valverde (Uruguay) right footed shot from a difficult angle and long range on the left is saved in the top left corner by Mohammed Al Owais (Saudi Arabia)."
+  },
+  {
+   "minute": "67",
+   "seconds": 3987.0,
+   "team": "Uruguay",
+   "player": "Guillermo Varela",
+   "type": "Shot Blocked",
+   "x": 79.6,
+   "y": 37.6,
+   "goal": false,
+   "xg": 0.102,
+   "text": "Attempt blocked. Guillermo Varela (Uruguay) right footed shot from outside the box is blocked."
+  },
+  {
+   "minute": "79",
+   "seconds": 4737.0,
+   "team": "Uruguay",
+   "player": "Nicolás de la Cruz",
+   "type": "Shot Blocked",
+   "x": 77.5,
+   "y": 39.9,
+   "goal": false,
+   "xg": 0.089,
+   "text": "Attempt blocked. Nicolás de la Cruz (Uruguay) left footed shot from outside the box is blocked. Assisted by Rodrigo Bentancur."
+  },
+  {
+   "minute": "80",
+   "seconds": 4763.0,
+   "team": "Uruguay",
+   "player": "Federico Viñas",
+   "type": "Shot On Target",
+   "x": 92.3,
+   "y": 48.8,
+   "goal": false,
+   "xg": 0.349,
+   "text": "Attempt saved. Federico Viñas (Uruguay) header from the centre of the box is saved in the bottom left corner by Mohammed Al Owais (Saudi Arabia). Assisted by Mathías Olivera with a cross."
+  },
+  {
+   "minute": "80",
+   "seconds": 4767.0,
+   "team": "Uruguay",
+   "player": "Maxi Araújo",
+   "type": "Goal - Volley",
+   "x": 95.9,
+   "y": 62.3,
+   "goal": true,
+   "xg": 0.283,
+   "text": "Goal! Saudi Arabia 1, Uruguay 1. Maxi Araújo (Uruguay) left footed shot from the left side of the six yard box to the bottom left corner."
+  },
+  {
+   "minute": "82",
+   "seconds": 4911.0,
+   "team": "Uruguay",
+   "player": "Juan Manuel Sanabria",
+   "type": "Shot Blocked",
+   "x": 73.5,
+   "y": 69.4,
+   "goal": false,
+   "xg": 0.05,
+   "text": "Attempt blocked. Juan Manuel Sanabria (Uruguay) left footed shot from outside the box is blocked. Assisted by Mathías Olivera."
+  },
+  {
+   "minute": "83",
+   "seconds": 4947.0,
+   "team": "Uruguay",
+   "player": "Sebastián Cáceres",
+   "type": "Shot Off Target",
+   "x": 92.9,
+   "y": 45.6,
+   "goal": false,
+   "xg": 0.341,
+   "text": "Attempt missed. Sebastián Cáceres (Uruguay) header from the centre of the box is just a bit too high. Assisted by Nicolás de la Cruz with a cross following a corner."
+  },
+  {
+   "minute": "83",
+   "seconds": 4978.0,
+   "team": "Uruguay",
+   "player": "Brian Rodríguez",
+   "type": "Shot Off Target",
+   "x": 79.2,
+   "y": 74.5,
+   "goal": false,
+   "xg": 0.063,
+   "text": "Attempt missed. Brian Rodríguez (Uruguay) right footed shot from outside the box is close, but misses to the right. Assisted by Nicolás de la Cruz."
+  },
+  {
+   "minute": "87",
+   "seconds": 5174.0,
+   "team": "Saudi Arabia",
+   "player": "Mohamed Kanno",
+   "type": "Shot Blocked",
+   "x": 73.4,
+   "y": 42.1,
+   "goal": false,
+   "xg": 0.064,
+   "text": "Attempt blocked. Mohamed Kanno (Saudi Arabia) right footed shot from outside the box is blocked."
+  },
+  {
+   "minute": "87",
+   "seconds": 5178.0,
+   "team": "Saudi Arabia",
+   "player": "Saud Abdulhamid",
+   "type": "Shot Off Target",
+   "x": 83.1,
+   "y": 36.0,
+   "goal": false,
+   "xg": 0.129,
+   "text": "Attempt missed. Saud Abdulhamid (Saudi Arabia) right footed shot from the right side of the box is too high."
+  },
+  {
+   "minute": "90'+1",
+   "seconds": 5400.0,
+   "team": "Uruguay",
+   "player": "Nicolás de la Cruz",
+   "type": "Shot On Target",
+   "x": 85.6,
+   "y": 58.1,
+   "goal": false,
+   "xg": 0.202,
+   "text": "Attempt saved. Nicolás de la Cruz (Uruguay) left footed shot from the centre of the box is saved in the centre of the goal by Mohammed Al Owais (Saudi Arabia). Assisted by Juan Manuel Sanabria."
+  },
+  {
+   "minute": "90'+3",
+   "seconds": 5400.0,
+   "team": "Uruguay",
+   "player": "Federico Valverde",
+   "type": "Shot On Target",
+   "x": 80.6,
+   "y": 68.9,
+   "goal": false,
+   "xg": 0.088,
+   "text": "Attempt saved. Federico Valverde (Uruguay) right footed shot from outside the box is saved in the bottom right corner by Mohammed Al Owais (Saudi Arabia). Assisted by Brian Rodríguez."
+  },
+  {
+   "minute": "90'+3",
+   "seconds": 5400.0,
+   "team": "Uruguay",
+   "player": "Sebastián Cáceres",
+   "type": "Shot Off Target",
+   "x": 90.8,
+   "y": 41.4,
+   "goal": false,
+   "xg": 0.212,
+   "text": "Attempt missed. Sebastián Cáceres (Uruguay) header from the centre of the box is close, but misses to the right. Assisted by Nicolás de la Cruz with a cross following a corner."
+  },
+  {
+   "minute": "90'+5",
+   "seconds": 5400.0,
+   "team": "Uruguay",
+   "player": "Federico Valverde",
+   "type": "Shot Blocked",
+   "x": 86.7,
+   "y": 30.7,
+   "goal": false,
+   "xg": 0.128,
+   "text": "Attempt blocked. Federico Valverde (Uruguay) right footed shot from the right side of the box is blocked. Assisted by Nicolás de la Cruz."
+  },
+  {
+   "minute": "90'+6",
+   "seconds": 5400.0,
+   "team": "Uruguay",
+   "player": "Guillermo Varela",
+   "type": "Shot Off Target",
+   "x": 74.9,
+   "y": 37.2,
+   "goal": false,
+   "xg": 0.067,
+   "text": "Attempt missed. Guillermo Varela (Uruguay) right footed shot from outside the box misses to the left following a corner."
+  },
+  {
+   "minute": "90'+6",
+   "seconds": 5400.0,
+   "team": "Uruguay",
+   "player": "Brian Rodríguez",
+   "type": "Shot On Target",
+   "x": 78.1,
+   "y": 75.2,
+   "goal": false,
+   "xg": 0.057,
+   "text": "Attempt saved. Brian Rodríguez (Uruguay) right footed shot from outside the box is saved in the bottom left corner by Mohammed Al Owais (Saudi Arabia). Assisted by Juan Manuel Sanabria."
+  },
+  {
+   "minute": "90'+8",
+   "seconds": 5400.0,
+   "team": "Uruguay",
+   "player": "Juan Manuel Sanabria",
+   "type": "Shot Blocked",
+   "x": 84.4,
+   "y": 31.5,
+   "goal": false,
+   "xg": 0.116,
+   "text": "Attempt blocked. Juan Manuel Sanabria (Uruguay) right footed shot from the right side of the box is blocked."
+  }
+ ],
+ "lineups": [
+  {
+   "team": "Saudi Arabia",
+   "formation": "4-4-2",
+   "starters": [
+    {
+     "name": "Mohammed Al-Owais",
+     "jersey": "21",
+     "position": "G"
+    },
+    {
+     "name": "Hassan Al-Tambakti",
+     "jersey": "5",
+     "position": "CD-L"
+    },
+    {
+     "name": "Abdulelah Al-Amri",
+     "jersey": "4",
+     "position": "CD-R"
+    },
+    {
+     "name": "Moteb Al-Harbi",
+     "jersey": "24",
+     "position": "LB"
+    },
+    {
+     "name": "Saud Abdulhamid",
+     "jersey": "12",
+     "position": "RB"
+    },
+    {
+     "name": "Abdullah Al-Khaibari",
+     "jersey": "15",
+     "position": "CM-L"
+    },
+    {
+     "name": "Mohamed Kanno",
+     "jersey": "23",
+     "position": "CM-R"
+    },
+    {
+     "name": "Salem Al-Dawsari",
+     "jersey": "10",
+     "position": "LM"
+    },
+    {
+     "name": "Mohammed Abu Al-Shamat",
+     "jersey": "26",
+     "position": "RM"
+    },
+    {
+     "name": "Musab Al-Juwayr",
+     "jersey": "7",
+     "position": "CF-L"
+    },
+    {
+     "name": "Feras Al-Brikan",
+     "jersey": "9",
+     "position": "CF-R"
+    }
+   ],
+   "subs": [
+    {
+     "name": "Jehad Thakri",
+     "jersey": "25",
+     "position": "SUB"
+    },
+    {
+     "name": "Nawaf Al-Aqidi",
+     "jersey": "1",
+     "position": "SUB"
+    },
+    {
+     "name": "Aiman Yahya",
+     "jersey": "8",
+     "position": "SUB"
+    },
+    {
+     "name": "Khalid Al-Ghannam",
+     "jersey": "17",
+     "position": "SUB"
+    },
+    {
+     "name": "Ziyad Al-Johani",
+     "jersey": "16",
+     "position": "SUB"
+    },
+    {
+     "name": "Ali Lajami",
+     "jersey": "3",
+     "position": "SUB"
+    },
+    {
+     "name": "Abdullah Al-Hamdan",
+     "jersey": "19",
+     "position": "SUB"
+    },
+    {
+     "name": "Nasser Al-Dawsari",
+     "jersey": "6",
+     "position": "SUB"
+    },
+    {
+     "name": "Ali Majrashi",
+     "jersey": "2",
+     "position": "SUB"
+    },
+    {
+     "name": "Ahmed Al-Kassar",
+     "jersey": "22",
+     "position": "SUB"
+    },
+    {
+     "name": "Ala Al-Hajji",
+     "jersey": "18",
+     "position": "SUB"
+    },
+    {
+     "name": "Nawaf Boushal",
+     "jersey": "13",
+     "position": "SUB"
+    },
+    {
+     "name": "Sultan Mandash",
+     "jersey": "20",
+     "position": "SUB"
+    },
+    {
+     "name": "Hassan Kadish",
+     "jersey": "14",
+     "position": "SUB"
+    },
+    {
+     "name": "Saleh Al-Shehri",
+     "jersey": "11",
+     "position": "SUB"
+    }
+   ]
+  },
+  {
+   "team": "Uruguay",
+   "formation": "4-2-3-1",
+   "starters": [
+    {
+     "name": "Fernando Muslera",
+     "jersey": "23",
+     "position": "G"
+    },
+    {
+     "name": "Mathías Olivera",
+     "jersey": "16",
+     "position": "CD-L"
+    },
+    {
+     "name": "Sebastián Cáceres",
+     "jersey": "3",
+     "position": "CD-R"
+    },
+    {
+     "name": "Matías Viña",
+     "jersey": "17",
+     "position": "LB"
+    },
+    {
+     "name": "Guillermo Varela",
+     "jersey": "13",
+     "position": "RB"
+    },
+    {
+     "name": "Federico Viñas",
+     "jersey": "21",
+     "position": "AM"
+    },
+    {
+     "name": "Rodrigo Bentancur",
+     "jersey": "6",
+     "position": "LM"
+    },
+    {
+     "name": "Manuel Ugarte",
+     "jersey": "5",
+     "position": "RM"
+    },
+    {
+     "name": "Darwin Núñez",
+     "jersey": "9",
+     "position": "F"
+    },
+    {
+     "name": "Maxi Araújo",
+     "jersey": "20",
+     "position": "AM-L"
+    },
+    {
+     "name": "Federico Valverde",
+     "jersey": "8",
+     "position": "AM-R"
+    }
+   ],
+   "subs": [
+    {
+     "name": "Nicolás de la Cruz",
+     "jersey": "7",
+     "position": "SUB"
+    },
+    {
+     "name": "Emiliano Martínez",
+     "jersey": "15",
+     "position": "SUB"
+    },
+    {
+     "name": "Joaquín Piquerez",
+     "jersey": "22",
+     "position": "SUB"
+    },
+    {
+     "name": "Rodrigo Aguirre",
+     "jersey": "19",
+     "position": "SUB"
+    },
+    {
+     "name": "Juan Manuel Sanabria",
+     "jersey": "25",
+     "position": "SUB"
+    },
+    {
+     "name": "Agustín Canobbio",
+     "jersey": "14",
+     "position": "SUB"
+    },
+    {
+     "name": "Santiago Mele",
+     "jersey": "12",
+     "position": "SUB"
+    },
+    {
+     "name": "Sergio Rochet",
+     "jersey": "1",
+     "position": "SUB"
+    },
+    {
+     "name": "Facundo Pellistri",
+     "jersey": "11",
+     "position": "SUB"
+    },
+    {
+     "name": "Rodrigo Zalazar",
+     "jersey": "26",
+     "position": "SUB"
+    },
+    {
+     "name": "Brian Rodríguez",
+     "jersey": "18",
+     "position": "SUB"
+    },
+    {
+     "name": "Santiago Bueno",
+     "jersey": "24",
+     "position": "SUB"
+    },
+    {
+     "name": "José María Giménez",
+     "jersey": "2",
+     "position": "SUB"
+    }
+   ]
+  }
+ ],
+ "attendance": 62764,
+ "venue": "Hard Rock Stadium, Miami Gardens, Florida, USA"
+}
