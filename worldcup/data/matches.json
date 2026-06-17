@@ -1549,11 +1549,30 @@
    "team2": "DR Congo",
    "group": "Group K",
    "ground": "Houston",
-   "score": null,
-   "goals1": [],
-   "goals2": [],
+   "score": {
+    "ft": [
+     1,
+     1
+    ],
+    "ht": [
+     1,
+     1
+    ]
+   },
+   "goals1": [
+    {
+     "name": "João Neves",
+     "minute": "6"
+    }
+   ],
+   "goals2": [
+    {
+     "name": "Yoane Wissa",
+     "minute": "45+5"
+    }
+   ],
    "espn_id": null,
-   "status": "scheduled",
+   "status": "finished",
    "slug": "2026-06-17-portugal-vs-dr-congo"
   },
   {
@@ -1653,7 +1672,7 @@
    "goals1": [],
    "goals2": [],
    "espn_id": "760437",
-   "status": "scheduled",
+   "status": "live",
    "utc_date": "2026-06-17T20:00Z",
    "venue": "AT&T Stadium",
    "slug": "2026-06-17-england-vs-croatia"
