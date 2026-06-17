@@ -1,0 +1,763 @@
+{
+ "teams": [
+  {
+   "name": "Argentina",
+   "stats": {
+    "possessionPct": "47.9",
+    "totalShots": "10",
+    "shotsOnTarget": "6",
+    "wonCorners": "2",
+    "foulsCommitted": "13",
+    "offsides": "3",
+    "saves": "0",
+    "yellowCards": "0",
+    "redCards": "0"
+   }
+  },
+  {
+   "name": "Algeria",
+   "stats": {
+    "possessionPct": "52.1",
+    "totalShots": "7",
+    "shotsOnTarget": "1",
+    "wonCorners": "2",
+    "foulsCommitted": "8",
+    "offsides": "1",
+    "saves": "3",
+    "yellowCards": "0",
+    "redCards": "0"
+   }
+  }
+ ],
+ "events": [
+  {
+   "type": "Kickoff",
+   "minute": "",
+   "team": null,
+   "text": "First Half begins.",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "9'",
+   "team": "Algeria",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "9'",
+   "team": "Algeria",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Goal",
+   "minute": "17'",
+   "team": "Argentina",
+   "text": "Goal! Argentina 1, Algeria 0. Lionel Messi (Argentina) left footed shot from outside the box to the top right corner. Assisted by Rodrigo De Paul.",
+   "players": [
+    "Lionel Messi",
+    "Rodrigo De Paul"
+   ]
+  },
+  {
+   "type": "Start Delay",
+   "minute": "25'",
+   "team": "Argentina",
+   "text": "Delay in match for a drinks break.",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "25'",
+   "team": "Algeria",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "28'",
+   "team": "Argentina",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "28'",
+   "team": "Algeria",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Halftime",
+   "minute": "45'+5'",
+   "team": null,
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Substitution",
+   "minute": "45'",
+   "team": "Argentina",
+   "text": "Substitution, Argentina. Nahuel Molina replaces Gonzalo Montiel.",
+   "players": [
+    "Nahuel Molina",
+    "Gonzalo Montiel"
+   ]
+  },
+  {
+   "type": "Start 2nd Half",
+   "minute": "45'",
+   "team": null,
+   "text": "Second Half begins Argentina 1, Algeria 0.",
+   "players": []
+  },
+  {
+   "type": "Substitution",
+   "minute": "55'",
+   "team": "Argentina",
+   "text": "Substitution, Argentina. Nico González replaces Thiago Almada.",
+   "players": [
+    "Nico González",
+    "Thiago Almada"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "55'",
+   "team": "Argentina",
+   "text": "Substitution, Argentina. Julián Alvarez replaces Lautaro Martínez.",
+   "players": [
+    "Julián Álvarez",
+    "Lautaro Martínez"
+   ]
+  },
+  {
+   "type": "Goal",
+   "minute": "60'",
+   "team": "Argentina",
+   "text": "Goal! Argentina 2, Algeria 0. Lionel Messi (Argentina) right footed shot from the centre of the box to the bottom right corner.",
+   "players": [
+    "Lionel Messi"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "64'",
+   "team": "Algeria",
+   "text": "Substitution, Algeria. Houssem Aouar replaces Hicham Boudaoui.",
+   "players": [
+    "Houssem Aouar",
+    "Hicham Boudaoui"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "64'",
+   "team": "Algeria",
+   "text": "Substitution, Algeria. Mohammed Amoura replaces Amine Gouiri.",
+   "players": [
+    "Mohamed Amoura",
+    "Amine Gouiri"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "64'",
+   "team": "Algeria",
+   "text": "Substitution, Algeria. Riyad Mahrez replaces Anis Hadj Moussa.",
+   "players": [
+    "Riyad Mahrez",
+    "Anis Hadj Moussa"
+   ]
+  },
+  {
+   "type": "Start Delay",
+   "minute": "69'",
+   "team": "Argentina",
+   "text": "Delay in match for a drinks break.",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "69'",
+   "team": "Algeria",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "71'",
+   "team": "Argentina",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "71'",
+   "team": "Algeria",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Goal",
+   "minute": "76'",
+   "team": "Argentina",
+   "text": "Goal! Argentina 3, Algeria 0. Lionel Messi (Argentina) left footed shot from the centre of the box to the bottom left corner. Assisted by Nico González.",
+   "players": [
+    "Lionel Messi",
+    "Nico González"
+   ]
+  },
+  {
+   "type": "Start Delay",
+   "minute": "78'",
+   "team": "Algeria",
+   "text": "Delay in match because of an injury Ibrahim Maza (Algeria).",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "78'",
+   "team": "Argentina",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "79'",
+   "team": "Algeria",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "79'",
+   "team": "Argentina",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Substitution",
+   "minute": "80'",
+   "team": "Argentina",
+   "text": "Substitution, Argentina. Nico Paz replaces Lionel Messi.",
+   "players": [
+    "Nico Paz",
+    "Lionel Messi"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "80'",
+   "team": "Argentina",
+   "text": "Substitution, Argentina. Nicolás Otamendi replaces Cristian Romero.",
+   "players": [
+    "Nicolás Otamendi",
+    "Cristian Romero"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "81'",
+   "team": "Algeria",
+   "text": "Substitution, Algeria. Adil Boulbina replaces Nabil Bentaleb.",
+   "players": [
+    "Adil Boulbina",
+    "Nabil Bentaleb"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "82'",
+   "team": "Algeria",
+   "text": "Substitution, Algeria. Ramiz Zerrouki replaces Ibrahim Maza.",
+   "players": [
+    "Ramiz Zerrouki",
+    "Ibrahim Maza"
+   ]
+  },
+  {
+   "type": "End Regular Time",
+   "minute": "90'+7'",
+   "team": null,
+   "text": "",
+   "players": []
+  }
+ ],
+ "shots": [
+  {
+   "minute": "17",
+   "seconds": 999.0,
+   "team": "Argentina",
+   "player": "Lionel Messi",
+   "type": "Goal",
+   "x": 79.3,
+   "y": 55.6,
+   "goal": true,
+   "xg": 0.115,
+   "text": "Goal! Argentina 1, Algeria 0. Lionel Messi (Argentina) left footed shot from outside the box to the top right corner. Assisted by Rodrigo De Paul."
+  },
+  {
+   "minute": "41",
+   "seconds": 2427.0,
+   "team": "Algeria",
+   "player": "Farès Chaïbi",
+   "type": "Shot Off Target",
+   "x": 89.2,
+   "y": 57.9,
+   "goal": false,
+   "xg": 0.189,
+   "text": "Attempt missed. Farès Chaïbi (Algeria) header from the centre of the box misses to the left. Assisted by Hicham Boudaoui with a cross following a corner."
+  },
+  {
+   "minute": "42",
+   "seconds": 2483.0,
+   "team": "Argentina",
+   "player": "Thiago Almada",
+   "type": "Shot Off Target",
+   "x": 75.5,
+   "y": 68.7,
+   "goal": false,
+   "xg": 0.06,
+   "text": "Attempt missed. Thiago Almada (Argentina) right footed shot from outside the box is high and wide to the right. Assisted by Enzo Fernández."
+  },
+  {
+   "minute": "44",
+   "seconds": 2595.0,
+   "team": "Algeria",
+   "player": "Farès Chaïbi",
+   "type": "Shot Off Target",
+   "x": 74.0,
+   "y": 51.7,
+   "goal": false,
+   "xg": 0.071,
+   "text": "Attempt missed. Farès Chaïbi (Algeria) right footed shot from outside the box is too high. Assisted by Aïssa Mandi."
+  },
+  {
+   "minute": "45",
+   "seconds": 2666.0,
+   "team": "Algeria",
+   "player": "Farès Chaïbi",
+   "type": "Shot Off Target",
+   "x": 96.8,
+   "y": 24.6,
+   "goal": false,
+   "xg": 0.096,
+   "text": "Attempt missed. Farès Chaïbi (Algeria) right footed shot from a difficult angle on the right is close, but misses to the right. Assisted by Anis Hadj Moussa."
+  },
+  {
+   "minute": "45'+4",
+   "seconds": 2700.0,
+   "team": "Algeria",
+   "player": "Anis Hadj Moussa",
+   "type": "Shot Blocked",
+   "x": 85.5,
+   "y": 31.9,
+   "goal": false,
+   "xg": 0.127,
+   "text": "Attempt blocked. Anis Hadj Moussa (Algeria) left footed shot from the right side of the box is blocked. Assisted by Rafik Belghali."
+  },
+  {
+   "minute": "45'+5",
+   "seconds": 2700.0,
+   "team": "Argentina",
+   "player": "Alexis Mac Allister",
+   "type": "Shot Off Target",
+   "x": 88.8,
+   "y": 53.8,
+   "goal": false,
+   "xg": 0.212,
+   "text": "Attempt missed. Alexis Mac Allister (Argentina) header from the centre of the box is too high. Assisted by Lionel Messi with a cross following a set piece situation."
+  },
+  {
+   "minute": "51",
+   "seconds": 3010.0,
+   "team": "Argentina",
+   "player": "Lionel Messi",
+   "type": "Shot Off Target",
+   "x": 79.1,
+   "y": 40.7,
+   "goal": false,
+   "xg": 0.105,
+   "text": "Attempt missed. Lionel Messi (Argentina) left footed shot from outside the box is high and wide to the left. Assisted by Nahuel Molina."
+  },
+  {
+   "minute": "54",
+   "seconds": 3188.0,
+   "team": "Argentina",
+   "player": "Lautaro Martínez",
+   "type": "Shot On Target",
+   "x": 88.0,
+   "y": 33.3,
+   "goal": false,
+   "xg": 0.16,
+   "text": "Attempt saved. Lautaro Martínez (Argentina) right footed shot from the right side of the box is saved in the bottom left corner by Luca Zidane (Algeria). Assisted by Lionel Messi with a through ball."
+  },
+  {
+   "minute": "57",
+   "seconds": 3412.0,
+   "team": "Algeria",
+   "player": "Ibrahim Maza",
+   "type": "Shot Blocked",
+   "x": 78.1,
+   "y": 59.1,
+   "goal": false,
+   "xg": 0.097,
+   "text": "Attempt blocked. Ibrahim Maza (Algeria) right footed shot from outside the box is blocked. Assisted by Farès Chaïbi."
+  },
+  {
+   "minute": "60",
+   "seconds": 3581.0,
+   "team": "Argentina",
+   "player": "Alexis Mac Allister",
+   "type": "Shot On Target",
+   "x": 74.0,
+   "y": 57.7,
+   "goal": false,
+   "xg": 0.068,
+   "text": "Attempt saved. Alexis Mac Allister (Argentina) right footed shot from outside the box is saved in the centre of the goal by Luca Zidane (Algeria)."
+  },
+  {
+   "minute": "60",
+   "seconds": 3582.0,
+   "team": "Argentina",
+   "player": "Lionel Messi",
+   "type": "Goal",
+   "x": 91.1,
+   "y": 52.8,
+   "goal": true,
+   "xg": 0.444,
+   "text": "Goal! Argentina 2, Algeria 0. Lionel Messi (Argentina) right footed shot from the centre of the box to the bottom right corner."
+  },
+  {
+   "minute": "66",
+   "seconds": 3911.0,
+   "team": "Argentina",
+   "player": "Lionel Messi",
+   "type": "Shot On Target",
+   "x": 82.7,
+   "y": 51.3,
+   "goal": false,
+   "xg": 0.169,
+   "text": "Attempt saved. Lionel Messi (Argentina) left footed shot from outside the box is saved in the top centre of the goal by Luca Zidane (Algeria). Assisted by Alexis Mac Allister."
+  },
+  {
+   "minute": "69",
+   "seconds": 4105.0,
+   "team": "Algeria",
+   "player": "Houssem Aouar",
+   "type": "Shot Off Target",
+   "x": 78.7,
+   "y": 43.6,
+   "goal": false,
+   "xg": 0.107,
+   "text": "Attempt missed. Houssem Aouar (Algeria) right footed shot from outside the box is close, but misses to the left. Assisted by Mohammed Amoura."
+  },
+  {
+   "minute": "76",
+   "seconds": 4538.0,
+   "team": "Argentina",
+   "player": "Lionel Messi",
+   "type": "Goal",
+   "x": 83.1,
+   "y": 52.6,
+   "goal": true,
+   "xg": 0.175,
+   "text": "Goal! Argentina 3, Algeria 0. Lionel Messi (Argentina) left footed shot from the centre of the box to the bottom left corner. Assisted by Nico González."
+  },
+  {
+   "minute": "86",
+   "seconds": 5126.0,
+   "team": "Algeria",
+   "player": "Riyad Mahrez",
+   "type": "Shot Blocked",
+   "x": 77.5,
+   "y": 38.2,
+   "goal": false,
+   "xg": 0.086,
+   "text": "Attempt blocked. Riyad Mahrez (Algeria) left footed shot from outside the box is blocked."
+  }
+ ],
+ "lineups": [
+  {
+   "team": "Argentina",
+   "formation": "4-4-2",
+   "starters": [
+    {
+     "name": "Emiliano Martínez",
+     "jersey": "23",
+     "position": "G"
+    },
+    {
+     "name": "Lisandro Martínez",
+     "jersey": "6",
+     "position": "CD-L"
+    },
+    {
+     "name": "Cristian Romero",
+     "jersey": "13",
+     "position": "CD-R"
+    },
+    {
+     "name": "Facundo Medina",
+     "jersey": "25",
+     "position": "LB"
+    },
+    {
+     "name": "Gonzalo Montiel",
+     "jersey": "4",
+     "position": "RB"
+    },
+    {
+     "name": "Enzo Fernández",
+     "jersey": "24",
+     "position": "CM-L"
+    },
+    {
+     "name": "Alexis Mac Allister",
+     "jersey": "20",
+     "position": "CM-R"
+    },
+    {
+     "name": "Thiago Almada",
+     "jersey": "16",
+     "position": "LM"
+    },
+    {
+     "name": "Rodrigo De Paul",
+     "jersey": "7",
+     "position": "RM"
+    },
+    {
+     "name": "Lautaro Martínez",
+     "jersey": "22",
+     "position": "CF-L"
+    },
+    {
+     "name": "Lionel Messi",
+     "jersey": "10",
+     "position": "CF-R"
+    }
+   ],
+   "subs": [
+    {
+     "name": "Nicolás Tagliafico",
+     "jersey": "3",
+     "position": "SUB"
+    },
+    {
+     "name": "Giovani Lo Celso",
+     "jersey": "11",
+     "position": "SUB"
+    },
+    {
+     "name": "Juan Musso",
+     "jersey": "1",
+     "position": "SUB"
+    },
+    {
+     "name": "Giuliano Simeone",
+     "jersey": "17",
+     "position": "SUB"
+    },
+    {
+     "name": "Leandro Paredes",
+     "jersey": "5",
+     "position": "SUB"
+    },
+    {
+     "name": "Valentín Barco",
+     "jersey": "8",
+     "position": "SUB"
+    },
+    {
+     "name": "Julián Álvarez",
+     "jersey": "9",
+     "position": "SUB"
+    },
+    {
+     "name": "Nico González",
+     "jersey": "15",
+     "position": "SUB"
+    },
+    {
+     "name": "Nahuel Molina",
+     "jersey": "26",
+     "position": "SUB"
+    },
+    {
+     "name": "Nico Paz",
+     "jersey": "18",
+     "position": "SUB"
+    },
+    {
+     "name": "José Manuel López",
+     "jersey": "21",
+     "position": "SUB"
+    },
+    {
+     "name": "Marcos Senesi",
+     "jersey": "2",
+     "position": "SUB"
+    },
+    {
+     "name": "Gerónimo Rulli",
+     "jersey": "12",
+     "position": "SUB"
+    },
+    {
+     "name": "Nicolás Otamendi",
+     "jersey": "19",
+     "position": "SUB"
+    },
+    {
+     "name": "Exequiel Palacios",
+     "jersey": "14",
+     "position": "SUB"
+    }
+   ]
+  },
+  {
+   "team": "Algeria",
+   "formation": "4-3-3",
+   "starters": [
+    {
+     "name": "Luca Zidane",
+     "jersey": "23",
+     "position": "G"
+    },
+    {
+     "name": "Ramy Bensebaini",
+     "jersey": "21",
+     "position": "CD-L"
+    },
+    {
+     "name": "Aïssa Mandi",
+     "jersey": "2",
+     "position": "CD-R"
+    },
+    {
+     "name": "Rayan Aït-Nouri",
+     "jersey": "15",
+     "position": "LB"
+    },
+    {
+     "name": "Rafik Belghali",
+     "jersey": "17",
+     "position": "RB"
+    },
+    {
+     "name": "Nabil Bentaleb",
+     "jersey": "19",
+     "position": "CM"
+    },
+    {
+     "name": "Ibrahim Maza",
+     "jersey": "22",
+     "position": "LM"
+    },
+    {
+     "name": "Hicham Boudaoui",
+     "jersey": "14",
+     "position": "RM"
+    },
+    {
+     "name": "Amine Gouiri",
+     "jersey": "9",
+     "position": "F"
+    },
+    {
+     "name": "Farès Chaïbi",
+     "jersey": "10",
+     "position": "LF"
+    },
+    {
+     "name": "Anis Hadj Moussa",
+     "jersey": "11",
+     "position": "RF"
+    }
+   ],
+   "subs": [
+    {
+     "name": "Riyad Mahrez",
+     "jersey": "7",
+     "position": "SUB"
+    },
+    {
+     "name": "Nadhir Benbouali",
+     "jersey": "12",
+     "position": "SUB"
+    },
+    {
+     "name": "Jaouen Hadjam",
+     "jersey": "13",
+     "position": "SUB"
+    },
+    {
+     "name": "Zineddine Belaïd",
+     "jersey": "5",
+     "position": "SUB"
+    },
+    {
+     "name": "Melvin Mastil",
+     "jersey": "1",
+     "position": "SUB"
+    },
+    {
+     "name": "Farès Ghedjemis",
+     "jersey": "25",
+     "position": "SUB"
+    },
+    {
+     "name": "Mohamed Amine Tougai",
+     "jersey": "4",
+     "position": "SUB"
+    },
+    {
+     "name": "Houssem Aouar",
+     "jersey": "8",
+     "position": "SUB"
+    },
+    {
+     "name": "Yassine Titraoui",
+     "jersey": "24",
+     "position": "SUB"
+    },
+    {
+     "name": "Adil Boulbina",
+     "jersey": "20",
+     "position": "SUB"
+    },
+    {
+     "name": "Samir Chergui",
+     "jersey": "26",
+     "position": "SUB"
+    },
+    {
+     "name": "Achraf Abada",
+     "jersey": "3",
+     "position": "SUB"
+    },
+    {
+     "name": "Mohamed Amoura",
+     "jersey": "18",
+     "position": "SUB"
+    },
+    {
+     "name": "Oussama Benbot",
+     "jersey": "16",
+     "position": "SUB"
+    },
+    {
+     "name": "Ramiz Zerrouki",
+     "jersey": "6",
+     "position": "SUB"
+    }
+   ]
+  }
+ ],
+ "attendance": 69045,
+ "venue": "GEHA Field at Arrowhead Stadium, Kansas City, Missouri, USA"
+}

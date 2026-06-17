@@ -127,8 +127,10 @@
    "score": null,
    "goals1": [],
    "goals2": [],
-   "espn_id": null,
+   "espn_id": "760467",
    "status": "scheduled",
+   "utc_date": "2026-06-25T01:00Z",
+   "venue": "Estadio Banorte",
    "slug": "2026-06-24-czech-republic-vs-mexico"
   },
   {
@@ -143,8 +145,10 @@
    "score": null,
    "goals1": [],
    "goals2": [],
-   "espn_id": null,
+   "espn_id": "760466",
    "status": "scheduled",
+   "utc_date": "2026-06-25T01:00Z",
+   "venue": "Estadio BBVA",
    "slug": "2026-06-24-south-africa-vs-south-korea"
   },
   {
@@ -272,8 +276,10 @@
    "score": null,
    "goals1": [],
    "goals2": [],
-   "espn_id": null,
+   "espn_id": "760463",
    "status": "scheduled",
+   "utc_date": "2026-06-24T19:00Z",
+   "venue": "BC Place",
    "slug": "2026-06-24-switzerland-vs-canada"
   },
   {
@@ -288,8 +294,10 @@
    "score": null,
    "goals1": [],
    "goals2": [],
-   "espn_id": null,
+   "espn_id": "760462",
    "status": "scheduled",
+   "utc_date": "2026-06-24T19:00Z",
+   "venue": "Lumen Field",
    "slug": "2026-06-24-bosnia-and-herzegovina-vs-qatar"
   },
   {
@@ -411,8 +419,10 @@
    "score": null,
    "goals1": [],
    "goals2": [],
-   "espn_id": null,
+   "espn_id": "760465",
    "status": "scheduled",
+   "utc_date": "2026-06-24T22:00Z",
+   "venue": "Hard Rock Stadium",
    "slug": "2026-06-24-scotland-vs-brazil"
   },
   {
@@ -427,8 +437,10 @@
    "score": null,
    "goals1": [],
    "goals2": [],
-   "espn_id": null,
+   "espn_id": "760464",
    "status": "scheduled",
+   "utc_date": "2026-06-24T22:00Z",
+   "venue": "Mercedes-Benz Stadium",
    "slug": "2026-06-24-morocco-vs-haiti"
   },
   {
@@ -1215,12 +1227,40 @@
    "team2": "Senegal",
    "group": "Group I",
    "ground": "New York/New Jersey (East Rutherford)",
-   "score": null,
-   "goals1": [],
-   "goals2": [],
+   "score": {
+    "ft": [
+     3,
+     1
+    ],
+    "ht": [
+     0,
+     0
+    ]
+   },
+   "goals1": [
+    {
+     "name": "Kylian Mbappé",
+     "minute": "66"
+    },
+    {
+     "name": "Bradley Barcola",
+     "minute": "82"
+    },
+    {
+     "name": "Kylian Mbappé",
+     "minute": "90+6"
+    }
+   ],
+   "goals2": [
+    {
+     "name": "Ibrahim Mbaye",
+     "minute": "90+5"
+    }
+   ],
    "espn_id": "760432",
-   "status": "live",
+   "status": "finished",
    "utc_date": "2026-06-16T19:00Z",
+   "attendance": 80545,
    "venue": "MetLife Stadium",
    "slug": "2026-06-16-france-vs-senegal"
   },
@@ -1233,12 +1273,45 @@
    "team2": "Norway",
    "group": "Group I",
    "ground": "Boston (Foxborough)",
-   "score": null,
-   "goals1": [],
-   "goals2": [],
+   "score": {
+    "ft": [
+     1,
+     4
+    ],
+    "ht": [
+     1,
+     2
+    ]
+   },
+   "goals1": [
+    {
+     "name": "Aymen Hussein",
+     "minute": "39"
+    }
+   ],
+   "goals2": [
+    {
+     "name": "Erling Haaland",
+     "minute": "29"
+    },
+    {
+     "name": "Erling Haaland",
+     "minute": "43"
+    },
+    {
+     "name": "Leo Østigard",
+     "minute": "76"
+    },
+    {
+     "name": "Aymen Hussein",
+     "minute": "90+6",
+     "owngoal": true
+    }
+   ],
    "espn_id": "760430",
-   "status": "scheduled",
+   "status": "finished",
    "utc_date": "2026-06-16T22:00Z",
+   "attendance": 63106,
    "venue": "Gillette Stadium",
    "slug": "2026-06-16-iraq-vs-norway"
   },
@@ -1319,12 +1392,35 @@
    "team2": "Algeria",
    "group": "Group J",
    "ground": "Kansas City",
-   "score": null,
-   "goals1": [],
+   "score": {
+    "ft": [
+     3,
+     0
+    ],
+    "ht": [
+     1,
+     0
+    ]
+   },
+   "goals1": [
+    {
+     "name": "Lionel Messi",
+     "minute": "17"
+    },
+    {
+     "name": "Lionel Messi",
+     "minute": "60"
+    },
+    {
+     "name": "Lionel Messi",
+     "minute": "76"
+    }
+   ],
    "goals2": [],
    "espn_id": "760433",
-   "status": "scheduled",
+   "status": "finished",
    "utc_date": "2026-06-17T01:00Z",
+   "attendance": 69045,
    "venue": "GEHA Field at Arrowhead Stadium",
    "slug": "2026-06-16-argentina-vs-algeria"
   },

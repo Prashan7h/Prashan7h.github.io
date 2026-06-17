@@ -1,0 +1,917 @@
+{
+ "teams": [
+  {
+   "name": "Iraq",
+   "stats": {
+    "possessionPct": "38.7",
+    "totalShots": "11",
+    "shotsOnTarget": "1",
+    "wonCorners": "2",
+    "foulsCommitted": "12",
+    "offsides": "1",
+    "saves": "2",
+    "yellowCards": "1",
+    "redCards": "0"
+   }
+  },
+  {
+   "name": "Norway",
+   "stats": {
+    "possessionPct": "61.3",
+    "totalShots": "12",
+    "shotsOnTarget": "5",
+    "wonCorners": "5",
+    "foulsCommitted": "13",
+    "offsides": "0",
+    "saves": "0",
+    "yellowCards": "0",
+    "redCards": "0"
+   }
+  }
+ ],
+ "events": [
+  {
+   "type": "Kickoff",
+   "minute": "",
+   "team": null,
+   "text": "First Half begins.",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "24'",
+   "team": "Norway",
+   "text": "Delay in match for a drinks break.",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "24'",
+   "team": "Iraq",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "27'",
+   "team": "Norway",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "27'",
+   "team": "Iraq",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Goal",
+   "minute": "29'",
+   "team": "Norway",
+   "text": "Goal! Iraq 0, Norway 1. Erling Haaland (Norway) left footed shot from very close range to the top right corner. Assisted by David Møller Wolfe with a cross.",
+   "players": [
+    "Erling Haaland",
+    "David Møller Wolfe"
+   ]
+  },
+  {
+   "type": "Goal - Header",
+   "minute": "39'",
+   "team": "Iraq",
+   "text": "Goal! Iraq 1, Norway 1. Aymen Hussein (Iraq) header from the centre of the box to the bottom right corner. Assisted by Amir Al Ammari with a cross.",
+   "players": [
+    "Aymen Hussein",
+    "Amir Al-Ammari"
+   ]
+  },
+  {
+   "type": "Goal",
+   "minute": "43'",
+   "team": "Norway",
+   "text": "Goal! Iraq 1, Norway 2. Erling Haaland (Norway) right footed shot from very close range to the centre of the goal.",
+   "players": [
+    "Erling Haaland"
+   ]
+  },
+  {
+   "type": "Halftime",
+   "minute": "45'+7'",
+   "team": null,
+   "text": "First Half ends, Iraq 1, Norway 2.",
+   "players": []
+  },
+  {
+   "type": "Start 2nd Half",
+   "minute": "45'",
+   "team": null,
+   "text": "Second Half begins Iraq 1, Norway 2.",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "58'",
+   "team": "Iraq",
+   "text": "Delay in match because of an injury Ali Jasim (Iraq).",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "58'",
+   "team": "Norway",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Substitution",
+   "minute": "59'",
+   "team": "Iraq",
+   "text": "Substitution, Iraq. Zidane Iqbal replaces Zaid Ismael.",
+   "players": [
+    "Zidane Iqbal",
+    "Zaid Ismael"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "59'",
+   "team": "Iraq",
+   "text": "Substitution, Iraq. Marko Farji replaces Ali Al Hamadi.",
+   "players": [
+    "Marko Farji",
+    "Ali Al-Hamadi"
+   ]
+  },
+  {
+   "type": "End Delay",
+   "minute": "59'",
+   "team": "Iraq",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "59'",
+   "team": "Norway",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "69'",
+   "team": "Iraq",
+   "text": "Delay in match because of an injury Ali Jasim (Iraq).",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "69'",
+   "team": "Norway",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "69'",
+   "team": "Iraq",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "69'",
+   "team": "Norway",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "69'",
+   "team": "Norway",
+   "text": "Delay in match for a drinks break.",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "69'",
+   "team": "Iraq",
+   "text": "Delay in match for a drinks break.",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "72'",
+   "team": "Norway",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "72'",
+   "team": "Iraq",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "Substitution",
+   "minute": "73'",
+   "team": "Norway",
+   "text": "Substitution, Norway. Andreas Schjelderup replaces Antonio Nusa.",
+   "players": [
+    "Andreas Schjelderup",
+    "Antonio Nusa"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "73'",
+   "team": "Norway",
+   "text": "Substitution, Norway. Kristian Thorstvedt replaces Fredrik Aursnes.",
+   "players": [
+    "Kristian Thorstvedt",
+    "Fredrik Aursnes"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "73'",
+   "team": "Norway",
+   "text": "Substitution, Norway. Oscar Bobb replaces Alexander Sørloth.",
+   "players": [
+    "Oscar Bobb",
+    "Alexander Sørloth"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "73'",
+   "team": "Norway",
+   "text": "Substitution, Norway. Leo Østigård replaces David Møller Wolfe because of an injury.",
+   "players": [
+    "Leo Østigard",
+    "David Møller Wolfe"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "73'",
+   "team": "Iraq",
+   "text": "Substitution, Iraq. Mustafa Saadoon replaces Hussein Ali.",
+   "players": [
+    "Mustafa Saadoon",
+    "Hussein Ali"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "73'",
+   "team": "Iraq",
+   "text": "Substitution, Iraq. Ahmed Qasem replaces Ali Jasim because of an injury.",
+   "players": [
+    "Ahmed Qasim",
+    "Ali Jasim"
+   ]
+  },
+  {
+   "type": "Goal - Header",
+   "minute": "76'",
+   "team": "Norway",
+   "text": "Goal! Iraq 1, Norway 3. Leo Østigård (Norway) header from very close range to the high centre of the goal. Assisted by Martin Ødegaard with a cross following a corner.",
+   "players": [
+    "Leo Østigard",
+    "Martin Ødegaard"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "78'",
+   "team": "Iraq",
+   "text": "Substitution, Iraq. Mohanad Ali replaces Ibrahim Bayesh.",
+   "players": [
+    "Mohanad Ali",
+    "Ibrahim Bayesh"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "81'",
+   "team": "Norway",
+   "text": "Substitution, Norway. Patrick Berg replaces Martin Ødegaard.",
+   "players": [
+    "Patrick Berg",
+    "Martin Ødegaard"
+   ]
+  },
+  {
+   "type": "Yellow Card",
+   "minute": "86'",
+   "team": "Iraq",
+   "text": "Zaid Tahseen (Iraq) is shown the yellow card for a bad foul.",
+   "players": [
+    "Zaid Tahseen"
+   ]
+  },
+  {
+   "type": "Start Delay",
+   "minute": "90'+2'",
+   "team": "Iraq",
+   "text": "Delay in match because of an injury Aymen Hussein (Iraq).",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "90'+2'",
+   "team": "Norway",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "90'+2'",
+   "team": "Iraq",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "90'+2'",
+   "team": "Norway",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Own Goal",
+   "minute": "90'+6'",
+   "team": "Norway",
+   "text": "Own Goal by Aymen Hussein, Iraq. Iraq 1, Norway 4.",
+   "players": [
+    "Aymen Hussein"
+   ]
+  },
+  {
+   "type": "End Regular Time",
+   "minute": "90'+8'",
+   "team": null,
+   "text": "Second Half ends, Iraq 1, Norway 4.",
+   "players": []
+  }
+ ],
+ "shots": [
+  {
+   "minute": "5",
+   "seconds": 268.0,
+   "team": "Iraq",
+   "player": "Aymen Hussein",
+   "type": "Shot Off Target",
+   "x": 91.9,
+   "y": 53.0,
+   "goal": false,
+   "xg": 0.318,
+   "text": "Attempt missed. Aymen Hussein (Iraq) header from the centre of the box is high and wide to the left following a set piece situation."
+  },
+  {
+   "minute": "13",
+   "seconds": 731.0,
+   "team": "Iraq",
+   "player": "Ali Al Hamadi",
+   "type": "Shot Off Target",
+   "x": 84.9,
+   "y": 40.8,
+   "goal": false,
+   "xg": 0.182,
+   "text": "Attempt missed. Ali Al Hamadi (Iraq) right footed shot from the centre of the box is too high. Assisted by Aymen Hussein."
+  },
+  {
+   "minute": "20",
+   "seconds": 1184.0,
+   "team": "Norway",
+   "player": "Erling Haaland",
+   "type": "Shot Off Target",
+   "x": 93.4,
+   "y": 48.3,
+   "goal": false,
+   "xg": 0.4,
+   "text": "Attempt missed. Erling Haaland (Norway) header from the centre of the box is too high. Assisted by Julian Ryerson with a cross following a corner."
+  },
+  {
+   "minute": "24",
+   "seconds": 1391.0,
+   "team": "Norway",
+   "player": "Alexander Sørloth",
+   "type": "Shot Blocked",
+   "x": 91.7,
+   "y": 47.9,
+   "goal": false,
+   "xg": 0.317,
+   "text": "Attempt blocked. Alexander Sørloth (Norway) header from the centre of the box is blocked. Assisted by Julian Ryerson with a cross."
+  },
+  {
+   "minute": "28",
+   "seconds": 1643.0,
+   "team": "Iraq",
+   "player": "Zaid Tahseen",
+   "type": "Shot Off Target",
+   "x": 77.1,
+   "y": 67.1,
+   "goal": false,
+   "xg": 0.072,
+   "text": "Attempt missed. Zaid Tahseen (Iraq) left footed shot from outside the box is high and wide to the left following a set piece situation."
+  },
+  {
+   "minute": "29",
+   "seconds": 1695.0,
+   "team": "Norway",
+   "player": "Erling Haaland",
+   "type": "Goal",
+   "x": 97.6,
+   "y": 46.6,
+   "goal": true,
+   "xg": 0.909,
+   "text": "Goal! Iraq 0, Norway 1. Erling Haaland (Norway) left footed shot from very close range to the top right corner. Assisted by David Møller Wolfe with a cross."
+  },
+  {
+   "minute": "31",
+   "seconds": 1835.0,
+   "team": "Norway",
+   "player": "Alexander Sørloth",
+   "type": "Shot Blocked",
+   "x": 91.3,
+   "y": 63.7,
+   "goal": false,
+   "xg": 0.233,
+   "text": "Attempt blocked. Alexander Sørloth (Norway) left footed shot from the left side of the box is blocked. Assisted by Erling Haaland."
+  },
+  {
+   "minute": "37",
+   "seconds": 2164.0,
+   "team": "Norway",
+   "player": "Martin Ødegaard",
+   "type": "Shot Off Target",
+   "x": 78.1,
+   "y": 60.5,
+   "goal": false,
+   "xg": 0.094,
+   "text": "Attempt missed. Martin Ødegaard (Norway) left footed shot from outside the box misses to the right. Assisted by Alexander Sørloth."
+  },
+  {
+   "minute": "39",
+   "seconds": 2300.0,
+   "team": "Iraq",
+   "player": "Aymen Hussein",
+   "type": "Goal - Header",
+   "x": 91.8,
+   "y": 47.4,
+   "goal": true,
+   "xg": 0.318,
+   "text": "Goal! Iraq 1, Norway 1. Aymen Hussein (Iraq) header from the centre of the box to the bottom right corner. Assisted by Amir Al Ammari with a cross."
+  },
+  {
+   "minute": "43",
+   "seconds": 2539.0,
+   "team": "Norway",
+   "player": "Erling Haaland",
+   "type": "Shot On Target",
+   "x": 96.1,
+   "y": 52.6,
+   "goal": false,
+   "xg": 0.825,
+   "text": "Attempt saved. Erling Haaland (Norway) right footed shot from very close range is saved in the centre of the goal by Jalal Hassan (Iraq)."
+  },
+  {
+   "minute": "43",
+   "seconds": 2542.0,
+   "team": "Norway",
+   "player": "Erling Haaland",
+   "type": "Goal",
+   "x": 96.2,
+   "y": 51.6,
+   "goal": true,
+   "xg": 0.854,
+   "text": "Goal! Iraq 1, Norway 2. Erling Haaland (Norway) right footed shot from very close range to the centre of the goal."
+  },
+  {
+   "minute": "45'+3",
+   "seconds": 2700.0,
+   "team": "Iraq",
+   "player": "Ali Al Hamadi",
+   "type": "Shot Off Target",
+   "x": 91.2,
+   "y": 53.8,
+   "goal": false,
+   "xg": 0.436,
+   "text": "Attempt missed. Ali Al Hamadi (Iraq) with an attempt from the centre of the box misses to the right. Assisted by Merchas Doski with a cross."
+  },
+  {
+   "minute": "45'+3",
+   "seconds": 2700.0,
+   "team": "Iraq",
+   "player": "Ibrahim Bayesh",
+   "type": "Shot Blocked",
+   "x": 95.9,
+   "y": 42.6,
+   "goal": false,
+   "xg": 0.542,
+   "text": "Attempt blocked. Ibrahim Bayesh (Iraq) right footed shot from the right side of the six yard box is blocked. Assisted by Ali Al Hamadi."
+  },
+  {
+   "minute": "45'+4",
+   "seconds": 2700.0,
+   "team": "Iraq",
+   "player": "Zaid Tahseen",
+   "type": "Shot Off Target",
+   "x": 95.2,
+   "y": 56.5,
+   "goal": false,
+   "xg": 0.373,
+   "text": "Attempt missed. Zaid Tahseen (Iraq) header from the left side of the six yard box is high and wide to the left. Assisted by Amir Al Ammari with a cross following a corner."
+  },
+  {
+   "minute": "45'+5",
+   "seconds": 2700.0,
+   "team": "Iraq",
+   "player": "Ali Al Hamadi",
+   "type": "Shot Blocked",
+   "x": 82.2,
+   "y": 40.9,
+   "goal": false,
+   "xg": 0.141,
+   "text": "Attempt blocked. Ali Al Hamadi (Iraq) right footed shot from outside the box is blocked. Assisted by Ali Jasim with a through ball."
+  },
+  {
+   "minute": "45'+6",
+   "seconds": 2700.0,
+   "team": "Iraq",
+   "player": "Akam Hashim",
+   "type": "Shot Off Target",
+   "x": 78.0,
+   "y": 45.6,
+   "goal": false,
+   "xg": 0.103,
+   "text": "Attempt missed. Akam Hashim (Iraq) left footed shot from outside the box is too high following a corner."
+  },
+  {
+   "minute": "53",
+   "seconds": 3147.0,
+   "team": "Iraq",
+   "player": "Aymen Hussein",
+   "type": "Shot Off Target",
+   "x": 88.0,
+   "y": 47.0,
+   "goal": false,
+   "xg": 0.196,
+   "text": "Attempt missed. Aymen Hussein (Iraq) header from the centre of the box misses to the left. Assisted by Ibrahim Bayesh with a cross."
+  },
+  {
+   "minute": "63",
+   "seconds": 3750.0,
+   "team": "Iraq",
+   "player": "Hussein Ali",
+   "type": "Shot Off Target",
+   "x": 96.4,
+   "y": 33.0,
+   "goal": false,
+   "xg": 0.173,
+   "text": "Attempt missed. Hussein Ali (Iraq) right footed shot from a difficult angle on the right is just a bit too high. Assisted by Amir Al Ammari with a cross."
+  },
+  {
+   "minute": "76",
+   "seconds": 4506.0,
+   "team": "Norway",
+   "player": "Kristian Thorstvedt",
+   "type": "Shot Blocked",
+   "x": 91.5,
+   "y": 35.0,
+   "goal": false,
+   "xg": 0.212,
+   "text": "Attempt blocked. Kristian Thorstvedt (Norway) left footed shot from the right side of the box is blocked. Assisted by Oscar Bobb."
+  },
+  {
+   "minute": "76",
+   "seconds": 4555.0,
+   "team": "Norway",
+   "player": "Leo Østigård",
+   "type": "Goal - Header",
+   "x": 96.4,
+   "y": 47.8,
+   "goal": true,
+   "xg": 0.558,
+   "text": "Goal! Iraq 1, Norway 3. Leo Østigård (Norway) header from very close range to the high centre of the goal. Assisted by Martin Ødegaard with a cross following a corner."
+  },
+  {
+   "minute": "82",
+   "seconds": 4912.0,
+   "team": "Norway",
+   "player": "Leo Østigård",
+   "type": "Shot Off Target",
+   "x": 89.1,
+   "y": 46.0,
+   "goal": false,
+   "xg": 0.218,
+   "text": "Attempt missed. Leo Østigård (Norway) header from the centre of the box misses to the right. Assisted by Julian Ryerson with a cross following a set piece situation."
+  },
+  {
+   "minute": "83",
+   "seconds": 4931.0,
+   "team": "Norway",
+   "player": "Erling Haaland",
+   "type": "Shot On Target",
+   "x": 90.3,
+   "y": 30.4,
+   "goal": false,
+   "xg": 0.147,
+   "text": "Attempt saved. Erling Haaland (Norway) left footed shot from the right side of the box is saved in the centre of the goal by Jalal Hassan (Iraq)."
+  },
+  {
+   "minute": "90'+1",
+   "seconds": 5400.0,
+   "team": "Norway",
+   "player": "Kristian Thorstvedt",
+   "type": "Shot Off Target",
+   "x": 91.2,
+   "y": 63.8,
+   "goal": false,
+   "xg": 0.23,
+   "text": "Attempt missed. Kristian Thorstvedt (Norway) right footed shot from the left side of the box is close, but misses to the left. Assisted by Andreas Schjelderup."
+  }
+ ],
+ "lineups": [
+  {
+   "team": "Iraq",
+   "formation": "4-4-2",
+   "starters": [
+    {
+     "name": "Jalal Hassan",
+     "jersey": "12",
+     "position": "G"
+    },
+    {
+     "name": "Akam Hashim",
+     "jersey": "5",
+     "position": "CD-L"
+    },
+    {
+     "name": "Zaid Tahseen",
+     "jersey": "4",
+     "position": "CD-R"
+    },
+    {
+     "name": "Merchas Doski",
+     "jersey": "23",
+     "position": "LB"
+    },
+    {
+     "name": "Hussein Ali",
+     "jersey": "3",
+     "position": "RB"
+    },
+    {
+     "name": "Amir Al-Ammari",
+     "jersey": "16",
+     "position": "CM-L"
+    },
+    {
+     "name": "Zaid Ismael",
+     "jersey": "24",
+     "position": "CM-R"
+    },
+    {
+     "name": "Ali Jasim",
+     "jersey": "17",
+     "position": "LM"
+    },
+    {
+     "name": "Ibrahim Bayesh",
+     "jersey": "8",
+     "position": "RM"
+    },
+    {
+     "name": "Ali Al-Hamadi",
+     "jersey": "9",
+     "position": "CF-L"
+    },
+    {
+     "name": "Aymen Hussein",
+     "jersey": "18",
+     "position": "CF-R"
+    }
+   ],
+   "subs": [
+    {
+     "name": "Frans Putros",
+     "jersey": "26",
+     "position": "SUB"
+    },
+    {
+     "name": "Mustafa Saadoon",
+     "jersey": "25",
+     "position": "SUB"
+    },
+    {
+     "name": "Munaf Younus",
+     "jersey": "6",
+     "position": "SUB"
+    },
+    {
+     "name": "Ahmed Basil",
+     "jersey": "22",
+     "position": "SUB"
+    },
+    {
+     "name": "Rebin Sulaka",
+     "jersey": "2",
+     "position": "SUB"
+    },
+    {
+     "name": "Ahmed Qasim",
+     "jersey": "11",
+     "position": "SUB"
+    },
+    {
+     "name": "Youssef Amyn",
+     "jersey": "7",
+     "position": "SUB"
+    },
+    {
+     "name": "Ali Yousif",
+     "jersey": "13",
+     "position": "SUB"
+    },
+    {
+     "name": "Kevin Yakob",
+     "jersey": "19",
+     "position": "SUB"
+    },
+    {
+     "name": "Ahmed Maknazi",
+     "jersey": "15",
+     "position": "SUB"
+    },
+    {
+     "name": "Fahad Talib",
+     "jersey": "1",
+     "position": "SUB"
+    },
+    {
+     "name": "Marko Farji",
+     "jersey": "21",
+     "position": "SUB"
+    },
+    {
+     "name": "Aimar Sher",
+     "jersey": "20",
+     "position": "SUB"
+    },
+    {
+     "name": "Mohanad Ali",
+     "jersey": "10",
+     "position": "SUB"
+    },
+    {
+     "name": "Zidane Iqbal",
+     "jersey": "14",
+     "position": "SUB"
+    }
+   ]
+  },
+  {
+   "team": "Norway",
+   "formation": "4-4-2",
+   "starters": [
+    {
+     "name": "Ørjan Nyland",
+     "jersey": "1",
+     "position": "G"
+    },
+    {
+     "name": "Torbjørn Heggem",
+     "jersey": "17",
+     "position": "CD-L"
+    },
+    {
+     "name": "Kristoffer Ajer",
+     "jersey": "3",
+     "position": "CD-R"
+    },
+    {
+     "name": "David Møller Wolfe",
+     "jersey": "5",
+     "position": "LB"
+    },
+    {
+     "name": "Julian Ryerson",
+     "jersey": "26",
+     "position": "RB"
+    },
+    {
+     "name": "Fredrik Aursnes",
+     "jersey": "14",
+     "position": "CM-L"
+    },
+    {
+     "name": "Sander Berge",
+     "jersey": "8",
+     "position": "CM-R"
+    },
+    {
+     "name": "Antonio Nusa",
+     "jersey": "20",
+     "position": "LM"
+    },
+    {
+     "name": "Martin Ødegaard",
+     "jersey": "10",
+     "position": "RM"
+    },
+    {
+     "name": "Erling Haaland",
+     "jersey": "9",
+     "position": "CF-L"
+    },
+    {
+     "name": "Alexander Sørloth",
+     "jersey": "7",
+     "position": "CF-R"
+    }
+   ],
+   "subs": [
+    {
+     "name": "Morten Thorsby",
+     "jersey": "2",
+     "position": "SUB"
+    },
+    {
+     "name": "Sondre Langas",
+     "jersey": "24",
+     "position": "SUB"
+    },
+    {
+     "name": "Oscar Bobb",
+     "jersey": "22",
+     "position": "SUB"
+    },
+    {
+     "name": "Henrik Falchener",
+     "jersey": "25",
+     "position": "SUB"
+    },
+    {
+     "name": "Kristian Thorstvedt",
+     "jersey": "18",
+     "position": "SUB"
+    },
+    {
+     "name": "Leo Østigard",
+     "jersey": "4",
+     "position": "SUB"
+    },
+    {
+     "name": "Andreas Schjelderup",
+     "jersey": "21",
+     "position": "SUB"
+    },
+    {
+     "name": "Patrick Berg",
+     "jersey": "6",
+     "position": "SUB"
+    },
+    {
+     "name": "Thelo Aasgaard",
+     "jersey": "19",
+     "position": "SUB"
+    },
+    {
+     "name": "Egil Selvik",
+     "jersey": "13",
+     "position": "SUB"
+    },
+    {
+     "name": "Jørgen Strand Larsen",
+     "jersey": "11",
+     "position": "SUB"
+    },
+    {
+     "name": "Sander Tangvik",
+     "jersey": "12",
+     "position": "SUB"
+    },
+    {
+     "name": "Jens Petter Hauge",
+     "jersey": "23",
+     "position": "SUB"
+    },
+    {
+     "name": "Marcus Holmgren Pedersen",
+     "jersey": "16",
+     "position": "SUB"
+    },
+    {
+     "name": "Fredrik André Bjørkan",
+     "jersey": "15",
+     "position": "SUB"
+    }
+   ]
+  }
+ ],
+ "attendance": 63106,
+ "venue": "Gillette Stadium, Foxborough, Massachusetts, USA"
+}
