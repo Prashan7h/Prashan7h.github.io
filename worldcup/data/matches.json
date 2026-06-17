@@ -1433,12 +1433,42 @@
    "team2": "Jordan",
    "group": "Group J",
    "ground": "San Francisco Bay Area (Santa Clara)",
-   "score": null,
-   "goals1": [],
-   "goals2": [],
+   "score": {
+    "ft": [
+     3,
+     1
+    ],
+    "ht": [
+     1,
+     0
+    ]
+   },
+   "goals1": [
+    {
+     "name": "Romano Schmid",
+     "minute": "21"
+    },
+    {
+     "name": "Yazan Al-Arab",
+     "minute": "76",
+     "owngoal": true
+    },
+    {
+     "name": "Marko Arnautovic",
+     "minute": "90+12",
+     "penalty": true
+    }
+   ],
+   "goals2": [
+    {
+     "name": "Ali Olwan",
+     "minute": "50"
+    }
+   ],
    "espn_id": "760431",
-   "status": "scheduled",
+   "status": "finished",
    "utc_date": "2026-06-17T04:00Z",
+   "attendance": 68527,
    "venue": "Levi's Stadium",
    "slug": "2026-06-16-austria-vs-jordan"
   },

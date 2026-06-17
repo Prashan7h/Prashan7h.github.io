@@ -1,0 +1,923 @@
+{
+ "teams": [
+  {
+   "name": "Austria",
+   "stats": {
+    "possessionPct": "63.2",
+    "totalShots": "11",
+    "shotsOnTarget": "4",
+    "wonCorners": "4",
+    "foulsCommitted": "12",
+    "offsides": "3",
+    "saves": "3",
+    "yellowCards": "1",
+    "redCards": "0"
+   }
+  },
+  {
+   "name": "Jordan",
+   "stats": {
+    "possessionPct": "36.8",
+    "totalShots": "11",
+    "shotsOnTarget": "4",
+    "wonCorners": "3",
+    "foulsCommitted": "7",
+    "offsides": "1",
+    "saves": "1",
+    "yellowCards": "0",
+    "redCards": "0"
+   }
+  }
+ ],
+ "events": [
+  {
+   "type": "Kickoff",
+   "minute": "",
+   "team": null,
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Goal",
+   "minute": "21'",
+   "team": "Austria",
+   "text": "Goal! Austria 1, Jordan 0. Romano Schmid (Austria) right footed shot from outside the box to the top right corner. Assisted by Xaver Schlager.",
+   "players": [
+    "Romano Schmid",
+    "Xaver Schlager"
+   ]
+  },
+  {
+   "type": "Start Delay",
+   "minute": "23'",
+   "team": "Austria",
+   "text": "Delay in match for a drinks break.",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "23'",
+   "team": "Jordan",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "26'",
+   "team": "Austria",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "26'",
+   "team": "Jordan",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Halftime",
+   "minute": "45'+5'",
+   "team": null,
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Substitution",
+   "minute": "45'",
+   "team": "Austria",
+   "text": "Substitution, Austria. Marko Arnautovic replaces Sasa Kalajdzic.",
+   "players": [
+    "Marko Arnautovic",
+    "Sasa Kalajdzic"
+   ]
+  },
+  {
+   "type": "Start 2nd Half",
+   "minute": "45'",
+   "team": null,
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Goal",
+   "minute": "50'",
+   "team": "Jordan",
+   "text": "Goal! Austria 1, Jordan 1. Ali Olwan (Jordan) right footed shot from the left side of the box to the bottom right corner. Assisted by Noor Al Rawabdeh following a fast break.",
+   "players": [
+    "Ali Olwan",
+    "Noor Al-Rawabdeh"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "59'",
+   "team": "Austria",
+   "text": "Substitution, Austria. Paul Wanner replaces Phillipp Mwene.",
+   "players": [
+    "Paul Wanner",
+    "Phillipp Mwene"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "59'",
+   "team": "Austria",
+   "text": "Substitution, Austria. Kevin Danso replaces David Alaba.",
+   "players": [
+    "Kevin Danso",
+    "David Alaba"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "59'",
+   "team": "Austria",
+   "text": "Substitution, Austria. Carney Chukwuemeka replaces Xaver Schlager.",
+   "players": [
+    "Carney Chukwuemeka",
+    "Xaver Schlager"
+   ]
+  },
+  {
+   "type": "Start Delay",
+   "minute": "63'",
+   "team": "Jordan",
+   "text": "Delay in match because of an injury Yazeed Abulaila (Jordan).",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "63'",
+   "team": "Austria",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "65'",
+   "team": "Jordan",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "65'",
+   "team": "Austria",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "70'",
+   "team": "Austria",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "71'",
+   "team": "Austria",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Substitution",
+   "minute": "72'",
+   "team": "Jordan",
+   "text": "Substitution, Jordan. Saleem Obaid replaces Mohammad Abu Al Nadi.",
+   "players": [
+    "Saleem Obaid",
+    "Mohammad Abualnadi"
+   ]
+  },
+  {
+   "type": "Start Delay",
+   "minute": "72'",
+   "team": "Austria",
+   "text": "Delay in match for a drinks break.",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "72'",
+   "team": "Jordan",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "75'",
+   "team": "Austria",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "75'",
+   "team": "Jordan",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Own Goal",
+   "minute": "76'",
+   "team": "Austria",
+   "text": "Own Goal by Yazan Al Arab, Jordan. Austria 2, Jordan 1.",
+   "players": [
+    "Yazan Al-Arab"
+   ]
+  },
+  {
+   "type": "Yellow Card",
+   "minute": "77'",
+   "team": "Austria",
+   "text": "Marcel Sabitzer (Austria) is shown the yellow card.",
+   "players": [
+    "Marcel Sabitzer"
+   ]
+  },
+  {
+   "type": "Start Delay",
+   "minute": "78'",
+   "team": "Jordan",
+   "text": "Delay in match because of an injury Abdallah Nasib (Jordan).",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "78'",
+   "team": "Austria",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "78'",
+   "team": "Jordan",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "78'",
+   "team": "Austria",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Substitution",
+   "minute": "81'",
+   "team": "Jordan",
+   "text": "Substitution, Jordan. Saed Al Rosan replaces Abdallah Nasib because of an injury.",
+   "players": [
+    "Saed Al-Rosan",
+    "Abdallah Nasib"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "81'",
+   "team": "Jordan",
+   "text": "Substitution, Jordan. Mahmoud Al Mardi replaces Ehsan Haddad.",
+   "players": [
+    "Mahmoud Al-Mardi",
+    "Ehsan Haddad"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "83'",
+   "team": "Austria",
+   "text": "Substitution, Austria. Patrick Wimmer replaces Romano Schmid.",
+   "players": [
+    "Patrick Wimmer",
+    "Romano Schmid"
+   ]
+  },
+  {
+   "type": "Start Delay",
+   "minute": "87'",
+   "team": "Austria",
+   "text": "Delay in match because of an injury Stefan Posch (Austria).",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "87'",
+   "team": "Jordan",
+   "text": "Delay in match because of an injury Odeh Fakhoury (Jordan).",
+   "players": []
+  },
+  {
+   "type": "Substitution",
+   "minute": "88'",
+   "team": "Jordan",
+   "text": "Substitution, Jordan. Mohammad Al Daoud replaces Mousa Al Tamari.",
+   "players": [
+    "Mohammad Al-Daoud",
+    "Mousa Al-Tamari"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "89'",
+   "team": "Jordan",
+   "text": "Substitution, Jordan. Ali Azaizeh replaces Odeh Fakhoury.",
+   "players": [
+    "Ali Azaizeh",
+    "Odeh Fakhoury"
+   ]
+  },
+  {
+   "type": "End Delay",
+   "minute": "89'",
+   "team": "Austria",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "89'",
+   "team": "Jordan",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "90'+10'",
+   "team": "Austria",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "90'+12'",
+   "team": "Austria",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Penalty - Scored",
+   "minute": "90'+12'",
+   "team": "Austria",
+   "text": "Goal! Austria 3, Jordan 1. Marko Arnautovic (Austria) converts the penalty with a right footed shot to the bottom left corner.",
+   "players": [
+    "Marko Arnautovic"
+   ]
+  },
+  {
+   "type": "End Regular Time",
+   "minute": "90'+14'",
+   "team": null,
+   "text": "Second Half ends, Austria 3, Jordan 1.",
+   "players": []
+  }
+ ],
+ "shots": [
+  {
+   "minute": "2",
+   "seconds": 90.0,
+   "team": "Jordan",
+   "player": "Ehsan Haddad",
+   "type": "Shot Off Target",
+   "x": 96.1,
+   "y": 30.1,
+   "goal": false,
+   "xg": 0.141,
+   "text": "Attempt missed. Ehsan Haddad (Jordan) right footed shot from a difficult angle on the right is close, but misses to the right. Assisted by Nizar Al Rashdan."
+  },
+  {
+   "minute": "9",
+   "seconds": 521.0,
+   "team": "Jordan",
+   "player": "Mousa Al Tamari",
+   "type": "Shot On Target",
+   "x": 79.8,
+   "y": 23.6,
+   "goal": false,
+   "xg": 0.061,
+   "text": "Attempt saved. Mousa Al Tamari (Jordan) left footed shot from outside the box is saved in the bottom right corner by Alexander Schlager (Austria). Assisted by Odeh Fakhoury."
+  },
+  {
+   "minute": "11",
+   "seconds": 632.0,
+   "team": "Austria",
+   "player": "David Alaba",
+   "type": "Shot Off Target",
+   "x": 69.6,
+   "y": 49.1,
+   "goal": false,
+   "xg": 0.048,
+   "text": "Attempt missed. David Alaba (Austria) left footed shot from outside the box misses to the right."
+  },
+  {
+   "minute": "17",
+   "seconds": 990.0,
+   "team": "Jordan",
+   "player": "Odeh Fakhoury",
+   "type": "Shot On Target",
+   "x": 80.8,
+   "y": 42.7,
+   "goal": false,
+   "xg": 0.129,
+   "text": "Attempt saved. Odeh Fakhoury (Jordan) right footed shot from outside the box is saved in the top centre of the goal by Alexander Schlager (Austria). Assisted by Noor Al Rawabdeh."
+  },
+  {
+   "minute": "19",
+   "seconds": 1116.0,
+   "team": "Austria",
+   "player": "Marcel Sabitzer",
+   "type": "Shot Blocked",
+   "x": 79.9,
+   "y": 69.6,
+   "goal": false,
+   "xg": 0.081,
+   "text": "Attempt blocked. Marcel Sabitzer (Austria) left footed shot from outside the box is blocked. Assisted by Sasa Kalajdzic."
+  },
+  {
+   "minute": "21",
+   "seconds": 1201.0,
+   "team": "Austria",
+   "player": "Romano Schmid",
+   "type": "Goal",
+   "x": 77.8,
+   "y": 53.4,
+   "goal": true,
+   "xg": 0.102,
+   "text": "Goal! Austria 1, Jordan 0. Romano Schmid (Austria) right footed shot from outside the box to the top right corner. Assisted by Xaver Schlager."
+  },
+  {
+   "minute": "22",
+   "seconds": 1314.0,
+   "team": "Jordan",
+   "player": null,
+   "type": "Shot Hit Woodwork",
+   "x": 95.8,
+   "y": 60.6,
+   "goal": false,
+   "xg": 0.228,
+   "text": "Ali Olwan (Jordan) hits the bar with a header from the left side of the six yard box. Assisted by Mohannad Abu Taha with a cross following a corner."
+  },
+  {
+   "minute": "30",
+   "seconds": 1768.0,
+   "team": "Austria",
+   "player": "Sasa Kalajdzic",
+   "type": "Shot Off Target",
+   "x": 90.1,
+   "y": 51.0,
+   "goal": false,
+   "xg": 0.261,
+   "text": "Attempt missed. Sasa Kalajdzic (Austria) header from the centre of the box misses to the right. Assisted by Phillipp Mwene."
+  },
+  {
+   "minute": "33",
+   "seconds": 1932.0,
+   "team": "Austria",
+   "player": "Stefan Posch",
+   "type": "Shot Off Target",
+   "x": 92.7,
+   "y": 37.3,
+   "goal": false,
+   "xg": 0.268,
+   "text": "Attempt missed. Stefan Posch (Austria) right footed shot from the centre of the box is high and wide to the left."
+  },
+  {
+   "minute": "34",
+   "seconds": 2034.0,
+   "team": "Jordan",
+   "player": "Ali Olwan",
+   "type": "Shot On Target",
+   "x": 88.9,
+   "y": 29.9,
+   "goal": false,
+   "xg": 0.135,
+   "text": "Attempt saved. Ali Olwan (Jordan) right footed shot from the right side of the box is saved in the bottom left corner by Alexander Schlager (Austria). Assisted by Ehsan Haddad with a headed pass."
+  },
+  {
+   "minute": "34",
+   "seconds": 2036.0,
+   "team": "Jordan",
+   "player": "Mousa Al Tamari",
+   "type": "Shot Blocked",
+   "x": 88.9,
+   "y": 45.2,
+   "goal": false,
+   "xg": 0.32,
+   "text": "Attempt blocked. Mousa Al Tamari (Jordan) left footed shot from the centre of the box is blocked."
+  },
+  {
+   "minute": "44",
+   "seconds": 2620.0,
+   "team": "Jordan",
+   "player": "Mousa Al Tamari",
+   "type": "Shot Blocked",
+   "x": 75.9,
+   "y": 70.9,
+   "goal": false,
+   "xg": 0.058,
+   "text": "Attempt missed. Mousa Al Tamari (Jordan) left footed shot from outside the box misses to the right. Assisted by Odeh Fakhoury following a set piece situation."
+  },
+  {
+   "minute": "45'+1",
+   "seconds": 2700.0,
+   "team": "Jordan",
+   "player": "Mousa Al Tamari",
+   "type": "Shot Off Target",
+   "x": 84.4,
+   "y": 35.0,
+   "goal": false,
+   "xg": 0.137,
+   "text": "Attempt missed. Mousa Al Tamari (Jordan) left footed shot from the right side of the box is close, but misses to the right. Assisted by Ehsan Haddad."
+  },
+  {
+   "minute": "45'+4",
+   "seconds": 2700.0,
+   "team": "Austria",
+   "player": "Sasa Kalajdzic",
+   "type": "Shot Off Target",
+   "x": 72.2,
+   "y": 73.2,
+   "goal": false,
+   "xg": 0.041,
+   "text": "Attempt missed. Sasa Kalajdzic (Austria) right footed shot from outside the box is high and wide to the right. Assisted by Marcel Sabitzer."
+  },
+  {
+   "minute": "50",
+   "seconds": 2949.0,
+   "team": "Jordan",
+   "player": "Ali Olwan",
+   "type": "Goal",
+   "x": 86.4,
+   "y": 64.0,
+   "goal": true,
+   "xg": 0.167,
+   "text": "Goal! Austria 1, Jordan 1. Ali Olwan (Jordan) right footed shot from the left side of the box to the bottom right corner. Assisted by Noor Al Rawabdeh following a fast break."
+  },
+  {
+   "minute": "55",
+   "seconds": 3272.0,
+   "team": "Jordan",
+   "player": "Ali Olwan",
+   "type": "Shot Blocked",
+   "x": 85.2,
+   "y": 47.2,
+   "goal": false,
+   "xg": 0.219,
+   "text": "Attempt blocked. Ali Olwan (Jordan) right footed shot from the centre of the box is blocked. Assisted by Mousa Al Tamari."
+  },
+  {
+   "minute": "60",
+   "seconds": 3577.0,
+   "team": "Austria",
+   "player": "Stefan Posch",
+   "type": "Shot Off Target",
+   "x": 86.2,
+   "y": 35.8,
+   "goal": false,
+   "xg": 0.163,
+   "text": "Attempt missed. Stefan Posch (Austria) right footed shot from the right side of the box is too high. Assisted by Marko Arnautovic."
+  },
+  {
+   "minute": "63",
+   "seconds": 3767.0,
+   "team": "Austria",
+   "player": "Carney Chukwuemeka",
+   "type": "Shot Blocked",
+   "x": 89.0,
+   "y": 41.7,
+   "goal": false,
+   "xg": 0.28,
+   "text": "Attempt blocked. Carney Chukwuemeka (Austria) right footed shot from the centre of the box is blocked. Assisted by Romano Schmid."
+  },
+  {
+   "minute": "90'+2",
+   "seconds": 5400.0,
+   "team": "Austria",
+   "player": "Marko Arnautovic",
+   "type": "Shot On Target",
+   "x": 86.7,
+   "y": 58.7,
+   "goal": false,
+   "xg": 0.22,
+   "text": "Attempt saved. Marko Arnautovic (Austria) left footed shot from the centre of the box is saved in the centre of the goal by Yazeed Abulaila (Jordan)."
+  },
+  {
+   "minute": "90'+3",
+   "seconds": 5400.0,
+   "team": "Jordan",
+   "player": "Ali Azaizeh",
+   "type": "Shot Off Target",
+   "x": 70.9,
+   "y": 50.0,
+   "goal": false,
+   "xg": 0.054,
+   "text": "Attempt missed. Ali Azaizeh (Jordan) left footed shot from outside the box is close, but misses to the right following a set piece situation."
+  },
+  {
+   "minute": "90'+4",
+   "seconds": 5400.0,
+   "team": "Austria",
+   "player": "Konrad Laimer",
+   "type": "Shot Off Target",
+   "x": 74.7,
+   "y": 54.8,
+   "goal": false,
+   "xg": 0.075,
+   "text": "Attempt missed. Konrad Laimer (Austria) right footed shot from outside the box is high and wide to the right following a corner."
+  },
+  {
+   "minute": "90'+12",
+   "seconds": 5400.0,
+   "team": "Austria",
+   "player": "Marko Arnautovic",
+   "type": "Penalty - Scored",
+   "x": 88.5,
+   "y": 50.0,
+   "goal": true,
+   "xg": 0.76,
+   "text": "Goal! Austria 3, Jordan 1. Marko Arnautovic (Austria) converts the penalty with a right footed shot to the bottom left corner."
+  }
+ ],
+ "lineups": [
+  {
+   "team": "Austria",
+   "formation": "4-2-3-1",
+   "starters": [
+    {
+     "name": "Alexander Schlager",
+     "jersey": "1",
+     "position": "G"
+    },
+    {
+     "name": "David Alaba",
+     "jersey": "8",
+     "position": "CD-L"
+    },
+    {
+     "name": "Philipp Lienhart",
+     "jersey": "15",
+     "position": "CD-R"
+    },
+    {
+     "name": "Phillipp Mwene",
+     "jersey": "16",
+     "position": "LB"
+    },
+    {
+     "name": "Stefan Posch",
+     "jersey": "5",
+     "position": "RB"
+    },
+    {
+     "name": "Konrad Laimer",
+     "jersey": "20",
+     "position": "AM"
+    },
+    {
+     "name": "Xaver Schlager",
+     "jersey": "4",
+     "position": "LM"
+    },
+    {
+     "name": "Nicolas Seiwald",
+     "jersey": "6",
+     "position": "RM"
+    },
+    {
+     "name": "Sasa Kalajdzic",
+     "jersey": "14",
+     "position": "F"
+    },
+    {
+     "name": "Marcel Sabitzer",
+     "jersey": "9",
+     "position": "AM-L"
+    },
+    {
+     "name": "Romano Schmid",
+     "jersey": "18",
+     "position": "AM-R"
+    }
+   ],
+   "subs": [
+    {
+     "name": "Patrick Pentz",
+     "jersey": "13",
+     "position": "SUB"
+    },
+    {
+     "name": "Florian Wiegele",
+     "jersey": "12",
+     "position": "SUB"
+    },
+    {
+     "name": "Alexander Prass",
+     "jersey": "22",
+     "position": "SUB"
+    },
+    {
+     "name": "Carney Chukwuemeka",
+     "jersey": "17",
+     "position": "SUB"
+    },
+    {
+     "name": "Paul Wanner",
+     "jersey": "24",
+     "position": "SUB"
+    },
+    {
+     "name": "Dejan Ljubicic",
+     "jersey": "19",
+     "position": "SUB"
+    },
+    {
+     "name": "Florian Grillitsch",
+     "jersey": "10",
+     "position": "SUB"
+    },
+    {
+     "name": "Marco Friedl",
+     "jersey": "23",
+     "position": "SUB"
+    },
+    {
+     "name": "Michael Gregoritsch",
+     "jersey": "11",
+     "position": "SUB"
+    },
+    {
+     "name": "Marko Arnautovic",
+     "jersey": "7",
+     "position": "SUB"
+    },
+    {
+     "name": "Michael Svoboda",
+     "jersey": "25",
+     "position": "SUB"
+    },
+    {
+     "name": "David Affengruber",
+     "jersey": "2",
+     "position": "SUB"
+    },
+    {
+     "name": "Alessandro Schöpf",
+     "jersey": "26",
+     "position": "SUB"
+    },
+    {
+     "name": "Patrick Wimmer",
+     "jersey": "21",
+     "position": "SUB"
+    },
+    {
+     "name": "Kevin Danso",
+     "jersey": "3",
+     "position": "SUB"
+    }
+   ]
+  },
+  {
+   "team": "Jordan",
+   "formation": "3-4-2-1",
+   "starters": [
+    {
+     "name": "Yazeed Abulaila",
+     "jersey": "1",
+     "position": "G"
+    },
+    {
+     "name": "Yazan Al-Arab",
+     "jersey": "5",
+     "position": "CD"
+    },
+    {
+     "name": "Mohammad Abualnadi",
+     "jersey": "16",
+     "position": "CD-L"
+    },
+    {
+     "name": "Abdallah Nasib",
+     "jersey": "3",
+     "position": "CD-R"
+    },
+    {
+     "name": "Noor Al-Rawabdeh",
+     "jersey": "8",
+     "position": "CM-L"
+    },
+    {
+     "name": "Nizar Al-Rashdan",
+     "jersey": "21",
+     "position": "CM-R"
+    },
+    {
+     "name": "Mohannad Abu Taha",
+     "jersey": "20",
+     "position": "LM"
+    },
+    {
+     "name": "Ehsan Haddad",
+     "jersey": "23",
+     "position": "RM"
+    },
+    {
+     "name": "Mousa Al-Tamari",
+     "jersey": "10",
+     "position": "F"
+    },
+    {
+     "name": "Ali Olwan",
+     "jersey": "9",
+     "position": "CF-L"
+    },
+    {
+     "name": "Odeh Fakhoury",
+     "jersey": "11",
+     "position": "CF-R"
+    }
+   ],
+   "subs": [
+    {
+     "name": "Saleem Obaid",
+     "jersey": "17",
+     "position": "SUB"
+    },
+    {
+     "name": "Mahmoud Al-Mardi",
+     "jersey": "13",
+     "position": "SUB"
+    },
+    {
+     "name": "Abdallah Al-Fakhouri",
+     "jersey": "22",
+     "position": "SUB"
+    },
+    {
+     "name": "Nour Bani Ateyah",
+     "jersey": "12",
+     "position": "SUB"
+    },
+    {
+     "name": "Mohammad Abu Hasheesh",
+     "jersey": "2",
+     "position": "SUB"
+    },
+    {
+     "name": "Ibrahim Sadeh",
+     "jersey": "15",
+     "position": "SUB"
+    },
+    {
+     "name": "Saed Al-Rosan",
+     "jersey": "19",
+     "position": "SUB"
+    },
+    {
+     "name": "Amer Jamous",
+     "jersey": "6",
+     "position": "SUB"
+    },
+    {
+     "name": "Mohammad Abughoush",
+     "jersey": "18",
+     "position": "SUB"
+    },
+    {
+     "name": "Mohammad Al-Daoud",
+     "jersey": "25",
+     "position": "SUB"
+    },
+    {
+     "name": "Husam Abu Dahab",
+     "jersey": "4",
+     "position": "SUB"
+    },
+    {
+     "name": "Rajaei Ayed",
+     "jersey": "14",
+     "position": "SUB"
+    },
+    {
+     "name": "Anas Badawi",
+     "jersey": "26",
+     "position": "SUB"
+    },
+    {
+     "name": "Mohammed Abu Zraiq",
+     "jersey": "7",
+     "position": "SUB"
+    },
+    {
+     "name": "Ali Azaizeh",
+     "jersey": "24",
+     "position": "SUB"
+    }
+   ]
+  }
+ ],
+ "attendance": 68527,
+ "venue": "Levi's Stadium, Santa Clara, California, USA"
+}
