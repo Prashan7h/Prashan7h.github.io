@@ -1,0 +1,923 @@
+{
+ "teams": [
+  {
+   "name": "Czechia",
+   "stats": {
+    "possessionPct": "38.3",
+    "totalShots": "14",
+    "shotsOnTarget": "3",
+    "wonCorners": "5",
+    "foulsCommitted": "12",
+    "offsides": "2",
+    "saves": "3",
+    "yellowCards": "1",
+    "redCards": "0"
+   }
+  },
+  {
+   "name": "South Africa",
+   "stats": {
+    "possessionPct": "61.7",
+    "totalShots": "17",
+    "shotsOnTarget": "4",
+    "wonCorners": "5",
+    "foulsCommitted": "10",
+    "offsides": "3",
+    "saves": "2",
+    "yellowCards": "2",
+    "redCards": "0"
+   }
+  }
+ ],
+ "events": [
+  {
+   "type": "Kickoff",
+   "minute": "",
+   "team": null,
+   "text": "First Half begins.",
+   "players": []
+  },
+  {
+   "type": "Goal",
+   "minute": "6'",
+   "team": "Czechia",
+   "text": "Goal! Czechia 1, South Africa 0. Michal Sadílek (Czechia) left footed shot from the centre of the box to the centre of the goal. Assisted by Alexandr Sojka.",
+   "players": [
+    "Michal Sadílek",
+    "Alexandr Sojka"
+   ]
+  },
+  {
+   "type": "Start Delay",
+   "minute": "23'",
+   "team": "South Africa",
+   "text": "Delay in match for a drinks break.",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "23'",
+   "team": "Czechia",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "26'",
+   "team": "South Africa",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "26'",
+   "team": "Czechia",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Yellow Card",
+   "minute": "33'",
+   "team": "South Africa",
+   "text": "Teboho Mokoena (South Africa) is shown the yellow card for a bad foul.",
+   "players": [
+    "Teboho Mokoena"
+   ]
+  },
+  {
+   "type": "Yellow Card",
+   "minute": "40'",
+   "team": "South Africa",
+   "text": "Thalente Mbatha (South Africa) is shown the yellow card for a bad foul.",
+   "players": [
+    "Thalente Mbatha"
+   ]
+  },
+  {
+   "type": "Halftime",
+   "minute": "45'+5'",
+   "team": null,
+   "text": "First Half ends, Czechia 1, South Africa 0.",
+   "players": []
+  },
+  {
+   "type": "Substitution",
+   "minute": "45'",
+   "team": "South Africa",
+   "text": "Substitution, South Africa. Relebohile Mofokeng replaces Jayden Adams.",
+   "players": [
+    "Relebohile Mofokeng",
+    "Jayden Adams"
+   ]
+  },
+  {
+   "type": "Start 2nd Half",
+   "minute": "45'",
+   "team": null,
+   "text": "Second Half begins Czechia 1, South Africa 0.",
+   "players": []
+  },
+  {
+   "type": "Substitution",
+   "minute": "55'",
+   "team": "Czechia",
+   "text": "Substitution, Czechia. Pavel Sulc replaces Vladimír Darida.",
+   "players": [
+    "Pavel Sulc",
+    "Vladimír Darida"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "55'",
+   "team": "Czechia",
+   "text": "Substitution, Czechia. Jaroslav Zeleny replaces Alexandr Sojka.",
+   "players": [
+    "Jaroslav Zelený",
+    "Alexandr Sojka"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "66'",
+   "team": "South Africa",
+   "text": "Substitution, South Africa. Evidence Makgopa replaces Iqraam Rayners.",
+   "players": [
+    "Evidence Makgopa",
+    "Iqraam Rayners"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "67'",
+   "team": "Czechia",
+   "text": "Substitution, Czechia. Tomás Soucek replaces Michal Sadílek.",
+   "players": [
+    "Tomás Soucek",
+    "Michal Sadílek"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "67'",
+   "team": "Czechia",
+   "text": "Substitution, Czechia. Lukás Provod replaces Adam Hlozek.",
+   "players": [
+    "Lukás Provod",
+    "Adam Hlozek"
+   ]
+  },
+  {
+   "type": "Start Delay",
+   "minute": "69'",
+   "team": "South Africa",
+   "text": "Delay in match for a drinks break.",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "69'",
+   "team": "Czechia",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "72'",
+   "team": "South Africa",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "72'",
+   "team": "Czechia",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Yellow Card",
+   "minute": "75'",
+   "team": "Czechia",
+   "text": "Ladislav Krejcí (Czechia) is shown the yellow card for a bad foul.",
+   "players": [
+    "Ladislav Krejcí"
+   ]
+  },
+  {
+   "type": "Start Delay",
+   "minute": "76'",
+   "team": "South Africa",
+   "text": "Delay in match (South Africa).",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "76'",
+   "team": "Czechia",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "77'",
+   "team": "South Africa",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "77'",
+   "team": "Czechia",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Substitution",
+   "minute": "78'",
+   "team": "Czechia",
+   "text": "Substitution, Czechia. David Zima replaces Lukás Cerv.",
+   "players": [
+    "David Zima",
+    "Lukás Cerv"
+   ]
+  },
+  {
+   "type": "Penalty - Scored",
+   "minute": "83'",
+   "team": "South Africa",
+   "text": "Goal! Czechia 1, South Africa 1. Teboho Mokoena (South Africa) converts the penalty with a right footed shot to the bottom left corner.",
+   "players": [
+    "Teboho Mokoena"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "84'",
+   "team": "South Africa",
+   "text": "Substitution, South Africa. Kamogelo Sebelebele replaces Thapelo Maseko.",
+   "players": [
+    "Kamogelo Sebelebele",
+    "Thapelo Maseko"
+   ]
+  },
+  {
+   "type": "End Regular Time",
+   "minute": "90'+8'",
+   "team": null,
+   "text": "Second Half ends, Czechia 1, South Africa 1.",
+   "players": []
+  }
+ ],
+ "shots": [
+  {
+   "minute": "1",
+   "seconds": 45.0,
+   "team": "Czechia",
+   "player": "Patrik Schick",
+   "type": "Shot Off Target",
+   "x": 92.1,
+   "y": 40.9,
+   "goal": false,
+   "xg": 0.229,
+   "text": "Attempt missed. Patrik Schick (Czechia) header from the centre of the box is close, but misses to the right. Assisted by Ladislav Krejcí with a cross."
+  },
+  {
+   "minute": "5",
+   "seconds": 264.0,
+   "team": "Czechia",
+   "player": "Ladislav Krejcí",
+   "type": "Shot Off Target",
+   "x": 91.3,
+   "y": 46.6,
+   "goal": false,
+   "xg": 0.291,
+   "text": "Attempt missed. Ladislav Krejcí (Czechia) header from the centre of the box misses to the left. Assisted by Vladimír Coufal with a cross following a corner."
+  },
+  {
+   "minute": "5",
+   "seconds": 266.0,
+   "team": "Czechia",
+   "player": "Michal Sadílek",
+   "type": "Shot Off Target",
+   "x": 84.6,
+   "y": 60.3,
+   "goal": false,
+   "xg": 0.17,
+   "text": "Attempt missed. Michal Sadílek (Czechia) left footed shot from the centre of the box misses to the left following a corner."
+  },
+  {
+   "minute": "6",
+   "seconds": 307.0,
+   "team": "Czechia",
+   "player": "Michal Sadílek",
+   "type": "Goal",
+   "x": 88.6,
+   "y": 58.9,
+   "goal": true,
+   "xg": 0.261,
+   "text": "Goal! Czechia 1, South Africa 0. Michal Sadílek (Czechia) left footed shot from the centre of the box to the centre of the goal. Assisted by Alexandr Sojka."
+  },
+  {
+   "minute": "12",
+   "seconds": 709.0,
+   "team": "South Africa",
+   "player": "Oswin Appollis",
+   "type": "Shot Blocked",
+   "x": 72.9,
+   "y": 44.8,
+   "goal": false,
+   "xg": 0.063,
+   "text": "Attempt blocked. Oswin Appollis (South Africa) right footed shot from outside the box is blocked. Assisted by Teboho Mokoena."
+  },
+  {
+   "minute": "13",
+   "seconds": 750.0,
+   "team": "South Africa",
+   "player": "Aubrey Modiba",
+   "type": "Shot Off Target",
+   "x": 65.1,
+   "y": 46.6,
+   "goal": false,
+   "xg": 0.032,
+   "text": "Attempt missed. Aubrey Modiba (South Africa) left footed shot from more than 35 yards is high and wide to the left. Assisted by Teboho Mokoena following a corner."
+  },
+  {
+   "minute": "22",
+   "seconds": 1293.0,
+   "team": "South Africa",
+   "player": "Iqraam Rayners",
+   "type": "Shot Blocked",
+   "x": 90.6,
+   "y": 53.8,
+   "goal": false,
+   "xg": 0.263,
+   "text": "Attempt blocked. Iqraam Rayners (South Africa) header from the centre of the box is blocked. Assisted by Aubrey Modiba with a cross."
+  },
+  {
+   "minute": "22",
+   "seconds": 1293.0,
+   "team": "Czechia",
+   "player": null,
+   "type": "Shot Blocked",
+   "x": 9.0,
+   "y": 45.3,
+   "goal": false,
+   "xg": 0.0,
+   "text": "Robin Hranác (Czechia) Shot Blocked at 22'"
+  },
+  {
+   "minute": "41",
+   "seconds": 2459.0,
+   "team": "Czechia",
+   "player": "Adam Hlozek",
+   "type": "Shot Off Target",
+   "x": 71.8,
+   "y": 45.0,
+   "goal": false,
+   "xg": 0.057,
+   "text": "Attempt missed. Adam Hlozek (Czechia) right footed shot from outside the box is too high from a direct free kick."
+  },
+  {
+   "minute": "45",
+   "seconds": 2658.0,
+   "team": "South Africa",
+   "player": "Teboho Mokoena",
+   "type": "Shot Off Target",
+   "x": 70.1,
+   "y": 53.8,
+   "goal": false,
+   "xg": 0.049,
+   "text": "Attempt missed. Teboho Mokoena (South Africa) right footed shot from outside the box is too high. Assisted by Jayden Adams."
+  },
+  {
+   "minute": "45'+4",
+   "seconds": 2700.0,
+   "team": "South Africa",
+   "player": "Thapelo Maseko",
+   "type": "Shot Blocked",
+   "x": 89.8,
+   "y": 44.2,
+   "goal": false,
+   "xg": 0.342,
+   "text": "Attempt blocked. Thapelo Maseko (South Africa) left footed shot from the centre of the box is blocked."
+  },
+  {
+   "minute": "47",
+   "seconds": 2785.0,
+   "team": "Czechia",
+   "player": "Vladimír Darida",
+   "type": "Shot Blocked",
+   "x": 86.6,
+   "y": 54.1,
+   "goal": false,
+   "xg": 0.251,
+   "text": "Attempt blocked. Vladimír Darida (Czechia) right footed shot from the centre of the box is blocked. Assisted by Michal Sadílek."
+  },
+  {
+   "minute": "47",
+   "seconds": 2792.0,
+   "team": "Czechia",
+   "player": "Lukás Cerv",
+   "type": "Shot On Target",
+   "x": 72.2,
+   "y": 50.3,
+   "goal": false,
+   "xg": 0.061,
+   "text": "Attempt saved. Lukás Cerv (Czechia) left footed shot from outside the box is saved in the top centre of the goal by Ronwen Williams (South Africa)."
+  },
+  {
+   "minute": "48",
+   "seconds": 2846.0,
+   "team": "Czechia",
+   "player": "Patrik Schick",
+   "type": "Shot On Target",
+   "x": 91.4,
+   "y": 52.6,
+   "goal": false,
+   "xg": 0.301,
+   "text": "Attempt saved. Patrik Schick (Czechia) header from the centre of the box is saved in the centre of the goal by Ronwen Williams (South Africa). Assisted by Vladimír Coufal with a cross."
+  },
+  {
+   "minute": "50",
+   "seconds": 2951.0,
+   "team": "South Africa",
+   "player": "Mbekezeli Mbokazi",
+   "type": "Shot Off Target",
+   "x": 71.6,
+   "y": 45.9,
+   "goal": false,
+   "xg": 0.057,
+   "text": "Attempt missed. Mbekezeli Mbokazi (South Africa) left footed shot from outside the box is close, but misses to the right following a corner."
+  },
+  {
+   "minute": "53",
+   "seconds": 3133.0,
+   "team": "Czechia",
+   "player": "Ladislav Krejcí",
+   "type": "Shot Off Target",
+   "x": 90.0,
+   "y": 55.9,
+   "goal": false,
+   "xg": 0.226,
+   "text": "Attempt missed. Ladislav Krejcí (Czechia) header from the centre of the box is just a bit too high. Assisted by Vladimír Coufal with a cross following a corner."
+  },
+  {
+   "minute": "54",
+   "seconds": 3213.0,
+   "team": "South Africa",
+   "player": "Thapelo Maseko",
+   "type": "Shot Off Target",
+   "x": 79.0,
+   "y": 35.6,
+   "goal": false,
+   "xg": 0.091,
+   "text": "Attempt missed. Thapelo Maseko (South Africa) left footed shot from outside the box is too high. Assisted by Teboho Mokoena."
+  },
+  {
+   "minute": "59",
+   "seconds": 3522.0,
+   "team": "Czechia",
+   "player": "Michal Sadílek",
+   "type": "Shot Blocked",
+   "x": 85.4,
+   "y": 53.1,
+   "goal": false,
+   "xg": 0.223,
+   "text": "Attempt blocked. Michal Sadílek (Czechia) left footed shot from the centre of the box is blocked. Assisted by Pavel Sulc."
+  },
+  {
+   "minute": "60",
+   "seconds": 3589.0,
+   "team": "South Africa",
+   "player": "Aubrey Modiba",
+   "type": "Shot Off Target",
+   "x": 69.8,
+   "y": 72.4,
+   "goal": false,
+   "xg": 0.035,
+   "text": "Attempt missed. Aubrey Modiba (South Africa) left footed shot from outside the box misses to the right. Assisted by Relebohile Mofokeng."
+  },
+  {
+   "minute": "68",
+   "seconds": 4032.0,
+   "team": "Czechia",
+   "player": "Ladislav Krejcí",
+   "type": "Shot Blocked",
+   "x": 91.6,
+   "y": 44.5,
+   "goal": false,
+   "xg": 0.276,
+   "text": "Attempt blocked. Ladislav Krejcí (Czechia) header from the centre of the box is blocked. Assisted by Vladimír Coufal."
+  },
+  {
+   "minute": "74",
+   "seconds": 4404.0,
+   "team": "South Africa",
+   "player": "Evidence Makgopa",
+   "type": "Shot On Target",
+   "x": 89.6,
+   "y": 63.6,
+   "goal": false,
+   "xg": 0.139,
+   "text": "Attempt saved. Evidence Makgopa (South Africa) header from the left side of the box is saved in the centre of the goal by Matej Kovár (Czechia). Assisted by Teboho Mokoena with a cross."
+  },
+  {
+   "minute": "76",
+   "seconds": 4543.0,
+   "team": "South Africa",
+   "player": "Mbekezeli Mbokazi",
+   "type": "Shot Blocked",
+   "x": 70.4,
+   "y": 57.0,
+   "goal": false,
+   "xg": 0.05,
+   "text": "Attempt blocked. Mbekezeli Mbokazi (South Africa) left footed shot from outside the box is blocked. Assisted by Aubrey Modiba."
+  },
+  {
+   "minute": "81",
+   "seconds": 4842.0,
+   "team": "South Africa",
+   "player": "Thapelo Maseko",
+   "type": "Shot Blocked",
+   "x": 81.5,
+   "y": 28.2,
+   "goal": false,
+   "xg": 0.083,
+   "text": "Attempt blocked. Thapelo Maseko (South Africa) left footed shot from outside the box is blocked. Assisted by Teboho Mokoena."
+  },
+  {
+   "minute": "83",
+   "seconds": 4968.0,
+   "team": "South Africa",
+   "player": "Teboho Mokoena",
+   "type": "Penalty - Scored",
+   "x": 88.5,
+   "y": 50.0,
+   "goal": true,
+   "xg": 0.76,
+   "text": "Goal! Czechia 1, South Africa 1. Teboho Mokoena (South Africa) converts the penalty with a right footed shot to the bottom left corner."
+  },
+  {
+   "minute": "86",
+   "seconds": 5119.0,
+   "team": "South Africa",
+   "player": "Thalente Mbatha",
+   "type": "Shot Blocked",
+   "x": 72.0,
+   "y": 49.7,
+   "goal": false,
+   "xg": 0.06,
+   "text": "Attempt blocked. Thalente Mbatha (South Africa) right footed shot from outside the box is blocked."
+  },
+  {
+   "minute": "88",
+   "seconds": 5272.0,
+   "team": "South Africa",
+   "player": "Relebohile Mofokeng",
+   "type": "Shot On Target",
+   "x": 78.8,
+   "y": 41.7,
+   "goal": false,
+   "xg": 0.105,
+   "text": "Attempt saved. Relebohile Mofokeng (South Africa) right footed shot from outside the box is saved in the bottom left corner by Matej Kovár (Czechia)."
+  },
+  {
+   "minute": "90",
+   "seconds": 5389.0,
+   "team": "Czechia",
+   "player": "Ladislav Krejcí",
+   "type": "Shot Off Target",
+   "x": 90.9,
+   "y": 49.3,
+   "goal": false,
+   "xg": 0.291,
+   "text": "Attempt missed. Ladislav Krejcí (Czechia) header from the centre of the box misses to the right. Assisted by Lukás Provod with a cross."
+  },
+  {
+   "minute": "90'+1",
+   "seconds": 5400.0,
+   "team": "Czechia",
+   "player": "Jaroslav Zeleny",
+   "type": "Shot Off Target",
+   "x": 85.7,
+   "y": 46.2,
+   "goal": false,
+   "xg": 0.148,
+   "text": "Attempt missed. Jaroslav Zeleny (Czechia) header from the centre of the box misses to the right. Assisted by Vladimír Coufal with a cross following a set piece situation."
+  },
+  {
+   "minute": "90'+4",
+   "seconds": 5400.0,
+   "team": "Czechia",
+   "player": "Lukás Provod",
+   "type": "Shot Off Target",
+   "x": 82.1,
+   "y": 73.0,
+   "goal": false,
+   "xg": 0.081,
+   "text": "Attempt missed. Lukás Provod (Czechia) left footed shot from outside the box is close, but misses to the right. Assisted by Ladislav Krejcí."
+  },
+  {
+   "minute": "90'+6",
+   "seconds": 5400.0,
+   "team": "South Africa",
+   "player": "Evidence Makgopa",
+   "type": "Shot On Target",
+   "x": 85.3,
+   "y": 33.3,
+   "goal": false,
+   "xg": 0.135,
+   "text": "Attempt saved. Evidence Makgopa (South Africa) left footed shot from the right side of the box is saved in the centre of the goal by Matej Kovár (Czechia). Assisted by Khuliso Mudau."
+  },
+  {
+   "minute": "90'+7",
+   "seconds": 5400.0,
+   "team": "South Africa",
+   "player": "Aubrey Modiba",
+   "type": "Shot Blocked",
+   "x": 85.9,
+   "y": 56.2,
+   "goal": false,
+   "xg": 0.221,
+   "text": "Attempt blocked. Aubrey Modiba (South Africa) right footed shot from the centre of the box is blocked."
+  },
+  {
+   "minute": "90'+7",
+   "seconds": 5400.0,
+   "team": "South Africa",
+   "player": "Mbekezeli Mbokazi",
+   "type": "Shot Blocked",
+   "x": 73.2,
+   "y": 34.2,
+   "goal": false,
+   "xg": 0.054,
+   "text": "Attempt blocked. Mbekezeli Mbokazi (South Africa) left footed shot from outside the box is blocked. Assisted by Ime Okon."
+  }
+ ],
+ "lineups": [
+  {
+   "team": "Czechia",
+   "formation": "3-5-2",
+   "starters": [
+    {
+     "name": "Matej Kovár",
+     "jersey": "1",
+     "position": "G"
+    },
+    {
+     "name": "Robin Hranác",
+     "jersey": "4",
+     "position": "CD"
+    },
+    {
+     "name": "Ladislav Krejcí",
+     "jersey": "7",
+     "position": "CD-L"
+    },
+    {
+     "name": "Tomás Holes",
+     "jersey": "3",
+     "position": "CD-R"
+    },
+    {
+     "name": "Michal Sadílek",
+     "jersey": "18",
+     "position": "CM-L"
+    },
+    {
+     "name": "Vladimír Darida",
+     "jersey": "8",
+     "position": "CM-R"
+    },
+    {
+     "name": "Lukás Cerv",
+     "jersey": "12",
+     "position": "AM"
+    },
+    {
+     "name": "Alexandr Sojka",
+     "jersey": "24",
+     "position": "LM"
+    },
+    {
+     "name": "Vladimír Coufal",
+     "jersey": "5",
+     "position": "RM"
+    },
+    {
+     "name": "Adam Hlozek",
+     "jersey": "9",
+     "position": "CF-L"
+    },
+    {
+     "name": "Patrik Schick",
+     "jersey": "10",
+     "position": "CF-R"
+    }
+   ],
+   "subs": [
+    {
+     "name": "Jaroslav Zelený",
+     "jersey": "20",
+     "position": "SUB"
+    },
+    {
+     "name": "Mojmír Chytil",
+     "jersey": "13",
+     "position": "SUB"
+    },
+    {
+     "name": "Stepán Chaloupek",
+     "jersey": "6",
+     "position": "SUB"
+    },
+    {
+     "name": "Denis Visinský",
+     "jersey": "26",
+     "position": "SUB"
+    },
+    {
+     "name": "Jan Kuchta",
+     "jersey": "11",
+     "position": "SUB"
+    },
+    {
+     "name": "Lukás Provod",
+     "jersey": "17",
+     "position": "SUB"
+    },
+    {
+     "name": "Tomás Chorý",
+     "jersey": "19",
+     "position": "SUB"
+    },
+    {
+     "name": "Tomás Soucek",
+     "jersey": "22",
+     "position": "SUB"
+    },
+    {
+     "name": "David Doudera",
+     "jersey": "21",
+     "position": "SUB"
+    },
+    {
+     "name": "Lukás Hornícek",
+     "jersey": "23",
+     "position": "SUB"
+    },
+    {
+     "name": "Jindrich Stanek",
+     "jersey": "16",
+     "position": "SUB"
+    },
+    {
+     "name": "Hugo Sochurek",
+     "jersey": "25",
+     "position": "SUB"
+    },
+    {
+     "name": "David Zima",
+     "jersey": "2",
+     "position": "SUB"
+    },
+    {
+     "name": "Pavel Sulc",
+     "jersey": "15",
+     "position": "SUB"
+    }
+   ]
+  },
+  {
+   "team": "South Africa",
+   "formation": "4-3-3",
+   "starters": [
+    {
+     "name": "Ronwen Williams",
+     "jersey": "1",
+     "position": "G"
+    },
+    {
+     "name": "Mbekezeli Mbokazi",
+     "jersey": "14",
+     "position": "CD-L"
+    },
+    {
+     "name": "Ime Okon",
+     "jersey": "21",
+     "position": "CD-R"
+    },
+    {
+     "name": "Aubrey Modiba",
+     "jersey": "6",
+     "position": "LB"
+    },
+    {
+     "name": "Khuliso Mudau",
+     "jersey": "20",
+     "position": "RB"
+    },
+    {
+     "name": "Teboho Mokoena",
+     "jersey": "4",
+     "position": "CM"
+    },
+    {
+     "name": "Jayden Adams",
+     "jersey": "23",
+     "position": "LM"
+    },
+    {
+     "name": "Thalente Mbatha",
+     "jersey": "5",
+     "position": "RM"
+    },
+    {
+     "name": "Iqraam Rayners",
+     "jersey": "15",
+     "position": "F"
+    },
+    {
+     "name": "Oswin Appollis",
+     "jersey": "7",
+     "position": "LF"
+    },
+    {
+     "name": "Thapelo Maseko",
+     "jersey": "12",
+     "position": "RF"
+    }
+   ],
+   "subs": [
+    {
+     "name": "Sipho Chaine",
+     "jersey": "16",
+     "position": "SUB"
+    },
+    {
+     "name": "Nkosinathi Sibisi",
+     "jersey": "19",
+     "position": "SUB"
+    },
+    {
+     "name": "Samukele Kabini",
+     "jersey": "18",
+     "position": "SUB"
+    },
+    {
+     "name": "Ricardo Goss",
+     "jersey": "22",
+     "position": "SUB"
+    },
+    {
+     "name": "Thabang Matuludi",
+     "jersey": "2",
+     "position": "SUB"
+    },
+    {
+     "name": "Tshepang Moremi",
+     "jersey": "8",
+     "position": "SUB"
+    },
+    {
+     "name": "Olwethu Makhanya",
+     "jersey": "24",
+     "position": "SUB"
+    },
+    {
+     "name": "Kamogelo Sebelebele",
+     "jersey": "25",
+     "position": "SUB"
+    },
+    {
+     "name": "Evidence Makgopa",
+     "jersey": "17",
+     "position": "SUB"
+    },
+    {
+     "name": "Khulumani Ndamane",
+     "jersey": "3",
+     "position": "SUB"
+    },
+    {
+     "name": "Lyle Foster",
+     "jersey": "9",
+     "position": "SUB"
+    },
+    {
+     "name": "Relebohile Mofokeng",
+     "jersey": "10",
+     "position": "SUB"
+    },
+    {
+     "name": "Bradley Cross",
+     "jersey": "26",
+     "position": "SUB"
+    }
+   ]
+  }
+ ],
+ "attendance": 67442,
+ "venue": "Mercedes-Benz Stadium, Atlanta, Georgia, USA"
+}

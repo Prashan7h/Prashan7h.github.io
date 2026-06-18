@@ -88,12 +88,33 @@
    "team2": "South Africa",
    "group": "Group A",
    "ground": "Atlanta",
-   "score": null,
-   "goals1": [],
-   "goals2": [],
+   "score": {
+    "ft": [
+     1,
+     1
+    ],
+    "ht": [
+     1,
+     0
+    ]
+   },
+   "goals1": [
+    {
+     "name": "Michal Sadílek",
+     "minute": "6"
+    }
+   ],
+   "goals2": [
+    {
+     "name": "Teboho Mokoena",
+     "minute": "83",
+     "penalty": true
+    }
+   ],
    "espn_id": "760438",
-   "status": "scheduled",
+   "status": "finished",
    "utc_date": "2026-06-18T16:00Z",
+   "attendance": 67442,
    "venue": "Mercedes-Benz Stadium",
    "slug": "2026-06-18-czech-republic-vs-south-africa"
   },
@@ -241,8 +262,9 @@
    "goals1": [],
    "goals2": [],
    "espn_id": "760439",
-   "status": "scheduled",
+   "status": "live",
    "utc_date": "2026-06-18T19:00Z",
+   "attendance": 70026,
    "venue": "SoFi Stadium",
    "slug": "2026-06-18-switzerland-vs-bosnia-and-herzegovina"
   },
