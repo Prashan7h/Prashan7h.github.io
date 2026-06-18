@@ -1,0 +1,889 @@
+{
+ "teams": [
+  {
+   "name": "Uzbekistan",
+   "stats": {
+    "possessionPct": "38.6",
+    "totalShots": "8",
+    "shotsOnTarget": "2",
+    "wonCorners": "3",
+    "foulsCommitted": "14",
+    "offsides": "0",
+    "saves": "1",
+    "yellowCards": "1",
+    "redCards": "0"
+   }
+  },
+  {
+   "name": "Colombia",
+   "stats": {
+    "possessionPct": "61.4",
+    "totalShots": "15",
+    "shotsOnTarget": "4",
+    "wonCorners": "4",
+    "foulsCommitted": "11",
+    "offsides": "3",
+    "saves": "1",
+    "yellowCards": "1",
+    "redCards": "0"
+   }
+  }
+ ],
+ "events": [
+  {
+   "type": "Kickoff",
+   "minute": "",
+   "team": null,
+   "text": "First Half begins.",
+   "players": []
+  },
+  {
+   "type": "Yellow Card",
+   "minute": "7'",
+   "team": "Colombia",
+   "text": "Johan Mojica (Colombia) is shown the yellow card for a bad foul.",
+   "players": [
+    "Johan Mojica"
+   ]
+  },
+  {
+   "type": "Start Delay",
+   "minute": "16'",
+   "team": "Uzbekistan",
+   "text": "Delay in match because of an injury Utkir Yusupov (Uzbekistan).",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "16'",
+   "team": "Colombia",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "16'",
+   "team": "Uzbekistan",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "16'",
+   "team": "Colombia",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "23'",
+   "team": "Colombia",
+   "text": "Delay in match for a drinks break.",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "23'",
+   "team": "Uzbekistan",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "26'",
+   "team": "Colombia",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "26'",
+   "team": "Uzbekistan",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Yellow Card",
+   "minute": "34'",
+   "team": "Uzbekistan",
+   "text": "Abdukodir Khusanov (Uzbekistan) is shown the yellow card for a bad foul.",
+   "players": [
+    "Abdukodir Khusanov"
+   ]
+  },
+  {
+   "type": "Goal - Volley",
+   "minute": "40'",
+   "team": "Colombia",
+   "text": "Goal! Uzbekistan 0, Colombia 1. Daniel Muñoz (Colombia) right footed shot from the centre of the box to the high centre of the goal. Assisted by Luis Díaz with a through ball.",
+   "players": [
+    "Daniel Muñoz",
+    "Luis Díaz"
+   ]
+  },
+  {
+   "type": "Halftime",
+   "minute": "45'+6'",
+   "team": null,
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Substitution",
+   "minute": "45'",
+   "team": "Uzbekistan",
+   "text": "Substitution, Uzbekistan. Dostonbek Khamdamov replaces Oston Urunov.",
+   "players": [
+    "Dostonbek Khamdamov",
+    "Oston Urunov"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "45'",
+   "team": "Uzbekistan",
+   "text": "Substitution, Uzbekistan. Farrukh Sayfiev replaces Sherzod Nasrullaev.",
+   "players": [
+    "Farrukh Sayfiev",
+    "Sherzod Nasrullaev"
+   ]
+  },
+  {
+   "type": "Start 2nd Half",
+   "minute": "45'",
+   "team": null,
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Goal - Header",
+   "minute": "60'",
+   "team": "Uzbekistan",
+   "text": "Goal! Uzbekistan 1, Colombia 1. Abbosbek Fayzullaev (Uzbekistan) header from very close range to the top left corner.",
+   "players": [
+    "Abbosbek Fayzullaev"
+   ]
+  },
+  {
+   "type": "Goal",
+   "minute": "65'",
+   "team": "Colombia",
+   "text": "Goal! Uzbekistan 1, Colombia 2. Luis Díaz (Colombia) right footed shot from the centre of the box to the bottom right corner. Assisted by Gustavo Puerta.",
+   "players": [
+    "Luis Díaz",
+    "Gustavo Puerta"
+   ]
+  },
+  {
+   "type": "Start Delay",
+   "minute": "69'",
+   "team": "Colombia",
+   "text": "Delay in match for a drinks break.",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "69'",
+   "team": "Uzbekistan",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "71'",
+   "team": "Colombia",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "71'",
+   "team": "Uzbekistan",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Substitution",
+   "minute": "72'",
+   "team": "Colombia",
+   "text": "Substitution, Colombia. Jaminton Campaz replaces James Rodríguez.",
+   "players": [
+    "Jáminton Campaz",
+    "James Rodríguez"
+   ]
+  },
+  {
+   "type": "Start Delay",
+   "minute": "76'",
+   "team": "Uzbekistan",
+   "text": "Delay in match because of an injury Rustam Ashurmatov (Uzbekistan).",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "76'",
+   "team": "Colombia",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "77'",
+   "team": "Uzbekistan",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "77'",
+   "team": "Colombia",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Substitution",
+   "minute": "77'",
+   "team": "Uzbekistan",
+   "text": "Substitution, Uzbekistan. Jakhongir Urozov replaces Rustam Ashurmatov because of an injury.",
+   "players": [
+    "Jakhongir Urozov",
+    "Rustam Ashurmatov"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "77'",
+   "team": "Uzbekistan",
+   "text": "Substitution, Uzbekistan. Azizbek Amonov replaces Abbosbek Fayzullaev.",
+   "players": [
+    "Azizbek Amonov",
+    "Abbosbek Fayzullaev"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "80'",
+   "team": "Colombia",
+   "text": "Substitution, Colombia. Richard Ríos replaces Gustavo Puerta.",
+   "players": [
+    "Richard Ríos",
+    "Gustavo Puerta"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "80'",
+   "team": "Colombia",
+   "text": "Substitution, Colombia. Cucho Hernández replaces Luis Suárez.",
+   "players": [
+    "Cucho Hernández",
+    "Luis Suárez"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "90'+3'",
+   "team": "Colombia",
+   "text": "Substitution, Colombia. Andrés Gómez replaces Luis Díaz.",
+   "players": [
+    "Andrés Gómez",
+    "Luis Díaz"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "90'+3'",
+   "team": "Colombia",
+   "text": "Substitution, Colombia. Kevin Castaño replaces Jhon Arias.",
+   "players": [
+    "Kevin Castaño",
+    "Jhon Arias"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "90'+3'",
+   "team": "Uzbekistan",
+   "text": "Substitution, Uzbekistan. Igor Sergeev replaces Eldor Shomurodov.",
+   "players": [
+    "Igor Sergeev",
+    "Eldor Shomurodov"
+   ]
+  },
+  {
+   "type": "Goal - Header",
+   "minute": "90'+9'",
+   "team": "Colombia",
+   "text": "Goal! Uzbekistan 1, Colombia 3. Jaminton Campaz (Colombia) header from the centre of the box to the bottom left corner. Assisted by Cucho Hernández with a cross.",
+   "players": [
+    "Jáminton Campaz",
+    "Cucho Hernández"
+   ]
+  },
+  {
+   "type": "End Regular Time",
+   "minute": "90'+11'",
+   "team": null,
+   "text": "",
+   "players": []
+  }
+ ],
+ "shots": [
+  {
+   "minute": "17",
+   "seconds": 991.0,
+   "team": "Colombia",
+   "player": "Jhon Arias",
+   "type": "Shot Off Target",
+   "x": 78.7,
+   "y": 35.4,
+   "goal": false,
+   "xg": 0.088,
+   "text": "Attempt missed. Jhon Arias (Colombia) right footed shot from outside the box is close, but misses to the right. Assisted by Gustavo Puerta."
+  },
+  {
+   "minute": "32",
+   "seconds": 1893.0,
+   "team": "Colombia",
+   "player": null,
+   "type": "Shot Hit Woodwork",
+   "x": 93.0,
+   "y": 67.9,
+   "goal": false,
+   "xg": 0.174,
+   "text": "Luis Díaz (Colombia) hits the right post with a left footed shot from the left side of the box. Assisted by Jhon Arias with a through ball."
+  },
+  {
+   "minute": "40",
+   "seconds": 2390.0,
+   "team": "Colombia",
+   "player": "James Rodríguez",
+   "type": "Shot Blocked",
+   "x": 86.8,
+   "y": 46.4,
+   "goal": false,
+   "xg": 0.259,
+   "text": "Attempt blocked. James Rodríguez (Colombia) left footed shot from the centre of the box is blocked. Assisted by Luis Suárez."
+  },
+  {
+   "minute": "40",
+   "seconds": 2399.0,
+   "team": "Colombia",
+   "player": "Daniel Muñoz",
+   "type": "Goal - Volley",
+   "x": 91.9,
+   "y": 52.8,
+   "goal": true,
+   "xg": 0.492,
+   "text": "Goal! Uzbekistan 0, Colombia 1. Daniel Muñoz (Colombia) right footed shot from the centre of the box to the high centre of the goal. Assisted by Luis Díaz with a through ball."
+  },
+  {
+   "minute": "45",
+   "seconds": 2692.0,
+   "team": "Colombia",
+   "player": "James Rodríguez",
+   "type": "Shot On Target",
+   "x": 69.0,
+   "y": 39.9,
+   "goal": false,
+   "xg": 0.042,
+   "text": "Attempt saved. James Rodríguez (Colombia) left footed shot from outside the box is saved in the bottom right corner by Utkir Yusupov (Uzbekistan). Assisted by Davinson Sánchez."
+  },
+  {
+   "minute": "45'+2",
+   "seconds": 2700.0,
+   "team": "Uzbekistan",
+   "player": "Bekhruz Karimov",
+   "type": "Shot Off Target",
+   "x": 79.7,
+   "y": 35.8,
+   "goal": false,
+   "xg": 0.097,
+   "text": "Attempt missed. Bekhruz Karimov (Uzbekistan) right footed shot from outside the box misses to the right following a corner."
+  },
+  {
+   "minute": "45'+4",
+   "seconds": 2700.0,
+   "team": "Colombia",
+   "player": "Jefferson Lerma",
+   "type": "Shot Off Target",
+   "x": 91.6,
+   "y": 35.2,
+   "goal": false,
+   "xg": 0.217,
+   "text": "Attempt missed. Jefferson Lerma (Colombia) left footed shot from the right side of the box misses to the left following a corner."
+  },
+  {
+   "minute": "45'+4",
+   "seconds": 2700.0,
+   "team": "Colombia",
+   "player": "Gustavo Puerta",
+   "type": "Shot Blocked",
+   "x": 79.1,
+   "y": 36.2,
+   "goal": false,
+   "xg": 0.094,
+   "text": "Attempt blocked. Gustavo Puerta (Colombia) right footed shot from outside the box is blocked. Assisted by Davinson Sánchez."
+  },
+  {
+   "minute": "60",
+   "seconds": 3580.0,
+   "team": "Uzbekistan",
+   "player": "Eldor Shomurodov",
+   "type": "Shot On Target",
+   "x": 90.8,
+   "y": 32.3,
+   "goal": false,
+   "xg": 0.17,
+   "text": "Attempt saved. Eldor Shomurodov (Uzbekistan) right footed shot from the right side of the box is saved in the bottom right corner by Camilo Vargas (Colombia). Assisted by Dostonbek Khamdamov with a cross."
+  },
+  {
+   "minute": "60",
+   "seconds": 3583.0,
+   "team": "Uzbekistan",
+   "player": "Abbosbek Fayzullaev",
+   "type": "Goal - Header",
+   "x": 98.5,
+   "y": 51.1,
+   "goal": true,
+   "xg": 0.636,
+   "text": "Goal! Uzbekistan 1, Colombia 1. Abbosbek Fayzullaev (Uzbekistan) header from very close range to the top left corner."
+  },
+  {
+   "minute": "64",
+   "seconds": 3785.0,
+   "team": "Colombia",
+   "player": "Jhon Arias",
+   "type": "Shot Blocked",
+   "x": 87.4,
+   "y": 52.4,
+   "goal": false,
+   "xg": 0.283,
+   "text": "Attempt blocked. Jhon Arias (Colombia) left footed shot from the centre of the box is blocked. Assisted by Luis Díaz."
+  },
+  {
+   "minute": "64",
+   "seconds": 3789.0,
+   "team": "Colombia",
+   "player": "Jefferson Lerma",
+   "type": "Shot Blocked",
+   "x": 74.5,
+   "y": 50.9,
+   "goal": false,
+   "xg": 0.075,
+   "text": "Attempt blocked. Jefferson Lerma (Colombia) right footed shot from outside the box is blocked."
+  },
+  {
+   "minute": "64",
+   "seconds": 3835.0,
+   "team": "Colombia",
+   "player": "Davinson Sánchez",
+   "type": "Shot Off Target",
+   "x": 92.4,
+   "y": 54.8,
+   "goal": false,
+   "xg": 0.314,
+   "text": "Attempt missed. Davinson Sánchez (Colombia) header from the centre of the box misses to the left following a corner."
+  },
+  {
+   "minute": "65",
+   "seconds": 3893.0,
+   "team": "Colombia",
+   "player": "Luis Díaz",
+   "type": "Goal",
+   "x": 86.6,
+   "y": 59.3,
+   "goal": true,
+   "xg": 0.212,
+   "text": "Goal! Uzbekistan 1, Colombia 2. Luis Díaz (Colombia) right footed shot from the centre of the box to the bottom right corner. Assisted by Gustavo Puerta."
+  },
+  {
+   "minute": "82",
+   "seconds": 4872.0,
+   "team": "Colombia",
+   "player": "Johan Mojica",
+   "type": "Shot Off Target",
+   "x": 71.6,
+   "y": 69.9,
+   "goal": false,
+   "xg": 0.043,
+   "text": "Attempt missed. Johan Mojica (Colombia) left footed shot from outside the box is too high. Assisted by Jefferson Lerma."
+  },
+  {
+   "minute": "86",
+   "seconds": 5127.0,
+   "team": "Colombia",
+   "player": "Jefferson Lerma",
+   "type": "Shot Off Target",
+   "x": 89.8,
+   "y": 60.7,
+   "goal": false,
+   "xg": 0.262,
+   "text": "Attempt missed. Jefferson Lerma (Colombia) right footed shot from the centre of the box is close, but misses to the left. Assisted by Jhon Arias following a corner."
+  },
+  {
+   "minute": "87",
+   "seconds": 5174.0,
+   "team": "Colombia",
+   "player": "Jaminton Campaz",
+   "type": "Shot Off Target",
+   "x": 83.1,
+   "y": 34.2,
+   "goal": false,
+   "xg": 0.12,
+   "text": "Attempt missed. Jaminton Campaz (Colombia) left footed shot from the right side of the box is high and wide to the left."
+  },
+  {
+   "minute": "88",
+   "seconds": 5253.0,
+   "team": "Uzbekistan",
+   "player": "Dostonbek Khamdamov",
+   "type": "Shot Blocked",
+   "x": 80.3,
+   "y": 26.8,
+   "goal": false,
+   "xg": 0.072,
+   "text": "Attempt blocked. Dostonbek Khamdamov (Uzbekistan) left footed shot from outside the box is blocked. Assisted by Bekhruz Karimov."
+  },
+  {
+   "minute": "90",
+   "seconds": 5393.0,
+   "team": "Uzbekistan",
+   "player": "Akmal Mozgovoy",
+   "type": "Shot Off Target",
+   "x": 87.4,
+   "y": 64.0,
+   "goal": false,
+   "xg": 0.18,
+   "text": "Attempt missed. Akmal Mozgovoy (Uzbekistan) right footed shot from the left side of the box is high and wide to the right. Assisted by Azizbek Amonov."
+  },
+  {
+   "minute": "90'+2",
+   "seconds": 5400.0,
+   "team": "Uzbekistan",
+   "player": "Dostonbek Khamdamov",
+   "type": "Shot Off Target",
+   "x": 92.4,
+   "y": 63.6,
+   "goal": false,
+   "xg": 0.16,
+   "text": "Attempt missed. Dostonbek Khamdamov (Uzbekistan) header from the left side of the box misses to the right. Assisted by Farrukh Sayfiev with a cross."
+  },
+  {
+   "minute": "90'+9",
+   "seconds": 5400.0,
+   "team": "Colombia",
+   "player": "Jaminton Campaz",
+   "type": "Goal - Header",
+   "x": 92.4,
+   "y": 54.2,
+   "goal": true,
+   "xg": 0.324,
+   "text": "Goal! Uzbekistan 1, Colombia 3. Jaminton Campaz (Colombia) header from the centre of the box to the bottom left corner. Assisted by Cucho Hernández with a cross."
+  },
+  {
+   "minute": "90'+11",
+   "seconds": 5400.0,
+   "team": "Uzbekistan",
+   "player": "Azizbek Amonov",
+   "type": "Shot Blocked",
+   "x": 74.0,
+   "y": 70.1,
+   "goal": false,
+   "xg": 0.051,
+   "text": "Attempt blocked. Azizbek Amonov (Uzbekistan) right footed shot from outside the box is blocked. Assisted by Otabek Shukurov."
+  },
+  {
+   "minute": "90'+11",
+   "seconds": 5400.0,
+   "team": "Uzbekistan",
+   "player": null,
+   "type": "Shot Hit Woodwork",
+   "x": 73.4,
+   "y": 36.2,
+   "goal": false,
+   "xg": 0.058,
+   "text": "Bekhruz Karimov (Uzbekistan) hits the bar with a right footed shot from outside the box."
+  }
+ ],
+ "lineups": [
+  {
+   "team": "Uzbekistan",
+   "formation": "3-4-2-1",
+   "starters": [
+    {
+     "name": "Utkir Yusupov",
+     "jersey": "1",
+     "position": "G"
+    },
+    {
+     "name": "Abdulla Abdullaev",
+     "jersey": "18",
+     "position": "CD"
+    },
+    {
+     "name": "Rustam Ashurmatov",
+     "jersey": "5",
+     "position": "CD-L"
+    },
+    {
+     "name": "Abdukodir Khusanov",
+     "jersey": "2",
+     "position": "CD-R"
+    },
+    {
+     "name": "Otabek Shukurov",
+     "jersey": "7",
+     "position": "CM-L"
+    },
+    {
+     "name": "Akmal Mozgovoy",
+     "jersey": "6",
+     "position": "CM-R"
+    },
+    {
+     "name": "Sherzod Nasrullaev",
+     "jersey": "13",
+     "position": "LM"
+    },
+    {
+     "name": "Behruzjon Karimov",
+     "jersey": "24",
+     "position": "RM"
+    },
+    {
+     "name": "Eldor Shomurodov",
+     "jersey": "14",
+     "position": "F"
+    },
+    {
+     "name": "Oston Urunov",
+     "jersey": "11",
+     "position": "CF-L"
+    },
+    {
+     "name": "Abbosbek Fayzullaev",
+     "jersey": "22",
+     "position": "CF-R"
+    }
+   ],
+   "subs": [
+    {
+     "name": "Avazbek Ulmasaliyev",
+     "jersey": "25",
+     "position": "SUB"
+    },
+    {
+     "name": "Botirali Ergashev",
+     "jersey": "16",
+     "position": "SUB"
+    },
+    {
+     "name": "Farrukh Sayfiev",
+     "jersey": "4",
+     "position": "SUB"
+    },
+    {
+     "name": "Azizbek Amonov",
+     "jersey": "20",
+     "position": "SUB"
+    },
+    {
+     "name": "Jakhongir Urozov",
+     "jersey": "26",
+     "position": "SUB"
+    },
+    {
+     "name": "Khojiakbar Alijonov",
+     "jersey": "3",
+     "position": "SUB"
+    },
+    {
+     "name": "Umar Eshmurodov",
+     "jersey": "15",
+     "position": "SUB"
+    },
+    {
+     "name": "Azizjon Ganiev",
+     "jersey": "19",
+     "position": "SUB"
+    },
+    {
+     "name": "Dostonbek Khamdamov",
+     "jersey": "17",
+     "position": "SUB"
+    },
+    {
+     "name": "Odiljon Xamrobekov",
+     "jersey": "9",
+     "position": "SUB"
+    },
+    {
+     "name": "Igor Sergeev",
+     "jersey": "21",
+     "position": "SUB"
+    },
+    {
+     "name": "Jamshid Iskanderov",
+     "jersey": "8",
+     "position": "SUB"
+    },
+    {
+     "name": "Sherzod Esanov",
+     "jersey": "23",
+     "position": "SUB"
+    },
+    {
+     "name": "Ruslanbek Jiyanov",
+     "jersey": "10",
+     "position": "SUB"
+    },
+    {
+     "name": "Abduvohid Nematov",
+     "jersey": "12",
+     "position": "SUB"
+    }
+   ]
+  },
+  {
+   "team": "Colombia",
+   "formation": "4-3-3",
+   "starters": [
+    {
+     "name": "Camilo Vargas",
+     "jersey": "12",
+     "position": "G"
+    },
+    {
+     "name": "Jhon Lucumí",
+     "jersey": "3",
+     "position": "CD-L"
+    },
+    {
+     "name": "Davinson Sánchez",
+     "jersey": "23",
+     "position": "CD-R"
+    },
+    {
+     "name": "Johan Mojica",
+     "jersey": "17",
+     "position": "LB"
+    },
+    {
+     "name": "Daniel Muñoz",
+     "jersey": "2",
+     "position": "RB"
+    },
+    {
+     "name": "Jefferson Lerma",
+     "jersey": "16",
+     "position": "CM"
+    },
+    {
+     "name": "Jhon Arias",
+     "jersey": "11",
+     "position": "LM"
+    },
+    {
+     "name": "Gustavo Puerta",
+     "jersey": "14",
+     "position": "RM"
+    },
+    {
+     "name": "Luis Suárez",
+     "jersey": "25",
+     "position": "F"
+    },
+    {
+     "name": "Luis Díaz",
+     "jersey": "7",
+     "position": "LF"
+    },
+    {
+     "name": "James Rodríguez",
+     "jersey": "10",
+     "position": "RF"
+    }
+   ],
+   "subs": [
+    {
+     "name": "David Ospina",
+     "jersey": "1",
+     "position": "SUB"
+    },
+    {
+     "name": "Yerry Mina",
+     "jersey": "13",
+     "position": "SUB"
+    },
+    {
+     "name": "Juan Fernando Quintero",
+     "jersey": "20",
+     "position": "SUB"
+    },
+    {
+     "name": "Jhon Córdoba",
+     "jersey": "9",
+     "position": "SUB"
+    },
+    {
+     "name": "Willer Ditta",
+     "jersey": "18",
+     "position": "SUB"
+    },
+    {
+     "name": "Álvaro Montero",
+     "jersey": "24",
+     "position": "SUB"
+    },
+    {
+     "name": "Santiago Arias",
+     "jersey": "4",
+     "position": "SUB"
+    },
+    {
+     "name": "Jáminton Campaz",
+     "jersey": "21",
+     "position": "SUB"
+    },
+    {
+     "name": "Deiver Machado",
+     "jersey": "22",
+     "position": "SUB"
+    },
+    {
+     "name": "Kevin Castaño",
+     "jersey": "5",
+     "position": "SUB"
+    },
+    {
+     "name": "Juan Portilla",
+     "jersey": "15",
+     "position": "SUB"
+    },
+    {
+     "name": "Jorge Carrascal",
+     "jersey": "8",
+     "position": "SUB"
+    },
+    {
+     "name": "Andrés Gómez",
+     "jersey": "26",
+     "position": "SUB"
+    },
+    {
+     "name": "Richard Ríos",
+     "jersey": "6",
+     "position": "SUB"
+    },
+    {
+     "name": "Cucho Hernández",
+     "jersey": "19",
+     "position": "SUB"
+    }
+   ]
+  }
+ ],
+ "attendance": 80824,
+ "venue": "Estadio Banorte, Mexico City, Mexico"
+}
