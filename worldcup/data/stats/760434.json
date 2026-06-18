@@ -1,0 +1,862 @@
+{
+ "teams": [
+  {
+   "name": "Ghana",
+   "stats": {
+    "possessionPct": "38.1",
+    "totalShots": "8",
+    "shotsOnTarget": "2",
+    "wonCorners": "2",
+    "foulsCommitted": "9",
+    "offsides": "4",
+    "saves": "4",
+    "yellowCards": "1",
+    "redCards": "0"
+   }
+  },
+  {
+   "name": "Panama",
+   "stats": {
+    "possessionPct": "61.9",
+    "totalShots": "11",
+    "shotsOnTarget": "4",
+    "wonCorners": "2",
+    "foulsCommitted": "11",
+    "offsides": "1",
+    "saves": "2",
+    "yellowCards": "2",
+    "redCards": "0"
+   }
+  }
+ ],
+ "events": [
+  {
+   "type": "Kickoff",
+   "minute": "",
+   "team": null,
+   "text": "First Half begins.",
+   "players": []
+  },
+  {
+   "type": "Yellow Card",
+   "minute": "16'",
+   "team": "Ghana",
+   "text": "Caleb Yirenkyi (Ghana) is shown the yellow card for a bad foul.",
+   "players": [
+    "Caleb Yirenkyi"
+   ]
+  },
+  {
+   "type": "Start Delay",
+   "minute": "23'",
+   "team": "Ghana",
+   "text": "Delay in match because of an injury Jordan Ayew (Ghana).",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "23'",
+   "team": "Panama",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "24'",
+   "team": "Ghana",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "24'",
+   "team": "Panama",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "24'",
+   "team": "Panama",
+   "text": "Delay in match for a drinks break.",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "24'",
+   "team": "Ghana",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "26'",
+   "team": "Panama",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "26'",
+   "team": "Ghana",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "35'",
+   "team": "Ghana",
+   "text": "Delay in match because of an injury Lawrence Ati Zigi (Ghana).",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "35'",
+   "team": "Panama",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "36'",
+   "team": "Ghana",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "36'",
+   "team": "Panama",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "42'",
+   "team": "Ghana",
+   "text": "Delay in match because of an injury Lawrence Ati Zigi (Ghana).",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "42'",
+   "team": "Panama",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "43'",
+   "team": "Ghana",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "43'",
+   "team": "Panama",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Halftime",
+   "minute": "45'+6'",
+   "team": null,
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Substitution",
+   "minute": "45'",
+   "team": "Ghana",
+   "text": "Substitution, Ghana. Benjamin Asare replaces Lawrence Ati Zigi because of an injury.",
+   "players": [
+    "Benjamin Asare",
+    "Lawrence Ati Zigi"
+   ]
+  },
+  {
+   "type": "Start 2nd Half",
+   "minute": "45'",
+   "team": null,
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Substitution",
+   "minute": "58'",
+   "team": "Ghana",
+   "text": "Substitution, Ghana. Brandon Thomas-Asante replaces Kamaldeen Sulemana.",
+   "players": [
+    "Brandon Thomas-Asante",
+    "Kamaldeen Sulemana"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "58'",
+   "team": "Ghana",
+   "text": "Substitution, Ghana. Abdul Fatawu replaces Ernest Nuamah.",
+   "players": [
+    "Fatawu Issahaku",
+    "Ernest Nuamah"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "63'",
+   "team": "Panama",
+   "text": "Substitution, Panama. José Fajardo replaces Cecilio Waterman.",
+   "players": [
+    "José Fajardo",
+    "Cecilio Waterman"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "63'",
+   "team": "Panama",
+   "text": "Substitution, Panama. Azarías Londoño replaces Cristian Martínez.",
+   "players": [
+    "Azarias Londoño",
+    "Cristian Martínez"
+   ]
+  },
+  {
+   "type": "Start Delay",
+   "minute": "68'",
+   "team": "Panama",
+   "text": "Delay in match for a drinks break.",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "68'",
+   "team": "Ghana",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "71'",
+   "team": "Panama",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "71'",
+   "team": "Ghana",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Yellow Card",
+   "minute": "72'",
+   "team": "Panama",
+   "text": "César Blackman (Panama) is shown the yellow card for a bad foul.",
+   "players": [
+    "César Blackman"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "74'",
+   "team": "Panama",
+   "text": "Substitution, Panama. Ismael Díaz replaces José Luis Rodríguez.",
+   "players": [
+    "Ismael Díaz",
+    "José Luis Rodríguez"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "78'",
+   "team": "Ghana",
+   "text": "Substitution, Ghana. Kwasi Sibo replaces Elisha Owusu.",
+   "players": [
+    "Kwasi Sibo",
+    "Elisha Owusu"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "87'",
+   "team": "Ghana",
+   "text": "Substitution, Ghana. Prince Adu replaces Jordan Ayew.",
+   "players": [
+    "Prince Adu",
+    "Jordan Ayew"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "90'",
+   "team": "Panama",
+   "text": "Substitution, Panama. Aníbal Godoy replaces César Blackman.",
+   "players": [
+    "Aníbal Godoy",
+    "César Blackman"
+   ]
+  },
+  {
+   "type": "Goal",
+   "minute": "90'+5'",
+   "team": "Ghana",
+   "text": "Goal! Ghana 1, Panama 0. Caleb Yirenkyi (Ghana) right footed shot from very close range to the top right corner following a fast break.",
+   "players": [
+    "Caleb Yirenkyi",
+    "Brandon Thomas-Asante"
+   ]
+  },
+  {
+   "type": "Yellow Card",
+   "minute": "90'+9'",
+   "team": "Panama",
+   "text": "Carlos Harvey (Panama) is shown the yellow card for a bad foul.",
+   "players": [
+    "Carlos Harvey"
+   ]
+  },
+  {
+   "type": "Start Delay",
+   "minute": "90'+10'",
+   "team": "Ghana",
+   "text": "Delay in match because of an injury Benjamin Asare (Ghana).",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "90'+10'",
+   "team": "Panama",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "90'+11'",
+   "team": "Ghana",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "90'+11'",
+   "team": "Panama",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "End Regular Time",
+   "minute": "90'+12'",
+   "team": null,
+   "text": "",
+   "players": []
+  }
+ ],
+ "shots": [
+  {
+   "minute": "2",
+   "seconds": 106.0,
+   "team": "Panama",
+   "player": "Cecilio Waterman",
+   "type": "Shot On Target",
+   "x": 88.0,
+   "y": 40.1,
+   "goal": false,
+   "xg": 0.235,
+   "text": "Attempt saved. Cecilio Waterman (Panama) right footed shot from the centre of the box is saved in the top left corner by Lawrence Ati Zigi (Ghana). Assisted by Amir Murillo with a cross."
+  },
+  {
+   "minute": "5",
+   "seconds": 265.0,
+   "team": "Panama",
+   "player": "César Blackman",
+   "type": "Shot Blocked",
+   "x": 84.6,
+   "y": 74.5,
+   "goal": false,
+   "xg": 0.087,
+   "text": "Attempt blocked. César Blackman (Panama) right footed shot from the left side of the box is blocked. Assisted by Amir Murillo."
+  },
+  {
+   "minute": "38",
+   "seconds": 2223.0,
+   "team": "Panama",
+   "player": "Jiovany Ramos",
+   "type": "Shot Off Target",
+   "x": 85.8,
+   "y": 31.1,
+   "goal": false,
+   "xg": 0.124,
+   "text": "Attempt missed. Jiovany Ramos (Panama) right footed shot from the right side of the box is close, but misses the top right corner."
+  },
+  {
+   "minute": "48",
+   "seconds": 2848.0,
+   "team": "Ghana",
+   "player": "Jonas Adjetey",
+   "type": "Shot On Target",
+   "x": 91.2,
+   "y": 44.0,
+   "goal": false,
+   "xg": 0.257,
+   "text": "Attempt saved. Jonas Adjetey (Ghana) header from the centre of the box is saved in the centre of the goal by Orlando Mosquera (Panama). Assisted by Kamaldeen Sulemana with a cross."
+  },
+  {
+   "minute": "50",
+   "seconds": 2984.0,
+   "team": "Ghana",
+   "player": "Caleb Yirenkyi",
+   "type": "Shot Off Target",
+   "x": 87.1,
+   "y": 34.2,
+   "goal": false,
+   "xg": 0.16,
+   "text": "Attempt missed. Caleb Yirenkyi (Ghana) right footed shot from the right side of the box is high and wide to the right. Assisted by Jerome Opoku."
+  },
+  {
+   "minute": "52",
+   "seconds": 3120.0,
+   "team": "Panama",
+   "player": "Yoel Bárcenas",
+   "type": "Shot Blocked",
+   "x": 81.1,
+   "y": 48.9,
+   "goal": false,
+   "xg": 0.143,
+   "text": "Attempt blocked. Yoel Bárcenas (Panama) left footed shot from outside the box is blocked. Assisted by Carlos Harvey."
+  },
+  {
+   "minute": "59",
+   "seconds": 3486.0,
+   "team": "Ghana",
+   "player": "Abdul Fatawu",
+   "type": "Shot Off Target",
+   "x": 65.1,
+   "y": 39.5,
+   "goal": false,
+   "xg": 0.03,
+   "text": "Attempt missed. Abdul Fatawu (Ghana) left footed shot from more than 35 yards misses to the right."
+  },
+  {
+   "minute": "60",
+   "seconds": 3552.0,
+   "team": "Panama",
+   "player": "Carlos Harvey",
+   "type": "Shot Off Target",
+   "x": 77.8,
+   "y": 56.9,
+   "goal": false,
+   "xg": 0.098,
+   "text": "Attempt missed. Carlos Harvey (Panama) left footed shot from outside the box misses to the right."
+  },
+  {
+   "minute": "60",
+   "seconds": 3554.0,
+   "team": "Panama",
+   "player": "Cristian Martínez",
+   "type": "Shot Off Target",
+   "x": 93.3,
+   "y": 38.9,
+   "goal": false,
+   "xg": 0.318,
+   "text": "Attempt missed. Cristian Martínez (Panama) right footed shot from the centre of the box is close, but misses to the right. Assisted by Carlos Harvey."
+  },
+  {
+   "minute": "64",
+   "seconds": 3821.0,
+   "team": "Panama",
+   "player": "César Blackman",
+   "type": "Shot Blocked",
+   "x": 84.5,
+   "y": 74.7,
+   "goal": false,
+   "xg": 0.085,
+   "text": "Attempt saved. César Blackman (Panama) right footed shot from the left side of the box is saved in the top right corner by Benjamin Asare (Ghana). Assisted by Azarías Londoño."
+  },
+  {
+   "minute": "66",
+   "seconds": 3939.0,
+   "team": "Ghana",
+   "player": "Antoine Semenyo",
+   "type": "Shot Off Target",
+   "x": 92.0,
+   "y": 55.6,
+   "goal": false,
+   "xg": 0.288,
+   "text": "Attempt missed. Antoine Semenyo (Ghana) header from the centre of the box misses to the right. Assisted by Abdul Fatawu with a cross following a corner."
+  },
+  {
+   "minute": "67",
+   "seconds": 3963.0,
+   "team": "Ghana",
+   "player": "Antoine Semenyo",
+   "type": "Shot Blocked",
+   "x": 87.0,
+   "y": 59.1,
+   "goal": false,
+   "xg": 0.222,
+   "text": "Attempt blocked. Antoine Semenyo (Ghana) left footed shot from the centre of the box is blocked."
+  },
+  {
+   "minute": "67",
+   "seconds": 3998.0,
+   "team": "Panama",
+   "player": "Jiovany Ramos",
+   "type": "Shot Off Target",
+   "x": 77.7,
+   "y": 44.4,
+   "goal": false,
+   "xg": 0.099,
+   "text": "Attempt missed. Jiovany Ramos (Panama) left footed shot from outside the box is close, but misses to the left."
+  },
+  {
+   "minute": "73",
+   "seconds": 4362.0,
+   "team": "Ghana",
+   "player": "Jonas Adjetey",
+   "type": "Shot Off Target",
+   "x": 93.3,
+   "y": 56.8,
+   "goal": false,
+   "xg": 0.305,
+   "text": "Attempt missed. Jonas Adjetey (Ghana) header from the centre of the box is close, but misses to the left. Assisted by Jordan Ayew with a cross following a set piece situation."
+  },
+  {
+   "minute": "85",
+   "seconds": 5083.0,
+   "team": "Panama",
+   "player": "Ismael Díaz",
+   "type": "Shot On Target",
+   "x": 82.4,
+   "y": 51.7,
+   "goal": false,
+   "xg": 0.164,
+   "text": "Attempt saved. Ismael Díaz (Panama) right footed shot from outside the box is saved in the centre of the goal by Benjamin Asare (Ghana). Assisted by Azarías Londoño."
+  },
+  {
+   "minute": "87",
+   "seconds": 5191.0,
+   "team": "Panama",
+   "player": "Yoel Bárcenas",
+   "type": "Shot Off Target",
+   "x": 77.7,
+   "y": 41.7,
+   "goal": false,
+   "xg": 0.094,
+   "text": "Attempt missed. Yoel Bárcenas (Panama) right footed shot from outside the box is too high. Assisted by Amir Murillo."
+  },
+  {
+   "minute": "90'+5",
+   "seconds": 5400.0,
+   "team": "Ghana",
+   "player": "Brandon Thomas-Asante",
+   "type": "Shot Blocked",
+   "x": 94.9,
+   "y": 70.2,
+   "goal": false,
+   "xg": 0.143,
+   "text": "Attempt blocked. Brandon Thomas-Asante (Ghana) right footed shot from a difficult angle on the left is blocked. Assisted by Antoine Semenyo."
+  },
+  {
+   "minute": "90'+5",
+   "seconds": 5400.0,
+   "team": "Ghana",
+   "player": "Caleb Yirenkyi",
+   "type": "Goal",
+   "x": 97.6,
+   "y": 48.6,
+   "goal": true,
+   "xg": 0.946,
+   "text": "Goal! Ghana 1, Panama 0. Caleb Yirenkyi (Ghana) right footed shot from very close range to the top right corner following a fast break."
+  },
+  {
+   "minute": "90'+9",
+   "seconds": 5400.0,
+   "team": "Panama",
+   "player": "Ismael Díaz",
+   "type": "Shot On Target",
+   "x": 93.4,
+   "y": 49.5,
+   "goal": false,
+   "xg": 0.407,
+   "text": "Attempt saved. Ismael Díaz (Panama) header from the centre of the box is saved in the bottom left corner by Benjamin Asare (Ghana). Assisted by Orlando Mosquera with a headed pass."
+  }
+ ],
+ "lineups": [
+  {
+   "team": "Ghana",
+   "formation": "4-4-1-1",
+   "starters": [
+    {
+     "name": "Lawrence Ati Zigi",
+     "jersey": "1",
+     "position": "G"
+    },
+    {
+     "name": "Jerome Opoku",
+     "jersey": "18",
+     "position": "CD-L"
+    },
+    {
+     "name": "Jonas Adjetey",
+     "jersey": "4",
+     "position": "CD-R"
+    },
+    {
+     "name": "Gideon Mensah",
+     "jersey": "14",
+     "position": "LB"
+    },
+    {
+     "name": "Marvin Senaya",
+     "jersey": "26",
+     "position": "RB"
+    },
+    {
+     "name": "Elisha Owusu",
+     "jersey": "15",
+     "position": "CM-L"
+    },
+    {
+     "name": "Caleb Yirenkyi",
+     "jersey": "3",
+     "position": "CM-R"
+    },
+    {
+     "name": "Antoine Semenyo",
+     "jersey": "11",
+     "position": "LM"
+    },
+    {
+     "name": "Ernest Nuamah",
+     "jersey": "24",
+     "position": "RM"
+    },
+    {
+     "name": "Jordan Ayew",
+     "jersey": "9",
+     "position": "F"
+    },
+    {
+     "name": "Kamaldeen Sulemana",
+     "jersey": "22",
+     "position": "RCF"
+    }
+   ],
+   "subs": [
+    {
+     "name": "Alidu Seidu",
+     "jersey": "2",
+     "position": "SUB"
+    },
+    {
+     "name": "Joseph Anang",
+     "jersey": "12",
+     "position": "SUB"
+    },
+    {
+     "name": "Kojo Peprah Oppong",
+     "jersey": "21",
+     "position": "SUB"
+    },
+    {
+     "name": "Baba Rahman",
+     "jersey": "17",
+     "position": "SUB"
+    },
+    {
+     "name": "Prince Adu",
+     "jersey": "25",
+     "position": "SUB"
+    },
+    {
+     "name": "Benjamin Asare",
+     "jersey": "16",
+     "position": "SUB"
+    },
+    {
+     "name": "Christopher Bonsu Baah",
+     "jersey": "13",
+     "position": "SUB"
+    },
+    {
+     "name": "Brandon Thomas-Asante",
+     "jersey": "10",
+     "position": "SUB"
+    },
+    {
+     "name": "Iñaki Williams",
+     "jersey": "19",
+     "position": "SUB"
+    },
+    {
+     "name": "Fatawu Issahaku",
+     "jersey": "7",
+     "position": "SUB"
+    },
+    {
+     "name": "Kwasi Sibo",
+     "jersey": "8",
+     "position": "SUB"
+    },
+    {
+     "name": "Abdul Mumin",
+     "jersey": "6",
+     "position": "SUB"
+    },
+    {
+     "name": "Derrick Luckassen",
+     "jersey": "23",
+     "position": "SUB"
+    },
+    {
+     "name": "Augustine Boakye",
+     "jersey": "20",
+     "position": "SUB"
+    }
+   ]
+  },
+  {
+   "team": "Panama",
+   "formation": "3-4-3",
+   "starters": [
+    {
+     "name": "Orlando Mosquera",
+     "jersey": "22",
+     "position": "G"
+    },
+    {
+     "name": "José Córdoba",
+     "jersey": "3",
+     "position": "CD"
+    },
+    {
+     "name": "Andrés Andrade",
+     "jersey": "16",
+     "position": "CD-L"
+    },
+    {
+     "name": "Jiovany Ramos",
+     "jersey": "13",
+     "position": "CD-R"
+    },
+    {
+     "name": "Édgar Yoel Bárcenas",
+     "jersey": "11",
+     "position": "CM-L"
+    },
+    {
+     "name": "Carlos Harvey",
+     "jersey": "14",
+     "position": "CM-R"
+    },
+    {
+     "name": "César Blackman",
+     "jersey": "2",
+     "position": "LM"
+    },
+    {
+     "name": "Amir Murillo",
+     "jersey": "23",
+     "position": "RM"
+    },
+    {
+     "name": "Cecilio Waterman",
+     "jersey": "18",
+     "position": "F"
+    },
+    {
+     "name": "José Luis Rodríguez",
+     "jersey": "7",
+     "position": "CF-L"
+    },
+    {
+     "name": "Cristian Martínez",
+     "jersey": "6",
+     "position": "CF-R"
+    }
+   ],
+   "subs": [
+    {
+     "name": "Éric Davis",
+     "jersey": "15",
+     "position": "SUB"
+    },
+    {
+     "name": "Azarias Londoño",
+     "jersey": "24",
+     "position": "SUB"
+    },
+    {
+     "name": "Ismael Díaz",
+     "jersey": "10",
+     "position": "SUB"
+    },
+    {
+     "name": "Roderick Miller",
+     "jersey": "25",
+     "position": "SUB"
+    },
+    {
+     "name": "Alberto Quintero",
+     "jersey": "19",
+     "position": "SUB"
+    },
+    {
+     "name": "José Fajardo",
+     "jersey": "17",
+     "position": "SUB"
+    },
+    {
+     "name": "Adalberto Carrasquilla",
+     "jersey": "8",
+     "position": "SUB"
+    },
+    {
+     "name": "César Yanis",
+     "jersey": "21",
+     "position": "SUB"
+    },
+    {
+     "name": "Jorge Gutiérrez",
+     "jersey": "26",
+     "position": "SUB"
+    },
+    {
+     "name": "Aníbal Godoy",
+     "jersey": "20",
+     "position": "SUB"
+    },
+    {
+     "name": "César Samudio",
+     "jersey": "12",
+     "position": "SUB"
+    },
+    {
+     "name": "Fidel Escobar",
+     "jersey": "4",
+     "position": "SUB"
+    },
+    {
+     "name": "Edgardo Fariña",
+     "jersey": "5",
+     "position": "SUB"
+    },
+    {
+     "name": "Tomás Rodríguez",
+     "jersey": "9",
+     "position": "SUB"
+    },
+    {
+     "name": "Luis Mejía",
+     "jersey": "1",
+     "position": "SUB"
+    }
+   ]
+  }
+ ],
+ "attendance": 42942,
+ "venue": "BMO Field, Toronto, Canada"
+}
