@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-KVBPX8VW');</script>
+    <!-- End Google Tag Manager -->
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Euler's identity — e^(i&pi;) + 1 = 0 — ties together five of the deepest constants in mathematics and exposes the hidden geometry of the exponential.">
+    <link rel="icon" type="image/svg+xml" href="../images/favicon.svg">
+    <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon-32.png">
+    <link rel="apple-touch-icon" href="../images/apple-touch-icon.png">
+    <title>Euler's Identity | Prashanth Shankar</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+
+    <style>
+        *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+        html { font-size: 16px; scroll-behavior: smooth; }
+        body {
+            background: #fff;
+            color: #000;
+            font-family: 'Inter', -apple-system, sans-serif;
+            font-weight: 400;
+            line-height: 1.7;
+        }
+        ::selection { background: #000; color: #fff; }
+
+        .page {
+            max-width: 720px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        header {
+            padding: 2.5rem 0 0;
+        }
+
+        .back-link {
+            font-size: 0.75rem;
+            font-weight: 400;
+            letter-spacing: 0.04em;
+            color: #000;
+            text-decoration: none;
+            transition: opacity 0.2s ease;
+        }
+        .back-link:hover { opacity: 0.5; }
+
+        article {
+            padding: 4rem 0 3rem;
+        }
+
+        article h1 {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 2.6rem;
+            font-weight: 600;
+            line-height: 1.15;
+            margin-bottom: 1rem;
+        }
+
+        .deck {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.25rem;
+            font-style: italic;
+            line-height: 1.5;
+            color: #000;
+            margin-bottom: 2.5rem;
+        }
+
+        article h2 {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.8rem;
+            font-weight: 600;
+            line-height: 1.2;
+            margin: 3rem 0 1rem;
+        }
+
+        article p {
+            font-size: 0.95rem;
+            font-weight: 300;
+            line-height: 1.75;
+            margin-bottom: 1rem;
+        }
+
+        article em {
+            font-style: italic;
+        }
+
+        .pullquote {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.35rem;
+            font-style: italic;
+            line-height: 1.45;
+            padding: 1.5rem 0 1.5rem 1.5rem;
+            border-left: 2px solid #000;
+            margin: 2rem 0;
+            color: #000;
+        }
+
+        .figure {
+            margin: 2.5rem 0;
+        }
+        .figure svg {
+            display: block;
+            width: 100%;
+            height: auto;
+            max-width: 640px;
+            margin: 0 auto;
+        }
+        .caption {
+            font-size: 0.78rem;
+            color: #666;
+            text-align: center;
+            margin-top: 0.8rem;
+            line-height: 1.5;
+            font-style: italic;
+            font-family: 'Cormorant Garamond', serif;
+        }
+
+        hr.divider {
+            border: none;
+            border-top: 1px solid #000;
+            margin: 3rem 0;
+        }
+
+        .references {
+            font-size: 0.8rem;
+            color: #555;
+            line-height: 1.7;
+            margin-top: 2rem;
+        }
+        .references h3 {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: #000;
+            margin-bottom: 0.75rem;
+        }
+        .references ol {
+            padding-left: 1.2rem;
+        }
+        .references li {
+            margin-bottom: 0.35rem;
+        }
+
+        footer {
+            padding: 2rem 0 3rem;
+            font-size: 0.75rem;
+            color: #666;
+        }
+        footer a { color: inherit; text-decoration: underline; text-underline-offset: 0.2em; }
+    </style>
+</head>
+<body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KVBPX8VW" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+    <div class="page">
+        <header>
+            <a href="index.html" class="back-link">&larr; Wonderland</a>
+        </header>
+
+        <article>
+            <h1>Euler's Identity</h1>
+            <p class="deck">Five of the most important constants in all of mathematics, related by a single equation. It looks like a magic trick. It is not.</p>
+
+            <p>Write it down and it almost embarrasses you:</p>
+
+            <p class="pullquote">e<sup>i&pi;</sup> + 1 = 0</p>
+
+            <p>Five symbols on the left, all of them famous for entirely different reasons. <em>e</em> &mdash; the base of natural growth, the number that compound interest hands you when you compound it continuously. <em>i</em> &mdash; the square root of negative one, an object that was not even agreed to exist for most of the history of mathematics. <em>&pi;</em> &mdash; the ratio of a circle's circumference to its diameter, a number tied to geometry. <em>1</em> and <em>0</em> &mdash; the two atoms of arithmetic. They show up together, they cancel, and there is nothing left over.</p>
+
+            <p>Richard Feynman, in the <em>Lectures on Physics</em>, called the more general formula behind it <em>&ldquo;our jewel&rdquo;</em> and <em>&ldquo;the most remarkable formula in mathematics.&rdquo;</em> Why does it work? The equation isn't a coincidence and it isn't an accident. It is a statement about a deep fact: <em>the exponential function is secretly a rotation</em>.</p>
+
+            <h2>The exponential, secretly a circle</h2>
+
+            <p>The exponential function e<sup>x</sup> is, in school, taught as something that grows. e<sup>0</sup> = 1, e<sup>1</sup> &asymp; 2.718, and from there it shoots upward. Its defining property is that it equals its own rate of change: at every point, the slope of the curve is the same as the height of the curve. Money in an interest-paying account does this. So does an unchecked bacterial colony. So does a chain reaction.</p>
+
+            <p>Now ask a strange question. What happens if you feed it an <em>imaginary</em> number?</p>
+
+            <p>The honest answer is that you have to define what that even means. Euler did it through the Taylor series &mdash; the infinite polynomial that perfectly mimics the exponential everywhere:</p>
+
+            <p class="pullquote">e<sup>x</sup> = 1 + x + x<sup>2</sup>/2! + x<sup>3</sup>/3! + x<sup>4</sup>/4! + &hellip;</p>
+
+            <p>The series doesn't care what kind of number x is. Plug in <em>i&theta;</em> and grind through it. The powers of i cycle: i, &minus;1, &minus;i, 1, i, &minus;1, &hellip;. Group the real terms separately from the imaginary terms and a miracle happens. The real part is exactly the Taylor series for cos&thinsp;&theta;. The imaginary part is exactly the Taylor series for sin&thinsp;&theta;. So:</p>
+
+            <p class="pullquote">e<sup>i&theta;</sup> = cos&thinsp;&theta; + i&thinsp;sin&thinsp;&theta;</p>
+
+            <p>This is <em>Euler's formula</em> &mdash; the parent equation. The identity is what falls out when you set &theta; = &pi;. Because cos&thinsp;&pi; = &minus;1 and sin&thinsp;&pi; = 0, the whole right-hand side collapses to &minus;1, and you get e<sup>i&pi;</sup> = &minus;1, or, rearranged, the famous equation.</p>
+
+            <h2>A picture is worth the proof</h2>
+
+            <p>To see why this is not a trick, draw the complex plane: real numbers on the horizontal axis, imaginary numbers on the vertical. Every point on the unit circle &mdash; the circle of radius one centred at the origin &mdash; can be written, by basic trigonometry, as cos&thinsp;&theta; + i&thinsp;sin&thinsp;&theta;, where &theta; is the angle from the positive real axis. Which is to say: <em>every point on the unit circle is</em> e<sup>i&theta;</sup>.</p>
+
+            <div class="figure">
+                <svg viewBox="0 0 640 380" xmlns="http://www.w3.org/2000/svg">
+                    <!-- Axes -->
+                    <g stroke="#000" stroke-width="1" fill="none">
+                        <line x1="60" y1="190" x2="580" y2="190"/>
+                        <line x1="320" y1="40" x2="320" y2="340"/>
+                    </g>
+                    <!-- Axis labels -->
+                    <g font-family="'Cormorant Garamond', serif" font-style="italic" font-size="14" fill="#000">
+                        <text x="585" y="195">Re</text>
+                        <text x="325" y="38">Im</text>
+                    </g>
+                    <!-- Unit circle -->
+                    <circle cx="320" cy="190" r="130" stroke="#000" stroke-width="1" fill="none"/>
+                    <!-- Tick marks at 1 and -1 -->
+                    <g stroke="#000" stroke-width="1">
+                        <line x1="450" y1="186" x2="450" y2="194"/>
+                        <line x1="190" y1="186" x2="190" y2="194"/>
+                        <line x1="316" y1="60" x2="324" y2="60"/>
+                        <line x1="316" y1="320" x2="324" y2="320"/>
+                    </g>
+                    <g font-family="Inter, sans-serif" font-size="11" fill="#666">
+                        <text x="445" y="210">1</text>
+                        <text x="178" y="210">&minus;1</text>
+                        <text x="300" y="63">i</text>
+                        <text x="294" y="323">&minus;i</text>
+                    </g>
+                    <!-- &theta; sweep arc -->
+                    <path d="M 380 190 A 60 60 0 0 1 270 155" stroke="#000" stroke-width="1" fill="none"/>
+                    <text x="395" y="178" font-family="'Cormorant Garamond', serif" font-style="italic" font-size="16" fill="#000">&theta;</text>
+                    <!-- Radius to a point at angle ~2.3 rad (close to pi) -->
+                    <line x1="320" y1="190" x2="232" y2="120" stroke="#000" stroke-width="1.5"/>
+                    <circle cx="232" cy="120" r="4" fill="#000"/>
+                    <text x="160" y="115" font-family="'Cormorant Garamond', serif" font-style="italic" font-size="16" fill="#000">e<tspan font-size="11" baseline-shift="super">i&theta;</tspan></text>
+                    <!-- Dashed lines to axes -->
+                    <g stroke="#000" stroke-width="0.8" stroke-dasharray="3 3">
+                        <line x1="232" y1="120" x2="232" y2="190"/>
+                        <line x1="232" y1="120" x2="320" y2="120"/>
+                    </g>
+                    <g font-family="Inter, sans-serif" font-size="11" fill="#666">
+                        <text x="200" y="208">cos&thinsp;&theta;</text>
+                        <text x="262" y="116">i&thinsp;sin&thinsp;&theta;</text>
+                    </g>
+                    <!-- Point at -1 marked -->
+                    <circle cx="190" cy="190" r="4" fill="#000"/>
+                    <text x="155" y="178" font-family="'Cormorant Garamond', serif" font-style="italic" font-size="16" fill="#000">e<tspan font-size="11" baseline-shift="super">i&pi;</tspan> = &minus;1</text>
+                </svg>
+                <p class="caption">The unit circle in the complex plane. Multiplying by e<sup>i&theta;</sup> rotates by angle &theta;. Walk half-way around &mdash; an angle of &pi; &mdash; and you land on &minus;1.</p>
+            </div>
+
+            <p>So what does it mean to <em>multiply</em> by e<sup>i&theta;</sup>? It is exactly the operation of rotating the complex plane by &theta; radians around the origin. The exponential, restricted to imaginary inputs, isn't growing &mdash; it's <em>spinning</em>. The same function that exploded to infinity along the real line traces, along the imaginary line, the most boring loop in mathematics.</p>
+
+            <p>From here, the identity stops looking magical and starts looking inevitable. e<sup>i&pi;</sup> is a rotation by &pi; radians &mdash; that is, by 180 degrees. Rotate the number 1 by 180 degrees around the origin and you get &minus;1. Done. That is the whole proof. The five constants are not bumping into each other at random: they are the natural names for the natural pieces of <em>one geometric act &mdash; the half-turn</em>.</p>
+
+            <h2>Why it ties everything together</h2>
+
+            <p>Once you accept that e<sup>i&theta;</sup> is rotation, almost everything in classical mathematics and physics that involves oscillation, waves, or rotation is rewritten in its terms. Sine and cosine, separately, are awkward. The combination cos + i&thinsp;sin is a single object that you can multiply, divide, differentiate, and add as easily as a real number. Trigonometric identities that took medieval mathematicians lifetimes become two-line consequences of the rules of exponents. Add up two angles? Multiply two exponentials.</p>
+
+            <div class="figure">
+                <svg viewBox="0 0 640 280" xmlns="http://www.w3.org/2000/svg">
+                    <!-- Three boxes joined by arrows -->
+                    <g stroke="#000" stroke-width="1" fill="#fff">
+                        <rect x="20" y="100" width="170" height="80"/>
+                        <rect x="235" y="100" width="170" height="80"/>
+                        <rect x="450" y="100" width="170" height="80"/>
+                    </g>
+                    <!-- Labels -->
+                    <g font-family="'Cormorant Garamond', serif" font-size="16" font-style="italic" text-anchor="middle" fill="#000">
+                        <text x="105" y="135">Growth</text>
+                        <text x="320" y="135">Rotation</text>
+                        <text x="535" y="135">Oscillation</text>
+                    </g>
+                    <g font-family="Inter, sans-serif" font-size="11" fill="#666" text-anchor="middle">
+                        <text x="105" y="158">e<tspan baseline-shift="super">x</tspan>, real x</text>
+                        <text x="320" y="158">e<tspan baseline-shift="super">i&theta;</tspan>, real &theta;</text>
+                        <text x="535" y="158">cos&thinsp;t, sin&thinsp;t</text>
+                    </g>
+                    <!-- Arrows -->
+                    <g stroke="#000" stroke-width="1" fill="none">
+                        <line x1="190" y1="140" x2="235" y2="140" marker-end="url(#a1)"/>
+                        <line x1="405" y1="140" x2="450" y2="140" marker-end="url(#a1)"/>
+                    </g>
+                    <defs>
+                        <marker id="a1" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+                            <path d="M 0 0 L 10 5 L 0 10 z" fill="#000"/>
+                        </marker>
+                    </defs>
+                    <!-- Bottom note -->
+                    <text x="320" y="225" font-family="'Cormorant Garamond', serif" font-style="italic" font-size="15" text-anchor="middle" fill="#000">
+                        Same function. Different inputs.
+                    </text>
+                    <text x="320" y="248" font-family="Inter, sans-serif" font-size="11" text-anchor="middle" fill="#666">
+                        Real input &rarr; growth. Imaginary input &rarr; rotation. Real part of a rotation &rarr; an oscillation.
+                    </text>
+                </svg>
+                <p class="caption">One exponential, three faces. The same e governs interest, alternating current, and a guitar string.</p>
+            </div>
+
+            <p>In physics this is not a stylistic preference. It is the language. A quantum wavefunction is written as e<sup>i(kx&minus;&omega;t)</sup>. A sound wave reflected from a wall, the current flowing through your laptop charger, the spinning electron in an MRI, the rotating phase of a radar return &mdash; all of them are described by complex exponentials, because all of them are, at heart, things going round in a circle. Even the Fourier transform &mdash; the tool that lets us decompose any signal into pure tones &mdash; is little more than a clever sum of e<sup>i&theta;</sup>s.</p>
+
+            <h2>The thing the equation is actually saying</h2>
+
+            <p>Look at e<sup>i&pi;</sup> + 1 = 0 again. Each constant on the left tells a separate story: <em>e</em> comes from the calculus of continuous change; <em>&pi;</em> comes from the geometry of the circle; <em>i</em> comes from algebra's struggle with the equation x<sup>2</sup> + 1 = 0; <em>1</em> is the multiplicative identity; <em>0</em> is the additive one. Three branches of mathematics that grew up centuries apart, each obsessed with its own constant, each unaware that the constants would one day shake hands.</p>
+
+            <p>What Euler discovered is that they had to. Growth, geometry, and algebra are not independent kingdoms. They are different views of the same object. If you pick up the exponential and let it work on the imaginary numbers, you find a circle inside it &mdash; and inside the circle, halfway round, sitting quietly on the negative axis, is the answer to all five questions at once.</p>
+
+            <p>That is what the equation says. Not a magic trick. A photograph of mathematics catching itself being consistent.</p>
+
+            <hr class="divider">
+
+            <div class="references">
+                <h3>Further reading</h3>
+                <ol>
+                    <li>Euler, L. (1748). <em>Introductio in Analysin Infinitorum</em>.</li>
+                    <li>Feynman, R. (1963). <em>The Feynman Lectures on Physics</em>, vol.&nbsp;I, chapter&nbsp;22 &mdash; &ldquo;Algebra.&rdquo;</li>
+                    <li>Nahin, P. J. (1998). <em>An Imaginary Tale: The Story of &radic;&minus;1</em>. Princeton University Press.</li>
+                    <li>Stillwell, J. (2010). <em>Mathematics and Its History</em>, 3rd&nbsp;ed.</li>
+                    <li>Needham, T. (1997). <em>Visual Complex Analysis</em>.</li>
+                </ol>
+            </div>
+        </article>
+
+        <footer>
+            <a href="index.html">&larr; Back to Wonderland</a>
+        </footer>
+    </div>
+</body>
+</html>
