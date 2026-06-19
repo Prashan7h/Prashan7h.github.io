@@ -127,11 +127,25 @@
    "team2": "South Korea",
    "group": "Group A",
    "ground": "Guadalajara (Zapopan)",
-   "score": null,
-   "goals1": [],
+   "score": {
+    "ft": [
+     1,
+     0
+    ],
+    "ht": [
+     0,
+     0
+    ]
+   },
+   "goals1": [
+    {
+     "name": "Luis Romo",
+     "minute": "50"
+    }
+   ],
    "goals2": [],
    "espn_id": "760441",
-   "status": "scheduled",
+   "status": "finished",
    "utc_date": "2026-06-19T01:00Z",
    "venue": "Estadio Akron",
    "slug": "2026-06-18-mexico-vs-south-korea"
@@ -258,11 +272,43 @@
    "team2": "Bosnia & Herzegovina",
    "group": "Group B",
    "ground": "Los Angeles (Inglewood)",
-   "score": null,
-   "goals1": [],
-   "goals2": [],
+   "score": {
+    "ft": [
+     4,
+     1
+    ],
+    "ht": [
+     0,
+     0
+    ]
+   },
+   "goals1": [
+    {
+     "name": "Johan Manzambi",
+     "minute": "74"
+    },
+    {
+     "name": "Rubén Vargas",
+     "minute": "84"
+    },
+    {
+     "name": "Johan Manzambi",
+     "minute": "90"
+    },
+    {
+     "name": "Granit Xhaka",
+     "minute": "90+7",
+     "penalty": true
+    }
+   ],
+   "goals2": [
+    {
+     "name": "Ermin Mahmic",
+     "minute": "90+3"
+    }
+   ],
    "espn_id": "760439",
-   "status": "live",
+   "status": "finished",
    "utc_date": "2026-06-18T19:00Z",
    "attendance": 70026,
    "venue": "SoFi Stadium",
@@ -277,12 +323,48 @@
    "team2": "Qatar",
    "group": "Group B",
    "ground": "Vancouver",
-   "score": null,
-   "goals1": [],
+   "score": {
+    "ft": [
+     6,
+     0
+    ],
+    "ht": [
+     3,
+     0
+    ]
+   },
+   "goals1": [
+    {
+     "name": "Cyle Larin",
+     "minute": "16"
+    },
+    {
+     "name": "Jonathan David",
+     "minute": "29"
+    },
+    {
+     "name": "Jonathan David",
+     "minute": "45+3"
+    },
+    {
+     "name": "Nathan Saliba",
+     "minute": "64"
+    },
+    {
+     "name": "Mohamed Manai",
+     "minute": "75",
+     "owngoal": true
+    },
+    {
+     "name": "Jonathan David",
+     "minute": "90+2"
+    }
+   ],
    "goals2": [],
    "espn_id": "760440",
-   "status": "scheduled",
+   "status": "finished",
    "utc_date": "2026-06-18T22:00Z",
+   "attendance": 52497,
    "venue": "BC Place",
    "slug": "2026-06-18-canada-vs-qatar"
   },
@@ -1098,8 +1180,10 @@
    "score": null,
    "goals1": [],
    "goals2": [],
-   "espn_id": null,
+   "espn_id": "760476",
    "status": "scheduled",
+   "utc_date": "2026-06-27T03:00Z",
+   "venue": "Lumen Field",
    "slug": "2026-06-26-egypt-vs-iran"
   },
   {
@@ -1114,8 +1198,10 @@
    "score": null,
    "goals1": [],
    "goals2": [],
-   "espn_id": null,
+   "espn_id": "760477",
    "status": "scheduled",
+   "utc_date": "2026-06-27T03:00Z",
+   "venue": "BC Place",
    "slug": "2026-06-26-new-zealand-vs-belgium"
   },
   {
@@ -1232,8 +1318,10 @@
    "score": null,
    "goals1": [],
    "goals2": [],
-   "espn_id": null,
+   "espn_id": "760478",
    "status": "scheduled",
+   "utc_date": "2026-06-27T00:00Z",
+   "venue": "NRG Stadium",
    "slug": "2026-06-26-cape-verde-vs-saudi-arabia"
   },
   {
@@ -1248,8 +1336,10 @@
    "score": null,
    "goals1": [],
    "goals2": [],
-   "espn_id": null,
+   "espn_id": "760479",
    "status": "scheduled",
+   "utc_date": "2026-06-27T00:00Z",
+   "venue": "Estadio Akron",
    "slug": "2026-06-26-uruguay-vs-spain"
   },
   {
@@ -1397,8 +1487,10 @@
    "score": null,
    "goals1": [],
    "goals2": [],
-   "espn_id": null,
+   "espn_id": "760475",
    "status": "scheduled",
+   "utc_date": "2026-06-26T19:00Z",
+   "venue": "Gillette Stadium",
    "slug": "2026-06-26-norway-vs-france"
   },
   {
@@ -1413,8 +1505,10 @@
    "score": null,
    "goals1": [],
    "goals2": [],
-   "espn_id": null,
+   "espn_id": "760474",
    "status": "scheduled",
+   "utc_date": "2026-06-26T19:00Z",
+   "venue": "BMO Field",
    "slug": "2026-06-26-senegal-vs-iraq"
   },
   {

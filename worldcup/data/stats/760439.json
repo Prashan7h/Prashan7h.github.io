@@ -1,0 +1,836 @@
+{
+ "teams": [
+  {
+   "name": "Switzerland",
+   "stats": {
+    "possessionPct": "62.3",
+    "totalShots": "13",
+    "shotsOnTarget": "7",
+    "wonCorners": "7",
+    "foulsCommitted": "7",
+    "offsides": "3",
+    "saves": "2",
+    "yellowCards": "1",
+    "redCards": "0"
+   }
+  },
+  {
+   "name": "Bosnia-Herzegovina",
+   "stats": {
+    "possessionPct": "37.7",
+    "totalShots": "5",
+    "shotsOnTarget": "3",
+    "wonCorners": "3",
+    "foulsCommitted": "18",
+    "offsides": "1",
+    "saves": "3",
+    "yellowCards": "2",
+    "redCards": "1"
+   }
+  }
+ ],
+ "events": [
+  {
+   "type": "Kickoff",
+   "minute": "",
+   "team": null,
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "23'",
+   "team": "Switzerland",
+   "text": "Delay in match for a drinks break.",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "23'",
+   "team": "Bosnia-Herzegovina",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "25'",
+   "team": "Switzerland",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "25'",
+   "team": "Bosnia-Herzegovina",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "39'",
+   "team": "Switzerland",
+   "text": "Delay in match (Switzerland).",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "39'",
+   "team": "Bosnia-Herzegovina",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "39'",
+   "team": "Switzerland",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "39'",
+   "team": "Bosnia-Herzegovina",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Halftime",
+   "minute": "45'+3'",
+   "team": null,
+   "text": "First Half ends, Switzerland 0, Bosnia and Herzegovina 0.",
+   "players": []
+  },
+  {
+   "type": "Start 2nd Half",
+   "minute": "45'",
+   "team": null,
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "56'",
+   "team": "Switzerland",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "56'",
+   "team": "Switzerland",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Yellow Card",
+   "minute": "59'",
+   "team": "Bosnia-Herzegovina",
+   "text": "Amar Dedic (Bosnia and Herzegovina) is shown the yellow card for a bad foul.",
+   "players": [
+    "Amar Dedic"
+   ]
+  },
+  {
+   "type": "Yellow Card",
+   "minute": "61'",
+   "team": "Bosnia-Herzegovina",
+   "text": "Edin Dzeko (Bosnia and Herzegovina) is shown the yellow card for a bad foul.",
+   "players": [
+    "Edin Dzeko"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "63'",
+   "team": "Bosnia-Herzegovina",
+   "text": "Substitution, Bosnia and Herzegovina. Ivan Basic replaces Benjamin Tahirovic.",
+   "players": [
+    "Ivan Basic",
+    "Benjamin Tahirovic"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "64'",
+   "team": "Bosnia-Herzegovina",
+   "text": "Substitution, Bosnia and Herzegovina. Esmir Bajraktarevic replaces Edin Dzeko.",
+   "players": [
+    "Esmir Bajraktarevic",
+    "Edin Dzeko"
+   ]
+  },
+  {
+   "type": "Yellow Card",
+   "minute": "65'",
+   "team": "Switzerland",
+   "text": "Nico Elvedi (Switzerland) is shown the yellow card for a bad foul.",
+   "players": [
+    "Nico Elvedi"
+   ]
+  },
+  {
+   "type": "Start Delay",
+   "minute": "69'",
+   "team": "Switzerland",
+   "text": "Delay in match for a drinks break.",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "69'",
+   "team": "Bosnia-Herzegovina",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Substitution",
+   "minute": "71'",
+   "team": "Switzerland",
+   "text": "Substitution, Switzerland. Djibril Sow replaces Michel Aebischer.",
+   "players": [
+    "Djibril Sow",
+    "Michel Aebischer"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "71'",
+   "team": "Switzerland",
+   "text": "Substitution, Switzerland. Johan Manzambi replaces Dan Ndoye.",
+   "players": [
+    "Johan Manzambi",
+    "Dan Ndoye"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "71'",
+   "team": "Switzerland",
+   "text": "Substitution, Switzerland. Rubén Vargas replaces Fabian Rieder.",
+   "players": [
+    "Rubén Vargas",
+    "Fabian Rieder"
+   ]
+  },
+  {
+   "type": "End Delay",
+   "minute": "72'",
+   "team": "Switzerland",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "72'",
+   "team": "Bosnia-Herzegovina",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Goal - Volley",
+   "minute": "74'",
+   "team": "Switzerland",
+   "text": "Goal! Switzerland 1, Bosnia and Herzegovina 0. Johan Manzambi (Switzerland) right footed shot from the centre of the box to the top right corner.",
+   "players": [
+    "Johan Manzambi"
+   ]
+  },
+  {
+   "type": "Red Card",
+   "minute": "80'",
+   "team": "Bosnia-Herzegovina",
+   "text": "Tarik Muharemovic (Bosnia and Herzegovina) is shown the red card.",
+   "players": [
+    "Tarik Muharemovic"
+   ]
+  },
+  {
+   "type": "Goal",
+   "minute": "84'",
+   "team": "Switzerland",
+   "text": "Goal! Switzerland 2, Bosnia and Herzegovina 0. Rubén Vargas (Switzerland) right footed shot from the centre of the box to the bottom right corner. Assisted by Breel Embolo.",
+   "players": [
+    "Rubén Vargas",
+    "Breel Embolo"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "86'",
+   "team": "Bosnia-Herzegovina",
+   "text": "Substitution, Bosnia and Herzegovina. Jovo Lukic replaces Ermedin Demirovic.",
+   "players": [
+    "Jovo Lukic",
+    "Ermedin Demirovic"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "86'",
+   "team": "Bosnia-Herzegovina",
+   "text": "Substitution, Bosnia and Herzegovina. Amir Hadziahmetovic replaces Ivan Sunjic.",
+   "players": [
+    "Amir Hadziahmetovic",
+    "Ivan Sunjic"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "86'",
+   "team": "Switzerland",
+   "text": "Substitution, Switzerland. Luca Jaquez replaces Silvan Widmer.",
+   "players": [
+    "Luca Jaquez",
+    "Silvan Widmer"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "89'",
+   "team": "Switzerland",
+   "text": "Substitution, Switzerland. Cedric Itten replaces Breel Embolo.",
+   "players": [
+    "Cedric Itten",
+    "Breel Embolo"
+   ]
+  },
+  {
+   "type": "Goal",
+   "minute": "90'",
+   "team": "Switzerland",
+   "text": "Goal! Switzerland 3, Bosnia and Herzegovina 0. Johan Manzambi (Switzerland) right footed shot from the centre of the box to the centre of the goal. Assisted by Rubén Vargas.",
+   "players": [
+    "Johan Manzambi",
+    "Rubén Vargas"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "90'+1'",
+   "team": "Bosnia-Herzegovina",
+   "text": "Substitution, Bosnia and Herzegovina. Ermin Mahmic replaces Kerim Alajbegovic.",
+   "players": [
+    "Ermin Mahmic",
+    "Kerim Alajbegovic"
+   ]
+  },
+  {
+   "type": "Goal - Volley",
+   "minute": "90'+3'",
+   "team": "Bosnia-Herzegovina",
+   "text": "Goal! Switzerland 3, Bosnia and Herzegovina 1. Ermin Mahmic (Bosnia and Herzegovina) right footed shot from the centre of the box to the high centre of the goal following a corner.",
+   "players": [
+    "Ermin Mahmic"
+   ]
+  },
+  {
+   "type": "Penalty - Scored",
+   "minute": "90'+7'",
+   "team": "Switzerland",
+   "text": "Goal! Switzerland 4, Bosnia and Herzegovina 1. Granit Xhaka (Switzerland) converts the penalty with a left footed shot to the bottom right corner.",
+   "players": [
+    "Granit Xhaka"
+   ]
+  },
+  {
+   "type": "End Regular Time",
+   "minute": "90'+8'",
+   "team": null,
+   "text": "Second Half ends, Switzerland 4, Bosnia and Herzegovina 1.",
+   "players": []
+  }
+ ],
+ "shots": [
+  {
+   "minute": "2",
+   "seconds": 109.0,
+   "team": "Bosnia-Herzegovina",
+   "player": "Edin Dzeko",
+   "type": "Shot Blocked",
+   "x": 88.8,
+   "y": 53.9,
+   "goal": false,
+   "xg": 0.325,
+   "text": "Attempt missed. Edin Dzeko (Bosnia and Herzegovina) left footed shot from the centre of the box misses to the left following a corner."
+  },
+  {
+   "minute": "8",
+   "seconds": 437.0,
+   "team": "Switzerland",
+   "player": "Granit Xhaka",
+   "type": "Shot Blocked",
+   "x": 73.7,
+   "y": 43.2,
+   "goal": false,
+   "xg": 0.067,
+   "text": "Attempt blocked. Granit Xhaka (Switzerland) left footed shot from outside the box is blocked. Assisted by Nico Elvedi."
+  },
+  {
+   "minute": "10",
+   "seconds": 560.0,
+   "team": "Switzerland",
+   "player": "Dan Ndoye",
+   "type": "Shot Off Target",
+   "x": 88.7,
+   "y": 70.2,
+   "goal": false,
+   "xg": 0.133,
+   "text": "Attempt missed. Dan Ndoye (Switzerland) left footed shot from the left side of the box is close, but misses to the left. Assisted by Granit Xhaka."
+  },
+  {
+   "minute": "20",
+   "seconds": 1179.0,
+   "team": "Switzerland",
+   "player": "Dan Ndoye",
+   "type": "Shot On Target",
+   "x": 77.7,
+   "y": 57.3,
+   "goal": false,
+   "xg": 0.096,
+   "text": "Attempt saved. Dan Ndoye (Switzerland) right footed shot from outside the box is saved in the centre of the goal by Nikola Vasilj (Bosnia and Herzegovina). Assisted by Breel Embolo."
+  },
+  {
+   "minute": "23",
+   "seconds": 1347.0,
+   "team": "Switzerland",
+   "player": "Remo Freuler",
+   "type": "Shot Off Target",
+   "x": 72.3,
+   "y": 67.5,
+   "goal": false,
+   "xg": 0.048,
+   "text": "Attempt missed. Remo Freuler (Switzerland) right footed shot from outside the box is close, but misses to the left. Assisted by Dan Ndoye."
+  },
+  {
+   "minute": "38",
+   "seconds": 2231.0,
+   "team": "Bosnia-Herzegovina",
+   "player": "Amar Memic",
+   "type": "Shot On Target",
+   "x": 76.3,
+   "y": 67.5,
+   "goal": false,
+   "xg": 0.066,
+   "text": "Attempt saved. Amar Memic (Bosnia and Herzegovina) right footed shot from outside the box is saved in the bottom left corner by Gregor Kobel (Switzerland). Assisted by Kerim Alajbegovic."
+  },
+  {
+   "minute": "41",
+   "seconds": 2430.0,
+   "team": "Bosnia-Herzegovina",
+   "player": "Edin Dzeko",
+   "type": "Shot Blocked",
+   "x": 85.3,
+   "y": 46.2,
+   "goal": false,
+   "xg": 0.218,
+   "text": "Attempt blocked. Edin Dzeko (Bosnia and Herzegovina) left footed shot from the centre of the box is blocked. Assisted by Kerim Alajbegovic."
+  },
+  {
+   "minute": "51",
+   "seconds": 3037.0,
+   "team": "Switzerland",
+   "player": "Dan Ndoye",
+   "type": "Shot On Target",
+   "x": 90.2,
+   "y": 70.3,
+   "goal": false,
+   "xg": 0.14,
+   "text": "Attempt saved. Dan Ndoye (Switzerland) right footed shot from the left side of the box is saved in the bottom left corner by Nikola Vasilj (Bosnia and Herzegovina). Assisted by Manuel Akanji."
+  },
+  {
+   "minute": "53",
+   "seconds": 3171.0,
+   "team": "Switzerland",
+   "player": "Michel Aebischer",
+   "type": "Shot Off Target",
+   "x": 90.8,
+   "y": 45.8,
+   "goal": false,
+   "xg": 0.266,
+   "text": "Attempt missed. Michel Aebischer (Switzerland) header from the centre of the box misses to the right. Assisted by Remo Freuler."
+  },
+  {
+   "minute": "55",
+   "seconds": 3249.0,
+   "team": "Switzerland",
+   "player": "Dan Ndoye",
+   "type": "Shot Blocked",
+   "x": 87.0,
+   "y": 68.5,
+   "goal": false,
+   "xg": 0.136,
+   "text": "Attempt blocked. Dan Ndoye (Switzerland) right footed shot from the left side of the box is blocked. Assisted by Michel Aebischer."
+  },
+  {
+   "minute": "62",
+   "seconds": 3716.0,
+   "team": "Switzerland",
+   "player": "Breel Embolo",
+   "type": "Shot Blocked",
+   "x": 96.7,
+   "y": 56.2,
+   "goal": false,
+   "xg": 0.432,
+   "text": "Attempt blocked. Breel Embolo (Switzerland) header from the left side of the six yard box is blocked."
+  },
+  {
+   "minute": "68",
+   "seconds": 4078.0,
+   "team": "Bosnia-Herzegovina",
+   "player": "Amar Dedic",
+   "type": "Shot On Target",
+   "x": 77.8,
+   "y": 30.9,
+   "goal": false,
+   "xg": 0.071,
+   "text": "Attempt saved. Amar Dedic (Bosnia and Herzegovina) right footed shot from outside the box is saved in the centre of the goal by Gregor Kobel (Switzerland). Assisted by Ivan Basic."
+  },
+  {
+   "minute": "74",
+   "seconds": 4422.0,
+   "team": "Switzerland",
+   "player": "Johan Manzambi",
+   "type": "Goal - Volley",
+   "x": 88.3,
+   "y": 51.8,
+   "goal": true,
+   "xg": 0.318,
+   "text": "Goal! Switzerland 1, Bosnia and Herzegovina 0. Johan Manzambi (Switzerland) right footed shot from the centre of the box to the top right corner."
+  },
+  {
+   "minute": "81",
+   "seconds": 4854.0,
+   "team": "Switzerland",
+   "player": "Rubén Vargas",
+   "type": "Shot On Target",
+   "x": 82.1,
+   "y": 62.6,
+   "goal": false,
+   "xg": 0.125,
+   "text": "Attempt saved. Rubén Vargas (Switzerland) right footed shot from outside the box is saved in the top right corner by Nikola Vasilj (Bosnia and Herzegovina)."
+  },
+  {
+   "minute": "84",
+   "seconds": 5026.0,
+   "team": "Switzerland",
+   "player": "Rubén Vargas",
+   "type": "Goal",
+   "x": 88.2,
+   "y": 58.9,
+   "goal": true,
+   "xg": 0.251,
+   "text": "Goal! Switzerland 2, Bosnia and Herzegovina 0. Rubén Vargas (Switzerland) right footed shot from the centre of the box to the bottom right corner. Assisted by Breel Embolo."
+  },
+  {
+   "minute": "90",
+   "seconds": 5362.0,
+   "team": "Switzerland",
+   "player": "Johan Manzambi",
+   "type": "Goal",
+   "x": 90.5,
+   "y": 54.3,
+   "goal": true,
+   "xg": 0.393,
+   "text": "Goal! Switzerland 3, Bosnia and Herzegovina 0. Johan Manzambi (Switzerland) right footed shot from the centre of the box to the centre of the goal. Assisted by Rubén Vargas."
+  },
+  {
+   "minute": "90'+3",
+   "seconds": 5400.0,
+   "team": "Bosnia-Herzegovina",
+   "player": "Ermin Mahmic",
+   "type": "Goal - Volley",
+   "x": 84.8,
+   "y": 51.4,
+   "goal": true,
+   "xg": 0.212,
+   "text": "Goal! Switzerland 3, Bosnia and Herzegovina 1. Ermin Mahmic (Bosnia and Herzegovina) right footed shot from the centre of the box to the high centre of the goal following a corner."
+  },
+  {
+   "minute": "90'+7",
+   "seconds": 5400.0,
+   "team": "Switzerland",
+   "player": "Granit Xhaka",
+   "type": "Penalty - Scored",
+   "x": 88.5,
+   "y": 50.0,
+   "goal": true,
+   "xg": 0.76,
+   "text": "Goal! Switzerland 4, Bosnia and Herzegovina 1. Granit Xhaka (Switzerland) converts the penalty with a left footed shot to the bottom right corner."
+  }
+ ],
+ "lineups": [
+  {
+   "team": "Switzerland",
+   "formation": "4-3-1-2",
+   "starters": [
+    {
+     "name": "Gregor Kobel",
+     "jersey": "1",
+     "position": "G"
+    },
+    {
+     "name": "Manuel Akanji",
+     "jersey": "5",
+     "position": "CD-L"
+    },
+    {
+     "name": "Nico Elvedi",
+     "jersey": "4",
+     "position": "CD-R"
+    },
+    {
+     "name": "Ricardo Rodríguez",
+     "jersey": "13",
+     "position": "LB"
+    },
+    {
+     "name": "Silvan Widmer",
+     "jersey": "3",
+     "position": "RB"
+    },
+    {
+     "name": "Dan Ndoye",
+     "jersey": "11",
+     "position": "M"
+    },
+    {
+     "name": "Granit Xhaka",
+     "jersey": "10",
+     "position": "CM"
+    },
+    {
+     "name": "Fabian Rieder",
+     "jersey": "22",
+     "position": "AM"
+    },
+    {
+     "name": "Remo Freuler",
+     "jersey": "8",
+     "position": "LM"
+    },
+    {
+     "name": "Michel Aebischer",
+     "jersey": "20",
+     "position": "RM"
+    },
+    {
+     "name": "Breel Embolo",
+     "jersey": "7",
+     "position": "CF-R"
+    }
+   ],
+   "subs": [
+    {
+     "name": "Yvon Mvogo",
+     "jersey": "12",
+     "position": null
+    },
+    {
+     "name": "Christian Fassnacht",
+     "jersey": "16",
+     "position": null
+    },
+    {
+     "name": "Djibril Sow",
+     "jersey": "15",
+     "position": null
+    },
+    {
+     "name": "Luca Jaquez",
+     "jersey": "25",
+     "position": null
+    },
+    {
+     "name": "Aurèle Amenda",
+     "jersey": "24",
+     "position": null
+    },
+    {
+     "name": "Eray Cömert",
+     "jersey": "18",
+     "position": null
+    },
+    {
+     "name": "Marvin Keller",
+     "jersey": "21",
+     "position": null
+    },
+    {
+     "name": "Noah Okafor",
+     "jersey": "19",
+     "position": null
+    },
+    {
+     "name": "Denis Zakaria",
+     "jersey": "6",
+     "position": null
+    },
+    {
+     "name": "Zeki Amdouni",
+     "jersey": "23",
+     "position": null
+    },
+    {
+     "name": "Cedric Itten",
+     "jersey": "26",
+     "position": null
+    },
+    {
+     "name": "Rubén Vargas",
+     "jersey": "17",
+     "position": null
+    },
+    {
+     "name": "Johan Manzambi",
+     "jersey": "9",
+     "position": null
+    },
+    {
+     "name": "Ardon Jashari",
+     "jersey": "14",
+     "position": null
+    }
+   ]
+  },
+  {
+   "team": "Bosnia-Herzegovina",
+   "formation": "4-4-2",
+   "starters": [
+    {
+     "name": "Nikola Vasilj",
+     "jersey": "1",
+     "position": "G"
+    },
+    {
+     "name": "Tarik Muharemovic",
+     "jersey": "4",
+     "position": "CD-L"
+    },
+    {
+     "name": "Nikola Katic",
+     "jersey": "18",
+     "position": "CD-R"
+    },
+    {
+     "name": "Sead Kolasinac",
+     "jersey": "5",
+     "position": "LB"
+    },
+    {
+     "name": "Amar Dedic",
+     "jersey": "7",
+     "position": "RB"
+    },
+    {
+     "name": "Ivan Sunjic",
+     "jersey": "14",
+     "position": "CM-L"
+    },
+    {
+     "name": "Benjamin Tahirovic",
+     "jersey": "6",
+     "position": "CM-R"
+    },
+    {
+     "name": "Kerim Alajbegovic",
+     "jersey": "19",
+     "position": "LM"
+    },
+    {
+     "name": "Amar Memic",
+     "jersey": "15",
+     "position": "RM"
+    },
+    {
+     "name": "Edin Dzeko",
+     "jersey": "11",
+     "position": "CF-L"
+    },
+    {
+     "name": "Ermedin Demirovic",
+     "jersey": "10",
+     "position": "CF-R"
+    }
+   ],
+   "subs": [
+    {
+     "name": "Ermin Mahmic",
+     "jersey": "26",
+     "position": "SUB"
+    },
+    {
+     "name": "Martin Zlomislic",
+     "jersey": "22",
+     "position": "SUB"
+    },
+    {
+     "name": "Nihad Mujakic",
+     "jersey": "2",
+     "position": "SUB"
+    },
+    {
+     "name": "Dzenis Burnic",
+     "jersey": "17",
+     "position": "SUB"
+    },
+    {
+     "name": "Dennis Hadzikadunic",
+     "jersey": "3",
+     "position": "SUB"
+    },
+    {
+     "name": "Arjan Malic",
+     "jersey": "24",
+     "position": "SUB"
+    },
+    {
+     "name": "Ivan Basic",
+     "jersey": "13",
+     "position": "SUB"
+    },
+    {
+     "name": "Amir Hadziahmetovic",
+     "jersey": "16",
+     "position": "SUB"
+    },
+    {
+     "name": "Samed Bazdar",
+     "jersey": "9",
+     "position": "SUB"
+    },
+    {
+     "name": "Jovo Lukic",
+     "jersey": "25",
+     "position": "SUB"
+    },
+    {
+     "name": "Stjepan Radeljic",
+     "jersey": "21",
+     "position": "SUB"
+    },
+    {
+     "name": "Haris Tabakovic",
+     "jersey": "23",
+     "position": "SUB"
+    },
+    {
+     "name": "Mladen Jurkas",
+     "jersey": "12",
+     "position": "SUB"
+    },
+    {
+     "name": "Esmir Bajraktarevic",
+     "jersey": "20",
+     "position": "SUB"
+    },
+    {
+     "name": "Armin Gigovic",
+     "jersey": "8",
+     "position": "SUB"
+    }
+   ]
+  }
+ ],
+ "attendance": 70026,
+ "venue": "SoFi Stadium, Inglewood, California, USA"
+}

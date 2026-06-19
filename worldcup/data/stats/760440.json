@@ -1,0 +1,1146 @@
+{
+ "teams": [
+  {
+   "name": "Canada",
+   "stats": {
+    "possessionPct": "79",
+    "totalShots": "32",
+    "shotsOnTarget": "10",
+    "wonCorners": "19",
+    "foulsCommitted": "9",
+    "offsides": "1",
+    "saves": "0",
+    "yellowCards": "1",
+    "redCards": "0"
+   }
+  },
+  {
+   "name": "Qatar",
+   "stats": {
+    "possessionPct": "21",
+    "totalShots": "2",
+    "shotsOnTarget": "0",
+    "wonCorners": "1",
+    "foulsCommitted": "10",
+    "offsides": "1",
+    "saves": "4",
+    "yellowCards": "1",
+    "redCards": "2"
+   }
+  }
+ ],
+ "events": [
+  {
+   "type": "Kickoff",
+   "minute": "",
+   "team": null,
+   "text": "First Half begins.",
+   "players": []
+  },
+  {
+   "type": "Yellow Card",
+   "minute": "9'",
+   "team": "Canada",
+   "text": "Derek Cornelius (Canada) is shown the yellow card for a bad foul.",
+   "players": [
+    "Derek Cornelius"
+   ]
+  },
+  {
+   "type": "Goal",
+   "minute": "16'",
+   "team": "Canada",
+   "text": "Goal! Canada 1, Qatar 0. Cyle Larin (Canada) left footed shot from very close range to the bottom right corner following a corner.",
+   "players": [
+    "Cyle Larin"
+   ]
+  },
+  {
+   "type": "Start Delay",
+   "minute": "22'",
+   "team": "Qatar",
+   "text": "Delay in match because of an injury Boualem Khoukhi (Qatar).",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "22'",
+   "team": "Canada",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "23'",
+   "team": "Qatar",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "23'",
+   "team": "Canada",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "25'",
+   "team": "Canada",
+   "text": "Delay in match for a drinks break.",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "25'",
+   "team": "Qatar",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "27'",
+   "team": "Canada",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "27'",
+   "team": "Qatar",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Goal - Volley",
+   "minute": "29'",
+   "team": "Canada",
+   "text": "Goal! Canada 2, Qatar 0. Jonathan David (Canada) right footed shot from the right side of the box to the bottom right corner.",
+   "players": [
+    "Jonathan David"
+   ]
+  },
+  {
+   "type": "Start Delay",
+   "minute": "33'",
+   "team": "Canada",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "33'",
+   "team": "Canada",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Red Card",
+   "minute": "33'",
+   "team": "Qatar",
+   "text": "Homam El Amin (Qatar) is shown the red card.",
+   "players": [
+    "Homam Ahmed"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "40'",
+   "team": "Qatar",
+   "text": "Substitution, Qatar. Sultan Al Brake replaces Yusuf Abdurisag.",
+   "players": [
+    "Sultan Al-Brake",
+    "Yusuf Abdurisag"
+   ]
+  },
+  {
+   "type": "Goal - Volley",
+   "minute": "45'+3'",
+   "team": "Canada",
+   "text": "Goal! Canada 3, Qatar 0. Jonathan David (Canada) right footed shot from very close range to the centre of the goal.",
+   "players": [
+    "Jonathan David"
+   ]
+  },
+  {
+   "type": "Halftime",
+   "minute": "45'+6'",
+   "team": null,
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Substitution",
+   "minute": "45'",
+   "team": "Qatar",
+   "text": "Substitution, Qatar. Ahmed Fathy replaces Edmílson Junior.",
+   "players": [
+    "Ahmed Fathy",
+    "Edmílson Junior"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "45'",
+   "team": "Qatar",
+   "text": "Substitution, Qatar. Mohammad Al Manai replaces Jassem Gaber.",
+   "players": [
+    "Mohamed Manai",
+    "Jassem Gaber"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "45'",
+   "team": "Canada",
+   "text": "Substitution, Canada. Moïse Bombito replaces Derek Cornelius.",
+   "players": [
+    "Moïse Bombito",
+    "Derek Cornelius"
+   ]
+  },
+  {
+   "type": "Start 2nd Half",
+   "minute": "45'",
+   "team": null,
+   "text": "Second Half begins Canada 3, Qatar 0.",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "51'",
+   "team": "Canada",
+   "text": "Delay in match because of an injury Ismaël Koné (Canada).",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "51'",
+   "team": "Qatar",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "53'",
+   "team": "Qatar",
+   "text": "Delay in match (Qatar). VAR checking.",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "53'",
+   "team": "Qatar",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "Red Card",
+   "minute": "53'",
+   "team": "Qatar",
+   "text": "Assim Madibo (Qatar) is shown the red card.",
+   "players": [
+    "Assim Madibo"
+   ]
+  },
+  {
+   "type": "End Delay",
+   "minute": "55'",
+   "team": "Canada",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "55'",
+   "team": "Qatar",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Substitution",
+   "minute": "57'",
+   "team": "Canada",
+   "text": "Substitution, Canada. Nathan Saliba replaces Ismaël Koné because of an injury.",
+   "players": [
+    "Nathan Saliba",
+    "Ismaël Koné"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "59'",
+   "team": "Qatar",
+   "text": "Substitution, Qatar. Al Hashmi Al Hussain replaces Akram Afif.",
+   "players": [
+    "Al-Hashmi Al-Hussain",
+    "Akram Afif"
+   ]
+  },
+  {
+   "type": "Yellow Card",
+   "minute": "62'",
+   "team": "Qatar",
+   "text": "Ahmed Fathy (Qatar) is shown the yellow card for a bad foul.",
+   "players": [
+    "Ahmed Fathy"
+   ]
+  },
+  {
+   "type": "Goal - Free-kick",
+   "minute": "64'",
+   "team": "Canada",
+   "text": "Goal! Canada 4, Qatar 0. Nathan Saliba (Canada) from a free kick with a right footed shot to the bottom right corner.",
+   "players": [
+    "Nathan Saliba"
+   ]
+  },
+  {
+   "type": "Start Delay",
+   "minute": "66'",
+   "team": "Qatar",
+   "text": "Delay in match because of an injury Mahmoud Abunada (Qatar).",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "66'",
+   "team": "Canada",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "67'",
+   "team": "Qatar",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "67'",
+   "team": "Canada",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "68'",
+   "team": "Canada",
+   "text": "Delay in match for a drinks break.",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "68'",
+   "team": "Qatar",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "71'",
+   "team": "Canada",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "71'",
+   "team": "Qatar",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Substitution",
+   "minute": "71'",
+   "team": "Canada",
+   "text": "Substitution, Canada. Jacob Shaffelburg replaces Luc De Fougerolles.",
+   "players": [
+    "Jacob Shaffelburg",
+    "Luc de Fougerolles"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "71'",
+   "team": "Canada",
+   "text": "Substitution, Canada. Tani Oluwaseyi replaces Ali Ahmed.",
+   "players": [
+    "Tani Oluwaseyi",
+    "Ali Ahmed"
+   ]
+  },
+  {
+   "type": "Own Goal",
+   "minute": "75'",
+   "team": "Canada",
+   "text": "Own Goal by Mohammad Al Manai, Qatar. Canada 5, Qatar 0.",
+   "players": [
+    "Mohamed Manai"
+   ]
+  },
+  {
+   "type": "Start Delay",
+   "minute": "82'",
+   "team": "Qatar",
+   "text": "Delay in match because of an injury Mahmoud Abunada (Qatar).",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "82'",
+   "team": "Canada",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Substitution",
+   "minute": "83'",
+   "team": "Canada",
+   "text": "Substitution, Canada. Niko Sigur replaces Tajon Buchanan.",
+   "players": [
+    "Niko Sigur",
+    "Tajon Buchanan"
+   ]
+  },
+  {
+   "type": "End Delay",
+   "minute": "83'",
+   "team": "Qatar",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "83'",
+   "team": "Canada",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Substitution",
+   "minute": "87'",
+   "team": "Qatar",
+   "text": "Substitution, Qatar. Lucas Mendes replaces Ahmed Fathy.",
+   "players": [
+    "Lucas Mendes",
+    "Ahmed Fathy"
+   ]
+  },
+  {
+   "type": "Goal",
+   "minute": "90'+2'",
+   "team": "Canada",
+   "text": "Goal! Canada 6, Qatar 0. Jonathan David (Canada) left footed shot from the centre of the box to the top left corner. Assisted by Nathan Saliba.",
+   "players": [
+    "Jonathan David",
+    "Nathan Saliba"
+   ]
+  },
+  {
+   "type": "End Regular Time",
+   "minute": "90'+10'",
+   "team": null,
+   "text": "",
+   "players": []
+  }
+ ],
+ "shots": [
+  {
+   "minute": "1",
+   "seconds": 42.0,
+   "team": "Qatar",
+   "player": "Edmílson Junior",
+   "type": "Shot Off Target",
+   "x": 92.3,
+   "y": 36.8,
+   "goal": false,
+   "xg": 0.253,
+   "text": "Attempt missed. Edmílson Junior (Qatar) right footed shot from the right side of the box misses to the right. Assisted by Homam El Amin with a cross."
+  },
+  {
+   "minute": "7",
+   "seconds": 379.0,
+   "team": "Canada",
+   "player": "Jonathan David",
+   "type": "Shot On Target",
+   "x": 90.3,
+   "y": 66.0,
+   "goal": false,
+   "xg": 0.188,
+   "text": "Attempt saved. Jonathan David (Canada) right footed shot from the left side of the box is saved in the bottom left corner by Mahmoud Abunada (Qatar). Assisted by Ali Ahmed with a cross."
+  },
+  {
+   "minute": "10",
+   "seconds": 561.0,
+   "team": "Qatar",
+   "player": "Boualem Khoukhi",
+   "type": "Shot Blocked",
+   "x": 76.9,
+   "y": 70.9,
+   "goal": false,
+   "xg": 0.062,
+   "text": "Attempt blocked. Boualem Khoukhi (Qatar) right footed shot from outside the box is blocked."
+  },
+  {
+   "minute": "15",
+   "seconds": 896.0,
+   "team": "Canada",
+   "player": "Stephen Eustaquio",
+   "type": "Shot Blocked",
+   "x": 79.9,
+   "y": 51.3,
+   "goal": false,
+   "xg": 0.127,
+   "text": "Attempt blocked. Stephen Eustaquio (Canada) right footed shot from outside the box is blocked."
+  },
+  {
+   "minute": "16",
+   "seconds": 953.0,
+   "team": "Canada",
+   "player": "Jonathan David",
+   "type": "Shot On Target",
+   "x": 86.8,
+   "y": 53.9,
+   "goal": false,
+   "xg": 0.258,
+   "text": "Attempt saved. Jonathan David (Canada) right footed shot from the centre of the box is saved in the top centre of the goal by Mahmoud Abunada (Qatar). Assisted by Alistair Johnston with a cross."
+  },
+  {
+   "minute": "16",
+   "seconds": 954.0,
+   "team": "Canada",
+   "player": "Cyle Larin",
+   "type": "Goal",
+   "x": 95.5,
+   "y": 50.4,
+   "goal": true,
+   "xg": 0.809,
+   "text": "Goal! Canada 1, Qatar 0. Cyle Larin (Canada) left footed shot from very close range to the bottom right corner following a corner."
+  },
+  {
+   "minute": "21",
+   "seconds": 1251.0,
+   "team": "Canada",
+   "player": "Derek Cornelius",
+   "type": "Shot Off Target",
+   "x": 91.1,
+   "y": 54.4,
+   "goal": false,
+   "xg": 0.274,
+   "text": "Attempt missed. Derek Cornelius (Canada) header from the centre of the box is high and wide to the left. Assisted by Ali Ahmed with a cross following a set piece situation."
+  },
+  {
+   "minute": "29",
+   "seconds": 1704.0,
+   "team": "Canada",
+   "player": "Tajon Buchanan",
+   "type": "Shot Blocked",
+   "x": 72.9,
+   "y": 39.2,
+   "goal": false,
+   "xg": 0.059,
+   "text": "Attempt blocked. Tajon Buchanan (Canada) left footed shot from outside the box is blocked. Assisted by Luc De Fougerolles."
+  },
+  {
+   "minute": "29",
+   "seconds": 1706.0,
+   "team": "Canada",
+   "player": "Jonathan David",
+   "type": "Goal - Volley",
+   "x": 88.9,
+   "y": 36.8,
+   "goal": true,
+   "xg": 0.209,
+   "text": "Goal! Canada 2, Qatar 0. Jonathan David (Canada) right footed shot from the right side of the box to the bottom right corner."
+  },
+  {
+   "minute": "35",
+   "seconds": 2085.0,
+   "team": "Canada",
+   "player": "Ali Ahmed",
+   "type": "Shot Off Target",
+   "x": 81.7,
+   "y": 52.5,
+   "goal": false,
+   "xg": 0.151,
+   "text": "Attempt missed. Ali Ahmed (Canada) right footed shot from outside the box is too high from a direct free kick."
+  },
+  {
+   "minute": "38",
+   "seconds": 2230.0,
+   "team": "Canada",
+   "player": "Tajon Buchanan",
+   "type": "Shot Blocked",
+   "x": 95.0,
+   "y": 45.4,
+   "goal": false,
+   "xg": 0.662,
+   "text": "Attempt blocked. Tajon Buchanan (Canada) right footed shot from very close range is blocked. Assisted by Richie Laryea."
+  },
+  {
+   "minute": "40",
+   "seconds": 2362.0,
+   "team": "Canada",
+   "player": "Jonathan David",
+   "type": "Shot Blocked",
+   "x": 88.1,
+   "y": 29.7,
+   "goal": false,
+   "xg": 0.129,
+   "text": "Attempt blocked. Jonathan David (Canada) right footed shot from the right side of the box is blocked. Assisted by Luc De Fougerolles."
+  },
+  {
+   "minute": "45",
+   "seconds": 2652.0,
+   "team": "Canada",
+   "player": "Cyle Larin",
+   "type": "Shot Blocked",
+   "x": 91.8,
+   "y": 32.8,
+   "goal": false,
+   "xg": 0.181,
+   "text": "Attempt blocked. Cyle Larin (Canada) right footed shot from the right side of the box is blocked. Assisted by Tajon Buchanan."
+  },
+  {
+   "minute": "45'+3",
+   "seconds": 2700.0,
+   "team": "Canada",
+   "player": "Cyle Larin",
+   "type": "Shot On Target",
+   "x": 93.3,
+   "y": 55.2,
+   "goal": false,
+   "xg": 0.341,
+   "text": "Attempt saved. Cyle Larin (Canada) header from the centre of the box is saved in the top left corner by Mahmoud Abunada (Qatar). Assisted by Alistair Johnston with a cross."
+  },
+  {
+   "minute": "45'+3",
+   "seconds": 2700.0,
+   "team": "Canada",
+   "player": "Jonathan David",
+   "type": "Goal - Volley",
+   "x": 99.3,
+   "y": 49.8,
+   "goal": true,
+   "xg": 0.95,
+   "text": "Goal! Canada 3, Qatar 0. Jonathan David (Canada) right footed shot from very close range to the centre of the goal."
+  },
+  {
+   "minute": "45'+5",
+   "seconds": 2700.0,
+   "team": "Canada",
+   "player": "Alistair Johnston",
+   "type": "Shot On Target",
+   "x": 93.6,
+   "y": 31.8,
+   "goal": false,
+   "xg": 0.17,
+   "text": "Attempt saved. Alistair Johnston (Canada) right footed shot from the right side of the box is saved in the centre of the goal by Mahmoud Abunada (Qatar). Assisted by Tajon Buchanan."
+  },
+  {
+   "minute": "48",
+   "seconds": 2824.0,
+   "team": "Canada",
+   "player": "Ismaël Koné",
+   "type": "Shot Blocked",
+   "x": 84.0,
+   "y": 51.7,
+   "goal": false,
+   "xg": 0.194,
+   "text": "Attempt blocked. Ismaël Koné (Canada) left footed shot from the centre of the box is blocked. Assisted by Richie Laryea."
+  },
+  {
+   "minute": "50",
+   "seconds": 2951.0,
+   "team": "Canada",
+   "player": "Cyle Larin",
+   "type": "Shot Blocked",
+   "x": 90.2,
+   "y": 45.6,
+   "goal": false,
+   "xg": 0.378,
+   "text": "Attempt blocked. Cyle Larin (Canada) left footed shot from the centre of the box is blocked. Assisted by Ismaël Koné."
+  },
+  {
+   "minute": "64",
+   "seconds": 3782.0,
+   "team": "Canada",
+   "player": "Nathan Saliba",
+   "type": "Goal - Free-kick",
+   "x": 77.5,
+   "y": 37.9,
+   "goal": true,
+   "xg": 0.085,
+   "text": "Goal! Canada 4, Qatar 0. Nathan Saliba (Canada) from a free kick with a right footed shot to the bottom right corner."
+  },
+  {
+   "minute": "75",
+   "seconds": 4460.0,
+   "team": "Canada",
+   "player": "Tajon Buchanan",
+   "type": "Shot Blocked",
+   "x": 89.9,
+   "y": 33.1,
+   "goal": false,
+   "xg": 0.174,
+   "text": "Attempt blocked. Tajon Buchanan (Canada) left footed shot from the right side of the box is blocked."
+  },
+  {
+   "minute": "75",
+   "seconds": 4461.0,
+   "team": "Canada",
+   "player": "Jacob Shaffelburg",
+   "type": "Shot Blocked",
+   "x": 90.0,
+   "y": 57.0,
+   "goal": false,
+   "xg": 0.33,
+   "text": "Attempt missed. Jacob Shaffelburg (Canada) left footed shot from the centre of the box is close, but misses to the right."
+  },
+  {
+   "minute": "77",
+   "seconds": 4570.0,
+   "team": "Canada",
+   "player": "Tajon Buchanan",
+   "type": "Shot Off Target",
+   "x": 81.8,
+   "y": 26.1,
+   "goal": false,
+   "xg": 0.077,
+   "text": "Attempt missed. Tajon Buchanan (Canada) right footed shot from outside the box is too high. Assisted by Alistair Johnston."
+  },
+  {
+   "minute": "78",
+   "seconds": 4646.0,
+   "team": "Canada",
+   "player": "Richie Laryea",
+   "type": "Shot Blocked",
+   "x": 79.1,
+   "y": 66.7,
+   "goal": false,
+   "xg": 0.085,
+   "text": "Attempt blocked. Richie Laryea (Canada) right footed shot from outside the box is blocked. Assisted by Nathan Saliba."
+  },
+  {
+   "minute": "80",
+   "seconds": 4788.0,
+   "team": "Canada",
+   "player": "Jacob Shaffelburg",
+   "type": "Shot Off Target",
+   "x": 77.8,
+   "y": 69.9,
+   "goal": false,
+   "xg": 0.069,
+   "text": "Attempt missed. Jacob Shaffelburg (Canada) left footed shot from outside the box misses to the right following a corner."
+  },
+  {
+   "minute": "82",
+   "seconds": 4892.0,
+   "team": "Canada",
+   "player": "Jacob Shaffelburg",
+   "type": "Shot Off Target",
+   "x": 96.6,
+   "y": 70.0,
+   "goal": false,
+   "xg": 0.136,
+   "text": "Attempt missed. Jacob Shaffelburg (Canada) left footed shot from a difficult angle on the left is high and wide to the left."
+  },
+  {
+   "minute": "84",
+   "seconds": 5032.0,
+   "team": "Canada",
+   "player": "Jonathan David",
+   "type": "Shot Blocked",
+   "x": 81.3,
+   "y": 49.7,
+   "goal": false,
+   "xg": 0.147,
+   "text": "Attempt blocked. Jonathan David (Canada) left footed shot from outside the box is blocked."
+  },
+  {
+   "minute": "84",
+   "seconds": 5036.0,
+   "team": "Canada",
+   "player": "Tani Oluwaseyi",
+   "type": "Shot Blocked",
+   "x": 96.1,
+   "y": 60.1,
+   "goal": false,
+   "xg": 0.372,
+   "text": "Attempt blocked. Tani Oluwaseyi (Canada) left footed shot from the left side of the six yard box is blocked. Assisted by Cyle Larin."
+  },
+  {
+   "minute": "86",
+   "seconds": 5146.0,
+   "team": "Canada",
+   "player": "Jonathan David",
+   "type": "Shot Blocked",
+   "x": 77.9,
+   "y": 39.4,
+   "goal": false,
+   "xg": 0.092,
+   "text": "Attempt blocked. Jonathan David (Canada) left footed shot from outside the box is blocked. Assisted by Stephen Eustaquio."
+  },
+  {
+   "minute": "90",
+   "seconds": 5349.0,
+   "team": "Canada",
+   "player": "Niko Sigur",
+   "type": "Shot Blocked",
+   "x": 80.9,
+   "y": 53.1,
+   "goal": false,
+   "xg": 0.139,
+   "text": "Attempt blocked. Niko Sigur (Canada) right footed shot from outside the box is blocked. Assisted by Richie Laryea."
+  },
+  {
+   "minute": "90'+2",
+   "seconds": 5400.0,
+   "team": "Canada",
+   "player": "Nathan Saliba",
+   "type": "Shot Blocked",
+   "x": 78.4,
+   "y": 56.1,
+   "goal": false,
+   "xg": 0.105,
+   "text": "Attempt blocked. Nathan Saliba (Canada) right footed shot from outside the box is blocked. Assisted by Jacob Shaffelburg."
+  },
+  {
+   "minute": "90'+2",
+   "seconds": 5400.0,
+   "team": "Canada",
+   "player": "Jonathan David",
+   "type": "Goal",
+   "x": 92.3,
+   "y": 57.1,
+   "goal": true,
+   "xg": 0.416,
+   "text": "Goal! Canada 6, Qatar 0. Jonathan David (Canada) left footed shot from the centre of the box to the top left corner. Assisted by Nathan Saliba."
+  },
+  {
+   "minute": "90'+5",
+   "seconds": 5400.0,
+   "team": "Canada",
+   "player": "Cyle Larin",
+   "type": "Shot Blocked",
+   "x": 94.5,
+   "y": 49.5,
+   "goal": false,
+   "xg": 0.468,
+   "text": "Attempt blocked. Cyle Larin (Canada) header from very close range is blocked. Assisted by Alistair Johnston with a cross."
+  },
+  {
+   "minute": "90'+8",
+   "seconds": 5400.0,
+   "team": "Canada",
+   "player": "Cyle Larin",
+   "type": "Shot Off Target",
+   "x": 95.8,
+   "y": 48.9,
+   "goal": false,
+   "xg": 0.539,
+   "text": "Attempt missed. Cyle Larin (Canada) header from very close range misses to the left. Assisted by Alistair Johnston with a cross."
+  },
+  {
+   "minute": "90'+9",
+   "seconds": 5400.0,
+   "team": "Canada",
+   "player": "Jonathan David",
+   "type": "Shot Blocked",
+   "x": 90.5,
+   "y": 56.2,
+   "goal": false,
+   "xg": 0.363,
+   "text": "Attempt blocked. Jonathan David (Canada) left footed shot from the centre of the box is blocked."
+  },
+  {
+   "minute": "90'+10",
+   "seconds": 5400.0,
+   "team": "Canada",
+   "player": "Nathan Saliba",
+   "type": "Shot Off Target",
+   "x": 86.2,
+   "y": 47.5,
+   "goal": false,
+   "xg": 0.16,
+   "text": "Attempt missed. Nathan Saliba (Canada) header from the centre of the box misses to the left. Assisted by Alistair Johnston following a corner."
+  }
+ ],
+ "lineups": [
+  {
+   "team": "Canada",
+   "formation": "4-4-2",
+   "starters": [
+    {
+     "name": "Maxime Crépeau",
+     "jersey": "16",
+     "position": "G"
+    },
+    {
+     "name": "Derek Cornelius",
+     "jersey": "13",
+     "position": "CD-L"
+    },
+    {
+     "name": "Luc de Fougerolles",
+     "jersey": "4",
+     "position": "CD-R"
+    },
+    {
+     "name": "Richie Laryea",
+     "jersey": "22",
+     "position": "LB"
+    },
+    {
+     "name": "Alistair Johnston",
+     "jersey": "2",
+     "position": "RB"
+    },
+    {
+     "name": "Stephen Eustáquio",
+     "jersey": "7",
+     "position": "CM-L"
+    },
+    {
+     "name": "Ismaël Koné",
+     "jersey": "8",
+     "position": "CM-R"
+    },
+    {
+     "name": "Ali Ahmed",
+     "jersey": "20",
+     "position": "LM"
+    },
+    {
+     "name": "Tajon Buchanan",
+     "jersey": "17",
+     "position": "RM"
+    },
+    {
+     "name": "Cyle Larin",
+     "jersey": "9",
+     "position": "CF-L"
+    },
+    {
+     "name": "Jonathan David",
+     "jersey": "10",
+     "position": "CF-R"
+    }
+   ],
+   "subs": [
+    {
+     "name": "Jonathan Osorio",
+     "jersey": "21",
+     "position": "SUB"
+    },
+    {
+     "name": "Tani Oluwaseyi",
+     "jersey": "12",
+     "position": "SUB"
+    },
+    {
+     "name": "Jayden Nelson",
+     "jersey": "26",
+     "position": "SUB"
+    },
+    {
+     "name": "Dayne St. Clair",
+     "jersey": "1",
+     "position": "SUB"
+    },
+    {
+     "name": "Promise David",
+     "jersey": "24",
+     "position": "SUB"
+    },
+    {
+     "name": "Mathieu Choinière",
+     "jersey": "6",
+     "position": "SUB"
+    },
+    {
+     "name": "Joel Waterman",
+     "jersey": "5",
+     "position": "SUB"
+    },
+    {
+     "name": "Niko Sigur",
+     "jersey": "23",
+     "position": "SUB"
+    },
+    {
+     "name": "Moïse Bombito",
+     "jersey": "15",
+     "position": "SUB"
+    },
+    {
+     "name": "Liam Millar",
+     "jersey": "11",
+     "position": "SUB"
+    },
+    {
+     "name": "Alphonso Davies",
+     "jersey": "19",
+     "position": "SUB"
+    },
+    {
+     "name": "Owen Goodman",
+     "jersey": "18",
+     "position": "SUB"
+    },
+    {
+     "name": "Jacob Shaffelburg",
+     "jersey": "14",
+     "position": "SUB"
+    },
+    {
+     "name": "Nathan Saliba",
+     "jersey": "25",
+     "position": "SUB"
+    }
+   ]
+  },
+  {
+   "team": "Qatar",
+   "formation": "4-3-3",
+   "starters": [
+    {
+     "name": "Mahmoud Abunada",
+     "jersey": "1",
+     "position": "G"
+    },
+    {
+     "name": "Boualem Khoukhi",
+     "jersey": "16",
+     "position": "CD-L"
+    },
+    {
+     "name": "Pedro Miguel",
+     "jersey": "2",
+     "position": "CD-R"
+    },
+    {
+     "name": "Homam Ahmed",
+     "jersey": "14",
+     "position": "LB"
+    },
+    {
+     "name": "Ayoub Al-Oui",
+     "jersey": "13",
+     "position": "RB"
+    },
+    {
+     "name": "Assim Madibo",
+     "jersey": "23",
+     "position": "CM"
+    },
+    {
+     "name": "Issa Laye",
+     "jersey": "4",
+     "position": "LM"
+    },
+    {
+     "name": "Jassem Gaber",
+     "jersey": "5",
+     "position": "RM"
+    },
+    {
+     "name": "Yusuf Abdurisag",
+     "jersey": "15",
+     "position": "F"
+    },
+    {
+     "name": "Akram Afif",
+     "jersey": "11",
+     "position": "LF"
+    },
+    {
+     "name": "Edmílson Junior",
+     "jersey": "8",
+     "position": "RF"
+    }
+   ],
+   "subs": [
+    {
+     "name": "Hassan Al-Haydos",
+     "jersey": "10",
+     "position": "SUB"
+    },
+    {
+     "name": "Tahsin Jamshid",
+     "jersey": "24",
+     "position": "SUB"
+    },
+    {
+     "name": "Mohamed Manai",
+     "jersey": "26",
+     "position": "SUB"
+    },
+    {
+     "name": "Almoez Ali",
+     "jersey": "19",
+     "position": "SUB"
+    },
+    {
+     "name": "Mohammed Muntari",
+     "jersey": "9",
+     "position": "SUB"
+    },
+    {
+     "name": "Lucas Mendes",
+     "jersey": "3",
+     "position": "SUB"
+    },
+    {
+     "name": "Meshaal Barsham",
+     "jersey": "22",
+     "position": "SUB"
+    },
+    {
+     "name": "Sultan Al-Brake",
+     "jersey": "18",
+     "position": "SUB"
+    },
+    {
+     "name": "Al-Hashmi Al-Hussain",
+     "jersey": "25",
+     "position": "SUB"
+    },
+    {
+     "name": "Ahmed Fathy",
+     "jersey": "20",
+     "position": "SUB"
+    },
+    {
+     "name": "Ahmed Al-Ganehi",
+     "jersey": "17",
+     "position": "SUB"
+    },
+    {
+     "name": "Salah Zakaria",
+     "jersey": "21",
+     "position": "SUB"
+    },
+    {
+     "name": "Ahmed Alaaeldin",
+     "jersey": "7",
+     "position": "SUB"
+    },
+    {
+     "name": "Karim Boudiaf",
+     "jersey": "12",
+     "position": "SUB"
+    },
+    {
+     "name": "Abdulaziz Hatem",
+     "jersey": "6",
+     "position": "SUB"
+    }
+   ]
+  }
+ ],
+ "attendance": 52497,
+ "venue": "BC Place, Vancouver, Canada"
+}

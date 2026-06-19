@@ -1,0 +1,754 @@
+{
+ "teams": [
+  {
+   "name": "Mexico",
+   "stats": {
+    "possessionPct": "42.3",
+    "totalShots": "8",
+    "shotsOnTarget": "4",
+    "wonCorners": "1",
+    "foulsCommitted": "9",
+    "offsides": "3",
+    "saves": "2",
+    "yellowCards": "0",
+    "redCards": "0"
+   }
+  },
+  {
+   "name": "South Korea",
+   "stats": {
+    "possessionPct": "57.7",
+    "totalShots": "9",
+    "shotsOnTarget": "2",
+    "wonCorners": "2",
+    "foulsCommitted": "7",
+    "offsides": "6",
+    "saves": "3",
+    "yellowCards": "2",
+    "redCards": "0"
+   }
+  }
+ ],
+ "events": [
+  {
+   "type": "Kickoff",
+   "minute": "",
+   "team": null,
+   "text": "First Half begins.",
+   "players": []
+  },
+  {
+   "type": "Yellow Card",
+   "minute": "4'",
+   "team": "South Korea",
+   "text": "Lee Kang-In (Korea Republic) is shown the yellow card for a bad foul.",
+   "players": [
+    "Lee Kang-In"
+   ]
+  },
+  {
+   "type": "Start Delay",
+   "minute": "23'",
+   "team": "Mexico",
+   "text": "Delay in match for a drinks break.",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "23'",
+   "team": "South Korea",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "26'",
+   "team": "Mexico",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "26'",
+   "team": "South Korea",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Halftime",
+   "minute": "45'+5'",
+   "team": null,
+   "text": "First Half ends, Mexico 0, Korea Republic 0.",
+   "players": []
+  },
+  {
+   "type": "Start 2nd Half",
+   "minute": "45'",
+   "team": null,
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Goal - Volley",
+   "minute": "50'",
+   "team": "Mexico",
+   "text": "Goal! Mexico 1, Korea Republic 0. Luis Romo (Mexico) right footed shot from the centre of the box to the centre of the goal.",
+   "players": [
+    "Luis Romo"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "57'",
+   "team": "South Korea",
+   "text": "Substitution, Korea Republic. Hwang Hee-Chan replaces Lee Jae-Sung.",
+   "players": [
+    "Hwang Hee-Chan",
+    "Lee Jae-Sung"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "57'",
+   "team": "South Korea",
+   "text": "Substitution, Korea Republic. Oh Hyeon-Gyu replaces Son Heung-Min.",
+   "players": [
+    "Oh Hyeon-Gyu",
+    "Son Heung-Min"
+   ]
+  },
+  {
+   "type": "Yellow Card",
+   "minute": "58'",
+   "team": "South Korea",
+   "text": "Paik Seung-Ho (Korea Republic) is shown the yellow card for a bad foul.",
+   "players": [
+    "Paik Seung-Ho"
+   ]
+  },
+  {
+   "type": "Start Delay",
+   "minute": "68'",
+   "team": "South Korea",
+   "text": "Delay in match for a drinks break.",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "68'",
+   "team": "Mexico",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "70'",
+   "team": "South Korea",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "70'",
+   "team": "Mexico",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Substitution",
+   "minute": "71'",
+   "team": "Mexico",
+   "text": "Substitution, Mexico. Orbelín Pineda replaces Brian Gutiérrez.",
+   "players": [
+    "Orbelín Pineda",
+    "Brian Gutiérrez"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "71'",
+   "team": "Mexico",
+   "text": "Substitution, Mexico. Obed Vargas replaces Luis Romo.",
+   "players": [
+    "Obed Vargas",
+    "Luis Romo"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "71'",
+   "team": "South Korea",
+   "text": "Substitution, Korea Republic. Eom Ji-Sung replaces Kim Moon-Hwan.",
+   "players": [
+    "Eom Ji-Sung",
+    "Kim Moon-Hwan"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "71'",
+   "team": "South Korea",
+   "text": "Substitution, Korea Republic. Yang Hyun-Jun replaces Seol Young-Woo.",
+   "players": [
+    "Yang Hyun-Jun",
+    "Seol Young-Woo"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "77'",
+   "team": "South Korea",
+   "text": "Substitution, Korea Republic. Cho Gue-Sung replaces Paik Seung-Ho.",
+   "players": [
+    "Cho Gue-Sung",
+    "Paik Seung-Ho"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "80'",
+   "team": "Mexico",
+   "text": "Substitution, Mexico. Israel Reyes replaces Roberto Alvarado.",
+   "players": [
+    "Israel Reyes",
+    "Roberto Alvarado"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "80'",
+   "team": "Mexico",
+   "text": "Substitution, Mexico. Santiago Giménez replaces Raúl Jiménez.",
+   "players": [
+    "Santiago Gimenez",
+    "Raúl Jiménez"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "84'",
+   "team": "Mexico",
+   "text": "Substitution, Mexico. César Huerta replaces Julián Quiñones.",
+   "players": [
+    "César Huerta",
+    "Julián Quiñones"
+   ]
+  },
+  {
+   "type": "Start Delay",
+   "minute": "87'",
+   "team": "Mexico",
+   "text": "Delay in match because of an injury Raúl Rangel (Mexico).",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "87'",
+   "team": "South Korea",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "89'",
+   "team": "Mexico",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "89'",
+   "team": "South Korea",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "End Regular Time",
+   "minute": "90'+7'",
+   "team": null,
+   "text": "Second Half ends, Mexico 1, Korea Republic 0.",
+   "players": []
+  }
+ ],
+ "shots": [
+  {
+   "minute": "7",
+   "seconds": 377.0,
+   "team": "Mexico",
+   "player": "Roberto Alvarado",
+   "type": "Shot Off Target",
+   "x": 74.7,
+   "y": 39.5,
+   "goal": false,
+   "xg": 0.069,
+   "text": "Attempt missed. Roberto Alvarado (Mexico) left footed shot from outside the box is close, but misses to the right."
+  },
+  {
+   "minute": "7",
+   "seconds": 419.0,
+   "team": "Mexico",
+   "player": "Brian Gutiérrez",
+   "type": "Shot Off Target",
+   "x": 75.4,
+   "y": 60.8,
+   "goal": false,
+   "xg": 0.073,
+   "text": "Attempt missed. Brian Gutiérrez (Mexico) right footed shot from outside the box misses to the right. Assisted by Luis Romo."
+  },
+  {
+   "minute": "20",
+   "seconds": 1156.0,
+   "team": "Mexico",
+   "player": "Julián Quiñones",
+   "type": "Shot On Target",
+   "x": 90.0,
+   "y": 47.9,
+   "goal": false,
+   "xg": 0.254,
+   "text": "Attempt saved. Julián Quiñones (Mexico) header from the centre of the box is saved in the centre of the goal by Kim Seung-Gyu (Korea Republic). Assisted by Roberto Alvarado with a cross."
+  },
+  {
+   "minute": "41",
+   "seconds": 2439.0,
+   "team": "South Korea",
+   "player": "Seol Young-Woo",
+   "type": "Shot Off Target",
+   "x": 95.0,
+   "y": 67.4,
+   "goal": false,
+   "xg": 0.178,
+   "text": "Attempt missed. Seol Young-Woo (Korea Republic) left footed shot from a difficult angle on the left is high and wide to the left."
+  },
+  {
+   "minute": "44",
+   "seconds": 2634.0,
+   "team": "South Korea",
+   "player": "Lee Kang-In",
+   "type": "Shot Blocked",
+   "x": 75.3,
+   "y": 37.8,
+   "goal": false,
+   "xg": 0.07,
+   "text": "Attempt blocked. Lee Kang-In (Korea Republic) right footed shot from outside the box is blocked. Assisted by Son Heung-Min."
+  },
+  {
+   "minute": "49",
+   "seconds": 2890.0,
+   "team": "Mexico",
+   "player": "Jesús Gallardo",
+   "type": "Shot Off Target",
+   "x": 94.9,
+   "y": 70.6,
+   "goal": false,
+   "xg": 0.139,
+   "text": "Attempt missed. Jesús Gallardo (Mexico) left footed shot from a difficult angle on the left is close, but misses to the left. Assisted by Brian Gutiérrez."
+  },
+  {
+   "minute": "50",
+   "seconds": 2979.0,
+   "team": "Mexico",
+   "player": "Raúl Jiménez",
+   "type": "Shot Blocked",
+   "x": 89.2,
+   "y": 54.0,
+   "goal": false,
+   "xg": 0.221,
+   "text": "Attempt blocked. Raúl Jiménez (Mexico) header from the centre of the box is blocked. Assisted by Julián Quiñones with a cross."
+  },
+  {
+   "minute": "50",
+   "seconds": 2981.0,
+   "team": "Mexico",
+   "player": "Luis Romo",
+   "type": "Goal - Volley",
+   "x": 86.8,
+   "y": 51.7,
+   "goal": true,
+   "xg": 0.266,
+   "text": "Goal! Mexico 1, Korea Republic 0. Luis Romo (Mexico) right footed shot from the centre of the box to the centre of the goal."
+  },
+  {
+   "minute": "58",
+   "seconds": 3448.0,
+   "team": "South Korea",
+   "player": "Hwang In-Beom",
+   "type": "Shot Blocked",
+   "x": 74.8,
+   "y": 40.0,
+   "goal": false,
+   "xg": 0.07,
+   "text": "Attempt blocked. Hwang In-Beom (Korea Republic) left footed shot from outside the box is blocked."
+  },
+  {
+   "minute": "75",
+   "seconds": 4480.0,
+   "team": "Mexico",
+   "player": "Raúl Jiménez",
+   "type": "Shot On Target",
+   "x": 97.5,
+   "y": 40.1,
+   "goal": false,
+   "xg": 0.347,
+   "text": "Attempt saved. Raúl Jiménez (Mexico) right footed shot from the right side of the six yard box is saved in the centre of the goal by Kim Seung-Gyu (Korea Republic). Assisted by Julián Quiñones."
+  },
+  {
+   "minute": "78",
+   "seconds": 4669.0,
+   "team": "South Korea",
+   "player": "Lee Kang-In",
+   "type": "Shot Off Target",
+   "x": 73.5,
+   "y": 46.9,
+   "goal": false,
+   "xg": 0.068,
+   "text": "Attempt missed. Lee Kang-In (Korea Republic) left footed shot from outside the box is too high. Assisted by Hwang Hee-Chan."
+  },
+  {
+   "minute": "85",
+   "seconds": 5086.0,
+   "team": "Mexico",
+   "player": "Obed Vargas",
+   "type": "Shot On Target",
+   "x": 75.7,
+   "y": 56.0,
+   "goal": false,
+   "xg": 0.081,
+   "text": "Attempt saved. Obed Vargas (Mexico) right footed shot from outside the box is saved in the bottom right corner by Kim Seung-Gyu (Korea Republic). Assisted by Orbelín Pineda."
+  },
+  {
+   "minute": "87",
+   "seconds": 5200.0,
+   "team": "South Korea",
+   "player": "Cho Gue-Sung",
+   "type": "Shot On Target",
+   "x": 96.5,
+   "y": 42.1,
+   "goal": false,
+   "xg": 0.334,
+   "text": "Attempt saved. Cho Gue-Sung (Korea Republic) header from the right side of the six yard box is saved in the centre of the goal by Raúl Rangel (Mexico). Assisted by Eom Ji-Sung with a cross."
+  },
+  {
+   "minute": "87",
+   "seconds": 5201.0,
+   "team": "South Korea",
+   "player": "Yang Hyun-Jun",
+   "type": "Shot On Target",
+   "x": 98.1,
+   "y": 42.8,
+   "goal": false,
+   "xg": 0.558,
+   "text": "Attempt saved. Yang Hyun-Jun (Korea Republic) left footed shot from the right side of the six yard box is saved in the bottom right corner by Raúl Rangel (Mexico)."
+  },
+  {
+   "minute": "90'+2",
+   "seconds": 5400.0,
+   "team": "South Korea",
+   "player": "Lee Han-Beom",
+   "type": "Shot Off Target",
+   "x": 90.5,
+   "y": 45.4,
+   "goal": false,
+   "xg": 0.253,
+   "text": "Attempt missed. Lee Han-Beom (Korea Republic) header from the centre of the box misses to the right. Assisted by Lee Kang-In with a cross following a corner."
+  },
+  {
+   "minute": "90'+4",
+   "seconds": 5400.0,
+   "team": "South Korea",
+   "player": "Cho Gue-Sung",
+   "type": "Shot Blocked",
+   "x": 90.0,
+   "y": 55.2,
+   "goal": false,
+   "xg": 0.233,
+   "text": "Attempt blocked. Cho Gue-Sung (Korea Republic) header from the centre of the box is blocked. Assisted by Lee Kang-In with a cross."
+  },
+  {
+   "minute": "90'+4",
+   "seconds": 5400.0,
+   "team": "South Korea",
+   "player": "Oh Hyeon-Gyu",
+   "type": "Shot Off Target",
+   "x": 91.2,
+   "y": 42.6,
+   "goal": false,
+   "xg": 0.237,
+   "text": "Attempt missed. Oh Hyeon-Gyu (Korea Republic) header from the centre of the box misses to the right. Assisted by Lee Kang-In with a cross following a corner."
+  }
+ ],
+ "lineups": [
+  {
+   "team": "Mexico",
+   "formation": "4-3-3",
+   "starters": [
+    {
+     "name": "Raúl Rangel",
+     "jersey": "1",
+     "position": "G"
+    },
+    {
+     "name": "Johan Vásquez",
+     "jersey": "5",
+     "position": "CD-L"
+    },
+    {
+     "name": "Edson Álvarez",
+     "jersey": "4",
+     "position": "CD-R"
+    },
+    {
+     "name": "Jesús Gallardo",
+     "jersey": "23",
+     "position": "LB"
+    },
+    {
+     "name": "Jorge Sánchez",
+     "jersey": "2",
+     "position": "RB"
+    },
+    {
+     "name": "Érik Lira",
+     "jersey": "6",
+     "position": "CM"
+    },
+    {
+     "name": "Luis Romo",
+     "jersey": "7",
+     "position": "LM"
+    },
+    {
+     "name": "Brian Gutiérrez",
+     "jersey": "26",
+     "position": "RM"
+    },
+    {
+     "name": "Raúl Jiménez",
+     "jersey": "9",
+     "position": "F"
+    },
+    {
+     "name": "Julián Quiñones",
+     "jersey": "16",
+     "position": "LF"
+    },
+    {
+     "name": "Roberto Alvarado",
+     "jersey": "25",
+     "position": "RF"
+    }
+   ],
+   "subs": [
+    {
+     "name": "Mateo Chávez",
+     "jersey": "20",
+     "position": "SUB"
+    },
+    {
+     "name": "Obed Vargas",
+     "jersey": "18",
+     "position": "SUB"
+    },
+    {
+     "name": "Álvaro Fidalgo",
+     "jersey": "8",
+     "position": "SUB"
+    },
+    {
+     "name": "Gilberto Mora",
+     "jersey": "19",
+     "position": "SUB"
+    },
+    {
+     "name": "Santiago Gimenez",
+     "jersey": "11",
+     "position": "SUB"
+    },
+    {
+     "name": "Carlos Acevedo",
+     "jersey": "12",
+     "position": "SUB"
+    },
+    {
+     "name": "Israel Reyes",
+     "jersey": "15",
+     "position": "SUB"
+    },
+    {
+     "name": "César Huerta",
+     "jersey": "21",
+     "position": "SUB"
+    },
+    {
+     "name": "Orbelín Pineda",
+     "jersey": "17",
+     "position": "SUB"
+    },
+    {
+     "name": "Guillermo Martínez",
+     "jersey": "22",
+     "position": "SUB"
+    },
+    {
+     "name": "Luis Chávez",
+     "jersey": "24",
+     "position": "SUB"
+    },
+    {
+     "name": "Armando González",
+     "jersey": "14",
+     "position": "SUB"
+    },
+    {
+     "name": "Guillermo Ochoa",
+     "jersey": "13",
+     "position": "SUB"
+    },
+    {
+     "name": "Alexis Vega",
+     "jersey": "10",
+     "position": "SUB"
+    }
+   ]
+  },
+  {
+   "team": "South Korea",
+   "formation": "3-4-2-1",
+   "starters": [
+    {
+     "name": "Kim Seung-Gyu",
+     "jersey": "1",
+     "position": "G"
+    },
+    {
+     "name": "Kim Min-Jae",
+     "jersey": "4",
+     "position": "CD"
+    },
+    {
+     "name": "Lee Gi-Hyuk",
+     "jersey": "3",
+     "position": "CD-L"
+    },
+    {
+     "name": "Lee Han-Beom",
+     "jersey": "2",
+     "position": "CD-R"
+    },
+    {
+     "name": "Paik Seung-Ho",
+     "jersey": "8",
+     "position": "CM-L"
+    },
+    {
+     "name": "Hwang In-Beom",
+     "jersey": "6",
+     "position": "CM-R"
+    },
+    {
+     "name": "Seol Young-Woo",
+     "jersey": "22",
+     "position": "LM"
+    },
+    {
+     "name": "Kim Moon-Hwan",
+     "jersey": "15",
+     "position": "RM"
+    },
+    {
+     "name": "Son Heung-Min",
+     "jersey": "7",
+     "position": "F"
+    },
+    {
+     "name": "Lee Jae-Sung",
+     "jersey": "10",
+     "position": "CF-L"
+    },
+    {
+     "name": "Lee Kang-In",
+     "jersey": "19",
+     "position": "CF-R"
+    }
+   ],
+   "subs": [
+    {
+     "name": "Jo Hyeon-Woo",
+     "jersey": "21",
+     "position": "SUB"
+    },
+    {
+     "name": "Cho Wi-Je",
+     "jersey": "14",
+     "position": "SUB"
+    },
+    {
+     "name": "Jens Castrop",
+     "jersey": "23",
+     "position": "SUB"
+    },
+    {
+     "name": "Oh Hyeon-Gyu",
+     "jersey": "18",
+     "position": "SUB"
+    },
+    {
+     "name": "Lee Tae-Seok",
+     "jersey": "13",
+     "position": "SUB"
+    },
+    {
+     "name": "Kim Tae-Hyeon",
+     "jersey": "5",
+     "position": "SUB"
+    },
+    {
+     "name": "Eom Ji-Sung",
+     "jersey": "25",
+     "position": "SUB"
+    },
+    {
+     "name": "Hwang Hee-Chan",
+     "jersey": "11",
+     "position": "SUB"
+    },
+    {
+     "name": "Cho Gue-Sung",
+     "jersey": "9",
+     "position": "SUB"
+    },
+    {
+     "name": "Bae Jun-Ho",
+     "jersey": "17",
+     "position": "SUB"
+    },
+    {
+     "name": "Lee Dong-Gyeong",
+     "jersey": "26",
+     "position": "SUB"
+    },
+    {
+     "name": "Song Bum-Keun",
+     "jersey": "12",
+     "position": "SUB"
+    },
+    {
+     "name": "Yang Hyun-Jun",
+     "jersey": "20",
+     "position": "SUB"
+    },
+    {
+     "name": "Park Jin-Seop",
+     "jersey": "16",
+     "position": "SUB"
+    },
+    {
+     "name": "Kim Jin-Gyu",
+     "jersey": "24",
+     "position": "SUB"
+    }
+   ]
+  }
+ ],
+ "attendance": 0,
+ "venue": "Estadio Akron, Guadalajara, Mexico"
+}
