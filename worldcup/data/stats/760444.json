@@ -1,0 +1,796 @@
+{
+ "teams": [
+  {
+   "name": "Brazil",
+   "stats": {
+    "possessionPct": "56.6",
+    "totalShots": "8",
+    "shotsOnTarget": "5",
+    "wonCorners": "4",
+    "foulsCommitted": "13",
+    "offsides": "8",
+    "saves": "3",
+    "yellowCards": "1",
+    "redCards": "0"
+   }
+  },
+  {
+   "name": "Haiti",
+   "stats": {
+    "possessionPct": "43.4",
+    "totalShots": "7",
+    "shotsOnTarget": "3",
+    "wonCorners": "4",
+    "foulsCommitted": "14",
+    "offsides": "4",
+    "saves": "2",
+    "yellowCards": "3",
+    "redCards": "0"
+   }
+  }
+ ],
+ "events": [
+  {
+   "type": "Kickoff",
+   "minute": "",
+   "team": null,
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Yellow Card",
+   "minute": "4'",
+   "team": "Haiti",
+   "text": "Carlens Arcus (Haiti) is shown the yellow card for a bad foul.",
+   "players": [
+    "Carlens Arcus"
+   ]
+  },
+  {
+   "type": "Goal",
+   "minute": "23'",
+   "team": "Brazil",
+   "text": "Goal! Brazil 1, Haiti 0. Matheus Cunha (Brazil) left footed shot from the centre of the box to the bottom left corner following a fast break.",
+   "players": [
+    "Matheus Cunha"
+   ]
+  },
+  {
+   "type": "Start Delay",
+   "minute": "26'",
+   "team": "Brazil",
+   "text": "Delay in match for a drinks break.",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "26'",
+   "team": "Haiti",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "29'",
+   "team": "Brazil",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "29'",
+   "team": "Haiti",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Goal",
+   "minute": "36'",
+   "team": "Brazil",
+   "text": "Goal! Brazil 2, Haiti 0. Matheus Cunha (Brazil) left footed shot from the left side of the box to the top left corner. Assisted by Vinícius Júnior with a through ball following a fast break.",
+   "players": [
+    "Matheus Cunha",
+    "Vinícius Júnior"
+   ]
+  },
+  {
+   "type": "Start Delay",
+   "minute": "39'",
+   "team": "Brazil",
+   "text": "Delay in match because of an injury Raphinha (Brazil).",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "39'",
+   "team": "Haiti",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "40'",
+   "team": "Brazil",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "40'",
+   "team": "Haiti",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Substitution",
+   "minute": "40'",
+   "team": "Brazil",
+   "text": "Substitution, Brazil. Rayan replaces Raphinha because of an injury.",
+   "players": [
+    "Rayan",
+    "Raphinha "
+   ]
+  },
+  {
+   "type": "Start Delay",
+   "minute": "42'",
+   "team": "Haiti",
+   "text": "Delay in match because of an injury Josué Casimir (Haiti).",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "42'",
+   "team": "Brazil",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "43'",
+   "team": "Haiti",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "43'",
+   "team": "Brazil",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Goal",
+   "minute": "45'+3'",
+   "team": "Brazil",
+   "text": "Goal! Brazil 3, Haiti 0. Vinícius Júnior (Brazil) right footed shot from the left side of the box to the centre of the goal. Assisted by Lucas Paquetá with a through ball.",
+   "players": [
+    "Vinícius Júnior",
+    "Lucas Paquetá"
+   ]
+  },
+  {
+   "type": "Yellow Card",
+   "minute": "45'+4'",
+   "team": "Haiti",
+   "text": "Frantzdy Pierrot (Haiti) is shown the yellow card for a bad foul.",
+   "players": [
+    "Frantzdy Pierrot"
+   ]
+  },
+  {
+   "type": "Halftime",
+   "minute": "45'+7'",
+   "team": null,
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Substitution",
+   "minute": "45'",
+   "team": "Haiti",
+   "text": "Substitution, Haiti. Dominique Simon replaces Carlens Arcus.",
+   "players": [
+    "Dominique Simon",
+    "Carlens Arcus"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "45'",
+   "team": "Haiti",
+   "text": "Substitution, Haiti. Wilson Isidor replaces Frantzdy Pierrot.",
+   "players": [
+    "Wilson Isidor",
+    "Frantzdy Pierrot"
+   ]
+  },
+  {
+   "type": "Start 2nd Half",
+   "minute": "45'",
+   "team": null,
+   "text": "Second Half begins Brazil 3, Haiti 0.",
+   "players": []
+  },
+  {
+   "type": "Substitution",
+   "minute": "62'",
+   "team": "Haiti",
+   "text": "Substitution, Haiti. Louicius Deedson replaces Josué Casimir.",
+   "players": [
+    "Louicius Deedson",
+    "Josué Casimir"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "64'",
+   "team": "Brazil",
+   "text": "Substitution, Brazil. Gabriel Martinelli replaces Lucas Paquetá.",
+   "players": [
+    "Gabriel Martinelli",
+    "Lucas Paquetá"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "64'",
+   "team": "Brazil",
+   "text": "Substitution, Brazil. Endrick replaces Matheus Cunha.",
+   "players": [
+    "Endrick",
+    "Matheus Cunha"
+   ]
+  },
+  {
+   "type": "Yellow Card",
+   "minute": "65'",
+   "team": "Brazil",
+   "text": "Douglas Santos (Brazil) is shown the yellow card for a bad foul.",
+   "players": [
+    "Douglas Santos"
+   ]
+  },
+  {
+   "type": "Start Delay",
+   "minute": "69'",
+   "team": "Brazil",
+   "text": "Delay in match for a drinks break.",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "69'",
+   "team": "Haiti",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Substitution",
+   "minute": "71'",
+   "team": "Haiti",
+   "text": "Substitution, Haiti. Lenny Joseph replaces Ruben Providence.",
+   "players": [
+    "Lenny Joseph",
+    "Ruben Providence"
+   ]
+  },
+  {
+   "type": "End Delay",
+   "minute": "72'",
+   "team": "Brazil",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "72'",
+   "team": "Haiti",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Yellow Card",
+   "minute": "72'",
+   "team": "Haiti",
+   "text": "Danley Jean Jacques (Haiti) is shown the yellow card for a bad foul.",
+   "players": [
+    "Danley Jean Jacques"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "81'",
+   "team": "Brazil",
+   "text": "Substitution, Brazil. Danilo Santos replaces Vinícius Júnior.",
+   "players": [
+    "Danilo Santos",
+    "Vinícius Júnior"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "81'",
+   "team": "Brazil",
+   "text": "Substitution, Brazil. Éderson Silva replaces Bruno Guimarães.",
+   "players": [
+    "Éderson",
+    "Bruno Guimarães"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "81'",
+   "team": "Haiti",
+   "text": "Substitution, Haiti. Derrick Etienne replaces Jean-Ricner Bellegarde.",
+   "players": [
+    "Derrick Etienne Jr.",
+    "Jean-Ricner Bellegarde"
+   ]
+  },
+  {
+   "type": "End Regular Time",
+   "minute": "90'+6'",
+   "team": null,
+   "text": "Second Half ends, Brazil 3, Haiti 0.",
+   "players": []
+  }
+ ],
+ "shots": [
+  {
+   "minute": "17",
+   "seconds": 1008.0,
+   "team": "Brazil",
+   "player": "Vinícius Júnior",
+   "type": "Shot Blocked",
+   "x": 85.9,
+   "y": 66.1,
+   "goal": false,
+   "xg": 0.145,
+   "text": "Attempt blocked. Vinícius Júnior (Brazil) right footed shot from the left side of the box is blocked."
+  },
+  {
+   "minute": "23",
+   "seconds": 1367.0,
+   "team": "Brazil",
+   "player": "Vinícius Júnior",
+   "type": "Shot On Target",
+   "x": 88.7,
+   "y": 66.3,
+   "goal": false,
+   "xg": 0.17,
+   "text": "Attempt saved. Vinícius Júnior (Brazil) right footed shot from the left side of the box is saved in the centre of the goal by Johny Placide (Haiti). Assisted by Bruno Guimarães."
+  },
+  {
+   "minute": "23",
+   "seconds": 1369.0,
+   "team": "Brazil",
+   "player": "Matheus Cunha",
+   "type": "Goal",
+   "x": 93.3,
+   "y": 51.4,
+   "goal": true,
+   "xg": 0.611,
+   "text": "Goal! Brazil 1, Haiti 0. Matheus Cunha (Brazil) left footed shot from the centre of the box to the bottom left corner following a fast break."
+  },
+  {
+   "minute": "29",
+   "seconds": 1725.0,
+   "team": "Brazil",
+   "player": "Raphinha",
+   "type": "Shot On Target",
+   "x": 85.6,
+   "y": 39.0,
+   "goal": false,
+   "xg": 0.181,
+   "text": "Attempt saved. Raphinha (Brazil) left footed shot from the centre of the box is saved in the bottom left corner by Johny Placide (Haiti). Assisted by Lucas Paquetá with a through ball."
+  },
+  {
+   "minute": "36",
+   "seconds": 2138.0,
+   "team": "Brazil",
+   "player": "Matheus Cunha",
+   "type": "Goal",
+   "x": 89.0,
+   "y": 64.4,
+   "goal": true,
+   "xg": 0.196,
+   "text": "Goal! Brazil 2, Haiti 0. Matheus Cunha (Brazil) left footed shot from the left side of the box to the top left corner. Assisted by Vinícius Júnior with a through ball following a fast break."
+  },
+  {
+   "minute": "45'+3",
+   "seconds": 2700.0,
+   "team": "Brazil",
+   "player": "Vinícius Júnior",
+   "type": "Goal",
+   "x": 89.5,
+   "y": 66.4,
+   "goal": true,
+   "xg": 0.176,
+   "text": "Goal! Brazil 3, Haiti 0. Vinícius Júnior (Brazil) right footed shot from the left side of the box to the centre of the goal. Assisted by Lucas Paquetá with a through ball."
+  },
+  {
+   "minute": "49",
+   "seconds": 2886.0,
+   "team": "Haiti",
+   "player": "Wilson Isidor",
+   "type": "Shot Blocked",
+   "x": 78.1,
+   "y": 48.1,
+   "goal": false,
+   "xg": 0.106,
+   "text": "Attempt blocked. Wilson Isidor (Haiti) right footed shot from outside the box is blocked."
+  },
+  {
+   "minute": "63",
+   "seconds": 3750.0,
+   "team": "Haiti",
+   "player": "Ricardo Adé",
+   "type": "Shot On Target",
+   "x": 95.7,
+   "y": 60.2,
+   "goal": false,
+   "xg": 0.241,
+   "text": "Attempt saved. Ricardo Adé (Haiti) header from the left side of the six yard box is saved in the top left corner by Alisson Becker (Brazil). Assisted by Jean-Ricner Bellegarde with a cross."
+  },
+  {
+   "minute": "66",
+   "seconds": 3917.0,
+   "team": "Haiti",
+   "player": "Ruben Providence",
+   "type": "Shot Off Target",
+   "x": 86.2,
+   "y": 66.9,
+   "goal": false,
+   "xg": 0.142,
+   "text": "Attempt missed. Ruben Providence (Haiti) right footed shot from the left side of the box misses to the left following a set piece situation."
+  },
+  {
+   "minute": "66",
+   "seconds": 3919.0,
+   "team": "Haiti",
+   "player": "Jean-Kévin Duverne",
+   "type": "Shot Off Target",
+   "x": 91.2,
+   "y": 68.0,
+   "goal": false,
+   "xg": 0.168,
+   "text": "Attempt missed. Jean-Kévin Duverne (Haiti) right footed shot from the left side of the box misses to the left. Assisted by Ruben Providence following a set piece situation."
+  },
+  {
+   "minute": "76",
+   "seconds": 4549.0,
+   "team": "Brazil",
+   "player": "Douglas Santos",
+   "type": "Shot Off Target",
+   "x": 89.9,
+   "y": 67.9,
+   "goal": false,
+   "xg": 0.162,
+   "text": "Attempt missed. Douglas Santos (Brazil) left footed shot from the left side of the box is too high. Assisted by Rayan."
+  },
+  {
+   "minute": "87",
+   "seconds": 5210.0,
+   "team": "Haiti",
+   "player": "Wilson Isidor",
+   "type": "Shot On Target",
+   "x": 95.4,
+   "y": 70.3,
+   "goal": false,
+   "xg": 0.14,
+   "text": "Attempt saved. Wilson Isidor (Haiti) left footed shot from a difficult angle on the left is saved in the bottom left corner by Alisson Becker (Brazil). Assisted by Louicius Deedson."
+  },
+  {
+   "minute": "89",
+   "seconds": 5281.0,
+   "team": "Haiti",
+   "player": "Ricardo Adé",
+   "type": "Shot Off Target",
+   "x": 65.5,
+   "y": 33.5,
+   "goal": false,
+   "xg": 0.028,
+   "text": "Attempt missed. Ricardo Adé (Haiti) right footed shot from more than 35 yards misses to the left. Assisted by Wilson Isidor."
+  },
+  {
+   "minute": "90'+1",
+   "seconds": 5400.0,
+   "team": "Brazil",
+   "player": "Éderson Silva",
+   "type": "Shot Off Target",
+   "x": 97.9,
+   "y": 41.1,
+   "goal": false,
+   "xg": 0.393,
+   "text": "Attempt missed. Éderson Silva (Brazil) right footed shot from the right side of the six yard box misses to the left. Assisted by Gabriel Martinelli."
+  },
+  {
+   "minute": "90'+3",
+   "seconds": 5400.0,
+   "team": "Haiti",
+   "player": "Dominique Simon",
+   "type": "Shot On Target",
+   "x": 72.4,
+   "y": 43.1,
+   "goal": false,
+   "xg": 0.059,
+   "text": "Attempt saved. Dominique Simon (Haiti) right footed shot from outside the box is saved in the bottom left corner by Alisson Becker (Brazil). Assisted by Derrick Etienne."
+  }
+ ],
+ "lineups": [
+  {
+   "team": "Brazil",
+   "formation": "4-3-3",
+   "starters": [
+    {
+     "name": "Alisson Becker",
+     "jersey": "1",
+     "position": "G"
+    },
+    {
+     "name": "Gabriel Magalhães",
+     "jersey": "3",
+     "position": "CD-L"
+    },
+    {
+     "name": "Marquinhos",
+     "jersey": "4",
+     "position": "CD-R"
+    },
+    {
+     "name": "Douglas Santos",
+     "jersey": "16",
+     "position": "LB"
+    },
+    {
+     "name": "Danilo",
+     "jersey": "13",
+     "position": "RB"
+    },
+    {
+     "name": "Casemiro",
+     "jersey": "5",
+     "position": "CM"
+    },
+    {
+     "name": "Lucas Paquetá",
+     "jersey": "20",
+     "position": "LM"
+    },
+    {
+     "name": "Bruno Guimarães",
+     "jersey": "8",
+     "position": "RM"
+    },
+    {
+     "name": "Matheus Cunha",
+     "jersey": "9",
+     "position": "F"
+    },
+    {
+     "name": "Vinícius Júnior",
+     "jersey": "7",
+     "position": "LF"
+    },
+    {
+     "name": "Raphinha ",
+     "jersey": "11",
+     "position": "RF"
+    }
+   ],
+   "subs": [
+    {
+     "name": "Alex Sandro",
+     "jersey": "6",
+     "position": "SUB"
+    },
+    {
+     "name": "Gabriel Martinelli",
+     "jersey": "22",
+     "position": "SUB"
+    },
+    {
+     "name": "Rayan",
+     "jersey": "26",
+     "position": "SUB"
+    },
+    {
+     "name": "Bremer",
+     "jersey": "14",
+     "position": "SUB"
+    },
+    {
+     "name": "Endrick",
+     "jersey": "19",
+     "position": "SUB"
+    },
+    {
+     "name": "Igor Thiago",
+     "jersey": "25",
+     "position": "SUB"
+    },
+    {
+     "name": "Léo Pereira",
+     "jersey": "15",
+     "position": "SUB"
+    },
+    {
+     "name": "Roger Ibañez",
+     "jersey": "24",
+     "position": "SUB"
+    },
+    {
+     "name": "Weverton",
+     "jersey": "12",
+     "position": "SUB"
+    },
+    {
+     "name": "Luiz Henrique",
+     "jersey": "21",
+     "position": "SUB"
+    },
+    {
+     "name": "Ederson ",
+     "jersey": "23",
+     "position": "SUB"
+    },
+    {
+     "name": "Danilo Santos",
+     "jersey": "18",
+     "position": "SUB"
+    },
+    {
+     "name": "Éderson",
+     "jersey": "2",
+     "position": "SUB"
+    },
+    {
+     "name": "Fabinho",
+     "jersey": "17",
+     "position": "SUB"
+    }
+   ]
+  },
+  {
+   "team": "Haiti",
+   "formation": "5-4-1",
+   "starters": [
+    {
+     "name": "Johny Placide",
+     "jersey": "1",
+     "position": "G"
+    },
+    {
+     "name": "Ricardo Adé",
+     "jersey": "4",
+     "position": "CD"
+    },
+    {
+     "name": "Hannes Delcroix",
+     "jersey": "5",
+     "position": "CD-L"
+    },
+    {
+     "name": "Jean-Kévin Duverne",
+     "jersey": "22",
+     "position": "CD-R"
+    },
+    {
+     "name": "Martin Expérience",
+     "jersey": "8",
+     "position": "LB"
+    },
+    {
+     "name": "Carlens Arcus",
+     "jersey": "2",
+     "position": "RB"
+    },
+    {
+     "name": "Jean-Ricner Bellegarde",
+     "jersey": "10",
+     "position": "CM-L"
+    },
+    {
+     "name": "Danley Jean Jacques",
+     "jersey": "17",
+     "position": "CM-R"
+    },
+    {
+     "name": "Ruben Providence",
+     "jersey": "15",
+     "position": "LM"
+    },
+    {
+     "name": "Josué Casimir",
+     "jersey": "21",
+     "position": "RM"
+    },
+    {
+     "name": "Frantzdy Pierrot",
+     "jersey": "20",
+     "position": "F"
+    }
+   ],
+   "subs": [
+    {
+     "name": "Alexandre Pierre",
+     "jersey": "12",
+     "position": "SUB"
+    },
+    {
+     "name": "Josué Duverger",
+     "jersey": "23",
+     "position": "SUB"
+    },
+    {
+     "name": "Lenny Joseph",
+     "jersey": "16",
+     "position": "SUB"
+    },
+    {
+     "name": "Wilson Isidor",
+     "jersey": "18",
+     "position": "SUB"
+    },
+    {
+     "name": "Louicius Deedson",
+     "jersey": "11",
+     "position": "SUB"
+    },
+    {
+     "name": "Garven Metusala",
+     "jersey": "14",
+     "position": "SUB"
+    },
+    {
+     "name": "Carl Sainté",
+     "jersey": "6",
+     "position": "SUB"
+    },
+    {
+     "name": "Markhus Lacroix",
+     "jersey": "13",
+     "position": "SUB"
+    },
+    {
+     "name": "Derrick Etienne Jr.",
+     "jersey": "7",
+     "position": "SUB"
+    },
+    {
+     "name": "Duckens Nazon",
+     "jersey": "9",
+     "position": "SUB"
+    },
+    {
+     "name": "Keeto Thermoncy",
+     "jersey": "3",
+     "position": "SUB"
+    },
+    {
+     "name": "Dominique Simon",
+     "jersey": "25",
+     "position": "SUB"
+    },
+    {
+     "name": "Yassin Fortuné",
+     "jersey": "19",
+     "position": "SUB"
+    },
+    {
+     "name": "Wilguens Paugain",
+     "jersey": "24",
+     "position": "SUB"
+    },
+    {
+     "name": "Woodensky Pierre",
+     "jersey": "26",
+     "position": "SUB"
+    }
+   ]
+  }
+ ],
+ "attendance": 68324,
+ "venue": "Lincoln Financial Field, Philadelphia, Pennsylvania, USA"
+}

@@ -485,12 +485,27 @@
    "team2": "Morocco",
    "group": "Group C",
    "ground": "Boston (Foxborough)",
-   "score": null,
+   "score": {
+    "ft": [
+     0,
+     1
+    ],
+    "ht": [
+     0,
+     1
+    ]
+   },
    "goals1": [],
-   "goals2": [],
+   "goals2": [
+    {
+     "name": "Ismael Saibari",
+     "minute": "2"
+    }
+   ],
    "espn_id": "760445",
-   "status": "scheduled",
+   "status": "finished",
    "utc_date": "2026-06-19T22:00Z",
+   "attendance": 64146,
    "venue": "Gillette Stadium",
    "slug": "2026-06-19-scotland-vs-morocco"
   },
@@ -503,12 +518,35 @@
    "team2": "Haiti",
    "group": "Group C",
    "ground": "Philadelphia",
-   "score": null,
-   "goals1": [],
+   "score": {
+    "ft": [
+     3,
+     0
+    ],
+    "ht": [
+     3,
+     0
+    ]
+   },
+   "goals1": [
+    {
+     "name": "Matheus Cunha",
+     "minute": "23"
+    },
+    {
+     "name": "Matheus Cunha",
+     "minute": "36"
+    },
+    {
+     "name": "Vinícius Júnior",
+     "minute": "45+3"
+    }
+   ],
    "goals2": [],
    "espn_id": "760444",
-   "status": "scheduled",
+   "status": "finished",
    "utc_date": "2026-06-20T00:30Z",
+   "attendance": 68324,
    "venue": "Lincoln Financial Field",
    "slug": "2026-06-19-brazil-vs-haiti"
   },
@@ -645,12 +683,32 @@
    "team2": "Australia",
    "group": "Group D",
    "ground": "Seattle",
-   "score": null,
-   "goals1": [],
+   "score": {
+    "ft": [
+     2,
+     0
+    ],
+    "ht": [
+     2,
+     0
+    ]
+   },
+   "goals1": [
+    {
+     "name": "Cameron Burgess",
+     "minute": "11",
+     "owngoal": true
+    },
+    {
+     "name": "Alex Freeman",
+     "minute": "43"
+    }
+   ],
    "goals2": [],
    "espn_id": "760442",
-   "status": "live",
+   "status": "finished",
    "utc_date": "2026-06-19T19:00Z",
+   "attendance": 66925,
    "venue": "Lumen Field",
    "slug": "2026-06-19-usa-vs-australia"
   },
@@ -667,7 +725,7 @@
    "goals1": [],
    "goals2": [],
    "espn_id": "760443",
-   "status": "scheduled",
+   "status": "live",
    "utc_date": "2026-06-20T03:00Z",
    "venue": "Levi's Stadium",
    "slug": "2026-06-19-turkey-vs-paraguay"
@@ -1649,8 +1707,10 @@
    "score": null,
    "goals1": [],
    "goals2": [],
-   "espn_id": null,
+   "espn_id": "760484",
    "status": "scheduled",
+   "utc_date": "2026-06-28T02:00Z",
+   "venue": "GEHA Field at Arrowhead Stadium",
    "slug": "2026-06-27-algeria-vs-austria"
   },
   {
@@ -1665,8 +1725,10 @@
    "score": null,
    "goals1": [],
    "goals2": [],
-   "espn_id": null,
+   "espn_id": "760483",
    "status": "scheduled",
+   "utc_date": "2026-06-28T02:00Z",
+   "venue": "AT&T Stadium",
    "slug": "2026-06-27-jordan-vs-argentina"
   },
   {
@@ -1796,8 +1858,10 @@
    "score": null,
    "goals1": [],
    "goals2": [],
-   "espn_id": null,
+   "espn_id": "760481",
    "status": "scheduled",
+   "utc_date": "2026-06-27T23:30Z",
+   "venue": "Hard Rock Stadium",
    "slug": "2026-06-27-colombia-vs-portugal"
   },
   {
@@ -1952,8 +2016,10 @@
    "score": null,
    "goals1": [],
    "goals2": [],
-   "espn_id": null,
+   "espn_id": "760485",
    "status": "scheduled",
+   "utc_date": "2026-06-27T21:00Z",
+   "venue": "MetLife Stadium",
    "slug": "2026-06-27-panama-vs-england"
   },
   {
@@ -1968,8 +2034,10 @@
    "score": null,
    "goals1": [],
    "goals2": [],
-   "espn_id": null,
+   "espn_id": "760480",
    "status": "scheduled",
+   "utc_date": "2026-06-27T21:00Z",
+   "venue": "Lincoln Financial Field",
    "slug": "2026-06-27-croatia-vs-ghana"
   },
   {

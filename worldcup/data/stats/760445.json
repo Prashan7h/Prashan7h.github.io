@@ -1,0 +1,818 @@
+{
+ "teams": [
+  {
+   "name": "Scotland",
+   "stats": {
+    "possessionPct": "41.1",
+    "totalShots": "6",
+    "shotsOnTarget": "0",
+    "wonCorners": "2",
+    "foulsCommitted": "11",
+    "offsides": "1",
+    "saves": "1",
+    "yellowCards": "1",
+    "redCards": "0"
+   }
+  },
+  {
+   "name": "Morocco",
+   "stats": {
+    "possessionPct": "58.9",
+    "totalShots": "12",
+    "shotsOnTarget": "2",
+    "wonCorners": "5",
+    "foulsCommitted": "8",
+    "offsides": "0",
+    "saves": "0",
+    "yellowCards": "1",
+    "redCards": "0"
+   }
+  }
+ ],
+ "events": [
+  {
+   "type": "Kickoff",
+   "minute": "",
+   "team": null,
+   "text": "First Half begins.",
+   "players": []
+  },
+  {
+   "type": "Goal",
+   "minute": "2'",
+   "team": "Morocco",
+   "text": "Goal! Scotland 0, Morocco 1. Ismael Saibari (Morocco) right footed shot from the right side of the box to the high centre of the goal. Assisted by Brahim Díaz with a through ball.",
+   "players": [
+    "Ismael Saibari",
+    "Brahim Díaz"
+   ]
+  },
+  {
+   "type": "Yellow Card",
+   "minute": "23'",
+   "team": "Morocco",
+   "text": "Issa Diop (Morocco) is shown the yellow card for a bad foul.",
+   "players": [
+    "Issa Diop"
+   ]
+  },
+  {
+   "type": "Start Delay",
+   "minute": "24'",
+   "team": "Morocco",
+   "text": "Delay in match for a drinks break.",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "24'",
+   "team": "Scotland",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "27'",
+   "team": "Morocco",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "27'",
+   "team": "Scotland",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "36'",
+   "team": "Morocco",
+   "text": "Delay in match because of an injury Neil El Aynaoui (Morocco).",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "36'",
+   "team": "Scotland",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "37'",
+   "team": "Morocco",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "37'",
+   "team": "Scotland",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Halftime",
+   "minute": "45'+6'",
+   "team": null,
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Start 2nd Half",
+   "minute": "45'",
+   "team": null,
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "59'",
+   "team": "Scotland",
+   "text": "Delay in match because of an injury Kieran Tierney (Scotland).",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "59'",
+   "team": "Morocco",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Substitution",
+   "minute": "60'",
+   "team": "Scotland",
+   "text": "Substitution, Scotland. Ben Gannon-Doak replaces Kieran Tierney because of an injury.",
+   "players": [
+    "Ben Gannon-Doak",
+    "Kieran Tierney"
+   ]
+  },
+  {
+   "type": "End Delay",
+   "minute": "60'",
+   "team": "Scotland",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "60'",
+   "team": "Morocco",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Yellow Card",
+   "minute": "65'",
+   "team": "Scotland",
+   "text": "Andy Robertson (Scotland) is shown the yellow card for a bad foul.",
+   "players": [
+    "Andy Robertson"
+   ]
+  },
+  {
+   "type": "Start Delay",
+   "minute": "68'",
+   "team": "Morocco",
+   "text": "Delay in match for a drinks break.",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "68'",
+   "team": "Scotland",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "71'",
+   "team": "Morocco",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "71'",
+   "team": "Scotland",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Substitution",
+   "minute": "71'",
+   "team": "Scotland",
+   "text": "Substitution, Scotland. Lyndon Dykes replaces Ché Adams.",
+   "players": [
+    "Lyndon Dykes",
+    "Ché Adams"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "71'",
+   "team": "Scotland",
+   "text": "Substitution, Scotland. Kenny McLean replaces Ryan Christie.",
+   "players": [
+    "Kenny McLean",
+    "Ryan Christie"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "84'",
+   "team": "Morocco",
+   "text": "Substitution, Morocco. Soufiane Rahimi replaces Ismael Saibari.",
+   "players": [
+    "Soufiane Rahimi",
+    "Ismael Saibari"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "84'",
+   "team": "Morocco",
+   "text": "Substitution, Morocco. Chemsdine Talbi replaces Bilal El Khannouss.",
+   "players": [
+    "Chemsdine Talbi",
+    "Bilal El Khannouss"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "84'",
+   "team": "Morocco",
+   "text": "Substitution, Morocco. Ayoube Amaimouni-Echghouyab replaces Brahim Díaz.",
+   "players": [
+    "Ayoube Amaimouni",
+    "Brahim Díaz"
+   ]
+  },
+  {
+   "type": "Start Delay",
+   "minute": "88'",
+   "team": "Morocco",
+   "text": "Delay in match because of an injury Yassine Bounou (Morocco).",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "88'",
+   "team": "Scotland",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Substitution",
+   "minute": "89'",
+   "team": "Scotland",
+   "text": "Substitution, Scotland. Anthony Ralston replaces Nathan Patterson.",
+   "players": [
+    "Anthony Ralston",
+    "Nathan Patterson"
+   ]
+  },
+  {
+   "type": "End Delay",
+   "minute": "89'",
+   "team": "Morocco",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "89'",
+   "team": "Scotland",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Substitution",
+   "minute": "89'",
+   "team": "Scotland",
+   "text": "Substitution, Scotland. Ross Stewart replaces John McGinn.",
+   "players": [
+    "Ross Stewart",
+    "John McGinn"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "90'",
+   "team": "Morocco",
+   "text": "Substitution, Morocco. Samir El Mourabet replaces Azzedine Ounahi.",
+   "players": [
+    "Samir El Mourabet",
+    "Azzedine Ounahi"
+   ]
+  },
+  {
+   "type": "End Regular Time",
+   "minute": "90'+7'",
+   "team": null,
+   "text": "",
+   "players": []
+  }
+ ],
+ "shots": [
+  {
+   "minute": "2",
+   "seconds": 70.0,
+   "team": "Morocco",
+   "player": "Ismael Saibari",
+   "type": "Goal",
+   "x": 92.4,
+   "y": 30.8,
+   "goal": true,
+   "xg": 0.157,
+   "text": "Goal! Scotland 0, Morocco 1. Ismael Saibari (Morocco) right footed shot from the right side of the box to the high centre of the goal. Assisted by Brahim Díaz with a through ball."
+  },
+  {
+   "minute": "20",
+   "seconds": 1200.0,
+   "team": "Morocco",
+   "player": "Ayyoub Bouaddi",
+   "type": "Shot Blocked",
+   "x": 73.0,
+   "y": 35.9,
+   "goal": false,
+   "xg": 0.055,
+   "text": "Attempt blocked. Ayyoub Bouaddi (Morocco) right footed shot from outside the box is blocked."
+  },
+  {
+   "minute": "30",
+   "seconds": 1759.0,
+   "team": "Morocco",
+   "player": "Neil El Aynaoui",
+   "type": "Shot Off Target",
+   "x": 86.3,
+   "y": 35.4,
+   "goal": false,
+   "xg": 0.161,
+   "text": "Attempt missed. Neil El Aynaoui (Morocco) right footed shot from the right side of the box is too high. Assisted by Brahim Díaz."
+  },
+  {
+   "minute": "36",
+   "seconds": 2125.0,
+   "team": "Morocco",
+   "player": "Bilal El Khannouss",
+   "type": "Shot Off Target",
+   "x": 89.2,
+   "y": 64.0,
+   "goal": false,
+   "xg": 0.203,
+   "text": "Attempt missed. Bilal El Khannouss (Morocco) right footed shot from the left side of the box is too high. Assisted by Ismael Saibari."
+  },
+  {
+   "minute": "38",
+   "seconds": 2258.0,
+   "team": "Morocco",
+   "player": "Achraf Hakimi",
+   "type": "Shot Off Target",
+   "x": 92.4,
+   "y": 47.0,
+   "goal": false,
+   "xg": 0.522,
+   "text": "Attempt missed. Achraf Hakimi (Morocco) right footed shot from the centre of the box misses to the right. Assisted by Brahim Díaz with a cross."
+  },
+  {
+   "minute": "45'+1",
+   "seconds": 2700.0,
+   "team": "Scotland",
+   "player": "John McGinn",
+   "type": "Shot Off Target",
+   "x": 97.3,
+   "y": 40.1,
+   "goal": false,
+   "xg": 0.356,
+   "text": "Attempt missed. John McGinn (Scotland) right footed shot from the right side of the six yard box is high and wide to the right. Assisted by Andy Robertson with a cross."
+  },
+  {
+   "minute": "45'+2",
+   "seconds": 2700.0,
+   "team": "Scotland",
+   "player": "Kieran Tierney",
+   "type": "Shot Blocked",
+   "x": 87.8,
+   "y": 66.2,
+   "goal": false,
+   "xg": 0.163,
+   "text": "Attempt blocked. Kieran Tierney (Scotland) left footed shot from the left side of the box is blocked. Assisted by Ché Adams."
+  },
+  {
+   "minute": "50",
+   "seconds": 2985.0,
+   "team": "Morocco",
+   "player": "Ismael Saibari",
+   "type": "Shot Blocked",
+   "x": 88.6,
+   "y": 56.2,
+   "goal": false,
+   "xg": 0.295,
+   "text": "Attempt blocked. Ismael Saibari (Morocco) left footed shot from the centre of the box is blocked. Assisted by Bilal El Khannouss."
+  },
+  {
+   "minute": "52",
+   "seconds": 3074.0,
+   "team": "Morocco",
+   "player": "Bilal El Khannouss",
+   "type": "Shot On Target",
+   "x": 94.9,
+   "y": 34.4,
+   "goal": false,
+   "xg": 0.135,
+   "text": "Attempt saved. Bilal El Khannouss (Morocco) header from a difficult angle on the right is saved in the top right corner by Angus Gunn (Scotland). Assisted by Achraf Hakimi with a cross."
+  },
+  {
+   "minute": "58",
+   "seconds": 3424.0,
+   "team": "Morocco",
+   "player": "Brahim Díaz",
+   "type": "Shot Blocked",
+   "x": 94.0,
+   "y": 32.7,
+   "goal": false,
+   "xg": 0.182,
+   "text": "Attempt blocked. Brahim Díaz (Morocco) right footed shot from the right side of the box is blocked. Assisted by Azzedine Ounahi."
+  },
+  {
+   "minute": "62",
+   "seconds": 3713.0,
+   "team": "Morocco",
+   "player": "Achraf Hakimi",
+   "type": "Shot Off Target",
+   "x": 79.7,
+   "y": 78.5,
+   "goal": false,
+   "xg": 0.055,
+   "text": "Attempt missed. Achraf Hakimi (Morocco) right footed shot from outside the box misses to the right. Assisted by Neil El Aynaoui."
+  },
+  {
+   "minute": "64",
+   "seconds": 3797.0,
+   "team": "Scotland",
+   "player": "Ryan Christie",
+   "type": "Shot Off Target",
+   "x": 81.6,
+   "y": 50.5,
+   "goal": false,
+   "xg": 0.151,
+   "text": "Attempt missed. Ryan Christie (Scotland) right footed shot from outside the box is high and wide to the left. Assisted by Scott McTominay."
+  },
+  {
+   "minute": "85",
+   "seconds": 5077.0,
+   "team": "Scotland",
+   "player": "Scott McTominay",
+   "type": "Shot Blocked",
+   "x": 90.8,
+   "y": 27.8,
+   "goal": false,
+   "xg": 0.125,
+   "text": "Attempt blocked. Scott McTominay (Scotland) right footed shot from the right side of the box is blocked. Assisted by Kenny McLean."
+  },
+  {
+   "minute": "86",
+   "seconds": 5108.0,
+   "team": "Scotland",
+   "player": "Lyndon Dykes",
+   "type": "Shot Off Target",
+   "x": 94.0,
+   "y": 53.3,
+   "goal": false,
+   "xg": 0.411,
+   "text": "Attempt missed. Lyndon Dykes (Scotland) header from the centre of the box misses to the left. Assisted by John McGinn with a cross following a corner."
+  },
+  {
+   "minute": "88",
+   "seconds": 5260.0,
+   "team": "Scotland",
+   "player": "Scott McTominay",
+   "type": "Shot Blocked",
+   "x": 91.3,
+   "y": 40.9,
+   "goal": false,
+   "xg": 0.329,
+   "text": "Attempt blocked. Scott McTominay (Scotland) left footed shot from the centre of the box is blocked."
+  },
+  {
+   "minute": "90'+1",
+   "seconds": 5400.0,
+   "team": "Morocco",
+   "player": "Chemsdine Talbi",
+   "type": "Shot Blocked",
+   "x": 73.7,
+   "y": 74.2,
+   "goal": false,
+   "xg": 0.044,
+   "text": "Attempt blocked. Chemsdine Talbi (Morocco) right footed shot from outside the box is blocked. Assisted by Samir El Mourabet."
+  },
+  {
+   "minute": "90'+3",
+   "seconds": 5400.0,
+   "team": "Morocco",
+   "player": "Chemsdine Talbi",
+   "type": "Shot Off Target",
+   "x": 90.8,
+   "y": 71.6,
+   "goal": false,
+   "xg": 0.13,
+   "text": "Attempt missed. Chemsdine Talbi (Morocco) left footed shot from the left side of the box is just a bit too high. Assisted by Samir El Mourabet following a fast break."
+  },
+  {
+   "minute": "90'+5",
+   "seconds": 5400.0,
+   "team": "Morocco",
+   "player": "Ayoube Amaimouni-Echghouyab",
+   "type": "Shot Off Target",
+   "x": 86.5,
+   "y": 32.7,
+   "goal": false,
+   "xg": 0.141,
+   "text": "Attempt missed. Ayoube Amaimouni-Echghouyab (Morocco) left footed shot from the right side of the box is close, but misses to the left. Assisted by Chemsdine Talbi following a fast break."
+  }
+ ],
+ "lineups": [
+  {
+   "team": "Scotland",
+   "formation": "4-4-1-1",
+   "starters": [
+    {
+     "name": "Angus Gunn",
+     "jersey": "1",
+     "position": "G"
+    },
+    {
+     "name": "Jack Hendry",
+     "jersey": "13",
+     "position": "CD-L"
+    },
+    {
+     "name": "Grant Hanley",
+     "jersey": "5",
+     "position": "CD-R"
+    },
+    {
+     "name": "Andy Robertson",
+     "jersey": "3",
+     "position": "LB"
+    },
+    {
+     "name": "Nathan Patterson",
+     "jersey": "22",
+     "position": "RB"
+    },
+    {
+     "name": "Lewis Ferguson",
+     "jersey": "19",
+     "position": "CM-L"
+    },
+    {
+     "name": "Ryan Christie",
+     "jersey": "11",
+     "position": "CM-R"
+    },
+    {
+     "name": "Kieran Tierney",
+     "jersey": "6",
+     "position": "LM"
+    },
+    {
+     "name": "John McGinn",
+     "jersey": "7",
+     "position": "RM"
+    },
+    {
+     "name": "Ché Adams",
+     "jersey": "10",
+     "position": "F"
+    },
+    {
+     "name": "Scott McTominay",
+     "jersey": "4",
+     "position": "RCF"
+    }
+   ],
+   "subs": [
+    {
+     "name": "Aaron Hickey",
+     "jersey": "2",
+     "position": "SUB"
+    },
+    {
+     "name": "Anthony Ralston",
+     "jersey": "24",
+     "position": "SUB"
+    },
+    {
+     "name": "John Souttar",
+     "jersey": "15",
+     "position": "SUB"
+    },
+    {
+     "name": "Craig Gordon",
+     "jersey": "21",
+     "position": "SUB"
+    },
+    {
+     "name": "Tyler Fletcher",
+     "jersey": "8",
+     "position": "SUB"
+    },
+    {
+     "name": "Kenny McLean",
+     "jersey": "23",
+     "position": "SUB"
+    },
+    {
+     "name": "Scott McKenna",
+     "jersey": "26",
+     "position": "SUB"
+    },
+    {
+     "name": "Liam Kelly",
+     "jersey": "12",
+     "position": "SUB"
+    },
+    {
+     "name": "Ben Gannon-Doak",
+     "jersey": "17",
+     "position": "SUB"
+    },
+    {
+     "name": "George Hirst",
+     "jersey": "18",
+     "position": "SUB"
+    },
+    {
+     "name": "Ross Stewart",
+     "jersey": "14",
+     "position": "SUB"
+    },
+    {
+     "name": "Lyndon Dykes",
+     "jersey": "9",
+     "position": "SUB"
+    },
+    {
+     "name": "Dominic Hyam",
+     "jersey": "16",
+     "position": "SUB"
+    },
+    {
+     "name": "Lawrence Shankland",
+     "jersey": "20",
+     "position": "SUB"
+    },
+    {
+     "name": "Findlay Curtis",
+     "jersey": "25",
+     "position": "SUB"
+    }
+   ]
+  },
+  {
+   "team": "Morocco",
+   "formation": "4-2-3-1",
+   "starters": [
+    {
+     "name": "Yassine Bounou",
+     "jersey": "1",
+     "position": "G"
+    },
+    {
+     "name": "Chadi Riad",
+     "jersey": "18",
+     "position": "CD-L"
+    },
+    {
+     "name": "Issa Diop",
+     "jersey": "14",
+     "position": "CD-R"
+    },
+    {
+     "name": "Noussair Mazraoui",
+     "jersey": "3",
+     "position": "LB"
+    },
+    {
+     "name": "Achraf Hakimi",
+     "jersey": "2",
+     "position": "RB"
+    },
+    {
+     "name": "Azzedine Ounahi",
+     "jersey": "8",
+     "position": "AM"
+    },
+    {
+     "name": "Neil El Aynaoui",
+     "jersey": "24",
+     "position": "LM"
+    },
+    {
+     "name": "Ayyoub Bouaddi",
+     "jersey": "6",
+     "position": "RM"
+    },
+    {
+     "name": "Ismael Saibari",
+     "jersey": "11",
+     "position": "F"
+    },
+    {
+     "name": "Bilal El Khannouss",
+     "jersey": "23",
+     "position": "AM-L"
+    },
+    {
+     "name": "Brahim Díaz",
+     "jersey": "10",
+     "position": "AM-R"
+    }
+   ],
+   "subs": [
+    {
+     "name": "Ahmed Reda Tagnaouti",
+     "jersey": "22",
+     "position": "SUB"
+    },
+    {
+     "name": "Ayoube Amaimouni",
+     "jersey": "21",
+     "position": "SUB"
+    },
+    {
+     "name": "Amine Sbaï",
+     "jersey": "17",
+     "position": "SUB"
+    },
+    {
+     "name": "Ayoub El Kaabi",
+     "jersey": "20",
+     "position": "SUB"
+    },
+    {
+     "name": "Anass Salah-Eddine",
+     "jersey": "26",
+     "position": "SUB"
+    },
+    {
+     "name": "Munir El Kajoui",
+     "jersey": "12",
+     "position": "SUB"
+    },
+    {
+     "name": "Chemsdine Talbi",
+     "jersey": "7",
+     "position": "SUB"
+    },
+    {
+     "name": "Zakaria El Ouahdi",
+     "jersey": "13",
+     "position": "SUB"
+    },
+    {
+     "name": "Marwane Saadane",
+     "jersey": "5",
+     "position": "SUB"
+    },
+    {
+     "name": "Samir El Mourabet",
+     "jersey": "15",
+     "position": "SUB"
+    },
+    {
+     "name": "Sofyan Amrabat",
+     "jersey": "4",
+     "position": "SUB"
+    },
+    {
+     "name": "Gessime Yassine",
+     "jersey": "16",
+     "position": "SUB"
+    },
+    {
+     "name": "Redouane Halhal",
+     "jersey": "25",
+     "position": "SUB"
+    },
+    {
+     "name": "Youssef Belammari",
+     "jersey": "19",
+     "position": "SUB"
+    },
+    {
+     "name": "Soufiane Rahimi",
+     "jersey": "9",
+     "position": "SUB"
+    }
+   ]
+  }
+ ],
+ "attendance": 64146,
+ "venue": "Gillette Stadium, Foxborough, Massachusetts, USA"
+}
