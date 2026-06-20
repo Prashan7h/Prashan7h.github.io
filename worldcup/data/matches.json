@@ -246,8 +246,9 @@
    },
    "goals1": [
     {
-     "name": "Boualem Khoukhi",
-     "minute": "90+4"
+     "name": "Miro Muheim",
+     "minute": "90+4",
+     "owngoal": true
     }
    ],
    "goals2": [
