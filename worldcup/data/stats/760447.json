@@ -1,0 +1,922 @@
+{
+ "teams": [
+  {
+   "name": "Netherlands",
+   "stats": {
+    "possessionPct": "50.9",
+    "totalShots": "10",
+    "shotsOnTarget": "7",
+    "wonCorners": "2",
+    "foulsCommitted": "9",
+    "offsides": "3",
+    "saves": "7",
+    "yellowCards": "0",
+    "redCards": "0"
+   }
+  },
+  {
+   "name": "Sweden",
+   "stats": {
+    "possessionPct": "49.1",
+    "totalShots": "16",
+    "shotsOnTarget": "8",
+    "wonCorners": "5",
+    "foulsCommitted": "12",
+    "offsides": "3",
+    "saves": "2",
+    "yellowCards": "3",
+    "redCards": "0"
+   }
+  }
+ ],
+ "events": [
+  {
+   "type": "Kickoff",
+   "minute": "",
+   "team": null,
+   "text": "First Half begins.",
+   "players": []
+  },
+  {
+   "type": "Goal",
+   "minute": "5'",
+   "team": "Netherlands",
+   "text": "Goal! Netherlands 1, Sweden 0. Brian Brobbey (Netherlands) right footed shot from very close range to the centre of the goal. Assisted by Cody Gakpo with a cross.",
+   "players": [
+    "Brian Brobbey",
+    "Cody Gakpo"
+   ]
+  },
+  {
+   "type": "Goal",
+   "minute": "17'",
+   "team": "Netherlands",
+   "text": "Goal! Netherlands 2, Sweden 0. Brian Brobbey (Netherlands) right footed shot from very close range to the bottom left corner. Assisted by Denzel Dumfries with a cross.",
+   "players": [
+    "Brian Brobbey",
+    "Denzel Dumfries"
+   ]
+  },
+  {
+   "type": "Start Delay",
+   "minute": "23'",
+   "team": "Netherlands",
+   "text": "Delay in match for a drinks break.",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "23'",
+   "team": "Sweden",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "26'",
+   "team": "Netherlands",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "26'",
+   "team": "Sweden",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Halftime",
+   "minute": "45'+5'",
+   "team": null,
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Substitution",
+   "minute": "45'",
+   "team": "Netherlands",
+   "text": "Substitution, Netherlands. Crysencio Summerville replaces Donyell Malen.",
+   "players": [
+    "Crysencio Summerville",
+    "Donyell Malen"
+   ]
+  },
+  {
+   "type": "Start 2nd Half",
+   "minute": "45'",
+   "team": null,
+   "text": "Second Half begins Netherlands 2, Sweden 0.",
+   "players": []
+  },
+  {
+   "type": "Goal",
+   "minute": "47'",
+   "team": "Netherlands",
+   "text": "Goal! Netherlands 3, Sweden 0. Cody Gakpo (Netherlands) left footed shot from very close range to the centre of the goal. Assisted by Denzel Dumfries with a cross.",
+   "players": [
+    "Cody Gakpo",
+    "Denzel Dumfries"
+   ]
+  },
+  {
+   "type": "Yellow Card",
+   "minute": "53'",
+   "team": "Sweden",
+   "text": "Gabriel Gudmundsson (Sweden) is shown the yellow card for a bad foul.",
+   "players": [
+    "Gabriel Gudmundsson"
+   ]
+  },
+  {
+   "type": "Goal",
+   "minute": "54'",
+   "team": "Netherlands",
+   "text": "Goal! Netherlands 4, Sweden 0. Cody Gakpo (Netherlands) right footed shot from the left side of the box to the bottom left corner. Assisted by Crysencio Summerville following a fast break.",
+   "players": [
+    "Cody Gakpo",
+    "Crysencio Summerville"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "55'",
+   "team": "Sweden",
+   "text": "Substitution, Sweden. Anthony Elanga replaces Alexander Bernhardsson.",
+   "players": [
+    "Anthony Elanga",
+    "Alexander Bernhardsson"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "56'",
+   "team": "Sweden",
+   "text": "Substitution, Sweden. Besfort Zeneli replaces Jesper Karlström.",
+   "players": [
+    "Besfort Zeneli",
+    "Jesper Karlström"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "56'",
+   "team": "Sweden",
+   "text": "Substitution, Sweden. Lucas Bergvall replaces Benjamin Nygren.",
+   "players": [
+    "Lucas Bergvall",
+    "Benjamin Nygren"
+   ]
+  },
+  {
+   "type": "Goal",
+   "minute": "59'",
+   "team": "Sweden",
+   "text": "Goal! Netherlands 4, Sweden 1. Anthony Elanga (Sweden) left footed shot from the centre of the box to the bottom left corner. Assisted by Alexander Isak with a through ball following a fast break.",
+   "players": [
+    "Anthony Elanga",
+    "Alexander Isak"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "59'",
+   "team": "Netherlands",
+   "text": "Substitution, Netherlands. Teun Koopmeiners replaces Frenkie de Jong.",
+   "players": [
+    "Teun Koopmeiners",
+    "Frenkie de Jong"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "59'",
+   "team": "Netherlands",
+   "text": "Substitution, Netherlands. Guus Til replaces Tijjani Reijnders.",
+   "players": [
+    "Guus Til",
+    "Tijjani Reijnders"
+   ]
+  },
+  {
+   "type": "Start Delay",
+   "minute": "69'",
+   "team": "Netherlands",
+   "text": "Delay in match for a drinks break.",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "69'",
+   "team": "Sweden",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "72'",
+   "team": "Netherlands",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "72'",
+   "team": "Sweden",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Substitution",
+   "minute": "72'",
+   "team": "Netherlands",
+   "text": "Substitution, Netherlands. Memphis Depay replaces Brian Brobbey.",
+   "players": [
+    "Memphis Depay",
+    "Brian Brobbey"
+   ]
+  },
+  {
+   "type": "Yellow Card",
+   "minute": "75'",
+   "team": "Sweden",
+   "text": "Yasin Ayari (Sweden) is shown the yellow card for a bad foul.",
+   "players": [
+    "Yasin Ayari"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "79'",
+   "team": "Sweden",
+   "text": "Substitution, Sweden. Taha Ali replaces Yasin Ayari.",
+   "players": [
+    "Taha Ali",
+    "Yasin Ayari"
+   ]
+  },
+  {
+   "type": "Yellow Card",
+   "minute": "80'",
+   "team": "Sweden",
+   "text": "Lucas Bergvall (Sweden) is shown the yellow card for a bad foul.",
+   "players": [
+    "Lucas Bergvall"
+   ]
+  },
+  {
+   "type": "Goal",
+   "minute": "89'",
+   "team": "Netherlands",
+   "text": "Goal! Netherlands 5, Sweden 1. Crysencio Summerville (Netherlands) right footed shot from outside the box to the bottom left corner. Assisted by Memphis Depay.",
+   "players": [
+    "Crysencio Summerville",
+    "Memphis Depay"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "90'",
+   "team": "Netherlands",
+   "text": "Substitution, Netherlands. Noa Lang replaces Cody Gakpo.",
+   "players": [
+    "Noa Lang",
+    "Cody Gakpo"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "90'+3'",
+   "team": "Sweden",
+   "text": "Substitution, Sweden. Elliot Stroud replaces Gabriel Gudmundsson.",
+   "players": [
+    "Elliot Stroud",
+    "Gabriel Gudmundsson"
+   ]
+  },
+  {
+   "type": "Start Delay",
+   "minute": "90'+4'",
+   "team": "Netherlands",
+   "text": "Delay in match because of an injury Crysencio Summerville (Netherlands).",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "90'+4'",
+   "team": "Sweden",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "90'+4'",
+   "team": "Netherlands",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "90'+4'",
+   "team": "Sweden",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "End Regular Time",
+   "minute": "90'+6'",
+   "team": null,
+   "text": "Second Half ends, Netherlands 5, Sweden 1.",
+   "players": []
+  }
+ ],
+ "shots": [
+  {
+   "minute": "5",
+   "seconds": 298.0,
+   "team": "Netherlands",
+   "player": "Brian Brobbey",
+   "type": "Goal",
+   "x": 95.1,
+   "y": 49.8,
+   "goal": true,
+   "xg": 0.774,
+   "text": "Goal! Netherlands 1, Sweden 0. Brian Brobbey (Netherlands) right footed shot from very close range to the centre of the goal. Assisted by Cody Gakpo with a cross."
+  },
+  {
+   "minute": "7",
+   "seconds": 398.0,
+   "team": "Sweden",
+   "player": "Viktor Gyökeres",
+   "type": "Shot On Target",
+   "x": 89.6,
+   "y": 30.5,
+   "goal": false,
+   "xg": 0.144,
+   "text": "Attempt saved. Viktor Gyökeres (Sweden) right footed shot from the right side of the box is saved in the bottom right corner by Bart Verbruggen (Netherlands). Assisted by Alexander Bernhardsson."
+  },
+  {
+   "minute": "11",
+   "seconds": 649.0,
+   "team": "Netherlands",
+   "player": "Cody Gakpo",
+   "type": "Shot On Target",
+   "x": 88.8,
+   "y": 58.9,
+   "goal": false,
+   "xg": 0.173,
+   "text": "Attempt saved. Cody Gakpo (Netherlands) header from the centre of the box is saved in the centre of the goal by Kristoffer Nordfeldt (Sweden). Assisted by Donyell Malen with a cross."
+  },
+  {
+   "minute": "15",
+   "seconds": 884.0,
+   "team": "Netherlands",
+   "player": "Tijjani Reijnders",
+   "type": "Shot Off Target",
+   "x": 88.7,
+   "y": 66.7,
+   "goal": false,
+   "xg": 0.166,
+   "text": "Attempt missed. Tijjani Reijnders (Netherlands) left footed shot from the left side of the box misses to the left."
+  },
+  {
+   "minute": "17",
+   "seconds": 972.0,
+   "team": "Netherlands",
+   "player": "Brian Brobbey",
+   "type": "Goal",
+   "x": 95.9,
+   "y": 46.6,
+   "goal": true,
+   "xg": 0.783,
+   "text": "Goal! Netherlands 2, Sweden 0. Brian Brobbey (Netherlands) right footed shot from very close range to the bottom left corner. Assisted by Denzel Dumfries with a cross."
+  },
+  {
+   "minute": "27",
+   "seconds": 1606.0,
+   "team": "Sweden",
+   "player": "Jesper Karlström",
+   "type": "Shot Blocked",
+   "x": 90.0,
+   "y": 48.2,
+   "goal": false,
+   "xg": 0.393,
+   "text": "Attempt blocked. Jesper Karlström (Sweden) right footed shot from the centre of the box is blocked. Assisted by Isak Hien with a headed pass."
+  },
+  {
+   "minute": "31",
+   "seconds": 1821.0,
+   "team": "Sweden",
+   "player": "Yasin Ayari",
+   "type": "Shot Off Target",
+   "x": 85.6,
+   "y": 69.3,
+   "goal": false,
+   "xg": 0.12,
+   "text": "Attempt missed. Yasin Ayari (Sweden) right footed shot from the left side of the box misses to the right. Assisted by Viktor Gyökeres."
+  },
+  {
+   "minute": "33",
+   "seconds": 1967.0,
+   "team": "Sweden",
+   "player": "Viktor Gyökeres",
+   "type": "Shot Off Target",
+   "x": 89.5,
+   "y": 37.6,
+   "goal": false,
+   "xg": 0.23,
+   "text": "Attempt missed. Viktor Gyökeres (Sweden) right footed shot from the centre of the box is close, but misses to the right. Assisted by Alexander Isak."
+  },
+  {
+   "minute": "37",
+   "seconds": 2171.0,
+   "team": "Sweden",
+   "player": "Viktor Gyökeres",
+   "type": "Shot On Target",
+   "x": 85.9,
+   "y": 68.4,
+   "goal": false,
+   "xg": 0.128,
+   "text": "Attempt saved. Viktor Gyökeres (Sweden) right footed shot from the left side of the box is saved in the bottom right corner by Bart Verbruggen (Netherlands). Assisted by Alexander Isak."
+  },
+  {
+   "minute": "38",
+   "seconds": 2276.0,
+   "team": "Netherlands",
+   "player": "Cody Gakpo",
+   "type": "Shot On Target",
+   "x": 80.2,
+   "y": 72.7,
+   "goal": false,
+   "xg": 0.073,
+   "text": "Attempt saved. Cody Gakpo (Netherlands) right footed shot from outside the box is saved in the centre of the goal by Kristoffer Nordfeldt (Sweden). Assisted by Micky van de Ven."
+  },
+  {
+   "minute": "41",
+   "seconds": 2436.0,
+   "team": "Sweden",
+   "player": "Yasin Ayari",
+   "type": "Shot Off Target",
+   "x": 81.8,
+   "y": 54.0,
+   "goal": false,
+   "xg": 0.151,
+   "text": "Attempt missed. Yasin Ayari (Sweden) right footed shot from outside the box is too high. Assisted by Alexander Isak."
+  },
+  {
+   "minute": "45'+3",
+   "seconds": 2700.0,
+   "team": "Sweden",
+   "player": "Viktor Gyökeres",
+   "type": "Shot On Target",
+   "x": 81.5,
+   "y": 68.0,
+   "goal": false,
+   "xg": 0.097,
+   "text": "Attempt saved. Viktor Gyökeres (Sweden) right footed shot from outside the box is saved in the bottom right corner by Bart Verbruggen (Netherlands)."
+  },
+  {
+   "minute": "45'+4",
+   "seconds": 2700.0,
+   "team": "Sweden",
+   "player": "Benjamin Nygren",
+   "type": "Shot Off Target",
+   "x": 81.1,
+   "y": 38.5,
+   "goal": false,
+   "xg": 0.119,
+   "text": "Attempt missed. Benjamin Nygren (Sweden) left footed shot from outside the box misses to the right."
+  },
+  {
+   "minute": "45'+5",
+   "seconds": 2700.0,
+   "team": "Sweden",
+   "player": "Yasin Ayari",
+   "type": "Shot On Target",
+   "x": 80.2,
+   "y": 67.2,
+   "goal": false,
+   "xg": 0.091,
+   "text": "Attempt saved. Yasin Ayari (Sweden) right footed shot from outside the box is saved in the bottom left corner by Bart Verbruggen (Netherlands). Assisted by Viktor Gyökeres."
+  },
+  {
+   "minute": "47",
+   "seconds": 2814.0,
+   "team": "Netherlands",
+   "player": "Cody Gakpo",
+   "type": "Goal",
+   "x": 98.7,
+   "y": 52.8,
+   "goal": true,
+   "xg": 0.95,
+   "text": "Goal! Netherlands 3, Sweden 0. Cody Gakpo (Netherlands) left footed shot from very close range to the centre of the goal. Assisted by Denzel Dumfries with a cross."
+  },
+  {
+   "minute": "50",
+   "seconds": 2956.0,
+   "team": "Netherlands",
+   "player": "Cody Gakpo",
+   "type": "Shot Blocked",
+   "x": 80.6,
+   "y": 62.1,
+   "goal": false,
+   "xg": 0.112,
+   "text": "Attempt blocked. Cody Gakpo (Netherlands) right footed shot from outside the box is blocked. Assisted by Brian Brobbey."
+  },
+  {
+   "minute": "52",
+   "seconds": 3097.0,
+   "team": "Sweden",
+   "player": "Yasin Ayari",
+   "type": "Shot Blocked",
+   "x": 77.8,
+   "y": 56.0,
+   "goal": false,
+   "xg": 0.099,
+   "text": "Attempt blocked. Yasin Ayari (Sweden) right footed shot from outside the box is blocked. Assisted by Jesper Karlström."
+  },
+  {
+   "minute": "54",
+   "seconds": 3224.0,
+   "team": "Netherlands",
+   "player": "Cody Gakpo",
+   "type": "Goal",
+   "x": 86.2,
+   "y": 63.2,
+   "goal": true,
+   "xg": 0.172,
+   "text": "Goal! Netherlands 4, Sweden 0. Cody Gakpo (Netherlands) right footed shot from the left side of the box to the bottom left corner. Assisted by Crysencio Summerville following a fast break."
+  },
+  {
+   "minute": "57",
+   "seconds": 3364.0,
+   "team": "Sweden",
+   "player": "Yasin Ayari",
+   "type": "Shot Off Target",
+   "x": 78.4,
+   "y": 35.2,
+   "goal": false,
+   "xg": 0.086,
+   "text": "Attempt missed. Yasin Ayari (Sweden) right footed shot from outside the box is too high. Assisted by Lucas Bergvall."
+  },
+  {
+   "minute": "57",
+   "seconds": 3406.0,
+   "team": "Netherlands",
+   "player": "Ryan Gravenberch",
+   "type": "Shot Off Target",
+   "x": 76.3,
+   "y": 32.1,
+   "goal": false,
+   "xg": 0.066,
+   "text": "Attempt missed. Ryan Gravenberch (Netherlands) right footed shot from outside the box is too high. Assisted by Brian Brobbey."
+  },
+  {
+   "minute": "59",
+   "seconds": 3488.0,
+   "team": "Sweden",
+   "player": "Anthony Elanga",
+   "type": "Goal",
+   "x": 86.4,
+   "y": 60.7,
+   "goal": true,
+   "xg": 0.196,
+   "text": "Goal! Netherlands 4, Sweden 1. Anthony Elanga (Sweden) left footed shot from the centre of the box to the bottom left corner. Assisted by Alexander Isak with a through ball following a fast break."
+  },
+  {
+   "minute": "84",
+   "seconds": 5026.0,
+   "team": "Sweden",
+   "player": "Alexander Isak",
+   "type": "Shot On Target",
+   "x": 79.1,
+   "y": 71.4,
+   "goal": false,
+   "xg": 0.071,
+   "text": "Attempt saved. Alexander Isak (Sweden) right footed shot from outside the box is saved in the top right corner by Bart Verbruggen (Netherlands). Assisted by Taha Ali."
+  },
+  {
+   "minute": "85",
+   "seconds": 5066.0,
+   "team": "Sweden",
+   "player": "Besfort Zeneli",
+   "type": "Shot On Target",
+   "x": 72.8,
+   "y": 42.7,
+   "goal": false,
+   "xg": 0.061,
+   "text": "Attempt saved. Besfort Zeneli (Sweden) left footed shot from outside the box is saved in the top right corner by Bart Verbruggen (Netherlands). Assisted by Gabriel Gudmundsson."
+  },
+  {
+   "minute": "89",
+   "seconds": 5312.0,
+   "team": "Netherlands",
+   "player": "Crysencio Summerville",
+   "type": "Goal",
+   "x": 81.6,
+   "y": 52.4,
+   "goal": true,
+   "xg": 0.15,
+   "text": "Goal! Netherlands 5, Sweden 1. Crysencio Summerville (Netherlands) right footed shot from outside the box to the bottom left corner. Assisted by Memphis Depay."
+  },
+  {
+   "minute": "90'+1",
+   "seconds": 5400.0,
+   "team": "Sweden",
+   "player": "Viktor Gyökeres",
+   "type": "Shot Blocked",
+   "x": 82.6,
+   "y": 69.8,
+   "goal": false,
+   "xg": 0.097,
+   "text": "Attempt blocked. Viktor Gyökeres (Sweden) right footed shot from outside the box is blocked. Assisted by Taha Ali."
+  },
+  {
+   "minute": "90'+6",
+   "seconds": 5400.0,
+   "team": "Sweden",
+   "player": "Gustaf Lagerbielke",
+   "type": "Shot On Target",
+   "x": 91.8,
+   "y": 54.8,
+   "goal": false,
+   "xg": 0.293,
+   "text": "Attempt saved. Gustaf Lagerbielke (Sweden) header from the centre of the box is saved in the centre of the goal by Bart Verbruggen (Netherlands). Assisted by Elliot Stroud with a cross."
+  }
+ ],
+ "lineups": [
+  {
+   "team": "Netherlands",
+   "formation": "4-3-3",
+   "starters": [
+    {
+     "name": "Bart Verbruggen",
+     "jersey": "1",
+     "position": "G"
+    },
+    {
+     "name": "Virgil van Dijk",
+     "jersey": "4",
+     "position": "CD-L"
+    },
+    {
+     "name": "Jan Paul van Hecke",
+     "jersey": "6",
+     "position": "CD-R"
+    },
+    {
+     "name": "Micky van de Ven",
+     "jersey": "15",
+     "position": "LB"
+    },
+    {
+     "name": "Denzel Dumfries",
+     "jersey": "22",
+     "position": "RB"
+    },
+    {
+     "name": "Frenkie de Jong",
+     "jersey": "21",
+     "position": "CM"
+    },
+    {
+     "name": "Tijjani Reijnders",
+     "jersey": "14",
+     "position": "LM"
+    },
+    {
+     "name": "Ryan Gravenberch",
+     "jersey": "8",
+     "position": "RM"
+    },
+    {
+     "name": "Brian Brobbey",
+     "jersey": "19",
+     "position": "F"
+    },
+    {
+     "name": "Cody Gakpo",
+     "jersey": "11",
+     "position": "LF"
+    },
+    {
+     "name": "Donyell Malen",
+     "jersey": "18",
+     "position": "RF"
+    }
+   ],
+   "subs": [
+    {
+     "name": "Wout Weghorst",
+     "jersey": "9",
+     "position": "SUB"
+    },
+    {
+     "name": "Nathan Aké",
+     "jersey": "5",
+     "position": "SUB"
+    },
+    {
+     "name": "Crysencio Summerville",
+     "jersey": "24",
+     "position": "SUB"
+    },
+    {
+     "name": "Lutsharel Geertruida",
+     "jersey": "2",
+     "position": "SUB"
+    },
+    {
+     "name": "Marten de Roon",
+     "jersey": "3",
+     "position": "SUB"
+    },
+    {
+     "name": "Robin Roefs",
+     "jersey": "13",
+     "position": "SUB"
+    },
+    {
+     "name": "Mats Wieffer",
+     "jersey": "12",
+     "position": "SUB"
+    },
+    {
+     "name": "Guus Til",
+     "jersey": "16",
+     "position": "SUB"
+    },
+    {
+     "name": "Teun Koopmeiners",
+     "jersey": "20",
+     "position": "SUB"
+    },
+    {
+     "name": "Noa Lang",
+     "jersey": "17",
+     "position": "SUB"
+    },
+    {
+     "name": "Mark Flekken",
+     "jersey": "23",
+     "position": "SUB"
+    },
+    {
+     "name": "Memphis Depay",
+     "jersey": "10",
+     "position": "SUB"
+    },
+    {
+     "name": "Jorrel Hato",
+     "jersey": "25",
+     "position": "SUB"
+    },
+    {
+     "name": "Justin Kluivert",
+     "jersey": "7",
+     "position": "SUB"
+    }
+   ]
+  },
+  {
+   "team": "Sweden",
+   "formation": "3-1-4-2",
+   "starters": [
+    {
+     "name": "Kristoffer Nordfeldt",
+     "jersey": "23",
+     "position": "G"
+    },
+    {
+     "name": "Isak Hien",
+     "jersey": "4",
+     "position": "CD"
+    },
+    {
+     "name": "Victor Lindelöf",
+     "jersey": "3",
+     "position": "CD-L"
+    },
+    {
+     "name": "Gustaf Lagerbielke",
+     "jersey": "2",
+     "position": "CD-R"
+    },
+    {
+     "name": "Jesper Karlström",
+     "jersey": "16",
+     "position": "SW"
+    },
+    {
+     "name": "Yasin Ayari",
+     "jersey": "18",
+     "position": "CM-L"
+    },
+    {
+     "name": "Benjamin Nygren",
+     "jersey": "10",
+     "position": "CM-R"
+    },
+    {
+     "name": "Gabriel Gudmundsson",
+     "jersey": "5",
+     "position": "LM"
+    },
+    {
+     "name": "Alexander Bernhardsson",
+     "jersey": "21",
+     "position": "RM"
+    },
+    {
+     "name": "Alexander Isak",
+     "jersey": "9",
+     "position": "CF-L"
+    },
+    {
+     "name": "Viktor Gyökeres",
+     "jersey": "17",
+     "position": "CF-R"
+    }
+   ],
+   "subs": [
+    {
+     "name": "Hjalmar Ekdal",
+     "jersey": "14",
+     "position": null
+    },
+    {
+     "name": "Herman Johansson",
+     "jersey": "6",
+     "position": null
+    },
+    {
+     "name": "Ken Sema",
+     "jersey": "13",
+     "position": null
+    },
+    {
+     "name": "Taha Ali",
+     "jersey": "26",
+     "position": null
+    },
+    {
+     "name": "Anthony Elanga",
+     "jersey": "11",
+     "position": null
+    },
+    {
+     "name": "Gustaf Nilsson",
+     "jersey": "25",
+     "position": null
+    },
+    {
+     "name": "Elliot Stroud",
+     "jersey": "24",
+     "position": null
+    },
+    {
+     "name": "Eric Smith",
+     "jersey": "20",
+     "position": null
+    },
+    {
+     "name": "Carl Starfelt",
+     "jersey": "15",
+     "position": null
+    },
+    {
+     "name": "Jacob Widell Zetterström",
+     "jersey": "1",
+     "position": null
+    },
+    {
+     "name": "Viktor Johansson",
+     "jersey": "12",
+     "position": null
+    },
+    {
+     "name": "Mattias Svanberg",
+     "jersey": "19",
+     "position": null
+    },
+    {
+     "name": "Lucas Bergvall",
+     "jersey": "7",
+     "position": null
+    },
+    {
+     "name": "Besfort Zeneli",
+     "jersey": "22",
+     "position": null
+    },
+    {
+     "name": "Daniel Svensson",
+     "jersey": "8",
+     "position": null
+    }
+   ]
+  }
+ ],
+ "attendance": 68777,
+ "venue": "NRG Stadium, Houston, Texas, USA"
+}

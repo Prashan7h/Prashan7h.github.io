@@ -891,7 +891,7 @@
    "goals1": [],
    "goals2": [],
    "espn_id": "760448",
-   "status": "scheduled",
+   "status": "live",
    "utc_date": "2026-06-20T20:00Z",
    "venue": "BMO Field",
    "slug": "2026-06-20-germany-vs-ivory-coast"
@@ -1059,12 +1059,48 @@
    "team2": "Sweden",
    "group": "Group F",
    "ground": "Houston",
-   "score": null,
-   "goals1": [],
-   "goals2": [],
+   "score": {
+    "ft": [
+     5,
+     1
+    ],
+    "ht": [
+     2,
+     0
+    ]
+   },
+   "goals1": [
+    {
+     "name": "Brian Brobbey",
+     "minute": "5"
+    },
+    {
+     "name": "Brian Brobbey",
+     "minute": "17"
+    },
+    {
+     "name": "Cody Gakpo",
+     "minute": "47"
+    },
+    {
+     "name": "Cody Gakpo",
+     "minute": "54"
+    },
+    {
+     "name": "Crysencio Summerville",
+     "minute": "89"
+    }
+   ],
+   "goals2": [
+    {
+     "name": "Anthony Elanga",
+     "minute": "59"
+    }
+   ],
    "espn_id": "760447",
-   "status": "scheduled",
+   "status": "finished",
    "utc_date": "2026-06-20T17:00Z",
+   "attendance": 68777,
    "venue": "NRG Stadium",
    "slug": "2026-06-20-netherlands-vs-sweden"
   },
