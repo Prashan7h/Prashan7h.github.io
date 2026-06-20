@@ -721,12 +721,27 @@
    "team2": "Paraguay",
    "group": "Group D",
    "ground": "San Francisco Bay Area (Santa Clara)",
-   "score": null,
+   "score": {
+    "ft": [
+     0,
+     1
+    ],
+    "ht": [
+     0,
+     1
+    ]
+   },
    "goals1": [],
-   "goals2": [],
+   "goals2": [
+    {
+     "name": "Matías Galarza",
+     "minute": "2"
+    }
+   ],
    "espn_id": "760443",
-   "status": "live",
+   "status": "finished",
    "utc_date": "2026-06-20T03:00Z",
+   "attendance": 68827,
    "venue": "Levi's Stadium",
    "slug": "2026-06-19-turkey-vs-paraguay"
   },

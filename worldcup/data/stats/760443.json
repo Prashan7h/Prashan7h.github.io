@@ -1,0 +1,1283 @@
+{
+ "teams": [
+  {
+   "name": "Türkiye",
+   "stats": {
+    "possessionPct": "78.5",
+    "totalShots": "32",
+    "shotsOnTarget": "5",
+    "wonCorners": "12",
+    "foulsCommitted": "14",
+    "offsides": "2",
+    "saves": "1",
+    "yellowCards": "1",
+    "redCards": "0"
+   }
+  },
+  {
+   "name": "Paraguay",
+   "stats": {
+    "possessionPct": "21.5",
+    "totalShots": "7",
+    "shotsOnTarget": "2",
+    "wonCorners": "0",
+    "foulsCommitted": "15",
+    "offsides": "3",
+    "saves": "5",
+    "yellowCards": "1",
+    "redCards": "1"
+   }
+  }
+ ],
+ "events": [
+  {
+   "type": "Kickoff",
+   "minute": "",
+   "team": null,
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Goal",
+   "minute": "2'",
+   "team": "Paraguay",
+   "text": "Goal! Türkiye 0, Paraguay 1. Matías Galarza (Paraguay) left footed shot from outside the box to the bottom right corner. Assisted by Julio Enciso.",
+   "players": [
+    "Matías Galarza",
+    "Julio Enciso"
+   ]
+  },
+  {
+   "type": "Yellow Card",
+   "minute": "4'",
+   "team": "Paraguay",
+   "text": "Matías Galarza (Paraguay) is shown the yellow card for a bad foul.",
+   "players": [
+    "Matías Galarza"
+   ]
+  },
+  {
+   "type": "Start Delay",
+   "minute": "4'",
+   "team": "Türkiye",
+   "text": "Delay in match because of an injury Yunus Akgün (Türkiye).",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "4'",
+   "team": "Paraguay",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "6'",
+   "team": "Türkiye",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "6'",
+   "team": "Paraguay",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "26'",
+   "team": "Türkiye",
+   "text": "Delay in match for a drinks break.",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "26'",
+   "team": "Paraguay",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "29'",
+   "team": "Türkiye",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "29'",
+   "team": "Paraguay",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "39'",
+   "team": "Türkiye",
+   "text": "Delay in match because of an injury Kerem Aktürkoglu (Türkiye).",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "39'",
+   "team": "Paraguay",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "40'",
+   "team": "Türkiye",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "40'",
+   "team": "Paraguay",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "44'",
+   "team": "Türkiye",
+   "text": "Delay in match (Türkiye).",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "44'",
+   "team": "Paraguay",
+   "text": "Delay in match (Paraguay).",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "44'",
+   "team": "Türkiye",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "44'",
+   "team": "Paraguay",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "45'",
+   "team": "Paraguay",
+   "text": "Delay in match because of an injury Isidro Pitta (Paraguay).",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "45'",
+   "team": "Türkiye",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "45'+1'",
+   "team": "Paraguay",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "45'+1'",
+   "team": "Türkiye",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "45'+2'",
+   "team": "Paraguay",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "45'+3'",
+   "team": "Paraguay",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Red Card",
+   "minute": "45'+3'",
+   "team": "Paraguay",
+   "text": "Miguel Almirón (Paraguay) is shown the red card.",
+   "players": [
+    "Miguel Almirón"
+   ]
+  },
+  {
+   "type": "Start Delay",
+   "minute": "45'+10'",
+   "team": "Paraguay",
+   "text": "Delay in match because of an injury Gustavo Gómez (Paraguay).",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "45'+10'",
+   "team": "Türkiye",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "45'+10'",
+   "team": "Paraguay",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "45'+10'",
+   "team": "Türkiye",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Halftime",
+   "minute": "45'+11'",
+   "team": null,
+   "text": "First Half ends, Türkiye 0, Paraguay 1.",
+   "players": []
+  },
+  {
+   "type": "Substitution",
+   "minute": "45'",
+   "team": "Paraguay",
+   "text": "Substitution, Paraguay. Damián Bobadilla replaces Isidro Pitta.",
+   "players": [
+    "Damián Bobadilla",
+    "Isidro Pitta"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "45'",
+   "team": "Türkiye",
+   "text": "Substitution, Türkiye. Baris Alper Yilmaz replaces Kerem Aktürkoglu.",
+   "players": [
+    "Baris Alper Yilmaz",
+    "Kerem Aktürkoglu"
+   ]
+  },
+  {
+   "type": "Start 2nd Half",
+   "minute": "45'",
+   "team": null,
+   "text": "Second Half begins Türkiye 0, Paraguay 1.",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "59'",
+   "team": "Paraguay",
+   "text": "Delay in match because of an injury Orlando Gill (Paraguay).",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "59'",
+   "team": "Türkiye",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Substitution",
+   "minute": "60'",
+   "team": "Türkiye",
+   "text": "Substitution, Türkiye. Can Uzun replaces Ismail Yüksek.",
+   "players": [
+    "Can Uzun",
+    "Ismail Yüksek"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "60'",
+   "team": "Türkiye",
+   "text": "Substitution, Türkiye. Deniz Gül replaces Yunus Akgün.",
+   "players": [
+    "Deniz Gül",
+    "Yunus Akgün"
+   ]
+  },
+  {
+   "type": "End Delay",
+   "minute": "60'",
+   "team": "Paraguay",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "60'",
+   "team": "Türkiye",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "63'",
+   "team": "Paraguay",
+   "text": "Delay in match because of an injury Diego Gómez (Paraguay).",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "63'",
+   "team": "Türkiye",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "63'",
+   "team": "Paraguay",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "63'",
+   "team": "Türkiye",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "66'",
+   "team": "Paraguay",
+   "text": "Delay in match because of an injury Diego Gómez (Paraguay).",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "66'",
+   "team": "Türkiye",
+   "text": "Delay in match for a drinks break.",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "67'",
+   "team": "Paraguay",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "67'",
+   "team": "Türkiye",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "Substitution",
+   "minute": "67'",
+   "team": "Paraguay",
+   "text": "Substitution, Paraguay. Gustavo Velázquez replaces Diego Gómez because of an injury.",
+   "players": [
+    "Gustavo Velázquez",
+    "Diego Gómez"
+   ]
+  },
+  {
+   "type": "Start Delay",
+   "minute": "68'",
+   "team": "Türkiye",
+   "text": "Delay in match for a drinks break.",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "68'",
+   "team": "Paraguay",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Substitution",
+   "minute": "70'",
+   "team": "Türkiye",
+   "text": "Substitution, Türkiye. Eren Elmali replaces Ferdi Kadioglu.",
+   "players": [
+    "Eren Elmali",
+    "Ferdi Kadioglu"
+   ]
+  },
+  {
+   "type": "End Delay",
+   "minute": "71'",
+   "team": "Türkiye",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "71'",
+   "team": "Paraguay",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Yellow Card",
+   "minute": "71'",
+   "team": "Türkiye",
+   "text": "Eren Elmali (Türkiye) is shown the yellow card for a bad foul.",
+   "players": [
+    "Eren Elmali"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "81'",
+   "team": "Paraguay",
+   "text": "Substitution, Paraguay. Alexandro Maidana replaces Juan José Cáceres.",
+   "players": [
+    "Alexandro Maidana",
+    "Juan Jose Cáceres"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "86'",
+   "team": "Türkiye",
+   "text": "Substitution, Türkiye. Orkun Kökçü replaces Abdülkerim Bardakci.",
+   "players": [
+    "Orkun Kökçü",
+    "Abdülkerim Bardakçi"
+   ]
+  },
+  {
+   "type": "Start Delay",
+   "minute": "90'+1'",
+   "team": "Paraguay",
+   "text": "Delay in match because of an injury Matías Galarza (Paraguay).",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "90'+1'",
+   "team": "Türkiye",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Substitution",
+   "minute": "90'+2'",
+   "team": "Paraguay",
+   "text": "Substitution, Paraguay. Gabriel Ávalos replaces Julio Enciso because of an injury.",
+   "players": [
+    "Gabriel Ávalos",
+    "Julio Enciso"
+   ]
+  },
+  {
+   "type": "End Delay",
+   "minute": "90'+2'",
+   "team": "Paraguay",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "90'+2'",
+   "team": "Türkiye",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Substitution",
+   "minute": "90'+2'",
+   "team": "Paraguay",
+   "text": "Substitution, Paraguay. José Canale replaces Matías Galarza because of an injury.",
+   "players": [
+    "José Canale",
+    "Matías Galarza"
+   ]
+  },
+  {
+   "type": "End Regular Time",
+   "minute": "90'+9'",
+   "team": null,
+   "text": "Second Half ends, Türkiye 0, Paraguay 1.",
+   "players": []
+  }
+ ],
+ "shots": [
+  {
+   "minute": "2",
+   "seconds": 64.0,
+   "team": "Paraguay",
+   "player": "Matías Galarza",
+   "type": "Goal",
+   "x": 76.0,
+   "y": 51.5,
+   "goal": true,
+   "xg": 0.086,
+   "text": "Goal! Türkiye 0, Paraguay 1. Matías Galarza (Paraguay) left footed shot from outside the box to the bottom right corner. Assisted by Julio Enciso."
+  },
+  {
+   "minute": "11",
+   "seconds": 626.0,
+   "team": "Paraguay",
+   "player": "Omar Alderete",
+   "type": "Shot Off Target",
+   "x": 69.5,
+   "y": 52.6,
+   "goal": false,
+   "xg": 0.047,
+   "text": "Attempt missed. Omar Alderete (Paraguay) left footed shot from outside the box misses to the right."
+  },
+  {
+   "minute": "11",
+   "seconds": 628.0,
+   "team": "Paraguay",
+   "player": "Diego Gómez",
+   "type": "Shot Off Target",
+   "x": 72.3,
+   "y": 50.1,
+   "goal": false,
+   "xg": 0.061,
+   "text": "Attempt missed. Diego Gómez (Paraguay) right footed shot from outside the box is too high."
+  },
+  {
+   "minute": "13",
+   "seconds": 780.0,
+   "team": "Türkiye",
+   "player": "Arda Güler",
+   "type": "Shot Off Target",
+   "x": 84.6,
+   "y": 43.2,
+   "goal": false,
+   "xg": 0.19,
+   "text": "Attempt missed. Arda Güler (Türkiye) right footed shot from the centre of the box is too high. Assisted by Kerem Aktürkoglu following a fast break."
+  },
+  {
+   "minute": "15",
+   "seconds": 885.0,
+   "team": "Türkiye",
+   "player": "Kenan Yildiz",
+   "type": "Shot Blocked",
+   "x": 91.7,
+   "y": 70.3,
+   "goal": false,
+   "xg": 0.144,
+   "text": "Attempt blocked. Kenan Yildiz (Türkiye) right footed shot from the left side of the box is blocked."
+  },
+  {
+   "minute": "21",
+   "seconds": 1247.0,
+   "team": "Türkiye",
+   "player": "Hakan Çalhanoglu",
+   "type": "Shot Blocked",
+   "x": 78.4,
+   "y": 68.9,
+   "goal": false,
+   "xg": 0.075,
+   "text": "Attempt blocked. Hakan Çalhanoglu (Türkiye) right footed shot from outside the box is blocked."
+  },
+  {
+   "minute": "23",
+   "seconds": 1359.0,
+   "team": "Türkiye",
+   "player": "Hakan Çalhanoglu",
+   "type": "Shot Blocked",
+   "x": 91.4,
+   "y": 92.0,
+   "goal": false,
+   "xg": 0.04,
+   "text": "Attempt blocked. Hakan Çalhanoglu (Türkiye) right footed shot from a difficult angle and long range on the left is blocked."
+  },
+  {
+   "minute": "25",
+   "seconds": 1445.0,
+   "team": "Türkiye",
+   "player": "Arda Güler",
+   "type": "Shot Blocked",
+   "x": 71.8,
+   "y": 31.9,
+   "goal": false,
+   "xg": 0.046,
+   "text": "Attempt blocked. Arda Güler (Türkiye) left footed shot from outside the box is blocked."
+  },
+  {
+   "minute": "30",
+   "seconds": 1764.0,
+   "team": "Türkiye",
+   "player": "Kenan Yildiz",
+   "type": "Shot On Target",
+   "x": 81.2,
+   "y": 51.9,
+   "goal": false,
+   "xg": 0.144,
+   "text": "Attempt saved. Kenan Yildiz (Türkiye) right footed shot from outside the box is saved in the top centre of the goal by Orlando Gill (Paraguay). Assisted by Kerem Aktürkoglu with a headed pass."
+  },
+  {
+   "minute": "35",
+   "seconds": 2062.0,
+   "team": "Türkiye",
+   "player": "Mert Müldür",
+   "type": "Shot Blocked",
+   "x": 91.2,
+   "y": 54.2,
+   "goal": false,
+   "xg": 0.279,
+   "text": "Attempt blocked. Mert Müldür (Türkiye) header from the centre of the box is blocked. Assisted by Hakan Çalhanoglu with a cross."
+  },
+  {
+   "minute": "36",
+   "seconds": 2156.0,
+   "team": "Türkiye",
+   "player": "Kenan Yildiz",
+   "type": "Shot Blocked",
+   "x": 87.2,
+   "y": 69.9,
+   "goal": false,
+   "xg": 0.127,
+   "text": "Attempt missed. Kenan Yildiz (Türkiye) right footed shot from the left side of the box misses to the right. Assisted by Ferdi Kadioglu."
+  },
+  {
+   "minute": "37",
+   "seconds": 2189.0,
+   "team": "Paraguay",
+   "player": "Juan José Cáceres",
+   "type": "Shot On Target",
+   "x": 92.3,
+   "y": 28.4,
+   "goal": false,
+   "xg": 0.133,
+   "text": "Attempt saved. Juan José Cáceres (Paraguay) right footed shot from the right side of the box is saved in the centre of the goal by Ugurcan Çakir (Türkiye). Assisted by Julio Enciso."
+  },
+  {
+   "minute": "45",
+   "seconds": 2685.0,
+   "team": "Türkiye",
+   "player": "Hakan Çalhanoglu",
+   "type": "Shot Blocked",
+   "x": 73.9,
+   "y": 55.5,
+   "goal": false,
+   "xg": 0.069,
+   "text": "Attempt blocked. Hakan Çalhanoglu (Türkiye) right footed shot from outside the box is blocked. Assisted by Ferdi Kadioglu."
+  },
+  {
+   "minute": "45'+6",
+   "seconds": 2700.0,
+   "team": "Türkiye",
+   "player": "Ismail Yüksek",
+   "type": "Shot Off Target",
+   "x": 75.4,
+   "y": 51.1,
+   "goal": false,
+   "xg": 0.082,
+   "text": "Attempt missed. Ismail Yüksek (Türkiye) left footed shot from outside the box is too high."
+  },
+  {
+   "minute": "45'+8",
+   "seconds": 2700.0,
+   "team": "Türkiye",
+   "player": "Ismail Yüksek",
+   "type": "Shot Off Target",
+   "x": 86.2,
+   "y": 68.5,
+   "goal": false,
+   "xg": 0.13,
+   "text": "Attempt missed. Ismail Yüksek (Türkiye) right footed shot from the left side of the box misses to the left. Assisted by Arda Güler."
+  },
+  {
+   "minute": "45'+9",
+   "seconds": 2700.0,
+   "team": "Türkiye",
+   "player": "Abdülkerim Bardakci",
+   "type": "Shot Blocked",
+   "x": 73.7,
+   "y": 66.4,
+   "goal": false,
+   "xg": 0.056,
+   "text": "Attempt blocked. Abdülkerim Bardakci (Türkiye) left footed shot from outside the box is blocked. Assisted by Hakan Çalhanoglu."
+  },
+  {
+   "minute": "45'+10",
+   "seconds": 2700.0,
+   "team": "Türkiye",
+   "player": "Hakan Çalhanoglu",
+   "type": "Shot Blocked",
+   "x": 71.8,
+   "y": 64.2,
+   "goal": false,
+   "xg": 0.05,
+   "text": "Attempt blocked. Hakan Çalhanoglu (Türkiye) right footed shot from outside the box is blocked. Assisted by Kenan Yildiz."
+  },
+  {
+   "minute": "47",
+   "seconds": 2762.0,
+   "team": "Türkiye",
+   "player": "Merih Demiral",
+   "type": "Shot On Target",
+   "x": 69.7,
+   "y": 34.6,
+   "goal": false,
+   "xg": 0.041,
+   "text": "Attempt saved. Merih Demiral (Türkiye) right footed shot from outside the box is saved in the top centre of the goal by Orlando Gill (Paraguay). Assisted by Ferdi Kadioglu."
+  },
+  {
+   "minute": "48",
+   "seconds": 2869.0,
+   "team": "Türkiye",
+   "player": "Kenan Yildiz",
+   "type": "Shot Off Target",
+   "x": 93.7,
+   "y": 70.9,
+   "goal": false,
+   "xg": 0.139,
+   "text": "Attempt missed. Kenan Yildiz (Türkiye) left footed shot from the left side of the box is close, but misses to the left. Assisted by Hakan Çalhanoglu."
+  },
+  {
+   "minute": "57",
+   "seconds": 3410.0,
+   "team": "Türkiye",
+   "player": "Hakan Çalhanoglu",
+   "type": "Shot Off Target",
+   "x": 95.5,
+   "y": 64.1,
+   "goal": false,
+   "xg": 0.236,
+   "text": "Attempt missed. Hakan Çalhanoglu (Türkiye) left footed shot from a difficult angle on the left is high and wide to the right. Assisted by Ferdi Kadioglu with a through ball."
+  },
+  {
+   "minute": "59",
+   "seconds": 3496.0,
+   "team": "Türkiye",
+   "player": "Merih Demiral",
+   "type": "Shot On Target",
+   "x": 75.0,
+   "y": 28.6,
+   "goal": false,
+   "xg": 0.053,
+   "text": "Attempt saved. Merih Demiral (Türkiye) right footed shot from outside the box is saved in the centre of the goal by Orlando Gill (Paraguay). Assisted by Abdülkerim Bardakci."
+  },
+  {
+   "minute": "60",
+   "seconds": 3595.0,
+   "team": "Paraguay",
+   "player": "Julio Enciso",
+   "type": "Shot Off Target",
+   "x": 92.4,
+   "y": 40.3,
+   "goal": false,
+   "xg": 0.343,
+   "text": "Attempt missed. Julio Enciso (Paraguay) left footed shot from the centre of the box misses to the left. Assisted by Juan José Cáceres."
+  },
+  {
+   "minute": "62",
+   "seconds": 3677.0,
+   "team": "Türkiye",
+   "player": "Deniz Gül",
+   "type": "Shot On Target",
+   "x": 92.6,
+   "y": 51.5,
+   "goal": false,
+   "xg": 0.361,
+   "text": "Attempt saved. Deniz Gül (Türkiye) header from the centre of the box is saved in the centre of the goal by Orlando Gill (Paraguay). Assisted by Kenan Yildiz."
+  },
+  {
+   "minute": "62",
+   "seconds": 3703.0,
+   "team": "Türkiye",
+   "player": "Kenan Yildiz",
+   "type": "Shot Off Target",
+   "x": 89.2,
+   "y": 69.7,
+   "goal": false,
+   "xg": 0.14,
+   "text": "Attempt missed. Kenan Yildiz (Türkiye) right footed shot from the left side of the box misses to the right. Assisted by Can Uzun."
+  },
+  {
+   "minute": "65",
+   "seconds": 3896.0,
+   "team": "Türkiye",
+   "player": "Merih Demiral",
+   "type": "Shot Off Target",
+   "x": 73.5,
+   "y": 40.0,
+   "goal": false,
+   "xg": 0.063,
+   "text": "Attempt missed. Merih Demiral (Türkiye) right footed shot from outside the box is high and wide to the right. Assisted by Can Uzun."
+  },
+  {
+   "minute": "72",
+   "seconds": 4319.0,
+   "team": "Türkiye",
+   "player": "Baris Alper Yilmaz",
+   "type": "Shot Off Target",
+   "x": 80.5,
+   "y": 27.0,
+   "goal": false,
+   "xg": 0.073,
+   "text": "Attempt missed. Baris Alper Yilmaz (Türkiye) right footed shot from outside the box is high and wide to the right. Assisted by Eren Elmali following a fast break."
+  },
+  {
+   "minute": "75",
+   "seconds": 4479.0,
+   "team": "Türkiye",
+   "player": "Mert Müldür",
+   "type": "Shot Blocked",
+   "x": 92.1,
+   "y": 47.9,
+   "goal": false,
+   "xg": 0.334,
+   "text": "Attempt blocked. Mert Müldür (Türkiye) header from the centre of the box is blocked. Assisted by Arda Güler with a cross."
+  },
+  {
+   "minute": "76",
+   "seconds": 4511.0,
+   "team": "Türkiye",
+   "player": "Hakan Çalhanoglu",
+   "type": "Shot Blocked",
+   "x": 77.5,
+   "y": 43.2,
+   "goal": false,
+   "xg": 0.095,
+   "text": "Attempt blocked. Hakan Çalhanoglu (Türkiye) right footed shot from outside the box is blocked. Assisted by Mert Müldür."
+  },
+  {
+   "minute": "78",
+   "seconds": 4627.0,
+   "team": "Türkiye",
+   "player": "Mert Müldür",
+   "type": "Shot Off Target",
+   "x": 90.1,
+   "y": 58.3,
+   "goal": false,
+   "xg": 0.202,
+   "text": "Attempt missed. Mert Müldür (Türkiye) header from the centre of the box misses to the left. Assisted by Abdülkerim Bardakci with a cross."
+  },
+  {
+   "minute": "80",
+   "seconds": 4788.0,
+   "team": "Türkiye",
+   "player": "Merih Demiral",
+   "type": "Shot Off Target",
+   "x": 90.2,
+   "y": 42.1,
+   "goal": false,
+   "xg": 0.321,
+   "text": "Attempt missed. Merih Demiral (Türkiye) right footed shot from the centre of the box is too high. Assisted by Mert Müldür with a cross."
+  },
+  {
+   "minute": "82",
+   "seconds": 4875.0,
+   "team": "Türkiye",
+   "player": "Can Uzun",
+   "type": "Shot Off Target",
+   "x": 81.9,
+   "y": 64.4,
+   "goal": false,
+   "xg": 0.116,
+   "text": "Attempt missed. Can Uzun (Türkiye) right footed shot from outside the box is close, but misses to the left. Assisted by Kenan Yildiz."
+  },
+  {
+   "minute": "86",
+   "seconds": 5134.0,
+   "team": "Türkiye",
+   "player": "Arda Güler",
+   "type": "Shot Blocked",
+   "x": 79.7,
+   "y": 34.0,
+   "goal": false,
+   "xg": 0.091,
+   "text": "Attempt blocked. Arda Güler (Türkiye) left footed shot from outside the box is blocked. Assisted by Can Uzun."
+  },
+  {
+   "minute": "89",
+   "seconds": 5286.0,
+   "team": "Paraguay",
+   "player": "Gustavo Gómez",
+   "type": "Shot Blocked",
+   "x": 90.2,
+   "y": 48.8,
+   "goal": false,
+   "xg": 0.264,
+   "text": "Attempt blocked. Gustavo Gómez (Paraguay) header from the centre of the box is blocked. Assisted by Julio Enciso with a cross."
+  },
+  {
+   "minute": "89",
+   "seconds": 5315.0,
+   "team": "Türkiye",
+   "player": "Can Uzun",
+   "type": "Shot On Target",
+   "x": 86.5,
+   "y": 52.6,
+   "goal": false,
+   "xg": 0.254,
+   "text": "Attempt saved. Can Uzun (Türkiye) right footed shot from the centre of the box is saved in the bottom left corner by Orlando Gill (Paraguay). Assisted by Baris Alper Yilmaz."
+  },
+  {
+   "minute": "89",
+   "seconds": 5316.0,
+   "team": "Türkiye",
+   "player": "Deniz Gül",
+   "type": "Shot Off Target",
+   "x": 96.1,
+   "y": 58.1,
+   "goal": false,
+   "xg": 0.496,
+   "text": "Attempt missed. Deniz Gül (Türkiye) left footed shot from the left side of the six yard box is close, but misses to the left."
+  },
+  {
+   "minute": "90",
+   "seconds": 5386.0,
+   "team": "Paraguay",
+   "player": "Matías Galarza",
+   "type": "Shot Blocked",
+   "x": 74.4,
+   "y": 50.3,
+   "goal": false,
+   "xg": 0.074,
+   "text": "Attempt blocked. Matías Galarza (Paraguay) left footed shot from outside the box is blocked. Assisted by Julio Enciso."
+  },
+  {
+   "minute": "90'+6",
+   "seconds": 5400.0,
+   "team": "Türkiye",
+   "player": "Kenan Yildiz",
+   "type": "Shot Blocked",
+   "x": 88.0,
+   "y": 72.0,
+   "goal": false,
+   "xg": 0.116,
+   "text": "Attempt blocked. Kenan Yildiz (Türkiye) right footed shot from the left side of the box is blocked. Assisted by Can Uzun."
+  },
+  {
+   "minute": "90'+7",
+   "seconds": 5400.0,
+   "team": "Türkiye",
+   "player": "Can Uzun",
+   "type": "Shot Blocked",
+   "x": 81.3,
+   "y": 64.9,
+   "goal": false,
+   "xg": 0.108,
+   "text": "Attempt blocked. Can Uzun (Türkiye) right footed shot from outside the box is blocked. Assisted by Kenan Yildiz."
+  },
+  {
+   "minute": "90'+7",
+   "seconds": 5400.0,
+   "team": "Türkiye",
+   "player": "Merih Demiral",
+   "type": "Shot Off Target",
+   "x": 91.2,
+   "y": 51.4,
+   "goal": false,
+   "xg": 0.301,
+   "text": "Attempt missed. Merih Demiral (Türkiye) header from the centre of the box is close, but misses to the right. Assisted by Arda Güler with a cross."
+  },
+  {
+   "minute": "90'+9",
+   "seconds": 5400.0,
+   "team": "Türkiye",
+   "player": "Hakan Çalhanoglu",
+   "type": "Shot Off Target",
+   "x": 75.3,
+   "y": 48.3,
+   "goal": false,
+   "xg": 0.081,
+   "text": "Attempt missed. Hakan Çalhanoglu (Türkiye) right footed shot from outside the box is close, but misses to the left following a set piece situation."
+  }
+ ],
+ "lineups": [
+  {
+   "team": "Türkiye",
+   "formation": "4-2-3-1",
+   "starters": [
+    {
+     "name": "Ugurcan Çakir",
+     "jersey": "23",
+     "position": "G"
+    },
+    {
+     "name": "Abdülkerim Bardakçi",
+     "jersey": "14",
+     "position": "CD-L"
+    },
+    {
+     "name": "Merih Demiral",
+     "jersey": "3",
+     "position": "CD-R"
+    },
+    {
+     "name": "Ferdi Kadioglu",
+     "jersey": "20",
+     "position": "LB"
+    },
+    {
+     "name": "Mert Müldür",
+     "jersey": "18",
+     "position": "RB"
+    },
+    {
+     "name": "Arda Güler",
+     "jersey": "8",
+     "position": "AM"
+    },
+    {
+     "name": "Ismail Yüksek",
+     "jersey": "16",
+     "position": "LM"
+    },
+    {
+     "name": "Hakan Çalhanoglu",
+     "jersey": "10",
+     "position": "RM"
+    },
+    {
+     "name": "Kerem Aktürkoglu",
+     "jersey": "7",
+     "position": "F"
+    },
+    {
+     "name": "Kenan Yildiz",
+     "jersey": "11",
+     "position": "AM-L"
+    },
+    {
+     "name": "Yunus Akgün",
+     "jersey": "19",
+     "position": "AM-R"
+    }
+   ],
+   "subs": [
+    {
+     "name": "Zeki Çelik",
+     "jersey": "2",
+     "position": "SUB"
+    },
+    {
+     "name": "Can Uzun",
+     "jersey": "26",
+     "position": "SUB"
+    },
+    {
+     "name": "Irfan Can Kahveci",
+     "jersey": "17",
+     "position": "SUB"
+    },
+    {
+     "name": "Deniz Gül",
+     "jersey": "9",
+     "position": "SUB"
+    },
+    {
+     "name": "Eren Elmali",
+     "jersey": "13",
+     "position": "SUB"
+    },
+    {
+     "name": "Baris Alper Yilmaz",
+     "jersey": "21",
+     "position": "SUB"
+    },
+    {
+     "name": "Salih Özcan",
+     "jersey": "5",
+     "position": "SUB"
+    },
+    {
+     "name": "Kaan Ayhan",
+     "jersey": "22",
+     "position": "SUB"
+    },
+    {
+     "name": "Oguz Aydin",
+     "jersey": "24",
+     "position": "SUB"
+    },
+    {
+     "name": "Altay Bayindir",
+     "jersey": "12",
+     "position": "SUB"
+    },
+    {
+     "name": "Ozan Kabak",
+     "jersey": "15",
+     "position": "SUB"
+    },
+    {
+     "name": "Çaglar Söyüncü",
+     "jersey": "4",
+     "position": "SUB"
+    },
+    {
+     "name": "Mert Günok",
+     "jersey": "1",
+     "position": "SUB"
+    },
+    {
+     "name": "Samet Akaydin",
+     "jersey": "25",
+     "position": "SUB"
+    },
+    {
+     "name": "Orkun Kökçü",
+     "jersey": "6",
+     "position": "SUB"
+    }
+   ]
+  },
+  {
+   "team": "Paraguay",
+   "formation": "4-4-2",
+   "starters": [
+    {
+     "name": "Orlando Gil",
+     "jersey": "12",
+     "position": "G"
+    },
+    {
+     "name": "Omar Alderete",
+     "jersey": "3",
+     "position": "CD-L"
+    },
+    {
+     "name": "Gustavo Gómez",
+     "jersey": "15",
+     "position": "CD-R"
+    },
+    {
+     "name": "Júnior Alonso",
+     "jersey": "6",
+     "position": "LB"
+    },
+    {
+     "name": "Juan Jose Cáceres",
+     "jersey": "4",
+     "position": "RB"
+    },
+    {
+     "name": "Diego Gómez",
+     "jersey": "8",
+     "position": "CM-L"
+    },
+    {
+     "name": "Andrés Cubas",
+     "jersey": "14",
+     "position": "CM-R"
+    },
+    {
+     "name": "Matías Galarza",
+     "jersey": "23",
+     "position": "LM"
+    },
+    {
+     "name": "Miguel Almirón",
+     "jersey": "10",
+     "position": "RM"
+    },
+    {
+     "name": "Julio Enciso",
+     "jersey": "19",
+     "position": "CF-L"
+    },
+    {
+     "name": "Isidro Pitta",
+     "jersey": "25",
+     "position": "CF-R"
+    }
+   ],
+   "subs": [
+    {
+     "name": "Alejandro Romero Gamarra",
+     "jersey": "17",
+     "position": "SUB"
+    },
+    {
+     "name": "Damián Bobadilla",
+     "jersey": "16",
+     "position": "SUB"
+    },
+    {
+     "name": "Alexandro Maidana",
+     "jersey": "26",
+     "position": "SUB"
+    },
+    {
+     "name": "Braian Ojeda",
+     "jersey": "20",
+     "position": "SUB"
+    },
+    {
+     "name": "Gatito Fernández",
+     "jersey": "1",
+     "position": "SUB"
+    },
+    {
+     "name": "Ramón Sosa",
+     "jersey": "7",
+     "position": "SUB"
+    },
+    {
+     "name": "José Canale",
+     "jersey": "13",
+     "position": "SUB"
+    },
+    {
+     "name": "Gustavo Caballero",
+     "jersey": "24",
+     "position": "SUB"
+    },
+    {
+     "name": "Fabián Balbuena",
+     "jersey": "5",
+     "position": "SUB"
+    },
+    {
+     "name": "Alex Arce",
+     "jersey": "18",
+     "position": "SUB"
+    },
+    {
+     "name": "Antonio Sanabria",
+     "jersey": "9",
+     "position": "SUB"
+    },
+    {
+     "name": "Maurício",
+     "jersey": "11",
+     "position": "SUB"
+    },
+    {
+     "name": "Gastón Olveira",
+     "jersey": "22",
+     "position": "SUB"
+    },
+    {
+     "name": "Gabriel Ávalos",
+     "jersey": "21",
+     "position": "SUB"
+    },
+    {
+     "name": "Gustavo Velázquez",
+     "jersey": "2",
+     "position": "SUB"
+    }
+   ]
+  }
+ ],
+ "attendance": 68827,
+ "venue": "Levi's Stadium, Santa Clara, California, USA"
+}
