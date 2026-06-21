@@ -1,0 +1,927 @@
+{
+ "teams": [
+  {
+   "name": "Spain",
+   "stats": {
+    "possessionPct": "67.1",
+    "totalShots": "22",
+    "shotsOnTarget": "8",
+    "wonCorners": "6",
+    "foulsCommitted": "10",
+    "offsides": "2",
+    "saves": "1",
+    "yellowCards": "0",
+    "redCards": "0"
+   }
+  },
+  {
+   "name": "Saudi Arabia",
+   "stats": {
+    "possessionPct": "32.9",
+    "totalShots": "3",
+    "shotsOnTarget": "1",
+    "wonCorners": "1",
+    "foulsCommitted": "2",
+    "offsides": "3",
+    "saves": "5",
+    "yellowCards": "2",
+    "redCards": "0"
+   }
+  }
+ ],
+ "events": [
+  {
+   "type": "Kickoff",
+   "minute": "",
+   "team": null,
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Goal",
+   "minute": "10'",
+   "team": "Spain",
+   "text": "Goal! Spain 1, Saudi Arabia 0. Lamine Yamal (Spain) right footed shot from the right side of the six yard box to the bottom right corner. Assisted by Mikel Oyarzabal with a cross.",
+   "players": [
+    "Lamine Yamal",
+    "Mikel Oyarzabal"
+   ]
+  },
+  {
+   "type": "Goal",
+   "minute": "21'",
+   "team": "Spain",
+   "text": "Goal! Spain 2, Saudi Arabia 0. Mikel Oyarzabal (Spain) left footed shot from the left side of the six yard box to the bottom right corner. Assisted by Aymeric Laporte with a headed pass following a corner.",
+   "players": [
+    "Mikel Oyarzabal",
+    "Aymeric Laporte"
+   ]
+  },
+  {
+   "type": "Goal - Volley",
+   "minute": "24'",
+   "team": "Spain",
+   "text": "Goal! Spain 3, Saudi Arabia 0. Mikel Oyarzabal (Spain) left footed shot from very close range to the top right corner. Assisted by Dani Olmo with a headed pass.",
+   "players": [
+    "Mikel Oyarzabal",
+    "Dani Olmo"
+   ]
+  },
+  {
+   "type": "Start Delay",
+   "minute": "25'",
+   "team": "Spain",
+   "text": "Delay in match for a drinks break.",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "25'",
+   "team": "Saudi Arabia",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "28'",
+   "team": "Spain",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "28'",
+   "team": "Saudi Arabia",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Yellow Card",
+   "minute": "30'",
+   "team": "Saudi Arabia",
+   "text": "Salem Al Dawsari (Saudi Arabia) is shown the yellow card for a bad foul.",
+   "players": [
+    "Salem Al-Dawsari"
+   ]
+  },
+  {
+   "type": "Halftime",
+   "minute": "45'+6'",
+   "team": null,
+   "text": "First Half ends, Spain 3, Saudi Arabia 0.",
+   "players": []
+  },
+  {
+   "type": "Substitution",
+   "minute": "45'",
+   "team": "Spain",
+   "text": "Substitution, Spain. Yéremy Pino replaces Lamine Yamal.",
+   "players": [
+    "Yéremy Pino",
+    "Lamine Yamal"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "45'",
+   "team": "Spain",
+   "text": "Substitution, Spain. Ferran Torres replaces Mikel Oyarzabal.",
+   "players": [
+    "Ferran Torres",
+    "Mikel Oyarzabal"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "45'",
+   "team": "Saudi Arabia",
+   "text": "Substitution, Saudi Arabia. Mohamed Kanno replaces Abdullah Al Khaibari.",
+   "players": [
+    "Mohamed Kanno",
+    "Abdullah Al-Khaibari"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "45'",
+   "team": "Saudi Arabia",
+   "text": "Substitution, Saudi Arabia. Abdullah Al Hamddan replaces Musab Al Juwayr.",
+   "players": [
+    "Abdullah Al-Hamdan",
+    "Musab Al-Juwayr"
+   ]
+  },
+  {
+   "type": "Start 2nd Half",
+   "minute": "45'",
+   "team": null,
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Own Goal",
+   "minute": "49'",
+   "team": "Spain",
+   "text": "Own Goal by Hassan Al Tambakti, Saudi Arabia. Spain 4, Saudi Arabia 0.",
+   "players": [
+    "Hassan Al-Tambakti"
+   ]
+  },
+  {
+   "type": "Yellow Card",
+   "minute": "60'",
+   "team": "Saudi Arabia",
+   "text": "Mohamed Kanno (Saudi Arabia) is shown the yellow card for a bad foul.",
+   "players": [
+    "Mohamed Kanno"
+   ]
+  },
+  {
+   "type": "Start Delay",
+   "minute": "60'",
+   "team": "Spain",
+   "text": "Delay in match because of an injury Rodri (Spain).",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "60'",
+   "team": "Saudi Arabia",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Substitution",
+   "minute": "60'",
+   "team": "Saudi Arabia",
+   "text": "Substitution, Saudi Arabia. Mohammed Abu Al Shamat replaces Feras Al Brikan.",
+   "players": [
+    "Mohammed Abu Al-Shamat",
+    "Feras Al-Brikan"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "60'",
+   "team": "Saudi Arabia",
+   "text": "Substitution, Saudi Arabia. Alaa Al Hejji replaces Abdulelah Al Amri.",
+   "players": [
+    "Ala Al-Hajji",
+    "Abdulelah Al-Amri"
+   ]
+  },
+  {
+   "type": "End Delay",
+   "minute": "61'",
+   "team": "Spain",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "61'",
+   "team": "Saudi Arabia",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Substitution",
+   "minute": "61'",
+   "team": "Spain",
+   "text": "Substitution, Spain. Mikel Merino replaces Dani Olmo.",
+   "players": [
+    "Mikel Merino",
+    "Dani Olmo"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "61'",
+   "team": "Spain",
+   "text": "Substitution, Spain. Nico Williams replaces Álex Baena.",
+   "players": [
+    "Nico Williams",
+    "Álex Baena"
+   ]
+  },
+  {
+   "type": "Start Delay",
+   "minute": "68'",
+   "team": "Spain",
+   "text": "Delay in match for a drinks break.",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "68'",
+   "team": "Saudi Arabia",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Substitution",
+   "minute": "70'",
+   "team": "Spain",
+   "text": "Substitution, Spain. Fabián Ruiz replaces Pedri.",
+   "players": [
+    "Fabián Ruiz",
+    "Pedri "
+   ]
+  },
+  {
+   "type": "End Delay",
+   "minute": "70'",
+   "team": "Spain",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "70'",
+   "team": "Saudi Arabia",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "87'",
+   "team": "Saudi Arabia",
+   "text": "Delay in match because of an injury Mohamed Kanno (Saudi Arabia).",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "87'",
+   "team": "Spain",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "89'",
+   "team": "Saudi Arabia",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "89'",
+   "team": "Spain",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Substitution",
+   "minute": "90'",
+   "team": "Saudi Arabia",
+   "text": "Substitution, Saudi Arabia. Khalid Al Ghannam replaces Nasser Al Dawsari.",
+   "players": [
+    "Khalid Al-Ghannam",
+    "Nasser Al-Dawsari"
+   ]
+  },
+  {
+   "type": "Start Delay",
+   "minute": "90'+5'",
+   "team": "Spain",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "90'+5'",
+   "team": "Spain",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "End Regular Time",
+   "minute": "90'+9'",
+   "team": null,
+   "text": "Second Half ends, Spain 4, Saudi Arabia 0.",
+   "players": []
+  }
+ ],
+ "shots": [
+  {
+   "minute": "2",
+   "seconds": 108.0,
+   "team": "Spain",
+   "player": "Álex Baena",
+   "type": "Shot Blocked",
+   "x": 86.1,
+   "y": 64.0,
+   "goal": false,
+   "xg": 0.164,
+   "text": "Attempt blocked. Álex Baena (Spain) right footed shot from the left side of the box is blocked. Assisted by Pedro Porro."
+  },
+  {
+   "minute": "4",
+   "seconds": 222.0,
+   "team": "Spain",
+   "player": "Lamine Yamal",
+   "type": "Shot Off Target",
+   "x": 73.8,
+   "y": 32.9,
+   "goal": false,
+   "xg": 0.055,
+   "text": "Attempt missed. Lamine Yamal (Spain) left footed shot from outside the box is high and wide to the left. Assisted by Pau Cubarsí."
+  },
+  {
+   "minute": "8",
+   "seconds": 476.0,
+   "team": "Spain",
+   "player": "Dani Olmo",
+   "type": "Shot Off Target",
+   "x": 79.7,
+   "y": 34.4,
+   "goal": false,
+   "xg": 0.093,
+   "text": "Attempt missed. Dani Olmo (Spain) right footed shot from outside the box is high and wide to the right. Assisted by Álex Baena following a corner."
+  },
+  {
+   "minute": "10",
+   "seconds": 559.0,
+   "team": "Spain",
+   "player": "Pedro Porro",
+   "type": "Shot Off Target",
+   "x": 78.1,
+   "y": 29.1,
+   "goal": false,
+   "xg": 0.068,
+   "text": "Attempt missed. Pedro Porro (Spain) right footed shot from outside the box is too high. Assisted by Lamine Yamal."
+  },
+  {
+   "minute": "10",
+   "seconds": 598.0,
+   "team": "Spain",
+   "player": "Lamine Yamal",
+   "type": "Goal",
+   "x": 98.1,
+   "y": 44.0,
+   "goal": true,
+   "xg": 0.732,
+   "text": "Goal! Spain 1, Saudi Arabia 0. Lamine Yamal (Spain) right footed shot from the right side of the six yard box to the bottom right corner. Assisted by Mikel Oyarzabal with a cross."
+  },
+  {
+   "minute": "13",
+   "seconds": 752.0,
+   "team": "Spain",
+   "player": "Pedri",
+   "type": "Shot Off Target",
+   "x": 85.2,
+   "y": 63.8,
+   "goal": false,
+   "xg": 0.154,
+   "text": "Attempt missed. Pedri (Spain) left footed shot from the left side of the box is too high."
+  },
+  {
+   "minute": "15",
+   "seconds": 886.0,
+   "team": "Spain",
+   "player": "Álex Baena",
+   "type": "Shot Off Target",
+   "x": 80.6,
+   "y": 77.1,
+   "goal": false,
+   "xg": 0.062,
+   "text": "Attempt missed. Álex Baena (Spain) right footed shot from outside the box is high and wide to the right. Assisted by Aymeric Laporte."
+  },
+  {
+   "minute": "17",
+   "seconds": 993.0,
+   "team": "Spain",
+   "player": "Mikel Oyarzabal",
+   "type": "Shot On Target",
+   "x": 76.8,
+   "y": 64.8,
+   "goal": false,
+   "xg": 0.075,
+   "text": "Attempt saved. Mikel Oyarzabal (Spain) right footed shot from outside the box is saved in the bottom left corner by Mohammed Al Owais (Saudi Arabia)."
+  },
+  {
+   "minute": "21",
+   "seconds": 1232.0,
+   "team": "Spain",
+   "player": "Dani Olmo",
+   "type": "Shot Off Target",
+   "x": 87.3,
+   "y": 35.6,
+   "goal": false,
+   "xg": 0.175,
+   "text": "Attempt missed. Dani Olmo (Spain) right footed shot from the right side of the box misses to the left following a corner."
+  },
+  {
+   "minute": "21",
+   "seconds": 1235.0,
+   "team": "Spain",
+   "player": "Mikel Oyarzabal",
+   "type": "Goal",
+   "x": 94.8,
+   "y": 56.8,
+   "goal": true,
+   "xg": 0.538,
+   "text": "Goal! Spain 2, Saudi Arabia 0. Mikel Oyarzabal (Spain) left footed shot from the left side of the six yard box to the bottom right corner. Assisted by Aymeric Laporte with a headed pass following a corner."
+  },
+  {
+   "minute": "24",
+   "seconds": 1382.0,
+   "team": "Spain",
+   "player": "Mikel Oyarzabal",
+   "type": "Goal - Volley",
+   "x": 97.6,
+   "y": 45.1,
+   "goal": true,
+   "xg": 0.827,
+   "text": "Goal! Spain 3, Saudi Arabia 0. Mikel Oyarzabal (Spain) left footed shot from very close range to the top right corner. Assisted by Dani Olmo with a headed pass."
+  },
+  {
+   "minute": "30",
+   "seconds": 1760.0,
+   "team": "Spain",
+   "player": "Lamine Yamal",
+   "type": "Shot Off Target",
+   "x": 81.3,
+   "y": 31.9,
+   "goal": false,
+   "xg": 0.095,
+   "text": "Attempt missed. Lamine Yamal (Spain) left footed shot from outside the box is high and wide to the left. Assisted by Pedro Porro."
+  },
+  {
+   "minute": "35",
+   "seconds": 2079.0,
+   "team": "Saudi Arabia",
+   "player": "Abdulelah Al Amri",
+   "type": "Shot Off Target",
+   "x": 30.0,
+   "y": 34.4,
+   "goal": false,
+   "xg": 0.002,
+   "text": "Attempt missed. Abdulelah Al Amri (Saudi Arabia) right footed shot from more than 35 yards misses to the left. Assisted by Musab Al Juwayr following a fast break."
+  },
+  {
+   "minute": "36",
+   "seconds": 2108.0,
+   "team": "Spain",
+   "player": null,
+   "type": "Shot Hit Woodwork",
+   "x": 92.8,
+   "y": 80.2,
+   "goal": false,
+   "xg": 0.077,
+   "text": "Mikel Oyarzabal (Spain) hits the bar with a left footed shot from a difficult angle and long range on the left."
+  },
+  {
+   "minute": "36",
+   "seconds": 2150.0,
+   "team": "Spain",
+   "player": "Lamine Yamal",
+   "type": "Shot On Target",
+   "x": 74.4,
+   "y": 38.5,
+   "goal": false,
+   "xg": 0.066,
+   "text": "Attempt saved. Lamine Yamal (Spain) left footed shot from outside the box is saved in the bottom left corner by Mohammed Al Owais (Saudi Arabia). Assisted by Rodri."
+  },
+  {
+   "minute": "37",
+   "seconds": 2168.0,
+   "team": "Spain",
+   "player": "Lamine Yamal",
+   "type": "Shot Blocked",
+   "x": 83.4,
+   "y": 32.7,
+   "goal": false,
+   "xg": 0.115,
+   "text": "Attempt missed. Lamine Yamal (Spain) left footed shot from the right side of the box is high and wide to the left. Assisted by Pedro Porro."
+  },
+  {
+   "minute": "42",
+   "seconds": 2503.0,
+   "team": "Spain",
+   "player": "Mikel Oyarzabal",
+   "type": "Shot Off Target",
+   "x": 90.2,
+   "y": 64.8,
+   "goal": false,
+   "xg": 0.204,
+   "text": "Attempt missed. Mikel Oyarzabal (Spain) left footed shot from the left side of the box misses to the right."
+  },
+  {
+   "minute": "45'+1",
+   "seconds": 2700.0,
+   "team": "Spain",
+   "player": "Rodri",
+   "type": "Shot Off Target",
+   "x": 81.6,
+   "y": 53.5,
+   "goal": false,
+   "xg": 0.148,
+   "text": "Attempt missed. Rodri (Spain) left footed shot from outside the box is high and wide to the left. Assisted by Álex Baena."
+  },
+  {
+   "minute": "45'+4",
+   "seconds": 2700.0,
+   "team": "Saudi Arabia",
+   "player": "Salem Al Dawsari",
+   "type": "Shot Blocked",
+   "x": 81.2,
+   "y": 50.0,
+   "goal": false,
+   "xg": 0.145,
+   "text": "Attempt blocked. Salem Al Dawsari (Saudi Arabia) right footed shot from outside the box is blocked."
+  },
+  {
+   "minute": "49",
+   "seconds": 2884.0,
+   "team": "Spain",
+   "player": "Marc Cucurella",
+   "type": "Shot On Target",
+   "x": 96.0,
+   "y": 42.3,
+   "goal": false,
+   "xg": 0.523,
+   "text": "Attempt saved. Marc Cucurella (Spain) left footed shot from the right side of the six yard box is saved in the centre of the goal by Mohammed Al Owais (Saudi Arabia)."
+  },
+  {
+   "minute": "53",
+   "seconds": 3123.0,
+   "team": "Spain",
+   "player": "Pedro Porro",
+   "type": "Shot On Target",
+   "x": 89.3,
+   "y": 34.0,
+   "goal": false,
+   "xg": 0.179,
+   "text": "Attempt saved. Pedro Porro (Spain) right footed shot from the right side of the box is saved in the centre of the goal by Mohammed Al Owais (Saudi Arabia). Assisted by Pau Cubarsí with a through ball."
+  },
+  {
+   "minute": "53",
+   "seconds": 3126.0,
+   "team": "Spain",
+   "player": "Ferran Torres",
+   "type": "Shot On Target",
+   "x": 87.4,
+   "y": 41.5,
+   "goal": false,
+   "xg": 0.154,
+   "text": "Attempt saved. Ferran Torres (Spain) header from the centre of the box is saved in the bottom left corner by Mohammed Al Owais (Saudi Arabia)."
+  },
+  {
+   "minute": "65",
+   "seconds": 3858.0,
+   "team": "Spain",
+   "player": "Ferran Torres",
+   "type": "Shot Off Target",
+   "x": 87.0,
+   "y": 63.6,
+   "goal": false,
+   "xg": 0.179,
+   "text": "Attempt missed. Ferran Torres (Spain) right footed shot from the left side of the box is close, but misses to the right. Assisted by Mikel Merino with a through ball."
+  },
+  {
+   "minute": "81",
+   "seconds": 4821.0,
+   "team": "Saudi Arabia",
+   "player": "Abdullah Al Hamddan",
+   "type": "Shot On Target",
+   "x": 76.1,
+   "y": 37.7,
+   "goal": false,
+   "xg": 0.075,
+   "text": "Attempt saved. Abdullah Al Hamddan (Saudi Arabia) left footed shot from outside the box is saved in the bottom right corner by Unai Simón (Spain)."
+  },
+  {
+   "minute": "90'+8",
+   "seconds": 5400.0,
+   "team": "Spain",
+   "player": "Mikel Merino",
+   "type": "Shot Blocked",
+   "x": 83.6,
+   "y": 28.9,
+   "goal": false,
+   "xg": 0.097,
+   "text": "Attempt blocked. Mikel Merino (Spain) left footed shot from the right side of the box is blocked. Assisted by Fabián Ruiz."
+  }
+ ],
+ "lineups": [
+  {
+   "team": "Spain",
+   "formation": "4-3-3",
+   "starters": [
+    {
+     "name": "Unai Simón",
+     "jersey": "23",
+     "position": "G"
+    },
+    {
+     "name": "Aymeric Laporte",
+     "jersey": "14",
+     "position": "CD-L"
+    },
+    {
+     "name": "Pau Cubarsí",
+     "jersey": "22",
+     "position": "CD-R"
+    },
+    {
+     "name": "Marc Cucurella",
+     "jersey": "24",
+     "position": "LB"
+    },
+    {
+     "name": "Pedro Porro",
+     "jersey": "12",
+     "position": "RB"
+    },
+    {
+     "name": "Rodri ",
+     "jersey": "16",
+     "position": "CM"
+    },
+    {
+     "name": "Pedri ",
+     "jersey": "20",
+     "position": "LM"
+    },
+    {
+     "name": "Dani Olmo",
+     "jersey": "10",
+     "position": "RM"
+    },
+    {
+     "name": "Mikel Oyarzabal",
+     "jersey": "21",
+     "position": "F"
+    },
+    {
+     "name": "Álex Baena",
+     "jersey": "15",
+     "position": "LF"
+    },
+    {
+     "name": "Lamine Yamal",
+     "jersey": "19",
+     "position": "RF"
+    }
+   ],
+   "subs": [
+    {
+     "name": "Ferran Torres",
+     "jersey": "7",
+     "position": "SUB"
+    },
+    {
+     "name": "Mikel Merino",
+     "jersey": "6",
+     "position": "SUB"
+    },
+    {
+     "name": "Joan García",
+     "jersey": "13",
+     "position": "SUB"
+    },
+    {
+     "name": "Martín Zubimendi",
+     "jersey": "18",
+     "position": "SUB"
+    },
+    {
+     "name": "David Raya",
+     "jersey": "1",
+     "position": "SUB"
+    },
+    {
+     "name": "Gavi ",
+     "jersey": "9",
+     "position": "SUB"
+    },
+    {
+     "name": "Alejandro Grimaldo",
+     "jersey": "3",
+     "position": "SUB"
+    },
+    {
+     "name": "Eric García",
+     "jersey": "4",
+     "position": "SUB"
+    },
+    {
+     "name": "Borja Iglesias",
+     "jersey": "26",
+     "position": "SUB"
+    },
+    {
+     "name": "Fabián Ruiz",
+     "jersey": "8",
+     "position": "SUB"
+    },
+    {
+     "name": "Víctor Muñoz",
+     "jersey": "25",
+     "position": "SUB"
+    },
+    {
+     "name": "Marc Pubill",
+     "jersey": "2",
+     "position": "SUB"
+    },
+    {
+     "name": "Yéremy Pino",
+     "jersey": "11",
+     "position": "SUB"
+    },
+    {
+     "name": "Marcos Llorente",
+     "jersey": "5",
+     "position": "SUB"
+    },
+    {
+     "name": "Nico Williams",
+     "jersey": "17",
+     "position": "SUB"
+    }
+   ]
+  },
+  {
+   "team": "Saudi Arabia",
+   "formation": "5-4-1",
+   "starters": [
+    {
+     "name": "Mohammed Al-Owais",
+     "jersey": "21",
+     "position": "G"
+    },
+    {
+     "name": "Ali Lajami",
+     "jersey": "3",
+     "position": "CD"
+    },
+    {
+     "name": "Hassan Al-Tambakti",
+     "jersey": "5",
+     "position": "CD-L"
+    },
+    {
+     "name": "Abdulelah Al-Amri",
+     "jersey": "4",
+     "position": "CD-R"
+    },
+    {
+     "name": "Moteb Al-Harbi",
+     "jersey": "24",
+     "position": "LB"
+    },
+    {
+     "name": "Saud Abdulhamid",
+     "jersey": "12",
+     "position": "RB"
+    },
+    {
+     "name": "Nasser Al-Dawsari",
+     "jersey": "6",
+     "position": "CM-L"
+    },
+    {
+     "name": "Abdullah Al-Khaibari",
+     "jersey": "15",
+     "position": "CM-R"
+    },
+    {
+     "name": "Salem Al-Dawsari",
+     "jersey": "10",
+     "position": "LM"
+    },
+    {
+     "name": "Musab Al-Juwayr",
+     "jersey": "7",
+     "position": "RM"
+    },
+    {
+     "name": "Feras Al-Brikan",
+     "jersey": "9",
+     "position": "F"
+    }
+   ],
+   "subs": [
+    {
+     "name": "Abdullah Al-Hamdan",
+     "jersey": "19",
+     "position": "SUB"
+    },
+    {
+     "name": "Ziyad Al-Johani",
+     "jersey": "16",
+     "position": "SUB"
+    },
+    {
+     "name": "Saleh Al-Shehri",
+     "jersey": "11",
+     "position": "SUB"
+    },
+    {
+     "name": "Ala Al-Hajji",
+     "jersey": "18",
+     "position": "SUB"
+    },
+    {
+     "name": "Sultan Mandash",
+     "jersey": "20",
+     "position": "SUB"
+    },
+    {
+     "name": "Hassan Kadish",
+     "jersey": "14",
+     "position": "SUB"
+    },
+    {
+     "name": "Mohammed Abu Al-Shamat",
+     "jersey": "26",
+     "position": "SUB"
+    },
+    {
+     "name": "Ali Majrashi",
+     "jersey": "2",
+     "position": "SUB"
+    },
+    {
+     "name": "Nawaf Al-Aqidi",
+     "jersey": "1",
+     "position": "SUB"
+    },
+    {
+     "name": "Ahmed Al-Kassar",
+     "jersey": "22",
+     "position": "SUB"
+    },
+    {
+     "name": "Jehad Thakri",
+     "jersey": "25",
+     "position": "SUB"
+    },
+    {
+     "name": "Khalid Al-Ghannam",
+     "jersey": "17",
+     "position": "SUB"
+    },
+    {
+     "name": "Nawaf Boushal",
+     "jersey": "13",
+     "position": "SUB"
+    },
+    {
+     "name": "Aiman Yahya",
+     "jersey": "8",
+     "position": "SUB"
+    },
+    {
+     "name": "Mohamed Kanno",
+     "jersey": "23",
+     "position": "SUB"
+    }
+   ]
+  }
+ ],
+ "attendance": 68239,
+ "venue": "Mercedes-Benz Stadium, Atlanta, Georgia, USA"
+}

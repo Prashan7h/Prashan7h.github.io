@@ -1317,7 +1317,7 @@
    "goals1": [],
    "goals2": [],
    "espn_id": "760451",
-   "status": "scheduled",
+   "status": "live",
    "utc_date": "2026-06-21T19:00Z",
    "venue": "SoFi Stadium",
    "slug": "2026-06-21-belgium-vs-iran"
@@ -1451,12 +1451,40 @@
    "team2": "Saudi Arabia",
    "group": "Group H",
    "ground": "Atlanta",
-   "score": null,
-   "goals1": [],
+   "score": {
+    "ft": [
+     4,
+     0
+    ],
+    "ht": [
+     3,
+     0
+    ]
+   },
+   "goals1": [
+    {
+     "name": "Lamine Yamal",
+     "minute": "10"
+    },
+    {
+     "name": "Mikel Oyarzabal",
+     "minute": "21"
+    },
+    {
+     "name": "Mikel Oyarzabal",
+     "minute": "24"
+    },
+    {
+     "name": "Hassan Al-Tambakti",
+     "minute": "49",
+     "owngoal": true
+    }
+   ],
    "goals2": [],
    "espn_id": "760453",
-   "status": "scheduled",
+   "status": "finished",
    "utc_date": "2026-06-21T16:00Z",
+   "attendance": 68239,
    "venue": "Mercedes-Benz Stadium",
    "slug": "2026-06-21-spain-vs-saudi-arabia"
   },
