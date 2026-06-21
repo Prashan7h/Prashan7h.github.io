@@ -1,0 +1,1100 @@
+{
+ "teams": [
+  {
+   "name": "Ecuador",
+   "stats": {
+    "possessionPct": "74.8",
+    "totalShots": "27",
+    "shotsOnTarget": "15",
+    "wonCorners": "9",
+    "foulsCommitted": "7",
+    "offsides": "1",
+    "saves": "3",
+    "yellowCards": "1",
+    "redCards": "0"
+   }
+  },
+  {
+   "name": "Curaçao",
+   "stats": {
+    "possessionPct": "25.2",
+    "totalShots": "10",
+    "shotsOnTarget": "3",
+    "wonCorners": "0",
+    "foulsCommitted": "10",
+    "offsides": "2",
+    "saves": "15",
+    "yellowCards": "5",
+    "redCards": "0"
+   }
+  }
+ ],
+ "events": [
+  {
+   "type": "Kickoff",
+   "minute": "",
+   "team": null,
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "24'",
+   "team": "Ecuador",
+   "text": "Delay in match for a drinks break.",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "24'",
+   "team": "Curaçao",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "27'",
+   "team": "Ecuador",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "27'",
+   "team": "Curaçao",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "33'",
+   "team": "Curaçao",
+   "text": "Delay in match because of an injury Juninho Bacuna (Curaçao).",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "33'",
+   "team": "Ecuador",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "35'",
+   "team": "Curaçao",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "35'",
+   "team": "Ecuador",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Yellow Card",
+   "minute": "38'",
+   "team": "Ecuador",
+   "text": "Jordy Alcívar (Ecuador) is shown the yellow card for a bad foul.",
+   "players": [
+    "Jordy Alcívar"
+   ]
+  },
+  {
+   "type": "Yellow Card",
+   "minute": "39'",
+   "team": "Curaçao",
+   "text": "Leandro Bacuna (Curaçao) is shown the yellow card for a bad foul.",
+   "players": [
+    "Leandro Bacuna"
+   ]
+  },
+  {
+   "type": "Halftime",
+   "minute": "45'+5'",
+   "team": null,
+   "text": "First Half ends, Ecuador 0, Curaçao 0.",
+   "players": []
+  },
+  {
+   "type": "Substitution",
+   "minute": "45'",
+   "team": "Ecuador",
+   "text": "Substitution, Ecuador. Kevin Rodríguez replaces Jordy Alcívar.",
+   "players": [
+    "Kevin Rodríguez",
+    "Jordy Alcívar"
+   ]
+  },
+  {
+   "type": "Start 2nd Half",
+   "minute": "45'",
+   "team": null,
+   "text": "Second Half begins Ecuador 0, Curaçao 0.",
+   "players": []
+  },
+  {
+   "type": "Yellow Card",
+   "minute": "53'",
+   "team": "Curaçao",
+   "text": "Juninho Bacuna (Curaçao) is shown the yellow card for a bad foul.",
+   "players": [
+    "Juninho Bacuna"
+   ]
+  },
+  {
+   "type": "Start Delay",
+   "minute": "55'",
+   "team": "Ecuador",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "56'",
+   "team": "Ecuador",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Yellow Card",
+   "minute": "56'",
+   "team": "Curaçao",
+   "text": "Livano Comenencia (Curaçao) is shown the yellow card for a bad foul.",
+   "players": [
+    "Livano Comenencia"
+   ]
+  },
+  {
+   "type": "Start Delay",
+   "minute": "68'",
+   "team": "Ecuador",
+   "text": "Delay in match for a drinks break.",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "68'",
+   "team": "Curaçao",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Substitution",
+   "minute": "70'",
+   "team": "Ecuador",
+   "text": "Substitution, Ecuador. Nilson Angulo replaces Pervis Estupiñán.",
+   "players": [
+    "Nilson Angulo",
+    "Pervis Estupiñán"
+   ]
+  },
+  {
+   "type": "End Delay",
+   "minute": "71'",
+   "team": "Ecuador",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "71'",
+   "team": "Curaçao",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "73'",
+   "team": "Curaçao",
+   "text": "Delay in match because of an injury Sherel Floranus (Curaçao).",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "73'",
+   "team": "Ecuador",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "74'",
+   "team": "Curaçao",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "74'",
+   "team": "Ecuador",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Yellow Card",
+   "minute": "75'",
+   "team": "Curaçao",
+   "text": "Juriën Gaari (Curaçao) is shown the yellow card for a bad foul.",
+   "players": [
+    "Juriën Gaari"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "75'",
+   "team": "Curaçao",
+   "text": "Substitution, Curaçao. Kenji Gorré replaces Juninho Bacuna.",
+   "players": [
+    "Kenji Gorré",
+    "Juninho Bacuna"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "76'",
+   "team": "Curaçao",
+   "text": "Substitution, Curaçao. Roshon van Eijma replaces Deveron Fonville.",
+   "players": [
+    "Roshon van Eijma",
+    "Deveron Fonville"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "76'",
+   "team": "Curaçao",
+   "text": "Substitution, Curaçao. Jearl Margaritha replaces Tahith Chong.",
+   "players": [
+    "Jearl Margaritha",
+    "Tahith Chong"
+   ]
+  },
+  {
+   "type": "Start Delay",
+   "minute": "81'",
+   "team": "Ecuador",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "81'",
+   "team": "Ecuador",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "82'",
+   "team": "Curaçao",
+   "text": "Delay in match because of an injury Jürgen Locadia (Curaçao).",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "82'",
+   "team": "Ecuador",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Substitution",
+   "minute": "83'",
+   "team": "Ecuador",
+   "text": "Substitution, Ecuador. Ángelo Preciado replaces Alan Franco.",
+   "players": [
+    "Ángelo Preciado",
+    "Alan Franco"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "83'",
+   "team": "Curaçao",
+   "text": "Substitution, Curaçao. Gervane Kastaneer replaces Jürgen Locadia because of an injury.",
+   "players": [
+    "Gervane Kastaneer",
+    "Jürgen Locadia"
+   ]
+  },
+  {
+   "type": "End Delay",
+   "minute": "83'",
+   "team": "Curaçao",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "83'",
+   "team": "Ecuador",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Substitution",
+   "minute": "84'",
+   "team": "Curaçao",
+   "text": "Substitution, Curaçao. Godfried Roemeratoe replaces Livano Comenencia.",
+   "players": [
+    "Godfried Roemeratoe",
+    "Livano Comenencia"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "89'",
+   "team": "Ecuador",
+   "text": "Substitution, Ecuador. Jordy Caicedo replaces John Yeboah.",
+   "players": [
+    "Jordy Caicedo",
+    "John Yeboah"
+   ]
+  },
+  {
+   "type": "Yellow Card",
+   "minute": "90'+1'",
+   "team": "Curaçao",
+   "text": "Gervane Kastaneer (Curaçao) is shown the yellow card for a bad foul.",
+   "players": [
+    "Gervane Kastaneer"
+   ]
+  },
+  {
+   "type": "End Regular Time",
+   "minute": "90'+6'",
+   "team": null,
+   "text": "",
+   "players": []
+  }
+ ],
+ "shots": [
+  {
+   "minute": "3",
+   "seconds": 123.0,
+   "team": "Ecuador",
+   "player": "Enner Valencia",
+   "type": "Shot On Target",
+   "x": 89.0,
+   "y": 55.0,
+   "goal": false,
+   "xg": 0.322,
+   "text": "Attempt saved. Enner Valencia (Ecuador) right footed shot from the centre of the box is saved in the bottom right corner by Eloy Room (Curaçao). Assisted by Moisés Caicedo with a through ball."
+  },
+  {
+   "minute": "8",
+   "seconds": 479.0,
+   "team": "Curaçao",
+   "player": "Sherel Floranus",
+   "type": "Shot Off Target",
+   "x": 86.2,
+   "y": 70.0,
+   "goal": false,
+   "xg": 0.12,
+   "text": "Attempt missed. Sherel Floranus (Curaçao) right footed shot from the left side of the box misses to the left. Assisted by Juninho Bacuna following a fast break."
+  },
+  {
+   "minute": "12",
+   "seconds": 714.0,
+   "team": "Ecuador",
+   "player": "John Yeboah",
+   "type": "Shot On Target",
+   "x": 85.5,
+   "y": 35.2,
+   "goal": false,
+   "xg": 0.15,
+   "text": "Attempt saved. John Yeboah (Ecuador) left footed shot from the right side of the box is saved in the centre of the goal by Eloy Room (Curaçao). Assisted by Pedro Vite."
+  },
+  {
+   "minute": "14",
+   "seconds": 806.0,
+   "team": "Ecuador",
+   "player": "Pedro Vite",
+   "type": "Shot Off Target",
+   "x": 87.0,
+   "y": 36.5,
+   "goal": false,
+   "xg": 0.18,
+   "text": "Attempt missed. Pedro Vite (Ecuador) left footed shot from the right side of the box is close, but misses to the left. Assisted by John Yeboah."
+  },
+  {
+   "minute": "16",
+   "seconds": 944.0,
+   "team": "Ecuador",
+   "player": "Gonzalo Plata",
+   "type": "Shot On Target",
+   "x": 75.0,
+   "y": 36.6,
+   "goal": false,
+   "xg": 0.067,
+   "text": "Attempt saved. Gonzalo Plata (Ecuador) left footed shot from outside the box is saved in the centre of the goal by Eloy Room (Curaçao). Assisted by Moisés Caicedo."
+  },
+  {
+   "minute": "18",
+   "seconds": 1052.0,
+   "team": "Curaçao",
+   "player": "Livano Comenencia",
+   "type": "Shot Off Target",
+   "x": 77.3,
+   "y": 31.9,
+   "goal": false,
+   "xg": 0.07,
+   "text": "Attempt missed. Livano Comenencia (Curaçao) right footed shot from outside the box misses to the left. Assisted by Juriën Gaari."
+  },
+  {
+   "minute": "20",
+   "seconds": 1161.0,
+   "team": "Ecuador",
+   "player": "Enner Valencia",
+   "type": "Shot On Target",
+   "x": 92.3,
+   "y": 52.0,
+   "goal": false,
+   "xg": 0.529,
+   "text": "Attempt saved. Enner Valencia (Ecuador) right footed shot from the centre of the box is saved in the centre of the goal by Eloy Room (Curaçao)."
+  },
+  {
+   "minute": "22",
+   "seconds": 1280.0,
+   "team": "Ecuador",
+   "player": "Jordy Alcívar",
+   "type": "Shot Blocked",
+   "x": 83.4,
+   "y": 49.5,
+   "goal": false,
+   "xg": 0.183,
+   "text": "Attempt missed. Jordy Alcívar (Ecuador) right footed shot from the centre of the box misses to the right. Assisted by Piero Hincapié with a headed pass."
+  },
+  {
+   "minute": "28",
+   "seconds": 1656.0,
+   "team": "Ecuador",
+   "player": "Gonzalo Plata",
+   "type": "Shot On Target",
+   "x": 80.6,
+   "y": 51.1,
+   "goal": false,
+   "xg": 0.136,
+   "text": "Attempt saved. Gonzalo Plata (Ecuador) right footed shot from outside the box is saved in the centre of the goal by Eloy Room (Curaçao). Assisted by John Yeboah."
+  },
+  {
+   "minute": "29",
+   "seconds": 1740.0,
+   "team": "Curaçao",
+   "player": "Juninho Bacuna",
+   "type": "Shot Blocked",
+   "x": 71.7,
+   "y": 59.9,
+   "goal": false,
+   "xg": 0.054,
+   "text": "Attempt blocked. Juninho Bacuna (Curaçao) left footed shot from outside the box is blocked. Assisted by Joshua Brenet."
+  },
+  {
+   "minute": "33",
+   "seconds": 1929.0,
+   "team": "Curaçao",
+   "player": "Juninho Bacuna",
+   "type": "Shot Blocked",
+   "x": 85.8,
+   "y": 60.8,
+   "goal": false,
+   "xg": 0.185,
+   "text": "Attempt blocked. Juninho Bacuna (Curaçao) right footed shot from the centre of the box is blocked. Assisted by Deveron Fonville."
+  },
+  {
+   "minute": "42",
+   "seconds": 2463.0,
+   "team": "Ecuador",
+   "player": "John Yeboah",
+   "type": "Shot On Target",
+   "x": 85.3,
+   "y": 62.4,
+   "goal": false,
+   "xg": 0.166,
+   "text": "Attempt saved. John Yeboah (Ecuador) left footed shot from the centre of the box is saved in the bottom right corner by Eloy Room (Curaçao). Assisted by Pervis Estupiñán."
+  },
+  {
+   "minute": "45'+2",
+   "seconds": 2700.0,
+   "team": "Curaçao",
+   "player": "Livano Comenencia",
+   "type": "Shot Off Target",
+   "x": 71.3,
+   "y": 50.1,
+   "goal": false,
+   "xg": 0.056,
+   "text": "Attempt missed. Livano Comenencia (Curaçao) left footed shot from outside the box is close, but misses to the right. Assisted by Tahith Chong."
+  },
+  {
+   "minute": "50",
+   "seconds": 2968.0,
+   "team": "Ecuador",
+   "player": "Moisés Caicedo",
+   "type": "Shot On Target",
+   "x": 73.7,
+   "y": 49.7,
+   "goal": false,
+   "xg": 0.07,
+   "text": "Attempt saved. Moisés Caicedo (Ecuador) right footed shot from outside the box is saved in the bottom left corner by Eloy Room (Curaçao). Assisted by Gonzalo Plata."
+  },
+  {
+   "minute": "50",
+   "seconds": 2995.0,
+   "team": "Ecuador",
+   "player": "Gonzalo Plata",
+   "type": "Shot Off Target",
+   "x": 71.2,
+   "y": 55.4,
+   "goal": false,
+   "xg": 0.054,
+   "text": "Attempt missed. Gonzalo Plata (Ecuador) left footed shot from outside the box is high and wide to the left. Assisted by Pedro Vite."
+  },
+  {
+   "minute": "54",
+   "seconds": 3221.0,
+   "team": "Ecuador",
+   "player": "Gonzalo Plata",
+   "type": "Shot Off Target",
+   "x": 97.5,
+   "y": 30.8,
+   "goal": false,
+   "xg": 0.137,
+   "text": "Attempt missed. Gonzalo Plata (Ecuador) right footed shot from a difficult angle on the right is close, but misses the top right corner. Assisted by Kevin Rodríguez following a set piece situation."
+  },
+  {
+   "minute": "57",
+   "seconds": 3394.0,
+   "team": "Curaçao",
+   "player": "Leandro Bacuna",
+   "type": "Shot Off Target",
+   "x": 77.2,
+   "y": 59.9,
+   "goal": false,
+   "xg": 0.087,
+   "text": "Attempt missed. Leandro Bacuna (Curaçao) right footed shot from outside the box misses to the right. Assisted by Tahith Chong following a fast break."
+  },
+  {
+   "minute": "59",
+   "seconds": 3506.0,
+   "team": "Ecuador",
+   "player": "Piero Hincapié",
+   "type": "Shot Off Target",
+   "x": 96.2,
+   "y": 42.9,
+   "goal": false,
+   "xg": 0.372,
+   "text": "Attempt missed. Piero Hincapié (Ecuador) header from the right side of the six yard box misses to the left. Assisted by Moisés Caicedo with a cross following a corner."
+  },
+  {
+   "minute": "59",
+   "seconds": 3508.0,
+   "team": "Ecuador",
+   "player": "Gonzalo Plata",
+   "type": "Shot On Target",
+   "x": 94.9,
+   "y": 50.2,
+   "goal": false,
+   "xg": 0.492,
+   "text": "Attempt saved. Gonzalo Plata (Ecuador) header from very close range is saved in the bottom right corner by Eloy Room (Curaçao). Assisted by Piero Hincapié."
+  },
+  {
+   "minute": "60",
+   "seconds": 3549.0,
+   "team": "Curaçao",
+   "player": "Leandro Bacuna",
+   "type": "Shot On Target",
+   "x": 80.0,
+   "y": 64.8,
+   "goal": false,
+   "xg": 0.098,
+   "text": "Attempt saved. Leandro Bacuna (Curaçao) right footed shot from outside the box is saved in the bottom left corner by Hernán Galíndez (Ecuador). Assisted by Juninho Bacuna."
+  },
+  {
+   "minute": "60",
+   "seconds": 3556.0,
+   "team": "Curaçao",
+   "player": "Livano Comenencia",
+   "type": "Shot On Target",
+   "x": 84.6,
+   "y": 46.0,
+   "goal": false,
+   "xg": 0.202,
+   "text": "Attempt saved. Livano Comenencia (Curaçao) right footed shot from the centre of the box is saved in the bottom right corner by Hernán Galíndez (Ecuador). Assisted by Juninho Bacuna."
+  },
+  {
+   "minute": "60",
+   "seconds": 3559.0,
+   "team": "Curaçao",
+   "player": "Jürgen Locadia",
+   "type": "Shot Blocked",
+   "x": 91.8,
+   "y": 31.9,
+   "goal": false,
+   "xg": 0.169,
+   "text": "Attempt blocked. Jürgen Locadia (Curaçao) right footed shot from the right side of the box is blocked."
+  },
+  {
+   "minute": "61",
+   "seconds": 3649.0,
+   "team": "Ecuador",
+   "player": "Enner Valencia",
+   "type": "Shot On Target",
+   "x": 84.2,
+   "y": 67.9,
+   "goal": false,
+   "xg": 0.118,
+   "text": "Attempt saved. Enner Valencia (Ecuador) right footed shot from the left side of the box is saved in the bottom left corner by Eloy Room (Curaçao). Assisted by Pedro Vite."
+  },
+  {
+   "minute": "62",
+   "seconds": 3718.0,
+   "team": "Ecuador",
+   "player": "Kevin Rodríguez",
+   "type": "Shot Off Target",
+   "x": 91.5,
+   "y": 72.7,
+   "goal": false,
+   "xg": 0.122,
+   "text": "Attempt missed. Kevin Rodríguez (Ecuador) left footed shot from the left side of the box is close, but misses to the left. Assisted by Gonzalo Plata following a fast break."
+  },
+  {
+   "minute": "64",
+   "seconds": 3824.0,
+   "team": "Ecuador",
+   "player": "Kevin Rodríguez",
+   "type": "Shot Off Target",
+   "x": 92.6,
+   "y": 44.8,
+   "goal": false,
+   "xg": 0.315,
+   "text": "Attempt missed. Kevin Rodríguez (Ecuador) header from the centre of the box misses to the left. Assisted by Gonzalo Plata with a cross following a corner."
+  },
+  {
+   "minute": "65",
+   "seconds": 3890.0,
+   "team": "Ecuador",
+   "player": "Enner Valencia",
+   "type": "Shot On Target",
+   "x": 95.3,
+   "y": 59.7,
+   "goal": false,
+   "xg": 0.256,
+   "text": "Attempt saved. Enner Valencia (Ecuador) header from the left side of the six yard box is saved in the bottom left corner by Eloy Room (Curaçao). Assisted by John Yeboah with a cross."
+  },
+  {
+   "minute": "66",
+   "seconds": 3928.0,
+   "team": "Ecuador",
+   "player": "Kevin Rodríguez",
+   "type": "Shot On Target",
+   "x": 94.4,
+   "y": 50.7,
+   "goal": false,
+   "xg": 0.462,
+   "text": "Attempt saved. Kevin Rodríguez (Ecuador) header from very close range is saved in the centre of the goal by Eloy Room (Curaçao). Assisted by Moisés Caicedo with a cross."
+  },
+  {
+   "minute": "66",
+   "seconds": 3930.0,
+   "team": "Ecuador",
+   "player": "Enner Valencia",
+   "type": "Shot Blocked",
+   "x": 97.1,
+   "y": 52.3,
+   "goal": false,
+   "xg": 0.906,
+   "text": "Attempt blocked. Enner Valencia (Ecuador) right footed shot from very close range is blocked."
+  },
+  {
+   "minute": "66",
+   "seconds": 3931.0,
+   "team": "Ecuador",
+   "player": "Willian Pacho",
+   "type": "Shot On Target",
+   "x": 93.0,
+   "y": 53.6,
+   "goal": false,
+   "xg": 0.358,
+   "text": "Attempt saved. Willian Pacho (Ecuador) header from the centre of the box is saved in the centre of the goal by Eloy Room (Curaçao)."
+  },
+  {
+   "minute": "67",
+   "seconds": 3997.0,
+   "team": "Ecuador",
+   "player": "Kevin Rodríguez",
+   "type": "Shot Off Target",
+   "x": 84.0,
+   "y": 50.2,
+   "goal": false,
+   "xg": 0.195,
+   "text": "Attempt missed. Kevin Rodríguez (Ecuador) right footed shot from the centre of the box misses to the right. Assisted by Pedro Vite with a cross."
+  },
+  {
+   "minute": "72",
+   "seconds": 4318.0,
+   "team": "Ecuador",
+   "player": "Nilson Angulo",
+   "type": "Shot On Target",
+   "x": 74.3,
+   "y": 74.2,
+   "goal": false,
+   "xg": 0.046,
+   "text": "Attempt saved. Nilson Angulo (Ecuador) right footed shot from outside the box is saved in the bottom left corner by Eloy Room (Curaçao). Assisted by Kevin Rodríguez."
+  },
+  {
+   "minute": "73",
+   "seconds": 4341.0,
+   "team": "Ecuador",
+   "player": "John Yeboah",
+   "type": "Shot Blocked",
+   "x": 88.9,
+   "y": 34.3,
+   "goal": false,
+   "xg": 0.179,
+   "text": "Attempt blocked. John Yeboah (Ecuador) right footed shot from the right side of the box is blocked. Assisted by Pedro Vite."
+  },
+  {
+   "minute": "74",
+   "seconds": 4402.0,
+   "team": "Ecuador",
+   "player": "Piero Hincapié",
+   "type": "Shot Off Target",
+   "x": 94.5,
+   "y": 50.1,
+   "goal": false,
+   "xg": 0.469,
+   "text": "Attempt missed. Piero Hincapié (Ecuador) header from very close range is too high. Assisted by John Yeboah with a cross following a corner."
+  },
+  {
+   "minute": "74",
+   "seconds": 4438.0,
+   "team": "Curaçao",
+   "player": "Juninho Bacuna",
+   "type": "Shot On Target",
+   "x": 80.1,
+   "y": 58.7,
+   "goal": false,
+   "xg": 0.117,
+   "text": "Attempt saved. Juninho Bacuna (Curaçao) left footed shot from outside the box is saved in the top centre of the goal by Hernán Galíndez (Ecuador). Assisted by Leandro Bacuna."
+  },
+  {
+   "minute": "77",
+   "seconds": 4612.0,
+   "team": "Ecuador",
+   "player": "Enner Valencia",
+   "type": "Shot On Target",
+   "x": 87.4,
+   "y": 50.9,
+   "goal": false,
+   "xg": 0.187,
+   "text": "Attempt saved. Enner Valencia (Ecuador) header from the centre of the box is saved in the top centre of the goal by Eloy Room (Curaçao). Assisted by Pedro Vite with a cross."
+  },
+  {
+   "minute": "80",
+   "seconds": 4742.0,
+   "team": "Ecuador",
+   "player": "Pedro Vite",
+   "type": "Shot On Target",
+   "x": 77.2,
+   "y": 69.7,
+   "goal": false,
+   "xg": 0.066,
+   "text": "Attempt saved. Pedro Vite (Ecuador) left footed shot from outside the box is saved in the top left corner by Eloy Room (Curaçao). Assisted by Kevin Rodríguez."
+  },
+  {
+   "minute": "84",
+   "seconds": 5030.0,
+   "team": "Ecuador",
+   "player": "Enner Valencia",
+   "type": "Shot Off Target",
+   "x": 91.9,
+   "y": 63.2,
+   "goal": false,
+   "xg": 0.249,
+   "text": "Attempt missed. Enner Valencia (Ecuador) right footed shot from the left side of the box misses to the left."
+  }
+ ],
+ "lineups": [
+  {
+   "team": "Ecuador",
+   "formation": "3-1-4-2",
+   "starters": [
+    {
+     "name": "Hernán Galíndez",
+     "jersey": "1",
+     "position": "G"
+    },
+    {
+     "name": "Willian Pacho",
+     "jersey": "6",
+     "position": "CD"
+    },
+    {
+     "name": "Piero Hincapié",
+     "jersey": "3",
+     "position": "CD-L"
+    },
+    {
+     "name": "Alan Franco",
+     "jersey": "21",
+     "position": "CD-R"
+    },
+    {
+     "name": "Jordy Alcívar",
+     "jersey": "5",
+     "position": "SW"
+    },
+    {
+     "name": "Moisés Caicedo",
+     "jersey": "23",
+     "position": "CM-L"
+    },
+    {
+     "name": "Pedro Vite",
+     "jersey": "15",
+     "position": "CM-R"
+    },
+    {
+     "name": "Pervis Estupiñán",
+     "jersey": "7",
+     "position": "LM"
+    },
+    {
+     "name": "John Yeboah",
+     "jersey": "9",
+     "position": "RM"
+    },
+    {
+     "name": "Enner Valencia",
+     "jersey": "13",
+     "position": "CF-L"
+    },
+    {
+     "name": "Gonzalo Plata",
+     "jersey": "19",
+     "position": "CF-R"
+    }
+   ],
+   "subs": [
+    {
+     "name": "Jeremy Arévalo",
+     "jersey": "24",
+     "position": null
+    },
+    {
+     "name": "Anthony Valencia",
+     "jersey": "8",
+     "position": null
+    },
+    {
+     "name": "Jackson Porozo",
+     "jersey": "25",
+     "position": null
+    },
+    {
+     "name": "Kevin Rodríguez",
+     "jersey": "11",
+     "position": null
+    },
+    {
+     "name": "Yaimar Medina",
+     "jersey": "26",
+     "position": null
+    },
+    {
+     "name": "Jordy Caicedo",
+     "jersey": "16",
+     "position": null
+    },
+    {
+     "name": "Alan Minda",
+     "jersey": "14",
+     "position": null
+    },
+    {
+     "name": "Félix Torres",
+     "jersey": "2",
+     "position": null
+    },
+    {
+     "name": "Joel Ordóñez",
+     "jersey": "4",
+     "position": null
+    },
+    {
+     "name": "Nilson Angulo",
+     "jersey": "20",
+     "position": null
+    },
+    {
+     "name": "Gonzalo Valle",
+     "jersey": "22",
+     "position": null
+    },
+    {
+     "name": "Ángelo Preciado",
+     "jersey": "17",
+     "position": null
+    },
+    {
+     "name": "Denil Castillo",
+     "jersey": "18",
+     "position": null
+    },
+    {
+     "name": "Moisés Ramírez",
+     "jersey": "12",
+     "position": null
+    },
+    {
+     "name": "Kendry Páez",
+     "jersey": "10",
+     "position": null
+    }
+   ]
+  },
+  {
+   "team": "Curaçao",
+   "formation": "5-4-1",
+   "starters": [
+    {
+     "name": "Eloy Room",
+     "jersey": "1",
+     "position": "G"
+    },
+    {
+     "name": "Armando Obispo",
+     "jersey": "18",
+     "position": "CD"
+    },
+    {
+     "name": "Sherel Floranus",
+     "jersey": "5",
+     "position": "CD-L"
+    },
+    {
+     "name": "Juriën Gaari",
+     "jersey": "3",
+     "position": "CD-R"
+    },
+    {
+     "name": "Deveron Fonville",
+     "jersey": "24",
+     "position": "LB"
+    },
+    {
+     "name": "Joshua Brenet",
+     "jersey": "20",
+     "position": "RB"
+    },
+    {
+     "name": "Leandro Bacuna",
+     "jersey": "10",
+     "position": "CM-L"
+    },
+    {
+     "name": "Livano Comenencia",
+     "jersey": "8",
+     "position": "CM-R"
+    },
+    {
+     "name": "Juninho Bacuna",
+     "jersey": "7",
+     "position": "LM"
+    },
+    {
+     "name": "Tahith Chong",
+     "jersey": "21",
+     "position": "RM"
+    },
+    {
+     "name": "Jürgen Locadia",
+     "jersey": "9",
+     "position": "F"
+    }
+   ],
+   "subs": [
+    {
+     "name": "Trevor Doornbusch",
+     "jersey": "26",
+     "position": "SUB"
+    },
+    {
+     "name": "Shurandy Sambo",
+     "jersey": "2",
+     "position": "SUB"
+    },
+    {
+     "name": "Kenji Gorré",
+     "jersey": "14",
+     "position": "SUB"
+    },
+    {
+     "name": "Riechedly Bazoer",
+     "jersey": "23",
+     "position": "SUB"
+    },
+    {
+     "name": "Jeremy Antonisse",
+     "jersey": "11",
+     "position": "SUB"
+    },
+    {
+     "name": "Ar'jany Martha",
+     "jersey": "15",
+     "position": "SUB"
+    },
+    {
+     "name": "Jearl Margaritha",
+     "jersey": "16",
+     "position": "SUB"
+    },
+    {
+     "name": "Kevin Felida",
+     "jersey": "22",
+     "position": "SUB"
+    },
+    {
+     "name": "Tyrese Noslin",
+     "jersey": "13",
+     "position": "SUB"
+    },
+    {
+     "name": "Brandley Kuwas",
+     "jersey": "17",
+     "position": "SUB"
+    },
+    {
+     "name": "Godfried Roemeratoe",
+     "jersey": "6",
+     "position": "SUB"
+    },
+    {
+     "name": "Roshon van Eijma",
+     "jersey": "4",
+     "position": "SUB"
+    },
+    {
+     "name": "Gervane Kastaneer",
+     "jersey": "19",
+     "position": "SUB"
+    },
+    {
+     "name": "Tyrick Bodak",
+     "jersey": "25",
+     "position": "SUB"
+    },
+    {
+     "name": "Sontje Hansen",
+     "jersey": "12",
+     "position": "SUB"
+    }
+   ]
+  }
+ ],
+ "attendance": 68598,
+ "venue": "GEHA Field at Arrowhead Stadium, Kansas City, Missouri, USA"
+}

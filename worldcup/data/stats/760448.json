@@ -1,0 +1,941 @@
+{
+ "teams": [
+  {
+   "name": "Germany",
+   "stats": {
+    "possessionPct": "59.5",
+    "totalShots": "16",
+    "shotsOnTarget": "7",
+    "wonCorners": "8",
+    "foulsCommitted": "5",
+    "offsides": "0",
+    "saves": "1",
+    "yellowCards": "0",
+    "redCards": "0"
+   }
+  },
+  {
+   "name": "Ivory Coast",
+   "stats": {
+    "possessionPct": "40.5",
+    "totalShots": "9",
+    "shotsOnTarget": "2",
+    "wonCorners": "3",
+    "foulsCommitted": "7",
+    "offsides": "1",
+    "saves": "5",
+    "yellowCards": "0",
+    "redCards": "0"
+   }
+  }
+ ],
+ "events": [
+  {
+   "type": "Kickoff",
+   "minute": "",
+   "team": null,
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "14'",
+   "team": "Germany",
+   "text": "Delay in match because of an injury Nico Schlotterbeck (Germany).",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "14'",
+   "team": "Ivory Coast",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "15'",
+   "team": "Germany",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "15'",
+   "team": "Ivory Coast",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "22'",
+   "team": "Ivory Coast",
+   "text": "Delay in match because of an injury Yahia Fofana (Côte d'Ivoire).",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "22'",
+   "team": "Germany",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "23'",
+   "team": "Ivory Coast",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "23'",
+   "team": "Germany",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "25'",
+   "team": "Germany",
+   "text": "Delay in match for a drinks break.",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "25'",
+   "team": "Ivory Coast",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "28'",
+   "team": "Germany",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "28'",
+   "team": "Ivory Coast",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Goal",
+   "minute": "30'",
+   "team": "Ivory Coast",
+   "text": "Goal! Germany 0, Côte d'Ivoire 1. Franck Kessie (Côte d'Ivoire) right footed shot from the centre of the box to the bottom left corner.",
+   "players": [
+    "Franck Kessié"
+   ]
+  },
+  {
+   "type": "Halftime",
+   "minute": "45'+8'",
+   "team": null,
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Substitution",
+   "minute": "45'",
+   "team": "Germany",
+   "text": "Substitution, Germany. Antonio Rüdiger replaces Nico Schlotterbeck because of an injury.",
+   "players": [
+    "Antonio Rüdiger",
+    "Nico Schlotterbeck"
+   ]
+  },
+  {
+   "type": "Start 2nd Half",
+   "minute": "45'",
+   "team": null,
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Substitution",
+   "minute": "60'",
+   "team": "Germany",
+   "text": "Substitution, Germany. Jamie Leweling replaces Leroy Sané.",
+   "players": [
+    "Jamie Leweling",
+    "Leroy Sané"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "60'",
+   "team": "Germany",
+   "text": "Substitution, Germany. Deniz Undav replaces Jamal Musiala.",
+   "players": [
+    "Deniz Undav",
+    "Jamal Musiala"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "60'",
+   "team": "Germany",
+   "text": "Substitution, Germany. Nadiem Amiri replaces Aleksandar Pavlovic.",
+   "players": [
+    "Nadiem Amiri",
+    "Aleksandar Pavlovic"
+   ]
+  },
+  {
+   "type": "Goal - Volley",
+   "minute": "68'",
+   "team": "Germany",
+   "text": "Goal! Germany 1, Côte d'Ivoire 1. Deniz Undav (Germany) left footed shot from very close range to the high centre of the goal. Assisted by Nadiem Amiri with a cross.",
+   "players": [
+    "Deniz Undav",
+    "Nadiem Amiri"
+   ]
+  },
+  {
+   "type": "Start Delay",
+   "minute": "71'",
+   "team": "Germany",
+   "text": "Delay in match for a drinks break.",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "71'",
+   "team": "Ivory Coast",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "75'",
+   "team": "Germany",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "75'",
+   "team": "Ivory Coast",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Substitution",
+   "minute": "75'",
+   "team": "Ivory Coast",
+   "text": "Substitution, Côte d'Ivoire. Evann Guessand replaces Ange-Yoan Bonny.",
+   "players": [
+    "Evann Guessand",
+    "Ange-Yoan Bonny"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "75'",
+   "team": "Ivory Coast",
+   "text": "Substitution, Côte d'Ivoire. Seko Fofana replaces Ibrahim Sangaré.",
+   "players": [
+    "Seko Fofana",
+    "Ibrahim Sangaré"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "75'",
+   "team": "Ivory Coast",
+   "text": "Substitution, Côte d'Ivoire. Simon Adingra replaces Amad Diallo.",
+   "players": [
+    "Simon Adingra",
+    "Amad Diallo"
+   ]
+  },
+  {
+   "type": "Start Delay",
+   "minute": "80'",
+   "team": "Ivory Coast",
+   "text": "Delay in match because of an injury Wilfried Singo (Côte d'Ivoire).",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "80'",
+   "team": "Germany",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "81'",
+   "team": "Ivory Coast",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "81'",
+   "team": "Germany",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "81'",
+   "team": "Germany",
+   "text": "Delay in match (Germany).",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "81'",
+   "team": "Ivory Coast",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "81'",
+   "team": "Germany",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "81'",
+   "team": "Ivory Coast",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Substitution",
+   "minute": "82'",
+   "team": "Ivory Coast",
+   "text": "Substitution, Côte d'Ivoire. Guéla Doué replaces Wilfried Singo because of an injury.",
+   "players": [
+    "Guela Doué",
+    "Wilfried Singo"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "85'",
+   "team": "Ivory Coast",
+   "text": "Substitution, Côte d'Ivoire. Nicolas Pépé replaces Yan Diomande.",
+   "players": [
+    "Nicolas Pépé",
+    "Yan Diomande"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "85'",
+   "team": "Germany",
+   "text": "Substitution, Germany. Leon Goretzka replaces Kai Havertz.",
+   "players": [
+    "Leon Goretzka",
+    "Kai Havertz"
+   ]
+  },
+  {
+   "type": "Goal",
+   "minute": "90'+4'",
+   "team": "Germany",
+   "text": "Goal! Germany 2, Côte d'Ivoire 1. Deniz Undav (Germany) left footed shot from the centre of the box to the bottom left corner. Assisted by Felix Nmecha with a through ball.",
+   "players": [
+    "Deniz Undav",
+    "Felix Nmecha"
+   ]
+  },
+  {
+   "type": "End Regular Time",
+   "minute": "90'+8'",
+   "team": null,
+   "text": "",
+   "players": []
+  }
+ ],
+ "shots": [
+  {
+   "minute": "1",
+   "seconds": 12.0,
+   "team": "Germany",
+   "player": "Kai Havertz",
+   "type": "Shot Off Target",
+   "x": 85.6,
+   "y": 49.1,
+   "goal": false,
+   "xg": 0.233,
+   "text": "Attempt missed. Kai Havertz (Germany) left footed shot from the centre of the box is too high. Assisted by Florian Wirtz."
+  },
+  {
+   "minute": "10",
+   "seconds": 551.0,
+   "team": "Germany",
+   "player": "Kai Havertz",
+   "type": "Shot On Target",
+   "x": 89.9,
+   "y": 48.5,
+   "goal": false,
+   "xg": 0.253,
+   "text": "Attempt saved. Kai Havertz (Germany) header from the centre of the box is saved in the bottom left corner by Yahia Fofana (Côte d'Ivoire). Assisted by Joshua Kimmich with a cross."
+  },
+  {
+   "minute": "12",
+   "seconds": 681.0,
+   "team": "Ivory Coast",
+   "player": "Wilfried Singo",
+   "type": "Shot Blocked",
+   "x": 84.9,
+   "y": 41.2,
+   "goal": false,
+   "xg": 0.184,
+   "text": "Attempt blocked. Wilfried Singo (Côte d'Ivoire) left footed shot from the centre of the box is blocked."
+  },
+  {
+   "minute": "18",
+   "seconds": 1032.0,
+   "team": "Germany",
+   "player": "Jamal Musiala",
+   "type": "Shot Off Target",
+   "x": 79.9,
+   "y": 62.2,
+   "goal": false,
+   "xg": 0.105,
+   "text": "Attempt missed. Jamal Musiala (Germany) right footed shot from outside the box misses to the right. Assisted by Aleksandar Pavlovic."
+  },
+  {
+   "minute": "21",
+   "seconds": 1214.0,
+   "team": "Germany",
+   "player": "Felix Nmecha",
+   "type": "Shot Blocked",
+   "x": 76.3,
+   "y": 41.3,
+   "goal": false,
+   "xg": 0.082,
+   "text": "Attempt blocked. Felix Nmecha (Germany) right footed shot from outside the box is blocked. Assisted by Nico Schlotterbeck."
+  },
+  {
+   "minute": "30",
+   "seconds": 1741.0,
+   "team": "Ivory Coast",
+   "player": "Amad Diallo",
+   "type": "Shot Blocked",
+   "x": 96.1,
+   "y": 46.7,
+   "goal": false,
+   "xg": 0.803,
+   "text": "Attempt blocked. Amad Diallo (Côte d'Ivoire) left footed shot from very close range is blocked. Assisted by Yan Diomande with a cross."
+  },
+  {
+   "minute": "30",
+   "seconds": 1743.0,
+   "team": "Ivory Coast",
+   "player": "Franck Kessie",
+   "type": "Goal",
+   "x": 93.1,
+   "y": 44.9,
+   "goal": true,
+   "xg": 0.516,
+   "text": "Goal! Germany 0, Côte d'Ivoire 1. Franck Kessie (Côte d'Ivoire) right footed shot from the centre of the box to the bottom left corner."
+  },
+  {
+   "minute": "38",
+   "seconds": 2236.0,
+   "team": "Ivory Coast",
+   "player": "Ange-Yoan Bonny",
+   "type": "Shot On Target",
+   "x": 81.9,
+   "y": 67.3,
+   "goal": false,
+   "xg": 0.103,
+   "text": "Attempt saved. Ange-Yoan Bonny (Côte d'Ivoire) right footed shot from outside the box is saved in the top right corner by Manuel Neuer (Germany). Assisted by Yan Diomande."
+  },
+  {
+   "minute": "41",
+   "seconds": 2434.0,
+   "team": "Germany",
+   "player": "Florian Wirtz",
+   "type": "Shot Blocked",
+   "x": 85.3,
+   "y": 44.4,
+   "goal": false,
+   "xg": 0.21,
+   "text": "Attempt blocked. Florian Wirtz (Germany) right footed shot from the centre of the box is blocked. Assisted by Jamal Musiala."
+  },
+  {
+   "minute": "42",
+   "seconds": 2476.0,
+   "team": "Germany",
+   "player": "Jamal Musiala",
+   "type": "Shot Blocked",
+   "x": 79.6,
+   "y": 64.8,
+   "goal": false,
+   "xg": 0.094,
+   "text": "Attempt blocked. Jamal Musiala (Germany) left footed shot from outside the box is blocked."
+  },
+  {
+   "minute": "45'+2",
+   "seconds": 2700.0,
+   "team": "Germany",
+   "player": "Felix Nmecha",
+   "type": "Shot Blocked",
+   "x": 72.2,
+   "y": 47.7,
+   "goal": false,
+   "xg": 0.06,
+   "text": "Attempt blocked. Felix Nmecha (Germany) right footed shot from outside the box is blocked."
+  },
+  {
+   "minute": "45'+7",
+   "seconds": 2700.0,
+   "team": "Germany",
+   "player": "Florian Wirtz",
+   "type": "Shot On Target",
+   "x": 89.8,
+   "y": 46.0,
+   "goal": false,
+   "xg": 0.365,
+   "text": "Attempt saved. Florian Wirtz (Germany) right footed shot from the centre of the box is saved in the centre of the goal by Yahia Fofana (Côte d'Ivoire). Assisted by Felix Nmecha."
+  },
+  {
+   "minute": "46",
+   "seconds": 2750.0,
+   "team": "Ivory Coast",
+   "player": "Ghislain Konan",
+   "type": "Shot Blocked",
+   "x": 79.9,
+   "y": 74.0,
+   "goal": false,
+   "xg": 0.068,
+   "text": "Attempt blocked. Ghislain Konan (Côte d'Ivoire) left footed shot from outside the box is blocked. Assisted by Christ Inao Oulaï."
+  },
+  {
+   "minute": "50",
+   "seconds": 2994.0,
+   "team": "Ivory Coast",
+   "player": "Franck Kessie",
+   "type": "Shot Blocked",
+   "x": 87.5,
+   "y": 43.0,
+   "goal": false,
+   "xg": 0.254,
+   "text": "Attempt blocked. Franck Kessie (Côte d'Ivoire) right footed shot from the centre of the box is blocked. Assisted by Amad Diallo."
+  },
+  {
+   "minute": "51",
+   "seconds": 3049.0,
+   "team": "Ivory Coast",
+   "player": "Christ Inao Oulaï",
+   "type": "Shot Off Target",
+   "x": 85.9,
+   "y": 41.9,
+   "goal": false,
+   "xg": 0.208,
+   "text": "Attempt missed. Christ Inao Oulaï (Côte d'Ivoire) right footed shot from the centre of the box is too high. Assisted by Amad Diallo following a fast break."
+  },
+  {
+   "minute": "56",
+   "seconds": 3341.0,
+   "team": "Ivory Coast",
+   "player": "Yan Diomande",
+   "type": "Shot Off Target",
+   "x": 83.7,
+   "y": 42.1,
+   "goal": false,
+   "xg": 0.168,
+   "text": "Attempt missed. Yan Diomande (Côte d'Ivoire) right footed shot from the centre of the box misses to the left."
+  },
+  {
+   "minute": "57",
+   "seconds": 3408.0,
+   "team": "Germany",
+   "player": "Antonio Rüdiger",
+   "type": "Shot Off Target",
+   "x": 66.9,
+   "y": 50.5,
+   "goal": false,
+   "xg": 0.038,
+   "text": "Attempt missed. Antonio Rüdiger (Germany) right footed shot from more than 35 yards is high and wide to the left. Assisted by Jonathan Tah."
+  },
+  {
+   "minute": "61",
+   "seconds": 3645.0,
+   "team": "Germany",
+   "player": "Jamie Leweling",
+   "type": "Shot Off Target",
+   "x": 76.0,
+   "y": 45.7,
+   "goal": false,
+   "xg": 0.085,
+   "text": "Attempt missed. Jamie Leweling (Germany) left footed shot from outside the box is high and wide to the left. Assisted by Deniz Undav."
+  },
+  {
+   "minute": "63",
+   "seconds": 3776.0,
+   "team": "Germany",
+   "player": "Kai Havertz",
+   "type": "Shot Off Target",
+   "x": 96.4,
+   "y": 39.5,
+   "goal": false,
+   "xg": 0.226,
+   "text": "Attempt missed. Kai Havertz (Germany) header from the right side of the six yard box is close, but misses to the right. Assisted by Joshua Kimmich with a cross following a corner."
+  },
+  {
+   "minute": "68",
+   "seconds": 4058.0,
+   "team": "Germany",
+   "player": "Deniz Undav",
+   "type": "Goal - Volley",
+   "x": 94.9,
+   "y": 52.1,
+   "goal": true,
+   "xg": 0.736,
+   "text": "Goal! Germany 1, Côte d'Ivoire 1. Deniz Undav (Germany) left footed shot from very close range to the high centre of the goal. Assisted by Nadiem Amiri with a cross."
+  },
+  {
+   "minute": "84",
+   "seconds": 5017.0,
+   "team": "Ivory Coast",
+   "player": "Seko Fofana",
+   "type": "Shot Blocked",
+   "x": 80.9,
+   "y": 70.9,
+   "goal": false,
+   "xg": 0.083,
+   "text": "Attempt blocked. Seko Fofana (Côte d'Ivoire) right footed shot from outside the box is blocked. Assisted by Simon Adingra."
+  },
+  {
+   "minute": "86",
+   "seconds": 5129.0,
+   "team": "Germany",
+   "player": "Deniz Undav",
+   "type": "Shot On Target",
+   "x": 73.9,
+   "y": 29.5,
+   "goal": false,
+   "xg": 0.05,
+   "text": "Attempt saved. Deniz Undav (Germany) right footed shot from outside the box is saved in the top right corner by Yahia Fofana (Côte d'Ivoire). Assisted by Joshua Kimmich with a headed pass."
+  },
+  {
+   "minute": "89",
+   "seconds": 5304.0,
+   "team": "Germany",
+   "player": "Nathaniel Brown",
+   "type": "Shot On Target",
+   "x": 87.1,
+   "y": 65.0,
+   "goal": false,
+   "xg": 0.167,
+   "text": "Attempt saved. Nathaniel Brown (Germany) left footed shot from the left side of the box is saved in the centre of the goal by Yahia Fofana (Côte d'Ivoire). Assisted by Florian Wirtz."
+  },
+  {
+   "minute": "90'+1",
+   "seconds": 5400.0,
+   "team": "Germany",
+   "player": "Nadiem Amiri",
+   "type": "Shot On Target",
+   "x": 86.4,
+   "y": 52.1,
+   "goal": false,
+   "xg": 0.253,
+   "text": "Attempt saved. Nadiem Amiri (Germany) right footed shot from the centre of the box is saved in the bottom right corner by Yahia Fofana (Côte d'Ivoire). Assisted by Deniz Undav."
+  },
+  {
+   "minute": "90'+4",
+   "seconds": 5400.0,
+   "team": "Germany",
+   "player": "Deniz Undav",
+   "type": "Goal",
+   "x": 86.8,
+   "y": 55.2,
+   "goal": true,
+   "xg": 0.25,
+   "text": "Goal! Germany 2, Côte d'Ivoire 1. Deniz Undav (Germany) left footed shot from the centre of the box to the bottom left corner. Assisted by Felix Nmecha with a through ball."
+  }
+ ],
+ "lineups": [
+  {
+   "team": "Germany",
+   "formation": "4-2-3-1",
+   "starters": [
+    {
+     "name": "Manuel Neuer",
+     "jersey": "1",
+     "position": "G"
+    },
+    {
+     "name": "Nico Schlotterbeck",
+     "jersey": "15",
+     "position": "CD-L"
+    },
+    {
+     "name": "Jonathan Tah",
+     "jersey": "4",
+     "position": "CD-R"
+    },
+    {
+     "name": "Nathaniel Brown",
+     "jersey": "18",
+     "position": "LB"
+    },
+    {
+     "name": "Joshua Kimmich",
+     "jersey": "6",
+     "position": "RB"
+    },
+    {
+     "name": "Jamal Musiala",
+     "jersey": "10",
+     "position": "AM"
+    },
+    {
+     "name": "Aleksandar Pavlovic",
+     "jersey": "5",
+     "position": "LM"
+    },
+    {
+     "name": "Felix Nmecha",
+     "jersey": "23",
+     "position": "RM"
+    },
+    {
+     "name": "Kai Havertz",
+     "jersey": "7",
+     "position": "F"
+    },
+    {
+     "name": "Florian Wirtz",
+     "jersey": "17",
+     "position": "AM-L"
+    },
+    {
+     "name": "Leroy Sané",
+     "jersey": "19",
+     "position": "AM-R"
+    }
+   ],
+   "subs": [
+    {
+     "name": "David Raum",
+     "jersey": "22",
+     "position": "SUB"
+    },
+    {
+     "name": "Deniz Undav",
+     "jersey": "26",
+     "position": "SUB"
+    },
+    {
+     "name": "Angelo Stiller",
+     "jersey": "16",
+     "position": "SUB"
+    },
+    {
+     "name": "Nadiem Amiri",
+     "jersey": "20",
+     "position": "SUB"
+    },
+    {
+     "name": "Oliver Baumann",
+     "jersey": "12",
+     "position": "SUB"
+    },
+    {
+     "name": "Jamie Leweling",
+     "jersey": "9",
+     "position": "SUB"
+    },
+    {
+     "name": "Maximilian Beier",
+     "jersey": "14",
+     "position": "SUB"
+    },
+    {
+     "name": "Alexander Nübel",
+     "jersey": "21",
+     "position": "SUB"
+    },
+    {
+     "name": "Leon Goretzka",
+     "jersey": "8",
+     "position": "SUB"
+    },
+    {
+     "name": "Antonio Rüdiger",
+     "jersey": "2",
+     "position": "SUB"
+    },
+    {
+     "name": "Assan Ouédraogo",
+     "jersey": "25",
+     "position": "SUB"
+    },
+    {
+     "name": "Waldemar Anton",
+     "jersey": "3",
+     "position": "SUB"
+    },
+    {
+     "name": "Pascal Gross",
+     "jersey": "13",
+     "position": "SUB"
+    },
+    {
+     "name": "Malick Thiaw",
+     "jersey": "24",
+     "position": "SUB"
+    },
+    {
+     "name": "Nick Woltemade",
+     "jersey": "11",
+     "position": "SUB"
+    }
+   ]
+  },
+  {
+   "team": "Ivory Coast",
+   "formation": "4-1-4-1",
+   "starters": [
+    {
+     "name": "Yahia Fofana",
+     "jersey": "1",
+     "position": "G"
+    },
+    {
+     "name": "Emmanuel Agbadou",
+     "jersey": "20",
+     "position": "CD-L"
+    },
+    {
+     "name": "Odilon Kossounou",
+     "jersey": "7",
+     "position": "CD-R"
+    },
+    {
+     "name": "Ibrahim Sangaré",
+     "jersey": "18",
+     "position": "DM"
+    },
+    {
+     "name": "Ghislain Konan",
+     "jersey": "3",
+     "position": "LB"
+    },
+    {
+     "name": "Wilfried Singo",
+     "jersey": "5",
+     "position": "RB"
+    },
+    {
+     "name": "Christ Inao Oulaï",
+     "jersey": "26",
+     "position": "CM-L"
+    },
+    {
+     "name": "Franck Kessié",
+     "jersey": "8",
+     "position": "CM-R"
+    },
+    {
+     "name": "Yan Diomande",
+     "jersey": "11",
+     "position": "LM"
+    },
+    {
+     "name": "Amad Diallo",
+     "jersey": "15",
+     "position": "RM"
+    },
+    {
+     "name": "Ange-Yoan Bonny",
+     "jersey": "9",
+     "position": "F"
+    }
+   ],
+   "subs": [
+    {
+     "name": "Evan Ndicka",
+     "jersey": "21",
+     "position": "SUB"
+    },
+    {
+     "name": "Nicolas Pépé",
+     "jersey": "19",
+     "position": "SUB"
+    },
+    {
+     "name": "Guela Doué",
+     "jersey": "17",
+     "position": "SUB"
+    },
+    {
+     "name": "Elye Wahi",
+     "jersey": "12",
+     "position": "SUB"
+    },
+    {
+     "name": "Ousmane Diomande",
+     "jersey": "2",
+     "position": "SUB"
+    },
+    {
+     "name": "Oumar Diakité",
+     "jersey": "14",
+     "position": "SUB"
+    },
+    {
+     "name": "Christopher Operi",
+     "jersey": "13",
+     "position": "SUB"
+    },
+    {
+     "name": "Simon Adingra",
+     "jersey": "10",
+     "position": "SUB"
+    },
+    {
+     "name": "Parfait Guiagon",
+     "jersey": "25",
+     "position": "SUB"
+    },
+    {
+     "name": "Seko Fofana",
+     "jersey": "6",
+     "position": "SUB"
+    },
+    {
+     "name": "Jean Michaël Seri",
+     "jersey": "4",
+     "position": "SUB"
+    },
+    {
+     "name": "Mohamed Koné",
+     "jersey": "16",
+     "position": "SUB"
+    },
+    {
+     "name": "Alban Lafont",
+     "jersey": "23",
+     "position": "SUB"
+    },
+    {
+     "name": "Bazoumana Touré",
+     "jersey": "24",
+     "position": "SUB"
+    },
+    {
+     "name": "Evann Guessand",
+     "jersey": "22",
+     "position": "SUB"
+    }
+   ]
+  }
+ ],
+ "attendance": 43036,
+ "venue": "BMO Field, Toronto, Canada"
+}

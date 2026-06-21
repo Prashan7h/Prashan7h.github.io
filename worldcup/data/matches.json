@@ -887,12 +887,36 @@
    "team2": "Ivory Coast",
    "group": "Group E",
    "ground": "Toronto",
-   "score": null,
-   "goals1": [],
-   "goals2": [],
+   "score": {
+    "ft": [
+     2,
+     1
+    ],
+    "ht": [
+     0,
+     1
+    ]
+   },
+   "goals1": [
+    {
+     "name": "Deniz Undav",
+     "minute": "68"
+    },
+    {
+     "name": "Deniz Undav",
+     "minute": "90+4"
+    }
+   ],
+   "goals2": [
+    {
+     "name": "Franck Kessié",
+     "minute": "30"
+    }
+   ],
    "espn_id": "760448",
-   "status": "live",
+   "status": "finished",
    "utc_date": "2026-06-20T20:00Z",
+   "attendance": 43036,
    "venue": "BMO Field",
    "slug": "2026-06-20-germany-vs-ivory-coast"
   },
@@ -905,12 +929,22 @@
    "team2": "Curaçao",
    "group": "Group E",
    "ground": "Kansas City",
-   "score": null,
+   "score": {
+    "ft": [
+     0,
+     0
+    ],
+    "ht": [
+     0,
+     0
+    ]
+   },
    "goals1": [],
    "goals2": [],
    "espn_id": "760446",
-   "status": "scheduled",
+   "status": "finished",
    "utc_date": "2026-06-21T00:00Z",
+   "attendance": 68598,
    "venue": "GEHA Field at Arrowhead Stadium",
    "slug": "2026-06-20-ecuador-vs-curaçao"
   },
