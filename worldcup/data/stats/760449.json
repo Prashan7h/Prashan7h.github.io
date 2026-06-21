@@ -1,0 +1,714 @@
+{
+ "teams": [
+  {
+   "name": "Tunisia",
+   "stats": {
+    "possessionPct": "37.9",
+    "totalShots": "2",
+    "shotsOnTarget": "0",
+    "wonCorners": "3",
+    "foulsCommitted": "8",
+    "offsides": "1",
+    "saves": "1",
+    "yellowCards": "0",
+    "redCards": "0"
+   }
+  },
+  {
+   "name": "Japan",
+   "stats": {
+    "possessionPct": "62.1",
+    "totalShots": "11",
+    "shotsOnTarget": "5",
+    "wonCorners": "5",
+    "foulsCommitted": "15",
+    "offsides": "1",
+    "saves": "0",
+    "yellowCards": "0",
+    "redCards": "0"
+   }
+  }
+ ],
+ "events": [
+  {
+   "type": "Kickoff",
+   "minute": "",
+   "team": null,
+   "text": "First Half begins.",
+   "players": []
+  },
+  {
+   "type": "Goal",
+   "minute": "4'",
+   "team": "Japan",
+   "text": "Goal! Tunisia 0, Japan 1. Daichi Kamada (Japan) left footed shot from very close range to the centre of the goal. Assisted by Keito Nakamura.",
+   "players": [
+    "Daichi Kamada",
+    "Keito Nakamura"
+   ]
+  },
+  {
+   "type": "Start Delay",
+   "minute": "24'",
+   "team": "Japan",
+   "text": "Delay in match for a drinks break.",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "24'",
+   "team": "Tunisia",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "27'",
+   "team": "Tunisia",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "27'",
+   "team": "Japan",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "Goal",
+   "minute": "31'",
+   "team": "Japan",
+   "text": "Goal! Tunisia 0, Japan 2. Ayase Ueda (Japan) right footed shot from the right side of the box to the bottom left corner. Assisted by Ko Itakura following a fast break.",
+   "players": [
+    "Ayase Ueda",
+    "Kou Itakura"
+   ]
+  },
+  {
+   "type": "Halftime",
+   "minute": "45'+5'",
+   "team": null,
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Substitution",
+   "minute": "45'",
+   "team": "Tunisia",
+   "text": "Substitution, Tunisia. Ismaël Gharbi replaces Elias Saad.",
+   "players": [
+    "Ismaël Gharbi",
+    "Elias Saad"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "45'",
+   "team": "Tunisia",
+   "text": "Substitution, Tunisia. Mohamed Amine Ben Hmida replaces Dylan Bronn.",
+   "players": [
+    "Mohamed Amine Ben Hamida",
+    "Dylan Bronn"
+   ]
+  },
+  {
+   "type": "Start 2nd Half",
+   "minute": "45'",
+   "team": null,
+   "text": "Second Half begins Tunisia 0, Japan 2.",
+   "players": []
+  },
+  {
+   "type": "Substitution",
+   "minute": "64'",
+   "team": "Tunisia",
+   "text": "Substitution, Tunisia. Firas Chaouat replaces Sebastian Tounekti.",
+   "players": [
+    "Firas Chaouat",
+    "Sebastian Tounekti"
+   ]
+  },
+  {
+   "type": "Goal",
+   "minute": "69'",
+   "team": "Japan",
+   "text": "Goal! Tunisia 0, Japan 3. Junya Ito (Japan) right footed shot from the centre of the box to the bottom right corner. Assisted by Ayase Ueda with a through ball.",
+   "players": [
+    "Junya Ito",
+    "Ayase Ueda"
+   ]
+  },
+  {
+   "type": "Start Delay",
+   "minute": "70'",
+   "team": "Japan",
+   "text": "Delay in match for a drinks break.",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "70'",
+   "team": "Tunisia",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "73'",
+   "team": "Japan",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "73'",
+   "team": "Tunisia",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Substitution",
+   "minute": "73'",
+   "team": "Japan",
+   "text": "Substitution, Japan. Junnosuke Suzuki replaces Daichi Kamada.",
+   "players": [
+    "Junnosuke Suzuki",
+    "Daichi Kamada"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "74'",
+   "team": "Japan",
+   "text": "Substitution, Japan. Yukinari Sugawara replaces Ritsu Doan.",
+   "players": [
+    "Yukinari Sugawara",
+    "Ritsu Doan"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "79'",
+   "team": "Japan",
+   "text": "Substitution, Japan. Yuito Suzuki replaces Keito Nakamura.",
+   "players": [
+    "Yuito Suzuki",
+    "Keito Nakamura"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "79'",
+   "team": "Japan",
+   "text": "Substitution, Japan. Ayumu Seko replaces Takehiro Tomiyasu.",
+   "players": [
+    "Ayumu Seko",
+    "Takehiro Tomiyasu"
+   ]
+  },
+  {
+   "type": "Goal - Header",
+   "minute": "83'",
+   "team": "Japan",
+   "text": "Goal! Tunisia 0, Japan 4. Ayase Ueda (Japan) header from the centre of the box to the bottom right corner. Assisted by Kaishu Sano with a cross.",
+   "players": [
+    "Ayase Ueda",
+    "Kaishu Sano"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "84'",
+   "team": "Japan",
+   "text": "Substitution, Japan. Keisuke Goto replaces Ayase Ueda.",
+   "players": [
+    "Keisuke Goto",
+    "Ayase Ueda"
+   ]
+  },
+  {
+   "type": "Start Delay",
+   "minute": "85'",
+   "team": "Tunisia",
+   "text": "Delay in match because of an injury Omar Rekik (Tunisia).",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "85'",
+   "team": "Japan",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "87'",
+   "team": "Tunisia",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "87'",
+   "team": "Japan",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Substitution",
+   "minute": "90'+1'",
+   "team": "Tunisia",
+   "text": "Substitution, Tunisia. Rani Khedira replaces Ellyes Skhiri.",
+   "players": [
+    "Rani Khedira",
+    "Ellyes Skhiri"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "90'+1'",
+   "team": "Tunisia",
+   "text": "Substitution, Tunisia. Elias Achouri replaces Ali Abdi.",
+   "players": [
+    "Elias Achouri",
+    "Ali Abdi"
+   ]
+  },
+  {
+   "type": "End Regular Time",
+   "minute": "90'+7'",
+   "team": null,
+   "text": "",
+   "players": []
+  }
+ ],
+ "shots": [
+  {
+   "minute": "3",
+   "seconds": 157.0,
+   "team": "Tunisia",
+   "player": "Hannibal Mejbri",
+   "type": "Shot Off Target",
+   "x": 79.4,
+   "y": 79.9,
+   "goal": false,
+   "xg": 0.051,
+   "text": "Attempt missed. Hannibal Mejbri (Tunisia) right footed shot from long range on the left is close, but misses the top right corner."
+  },
+  {
+   "minute": "4",
+   "seconds": 207.0,
+   "team": "Japan",
+   "player": "Daichi Kamada",
+   "type": "Goal",
+   "x": 96.5,
+   "y": 52.6,
+   "goal": true,
+   "xg": 0.857,
+   "text": "Goal! Tunisia 0, Japan 1. Daichi Kamada (Japan) left footed shot from very close range to the centre of the goal. Assisted by Keito Nakamura."
+  },
+  {
+   "minute": "6",
+   "seconds": 330.0,
+   "team": "Japan",
+   "player": "Ayase Ueda",
+   "type": "Shot Off Target",
+   "x": 84.3,
+   "y": 48.7,
+   "goal": false,
+   "xg": 0.201,
+   "text": "Attempt missed. Ayase Ueda (Japan) left footed shot from the centre of the box is high and wide to the left. Assisted by Ko Itakura."
+  },
+  {
+   "minute": "10",
+   "seconds": 567.0,
+   "team": "Japan",
+   "player": "Ayase Ueda",
+   "type": "Shot Blocked",
+   "x": 87.1,
+   "y": 28.6,
+   "goal": false,
+   "xg": 0.116,
+   "text": "Attempt saved. Ayase Ueda (Japan) right footed shot from the right side of the box is saved in the bottom right corner by Aymen Dahmen (Tunisia)."
+  },
+  {
+   "minute": "10",
+   "seconds": 570.0,
+   "team": "Japan",
+   "player": "Takehiro Tomiyasu",
+   "type": "Shot Off Target",
+   "x": 98.9,
+   "y": 44.4,
+   "goal": false,
+   "xg": 0.808,
+   "text": "Attempt missed. Takehiro Tomiyasu (Japan) right footed shot from the right side of the six yard box is close, but misses to the right following a corner."
+  },
+  {
+   "minute": "31",
+   "seconds": 1805.0,
+   "team": "Japan",
+   "player": "Ayase Ueda",
+   "type": "Goal",
+   "x": 83.1,
+   "y": 27.0,
+   "goal": true,
+   "xg": 0.086,
+   "text": "Goal! Tunisia 0, Japan 2. Ayase Ueda (Japan) right footed shot from the right side of the box to the bottom left corner. Assisted by Ko Itakura following a fast break."
+  },
+  {
+   "minute": "48",
+   "seconds": 2826.0,
+   "team": "Japan",
+   "player": "Ao Tanaka",
+   "type": "Shot Off Target",
+   "x": 74.9,
+   "y": 52.6,
+   "goal": false,
+   "xg": 0.078,
+   "text": "Attempt missed. Ao Tanaka (Japan) right footed shot from outside the box is close, but misses to the left. Assisted by Ayase Ueda."
+  },
+  {
+   "minute": "63",
+   "seconds": 3731.0,
+   "team": "Japan",
+   "player": "Ayase Ueda",
+   "type": "Shot Blocked",
+   "x": 76.0,
+   "y": 55.0,
+   "goal": false,
+   "xg": 0.084,
+   "text": "Attempt blocked. Ayase Ueda (Japan) right footed shot from outside the box is blocked. Assisted by Hiroki Ito."
+  },
+  {
+   "minute": "66",
+   "seconds": 3953.0,
+   "team": "Japan",
+   "player": "Keito Nakamura",
+   "type": "Shot Blocked",
+   "x": 80.3,
+   "y": 69.7,
+   "goal": false,
+   "xg": 0.083,
+   "text": "Attempt blocked. Keito Nakamura (Japan) right footed shot from outside the box is blocked. Assisted by Daichi Kamada."
+  },
+  {
+   "minute": "69",
+   "seconds": 4086.0,
+   "team": "Japan",
+   "player": "Junya Ito",
+   "type": "Goal",
+   "x": 89.2,
+   "y": 44.5,
+   "goal": true,
+   "xg": 0.323,
+   "text": "Goal! Tunisia 0, Japan 3. Junya Ito (Japan) right footed shot from the centre of the box to the bottom right corner. Assisted by Ayase Ueda with a through ball."
+  },
+  {
+   "minute": "75",
+   "seconds": 4497.0,
+   "team": "Tunisia",
+   "player": "Ismaël Gharbi",
+   "type": "Shot Blocked",
+   "x": 89.8,
+   "y": 68.5,
+   "goal": false,
+   "xg": 0.155,
+   "text": "Attempt blocked. Ismaël Gharbi (Tunisia) left footed shot from the left side of the box is blocked. Assisted by Omar Rekik."
+  },
+  {
+   "minute": "83",
+   "seconds": 4976.0,
+   "team": "Japan",
+   "player": "Ayase Ueda",
+   "type": "Goal - Header",
+   "x": 94.2,
+   "y": 53.0,
+   "goal": true,
+   "xg": 0.426,
+   "text": "Goal! Tunisia 0, Japan 4. Ayase Ueda (Japan) header from the centre of the box to the bottom right corner. Assisted by Kaishu Sano with a cross."
+  },
+  {
+   "minute": "85",
+   "seconds": 5084.0,
+   "team": "Japan",
+   "player": "Junya Ito",
+   "type": "Shot Blocked",
+   "x": 92.6,
+   "y": 67.7,
+   "goal": false,
+   "xg": 0.176,
+   "text": "Attempt blocked. Junya Ito (Japan) right footed shot from the left side of the box is blocked. Assisted by Ayumu Seko."
+  }
+ ],
+ "lineups": [
+  {
+   "team": "Tunisia",
+   "formation": "3-4-2-1",
+   "starters": [
+    {
+     "name": "Aymen Dahmen",
+     "jersey": "16",
+     "position": "G"
+    },
+    {
+     "name": "Montassar Talbi",
+     "jersey": "3",
+     "position": "CD"
+    },
+    {
+     "name": "Omar Rekik",
+     "jersey": "4",
+     "position": "CD-L"
+    },
+    {
+     "name": "Dylan Bronn",
+     "jersey": "6",
+     "position": "CD-R"
+    },
+    {
+     "name": "Ellyes Skhiri",
+     "jersey": "17",
+     "position": "CM-L"
+    },
+    {
+     "name": "Anis Slimane",
+     "jersey": "25",
+     "position": "CM-R"
+    },
+    {
+     "name": "Ali Abdi",
+     "jersey": "2",
+     "position": "LM"
+    },
+    {
+     "name": "Yan Valery",
+     "jersey": "20",
+     "position": "RM"
+    },
+    {
+     "name": "Sebastian Tounekti",
+     "jersey": "26",
+     "position": "F"
+    },
+    {
+     "name": "Hannibal Mejbri",
+     "jersey": "10",
+     "position": "CF-L"
+    },
+    {
+     "name": "Elias Saad",
+     "jersey": "8",
+     "position": "CF-R"
+    }
+   ],
+   "subs": [
+    {
+     "name": "Adem Arous",
+     "jersey": "5",
+     "position": "SUB"
+    },
+    {
+     "name": "Ismaël Gharbi",
+     "jersey": "11",
+     "position": "SUB"
+    },
+    {
+     "name": "Firas Chaouat",
+     "jersey": "19",
+     "position": "SUB"
+    },
+    {
+     "name": "Raed Chikhaoui",
+     "jersey": "24",
+     "position": "SUB"
+    },
+    {
+     "name": "Rayan Elloumi",
+     "jersey": "18",
+     "position": "SUB"
+    },
+    {
+     "name": "Sabri Ben Hessen",
+     "jersey": "22",
+     "position": "SUB"
+    },
+    {
+     "name": "Rani Khedira",
+     "jersey": "13",
+     "position": "SUB"
+    },
+    {
+     "name": "Khalil Ayari",
+     "jersey": "14",
+     "position": "SUB"
+    },
+    {
+     "name": "Moutaz Neffati",
+     "jersey": "23",
+     "position": "SUB"
+    },
+    {
+     "name": "Elias Achouri",
+     "jersey": "7",
+     "position": "SUB"
+    },
+    {
+     "name": "Hazem Mastouri",
+     "jersey": "9",
+     "position": "SUB"
+    },
+    {
+     "name": "Mohamed Amine Ben Hamida",
+     "jersey": "21",
+     "position": "SUB"
+    },
+    {
+     "name": "Mouhib Chamakh",
+     "jersey": "1",
+     "position": "SUB"
+    },
+    {
+     "name": "Mohamed Hadj Mahmoud",
+     "jersey": "15",
+     "position": "SUB"
+    },
+    {
+     "name": "Mortadha Ben Ouanes",
+     "jersey": "12",
+     "position": "SUB"
+    }
+   ]
+  },
+  {
+   "team": "Japan",
+   "formation": "3-4-2-1",
+   "starters": [
+    {
+     "name": "Zion Suzuki",
+     "jersey": "1",
+     "position": "G"
+    },
+    {
+     "name": "Kou Itakura",
+     "jersey": "4",
+     "position": "CD"
+    },
+    {
+     "name": "Hiroki Ito",
+     "jersey": "21",
+     "position": "CD-L"
+    },
+    {
+     "name": "Takehiro Tomiyasu",
+     "jersey": "22",
+     "position": "CD-R"
+    },
+    {
+     "name": "Ao Tanaka",
+     "jersey": "7",
+     "position": "CM-L"
+    },
+    {
+     "name": "Kaishu Sano",
+     "jersey": "24",
+     "position": "CM-R"
+    },
+    {
+     "name": "Keito Nakamura",
+     "jersey": "13",
+     "position": "LM"
+    },
+    {
+     "name": "Ritsu Doan",
+     "jersey": "10",
+     "position": "RM"
+    },
+    {
+     "name": "Ayase Ueda",
+     "jersey": "18",
+     "position": "F"
+    },
+    {
+     "name": "Daichi Kamada",
+     "jersey": "15",
+     "position": "CF-L"
+    },
+    {
+     "name": "Junya Ito",
+     "jersey": "14",
+     "position": "CF-R"
+    }
+   ],
+   "subs": [
+    {
+     "name": "Ayumu Seko",
+     "jersey": "20",
+     "position": "SUB"
+    },
+    {
+     "name": "Yuito Suzuki",
+     "jersey": "17",
+     "position": "SUB"
+    },
+    {
+     "name": "Junnosuke Suzuki",
+     "jersey": "25",
+     "position": "SUB"
+    },
+    {
+     "name": "Tsuyoshi Watanabe",
+     "jersey": "16",
+     "position": "SUB"
+    },
+    {
+     "name": "Yuto Nagatomo",
+     "jersey": "5",
+     "position": "SUB"
+    },
+    {
+     "name": "Keisuke Osako",
+     "jersey": "12",
+     "position": "SUB"
+    },
+    {
+     "name": "Koki Ogawa",
+     "jersey": "19",
+     "position": "SUB"
+    },
+    {
+     "name": "Shogo Taniguchi",
+     "jersey": "3",
+     "position": "SUB"
+    },
+    {
+     "name": "Keisuke Goto",
+     "jersey": "9",
+     "position": "SUB"
+    },
+    {
+     "name": "Tomoki Hayakawa",
+     "jersey": "23",
+     "position": "SUB"
+    },
+    {
+     "name": "Daizen Maeda",
+     "jersey": "11",
+     "position": "SUB"
+    },
+    {
+     "name": "Yukinari Sugawara",
+     "jersey": "2",
+     "position": "SUB"
+    },
+    {
+     "name": "Kento Shiogai",
+     "jersey": "26",
+     "position": "SUB"
+    }
+   ]
+  }
+ ],
+ "attendance": 51243,
+ "venue": "Estadio BBVA, Guadalupe, Mexico"
+}
