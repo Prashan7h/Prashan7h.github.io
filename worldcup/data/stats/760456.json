@@ -1,0 +1,899 @@
+{
+ "teams": [
+  {
+   "name": "Argentina",
+   "stats": {
+    "possessionPct": "53.6",
+    "totalShots": "12",
+    "shotsOnTarget": "5",
+    "wonCorners": "1",
+    "foulsCommitted": "13",
+    "offsides": "2",
+    "saves": "1",
+    "yellowCards": "2",
+    "redCards": "0"
+   }
+  },
+  {
+   "name": "Austria",
+   "stats": {
+    "possessionPct": "46.4",
+    "totalShots": "6",
+    "shotsOnTarget": "1",
+    "wonCorners": "3",
+    "foulsCommitted": "13",
+    "offsides": "0",
+    "saves": "2",
+    "yellowCards": "2",
+    "redCards": "0"
+   }
+  }
+ ],
+ "events": [
+  {
+   "type": "Kickoff",
+   "minute": "",
+   "team": null,
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "4'",
+   "team": "Argentina",
+   "text": "Delay in match because of an injury Lautaro Martínez (Argentina).",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "4'",
+   "team": "Austria",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "7'",
+   "team": "Argentina",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "7'",
+   "team": "Austria",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "7'",
+   "team": "Argentina",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Penalty - Missed",
+   "minute": "9'",
+   "team": "Argentina",
+   "text": "Penalty missed. Lionel Messi (Argentina) left footed shot is close, but misses to the right.",
+   "players": [
+    "Lionel Messi"
+   ]
+  },
+  {
+   "type": "Start Delay",
+   "minute": "21'",
+   "team": "Argentina",
+   "text": "Delay in match because of an injury Rodrigo De Paul (Argentina).",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "21'",
+   "team": "Austria",
+   "text": "Delay in match (Austria).",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "22'",
+   "team": "Argentina",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "22'",
+   "team": "Austria",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "23'",
+   "team": "Argentina",
+   "text": "Delay in match for a drinks break.",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "23'",
+   "team": "Austria",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "26'",
+   "team": "Argentina",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "26'",
+   "team": "Austria",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Goal",
+   "minute": "38'",
+   "team": "Argentina",
+   "text": "Goal! Argentina 1, Austria 0. Lionel Messi (Argentina) left footed shot from the centre of the box to the bottom left corner. Assisted by Facundo Medina following a fast break.",
+   "players": [
+    "Lionel Messi",
+    "Facundo Medina"
+   ]
+  },
+  {
+   "type": "Yellow Card",
+   "minute": "40'",
+   "team": "Austria",
+   "text": "Stefan Posch (Austria) is shown the yellow card.",
+   "players": [
+    "Stefan Posch"
+   ]
+  },
+  {
+   "type": "Halftime",
+   "minute": "45'+7'",
+   "team": null,
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Start 2nd Half",
+   "minute": "45'",
+   "team": null,
+   "text": "Second Half begins Argentina 1, Austria 0.",
+   "players": []
+  },
+  {
+   "type": "Substitution",
+   "minute": "57'",
+   "team": "Argentina",
+   "text": "Substitution, Argentina. Nicolás Otamendi replaces Cristian Romero.",
+   "players": [
+    "Nicolás Otamendi",
+    "Cristian Romero"
+   ]
+  },
+  {
+   "type": "Start Delay",
+   "minute": "62'",
+   "team": "Austria",
+   "text": "Delay in match because of an injury Kevin Danso (Austria).",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "62'",
+   "team": "Argentina",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "62'",
+   "team": "Austria",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "62'",
+   "team": "Argentina",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Substitution",
+   "minute": "64'",
+   "team": "Argentina",
+   "text": "Substitution, Argentina. Julián Alvarez replaces Thiago Almada.",
+   "players": [
+    "Julián Álvarez",
+    "Thiago Almada"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "65'",
+   "team": "Argentina",
+   "text": "Substitution, Argentina. Nico González replaces Lautaro Martínez.",
+   "players": [
+    "Nico González",
+    "Lautaro Martínez"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "67'",
+   "team": "Austria",
+   "text": "Substitution, Austria. Marco Friedl replaces David Alaba.",
+   "players": [
+    "Marco Friedl",
+    "David Alaba"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "68'",
+   "team": "Austria",
+   "text": "Substitution, Austria. Alexander Prass replaces Stefan Posch.",
+   "players": [
+    "Alexander Prass",
+    "Stefan Posch"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "68'",
+   "team": "Austria",
+   "text": "Substitution, Austria. Marko Arnautovic replaces Paul Wanner.",
+   "players": [
+    "Marko Arnautovic",
+    "Paul Wanner"
+   ]
+  },
+  {
+   "type": "Start Delay",
+   "minute": "69'",
+   "team": "Argentina",
+   "text": "Delay in match for a drinks break.",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "69'",
+   "team": "Austria",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "71'",
+   "team": "Argentina",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "71'",
+   "team": "Austria",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Yellow Card",
+   "minute": "76'",
+   "team": "Argentina",
+   "text": "Facundo Medina (Argentina) is shown the yellow card.",
+   "players": [
+    "Facundo Medina"
+   ]
+  },
+  {
+   "type": "Yellow Card",
+   "minute": "76'",
+   "team": "Austria",
+   "text": "Konrad Laimer (Austria) is shown the yellow card.",
+   "players": [
+    "Konrad Laimer"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "78'",
+   "team": "Austria",
+   "text": "Substitution, Austria. Patrick Wimmer replaces Romano Schmid.",
+   "players": [
+    "Patrick Wimmer",
+    "Romano Schmid"
+   ]
+  },
+  {
+   "type": "Start Delay",
+   "minute": "79'",
+   "team": "Argentina",
+   "text": "Delay in match because of an injury Emiliano Martínez (Argentina).",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "79'",
+   "team": "Austria",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "80'",
+   "team": "Argentina",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "80'",
+   "team": "Austria",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Substitution",
+   "minute": "82'",
+   "team": "Argentina",
+   "text": "Substitution, Argentina. Leandro Paredes replaces Rodrigo De Paul.",
+   "players": [
+    "Leandro Paredes",
+    "Rodrigo De Paul"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "82'",
+   "team": "Argentina",
+   "text": "Substitution, Argentina. Nicolás Tagliafico replaces Facundo Medina.",
+   "players": [
+    "Nicolás Tagliafico",
+    "Facundo Medina"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "85'",
+   "team": "Austria",
+   "text": "Substitution, Austria. Carney Chukwuemeka replaces Michael Gregoritsch.",
+   "players": [
+    "Carney Chukwuemeka",
+    "Michael Gregoritsch"
+   ]
+  },
+  {
+   "type": "Yellow Card",
+   "minute": "90'+2'",
+   "team": "Argentina",
+   "text": "Leandro Paredes (Argentina) is shown the yellow card for a bad foul.",
+   "players": [
+    "Leandro Paredes"
+   ]
+  },
+  {
+   "type": "Goal",
+   "minute": "90'+5'",
+   "team": "Argentina",
+   "text": "Goal! Argentina 2, Austria 0. Lionel Messi (Argentina) left footed shot from the left side of the six yard box to the centre of the goal following a fast break.",
+   "players": [
+    "Lionel Messi"
+   ]
+  },
+  {
+   "type": "End Regular Time",
+   "minute": "90'+8'",
+   "team": null,
+   "text": "",
+   "players": []
+  }
+ ],
+ "shots": [
+  {
+   "minute": "9",
+   "seconds": 490.0,
+   "team": "Argentina",
+   "player": "Lionel Messi",
+   "type": "Penalty - Missed",
+   "x": 88.5,
+   "y": 50.0,
+   "goal": false,
+   "xg": 0.76,
+   "text": "Penalty missed. Lionel Messi (Argentina) left footed shot is close, but misses to the right."
+  },
+  {
+   "minute": "23",
+   "seconds": 1330.0,
+   "team": "Austria",
+   "player": "Paul Wanner",
+   "type": "Shot Off Target",
+   "x": 92.3,
+   "y": 54.2,
+   "goal": false,
+   "xg": 0.32,
+   "text": "Attempt missed. Paul Wanner (Austria) header from the centre of the box misses to the left. Assisted by Stefan Posch with a cross."
+  },
+  {
+   "minute": "23",
+   "seconds": 1331.0,
+   "team": "Austria",
+   "player": "Marcel Sabitzer",
+   "type": "Shot Off Target",
+   "x": 88.3,
+   "y": 63.0,
+   "goal": false,
+   "xg": 0.203,
+   "text": "Attempt missed. Marcel Sabitzer (Austria) left footed shot from the centre of the box is close, but misses to the right. Assisted by Paul Wanner."
+  },
+  {
+   "minute": "32",
+   "seconds": 1866.0,
+   "team": "Argentina",
+   "player": "Lionel Messi",
+   "type": "Shot Blocked",
+   "x": 86.7,
+   "y": 59.7,
+   "goal": false,
+   "xg": 0.211,
+   "text": "Attempt blocked. Lionel Messi (Argentina) left footed shot from the centre of the box is blocked."
+  },
+  {
+   "minute": "38",
+   "seconds": 2277.0,
+   "team": "Argentina",
+   "player": "Lionel Messi",
+   "type": "Goal",
+   "x": 84.5,
+   "y": 54.7,
+   "goal": true,
+   "xg": 0.197,
+   "text": "Goal! Argentina 1, Austria 0. Lionel Messi (Argentina) left footed shot from the centre of the box to the bottom left corner. Assisted by Facundo Medina following a fast break."
+  },
+  {
+   "minute": "46",
+   "seconds": 2758.0,
+   "team": "Austria",
+   "player": "Marcel Sabitzer",
+   "type": "Shot Off Target",
+   "x": 77.8,
+   "y": 42.5,
+   "goal": false,
+   "xg": 0.097,
+   "text": "Attempt missed. Marcel Sabitzer (Austria) right footed shot from outside the box misses to the left. Assisted by Nicolas Seiwald."
+  },
+  {
+   "minute": "55",
+   "seconds": 3289.0,
+   "team": "Austria",
+   "player": "Marcel Sabitzer",
+   "type": "Shot On Target",
+   "x": 78.1,
+   "y": 77.2,
+   "goal": false,
+   "xg": 0.053,
+   "text": "Attempt saved. Marcel Sabitzer (Austria) right footed shot from outside the box is saved in the top centre of the goal by Emiliano Martínez (Argentina)."
+  },
+  {
+   "minute": "61",
+   "seconds": 3660.0,
+   "team": "Argentina",
+   "player": "Enzo Fernández",
+   "type": "Shot Blocked",
+   "x": 80.2,
+   "y": 55.5,
+   "goal": false,
+   "xg": 0.126,
+   "text": "Attempt blocked. Enzo Fernández (Argentina) right footed shot from outside the box is blocked. Assisted by Thiago Almada."
+  },
+  {
+   "minute": "65",
+   "seconds": 3867.0,
+   "team": "Argentina",
+   "player": "Lionel Messi",
+   "type": "Shot Off Target",
+   "x": 84.8,
+   "y": 63.3,
+   "goal": false,
+   "xg": 0.153,
+   "text": "Attempt missed. Lionel Messi (Argentina) left footed shot from the left side of the box misses to the right. Assisted by Enzo Fernández."
+  },
+  {
+   "minute": "67",
+   "seconds": 3990.0,
+   "team": "Austria",
+   "player": "Michael Gregoritsch",
+   "type": "Shot Off Target",
+   "x": 93.0,
+   "y": 48.8,
+   "goal": false,
+   "xg": 0.383,
+   "text": "Attempt missed. Michael Gregoritsch (Austria) header from the centre of the box is too high. Assisted by Marcel Sabitzer with a cross."
+  },
+  {
+   "minute": "73",
+   "seconds": 4368.0,
+   "team": "Argentina",
+   "player": "Nico González",
+   "type": "Shot Off Target",
+   "x": 92.1,
+   "y": 53.4,
+   "goal": false,
+   "xg": 0.322,
+   "text": "Attempt missed. Nico González (Argentina) header from the centre of the box is close, but misses to the right. Assisted by Lionel Messi with a cross following a corner."
+  },
+  {
+   "minute": "86",
+   "seconds": 5149.0,
+   "team": "Argentina",
+   "player": "Nico González",
+   "type": "Shot Blocked",
+   "x": 86.6,
+   "y": 55.0,
+   "goal": false,
+   "xg": 0.246,
+   "text": "Attempt blocked. Nico González (Argentina) right footed shot from the centre of the box is blocked. Assisted by Lisandro Martínez with a through ball."
+  },
+  {
+   "minute": "86",
+   "seconds": 5152.0,
+   "team": "Argentina",
+   "player": "Enzo Fernández",
+   "type": "Shot Blocked",
+   "x": 85.5,
+   "y": 49.7,
+   "goal": false,
+   "xg": 0.231,
+   "text": "Attempt blocked. Enzo Fernández (Argentina) right footed shot from the centre of the box is blocked."
+  },
+  {
+   "minute": "90'+3",
+   "seconds": 5400.0,
+   "team": "Austria",
+   "player": "Patrick Wimmer",
+   "type": "Shot Off Target",
+   "x": 92.1,
+   "y": 46.4,
+   "goal": false,
+   "xg": 0.32,
+   "text": "Attempt missed. Patrick Wimmer (Austria) header from the centre of the box misses to the left. Assisted by Kevin Danso with a headed pass following a set piece situation."
+  },
+  {
+   "minute": "90'+4",
+   "seconds": 5400.0,
+   "team": "Argentina",
+   "player": "Julián Alvarez",
+   "type": "Shot On Target",
+   "x": 89.2,
+   "y": 57.7,
+   "goal": false,
+   "xg": 0.294,
+   "text": "Attempt saved. Julián Alvarez (Argentina) left footed shot from the centre of the box is saved in the centre of the goal by Alexander Schlager (Austria). Assisted by Lionel Messi with a through ball."
+  },
+  {
+   "minute": "90'+5",
+   "seconds": 5400.0,
+   "team": "Argentina",
+   "player": "Lionel Messi",
+   "type": "Shot Blocked",
+   "x": 90.4,
+   "y": 56.5,
+   "goal": false,
+   "xg": 0.353,
+   "text": "Attempt blocked. Lionel Messi (Argentina) left footed shot from the centre of the box is blocked."
+  },
+  {
+   "minute": "90'+5",
+   "seconds": 5400.0,
+   "team": "Argentina",
+   "player": "Lionel Messi",
+   "type": "Goal",
+   "x": 96.9,
+   "y": 57.0,
+   "goal": true,
+   "xg": 0.597,
+   "text": "Goal! Argentina 2, Austria 0. Lionel Messi (Argentina) left footed shot from the left side of the six yard box to the centre of the goal following a fast break."
+  },
+  {
+   "minute": "90'+8",
+   "seconds": 5400.0,
+   "team": "Argentina",
+   "player": "Lionel Messi",
+   "type": "Shot Off Target",
+   "x": 71.4,
+   "y": 44.2,
+   "goal": false,
+   "xg": 0.055,
+   "text": "Attempt missed. Lionel Messi (Argentina) left footed shot from outside the box misses to the left from a direct free kick."
+  }
+ ],
+ "lineups": [
+  {
+   "team": "Argentina",
+   "formation": "4-4-2",
+   "starters": [
+    {
+     "name": "Emiliano Martínez",
+     "jersey": "23",
+     "position": "G"
+    },
+    {
+     "name": "Lisandro Martínez",
+     "jersey": "6",
+     "position": "CD-L"
+    },
+    {
+     "name": "Cristian Romero",
+     "jersey": "13",
+     "position": "CD-R"
+    },
+    {
+     "name": "Facundo Medina",
+     "jersey": "25",
+     "position": "LB"
+    },
+    {
+     "name": "Nahuel Molina",
+     "jersey": "26",
+     "position": "RB"
+    },
+    {
+     "name": "Enzo Fernández",
+     "jersey": "24",
+     "position": "CM-L"
+    },
+    {
+     "name": "Alexis Mac Allister",
+     "jersey": "20",
+     "position": "CM-R"
+    },
+    {
+     "name": "Thiago Almada",
+     "jersey": "16",
+     "position": "LM"
+    },
+    {
+     "name": "Rodrigo De Paul",
+     "jersey": "7",
+     "position": "RM"
+    },
+    {
+     "name": "Lautaro Martínez",
+     "jersey": "22",
+     "position": "CF-L"
+    },
+    {
+     "name": "Lionel Messi",
+     "jersey": "10",
+     "position": "CF-R"
+    }
+   ],
+   "subs": [
+    {
+     "name": "Gerónimo Rulli",
+     "jersey": "12",
+     "position": "SUB"
+    },
+    {
+     "name": "Valentín Barco",
+     "jersey": "8",
+     "position": "SUB"
+    },
+    {
+     "name": "Nico Paz",
+     "jersey": "18",
+     "position": "SUB"
+    },
+    {
+     "name": "Julián Álvarez",
+     "jersey": "9",
+     "position": "SUB"
+    },
+    {
+     "name": "Marcos Senesi",
+     "jersey": "2",
+     "position": "SUB"
+    },
+    {
+     "name": "Gonzalo Montiel",
+     "jersey": "4",
+     "position": "SUB"
+    },
+    {
+     "name": "Leandro Paredes",
+     "jersey": "5",
+     "position": "SUB"
+    },
+    {
+     "name": "Giuliano Simeone",
+     "jersey": "17",
+     "position": "SUB"
+    },
+    {
+     "name": "Nico González",
+     "jersey": "15",
+     "position": "SUB"
+    },
+    {
+     "name": "Nicolás Otamendi",
+     "jersey": "19",
+     "position": "SUB"
+    },
+    {
+     "name": "Nicolás Tagliafico",
+     "jersey": "3",
+     "position": "SUB"
+    },
+    {
+     "name": "Exequiel Palacios",
+     "jersey": "14",
+     "position": "SUB"
+    },
+    {
+     "name": "José Manuel López",
+     "jersey": "21",
+     "position": "SUB"
+    },
+    {
+     "name": "Giovani Lo Celso",
+     "jersey": "11",
+     "position": "SUB"
+    },
+    {
+     "name": "Juan Musso",
+     "jersey": "1",
+     "position": "SUB"
+    }
+   ]
+  },
+  {
+   "team": "Austria",
+   "formation": "4-2-3-1",
+   "starters": [
+    {
+     "name": "Alexander Schlager",
+     "jersey": "1",
+     "position": "G"
+    },
+    {
+     "name": "David Alaba",
+     "jersey": "8",
+     "position": "CD-L"
+    },
+    {
+     "name": "Kevin Danso",
+     "jersey": "3",
+     "position": "CD-R"
+    },
+    {
+     "name": "Konrad Laimer",
+     "jersey": "20",
+     "position": "LB"
+    },
+    {
+     "name": "Stefan Posch",
+     "jersey": "5",
+     "position": "RB"
+    },
+    {
+     "name": "Paul Wanner",
+     "jersey": "24",
+     "position": "AM"
+    },
+    {
+     "name": "Xaver Schlager",
+     "jersey": "4",
+     "position": "LM"
+    },
+    {
+     "name": "Nicolas Seiwald",
+     "jersey": "6",
+     "position": "RM"
+    },
+    {
+     "name": "Michael Gregoritsch",
+     "jersey": "11",
+     "position": "F"
+    },
+    {
+     "name": "Marcel Sabitzer",
+     "jersey": "9",
+     "position": "AM-L"
+    },
+    {
+     "name": "Romano Schmid",
+     "jersey": "18",
+     "position": "AM-R"
+    }
+   ],
+   "subs": [
+    {
+     "name": "Carney Chukwuemeka",
+     "jersey": "17",
+     "position": "SUB"
+    },
+    {
+     "name": "Michael Svoboda",
+     "jersey": "25",
+     "position": "SUB"
+    },
+    {
+     "name": "Marco Friedl",
+     "jersey": "23",
+     "position": "SUB"
+    },
+    {
+     "name": "Florian Wiegele",
+     "jersey": "12",
+     "position": "SUB"
+    },
+    {
+     "name": "Phillipp Mwene",
+     "jersey": "16",
+     "position": "SUB"
+    },
+    {
+     "name": "Alessandro Schöpf",
+     "jersey": "26",
+     "position": "SUB"
+    },
+    {
+     "name": "David Affengruber",
+     "jersey": "2",
+     "position": "SUB"
+    },
+    {
+     "name": "Dejan Ljubicic",
+     "jersey": "19",
+     "position": "SUB"
+    },
+    {
+     "name": "Patrick Pentz",
+     "jersey": "13",
+     "position": "SUB"
+    },
+    {
+     "name": "Philipp Lienhart",
+     "jersey": "15",
+     "position": "SUB"
+    },
+    {
+     "name": "Florian Grillitsch",
+     "jersey": "10",
+     "position": "SUB"
+    },
+    {
+     "name": "Alexander Prass",
+     "jersey": "22",
+     "position": "SUB"
+    },
+    {
+     "name": "Patrick Wimmer",
+     "jersey": "21",
+     "position": "SUB"
+    },
+    {
+     "name": "Sasa Kalajdzic",
+     "jersey": "14",
+     "position": "SUB"
+    },
+    {
+     "name": "Marko Arnautovic",
+     "jersey": "7",
+     "position": "SUB"
+    }
+   ]
+  }
+ ],
+ "attendance": 70649,
+ "venue": "AT&T Stadium, Arlington, Texas, USA"
+}

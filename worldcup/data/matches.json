@@ -1875,12 +1875,31 @@
    "team2": "Austria",
    "group": "Group J",
    "ground": "Dallas (Arlington)",
-   "score": null,
-   "goals1": [],
+   "score": {
+    "ft": [
+     2,
+     0
+    ],
+    "ht": [
+     1,
+     0
+    ]
+   },
+   "goals1": [
+    {
+     "name": "Lionel Messi",
+     "minute": "38"
+    },
+    {
+     "name": "Lionel Messi",
+     "minute": "90+5"
+    }
+   ],
    "goals2": [],
    "espn_id": "760456",
-   "status": "scheduled",
+   "status": "finished",
    "utc_date": "2026-06-22T17:00Z",
+   "attendance": 70649,
    "venue": "AT&T Stadium",
    "slug": "2026-06-22-argentina-vs-austria"
   },
