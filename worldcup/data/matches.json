@@ -2268,7 +2268,7 @@
    "round": "Round of 32",
    "date": "2026-06-29",
    "time": "16:30 UTC-4",
-   "team1": "1E",
+   "team1": "Germany",
    "team2": "3A/B/C/D/F",
    "group": null,
    "ground": "Boston (Foxborough)",
@@ -2277,7 +2277,7 @@
    "goals2": [],
    "espn_id": null,
    "status": "scheduled",
-   "slug": "2026-06-29-1e-vs-3a/b/c/d/f"
+   "slug": "2026-06-29-germany-vs-3a/b/c/d/f"
   },
   {
    "num": 75,
@@ -2348,7 +2348,7 @@
    "round": "Round of 32",
    "date": "2026-06-30",
    "time": "19:00 UTC-6",
-   "team1": "1A",
+   "team1": "Mexico",
    "team2": "3C/E/F/H/I",
    "group": null,
    "ground": "Mexico City",
@@ -2357,7 +2357,7 @@
    "goals2": [],
    "espn_id": null,
    "status": "scheduled",
-   "slug": "2026-06-30-1a-vs-3c/e/f/h/i"
+   "slug": "2026-06-30-mexico-vs-3c/e/f/h/i"
   },
   {
    "num": 80,
@@ -2380,7 +2380,7 @@
    "round": "Round of 32",
    "date": "2026-07-01",
    "time": "17:00 UTC-7",
-   "team1": "1D",
+   "team1": "USA",
    "team2": "3B/E/F/I/J",
    "group": null,
    "ground": "San Francisco Bay Area (Santa Clara)",
@@ -2389,7 +2389,7 @@
    "goals2": [],
    "espn_id": null,
    "status": "scheduled",
-   "slug": "2026-07-01-1d-vs-3b/e/f/i/j"
+   "slug": "2026-07-01-usa-vs-3b/e/f/i/j"
   },
   {
    "num": 82,
