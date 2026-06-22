@@ -1,0 +1,947 @@
+{
+ "teams": [
+  {
+   "name": "Belgium",
+   "stats": {
+    "possessionPct": "70.1",
+    "totalShots": "23",
+    "shotsOnTarget": "7",
+    "wonCorners": "4",
+    "foulsCommitted": "7",
+    "offsides": "3",
+    "saves": "3",
+    "yellowCards": "1",
+    "redCards": "1"
+   }
+  },
+  {
+   "name": "Iran",
+   "stats": {
+    "possessionPct": "29.9",
+    "totalShots": "7",
+    "shotsOnTarget": "3",
+    "wonCorners": "2",
+    "foulsCommitted": "9",
+    "offsides": "4",
+    "saves": "7",
+    "yellowCards": "1",
+    "redCards": "0"
+   }
+  }
+ ],
+ "events": [
+  {
+   "type": "Kickoff",
+   "minute": "",
+   "team": null,
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Yellow Card",
+   "minute": "3'",
+   "team": "Belgium",
+   "text": "Romelu Lukaku (Belgium) is shown the yellow card for a bad foul.",
+   "players": [
+    "Romelu Lukaku"
+   ]
+  },
+  {
+   "type": "Start Delay",
+   "minute": "4'",
+   "team": "Iran",
+   "text": "Delay in match because of an injury Alireza Beiranvand (IR Iran).",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "4'",
+   "team": "Belgium",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "6'",
+   "team": "Iran",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "6'",
+   "team": "Belgium",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "27'",
+   "team": "Iran",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "27'",
+   "team": "Iran",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "30'",
+   "team": "Belgium",
+   "text": "Delay in match for a drinks break.",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "30'",
+   "team": "Iran",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "33'",
+   "team": "Belgium",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "33'",
+   "team": "Iran",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Yellow Card",
+   "minute": "33'",
+   "team": "Iran",
+   "text": "Saeid Ezatolahi (IR Iran) is shown the yellow card for a bad foul.",
+   "players": [
+    "Saeid Ezatolahi"
+   ]
+  },
+  {
+   "type": "Start Delay",
+   "minute": "34'",
+   "team": "Belgium",
+   "text": "Delay in match (Belgium).",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "34'",
+   "team": "Iran",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "35'",
+   "team": "Belgium",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "35'",
+   "team": "Iran",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Halftime",
+   "minute": "45'+9'",
+   "team": null,
+   "text": "First Half ends, Belgium 0, IR Iran 0.",
+   "players": []
+  },
+  {
+   "type": "Substitution",
+   "minute": "45'",
+   "team": "Iran",
+   "text": "Substitution, IR Iran. Alireza Jahanbakhsh replaces Saleh Hardani.",
+   "players": [
+    "Alireza Jahanbakhsh",
+    "Saleh Hardani"
+   ]
+  },
+  {
+   "type": "Start 2nd Half",
+   "minute": "45'",
+   "team": null,
+   "text": "Second Half begins Belgium 0, IR Iran 0.",
+   "players": []
+  },
+  {
+   "type": "Substitution",
+   "minute": "58'",
+   "team": "Belgium",
+   "text": "Substitution, Belgium. Timothy Castagne replaces Thomas Meunier.",
+   "players": [
+    "Timothy Castagne",
+    "Thomas Meunier"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "58'",
+   "team": "Belgium",
+   "text": "Substitution, Belgium. Dodi Lukébakio replaces Alexis Saelemaekers.",
+   "players": [
+    "Dodi Lukébakio",
+    "Alexis Saelemaekers"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "58'",
+   "team": "Belgium",
+   "text": "Substitution, Belgium. Hans Vanaken replaces Nicolas Raskin.",
+   "players": [
+    "Hans Vanaken",
+    "Nicolas Raskin"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "66'",
+   "team": "Iran",
+   "text": "Substitution, IR Iran. Mehdi Torabi replaces Mohammad Mohebbi.",
+   "players": [
+    "Mehdi Torabi",
+    "Mohammad Mohebbi"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "66'",
+   "team": "Iran",
+   "text": "Substitution, IR Iran. Milad Mohammadi replaces Ehsan Hajisafi.",
+   "players": [
+    "Milad Mohammadi",
+    "Ehsan Hajsafi"
+   ]
+  },
+  {
+   "type": "Red Card",
+   "minute": "66'",
+   "team": "Belgium",
+   "text": "Nathan Ngoy (Belgium) is shown the red card.",
+   "players": [
+    "Nathan Ngoy"
+   ]
+  },
+  {
+   "type": "Start Delay",
+   "minute": "70'",
+   "team": "Belgium",
+   "text": "Delay in match for a drinks break.",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "70'",
+   "team": "Iran",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "73'",
+   "team": "Belgium",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "73'",
+   "team": "Iran",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Substitution",
+   "minute": "73'",
+   "team": "Belgium",
+   "text": "Substitution, Belgium. Arthur Theate replaces Romelu Lukaku.",
+   "players": [
+    "Arthur Theate",
+    "Romelu Lukaku"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "79'",
+   "team": "Iran",
+   "text": "Substitution, IR Iran. Shahriyar Moghanloo replaces Saman Ghoddos.",
+   "players": [
+    "Shahriyar Moghanloo",
+    "Saman Ghoddos"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "85'",
+   "team": "Iran",
+   "text": "Substitution, IR Iran. Amirhossein Hosseinzadeh replaces Saeid Ezatolahi.",
+   "players": [
+    "Amirhossein Hosseinzadeh",
+    "Saeid Ezatolahi"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "87'",
+   "team": "Belgium",
+   "text": "Substitution, Belgium. Matias Fernandez-Pardo replaces Kevin De Bruyne.",
+   "players": [
+    "Matias Fernandez-Pardo",
+    "Kevin De Bruyne"
+   ]
+  },
+  {
+   "type": "End Regular Time",
+   "minute": "90'+6'",
+   "team": null,
+   "text": "Second Half ends, Belgium 0, IR Iran 0.",
+   "players": []
+  }
+ ],
+ "shots": [
+  {
+   "minute": "8",
+   "seconds": 430.0,
+   "team": "Belgium",
+   "player": "Kevin De Bruyne",
+   "type": "Shot Off Target",
+   "x": 85.9,
+   "y": 71.6,
+   "goal": false,
+   "xg": 0.108,
+   "text": "Attempt missed. Kevin De Bruyne (Belgium) right footed shot from the left side of the box is high and wide to the right. Assisted by Leandro Trossard."
+  },
+  {
+   "minute": "9",
+   "seconds": 521.0,
+   "team": "Belgium",
+   "player": "Kevin De Bruyne",
+   "type": "Shot Blocked",
+   "x": 87.4,
+   "y": 58.1,
+   "goal": false,
+   "xg": 0.241,
+   "text": "Attempt missed. Kevin De Bruyne (Belgium) right footed shot from the centre of the box misses to the right. Assisted by Leandro Trossard."
+  },
+  {
+   "minute": "9",
+   "seconds": 525.0,
+   "team": "Belgium",
+   "player": "Maxim De Cuyper",
+   "type": "Shot On Target",
+   "x": 91.5,
+   "y": 57.5,
+   "goal": false,
+   "xg": 0.374,
+   "text": "Attempt saved. Maxim De Cuyper (Belgium) right footed shot from the centre of the box is saved in the centre of the goal by Alireza Beiranvand (IR Iran)."
+  },
+  {
+   "minute": "10",
+   "seconds": 597.0,
+   "team": "Belgium",
+   "player": "Romelu Lukaku",
+   "type": "Shot Blocked",
+   "x": 91.1,
+   "y": 70.2,
+   "goal": false,
+   "xg": 0.144,
+   "text": "Attempt blocked. Romelu Lukaku (Belgium) left footed shot from the left side of the box is blocked."
+  },
+  {
+   "minute": "14",
+   "seconds": 812.0,
+   "team": "Iran",
+   "player": "Hossein Kanani",
+   "type": "Shot On Target",
+   "x": 86.4,
+   "y": 49.5,
+   "goal": false,
+   "xg": 0.256,
+   "text": "Attempt saved. Hossein Kanani (IR Iran) right footed shot from the centre of the box is saved in the bottom left corner by Thibaut Courtois (Belgium). Assisted by Mehdi Taremi with a headed pass."
+  },
+  {
+   "minute": "15",
+   "seconds": 858.0,
+   "team": "Iran",
+   "player": "Saeid Ezatolahi",
+   "type": "Shot Off Target",
+   "x": 95.1,
+   "y": 42.6,
+   "goal": false,
+   "xg": 0.336,
+   "text": "Attempt missed. Saeid Ezatolahi (IR Iran) header from the right side of the six yard box is close, but misses to the right. Assisted by Ramin Rezaeian with a cross following a corner."
+  },
+  {
+   "minute": "19",
+   "seconds": 1093.0,
+   "team": "Belgium",
+   "player": "Leandro Trossard",
+   "type": "Shot Blocked",
+   "x": 85.2,
+   "y": 63.4,
+   "goal": false,
+   "xg": 0.157,
+   "text": "Attempt blocked. Leandro Trossard (Belgium) left footed shot from the left side of the box is blocked. Assisted by Kevin De Bruyne."
+  },
+  {
+   "minute": "22",
+   "seconds": 1287.0,
+   "team": "Belgium",
+   "player": "Youri Tielemans",
+   "type": "Shot On Target",
+   "x": 90.6,
+   "y": 28.0,
+   "goal": false,
+   "xg": 0.126,
+   "text": "Attempt saved. Youri Tielemans (Belgium) right footed shot from the right side of the box is saved in the bottom right corner by Alireza Beiranvand (IR Iran). Assisted by Kevin De Bruyne."
+  },
+  {
+   "minute": "23",
+   "seconds": 1321.0,
+   "team": "Belgium",
+   "player": "Nathan Ngoy",
+   "type": "Shot Off Target",
+   "x": 84.1,
+   "y": 51.3,
+   "goal": false,
+   "xg": 0.197,
+   "text": "Attempt missed. Nathan Ngoy (Belgium) right footed shot from the centre of the box is high and wide to the right following a corner."
+  },
+  {
+   "minute": "42",
+   "seconds": 2473.0,
+   "team": "Belgium",
+   "player": "Kevin De Bruyne",
+   "type": "Shot On Target",
+   "x": 88.7,
+   "y": 65.6,
+   "goal": false,
+   "xg": 0.178,
+   "text": "Attempt saved. Kevin De Bruyne (Belgium) right footed shot from the left side of the box is saved in the centre of the goal by Alireza Beiranvand (IR Iran). Assisted by Leandro Trossard with a through ball."
+  },
+  {
+   "minute": "44",
+   "seconds": 2591.0,
+   "team": "Belgium",
+   "player": "Maxim De Cuyper",
+   "type": "Shot On Target",
+   "x": 93.1,
+   "y": 65.6,
+   "goal": false,
+   "xg": 0.21,
+   "text": "Attempt saved. Maxim De Cuyper (Belgium) left footed shot from the left side of the box is saved in the bottom left corner by Alireza Beiranvand (IR Iran). Assisted by Youri Tielemans with a through ball."
+  },
+  {
+   "minute": "44",
+   "seconds": 2622.0,
+   "team": "Belgium",
+   "player": "Alexis Saelemaekers",
+   "type": "Shot Blocked",
+   "x": 83.6,
+   "y": 51.5,
+   "goal": false,
+   "xg": 0.186,
+   "text": "Attempt blocked. Alexis Saelemaekers (Belgium) left footed shot from the centre of the box is blocked."
+  },
+  {
+   "minute": "45'+3",
+   "seconds": 2700.0,
+   "team": "Belgium",
+   "player": "Kevin De Bruyne",
+   "type": "Shot Blocked",
+   "x": 88.8,
+   "y": 73.7,
+   "goal": false,
+   "xg": 0.108,
+   "text": "Attempt blocked. Kevin De Bruyne (Belgium) right footed shot from the left side of the box is blocked. Assisted by Leandro Trossard."
+  },
+  {
+   "minute": "46",
+   "seconds": 2710.0,
+   "team": "Iran",
+   "player": "Alireza Jahanbakhsh",
+   "type": "Shot Off Target",
+   "x": 85.2,
+   "y": 32.7,
+   "goal": false,
+   "xg": 0.13,
+   "text": "Attempt missed. Alireza Jahanbakhsh (IR Iran) left footed shot from the right side of the box misses to the right. Assisted by Mehdi Taremi with a headed pass."
+  },
+  {
+   "minute": "46",
+   "seconds": 2759.0,
+   "team": "Belgium",
+   "player": "Kevin De Bruyne",
+   "type": "Shot Blocked",
+   "x": 89.6,
+   "y": 67.9,
+   "goal": false,
+   "xg": 0.16,
+   "text": "Attempt blocked. Kevin De Bruyne (Belgium) left footed shot from the left side of the box is blocked. Assisted by Leandro Trossard."
+  },
+  {
+   "minute": "50",
+   "seconds": 2966.0,
+   "team": "Belgium",
+   "player": "Alexis Saelemaekers",
+   "type": "Shot Off Target",
+   "x": 95.6,
+   "y": 34.3,
+   "goal": false,
+   "xg": 0.201,
+   "text": "Attempt missed. Alexis Saelemaekers (Belgium) right footed shot from a difficult angle on the right is close, but misses to the right. Assisted by Kevin De Bruyne with a cross following a corner."
+  },
+  {
+   "minute": "51",
+   "seconds": 3042.0,
+   "team": "Belgium",
+   "player": "Maxim De Cuyper",
+   "type": "Shot Blocked",
+   "x": 80.6,
+   "y": 58.9,
+   "goal": false,
+   "xg": 0.122,
+   "text": "Attempt blocked. Maxim De Cuyper (Belgium) left footed shot from outside the box is blocked. Assisted by Youri Tielemans."
+  },
+  {
+   "minute": "53",
+   "seconds": 3131.0,
+   "team": "Iran",
+   "player": "Mehdi Taremi",
+   "type": "Shot On Target",
+   "x": 89.2,
+   "y": 45.8,
+   "goal": false,
+   "xg": 0.338,
+   "text": "Attempt saved. Mehdi Taremi (IR Iran) right footed shot from the centre of the box is saved in the top centre of the goal by Thibaut Courtois (Belgium). Assisted by Hossein Kanani."
+  },
+  {
+   "minute": "59",
+   "seconds": 3518.0,
+   "team": "Belgium",
+   "player": "Maxim De Cuyper",
+   "type": "Shot On Target",
+   "x": 95.5,
+   "y": 53.8,
+   "goal": false,
+   "xg": 0.735,
+   "text": "Attempt saved. Maxim De Cuyper (Belgium) right footed shot from very close range is saved in the centre of the goal by Alireza Beiranvand (IR Iran)."
+  },
+  {
+   "minute": "62",
+   "seconds": 3698.0,
+   "team": "Belgium",
+   "player": "Dodi Lukébakio",
+   "type": "Shot On Target",
+   "x": 83.1,
+   "y": 22.1,
+   "goal": false,
+   "xg": 0.068,
+   "text": "Attempt saved. Dodi Lukébakio (Belgium) left footed shot from the right side of the box is saved in the centre of the goal by Alireza Beiranvand (IR Iran). Assisted by Leandro Trossard."
+  },
+  {
+   "minute": "62",
+   "seconds": 3701.0,
+   "team": "Belgium",
+   "player": "Hans Vanaken",
+   "type": "Shot Off Target",
+   "x": 86.6,
+   "y": 53.8,
+   "goal": false,
+   "xg": 0.252,
+   "text": "Attempt missed. Hans Vanaken (Belgium) left footed shot from the centre of the box is too high."
+  },
+  {
+   "minute": "65",
+   "seconds": 3892.0,
+   "team": "Iran",
+   "player": "Shoja Khalilzadeh",
+   "type": "Shot Off Target",
+   "x": 95.5,
+   "y": 37.1,
+   "goal": false,
+   "xg": 0.174,
+   "text": "Attempt missed. Shoja Khalilzadeh (IR Iran) header from the right side of the six yard box is close, but misses the top right corner. Assisted by Ramin Rezaeian with a cross following a corner."
+  },
+  {
+   "minute": "81",
+   "seconds": 4850.0,
+   "team": "Iran",
+   "player": "Saeid Ezatolahi",
+   "type": "Shot On Target",
+   "x": 75.2,
+   "y": 41.3,
+   "goal": false,
+   "xg": 0.075,
+   "text": "Attempt saved. Saeid Ezatolahi (IR Iran) right footed shot from outside the box is saved in the bottom left corner by Thibaut Courtois (Belgium)."
+  },
+  {
+   "minute": "84",
+   "seconds": 5005.0,
+   "team": "Belgium",
+   "player": "Youri Tielemans",
+   "type": "Shot Off Target",
+   "x": 83.5,
+   "y": 67.3,
+   "goal": false,
+   "xg": 0.116,
+   "text": "Attempt missed. Youri Tielemans (Belgium) left footed shot from the left side of the box misses to the left following a set piece situation."
+  },
+  {
+   "minute": "84",
+   "seconds": 5023.0,
+   "team": "Belgium",
+   "player": "Hans Vanaken",
+   "type": "Shot Off Target",
+   "x": 89.3,
+   "y": 57.7,
+   "goal": false,
+   "xg": 0.297,
+   "text": "Attempt missed. Hans Vanaken (Belgium) left footed shot from the centre of the box misses to the left. Assisted by Youri Tielemans with a cross."
+  },
+  {
+   "minute": "86",
+   "seconds": 5112.0,
+   "team": "Belgium",
+   "player": "Maxim De Cuyper",
+   "type": "Shot On Target",
+   "x": 86.3,
+   "y": 58.6,
+   "goal": false,
+   "xg": 0.212,
+   "text": "Attempt saved. Maxim De Cuyper (Belgium) right footed shot from the centre of the box is saved in the centre of the goal by Alireza Beiranvand (IR Iran). Assisted by Timothy Castagne with a cross."
+  },
+  {
+   "minute": "88",
+   "seconds": 5260.0,
+   "team": "Iran",
+   "player": "Amirhossein Hosseinzadeh",
+   "type": "Shot Blocked",
+   "x": 87.5,
+   "y": 58.5,
+   "goal": false,
+   "xg": 0.239,
+   "text": "Attempt blocked. Amirhossein Hosseinzadeh (IR Iran) right footed shot from the centre of the box is blocked. Assisted by Milad Mohammadi."
+  },
+  {
+   "minute": "90'+3",
+   "seconds": 5400.0,
+   "team": "Belgium",
+   "player": "Brandon Mechele",
+   "type": "Shot Off Target",
+   "x": 92.3,
+   "y": 55.2,
+   "goal": false,
+   "xg": 0.304,
+   "text": "Attempt missed. Brandon Mechele (Belgium) header from the centre of the box is high and wide to the left. Assisted by Timothy Castagne with a cross."
+  },
+  {
+   "minute": "90'+4",
+   "seconds": 5400.0,
+   "team": "Belgium",
+   "player": "Matias Fernandez-Pardo",
+   "type": "Shot Off Target",
+   "x": 80.8,
+   "y": 69.7,
+   "goal": false,
+   "xg": 0.086,
+   "text": "Attempt missed. Matias Fernandez-Pardo (Belgium) right footed shot from outside the box is high and wide to the right. Assisted by Arthur Theate."
+  },
+  {
+   "minute": "90'+5",
+   "seconds": 5400.0,
+   "team": "Belgium",
+   "player": "Dodi Lukébakio",
+   "type": "Shot Off Target",
+   "x": 81.2,
+   "y": 28.9,
+   "goal": false,
+   "xg": 0.084,
+   "text": "Attempt missed. Dodi Lukébakio (Belgium) left footed shot from outside the box is close, but misses to the left. Assisted by Timothy Castagne."
+  }
+ ],
+ "lineups": [
+  {
+   "team": "Belgium",
+   "formation": "4-2-3-1",
+   "starters": [
+    {
+     "name": "Thibaut Courtois",
+     "jersey": "1",
+     "position": "G"
+    },
+    {
+     "name": "Brandon Mechele",
+     "jersey": "4",
+     "position": "CD-L"
+    },
+    {
+     "name": "Nathan Ngoy",
+     "jersey": "25",
+     "position": "CD-R"
+    },
+    {
+     "name": "Maxim De Cuyper",
+     "jersey": "5",
+     "position": "LB"
+    },
+    {
+     "name": "Thomas Meunier",
+     "jersey": "15",
+     "position": "RB"
+    },
+    {
+     "name": "Kevin De Bruyne",
+     "jersey": "7",
+     "position": "AM"
+    },
+    {
+     "name": "Youri Tielemans",
+     "jersey": "8",
+     "position": "LM"
+    },
+    {
+     "name": "Nicolas Raskin",
+     "jersey": "23",
+     "position": "RM"
+    },
+    {
+     "name": "Romelu Lukaku",
+     "jersey": "9",
+     "position": "F"
+    },
+    {
+     "name": "Leandro Trossard",
+     "jersey": "10",
+     "position": "AM-L"
+    },
+    {
+     "name": "Alexis Saelemaekers",
+     "jersey": "22",
+     "position": "AM-R"
+    }
+   ],
+   "subs": [
+    {
+     "name": "Axel Witsel",
+     "jersey": "6",
+     "position": "SUB"
+    },
+    {
+     "name": "Joaquin Seys",
+     "jersey": "18",
+     "position": "SUB"
+    },
+    {
+     "name": "Diego Moreira",
+     "jersey": "19",
+     "position": "SUB"
+    },
+    {
+     "name": "Mike Penders",
+     "jersey": "13",
+     "position": "SUB"
+    },
+    {
+     "name": "Koni De Winter",
+     "jersey": "16",
+     "position": "SUB"
+    },
+    {
+     "name": "Arthur Theate",
+     "jersey": "3",
+     "position": "SUB"
+    },
+    {
+     "name": "Charles De Ketelaere",
+     "jersey": "17",
+     "position": "SUB"
+    },
+    {
+     "name": "Hans Vanaken",
+     "jersey": "20",
+     "position": "SUB"
+    },
+    {
+     "name": "Timothy Castagne",
+     "jersey": "21",
+     "position": "SUB"
+    },
+    {
+     "name": "Senne Lammens",
+     "jersey": "12",
+     "position": "SUB"
+    },
+    {
+     "name": "Dodi Lukébakio",
+     "jersey": "14",
+     "position": "SUB"
+    },
+    {
+     "name": "Matias Fernandez-Pardo",
+     "jersey": "26",
+     "position": "SUB"
+    },
+    {
+     "name": "Amadou Onana",
+     "jersey": "24",
+     "position": "SUB"
+    }
+   ]
+  },
+  {
+   "team": "Iran",
+   "formation": "5-4-1",
+   "starters": [
+    {
+     "name": "Alireza Beiranvand",
+     "jersey": "1",
+     "position": "G"
+    },
+    {
+     "name": "Shoja Khalilzadeh",
+     "jersey": "4",
+     "position": "CD"
+    },
+    {
+     "name": "Ali Nemati",
+     "jersey": "19",
+     "position": "CD-L"
+    },
+    {
+     "name": "Hossein Kanani",
+     "jersey": "13",
+     "position": "CD-R"
+    },
+    {
+     "name": "Ehsan Hajsafi",
+     "jersey": "3",
+     "position": "LB"
+    },
+    {
+     "name": "Saleh Hardani",
+     "jersey": "2",
+     "position": "RB"
+    },
+    {
+     "name": "Saeid Ezatolahi",
+     "jersey": "6",
+     "position": "CM-L"
+    },
+    {
+     "name": "Saman Ghoddos",
+     "jersey": "14",
+     "position": "CM-R"
+    },
+    {
+     "name": "Mohammad Mohebbi",
+     "jersey": "8",
+     "position": "LM"
+    },
+    {
+     "name": "Ramin Rezaeian",
+     "jersey": "23",
+     "position": "RM"
+    },
+    {
+     "name": "Mehdi Taremi",
+     "jersey": "9",
+     "position": "F"
+    }
+   ],
+   "subs": [
+    {
+     "name": "Danial Iri",
+     "jersey": "25",
+     "position": "SUB"
+    },
+    {
+     "name": "Shahriyar Moghanloo",
+     "jersey": "20",
+     "position": "SUB"
+    },
+    {
+     "name": "Dennis Dargahi",
+     "jersey": "24",
+     "position": "SUB"
+    },
+    {
+     "name": "Mehdi Ghayedi",
+     "jersey": "10",
+     "position": "SUB"
+    },
+    {
+     "name": "Alireza Jahanbakhsh",
+     "jersey": "7",
+     "position": "SUB"
+    },
+    {
+     "name": "Payam Niazmand",
+     "jersey": "12",
+     "position": "SUB"
+    },
+    {
+     "name": "Amirhossein Hosseinzadeh",
+     "jersey": "18",
+     "position": "SUB"
+    },
+    {
+     "name": "Mehdi Torabi",
+     "jersey": "16",
+     "position": "SUB"
+    },
+    {
+     "name": "Arya Yousefi",
+     "jersey": "17",
+     "position": "SUB"
+    },
+    {
+     "name": "Hossein Hosseini",
+     "jersey": "22",
+     "position": "SUB"
+    },
+    {
+     "name": "Milad Mohammadi",
+     "jersey": "5",
+     "position": "SUB"
+    },
+    {
+     "name": "Mohammad Ghorbani",
+     "jersey": "21",
+     "position": "SUB"
+    },
+    {
+     "name": "Ali Alipour",
+     "jersey": "11",
+     "position": "SUB"
+    },
+    {
+     "name": "Roozbeh Cheshmi",
+     "jersey": "15",
+     "position": "SUB"
+    },
+    {
+     "name": "Amirmohammad Razzaghinia",
+     "jersey": "26",
+     "position": "SUB"
+    }
+   ]
+  }
+ ],
+ "attendance": 70317,
+ "venue": "SoFi Stadium, Inglewood, California, USA"
+}

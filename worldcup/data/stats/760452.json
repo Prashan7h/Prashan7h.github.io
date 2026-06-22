@@ -1,0 +1,1059 @@
+{
+ "teams": [
+  {
+   "name": "New Zealand",
+   "stats": {
+    "possessionPct": "44.3",
+    "totalShots": "12",
+    "shotsOnTarget": "5",
+    "wonCorners": "4",
+    "foulsCommitted": "14",
+    "offsides": "3",
+    "saves": "4",
+    "yellowCards": "2",
+    "redCards": "0"
+   }
+  },
+  {
+   "name": "Egypt",
+   "stats": {
+    "possessionPct": "55.7",
+    "totalShots": "19",
+    "shotsOnTarget": "7",
+    "wonCorners": "4",
+    "foulsCommitted": "8",
+    "offsides": "0",
+    "saves": "4",
+    "yellowCards": "1",
+    "redCards": "0"
+   }
+  }
+ ],
+ "events": [
+  {
+   "type": "Kickoff",
+   "minute": "",
+   "team": null,
+   "text": "First Half begins.",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "8'",
+   "team": "New Zealand",
+   "text": "Delay in match (New Zealand).",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "8'",
+   "team": "Egypt",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "8'",
+   "team": "New Zealand",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "8'",
+   "team": "Egypt",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Goal - Header",
+   "minute": "15'",
+   "team": "New Zealand",
+   "text": "Goal! New Zealand 1, Egypt 0. Finn Surman (New Zealand) header from the centre of the box to the top left corner. Assisted by Tim Payne with a cross following a corner.",
+   "players": [
+    "Finn Surman",
+    "Tim Payne"
+   ]
+  },
+  {
+   "type": "Yellow Card",
+   "minute": "17'",
+   "team": "Egypt",
+   "text": "Mohanad Lasheen (Egypt) is shown the yellow card for a bad foul.",
+   "players": [
+    "Mohanad Lashin"
+   ]
+  },
+  {
+   "type": "Yellow Card",
+   "minute": "20'",
+   "team": "New Zealand",
+   "text": "Sarpreet Singh (New Zealand) is shown the yellow card for a bad foul.",
+   "players": [
+    "Sarpreet Singh"
+   ]
+  },
+  {
+   "type": "Start Delay",
+   "minute": "21'",
+   "team": "Egypt",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "21'",
+   "team": "Egypt",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "22'",
+   "team": "Egypt",
+   "text": "Delay in match for a drinks break.",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "22'",
+   "team": "New Zealand",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "25'",
+   "team": "Egypt",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "25'",
+   "team": "New Zealand",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Yellow Card",
+   "minute": "34'",
+   "team": "New Zealand",
+   "text": "Callum McCowatt (New Zealand) is shown the yellow card for a bad foul.",
+   "players": [
+    "Callum McCowatt"
+   ]
+  },
+  {
+   "type": "Start Delay",
+   "minute": "40'",
+   "team": "New Zealand",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "40'",
+   "team": "Egypt",
+   "text": "Delay in match because of an injury Hamdi Fathy (Egypt).",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "41'",
+   "team": "Egypt",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "41'",
+   "team": "New Zealand",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Substitution",
+   "minute": "41'",
+   "team": "Egypt",
+   "text": "Substitution, Egypt. Ramy Rabia replaces Hamdi Fathy because of an injury.",
+   "players": [
+    "Ramy Rabia",
+    "Hamdy Fathy"
+   ]
+  },
+  {
+   "type": "Halftime",
+   "minute": "45'+5'",
+   "team": null,
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Start 2nd Half",
+   "minute": "45'",
+   "team": null,
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Goal - Header",
+   "minute": "58'",
+   "team": "Egypt",
+   "text": "Goal! New Zealand 1, Egypt 1. Mostafa Zico (Egypt) header from the centre of the box to the high centre of the goal. Assisted by Mohamed Hany with a cross.",
+   "players": [
+    "Mostafa Zico",
+    "Mohamed Hany"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "66'",
+   "team": "New Zealand",
+   "text": "Substitution, New Zealand. Ben Old replaces Callum McCowatt.",
+   "players": [
+    "Ben Old",
+    "Callum McCowatt"
+   ]
+  },
+  {
+   "type": "Goal",
+   "minute": "67'",
+   "team": "Egypt",
+   "text": "Goal! New Zealand 1, Egypt 2. Mohamed Salah (Egypt) left footed shot from the centre of the box to the bottom left corner. Assisted by Mostafa Zico.",
+   "players": [
+    "Mohamed Salah",
+    "Mostafa Zico"
+   ]
+  },
+  {
+   "type": "Start Delay",
+   "minute": "72'",
+   "team": "Egypt",
+   "text": "Delay in match for a drinks break.",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "72'",
+   "team": "New Zealand",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "75'",
+   "team": "Egypt",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "75'",
+   "team": "New Zealand",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Substitution",
+   "minute": "76'",
+   "team": "New Zealand",
+   "text": "Substitution, New Zealand. Jesse Randall replaces Liberato Cacace.",
+   "players": [
+    "Jesse Randall",
+    "Liberato Cacace"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "76'",
+   "team": "New Zealand",
+   "text": "Substitution, New Zealand. Ryan Thomas replaces Sarpreet Singh.",
+   "players": [
+    "Ryan Thomas",
+    "Sarpreet Singh"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "76'",
+   "team": "Egypt",
+   "text": "Substitution, Egypt. Trezeguet replaces Omar Marmoush.",
+   "players": [
+    "Trézéguet",
+    "Omar Marmoush"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "76'",
+   "team": "Egypt",
+   "text": "Substitution, Egypt. Hamza Abdelkarim replaces Mostafa Zico.",
+   "players": [
+    "Hamza Abdelkarim",
+    "Mostafa Zico"
+   ]
+  },
+  {
+   "type": "Goal - Header",
+   "minute": "82'",
+   "team": "Egypt",
+   "text": "Goal! New Zealand 1, Egypt 3. Trezeguet (Egypt) header from the centre of the box to the bottom left corner. Assisted by Mohamed Salah with a cross following a corner.",
+   "players": [
+    "Trézéguet",
+    "Mohamed Salah"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "85'",
+   "team": "Egypt",
+   "text": "Substitution, Egypt. Zizo replaces Emam Ashour.",
+   "players": [
+    "Zizo",
+    "Emam Ashour"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "85'",
+   "team": "Egypt",
+   "text": "Substitution, Egypt. Hossam Abdelmaguid replaces Mohamed Salah.",
+   "players": [
+    "Hossam Abdelmaguid",
+    "Mohamed Salah"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "85'",
+   "team": "New Zealand",
+   "text": "Substitution, New Zealand. Tyler Bindon replaces Tim Payne.",
+   "players": [
+    "Tyler Bindon",
+    "Tim Payne"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "85'",
+   "team": "New Zealand",
+   "text": "Substitution, New Zealand. Francis de Vries replaces Elijah Just.",
+   "players": [
+    "Francis de Vries",
+    "Elijah Just"
+   ]
+  },
+  {
+   "type": "Start Delay",
+   "minute": "90'+4'",
+   "team": "New Zealand",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "90'+4'",
+   "team": "Egypt",
+   "text": "Delay in match because of an injury Hossam Abdelmaguid (Egypt).",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "90'+7'",
+   "team": "Egypt",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "90'+7'",
+   "team": "New Zealand",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Substitution",
+   "minute": "90'+9'",
+   "team": "Egypt",
+   "text": "Substitution, Egypt. Mohamed Abdelmonem replaces Hossam Abdelmaguid because of an injury.",
+   "players": [
+    "Mohamed Abdelmoneim",
+    "Hossam Abdelmaguid"
+   ]
+  },
+  {
+   "type": "End Regular Time",
+   "minute": "90'+11'",
+   "team": null,
+   "text": "",
+   "players": []
+  }
+ ],
+ "shots": [
+  {
+   "minute": "6",
+   "seconds": 346.0,
+   "team": "Egypt",
+   "player": "Mohamed Salah",
+   "type": "Shot Blocked",
+   "x": 81.6,
+   "y": 44.2,
+   "goal": false,
+   "xg": 0.144,
+   "text": "Attempt blocked. Mohamed Salah (Egypt) left footed shot from outside the box is blocked. Assisted by Mohanad Lasheen."
+  },
+  {
+   "minute": "7",
+   "seconds": 386.0,
+   "team": "New Zealand",
+   "player": "Sarpreet Singh",
+   "type": "Shot Off Target",
+   "x": 81.6,
+   "y": 58.2,
+   "goal": false,
+   "xg": 0.137,
+   "text": "Attempt missed. Sarpreet Singh (New Zealand) left footed shot from outside the box misses to the right. Assisted by Liberato Cacace."
+  },
+  {
+   "minute": "14",
+   "seconds": 810.0,
+   "team": "New Zealand",
+   "player": "Elijah Just",
+   "type": "Shot On Target",
+   "x": 90.9,
+   "y": 69.9,
+   "goal": false,
+   "xg": 0.146,
+   "text": "Attempt saved. Elijah Just (New Zealand) left footed shot from the left side of the box is saved in the bottom left corner by Mostafa Shobeir (Egypt). Assisted by Marko Stamenic."
+  },
+  {
+   "minute": "15",
+   "seconds": 875.0,
+   "team": "New Zealand",
+   "player": "Finn Surman",
+   "type": "Goal - Header",
+   "x": 92.9,
+   "y": 51.6,
+   "goal": true,
+   "xg": 0.376,
+   "text": "Goal! New Zealand 1, Egypt 0. Finn Surman (New Zealand) header from the centre of the box to the top left corner. Assisted by Tim Payne with a cross following a corner."
+  },
+  {
+   "minute": "19",
+   "seconds": 1096.0,
+   "team": "New Zealand",
+   "player": "Elijah Just",
+   "type": "Shot Blocked",
+   "x": 77.8,
+   "y": 67.7,
+   "goal": false,
+   "xg": 0.074,
+   "text": "Attempt blocked. Elijah Just (New Zealand) left footed shot from outside the box is blocked."
+  },
+  {
+   "minute": "19",
+   "seconds": 1129.0,
+   "team": "New Zealand",
+   "player": "Callum McCowatt",
+   "type": "Shot On Target",
+   "x": 95.4,
+   "y": 68.1,
+   "goal": false,
+   "xg": 0.166,
+   "text": "Attempt saved. Callum McCowatt (New Zealand) left footed shot from a difficult angle on the left is saved in the bottom left corner by Mostafa Shobeir (Egypt)."
+  },
+  {
+   "minute": "20",
+   "seconds": 1174.0,
+   "team": "Egypt",
+   "player": "Mohamed Hany",
+   "type": "Shot Blocked",
+   "x": 83.7,
+   "y": 27.2,
+   "goal": false,
+   "xg": 0.09,
+   "text": "Attempt blocked. Mohamed Hany (Egypt) right footed shot from the right side of the box is blocked. Assisted by Mohamed Salah."
+  },
+  {
+   "minute": "21",
+   "seconds": 1213.0,
+   "team": "Egypt",
+   "player": "Mostafa Zico",
+   "type": "Shot Off Target",
+   "x": 91.8,
+   "y": 52.1,
+   "goal": false,
+   "xg": 0.321,
+   "text": "Attempt missed. Mostafa Zico (Egypt) header from the centre of the box misses to the left. Assisted by Marwan Attia with a cross following a corner."
+  },
+  {
+   "minute": "26",
+   "seconds": 1543.0,
+   "team": "New Zealand",
+   "player": "Joe Bell",
+   "type": "Shot Blocked",
+   "x": 71.8,
+   "y": 48.1,
+   "goal": false,
+   "xg": 0.058,
+   "text": "Attempt blocked. Joe Bell (New Zealand) right footed shot from outside the box is blocked. Assisted by Chris Wood."
+  },
+  {
+   "minute": "27",
+   "seconds": 1563.0,
+   "team": "Egypt",
+   "player": "Omar Marmoush",
+   "type": "Shot On Target",
+   "x": 81.6,
+   "y": 67.3,
+   "goal": false,
+   "xg": 0.101,
+   "text": "Attempt saved. Omar Marmoush (Egypt) right footed shot from outside the box is saved in the bottom right corner by Max Crocombe (New Zealand). Assisted by Emam Ashour."
+  },
+  {
+   "minute": "27",
+   "seconds": 1602.0,
+   "team": "New Zealand",
+   "player": "Chris Wood",
+   "type": "Shot Off Target",
+   "x": 90.6,
+   "y": 56.0,
+   "goal": false,
+   "xg": 0.241,
+   "text": "Attempt missed. Chris Wood (New Zealand) header from the centre of the box misses to the right. Assisted by Liberato Cacace with a cross."
+  },
+  {
+   "minute": "35",
+   "seconds": 2096.0,
+   "team": "Egypt",
+   "player": "Mohamed Salah",
+   "type": "Shot Off Target",
+   "x": 78.6,
+   "y": 63.2,
+   "goal": false,
+   "xg": 0.091,
+   "text": "Attempt missed. Mohamed Salah (Egypt) left footed shot from outside the box is close, but misses to the left. Assisted by Omar Marmoush from a direct free kick."
+  },
+  {
+   "minute": "45'+1",
+   "seconds": 2700.0,
+   "team": "Egypt",
+   "player": "Emam Ashour",
+   "type": "Shot Off Target",
+   "x": 93.9,
+   "y": 50.5,
+   "goal": false,
+   "xg": 0.668,
+   "text": "Attempt missed. Emam Ashour (Egypt) left footed shot from the centre of the box misses to the left. Assisted by Mostafa Zico with a cross."
+  },
+  {
+   "minute": "46",
+   "seconds": 2730.0,
+   "team": "Egypt",
+   "player": "Mohamed Salah",
+   "type": "Shot On Target",
+   "x": 88.7,
+   "y": 46.0,
+   "goal": false,
+   "xg": 0.32,
+   "text": "Attempt saved. Mohamed Salah (Egypt) right footed shot from the centre of the box is saved in the bottom right corner by Max Crocombe (New Zealand). Assisted by Mohamed Hany with a cross."
+  },
+  {
+   "minute": "47",
+   "seconds": 2811.0,
+   "team": "Egypt",
+   "player": "Omar Marmoush",
+   "type": "Shot Off Target",
+   "x": 72.7,
+   "y": 45.4,
+   "goal": false,
+   "xg": 0.062,
+   "text": "Attempt missed. Omar Marmoush (Egypt) right footed shot from outside the box is close, but misses to the left. Assisted by Mohamed Salah following a set piece situation."
+  },
+  {
+   "minute": "49",
+   "seconds": 2926.0,
+   "team": "Egypt",
+   "player": "Mostafa Zico",
+   "type": "Shot Blocked",
+   "x": 78.5,
+   "y": 59.7,
+   "goal": false,
+   "xg": 0.099,
+   "text": "Attempt blocked. Mostafa Zico (Egypt) right footed shot from outside the box is blocked. Assisted by Mohamed Salah."
+  },
+  {
+   "minute": "50",
+   "seconds": 2942.0,
+   "team": "Egypt",
+   "player": "Emam Ashour",
+   "type": "Shot Off Target",
+   "x": 73.4,
+   "y": 42.3,
+   "goal": false,
+   "xg": 0.064,
+   "text": "Attempt missed. Emam Ashour (Egypt) left footed shot from outside the box misses to the right. Assisted by Marwan Attia."
+  },
+  {
+   "minute": "50",
+   "seconds": 2975.0,
+   "team": "Egypt",
+   "player": "Omar Marmoush",
+   "type": "Shot Blocked",
+   "x": 81.6,
+   "y": 63.8,
+   "goal": false,
+   "xg": 0.115,
+   "text": "Attempt blocked. Omar Marmoush (Egypt) right footed shot from outside the box is blocked. Assisted by Mohamed Salah."
+  },
+  {
+   "minute": "52",
+   "seconds": 3092.0,
+   "team": "New Zealand",
+   "player": "Callum McCowatt",
+   "type": "Shot On Target",
+   "x": 94.2,
+   "y": 54.2,
+   "goal": false,
+   "xg": 0.403,
+   "text": "Attempt saved. Callum McCowatt (New Zealand) header from the centre of the box is saved in the top centre of the goal by Mostafa Shobeir (Egypt). Assisted by Marko Stamenic."
+  },
+  {
+   "minute": "55",
+   "seconds": 3244.0,
+   "team": "Egypt",
+   "player": "Mostafa Zico",
+   "type": "Shot Blocked",
+   "x": 89.7,
+   "y": 52.8,
+   "goal": false,
+   "xg": 0.372,
+   "text": "Attempt blocked. Mostafa Zico (Egypt) left footed shot from the centre of the box is blocked. Assisted by Ahmed Fatouh with a cross."
+  },
+  {
+   "minute": "55",
+   "seconds": 3246.0,
+   "team": "Egypt",
+   "player": "Emam Ashour",
+   "type": "Shot Off Target",
+   "x": 85.5,
+   "y": 61.5,
+   "goal": false,
+   "xg": 0.175,
+   "text": "Attempt missed. Emam Ashour (Egypt) right footed shot from the centre of the box misses to the right."
+  },
+  {
+   "minute": "58",
+   "seconds": 3475.0,
+   "team": "Egypt",
+   "player": "Mostafa Zico",
+   "type": "Goal - Header",
+   "x": 91.4,
+   "y": 53.2,
+   "goal": true,
+   "xg": 0.296,
+   "text": "Goal! New Zealand 1, Egypt 1. Mostafa Zico (Egypt) header from the centre of the box to the high centre of the goal. Assisted by Mohamed Hany with a cross."
+  },
+  {
+   "minute": "65",
+   "seconds": 3841.0,
+   "team": "New Zealand",
+   "player": "Marko Stamenic",
+   "type": "Shot Blocked",
+   "x": 68.8,
+   "y": 52.1,
+   "goal": false,
+   "xg": 0.044,
+   "text": "Attempt blocked. Marko Stamenic (New Zealand) right footed shot from outside the box is blocked. Assisted by Joe Bell."
+  },
+  {
+   "minute": "67",
+   "seconds": 4013.0,
+   "team": "Egypt",
+   "player": "Mohamed Salah",
+   "type": "Goal",
+   "x": 86.4,
+   "y": 42.1,
+   "goal": true,
+   "xg": 0.22,
+   "text": "Goal! New Zealand 1, Egypt 2. Mohamed Salah (Egypt) left footed shot from the centre of the box to the bottom left corner. Assisted by Mostafa Zico."
+  },
+  {
+   "minute": "80",
+   "seconds": 4798.0,
+   "team": "Egypt",
+   "player": "Ahmed Fatouh",
+   "type": "Shot On Target",
+   "x": 87.1,
+   "y": 67.9,
+   "goal": false,
+   "xg": 0.142,
+   "text": "Attempt saved. Ahmed Fatouh (Egypt) right footed shot from the left side of the box is saved in the centre of the goal by Max Crocombe (New Zealand)."
+  },
+  {
+   "minute": "81",
+   "seconds": 4831.0,
+   "team": "Egypt",
+   "player": "Mohamed Salah",
+   "type": "Shot Blocked",
+   "x": 83.9,
+   "y": 33.8,
+   "goal": false,
+   "xg": 0.125,
+   "text": "Attempt blocked. Mohamed Salah (Egypt) left footed shot from the right side of the box is blocked. Assisted by Emam Ashour."
+  },
+  {
+   "minute": "82",
+   "seconds": 4877.0,
+   "team": "Egypt",
+   "player": "Trezeguet",
+   "type": "Goal - Header",
+   "x": 93.4,
+   "y": 59.3,
+   "goal": true,
+   "xg": 0.247,
+   "text": "Goal! New Zealand 1, Egypt 3. Trezeguet (Egypt) header from the centre of the box to the bottom left corner. Assisted by Mohamed Salah with a cross following a corner."
+  },
+  {
+   "minute": "90'+3",
+   "seconds": 5400.0,
+   "team": "Egypt",
+   "player": "Zizo",
+   "type": "Shot On Target",
+   "x": 96.4,
+   "y": 59.1,
+   "goal": false,
+   "xg": 0.428,
+   "text": "Attempt saved. Zizo (Egypt) right footed shot from the left side of the six yard box is saved in the centre of the goal by Max Crocombe (New Zealand)."
+  },
+  {
+   "minute": "90'+4",
+   "seconds": 5400.0,
+   "team": "New Zealand",
+   "player": "Michael Boxall",
+   "type": "Shot Blocked",
+   "x": 96.4,
+   "y": 51.2,
+   "goal": false,
+   "xg": 0.568,
+   "text": "Attempt blocked. Michael Boxall (New Zealand) header from very close range is blocked. Assisted by Ryan Thomas with a headed pass."
+  },
+  {
+   "minute": "90'+4",
+   "seconds": 5400.0,
+   "team": "Egypt",
+   "player": null,
+   "type": "Shot Blocked",
+   "x": 2.7,
+   "y": 49.3,
+   "goal": false,
+   "xg": 0.0,
+   "text": "Hossam Abdelmaguid (Egypt) Shot Blocked at 90'+4'"
+  },
+  {
+   "minute": "90'+8",
+   "seconds": 5400.0,
+   "team": "New Zealand",
+   "player": "Marko Stamenic",
+   "type": "Shot Off Target",
+   "x": 82.8,
+   "y": 44.3,
+   "goal": false,
+   "xg": 0.162,
+   "text": "Attempt missed. Marko Stamenic (New Zealand) right footed shot from outside the box misses to the left."
+  },
+  {
+   "minute": "90'+8",
+   "seconds": 5400.0,
+   "team": "New Zealand",
+   "player": "Tyler Bindon",
+   "type": "Shot On Target",
+   "x": 94.8,
+   "y": 54.2,
+   "goal": false,
+   "xg": 0.664,
+   "text": "Attempt saved. Tyler Bindon (New Zealand) left footed shot from very close range is saved in the centre of the goal by Mostafa Shobeir (Egypt). Assisted by Marko Stamenic."
+  }
+ ],
+ "lineups": [
+  {
+   "team": "New Zealand",
+   "formation": "4-2-3-1",
+   "starters": [
+    {
+     "name": "Max Crocombe",
+     "jersey": "1",
+     "position": "G"
+    },
+    {
+     "name": "Michael Boxall",
+     "jersey": "5",
+     "position": "CD-L"
+    },
+    {
+     "name": "Finn Surman",
+     "jersey": "16",
+     "position": "CD-R"
+    },
+    {
+     "name": "Liberato Cacace",
+     "jersey": "13",
+     "position": "LB"
+    },
+    {
+     "name": "Tim Payne",
+     "jersey": "2",
+     "position": "RB"
+    },
+    {
+     "name": "Sarpreet Singh",
+     "jersey": "10",
+     "position": "AM"
+    },
+    {
+     "name": "Marko Stamenic",
+     "jersey": "8",
+     "position": "LM"
+    },
+    {
+     "name": "Joe Bell",
+     "jersey": "6",
+     "position": "RM"
+    },
+    {
+     "name": "Chris Wood",
+     "jersey": "9",
+     "position": "F"
+    },
+    {
+     "name": "Elijah Just",
+     "jersey": "11",
+     "position": "AM-L"
+    },
+    {
+     "name": "Callum McCowatt",
+     "jersey": "20",
+     "position": "AM-R"
+    }
+   ],
+   "subs": [
+    {
+     "name": "Francis de Vries",
+     "jersey": "3",
+     "position": "SUB"
+    },
+    {
+     "name": "Ryan Thomas",
+     "jersey": "23",
+     "position": "SUB"
+    },
+    {
+     "name": "Alex Paulsen",
+     "jersey": "12",
+     "position": "SUB"
+    },
+    {
+     "name": "Lachlan Bayliss",
+     "jersey": "25",
+     "position": "SUB"
+    },
+    {
+     "name": "Ben Old",
+     "jersey": "19",
+     "position": "SUB"
+    },
+    {
+     "name": "Ben Waine",
+     "jersey": "18",
+     "position": "SUB"
+    },
+    {
+     "name": "Tyler Bindon",
+     "jersey": "4",
+     "position": "SUB"
+    },
+    {
+     "name": "Callan Elliot",
+     "jersey": "24",
+     "position": "SUB"
+    },
+    {
+     "name": "Logan Rogerson",
+     "jersey": "7",
+     "position": "SUB"
+    },
+    {
+     "name": "Alex Rufer",
+     "jersey": "14",
+     "position": "SUB"
+    },
+    {
+     "name": "Tommy Smith",
+     "jersey": "26",
+     "position": "SUB"
+    },
+    {
+     "name": "Nando Pijnaker",
+     "jersey": "15",
+     "position": "SUB"
+    },
+    {
+     "name": "Michael Woud",
+     "jersey": "22",
+     "position": "SUB"
+    },
+    {
+     "name": "Kosta Barbarouses",
+     "jersey": "17",
+     "position": "SUB"
+    },
+    {
+     "name": "Jesse Randall",
+     "jersey": "21",
+     "position": "SUB"
+    }
+   ]
+  },
+  {
+   "team": "Egypt",
+   "formation": "4-2-3-1",
+   "starters": [
+    {
+     "name": "Mostafa Shoubir",
+     "jersey": "23",
+     "position": "G"
+    },
+    {
+     "name": "Hamdy Fathy",
+     "jersey": "14",
+     "position": "CD-L"
+    },
+    {
+     "name": "Yasser Ibrahim",
+     "jersey": "2",
+     "position": "CD-R"
+    },
+    {
+     "name": "Ahmed Fatouh",
+     "jersey": "13",
+     "position": "LB"
+    },
+    {
+     "name": "Mohamed Hany",
+     "jersey": "3",
+     "position": "RB"
+    },
+    {
+     "name": "Mohamed Salah",
+     "jersey": "10",
+     "position": "AM"
+    },
+    {
+     "name": "Mohanad Lashin",
+     "jersey": "17",
+     "position": "LM"
+    },
+    {
+     "name": "Marawan Attia",
+     "jersey": "19",
+     "position": "RM"
+    },
+    {
+     "name": "Omar Marmoush",
+     "jersey": "22",
+     "position": "F"
+    },
+    {
+     "name": "Emam Ashour",
+     "jersey": "8",
+     "position": "AM-L"
+    },
+    {
+     "name": "Mostafa Zico",
+     "jersey": "11",
+     "position": "AM-R"
+    }
+   ],
+   "subs": [
+    {
+     "name": "Mohamed Alaa",
+     "jersey": "26",
+     "position": "SUB"
+    },
+    {
+     "name": "Mohamed Abdelmoneim",
+     "jersey": "6",
+     "position": "SUB"
+    },
+    {
+     "name": "Haissem Hassan",
+     "jersey": "12",
+     "position": "SUB"
+    },
+    {
+     "name": "Tarek Alaa",
+     "jersey": "24",
+     "position": "SUB"
+    },
+    {
+     "name": "Hossam Abdelmaguid",
+     "jersey": "4",
+     "position": "SUB"
+    },
+    {
+     "name": "Mohamed El Shenawy",
+     "jersey": "1",
+     "position": "SUB"
+    },
+    {
+     "name": "Ibrahim Adel",
+     "jersey": "20",
+     "position": "SUB"
+    },
+    {
+     "name": "Zizo",
+     "jersey": "25",
+     "position": "SUB"
+    },
+    {
+     "name": "Ramy Rabia",
+     "jersey": "5",
+     "position": "SUB"
+    },
+    {
+     "name": "Nabil Donga",
+     "jersey": "18",
+     "position": "SUB"
+    },
+    {
+     "name": "Trézéguet",
+     "jersey": "7",
+     "position": "SUB"
+    },
+    {
+     "name": "Mahdy Soliman",
+     "jersey": "16",
+     "position": "SUB"
+    },
+    {
+     "name": "Hamza Abdelkarim",
+     "jersey": "9",
+     "position": "SUB"
+    },
+    {
+     "name": "Mahmoud Saber",
+     "jersey": "21",
+     "position": "SUB"
+    },
+    {
+     "name": "Karim Hafez",
+     "jersey": "15",
+     "position": "SUB"
+    }
+   ]
+  }
+ ],
+ "attendance": 0,
+ "venue": "BC Place, Vancouver, Canada"
+}

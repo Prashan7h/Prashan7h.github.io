@@ -1,0 +1,1001 @@
+{
+ "teams": [
+  {
+   "name": "Uruguay",
+   "stats": {
+    "possessionPct": "65.3",
+    "totalShots": "17",
+    "shotsOnTarget": "2",
+    "wonCorners": "11",
+    "foulsCommitted": "11",
+    "offsides": "3",
+    "saves": "2",
+    "yellowCards": "2",
+    "redCards": "0"
+   }
+  },
+  {
+   "name": "Cape Verde",
+   "stats": {
+    "possessionPct": "34.7",
+    "totalShots": "12",
+    "shotsOnTarget": "4",
+    "wonCorners": "4",
+    "foulsCommitted": "4",
+    "offsides": "0",
+    "saves": "0",
+    "yellowCards": "2",
+    "redCards": "0"
+   }
+  }
+ ],
+ "events": [
+  {
+   "type": "Kickoff",
+   "minute": "",
+   "team": null,
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Yellow Card",
+   "minute": "5'",
+   "team": "Cape Verde",
+   "text": "Sidny Cabral (Cabo Verde) is shown the yellow card for a bad foul.",
+   "players": [
+    "Sidny Lopes Cabral"
+   ]
+  },
+  {
+   "type": "Yellow Card",
+   "minute": "20'",
+   "team": "Uruguay",
+   "text": "Rodrigo Bentancur (Uruguay) is shown the yellow card for a bad foul.",
+   "players": [
+    "Rodrigo Bentancur"
+   ]
+  },
+  {
+   "type": "Goal - Free-kick",
+   "minute": "21'",
+   "team": "Cape Verde",
+   "text": "Goal! Uruguay 0, Cabo Verde 1. Kevin Pina (Cabo Verde) from a free kick with a right footed shot to the bottom right corner.",
+   "players": [
+    "Kevin Pina"
+   ]
+  },
+  {
+   "type": "Start Delay",
+   "minute": "25'",
+   "team": "Uruguay",
+   "text": "Delay in match for a drinks break.",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "25'",
+   "team": "Cape Verde",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "27'",
+   "team": "Uruguay",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "27'",
+   "team": "Cape Verde",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Goal - Header",
+   "minute": "44'",
+   "team": "Uruguay",
+   "text": "Goal! Uruguay 1, Cabo Verde 1. Maxi Araújo (Uruguay) header from very close range to the centre of the goal.",
+   "players": [
+    "Maxi Araújo"
+   ]
+  },
+  {
+   "type": "Start Delay",
+   "minute": "44'",
+   "team": "Cape Verde",
+   "text": "Delay in match because of an injury Telmo Arcanjo (Cabo Verde).",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "44'",
+   "team": "Uruguay",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "45'+1'",
+   "team": "Cape Verde",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "45'+1'",
+   "team": "Uruguay",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Goal",
+   "minute": "45'+6'",
+   "team": "Uruguay",
+   "text": "Goal! Uruguay 2, Cabo Verde 1. Agustín Canobbio (Uruguay) right footed shot from the centre of the box to the centre of the goal. Assisted by Maxi Araújo with a headed pass.",
+   "players": [
+    "Agustín Canobbio",
+    "Maxi Araújo"
+   ]
+  },
+  {
+   "type": "Halftime",
+   "minute": "45'+9'",
+   "team": null,
+   "text": "First Half ends, Uruguay 2, Cabo Verde 1.",
+   "players": []
+  },
+  {
+   "type": "Substitution",
+   "minute": "45'",
+   "team": "Cape Verde",
+   "text": "Substitution, Cabo Verde. Deroy Duarte replaces Telmo Arcanjo because of an injury.",
+   "players": [
+    "Deroy Duarte",
+    "Telmo Arcanjo"
+   ]
+  },
+  {
+   "type": "Start 2nd Half",
+   "minute": "45'",
+   "team": null,
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "50'",
+   "team": "Uruguay",
+   "text": "Delay in match (Uruguay).",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "50'",
+   "team": "Cape Verde",
+   "text": "Delay in match (Cabo Verde).",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "50'",
+   "team": "Uruguay",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "50'",
+   "team": "Cape Verde",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "Yellow Card",
+   "minute": "58'",
+   "team": "Uruguay",
+   "text": "Mathías Olivera (Uruguay) is shown the yellow card for a bad foul.",
+   "players": [
+    "Mathías Olivera"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "58'",
+   "team": "Cape Verde",
+   "text": "Substitution, Cabo Verde. Nuno da Costa replaces Gilson Benchimol.",
+   "players": [
+    "Nuno da Costa",
+    "Gilson Benchimol"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "58'",
+   "team": "Cape Verde",
+   "text": "Substitution, Cabo Verde. Hélio Varela replaces Garry Rodrigues.",
+   "players": [
+    "Hélio Varela",
+    "Garry Rodrigues"
+   ]
+  },
+  {
+   "type": "Goal - Volley",
+   "minute": "61'",
+   "team": "Cape Verde",
+   "text": "Goal! Uruguay 2, Cabo Verde 2. Hélio Varela (Cabo Verde) right footed shot from outside the box to the centre of the goal.",
+   "players": [
+    "Hélio Varela"
+   ]
+  },
+  {
+   "type": "Start Delay",
+   "minute": "64'",
+   "team": "Cape Verde",
+   "text": "Delay in match because of an injury Kevin Pina (Cabo Verde).",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "64'",
+   "team": "Uruguay",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "65'",
+   "team": "Cape Verde",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "65'",
+   "team": "Uruguay",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Substitution",
+   "minute": "70'",
+   "team": "Uruguay",
+   "text": "Substitution, Uruguay. Darwin Núñez replaces Federico Viñas.",
+   "players": [
+    "Darwin Núñez",
+    "Federico Viñas"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "70'",
+   "team": "Uruguay",
+   "text": "Substitution, Uruguay. Nicolás de la Cruz replaces Manuel Ugarte.",
+   "players": [
+    "Nicolás de la Cruz",
+    "Manuel Ugarte"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "71'",
+   "team": "Cape Verde",
+   "text": "Substitution, Cabo Verde. Laros Duarte replaces Kevin Pina because of an injury.",
+   "players": [
+    "Laros Duarte",
+    "Kevin Pina"
+   ]
+  },
+  {
+   "type": "Start Delay",
+   "minute": "71'",
+   "team": "Uruguay",
+   "text": "Delay in match for a drinks break.",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "71'",
+   "team": "Cape Verde",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "74'",
+   "team": "Uruguay",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "74'",
+   "team": "Cape Verde",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Substitution",
+   "minute": "80'",
+   "team": "Cape Verde",
+   "text": "Substitution, Cabo Verde. Yannick Semedo replaces Jamiro Monteiro because of an injury.",
+   "players": [
+    "Yannick Semedo",
+    "Jamiro Monteiro"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "81'",
+   "team": "Uruguay",
+   "text": "Substitution, Uruguay. Brian Rodríguez replaces Maxi Araújo.",
+   "players": [
+    "Brian Rodríguez",
+    "Maxi Araújo"
+   ]
+  },
+  {
+   "type": "Yellow Card",
+   "minute": "90'+3'",
+   "team": "Cape Verde",
+   "text": "Diney Borges (Cabo Verde) is shown the yellow card for a bad foul.",
+   "players": [
+    "Diney Borges"
+   ]
+  },
+  {
+   "type": "Start Delay",
+   "minute": "90'+3'",
+   "team": "Uruguay",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "90'+3'",
+   "team": "Uruguay",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "End Regular Time",
+   "minute": "90'+9'",
+   "team": null,
+   "text": "",
+   "players": []
+  }
+ ],
+ "shots": [
+  {
+   "minute": "7",
+   "seconds": 384.0,
+   "team": "Uruguay",
+   "player": "Rodrigo Bentancur",
+   "type": "Shot Blocked",
+   "x": 95.8,
+   "y": 59.5,
+   "goal": false,
+   "xg": 0.264,
+   "text": "Attempt blocked. Rodrigo Bentancur (Uruguay) header from the left side of the six yard box is blocked. Assisted by Maxi Araújo with a cross."
+  },
+  {
+   "minute": "7",
+   "seconds": 384.0,
+   "team": "Cape Verde",
+   "player": null,
+   "type": "Shot Blocked",
+   "x": 3.4,
+   "y": 45.7,
+   "goal": false,
+   "xg": 0.0,
+   "text": "Ryan Mendes (Cape Verde) Shot Blocked at 7'"
+  },
+  {
+   "minute": "14",
+   "seconds": 836.0,
+   "team": "Uruguay",
+   "player": "Federico Valverde",
+   "type": "Shot Off Target",
+   "x": 87.8,
+   "y": 66.0,
+   "goal": false,
+   "xg": 0.165,
+   "text": "Attempt missed. Federico Valverde (Uruguay) left footed shot from the left side of the box misses to the right. Assisted by Agustín Canobbio following a fast break."
+  },
+  {
+   "minute": "21",
+   "seconds": 1225.0,
+   "team": "Cape Verde",
+   "player": "Kevin Pina",
+   "type": "Goal - Free-kick",
+   "x": 69.7,
+   "y": 47.2,
+   "goal": true,
+   "xg": 0.048,
+   "text": "Goal! Uruguay 0, Cabo Verde 1. Kevin Pina (Cabo Verde) from a free kick with a right footed shot to the bottom right corner."
+  },
+  {
+   "minute": "24",
+   "seconds": 1388.0,
+   "team": "Uruguay",
+   "player": "Federico Valverde",
+   "type": "Shot Blocked",
+   "x": 70.1,
+   "y": 71.4,
+   "goal": false,
+   "xg": 0.036,
+   "text": "Attempt blocked. Federico Valverde (Uruguay) right footed shot from outside the box is blocked. Assisted by Juan Manuel Sanabria."
+  },
+  {
+   "minute": "24",
+   "seconds": 1416.0,
+   "team": "Uruguay",
+   "player": "Federico Valverde",
+   "type": "Shot Blocked",
+   "x": 79.3,
+   "y": 61.3,
+   "goal": false,
+   "xg": 0.102,
+   "text": "Attempt blocked. Federico Valverde (Uruguay) right footed shot from outside the box is blocked. Assisted by Maxi Araújo."
+  },
+  {
+   "minute": "28",
+   "seconds": 1649.0,
+   "team": "Uruguay",
+   "player": "Federico Valverde",
+   "type": "Shot Off Target",
+   "x": 84.6,
+   "y": 71.8,
+   "goal": false,
+   "xg": 0.1,
+   "text": "Attempt missed. Federico Valverde (Uruguay) right footed shot from the left side of the box is just a bit too high."
+  },
+  {
+   "minute": "33",
+   "seconds": 1930.0,
+   "team": "Uruguay",
+   "player": "Manuel Ugarte",
+   "type": "Shot Off Target",
+   "x": 80.5,
+   "y": 48.5,
+   "goal": false,
+   "xg": 0.135,
+   "text": "Attempt missed. Manuel Ugarte (Uruguay) right footed shot from outside the box misses to the left."
+  },
+  {
+   "minute": "34",
+   "seconds": 2006.0,
+   "team": "Uruguay",
+   "player": "Federico Valverde",
+   "type": "Shot Off Target",
+   "x": 69.1,
+   "y": 40.9,
+   "goal": false,
+   "xg": 0.043,
+   "text": "Attempt missed. Federico Valverde (Uruguay) right footed shot from outside the box misses to the left. Assisted by Manuel Ugarte."
+  },
+  {
+   "minute": "40",
+   "seconds": 2363.0,
+   "team": "Uruguay",
+   "player": "Maxi Araújo",
+   "type": "Shot Off Target",
+   "x": 90.5,
+   "y": 63.4,
+   "goal": false,
+   "xg": 0.149,
+   "text": "Attempt missed. Maxi Araújo (Uruguay) header from the left side of the box is too high. Assisted by Agustín Canobbio with a cross."
+  },
+  {
+   "minute": "42",
+   "seconds": 2513.0,
+   "team": "Uruguay",
+   "player": "Sebastián Cáceres",
+   "type": "Shot Blocked",
+   "x": 71.9,
+   "y": 38.3,
+   "goal": false,
+   "xg": 0.053,
+   "text": "Attempt blocked. Sebastián Cáceres (Uruguay) right footed shot from outside the box is blocked. Assisted by Mathías Olivera."
+  },
+  {
+   "minute": "43",
+   "seconds": 2559.0,
+   "team": "Cape Verde",
+   "player": "Diney Borges",
+   "type": "Shot Off Target",
+   "x": 41.2,
+   "y": 48.5,
+   "goal": false,
+   "xg": 0.004,
+   "text": "Attempt missed. Diney Borges (Cabo Verde) right footed shot from more than 35 yards misses to the right following a fast break."
+  },
+  {
+   "minute": "44",
+   "seconds": 2583.0,
+   "team": "Uruguay",
+   "player": "Maxi Araújo",
+   "type": "Goal - Header",
+   "x": 97.3,
+   "y": 50.1,
+   "goal": true,
+   "xg": 0.609,
+   "text": "Goal! Uruguay 1, Cabo Verde 1. Maxi Araújo (Uruguay) header from very close range to the centre of the goal."
+  },
+  {
+   "minute": "45'+6",
+   "seconds": 2700.0,
+   "team": "Uruguay",
+   "player": "Agustín Canobbio",
+   "type": "Goal",
+   "x": 93.0,
+   "y": 49.1,
+   "goal": true,
+   "xg": 0.591,
+   "text": "Goal! Uruguay 2, Cabo Verde 1. Agustín Canobbio (Uruguay) right footed shot from the centre of the box to the centre of the goal. Assisted by Maxi Araújo with a headed pass."
+  },
+  {
+   "minute": "52",
+   "seconds": 3083.0,
+   "team": "Cape Verde",
+   "player": "Sidny Cabral",
+   "type": "Shot Off Target",
+   "x": 70.9,
+   "y": 72.2,
+   "goal": false,
+   "xg": 0.038,
+   "text": "Attempt missed. Sidny Cabral (Cabo Verde) right footed shot from outside the box misses to the left. Assisted by Kevin Pina."
+  },
+  {
+   "minute": "59",
+   "seconds": 3521.0,
+   "team": "Cape Verde",
+   "player": "Jamiro Monteiro",
+   "type": "Shot Blocked",
+   "x": 74.6,
+   "y": 71.8,
+   "goal": false,
+   "xg": 0.051,
+   "text": "Attempt blocked. Jamiro Monteiro (Cabo Verde) right footed shot from outside the box is blocked."
+  },
+  {
+   "minute": "61",
+   "seconds": 3616.0,
+   "team": "Cape Verde",
+   "player": "Hélio Varela",
+   "type": "Goal - Volley",
+   "x": 75.7,
+   "y": 31.1,
+   "goal": true,
+   "xg": 0.061,
+   "text": "Goal! Uruguay 2, Cabo Verde 2. Hélio Varela (Cabo Verde) right footed shot from outside the box to the centre of the goal."
+  },
+  {
+   "minute": "63",
+   "seconds": 3766.0,
+   "team": "Cape Verde",
+   "player": "Jamiro Monteiro",
+   "type": "Shot Off Target",
+   "x": 73.9,
+   "y": 42.8,
+   "goal": false,
+   "xg": 0.068,
+   "text": "Attempt missed. Jamiro Monteiro (Cabo Verde) right footed shot from outside the box is just a bit too high. Assisted by Kevin Pina following a fast break."
+  },
+  {
+   "minute": "67",
+   "seconds": 3961.0,
+   "team": "Uruguay",
+   "player": "Federico Valverde",
+   "type": "Shot Blocked",
+   "x": 76.3,
+   "y": 59.9,
+   "goal": false,
+   "xg": 0.081,
+   "text": "Attempt blocked. Federico Valverde (Uruguay) right footed shot from outside the box is blocked. Assisted by Mathías Olivera."
+  },
+  {
+   "minute": "76",
+   "seconds": 4506.0,
+   "team": "Cape Verde",
+   "player": "Pico Lopes",
+   "type": "Shot Blocked",
+   "x": 95.8,
+   "y": 42.3,
+   "goal": false,
+   "xg": 0.337,
+   "text": "Attempt missed. Pico Lopes (Cabo Verde) header from the right side of the six yard box misses to the left. Assisted by Jamiro Monteiro with a cross following a corner."
+  },
+  {
+   "minute": "79",
+   "seconds": 4739.0,
+   "team": "Uruguay",
+   "player": "Nicolás de la Cruz",
+   "type": "Shot Off Target",
+   "x": 73.7,
+   "y": 67.1,
+   "goal": false,
+   "xg": 0.055,
+   "text": "Attempt missed. Nicolás de la Cruz (Uruguay) right footed shot from outside the box is too high. Assisted by Mathías Olivera."
+  },
+  {
+   "minute": "86",
+   "seconds": 5104.0,
+   "team": "Uruguay",
+   "player": "Brian Rodríguez",
+   "type": "Shot Blocked",
+   "x": 89.6,
+   "y": 59.5,
+   "goal": false,
+   "xg": 0.277,
+   "text": "Attempt blocked. Brian Rodríguez (Uruguay) right footed shot from the centre of the box is blocked."
+  },
+  {
+   "minute": "86",
+   "seconds": 5128.0,
+   "team": "Uruguay",
+   "player": "Rodrigo Bentancur",
+   "type": "Shot Blocked",
+   "x": 95.8,
+   "y": 60.6,
+   "goal": false,
+   "xg": 0.228,
+   "text": "Attempt blocked. Rodrigo Bentancur (Uruguay) header from the left side of the six yard box is blocked. Assisted by Brian Rodríguez with a cross."
+  },
+  {
+   "minute": "90",
+   "seconds": 5371.0,
+   "team": "Uruguay",
+   "player": "Federico Valverde",
+   "type": "Shot Off Target",
+   "x": 81.3,
+   "y": 52.2,
+   "goal": false,
+   "xg": 0.145,
+   "text": "Attempt missed. Federico Valverde (Uruguay) right footed shot from outside the box is just a bit too high from a direct free kick."
+  },
+  {
+   "minute": "90'+3",
+   "seconds": 5400.0,
+   "team": "Cape Verde",
+   "player": "Sidny Cabral",
+   "type": "Shot Blocked",
+   "x": 74.5,
+   "y": 73.3,
+   "goal": false,
+   "xg": 0.048,
+   "text": "Attempt blocked. Sidny Cabral (Cabo Verde) left footed shot from outside the box is blocked. Assisted by Laros Duarte."
+  },
+  {
+   "minute": "90'+3",
+   "seconds": 5400.0,
+   "team": "Cape Verde",
+   "player": "Ryan Mendes",
+   "type": "Shot Blocked",
+   "x": 80.7,
+   "y": 53.6,
+   "goal": false,
+   "xg": 0.135,
+   "text": "Attempt blocked. Ryan Mendes (Cabo Verde) right footed shot from outside the box is blocked."
+  },
+  {
+   "minute": "90'+3",
+   "seconds": 5400.0,
+   "team": "Uruguay",
+   "player": "Agustín Canobbio",
+   "type": "Shot Blocked",
+   "x": 87.4,
+   "y": 35.4,
+   "goal": false,
+   "xg": 0.174,
+   "text": "Attempt missed. Agustín Canobbio (Uruguay) right footed shot from the right side of the box is close, but misses to the right. Assisted by Darwin Núñez following a fast break."
+  },
+  {
+   "minute": "90'+4",
+   "seconds": 5400.0,
+   "team": "Cape Verde",
+   "player": "Laros Duarte",
+   "type": "Shot On Target",
+   "x": 82.4,
+   "y": 36.6,
+   "goal": false,
+   "xg": 0.125,
+   "text": "Attempt saved. Laros Duarte (Cabo Verde) left footed shot from outside the box is saved in the centre of the goal by Fernando Muslera (Uruguay). Assisted by Ryan Mendes."
+  },
+  {
+   "minute": "90'+6",
+   "seconds": 5400.0,
+   "team": "Cape Verde",
+   "player": "Ryan Mendes",
+   "type": "Shot Blocked",
+   "x": 84.9,
+   "y": 27.8,
+   "goal": false,
+   "xg": 0.099,
+   "text": "Attempt blocked. Ryan Mendes (Cabo Verde) right footed shot from the right side of the box is blocked. Assisted by Laros Duarte."
+  },
+  {
+   "minute": "90'+7",
+   "seconds": 5400.0,
+   "team": "Cape Verde",
+   "player": "Laros Duarte",
+   "type": "Shot On Target",
+   "x": 68.5,
+   "y": 33.1,
+   "goal": false,
+   "xg": 0.036,
+   "text": "Attempt saved. Laros Duarte (Cabo Verde) right footed shot from outside the box is saved in the centre of the goal by Fernando Muslera (Uruguay)."
+  }
+ ],
+ "lineups": [
+  {
+   "team": "Uruguay",
+   "formation": "4-1-4-1",
+   "starters": [
+    {
+     "name": "Fernando Muslera",
+     "jersey": "23",
+     "position": "G"
+    },
+    {
+     "name": "Mathías Olivera",
+     "jersey": "16",
+     "position": "CD-L"
+    },
+    {
+     "name": "Sebastián Cáceres",
+     "jersey": "3",
+     "position": "CD-R"
+    },
+    {
+     "name": "Manuel Ugarte",
+     "jersey": "5",
+     "position": "DM"
+    },
+    {
+     "name": "Juan Manuel Sanabria",
+     "jersey": "25",
+     "position": "LB"
+    },
+    {
+     "name": "Guillermo Varela",
+     "jersey": "13",
+     "position": "RB"
+    },
+    {
+     "name": "Federico Valverde",
+     "jersey": "8",
+     "position": "CM-L"
+    },
+    {
+     "name": "Rodrigo Bentancur",
+     "jersey": "6",
+     "position": "CM-R"
+    },
+    {
+     "name": "Maxi Araújo",
+     "jersey": "20",
+     "position": "LM"
+    },
+    {
+     "name": "Agustín Canobbio",
+     "jersey": "14",
+     "position": "RM"
+    },
+    {
+     "name": "Federico Viñas",
+     "jersey": "21",
+     "position": "F"
+    }
+   ],
+   "subs": [
+    {
+     "name": "Rodrigo Zalazar",
+     "jersey": "26",
+     "position": "SUB"
+    },
+    {
+     "name": "Nicolás de la Cruz",
+     "jersey": "7",
+     "position": "SUB"
+    },
+    {
+     "name": "Rodrigo Aguirre",
+     "jersey": "19",
+     "position": "SUB"
+    },
+    {
+     "name": "José María Giménez",
+     "jersey": "2",
+     "position": "SUB"
+    },
+    {
+     "name": "Brian Rodríguez",
+     "jersey": "18",
+     "position": "SUB"
+    },
+    {
+     "name": "Facundo Pellistri",
+     "jersey": "11",
+     "position": "SUB"
+    },
+    {
+     "name": "Matías Viña",
+     "jersey": "17",
+     "position": "SUB"
+    },
+    {
+     "name": "Joaquín Piquerez",
+     "jersey": "22",
+     "position": "SUB"
+    },
+    {
+     "name": "Emiliano Martínez",
+     "jersey": "15",
+     "position": "SUB"
+    },
+    {
+     "name": "Santiago Bueno",
+     "jersey": "24",
+     "position": "SUB"
+    },
+    {
+     "name": "Santiago Mele",
+     "jersey": "12",
+     "position": "SUB"
+    },
+    {
+     "name": "Darwin Núñez",
+     "jersey": "9",
+     "position": "SUB"
+    },
+    {
+     "name": "Sergio Rochet",
+     "jersey": "1",
+     "position": "SUB"
+    }
+   ]
+  },
+  {
+   "team": "Cape Verde",
+   "formation": "4-1-4-1",
+   "starters": [
+    {
+     "name": "Vozinha",
+     "jersey": "1",
+     "position": "G"
+    },
+    {
+     "name": "Diney Borges",
+     "jersey": "3",
+     "position": "CD-L"
+    },
+    {
+     "name": "Pico Lopes",
+     "jersey": "4",
+     "position": "CD-R"
+    },
+    {
+     "name": "Kevin Pina",
+     "jersey": "6",
+     "position": "DM"
+    },
+    {
+     "name": "Sidny Lopes Cabral",
+     "jersey": "13",
+     "position": "LB"
+    },
+    {
+     "name": "Steven Moreira",
+     "jersey": "22",
+     "position": "RB"
+    },
+    {
+     "name": "Jamiro Monteiro",
+     "jersey": "10",
+     "position": "CM-L"
+    },
+    {
+     "name": "Telmo Arcanjo",
+     "jersey": "18",
+     "position": "CM-R"
+    },
+    {
+     "name": "Garry Rodrigues",
+     "jersey": "11",
+     "position": "LM"
+    },
+    {
+     "name": "Ryan Mendes",
+     "jersey": "20",
+     "position": "RM"
+    },
+    {
+     "name": "Gilson Benchimol",
+     "jersey": "9",
+     "position": "F"
+    }
+   ],
+   "subs": [
+    {
+     "name": "João Paulo",
+     "jersey": "8",
+     "position": "SUB"
+    },
+    {
+     "name": "Willy Semedo",
+     "jersey": "17",
+     "position": "SUB"
+    },
+    {
+     "name": "Jovane Cabral",
+     "jersey": "7",
+     "position": "SUB"
+    },
+    {
+     "name": "Deroy Duarte",
+     "jersey": "14",
+     "position": "SUB"
+    },
+    {
+     "name": "Yannick Semedo",
+     "jersey": "16",
+     "position": "SUB"
+    },
+    {
+     "name": "Kelvin Pires",
+     "jersey": "25",
+     "position": "SUB"
+    },
+    {
+     "name": "Márcio Rosa",
+     "jersey": "12",
+     "position": "SUB"
+    },
+    {
+     "name": "Nuno da Costa",
+     "jersey": "21",
+     "position": "SUB"
+    },
+    {
+     "name": "Laros Duarte",
+     "jersey": "15",
+     "position": "SUB"
+    },
+    {
+     "name": "Dailon Livramento",
+     "jersey": "19",
+     "position": "SUB"
+    },
+    {
+     "name": "Logan Costa",
+     "jersey": "5",
+     "position": "SUB"
+    },
+    {
+     "name": "CJ dos Santos",
+     "jersey": "23",
+     "position": "SUB"
+    },
+    {
+     "name": "Stopira",
+     "jersey": "2",
+     "position": "SUB"
+    },
+    {
+     "name": "Wagner Pina",
+     "jersey": "24",
+     "position": "SUB"
+    },
+    {
+     "name": "Hélio Varela",
+     "jersey": "26",
+     "position": "SUB"
+    }
+   ]
+  }
+ ],
+ "attendance": 64003,
+ "venue": "Hard Rock Stadium, Miami Gardens, Florida, USA"
+}

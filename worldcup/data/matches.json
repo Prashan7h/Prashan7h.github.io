@@ -1313,12 +1313,22 @@
    "team2": "Iran",
    "group": "Group G",
    "ground": "Los Angeles (Inglewood)",
-   "score": null,
+   "score": {
+    "ft": [
+     0,
+     0
+    ],
+    "ht": [
+     0,
+     0
+    ]
+   },
    "goals1": [],
    "goals2": [],
    "espn_id": "760451",
-   "status": "live",
+   "status": "finished",
    "utc_date": "2026-06-21T19:00Z",
+   "attendance": 70317,
    "venue": "SoFi Stadium",
    "slug": "2026-06-21-belgium-vs-iran"
   },
@@ -1331,11 +1341,16 @@
    "team2": "Egypt",
    "group": "Group G",
    "ground": "Vancouver",
-   "score": null,
+   "score": {
+    "ft": [
+     1,
+     3
+    ]
+   },
    "goals1": [],
    "goals2": [],
    "espn_id": "760452",
-   "status": "scheduled",
+   "status": "finished",
    "utc_date": "2026-06-22T01:00Z",
    "venue": "BC Place",
    "slug": "2026-06-21-new-zealand-vs-egypt"
@@ -1497,12 +1512,40 @@
    "team2": "Cape Verde",
    "group": "Group H",
    "ground": "Miami (Miami Gardens)",
-   "score": null,
-   "goals1": [],
-   "goals2": [],
+   "score": {
+    "ft": [
+     2,
+     2
+    ],
+    "ht": [
+     2,
+     1
+    ]
+   },
+   "goals1": [
+    {
+     "name": "Maxi Araújo",
+     "minute": "44"
+    },
+    {
+     "name": "Agustín Cano",
+     "minute": "45+6"
+    }
+   ],
+   "goals2": [
+    {
+     "name": "Kevin Pina",
+     "minute": "21"
+    },
+    {
+     "name": "Hélio Varela",
+     "minute": "61"
+    }
+   ],
    "espn_id": "760450",
-   "status": "scheduled",
+   "status": "finished",
    "utc_date": "2026-06-21T22:00Z",
+   "attendance": 64003,
    "venue": "Hard Rock Stadium",
    "slug": "2026-06-21-uruguay-vs-cape-verde"
   },
