@@ -1967,12 +1967,36 @@
    "team2": "Algeria",
    "group": "Group J",
    "ground": "San Francisco Bay Area (Santa Clara)",
-   "score": null,
-   "goals1": [],
-   "goals2": [],
+   "score": {
+    "ft": [
+     1,
+     2
+    ],
+    "ht": [
+     1,
+     0
+    ]
+   },
+   "goals1": [
+    {
+     "name": "Nizar Al-Rashdan",
+     "minute": "36"
+    }
+   ],
+   "goals2": [
+    {
+     "name": "Nadhir Benbouali",
+     "minute": "69"
+    },
+    {
+     "name": "Amine Gouiri",
+     "minute": "82"
+    }
+   ],
    "espn_id": "760455",
-   "status": "live",
+   "status": "finished",
    "utc_date": "2026-06-23T03:00Z",
+   "attendance": 68371,
    "venue": "Levi's Stadium",
    "slug": "2026-06-22-jordan-vs-algeria"
   },
