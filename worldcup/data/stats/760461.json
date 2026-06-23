@@ -1,0 +1,895 @@
+{
+ "teams": [
+  {
+   "name": "Portugal",
+   "stats": {
+    "possessionPct": "66",
+    "totalShots": "17",
+    "shotsOnTarget": "9",
+    "wonCorners": "3",
+    "foulsCommitted": "14",
+    "offsides": "2",
+    "saves": "2",
+    "yellowCards": "1",
+    "redCards": "0"
+   }
+  },
+  {
+   "name": "Uzbekistan",
+   "stats": {
+    "possessionPct": "34",
+    "totalShots": "7",
+    "shotsOnTarget": "2",
+    "wonCorners": "2",
+    "foulsCommitted": "15",
+    "offsides": "2",
+    "saves": "4",
+    "yellowCards": "1",
+    "redCards": "0"
+   }
+  }
+ ],
+ "events": [
+  {
+   "type": "Kickoff",
+   "minute": "",
+   "team": null,
+   "text": "First Half begins.",
+   "players": []
+  },
+  {
+   "type": "Goal - Volley",
+   "minute": "6'",
+   "team": "Portugal",
+   "text": "Goal! Portugal 1, Uzbekistan 0. Cristiano Ronaldo (Portugal) right footed shot from the centre of the box to the bottom right corner. Assisted by João Cancelo with a cross.",
+   "players": [
+    "Cristiano Ronaldo",
+    "João Cancelo"
+   ]
+  },
+  {
+   "type": "Yellow Card",
+   "minute": "14'",
+   "team": "Uzbekistan",
+   "text": "Odiljon Khamrobekov (Uzbekistan) is shown the yellow card for a bad foul.",
+   "players": [
+    "Odiljon Xamrobekov"
+   ]
+  },
+  {
+   "type": "Goal - Free-kick",
+   "minute": "17'",
+   "team": "Portugal",
+   "text": "Goal! Portugal 2, Uzbekistan 0. Nuno Mendes (Portugal) from a free kick with a left footed shot to the bottom left corner.",
+   "players": [
+    "Nuno Mendes"
+   ]
+  },
+  {
+   "type": "Start Delay",
+   "minute": "23'",
+   "team": "Portugal",
+   "text": "Delay in match for a drinks break.",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "23'",
+   "team": "Uzbekistan",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "25'",
+   "team": "Portugal",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "25'",
+   "team": "Uzbekistan",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "30'",
+   "team": "Uzbekistan",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "31'",
+   "team": "Uzbekistan",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Goal",
+   "minute": "39'",
+   "team": "Portugal",
+   "text": "Goal! Portugal 3, Uzbekistan 0. Cristiano Ronaldo (Portugal) right footed shot from the right side of the box to the bottom left corner. Assisted by Bruno Fernandes with a through ball following a fast break.",
+   "players": [
+    "Cristiano Ronaldo",
+    "Bruno Fernandes"
+   ]
+  },
+  {
+   "type": "Start Delay",
+   "minute": "45'+2'",
+   "team": "Portugal",
+   "text": "Delay in match (Portugal).",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "45'+2'",
+   "team": "Uzbekistan",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "45'+2'",
+   "team": "Portugal",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "45'+2'",
+   "team": "Uzbekistan",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Halftime",
+   "minute": "45'+7'",
+   "team": null,
+   "text": "First Half ends, Portugal 3, Uzbekistan 0.",
+   "players": []
+  },
+  {
+   "type": "Substitution",
+   "minute": "45'",
+   "team": "Uzbekistan",
+   "text": "Substitution, Uzbekistan. Khojiakbar Alijonov replaces Sherzod Nasrullaev.",
+   "players": [
+    "Khojiakbar Alijonov",
+    "Sherzod Nasrullaev"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "45'",
+   "team": "Uzbekistan",
+   "text": "Substitution, Uzbekistan. Akmal Mozgovoy replaces Odiljon Khamrobekov.",
+   "players": [
+    "Akmal Mozgovoy",
+    "Odiljon Xamrobekov"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "45'",
+   "team": "Portugal",
+   "text": "Substitution, Portugal. Nélson Semedo replaces João Cancelo.",
+   "players": [
+    "Nélson Semedo",
+    "João Cancelo"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "45'",
+   "team": "Portugal",
+   "text": "Substitution, Portugal. Francisco Conceição replaces Pedro Neto.",
+   "players": [
+    "Francisco Conceição",
+    "Pedro Neto"
+   ]
+  },
+  {
+   "type": "Start 2nd Half",
+   "minute": "45'",
+   "team": null,
+   "text": "Second Half begins Portugal 3, Uzbekistan 0.",
+   "players": []
+  },
+  {
+   "type": "Own Goal",
+   "minute": "60'",
+   "team": "Portugal",
+   "text": "Own Goal by Abduvokhid Nematov, Uzbekistan. Portugal 4, Uzbekistan 0.",
+   "players": [
+    "Abduvohid Nematov"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "63'",
+   "team": "Portugal",
+   "text": "Substitution, Portugal. Trincão replaces João Félix.",
+   "players": [
+    "Francisco Trincão",
+    "João Félix"
+   ]
+  },
+  {
+   "type": "Yellow Card",
+   "minute": "68'",
+   "team": "Portugal",
+   "text": "Renato Veiga (Portugal) is shown the yellow card for a bad foul.",
+   "players": [
+    "Renato Veiga"
+   ]
+  },
+  {
+   "type": "Start Delay",
+   "minute": "69'",
+   "team": "Portugal",
+   "text": "Delay in match for a drinks break.",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "69'",
+   "team": "Uzbekistan",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "71'",
+   "team": "Portugal",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "71'",
+   "team": "Uzbekistan",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Substitution",
+   "minute": "73'",
+   "team": "Uzbekistan",
+   "text": "Substitution, Uzbekistan. Igor Sergeev replaces Abbosbek Fayzullaev.",
+   "players": [
+    "Igor Sergeev",
+    "Abbosbek Fayzullaev"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "76'",
+   "team": "Portugal",
+   "text": "Substitution, Portugal. Bernardo Silva replaces João Neves.",
+   "players": [
+    "Bernardo Silva",
+    "João Neves"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "83'",
+   "team": "Portugal",
+   "text": "Substitution, Portugal. Rafael Leão replaces Vitinha.",
+   "players": [
+    "Rafael Leão",
+    "Vitinha "
+   ]
+  },
+  {
+   "type": "Goal",
+   "minute": "87'",
+   "team": "Portugal",
+   "text": "Goal! Portugal 5, Uzbekistan 0. Rafael Leão (Portugal) right footed shot from the centre of the box to the top left corner.",
+   "players": [
+    "Rafael Leão"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "90'+2'",
+   "team": "Uzbekistan",
+   "text": "Substitution, Uzbekistan. Ruslanbek Jiyanov replaces Bekhruz Karimov.",
+   "players": [
+    "Ruslanbek Jiyanov",
+    "Behruzjon Karimov"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "90'+2'",
+   "team": "Uzbekistan",
+   "text": "Substitution, Uzbekistan. Sherzod Esanov replaces Otabek Shukurov.",
+   "players": [
+    "Sherzod Esanov",
+    "Otabek Shukurov"
+   ]
+  },
+  {
+   "type": "End Regular Time",
+   "minute": "90'+6'",
+   "team": null,
+   "text": "",
+   "players": []
+  }
+ ],
+ "shots": [
+  {
+   "minute": "2",
+   "seconds": 115.0,
+   "team": "Portugal",
+   "player": "Bruno Fernandes",
+   "type": "Shot Blocked",
+   "x": 88.7,
+   "y": 47.7,
+   "goal": false,
+   "xg": 0.332,
+   "text": "Attempt blocked. Bruno Fernandes (Portugal) left footed shot from the centre of the box is blocked."
+  },
+  {
+   "minute": "4",
+   "seconds": 209.0,
+   "team": "Portugal",
+   "player": "Cristiano Ronaldo",
+   "type": "Shot Off Target",
+   "x": 90.6,
+   "y": 45.2,
+   "goal": false,
+   "xg": 0.39,
+   "text": "Attempt missed. Cristiano Ronaldo (Portugal) right footed shot from the centre of the box misses to the right. Assisted by Nuno Mendes with a cross."
+  },
+  {
+   "minute": "6",
+   "seconds": 353.0,
+   "team": "Portugal",
+   "player": "Cristiano Ronaldo",
+   "type": "Goal - Volley",
+   "x": 92.3,
+   "y": 46.4,
+   "goal": true,
+   "xg": 0.504,
+   "text": "Goal! Portugal 1, Uzbekistan 0. Cristiano Ronaldo (Portugal) right footed shot from the centre of the box to the bottom right corner. Assisted by João Cancelo with a cross."
+  },
+  {
+   "minute": "11",
+   "seconds": 623.0,
+   "team": "Portugal",
+   "player": "João Cancelo",
+   "type": "Shot Blocked",
+   "x": 80.8,
+   "y": 35.6,
+   "goal": false,
+   "xg": 0.106,
+   "text": "Attempt blocked. João Cancelo (Portugal) right footed shot from outside the box is blocked."
+  },
+  {
+   "minute": "17",
+   "seconds": 986.0,
+   "team": "Portugal",
+   "player": "Nuno Mendes",
+   "type": "Goal - Free-kick",
+   "x": 81.8,
+   "y": 47.2,
+   "goal": true,
+   "xg": 0.152,
+   "text": "Goal! Portugal 2, Uzbekistan 0. Nuno Mendes (Portugal) from a free kick with a left footed shot to the bottom left corner."
+  },
+  {
+   "minute": "19",
+   "seconds": 1086.0,
+   "team": "Uzbekistan",
+   "player": "Sherzod Nasrullaev",
+   "type": "Shot On Target",
+   "x": 88.1,
+   "y": 70.5,
+   "goal": false,
+   "xg": 0.128,
+   "text": "Attempt saved. Sherzod Nasrullaev (Uzbekistan) left footed shot from the left side of the box is saved in the bottom left corner by Diogo Costa (Portugal). Assisted by Eldor Shomurodov."
+  },
+  {
+   "minute": "21",
+   "seconds": 1252.0,
+   "team": "Portugal",
+   "player": "Vitinha",
+   "type": "Shot Off Target",
+   "x": 77.5,
+   "y": 49.7,
+   "goal": false,
+   "xg": 0.1,
+   "text": "Attempt missed. Vitinha (Portugal) right footed shot from outside the box is close, but misses to the right."
+  },
+  {
+   "minute": "39",
+   "seconds": 2289.0,
+   "team": "Portugal",
+   "player": "Cristiano Ronaldo",
+   "type": "Goal",
+   "x": 90.2,
+   "y": 32.6,
+   "goal": true,
+   "xg": 0.17,
+   "text": "Goal! Portugal 3, Uzbekistan 0. Cristiano Ronaldo (Portugal) right footed shot from the right side of the box to the bottom left corner. Assisted by Bruno Fernandes with a through ball following a fast break."
+  },
+  {
+   "minute": "42",
+   "seconds": 2464.0,
+   "team": "Portugal",
+   "player": "João Félix",
+   "type": "Shot Off Target",
+   "x": 89.9,
+   "y": 66.3,
+   "goal": false,
+   "xg": 0.181,
+   "text": "Attempt missed. João Félix (Portugal) left footed shot from the left side of the box is high and wide to the right. Assisted by Vitinha with a through ball."
+  },
+  {
+   "minute": "43",
+   "seconds": 2578.0,
+   "team": "Uzbekistan",
+   "player": "Otabek Shukurov",
+   "type": "Shot Off Target",
+   "x": 73.1,
+   "y": 49.5,
+   "goal": false,
+   "xg": 0.066,
+   "text": "Attempt missed. Otabek Shukurov (Uzbekistan) right footed shot from outside the box is too high. Assisted by Eldor Shomurodov."
+  },
+  {
+   "minute": "45'+2",
+   "seconds": 2700.0,
+   "team": "Uzbekistan",
+   "player": "Odiljon Khamrobekov",
+   "type": "Shot Blocked",
+   "x": 84.3,
+   "y": 49.8,
+   "goal": false,
+   "xg": 0.202,
+   "text": "Attempt blocked. Odiljon Khamrobekov (Uzbekistan) right footed shot from the centre of the box is blocked. Assisted by Eldor Shomurodov."
+  },
+  {
+   "minute": "45'+6",
+   "seconds": 2700.0,
+   "team": "Portugal",
+   "player": "Cristiano Ronaldo",
+   "type": "Shot Blocked",
+   "x": 92.1,
+   "y": 47.9,
+   "goal": false,
+   "xg": 0.514,
+   "text": "Attempt blocked. Cristiano Ronaldo (Portugal) right footed shot from the centre of the box is blocked. Assisted by João Cancelo with a cross."
+  },
+  {
+   "minute": "47",
+   "seconds": 2817.0,
+   "team": "Portugal",
+   "player": "João Félix",
+   "type": "Shot Off Target",
+   "x": 73.7,
+   "y": 63.6,
+   "goal": false,
+   "xg": 0.059,
+   "text": "Attempt missed. João Félix (Portugal) right footed shot from outside the box is just a bit too high."
+  },
+  {
+   "minute": "52",
+   "seconds": 3080.0,
+   "team": "Uzbekistan",
+   "player": "Abbosbek Fayzullaev",
+   "type": "Shot On Target",
+   "x": 86.4,
+   "y": 66.4,
+   "goal": false,
+   "xg": 0.148,
+   "text": "Attempt saved. Abbosbek Fayzullaev (Uzbekistan) right footed shot from the left side of the box is saved in the centre of the goal by Diogo Costa (Portugal). Assisted by Khojiakbar Alijonov."
+  },
+  {
+   "minute": "55",
+   "seconds": 3257.0,
+   "team": "Uzbekistan",
+   "player": "Otabek Shukurov",
+   "type": "Shot Blocked",
+   "x": 77.8,
+   "y": 52.6,
+   "goal": false,
+   "xg": 0.102,
+   "text": "Attempt blocked. Otabek Shukurov (Uzbekistan) left footed shot from outside the box is blocked. Assisted by Abbosbek Fayzullaev."
+  },
+  {
+   "minute": "58",
+   "seconds": 3457.0,
+   "team": "Portugal",
+   "player": "Cristiano Ronaldo",
+   "type": "Shot On Target",
+   "x": 89.9,
+   "y": 51.0,
+   "goal": false,
+   "xg": 0.392,
+   "text": "Attempt saved. Cristiano Ronaldo (Portugal) right footed shot from the centre of the box is saved in the centre of the goal by Abduvokhid Nematov (Uzbekistan). Assisted by Bruno Fernandes with a through ball."
+  },
+  {
+   "minute": "60",
+   "seconds": 3547.0,
+   "team": "Portugal",
+   "player": "João Félix",
+   "type": "Shot On Target",
+   "x": 97.7,
+   "y": 43.6,
+   "goal": false,
+   "xg": 0.674,
+   "text": "Attempt saved. João Félix (Portugal) right footed shot from the right side of the six yard box is saved in the centre of the goal by Abduvokhid Nematov (Uzbekistan)."
+  },
+  {
+   "minute": "62",
+   "seconds": 3668.0,
+   "team": "Uzbekistan",
+   "player": "Aziz G'aniev",
+   "type": "Shot Blocked",
+   "x": 77.9,
+   "y": 37.9,
+   "goal": false,
+   "xg": 0.088,
+   "text": "Attempt blocked. Aziz G'aniev (Uzbekistan) right footed shot from outside the box is blocked. Assisted by Eldor Shomurodov with a headed pass."
+  },
+  {
+   "minute": "73",
+   "seconds": 4347.0,
+   "team": "Portugal",
+   "player": "Cristiano Ronaldo",
+   "type": "Shot Blocked",
+   "x": 90.9,
+   "y": 55.4,
+   "goal": false,
+   "xg": 0.394,
+   "text": "Attempt blocked. Cristiano Ronaldo (Portugal) left footed shot from the centre of the box is blocked. Assisted by Nuno Mendes."
+  },
+  {
+   "minute": "74",
+   "seconds": 4392.0,
+   "team": "Portugal",
+   "player": "Cristiano Ronaldo",
+   "type": "Shot On Target",
+   "x": 87.1,
+   "y": 46.6,
+   "goal": false,
+   "xg": 0.269,
+   "text": "Attempt saved. Cristiano Ronaldo (Portugal) left footed shot from the centre of the box is saved in the bottom left corner by Abduvokhid Nematov (Uzbekistan)."
+  },
+  {
+   "minute": "78",
+   "seconds": 4641.0,
+   "team": "Uzbekistan",
+   "player": "Eldor Shomurodov",
+   "type": "Shot Off Target",
+   "x": 85.3,
+   "y": 33.3,
+   "goal": false,
+   "xg": 0.135,
+   "text": "Attempt missed. Eldor Shomurodov (Uzbekistan) right footed shot from the right side of the box is just a bit too high. Assisted by Bekhruz Karimov."
+  },
+  {
+   "minute": "84",
+   "seconds": 5009.0,
+   "team": "Portugal",
+   "player": "Bruno Fernandes",
+   "type": "Shot On Target",
+   "x": 73.3,
+   "y": 36.8,
+   "goal": false,
+   "xg": 0.058,
+   "text": "Attempt saved. Bruno Fernandes (Portugal) right footed shot from outside the box is saved in the bottom left corner by Abduvokhid Nematov (Uzbekistan). Assisted by Francisco Conceição."
+  },
+  {
+   "minute": "87",
+   "seconds": 5208.0,
+   "team": "Portugal",
+   "player": "Rafael Leão",
+   "type": "Goal",
+   "x": 85.9,
+   "y": 53.2,
+   "goal": true,
+   "xg": 0.236,
+   "text": "Goal! Portugal 5, Uzbekistan 0. Rafael Leão (Portugal) right footed shot from the centre of the box to the top left corner."
+  },
+  {
+   "minute": "90'+3",
+   "seconds": 5400.0,
+   "team": "Portugal",
+   "player": "Trincão",
+   "type": "Shot Off Target",
+   "x": 85.8,
+   "y": 56.4,
+   "goal": false,
+   "xg": 0.217,
+   "text": "Attempt missed. Trincão (Portugal) left footed shot from the centre of the box is close, but misses to the right. Assisted by Nuno Mendes following a set piece situation."
+  }
+ ],
+ "lineups": [
+  {
+   "team": "Portugal",
+   "formation": "4-2-3-1",
+   "starters": [
+    {
+     "name": "Diogo Costa",
+     "jersey": "1",
+     "position": "G"
+    },
+    {
+     "name": "Renato Veiga",
+     "jersey": "13",
+     "position": "CD-L"
+    },
+    {
+     "name": "Rúben Dias",
+     "jersey": "3",
+     "position": "CD-R"
+    },
+    {
+     "name": "Nuno Mendes",
+     "jersey": "25",
+     "position": "LB"
+    },
+    {
+     "name": "João Cancelo",
+     "jersey": "20",
+     "position": "RB"
+    },
+    {
+     "name": "Bruno Fernandes",
+     "jersey": "8",
+     "position": "AM"
+    },
+    {
+     "name": "Vitinha ",
+     "jersey": "23",
+     "position": "LM"
+    },
+    {
+     "name": "João Neves",
+     "jersey": "15",
+     "position": "RM"
+    },
+    {
+     "name": "Cristiano Ronaldo",
+     "jersey": "7",
+     "position": "F"
+    },
+    {
+     "name": "João Félix",
+     "jersey": "11",
+     "position": "AM-L"
+    },
+    {
+     "name": "Pedro Neto",
+     "jersey": "18",
+     "position": "AM-R"
+    }
+   ],
+   "subs": [
+    {
+     "name": "José Sá",
+     "jersey": "12",
+     "position": "SUB"
+    },
+    {
+     "name": "Nélson Semedo",
+     "jersey": "2",
+     "position": "SUB"
+    },
+    {
+     "name": "Bernardo Silva",
+     "jersey": "10",
+     "position": "SUB"
+    },
+    {
+     "name": "Francisco Trincão",
+     "jersey": "16",
+     "position": "SUB"
+    },
+    {
+     "name": "Rúben Neves",
+     "jersey": "21",
+     "position": "SUB"
+    },
+    {
+     "name": "Gonçalo Inácio",
+     "jersey": "14",
+     "position": "SUB"
+    },
+    {
+     "name": "Rafael Leão",
+     "jersey": "17",
+     "position": "SUB"
+    },
+    {
+     "name": "Rui Silva",
+     "jersey": "22",
+     "position": "SUB"
+    },
+    {
+     "name": "Samú Costa",
+     "jersey": "24",
+     "position": "SUB"
+    },
+    {
+     "name": "Diogo Dalot",
+     "jersey": "5",
+     "position": "SUB"
+    },
+    {
+     "name": "Matheus Nunes",
+     "jersey": "6",
+     "position": "SUB"
+    },
+    {
+     "name": "Gonçalo Ramos",
+     "jersey": "9",
+     "position": "SUB"
+    },
+    {
+     "name": "Gonçalo Guedes",
+     "jersey": "19",
+     "position": "SUB"
+    },
+    {
+     "name": "Francisco Conceição",
+     "jersey": "26",
+     "position": "SUB"
+    },
+    {
+     "name": "Tomás Araújo",
+     "jersey": "4",
+     "position": "SUB"
+    }
+   ]
+  },
+  {
+   "team": "Uzbekistan",
+   "formation": "3-4-2-1",
+   "starters": [
+    {
+     "name": "Abduvohid Nematov",
+     "jersey": "12",
+     "position": "G"
+    },
+    {
+     "name": "Abdulla Abdullaev",
+     "jersey": "18",
+     "position": "CD"
+    },
+    {
+     "name": "Rustam Ashurmatov",
+     "jersey": "5",
+     "position": "CD-L"
+    },
+    {
+     "name": "Abdukodir Khusanov",
+     "jersey": "2",
+     "position": "CD-R"
+    },
+    {
+     "name": "Otabek Shukurov",
+     "jersey": "7",
+     "position": "CM-L"
+    },
+    {
+     "name": "Odiljon Xamrobekov",
+     "jersey": "9",
+     "position": "CM-R"
+    },
+    {
+     "name": "Sherzod Nasrullaev",
+     "jersey": "13",
+     "position": "LM"
+    },
+    {
+     "name": "Behruzjon Karimov",
+     "jersey": "24",
+     "position": "RM"
+    },
+    {
+     "name": "Eldor Shomurodov",
+     "jersey": "14",
+     "position": "F"
+    },
+    {
+     "name": "Abbosbek Fayzullaev",
+     "jersey": "22",
+     "position": "CF-L"
+    },
+    {
+     "name": "Azizjon Ganiev",
+     "jersey": "19",
+     "position": "CF-R"
+    }
+   ],
+   "subs": [
+    {
+     "name": "Oston Urunov",
+     "jersey": "11",
+     "position": "SUB"
+    },
+    {
+     "name": "Khojiakbar Alijonov",
+     "jersey": "3",
+     "position": "SUB"
+    },
+    {
+     "name": "Azizbek Amonov",
+     "jersey": "20",
+     "position": "SUB"
+    },
+    {
+     "name": "Igor Sergeev",
+     "jersey": "21",
+     "position": "SUB"
+    },
+    {
+     "name": "Botirali Ergashev",
+     "jersey": "16",
+     "position": "SUB"
+    },
+    {
+     "name": "Ruslanbek Jiyanov",
+     "jersey": "10",
+     "position": "SUB"
+    },
+    {
+     "name": "Dostonbek Khamdamov",
+     "jersey": "17",
+     "position": "SUB"
+    },
+    {
+     "name": "Avazbek Ulmasaliyev",
+     "jersey": "25",
+     "position": "SUB"
+    },
+    {
+     "name": "Akmal Mozgovoy",
+     "jersey": "6",
+     "position": "SUB"
+    },
+    {
+     "name": "Umar Eshmurodov",
+     "jersey": "15",
+     "position": "SUB"
+    },
+    {
+     "name": "Jamshid Iskanderov",
+     "jersey": "8",
+     "position": "SUB"
+    },
+    {
+     "name": "Jakhongir Urozov",
+     "jersey": "26",
+     "position": "SUB"
+    },
+    {
+     "name": "Utkir Yusupov",
+     "jersey": "1",
+     "position": "SUB"
+    },
+    {
+     "name": "Farrukh Sayfiev",
+     "jersey": "4",
+     "position": "SUB"
+    },
+    {
+     "name": "Sherzod Esanov",
+     "jersey": "23",
+     "position": "SUB"
+    }
+   ]
+  }
+ ],
+ "attendance": 68777,
+ "venue": "NRG Stadium, Houston, Texas, USA"
+}

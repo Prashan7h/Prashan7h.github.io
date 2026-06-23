@@ -2126,12 +2126,44 @@
    "team2": "Uzbekistan",
    "group": "Group K",
    "ground": "Houston",
-   "score": null,
-   "goals1": [],
+   "score": {
+    "ft": [
+     5,
+     0
+    ],
+    "ht": [
+     3,
+     0
+    ]
+   },
+   "goals1": [
+    {
+     "name": "Cristiano Ronaldo",
+     "minute": "6"
+    },
+    {
+     "name": "Nuno Mendes",
+     "minute": "17"
+    },
+    {
+     "name": "Cristiano Ronaldo",
+     "minute": "39"
+    },
+    {
+     "name": "Abduvohid Nematov",
+     "minute": "60",
+     "owngoal": true
+    },
+    {
+     "name": "Rafael Leão",
+     "minute": "87"
+    }
+   ],
    "goals2": [],
    "espn_id": "760461",
-   "status": "scheduled",
+   "status": "finished",
    "utc_date": "2026-06-23T17:00Z",
+   "attendance": 68777,
    "venue": "NRG Stadium",
    "slug": "2026-06-23-portugal-vs-uzbekistan"
   },
@@ -2286,7 +2318,7 @@
    "goals1": [],
    "goals2": [],
    "espn_id": "760458",
-   "status": "scheduled",
+   "status": "live",
    "utc_date": "2026-06-23T20:00Z",
    "venue": "Gillette Stadium",
    "slug": "2026-06-23-england-vs-ghana"
