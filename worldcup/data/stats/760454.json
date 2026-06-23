@@ -1,0 +1,953 @@
+{
+ "teams": [
+  {
+   "name": "Norway",
+   "stats": {
+    "possessionPct": "41.7",
+    "totalShots": "13",
+    "shotsOnTarget": "7",
+    "wonCorners": "5",
+    "foulsCommitted": "13",
+    "offsides": "0",
+    "saves": "2",
+    "yellowCards": "0",
+    "redCards": "0"
+   }
+  },
+  {
+   "name": "Senegal",
+   "stats": {
+    "possessionPct": "58.3",
+    "totalShots": "16",
+    "shotsOnTarget": "4",
+    "wonCorners": "4",
+    "foulsCommitted": "5",
+    "offsides": "4",
+    "saves": "3",
+    "yellowCards": "0",
+    "redCards": "0"
+   }
+  }
+ ],
+ "events": [
+  {
+   "type": "Kickoff",
+   "minute": "",
+   "team": null,
+   "text": "First Half begins.",
+   "players": []
+  },
+  {
+   "type": "Substitution",
+   "minute": "13'",
+   "team": "Norway",
+   "text": "Substitution, Norway. Marcus Pedersen replaces Julian Ryerson because of an injury.",
+   "players": [
+    "Marcus Holmgren Pedersen",
+    "Julian Ryerson"
+   ]
+  },
+  {
+   "type": "Start Delay",
+   "minute": "23'",
+   "team": "Senegal",
+   "text": "Delay in match for a drinks break.",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "23'",
+   "team": "Norway",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "26'",
+   "team": "Senegal",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "26'",
+   "team": "Norway",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Goal",
+   "minute": "43'",
+   "team": "Norway",
+   "text": "Goal! Norway 1, Senegal 0. Marcus Pedersen (Norway) right footed shot from the right side of the box to the high centre of the goal.",
+   "players": [
+    "Marcus Holmgren Pedersen"
+   ]
+  },
+  {
+   "type": "Halftime",
+   "minute": "45'+5'",
+   "team": null,
+   "text": "First Half ends, Norway 1, Senegal 0.",
+   "players": []
+  },
+  {
+   "type": "Substitution",
+   "minute": "45'",
+   "team": "Norway",
+   "text": "Substitution, Norway. Patrick Berg replaces Fredrik Aursnes.",
+   "players": [
+    "Patrick Berg",
+    "Fredrik Aursnes"
+   ]
+  },
+  {
+   "type": "Start 2nd Half",
+   "minute": "45'",
+   "team": null,
+   "text": "Second Half begins Norway 1, Senegal 0.",
+   "players": []
+  },
+  {
+   "type": "Goal",
+   "minute": "48'",
+   "team": "Norway",
+   "text": "Goal! Norway 2, Senegal 0. Erling Haaland (Norway) left footed shot from the centre of the box to the top right corner. Assisted by Martin Ødegaard with a through ball following a fast break.",
+   "players": [
+    "Erling Haaland",
+    "Martin Ødegaard"
+   ]
+  },
+  {
+   "type": "Goal",
+   "minute": "53'",
+   "team": "Senegal",
+   "text": "Goal! Norway 2, Senegal 1. Ismaïla Sarr (Senegal) right footed shot from the centre of the box to the top right corner. Assisted by Sadio Mané.",
+   "players": [
+    "Ismaïla Sarr",
+    "Sadio Mané"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "54'",
+   "team": "Senegal",
+   "text": "Substitution, Senegal. Ismail Jakobs replaces El Hadji Malick Diouf.",
+   "players": [
+    "Ismail Jakobs",
+    "El Hadji Malick Diouf"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "54'",
+   "team": "Senegal",
+   "text": "Substitution, Senegal. Ibrahim Mbaye replaces Pape Gueye.",
+   "players": [
+    "Ibrahim Mbaye",
+    "Pape Gueye"
+   ]
+  },
+  {
+   "type": "Goal",
+   "minute": "58'",
+   "team": "Norway",
+   "text": "Goal! Norway 3, Senegal 1. Erling Haaland (Norway) right footed shot from the centre of the box to the high centre of the goal. Assisted by Patrick Berg.",
+   "players": [
+    "Erling Haaland",
+    "Patrick Berg"
+   ]
+  },
+  {
+   "type": "Start Delay",
+   "minute": "59'",
+   "team": "Norway",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "59'",
+   "team": "Senegal",
+   "text": "Delay in match because of an injury Édouard Mendy (Senegal).",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "63'",
+   "team": "Senegal",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "63'",
+   "team": "Norway",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Substitution",
+   "minute": "63'",
+   "team": "Senegal",
+   "text": "Substitution, Senegal. Mory Diaw replaces Édouard Mendy because of an injury.",
+   "players": [
+    "Mory Diaw",
+    "Édouard Mendy"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "63'",
+   "team": "Senegal",
+   "text": "Substitution, Senegal. Pathé Ciss replaces Lamine Camara.",
+   "players": [
+    "Pathé Ciss",
+    "Lamine Camara"
+   ]
+  },
+  {
+   "type": "Start Delay",
+   "minute": "68'",
+   "team": "Senegal",
+   "text": "Delay in match for a drinks break.",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "68'",
+   "team": "Norway",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Substitution",
+   "minute": "71'",
+   "team": "Norway",
+   "text": "Substitution, Norway. Andreas Schjelderup replaces Antonio Nusa.",
+   "players": [
+    "Andreas Schjelderup",
+    "Antonio Nusa"
+   ]
+  },
+  {
+   "type": "End Delay",
+   "minute": "71'",
+   "team": "Senegal",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "71'",
+   "team": "Norway",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Substitution",
+   "minute": "72'",
+   "team": "Senegal",
+   "text": "Substitution, Senegal. Pape Matar Sarr replaces Kalidou Koulibaly.",
+   "players": [
+    "Pape Matar Sarr",
+    "Kalidou Koulibaly"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "84'",
+   "team": "Norway",
+   "text": "Substitution, Norway. Oscar Bobb replaces Alexander Sørloth.",
+   "players": [
+    "Oscar Bobb",
+    "Alexander Sørloth"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "84'",
+   "team": "Norway",
+   "text": "Substitution, Norway. Leo Østigård replaces Torbjørn Heggem because of an injury.",
+   "players": [
+    "Leo Østigard",
+    "Torbjørn Heggem"
+   ]
+  },
+  {
+   "type": "Goal",
+   "minute": "90'+3'",
+   "team": "Senegal",
+   "text": "Goal! Norway 3, Senegal 2. Ismaïla Sarr (Senegal) right footed shot from the centre of the box to the top right corner. Assisted by Nicolas Jackson.",
+   "players": [
+    "Ismaïla Sarr",
+    "Nicolas Jackson"
+   ]
+  },
+  {
+   "type": "Start Delay",
+   "minute": "90'+7'",
+   "team": "Norway",
+   "text": "Delay in match because of an injury Leo Østigård (Norway).",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "90'+7'",
+   "team": "Senegal",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "90'+7'",
+   "team": "Norway",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "90'+7'",
+   "team": "Senegal",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "End Regular Time",
+   "minute": "90'+11'",
+   "team": null,
+   "text": "Second Half ends, Norway 3, Senegal 2.",
+   "players": []
+  }
+ ],
+ "shots": [
+  {
+   "minute": "2",
+   "seconds": 83.0,
+   "team": "Norway",
+   "player": "Antonio Nusa",
+   "type": "Shot Off Target",
+   "x": 81.6,
+   "y": 67.7,
+   "goal": false,
+   "xg": 0.099,
+   "text": "Attempt missed. Antonio Nusa (Norway) right footed shot from outside the box misses to the right following a corner."
+  },
+  {
+   "minute": "3",
+   "seconds": 157.0,
+   "team": "Norway",
+   "player": "Kristoffer Ajer",
+   "type": "Shot On Target",
+   "x": 95.2,
+   "y": 51.3,
+   "goal": false,
+   "xg": 0.504,
+   "text": "Attempt saved. Kristoffer Ajer (Norway) header from very close range is saved in the centre of the goal by Édouard Mendy (Senegal). Assisted by Julian Ryerson with a cross."
+  },
+  {
+   "minute": "8",
+   "seconds": 462.0,
+   "team": "Senegal",
+   "player": "Idrissa Gueye",
+   "type": "Shot Blocked",
+   "x": 73.2,
+   "y": 53.4,
+   "goal": false,
+   "xg": 0.066,
+   "text": "Attempt blocked. Idrissa Gueye (Senegal) right footed shot from outside the box is blocked."
+  },
+  {
+   "minute": "14",
+   "seconds": 830.0,
+   "team": "Norway",
+   "player": "Martin Ødegaard",
+   "type": "Shot Off Target",
+   "x": 87.5,
+   "y": 40.1,
+   "goal": false,
+   "xg": 0.225,
+   "text": "Attempt missed. Martin Ødegaard (Norway) left footed shot from the centre of the box is too high. Assisted by Marcus Pedersen."
+  },
+  {
+   "minute": "17",
+   "seconds": 1008.0,
+   "team": "Senegal",
+   "player": "Nicolas Jackson",
+   "type": "Shot Blocked",
+   "x": 91.0,
+   "y": 64.4,
+   "goal": false,
+   "xg": 0.218,
+   "text": "Attempt blocked. Nicolas Jackson (Senegal) left footed shot from the left side of the box is blocked. Assisted by Idrissa Gueye with a through ball."
+  },
+  {
+   "minute": "27",
+   "seconds": 1620.0,
+   "team": "Senegal",
+   "player": "Nicolas Jackson",
+   "type": "Shot Off Target",
+   "x": 88.1,
+   "y": 72.8,
+   "goal": false,
+   "xg": 0.111,
+   "text": "Attempt missed. Nicolas Jackson (Senegal) right footed shot from the left side of the box is high and wide to the right. Assisted by Sadio Mané."
+  },
+  {
+   "minute": "37",
+   "seconds": 2211.0,
+   "team": "Norway",
+   "player": "Martin Ødegaard",
+   "type": "Shot On Target",
+   "x": 88.7,
+   "y": 56.2,
+   "goal": false,
+   "xg": 0.298,
+   "text": "Attempt saved. Martin Ødegaard (Norway) left footed shot from the centre of the box is saved in the centre of the goal by Édouard Mendy (Senegal). Assisted by Erling Haaland."
+  },
+  {
+   "minute": "39",
+   "seconds": 2282.0,
+   "team": "Senegal",
+   "player": "Idrissa Gueye",
+   "type": "Shot Off Target",
+   "x": 75.9,
+   "y": 35.0,
+   "goal": false,
+   "xg": 0.069,
+   "text": "Attempt missed. Idrissa Gueye (Senegal) right footed shot from outside the box is too high. Assisted by Lamine Camara."
+  },
+  {
+   "minute": "41",
+   "seconds": 2424.0,
+   "team": "Senegal",
+   "player": "Lamine Camara",
+   "type": "Shot Off Target",
+   "x": 69.1,
+   "y": 56.6,
+   "goal": false,
+   "xg": 0.044,
+   "text": "Attempt missed. Lamine Camara (Senegal) right footed shot from outside the box misses to the left. Assisted by Sadio Mané."
+  },
+  {
+   "minute": "42",
+   "seconds": 2465.0,
+   "team": "Norway",
+   "player": "Martin Ødegaard",
+   "type": "Shot Blocked",
+   "x": 81.4,
+   "y": 47.5,
+   "goal": false,
+   "xg": 0.147,
+   "text": "Attempt blocked. Martin Ødegaard (Norway) left footed shot from outside the box is blocked. Assisted by Antonio Nusa."
+  },
+  {
+   "minute": "43",
+   "seconds": 2561.0,
+   "team": "Norway",
+   "player": "Marcus Pedersen",
+   "type": "Goal",
+   "x": 88.6,
+   "y": 35.2,
+   "goal": true,
+   "xg": 0.186,
+   "text": "Goal! Norway 1, Senegal 0. Marcus Pedersen (Norway) right footed shot from the right side of the box to the high centre of the goal."
+  },
+  {
+   "minute": "45'+1",
+   "seconds": 2700.0,
+   "team": "Senegal",
+   "player": "Ismaïla Sarr",
+   "type": "Shot On Target",
+   "x": 91.1,
+   "y": 47.0,
+   "goal": false,
+   "xg": 0.442,
+   "text": "Attempt saved. Ismaïla Sarr (Senegal) right footed shot from the centre of the box is saved in the bottom right corner by Ørjan Nyland (Norway). Assisted by Krépin Diatta with a cross."
+  },
+  {
+   "minute": "45'+4",
+   "seconds": 2700.0,
+   "team": "Norway",
+   "player": null,
+   "type": "Shot Hit Woodwork",
+   "x": 94.9,
+   "y": 28.4,
+   "goal": false,
+   "xg": 0.13,
+   "text": "Erling Haaland (Norway) hits the right post with a left footed shot from a difficult angle on the right."
+  },
+  {
+   "minute": "45'+4",
+   "seconds": 2700.0,
+   "team": "Norway",
+   "player": "Erling Haaland",
+   "type": "Shot On Target",
+   "x": 90.6,
+   "y": 41.5,
+   "goal": false,
+   "xg": 0.209,
+   "text": "Attempt saved. Erling Haaland (Norway) header from the centre of the box is saved in the bottom right corner by Édouard Mendy (Senegal). Assisted by Fredrik Aursnes with a cross."
+  },
+  {
+   "minute": "48",
+   "seconds": 2850.0,
+   "team": "Norway",
+   "player": "Erling Haaland",
+   "type": "Goal",
+   "x": 87.5,
+   "y": 58.7,
+   "goal": true,
+   "xg": 0.237,
+   "text": "Goal! Norway 2, Senegal 0. Erling Haaland (Norway) left footed shot from the centre of the box to the top right corner. Assisted by Martin Ødegaard with a through ball following a fast break."
+  },
+  {
+   "minute": "52",
+   "seconds": 3068.0,
+   "team": "Senegal",
+   "player": "Nicolas Jackson",
+   "type": "Shot On Target",
+   "x": 92.4,
+   "y": 54.4,
+   "goal": false,
+   "xg": 0.321,
+   "text": "Attempt saved. Nicolas Jackson (Senegal) header from the centre of the box is saved in the centre of the goal by Ørjan Nyland (Norway). Assisted by Krépin Diatta with a cross."
+  },
+  {
+   "minute": "53",
+   "seconds": 3161.0,
+   "team": "Senegal",
+   "player": "Ismaïla Sarr",
+   "type": "Goal",
+   "x": 91.9,
+   "y": 46.2,
+   "goal": true,
+   "xg": 0.476,
+   "text": "Goal! Norway 2, Senegal 1. Ismaïla Sarr (Senegal) right footed shot from the centre of the box to the top right corner. Assisted by Sadio Mané."
+  },
+  {
+   "minute": "56",
+   "seconds": 3328.0,
+   "team": "Senegal",
+   "player": "Lamine Camara",
+   "type": "Shot Off Target",
+   "x": 82.7,
+   "y": 41.9,
+   "goal": false,
+   "xg": 0.152,
+   "text": "Attempt missed. Lamine Camara (Senegal) right footed shot from outside the box is too high. Assisted by Ibrahim Mbaye."
+  },
+  {
+   "minute": "58",
+   "seconds": 3424.0,
+   "team": "Norway",
+   "player": "Antonio Nusa",
+   "type": "Shot Blocked",
+   "x": 86.9,
+   "y": 54.1,
+   "goal": false,
+   "xg": 0.259,
+   "text": "Attempt blocked. Antonio Nusa (Norway) right footed shot from the centre of the box is blocked. Assisted by Erling Haaland."
+  },
+  {
+   "minute": "58",
+   "seconds": 3429.0,
+   "team": "Norway",
+   "player": "Erling Haaland",
+   "type": "Goal",
+   "x": 91.0,
+   "y": 55.1,
+   "goal": true,
+   "xg": 0.404,
+   "text": "Goal! Norway 3, Senegal 1. Erling Haaland (Norway) right footed shot from the centre of the box to the high centre of the goal. Assisted by Patrick Berg."
+  },
+  {
+   "minute": "74",
+   "seconds": 4424.0,
+   "team": "Senegal",
+   "player": "Ismaïla Sarr",
+   "type": "Shot Blocked",
+   "x": 88.1,
+   "y": 52.1,
+   "goal": false,
+   "xg": 0.309,
+   "text": "Attempt blocked. Ismaïla Sarr (Senegal) right footed shot from the centre of the box is blocked. Assisted by Ibrahim Mbaye with a cross."
+  },
+  {
+   "minute": "81",
+   "seconds": 4819.0,
+   "team": "Senegal",
+   "player": "Pape Matar Sarr",
+   "type": "Shot Off Target",
+   "x": 76.6,
+   "y": 39.1,
+   "goal": false,
+   "xg": 0.081,
+   "text": "Attempt missed. Pape Matar Sarr (Senegal) right footed shot from outside the box is too high."
+  },
+  {
+   "minute": "83",
+   "seconds": 4942.0,
+   "team": "Senegal",
+   "player": "Ismaïla Sarr",
+   "type": "Shot Blocked",
+   "x": 91.5,
+   "y": 48.8,
+   "goal": false,
+   "xg": 0.482,
+   "text": "Attempt blocked. Ismaïla Sarr (Senegal) left footed shot from the centre of the box is blocked. Assisted by Sadio Mané with a cross."
+  },
+  {
+   "minute": "88",
+   "seconds": 5245.0,
+   "team": "Norway",
+   "player": "Erling Haaland",
+   "type": "Shot Blocked",
+   "x": 89.9,
+   "y": 61.5,
+   "goal": false,
+   "xg": 0.251,
+   "text": "Attempt blocked. Erling Haaland (Norway) left footed shot from the centre of the box is blocked. Assisted by Andreas Schjelderup with a through ball."
+  },
+  {
+   "minute": "90",
+   "seconds": 5343.0,
+   "team": "Norway",
+   "player": "Oscar Bobb",
+   "type": "Shot Blocked",
+   "x": 89.2,
+   "y": 48.1,
+   "goal": false,
+   "xg": 0.355,
+   "text": "Attempt blocked. Oscar Bobb (Norway) left footed shot from the centre of the box is blocked."
+  },
+  {
+   "minute": "90'+2",
+   "seconds": 5400.0,
+   "team": "Senegal",
+   "player": "Pape Matar Sarr",
+   "type": "Shot Off Target",
+   "x": 69.9,
+   "y": 31.3,
+   "goal": false,
+   "xg": 0.039,
+   "text": "Attempt missed. Pape Matar Sarr (Senegal) right footed shot from outside the box is close, but misses to the right."
+  },
+  {
+   "minute": "90'+3",
+   "seconds": 5400.0,
+   "team": "Senegal",
+   "player": "Ismaïla Sarr",
+   "type": "Goal",
+   "x": 90.0,
+   "y": 52.4,
+   "goal": true,
+   "xg": 0.389,
+   "text": "Goal! Norway 3, Senegal 2. Ismaïla Sarr (Senegal) right footed shot from the centre of the box to the top right corner. Assisted by Nicolas Jackson."
+  },
+  {
+   "minute": "90'+9",
+   "seconds": 5400.0,
+   "team": "Senegal",
+   "player": "Ibrahim Mbaye",
+   "type": "Shot Blocked",
+   "x": 87.1,
+   "y": 68.6,
+   "goal": false,
+   "xg": 0.136,
+   "text": "Attempt blocked. Ibrahim Mbaye (Senegal) right footed shot from the left side of the box is blocked. Assisted by Sadio Mané."
+  },
+  {
+   "minute": "90'+9",
+   "seconds": 5400.0,
+   "team": "Senegal",
+   "player": "Ismaïla Sarr",
+   "type": "Shot Off Target",
+   "x": 96.4,
+   "y": 53.6,
+   "goal": false,
+   "xg": 0.53,
+   "text": "Attempt missed. Ismaïla Sarr (Senegal) header from very close range is too high. Assisted by Ismail Jakobs with a cross following a corner."
+  }
+ ],
+ "lineups": [
+  {
+   "team": "Norway",
+   "formation": "4-3-3",
+   "starters": [
+    {
+     "name": "Ørjan Nyland",
+     "jersey": "1",
+     "position": "G"
+    },
+    {
+     "name": "Torbjørn Heggem",
+     "jersey": "17",
+     "position": "CD-L"
+    },
+    {
+     "name": "Kristoffer Ajer",
+     "jersey": "3",
+     "position": "CD-R"
+    },
+    {
+     "name": "David Møller Wolfe",
+     "jersey": "5",
+     "position": "LB"
+    },
+    {
+     "name": "Julian Ryerson",
+     "jersey": "26",
+     "position": "RB"
+    },
+    {
+     "name": "Sander Berge",
+     "jersey": "8",
+     "position": "CM"
+    },
+    {
+     "name": "Fredrik Aursnes",
+     "jersey": "14",
+     "position": "LM"
+    },
+    {
+     "name": "Martin Ødegaard",
+     "jersey": "10",
+     "position": "RM"
+    },
+    {
+     "name": "Erling Haaland",
+     "jersey": "9",
+     "position": "F"
+    },
+    {
+     "name": "Antonio Nusa",
+     "jersey": "20",
+     "position": "LF"
+    },
+    {
+     "name": "Alexander Sørloth",
+     "jersey": "7",
+     "position": "RF"
+    }
+   ],
+   "subs": [
+    {
+     "name": "Jørgen Strand Larsen",
+     "jersey": "11",
+     "position": "SUB"
+    },
+    {
+     "name": "Fredrik André Bjørkan",
+     "jersey": "15",
+     "position": "SUB"
+    },
+    {
+     "name": "Patrick Berg",
+     "jersey": "6",
+     "position": "SUB"
+    },
+    {
+     "name": "Henrik Falchener",
+     "jersey": "25",
+     "position": "SUB"
+    },
+    {
+     "name": "Sondre Langas",
+     "jersey": "24",
+     "position": "SUB"
+    },
+    {
+     "name": "Andreas Schjelderup",
+     "jersey": "21",
+     "position": "SUB"
+    },
+    {
+     "name": "Jens Petter Hauge",
+     "jersey": "23",
+     "position": "SUB"
+    },
+    {
+     "name": "Morten Thorsby",
+     "jersey": "2",
+     "position": "SUB"
+    },
+    {
+     "name": "Egil Selvik",
+     "jersey": "13",
+     "position": "SUB"
+    },
+    {
+     "name": "Marcus Holmgren Pedersen",
+     "jersey": "16",
+     "position": "SUB"
+    },
+    {
+     "name": "Sander Tangvik",
+     "jersey": "12",
+     "position": "SUB"
+    },
+    {
+     "name": "Kristian Thorstvedt",
+     "jersey": "18",
+     "position": "SUB"
+    },
+    {
+     "name": "Leo Østigard",
+     "jersey": "4",
+     "position": "SUB"
+    },
+    {
+     "name": "Thelo Aasgaard",
+     "jersey": "19",
+     "position": "SUB"
+    },
+    {
+     "name": "Oscar Bobb",
+     "jersey": "22",
+     "position": "SUB"
+    }
+   ]
+  },
+  {
+   "team": "Senegal",
+   "formation": "4-2-3-1",
+   "starters": [
+    {
+     "name": "Édouard Mendy",
+     "jersey": "16",
+     "position": "G"
+    },
+    {
+     "name": "Moussa Niakhaté",
+     "jersey": "19",
+     "position": "CD-L"
+    },
+    {
+     "name": "Kalidou Koulibaly",
+     "jersey": "3",
+     "position": "CD-R"
+    },
+    {
+     "name": "El Hadji Malick Diouf",
+     "jersey": "25",
+     "position": "LB"
+    },
+    {
+     "name": "Krépin Diatta",
+     "jersey": "15",
+     "position": "RB"
+    },
+    {
+     "name": "Lamine Camara",
+     "jersey": "8",
+     "position": "AM"
+    },
+    {
+     "name": "Pape Gueye",
+     "jersey": "26",
+     "position": "LM"
+    },
+    {
+     "name": "Idrissa Gueye",
+     "jersey": "5",
+     "position": "RM"
+    },
+    {
+     "name": "Nicolas Jackson",
+     "jersey": "11",
+     "position": "F"
+    },
+    {
+     "name": "Sadio Mané",
+     "jersey": "10",
+     "position": "AM-L"
+    },
+    {
+     "name": "Ismaïla Sarr",
+     "jersey": "18",
+     "position": "AM-R"
+    }
+   ],
+   "subs": [
+    {
+     "name": "Habib Diarra",
+     "jersey": "21",
+     "position": "SUB"
+    },
+    {
+     "name": "Antoine Mendy",
+     "jersey": "24",
+     "position": "SUB"
+    },
+    {
+     "name": "Bamba Dieng",
+     "jersey": "9",
+     "position": "SUB"
+    },
+    {
+     "name": "Pape Matar Sarr",
+     "jersey": "17",
+     "position": "SUB"
+    },
+    {
+     "name": "Abdoulaye Seck",
+     "jersey": "4",
+     "position": "SUB"
+    },
+    {
+     "name": "Ismail Jakobs",
+     "jersey": "14",
+     "position": "SUB"
+    },
+    {
+     "name": "Mamadou Sarr",
+     "jersey": "2",
+     "position": "SUB"
+    },
+    {
+     "name": "Pathé Ciss",
+     "jersey": "6",
+     "position": "SUB"
+    },
+    {
+     "name": "Iliman Ndiaye",
+     "jersey": "13",
+     "position": "SUB"
+    },
+    {
+     "name": "Yehvann Diouf",
+     "jersey": "1",
+     "position": "SUB"
+    },
+    {
+     "name": "Ibrahim Mbaye",
+     "jersey": "20",
+     "position": "SUB"
+    },
+    {
+     "name": "Mory Diaw",
+     "jersey": "23",
+     "position": "SUB"
+    },
+    {
+     "name": "Bara Sapoko Ndiaye",
+     "jersey": "22",
+     "position": "SUB"
+    },
+    {
+     "name": "Assane Diao",
+     "jersey": "7",
+     "position": "SUB"
+    },
+    {
+     "name": "Cherif Ndiaye",
+     "jersey": "12",
+     "position": "SUB"
+    }
+   ]
+  }
+ ],
+ "attendance": 80663,
+ "venue": "MetLife Stadium, East Rutherford, New Jersey, USA"
+}

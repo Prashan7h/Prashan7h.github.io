@@ -1,0 +1,808 @@
+{
+ "teams": [
+  {
+   "name": "France",
+   "stats": {
+    "possessionPct": "55.6",
+    "totalShots": "19",
+    "shotsOnTarget": "5",
+    "wonCorners": "4",
+    "foulsCommitted": "8",
+    "offsides": "1",
+    "saves": "0",
+    "yellowCards": "0",
+    "redCards": "0"
+   }
+  },
+  {
+   "name": "Iraq",
+   "stats": {
+    "possessionPct": "44.4",
+    "totalShots": "4",
+    "shotsOnTarget": "0",
+    "wonCorners": "2",
+    "foulsCommitted": "4",
+    "offsides": "0",
+    "saves": "2",
+    "yellowCards": "1",
+    "redCards": "0"
+   }
+  }
+ ],
+ "events": [
+  {
+   "type": "Kickoff",
+   "minute": "",
+   "team": null,
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Yellow Card",
+   "minute": "6'",
+   "team": "Iraq",
+   "text": "Amir Al Ammari (Iraq) is shown the yellow card for a bad foul.",
+   "players": [
+    "Amir Al-Ammari"
+   ]
+  },
+  {
+   "type": "Goal",
+   "minute": "14'",
+   "team": "France",
+   "text": "Goal! France 1, Iraq 0. Kylian Mbappé (France) left footed shot from outside the box to the bottom left corner. Assisted by Michael Olise.",
+   "players": [
+    "Kylian Mbappé",
+    "Michael Olise"
+   ]
+  },
+  {
+   "type": "Start Delay",
+   "minute": "23'",
+   "team": "France",
+   "text": "Delay in match for a drinks break.",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "23'",
+   "team": "Iraq",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "25'",
+   "team": "Iraq",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "25'",
+   "team": "France",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "Substitution",
+   "minute": "26'",
+   "team": "Iraq",
+   "text": "Substitution, Iraq. Ali Al Hamadi replaces Aymen Hussein because of an injury.",
+   "players": [
+    "Ali Al-Hamadi",
+    "Aymen Hussein"
+   ]
+  },
+  {
+   "type": "Start Delay",
+   "minute": "28'",
+   "team": "Iraq",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "28'",
+   "team": "Iraq",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "45'",
+   "team": "France",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Halftime",
+   "minute": "45'+4'",
+   "team": null,
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Start 2nd Half",
+   "minute": "45'",
+   "team": null,
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Goal",
+   "minute": "54'",
+   "team": "France",
+   "text": "Goal! France 2, Iraq 0. Kylian Mbappé (France) right footed shot from the centre of the box to the bottom right corner. Assisted by Ousmane Dembélé.",
+   "players": [
+    "Kylian Mbappé",
+    "Ousmane Dembélé"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "60'",
+   "team": "Iraq",
+   "text": "Substitution, Iraq. Rebin Sulaka replaces Zaid Tahseen.",
+   "players": [
+    "Rebin Sulaka",
+    "Zaid Tahseen"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "60'",
+   "team": "Iraq",
+   "text": "Substitution, Iraq. Youssef Amyn replaces Zaid Ismael.",
+   "players": [
+    "Youssef Amyn",
+    "Zaid Ismael"
+   ]
+  },
+  {
+   "type": "Goal",
+   "minute": "66'",
+   "team": "France",
+   "text": "Goal! France 3, Iraq 0. Ousmane Dembélé (France) right footed shot from the centre of the box to the bottom left corner. Assisted by Michael Olise with a through ball.",
+   "players": [
+    "Ousmane Dembélé",
+    "Michael Olise"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "68'",
+   "team": "France",
+   "text": "Substitution, France. Désiré Doué replaces Ousmane Dembélé.",
+   "players": [
+    "Désiré Doué",
+    "Ousmane Dembélé"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "68'",
+   "team": "France",
+   "text": "Substitution, France. Rayan Cherki replaces Michael Olise.",
+   "players": [
+    "Rayan Cherki",
+    "Michael Olise"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "68'",
+   "team": "Iraq",
+   "text": "Substitution, Iraq. Aimar Sher replaces Amir Al Ammari.",
+   "players": [
+    "Aimar Sher",
+    "Amir Al-Ammari"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "69'",
+   "team": "Iraq",
+   "text": "Substitution, Iraq. Marko Farji replaces Ibrahim Bayesh.",
+   "players": [
+    "Marko Farji",
+    "Ibrahim Bayesh"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "83'",
+   "team": "France",
+   "text": "Substitution, France. Maghnes Akliouche replaces Bradley Barcola.",
+   "players": [
+    "Maghnes Akliouche",
+    "Bradley Barcola"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "83'",
+   "team": "France",
+   "text": "Substitution, France. Malo Gusto replaces Jules Koundé.",
+   "players": [
+    "Malo Gusto",
+    "Jules Koundé"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "90'+1'",
+   "team": "France",
+   "text": "Substitution, France. Marcus Thuram replaces Kylian Mbappé.",
+   "players": [
+    "Marcus Thuram",
+    "Kylian Mbappé"
+   ]
+  },
+  {
+   "type": "End Regular Time",
+   "minute": "90'+3'",
+   "team": null,
+   "text": "",
+   "players": []
+  }
+ ],
+ "shots": [
+  {
+   "minute": "1",
+   "seconds": 57.0,
+   "team": "France",
+   "player": "Manu Koné",
+   "type": "Shot Off Target",
+   "x": 80.3,
+   "y": 67.1,
+   "goal": false,
+   "xg": 0.092,
+   "text": "Attempt missed. Manu Koné (France) left footed shot from outside the box misses to the right."
+  },
+  {
+   "minute": "8",
+   "seconds": 463.0,
+   "team": "France",
+   "player": "Michael Olise",
+   "type": "Shot Blocked",
+   "x": 81.7,
+   "y": 50.2,
+   "goal": false,
+   "xg": 0.153,
+   "text": "Attempt blocked. Michael Olise (France) left footed shot from outside the box is blocked."
+  },
+  {
+   "minute": "8",
+   "seconds": 465.0,
+   "team": "France",
+   "player": "Kylian Mbappé",
+   "type": "Shot Off Target",
+   "x": 90.0,
+   "y": 29.4,
+   "goal": false,
+   "xg": 0.136,
+   "text": "Attempt missed. Kylian Mbappé (France) right footed shot from the right side of the box misses to the right."
+  },
+  {
+   "minute": "14",
+   "seconds": 791.0,
+   "team": "France",
+   "player": "Michael Olise",
+   "type": "Shot Blocked",
+   "x": 82.2,
+   "y": 38.0,
+   "goal": false,
+   "xg": 0.129,
+   "text": "Attempt blocked. Michael Olise (France) left footed shot from outside the box is blocked. Assisted by Kylian Mbappé."
+  },
+  {
+   "minute": "14",
+   "seconds": 811.0,
+   "team": "France",
+   "player": "Kylian Mbappé",
+   "type": "Goal",
+   "x": 80.3,
+   "y": 30.8,
+   "goal": true,
+   "xg": 0.085,
+   "text": "Goal! France 1, Iraq 0. Kylian Mbappé (France) left footed shot from outside the box to the bottom left corner. Assisted by Michael Olise."
+  },
+  {
+   "minute": "27",
+   "seconds": 1574.0,
+   "team": "Iraq",
+   "player": "Ali Al Hamadi",
+   "type": "Shot Blocked",
+   "x": 80.9,
+   "y": 30.4,
+   "goal": false,
+   "xg": 0.087,
+   "text": "Attempt blocked. Ali Al Hamadi (Iraq) left footed shot from outside the box is blocked. Assisted by Ahmed Qasem."
+  },
+  {
+   "minute": "27",
+   "seconds": 1615.0,
+   "team": "Iraq",
+   "player": "Ali Al Hamadi",
+   "type": "Shot Blocked",
+   "x": 95.7,
+   "y": 43.1,
+   "goal": false,
+   "xg": 0.371,
+   "text": "Attempt missed. Ali Al Hamadi (Iraq) header from the right side of the six yard box misses to the right. Assisted by Merchas Doski with a cross."
+  },
+  {
+   "minute": "32",
+   "seconds": 1896.0,
+   "team": "France",
+   "player": "Kylian Mbappé",
+   "type": "Shot Blocked",
+   "x": 81.4,
+   "y": 62.7,
+   "goal": false,
+   "xg": 0.118,
+   "text": "Attempt blocked. Kylian Mbappé (France) right footed shot from outside the box is blocked. Assisted by Ousmane Dembélé."
+  },
+  {
+   "minute": "40",
+   "seconds": 2363.0,
+   "team": "France",
+   "player": "Kylian Mbappé",
+   "type": "Shot Off Target",
+   "x": 60.0,
+   "y": 56.0,
+   "goal": false,
+   "xg": 0.02,
+   "text": "Attempt missed. Kylian Mbappé (France) right footed shot from more than 35 yards is too high."
+  },
+  {
+   "minute": "53",
+   "seconds": 3155.0,
+   "team": "France",
+   "player": "Bradley Barcola",
+   "type": "Shot Off Target",
+   "x": 88.3,
+   "y": 58.5,
+   "goal": false,
+   "xg": 0.168,
+   "text": "Attempt missed. Bradley Barcola (France) header from the centre of the box misses to the left. Assisted by Ousmane Dembélé with a cross."
+  },
+  {
+   "minute": "54",
+   "seconds": 3220.0,
+   "team": "France",
+   "player": "Kylian Mbappé",
+   "type": "Goal",
+   "x": 91.8,
+   "y": 54.2,
+   "goal": true,
+   "xg": 0.463,
+   "text": "Goal! France 2, Iraq 0. Kylian Mbappé (France) right footed shot from the centre of the box to the bottom right corner. Assisted by Ousmane Dembélé."
+  },
+  {
+   "minute": "58",
+   "seconds": 3453.0,
+   "team": "France",
+   "player": null,
+   "type": "Shot Hit Woodwork",
+   "x": 87.2,
+   "y": 33.6,
+   "goal": false,
+   "xg": 0.155,
+   "text": "Michael Olise (France) hits the bar with a left footed shot from the right side of the box. Assisted by Kylian Mbappé."
+  },
+  {
+   "minute": "59",
+   "seconds": 3520.0,
+   "team": "France",
+   "player": "Ousmane Dembélé",
+   "type": "Shot On Target",
+   "x": 87.6,
+   "y": 31.4,
+   "goal": false,
+   "xg": 0.14,
+   "text": "Attempt saved. Ousmane Dembélé (France) right footed shot from the right side of the box is saved in the top left corner by Ahmed Basil (Iraq). Assisted by Michael Olise."
+  },
+  {
+   "minute": "59",
+   "seconds": 3521.0,
+   "team": "France",
+   "player": "Adrien Rabiot",
+   "type": "Shot Off Target",
+   "x": 95.7,
+   "y": 56.0,
+   "goal": false,
+   "xg": 0.41,
+   "text": "Attempt missed. Adrien Rabiot (France) header from the left side of the six yard box is close, but misses to the left."
+  },
+  {
+   "minute": "65",
+   "seconds": 3881.0,
+   "team": "France",
+   "player": "Ousmane Dembélé",
+   "type": "Shot Blocked",
+   "x": 78.6,
+   "y": 36.5,
+   "goal": false,
+   "xg": 0.09,
+   "text": "Attempt blocked. Ousmane Dembélé (France) left footed shot from outside the box is blocked. Assisted by Jules Koundé."
+  },
+  {
+   "minute": "66",
+   "seconds": 3906.0,
+   "team": "France",
+   "player": "William Saliba",
+   "type": "Shot Blocked",
+   "x": 91.2,
+   "y": 47.6,
+   "goal": false,
+   "xg": 0.295,
+   "text": "Attempt missed. William Saliba (France) header from the centre of the box is close, but misses to the right. Assisted by Lucas Digne with a cross following a corner."
+  },
+  {
+   "minute": "66",
+   "seconds": 3921.0,
+   "team": "France",
+   "player": "Ousmane Dembélé",
+   "type": "Shot Off Target",
+   "x": 91.1,
+   "y": 37.6,
+   "goal": false,
+   "xg": 0.255,
+   "text": "Attempt missed. Ousmane Dembélé (France) right footed shot from the centre of the box is close, but misses to the right following a corner."
+  },
+  {
+   "minute": "66",
+   "seconds": 3949.0,
+   "team": "France",
+   "player": "Ousmane Dembélé",
+   "type": "Goal",
+   "x": 88.9,
+   "y": 38.7,
+   "goal": true,
+   "xg": 0.235,
+   "text": "Goal! France 3, Iraq 0. Ousmane Dembélé (France) right footed shot from the centre of the box to the bottom left corner. Assisted by Michael Olise with a through ball."
+  },
+  {
+   "minute": "74",
+   "seconds": 4402.0,
+   "team": "Iraq",
+   "player": "Rebin Sulaka",
+   "type": "Shot Off Target",
+   "x": 88.6,
+   "y": 60.3,
+   "goal": false,
+   "xg": 0.243,
+   "text": "Attempt missed. Rebin Sulaka (Iraq) right footed shot from the centre of the box is too high. Assisted by Zidane Iqbal with a cross following a corner."
+  },
+  {
+   "minute": "75",
+   "seconds": 4499.0,
+   "team": "Iraq",
+   "player": "Ali Al Hamadi",
+   "type": "Shot Off Target",
+   "x": 95.4,
+   "y": 45.2,
+   "goal": false,
+   "xg": 0.681,
+   "text": "Attempt missed. Ali Al Hamadi (Iraq) right footed shot from very close range is close, but misses to the right. Assisted by Marko Farji with a cross."
+  },
+  {
+   "minute": "80",
+   "seconds": 4779.0,
+   "team": "France",
+   "player": "Kylian Mbappé",
+   "type": "Shot Off Target",
+   "x": 88.6,
+   "y": 66.2,
+   "goal": false,
+   "xg": 0.171,
+   "text": "Attempt missed. Kylian Mbappé (France) right footed shot from the left side of the box misses to the left. Assisted by Rayan Cherki with a through ball."
+  },
+  {
+   "minute": "88",
+   "seconds": 5252.0,
+   "team": "France",
+   "player": "Kylian Mbappé",
+   "type": "Shot On Target",
+   "x": 87.5,
+   "y": 56.2,
+   "goal": false,
+   "xg": 0.262,
+   "text": "Attempt saved. Kylian Mbappé (France) right footed shot from the centre of the box is saved in the centre of the goal by Ahmed Basil (Iraq). Assisted by Dayot Upamecano with a through ball."
+  },
+  {
+   "minute": "90",
+   "seconds": 5369.0,
+   "team": "France",
+   "player": "Kylian Mbappé",
+   "type": "Shot Off Target",
+   "x": 92.0,
+   "y": 65.0,
+   "goal": false,
+   "xg": 0.216,
+   "text": "Attempt missed. Kylian Mbappé (France) left footed shot from the left side of the box is high and wide to the left."
+  }
+ ],
+ "lineups": [
+  {
+   "team": "France",
+   "formation": "4-2-3-1",
+   "starters": [
+    {
+     "name": "Mike Maignan",
+     "jersey": "16",
+     "position": "G"
+    },
+    {
+     "name": "William Saliba",
+     "jersey": "17",
+     "position": "CD-L"
+    },
+    {
+     "name": "Dayot Upamecano",
+     "jersey": "4",
+     "position": "CD-R"
+    },
+    {
+     "name": "Lucas Digne",
+     "jersey": "3",
+     "position": "LB"
+    },
+    {
+     "name": "Jules Koundé",
+     "jersey": "5",
+     "position": "RB"
+    },
+    {
+     "name": "Michael Olise",
+     "jersey": "11",
+     "position": "AM"
+    },
+    {
+     "name": "Adrien Rabiot",
+     "jersey": "14",
+     "position": "LM"
+    },
+    {
+     "name": "Manu Koné",
+     "jersey": "6",
+     "position": "RM"
+    },
+    {
+     "name": "Kylian Mbappé",
+     "jersey": "10",
+     "position": "F"
+    },
+    {
+     "name": "Bradley Barcola",
+     "jersey": "12",
+     "position": "AM-L"
+    },
+    {
+     "name": "Ousmane Dembélé",
+     "jersey": "7",
+     "position": "AM-R"
+    }
+   ],
+   "subs": [
+    {
+     "name": "Warren Zaïre-Emery",
+     "jersey": "18",
+     "position": "SUB"
+    },
+    {
+     "name": "Malo Gusto",
+     "jersey": "2",
+     "position": "SUB"
+    },
+    {
+     "name": "Maxence Lacroix",
+     "jersey": "26",
+     "position": "SUB"
+    },
+    {
+     "name": "Rayan Cherki",
+     "jersey": "24",
+     "position": "SUB"
+    },
+    {
+     "name": "Désiré Doué",
+     "jersey": "20",
+     "position": "SUB"
+    },
+    {
+     "name": "Ibrahima Konaté",
+     "jersey": "15",
+     "position": "SUB"
+    },
+    {
+     "name": "Jean-Philippe Mateta",
+     "jersey": "22",
+     "position": "SUB"
+    },
+    {
+     "name": "Brice Samba",
+     "jersey": "1",
+     "position": "SUB"
+    },
+    {
+     "name": "N'Golo Kanté",
+     "jersey": "13",
+     "position": "SUB"
+    },
+    {
+     "name": "Aurélien Tchouaméni",
+     "jersey": "8",
+     "position": "SUB"
+    },
+    {
+     "name": "Lucas Hernández",
+     "jersey": "21",
+     "position": "SUB"
+    },
+    {
+     "name": "Robin Risser",
+     "jersey": "23",
+     "position": "SUB"
+    },
+    {
+     "name": "Marcus Thuram",
+     "jersey": "9",
+     "position": "SUB"
+    },
+    {
+     "name": "Maghnes Akliouche",
+     "jersey": "25",
+     "position": "SUB"
+    },
+    {
+     "name": "Theo Hernández",
+     "jersey": "19",
+     "position": "SUB"
+    }
+   ]
+  },
+  {
+   "team": "Iraq",
+   "formation": "4-1-4-1",
+   "starters": [
+    {
+     "name": "Ahmed Basil",
+     "jersey": "22",
+     "position": "G"
+    },
+    {
+     "name": "Akam Hashim",
+     "jersey": "5",
+     "position": "CD-L"
+    },
+    {
+     "name": "Zaid Tahseen",
+     "jersey": "4",
+     "position": "CD-R"
+    },
+    {
+     "name": "Amir Al-Ammari",
+     "jersey": "16",
+     "position": "DM"
+    },
+    {
+     "name": "Merchas Doski",
+     "jersey": "23",
+     "position": "LB"
+    },
+    {
+     "name": "Hussein Ali",
+     "jersey": "3",
+     "position": "RB"
+    },
+    {
+     "name": "Zidane Iqbal",
+     "jersey": "14",
+     "position": "CM-L"
+    },
+    {
+     "name": "Zaid Ismael",
+     "jersey": "24",
+     "position": "CM-R"
+    },
+    {
+     "name": "Ibrahim Bayesh",
+     "jersey": "8",
+     "position": "LM"
+    },
+    {
+     "name": "Ahmed Qasim",
+     "jersey": "11",
+     "position": "RM"
+    },
+    {
+     "name": "Aymen Hussein",
+     "jersey": "18",
+     "position": "F"
+    }
+   ],
+   "subs": [
+    {
+     "name": "Kevin Yakob",
+     "jersey": "19",
+     "position": "SUB"
+    },
+    {
+     "name": "Ali Al-Hamadi",
+     "jersey": "9",
+     "position": "SUB"
+    },
+    {
+     "name": "Marko Farji",
+     "jersey": "21",
+     "position": "SUB"
+    },
+    {
+     "name": "Munaf Younus",
+     "jersey": "6",
+     "position": "SUB"
+    },
+    {
+     "name": "Ali Yousif",
+     "jersey": "13",
+     "position": "SUB"
+    },
+    {
+     "name": "Jalal Hassan",
+     "jersey": "12",
+     "position": "SUB"
+    },
+    {
+     "name": "Rebin Sulaka",
+     "jersey": "2",
+     "position": "SUB"
+    },
+    {
+     "name": "Ahmed Maknazi",
+     "jersey": "15",
+     "position": "SUB"
+    },
+    {
+     "name": "Youssef Amyn",
+     "jersey": "7",
+     "position": "SUB"
+    },
+    {
+     "name": "Aimar Sher",
+     "jersey": "20",
+     "position": "SUB"
+    },
+    {
+     "name": "Mustafa Saadoon",
+     "jersey": "25",
+     "position": "SUB"
+    },
+    {
+     "name": "Ali Jasim",
+     "jersey": "17",
+     "position": "SUB"
+    },
+    {
+     "name": "Mohanad Ali",
+     "jersey": "10",
+     "position": "SUB"
+    },
+    {
+     "name": "Frans Putros",
+     "jersey": "26",
+     "position": "SUB"
+    },
+    {
+     "name": "Fahad Talib",
+     "jersey": "1",
+     "position": "SUB"
+    }
+   ]
+  }
+ ],
+ "attendance": 68324,
+ "venue": "Lincoln Financial Field, Philadelphia, Pennsylvania, USA"
+}
