@@ -1,0 +1,816 @@
+{
+ "teams": [
+  {
+   "name": "England",
+   "stats": {
+    "possessionPct": "78.9",
+    "totalShots": "19",
+    "shotsOnTarget": "3",
+    "wonCorners": "9",
+    "foulsCommitted": "14",
+    "offsides": "2",
+    "saves": "0",
+    "yellowCards": "1",
+    "redCards": "0"
+   }
+  },
+  {
+   "name": "Ghana",
+   "stats": {
+    "possessionPct": "21.1",
+    "totalShots": "2",
+    "shotsOnTarget": "1",
+    "wonCorners": "2",
+    "foulsCommitted": "24",
+    "offsides": "2",
+    "saves": "3",
+    "yellowCards": "1",
+    "redCards": "0"
+   }
+  }
+ ],
+ "events": [
+  {
+   "type": "Kickoff",
+   "minute": "",
+   "team": null,
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "20'",
+   "team": "Ghana",
+   "text": "Delay in match because of an injury Jordan Ayew (Ghana).",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "20'",
+   "team": "England",
+   "text": "Delay in match because of an injury Reece James (England).",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "23'",
+   "team": "England",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "23'",
+   "team": "Ghana",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "26'",
+   "team": "England",
+   "text": "Delay in match for a drinks break.",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "26'",
+   "team": "Ghana",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "29'",
+   "team": "England",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "29'",
+   "team": "Ghana",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Yellow Card",
+   "minute": "41'",
+   "team": "England",
+   "text": "Declan Rice (England) is shown the yellow card for a bad foul.",
+   "players": [
+    "Declan Rice"
+   ]
+  },
+  {
+   "type": "Halftime",
+   "minute": "45'+7'",
+   "team": null,
+   "text": "First Half ends, England 0, Ghana 0.",
+   "players": []
+  },
+  {
+   "type": "Start 2nd Half",
+   "minute": "45'",
+   "team": null,
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Yellow Card",
+   "minute": "60'",
+   "team": "Ghana",
+   "text": "Iñaki Williams (Ghana) is shown the yellow card for a bad foul.",
+   "players": [
+    "Iñaki Williams"
+   ]
+  },
+  {
+   "type": "Start Delay",
+   "minute": "65'",
+   "team": "Ghana",
+   "text": "Delay in match because of an injury Caleb Yirenkyi (Ghana).",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "65'",
+   "team": "England",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Substitution",
+   "minute": "65'",
+   "team": "England",
+   "text": "Substitution, England. Bukayo Saka replaces Anthony Gordon.",
+   "players": [
+    "Bukayo Saka",
+    "Anthony Gordon"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "66'",
+   "team": "England",
+   "text": "Substitution, England. Nico O'Reilly replaces Djed Spence.",
+   "players": [
+    "Nico O'Reilly",
+    "Djed Spence"
+   ]
+  },
+  {
+   "type": "End Delay",
+   "minute": "66'",
+   "team": "Ghana",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "66'",
+   "team": "England",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Substitution",
+   "minute": "66'",
+   "team": "Ghana",
+   "text": "Substitution, Ghana. Abdul Fatawu replaces Iñaki Williams.",
+   "players": [
+    "Fatawu Issahaku",
+    "Iñaki Williams"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "67'",
+   "team": "Ghana",
+   "text": "Substitution, Ghana. Prince Adu replaces Jordan Ayew.",
+   "players": [
+    "Prince Adu",
+    "Jordan Ayew"
+   ]
+  },
+  {
+   "type": "Start Delay",
+   "minute": "70'",
+   "team": "England",
+   "text": "Delay in match for a drinks break.",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "70'",
+   "team": "Ghana",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "73'",
+   "team": "England",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "73'",
+   "team": "Ghana",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Substitution",
+   "minute": "73'",
+   "team": "England",
+   "text": "Substitution, England. Morgan Rogers replaces Jude Bellingham.",
+   "players": [
+    "Morgan Rogers",
+    "Jude Bellingham"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "74'",
+   "team": "England",
+   "text": "Substitution, England. Eberechi Eze replaces Elliot Anderson.",
+   "players": [
+    "Eberechi Eze",
+    "Elliot Anderson"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "83'",
+   "team": "England",
+   "text": "Substitution, England. Marcus Rashford replaces Noni Madueke.",
+   "players": [
+    "Marcus Rashford",
+    "Noni Madueke"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "87'",
+   "team": "Ghana",
+   "text": "Substitution, Ghana. Kojo Peprah Oppong replaces Marvin Senaya.",
+   "players": [
+    "Kojo Peprah Oppong",
+    "Marvin Senaya"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "90'+5'",
+   "team": "Ghana",
+   "text": "Substitution, Ghana. Abdul Rahman Baba replaces Prince Adu.",
+   "players": [
+    "Baba Rahman",
+    "Prince Adu"
+   ]
+  },
+  {
+   "type": "End Regular Time",
+   "minute": "90'+7'",
+   "team": null,
+   "text": "",
+   "players": []
+  }
+ ],
+ "shots": [
+  {
+   "minute": "14",
+   "seconds": 787.0,
+   "team": "England",
+   "player": "Declan Rice",
+   "type": "Shot Off Target",
+   "x": 70.9,
+   "y": 59.5,
+   "goal": false,
+   "xg": 0.05,
+   "text": "Attempt missed. Declan Rice (England) right footed shot from outside the box is just a bit too high. Assisted by Reece James from a direct free kick."
+  },
+  {
+   "minute": "15",
+   "seconds": 896.0,
+   "team": "England",
+   "player": "Elliot Anderson",
+   "type": "Shot Blocked",
+   "x": 85.6,
+   "y": 57.9,
+   "goal": false,
+   "xg": 0.203,
+   "text": "Attempt blocked. Elliot Anderson (England) right footed shot from the centre of the box is blocked. Assisted by Anthony Gordon."
+  },
+  {
+   "minute": "16",
+   "seconds": 943.0,
+   "team": "England",
+   "player": "Declan Rice",
+   "type": "Shot Blocked",
+   "x": 95.8,
+   "y": 64.9,
+   "goal": false,
+   "xg": 0.215,
+   "text": "Attempt blocked. Declan Rice (England) left footed shot from a difficult angle on the left is blocked."
+  },
+  {
+   "minute": "33",
+   "seconds": 1977.0,
+   "team": "England",
+   "player": "Jude Bellingham",
+   "type": "Shot Blocked",
+   "x": 86.1,
+   "y": 32.5,
+   "goal": false,
+   "xg": 0.136,
+   "text": "Attempt blocked. Jude Bellingham (England) right footed shot from the right side of the box is blocked."
+  },
+  {
+   "minute": "37",
+   "seconds": 2169.0,
+   "team": "England",
+   "player": "Declan Rice",
+   "type": "Shot Off Target",
+   "x": 89.9,
+   "y": 55.5,
+   "goal": false,
+   "xg": 0.227,
+   "text": "Attempt missed. Declan Rice (England) header from the centre of the box is too high. Assisted by Noni Madueke with a cross."
+  },
+  {
+   "minute": "45'+3",
+   "seconds": 2700.0,
+   "team": "England",
+   "player": "Harry Kane",
+   "type": "Shot Blocked",
+   "x": 88.0,
+   "y": 60.9,
+   "goal": false,
+   "xg": 0.223,
+   "text": "Attempt blocked. Harry Kane (England) left footed shot from the centre of the box is blocked. Assisted by Declan Rice."
+  },
+  {
+   "minute": "50",
+   "seconds": 2943.0,
+   "team": "Ghana",
+   "player": "Marvin Senaya",
+   "type": "Shot Blocked",
+   "x": 92.5,
+   "y": 33.2,
+   "goal": false,
+   "xg": 0.189,
+   "text": "Attempt blocked. Marvin Senaya (Ghana) right footed shot from the right side of the box is blocked. Assisted by Jerome Opoku."
+  },
+  {
+   "minute": "57",
+   "seconds": 3392.0,
+   "team": "England",
+   "player": "Noni Madueke",
+   "type": "Shot Blocked",
+   "x": 85.8,
+   "y": 33.6,
+   "goal": false,
+   "xg": 0.142,
+   "text": "Attempt blocked. Noni Madueke (England) left footed shot from the right side of the box is blocked. Assisted by Jude Bellingham."
+  },
+  {
+   "minute": "57",
+   "seconds": 3399.0,
+   "team": "England",
+   "player": "Anthony Gordon",
+   "type": "Shot On Target",
+   "x": 83.6,
+   "y": 68.5,
+   "goal": false,
+   "xg": 0.11,
+   "text": "Attempt saved. Anthony Gordon (England) right footed shot from the left side of the box is saved in the centre of the goal by Benjamin Asare (Ghana). Assisted by Declan Rice."
+  },
+  {
+   "minute": "61",
+   "seconds": 3612.0,
+   "team": "England",
+   "player": "Elliot Anderson",
+   "type": "Shot Blocked",
+   "x": 93.2,
+   "y": 39.2,
+   "goal": false,
+   "xg": 0.212,
+   "text": "Attempt blocked. Elliot Anderson (England) header from the centre of the box is blocked. Assisted by Declan Rice with a cross."
+  },
+  {
+   "minute": "62",
+   "seconds": 3663.0,
+   "team": "England",
+   "player": "Elliot Anderson",
+   "type": "Shot Off Target",
+   "x": 88.0,
+   "y": 44.6,
+   "goal": false,
+   "xg": 0.184,
+   "text": "Attempt missed. Elliot Anderson (England) header from the centre of the box is too high. Assisted by Declan Rice with a cross following a corner."
+  },
+  {
+   "minute": "63",
+   "seconds": 3779.0,
+   "team": "England",
+   "player": "Elliot Anderson",
+   "type": "Shot Off Target",
+   "x": 74.3,
+   "y": 46.1,
+   "goal": false,
+   "xg": 0.073,
+   "text": "Attempt missed. Elliot Anderson (England) right footed shot from outside the box misses to the left following a set piece situation."
+  },
+  {
+   "minute": "64",
+   "seconds": 3784.0,
+   "team": "England",
+   "player": "Noni Madueke",
+   "type": "Shot Off Target",
+   "x": 81.7,
+   "y": 36.9,
+   "goal": false,
+   "xg": 0.119,
+   "text": "Attempt missed. Noni Madueke (England) left footed shot from outside the box is high and wide to the left. Assisted by Anthony Gordon following a set piece situation."
+  },
+  {
+   "minute": "69",
+   "seconds": 4089.0,
+   "team": "England",
+   "player": "Harry Kane",
+   "type": "Shot On Target",
+   "x": 78.4,
+   "y": 60.8,
+   "goal": false,
+   "xg": 0.095,
+   "text": "Attempt saved. Harry Kane (England) left footed shot from outside the box is saved in the bottom right corner by Benjamin Asare (Ghana)."
+  },
+  {
+   "minute": "70",
+   "seconds": 4176.0,
+   "team": "England",
+   "player": "Bukayo Saka",
+   "type": "Shot Off Target",
+   "x": 92.9,
+   "y": 43.2,
+   "goal": false,
+   "xg": 0.293,
+   "text": "Attempt missed. Bukayo Saka (England) header from the centre of the box is too high. Assisted by Noni Madueke with a cross."
+  },
+  {
+   "minute": "79",
+   "seconds": 4697.0,
+   "team": "Ghana",
+   "player": "Prince Adu",
+   "type": "Shot Blocked",
+   "x": 90.2,
+   "y": 39.0,
+   "goal": false,
+   "xg": 0.265,
+   "text": "Attempt blocked. Prince Adu (Ghana) left footed shot from the centre of the box is blocked."
+  },
+  {
+   "minute": "86",
+   "seconds": 5129.0,
+   "team": "England",
+   "player": "Bukayo Saka",
+   "type": "Shot On Target",
+   "x": 80.9,
+   "y": 30.3,
+   "goal": false,
+   "xg": 0.087,
+   "text": "Attempt saved. Bukayo Saka (England) left footed shot from outside the box is saved in the bottom left corner by Benjamin Asare (Ghana). Assisted by Declan Rice with a headed pass."
+  },
+  {
+   "minute": "86",
+   "seconds": 5156.0,
+   "team": "England",
+   "player": null,
+   "type": "Shot Hit Woodwork",
+   "x": 92.6,
+   "y": 50.8,
+   "goal": false,
+   "xg": 0.365,
+   "text": "Nico O'Reilly (England) hits the bar with a header from the centre of the box. Assisted by Reece James with a cross."
+  },
+  {
+   "minute": "86",
+   "seconds": 5157.0,
+   "team": "England",
+   "player": "Harry Kane",
+   "type": "Shot Off Target",
+   "x": 91.6,
+   "y": 51.1,
+   "goal": false,
+   "xg": 0.489,
+   "text": "Attempt missed. Harry Kane (England) left footed shot from the centre of the box is too high."
+  },
+  {
+   "minute": "90'+3",
+   "seconds": 5400.0,
+   "team": "England",
+   "player": "Nico O'Reilly",
+   "type": "Shot Off Target",
+   "x": 96.0,
+   "y": 41.4,
+   "goal": false,
+   "xg": 0.3,
+   "text": "Attempt missed. Nico O'Reilly (England) header from the right side of the six yard box misses to the right. Assisted by Declan Rice with a cross following a corner."
+  },
+  {
+   "minute": "90'+3",
+   "seconds": 5400.0,
+   "team": "England",
+   "player": "Marc Guéhi",
+   "type": "Shot Blocked",
+   "x": 92.1,
+   "y": 47.9,
+   "goal": false,
+   "xg": 0.334,
+   "text": "Attempt missed. Marc Guéhi (England) header from the centre of the box is close, but misses to the left. Assisted by Eberechi Eze following a corner."
+  }
+ ],
+ "lineups": [
+  {
+   "team": "England",
+   "formation": "4-2-3-1",
+   "starters": [
+    {
+     "name": "Jordan Pickford",
+     "jersey": "1",
+     "position": "G"
+    },
+    {
+     "name": "Marc Guéhi",
+     "jersey": "6",
+     "position": "CD-L"
+    },
+    {
+     "name": "Ezri Konsa",
+     "jersey": "2",
+     "position": "CD-R"
+    },
+    {
+     "name": "Djed Spence",
+     "jersey": "25",
+     "position": "LB"
+    },
+    {
+     "name": "Reece James",
+     "jersey": "24",
+     "position": "RB"
+    },
+    {
+     "name": "Jude Bellingham",
+     "jersey": "10",
+     "position": "AM"
+    },
+    {
+     "name": "Declan Rice",
+     "jersey": "4",
+     "position": "LM"
+    },
+    {
+     "name": "Elliot Anderson",
+     "jersey": "8",
+     "position": "RM"
+    },
+    {
+     "name": "Harry Kane",
+     "jersey": "9",
+     "position": "F"
+    },
+    {
+     "name": "Anthony Gordon",
+     "jersey": "18",
+     "position": "AM-L"
+    },
+    {
+     "name": "Noni Madueke",
+     "jersey": "20",
+     "position": "AM-R"
+    }
+   ],
+   "subs": [
+    {
+     "name": "Jordan Henderson",
+     "jersey": "14",
+     "position": "SUB"
+    },
+    {
+     "name": "Trevoh Chalobah",
+     "jersey": "12",
+     "position": "SUB"
+    },
+    {
+     "name": "Ivan Toney",
+     "jersey": "22",
+     "position": "SUB"
+    },
+    {
+     "name": "Morgan Rogers",
+     "jersey": "17",
+     "position": "SUB"
+    },
+    {
+     "name": "Eberechi Eze",
+     "jersey": "21",
+     "position": "SUB"
+    },
+    {
+     "name": "Jarell Quansah",
+     "jersey": "26",
+     "position": "SUB"
+    },
+    {
+     "name": "Ollie Watkins",
+     "jersey": "19",
+     "position": "SUB"
+    },
+    {
+     "name": "John Stones",
+     "jersey": "5",
+     "position": "SUB"
+    },
+    {
+     "name": "Dean Henderson",
+     "jersey": "13",
+     "position": "SUB"
+    },
+    {
+     "name": "Marcus Rashford",
+     "jersey": "11",
+     "position": "SUB"
+    },
+    {
+     "name": "Dan Burn",
+     "jersey": "15",
+     "position": "SUB"
+    },
+    {
+     "name": "Nico O'Reilly",
+     "jersey": "3",
+     "position": "SUB"
+    },
+    {
+     "name": "Bukayo Saka",
+     "jersey": "7",
+     "position": "SUB"
+    },
+    {
+     "name": "Kobbie Mainoo",
+     "jersey": "16",
+     "position": "SUB"
+    },
+    {
+     "name": "James Trafford",
+     "jersey": "23",
+     "position": "SUB"
+    }
+   ]
+  },
+  {
+   "team": "Ghana",
+   "formation": "4-1-4-1",
+   "starters": [
+    {
+     "name": "Benjamin Asare",
+     "jersey": "16",
+     "position": "G"
+    },
+    {
+     "name": "Jerome Opoku",
+     "jersey": "18",
+     "position": "CD-L"
+    },
+    {
+     "name": "Jonas Adjetey",
+     "jersey": "4",
+     "position": "CD-R"
+    },
+    {
+     "name": "Thomas Partey",
+     "jersey": "5",
+     "position": "DM"
+    },
+    {
+     "name": "Gideon Mensah",
+     "jersey": "14",
+     "position": "LB"
+    },
+    {
+     "name": "Marvin Senaya",
+     "jersey": "26",
+     "position": "RB"
+    },
+    {
+     "name": "Kwasi Sibo",
+     "jersey": "8",
+     "position": "CM-L"
+    },
+    {
+     "name": "Caleb Yirenkyi",
+     "jersey": "3",
+     "position": "CM-R"
+    },
+    {
+     "name": "Antoine Semenyo",
+     "jersey": "11",
+     "position": "LM"
+    },
+    {
+     "name": "Iñaki Williams",
+     "jersey": "19",
+     "position": "RM"
+    },
+    {
+     "name": "Jordan Ayew",
+     "jersey": "9",
+     "position": "F"
+    }
+   ],
+   "subs": [
+    {
+     "name": "Joseph Anang",
+     "jersey": "12",
+     "position": "SUB"
+    },
+    {
+     "name": "Prince Adu",
+     "jersey": "25",
+     "position": "SUB"
+    },
+    {
+     "name": "Kojo Peprah Oppong",
+     "jersey": "21",
+     "position": "SUB"
+    },
+    {
+     "name": "Augustine Boakye",
+     "jersey": "20",
+     "position": "SUB"
+    },
+    {
+     "name": "Kamaldeen Sulemana",
+     "jersey": "22",
+     "position": "SUB"
+    },
+    {
+     "name": "Alidu Seidu",
+     "jersey": "2",
+     "position": "SUB"
+    },
+    {
+     "name": "Elisha Owusu",
+     "jersey": "15",
+     "position": "SUB"
+    },
+    {
+     "name": "Abdul Mumin",
+     "jersey": "6",
+     "position": "SUB"
+    },
+    {
+     "name": "Derrick Luckassen",
+     "jersey": "23",
+     "position": "SUB"
+    },
+    {
+     "name": "Baba Rahman",
+     "jersey": "17",
+     "position": "SUB"
+    },
+    {
+     "name": "Brandon Thomas-Asante",
+     "jersey": "10",
+     "position": "SUB"
+    },
+    {
+     "name": "Christopher Bonsu Baah",
+     "jersey": "13",
+     "position": "SUB"
+    },
+    {
+     "name": "Ernest Nuamah",
+     "jersey": "24",
+     "position": "SUB"
+    },
+    {
+     "name": "Lawrence Ati Zigi",
+     "jersey": "1",
+     "position": "SUB"
+    },
+    {
+     "name": "Fatawu Issahaku",
+     "jersey": "7",
+     "position": "SUB"
+    }
+   ]
+  }
+ ],
+ "attendance": 63983,
+ "venue": "Gillette Stadium, Foxborough, Massachusetts, USA"
+}

@@ -2314,12 +2314,22 @@
    "team2": "Ghana",
    "group": "Group L",
    "ground": "Boston (Foxborough)",
-   "score": null,
+   "score": {
+    "ft": [
+     0,
+     0
+    ],
+    "ht": [
+     0,
+     0
+    ]
+   },
    "goals1": [],
    "goals2": [],
    "espn_id": "760458",
-   "status": "live",
+   "status": "finished",
    "utc_date": "2026-06-23T20:00Z",
+   "attendance": 63983,
    "venue": "Gillette Stadium",
    "slug": "2026-06-23-england-vs-ghana"
   },
@@ -2332,12 +2342,27 @@
    "team2": "Croatia",
    "group": "Group L",
    "ground": "Toronto",
-   "score": null,
+   "score": {
+    "ft": [
+     0,
+     1
+    ],
+    "ht": [
+     0,
+     0
+    ]
+   },
    "goals1": [],
-   "goals2": [],
+   "goals2": [
+    {
+     "name": "Ante Budimir",
+     "minute": "54"
+    }
+   ],
    "espn_id": "760460",
-   "status": "scheduled",
+   "status": "finished",
    "utc_date": "2026-06-23T23:00Z",
+   "attendance": 43036,
    "venue": "BMO Field",
    "slug": "2026-06-23-panama-vs-croatia"
   },

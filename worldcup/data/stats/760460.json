@@ -1,0 +1,686 @@
+{
+ "teams": [
+  {
+   "name": "Panama",
+   "stats": {
+    "possessionPct": "42.1",
+    "totalShots": "8",
+    "shotsOnTarget": "1",
+    "wonCorners": "7",
+    "foulsCommitted": "19",
+    "offsides": "1",
+    "saves": "1",
+    "yellowCards": "1",
+    "redCards": "0"
+   }
+  },
+  {
+   "name": "Croatia",
+   "stats": {
+    "possessionPct": "57.9",
+    "totalShots": "6",
+    "shotsOnTarget": "2",
+    "wonCorners": "2",
+    "foulsCommitted": "12",
+    "offsides": "2",
+    "saves": "1",
+    "yellowCards": "1",
+    "redCards": "0"
+   }
+  }
+ ],
+ "events": [
+  {
+   "type": "Kickoff",
+   "minute": "",
+   "team": null,
+   "text": "First Half begins.",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "23'",
+   "team": "Croatia",
+   "text": "Delay in match for a drinks break.",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "23'",
+   "team": "Panama",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "26'",
+   "team": "Croatia",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "26'",
+   "team": "Panama",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Halftime",
+   "minute": "45'+4'",
+   "team": null,
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Substitution",
+   "minute": "45'",
+   "team": "Croatia",
+   "text": "Substitution, Croatia. Ante Budimir replaces Petar Musa.",
+   "players": [
+    "Ante Budimir",
+    "Petar Musa"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "45'",
+   "team": "Croatia",
+   "text": "Substitution, Croatia. Andrej Kramaric replaces Josko Gvardiol.",
+   "players": [
+    "Andrej Kramaric",
+    "Josko Gvardiol"
+   ]
+  },
+  {
+   "type": "Start 2nd Half",
+   "minute": "45'",
+   "team": null,
+   "text": "Second Half begins Panama 0, Croatia 0.",
+   "players": []
+  },
+  {
+   "type": "Goal - Volley",
+   "minute": "54'",
+   "team": "Croatia",
+   "text": "Goal! Panama 0, Croatia 1. Ante Budimir (Croatia) left footed shot from very close range to the bottom left corner. Assisted by Josip Stanisic with a cross.",
+   "players": [
+    "Ante Budimir",
+    "Josip Stanisic"
+   ]
+  },
+  {
+   "type": "Yellow Card",
+   "minute": "61'",
+   "team": "Panama",
+   "text": "Yoel Bárcenas (Panama) is shown the yellow card for a bad foul.",
+   "players": [
+    "Édgar Yoel Bárcenas"
+   ]
+  },
+  {
+   "type": "Start Delay",
+   "minute": "69'",
+   "team": "Croatia",
+   "text": "Delay in match for a drinks break.",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "69'",
+   "team": "Panama",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "72'",
+   "team": "Croatia",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "72'",
+   "team": "Panama",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Substitution",
+   "minute": "72'",
+   "team": "Croatia",
+   "text": "Substitution, Croatia. Luka Sucic replaces Marco Pasalic.",
+   "players": [
+    "Luka Sucic",
+    "Marco Pasalic"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "72'",
+   "team": "Croatia",
+   "text": "Substitution, Croatia. Petar Sucic replaces Mateo Kovacic.",
+   "players": [
+    "Petar Sucic",
+    "Mateo Kovacic"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "77'",
+   "team": "Panama",
+   "text": "Substitution, Panama. Cecilio Waterman replaces Jiovany Ramos.",
+   "players": [
+    "Cecilio Waterman",
+    "Jiovany Ramos"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "81'",
+   "team": "Croatia",
+   "text": "Substitution, Croatia. Mario Pasalic replaces Luka Modric.",
+   "players": [
+    "Mario Pasalic",
+    "Luka Modric"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "83'",
+   "team": "Panama",
+   "text": "Substitution, Panama. Azarías Londoño replaces José Fajardo.",
+   "players": [
+    "Azarias Londoño",
+    "José Fajardo"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "90'",
+   "team": "Panama",
+   "text": "Substitution, Panama. Éric Davis replaces César Blackman.",
+   "players": [
+    "Éric Davis",
+    "César Blackman"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "90'",
+   "team": "Panama",
+   "text": "Substitution, Panama. Tomás Rodríguez replaces Yoel Bárcenas.",
+   "players": [
+    "Tomás Rodríguez",
+    "Édgar Yoel Bárcenas"
+   ]
+  },
+  {
+   "type": "Yellow Card",
+   "minute": "90'+2'",
+   "team": "Croatia",
+   "text": "Petar Sucic (Croatia) is shown the yellow card for a bad foul.",
+   "players": [
+    "Petar Sucic"
+   ]
+  },
+  {
+   "type": "End Regular Time",
+   "minute": "90'+6'",
+   "team": null,
+   "text": "",
+   "players": []
+  }
+ ],
+ "shots": [
+  {
+   "minute": "2",
+   "seconds": 71.0,
+   "team": "Croatia",
+   "player": "Luka Modric",
+   "type": "Shot Off Target",
+   "x": 90.3,
+   "y": 33.3,
+   "goal": false,
+   "xg": 0.116,
+   "text": "Attempt missed. Luka Modric (Croatia) header from the right side of the box is high and wide to the right. Assisted by Marco Pasalic with a cross."
+  },
+  {
+   "minute": "4",
+   "seconds": 192.0,
+   "team": "Panama",
+   "player": "Amir Murillo",
+   "type": "Shot Blocked",
+   "x": 85.6,
+   "y": 65.4,
+   "goal": false,
+   "xg": 0.147,
+   "text": "Attempt blocked. Amir Murillo (Panama) right footed shot from the left side of the box is blocked."
+  },
+  {
+   "minute": "45'+1",
+   "seconds": 2700.0,
+   "team": "Croatia",
+   "player": "Martin Baturina",
+   "type": "Shot Off Target",
+   "x": 75.2,
+   "y": 68.7,
+   "goal": false,
+   "xg": 0.059,
+   "text": "Attempt missed. Martin Baturina (Croatia) right footed shot from outside the box is close, but misses to the left. Assisted by Ivan Perisic."
+  },
+  {
+   "minute": "54",
+   "seconds": 3220.0,
+   "team": "Croatia",
+   "player": "Ante Budimir",
+   "type": "Goal - Volley",
+   "x": 94.8,
+   "y": 52.8,
+   "goal": true,
+   "xg": 0.711,
+   "text": "Goal! Panama 0, Croatia 1. Ante Budimir (Croatia) left footed shot from very close range to the bottom left corner. Assisted by Josip Stanisic with a cross."
+  },
+  {
+   "minute": "57",
+   "seconds": 3395.0,
+   "team": "Croatia",
+   "player": "Marco Pasalic",
+   "type": "Shot On Target",
+   "x": 85.8,
+   "y": 54.8,
+   "goal": false,
+   "xg": 0.226,
+   "text": "Attempt saved. Marco Pasalic (Croatia) left footed shot from the centre of the box is saved in the centre of the goal by Orlando Mosquera (Panama). Assisted by Luka Modric with a through ball."
+  },
+  {
+   "minute": "57",
+   "seconds": 3397.0,
+   "team": "Croatia",
+   "player": "Marco Pasalic",
+   "type": "Shot Off Target",
+   "x": 96.8,
+   "y": 62.2,
+   "goal": false,
+   "xg": 0.27,
+   "text": "Attempt missed. Marco Pasalic (Croatia) left footed shot from the left side of the six yard box is close, but misses to the left following a fast break."
+  },
+  {
+   "minute": "60",
+   "seconds": 3547.0,
+   "team": "Panama",
+   "player": "José Fajardo",
+   "type": "Shot Off Target",
+   "x": 91.7,
+   "y": 48.3,
+   "goal": false,
+   "xg": 0.32,
+   "text": "Attempt missed. José Fajardo (Panama) header from the centre of the box misses to the left. Assisted by Amir Murillo with a cross."
+  },
+  {
+   "minute": "68",
+   "seconds": 4044.0,
+   "team": "Panama",
+   "player": "Amir Murillo",
+   "type": "Shot On Target",
+   "x": 87.0,
+   "y": 28.4,
+   "goal": false,
+   "xg": 0.114,
+   "text": "Attempt saved. Amir Murillo (Panama) right footed shot from the right side of the box is saved in the bottom right corner by Dominik Livakovic (Croatia)."
+  },
+  {
+   "minute": "68",
+   "seconds": 4069.0,
+   "team": "Panama",
+   "player": "Carlos Harvey",
+   "type": "Shot Off Target",
+   "x": 93.7,
+   "y": 52.8,
+   "goal": false,
+   "xg": 0.404,
+   "text": "Attempt missed. Carlos Harvey (Panama) header from the centre of the box is just a bit too high. Assisted by Yoel Bárcenas with a cross following a corner."
+  },
+  {
+   "minute": "78",
+   "seconds": 4635.0,
+   "team": "Panama",
+   "player": "José Luis Rodríguez",
+   "type": "Shot Off Target",
+   "x": 78.8,
+   "y": 63.4,
+   "goal": false,
+   "xg": 0.092,
+   "text": "Attempt missed. José Luis Rodríguez (Panama) left footed shot from outside the box is too high. Assisted by Cecilio Waterman."
+  },
+  {
+   "minute": "79",
+   "seconds": 4739.0,
+   "team": "Panama",
+   "player": "Carlos Harvey",
+   "type": "Shot Off Target",
+   "x": 94.9,
+   "y": 25.0,
+   "goal": false,
+   "xg": 0.104,
+   "text": "Attempt missed. Carlos Harvey (Panama) right footed shot from a difficult angle on the right is close, but misses to the right. Assisted by José Luis Rodríguez with a cross following a corner."
+  },
+  {
+   "minute": "82",
+   "seconds": 4887.0,
+   "team": "Croatia",
+   "player": "Luka Sucic",
+   "type": "Shot Blocked",
+   "x": 76.0,
+   "y": 63.4,
+   "goal": false,
+   "xg": 0.073,
+   "text": "Attempt blocked. Luka Sucic (Croatia) left footed shot from outside the box is blocked."
+  },
+  {
+   "minute": "84",
+   "seconds": 5019.0,
+   "team": "Panama",
+   "player": "Cecilio Waterman",
+   "type": "Shot Blocked",
+   "x": 84.7,
+   "y": 24.0,
+   "goal": false,
+   "xg": 0.081,
+   "text": "Attempt blocked. Cecilio Waterman (Panama) right footed shot from the right side of the box is blocked. Assisted by Yoel Bárcenas."
+  },
+  {
+   "minute": "90'+3",
+   "seconds": 5400.0,
+   "team": "Panama",
+   "player": "Amir Murillo",
+   "type": "Shot Off Target",
+   "x": 73.6,
+   "y": 46.8,
+   "goal": false,
+   "xg": 0.068,
+   "text": "Attempt missed. Amir Murillo (Panama) right footed shot from outside the box is high and wide to the right from a direct free kick."
+  }
+ ],
+ "lineups": [
+  {
+   "team": "Panama",
+   "formation": "5-4-1",
+   "starters": [
+    {
+     "name": "Orlando Mosquera",
+     "jersey": "22",
+     "position": "G"
+    },
+    {
+     "name": "José Córdoba",
+     "jersey": "3",
+     "position": "CD"
+    },
+    {
+     "name": "Andrés Andrade",
+     "jersey": "16",
+     "position": "CD-L"
+    },
+    {
+     "name": "Jiovany Ramos",
+     "jersey": "13",
+     "position": "CD-R"
+    },
+    {
+     "name": "César Blackman",
+     "jersey": "2",
+     "position": "LB"
+    },
+    {
+     "name": "Amir Murillo",
+     "jersey": "23",
+     "position": "RB"
+    },
+    {
+     "name": "Édgar Yoel Bárcenas",
+     "jersey": "11",
+     "position": "CM-L"
+    },
+    {
+     "name": "Carlos Harvey",
+     "jersey": "14",
+     "position": "CM-R"
+    },
+    {
+     "name": "José Luis Rodríguez",
+     "jersey": "7",
+     "position": "LM"
+    },
+    {
+     "name": "Cristian Martínez",
+     "jersey": "6",
+     "position": "RM"
+    },
+    {
+     "name": "José Fajardo",
+     "jersey": "17",
+     "position": "F"
+    }
+   ],
+   "subs": [
+    {
+     "name": "César Yanis",
+     "jersey": "21",
+     "position": "SUB"
+    },
+    {
+     "name": "Adalberto Carrasquilla",
+     "jersey": "8",
+     "position": "SUB"
+    },
+    {
+     "name": "Fidel Escobar",
+     "jersey": "4",
+     "position": "SUB"
+    },
+    {
+     "name": "Aníbal Godoy",
+     "jersey": "20",
+     "position": "SUB"
+    },
+    {
+     "name": "Roderick Miller",
+     "jersey": "25",
+     "position": "SUB"
+    },
+    {
+     "name": "Alberto Quintero",
+     "jersey": "19",
+     "position": "SUB"
+    },
+    {
+     "name": "César Samudio",
+     "jersey": "12",
+     "position": "SUB"
+    },
+    {
+     "name": "Ismael Díaz",
+     "jersey": "10",
+     "position": "SUB"
+    },
+    {
+     "name": "Éric Davis",
+     "jersey": "15",
+     "position": "SUB"
+    },
+    {
+     "name": "Edgardo Fariña",
+     "jersey": "5",
+     "position": "SUB"
+    },
+    {
+     "name": "Luis Mejía",
+     "jersey": "1",
+     "position": "SUB"
+    },
+    {
+     "name": "Tomás Rodríguez",
+     "jersey": "9",
+     "position": "SUB"
+    },
+    {
+     "name": "Jorge Gutiérrez",
+     "jersey": "26",
+     "position": "SUB"
+    },
+    {
+     "name": "Cecilio Waterman",
+     "jersey": "18",
+     "position": "SUB"
+    },
+    {
+     "name": "Azarias Londoño",
+     "jersey": "24",
+     "position": "SUB"
+    }
+   ]
+  },
+  {
+   "team": "Croatia",
+   "formation": "4-2-3-1",
+   "starters": [
+    {
+     "name": "Dominik Livakovic",
+     "jersey": "1",
+     "position": "G"
+    },
+    {
+     "name": "Marin Pongracic",
+     "jersey": "3",
+     "position": "CD-L"
+    },
+    {
+     "name": "Josip Sutalo",
+     "jersey": "6",
+     "position": "CD-R"
+    },
+    {
+     "name": "Josko Gvardiol",
+     "jersey": "4",
+     "position": "LB"
+    },
+    {
+     "name": "Josip Stanisic",
+     "jersey": "2",
+     "position": "RB"
+    },
+    {
+     "name": "Martin Baturina",
+     "jersey": "16",
+     "position": "AM"
+    },
+    {
+     "name": "Mateo Kovacic",
+     "jersey": "8",
+     "position": "LM"
+    },
+    {
+     "name": "Luka Modric",
+     "jersey": "10",
+     "position": "RM"
+    },
+    {
+     "name": "Petar Musa",
+     "jersey": "26",
+     "position": "F"
+    },
+    {
+     "name": "Ivan Perisic",
+     "jersey": "14",
+     "position": "AM-L"
+    },
+    {
+     "name": "Marco Pasalic",
+     "jersey": "24",
+     "position": "AM-R"
+    }
+   ],
+   "subs": [
+    {
+     "name": "Ante Budimir",
+     "jersey": "11",
+     "position": "SUB"
+    },
+    {
+     "name": "Petar Sucic",
+     "jersey": "17",
+     "position": "SUB"
+    },
+    {
+     "name": "Nikola Vlasic",
+     "jersey": "13",
+     "position": "SUB"
+    },
+    {
+     "name": "Luka Vuskovic",
+     "jersey": "22",
+     "position": "SUB"
+    },
+    {
+     "name": "Nikola Moro",
+     "jersey": "7",
+     "position": "SUB"
+    },
+    {
+     "name": "Andrej Kramaric",
+     "jersey": "9",
+     "position": "SUB"
+    },
+    {
+     "name": "Martin Erlic",
+     "jersey": "25",
+     "position": "SUB"
+    },
+    {
+     "name": "Igor Matanovic",
+     "jersey": "20",
+     "position": "SUB"
+    },
+    {
+     "name": "Dominik Kotarski",
+     "jersey": "23",
+     "position": "SUB"
+    },
+    {
+     "name": "Mario Pasalic",
+     "jersey": "15",
+     "position": "SUB"
+    },
+    {
+     "name": "Duje Caleta-Car",
+     "jersey": "5",
+     "position": "SUB"
+    },
+    {
+     "name": "Kristijan Jakic",
+     "jersey": "18",
+     "position": "SUB"
+    },
+    {
+     "name": "Toni Fruk",
+     "jersey": "19",
+     "position": "SUB"
+    },
+    {
+     "name": "Luka Sucic",
+     "jersey": "21",
+     "position": "SUB"
+    },
+    {
+     "name": "Ivor Pandur",
+     "jersey": "12",
+     "position": "SUB"
+    }
+   ]
+  }
+ ],
+ "attendance": 43036,
+ "venue": "BMO Field, Toronto, Canada"
+}
