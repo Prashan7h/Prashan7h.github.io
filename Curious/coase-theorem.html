@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-KVBPX8VW');</script>
+    <!-- End Google Tag Manager -->
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Ronald Coase's quiet 1960 paper on social cost — how the assignment of legal rights, transaction costs, and bargaining reshape the economics of pollution, property, and the firm.">
+    <link rel="icon" type="image/svg+xml" href="../images/favicon.svg">
+    <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon-32.png">
+    <link rel="apple-touch-icon" href="../images/apple-touch-icon.png">
+    <title>The Coase Theorem | Prashanth Shankar</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+
+    <style>
+        *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+        html { font-size: 16px; scroll-behavior: smooth; }
+        body {
+            background: #fff;
+            color: #000;
+            font-family: 'Inter', -apple-system, sans-serif;
+            font-weight: 400;
+            line-height: 1.7;
+        }
+        ::selection { background: #000; color: #fff; }
+
+        .page {
+            max-width: 720px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        header {
+            padding: 2.5rem 0 0;
+        }
+
+        .back-link {
+            font-size: 0.75rem;
+            font-weight: 400;
+            letter-spacing: 0.04em;
+            color: #000;
+            text-decoration: none;
+            transition: opacity 0.2s ease;
+        }
+        .back-link:hover { opacity: 0.5; }
+
+        article {
+            padding: 4rem 0 3rem;
+        }
+
+        article h1 {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 2.6rem;
+            font-weight: 600;
+            line-height: 1.15;
+            margin-bottom: 1rem;
+        }
+
+        .deck {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.25rem;
+            font-style: italic;
+            line-height: 1.5;
+            color: #000;
+            margin-bottom: 2.5rem;
+        }
+
+        article h2 {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.8rem;
+            font-weight: 600;
+            line-height: 1.2;
+            margin: 3rem 0 1rem;
+        }
+
+        article p {
+            font-size: 0.95rem;
+            font-weight: 300;
+            line-height: 1.75;
+            margin-bottom: 1rem;
+        }
+
+        article em {
+            font-style: italic;
+        }
+
+        .pullquote {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.35rem;
+            font-style: italic;
+            line-height: 1.45;
+            padding: 1.5rem 0 1.5rem 1.5rem;
+            border-left: 2px solid #000;
+            margin: 2rem 0;
+            color: #000;
+        }
+
+        .figure {
+            margin: 2.5rem 0;
+        }
+        .figure svg {
+            display: block;
+            width: 100%;
+            height: auto;
+            max-width: 640px;
+            margin: 0 auto;
+        }
+        .caption {
+            font-size: 0.78rem;
+            color: #666;
+            text-align: center;
+            margin-top: 0.8rem;
+            line-height: 1.5;
+            font-style: italic;
+            font-family: 'Cormorant Garamond', serif;
+        }
+
+        hr.divider {
+            border: none;
+            border-top: 1px solid #000;
+            margin: 3rem 0;
+        }
+
+        .references {
+            font-size: 0.8rem;
+            color: #555;
+            line-height: 1.7;
+            margin-top: 2rem;
+        }
+        .references h3 {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: #000;
+            margin-bottom: 0.75rem;
+        }
+        .references ol {
+            padding-left: 1.2rem;
+        }
+        .references li {
+            margin-bottom: 0.35rem;
+        }
+
+        footer {
+            padding: 2rem 0 3rem;
+            font-size: 0.75rem;
+            color: #666;
+        }
+        footer a { color: inherit; text-decoration: underline; text-underline-offset: 0.2em; }
+    </style>
+</head>
+<body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KVBPX8VW" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+    <div class="page">
+        <header>
+            <a href="index.html" class="back-link">&larr; Wonderland</a>
+        </header>
+
+        <article>
+            <h1>The Coase Theorem</h1>
+            <p class="deck">When the law assigns the right to pollute, to graze, to make noise &mdash; who pays whom, and does it really matter? Ronald Coase's quiet 1960 paper rearranged how we think about externalities, property, and the role of law.</p>
+
+            <p>There was a time when economists thought they had pollution figured out. A factory belches smoke; the smoke ruins a neighbor's laundry; the factory does not pay for the harm. The polluter, the argument went, produces too much smoke because it doesn't internalize the cost it imposes on others. Therefore the state should levy a tax equal to the damage, and society's books would balance. This was Arthur Pigou's answer, given in 1920, and for forty years it was orthodoxy.</p>
+
+            <p>Then in 1960, an English-born economist named Ronald Coase published a long, mostly verbal paper in the brand-new <em>Journal of Law and Economics</em>. He called it &ldquo;The Problem of Social Cost.&rdquo; It contained almost no mathematics. It has been cited more often than nearly any other paper in social science. And it begins by gently pointing out that Pigou was wrong about something fundamental.</p>
+
+            <h2>The reciprocal nature of harm</h2>
+
+            <p>Coase asked the reader to picture two pieces of adjacent land &mdash; a rancher's pasture and a wheat farmer's field. The fence is imperfect. Cattle stray. Wheat is trampled. There is, in Pigou's vocabulary, an <em>externality</em>: the rancher imposes a cost on the farmer that he doesn't bear himself.</p>
+
+            <div class="figure">
+                <svg viewBox="0 0 640 240" xmlns="http://www.w3.org/2000/svg">
+                    <!-- Left plot: rancher -->
+                    <rect x="40" y="40" width="260" height="160" stroke="#000" stroke-width="1" fill="#fff"/>
+                    <text x="170" y="62" font-family="'Cormorant Garamond', serif" font-style="italic" font-size="16" text-anchor="middle" fill="#000">Rancher</text>
+                    <!-- Cattle as small filled circles -->
+                    <g fill="#000">
+                        <circle cx="90" cy="115" r="6"/>
+                        <circle cx="140" cy="140" r="6"/>
+                        <circle cx="210" cy="105" r="6"/>
+                        <circle cx="170" cy="170" r="6"/>
+                        <circle cx="245" cy="150" r="6"/>
+                        <circle cx="100" cy="170" r="6"/>
+                    </g>
+                    <text x="170" y="225" font-family="Inter, sans-serif" font-size="11" text-anchor="middle" fill="#666">cattle</text>
+
+                    <!-- Boundary: dashed fence -->
+                    <line x1="320" y1="40" x2="320" y2="200" stroke="#000" stroke-width="1" stroke-dasharray="4 4"/>
+
+                    <!-- Right plot: farmer -->
+                    <rect x="340" y="40" width="260" height="160" stroke="#000" stroke-width="1" fill="#fff"/>
+                    <text x="470" y="62" font-family="'Cormorant Garamond', serif" font-style="italic" font-size="16" text-anchor="middle" fill="#000">Farmer</text>
+                    <!-- Wheat: vertical strokes -->
+                    <g stroke="#000" stroke-width="1">
+                        <line x1="370" y1="180" x2="370" y2="155"/>
+                        <line x1="385" y1="180" x2="385" y2="150"/>
+                        <line x1="400" y1="180" x2="400" y2="158"/>
+                        <line x1="415" y1="180" x2="415" y2="148"/>
+                        <line x1="430" y1="180" x2="430" y2="153"/>
+                        <line x1="445" y1="180" x2="445" y2="150"/>
+                        <line x1="460" y1="180" x2="460" y2="156"/>
+                        <line x1="475" y1="180" x2="475" y2="148"/>
+                        <line x1="490" y1="180" x2="490" y2="152"/>
+                        <line x1="505" y1="180" x2="505" y2="156"/>
+                        <line x1="520" y1="180" x2="520" y2="148"/>
+                        <line x1="535" y1="180" x2="535" y2="152"/>
+                        <line x1="550" y1="180" x2="550" y2="156"/>
+                        <line x1="565" y1="180" x2="565" y2="150"/>
+                    </g>
+                    <text x="470" y="225" font-family="Inter, sans-serif" font-size="11" text-anchor="middle" fill="#666">wheat</text>
+
+                    <!-- Externality arrow crossing the fence -->
+                    <defs>
+                        <marker id="arrCoase" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+                            <path d="M 0 0 L 10 5 L 0 10 z" fill="#000"/>
+                        </marker>
+                    </defs>
+                    <path d="M 260 100 Q 320 70 390 100" stroke="#000" stroke-width="1.2" fill="none" marker-end="url(#arrCoase)"/>
+                    <text x="325" y="30" font-family="'Cormorant Garamond', serif" font-style="italic" font-size="14" text-anchor="middle" fill="#000">externality</text>
+                </svg>
+                <p class="caption">Cattle stray across the boundary; wheat is trampled. The harm is real &mdash; but Coase noticed that it is also <em>reciprocal</em>. Stop the cattle and the rancher loses just as much.</p>
+            </div>
+
+            <p>Coase noticed something subtle. The cost is not really a property of the cattle. It is a property of cattle and wheat being grown side by side. Stop the cattle and the rancher loses something. Let them roam and the farmer loses something. The harm is mutual. There is no innocent victim and no obvious aggressor; there are two parties whose preferred uses of nearby land happen to conflict. The right question, then, is not who caused the damage &mdash; it is which combined arrangement of the two activities is most valuable. Allowing some grazing and accepting some crop loss may well be better, on net, than stopping either activity entirely.</p>
+
+            <p>This reframing matters. It dissolves the moral framing of externalities and replaces it with an allocation question.</p>
+
+            <h2>The theorem itself</h2>
+
+            <p>Now suppose the rancher and the farmer can talk to each other without friction &mdash; no lawyers, no information asymmetries, no costs to negotiating. Coase argued something striking. In this frictionless world, the two parties will end up at the efficient arrangement regardless of which one the law sides with.</p>
+
+            <p>If the rancher is liable for any damage, he will compensate the farmer up to the point where each additional head of cattle generates value greater than the crop loss it causes. If the rancher is <em>not</em> liable, the farmer will pay the rancher to restrain cattle whenever the value of preserved wheat exceeds the rancher's gain from grazing. Either way, the same number of cattle end up wandering. Same destination, different routes.</p>
+
+            <div class="figure">
+                <svg viewBox="0 0 640 320" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                        <marker id="arrC2" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+                            <path d="M 0 0 L 10 5 L 0 10 z" fill="#000"/>
+                        </marker>
+                    </defs>
+
+                    <!-- Left column: initial rule -->
+                    <rect x="20" y="50" width="180" height="70" stroke="#000" stroke-width="1" fill="#fff"/>
+                    <text x="110" y="78" font-family="'Cormorant Garamond', serif" font-style="italic" font-size="14" text-anchor="middle" fill="#000">Rule A</text>
+                    <text x="110" y="100" font-family="Inter, sans-serif" font-size="11" text-anchor="middle" fill="#000">Rancher liable for damage</text>
+
+                    <rect x="20" y="200" width="180" height="70" stroke="#000" stroke-width="1" fill="#fff"/>
+                    <text x="110" y="228" font-family="'Cormorant Garamond', serif" font-style="italic" font-size="14" text-anchor="middle" fill="#000">Rule B</text>
+                    <text x="110" y="250" font-family="Inter, sans-serif" font-size="11" text-anchor="middle" fill="#000">Rancher free to let cattle roam</text>
+
+                    <!-- Middle column: bargaining -->
+                    <rect x="240" y="50" width="200" height="70" stroke="#000" stroke-width="1" fill="#fff"/>
+                    <text x="340" y="80" font-family="Inter, sans-serif" font-size="11" text-anchor="middle" fill="#000">Rancher pays farmer up to</text>
+                    <text x="340" y="98" font-family="Inter, sans-serif" font-size="11" text-anchor="middle" fill="#000">the marginal crop loss</text>
+
+                    <rect x="240" y="200" width="200" height="70" stroke="#000" stroke-width="1" fill="#fff"/>
+                    <text x="340" y="230" font-family="Inter, sans-serif" font-size="11" text-anchor="middle" fill="#000">Farmer pays rancher up to</text>
+                    <text x="340" y="248" font-family="Inter, sans-serif" font-size="11" text-anchor="middle" fill="#000">the marginal value of cattle</text>
+
+                    <!-- Right: same efficient outcome -->
+                    <rect x="480" y="125" width="140" height="70" stroke="#000" stroke-width="1.5" fill="#fff"/>
+                    <text x="550" y="155" font-family="'Cormorant Garamond', serif" font-style="italic" font-size="14" text-anchor="middle" fill="#000">Same efficient</text>
+                    <text x="550" y="175" font-family="'Cormorant Garamond', serif" font-style="italic" font-size="14" text-anchor="middle" fill="#000">allocation</text>
+
+                    <!-- Arrows -->
+                    <g stroke="#000" stroke-width="1" fill="none">
+                        <line x1="200" y1="85" x2="238" y2="85" marker-end="url(#arrC2)"/>
+                        <line x1="200" y1="235" x2="238" y2="235" marker-end="url(#arrC2)"/>
+                        <path d="M 440 85 Q 478 85 500 130" marker-end="url(#arrC2)"/>
+                        <path d="M 440 235 Q 478 235 500 190" marker-end="url(#arrC2)"/>
+                    </g>
+
+                    <text x="320" y="170" font-family="'Cormorant Garamond', serif" font-style="italic" font-size="15" text-anchor="middle" fill="#666">(when transaction costs are zero)</text>
+                </svg>
+                <p class="caption">The legal rule shifts who pays whom, but not what is ultimately produced. Drop the assumption of frictionless bargaining, and the conclusion drops with it.</p>
+            </div>
+
+            <p>This is the <em>Coase theorem</em>, usually stated as a slogan: when property rights are well-defined and transaction costs are zero, private bargaining produces an efficient allocation regardless of the initial assignment of rights.</p>
+
+            <p class="pullquote">The legal delimitation of rights determines who pays whom &mdash; but not, in this idealised world, what is ultimately produced or done.</p>
+
+            <h2>Why transaction costs change everything</h2>
+
+            <p>Read in haste, the theorem sounds like a libertarian shrug &mdash; leave externalities alone, let markets sort them out. Coase did not mean that, and he was repeatedly frustrated when later writers used him that way. The point of the paper, he insisted, is what happens when you <em>drop</em> the zero-transaction-cost assumption. Which is always.</p>
+
+            <p>In the real world transaction costs are everywhere. Parties do not know what each other values. Negotiations stall over information. Lawyers must be hired. Strangers cannot easily contract with each other. The smoke from a coal plant affects ten million asthmatics scattered across a continent who cannot, in any practical sense, gather at the gates to bargain with the plant's owners.</p>
+
+            <p>Once you admit transaction costs, the corollary lands hard. Initial legal entitlements <em>do</em> matter. If the law gives residents a clean-air right, the polluter must pay them to deviate &mdash; and we end up with less pollution. If the law instead gives polluters the right to pollute, residents would have to club together and pay polluters to abate, a far harder coordination problem with much worse outcomes. Same theorem, opposite policy implications.</p>
+
+            <p>This is what Coase actually wanted economists to understand. Law is not a sideshow to economic activity; it is part of its architecture. A judge deciding a nuisance case is not merely applying precedent; he is allocating a valuable right whose downstream consequences echo for years. The right question for policy is rarely &ldquo;tax or no tax?&rdquo; It is: given that bargaining is expensive, which legal rule produces the lowest total social cost?</p>
+
+            <h2>The legacy</h2>
+
+            <p>Coase's quiet paper reshaped four fields at once.</p>
+
+            <p>In <em>environmental policy</em>, it shifted the debate from &ldquo;should we ban pollution?&rdquo; to &ldquo;what is the most cost-effective way to assign tradeable rights to it?&rdquo; The cap-and-trade markets for sulfur dioxide in the United States in the 1990s, and Europe's carbon allowance system today, are pure Coase: the regulator sets the total quantity; the market then discovers who can abate most cheaply, and who is willing to pay to keep emitting.</p>
+
+            <p>In <em>law and economics</em>, Coase helped found an entire discipline. Richard Posner, Guido Calabresi, and a generation of legal scholars began asking, for every rule of liability and every line of property law, which allocation minimizes total social cost given that bargaining is expensive. That question is now bedrock in how American common law is taught.</p>
+
+            <p>In the <em>theory of the firm</em>, Coase had set the table twenty-three years earlier with &ldquo;The Nature of the Firm&rdquo; (1937), where he asked why companies exist at all in a market economy. The answer is the same kind of move: using the market itself costs something &mdash; searching for prices, negotiating contracts, enforcing them. Inside the firm, transactions happen by command instead, which is sometimes cheaper. The boundary of the firm sits exactly where the two costs meet.</p>
+
+            <p>In <em>policy economics</em> more broadly, Coase warned against what he called &ldquo;blackboard economics&rdquo; &mdash; the habit of designing clever taxes and subsidies on paper without asking whether real institutions could implement them. A government smart enough to compute and impose the optimal Pigouvian tax would, he noted dryly, already be smart enough to do almost anything.</p>
+
+            <p>He received the Nobel Prize in 1991 and continued writing until his death in 2013, aged 102. He was always slightly puzzled by his fame; the central ideas, he insisted, were embarrassingly simple. Once you see them, you cannot unsee them. The world is full of externalities, and the way the law parcels out the right to impose them is doing real economic work, all day, every day, whether anyone notices or not.</p>
+
+            <hr class="divider">
+
+            <div class="references">
+                <h3>Further reading</h3>
+                <ol>
+                    <li>Coase, R. H. (1960). <em>The Problem of Social Cost</em>. Journal of Law and Economics, 3, 1&ndash;44.</li>
+                    <li>Coase, R. H. (1937). <em>The Nature of the Firm</em>. Economica, 4(16), 386&ndash;405.</li>
+                    <li>Pigou, A. C. (1920). <em>The Economics of Welfare</em>.</li>
+                    <li>Calabresi, G. (1970). <em>The Costs of Accidents: A Legal and Economic Analysis</em>.</li>
+                    <li>Ellickson, R. C. (1991). <em>Order Without Law: How Neighbors Settle Disputes</em>.</li>
+                </ol>
+            </div>
+        </article>
+
+        <footer>
+            <a href="index.html">&larr; Back to Wonderland</a>
+        </footer>
+    </div>
+</body>
+</html>
