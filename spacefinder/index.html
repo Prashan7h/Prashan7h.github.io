@@ -1,0 +1,770 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-KVBPX8VW');</script>
+    <!-- End Google Tag Manager -->
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Interactive 11-a-side space visualiser — drag numbered players and watch each team's largest open space and spatial metrics recompute in real time.">
+    <link rel="icon" type="image/svg+xml" href="../images/favicon.svg">
+    <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon-32.png">
+    <link rel="apple-touch-icon" href="../images/apple-touch-icon.png">
+    <title>Pitch Space Finder — 11-a-side</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <style>
+        *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+        html { font-size: 16px; }
+
+        body {
+            background: #fff;
+            color: #000;
+            font-family: 'Inter', -apple-system, sans-serif;
+            font-weight: 400;
+            line-height: 1.6;
+        }
+
+        ::selection { background: #000; color: #fff; }
+
+        .page { max-width: 1180px; margin: 0 auto; padding: 0 2rem; }
+
+        header { padding: 2.5rem 0 0; }
+
+        .back-link {
+            font-size: 0.75rem;
+            letter-spacing: 0.04em;
+            color: #000;
+            text-decoration: none;
+            transition: opacity 0.2s ease;
+        }
+        .back-link:hover { opacity: 0.5; }
+
+        .intro { padding: 2.5rem 0 1.5rem; }
+
+        .intro h1 {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 2.3rem;
+            font-weight: 600;
+            line-height: 1.2;
+            margin-bottom: 0.75rem;
+        }
+
+        .intro p {
+            font-size: 0.92rem;
+            font-weight: 300;
+            line-height: 1.75;
+            max-width: 70ch;
+        }
+
+        /* ─── CONTROLS ─── */
+        .controls {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 1rem 1.5rem;
+            padding: 0.25rem 0 1.25rem;
+            font-size: 0.8rem;
+        }
+        .controls label {
+            display: inline-flex; align-items: center; gap: 0.4rem;
+            cursor: pointer; user-select: none;
+        }
+        .controls input[type="checkbox"] { accent-color: #1d4ed8; width: 0.95rem; height: 0.95rem; }
+        .reset-btn {
+            font-family: 'Inter', sans-serif; font-size: 0.8rem; letter-spacing: 0.02em;
+            background: #fff; color: #000; border: 1px solid #000;
+            padding: 0.35rem 0.85rem; cursor: pointer;
+            transition: background 0.15s ease, color 0.15s ease;
+        }
+        .reset-btn:hover { background: #000; color: #fff; }
+
+        /* ─── LAYOUT: pitch + panel ─── */
+        .lab { display: flex; flex-wrap: wrap; gap: 1.75rem; align-items: flex-start; }
+        .pitch-col { flex: 1 1 560px; min-width: 0; }
+        .panel-col { flex: 0 1 320px; min-width: 260px; }
+
+        .stage {
+            position: relative; width: 100%;
+            border-radius: 6px; overflow: hidden;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.12);
+            touch-action: none;
+        }
+        #heat { position: absolute; pointer-events: none; z-index: 1; }
+        #pitch { position: relative; display: block; width: 100%; height: auto; z-index: 2; }
+
+        .player { cursor: grab; }
+        .player:active { cursor: grabbing; }
+        .player-hit { fill: transparent; }
+        .player text { user-select: none; pointer-events: none; }
+
+        .readout {
+            display: flex; flex-wrap: wrap; gap: 0.4rem 1.5rem;
+            margin-top: 0.9rem; font-size: 0.82rem; color: #333;
+        }
+        .readout b { font-weight: 600; }
+        .sw { display: inline-block; width: 0.7rem; height: 0.7rem; border-radius: 50%; vertical-align: -1px; margin-right: 0.3rem; }
+        .sw-a { background: #1d4ed8; }
+        .sw-b { background: #dc2626; }
+
+        /* ─── METRICS PANEL ─── */
+        .panel-col h2 {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.5rem; font-weight: 600; margin-bottom: 0.85rem;
+        }
+        table.metrics { width: 100%; border-collapse: collapse; font-size: 0.8rem; }
+        table.metrics th, table.metrics td { padding: 0.5rem 0.4rem; text-align: right; border-bottom: 1px solid #eee; }
+        table.metrics th:first-child, table.metrics td:first-child { text-align: left; color: #444; font-weight: 400; }
+        table.metrics thead th { font-weight: 600; border-bottom: 1.5px solid #111; }
+        table.metrics tbody td { font-family: 'Cormorant Garamond', serif; font-size: 0.98rem; font-weight: 600; font-variant-numeric: tabular-nums; }
+        .team-a-h { color: #1d4ed8; }
+        .team-b-h { color: #dc2626; }
+        .control-bar { height: 6px; border-radius: 3px; margin-top: 0.6rem; display: flex; overflow: hidden; background: #eee; }
+        .control-bar i { display: block; height: 100%; }
+        .control-cap { display: flex; justify-content: space-between; font-size: 0.7rem; color: #777; margin-top: 0.25rem; }
+
+        .overall { margin-top: 1.1rem; font-size: 0.8rem; }
+        .overall .row { display: flex; justify-content: space-between; padding: 0.4rem 0; border-bottom: 1px solid #f0f0f0; }
+        .overall .row span:first-child { color: #444; }
+        .overall .row b { font-family: 'Cormorant Garamond', serif; font-size: 0.98rem; font-weight: 600; }
+
+        .legend { display: flex; align-items: center; gap: 0.55rem; margin-top: 1.1rem; font-size: 0.72rem; color: #666; }
+        .legend .bar { flex: 1; height: 9px; border-radius: 2px; border: 1px solid #ddd;
+            background: linear-gradient(90deg, rgb(214,40,40) 0%, rgb(240,200,40) 50%, rgb(60,150,95) 100%); }
+
+        details.defs { margin-top: 1.1rem; font-size: 0.8rem; }
+        details.defs summary { cursor: pointer; color: #1d4ed8; font-weight: 500; }
+        details.defs dl { margin-top: 0.6rem; line-height: 1.55; }
+        details.defs dt { font-weight: 600; margin-top: 0.5rem; }
+        details.defs dd { font-weight: 300; color: #444; }
+
+        .note {
+            margin-top: 2.5rem; padding-top: 1.5rem; border-top: 1px solid #eee;
+            font-size: 0.82rem; font-weight: 300; line-height: 1.7; color: #333; max-width: 70ch;
+        }
+        .note strong { font-weight: 500; }
+        .bottom-space { padding-bottom: 5rem; }
+
+        @media (max-width: 760px) {
+            .page { padding: 0 1.25rem; }
+            .intro h1 { font-size: 1.9rem; }
+            .panel-col { flex-basis: 100%; }
+        }
+    </style>
+
+    <script src="https://cdn.jsdelivr.net/npm/d3-delaunay@6/dist/d3-delaunay.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/d3-array@3/dist/d3-array.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/d3-contour@4/dist/d3-contour.min.js"></script>
+</head>
+<body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe aria-hidden="true" title="Google Tag Manager" src="https://www.googletagmanager.com/ns.html?id=GTM-KVBPX8VW"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+    <div class="page">
+        <header>
+            <a href="../index.html" class="back-link">&larr; Prashanth Shankar</a>
+        </header>
+
+        <div class="intro">
+            <h1>Pitch Space Finder</h1>
+            <p>A full-size <strong>11-a-side</strong> pitch with two numbered teams. Drag any player and everything recomputes live: each team's largest internal gap (the biggest hole between its own players), a red→green congestion heatmap, and a panel of spatial-control metrics. Useful for asking concrete questions — <em>is there a hole between our lines, should the 9 drop into it, are we too compact?</em></p>
+        </div>
+
+        <div class="controls">
+            <label><input type="checkbox" id="t-perteam" checked> Per-team space</label>
+            <label><input type="checkbox" id="t-region"> Space as region</label>
+            <label><input type="checkbox" id="t-heat" checked> Heatmap</label>
+            <label><input type="checkbox" id="t-shape" checked> Team shape</label>
+            <label><input type="checkbox" id="t-vor"> Player territories</label>
+            <button class="reset-btn" id="reset">Reset formation</button>
+        </div>
+
+        <div class="lab">
+            <div class="pitch-col">
+                <div class="stage" id="stage">
+                    <canvas id="heat"></canvas>
+                    <!-- viewBox in METRES; 6 m margin around the 105 x 68 m pitch for goals & arcs -->
+                    <svg id="pitch" viewBox="-6 -6 117 80" xmlns="http://www.w3.org/2000/svg" aria-label="Interactive 11-a-side pitch">
+                        <g id="g-pitch"></g>
+                        <g id="g-shape"></g>
+                        <g id="g-vor"></g>
+                        <g id="g-spaces"></g>
+                        <g id="g-players"></g>
+                    </svg>
+                </div>
+                <div class="readout" id="readout"></div>
+            </div>
+
+            <aside class="panel-col">
+                <h2>Spatial metrics</h2>
+                <table class="metrics">
+                    <thead>
+                        <tr><th>Metric</th><th class="team-a-h">Blue</th><th class="team-b-h">Red</th></tr>
+                    </thead>
+                    <tbody id="metrics-body"></tbody>
+                </table>
+
+                <div class="control-bar" id="control-bar"><i id="ctrl-a"></i><i id="ctrl-b"></i></div>
+                <div class="control-cap"><span class="team-a-h" id="ctrl-a-pct">—</span><span>pitch control</span><span class="team-b-h" id="ctrl-b-pct">—</span></div>
+
+                <div class="overall" id="overall"></div>
+
+                <div class="legend"><span>crowded</span><span class="bar"></span><span>open</span></div>
+
+                <details class="defs">
+                    <summary>What the metrics mean</summary>
+                    <dl>
+                        <dt>Largest space</dt><dd>Radius of the biggest circle that fits inside a team's own shape without touching one of that team's players — the largest hole in their structure.</dd>
+                        <dt>Pitch control</dt><dd>Share of the pitch whose nearest player is on that team (a discrete Voronoi / nearest-neighbour dominance map).</dd>
+                        <dt>Surface area</dt><dd>Area of the team's convex hull — how much of the pitch the outfield shape physically spans.</dd>
+                        <dt>Stretch index</dt><dd>Mean distance of players from their team centroid — overall dispersion. Low = compact block, high = spread out.</dd>
+                        <dt>Compactness</dt><dd>Average distance from each player to their nearest team-mate — local tightness of the unit.</dd>
+                        <dt>Length × Width</dt><dd>Bounding-box depth (goal-to-goal axis) × breadth (touchline axis) the team occupies.</dd>
+                        <dt>Centroid gap</dt><dd>Distance between the two team centroids — how far the lines of engagement are pushed apart.</dd>
+                        <dt>Avg spacing</dt><dd>Mean distance over all 231 player pairs — the global density of the 22 outfielders.</dd>
+                    </dl>
+                </details>
+            </aside>
+        </div>
+
+        <div class="note">
+            <strong>The maths.</strong> Each team's space is the largest empty circle that fits <em>between its own players</em>: candidate centres are that team's Voronoi vertices (points equidistant from three team-mates), kept inside the team's convex hull and hill-climbed to maximise the distance to the nearest team-mate — so the circle fills the biggest hole in the team's shape without crossing one of its own players. (The combined-space toggle instead finds the biggest circle clear of all 22.) <strong>Space as region</strong> swaps that single circle for the true shape of the open space: it contours the clearance field at an adaptive threshold, masked to a band around the team's convex hull, so an irregular pocket — say the wedge between two players and the touchline — is highlighted as a multi-sided polygon (with holes where players sit) rather than forced into a circle. Pitch control integrates the nearest-player Voronoi partition over a 1&nbsp;m grid; surface area uses the Andrew monotone-chain convex hull and the shoelace formula; stretch index and compactness are first- and nearest-neighbour moments of the team's point cloud. It's a single static frame — v1 of a tool meant to grow into time-averaged "persistently open zones" later.
+        </div>
+
+        <div class="bottom-space"></div>
+    </div>
+
+    <script>
+    (function () {
+        "use strict";
+
+        // ─── Single source of truth: all geometry in METRES ───
+        const PITCH = { L: 105, W: 68 };
+        const MARGIN = 6;
+        const TOTAL_W = PITCH.L + 2 * MARGIN;
+        const TOTAL_H = PITCH.W + 2 * MARGIN;
+        const PLAYER_R = 1.45;
+        const EDGE_PAD = PLAYER_R;
+        const HEAT_REF = 14;                 // clearance (m) mapped to full "open"
+        const COL = {
+            a: '#1d4ed8', aFill: 'rgba(29,78,216,0.14)',
+            b: '#dc2626', bFill: 'rgba(220,38,38,0.12)',
+            combined: '#0f7d36', combinedFill: 'rgba(15,125,54,0.16)'
+        };
+
+        const SVGNS  = 'http://www.w3.org/2000/svg';
+        const svg     = document.getElementById('pitch');
+        const canvas  = document.getElementById('heat');
+        const ctx     = canvas.getContext('2d');
+        const gPitch  = document.getElementById('g-pitch');
+        const gShape  = document.getElementById('g-shape');
+        const gVor    = document.getElementById('g-vor');
+        const gSpaces = document.getElementById('g-spaces');
+        const gPlayers= document.getElementById('g-players');
+
+        const opts = { perTeam: true, region: false, heat: true, shape: true, vor: false };
+
+        // ─── Formation: 4-3-3 with realistic shirt numbers ───
+        const NUMS = [1, 2, 5, 4, 3, 8, 6, 10, 7, 9, 11];
+        function makeFormation() {
+            const back = [14, 27, 41, 54];
+            const line = [20, 34, 48];
+            const left = [
+                [5, 34],
+                ...back.map(y => [20, y]),
+                ...line.map(y => [40, y]),
+                ...line.map(y => [58, y]),
+            ];
+            const players = [];
+            left.forEach((p, i) => players.push({ id: 'a' + i, team: 'a', num: NUMS[i], x: p[0], y: p[1] }));
+            left.forEach((p, i) => players.push({ id: 'b' + i, team: 'b', num: NUMS[i], x: PITCH.L - p[0], y: p[1] }));
+            return players;
+        }
+        let players = makeFormation();
+        const teamOf = t => players.filter(p => p.team === t);
+
+        // ─── Core geometry ───
+        function nearestDist(x, y, obs) {
+            let best = Infinity;
+            for (const p of obs) { const dx = p.x - x, dy = p.y - y, d = dx * dx + dy * dy; if (d < best) best = d; }
+            return Math.sqrt(best);
+        }
+        function wallDist(x, y) { return Math.min(x, PITCH.L - x, y, PITCH.W - y); }
+        function spaceValue(x, y, obs) { return Math.min(nearestDist(x, y, obs), wallDist(x, y)); }
+
+        const DIRS = [[1,0],[-1,0],[0,1],[0,-1],[1,1],[1,-1],[-1,1],[-1,-1]];
+        function refine(x, y, obs) {
+            x = Math.max(0, Math.min(PITCH.L, x));
+            y = Math.max(0, Math.min(PITCH.W, y));
+            let best = spaceValue(x, y, obs), step = 6;
+            while (step > 0.04) {
+                let moved = false;
+                for (const [dx, dy] of DIRS) {
+                    const nx = x + dx * step, ny = y + dy * step;
+                    if (nx < 0 || nx > PITCH.L || ny < 0 || ny > PITCH.W) continue;
+                    const v = spaceValue(nx, ny, obs);
+                    if (v > best) { best = v; x = nx; y = ny; moved = true; }
+                }
+                if (!moved) step /= 2;
+            }
+            return { x, y, r: best };
+        }
+
+        // Constrained largest empty circle clear of `obs`.
+        function largestEmptyCircle(obs) {
+            const seeds = [];
+            if (window.d3 && d3.Delaunay && obs.length >= 3) {
+                const vor = d3.Delaunay.from(obs, p => p.x, p => p.y).voronoi([0, 0, PITCH.L, PITCH.W]);
+                const cc = vor.circumcenters;
+                for (let i = 0; i < cc.length; i += 2) seeds.push([cc[i], cc[i + 1]]);
+            }
+            for (let x = 0; x <= PITCH.L; x += 3) { seeds.push([x, 0]); seeds.push([x, PITCH.W]); }
+            for (let y = 0; y <= PITCH.W; y += 3) { seeds.push([0, y]); seeds.push([PITCH.L, y]); }
+            for (let x = 6; x < PITCH.L; x += 8)
+                for (let y = 6; y < PITCH.W; y += 8) seeds.push([x, y]);
+
+            let best = { x: 0, y: 0, r: -1 };
+            for (const s of seeds) {
+                const c = refine(s[0], s[1], obs);
+                if (c.r > best.r) best = c;
+            }
+            return best;
+        }
+
+        // Biggest hole INSIDE one team's own shape: the largest circle that fits
+        // between that team's players, with its centre kept within the team's
+        // convex hull so it is a genuine interior gap (not the open field beyond).
+        function pointInPolygon(x, y, poly) {
+            let inside = false;
+            for (let i = 0, j = poly.length - 1; i < poly.length; j = i++) {
+                const xi = poly[i].x, yi = poly[i].y, xj = poly[j].x, yj = poly[j].y;
+                if (((yi > y) !== (yj > y)) && (x < (xj - xi) * (y - yi) / (yj - yi) + xi)) inside = !inside;
+            }
+            return inside;
+        }
+        function refineInHull(x, y, own, hull) {
+            const val = (px, py) => Math.min(nearestDist(px, py, own), wallDist(px, py));
+            let best = val(x, y), step = 4;
+            while (step > 0.04) {
+                let moved = false;
+                for (const [dx, dy] of DIRS) {
+                    const nx = x + dx * step, ny = y + dy * step;
+                    if (!pointInPolygon(nx, ny, hull)) continue;
+                    const v = val(nx, ny);
+                    if (v > best) { best = v; x = nx; y = ny; moved = true; }
+                }
+                if (!moved) step /= 2;
+            }
+            return { x, y, r: best };
+        }
+        function largestGapWithin(own) {
+            const hull = convexHull(own);
+            const seeds = [];
+            if (window.d3 && d3.Delaunay && own.length >= 3) {
+                // Voronoi vertices = points equidistant from three team-mates = hole centres
+                const cc = d3.Delaunay.from(own, p => p.x, p => p.y).voronoi([0, 0, PITCH.L, PITCH.W]).circumcenters;
+                for (let i = 0; i < cc.length; i += 2) seeds.push([cc[i], cc[i + 1]]);
+            }
+            const xs = own.map(p => p.x), ys = own.map(p => p.y);
+            for (let x = Math.min(...xs); x <= Math.max(...xs); x += 2.5)
+                for (let y = Math.min(...ys); y <= Math.max(...ys); y += 2.5) seeds.push([x, y]);
+
+            let best = { x: 0, y: 0, r: -1 };
+            for (const s of seeds) {
+                if (!pointInPolygon(s[0], s[1], hull)) continue;
+                const c = refineInHull(s[0], s[1], own, hull);
+                if (c.r > best.r) best = c;
+            }
+            if (best.r < 0) { const c = centroid(own); best = { x: c.x, y: c.y, r: nearestDist(c.x, c.y, own) }; }
+            return best;
+        }
+
+        // ─── Team point-cloud metrics ───
+        function centroid(ps) {
+            let sx = 0, sy = 0;
+            for (const p of ps) { sx += p.x; sy += p.y; }
+            return { x: sx / ps.length, y: sy / ps.length };
+        }
+        function mean(a) { return a.reduce((s, v) => s + v, 0) / a.length; }
+        const dist = (a, b) => Math.hypot(a.x - b.x, a.y - b.y);
+
+        function convexHull(ps) {
+            const pts = ps.map(p => ({ x: p.x, y: p.y })).sort((a, b) => a.x - b.x || a.y - b.y);
+            if (pts.length < 3) return pts;
+            const cross = (o, a, b) => (a.x - o.x) * (b.y - o.y) - (a.y - o.y) * (b.x - o.x);
+            const lower = [];
+            for (const p of pts) { while (lower.length >= 2 && cross(lower[lower.length-2], lower[lower.length-1], p) <= 0) lower.pop(); lower.push(p); }
+            const upper = [];
+            for (let i = pts.length - 1; i >= 0; i--) { const p = pts[i]; while (upper.length >= 2 && cross(upper[upper.length-2], upper[upper.length-1], p) <= 0) upper.pop(); upper.push(p); }
+            lower.pop(); upper.pop();
+            return lower.concat(upper);
+        }
+        function polyArea(h) {
+            let a = 0;
+            for (let i = 0; i < h.length; i++) { const p = h[i], q = h[(i + 1) % h.length]; a += p.x * q.y - q.x * p.y; }
+            return Math.abs(a) / 2;
+        }
+
+        // ── Open-space REGION: the actual shape of a team's space (not a circle).
+        //    Contour the clearance-to-nearest-own-player field at an adaptive
+        //    threshold, masked to a band around the team's hull so it captures
+        //    sideline wedges but not the empty far half. Any number of sides/holes.
+        function distToSeg(px, py, a, b) {
+            const dx = b.x - a.x, dy = b.y - a.y, l2 = dx * dx + dy * dy || 1;
+            let t = ((px - a.x) * dx + (py - a.y) * dy) / l2;
+            t = Math.max(0, Math.min(1, t));
+            return Math.hypot(px - (a.x + t * dx), py - (a.y + t * dy));
+        }
+        function distToPoly(x, y, poly) {
+            let m = Infinity;
+            for (let i = 0, j = poly.length - 1; i < poly.length; j = i++) m = Math.min(m, distToSeg(x, y, poly[j], poly[i]));
+            return m;
+        }
+        function ringArea(r) {
+            let a = 0;
+            for (let i = 0; i < r.length; i++) { const p = r[i], q = r[(i + 1) % r.length]; a += p[0] * q[1] - q[0] * p[1]; }
+            return Math.abs(a) / 2;
+        }
+        function regionPaths(own, rLec) {
+            const hull = convexHull(own);
+            const res = 2, w = Math.round(PITCH.L / res) + 1, h = Math.round(PITCH.W / res) + 1;
+            const tau = Math.max(5, Math.min(12, 0.6 * rLec)), BAND = 10;
+            const field = new Float64Array(w * h);
+            for (let j = 0; j < h; j++) {
+                for (let i = 0; i < w; i++) {
+                    const x = i * res, y = j * res;
+                    const dh = pointInPolygon(x, y, hull) ? 0 : distToPoly(x, y, hull);
+                    field[j * w + i] = dh > BAND ? 0 : nearestDist(x, y, own);
+                }
+            }
+            const cs = d3.contours().size([w, h]).thresholds([tau])(field);
+            let d = '', area = 0;
+            const polys = (cs[0] && cs[0].coordinates) || [];
+            for (const poly of polys) {
+                area += ringArea(poly[0]) * res * res;
+                for (let k = 1; k < poly.length; k++) area -= ringArea(poly[k]) * res * res;
+                for (const ring of poly) d += 'M' + ring.map(p => `${(p[0]*res).toFixed(2)},${(p[1]*res).toFixed(2)}`).join('L') + 'Z';
+            }
+            return { d, area, tau };
+        }
+        function teamMetrics(team) {
+            const ps = teamOf(team);
+            const c = centroid(ps);
+            const stretch = mean(ps.map(p => dist(p, c)));
+            const nn = mean(ps.map(p => {
+                let m = Infinity;
+                for (const q of ps) if (q !== p) m = Math.min(m, dist(p, q));
+                return m;
+            }));
+            const hull = convexHull(ps);
+            const xs = ps.map(p => p.x), ys = ps.map(p => p.y);
+            return {
+                centroid: c, stretch, nn, hull,
+                area: polyArea(hull),
+                len: Math.max(...xs) - Math.min(...xs),
+                wid: Math.max(...ys) - Math.min(...ys),
+            };
+        }
+        function avgPairwiseDist(ps) {
+            let s = 0, n = 0;
+            for (let i = 0; i < ps.length; i++)
+                for (let j = i + 1; j < ps.length; j++) { s += dist(ps[i], ps[j]); n++; }
+            return s / n;
+        }
+
+        // ── One frame: spaces + metrics. Future time-aggregation wraps this. ──
+        function computeFrame() {
+            const teamA = teamOf('a'), teamB = teamOf('b');
+            return {
+                spaceCombined: largestEmptyCircle(players),
+                spaceA: largestGapWithin(teamA),   // biggest hole inside Blue's own shape
+                spaceB: largestGapWithin(teamB),
+                voronoi: (window.d3 && d3.Delaunay)
+                    ? d3.Delaunay.from(players, p => p.x, p => p.y).voronoi([0, 0, PITCH.L, PITCH.W]) : null,
+                mA: teamMetrics('a'),
+                mB: teamMetrics('b'),
+                centroidGap: dist(centroid(teamA), centroid(teamB)),
+                avgSpacing: avgPairwiseDist(players),
+            };
+        }
+
+        // ─── Heatmap (red→yellow→green) + pitch control, single grid pass ───
+        function heatColor(t) {
+            if (t < 0.5) { const u = t / 0.5; return [214 + 26 * u, 40 + 160 * u, 40]; }
+            const u = (t - 0.5) / 0.5; return [240 - 180 * u, 200 - 50 * u, 40 + 55 * u];
+        }
+        function drawGridAndControl() {
+            const W = canvas.width, H = canvas.height;
+            let data = null;
+            if (opts.heat) data = ctx.createImageData(W, H).data;
+            else ctx.clearRect(0, 0, W, H);
+            let ca = 0, cb = 0;
+            for (let cy = 0; cy < H; cy++) {
+                for (let cx = 0; cx < W; cx++) {
+                    const px = cx + 0.5, py = cy + 0.5;
+                    let bd = Infinity, team = 'a';
+                    for (const p of players) {
+                        const dx = p.x - px, dy = p.y - py, d = dx * dx + dy * dy;
+                        if (d < bd) { bd = d; team = p.team; }
+                    }
+                    if (team === 'a') ca++; else cb++;
+                    if (data) {
+                        const t = Math.min(Math.sqrt(bd) / HEAT_REF, 1);
+                        const [r, g, b] = heatColor(t);
+                        const i = (cy * W + cx) * 4;
+                        data[i] = r; data[i + 1] = g; data[i + 2] = b;
+                        data[i + 3] = 95 + (1 - t) * 95;     // crowded more opaque
+                    }
+                }
+            }
+            if (data) ctx.putImageData(new ImageData(data, W, H), 0, 0);
+            const tot = ca + cb;
+            return { a: ca / tot, b: cb / tot };
+        }
+
+        // ─── Static pitch (grass stripes + markings) ───
+        function buildPitch() {
+            const cy = PITCH.W / 2;
+            const line = (x1, y1, x2, y2, w) => `<line x1="${x1}" y1="${y1}" x2="${x2}" y2="${y2}" stroke="#fff" stroke-width="${w||0.22}"/>`;
+            const rectO = (x, y, w, h, sw) => `<rect x="${x}" y="${y}" width="${w}" height="${h}" fill="none" stroke="#fff" stroke-width="${sw||0.22}"/>`;
+            let s = '';
+            // surrounding board + stripes
+            s += `<rect x="-6" y="-6" width="${TOTAL_W}" height="${TOTAL_H}" fill="#1f5d2a"/>`;
+            const stripes = 7, sw = PITCH.L / stripes;
+            for (let i = 0; i < stripes; i++)
+                s += `<rect x="${i*sw}" y="0" width="${sw}" height="${PITCH.W}" fill="${i%2 ? '#368a40' : '#3f9649'}"/>`;
+            // markings
+            s += rectO(0, 0, PITCH.L, PITCH.W, 0.28);
+            s += line(PITCH.L/2, 0, PITCH.L/2, PITCH.W);
+            s += `<circle cx="${PITCH.L/2}" cy="${cy}" r="9.15" fill="none" stroke="#fff" stroke-width="0.22"/>`;
+            s += `<circle cx="${PITCH.L/2}" cy="${cy}" r="0.35" fill="#fff"/>`;
+            [0, 1].forEach(side => {
+                const left = side === 0;
+                const penX = left ? 0 : PITCH.L - 16.5;
+                s += rectO(penX, cy - 20.16, 16.5, 40.32);              // penalty box
+                const gaX = left ? 0 : PITCH.L - 5.5;
+                s += rectO(gaX, cy - 9.16, 5.5, 18.32);                 // goal area
+                const spotX = left ? 11 : PITCH.L - 11;
+                s += `<circle cx="${spotX}" cy="${cy}" r="0.35" fill="#fff"/>`;
+                // penalty arc (the D), only the part beyond the box front
+                const dy = Math.sqrt(9.15*9.15 - 5.5*5.5);
+                if (left) s += `<path d="M 16.5 ${cy-dy} A 9.15 9.15 0 0 1 16.5 ${cy+dy}" fill="none" stroke="#fff" stroke-width="0.22"/>`;
+                else      s += `<path d="M ${PITCH.L-16.5} ${cy-dy} A 9.15 9.15 0 0 0 ${PITCH.L-16.5} ${cy+dy}" fill="none" stroke="#fff" stroke-width="0.22"/>`;
+                // goal
+                s += `<rect x="${left ? -1.8 : PITCH.L}" y="${cy-3.66}" width="1.8" height="7.32" fill="rgba(255,255,255,0.22)" stroke="#fff" stroke-width="0.2"/>`;
+            });
+            // corner arcs
+            const corner = (cx, cyy, sx, sy) => `<path d="M ${cx+sx} ${cyy} A 1 1 0 0 1 ${cx} ${cyy+sy}" fill="none" stroke="#fff" stroke-width="0.2"/>`;
+            s += corner(0, 0, 1, 1) + corner(PITCH.L, 0, -1, 1) + corner(0, PITCH.W, 1, -1) + corner(PITCH.L, PITCH.W, -1, -1);
+            gPitch.innerHTML = s;
+        }
+
+        // ─── Players (built once, repositioned on drag) ───
+        const playerEls = {};
+        function buildPlayers() {
+            gPlayers.innerHTML = '';
+            for (const id in playerEls) delete playerEls[id];
+            players.forEach(p => {
+                const g = document.createElementNS(SVGNS, 'g');
+                g.setAttribute('class', 'player');
+                g.dataset.id = p.id;
+                g.innerHTML =
+                    `<circle r="${PLAYER_R + 1.1}" class="player-hit"></circle>` +
+                    `<circle r="${PLAYER_R}" fill="${COL[p.team]}" stroke="#fff" stroke-width="0.4"></circle>` +
+                    `<text text-anchor="middle" dominant-baseline="central" font-family="Inter,sans-serif" font-size="2" font-weight="600" fill="#fff">${p.num}</text>`;
+                gPlayers.appendChild(g);
+                playerEls[p.id] = g;
+            });
+        }
+        function positionPlayers() {
+            players.forEach(p => playerEls[p.id].setAttribute('transform', `translate(${p.x},${p.y})`));
+        }
+
+        // ─── Overlays ───
+        function drawShapes(frame) {
+            gShape.innerHTML = '';
+            if (!opts.shape) return;
+            [['a', frame.mA], ['b', frame.mB]].forEach(([team, m]) => {
+                const pts = m.hull.map(p => `${p.x},${p.y}`).join(' ');
+                gShape.innerHTML += `<polygon points="${pts}" fill="${COL[team]}" fill-opacity="0.07" stroke="${COL[team]}" stroke-width="0.2" stroke-dasharray="1.4,1" opacity="0.85"/>`;
+                gShape.innerHTML += `<circle cx="${m.centroid.x}" cy="${m.centroid.y}" r="0.55" fill="${COL[team]}" opacity="0.6"/>`;
+            });
+        }
+        function drawVoronoi(frame) {
+            gVor.innerHTML = '';
+            if (!opts.vor || !frame.voronoi) return;
+            gVor.innerHTML = `<path d="${frame.voronoi.render()}" fill="none" stroke="#fff" stroke-width="0.16" stroke-dasharray="0.7,0.7" opacity="0.55"/>`;
+        }
+        function circleSVG(s, color, fill) {
+            return `<circle cx="${s.x}" cy="${s.y}" r="${s.r}" fill="none" stroke="#fff" stroke-width="0.7" opacity="0.85"/>` +
+                   `<circle cx="${s.x}" cy="${s.y}" r="${s.r}" fill="${fill}" stroke="${color}" stroke-width="0.45"/>` +
+                   `<circle cx="${s.x}" cy="${s.y}" r="0.4" fill="${color}"/>` +
+                   `<text x="${s.x}" y="${s.y - 1.6}" text-anchor="middle" font-family="Inter,sans-serif" font-size="3.2" font-weight="600" ` +
+                   `fill="${color}" stroke="#fff" stroke-width="0.7" paint-order="stroke" style="stroke-linejoin:round">${s.r.toFixed(1)} m</text>`;
+        }
+        const REGFILL = { a: 'rgba(29,78,216,0.22)', b: 'rgba(220,38,38,0.20)', combined: 'rgba(15,125,54,0.24)' };
+        function regionSVG(reg, color, fill) {
+            if (!reg.d) return '';
+            return `<path d="${reg.d}" fill="none" stroke="#fff" stroke-width="0.8" opacity="0.8"/>` +
+                   `<path d="${reg.d}" fill="${fill}" fill-rule="evenodd" stroke="${color}" stroke-width="0.45"/>`;
+        }
+        function regionLabel(reg, at, color) {
+            if (!reg.d) return '';
+            return `<text x="${at.x}" y="${at.y}" text-anchor="middle" font-family="Inter,sans-serif" font-size="3" font-weight="600" ` +
+                   `fill="${color}" stroke="#fff" stroke-width="0.7" paint-order="stroke" style="stroke-linejoin:round">${Math.round(reg.area)} m²</text>`;
+        }
+        const regionMode = () => opts.region && window.d3 && d3.contours;
+        function drawSpaces(frame) {
+            if (opts.perTeam) {
+                if (regionMode()) {
+                    frame.regionA = regionPaths(teamOf('a'), frame.spaceA.r);
+                    frame.regionB = regionPaths(teamOf('b'), frame.spaceB.r);
+                    gSpaces.innerHTML = regionSVG(frame.regionA, COL.a, REGFILL.a) + regionSVG(frame.regionB, COL.b, REGFILL.b) +
+                                        regionLabel(frame.regionA, frame.spaceA, COL.a) + regionLabel(frame.regionB, frame.spaceB, COL.b);
+                } else {
+                    gSpaces.innerHTML = circleSVG(frame.spaceA, COL.a, COL.aFill) + circleSVG(frame.spaceB, COL.b, COL.bFill);
+                }
+            } else {
+                if (regionMode()) {
+                    frame.regionC = regionPaths(players, frame.spaceCombined.r);
+                    gSpaces.innerHTML = regionSVG(frame.regionC, COL.combined, REGFILL.combined) + regionLabel(frame.regionC, frame.spaceCombined, COL.combined);
+                } else {
+                    gSpaces.innerHTML = circleSVG(frame.spaceCombined, COL.combined, COL.combinedFill);
+                }
+            }
+        }
+
+        // ─── Panel ───
+        const metricsBody = document.getElementById('metrics-body');
+        const overallEl = document.getElementById('overall');
+        const readoutEl = document.getElementById('readout');
+        const ctrlA = document.getElementById('ctrl-a'), ctrlB = document.getElementById('ctrl-b');
+        const ctrlApct = document.getElementById('ctrl-a-pct'), ctrlBpct = document.getElementById('ctrl-b-pct');
+
+        function updatePanel(frame, control) {
+            const a = frame.mA, b = frame.mB;
+            const row = (label, va, vb) => `<tr><td>${label}</td><td>${va}</td><td>${vb}</td></tr>`;
+            metricsBody.innerHTML =
+                row('Largest space (m)', frame.spaceA.r.toFixed(1), frame.spaceB.r.toFixed(1)) +
+                row('Surface area (m²)', Math.round(a.area), Math.round(b.area)) +
+                row('Stretch index (m)', a.stretch.toFixed(1), b.stretch.toFixed(1)) +
+                row('Compactness (m)', a.nn.toFixed(1), b.nn.toFixed(1)) +
+                row('Length × Width', `${a.len.toFixed(0)}×${a.wid.toFixed(0)}`, `${b.len.toFixed(0)}×${b.wid.toFixed(0)}`);
+
+            ctrlA.style.background = COL.a; ctrlB.style.background = COL.b;
+            ctrlA.style.width = (control.a * 100) + '%';
+            ctrlB.style.width = (control.b * 100) + '%';
+            ctrlApct.textContent = Math.round(control.a * 100) + '%';
+            ctrlBpct.textContent = Math.round(control.b * 100) + '%';
+
+            overallEl.innerHTML =
+                `<div class="row"><span>Centroid gap</span><b>${frame.centroidGap.toFixed(1)} m</b></div>` +
+                `<div class="row"><span>Avg player spacing</span><b>${frame.avgSpacing.toFixed(1)} m</b></div>`;
+
+            if (opts.perTeam) {
+                if (regionMode()) {
+                    readoutEl.innerHTML =
+                        `<div><span class="sw sw-a"></span>Blue open zone: <b>${Math.round((frame.regionA||{}).area||0)} m²</b></div>` +
+                        `<div><span class="sw sw-b"></span>Red open zone: <b>${Math.round((frame.regionB||{}).area||0)} m²</b></div>`;
+                } else {
+                    readoutEl.innerHTML =
+                        `<div><span class="sw sw-a"></span>Blue space: <b>${frame.spaceA.r.toFixed(1)} m</b></div>` +
+                        `<div><span class="sw sw-b"></span>Red space: <b>${frame.spaceB.r.toFixed(1)} m</b></div>`;
+                }
+            } else if (regionMode()) {
+                readoutEl.innerHTML = `<div>Largest open region: <b>${Math.round((frame.regionC||{}).area||0)} m²</b></div>`;
+            } else {
+                const s = frame.spaceCombined;
+                readoutEl.innerHTML = `<div>Largest open space: <b>${s.r.toFixed(1)} m radius</b> at (${s.x.toFixed(0)}, ${s.y.toFixed(0)}) m</div>`;
+            }
+        }
+
+        // ─── Redraw ───
+        let rafQueued = false;
+        function redraw() {
+            const frame = computeFrame();
+            const control = drawGridAndControl();
+            drawShapes(frame);
+            drawVoronoi(frame);
+            drawSpaces(frame);
+            positionPlayers();
+            updatePanel(frame, control);
+        }
+        function scheduleRedraw() {
+            if (rafQueued) return;
+            rafQueued = true;
+            requestAnimationFrame(() => { rafQueued = false; redraw(); });
+        }
+
+        // ─── Dragging ───
+        let dragId = null;
+        function pointerToMetres(e) {
+            const r = svg.getBoundingClientRect();
+            return {
+                x: (e.clientX - r.left) / r.width  * TOTAL_W - MARGIN,
+                y: (e.clientY - r.top)  / r.height * TOTAL_H - MARGIN,
+            };
+        }
+        svg.addEventListener('pointerdown', e => {
+            const g = e.target.closest('.player');
+            if (!g) return;
+            dragId = g.dataset.id;
+            svg.setPointerCapture(e.pointerId);
+            e.preventDefault();
+        });
+        svg.addEventListener('pointermove', e => {
+            if (dragId == null) return;
+            const m = pointerToMetres(e);
+            const p = players.find(pl => pl.id === dragId);
+            p.x = Math.max(EDGE_PAD, Math.min(PITCH.L - EDGE_PAD, m.x));
+            p.y = Math.max(EDGE_PAD, Math.min(PITCH.W - EDGE_PAD, m.y));
+            scheduleRedraw();
+        });
+        function endDrag(e) {
+            if (dragId == null) return;
+            dragId = null;
+            try { svg.releasePointerCapture(e.pointerId); } catch (_) {}
+        }
+        svg.addEventListener('pointerup', endDrag);
+        svg.addEventListener('pointercancel', endDrag);
+
+        // ─── Controls ───
+        const bind = (id, key) => document.getElementById(id).addEventListener('change', e => { opts[key] = e.target.checked; scheduleRedraw(); });
+        bind('t-perteam', 'perTeam');
+        bind('t-region', 'region');
+        bind('t-heat', 'heat');
+        bind('t-shape', 'shape');
+        bind('t-vor', 'vor');
+        document.getElementById('reset').addEventListener('click', () => {
+            players = makeFormation();
+            buildPlayers();
+            scheduleRedraw();
+        });
+
+        // ─── Init ───
+        function layoutCanvas() {
+            canvas.style.left   = (MARGIN / TOTAL_W * 100) + '%';
+            canvas.style.top    = (MARGIN / TOTAL_H * 100) + '%';
+            canvas.style.width  = (PITCH.L / TOTAL_W * 100) + '%';
+            canvas.style.height = (PITCH.W / TOTAL_H * 100) + '%';
+            canvas.width  = PITCH.L;   // 1 cell per metre
+            canvas.height = PITCH.W;
+        }
+        layoutCanvas();
+        buildPitch();
+        buildPlayers();
+        redraw();
+    })();
+    </script>
+</body>
+</html>
