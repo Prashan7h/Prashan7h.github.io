@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-KVBPX8VW');</script>
+    <!-- End Google Tag Manager -->
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Why the atom doesn't collapse, why hot gases glow in sharp colours, and how Niels Bohr's audacious 1913 model lit the fuse for quantum mechanics.">
+    <link rel="icon" type="image/svg+xml" href="../images/favicon.svg">
+    <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon-32.png">
+    <link rel="apple-touch-icon" href="../images/apple-touch-icon.png">
+    <title>The Bohr Atom and Quantization | Prashanth Shankar</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+
+    <style>
+        *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+        html { font-size: 16px; scroll-behavior: smooth; }
+        body {
+            background: #fff;
+            color: #000;
+            font-family: 'Inter', -apple-system, sans-serif;
+            font-weight: 400;
+            line-height: 1.7;
+        }
+        ::selection { background: #000; color: #fff; }
+
+        .page {
+            max-width: 720px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        header {
+            padding: 2.5rem 0 0;
+        }
+
+        .back-link {
+            font-size: 0.75rem;
+            font-weight: 400;
+            letter-spacing: 0.04em;
+            color: #000;
+            text-decoration: none;
+            transition: opacity 0.2s ease;
+        }
+        .back-link:hover { opacity: 0.5; }
+
+        article {
+            padding: 4rem 0 3rem;
+        }
+
+        article h1 {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 2.6rem;
+            font-weight: 600;
+            line-height: 1.15;
+            margin-bottom: 1rem;
+        }
+
+        .deck {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.25rem;
+            font-style: italic;
+            line-height: 1.5;
+            color: #000;
+            margin-bottom: 2.5rem;
+        }
+
+        article h2 {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.8rem;
+            font-weight: 600;
+            line-height: 1.2;
+            margin: 3rem 0 1rem;
+        }
+
+        article p {
+            font-size: 0.95rem;
+            font-weight: 300;
+            line-height: 1.75;
+            margin-bottom: 1rem;
+        }
+
+        article em {
+            font-style: italic;
+        }
+
+        .pullquote {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.35rem;
+            font-style: italic;
+            line-height: 1.45;
+            padding: 1.5rem 0 1.5rem 1.5rem;
+            border-left: 2px solid #000;
+            margin: 2rem 0;
+            color: #000;
+        }
+
+        .figure {
+            margin: 2.5rem 0;
+        }
+        .figure svg {
+            display: block;
+            width: 100%;
+            height: auto;
+            max-width: 640px;
+            margin: 0 auto;
+        }
+        .caption {
+            font-size: 0.78rem;
+            color: #666;
+            text-align: center;
+            margin-top: 0.8rem;
+            line-height: 1.5;
+            font-style: italic;
+            font-family: 'Cormorant Garamond', serif;
+        }
+
+        hr.divider {
+            border: none;
+            border-top: 1px solid #000;
+            margin: 3rem 0;
+        }
+
+        .references {
+            font-size: 0.8rem;
+            color: #555;
+            line-height: 1.7;
+            margin-top: 2rem;
+        }
+        .references h3 {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: #000;
+            margin-bottom: 0.75rem;
+        }
+        .references ol {
+            padding-left: 1.2rem;
+        }
+        .references li {
+            margin-bottom: 0.35rem;
+        }
+
+        footer {
+            padding: 2rem 0 3rem;
+            font-size: 0.75rem;
+            color: #666;
+        }
+        footer a { color: inherit; text-decoration: underline; text-underline-offset: 0.2em; }
+    </style>
+</head>
+<body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KVBPX8VW" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+    <div class="page">
+        <header>
+            <a href="index.html" class="back-link">&larr; Wonderland</a>
+        </header>
+
+        <article>
+            <h1>The Bohr Atom and Quantization</h1>
+            <p class="deck">By every rule of nineteenth&ndash;century physics, the atom should not exist. In 1913 a young Dane explained why it does &mdash; and in doing so lit the fuse for quantum mechanics.</p>
+
+            <p>In the spring of 1913 Niels Bohr, then 27 and working in Manchester, sent the first of three papers to <em>Philosophical Magazine</em>. They proposed something at once obvious and outrageous: that the electrons inside an atom are not free to do whatever the equations of motion tell them to do. They are allowed only certain orbits, at certain energies, and nothing in between. Everything else &mdash; the stability of matter, the sharp colours of hot gases, the chemistry of the periodic table &mdash; turned on that single rule.</p>
+
+            <p>To see why this was so daring, you have to start with the problem it solved.</p>
+
+            <h2>A planetary system that shouldn&rsquo;t work</h2>
+
+            <p>By 1911 Ernest Rutherford had fired alpha particles at gold foil and discovered the nucleus: a tiny, dense, positively charged core with electrons somewhere around it. The natural picture was a miniature solar system &mdash; electrons orbiting like planets, held in place by electrical attraction instead of gravity.</p>
+
+            <p>It was a lovely image and a catastrophe. Maxwell&rsquo;s electromagnetism, the crowning theory of the previous half century, was unambiguous on one point: an accelerating charge radiates energy. An electron in a curved orbit is accelerating constantly. It should bleed energy away as light, spiral inward, and crash into the nucleus in about a hundred&nbsp;billionth of a second.</p>
+
+            <p>Atoms, plainly, do not do this. Hydrogen has been hydrogen for thirteen billion years.</p>
+
+            <p>Worse, when you heated a gas of hydrogen and passed its light through a prism, you did not get a smooth rainbow. You got a small number of bright, sharp lines at very particular wavelengths &mdash; red at 656&nbsp;nm, blue&ndash;green at 486&nbsp;nm, violet at 434&nbsp;nm, and so on. A Swiss schoolteacher named Johann Balmer had even guessed, in 1885, a numerical formula that fit the lines exactly. Nobody had any idea why his formula worked. It looked like numerology.</p>
+
+            <h2>Bohr&rsquo;s audacious postulates</h2>
+
+            <p>Bohr did not try to fix classical physics. He simply refused to let it apply where it was inconvenient. He laid down three postulates that have the flavour of someone laying tarot cards:</p>
+
+            <p>First, an electron in an atom does not occupy a continuum of orbits. It is restricted to a discrete set of <em>stationary states</em>, each with a fixed energy. In any one of these states, despite what Maxwell says, it does not radiate.</p>
+
+            <p>Second, the allowed states are those in which the angular momentum of the electron is an integer multiple of a particular constant: <em>L = n&hbar;</em>, where <em>n</em> is 1, 2, 3, &hellip;. Half-integer orbits, fractional orbits, all the orbits classical mechanics happily allowed &mdash; forbidden.</p>
+
+            <p>Third, an atom emits or absorbs light only when an electron jumps from one allowed state to another. The frequency of that light is fixed by the energy difference: <em>h&nu; = E<sub>i</sub> &minus; E<sub>f</sub></em>. No transition, no light. No in-between.</p>
+
+            <div class="figure">
+                <svg viewBox="0 0 640 320" xmlns="http://www.w3.org/2000/svg">
+                    <!-- Orbits -->
+                    <g fill="none" stroke="#000" stroke-width="1">
+                        <circle cx="320" cy="160" r="40"/>
+                        <circle cx="320" cy="160" r="75"/>
+                        <circle cx="320" cy="160" r="115"/>
+                        <circle cx="320" cy="160" r="150"/>
+                    </g>
+                    <!-- Nucleus -->
+                    <circle cx="320" cy="160" r="8" fill="#000"/>
+                    <text x="320" y="186" font-family="Inter, sans-serif" font-size="10" fill="#666" text-anchor="middle">nucleus</text>
+                    <!-- Electrons on orbits -->
+                    <g fill="#000">
+                        <circle cx="360" cy="160" r="4"/>
+                        <circle cx="245" cy="160" r="4"/>
+                        <circle cx="320" cy="45" r="4"/>
+                        <circle cx="450" cy="220" r="4"/>
+                    </g>
+                    <!-- Orbit labels -->
+                    <g font-family="'Cormorant Garamond', serif" font-style="italic" font-size="14" fill="#000">
+                        <text x="375" y="148">n = 1</text>
+                        <text x="225" y="148" text-anchor="end">n = 2</text>
+                        <text x="320" y="32" text-anchor="middle">n = 3</text>
+                        <text x="478" y="232">n = 4</text>
+                    </g>
+                    <!-- Transition arrow -->
+                    <g stroke="#000" stroke-width="1" fill="none">
+                        <path d="M 245 160 L 365 160" marker-end="url(#tipR)"/>
+                    </g>
+                    <!-- Wavy photon -->
+                    <g fill="none" stroke="#000" stroke-width="1">
+                        <path d="M 380 160 q 8 -8 16 0 t 16 0 t 16 0 t 16 0 t 16 0 t 16 0"/>
+                    </g>
+                    <text x="490" y="155" font-family="'Cormorant Garamond', serif" font-style="italic" font-size="13" fill="#000">h&#957;</text>
+                    <text x="305" y="178" font-family="Inter, sans-serif" font-size="10" fill="#666">jump</text>
+                    <defs>
+                        <marker id="tipR" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+                            <path d="M 0 0 L 10 5 L 0 10 z" fill="#000"/>
+                        </marker>
+                    </defs>
+                    <text x="320" y="305" font-family="'Cormorant Garamond', serif" font-style="italic" font-size="14" fill="#666" text-anchor="middle">An electron drops from a higher orbit to a lower one and a photon flies out.</text>
+                </svg>
+                <p class="caption">The Bohr atom. Only certain orbits are allowed; transitions between them produce light at exact frequencies.</p>
+            </div>
+
+            <p>These rules were stitched together from existing fragments &mdash; Planck&rsquo;s quanta of energy from 1900, Einstein&rsquo;s 1905 idea that light itself comes in lumps &mdash; but the synthesis was Bohr&rsquo;s. He was making a physical principle of what had been treated as mathematical bookkeeping: nature, at small scales, comes in steps.</p>
+
+            <p class="pullquote">&ldquo;If quantum mechanics hasn&rsquo;t profoundly shocked you, you haven&rsquo;t understood it yet.&rdquo; &mdash; Niels Bohr</p>
+
+            <h2>The Rydberg formula falls out</h2>
+
+            <p>What makes the Bohr model more than philosophy is what happened when he combined those three postulates with the ordinary equation for the electrical force between an electron and a proton. Out of the algebra tumbled, in closed form, the radius of each allowed orbit and the energy of each allowed state. For hydrogen,</p>
+
+            <p style="text-align:center; font-family: 'Cormorant Garamond', serif; font-style: italic; font-size: 1.1rem; margin: 1rem 0;">E<sub>n</sub> = &minus;13.6 eV / n<sup>2</sup>.</p>
+
+            <p>Plug this into his third postulate, work out the frequencies of light emitted when the electron drops from state <em>n<sub>i</sub></em> to state <em>n<sub>f</sub></em>, and Balmer&rsquo;s mysterious schoolteacher-formula appears letter for letter. The Rydberg constant &mdash; an empirical number that had floated around for years &mdash; turned out to be a combination of the electron mass, the charge of the electron, Planck&rsquo;s constant and the speed of light. It was no longer an empirical number. It was a consequence.</p>
+
+            <p>Pointing a spectroscope at a discharge tube of hydrogen and seeing those lines fall exactly where Bohr&rsquo;s formula said they would &mdash; that was the moment quantum mechanics stopped being a hunch and became physics.</p>
+
+            <div class="figure">
+                <svg viewBox="0 0 640 320" xmlns="http://www.w3.org/2000/svg">
+                    <!-- Energy axis -->
+                    <line x1="80" y1="40" x2="80" y2="280" stroke="#000" stroke-width="1"/>
+                    <text x="60" y="48" font-family="'Cormorant Garamond', serif" font-style="italic" font-size="14" fill="#000" text-anchor="end">E</text>
+                    <!-- Levels -->
+                    <g stroke="#000" stroke-width="1.2">
+                        <line x1="100" y1="270" x2="540" y2="270"/>
+                        <line x1="100" y1="160" x2="540" y2="160"/>
+                        <line x1="100" y1="105" x2="540" y2="105"/>
+                        <line x1="100" y1="75" x2="540" y2="75"/>
+                        <line x1="100" y1="60" x2="540" y2="60"/>
+                    </g>
+                    <!-- Level labels (left) -->
+                    <g font-family="'Cormorant Garamond', serif" font-style="italic" font-size="13" fill="#000" text-anchor="end">
+                        <text x="92" y="274">n = 1</text>
+                        <text x="92" y="164">n = 2</text>
+                        <text x="92" y="109">n = 3</text>
+                        <text x="92" y="79">n = 4</text>
+                        <text x="92" y="64">n = 5</text>
+                    </g>
+                    <!-- Energy labels (right) -->
+                    <g font-family="Inter, sans-serif" font-size="11" fill="#666">
+                        <text x="550" y="274">&#8722;13.6 eV</text>
+                        <text x="550" y="164">&#8722;3.4 eV</text>
+                        <text x="550" y="109">&#8722;1.5 eV</text>
+                        <text x="550" y="79">&#8722;0.85 eV</text>
+                        <text x="550" y="64">&#8722;0.54 eV</text>
+                    </g>
+                    <!-- Balmer transitions -->
+                    <g stroke="#000" stroke-width="1" fill="none">
+                        <path d="M 200 105 L 200 160" marker-end="url(#tipD)"/>
+                        <path d="M 280 75 L 280 160" marker-end="url(#tipD)"/>
+                        <path d="M 360 60 L 360 160" marker-end="url(#tipD)"/>
+                    </g>
+                    <g font-family="'Cormorant Garamond', serif" font-style="italic" font-size="12" fill="#000" text-anchor="middle">
+                        <text x="200" y="142">H&#945;</text>
+                        <text x="280" y="142">H&#946;</text>
+                        <text x="360" y="142">H&#947;</text>
+                    </g>
+                    <!-- Lyman transition -->
+                    <path d="M 460 160 L 460 270" stroke="#000" stroke-width="1" fill="none" marker-end="url(#tipD)"/>
+                    <text x="475" y="220" font-family="'Cormorant Garamond', serif" font-style="italic" font-size="12" fill="#000">Lyman (UV)</text>
+                    <defs>
+                        <marker id="tipD" viewBox="0 0 10 10" refX="5" refY="9" markerWidth="6" markerHeight="6" orient="auto">
+                            <path d="M 0 0 L 10 0 L 5 10 z" fill="#000"/>
+                        </marker>
+                    </defs>
+                    <text x="320" y="305" font-family="'Cormorant Garamond', serif" font-style="italic" font-size="14" fill="#666" text-anchor="middle">Drops into n = 2 give the Balmer lines visible in any school spectroscope.</text>
+                </svg>
+                <p class="caption">The hydrogen energy ladder. The visible Balmer series &mdash; red, cyan, violet &mdash; comes from electrons falling into the n = 2 rung.</p>
+            </div>
+
+            <h2>What Bohr really got right</h2>
+
+            <p>The model has plenty wrong with it. Electrons do not, in fact, travel in tidy circular orbits; the orbital picture survives only as a useful cartoon. The angular momentum rule, <em>L = n&hbar;</em>, turns out not even to be true for the ground state of hydrogen, which has zero orbital angular momentum, not <em>&hbar;</em>. Try to apply the model to helium and it breaks; try to apply it to molecules and it falls apart.</p>
+
+            <p>Within a dozen years it had been replaced. Heisenberg, Schr&ouml;dinger and Dirac gave us a theory where the electron is not a point on a track but a smeared probability cloud described by a wave function, where the discrete levels emerge naturally as the standing waves of that function. The orbits are gone. The quantization stayed.</p>
+
+            <p>That is the lasting thing Bohr saw, and the reason the model is still taught in every introductory physics course a century on. He noticed, before anybody else, that <em>the small-scale world is granular</em>. Energy comes in steps. So does angular momentum, spin, charge, the modes of a vibrating string, the levels of every bound system in nature. The classical world looks continuous only because the steps are too small to see. Push your microscope deep enough into anything and you find the staircase.</p>
+
+            <p>It is hard, now, to feel the shock of that idea. We were taught it as schoolchildren. But in 1913 it broke a picture of the world that had held since Newton: that nature, between its largest and smallest scales, was a smooth analogue continuum. Bohr looked at a column of glowing hydrogen and concluded that nature, at the bottom, counts.</p>
+
+            <hr class="divider">
+
+            <div class="references">
+                <h3>Further reading</h3>
+                <ol>
+                    <li>Bohr, N. (1913). <em>On the Constitution of Atoms and Molecules</em>, Philosophical Magazine 26.</li>
+                    <li>Pais, A. (1991). <em>Niels Bohr&rsquo;s Times: In Physics, Philosophy, and Polity</em>.</li>
+                    <li>Kragh, H. (2012). <em>Niels Bohr and the Quantum Atom: The Bohr Model of Atomic Structure 1913&ndash;1925</em>.</li>
+                    <li>Feynman, R. (1963). <em>The Feynman Lectures on Physics</em>, Vol. I, chapters 37&ndash;38.</li>
+                </ol>
+            </div>
+        </article>
+
+        <footer>
+            <a href="index.html">&larr; Back to Wonderland</a>
+        </footer>
+    </div>
+</body>
+</html>
