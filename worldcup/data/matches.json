@@ -160,12 +160,35 @@
    "team2": "Mexico",
    "group": "Group A",
    "ground": "Mexico City",
-   "score": null,
+   "score": {
+    "ft": [
+     0,
+     3
+    ],
+    "ht": [
+     0,
+     0
+    ]
+   },
    "goals1": [],
-   "goals2": [],
+   "goals2": [
+    {
+     "name": "Mateo Chávez",
+     "minute": "55"
+    },
+    {
+     "name": "Julián Quiñones",
+     "minute": "61"
+    },
+    {
+     "name": "Álvaro Fidalgo",
+     "minute": "90+4"
+    }
+   ],
    "espn_id": "760467",
-   "status": "scheduled",
+   "status": "finished",
    "utc_date": "2026-06-25T01:00Z",
+   "attendance": 80824,
    "venue": "Estadio Banorte",
    "slug": "2026-06-24-czech-republic-vs-mexico"
   },
@@ -178,11 +201,25 @@
    "team2": "South Korea",
    "group": "Group A",
    "ground": "Monterrey (Guadalupe)",
-   "score": null,
-   "goals1": [],
+   "score": {
+    "ft": [
+     1,
+     0
+    ],
+    "ht": [
+     0,
+     0
+    ]
+   },
+   "goals1": [
+    {
+     "name": "Thapelo Maseko",
+     "minute": "63"
+    }
+   ],
    "goals2": [],
    "espn_id": "760466",
-   "status": "scheduled",
+   "status": "finished",
    "utc_date": "2026-06-25T01:00Z",
    "venue": "Estadio BBVA",
    "slug": "2026-06-24-south-africa-vs-south-korea"
@@ -379,12 +416,36 @@
    "team2": "Canada",
    "group": "Group B",
    "ground": "Vancouver",
-   "score": null,
-   "goals1": [],
-   "goals2": [],
+   "score": {
+    "ft": [
+     2,
+     1
+    ],
+    "ht": [
+     0,
+     0
+    ]
+   },
+   "goals1": [
+    {
+     "name": "Rubén Vargas",
+     "minute": "46"
+    },
+    {
+     "name": "Johan Manzambi",
+     "minute": "57"
+    }
+   ],
+   "goals2": [
+    {
+     "name": "Promise David",
+     "minute": "76"
+    }
+   ],
    "espn_id": "760463",
-   "status": "live",
+   "status": "finished",
    "utc_date": "2026-06-24T19:00Z",
+   "attendance": 52497,
    "venue": "BC Place",
    "slug": "2026-06-24-switzerland-vs-canada"
   },
@@ -397,12 +458,41 @@
    "team2": "Qatar",
    "group": "Group B",
    "ground": "Seattle",
-   "score": null,
-   "goals1": [],
-   "goals2": [],
+   "score": {
+    "ft": [
+     3,
+     1
+    ],
+    "ht": [
+     2,
+     1
+    ]
+   },
+   "goals1": [
+    {
+     "name": "Kerim Alajbegovic",
+     "minute": "29"
+    },
+    {
+     "name": "Mahmoud Abunada",
+     "minute": "34",
+     "owngoal": true
+    },
+    {
+     "name": "Ermin Mahmic",
+     "minute": "80"
+    }
+   ],
+   "goals2": [
+    {
+     "name": "Hassan Al-Haydos",
+     "minute": "42"
+    }
+   ],
    "espn_id": "760462",
-   "status": "live",
+   "status": "finished",
    "utc_date": "2026-06-24T19:00Z",
+   "attendance": 66925,
    "venue": "Lumen Field",
    "slug": "2026-06-24-bosnia-and-herzegovina-vs-qatar"
   },
@@ -560,12 +650,35 @@
    "team2": "Brazil",
    "group": "Group C",
    "ground": "Miami (Miami Gardens)",
-   "score": null,
+   "score": {
+    "ft": [
+     0,
+     3
+    ],
+    "ht": [
+     0,
+     2
+    ]
+   },
    "goals1": [],
-   "goals2": [],
+   "goals2": [
+    {
+     "name": "Vinícius Júnior",
+     "minute": "7"
+    },
+    {
+     "name": "Vinícius Júnior",
+     "minute": "45+3"
+    },
+    {
+     "name": "Matheus Cunha",
+     "minute": "60"
+    }
+   ],
    "espn_id": "760465",
-   "status": "scheduled",
+   "status": "finished",
    "utc_date": "2026-06-24T22:00Z",
+   "attendance": 64478,
    "venue": "Hard Rock Stadium",
    "slug": "2026-06-24-scotland-vs-brazil"
   },
@@ -578,12 +691,49 @@
    "team2": "Haiti",
    "group": "Group C",
    "ground": "Atlanta",
-   "score": null,
-   "goals1": [],
-   "goals2": [],
+   "score": {
+    "ft": [
+     4,
+     2
+    ],
+    "ht": [
+     2,
+     2
+    ]
+   },
+   "goals1": [
+    {
+     "name": "Achraf Hakimi",
+     "minute": "39"
+    },
+    {
+     "name": "Ismael Saibari",
+     "minute": "45+1"
+    },
+    {
+     "name": "Soufiane Rahimi",
+     "minute": "78"
+    },
+    {
+     "name": "Gessime Yassine",
+     "minute": "89"
+    }
+   ],
+   "goals2": [
+    {
+     "name": "Yassine Bounou",
+     "minute": "10",
+     "owngoal": true
+    },
+    {
+     "name": "Wilson Isidor",
+     "minute": "43"
+    }
+   ],
    "espn_id": "760464",
-   "status": "scheduled",
+   "status": "finished",
    "utc_date": "2026-06-24T22:00Z",
+   "attendance": 68239,
    "venue": "Mercedes-Benz Stadium",
    "slug": "2026-06-24-morocco-vs-haiti"
   },

@@ -1,0 +1,1014 @@
+{
+ "teams": [
+  {
+   "name": "Scotland",
+   "stats": {
+    "possessionPct": "46",
+    "totalShots": "14",
+    "shotsOnTarget": "5",
+    "wonCorners": "7",
+    "foulsCommitted": "10",
+    "offsides": "0",
+    "saves": "5",
+    "yellowCards": "1",
+    "redCards": "0"
+   }
+  },
+  {
+   "name": "Brazil",
+   "stats": {
+    "possessionPct": "54",
+    "totalShots": "21",
+    "shotsOnTarget": "9",
+    "wonCorners": "7",
+    "foulsCommitted": "11",
+    "offsides": "1",
+    "saves": "5",
+    "yellowCards": "2",
+    "redCards": "0"
+   }
+  }
+ ],
+ "events": [
+  {
+   "type": "Kickoff",
+   "minute": "",
+   "team": null,
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "2'",
+   "team": "Scotland",
+   "text": "Delay in match because of an injury Lewis Ferguson (Scotland).",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "2'",
+   "team": "Brazil",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "3'",
+   "team": "Scotland",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "3'",
+   "team": "Brazil",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Goal",
+   "minute": "7'",
+   "team": "Brazil",
+   "text": "Goal! Scotland 0, Brazil 1. Vinícius Júnior (Brazil) right footed shot from the centre of the box to the centre of the goal. Assisted by Rayan.",
+   "players": [
+    "Vinícius Júnior",
+    "Rayan"
+   ]
+  },
+  {
+   "type": "Start Delay",
+   "minute": "24'",
+   "team": "Brazil",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "25'",
+   "team": "Brazil",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "25'",
+   "team": "Brazil",
+   "text": "Delay in match for a drinks break.",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "25'",
+   "team": "Scotland",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "28'",
+   "team": "Brazil",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "28'",
+   "team": "Scotland",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Goal - Header",
+   "minute": "45'+3'",
+   "team": "Brazil",
+   "text": "Goal! Scotland 0, Brazil 2. Vinícius Júnior (Brazil) header from very close range to the top left corner. Assisted by Bruno Guimarães with a cross.",
+   "players": [
+    "Vinícius Júnior",
+    "Bruno Guimarães"
+   ]
+  },
+  {
+   "type": "Halftime",
+   "minute": "45'+7'",
+   "team": null,
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Substitution",
+   "minute": "45'",
+   "team": "Scotland",
+   "text": "Substitution, Scotland. Kieran Tierney replaces Andy Robertson because of an injury.",
+   "players": [
+    "Kieran Tierney",
+    "Andy Robertson"
+   ]
+  },
+  {
+   "type": "Start 2nd Half",
+   "minute": "45'",
+   "team": null,
+   "text": "Second Half begins Scotland 0, Brazil 2.",
+   "players": []
+  },
+  {
+   "type": "Goal",
+   "minute": "60'",
+   "team": "Brazil",
+   "text": "Goal! Scotland 0, Brazil 3. Matheus Cunha (Brazil) right footed shot from the centre of the box to the bottom right corner. Assisted by Bruno Guimarães.",
+   "players": [
+    "Matheus Cunha",
+    "Bruno Guimarães"
+   ]
+  },
+  {
+   "type": "Yellow Card",
+   "minute": "62'",
+   "team": "Brazil",
+   "text": "Danilo (Brazil) is shown the yellow card for a bad foul.",
+   "players": [
+    "Danilo"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "65'",
+   "team": "Brazil",
+   "text": "Substitution, Brazil. Fabinho replaces Casemiro.",
+   "players": [
+    "Fabinho",
+    "Casemiro"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "66'",
+   "team": "Brazil",
+   "text": "Substitution, Brazil. Gabriel Martinelli replaces Lucas Paquetá.",
+   "players": [
+    "Gabriel Martinelli",
+    "Lucas Paquetá"
+   ]
+  },
+  {
+   "type": "Start Delay",
+   "minute": "68'",
+   "team": "Scotland",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "68'",
+   "team": "Brazil",
+   "text": "Delay in match for a drinks break.",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "71'",
+   "team": "Scotland",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "71'",
+   "team": "Brazil",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "Substitution",
+   "minute": "76'",
+   "team": "Brazil",
+   "text": "Substitution, Brazil. Neymar replaces Matheus Cunha.",
+   "players": [
+    "Neymar",
+    "Matheus Cunha"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "82'",
+   "team": "Scotland",
+   "text": "Substitution, Scotland. Anthony Ralston replaces Nathan Patterson.",
+   "players": [
+    "Anthony Ralston",
+    "Nathan Patterson"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "82'",
+   "team": "Brazil",
+   "text": "Substitution, Brazil. Endrick replaces Rayan.",
+   "players": [
+    "Endrick",
+    "Rayan"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "82'",
+   "team": "Brazil",
+   "text": "Substitution, Brazil. Alex Sandro replaces Douglas Santos.",
+   "players": [
+    "Alex Sandro",
+    "Douglas Santos"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "82'",
+   "team": "Scotland",
+   "text": "Substitution, Scotland. Ryan Christie replaces Ben Gannon-Doak.",
+   "players": [
+    "Ryan Christie",
+    "Ben Gannon-Doak"
+   ]
+  },
+  {
+   "type": "Yellow Card",
+   "minute": "82'",
+   "team": "Brazil",
+   "text": "Fabinho (Brazil) is shown the yellow card for a bad foul.",
+   "players": [
+    "Fabinho"
+   ]
+  },
+  {
+   "type": "Yellow Card",
+   "minute": "89'",
+   "team": "Scotland",
+   "text": "Ryan Christie (Scotland) is shown the yellow card for a bad foul.",
+   "players": [
+    "Ryan Christie"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "90'+1'",
+   "team": "Scotland",
+   "text": "Substitution, Scotland. Findlay Curtis replaces John McGinn.",
+   "players": [
+    "Findlay Curtis",
+    "John McGinn"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "90'+1'",
+   "team": "Scotland",
+   "text": "Substitution, Scotland. Ché Adams replaces Lawrence Shankland.",
+   "players": [
+    "Ché Adams",
+    "Lawrence Shankland"
+   ]
+  },
+  {
+   "type": "End Regular Time",
+   "minute": "90'+7'",
+   "team": null,
+   "text": "Second Half ends, Scotland 0, Brazil 3.",
+   "players": []
+  }
+ ],
+ "shots": [
+  {
+   "minute": "7",
+   "seconds": 371.0,
+   "team": "Brazil",
+   "player": "Casemiro",
+   "type": "Shot Blocked",
+   "x": 71.7,
+   "y": 51.2,
+   "goal": false,
+   "xg": 0.058,
+   "text": "Attempt blocked. Casemiro (Brazil) right footed shot from outside the box is blocked. Assisted by Vinícius Júnior."
+  },
+  {
+   "minute": "7",
+   "seconds": 405.0,
+   "team": "Brazil",
+   "player": "Vinícius Júnior",
+   "type": "Goal",
+   "x": 91.9,
+   "y": 49.0,
+   "goal": true,
+   "xg": 0.51,
+   "text": "Goal! Scotland 0, Brazil 1. Vinícius Júnior (Brazil) right footed shot from the centre of the box to the centre of the goal. Assisted by Rayan."
+  },
+  {
+   "minute": "11",
+   "seconds": 646.0,
+   "team": "Brazil",
+   "player": "Bruno Guimarães",
+   "type": "Shot Blocked",
+   "x": 80.4,
+   "y": 27.7,
+   "goal": false,
+   "xg": 0.075,
+   "text": "Attempt blocked. Bruno Guimarães (Brazil) right footed shot from outside the box is blocked. Assisted by Matheus Cunha."
+  },
+  {
+   "minute": "12",
+   "seconds": 679.0,
+   "team": "Brazil",
+   "player": "Matheus Cunha",
+   "type": "Shot Off Target",
+   "x": 77.3,
+   "y": 30.6,
+   "goal": false,
+   "xg": 0.067,
+   "text": "Attempt missed. Matheus Cunha (Brazil) right footed shot from outside the box is high and wide to the left. Assisted by Rayan."
+  },
+  {
+   "minute": "20",
+   "seconds": 1143.0,
+   "team": "Brazil",
+   "player": "Vinícius Júnior",
+   "type": "Shot Off Target",
+   "x": 86.8,
+   "y": 32.3,
+   "goal": false,
+   "xg": 0.141,
+   "text": "Attempt missed. Vinícius Júnior (Brazil) right footed shot from the right side of the box misses to the left. Assisted by Rayan following a fast break."
+  },
+  {
+   "minute": "33",
+   "seconds": 1930.0,
+   "team": "Scotland",
+   "player": "Lewis Ferguson",
+   "type": "Shot Blocked",
+   "x": 71.6,
+   "y": 36.4,
+   "goal": false,
+   "xg": 0.05,
+   "text": "Attempt missed. Lewis Ferguson (Scotland) right footed shot from outside the box misses to the left."
+  },
+  {
+   "minute": "36",
+   "seconds": 2131.0,
+   "team": "Scotland",
+   "player": "Kenny McLean",
+   "type": "Shot Blocked",
+   "x": 72.1,
+   "y": 47.1,
+   "goal": false,
+   "xg": 0.06,
+   "text": "Attempt blocked. Kenny McLean (Scotland) left footed shot from outside the box is blocked. Assisted by Lawrence Shankland."
+  },
+  {
+   "minute": "38",
+   "seconds": 2243.0,
+   "team": "Brazil",
+   "player": "Rayan",
+   "type": "Shot Off Target",
+   "x": 78.4,
+   "y": 33.8,
+   "goal": false,
+   "xg": 0.082,
+   "text": "Attempt missed. Rayan (Brazil) left footed shot from outside the box is high and wide to the left. Assisted by Bruno Guimarães."
+  },
+  {
+   "minute": "42",
+   "seconds": 2482.0,
+   "team": "Brazil",
+   "player": "Matheus Cunha",
+   "type": "Shot Off Target",
+   "x": 80.2,
+   "y": 64.2,
+   "goal": false,
+   "xg": 0.101,
+   "text": "Attempt missed. Matheus Cunha (Brazil) right footed shot from outside the box misses to the right. Assisted by Lucas Paquetá."
+  },
+  {
+   "minute": "45",
+   "seconds": 2654.0,
+   "team": "Brazil",
+   "player": "Matheus Cunha",
+   "type": "Shot Blocked",
+   "x": 96.7,
+   "y": 44.0,
+   "goal": false,
+   "xg": 0.682,
+   "text": "Attempt blocked. Matheus Cunha (Brazil) right footed shot from the right side of the six yard box is blocked. Assisted by Vinícius Júnior."
+  },
+  {
+   "minute": "45'+2",
+   "seconds": 2700.0,
+   "team": "Scotland",
+   "player": "Ben Gannon-Doak",
+   "type": "Shot Off Target",
+   "x": 86.0,
+   "y": 69.2,
+   "goal": false,
+   "xg": 0.124,
+   "text": "Attempt missed. Ben Gannon-Doak (Scotland) right footed shot from the left side of the box misses to the left. Assisted by Lawrence Shankland."
+  },
+  {
+   "minute": "45'+3",
+   "seconds": 2700.0,
+   "team": "Brazil",
+   "player": "Vinícius Júnior",
+   "type": "Goal - Header",
+   "x": 96.8,
+   "y": 53.2,
+   "goal": true,
+   "xg": 0.559,
+   "text": "Goal! Scotland 0, Brazil 2. Vinícius Júnior (Brazil) header from very close range to the top left corner. Assisted by Bruno Guimarães with a cross."
+  },
+  {
+   "minute": "45'+6",
+   "seconds": 2700.0,
+   "team": "Scotland",
+   "player": "Ben Gannon-Doak",
+   "type": "Shot Blocked",
+   "x": 81.6,
+   "y": 45.0,
+   "goal": false,
+   "xg": 0.145,
+   "text": "Attempt blocked. Ben Gannon-Doak (Scotland) right footed shot from outside the box is blocked. Assisted by Jack Hendry with a headed pass."
+  },
+  {
+   "minute": "45'+6",
+   "seconds": 2700.0,
+   "team": "Brazil",
+   "player": "Rayan",
+   "type": "Shot On Target",
+   "x": 85.7,
+   "y": 54.4,
+   "goal": false,
+   "xg": 0.226,
+   "text": "Attempt saved. Rayan (Brazil) right footed shot from the centre of the box is saved in the bottom right corner by Angus Gunn (Scotland). Assisted by Lucas Paquetá with a through ball."
+  },
+  {
+   "minute": "45'+7",
+   "seconds": 2700.0,
+   "team": "Brazil",
+   "player": "Douglas Santos",
+   "type": "Shot Off Target",
+   "x": 83.7,
+   "y": 69.1,
+   "goal": false,
+   "xg": 0.108,
+   "text": "Attempt missed. Douglas Santos (Brazil) left footed shot from the left side of the box misses to the right following a corner."
+  },
+  {
+   "minute": "49",
+   "seconds": 2934.0,
+   "team": "Scotland",
+   "player": "Scott McTominay",
+   "type": "Shot On Target",
+   "x": 91.4,
+   "y": 49.1,
+   "goal": false,
+   "xg": 0.31,
+   "text": "Attempt saved. Scott McTominay (Scotland) header from the centre of the box is saved in the top centre of the goal by Alisson Becker (Brazil). Assisted by Kieran Tierney with a cross."
+  },
+  {
+   "minute": "51",
+   "seconds": 3055.0,
+   "team": "Brazil",
+   "player": "Vinícius Júnior",
+   "type": "Shot On Target",
+   "x": 87.4,
+   "y": 57.7,
+   "goal": false,
+   "xg": 0.245,
+   "text": "Attempt saved. Vinícius Júnior (Brazil) right footed shot from the centre of the box is saved in the bottom right corner by Angus Gunn (Scotland). Assisted by Lucas Paquetá with a through ball."
+  },
+  {
+   "minute": "54",
+   "seconds": 3217.0,
+   "team": "Brazil",
+   "player": "Vinícius Júnior",
+   "type": "Shot On Target",
+   "x": 71.3,
+   "y": 68.3,
+   "goal": false,
+   "xg": 0.044,
+   "text": "Attempt saved. Vinícius Júnior (Brazil) right footed shot from outside the box is saved in the top centre of the goal by Angus Gunn (Scotland). Assisted by Lucas Paquetá."
+  },
+  {
+   "minute": "59",
+   "seconds": 3513.0,
+   "team": "Brazil",
+   "player": "Matheus Cunha",
+   "type": "Shot Blocked",
+   "x": 85.9,
+   "y": 30.6,
+   "goal": false,
+   "xg": 0.122,
+   "text": "Attempt blocked. Matheus Cunha (Brazil) right footed shot from the right side of the box is blocked. Assisted by Rayan."
+  },
+  {
+   "minute": "59",
+   "seconds": 3518.0,
+   "team": "Brazil",
+   "player": "Lucas Paquetá",
+   "type": "Shot Off Target",
+   "x": 81.8,
+   "y": 57.3,
+   "goal": false,
+   "xg": 0.142,
+   "text": "Attempt missed. Lucas Paquetá (Brazil) right footed shot from outside the box is high and wide to the right."
+  },
+  {
+   "minute": "60",
+   "seconds": 3595.0,
+   "team": "Brazil",
+   "player": "Matheus Cunha",
+   "type": "Goal",
+   "x": 88.0,
+   "y": 41.3,
+   "goal": true,
+   "xg": 0.249,
+   "text": "Goal! Scotland 0, Brazil 3. Matheus Cunha (Brazil) right footed shot from the centre of the box to the bottom right corner. Assisted by Bruno Guimarães."
+  },
+  {
+   "minute": "64",
+   "seconds": 3785.0,
+   "team": "Scotland",
+   "player": "Lewis Ferguson",
+   "type": "Shot On Target",
+   "x": 93.6,
+   "y": 80.6,
+   "goal": false,
+   "xg": 0.075,
+   "text": "Attempt saved. Lewis Ferguson (Scotland) right footed shot from a difficult angle and long range on the left is saved in the top right corner by Alisson Becker (Brazil)."
+  },
+  {
+   "minute": "64",
+   "seconds": 3823.0,
+   "team": "Scotland",
+   "player": "Scott McTominay",
+   "type": "Shot On Target",
+   "x": 92.6,
+   "y": 46.7,
+   "goal": false,
+   "xg": 0.344,
+   "text": "Attempt saved. Scott McTominay (Scotland) header from the centre of the box is saved in the bottom left corner by Alisson Becker (Brazil). Assisted by Kieran Tierney with a cross."
+  },
+  {
+   "minute": "72",
+   "seconds": 4317.0,
+   "team": "Scotland",
+   "player": "Lawrence Shankland",
+   "type": "Shot Blocked",
+   "x": 90.3,
+   "y": 65.4,
+   "goal": false,
+   "xg": 0.196,
+   "text": "Attempt missed. Lawrence Shankland (Scotland) left footed shot from the left side of the box misses to the right. Assisted by Kieran Tierney with a cross."
+  },
+  {
+   "minute": "72",
+   "seconds": 4319.0,
+   "team": "Scotland",
+   "player": "Scott McTominay",
+   "type": "Shot Off Target",
+   "x": 92.6,
+   "y": 52.3,
+   "goal": false,
+   "xg": 0.547,
+   "text": "Attempt missed. Scott McTominay (Scotland) left footed shot from the centre of the box is just a bit too high. Assisted by Lawrence Shankland."
+  },
+  {
+   "minute": "76",
+   "seconds": 4527.0,
+   "team": "Scotland",
+   "player": "Lawrence Shankland",
+   "type": "Shot Off Target",
+   "x": 91.6,
+   "y": 54.8,
+   "goal": false,
+   "xg": 0.286,
+   "text": "Attempt missed. Lawrence Shankland (Scotland) header from the centre of the box is just a bit too high. Assisted by Lewis Ferguson with a cross following a corner."
+  },
+  {
+   "minute": "79",
+   "seconds": 4683.0,
+   "team": "Brazil",
+   "player": "Vinícius Júnior",
+   "type": "Shot On Target",
+   "x": 90.4,
+   "y": 70.2,
+   "goal": false,
+   "xg": 0.141,
+   "text": "Attempt saved. Vinícius Júnior (Brazil) right footed shot from the left side of the box is saved in the bottom left corner by Angus Gunn (Scotland). Assisted by Neymar."
+  },
+  {
+   "minute": "81",
+   "seconds": 4816.0,
+   "team": "Brazil",
+   "player": "Vinícius Júnior",
+   "type": "Shot Off Target",
+   "x": 93.4,
+   "y": 52.8,
+   "goal": false,
+   "xg": 0.598,
+   "text": "Attempt missed. Vinícius Júnior (Brazil) right footed shot from the centre of the box is close, but misses to the left. Assisted by Danilo following a fast break."
+  },
+  {
+   "minute": "83",
+   "seconds": 4952.0,
+   "team": "Scotland",
+   "player": "Ryan Christie",
+   "type": "Shot Off Target",
+   "x": 85.3,
+   "y": 39.7,
+   "goal": false,
+   "xg": 0.181,
+   "text": "Attempt missed. Ryan Christie (Scotland) right footed shot from the centre of the box misses to the left following a set piece situation."
+  },
+  {
+   "minute": "84",
+   "seconds": 4985.0,
+   "team": "Scotland",
+   "player": "Kieran Tierney",
+   "type": "Shot Blocked",
+   "x": 88.9,
+   "y": 68.4,
+   "goal": false,
+   "xg": 0.151,
+   "text": "Attempt blocked. Kieran Tierney (Scotland) left footed shot from the left side of the box is blocked."
+  },
+  {
+   "minute": "86",
+   "seconds": 5126.0,
+   "team": "Brazil",
+   "player": "Gabriel Magalhães",
+   "type": "Shot Blocked",
+   "x": 90.9,
+   "y": 40.7,
+   "goal": false,
+   "xg": 0.314,
+   "text": "Attempt blocked. Gabriel Magalhães (Brazil) left footed shot from the centre of the box is blocked. Assisted by Neymar with a cross."
+  },
+  {
+   "minute": "89",
+   "seconds": 5300.0,
+   "team": "Scotland",
+   "player": "Anthony Ralston",
+   "type": "Shot On Target",
+   "x": 86.9,
+   "y": 39.5,
+   "goal": false,
+   "xg": 0.207,
+   "text": "Attempt saved. Anthony Ralston (Scotland) left footed shot from the centre of the box is saved in the centre of the goal by Alisson Becker (Brazil). Assisted by John McGinn with a cross."
+  },
+  {
+   "minute": "90",
+   "seconds": 5368.0,
+   "team": "Brazil",
+   "player": "Neymar",
+   "type": "Shot On Target",
+   "x": 86.1,
+   "y": 75.0,
+   "goal": false,
+   "xg": 0.091,
+   "text": "Attempt saved. Neymar (Brazil) right footed shot from the left side of the box is saved in the top left corner by Angus Gunn (Scotland)."
+  },
+  {
+   "minute": "90'+6",
+   "seconds": 5400.0,
+   "team": "Scotland",
+   "player": "Scott McTominay",
+   "type": "Shot On Target",
+   "x": 95.4,
+   "y": 54.0,
+   "goal": false,
+   "xg": 0.719,
+   "text": "Attempt saved. Scott McTominay (Scotland) left footed shot from very close range is saved in the centre of the goal by Alisson Becker (Brazil). Assisted by Anthony Ralston."
+  },
+  {
+   "minute": "90'+6",
+   "seconds": 5400.0,
+   "team": "Brazil",
+   "player": "Vinícius Júnior",
+   "type": "Shot Blocked",
+   "x": 86.4,
+   "y": 59.9,
+   "goal": false,
+   "xg": 0.203,
+   "text": "Attempt blocked. Vinícius Júnior (Brazil) left footed shot from the centre of the box is blocked. Assisted by Neymar."
+  }
+ ],
+ "lineups": [
+  {
+   "team": "Scotland",
+   "formation": "4-2-3-1",
+   "starters": [
+    {
+     "name": "Angus Gunn",
+     "jersey": "1",
+     "position": "G"
+    },
+    {
+     "name": "Scott McKenna",
+     "jersey": "26",
+     "position": "CD-L"
+    },
+    {
+     "name": "Jack Hendry",
+     "jersey": "13",
+     "position": "CD-R"
+    },
+    {
+     "name": "Andy Robertson",
+     "jersey": "3",
+     "position": "LB"
+    },
+    {
+     "name": "Nathan Patterson",
+     "jersey": "22",
+     "position": "RB"
+    },
+    {
+     "name": "Scott McTominay",
+     "jersey": "4",
+     "position": "AM"
+    },
+    {
+     "name": "Kenny McLean",
+     "jersey": "23",
+     "position": "LM"
+    },
+    {
+     "name": "Lewis Ferguson",
+     "jersey": "19",
+     "position": "RM"
+    },
+    {
+     "name": "Lawrence Shankland",
+     "jersey": "20",
+     "position": "F"
+    },
+    {
+     "name": "John McGinn",
+     "jersey": "7",
+     "position": "AM-L"
+    },
+    {
+     "name": "Ben Gannon-Doak",
+     "jersey": "17",
+     "position": "AM-R"
+    }
+   ],
+   "subs": [
+    {
+     "name": "George Hirst",
+     "jersey": "18",
+     "position": "SUB"
+    },
+    {
+     "name": "Dominic Hyam",
+     "jersey": "16",
+     "position": "SUB"
+    },
+    {
+     "name": "Ché Adams",
+     "jersey": "10",
+     "position": "SUB"
+    },
+    {
+     "name": "John Souttar",
+     "jersey": "15",
+     "position": "SUB"
+    },
+    {
+     "name": "Liam Kelly",
+     "jersey": "12",
+     "position": "SUB"
+    },
+    {
+     "name": "Grant Hanley",
+     "jersey": "5",
+     "position": "SUB"
+    },
+    {
+     "name": "Ross Stewart",
+     "jersey": "14",
+     "position": "SUB"
+    },
+    {
+     "name": "Anthony Ralston",
+     "jersey": "24",
+     "position": "SUB"
+    },
+    {
+     "name": "Ryan Christie",
+     "jersey": "11",
+     "position": "SUB"
+    },
+    {
+     "name": "Lyndon Dykes",
+     "jersey": "9",
+     "position": "SUB"
+    },
+    {
+     "name": "Kieran Tierney",
+     "jersey": "6",
+     "position": "SUB"
+    },
+    {
+     "name": "Craig Gordon",
+     "jersey": "21",
+     "position": "SUB"
+    },
+    {
+     "name": "Aaron Hickey",
+     "jersey": "2",
+     "position": "SUB"
+    },
+    {
+     "name": "Tyler Fletcher",
+     "jersey": "8",
+     "position": "SUB"
+    },
+    {
+     "name": "Findlay Curtis",
+     "jersey": "25",
+     "position": "SUB"
+    }
+   ]
+  },
+  {
+   "team": "Brazil",
+   "formation": "4-3-3",
+   "starters": [
+    {
+     "name": "Alisson Becker",
+     "jersey": "1",
+     "position": "G"
+    },
+    {
+     "name": "Gabriel Magalhães",
+     "jersey": "3",
+     "position": "CD-L"
+    },
+    {
+     "name": "Marquinhos",
+     "jersey": "4",
+     "position": "CD-R"
+    },
+    {
+     "name": "Douglas Santos",
+     "jersey": "16",
+     "position": "LB"
+    },
+    {
+     "name": "Danilo",
+     "jersey": "13",
+     "position": "RB"
+    },
+    {
+     "name": "Casemiro",
+     "jersey": "5",
+     "position": "CM"
+    },
+    {
+     "name": "Lucas Paquetá",
+     "jersey": "20",
+     "position": "LM"
+    },
+    {
+     "name": "Bruno Guimarães",
+     "jersey": "8",
+     "position": "RM"
+    },
+    {
+     "name": "Matheus Cunha",
+     "jersey": "9",
+     "position": "F"
+    },
+    {
+     "name": "Vinícius Júnior",
+     "jersey": "7",
+     "position": "LF"
+    },
+    {
+     "name": "Rayan",
+     "jersey": "26",
+     "position": "RF"
+    }
+   ],
+   "subs": [
+    {
+     "name": "Fabinho",
+     "jersey": "17",
+     "position": "SUB"
+    },
+    {
+     "name": "Igor Thiago",
+     "jersey": "25",
+     "position": "SUB"
+    },
+    {
+     "name": "Luiz Henrique",
+     "jersey": "21",
+     "position": "SUB"
+    },
+    {
+     "name": "Ederson ",
+     "jersey": "23",
+     "position": "SUB"
+    },
+    {
+     "name": "Danilo Santos",
+     "jersey": "18",
+     "position": "SUB"
+    },
+    {
+     "name": "Roger Ibañez",
+     "jersey": "24",
+     "position": "SUB"
+    },
+    {
+     "name": "Léo Pereira",
+     "jersey": "15",
+     "position": "SUB"
+    },
+    {
+     "name": "Weverton",
+     "jersey": "12",
+     "position": "SUB"
+    },
+    {
+     "name": "Neymar",
+     "jersey": "10",
+     "position": "SUB"
+    },
+    {
+     "name": "Endrick",
+     "jersey": "19",
+     "position": "SUB"
+    },
+    {
+     "name": "Gabriel Martinelli",
+     "jersey": "22",
+     "position": "SUB"
+    },
+    {
+     "name": "Alex Sandro",
+     "jersey": "6",
+     "position": "SUB"
+    },
+    {
+     "name": "Éderson",
+     "jersey": "2",
+     "position": "SUB"
+    },
+    {
+     "name": "Bremer",
+     "jersey": "14",
+     "position": "SUB"
+    }
+   ]
+  }
+ ],
+ "attendance": 64478,
+ "venue": "Hard Rock Stadium, Miami Gardens, Florida, USA"
+}

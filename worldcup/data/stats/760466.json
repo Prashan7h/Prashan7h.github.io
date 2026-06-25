@@ -1,0 +1,750 @@
+{
+ "teams": [
+  {
+   "name": "South Africa",
+   "stats": {
+    "possessionPct": "31.5",
+    "totalShots": "13",
+    "shotsOnTarget": "4",
+    "wonCorners": "4",
+    "foulsCommitted": "7",
+    "offsides": "3",
+    "saves": "2",
+    "yellowCards": "1",
+    "redCards": "0"
+   }
+  },
+  {
+   "name": "South Korea",
+   "stats": {
+    "possessionPct": "68.5",
+    "totalShots": "8",
+    "shotsOnTarget": "3",
+    "wonCorners": "6",
+    "foulsCommitted": "9",
+    "offsides": "0",
+    "saves": "3",
+    "yellowCards": "1",
+    "redCards": "0"
+   }
+  }
+ ],
+ "events": [
+  {
+   "type": "Kickoff",
+   "minute": "",
+   "team": null,
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "23'",
+   "team": "South Korea",
+   "text": "Delay in match for a drinks break.",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "23'",
+   "team": "South Africa",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "26'",
+   "team": "South Korea",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "26'",
+   "team": "South Africa",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Halftime",
+   "minute": "45'+5'",
+   "team": null,
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Substitution",
+   "minute": "45'",
+   "team": "South Korea",
+   "text": "Substitution, Korea Republic. Son Heung-Min replaces Hwang Hee-Chan.",
+   "players": [
+    "Son Heung-Min",
+    "Hwang Hee-Chan"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "45'",
+   "team": "South Korea",
+   "text": "Substitution, Korea Republic. Kim Jin-Gyu replaces Paik Seung-Ho.",
+   "players": [
+    "Kim Jin-Gyu",
+    "Paik Seung-Ho"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "45'",
+   "team": "South Korea",
+   "text": "Substitution, Korea Republic. Jens Castrop replaces Lee Tae-Seok.",
+   "players": [
+    "Jens Castrop",
+    "Lee Tae-Seok"
+   ]
+  },
+  {
+   "type": "Start 2nd Half",
+   "minute": "45'",
+   "team": null,
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Substitution",
+   "minute": "62'",
+   "team": "South Africa",
+   "text": "Substitution, South Africa. Tshepang Moremi replaces Oswin Appollis.",
+   "players": [
+    "Tshepang Moremi",
+    "Oswin Appollis"
+   ]
+  },
+  {
+   "type": "Goal",
+   "minute": "63'",
+   "team": "South Africa",
+   "text": "Goal! South Africa 1, Korea Republic 0. Thapelo Maseko (South Africa) left footed shot from the centre of the box to the bottom right corner. Assisted by Tshepang Moremi following a fast break.",
+   "players": [
+    "Thapelo Maseko",
+    "Tshepang Moremi"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "66'",
+   "team": "South Korea",
+   "text": "Substitution, Korea Republic. Park Jin-Seob replaces Kim Min-Jae.",
+   "players": [
+    "Park Jin-Seop",
+    "Kim Min-Jae"
+   ]
+  },
+  {
+   "type": "Start Delay",
+   "minute": "69'",
+   "team": "South Korea",
+   "text": "Delay in match for a drinks break.",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "69'",
+   "team": "South Africa",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "71'",
+   "team": "South Korea",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "71'",
+   "team": "South Africa",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Yellow Card",
+   "minute": "73'",
+   "team": "South Africa",
+   "text": "Aubrey Modiba (South Africa) is shown the yellow card for a bad foul.",
+   "players": [
+    "Aubrey Modiba"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "74'",
+   "team": "South Korea",
+   "text": "Substitution, Korea Republic. Cho Gue-Sung replaces Oh Hyeon-Gyu.",
+   "players": [
+    "Cho Gue-Sung",
+    "Oh Hyeon-Gyu"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "75'",
+   "team": "South Africa",
+   "text": "Substitution, South Africa. Iqraam Rayners replaces Thapelo Maseko.",
+   "players": [
+    "Iqraam Rayners",
+    "Thapelo Maseko"
+   ]
+  },
+  {
+   "type": "Yellow Card",
+   "minute": "79'",
+   "team": "South Korea",
+   "text": "Cho Gue-Sung (Korea Republic) is shown the yellow card for a bad foul.",
+   "players": [
+    "Cho Gue-Sung"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "80'",
+   "team": "South Africa",
+   "text": "Substitution, South Africa. Jayden Adams replaces Relebohile Mofokeng.",
+   "players": [
+    "Jayden Adams",
+    "Relebohile Mofokeng"
+   ]
+  },
+  {
+   "type": "End Regular Time",
+   "minute": "90'+7'",
+   "team": null,
+   "text": "",
+   "players": []
+  }
+ ],
+ "shots": [
+  {
+   "minute": "2",
+   "seconds": 108.0,
+   "team": "South Korea",
+   "player": "Kim Min-Jae",
+   "type": "Shot Blocked",
+   "x": 91.9,
+   "y": 56.4,
+   "goal": false,
+   "xg": 0.271,
+   "text": "Attempt blocked. Kim Min-Jae (Korea Republic) header from the centre of the box is blocked. Assisted by Lee Kang-In with a cross."
+  },
+  {
+   "minute": "6",
+   "seconds": 335.0,
+   "team": "South Africa",
+   "player": "Relebohile Mofokeng",
+   "type": "Shot Blocked",
+   "x": 79.1,
+   "y": 38.7,
+   "goal": false,
+   "xg": 0.1,
+   "text": "Attempt blocked. Relebohile Mofokeng (South Africa) left footed shot from outside the box is blocked."
+  },
+  {
+   "minute": "7",
+   "seconds": 419.0,
+   "team": "South Korea",
+   "player": "Oh Hyeon-Gyu",
+   "type": "Shot Off Target",
+   "x": 96.2,
+   "y": 44.5,
+   "goal": false,
+   "xg": 0.693,
+   "text": "Attempt missed. Oh Hyeon-Gyu (Korea Republic) right footed shot from the right side of the six yard box misses to the left. Assisted by Seol Young-Woo with a cross."
+  },
+  {
+   "minute": "8",
+   "seconds": 423.0,
+   "team": "South Korea",
+   "player": "Lee Kang-In",
+   "type": "Shot Off Target",
+   "x": 87.0,
+   "y": 45.4,
+   "goal": false,
+   "xg": 0.259,
+   "text": "Attempt missed. Lee Kang-In (Korea Republic) left footed shot from the centre of the box misses to the right. Assisted by Lee Tae-Seok."
+  },
+  {
+   "minute": "14",
+   "seconds": 831.0,
+   "team": "South Africa",
+   "player": "Evidence Makgopa",
+   "type": "Shot Off Target",
+   "x": 90.0,
+   "y": 48.8,
+   "goal": false,
+   "xg": 0.258,
+   "text": "Attempt missed. Evidence Makgopa (South Africa) header from the centre of the box misses to the right. Assisted by Aubrey Modiba with a cross."
+  },
+  {
+   "minute": "19",
+   "seconds": 1102.0,
+   "team": "South Africa",
+   "player": "Thapelo Maseko",
+   "type": "Shot Blocked",
+   "x": 86.5,
+   "y": 39.5,
+   "goal": false,
+   "xg": 0.2,
+   "text": "Attempt blocked. Thapelo Maseko (South Africa) left footed shot from the centre of the box is blocked. Assisted by Relebohile Mofokeng."
+  },
+  {
+   "minute": "20",
+   "seconds": 1154.0,
+   "team": "South Africa",
+   "player": "Oswin Appollis",
+   "type": "Shot On Target",
+   "x": 76.3,
+   "y": 67.3,
+   "goal": false,
+   "xg": 0.067,
+   "text": "Attempt saved. Oswin Appollis (South Africa) right footed shot from outside the box is saved in the centre of the goal by Kim Seung-Gyu (Korea Republic). Assisted by Mbekezeli Mbokazi."
+  },
+  {
+   "minute": "30",
+   "seconds": 1786.0,
+   "team": "South Africa",
+   "player": "Thalente Mbatha",
+   "type": "Shot On Target",
+   "x": 78.0,
+   "y": 36.0,
+   "goal": false,
+   "xg": 0.085,
+   "text": "Attempt saved. Thalente Mbatha (South Africa) left footed shot from outside the box is saved in the centre of the goal by Kim Seung-Gyu (Korea Republic). Assisted by Thapelo Maseko."
+  },
+  {
+   "minute": "30",
+   "seconds": 1789.0,
+   "team": "South Africa",
+   "player": "Evidence Makgopa",
+   "type": "Shot On Target",
+   "x": 90.9,
+   "y": 50.9,
+   "goal": false,
+   "xg": 0.447,
+   "text": "Attempt saved. Evidence Makgopa (South Africa) left footed shot from the centre of the box is saved in the centre of the goal by Kim Seung-Gyu (Korea Republic)."
+  },
+  {
+   "minute": "34",
+   "seconds": 2020.0,
+   "team": "South Korea",
+   "player": "Hwang Hee-Chan",
+   "type": "Shot Off Target",
+   "x": 70.9,
+   "y": 62.4,
+   "goal": false,
+   "xg": 0.048,
+   "text": "Attempt missed. Hwang Hee-Chan (Korea Republic) right footed shot from outside the box is close, but misses to the left. Assisted by Kim Min-Jae."
+  },
+  {
+   "minute": "39",
+   "seconds": 2296.0,
+   "team": "South Africa",
+   "player": "Thapelo Maseko",
+   "type": "Shot Off Target",
+   "x": 74.0,
+   "y": 43.5,
+   "goal": false,
+   "xg": 0.069,
+   "text": "Attempt missed. Thapelo Maseko (South Africa) left footed shot from outside the box is too high. Assisted by Relebohile Mofokeng following a fast break."
+  },
+  {
+   "minute": "42",
+   "seconds": 2490.0,
+   "team": "South Africa",
+   "player": "Relebohile Mofokeng",
+   "type": "Shot Off Target",
+   "x": 77.1,
+   "y": 65.8,
+   "goal": false,
+   "xg": 0.075,
+   "text": "Attempt missed. Relebohile Mofokeng (South Africa) right footed shot from outside the box misses to the right. Assisted by Ime Okon following a set piece situation."
+  },
+  {
+   "minute": "43",
+   "seconds": 2546.0,
+   "team": "South Africa",
+   "player": "Thapelo Maseko",
+   "type": "Shot Blocked",
+   "x": 79.4,
+   "y": 28.7,
+   "goal": false,
+   "xg": 0.073,
+   "text": "Attempt blocked. Thapelo Maseko (South Africa) left footed shot from outside the box is blocked. Assisted by Relebohile Mofokeng."
+  },
+  {
+   "minute": "45'+5",
+   "seconds": 2700.0,
+   "team": "South Africa",
+   "player": "Aubrey Modiba",
+   "type": "Shot Off Target",
+   "x": 73.2,
+   "y": 43.2,
+   "goal": false,
+   "xg": 0.064,
+   "text": "Attempt missed. Aubrey Modiba (South Africa) left footed shot from outside the box misses to the right following a corner."
+  },
+  {
+   "minute": "51",
+   "seconds": 3005.0,
+   "team": "South Africa",
+   "player": "Thapelo Maseko",
+   "type": "Shot Blocked",
+   "x": 86.1,
+   "y": 44.1,
+   "goal": false,
+   "xg": 0.227,
+   "text": "Attempt blocked. Thapelo Maseko (South Africa) left footed shot from the centre of the box is blocked. Assisted by Relebohile Mofokeng."
+  },
+  {
+   "minute": "51",
+   "seconds": 3015.0,
+   "team": "South Africa",
+   "player": "Thalente Mbatha",
+   "type": "Shot Off Target",
+   "x": 68.2,
+   "y": 52.3,
+   "goal": false,
+   "xg": 0.042,
+   "text": "Attempt missed. Thalente Mbatha (South Africa) right footed shot from outside the box misses to the right. Assisted by Yaya Sithole."
+  },
+  {
+   "minute": "60",
+   "seconds": 3594.0,
+   "team": "South Korea",
+   "player": "Oh Hyeon-Gyu",
+   "type": "Shot On Target",
+   "x": 91.3,
+   "y": 48.9,
+   "goal": false,
+   "xg": 0.306,
+   "text": "Attempt saved. Oh Hyeon-Gyu (Korea Republic) header from the centre of the box is saved in the bottom left corner by Ronwen Williams (South Africa). Assisted by Seol Young-Woo with a cross."
+  },
+  {
+   "minute": "63",
+   "seconds": 3737.0,
+   "team": "South Africa",
+   "player": "Thapelo Maseko",
+   "type": "Goal",
+   "x": 87.7,
+   "y": 39.1,
+   "goal": true,
+   "xg": 0.218,
+   "text": "Goal! South Africa 1, Korea Republic 0. Thapelo Maseko (South Africa) left footed shot from the centre of the box to the bottom right corner. Assisted by Tshepang Moremi following a fast break."
+  },
+  {
+   "minute": "86",
+   "seconds": 5132.0,
+   "team": "South Korea",
+   "player": "Seol Young-Woo",
+   "type": "Shot Off Target",
+   "x": 75.8,
+   "y": 33.8,
+   "goal": false,
+   "xg": 0.066,
+   "text": "Attempt missed. Seol Young-Woo (Korea Republic) right footed shot from outside the box is too high following a corner."
+  },
+  {
+   "minute": "88",
+   "seconds": 5273.0,
+   "team": "South Korea",
+   "player": "Son Heung-Min",
+   "type": "Shot Blocked",
+   "x": 77.8,
+   "y": 51.9,
+   "goal": false,
+   "xg": 0.103,
+   "text": "Attempt blocked. Son Heung-Min (Korea Republic) left footed shot from outside the box is blocked. Assisted by Kim Jin-Gyu."
+  },
+  {
+   "minute": "90'+3",
+   "seconds": 5400.0,
+   "team": "South Korea",
+   "player": "Park Jin-Seob",
+   "type": "Shot On Target",
+   "x": 97.1,
+   "y": 55.8,
+   "goal": false,
+   "xg": 0.467,
+   "text": "Attempt saved. Park Jin-Seob (Korea Republic) header from the left side of the six yard box is saved in the top left corner by Ronwen Williams (South Africa). Assisted by Jens Castrop with a cross."
+  }
+ ],
+ "lineups": [
+  {
+   "team": "South Africa",
+   "formation": "4-2-3-1",
+   "starters": [
+    {
+     "name": "Ronwen Williams",
+     "jersey": "1",
+     "position": "G"
+    },
+    {
+     "name": "Mbekezeli Mbokazi",
+     "jersey": "14",
+     "position": "CD-L"
+    },
+    {
+     "name": "Ime Okon",
+     "jersey": "21",
+     "position": "CD-R"
+    },
+    {
+     "name": "Aubrey Modiba",
+     "jersey": "6",
+     "position": "LB"
+    },
+    {
+     "name": "Khuliso Mudau",
+     "jersey": "20",
+     "position": "RB"
+    },
+    {
+     "name": "Relebohile Mofokeng",
+     "jersey": "10",
+     "position": "AM"
+    },
+    {
+     "name": "Sphephelo Sithole",
+     "jersey": "13",
+     "position": "LM"
+    },
+    {
+     "name": "Thalente Mbatha",
+     "jersey": "5",
+     "position": "RM"
+    },
+    {
+     "name": "Evidence Makgopa",
+     "jersey": "17",
+     "position": "F"
+    },
+    {
+     "name": "Oswin Appollis",
+     "jersey": "7",
+     "position": "AM-L"
+    },
+    {
+     "name": "Thapelo Maseko",
+     "jersey": "12",
+     "position": "AM-R"
+    }
+   ],
+   "subs": [
+    {
+     "name": "Lyle Foster",
+     "jersey": "9",
+     "position": "SUB"
+    },
+    {
+     "name": "Olwethu Makhanya",
+     "jersey": "24",
+     "position": "SUB"
+    },
+    {
+     "name": "Khulumani Ndamane",
+     "jersey": "3",
+     "position": "SUB"
+    },
+    {
+     "name": "Bradley Cross",
+     "jersey": "26",
+     "position": "SUB"
+    },
+    {
+     "name": "Ricardo Goss",
+     "jersey": "22",
+     "position": "SUB"
+    },
+    {
+     "name": "Thabang Matuludi",
+     "jersey": "2",
+     "position": "SUB"
+    },
+    {
+     "name": "Nkosinathi Sibisi",
+     "jersey": "19",
+     "position": "SUB"
+    },
+    {
+     "name": "Samukele Kabini",
+     "jersey": "18",
+     "position": "SUB"
+    },
+    {
+     "name": "Sipho Chaine",
+     "jersey": "16",
+     "position": "SUB"
+    },
+    {
+     "name": "Tshepang Moremi",
+     "jersey": "8",
+     "position": "SUB"
+    },
+    {
+     "name": "Kamogelo Sebelebele",
+     "jersey": "25",
+     "position": "SUB"
+    },
+    {
+     "name": "Jayden Adams",
+     "jersey": "23",
+     "position": "SUB"
+    },
+    {
+     "name": "Iqraam Rayners",
+     "jersey": "15",
+     "position": "SUB"
+    }
+   ]
+  },
+  {
+   "team": "South Korea",
+   "formation": "3-4-2-1",
+   "starters": [
+    {
+     "name": "Kim Seung-Gyu",
+     "jersey": "1",
+     "position": "G"
+    },
+    {
+     "name": "Kim Min-Jae",
+     "jersey": "4",
+     "position": "CD"
+    },
+    {
+     "name": "Lee Gi-Hyuk",
+     "jersey": "3",
+     "position": "CD-L"
+    },
+    {
+     "name": "Lee Han-Beom",
+     "jersey": "2",
+     "position": "CD-R"
+    },
+    {
+     "name": "Hwang In-Beom",
+     "jersey": "6",
+     "position": "CM-L"
+    },
+    {
+     "name": "Paik Seung-Ho",
+     "jersey": "8",
+     "position": "CM-R"
+    },
+    {
+     "name": "Lee Tae-Seok",
+     "jersey": "13",
+     "position": "LM"
+    },
+    {
+     "name": "Seol Young-Woo",
+     "jersey": "22",
+     "position": "RM"
+    },
+    {
+     "name": "Oh Hyeon-Gyu",
+     "jersey": "18",
+     "position": "F"
+    },
+    {
+     "name": "Hwang Hee-Chan",
+     "jersey": "11",
+     "position": "CF-L"
+    },
+    {
+     "name": "Lee Kang-In",
+     "jersey": "19",
+     "position": "CF-R"
+    }
+   ],
+   "subs": [
+    {
+     "name": "Lee Dong-Gyeong",
+     "jersey": "26",
+     "position": "SUB"
+    },
+    {
+     "name": "Kim Jin-Gyu",
+     "jersey": "24",
+     "position": "SUB"
+    },
+    {
+     "name": "Jens Castrop",
+     "jersey": "23",
+     "position": "SUB"
+    },
+    {
+     "name": "Cho Gue-Sung",
+     "jersey": "9",
+     "position": "SUB"
+    },
+    {
+     "name": "Jo Hyeon-Woo",
+     "jersey": "21",
+     "position": "SUB"
+    },
+    {
+     "name": "Kim Tae-Hyeon",
+     "jersey": "5",
+     "position": "SUB"
+    },
+    {
+     "name": "Song Bum-Keun",
+     "jersey": "12",
+     "position": "SUB"
+    },
+    {
+     "name": "Park Jin-Seop",
+     "jersey": "16",
+     "position": "SUB"
+    },
+    {
+     "name": "Eom Ji-Sung",
+     "jersey": "25",
+     "position": "SUB"
+    },
+    {
+     "name": "Kim Moon-Hwan",
+     "jersey": "15",
+     "position": "SUB"
+    },
+    {
+     "name": "Bae Jun-Ho",
+     "jersey": "17",
+     "position": "SUB"
+    },
+    {
+     "name": "Son Heung-Min",
+     "jersey": "7",
+     "position": "SUB"
+    },
+    {
+     "name": "Cho Wi-Je",
+     "jersey": "14",
+     "position": "SUB"
+    },
+    {
+     "name": "Lee Jae-Sung",
+     "jersey": "10",
+     "position": "SUB"
+    },
+    {
+     "name": "Yang Hyun-Jun",
+     "jersey": "20",
+     "position": "SUB"
+    }
+   ]
+  }
+ ],
+ "attendance": 0,
+ "venue": "Estadio BBVA, Guadalupe, Mexico"
+}

@@ -1,0 +1,1056 @@
+{
+ "teams": [
+  {
+   "name": "Morocco",
+   "stats": {
+    "possessionPct": "69",
+    "totalShots": "22",
+    "shotsOnTarget": "11",
+    "wonCorners": "9",
+    "foulsCommitted": "10",
+    "offsides": "5",
+    "saves": "1",
+    "yellowCards": "0",
+    "redCards": "0"
+   }
+  },
+  {
+   "name": "Haiti",
+   "stats": {
+    "possessionPct": "31",
+    "totalShots": "9",
+    "shotsOnTarget": "2",
+    "wonCorners": "1",
+    "foulsCommitted": "18",
+    "offsides": "0",
+    "saves": "8",
+    "yellowCards": "3",
+    "redCards": "0"
+   }
+  }
+ ],
+ "events": [
+  {
+   "type": "Kickoff",
+   "minute": "",
+   "team": null,
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Own Goal",
+   "minute": "10'",
+   "team": "Haiti",
+   "text": "Own Goal by Yassine Bounou, Morocco. Morocco 0, Haiti 1.",
+   "players": [
+    "Yassine Bounou",
+    "Jean-Kévin Duverne"
+   ]
+  },
+  {
+   "type": "Start Delay",
+   "minute": "23'",
+   "team": "Morocco",
+   "text": "Delay in match for a drinks break.",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "23'",
+   "team": "Haiti",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "25'",
+   "team": "Morocco",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "25'",
+   "team": "Haiti",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "32'",
+   "team": "Morocco",
+   "text": "Delay in match because of an injury Anass Salah-Eddine (Morocco).",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "32'",
+   "team": "Haiti",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "33'",
+   "team": "Morocco",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "33'",
+   "team": "Haiti",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Goal",
+   "minute": "39'",
+   "team": "Morocco",
+   "text": "Goal! Morocco 1, Haiti 1. Achraf Hakimi (Morocco) left footed shot from very close range to the centre of the goal.",
+   "players": [
+    "Achraf Hakimi"
+   ]
+  },
+  {
+   "type": "Goal",
+   "minute": "43'",
+   "team": "Haiti",
+   "text": "Goal! Morocco 1, Haiti 2. Wilson Isidor (Haiti) right footed shot from outside the box to the top left corner. Assisted by Jean-Kévin Duverne.",
+   "players": [
+    "Wilson Isidor",
+    "Jean-Kévin Duverne"
+   ]
+  },
+  {
+   "type": "Goal",
+   "minute": "45'+1'",
+   "team": "Morocco",
+   "text": "Goal! Morocco 2, Haiti 2. Ismael Saibari (Morocco) right footed shot from the centre of the box to the bottom left corner. Assisted by Achraf Hakimi.",
+   "players": [
+    "Ismael Saibari",
+    "Achraf Hakimi"
+   ]
+  },
+  {
+   "type": "Halftime",
+   "minute": "45'+5'",
+   "team": null,
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Start 2nd Half",
+   "minute": "45'",
+   "team": null,
+   "text": "Second Half begins Morocco 2, Haiti 2.",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "54'",
+   "team": "Haiti",
+   "text": "Delay in match because of an injury Josué Casimir (Haiti).",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "54'",
+   "team": "Morocco",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "55'",
+   "team": "Haiti",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "55'",
+   "team": "Morocco",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "57'",
+   "team": "Morocco",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "58'",
+   "team": "Morocco",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Substitution",
+   "minute": "67'",
+   "team": "Haiti",
+   "text": "Substitution, Haiti. Duckens Nazon replaces Ruben Providence.",
+   "players": [
+    "Duckens Nazon",
+    "Ruben Providence"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "67'",
+   "team": "Haiti",
+   "text": "Substitution, Haiti. Louicius Deedson replaces Wilson Isidor.",
+   "players": [
+    "Louicius Deedson",
+    "Wilson Isidor"
+   ]
+  },
+  {
+   "type": "Start Delay",
+   "minute": "68'",
+   "team": "Morocco",
+   "text": "Delay in match for a drinks break.",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "68'",
+   "team": "Haiti",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Substitution",
+   "minute": "70'",
+   "team": "Morocco",
+   "text": "Substitution, Morocco. Soufiane Rahimi replaces Ismael Saibari.",
+   "players": [
+    "Soufiane Rahimi",
+    "Ismael Saibari"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "70'",
+   "team": "Morocco",
+   "text": "Substitution, Morocco. Azzedine Ounahi replaces Brahim Díaz.",
+   "players": [
+    "Azzedine Ounahi",
+    "Brahim Díaz"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "70'",
+   "team": "Morocco",
+   "text": "Substitution, Morocco. Gessime Yassine replaces Ayoub El Kaabi.",
+   "players": [
+    "Gessime Yassine",
+    "Ayoub El Kaabi"
+   ]
+  },
+  {
+   "type": "End Delay",
+   "minute": "71'",
+   "team": "Morocco",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "71'",
+   "team": "Haiti",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Goal",
+   "minute": "78'",
+   "team": "Morocco",
+   "text": "Goal! Morocco 3, Haiti 2. Soufiane Rahimi (Morocco) right footed shot from the centre of the box to the top right corner. Assisted by Chadi Riad following a corner.",
+   "players": [
+    "Soufiane Rahimi",
+    "Chadi Riad"
+   ]
+  },
+  {
+   "type": "Yellow Card",
+   "minute": "79'",
+   "team": "Haiti",
+   "text": "Johny Placide (Haiti) is shown the yellow card.",
+   "players": [
+    "Johny Placide"
+   ]
+  },
+  {
+   "type": "Yellow Card",
+   "minute": "80'",
+   "team": "Haiti",
+   "text": "Duckens Nazon (Haiti) is shown the yellow card.",
+   "players": [
+    "Duckens Nazon"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "80'",
+   "team": "Haiti",
+   "text": "Substitution, Haiti. Carlens Arcus replaces Jean-Kévin Duverne.",
+   "players": [
+    "Carlens Arcus",
+    "Jean-Kévin Duverne"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "80'",
+   "team": "Haiti",
+   "text": "Substitution, Haiti. Dominique Simon replaces Danley Jean Jacques.",
+   "players": [
+    "Dominique Simon",
+    "Danley Jean Jacques"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "83'",
+   "team": "Morocco",
+   "text": "Substitution, Morocco. Noussair Mazraoui replaces Anass Salah-Eddine.",
+   "players": [
+    "Noussair Mazraoui",
+    "Anass Salah-Eddine"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "83'",
+   "team": "Morocco",
+   "text": "Substitution, Morocco. Samir El Mourabet replaces Neil El Aynaoui.",
+   "players": [
+    "Samir El Mourabet",
+    "Neil El Aynaoui"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "83'",
+   "team": "Haiti",
+   "text": "Substitution, Haiti. Frantzdy Pierrot replaces Lenny Joseph.",
+   "players": [
+    "Frantzdy Pierrot",
+    "Lenny Joseph"
+   ]
+  },
+  {
+   "type": "Goal",
+   "minute": "89'",
+   "team": "Morocco",
+   "text": "Goal! Morocco 4, Haiti 2. Gessime Yassine (Morocco) left footed shot from the centre of the box to the centre of the goal. Assisted by Soufiane Rahimi.",
+   "players": [
+    "Gessime Yassine",
+    "Soufiane Rahimi"
+   ]
+  },
+  {
+   "type": "Yellow Card",
+   "minute": "90'+3'",
+   "team": "Haiti",
+   "text": "Josué Casimir (Haiti) is shown the yellow card for a bad foul.",
+   "players": [
+    "Josué Casimir"
+   ]
+  },
+  {
+   "type": "Start Delay",
+   "minute": "90'+6'",
+   "team": "Morocco",
+   "text": "Delay in match because of an injury Sofyan Amrabat (Morocco).",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "90'+6'",
+   "team": "Haiti",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "90'+7'",
+   "team": "Morocco",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "90'+7'",
+   "team": "Haiti",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "End Regular Time",
+   "minute": "90'+9'",
+   "team": null,
+   "text": "",
+   "players": []
+  }
+ ],
+ "shots": [
+  {
+   "minute": "8",
+   "seconds": 421.0,
+   "team": "Haiti",
+   "player": "Jean-Ricner Bellegarde",
+   "type": "Shot Off Target",
+   "x": 71.9,
+   "y": 50.5,
+   "goal": false,
+   "xg": 0.059,
+   "text": "Attempt missed. Jean-Ricner Bellegarde (Haiti) right footed shot from outside the box is just a bit too high from a direct free kick."
+  },
+  {
+   "minute": "10",
+   "seconds": 575.0,
+   "team": "Haiti",
+   "player": "Lenny Joseph",
+   "type": "Shot Off Target",
+   "x": 95.9,
+   "y": 47.8,
+   "goal": false,
+   "xg": 0.819,
+   "text": "Attempt missed. Lenny Joseph (Haiti) right footed shot from very close range is close, but misses to the right. Assisted by Jean-Kévin Duverne."
+  },
+  {
+   "minute": "12",
+   "seconds": 716.0,
+   "team": "Morocco",
+   "player": "Ayoub El Kaabi",
+   "type": "Shot On Target",
+   "x": 96.1,
+   "y": 26.2,
+   "goal": false,
+   "xg": 0.109,
+   "text": "Attempt saved. Ayoub El Kaabi (Morocco) right footed shot from a difficult angle on the right is saved in the top right corner by Johny Placide (Haiti). Assisted by Achraf Hakimi."
+  },
+  {
+   "minute": "13",
+   "seconds": 757.0,
+   "team": "Morocco",
+   "player": "Ismael Saibari",
+   "type": "Shot Off Target",
+   "x": 92.7,
+   "y": 49.3,
+   "goal": false,
+   "xg": 0.569,
+   "text": "Attempt missed. Ismael Saibari (Morocco) right footed shot from the centre of the box is too high. Assisted by Bilal El Khannouss."
+  },
+  {
+   "minute": "14",
+   "seconds": 818.0,
+   "team": "Morocco",
+   "player": "Ismael Saibari",
+   "type": "Shot Blocked",
+   "x": 84.8,
+   "y": 65.3,
+   "goal": false,
+   "xg": 0.14,
+   "text": "Attempt blocked. Ismael Saibari (Morocco) left footed shot from the left side of the box is blocked. Assisted by Bilal El Khannouss."
+  },
+  {
+   "minute": "23",
+   "seconds": 1337.0,
+   "team": "Morocco",
+   "player": "Ismael Saibari",
+   "type": "Shot Off Target",
+   "x": 81.8,
+   "y": 47.4,
+   "goal": false,
+   "xg": 0.153,
+   "text": "Attempt missed. Ismael Saibari (Morocco) right footed shot from outside the box is close, but misses to the right. Assisted by Achraf Hakimi."
+  },
+  {
+   "minute": "28",
+   "seconds": 1655.0,
+   "team": "Morocco",
+   "player": "Ayoub El Kaabi",
+   "type": "Shot Off Target",
+   "x": 90.8,
+   "y": 42.1,
+   "goal": false,
+   "xg": 0.221,
+   "text": "Attempt missed. Ayoub El Kaabi (Morocco) header from the centre of the box misses to the right. Assisted by Achraf Hakimi with a cross."
+  },
+  {
+   "minute": "30",
+   "seconds": 1763.0,
+   "team": "Morocco",
+   "player": "Achraf Hakimi",
+   "type": "Shot On Target",
+   "x": 85.6,
+   "y": 56.3,
+   "goal": false,
+   "xg": 0.213,
+   "text": "Attempt saved. Achraf Hakimi (Morocco) left footed shot from the centre of the box is saved in the centre of the goal by Johny Placide (Haiti). Assisted by Bilal El Khannouss."
+  },
+  {
+   "minute": "30",
+   "seconds": 1765.0,
+   "team": "Morocco",
+   "player": "Ayoub El Kaabi",
+   "type": "Shot On Target",
+   "x": 87.1,
+   "y": 48.3,
+   "goal": false,
+   "xg": 0.276,
+   "text": "Attempt saved. Ayoub El Kaabi (Morocco) left footed shot from the centre of the box is saved in the bottom right corner by Johny Placide (Haiti)."
+  },
+  {
+   "minute": "34",
+   "seconds": 2019.0,
+   "team": "Haiti",
+   "player": "Lenny Joseph",
+   "type": "Shot Off Target",
+   "x": 90.5,
+   "y": 29.5,
+   "goal": false,
+   "xg": 0.139,
+   "text": "Attempt missed. Lenny Joseph (Haiti) right footed shot from the right side of the box is too high."
+  },
+  {
+   "minute": "36",
+   "seconds": 2111.0,
+   "team": "Morocco",
+   "player": "Ismael Saibari",
+   "type": "Shot Off Target",
+   "x": 90.2,
+   "y": 53.8,
+   "goal": false,
+   "xg": 0.251,
+   "text": "Attempt missed. Ismael Saibari (Morocco) header from the centre of the box is too high. Assisted by Brahim Díaz with a cross."
+  },
+  {
+   "minute": "39",
+   "seconds": 2302.0,
+   "team": "Morocco",
+   "player": "Achraf Hakimi",
+   "type": "Goal",
+   "x": 98.0,
+   "y": 51.2,
+   "goal": true,
+   "xg": 0.95,
+   "text": "Goal! Morocco 1, Haiti 1. Achraf Hakimi (Morocco) left footed shot from very close range to the centre of the goal."
+  },
+  {
+   "minute": "43",
+   "seconds": 2532.0,
+   "team": "Haiti",
+   "player": "Wilson Isidor",
+   "type": "Goal",
+   "x": 76.5,
+   "y": 30.5,
+   "goal": true,
+   "xg": 0.063,
+   "text": "Goal! Morocco 1, Haiti 2. Wilson Isidor (Haiti) right footed shot from outside the box to the top left corner. Assisted by Jean-Kévin Duverne."
+  },
+  {
+   "minute": "45'+1",
+   "seconds": 2700.0,
+   "team": "Morocco",
+   "player": "Ismael Saibari",
+   "type": "Goal",
+   "x": 85.0,
+   "y": 48.2,
+   "goal": true,
+   "xg": 0.217,
+   "text": "Goal! Morocco 2, Haiti 2. Ismael Saibari (Morocco) right footed shot from the centre of the box to the bottom left corner. Assisted by Achraf Hakimi."
+  },
+  {
+   "minute": "45'+3",
+   "seconds": 2700.0,
+   "team": "Morocco",
+   "player": "Brahim Díaz",
+   "type": "Shot Off Target",
+   "x": 90.1,
+   "y": 59.1,
+   "goal": false,
+   "xg": 0.297,
+   "text": "Attempt missed. Brahim Díaz (Morocco) left footed shot from the centre of the box is close, but misses the top right corner. Assisted by Anass Salah-Eddine."
+  },
+  {
+   "minute": "45'+4",
+   "seconds": 2700.0,
+   "team": "Morocco",
+   "player": "Bilal El Khannouss",
+   "type": "Shot On Target",
+   "x": 76.5,
+   "y": 60.7,
+   "goal": false,
+   "xg": 0.081,
+   "text": "Attempt saved. Bilal El Khannouss (Morocco) right footed shot from outside the box is saved in the centre of the goal by Johny Placide (Haiti). Assisted by Ismael Saibari."
+  },
+  {
+   "minute": "45'+5",
+   "seconds": 2700.0,
+   "team": "Morocco",
+   "player": "Neil El Aynaoui",
+   "type": "Shot On Target",
+   "x": 89.9,
+   "y": 46.2,
+   "goal": false,
+   "xg": 0.242,
+   "text": "Attempt saved. Neil El Aynaoui (Morocco) header from the centre of the box is saved in the centre of the goal by Johny Placide (Haiti). Assisted by Achraf Hakimi with a cross."
+  },
+  {
+   "minute": "59",
+   "seconds": 3535.0,
+   "team": "Morocco",
+   "player": "Bilal El Khannouss",
+   "type": "Shot On Target",
+   "x": 77.2,
+   "y": 47.9,
+   "goal": false,
+   "xg": 0.097,
+   "text": "Attempt saved. Bilal El Khannouss (Morocco) right footed shot from outside the box is saved in the bottom right corner by Johny Placide (Haiti)."
+  },
+  {
+   "minute": "64",
+   "seconds": 3838.0,
+   "team": "Haiti",
+   "player": "Jean-Ricner Bellegarde",
+   "type": "Shot Blocked",
+   "x": 84.1,
+   "y": 80.5,
+   "goal": false,
+   "xg": 0.062,
+   "text": "Attempt blocked. Jean-Ricner Bellegarde (Haiti) right footed shot from a difficult angle and long range on the left is blocked."
+  },
+  {
+   "minute": "75",
+   "seconds": 4458.0,
+   "team": "Morocco",
+   "player": "Achraf Hakimi",
+   "type": "Shot Blocked",
+   "x": 71.7,
+   "y": 50.7,
+   "goal": false,
+   "xg": 0.058,
+   "text": "Attempt blocked. Achraf Hakimi (Morocco) right footed shot from outside the box is blocked."
+  },
+  {
+   "minute": "75",
+   "seconds": 4459.0,
+   "team": "Morocco",
+   "player": "Achraf Hakimi",
+   "type": "Shot Blocked",
+   "x": 72.9,
+   "y": 50.2,
+   "goal": false,
+   "xg": 0.065,
+   "text": "Attempt blocked. Achraf Hakimi (Morocco) right footed shot from outside the box is blocked."
+  },
+  {
+   "minute": "78",
+   "seconds": 4622.0,
+   "team": "Morocco",
+   "player": "Soufiane Rahimi",
+   "type": "Shot Blocked",
+   "x": 90.8,
+   "y": 47.9,
+   "goal": false,
+   "xg": 0.282,
+   "text": "Attempt blocked. Soufiane Rahimi (Morocco) header from the centre of the box is blocked. Assisted by Achraf Hakimi with a cross."
+  },
+  {
+   "minute": "78",
+   "seconds": 4643.0,
+   "team": "Morocco",
+   "player": "Chadi Riad",
+   "type": "Shot Off Target",
+   "x": 92.1,
+   "y": 40.4,
+   "goal": false,
+   "xg": 0.22,
+   "text": "Attempt missed. Chadi Riad (Morocco) header from the centre of the box misses to the left. Assisted by Achraf Hakimi with a cross following a corner."
+  },
+  {
+   "minute": "78",
+   "seconds": 4643.0,
+   "team": "Morocco",
+   "player": "Soufiane Rahimi",
+   "type": "Goal",
+   "x": 90.6,
+   "y": 52.8,
+   "goal": true,
+   "xg": 0.416,
+   "text": "Goal! Morocco 3, Haiti 2. Soufiane Rahimi (Morocco) right footed shot from the centre of the box to the top right corner. Assisted by Chadi Riad following a corner."
+  },
+  {
+   "minute": "88",
+   "seconds": 5261.0,
+   "team": "Morocco",
+   "player": "Achraf Hakimi",
+   "type": "Shot On Target",
+   "x": 88.4,
+   "y": 90.4,
+   "goal": false,
+   "xg": 0.042,
+   "text": "Attempt saved. Achraf Hakimi (Morocco) right footed shot from a difficult angle and long range on the left is saved in the top centre of the goal by Johny Placide (Haiti)."
+  },
+  {
+   "minute": "89",
+   "seconds": 5298.0,
+   "team": "Morocco",
+   "player": "Azzedine Ounahi",
+   "type": "Shot Blocked",
+   "x": 81.6,
+   "y": 68.9,
+   "goal": false,
+   "xg": 0.094,
+   "text": "Attempt blocked. Azzedine Ounahi (Morocco) right footed shot from outside the box is blocked."
+  },
+  {
+   "minute": "89",
+   "seconds": 5312.0,
+   "team": "Morocco",
+   "player": "Gessime Yassine",
+   "type": "Goal",
+   "x": 93.5,
+   "y": 46.2,
+   "goal": true,
+   "xg": 0.581,
+   "text": "Goal! Morocco 4, Haiti 2. Gessime Yassine (Morocco) left footed shot from the centre of the box to the centre of the goal. Assisted by Soufiane Rahimi."
+  },
+  {
+   "minute": "90'+5",
+   "seconds": 5400.0,
+   "team": "Haiti",
+   "player": "Duckens Nazon",
+   "type": "Shot On Target",
+   "x": 74.4,
+   "y": 63.2,
+   "goal": false,
+   "xg": 0.064,
+   "text": "Attempt saved. Duckens Nazon (Haiti) right footed shot from outside the box is saved in the top right corner by Yassine Bounou (Morocco)."
+  },
+  {
+   "minute": "90'+5",
+   "seconds": 5400.0,
+   "team": "Haiti",
+   "player": "Jean-Ricner Bellegarde",
+   "type": "Shot Blocked",
+   "x": 90.2,
+   "y": 55.8,
+   "goal": false,
+   "xg": 0.232,
+   "text": "Attempt blocked. Jean-Ricner Bellegarde (Haiti) header from the centre of the box is blocked. Assisted by Dominique Simon with a cross."
+  },
+  {
+   "minute": "90'+8",
+   "seconds": 5400.0,
+   "team": "Haiti",
+   "player": "Louicius Deedson",
+   "type": "Shot Blocked",
+   "x": 85.5,
+   "y": 27.2,
+   "goal": false,
+   "xg": 0.099,
+   "text": "Attempt blocked. Louicius Deedson (Haiti) left footed shot from the right side of the box is blocked. Assisted by Frantzdy Pierrot with a headed pass."
+  },
+  {
+   "minute": "90'+8",
+   "seconds": 5400.0,
+   "team": "Haiti",
+   "player": "Ricardo Adé",
+   "type": "Shot Off Target",
+   "x": 77.7,
+   "y": 44.2,
+   "goal": false,
+   "xg": 0.098,
+   "text": "Attempt missed. Ricardo Adé (Haiti) right footed shot from outside the box misses to the left. Assisted by Frantzdy Pierrot."
+  }
+ ],
+ "lineups": [
+  {
+   "team": "Morocco",
+   "formation": "4-2-3-1",
+   "starters": [
+    {
+     "name": "Yassine Bounou",
+     "jersey": "1",
+     "position": "G"
+    },
+    {
+     "name": "Chadi Riad",
+     "jersey": "18",
+     "position": "CD-L"
+    },
+    {
+     "name": "Redouane Halhal",
+     "jersey": "25",
+     "position": "CD-R"
+    },
+    {
+     "name": "Anass Salah-Eddine",
+     "jersey": "26",
+     "position": "LB"
+    },
+    {
+     "name": "Achraf Hakimi",
+     "jersey": "2",
+     "position": "RB"
+    },
+    {
+     "name": "Ismael Saibari",
+     "jersey": "11",
+     "position": "AM"
+    },
+    {
+     "name": "Sofyan Amrabat",
+     "jersey": "4",
+     "position": "LM"
+    },
+    {
+     "name": "Neil El Aynaoui",
+     "jersey": "24",
+     "position": "RM"
+    },
+    {
+     "name": "Ayoub El Kaabi",
+     "jersey": "20",
+     "position": "F"
+    },
+    {
+     "name": "Bilal El Khannouss",
+     "jersey": "23",
+     "position": "AM-L"
+    },
+    {
+     "name": "Brahim Díaz",
+     "jersey": "10",
+     "position": "AM-R"
+    }
+   ],
+   "subs": [
+    {
+     "name": "Chemsdine Talbi",
+     "jersey": "7",
+     "position": "SUB"
+    },
+    {
+     "name": "Gessime Yassine",
+     "jersey": "16",
+     "position": "SUB"
+    },
+    {
+     "name": "Noussair Mazraoui",
+     "jersey": "3",
+     "position": "SUB"
+    },
+    {
+     "name": "Ayyoub Bouaddi",
+     "jersey": "6",
+     "position": "SUB"
+    },
+    {
+     "name": "Samir El Mourabet",
+     "jersey": "15",
+     "position": "SUB"
+    },
+    {
+     "name": "Ahmed Reda Tagnaouti",
+     "jersey": "22",
+     "position": "SUB"
+    },
+    {
+     "name": "Munir El Kajoui",
+     "jersey": "12",
+     "position": "SUB"
+    },
+    {
+     "name": "Youssef Belammari",
+     "jersey": "19",
+     "position": "SUB"
+    },
+    {
+     "name": "Zakaria El Ouahdi",
+     "jersey": "13",
+     "position": "SUB"
+    },
+    {
+     "name": "Soufiane Rahimi",
+     "jersey": "9",
+     "position": "SUB"
+    },
+    {
+     "name": "Issa Diop",
+     "jersey": "14",
+     "position": "SUB"
+    },
+    {
+     "name": "Marwane Saadane",
+     "jersey": "5",
+     "position": "SUB"
+    },
+    {
+     "name": "Amine Sbaï",
+     "jersey": "17",
+     "position": "SUB"
+    },
+    {
+     "name": "Azzedine Ounahi",
+     "jersey": "8",
+     "position": "SUB"
+    },
+    {
+     "name": "Ayoube Amaimouni",
+     "jersey": "21",
+     "position": "SUB"
+    }
+   ]
+  },
+  {
+   "team": "Haiti",
+   "formation": "4-4-1-1",
+   "starters": [
+    {
+     "name": "Johny Placide",
+     "jersey": "1",
+     "position": "G"
+    },
+    {
+     "name": "Hannes Delcroix",
+     "jersey": "5",
+     "position": "CD-L"
+    },
+    {
+     "name": "Ricardo Adé",
+     "jersey": "4",
+     "position": "CD-R"
+    },
+    {
+     "name": "Martin Expérience",
+     "jersey": "8",
+     "position": "LB"
+    },
+    {
+     "name": "Jean-Kévin Duverne",
+     "jersey": "22",
+     "position": "RB"
+    },
+    {
+     "name": "Jean-Ricner Bellegarde",
+     "jersey": "10",
+     "position": "CM-L"
+    },
+    {
+     "name": "Danley Jean Jacques",
+     "jersey": "17",
+     "position": "CM-R"
+    },
+    {
+     "name": "Ruben Providence",
+     "jersey": "15",
+     "position": "LM"
+    },
+    {
+     "name": "Josué Casimir",
+     "jersey": "21",
+     "position": "RM"
+    },
+    {
+     "name": "Lenny Joseph",
+     "jersey": "16",
+     "position": "F"
+    },
+    {
+     "name": "Wilson Isidor",
+     "jersey": "18",
+     "position": "RCF"
+    }
+   ],
+   "subs": [
+    {
+     "name": "Keeto Thermoncy",
+     "jersey": "3",
+     "position": "SUB"
+    },
+    {
+     "name": "Woodensky Pierre",
+     "jersey": "26",
+     "position": "SUB"
+    },
+    {
+     "name": "Yassin Fortuné",
+     "jersey": "19",
+     "position": "SUB"
+    },
+    {
+     "name": "Wilguens Paugain",
+     "jersey": "24",
+     "position": "SUB"
+    },
+    {
+     "name": "Dominique Simon",
+     "jersey": "25",
+     "position": "SUB"
+    },
+    {
+     "name": "Duckens Nazon",
+     "jersey": "9",
+     "position": "SUB"
+    },
+    {
+     "name": "Derrick Etienne Jr.",
+     "jersey": "7",
+     "position": "SUB"
+    },
+    {
+     "name": "Carlens Arcus",
+     "jersey": "2",
+     "position": "SUB"
+    },
+    {
+     "name": "Garven Metusala",
+     "jersey": "14",
+     "position": "SUB"
+    },
+    {
+     "name": "Alexandre Pierre",
+     "jersey": "12",
+     "position": "SUB"
+    },
+    {
+     "name": "Louicius Deedson",
+     "jersey": "11",
+     "position": "SUB"
+    },
+    {
+     "name": "Markhus Lacroix",
+     "jersey": "13",
+     "position": "SUB"
+    },
+    {
+     "name": "Josué Duverger",
+     "jersey": "23",
+     "position": "SUB"
+    },
+    {
+     "name": "Carl Sainté",
+     "jersey": "6",
+     "position": "SUB"
+    },
+    {
+     "name": "Frantzdy Pierrot",
+     "jersey": "20",
+     "position": "SUB"
+    }
+   ]
+  }
+ ],
+ "attendance": 68239,
+ "venue": "Mercedes-Benz Stadium, Atlanta, Georgia, USA"
+}

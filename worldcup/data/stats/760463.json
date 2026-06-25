@@ -1,0 +1,770 @@
+{
+ "teams": [
+  {
+   "name": "Switzerland",
+   "stats": {
+    "possessionPct": "55.3",
+    "totalShots": "6",
+    "shotsOnTarget": "4",
+    "wonCorners": "2",
+    "foulsCommitted": "19",
+    "offsides": "1",
+    "saves": "6",
+    "yellowCards": "1",
+    "redCards": "0"
+   }
+  },
+  {
+   "name": "Canada",
+   "stats": {
+    "possessionPct": "44.7",
+    "totalShots": "13",
+    "shotsOnTarget": "7",
+    "wonCorners": "7",
+    "foulsCommitted": "13",
+    "offsides": "3",
+    "saves": "2",
+    "yellowCards": "2",
+    "redCards": "0"
+   }
+  }
+ ],
+ "events": [
+  {
+   "type": "Kickoff",
+   "minute": "",
+   "team": null,
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "23'",
+   "team": "Switzerland",
+   "text": "Delay in match for a drinks break.",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "23'",
+   "team": "Canada",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "25'",
+   "team": "Switzerland",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "25'",
+   "team": "Canada",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Yellow Card",
+   "minute": "32'",
+   "team": "Canada",
+   "text": "Cyle Larin (Canada) is shown the yellow card.",
+   "players": [
+    "Cyle Larin"
+   ]
+  },
+  {
+   "type": "Yellow Card",
+   "minute": "32'",
+   "team": "Switzerland",
+   "text": "Granit Xhaka (Switzerland) is shown the yellow card.",
+   "players": [
+    "Granit Xhaka"
+   ]
+  },
+  {
+   "type": "Halftime",
+   "minute": "45'+4'",
+   "team": null,
+   "text": "First Half ends, Switzerland 0, Canada 0.",
+   "players": []
+  },
+  {
+   "type": "Start 2nd Half",
+   "minute": "45'",
+   "team": null,
+   "text": "Second Half begins Switzerland 0, Canada 0.",
+   "players": []
+  },
+  {
+   "type": "Goal",
+   "minute": "46'",
+   "team": "Switzerland",
+   "text": "Goal! Switzerland 1, Canada 0. Rubén Vargas (Switzerland) right footed shot from the centre of the box to the bottom left corner. Assisted by Johan Manzambi with a cross.",
+   "players": [
+    "Rubén Vargas",
+    "Johan Manzambi"
+   ]
+  },
+  {
+   "type": "Goal",
+   "minute": "57'",
+   "team": "Switzerland",
+   "text": "Goal! Switzerland 2, Canada 0. Johan Manzambi (Switzerland) right footed shot from the right side of the box to the centre of the goal. Assisted by Breel Embolo.",
+   "players": [
+    "Johan Manzambi",
+    "Breel Embolo"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "58'",
+   "team": "Canada",
+   "text": "Substitution, Canada. Stephen Eustaquio replaces Mathieu Choinière.",
+   "players": [
+    "Stephen Eustáquio",
+    "Mathieu Choinière"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "58'",
+   "team": "Canada",
+   "text": "Substitution, Canada. Tani Oluwaseyi replaces Cyle Larin.",
+   "players": [
+    "Tani Oluwaseyi",
+    "Cyle Larin"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "58'",
+   "team": "Canada",
+   "text": "Substitution, Canada. Liam Millar replaces Ali Ahmed.",
+   "players": [
+    "Liam Millar",
+    "Ali Ahmed"
+   ]
+  },
+  {
+   "type": "Start Delay",
+   "minute": "71'",
+   "team": "Switzerland",
+   "text": "Delay in match for a drinks break.",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "71'",
+   "team": "Canada",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "74'",
+   "team": "Switzerland",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "74'",
+   "team": "Canada",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Substitution",
+   "minute": "74'",
+   "team": "Switzerland",
+   "text": "Substitution, Switzerland. Michel Aebischer replaces Djibril Sow.",
+   "players": [
+    "Michel Aebischer",
+    "Djibril Sow"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "74'",
+   "team": "Switzerland",
+   "text": "Substitution, Switzerland. Silvan Widmer replaces Luca Jaquez.",
+   "players": [
+    "Silvan Widmer",
+    "Luca Jaquez"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "74'",
+   "team": "Canada",
+   "text": "Substitution, Canada. Promise David replaces Tajon Buchanan.",
+   "players": [
+    "Promise David",
+    "Tajon Buchanan"
+   ]
+  },
+  {
+   "type": "Goal - Volley",
+   "minute": "76'",
+   "team": "Canada",
+   "text": "Goal! Switzerland 2, Canada 1. Promise David (Canada) right footed shot from the centre of the box to the bottom left corner. Assisted by Nathan Saliba.",
+   "players": [
+    "Promise David",
+    "Nathan Saliba"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "80'",
+   "team": "Switzerland",
+   "text": "Substitution, Switzerland. Dan Ndoye replaces Rubén Vargas.",
+   "players": [
+    "Dan Ndoye",
+    "Rubén Vargas"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "83'",
+   "team": "Canada",
+   "text": "Substitution, Canada. Jacob Shaffelburg replaces Richie Laryea.",
+   "players": [
+    "Jacob Shaffelburg",
+    "Richie Laryea"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "85'",
+   "team": "Switzerland",
+   "text": "Substitution, Switzerland. Christian Fassnacht replaces Johan Manzambi.",
+   "players": [
+    "Christian Fassnacht",
+    "Johan Manzambi"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "85'",
+   "team": "Switzerland",
+   "text": "Substitution, Switzerland. Cedric Itten replaces Breel Embolo.",
+   "players": [
+    "Cedric Itten",
+    "Breel Embolo"
+   ]
+  },
+  {
+   "type": "Yellow Card",
+   "minute": "87'",
+   "team": "Canada",
+   "text": "Liam Millar (Canada) is shown the yellow card for a bad foul.",
+   "players": [
+    "Liam Millar"
+   ]
+  },
+  {
+   "type": "End Regular Time",
+   "minute": "90'+7'",
+   "team": null,
+   "text": "Second Half ends, Switzerland 2, Canada 1.",
+   "players": []
+  }
+ ],
+ "shots": [
+  {
+   "minute": "11",
+   "seconds": 620.0,
+   "team": "Switzerland",
+   "player": "Breel Embolo",
+   "type": "Shot On Target",
+   "x": 86.1,
+   "y": 46.1,
+   "goal": false,
+   "xg": 0.238,
+   "text": "Attempt saved. Breel Embolo (Switzerland) right footed shot from the centre of the box is saved in the centre of the goal by Maxime Crépeau (Canada). Assisted by Ricardo Rodríguez with a through ball."
+  },
+  {
+   "minute": "11",
+   "seconds": 621.0,
+   "team": "Switzerland",
+   "player": "Johan Manzambi",
+   "type": "Shot Blocked",
+   "x": 85.9,
+   "y": 61.5,
+   "goal": false,
+   "xg": 0.181,
+   "text": "Attempt blocked. Johan Manzambi (Switzerland) right footed shot from the centre of the box is blocked."
+  },
+  {
+   "minute": "17",
+   "seconds": 1018.0,
+   "team": "Switzerland",
+   "player": "Breel Embolo",
+   "type": "Shot On Target",
+   "x": 87.5,
+   "y": 67.8,
+   "goal": false,
+   "xg": 0.146,
+   "text": "Attempt saved. Breel Embolo (Switzerland) left footed shot from the left side of the box is saved in the centre of the goal by Maxime Crépeau (Canada). Assisted by Ricardo Rodríguez with a headed pass."
+  },
+  {
+   "minute": "20",
+   "seconds": 1143.0,
+   "team": "Canada",
+   "player": "Luc De Fougerolles",
+   "type": "Shot On Target",
+   "x": 86.8,
+   "y": 42.3,
+   "goal": false,
+   "xg": 0.231,
+   "text": "Attempt saved. Luc De Fougerolles (Canada) right footed shot from the centre of the box is saved in the centre of the goal by Gregor Kobel (Switzerland). Assisted by Mathieu Choinière with a cross."
+  },
+  {
+   "minute": "33",
+   "seconds": 1926.0,
+   "team": "Canada",
+   "player": "Cyle Larin",
+   "type": "Shot On Target",
+   "x": 89.2,
+   "y": 65.8,
+   "goal": false,
+   "xg": 0.181,
+   "text": "Attempt saved. Cyle Larin (Canada) right footed shot from the left side of the box is saved in the centre of the goal by Gregor Kobel (Switzerland). Assisted by Jonathan David with a through ball."
+  },
+  {
+   "minute": "38",
+   "seconds": 2239.0,
+   "team": "Switzerland",
+   "player": "Granit Xhaka",
+   "type": "Shot Off Target",
+   "x": 72.3,
+   "y": 55.9,
+   "goal": false,
+   "xg": 0.059,
+   "text": "Attempt missed. Granit Xhaka (Switzerland) left footed shot from outside the box is too high from a direct free kick."
+  },
+  {
+   "minute": "40",
+   "seconds": 2385.0,
+   "team": "Canada",
+   "player": "Alistair Johnston",
+   "type": "Shot Off Target",
+   "x": 77.3,
+   "y": 41.8,
+   "goal": false,
+   "xg": 0.091,
+   "text": "Attempt missed. Alistair Johnston (Canada) right footed shot from outside the box is too high following a set piece situation."
+  },
+  {
+   "minute": "41",
+   "seconds": 2429.0,
+   "team": "Canada",
+   "player": "Ali Ahmed",
+   "type": "Shot On Target",
+   "x": 86.5,
+   "y": 66.2,
+   "goal": false,
+   "xg": 0.15,
+   "text": "Attempt saved. Ali Ahmed (Canada) right footed shot from the left side of the box is saved in the bottom left corner by Gregor Kobel (Switzerland). Assisted by Jonathan David."
+  },
+  {
+   "minute": "44",
+   "seconds": 2628.0,
+   "team": "Canada",
+   "player": "Jonathan David",
+   "type": "Shot Off Target",
+   "x": 83.1,
+   "y": 64.8,
+   "goal": false,
+   "xg": 0.125,
+   "text": "Attempt missed. Jonathan David (Canada) left footed shot from the left side of the box misses to the left. Assisted by Tajon Buchanan."
+  },
+  {
+   "minute": "46",
+   "seconds": 2739.0,
+   "team": "Switzerland",
+   "player": "Rubén Vargas",
+   "type": "Goal",
+   "x": 90.9,
+   "y": 55.6,
+   "goal": true,
+   "xg": 0.39,
+   "text": "Goal! Switzerland 1, Canada 0. Rubén Vargas (Switzerland) right footed shot from the centre of the box to the bottom left corner. Assisted by Johan Manzambi with a cross."
+  },
+  {
+   "minute": "57",
+   "seconds": 3384.0,
+   "team": "Switzerland",
+   "player": "Johan Manzambi",
+   "type": "Goal",
+   "x": 87.4,
+   "y": 35.6,
+   "goal": true,
+   "xg": 0.176,
+   "text": "Goal! Switzerland 2, Canada 0. Johan Manzambi (Switzerland) right footed shot from the right side of the box to the centre of the goal. Assisted by Breel Embolo."
+  },
+  {
+   "minute": "61",
+   "seconds": 3617.0,
+   "team": "Canada",
+   "player": "Liam Millar",
+   "type": "Shot Blocked",
+   "x": 85.2,
+   "y": 52.1,
+   "goal": false,
+   "xg": 0.144,
+   "text": "Attempt blocked. Liam Millar (Canada) header from the centre of the box is blocked. Assisted by Nathan Saliba with a headed pass."
+  },
+  {
+   "minute": "61",
+   "seconds": 3638.0,
+   "team": "Canada",
+   "player": "Derek Cornelius",
+   "type": "Shot Blocked",
+   "x": 90.6,
+   "y": 36.1,
+   "goal": false,
+   "xg": 0.222,
+   "text": "Attempt blocked. Derek Cornelius (Canada) left footed shot from the right side of the box is blocked. Assisted by Liam Millar with a cross."
+  },
+  {
+   "minute": "68",
+   "seconds": 4049.0,
+   "team": "Canada",
+   "player": "Jonathan David",
+   "type": "Shot Blocked",
+   "x": 92.1,
+   "y": 61.3,
+   "goal": false,
+   "xg": 0.294,
+   "text": "Attempt blocked. Jonathan David (Canada) left footed shot from the centre of the box is blocked. Assisted by Liam Millar with a cross."
+  },
+  {
+   "minute": "76",
+   "seconds": 4511.0,
+   "team": "Canada",
+   "player": "Promise David",
+   "type": "Goal - Volley",
+   "x": 88.6,
+   "y": 53.2,
+   "goal": true,
+   "xg": 0.322,
+   "text": "Goal! Switzerland 2, Canada 1. Promise David (Canada) right footed shot from the centre of the box to the bottom left corner. Assisted by Nathan Saliba."
+  },
+  {
+   "minute": "90'+1",
+   "seconds": 5400.0,
+   "team": "Canada",
+   "player": "Derek Cornelius",
+   "type": "Shot Off Target",
+   "x": 95.1,
+   "y": 45.4,
+   "goal": false,
+   "xg": 0.435,
+   "text": "Attempt missed. Derek Cornelius (Canada) header from very close range is close, but misses to the right. Assisted by Alistair Johnston with a cross."
+  },
+  {
+   "minute": "90'+3",
+   "seconds": 5400.0,
+   "team": "Canada",
+   "player": "Promise David",
+   "type": "Shot On Target",
+   "x": 94.6,
+   "y": 54.6,
+   "goal": false,
+   "xg": 0.411,
+   "text": "Attempt saved. Promise David (Canada) header from very close range is saved in the centre of the goal by Gregor Kobel (Switzerland). Assisted by Alistair Johnston."
+  },
+  {
+   "minute": "90'+6",
+   "seconds": 5400.0,
+   "team": "Canada",
+   "player": "Alistair Johnston",
+   "type": "Shot On Target",
+   "x": 91.2,
+   "y": 44.6,
+   "goal": false,
+   "xg": 0.265,
+   "text": "Attempt saved. Alistair Johnston (Canada) header from the centre of the box is saved in the top centre of the goal by Gregor Kobel (Switzerland). Assisted by Jacob Shaffelburg with a cross."
+  },
+  {
+   "minute": "90'+6",
+   "seconds": 5400.0,
+   "team": "Canada",
+   "player": "Promise David",
+   "type": "Shot On Target",
+   "x": 90.6,
+   "y": 37.3,
+   "goal": false,
+   "xg": 0.242,
+   "text": "Attempt saved. Promise David (Canada) right footed shot from the centre of the box is saved in the bottom left corner by Gregor Kobel (Switzerland). Assisted by Jacob Shaffelburg."
+  }
+ ],
+ "lineups": [
+  {
+   "team": "Switzerland",
+   "formation": "4-2-3-1",
+   "starters": [
+    {
+     "name": "Gregor Kobel",
+     "jersey": "1",
+     "position": "G"
+    },
+    {
+     "name": "Manuel Akanji",
+     "jersey": "5",
+     "position": "CD-L"
+    },
+    {
+     "name": "Nico Elvedi",
+     "jersey": "4",
+     "position": "CD-R"
+    },
+    {
+     "name": "Ricardo Rodríguez",
+     "jersey": "13",
+     "position": "LB"
+    },
+    {
+     "name": "Luca Jaquez",
+     "jersey": "25",
+     "position": "RB"
+    },
+    {
+     "name": "Johan Manzambi",
+     "jersey": "9",
+     "position": "AM"
+    },
+    {
+     "name": "Granit Xhaka",
+     "jersey": "10",
+     "position": "LM"
+    },
+    {
+     "name": "Remo Freuler",
+     "jersey": "8",
+     "position": "RM"
+    },
+    {
+     "name": "Breel Embolo",
+     "jersey": "7",
+     "position": "F"
+    },
+    {
+     "name": "Rubén Vargas",
+     "jersey": "17",
+     "position": "AM-L"
+    },
+    {
+     "name": "Djibril Sow",
+     "jersey": "15",
+     "position": "AM-R"
+    }
+   ],
+   "subs": [
+    {
+     "name": "Silvan Widmer",
+     "jersey": "3",
+     "position": "SUB"
+    },
+    {
+     "name": "Fabian Rieder",
+     "jersey": "22",
+     "position": "SUB"
+    },
+    {
+     "name": "Ardon Jashari",
+     "jersey": "14",
+     "position": "SUB"
+    },
+    {
+     "name": "Dan Ndoye",
+     "jersey": "11",
+     "position": "SUB"
+    },
+    {
+     "name": "Cedric Itten",
+     "jersey": "26",
+     "position": "SUB"
+    },
+    {
+     "name": "Eray Cömert",
+     "jersey": "18",
+     "position": "SUB"
+    },
+    {
+     "name": "Michel Aebischer",
+     "jersey": "20",
+     "position": "SUB"
+    },
+    {
+     "name": "Christian Fassnacht",
+     "jersey": "16",
+     "position": "SUB"
+    },
+    {
+     "name": "Aurèle Amenda",
+     "jersey": "24",
+     "position": "SUB"
+    },
+    {
+     "name": "Denis Zakaria",
+     "jersey": "6",
+     "position": "SUB"
+    },
+    {
+     "name": "Yvon Mvogo",
+     "jersey": "12",
+     "position": "SUB"
+    },
+    {
+     "name": "Marvin Keller",
+     "jersey": "21",
+     "position": "SUB"
+    },
+    {
+     "name": "Zeki Amdouni",
+     "jersey": "23",
+     "position": "SUB"
+    },
+    {
+     "name": "Noah Okafor",
+     "jersey": "19",
+     "position": "SUB"
+    }
+   ]
+  },
+  {
+   "team": "Canada",
+   "formation": "4-4-2",
+   "starters": [
+    {
+     "name": "Maxime Crépeau",
+     "jersey": "16",
+     "position": "G"
+    },
+    {
+     "name": "Derek Cornelius",
+     "jersey": "13",
+     "position": "CD-L"
+    },
+    {
+     "name": "Luc de Fougerolles",
+     "jersey": "4",
+     "position": "CD-R"
+    },
+    {
+     "name": "Richie Laryea",
+     "jersey": "22",
+     "position": "LB"
+    },
+    {
+     "name": "Alistair Johnston",
+     "jersey": "2",
+     "position": "RB"
+    },
+    {
+     "name": "Mathieu Choinière",
+     "jersey": "6",
+     "position": "CM-L"
+    },
+    {
+     "name": "Nathan Saliba",
+     "jersey": "25",
+     "position": "CM-R"
+    },
+    {
+     "name": "Ali Ahmed",
+     "jersey": "20",
+     "position": "LM"
+    },
+    {
+     "name": "Tajon Buchanan",
+     "jersey": "17",
+     "position": "RM"
+    },
+    {
+     "name": "Cyle Larin",
+     "jersey": "9",
+     "position": "CF-L"
+    },
+    {
+     "name": "Jonathan David",
+     "jersey": "10",
+     "position": "CF-R"
+    }
+   ],
+   "subs": [
+    {
+     "name": "Alphonso Davies",
+     "jersey": "19",
+     "position": "SUB"
+    },
+    {
+     "name": "Moïse Bombito",
+     "jersey": "15",
+     "position": "SUB"
+    },
+    {
+     "name": "Tani Oluwaseyi",
+     "jersey": "12",
+     "position": "SUB"
+    },
+    {
+     "name": "Niko Sigur",
+     "jersey": "23",
+     "position": "SUB"
+    },
+    {
+     "name": "Owen Goodman",
+     "jersey": "18",
+     "position": "SUB"
+    },
+    {
+     "name": "Jacob Shaffelburg",
+     "jersey": "14",
+     "position": "SUB"
+    },
+    {
+     "name": "Stephen Eustáquio",
+     "jersey": "7",
+     "position": "SUB"
+    },
+    {
+     "name": "Jonathan Osorio",
+     "jersey": "21",
+     "position": "SUB"
+    },
+    {
+     "name": "Liam Millar",
+     "jersey": "11",
+     "position": "SUB"
+    },
+    {
+     "name": "Dayne St. Clair",
+     "jersey": "1",
+     "position": "SUB"
+    },
+    {
+     "name": "Joel Waterman",
+     "jersey": "5",
+     "position": "SUB"
+    },
+    {
+     "name": "Promise David",
+     "jersey": "24",
+     "position": "SUB"
+    },
+    {
+     "name": "Jayden Nelson",
+     "jersey": "26",
+     "position": "SUB"
+    }
+   ]
+  }
+ ],
+ "attendance": 52497,
+ "venue": "BC Place, Vancouver, Canada"
+}

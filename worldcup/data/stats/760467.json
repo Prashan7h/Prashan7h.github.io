@@ -1,0 +1,906 @@
+{
+ "teams": [
+  {
+   "name": "Czechia",
+   "stats": {
+    "possessionPct": "51.6",
+    "totalShots": "13",
+    "shotsOnTarget": "1",
+    "wonCorners": "5",
+    "foulsCommitted": "9",
+    "offsides": "1",
+    "saves": "2",
+    "yellowCards": "0",
+    "redCards": "0"
+   }
+  },
+  {
+   "name": "Mexico",
+   "stats": {
+    "possessionPct": "48.4",
+    "totalShots": "11",
+    "shotsOnTarget": "5",
+    "wonCorners": "1",
+    "foulsCommitted": "13",
+    "offsides": "0",
+    "saves": "1",
+    "yellowCards": "1",
+    "redCards": "0"
+   }
+  }
+ ],
+ "events": [
+  {
+   "type": "Kickoff",
+   "minute": "",
+   "team": null,
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "22'",
+   "team": "Czechia",
+   "text": "Delay in match for a drinks break.",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "22'",
+   "team": "Mexico",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "26'",
+   "team": "Czechia",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "26'",
+   "team": "Mexico",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "45'",
+   "team": "Czechia",
+   "text": "Delay in match because of an injury Michal Sadílek (Czechia).",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "45'",
+   "team": "Mexico",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "45'+1'",
+   "team": "Czechia",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "45'+1'",
+   "team": "Mexico",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Halftime",
+   "minute": "45'+4'",
+   "team": null,
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Start 2nd Half",
+   "minute": "45'",
+   "team": null,
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "46'",
+   "team": "Czechia",
+   "text": "Delay in match because of an injury Tomás Holes (Czechia).",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "46'",
+   "team": "Mexico",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "47'",
+   "team": "Czechia",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "47'",
+   "team": "Mexico",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Goal",
+   "minute": "55'",
+   "team": "Mexico",
+   "text": "Goal! Czechia 0, Mexico 1. Mateo Chávez (Mexico) left footed shot from the centre of the box to the bottom left corner. Assisted by Luis Romo.",
+   "players": [
+    "Mateo Chávez",
+    "Luis Romo"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "56'",
+   "team": "Czechia",
+   "text": "Substitution, Czechia. Lukás Provod replaces Denis Visinsky.",
+   "players": [
+    "Lukás Provod",
+    "Denis Visinský"
+   ]
+  },
+  {
+   "type": "Goal",
+   "minute": "61'",
+   "team": "Mexico",
+   "text": "Goal! Czechia 0, Mexico 2. Julián Quiñones (Mexico) right footed shot from very close range to the centre of the goal. Assisted by Jorge Sánchez following a fast break.",
+   "players": [
+    "Julián Quiñones",
+    "Jorge Sánchez"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "63'",
+   "team": "Mexico",
+   "text": "Substitution, Mexico. Santiago Giménez replaces Guillermo Martínez.",
+   "players": [
+    "Santiago Gimenez",
+    "Guillermo Martínez"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "63'",
+   "team": "Mexico",
+   "text": "Substitution, Mexico. Obed Vargas replaces Luis Romo.",
+   "players": [
+    "Obed Vargas",
+    "Luis Romo"
+   ]
+  },
+  {
+   "type": "Yellow Card",
+   "minute": "64'",
+   "team": "Mexico",
+   "text": "Edson Álvarez (Mexico) is shown the yellow card for a bad foul.",
+   "players": [
+    "Edson Álvarez"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "64'",
+   "team": "Czechia",
+   "text": "Substitution, Czechia. Patrik Schick replaces Adam Hlozek.",
+   "players": [
+    "Patrik Schick",
+    "Adam Hlozek"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "64'",
+   "team": "Czechia",
+   "text": "Substitution, Czechia. Tomás Soucek replaces Tomás Holes.",
+   "players": [
+    "Tomás Soucek",
+    "Tomás Holes"
+   ]
+  },
+  {
+   "type": "Start Delay",
+   "minute": "68'",
+   "team": "Czechia",
+   "text": "Delay in match for a drinks break.",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "68'",
+   "team": "Mexico",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "71'",
+   "team": "Czechia",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "71'",
+   "team": "Mexico",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Substitution",
+   "minute": "72'",
+   "team": "Mexico",
+   "text": "Substitution, Mexico. Álvaro Fidalgo replaces Gilberto Mora.",
+   "players": [
+    "Álvaro Fidalgo",
+    "Gilberto Mora"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "78'",
+   "team": "Mexico",
+   "text": "Substitution, Mexico. Guillermo Ochoa replaces Raúl Rangel.",
+   "players": [
+    "Guillermo Ochoa",
+    "Raúl Rangel"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "78'",
+   "team": "Mexico",
+   "text": "Substitution, Mexico. Jesús Gallardo replaces Mateo Chávez.",
+   "players": [
+    "Jesús Gallardo",
+    "Mateo Chávez"
+   ]
+  },
+  {
+   "type": "Start Delay",
+   "minute": "84'",
+   "team": "Mexico",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "84'",
+   "team": "Czechia",
+   "text": "Delay in match because of an injury Tomás Soucek (Czechia).",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "86'",
+   "team": "Czechia",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "86'",
+   "team": "Mexico",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Substitution",
+   "minute": "87'",
+   "team": "Czechia",
+   "text": "Substitution, Czechia. Tomás Chory replaces Lukás Cerv.",
+   "players": [
+    "Tomás Chorý",
+    "Lukás Cerv"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "87'",
+   "team": "Czechia",
+   "text": "Substitution, Czechia. Alexandr Sojka replaces Tomás Soucek because of an injury.",
+   "players": [
+    "Alexandr Sojka",
+    "Tomás Soucek"
+   ]
+  },
+  {
+   "type": "Goal",
+   "minute": "90'+4'",
+   "team": "Mexico",
+   "text": "Goal! Czechia 0, Mexico 3. Álvaro Fidalgo (Mexico) right footed shot from the centre of the box to the top left corner. Assisted by Roberto Alvarado.",
+   "players": [
+    "Álvaro Fidalgo",
+    "Roberto Alvarado"
+   ]
+  },
+  {
+   "type": "End Regular Time",
+   "minute": "90'+7'",
+   "team": null,
+   "text": "",
+   "players": []
+  }
+ ],
+ "shots": [
+  {
+   "minute": "7",
+   "seconds": 398.0,
+   "team": "Czechia",
+   "player": "Vladimír Coufal",
+   "type": "Shot Blocked",
+   "x": 87.4,
+   "y": 45.2,
+   "goal": false,
+   "xg": 0.175,
+   "text": "Attempt blocked. Vladimír Coufal (Czechia) header from the centre of the box is blocked. Assisted by David Doudera with a cross."
+  },
+  {
+   "minute": "8",
+   "seconds": 429.0,
+   "team": "Czechia",
+   "player": "Denis Visinsky",
+   "type": "Shot Off Target",
+   "x": 87.0,
+   "y": 39.2,
+   "goal": false,
+   "xg": 0.206,
+   "text": "Attempt missed. Denis Visinsky (Czechia) right footed shot from the centre of the box is close, but misses to the left."
+  },
+  {
+   "minute": "12",
+   "seconds": 696.0,
+   "team": "Czechia",
+   "player": "Michal Sadílek",
+   "type": "Shot Off Target",
+   "x": 84.8,
+   "y": 42.4,
+   "goal": false,
+   "xg": 0.189,
+   "text": "Attempt missed. Michal Sadílek (Czechia) left footed shot from the centre of the box is high and wide to the left."
+  },
+  {
+   "minute": "15",
+   "seconds": 855.0,
+   "team": "Czechia",
+   "player": "Denis Visinsky",
+   "type": "Shot Off Target",
+   "x": 74.1,
+   "y": 70.5,
+   "goal": false,
+   "xg": 0.051,
+   "text": "Attempt missed. Denis Visinsky (Czechia) right footed shot from outside the box misses to the right. Assisted by Adam Hlozek with a headed pass."
+  },
+  {
+   "minute": "27",
+   "seconds": 1586.0,
+   "team": "Czechia",
+   "player": "Denis Visinsky",
+   "type": "Shot Blocked",
+   "x": 87.5,
+   "y": 55.4,
+   "goal": false,
+   "xg": 0.268,
+   "text": "Attempt blocked. Denis Visinsky (Czechia) right footed shot from the centre of the box is blocked. Assisted by Adam Hlozek."
+  },
+  {
+   "minute": "37",
+   "seconds": 2189.0,
+   "team": "Mexico",
+   "player": "Israel Reyes",
+   "type": "Shot Off Target",
+   "x": 85.9,
+   "y": 47.4,
+   "goal": false,
+   "xg": 0.238,
+   "text": "Attempt missed. Israel Reyes (Mexico) right footed shot from the centre of the box misses to the left following a set piece situation."
+  },
+  {
+   "minute": "39",
+   "seconds": 2288.0,
+   "team": "Mexico",
+   "player": "Gilberto Mora",
+   "type": "Shot Blocked",
+   "x": 75.3,
+   "y": 44.3,
+   "goal": false,
+   "xg": 0.078,
+   "text": "Attempt blocked. Gilberto Mora (Mexico) left footed shot from outside the box is blocked. Assisted by Jorge Sánchez."
+  },
+  {
+   "minute": "39",
+   "seconds": 2304.0,
+   "team": "Mexico",
+   "player": "Jorge Sánchez",
+   "type": "Shot On Target",
+   "x": 89.3,
+   "y": 24.9,
+   "goal": false,
+   "xg": 0.101,
+   "text": "Attempt saved. Jorge Sánchez (Mexico) right footed shot from the right side of the box is saved in the top right corner by Matej Kovár (Czechia). Assisted by Roberto Alvarado."
+  },
+  {
+   "minute": "39",
+   "seconds": 2322.0,
+   "team": "Mexico",
+   "player": "Roberto Alvarado",
+   "type": "Shot Off Target",
+   "x": 89.2,
+   "y": 30.3,
+   "goal": false,
+   "xg": 0.14,
+   "text": "Attempt missed. Roberto Alvarado (Mexico) left footed shot from the right side of the box is too high. Assisted by Gilberto Mora."
+  },
+  {
+   "minute": "44",
+   "seconds": 2619.0,
+   "team": "Czechia",
+   "player": "David Doudera",
+   "type": "Shot Off Target",
+   "x": 69.5,
+   "y": 61.3,
+   "goal": false,
+   "xg": 0.043,
+   "text": "Attempt missed. David Doudera (Czechia) right footed shot from outside the box is high and wide to the right following a set piece situation."
+  },
+  {
+   "minute": "45'+3",
+   "seconds": 2700.0,
+   "team": "Mexico",
+   "player": "Julián Quiñones",
+   "type": "Shot Off Target",
+   "x": 72.5,
+   "y": 81.7,
+   "goal": false,
+   "xg": 0.031,
+   "text": "Attempt missed. Julián Quiñones (Mexico) right footed shot from long range on the left is just a bit too high. Assisted by Mateo Chávez."
+  },
+  {
+   "minute": "46",
+   "seconds": 2747.0,
+   "team": "Czechia",
+   "player": "Lukás Cerv",
+   "type": "Shot On Target",
+   "x": 86.0,
+   "y": 52.3,
+   "goal": false,
+   "xg": 0.241,
+   "text": "Attempt saved. Lukás Cerv (Czechia) left footed shot from the centre of the box is saved in the top centre of the goal by Raúl Rangel (Mexico)."
+  },
+  {
+   "minute": "50",
+   "seconds": 2957.0,
+   "team": "Mexico",
+   "player": "Julián Quiñones",
+   "type": "Shot Blocked",
+   "x": 84.0,
+   "y": 63.0,
+   "goal": false,
+   "xg": 0.145,
+   "text": "Attempt blocked. Julián Quiñones (Mexico) right footed shot from the centre of the box is blocked. Assisted by Gilberto Mora."
+  },
+  {
+   "minute": "54",
+   "seconds": 3237.0,
+   "team": "Czechia",
+   "player": "Lukás Cerv",
+   "type": "Shot Blocked",
+   "x": 76.2,
+   "y": 40.9,
+   "goal": false,
+   "xg": 0.081,
+   "text": "Attempt blocked. Lukás Cerv (Czechia) right footed shot from outside the box is blocked."
+  },
+  {
+   "minute": "55",
+   "seconds": 3254.0,
+   "team": "Mexico",
+   "player": "Mateo Chávez",
+   "type": "Goal",
+   "x": 89.8,
+   "y": 37.4,
+   "goal": true,
+   "xg": 0.231,
+   "text": "Goal! Czechia 0, Mexico 1. Mateo Chávez (Mexico) left footed shot from the centre of the box to the bottom left corner. Assisted by Luis Romo."
+  },
+  {
+   "minute": "61",
+   "seconds": 3602.0,
+   "team": "Czechia",
+   "player": "Michal Sadílek",
+   "type": "Shot Blocked",
+   "x": 74.1,
+   "y": 36.8,
+   "goal": false,
+   "xg": 0.062,
+   "text": "Attempt blocked. Michal Sadílek (Czechia) left footed shot from outside the box is blocked. Assisted by Vladimír Coufal."
+  },
+  {
+   "minute": "61",
+   "seconds": 3631.0,
+   "team": "Mexico",
+   "player": "Julián Quiñones",
+   "type": "Goal",
+   "x": 96.2,
+   "y": 51.5,
+   "goal": true,
+   "xg": 0.856,
+   "text": "Goal! Czechia 0, Mexico 2. Julián Quiñones (Mexico) right footed shot from very close range to the centre of the goal. Assisted by Jorge Sánchez following a fast break."
+  },
+  {
+   "minute": "68",
+   "seconds": 4041.0,
+   "team": "Czechia",
+   "player": "David Doudera",
+   "type": "Shot Off Target",
+   "x": 75.0,
+   "y": 51.7,
+   "goal": false,
+   "xg": 0.079,
+   "text": "Attempt missed. David Doudera (Czechia) right footed shot from outside the box is too high following a corner."
+  },
+  {
+   "minute": "77",
+   "seconds": 4612.0,
+   "team": "Mexico",
+   "player": "Julián Quiñones",
+   "type": "Shot Off Target",
+   "x": 91.1,
+   "y": 60.1,
+   "goal": false,
+   "xg": 0.196,
+   "text": "Attempt missed. Julián Quiñones (Mexico) header from the centre of the box is too high. Assisted by Jorge Sánchez with a cross."
+  },
+  {
+   "minute": "81",
+   "seconds": 4801.0,
+   "team": "Czechia",
+   "player": "David Doudera",
+   "type": "Shot Off Target",
+   "x": 69.3,
+   "y": 38.1,
+   "goal": false,
+   "xg": 0.042,
+   "text": "Attempt missed. David Doudera (Czechia) right footed shot from outside the box misses to the left."
+  },
+  {
+   "minute": "90'+2",
+   "seconds": 5400.0,
+   "team": "Czechia",
+   "player": "Pavel Sulc",
+   "type": "Shot Blocked",
+   "x": 72.1,
+   "y": 46.0,
+   "goal": false,
+   "xg": 0.059,
+   "text": "Attempt missed. Pavel Sulc (Czechia) right footed shot from outside the box is close, but misses to the left."
+  },
+  {
+   "minute": "90'+3",
+   "seconds": 5400.0,
+   "team": "Czechia",
+   "player": "David Doudera",
+   "type": "Shot Off Target",
+   "x": 95.7,
+   "y": 72.4,
+   "goal": false,
+   "xg": 0.12,
+   "text": "Attempt missed. David Doudera (Czechia) right footed shot from a difficult angle on the left is high and wide to the left. Assisted by Alexandr Sojka with a cross."
+  },
+  {
+   "minute": "90'+4",
+   "seconds": 5400.0,
+   "team": "Mexico",
+   "player": "Santiago Giménez",
+   "type": "Shot On Target",
+   "x": 93.5,
+   "y": 39.7,
+   "goal": false,
+   "xg": 0.347,
+   "text": "Attempt saved. Santiago Giménez (Mexico) left footed shot from the centre of the box is saved in the centre of the goal by Matej Kovár (Czechia). Assisted by Roberto Alvarado."
+  },
+  {
+   "minute": "90'+4",
+   "seconds": 5400.0,
+   "team": "Mexico",
+   "player": "Álvaro Fidalgo",
+   "type": "Goal",
+   "x": 85.1,
+   "y": 46.6,
+   "goal": true,
+   "xg": 0.215,
+   "text": "Goal! Czechia 0, Mexico 3. Álvaro Fidalgo (Mexico) right footed shot from the centre of the box to the top left corner. Assisted by Roberto Alvarado."
+  }
+ ],
+ "lineups": [
+  {
+   "team": "Czechia",
+   "formation": "3-4-2-1",
+   "starters": [
+    {
+     "name": "Matej Kovár",
+     "jersey": "1",
+     "position": "G"
+    },
+    {
+     "name": "Robin Hranác",
+     "jersey": "4",
+     "position": "CD"
+    },
+    {
+     "name": "Ladislav Krejcí",
+     "jersey": "7",
+     "position": "CD-L"
+    },
+    {
+     "name": "Tomás Holes",
+     "jersey": "3",
+     "position": "CD-R"
+    },
+    {
+     "name": "Michal Sadílek",
+     "jersey": "18",
+     "position": "CM-L"
+    },
+    {
+     "name": "Lukás Cerv",
+     "jersey": "12",
+     "position": "CM-R"
+    },
+    {
+     "name": "David Doudera",
+     "jersey": "21",
+     "position": "LM"
+    },
+    {
+     "name": "Vladimír Coufal",
+     "jersey": "5",
+     "position": "RM"
+    },
+    {
+     "name": "Adam Hlozek",
+     "jersey": "9",
+     "position": "F"
+    },
+    {
+     "name": "Denis Visinský",
+     "jersey": "26",
+     "position": "CF-L"
+    },
+    {
+     "name": "Pavel Sulc",
+     "jersey": "15",
+     "position": "CF-R"
+    }
+   ],
+   "subs": [
+    {
+     "name": "Lukás Provod",
+     "jersey": "17",
+     "position": "SUB"
+    },
+    {
+     "name": "David Zima",
+     "jersey": "2",
+     "position": "SUB"
+    },
+    {
+     "name": "Jaroslav Zelený",
+     "jersey": "20",
+     "position": "SUB"
+    },
+    {
+     "name": "Lukás Hornícek",
+     "jersey": "23",
+     "position": "SUB"
+    },
+    {
+     "name": "Hugo Sochurek",
+     "jersey": "25",
+     "position": "SUB"
+    },
+    {
+     "name": "Tomás Chorý",
+     "jersey": "19",
+     "position": "SUB"
+    },
+    {
+     "name": "Stepán Chaloupek",
+     "jersey": "6",
+     "position": "SUB"
+    },
+    {
+     "name": "Patrik Schick",
+     "jersey": "10",
+     "position": "SUB"
+    },
+    {
+     "name": "Jan Kuchta",
+     "jersey": "11",
+     "position": "SUB"
+    },
+    {
+     "name": "Mojmír Chytil",
+     "jersey": "13",
+     "position": "SUB"
+    },
+    {
+     "name": "Tomás Soucek",
+     "jersey": "22",
+     "position": "SUB"
+    },
+    {
+     "name": "Vladimír Darida",
+     "jersey": "8",
+     "position": "SUB"
+    },
+    {
+     "name": "Jindrich Stanek",
+     "jersey": "16",
+     "position": "SUB"
+    },
+    {
+     "name": "Alexandr Sojka",
+     "jersey": "24",
+     "position": "SUB"
+    }
+   ]
+  },
+  {
+   "team": "Mexico",
+   "formation": "4-3-3",
+   "starters": [
+    {
+     "name": "Raúl Rangel",
+     "jersey": "1",
+     "position": "G"
+    },
+    {
+     "name": "Israel Reyes",
+     "jersey": "15",
+     "position": "CD-L"
+    },
+    {
+     "name": "César Montes",
+     "jersey": "3",
+     "position": "CD-R"
+    },
+    {
+     "name": "Mateo Chávez",
+     "jersey": "20",
+     "position": "LB"
+    },
+    {
+     "name": "Jorge Sánchez",
+     "jersey": "2",
+     "position": "RB"
+    },
+    {
+     "name": "Edson Álvarez",
+     "jersey": "4",
+     "position": "CM"
+    },
+    {
+     "name": "Luis Romo",
+     "jersey": "7",
+     "position": "LM"
+    },
+    {
+     "name": "Gilberto Mora",
+     "jersey": "19",
+     "position": "RM"
+    },
+    {
+     "name": "Guillermo Martínez",
+     "jersey": "22",
+     "position": "F"
+    },
+    {
+     "name": "Julián Quiñones",
+     "jersey": "16",
+     "position": "LF"
+    },
+    {
+     "name": "Roberto Alvarado",
+     "jersey": "25",
+     "position": "RF"
+    }
+   ],
+   "subs": [
+    {
+     "name": "Jesús Gallardo",
+     "jersey": "23",
+     "position": "SUB"
+    },
+    {
+     "name": "Johan Vásquez",
+     "jersey": "5",
+     "position": "SUB"
+    },
+    {
+     "name": "Orbelín Pineda",
+     "jersey": "17",
+     "position": "SUB"
+    },
+    {
+     "name": "Érik Lira",
+     "jersey": "6",
+     "position": "SUB"
+    },
+    {
+     "name": "César Huerta",
+     "jersey": "21",
+     "position": "SUB"
+    },
+    {
+     "name": "Raúl Jiménez",
+     "jersey": "9",
+     "position": "SUB"
+    },
+    {
+     "name": "Luis Chávez",
+     "jersey": "24",
+     "position": "SUB"
+    },
+    {
+     "name": "Armando González",
+     "jersey": "14",
+     "position": "SUB"
+    },
+    {
+     "name": "Alexis Vega",
+     "jersey": "10",
+     "position": "SUB"
+    },
+    {
+     "name": "Guillermo Ochoa",
+     "jersey": "13",
+     "position": "SUB"
+    },
+    {
+     "name": "Obed Vargas",
+     "jersey": "18",
+     "position": "SUB"
+    },
+    {
+     "name": "Brian Gutiérrez",
+     "jersey": "26",
+     "position": "SUB"
+    },
+    {
+     "name": "Álvaro Fidalgo",
+     "jersey": "8",
+     "position": "SUB"
+    },
+    {
+     "name": "Santiago Gimenez",
+     "jersey": "11",
+     "position": "SUB"
+    },
+    {
+     "name": "Carlos Acevedo",
+     "jersey": "12",
+     "position": "SUB"
+    }
+   ]
+  }
+ ],
+ "attendance": 80824,
+ "venue": "Estadio Banorte, Mexico City, Mexico"
+}
