@@ -906,12 +906,44 @@
    "team2": "USA",
    "group": "Group D",
    "ground": "Los Angeles (Inglewood)",
-   "score": null,
-   "goals1": [],
-   "goals2": [],
+   "score": {
+    "ft": [
+     3,
+     2
+    ],
+    "ht": [
+     2,
+     1
+    ]
+   },
+   "goals1": [
+    {
+     "name": "Arda Güler",
+     "minute": "10"
+    },
+    {
+     "name": "Baris Alper Yilmaz",
+     "minute": "31"
+    },
+    {
+     "name": "Kaan Ayhan",
+     "minute": "90+8"
+    }
+   ],
+   "goals2": [
+    {
+     "name": "Auston Trusty",
+     "minute": "3"
+    },
+    {
+     "name": "Sebastian Berhalter",
+     "minute": "49"
+    }
+   ],
    "espn_id": "760470",
-   "status": "live",
+   "status": "finished",
    "utc_date": "2026-06-26T02:00Z",
+   "attendance": 70492,
    "venue": "SoFi Stadium",
    "slug": "2026-06-25-turkey-vs-usa"
   },
@@ -924,12 +956,22 @@
    "team2": "Australia",
    "group": "Group D",
    "ground": "San Francisco Bay Area (Santa Clara)",
-   "score": null,
+   "score": {
+    "ft": [
+     0,
+     0
+    ],
+    "ht": [
+     0,
+     0
+    ]
+   },
    "goals1": [],
    "goals2": [],
    "espn_id": "760469",
-   "status": "live",
+   "status": "finished",
    "utc_date": "2026-06-26T02:00Z",
+   "attendance": 68827,
    "venue": "Levi's Stadium",
    "slug": "2026-06-25-paraguay-vs-australia"
   },

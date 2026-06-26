@@ -1,0 +1,767 @@
+{
+ "teams": [
+  {
+   "name": "Paraguay",
+   "stats": {
+    "possessionPct": "44",
+    "totalShots": "7",
+    "shotsOnTarget": "2",
+    "wonCorners": "1",
+    "foulsCommitted": "9",
+    "offsides": "0",
+    "saves": "5",
+    "yellowCards": "1",
+    "redCards": "0"
+   }
+  },
+  {
+   "name": "Australia",
+   "stats": {
+    "possessionPct": "56",
+    "totalShots": "12",
+    "shotsOnTarget": "5",
+    "wonCorners": "3",
+    "foulsCommitted": "6",
+    "offsides": "0",
+    "saves": "2",
+    "yellowCards": "1",
+    "redCards": "0"
+   }
+  }
+ ],
+ "events": [
+  {
+   "type": "Kickoff",
+   "minute": "",
+   "team": null,
+   "text": "First Half begins.",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "24'",
+   "team": "Australia",
+   "text": "Delay in match for a drinks break.",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "24'",
+   "team": "Paraguay",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "26'",
+   "team": "Australia",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "26'",
+   "team": "Paraguay",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "28'",
+   "team": "Australia",
+   "text": "Delay in match because of an injury Connor Metcalfe (Australia).",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "28'",
+   "team": "Paraguay",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "30'",
+   "team": "Australia",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "30'",
+   "team": "Paraguay",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Halftime",
+   "minute": "45'+7'",
+   "team": null,
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Substitution",
+   "minute": "45'",
+   "team": "Paraguay",
+   "text": "Substitution, Paraguay. Mauricio replaces Alexandro Maidana.",
+   "players": [
+    "Maurício",
+    "Alexandro Maidana"
+   ]
+  },
+  {
+   "type": "Start 2nd Half",
+   "minute": "45'",
+   "team": null,
+   "text": "Second Half begins Paraguay 0, Australia 0.",
+   "players": []
+  },
+  {
+   "type": "Yellow Card",
+   "minute": "46'",
+   "team": "Australia",
+   "text": "Jackson Irvine (Australia) is shown the yellow card for a bad foul.",
+   "players": [
+    "Jackson Irvine"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "58'",
+   "team": "Australia",
+   "text": "Substitution, Australia. Ajdin Hrustic replaces Cristian Volpato.",
+   "players": [
+    "Ajdin Hrustic",
+    "Cristian Volpato"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "67'",
+   "team": "Paraguay",
+   "text": "Substitution, Paraguay. Álex Arce replaces Gabriel Ávalos.",
+   "players": [
+    "Alex Arce",
+    "Gabriel Ávalos"
+   ]
+  },
+  {
+   "type": "Start Delay",
+   "minute": "68'",
+   "team": "Australia",
+   "text": "Delay in match for a drinks break.",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "68'",
+   "team": "Paraguay",
+   "text": "Delay in match because of an injury Omar Alderete (Paraguay).",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "71'",
+   "team": "Australia",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "71'",
+   "team": "Paraguay",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Yellow Card",
+   "minute": "77'",
+   "team": "Paraguay",
+   "text": "Diego Gómez (Paraguay) is shown the yellow card for a bad foul.",
+   "players": [
+    "Diego Gómez"
+   ]
+  },
+  {
+   "type": "Start Delay",
+   "minute": "83'",
+   "team": "Paraguay",
+   "text": "Delay in match because of an injury Orlando Gill (Paraguay).",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "83'",
+   "team": "Australia",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "84'",
+   "team": "Paraguay",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "84'",
+   "team": "Australia",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Substitution",
+   "minute": "84'",
+   "team": "Paraguay",
+   "text": "Substitution, Paraguay. José Canale replaces Omar Alderete because of an injury.",
+   "players": [
+    "José Canale",
+    "Omar Alderete"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "84'",
+   "team": "Australia",
+   "text": "Substitution, Australia. Paul Okon-Engstler replaces Jackson Irvine.",
+   "players": [
+    "Paul Okon-Engstler",
+    "Jackson Irvine"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "84'",
+   "team": "Australia",
+   "text": "Substitution, Australia. Tete Yengi replaces Nestory Irankunda.",
+   "players": [
+    "Tete Yengi",
+    "Nestory Irankunda"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "90'+2'",
+   "team": "Paraguay",
+   "text": "Substitution, Paraguay. Damián Bobadilla replaces Diego Gómez.",
+   "players": [
+    "Damián Bobadilla",
+    "Diego Gómez"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "90'+2'",
+   "team": "Paraguay",
+   "text": "Substitution, Paraguay. Júnior Alonso replaces Matías Galarza.",
+   "players": [
+    "Júnior Alonso",
+    "Matías Galarza"
+   ]
+  },
+  {
+   "type": "End Regular Time",
+   "minute": "90'+6'",
+   "team": null,
+   "text": "",
+   "players": []
+  }
+ ],
+ "shots": [
+  {
+   "minute": "4",
+   "seconds": 202.0,
+   "team": "Australia",
+   "player": "Jackson Irvine",
+   "type": "Shot On Target",
+   "x": 93.9,
+   "y": 33.6,
+   "goal": false,
+   "xg": 0.197,
+   "text": "Attempt saved. Jackson Irvine (Australia) right footed shot from the right side of the box is saved in the top centre of the goal by Orlando Gill (Paraguay). Assisted by Cristian Volpato with a cross."
+  },
+  {
+   "minute": "10",
+   "seconds": 549.0,
+   "team": "Australia",
+   "player": "Aiden O'Neill",
+   "type": "Shot Off Target",
+   "x": 77.4,
+   "y": 73.0,
+   "goal": false,
+   "xg": 0.06,
+   "text": "Attempt missed. Aiden O'Neill (Australia) right footed shot from outside the box is high and wide to the right. Assisted by Connor Metcalfe."
+  },
+  {
+   "minute": "23",
+   "seconds": 1331.0,
+   "team": "Australia",
+   "player": "Connor Metcalfe",
+   "type": "Shot Blocked",
+   "x": 73.7,
+   "y": 62.2,
+   "goal": false,
+   "xg": 0.061,
+   "text": "Attempt blocked. Connor Metcalfe (Australia) left footed shot from outside the box is blocked. Assisted by Cristian Volpato."
+  },
+  {
+   "minute": "36",
+   "seconds": 2119.0,
+   "team": "Australia",
+   "player": "Jordan Bos",
+   "type": "Shot On Target",
+   "x": 74.1,
+   "y": 36.6,
+   "goal": false,
+   "xg": 0.062,
+   "text": "Attempt saved. Jordan Bos (Australia) left footed shot from outside the box is saved in the centre of the goal by Orlando Gill (Paraguay). Assisted by Cristian Volpato."
+  },
+  {
+   "minute": "38",
+   "seconds": 2226.0,
+   "team": "Paraguay",
+   "player": "Gabriel Ávalos",
+   "type": "Shot Off Target",
+   "x": 87.5,
+   "y": 60.0,
+   "goal": false,
+   "xg": 0.224,
+   "text": "Attempt missed. Gabriel Ávalos (Paraguay) right footed shot from the centre of the box misses to the left. Assisted by Diego Gómez."
+  },
+  {
+   "minute": "45'+2",
+   "seconds": 2700.0,
+   "team": "Australia",
+   "player": "Cristian Volpato",
+   "type": "Shot On Target",
+   "x": 86.9,
+   "y": 24.4,
+   "goal": false,
+   "xg": 0.09,
+   "text": "Attempt saved. Cristian Volpato (Australia) left footed shot from the right side of the box is saved in the top centre of the goal by Orlando Gill (Paraguay). Assisted by Jordan Bos."
+  },
+  {
+   "minute": "45'+3",
+   "seconds": 2700.0,
+   "team": "Australia",
+   "player": "Jackson Irvine",
+   "type": "Shot Off Target",
+   "x": 90.2,
+   "y": 46.0,
+   "goal": false,
+   "xg": 0.249,
+   "text": "Attempt missed. Jackson Irvine (Australia) header from the centre of the box is high and wide to the right. Assisted by Jordan Bos with a cross."
+  },
+  {
+   "minute": "46",
+   "seconds": 2712.0,
+   "team": "Paraguay",
+   "player": "Juan José Cáceres",
+   "type": "Shot Off Target",
+   "x": 63.8,
+   "y": 18.6,
+   "goal": false,
+   "xg": 0.017,
+   "text": "Attempt missed. Juan José Cáceres (Paraguay) right footed shot from more than 40 yards on the right wing is high and wide to the right."
+  },
+  {
+   "minute": "48",
+   "seconds": 2830.0,
+   "team": "Paraguay",
+   "player": "Andrés Cubas",
+   "type": "Shot Off Target",
+   "x": 74.9,
+   "y": 32.9,
+   "goal": false,
+   "xg": 0.06,
+   "text": "Attempt missed. Andrés Cubas (Paraguay) right footed shot from outside the box is high and wide to the right."
+  },
+  {
+   "minute": "50",
+   "seconds": 2959.0,
+   "team": "Paraguay",
+   "player": "Mauricio",
+   "type": "Shot On Target",
+   "x": 72.2,
+   "y": 47.2,
+   "goal": false,
+   "xg": 0.06,
+   "text": "Attempt saved. Mauricio (Paraguay) right footed shot from outside the box is saved in the top right corner by Patrick Beach (Australia). Assisted by Andrés Cubas."
+  },
+  {
+   "minute": "59",
+   "seconds": 3536.0,
+   "team": "Australia",
+   "player": "Nestory Irankunda",
+   "type": "Shot Off Target",
+   "x": 91.4,
+   "y": 25.4,
+   "goal": false,
+   "xg": 0.108,
+   "text": "Attempt missed. Nestory Irankunda (Australia) right footed shot from the right side of the box misses to the left. Assisted by Jordan Bos with a headed pass."
+  },
+  {
+   "minute": "60",
+   "seconds": 3590.0,
+   "team": "Australia",
+   "player": "Nestory Irankunda",
+   "type": "Shot Blocked",
+   "x": 70.3,
+   "y": 55.6,
+   "goal": false,
+   "xg": 0.05,
+   "text": "Attempt blocked. Nestory Irankunda (Australia) right footed shot from outside the box is blocked."
+  },
+  {
+   "minute": "61",
+   "seconds": 3613.0,
+   "team": "Australia",
+   "player": "Ajdin Hrustic",
+   "type": "Shot Blocked",
+   "x": 79.9,
+   "y": 39.9,
+   "goal": false,
+   "xg": 0.111,
+   "text": "Attempt blocked. Ajdin Hrustic (Australia) left footed shot from outside the box is blocked. Assisted by Aiden O'Neill."
+  },
+  {
+   "minute": "82",
+   "seconds": 4876.0,
+   "team": "Paraguay",
+   "player": "Julio Enciso",
+   "type": "Shot Blocked",
+   "x": 79.1,
+   "y": 67.9,
+   "goal": false,
+   "xg": 0.082,
+   "text": "Attempt blocked. Julio Enciso (Paraguay) right footed shot from outside the box is blocked. Assisted by Matías Galarza."
+  },
+  {
+   "minute": "82",
+   "seconds": 4880.0,
+   "team": "Paraguay",
+   "player": "Julio Enciso",
+   "type": "Shot Off Target",
+   "x": 83.1,
+   "y": 64.8,
+   "goal": false,
+   "xg": 0.125,
+   "text": "Attempt missed. Julio Enciso (Paraguay) right footed shot from the left side of the box misses to the left. Assisted by Diego Gómez."
+  },
+  {
+   "minute": "83",
+   "seconds": 4929.0,
+   "team": "Australia",
+   "player": "Jordan Bos",
+   "type": "Shot On Target",
+   "x": 91.5,
+   "y": 40.5,
+   "goal": false,
+   "xg": 0.325,
+   "text": "Attempt saved. Jordan Bos (Australia) left footed shot from the centre of the box is saved in the bottom right corner by Orlando Gill (Paraguay). Assisted by Ajdin Hrustic."
+  },
+  {
+   "minute": "90",
+   "seconds": 5343.0,
+   "team": "Australia",
+   "player": "Jordan Bos",
+   "type": "Shot Off Target",
+   "x": 88.0,
+   "y": 30.7,
+   "goal": false,
+   "xg": 0.137,
+   "text": "Attempt missed. Jordan Bos (Australia) left footed shot from the right side of the box is close, but misses to the left. Assisted by Aiden O'Neill."
+  },
+  {
+   "minute": "90'+3",
+   "seconds": 5400.0,
+   "team": "Paraguay",
+   "player": "Mauricio",
+   "type": "Shot On Target",
+   "x": 85.0,
+   "y": 51.3,
+   "goal": false,
+   "xg": 0.217,
+   "text": "Attempt saved. Mauricio (Paraguay) left footed shot from the centre of the box is saved in the bottom left corner by Patrick Beach (Australia). Assisted by Álex Arce."
+  },
+  {
+   "minute": "90'+3",
+   "seconds": 5400.0,
+   "team": "Australia",
+   "player": "Tete Yengi",
+   "type": "Shot On Target",
+   "x": 88.9,
+   "y": 36.0,
+   "goal": false,
+   "xg": 0.199,
+   "text": "Attempt saved. Tete Yengi (Australia) right footed shot from the right side of the box is saved in the centre of the goal by Orlando Gill (Paraguay). Assisted by Ajdin Hrustic."
+  }
+ ],
+ "lineups": [
+  {
+   "team": "Paraguay",
+   "formation": "5-3-2",
+   "starters": [
+    {
+     "name": "Orlando Gil",
+     "jersey": "12",
+     "position": "G"
+    },
+    {
+     "name": "Gustavo Gómez",
+     "jersey": "15",
+     "position": "CD"
+    },
+    {
+     "name": "Omar Alderete",
+     "jersey": "3",
+     "position": "CD-L"
+    },
+    {
+     "name": "Gustavo Velázquez",
+     "jersey": "2",
+     "position": "CD-R"
+    },
+    {
+     "name": "Alexandro Maidana",
+     "jersey": "26",
+     "position": "LB"
+    },
+    {
+     "name": "Juan Jose Cáceres",
+     "jersey": "4",
+     "position": "RB"
+    },
+    {
+     "name": "Andrés Cubas",
+     "jersey": "14",
+     "position": "CM"
+    },
+    {
+     "name": "Matías Galarza",
+     "jersey": "23",
+     "position": "CM-L"
+    },
+    {
+     "name": "Diego Gómez",
+     "jersey": "8",
+     "position": "CM-R"
+    },
+    {
+     "name": "Julio Enciso",
+     "jersey": "19",
+     "position": "CF-L"
+    },
+    {
+     "name": "Gabriel Ávalos",
+     "jersey": "21",
+     "position": "CF-R"
+    }
+   ],
+   "subs": [
+    {
+     "name": "Gastón Olveira",
+     "jersey": "22",
+     "position": "SUB"
+    },
+    {
+     "name": "Gustavo Caballero",
+     "jersey": "24",
+     "position": "SUB"
+    },
+    {
+     "name": "Ramón Sosa",
+     "jersey": "7",
+     "position": "SUB"
+    },
+    {
+     "name": "Damián Bobadilla",
+     "jersey": "16",
+     "position": "SUB"
+    },
+    {
+     "name": "Braian Ojeda",
+     "jersey": "20",
+     "position": "SUB"
+    },
+    {
+     "name": "Alex Arce",
+     "jersey": "18",
+     "position": "SUB"
+    },
+    {
+     "name": "Júnior Alonso",
+     "jersey": "6",
+     "position": "SUB"
+    },
+    {
+     "name": "Antonio Sanabria",
+     "jersey": "9",
+     "position": "SUB"
+    },
+    {
+     "name": "Isidro Pitta",
+     "jersey": "25",
+     "position": "SUB"
+    },
+    {
+     "name": "Alejandro Romero Gamarra",
+     "jersey": "17",
+     "position": "SUB"
+    },
+    {
+     "name": "Gatito Fernández",
+     "jersey": "1",
+     "position": "SUB"
+    },
+    {
+     "name": "José Canale",
+     "jersey": "13",
+     "position": "SUB"
+    },
+    {
+     "name": "Fabián Balbuena",
+     "jersey": "5",
+     "position": "SUB"
+    },
+    {
+     "name": "Maurício",
+     "jersey": "11",
+     "position": "SUB"
+    }
+   ]
+  },
+  {
+   "team": "Australia",
+   "formation": "3-4-2-1",
+   "starters": [
+    {
+     "name": "Patrick Beach",
+     "jersey": "18",
+     "position": "G"
+    },
+    {
+     "name": "Harry Souttar",
+     "jersey": "19",
+     "position": "CD"
+    },
+    {
+     "name": "Lucas Herrington",
+     "jersey": "25",
+     "position": "CD-L"
+    },
+    {
+     "name": "Alessandro Circati",
+     "jersey": "3",
+     "position": "CD-R"
+    },
+    {
+     "name": "Jackson Irvine",
+     "jersey": "22",
+     "position": "CM-L"
+    },
+    {
+     "name": "Aiden O'Neill",
+     "jersey": "13",
+     "position": "CM-R"
+    },
+    {
+     "name": "Aziz Behich",
+     "jersey": "16",
+     "position": "LM"
+    },
+    {
+     "name": "Jordan Bos",
+     "jersey": "5",
+     "position": "RM"
+    },
+    {
+     "name": "Nestory Irankunda",
+     "jersey": "17",
+     "position": "F"
+    },
+    {
+     "name": "Connor Metcalfe",
+     "jersey": "8",
+     "position": "CF-L"
+    },
+    {
+     "name": "Cristian Volpato",
+     "jersey": "20",
+     "position": "CF-R"
+    }
+   ],
+   "subs": [
+    {
+     "name": "Paul Izzo",
+     "jersey": "12",
+     "position": "SUB"
+    },
+    {
+     "name": "Mathew Ryan",
+     "jersey": "1",
+     "position": "SUB"
+    },
+    {
+     "name": "Cameron Burgess",
+     "jersey": "21",
+     "position": "SUB"
+    },
+    {
+     "name": "Nishan Velupillay",
+     "jersey": "23",
+     "position": "SUB"
+    },
+    {
+     "name": "Awer Mabil",
+     "jersey": "11",
+     "position": "SUB"
+    },
+    {
+     "name": "Cameron Devlin",
+     "jersey": "14",
+     "position": "SUB"
+    },
+    {
+     "name": "Paul Okon-Engstler",
+     "jersey": "24",
+     "position": "SUB"
+    },
+    {
+     "name": "Tete Yengi",
+     "jersey": "26",
+     "position": "SUB"
+    },
+    {
+     "name": "Mohamed Toure",
+     "jersey": "9",
+     "position": "SUB"
+    },
+    {
+     "name": "Ajdin Hrustic",
+     "jersey": "10",
+     "position": "SUB"
+    },
+    {
+     "name": "Kai Trewin",
+     "jersey": "15",
+     "position": "SUB"
+    },
+    {
+     "name": "Milos Degenek",
+     "jersey": "2",
+     "position": "SUB"
+    },
+    {
+     "name": "Jason Geria",
+     "jersey": "6",
+     "position": "SUB"
+    }
+   ]
+  }
+ ],
+ "attendance": 68827,
+ "venue": "Levi's Stadium, Santa Clara, California, USA"
+}

@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-KVBPX8VW');</script>
+    <!-- End Google Tag Manager -->
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Paraguay 0–0 Australia — full match analytics: shot map, expected goals race, lineups, stats and model verdict.">
+    <link rel="icon" type="image/svg+xml" href="../../images/favicon.svg">
+    <link rel="icon" type="image/png" sizes="32x32" href="../../images/favicon-32.png">
+    <title>Paraguay 0–0 Australia — World Cup 2026</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+html { font-size: 16px; }
+body {
+  background: #fff;
+  color: #0a0a0a;
+  font-family: 'Manrope', -apple-system, 'Segoe UI', sans-serif;
+  line-height: 1.5;
+  font-feature-settings: 'tnum';
+  -webkit-font-smoothing: antialiased;
+}
+a { color: inherit; text-decoration: none; }
+.wrap { max-width: 700px; margin: 0 auto; padding: 0 1.1rem 5rem; }
+
+/* ---- masthead ---- */
+.masthead { padding: 2.2rem 0 1.4rem; display: flex; align-items: baseline; justify-content: space-between; gap: 1rem; flex-wrap: wrap; }
+.masthead h1 { font-size: 1.55rem; font-weight: 800; letter-spacing: -0.02em; }
+.masthead .sub { font-size: 0.78rem; color: #777; font-weight: 500; }
+.masthead a.home { font-size: 0.75rem; font-weight: 600; color: #999; }
+.masthead a.home:hover { color: #0a0a0a; }
+
+/* ---- tabs ---- */
+.tabbar {
+  position: sticky; top: 0; z-index: 10;
+  display: flex; gap: 0.4rem;
+  background: rgba(255,255,255,0.94); backdrop-filter: blur(6px);
+  padding: 0.6rem 0 0.8rem;
+}
+.tabbar button {
+  font: inherit; font-size: 0.82rem; font-weight: 700;
+  border: 1px solid #e4e4e4; background: #fff; color: #555;
+  border-radius: 999px; padding: 0.42rem 1.05rem; cursor: pointer;
+  transition: all 0.15s ease;
+}
+.tabbar button:hover { border-color: #0a0a0a; color: #0a0a0a; }
+.tabbar button.active { background: #0a0a0a; border-color: #0a0a0a; color: #fff; }
+.panel { display: none; }
+.panel.active { display: block; }
+
+/* ---- cards ---- */
+.card {
+  border: 1px solid #e9e9e9; border-radius: 16px; background: #fff;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.03);
+  padding: 1.15rem 1.25rem; margin-bottom: 1rem;
+}
+.card-title { font-size: 0.7rem; font-weight: 800; letter-spacing: 0.1em; text-transform: uppercase; color: #999; margin-bottom: 0.9rem; }
+.card-note { font-size: 0.72rem; color: #999; margin-top: 0.7rem; line-height: 1.55; }
+
+/* ---- fixtures feed ---- */
+.day-head {
+  font-size: 0.72rem; font-weight: 800; letter-spacing: 0.08em; text-transform: uppercase;
+  color: #888; margin: 1.6rem 0 0.6rem; padding-left: 0.2rem;
+}
+.day-head.today { color: #0a0a0a; }
+.day-head.today::after { content: 'TODAY'; margin-left: 0.6rem; background: #0a0a0a; color: #fff; border-radius: 5px; padding: 0.1rem 0.45rem; font-size: 0.62rem; }
+.fixture {
+  display: grid; grid-template-columns: 3.4rem 1fr auto; align-items: center; gap: 0.9rem;
+  border: 1px solid #e9e9e9; border-radius: 14px; background: #fff;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.03);
+  padding: 0.8rem 1rem; margin-bottom: 0.55rem;
+}
+a.fixture { transition: border-color 0.15s ease, transform 0.15s ease; }
+a.fixture:hover { border-color: #0a0a0a; transform: translateY(-1px); }
+.fx-status { font-size: 0.68rem; font-weight: 800; color: #999; text-align: center; line-height: 1.3; }
+.fx-status .chip { display: inline-block; background: #f1f1f1; border-radius: 6px; padding: 0.12rem 0.4rem; color: #555; }
+.fx-status .chip.ft { background: #0a0a0a; color: #fff; }
+.fx-teams { min-width: 0; }
+.fx-row { display: flex; justify-content: space-between; align-items: baseline; gap: 0.8rem; }
+.fx-row .t { font-size: 0.92rem; font-weight: 600; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.fx-row .t.win { font-weight: 800; }
+.fx-row .s { font-size: 0.95rem; font-weight: 800; }
+.fx-meta { font-size: 0.68rem; color: #aaa; font-weight: 600; text-align: right; max-width: 8rem; }
+.fx-arrow { color: #ccc; font-size: 0.9rem; }
+
+/* ---- tables ---- */
+table.t { width: 100%; border-collapse: collapse; font-size: 0.82rem; }
+table.t th { font-size: 0.64rem; font-weight: 800; letter-spacing: 0.07em; text-transform: uppercase; color: #aaa; text-align: left; padding: 0.3rem 0.45rem; border-bottom: 1px solid #eee; }
+table.t td { padding: 0.42rem 0.45rem; border-bottom: 1px solid #f4f4f4; font-weight: 500; }
+table.t tr:last-child td { border-bottom: none; }
+table.t .r { text-align: right; }
+table.t .pos { color: #bbb; font-weight: 700; width: 1.4rem; }
+table.t .pts { font-weight: 800; }
+.qual-line td { border-top: 2px solid #0a0a0a; }
+
+/* ---- group grid ---- */
+.group-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 0.9rem; }
+.group-grid .card { margin-bottom: 0; padding: 0.9rem 1rem; }
+
+/* ---- predictions ---- */
+.odds-row { display: grid; grid-template-columns: 8.2rem 1fr 3.2rem; align-items: center; gap: 0.7rem; padding: 0.32rem 0; font-size: 0.84rem; font-weight: 600; }
+.odds-track { height: 0.6rem; background: #f1f1f1; border-radius: 99px; overflow: hidden; }
+.odds-track > span { display: block; height: 100%; background: #0a0a0a; border-radius: 99px; }
+.odds-pct { text-align: right; font-weight: 800; font-size: 0.8rem; }
+.pred-line { font-size: 0.74rem; color: #888; font-weight: 600; margin-top: 0.25rem; }
+.bigstat { display: flex; gap: 0.9rem; }
+.bigstat .cell { flex: 1; border: 1px solid #eee; border-radius: 12px; padding: 0.7rem 0.85rem; }
+.bigstat .n { font-size: 1.35rem; font-weight: 800; letter-spacing: -0.02em; }
+.bigstat .l { font-size: 0.64rem; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; color: #999; margin-top: 0.1rem; }
+
+/* ---- match page: scoreboard ---- */
+.kickline { font-size: 0.72rem; font-weight: 700; color: #999; letter-spacing: 0.05em; text-transform: uppercase; margin-bottom: 0.9rem; }
+.board { display: grid; grid-template-columns: 1fr auto 1fr; align-items: center; gap: 1rem; margin: 0.4rem 0 0.9rem; }
+.board .team { text-align: center; }
+.board .team .name { font-size: 1.05rem; font-weight: 800; letter-spacing: -0.01em; }
+.board .team .xg { font-size: 0.7rem; color: #999; font-weight: 600; margin-top: 0.15rem; }
+.board .score { font-size: 2.6rem; font-weight: 800; letter-spacing: 0.02em; white-space: nowrap; }
+.board .score .ft { display: block; font-size: 0.64rem; font-weight: 800; letter-spacing: 0.15em; color: #999; text-align: center; }
+.goals-line { text-align: center; font-size: 0.76rem; color: #666; font-weight: 600; line-height: 1.7; }
+.venue-line { text-align: center; font-size: 0.7rem; color: #aaa; font-weight: 600; margin-top: 0.6rem; }
+.narrative { font-size: 0.88rem; line-height: 1.65; color: #333; }
+
+/* ---- stat bars ---- */
+.sb-row { display: grid; grid-template-columns: 2.6rem 1fr 7.5rem 1fr 2.6rem; align-items: center; gap: 0.55rem; padding: 0.34rem 0; }
+.sb-row .v { font-size: 0.84rem; font-weight: 800; }
+.sb-row .v.l { text-align: right; }
+.sb-row .lab { font-size: 0.66rem; font-weight: 700; letter-spacing: 0.05em; text-transform: uppercase; color: #999; text-align: center; }
+.sb-track { height: 0.5rem; background: #f1f1f1; border-radius: 99px; position: relative; overflow: hidden; }
+.sb-track > span { position: absolute; top: 0; height: 100%; background: #0a0a0a; border-radius: 99px; }
+.sb-track.l > span { right: 0; }
+.sb-track.r > span { left: 0; }
+
+/* ---- timeline ---- */
+.tl-item { display: grid; grid-template-columns: 3rem 1fr; gap: 0.8rem; padding: 0.45rem 0; border-bottom: 1px solid #f6f6f6; font-size: 0.82rem; }
+.tl-item:last-child { border-bottom: none; }
+.tl-min { font-weight: 800; color: #bbb; text-align: right; }
+.tl-text { font-weight: 500; color: #444; }
+.tl-text .tag { font-size: 0.62rem; font-weight: 800; letter-spacing: 0.06em; text-transform: uppercase; border-radius: 5px; padding: 0.08rem 0.4rem; margin-right: 0.45rem; background: #f1f1f1; color: #666; vertical-align: 1px; }
+.tl-text .tag.goal { background: #0a0a0a; color: #fff; }
+
+/* ---- lineups ---- */
+.lineups { display: grid; grid-template-columns: 1fr 1fr; gap: 1.4rem; }
+.lu-team { font-size: 0.85rem; font-weight: 800; }
+.lu-formation { font-size: 0.68rem; color: #999; font-weight: 700; margin-bottom: 0.5rem; }
+.lu-list { list-style: none; font-size: 0.78rem; font-weight: 500; }
+.lu-list li { padding: 0.18rem 0; border-bottom: 1px solid #f7f7f7; }
+.lu-list .j { display: inline-block; width: 1.7rem; color: #bbb; font-weight: 700; }
+.lu-subs { margin-top: 0.6rem; font-size: 0.7rem; color: #999; line-height: 1.6; }
+
+/* ---- charts ---- */
+.chart { width: 100%; }
+.legend { display: flex; gap: 1.1rem; font-size: 0.7rem; font-weight: 700; color: #777; margin-top: 0.5rem; flex-wrap: wrap; }
+.legend .k { display: inline-flex; align-items: center; gap: 0.35rem; }
+.legend .dot { width: 0.65rem; height: 0.65rem; border-radius: 50%; display: inline-block; }
+
+.backlink { display: inline-block; margin-top: 0.5rem; font-size: 0.8rem; font-weight: 700; color: #888; }
+.backlink:hover { color: #0a0a0a; }
+.foot { font-size: 0.72rem; color: #aaa; line-height: 1.6; margin-top: 2.2rem; font-weight: 500; }
+
+@media (max-width: 560px) {
+  .group-grid { grid-template-columns: 1fr; }
+  .lineups { grid-template-columns: 1fr; }
+  .board .score { font-size: 2rem; }
+  .board .team .name { font-size: 0.9rem; }
+  .odds-row { grid-template-columns: 6.4rem 1fr 3rem; }
+  .sb-row { grid-template-columns: 2.2rem 1fr 5.4rem 1fr 2.2rem; gap: 0.4rem; }
+  .bigstat { flex-wrap: wrap; }
+  .fx-meta { display: none; }
+}
+
+    </style>
+</head>
+<body>
+    <noscript><iframe aria-hidden="true" title="Google Tag Manager" src="https://www.googletagmanager.com/ns.html?id=GTM-KVBPX8VW"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+    <div class="wrap">
+        <div class="masthead">
+            <div><h1>World Cup 2026</h1></div>
+            <a class="home" href="../index.html">&larr; All matches</a>
+        </div>
+
+        <!-- scoreboard -->
+        <div class="card">
+            <div class="kickline">Matchday 15 · Group D · 2026-06-25</div>
+            <div class="board">
+                <div class="team">
+                    <div class="name">Paraguay</div>
+                    <div class="xg">xG 0.79</div>
+                </div>
+                <div class="score"><span class="ft">HT 0–0</span>0&thinsp;–&thinsp;0</div>
+                <div class="team">
+                    <div class="name">Australia</div>
+                    <div class="xg">xG 1.65</div>
+                </div>
+            </div>
+            
+            <div class="venue-line">Levi's Stadium · 68,827 attendance</div>
+        </div>
+
+        
+        <div class="card">
+            <div class="card-title">The story</div>
+            <p class="narrative">A 0–0 draw — the model had that at 26%.</p>
+        </div>
+        
+
+        
+        <div class="card">
+            <div class="card-title">Expected goals race</div>
+            <div class="chart"><svg viewBox="0 0 660 240" xmlns="http://www.w3.org/2000/svg" width="100%" role="img" aria-label="Cumulative expected goals"><line x1="34" y1="161.3" x2="646" y2="161.3" stroke="#f0f0f0" stroke-width="1"/><text x="28" y="164.3" font-size="9" font-family="Manrope,sans-serif" fill="#bbb" text-anchor="end">0.5</text><line x1="34" y1="108.5" x2="646" y2="108.5" stroke="#f0f0f0" stroke-width="1"/><text x="28" y="111.5" font-size="9" font-family="Manrope,sans-serif" fill="#bbb" text-anchor="end">1</text><line x1="34" y1="55.8" x2="646" y2="55.8" stroke="#f0f0f0" stroke-width="1"/><text x="28" y="58.8" font-size="9" font-family="Manrope,sans-serif" fill="#bbb" text-anchor="end">1.5</text><text x="34.0" y="232" font-size="9" font-family="Manrope,sans-serif" fill="#bbb" text-anchor="middle">0&#8242;</text><text x="130.6" y="232" font-size="9" font-family="Manrope,sans-serif" fill="#bbb" text-anchor="middle">15&#8242;</text><text x="227.3" y="232" font-size="9" font-family="Manrope,sans-serif" fill="#bbb" text-anchor="middle">30&#8242;</text><text x="323.9" y="232" font-size="9" font-family="Manrope,sans-serif" fill="#bbb" text-anchor="middle">45&#8242;</text><text x="420.5" y="232" font-size="9" font-family="Manrope,sans-serif" fill="#bbb" text-anchor="middle">60&#8242;</text><text x="517.2" y="232" font-size="9" font-family="Manrope,sans-serif" fill="#bbb" text-anchor="middle">75&#8242;</text><text x="613.8" y="232" font-size="9" font-family="Manrope,sans-serif" fill="#bbb" text-anchor="middle">90&#8242;</text><line x1="34" y1="214.0" x2="646" y2="214.0" stroke="#ddd" stroke-width="1"/><path d="M 34 214.0 L 278.8 214.0 L 278.8 190.4 L 330.3 190.4 L 330.3 188.6 L 343.2 188.6 L 343.2 182.3 L 356.1 182.3 L 356.1 175.9 L 562.3 175.9 L 562.3 167.3 L 562.3 167.3 L 562.3 154.1 L 613.8 154.1 L 613.8 131.2 L 646 131.2" fill="none" stroke="#0a0a0a" stroke-width="2.2" stroke-linejoin="round"/><text x="646" y="125.2" font-size="10" font-weight="700" font-family="Manrope,sans-serif" fill="#0a0a0a" text-anchor="end">0.79</text><path d="M 34 214.0 L 59.8 214.0 L 59.8 193.2 L 98.4 193.2 L 98.4 186.9 L 182.2 186.9 L 182.2 180.5 L 265.9 180.5 L 265.9 173.9 L 323.9 173.9 L 323.9 164.4 L 323.9 164.4 L 323.9 138.2 L 414.1 138.2 L 414.1 126.8 L 420.5 126.8 L 420.5 121.5 L 427.0 121.5 L 427.0 109.8 L 568.7 109.8 L 568.7 75.5 L 613.8 75.5 L 613.8 61.1 L 613.8 61.1 L 613.8 40.1 L 646 40.1" fill="none" stroke="#b5b5b5" stroke-width="2.2" stroke-linejoin="round"/><text x="646" y="34.1" font-size="10" font-weight="700" font-family="Manrope,sans-serif" fill="#b5b5b5" text-anchor="end">1.65</text></svg></div>
+            <div class="legend">
+                <span class="k"><span class="dot" style="background:#0a0a0a"></span>Paraguay</span>
+                <span class="k"><span class="dot" style="background:#b5b5b5"></span>Australia</span>
+                <span class="k">&#9679; goal</span>
+            </div>
+            <p class="card-note">Cumulative expected goals, minute by minute. ESPN's free feed has no xG, so each shot's xG is estimated with a naive distance-and-angle logistic model fitted on shot coordinates from the play-by-play.</p>
+        </div>
+        
+
+        
+        <div class="card">
+            <div class="card-title">Shot map</div>
+            <div class="chart"><svg viewBox="0 0 660 420" xmlns="http://www.w3.org/2000/svg" width="100%" role="img" aria-label="Shot map"><rect x="10" y="10" width="640" height="400" rx="6" stroke="#d8d8d8" stroke-width="1.5" fill="none"/><line x1="330" y1="10" x2="330" y2="410" stroke="#d8d8d8" stroke-width="1.5" fill="none"/><circle cx="330" cy="210" r="52" stroke="#d8d8d8" stroke-width="1.5" fill="none"/><rect x="10" y="94" width="106" height="232" stroke="#d8d8d8" stroke-width="1.5" fill="none"/><rect x="10" y="154" width="35" height="112" stroke="#d8d8d8" stroke-width="1.5" fill="none"/><rect x="544" y="94" width="106" height="232" stroke="#d8d8d8" stroke-width="1.5" fill="none"/><rect x="615" y="154" width="35" height="112" stroke="#d8d8d8" stroke-width="1.5" fill="none"/><circle cx="49.0" cy="275.6" r="6.6" fill="#fff" stroke="#0a0a0a" stroke-width="1.3" opacity="1"><title>Jackson Irvine · 4&#8242; · xG 0.20 · Shot On Target</title></circle><circle cx="154.6" cy="118.0" r="4.8" fill="#fff" stroke="#0a0a0a" stroke-width="1.3" opacity="0.45"><title>Aiden O'Neill · 10&#8242; · xG 0.06 · Shot Off Target</title></circle><circle cx="178.3" cy="161.2" r="4.8" fill="#fff" stroke="#0a0a0a" stroke-width="1.3" opacity="0.45"><title>Connor Metcalfe · 23&#8242; · xG 0.06 · Shot Blocked</title></circle><circle cx="175.8" cy="263.6" r="4.8" fill="#fff" stroke="#0a0a0a" stroke-width="1.3" opacity="1"><title>Jordan Bos · 36&#8242; · xG 0.06 · Shot On Target</title></circle><circle cx="570.0" cy="250.0" r="6.9" fill="#0a0a0a" stroke="#0a0a0a" stroke-width="1.3" opacity="0.45"><title>Gabriel Ávalos · 38&#8242; · xG 0.22 · Shot Off Target</title></circle><circle cx="93.8" cy="312.4" r="5.2" fill="#fff" stroke="#0a0a0a" stroke-width="1.3" opacity="1"><title>Cristian Volpato · 45'+2&#8242; · xG 0.09 · Shot On Target</title></circle><circle cx="72.7" cy="226.0" r="7.2" fill="#fff" stroke="#0a0a0a" stroke-width="1.3" opacity="0.45"><title>Jackson Irvine · 45'+3&#8242; · xG 0.25 · Shot Off Target</title></circle><circle cx="418.3" cy="84.4" r="4.2" fill="#0a0a0a" stroke="#0a0a0a" stroke-width="1.3" opacity="0.45"><title>Juan José Cáceres · 46&#8242; · xG 0.02 · Shot Off Target</title></circle><circle cx="489.4" cy="141.6" r="4.8" fill="#0a0a0a" stroke="#0a0a0a" stroke-width="1.3" opacity="0.45"><title>Andrés Cubas · 48&#8242; · xG 0.06 · Shot Off Target</title></circle><circle cx="472.1" cy="198.8" r="4.8" fill="#0a0a0a" stroke="#0a0a0a" stroke-width="1.3" opacity="1"><title>Mauricio · 50&#8242; · xG 0.06 · Shot On Target</title></circle><circle cx="65.0" cy="308.4" r="5.4" fill="#fff" stroke="#0a0a0a" stroke-width="1.3" opacity="0.45"><title>Nestory Irankunda · 59&#8242; · xG 0.11 · Shot Off Target</title></circle><circle cx="200.1" cy="187.6" r="4.7" fill="#fff" stroke="#0a0a0a" stroke-width="1.3" opacity="0.45"><title>Nestory Irankunda · 60&#8242; · xG 0.05 · Shot Blocked</title></circle><circle cx="138.6" cy="250.4" r="5.4" fill="#fff" stroke="#0a0a0a" stroke-width="1.3" opacity="0.45"><title>Ajdin Hrustic · 61&#8242; · xG 0.11 · Shot Blocked</title></circle><circle cx="516.2" cy="281.6" r="5.1" fill="#0a0a0a" stroke="#0a0a0a" stroke-width="1.3" opacity="0.45"><title>Julio Enciso · 82&#8242; · xG 0.08 · Shot Blocked</title></circle><circle cx="541.8" cy="269.2" r="5.6" fill="#0a0a0a" stroke="#0a0a0a" stroke-width="1.3" opacity="0.45"><title>Julio Enciso · 82&#8242; · xG 0.12 · Shot Off Target</title></circle><circle cx="64.4" cy="248.0" r="8.2" fill="#fff" stroke="#0a0a0a" stroke-width="1.3" opacity="1"><title>Jordan Bos · 83&#8242; · xG 0.33 · Shot On Target</title></circle><circle cx="86.8" cy="287.2" r="5.8" fill="#fff" stroke="#0a0a0a" stroke-width="1.3" opacity="0.45"><title>Jordan Bos · 90&#8242; · xG 0.14 · Shot Off Target</title></circle><circle cx="554.0" cy="215.2" r="6.8" fill="#0a0a0a" stroke="#0a0a0a" stroke-width="1.3" opacity="1"><title>Mauricio · 90'+3&#8242; · xG 0.22 · Shot On Target</title></circle><circle cx="81.0" cy="266.0" r="6.6" fill="#fff" stroke="#0a0a0a" stroke-width="1.3" opacity="1"><title>Tete Yengi · 90'+3&#8242; · xG 0.20 · Shot On Target</title></circle></svg></div>
+            <div class="legend">
+                <span class="k"><span class="dot" style="background:#0a0a0a"></span>Paraguay (attacking &rarr;)</span>
+                <span class="k"><span class="dot" style="background:#fff; border: 1.5px solid #0a0a0a;"></span>Australia (attacking &larr;)</span>
+                <span class="k">size = xG · star = goal</span>
+            </div>
+        </div>
+        
+
+        
+        <div class="card">
+            <div class="card-title">Paraguay &nbsp;·&nbsp; match stats &nbsp;·&nbsp; Australia</div>
+            
+            <div class="sb-row">
+                <span class="v l">44</span>
+                <span class="sb-track l"><span style="width: 44.0%"></span></span>
+                <span class="lab">Possession</span>
+                <span class="sb-track r"><span style="width: 56.0%"></span></span>
+                <span class="v">56</span>
+            </div>
+            
+            <div class="sb-row">
+                <span class="v l">7</span>
+                <span class="sb-track l"><span style="width: 36.8%"></span></span>
+                <span class="lab">Shots</span>
+                <span class="sb-track r"><span style="width: 63.2%"></span></span>
+                <span class="v">12</span>
+            </div>
+            
+            <div class="sb-row">
+                <span class="v l">2</span>
+                <span class="sb-track l"><span style="width: 28.6%"></span></span>
+                <span class="lab">On Target</span>
+                <span class="sb-track r"><span style="width: 71.4%"></span></span>
+                <span class="v">5</span>
+            </div>
+            
+            <div class="sb-row">
+                <span class="v l">1</span>
+                <span class="sb-track l"><span style="width: 25.0%"></span></span>
+                <span class="lab">Corners</span>
+                <span class="sb-track r"><span style="width: 75.0%"></span></span>
+                <span class="v">3</span>
+            </div>
+            
+            <div class="sb-row">
+                <span class="v l">9</span>
+                <span class="sb-track l"><span style="width: 60.0%"></span></span>
+                <span class="lab">Fouls</span>
+                <span class="sb-track r"><span style="width: 40.0%"></span></span>
+                <span class="v">6</span>
+            </div>
+            
+            <div class="sb-row">
+                <span class="v l">0</span>
+                <span class="sb-track l"><span style="width: 0%"></span></span>
+                <span class="lab">Offsides</span>
+                <span class="sb-track r"><span style="width: 100%"></span></span>
+                <span class="v">0</span>
+            </div>
+            
+            <div class="sb-row">
+                <span class="v l">5</span>
+                <span class="sb-track l"><span style="width: 71.4%"></span></span>
+                <span class="lab">Saves</span>
+                <span class="sb-track r"><span style="width: 28.6%"></span></span>
+                <span class="v">2</span>
+            </div>
+            
+            <div class="sb-row">
+                <span class="v l">1</span>
+                <span class="sb-track l"><span style="width: 50.0%"></span></span>
+                <span class="lab">Yellows</span>
+                <span class="sb-track r"><span style="width: 50.0%"></span></span>
+                <span class="v">1</span>
+            </div>
+            
+            <div class="sb-row">
+                <span class="v l">0</span>
+                <span class="sb-track l"><span style="width: 0%"></span></span>
+                <span class="lab">Reds</span>
+                <span class="sb-track r"><span style="width: 100%"></span></span>
+                <span class="v">0</span>
+            </div>
+            
+        </div>
+        
+
+        
+        <div class="card">
+            <div class="card-title">What the model expected</div>
+            <div class="chart"><svg viewBox="0 0 660 64" xmlns="http://www.w3.org/2000/svg" width="100%" role="img" aria-label="Pre-match win probabilities"><defs><clipPath id="rnd"><rect x="4" y="26" width="652" height="26" rx="13"/></clipPath></defs><g clip-path="url(#rnd)"><rect x="4.0" y="26" width="225.2" height="26" fill="#0a0a0a"/><text x="116.6" y="43" font-size="11" font-weight="700" font-family="Manrope,sans-serif" fill="#fff" text-anchor="middle">Paraguay 35%</text><rect x="229.2" y="26" width="168.0" height="26" fill="#d9d9d9"/><text x="313.2" y="43" font-size="11" font-weight="700" font-family="Manrope,sans-serif" fill="#555" text-anchor="middle">draw 26%</text><rect x="397.2" y="26" width="258.8" height="26" fill="#f1f1f1"/><text x="526.6" y="43" font-size="11" font-weight="700" font-family="Manrope,sans-serif" fill="#555" text-anchor="middle">Australia 40%</text></g><line x1="229.2" y1="26" x2="229.2" y2="52" stroke="#fff" stroke-width="2"/><line x1="397.2" y1="26" x2="397.2" y2="52" stroke="#fff" stroke-width="2"/><path d="M313.2,23 l-5,-9 l10,0 Z" fill="#0a0a0a"/><text x="313.2" y="10" font-size="9.5" font-weight="800" font-family="Manrope,sans-serif" fill="#0a0a0a" text-anchor="middle">ACTUAL</text></svg></div>
+            <p class="narrative" style="margin-top: 0.8rem;">Pre-match Elo: Paraguay 1779, Australia 1797. The model priced this Paraguay <strong>35%</strong> / draw <strong>26%</strong> / Australia <strong>40%</strong>, most likely score 1–1. A plausible-but-not-favoured outcome. The result moves <strong>1 Elo points</strong> from Australia to Paraguay — that flows straight into the next round of tournament simulations.</p>
+        </div>
+        
+
+        
+        <div class="card">
+            <div class="card-title">Timeline</div>
+            
+            <div class="tl-item">
+                <span class="tl-min">45'</span>
+                <span class="tl-text"><span class="tag">SUB</span>Substitution, Paraguay. Mauricio replaces Alexandro Maidana.</span>
+            </div>
+            
+            <div class="tl-item">
+                <span class="tl-min">46'</span>
+                <span class="tl-text"><span class="tag">YELLOW</span>Jackson Irvine (Australia) is shown the yellow card for a bad foul.</span>
+            </div>
+            
+            <div class="tl-item">
+                <span class="tl-min">58'</span>
+                <span class="tl-text"><span class="tag">SUB</span>Substitution, Australia. Ajdin Hrustic replaces Cristian Volpato.</span>
+            </div>
+            
+            <div class="tl-item">
+                <span class="tl-min">67'</span>
+                <span class="tl-text"><span class="tag">SUB</span>Substitution, Paraguay. Álex Arce replaces Gabriel Ávalos.</span>
+            </div>
+            
+            <div class="tl-item">
+                <span class="tl-min">77'</span>
+                <span class="tl-text"><span class="tag">YELLOW</span>Diego Gómez (Paraguay) is shown the yellow card for a bad foul.</span>
+            </div>
+            
+            <div class="tl-item">
+                <span class="tl-min">84'</span>
+                <span class="tl-text"><span class="tag">SUB</span>Substitution, Paraguay. José Canale replaces Omar Alderete because of an injury.</span>
+            </div>
+            
+            <div class="tl-item">
+                <span class="tl-min">84'</span>
+                <span class="tl-text"><span class="tag">SUB</span>Substitution, Australia. Paul Okon-Engstler replaces Jackson Irvine.</span>
+            </div>
+            
+            <div class="tl-item">
+                <span class="tl-min">84'</span>
+                <span class="tl-text"><span class="tag">SUB</span>Substitution, Australia. Tete Yengi replaces Nestory Irankunda.</span>
+            </div>
+            
+            <div class="tl-item">
+                <span class="tl-min">90'+2'</span>
+                <span class="tl-text"><span class="tag">SUB</span>Substitution, Paraguay. Damián Bobadilla replaces Diego Gómez.</span>
+            </div>
+            
+            <div class="tl-item">
+                <span class="tl-min">90'+2'</span>
+                <span class="tl-text"><span class="tag">SUB</span>Substitution, Paraguay. Júnior Alonso replaces Matías Galarza.</span>
+            </div>
+            
+        </div>
+        
+
+        
+        <div class="card">
+            <div class="card-title">Lineups</div>
+            <div class="lineups">
+                
+                <div>
+                    <div class="lu-team">Paraguay</div>
+                    <div class="lu-formation">5-3-2</div>
+                    <ul class="lu-list">
+                        
+                        <li><span class="j">12</span>Orlando Gil <span style="color:#bbb; font-size:0.66rem;">G</span></li>
+                        
+                        <li><span class="j">15</span>Gustavo Gómez <span style="color:#bbb; font-size:0.66rem;">CD</span></li>
+                        
+                        <li><span class="j">3</span>Omar Alderete <span style="color:#bbb; font-size:0.66rem;">CD-L</span></li>
+                        
+                        <li><span class="j">2</span>Gustavo Velázquez <span style="color:#bbb; font-size:0.66rem;">CD-R</span></li>
+                        
+                        <li><span class="j">26</span>Alexandro Maidana <span style="color:#bbb; font-size:0.66rem;">LB</span></li>
+                        
+                        <li><span class="j">4</span>Juan Jose Cáceres <span style="color:#bbb; font-size:0.66rem;">RB</span></li>
+                        
+                        <li><span class="j">14</span>Andrés Cubas <span style="color:#bbb; font-size:0.66rem;">CM</span></li>
+                        
+                        <li><span class="j">23</span>Matías Galarza <span style="color:#bbb; font-size:0.66rem;">CM-L</span></li>
+                        
+                        <li><span class="j">8</span>Diego Gómez <span style="color:#bbb; font-size:0.66rem;">CM-R</span></li>
+                        
+                        <li><span class="j">19</span>Julio Enciso <span style="color:#bbb; font-size:0.66rem;">CF-L</span></li>
+                        
+                        <li><span class="j">21</span>Gabriel Ávalos <span style="color:#bbb; font-size:0.66rem;">CF-R</span></li>
+                        
+                    </ul>
+                    <div class="lu-subs"><strong>Subs:</strong> Maurício, Alex Arce, José Canale, Damián Bobadilla, Júnior Alonso</div>
+                </div>
+                
+                <div>
+                    <div class="lu-team">Australia</div>
+                    <div class="lu-formation">3-4-2-1</div>
+                    <ul class="lu-list">
+                        
+                        <li><span class="j">18</span>Patrick Beach <span style="color:#bbb; font-size:0.66rem;">G</span></li>
+                        
+                        <li><span class="j">19</span>Harry Souttar <span style="color:#bbb; font-size:0.66rem;">CD</span></li>
+                        
+                        <li><span class="j">25</span>Lucas Herrington <span style="color:#bbb; font-size:0.66rem;">CD-L</span></li>
+                        
+                        <li><span class="j">3</span>Alessandro Circati <span style="color:#bbb; font-size:0.66rem;">CD-R</span></li>
+                        
+                        <li><span class="j">22</span>Jackson Irvine <span style="color:#bbb; font-size:0.66rem;">CM-L</span></li>
+                        
+                        <li><span class="j">13</span>Aiden O'Neill <span style="color:#bbb; font-size:0.66rem;">CM-R</span></li>
+                        
+                        <li><span class="j">16</span>Aziz Behich <span style="color:#bbb; font-size:0.66rem;">LM</span></li>
+                        
+                        <li><span class="j">5</span>Jordan Bos <span style="color:#bbb; font-size:0.66rem;">RM</span></li>
+                        
+                        <li><span class="j">17</span>Nestory Irankunda <span style="color:#bbb; font-size:0.66rem;">F</span></li>
+                        
+                        <li><span class="j">8</span>Connor Metcalfe <span style="color:#bbb; font-size:0.66rem;">CF-L</span></li>
+                        
+                        <li><span class="j">20</span>Cristian Volpato <span style="color:#bbb; font-size:0.66rem;">CF-R</span></li>
+                        
+                    </ul>
+                    <div class="lu-subs"><strong>Subs:</strong> Ajdin Hrustic, Paul Okon-Engstler, Tete Yengi</div>
+                </div>
+                
+            </div>
+        </div>
+        
+
+        <a class="backlink" href="../index.html">&larr; Fixtures, table &amp; predictions</a>
+        <p class="foot">Generated automatically from public match data. Stats: ESPN · Results: openfootball · xG: own naive model (distance + angle).</p>
+    </div>
+</body>
+</html>

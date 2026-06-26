@@ -1,0 +1,960 @@
+{
+ "teams": [
+  {
+   "name": "Türkiye",
+   "stats": {
+    "possessionPct": "47.4",
+    "totalShots": "9",
+    "shotsOnTarget": "3",
+    "wonCorners": "2",
+    "foulsCommitted": "13",
+    "offsides": "2",
+    "saves": "5",
+    "yellowCards": "0",
+    "redCards": "0"
+   }
+  },
+  {
+   "name": "United States",
+   "stats": {
+    "possessionPct": "52.6",
+    "totalShots": "18",
+    "shotsOnTarget": "7",
+    "wonCorners": "9",
+    "foulsCommitted": "13",
+    "offsides": "5",
+    "saves": "1",
+    "yellowCards": "1",
+    "redCards": "0"
+   }
+  }
+ ],
+ "events": [
+  {
+   "type": "Kickoff",
+   "minute": "",
+   "team": null,
+   "text": "First Half begins.",
+   "players": []
+  },
+  {
+   "type": "Goal",
+   "minute": "3'",
+   "team": "United States",
+   "text": "Goal! Türkiye 0, USA 1. Auston Trusty (USA) left footed shot from a difficult angle on the right to the bottom right corner. Assisted by Sebastian Berhalter with a cross following a corner.",
+   "players": [
+    "Auston Trusty",
+    "Sebastian Berhalter"
+   ]
+  },
+  {
+   "type": "Goal",
+   "minute": "10'",
+   "team": "Türkiye",
+   "text": "Goal! Türkiye 1, USA 1. Arda Güler (Türkiye) left footed shot from the centre of the box to the centre of the goal. Assisted by Baris Alper Yilmaz.",
+   "players": [
+    "Arda Güler",
+    "Baris Alper Yilmaz"
+   ]
+  },
+  {
+   "type": "Yellow Card",
+   "minute": "19'",
+   "team": "United States",
+   "text": "Sebastian Berhalter (USA) is shown the yellow card for a bad foul.",
+   "players": [
+    "Sebastian Berhalter"
+   ]
+  },
+  {
+   "type": "Start Delay",
+   "minute": "19'",
+   "team": "Türkiye",
+   "text": "Delay in match because of an injury Salih Özcan (Türkiye).",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "19'",
+   "team": "United States",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "20'",
+   "team": "Türkiye",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "20'",
+   "team": "United States",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "23'",
+   "team": "United States",
+   "text": "Delay in match for a drinks break.",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "23'",
+   "team": "Türkiye",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "26'",
+   "team": "United States",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "26'",
+   "team": "Türkiye",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Goal",
+   "minute": "31'",
+   "team": "Türkiye",
+   "text": "Goal! Türkiye 2, USA 1. Baris Alper Yilmaz (Türkiye) right footed shot from very close range to the bottom right corner. Assisted by Orkun Kökçü.",
+   "players": [
+    "Baris Alper Yilmaz",
+    "Orkun Kökçü"
+   ]
+  },
+  {
+   "type": "Halftime",
+   "minute": "45'+7'",
+   "team": null,
+   "text": "First Half ends, Türkiye 2, USA 1.",
+   "players": []
+  },
+  {
+   "type": "Start 2nd Half",
+   "minute": "45'",
+   "team": null,
+   "text": "Second Half begins Türkiye 2, USA 1.",
+   "players": []
+  },
+  {
+   "type": "Goal",
+   "minute": "49'",
+   "team": "United States",
+   "text": "Goal! Türkiye 2, USA 2. Sebastian Berhalter (USA) right footed shot from outside the box to the bottom left corner.",
+   "players": [
+    "Sebastian Berhalter"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "58'",
+   "team": "United States",
+   "text": "Substitution, USA. Christian Pulisic replaces Timothy Weah.",
+   "players": [
+    "Christian Pulisic",
+    "Timothy Weah"
+   ]
+  },
+  {
+   "type": "Start Delay",
+   "minute": "64'",
+   "team": "Türkiye",
+   "text": "Delay in match because of an injury Ugurcan Çakir (Türkiye).",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "64'",
+   "team": "United States",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "65'",
+   "team": "Türkiye",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "65'",
+   "team": "United States",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "67'",
+   "team": "United States",
+   "text": "Delay in match for a drinks break.",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "67'",
+   "team": "Türkiye",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "70'",
+   "team": "United States",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "70'",
+   "team": "Türkiye",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Substitution",
+   "minute": "76'",
+   "team": "United States",
+   "text": "Substitution, USA. Sergiño Dest replaces Giovanni Reyna.",
+   "players": [
+    "Sergiño Dest",
+    "Giovanni Reyna"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "77'",
+   "team": "United States",
+   "text": "Substitution, USA. Álex Zendejas replaces Brenden Aaronson.",
+   "players": [
+    "Alejandro Zendejas",
+    "Brenden Aaronson"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "77'",
+   "team": "United States",
+   "text": "Substitution, USA. Alex Freeman replaces Joe Scally.",
+   "players": [
+    "Alex Freeman",
+    "Joe Scally"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "84'",
+   "team": "Türkiye",
+   "text": "Substitution, Türkiye. Çaglar Söyüncü replaces Zeki Çelik.",
+   "players": [
+    "Çaglar Söyüncü",
+    "Zeki Çelik"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "84'",
+   "team": "Türkiye",
+   "text": "Substitution, Türkiye. Can Uzun replaces Kenan Yildiz.",
+   "players": [
+    "Can Uzun",
+    "Kenan Yildiz"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "86'",
+   "team": "United States",
+   "text": "Substitution, USA. Malik Tillman replaces Weston McKennie.",
+   "players": [
+    "Malik Tillman",
+    "Weston McKennie"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "88'",
+   "team": "Türkiye",
+   "text": "Substitution, Türkiye. Kaan Ayhan replaces Orkun Kökçü.",
+   "players": [
+    "Kaan Ayhan",
+    "Orkun Kökçü"
+   ]
+  },
+  {
+   "type": "Start Delay",
+   "minute": "90'",
+   "team": "United States",
+   "text": "Delay in match because of an injury Auston Trusty (USA).",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "90'",
+   "team": "Türkiye",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Substitution",
+   "minute": "90'+2'",
+   "team": "Türkiye",
+   "text": "Substitution, Türkiye. Mert Müldür replaces Oguz Aydin.",
+   "players": [
+    "Mert Müldür",
+    "Oguz Aydin"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "90'+2'",
+   "team": "Türkiye",
+   "text": "Substitution, Türkiye. Irfan Can Kahveci replaces Baris Alper Yilmaz.",
+   "players": [
+    "Irfan Can Kahveci",
+    "Baris Alper Yilmaz"
+   ]
+  },
+  {
+   "type": "End Delay",
+   "minute": "90'+2'",
+   "team": "United States",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "90'+2'",
+   "team": "Türkiye",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Goal",
+   "minute": "90'+8'",
+   "team": "Türkiye",
+   "text": "Goal! Türkiye 3, USA 2. Kaan Ayhan (Türkiye) right footed shot from very close range to the bottom right corner.",
+   "players": [
+    "Kaan Ayhan"
+   ]
+  },
+  {
+   "type": "End Regular Time",
+   "minute": "90'+9'",
+   "team": null,
+   "text": "Second Half ends, Türkiye 3, USA 2.",
+   "players": []
+  }
+ ],
+ "shots": [
+  {
+   "minute": "1",
+   "seconds": 57.0,
+   "team": "United States",
+   "player": "Giovanni Reyna",
+   "type": "Shot Blocked",
+   "x": 86.2,
+   "y": 36.7,
+   "goal": false,
+   "xg": 0.171,
+   "text": "Attempt blocked. Giovanni Reyna (USA) right footed shot from the right side of the box is blocked. Assisted by Brenden Aaronson."
+  },
+  {
+   "minute": "2",
+   "seconds": 92.0,
+   "team": "United States",
+   "player": "Auston Trusty",
+   "type": "Shot On Target",
+   "x": 88.4,
+   "y": 55.8,
+   "goal": false,
+   "xg": 0.292,
+   "text": "Attempt saved. Auston Trusty (USA) right footed shot from the centre of the box is saved in the bottom left corner by Ugurcan Çakir (Türkiye)."
+  },
+  {
+   "minute": "3",
+   "seconds": 133.0,
+   "team": "United States",
+   "player": "Auston Trusty",
+   "type": "Goal",
+   "x": 96.1,
+   "y": 35.6,
+   "goal": true,
+   "xg": 0.223,
+   "text": "Goal! Türkiye 0, USA 1. Auston Trusty (USA) left footed shot from a difficult angle on the right to the bottom right corner. Assisted by Sebastian Berhalter with a cross following a corner."
+  },
+  {
+   "minute": "10",
+   "seconds": 586.0,
+   "team": "Türkiye",
+   "player": "Arda Güler",
+   "type": "Goal",
+   "x": 92.4,
+   "y": 48.8,
+   "goal": true,
+   "xg": 0.544,
+   "text": "Goal! Türkiye 1, USA 1. Arda Güler (Türkiye) left footed shot from the centre of the box to the centre of the goal. Assisted by Baris Alper Yilmaz."
+  },
+  {
+   "minute": "13",
+   "seconds": 752.0,
+   "team": "United States",
+   "player": "Brenden Aaronson",
+   "type": "Shot Blocked",
+   "x": 85.8,
+   "y": 39.1,
+   "goal": false,
+   "xg": 0.185,
+   "text": "Attempt blocked. Brenden Aaronson (USA) left footed shot from the centre of the box is blocked. Assisted by Weston McKennie."
+  },
+  {
+   "minute": "13",
+   "seconds": 754.0,
+   "team": "United States",
+   "player": "Brenden Aaronson",
+   "type": "Shot On Target",
+   "x": 85.3,
+   "y": 36.6,
+   "goal": false,
+   "xg": 0.158,
+   "text": "Attempt saved. Brenden Aaronson (USA) right footed shot from the right side of the box is saved in the centre of the goal by Ugurcan Çakir (Türkiye)."
+  },
+  {
+   "minute": "29",
+   "seconds": 1734.0,
+   "team": "United States",
+   "player": "Miles Robinson",
+   "type": "Shot Off Target",
+   "x": 90.7,
+   "y": 48.3,
+   "goal": false,
+   "xg": 0.28,
+   "text": "Attempt missed. Miles Robinson (USA) header from the centre of the box misses to the left. Assisted by Sebastian Berhalter with a cross following a corner."
+  },
+  {
+   "minute": "31",
+   "seconds": 1828.0,
+   "team": "Türkiye",
+   "player": "Orkun Kökçü",
+   "type": "Shot Off Target",
+   "x": 95.8,
+   "y": 52.4,
+   "goal": false,
+   "xg": 0.806,
+   "text": "Attempt missed. Orkun Kökçü (Türkiye) right footed shot from very close range is close, but misses to the right. Assisted by Eren Elmali."
+  },
+  {
+   "minute": "31",
+   "seconds": 1829.0,
+   "team": "Türkiye",
+   "player": "Baris Alper Yilmaz",
+   "type": "Goal",
+   "x": 96.5,
+   "y": 48.1,
+   "goal": true,
+   "xg": 0.872,
+   "text": "Goal! Türkiye 2, USA 1. Baris Alper Yilmaz (Türkiye) right footed shot from very close range to the bottom right corner. Assisted by Orkun Kökçü."
+  },
+  {
+   "minute": "40",
+   "seconds": 2381.0,
+   "team": "Türkiye",
+   "player": "Abdülkerim Bardakci",
+   "type": "Shot Blocked",
+   "x": 98.1,
+   "y": 40.1,
+   "goal": false,
+   "xg": 0.315,
+   "text": "Attempt blocked. Abdülkerim Bardakci (Türkiye) left footed shot from the right side of the six yard box is blocked. Assisted by Baris Alper Yilmaz with a headed pass."
+  },
+  {
+   "minute": "43",
+   "seconds": 2546.0,
+   "team": "Türkiye",
+   "player": "Kenan Yildiz",
+   "type": "Shot Blocked",
+   "x": 91.3,
+   "y": 73.0,
+   "goal": false,
+   "xg": 0.119,
+   "text": "Attempt blocked. Kenan Yildiz (Türkiye) left footed shot from the left side of the box is blocked. Assisted by Ozan Kabak."
+  },
+  {
+   "minute": "45",
+   "seconds": 2666.0,
+   "team": "United States",
+   "player": "Weston McKennie",
+   "type": "Shot On Target",
+   "x": 72.6,
+   "y": 50.9,
+   "goal": false,
+   "xg": 0.063,
+   "text": "Attempt saved. Weston McKennie (USA) right footed shot from outside the box is saved in the bottom left corner by Ugurcan Çakir (Türkiye). Assisted by Miles Robinson with a headed pass."
+  },
+  {
+   "minute": "45'+3",
+   "seconds": 2700.0,
+   "team": "United States",
+   "player": "Auston Trusty",
+   "type": "Shot Off Target",
+   "x": 92.1,
+   "y": 50.3,
+   "goal": false,
+   "xg": 0.342,
+   "text": "Attempt missed. Auston Trusty (USA) header from the centre of the box is just a bit too high. Assisted by Sebastian Berhalter with a cross following a corner."
+  },
+  {
+   "minute": "49",
+   "seconds": 2885.0,
+   "team": "United States",
+   "player": "Sebastian Berhalter",
+   "type": "Goal",
+   "x": 82.2,
+   "y": 64.2,
+   "goal": true,
+   "xg": 0.119,
+   "text": "Goal! Türkiye 2, USA 2. Sebastian Berhalter (USA) right footed shot from outside the box to the bottom left corner."
+  },
+  {
+   "minute": "62",
+   "seconds": 3674.0,
+   "team": "United States",
+   "player": "Christian Pulisic",
+   "type": "Shot On Target",
+   "x": 96.7,
+   "y": 66.7,
+   "goal": false,
+   "xg": 0.174,
+   "text": "Attempt saved. Christian Pulisic (USA) left footed shot from a difficult angle on the left is saved in the centre of the goal by Ugurcan Çakir (Türkiye). Assisted by Sebastian Berhalter."
+  },
+  {
+   "minute": "62",
+   "seconds": 3676.0,
+   "team": "United States",
+   "player": "Brenden Aaronson",
+   "type": "Shot Off Target",
+   "x": 86.7,
+   "y": 52.6,
+   "goal": false,
+   "xg": 0.26,
+   "text": "Attempt missed. Brenden Aaronson (USA) right footed shot from the centre of the box misses to the right."
+  },
+  {
+   "minute": "63",
+   "seconds": 3762.0,
+   "team": "United States",
+   "player": "Ricardo Pepi",
+   "type": "Shot Off Target",
+   "x": 90.3,
+   "y": 47.7,
+   "goal": false,
+   "xg": 0.405,
+   "text": "Attempt missed. Ricardo Pepi (USA) right footed shot from the centre of the box misses to the left. Assisted by Joe Scally with a cross."
+  },
+  {
+   "minute": "63",
+   "seconds": 3764.0,
+   "team": "United States",
+   "player": "Christian Pulisic",
+   "type": "Shot On Target",
+   "x": 91.7,
+   "y": 52.9,
+   "goal": false,
+   "xg": 0.478,
+   "text": "Attempt saved. Christian Pulisic (USA) left footed shot from the centre of the box is saved in the top right corner by Ugurcan Çakir (Türkiye). Assisted by Ricardo Pepi."
+  },
+  {
+   "minute": "63",
+   "seconds": 3767.0,
+   "team": "United States",
+   "player": "Weston McKennie",
+   "type": "Shot Blocked",
+   "x": 90.6,
+   "y": 47.8,
+   "goal": false,
+   "xg": 0.422,
+   "text": "Attempt blocked. Weston McKennie (USA) left footed shot from the centre of the box is blocked. Assisted by Brenden Aaronson."
+  },
+  {
+   "minute": "66",
+   "seconds": 3910.0,
+   "team": "United States",
+   "player": "Weston McKennie",
+   "type": "Shot Off Target",
+   "x": 90.2,
+   "y": 43.6,
+   "goal": false,
+   "xg": 0.226,
+   "text": "Attempt missed. Weston McKennie (USA) header from the centre of the box is close, but misses the top left corner. Assisted by Sebastian Berhalter with a cross following a corner."
+  },
+  {
+   "minute": "72",
+   "seconds": 4278.0,
+   "team": "Türkiye",
+   "player": "Kenan Yildiz",
+   "type": "Shot Off Target",
+   "x": 87.5,
+   "y": 72.0,
+   "goal": false,
+   "xg": 0.114,
+   "text": "Attempt missed. Kenan Yildiz (Türkiye) right footed shot from the left side of the box is close, but misses to the right. Assisted by Orkun Kökçü."
+  },
+  {
+   "minute": "77",
+   "seconds": 4598.0,
+   "team": "United States",
+   "player": "Christian Pulisic",
+   "type": "Shot Off Target",
+   "x": 79.0,
+   "y": 33.9,
+   "goal": false,
+   "xg": 0.086,
+   "text": "Attempt missed. Christian Pulisic (USA) left footed shot from outside the box is close, but misses to the left. Assisted by Sergiño Dest following a corner."
+  },
+  {
+   "minute": "81",
+   "seconds": 4816.0,
+   "team": "Türkiye",
+   "player": "Orkun Kökçü",
+   "type": "Shot Off Target",
+   "x": 79.6,
+   "y": 36.4,
+   "goal": false,
+   "xg": 0.098,
+   "text": "Attempt missed. Orkun Kökçü (Türkiye) right footed shot from outside the box is high and wide to the right. Assisted by Oguz Aydin."
+  },
+  {
+   "minute": "90'+3",
+   "seconds": 5400.0,
+   "team": "United States",
+   "player": "Álex Zendejas",
+   "type": "Shot Blocked",
+   "x": 84.0,
+   "y": 29.4,
+   "goal": false,
+   "xg": 0.102,
+   "text": "Attempt blocked. Álex Zendejas (USA) left footed shot from the right side of the box is blocked. Assisted by Alex Freeman."
+  },
+  {
+   "minute": "90'+5",
+   "seconds": 5400.0,
+   "team": "United States",
+   "player": "Ricardo Pepi",
+   "type": "Shot Blocked",
+   "x": 88.9,
+   "y": 67.0,
+   "goal": false,
+   "xg": 0.165,
+   "text": "Attempt blocked. Ricardo Pepi (USA) left footed shot from the left side of the box is blocked. Assisted by Christian Pulisic with a through ball."
+  },
+  {
+   "minute": "90'+8",
+   "seconds": 5400.0,
+   "team": "Türkiye",
+   "player": "Can Uzun",
+   "type": "Shot Blocked",
+   "x": 97.0,
+   "y": 61.1,
+   "goal": false,
+   "xg": 0.306,
+   "text": "Attempt missed. Can Uzun (Türkiye) right footed shot from the left side of the six yard box is close, but misses to the right."
+  },
+  {
+   "minute": "90'+8",
+   "seconds": 5400.0,
+   "team": "Türkiye",
+   "player": "Kaan Ayhan",
+   "type": "Goal",
+   "x": 97.6,
+   "y": 46.8,
+   "goal": true,
+   "xg": 0.915,
+   "text": "Goal! Türkiye 3, USA 2. Kaan Ayhan (Türkiye) right footed shot from very close range to the bottom right corner."
+  }
+ ],
+ "lineups": [
+  {
+   "team": "Türkiye",
+   "formation": "3-4-2-1",
+   "starters": [
+    {
+     "name": "Ugurcan Çakir",
+     "jersey": "23",
+     "position": "G"
+    },
+    {
+     "name": "Ozan Kabak",
+     "jersey": "15",
+     "position": "CD"
+    },
+    {
+     "name": "Abdülkerim Bardakçi",
+     "jersey": "14",
+     "position": "CD-L"
+    },
+    {
+     "name": "Zeki Çelik",
+     "jersey": "2",
+     "position": "CD-R"
+    },
+    {
+     "name": "Orkun Kökçü",
+     "jersey": "6",
+     "position": "CM-L"
+    },
+    {
+     "name": "Salih Özcan",
+     "jersey": "5",
+     "position": "CM-R"
+    },
+    {
+     "name": "Eren Elmali",
+     "jersey": "13",
+     "position": "LM"
+    },
+    {
+     "name": "Oguz Aydin",
+     "jersey": "24",
+     "position": "RM"
+    },
+    {
+     "name": "Baris Alper Yilmaz",
+     "jersey": "21",
+     "position": "F"
+    },
+    {
+     "name": "Kenan Yildiz",
+     "jersey": "11",
+     "position": "CF-L"
+    },
+    {
+     "name": "Arda Güler",
+     "jersey": "8",
+     "position": "CF-R"
+    }
+   ],
+   "subs": [
+    {
+     "name": "Kaan Ayhan",
+     "jersey": "22",
+     "position": "SUB"
+    },
+    {
+     "name": "Samet Akaydin",
+     "jersey": "25",
+     "position": "SUB"
+    },
+    {
+     "name": "Irfan Can Kahveci",
+     "jersey": "17",
+     "position": "SUB"
+    },
+    {
+     "name": "Mert Günok",
+     "jersey": "1",
+     "position": "SUB"
+    },
+    {
+     "name": "Kerem Aktürkoglu",
+     "jersey": "7",
+     "position": "SUB"
+    },
+    {
+     "name": "Ismail Yüksek",
+     "jersey": "16",
+     "position": "SUB"
+    },
+    {
+     "name": "Deniz Gül",
+     "jersey": "9",
+     "position": "SUB"
+    },
+    {
+     "name": "Mert Müldür",
+     "jersey": "18",
+     "position": "SUB"
+    },
+    {
+     "name": "Hakan Çalhanoglu",
+     "jersey": "10",
+     "position": "SUB"
+    },
+    {
+     "name": "Yunus Akgün",
+     "jersey": "19",
+     "position": "SUB"
+    },
+    {
+     "name": "Can Uzun",
+     "jersey": "26",
+     "position": "SUB"
+    },
+    {
+     "name": "Altay Bayindir",
+     "jersey": "12",
+     "position": "SUB"
+    },
+    {
+     "name": "Ferdi Kadioglu",
+     "jersey": "20",
+     "position": "SUB"
+    },
+    {
+     "name": "Çaglar Söyüncü",
+     "jersey": "4",
+     "position": "SUB"
+    },
+    {
+     "name": "Merih Demiral",
+     "jersey": "3",
+     "position": "SUB"
+    }
+   ]
+  },
+  {
+   "team": "United States",
+   "formation": "4-3-3",
+   "starters": [
+    {
+     "name": "Matt Turner",
+     "jersey": "1",
+     "position": "G"
+    },
+    {
+     "name": "Mark McKenzie",
+     "jersey": "22",
+     "position": "CD-L"
+    },
+    {
+     "name": "Miles Robinson",
+     "jersey": "12",
+     "position": "CD-R"
+    },
+    {
+     "name": "Auston Trusty",
+     "jersey": "6",
+     "position": "LB"
+    },
+    {
+     "name": "Joe Scally",
+     "jersey": "23",
+     "position": "RB"
+    },
+    {
+     "name": "Sebastian Berhalter",
+     "jersey": "14",
+     "position": "CM"
+    },
+    {
+     "name": "Giovanni Reyna",
+     "jersey": "7",
+     "position": "LM"
+    },
+    {
+     "name": "Weston McKennie",
+     "jersey": "8",
+     "position": "RM"
+    },
+    {
+     "name": "Ricardo Pepi",
+     "jersey": "9",
+     "position": "F"
+    },
+    {
+     "name": "Timothy Weah",
+     "jersey": "21",
+     "position": "LF"
+    },
+    {
+     "name": "Brenden Aaronson",
+     "jersey": "11",
+     "position": "RF"
+    }
+   ],
+   "subs": [
+    {
+     "name": "Tim Ream",
+     "jersey": "13",
+     "position": "SUB"
+    },
+    {
+     "name": "Malik Tillman",
+     "jersey": "17",
+     "position": "SUB"
+    },
+    {
+     "name": "Folarin Balogun",
+     "jersey": "20",
+     "position": "SUB"
+    },
+    {
+     "name": "Tyler Adams",
+     "jersey": "4",
+     "position": "SUB"
+    },
+    {
+     "name": "Max Arfsten",
+     "jersey": "18",
+     "position": "SUB"
+    },
+    {
+     "name": "Matt Freese",
+     "jersey": "24",
+     "position": "SUB"
+    },
+    {
+     "name": "Christian Pulisic",
+     "jersey": "10",
+     "position": "SUB"
+    },
+    {
+     "name": "Alejandro Zendejas",
+     "jersey": "26",
+     "position": "SUB"
+    },
+    {
+     "name": "Sergiño Dest",
+     "jersey": "2",
+     "position": "SUB"
+    },
+    {
+     "name": "Chris Richards",
+     "jersey": "3",
+     "position": "SUB"
+    },
+    {
+     "name": "Haji Wright",
+     "jersey": "19",
+     "position": "SUB"
+    },
+    {
+     "name": "Antonee Robinson",
+     "jersey": "5",
+     "position": "SUB"
+    },
+    {
+     "name": "Alex Freeman",
+     "jersey": "16",
+     "position": "SUB"
+    },
+    {
+     "name": "Chris Brady",
+     "jersey": "25",
+     "position": "SUB"
+    }
+   ]
+  }
+ ],
+ "attendance": 70492,
+ "venue": "SoFi Stadium, Inglewood, California, USA"
+}

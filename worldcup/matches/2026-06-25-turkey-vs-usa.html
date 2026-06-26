@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-KVBPX8VW');</script>
+    <!-- End Google Tag Manager -->
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Turkey 3–2 USA — full match analytics: shot map, expected goals race, lineups, stats and model verdict.">
+    <link rel="icon" type="image/svg+xml" href="../../images/favicon.svg">
+    <link rel="icon" type="image/png" sizes="32x32" href="../../images/favicon-32.png">
+    <title>Turkey 3–2 USA — World Cup 2026</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+html { font-size: 16px; }
+body {
+  background: #fff;
+  color: #0a0a0a;
+  font-family: 'Manrope', -apple-system, 'Segoe UI', sans-serif;
+  line-height: 1.5;
+  font-feature-settings: 'tnum';
+  -webkit-font-smoothing: antialiased;
+}
+a { color: inherit; text-decoration: none; }
+.wrap { max-width: 700px; margin: 0 auto; padding: 0 1.1rem 5rem; }
+
+/* ---- masthead ---- */
+.masthead { padding: 2.2rem 0 1.4rem; display: flex; align-items: baseline; justify-content: space-between; gap: 1rem; flex-wrap: wrap; }
+.masthead h1 { font-size: 1.55rem; font-weight: 800; letter-spacing: -0.02em; }
+.masthead .sub { font-size: 0.78rem; color: #777; font-weight: 500; }
+.masthead a.home { font-size: 0.75rem; font-weight: 600; color: #999; }
+.masthead a.home:hover { color: #0a0a0a; }
+
+/* ---- tabs ---- */
+.tabbar {
+  position: sticky; top: 0; z-index: 10;
+  display: flex; gap: 0.4rem;
+  background: rgba(255,255,255,0.94); backdrop-filter: blur(6px);
+  padding: 0.6rem 0 0.8rem;
+}
+.tabbar button {
+  font: inherit; font-size: 0.82rem; font-weight: 700;
+  border: 1px solid #e4e4e4; background: #fff; color: #555;
+  border-radius: 999px; padding: 0.42rem 1.05rem; cursor: pointer;
+  transition: all 0.15s ease;
+}
+.tabbar button:hover { border-color: #0a0a0a; color: #0a0a0a; }
+.tabbar button.active { background: #0a0a0a; border-color: #0a0a0a; color: #fff; }
+.panel { display: none; }
+.panel.active { display: block; }
+
+/* ---- cards ---- */
+.card {
+  border: 1px solid #e9e9e9; border-radius: 16px; background: #fff;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.03);
+  padding: 1.15rem 1.25rem; margin-bottom: 1rem;
+}
+.card-title { font-size: 0.7rem; font-weight: 800; letter-spacing: 0.1em; text-transform: uppercase; color: #999; margin-bottom: 0.9rem; }
+.card-note { font-size: 0.72rem; color: #999; margin-top: 0.7rem; line-height: 1.55; }
+
+/* ---- fixtures feed ---- */
+.day-head {
+  font-size: 0.72rem; font-weight: 800; letter-spacing: 0.08em; text-transform: uppercase;
+  color: #888; margin: 1.6rem 0 0.6rem; padding-left: 0.2rem;
+}
+.day-head.today { color: #0a0a0a; }
+.day-head.today::after { content: 'TODAY'; margin-left: 0.6rem; background: #0a0a0a; color: #fff; border-radius: 5px; padding: 0.1rem 0.45rem; font-size: 0.62rem; }
+.fixture {
+  display: grid; grid-template-columns: 3.4rem 1fr auto; align-items: center; gap: 0.9rem;
+  border: 1px solid #e9e9e9; border-radius: 14px; background: #fff;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.03);
+  padding: 0.8rem 1rem; margin-bottom: 0.55rem;
+}
+a.fixture { transition: border-color 0.15s ease, transform 0.15s ease; }
+a.fixture:hover { border-color: #0a0a0a; transform: translateY(-1px); }
+.fx-status { font-size: 0.68rem; font-weight: 800; color: #999; text-align: center; line-height: 1.3; }
+.fx-status .chip { display: inline-block; background: #f1f1f1; border-radius: 6px; padding: 0.12rem 0.4rem; color: #555; }
+.fx-status .chip.ft { background: #0a0a0a; color: #fff; }
+.fx-teams { min-width: 0; }
+.fx-row { display: flex; justify-content: space-between; align-items: baseline; gap: 0.8rem; }
+.fx-row .t { font-size: 0.92rem; font-weight: 600; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.fx-row .t.win { font-weight: 800; }
+.fx-row .s { font-size: 0.95rem; font-weight: 800; }
+.fx-meta { font-size: 0.68rem; color: #aaa; font-weight: 600; text-align: right; max-width: 8rem; }
+.fx-arrow { color: #ccc; font-size: 0.9rem; }
+
+/* ---- tables ---- */
+table.t { width: 100%; border-collapse: collapse; font-size: 0.82rem; }
+table.t th { font-size: 0.64rem; font-weight: 800; letter-spacing: 0.07em; text-transform: uppercase; color: #aaa; text-align: left; padding: 0.3rem 0.45rem; border-bottom: 1px solid #eee; }
+table.t td { padding: 0.42rem 0.45rem; border-bottom: 1px solid #f4f4f4; font-weight: 500; }
+table.t tr:last-child td { border-bottom: none; }
+table.t .r { text-align: right; }
+table.t .pos { color: #bbb; font-weight: 700; width: 1.4rem; }
+table.t .pts { font-weight: 800; }
+.qual-line td { border-top: 2px solid #0a0a0a; }
+
+/* ---- group grid ---- */
+.group-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 0.9rem; }
+.group-grid .card { margin-bottom: 0; padding: 0.9rem 1rem; }
+
+/* ---- predictions ---- */
+.odds-row { display: grid; grid-template-columns: 8.2rem 1fr 3.2rem; align-items: center; gap: 0.7rem; padding: 0.32rem 0; font-size: 0.84rem; font-weight: 600; }
+.odds-track { height: 0.6rem; background: #f1f1f1; border-radius: 99px; overflow: hidden; }
+.odds-track > span { display: block; height: 100%; background: #0a0a0a; border-radius: 99px; }
+.odds-pct { text-align: right; font-weight: 800; font-size: 0.8rem; }
+.pred-line { font-size: 0.74rem; color: #888; font-weight: 600; margin-top: 0.25rem; }
+.bigstat { display: flex; gap: 0.9rem; }
+.bigstat .cell { flex: 1; border: 1px solid #eee; border-radius: 12px; padding: 0.7rem 0.85rem; }
+.bigstat .n { font-size: 1.35rem; font-weight: 800; letter-spacing: -0.02em; }
+.bigstat .l { font-size: 0.64rem; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; color: #999; margin-top: 0.1rem; }
+
+/* ---- match page: scoreboard ---- */
+.kickline { font-size: 0.72rem; font-weight: 700; color: #999; letter-spacing: 0.05em; text-transform: uppercase; margin-bottom: 0.9rem; }
+.board { display: grid; grid-template-columns: 1fr auto 1fr; align-items: center; gap: 1rem; margin: 0.4rem 0 0.9rem; }
+.board .team { text-align: center; }
+.board .team .name { font-size: 1.05rem; font-weight: 800; letter-spacing: -0.01em; }
+.board .team .xg { font-size: 0.7rem; color: #999; font-weight: 600; margin-top: 0.15rem; }
+.board .score { font-size: 2.6rem; font-weight: 800; letter-spacing: 0.02em; white-space: nowrap; }
+.board .score .ft { display: block; font-size: 0.64rem; font-weight: 800; letter-spacing: 0.15em; color: #999; text-align: center; }
+.goals-line { text-align: center; font-size: 0.76rem; color: #666; font-weight: 600; line-height: 1.7; }
+.venue-line { text-align: center; font-size: 0.7rem; color: #aaa; font-weight: 600; margin-top: 0.6rem; }
+.narrative { font-size: 0.88rem; line-height: 1.65; color: #333; }
+
+/* ---- stat bars ---- */
+.sb-row { display: grid; grid-template-columns: 2.6rem 1fr 7.5rem 1fr 2.6rem; align-items: center; gap: 0.55rem; padding: 0.34rem 0; }
+.sb-row .v { font-size: 0.84rem; font-weight: 800; }
+.sb-row .v.l { text-align: right; }
+.sb-row .lab { font-size: 0.66rem; font-weight: 700; letter-spacing: 0.05em; text-transform: uppercase; color: #999; text-align: center; }
+.sb-track { height: 0.5rem; background: #f1f1f1; border-radius: 99px; position: relative; overflow: hidden; }
+.sb-track > span { position: absolute; top: 0; height: 100%; background: #0a0a0a; border-radius: 99px; }
+.sb-track.l > span { right: 0; }
+.sb-track.r > span { left: 0; }
+
+/* ---- timeline ---- */
+.tl-item { display: grid; grid-template-columns: 3rem 1fr; gap: 0.8rem; padding: 0.45rem 0; border-bottom: 1px solid #f6f6f6; font-size: 0.82rem; }
+.tl-item:last-child { border-bottom: none; }
+.tl-min { font-weight: 800; color: #bbb; text-align: right; }
+.tl-text { font-weight: 500; color: #444; }
+.tl-text .tag { font-size: 0.62rem; font-weight: 800; letter-spacing: 0.06em; text-transform: uppercase; border-radius: 5px; padding: 0.08rem 0.4rem; margin-right: 0.45rem; background: #f1f1f1; color: #666; vertical-align: 1px; }
+.tl-text .tag.goal { background: #0a0a0a; color: #fff; }
+
+/* ---- lineups ---- */
+.lineups { display: grid; grid-template-columns: 1fr 1fr; gap: 1.4rem; }
+.lu-team { font-size: 0.85rem; font-weight: 800; }
+.lu-formation { font-size: 0.68rem; color: #999; font-weight: 700; margin-bottom: 0.5rem; }
+.lu-list { list-style: none; font-size: 0.78rem; font-weight: 500; }
+.lu-list li { padding: 0.18rem 0; border-bottom: 1px solid #f7f7f7; }
+.lu-list .j { display: inline-block; width: 1.7rem; color: #bbb; font-weight: 700; }
+.lu-subs { margin-top: 0.6rem; font-size: 0.7rem; color: #999; line-height: 1.6; }
+
+/* ---- charts ---- */
+.chart { width: 100%; }
+.legend { display: flex; gap: 1.1rem; font-size: 0.7rem; font-weight: 700; color: #777; margin-top: 0.5rem; flex-wrap: wrap; }
+.legend .k { display: inline-flex; align-items: center; gap: 0.35rem; }
+.legend .dot { width: 0.65rem; height: 0.65rem; border-radius: 50%; display: inline-block; }
+
+.backlink { display: inline-block; margin-top: 0.5rem; font-size: 0.8rem; font-weight: 700; color: #888; }
+.backlink:hover { color: #0a0a0a; }
+.foot { font-size: 0.72rem; color: #aaa; line-height: 1.6; margin-top: 2.2rem; font-weight: 500; }
+
+@media (max-width: 560px) {
+  .group-grid { grid-template-columns: 1fr; }
+  .lineups { grid-template-columns: 1fr; }
+  .board .score { font-size: 2rem; }
+  .board .team .name { font-size: 0.9rem; }
+  .odds-row { grid-template-columns: 6.4rem 1fr 3rem; }
+  .sb-row { grid-template-columns: 2.2rem 1fr 5.4rem 1fr 2.2rem; gap: 0.4rem; }
+  .bigstat { flex-wrap: wrap; }
+  .fx-meta { display: none; }
+}
+
+    </style>
+</head>
+<body>
+    <noscript><iframe aria-hidden="true" title="Google Tag Manager" src="https://www.googletagmanager.com/ns.html?id=GTM-KVBPX8VW"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+    <div class="wrap">
+        <div class="masthead">
+            <div><h1>World Cup 2026</h1></div>
+            <a class="home" href="../index.html">&larr; All matches</a>
+        </div>
+
+        <!-- scoreboard -->
+        <div class="card">
+            <div class="kickline">Matchday 15 · Group D · 2026-06-25</div>
+            <div class="board">
+                <div class="team">
+                    <div class="name">Turkey</div>
+                    <div class="xg">xG 0.00</div>
+                </div>
+                <div class="score"><span class="ft">HT 2–1</span>3&thinsp;–&thinsp;2</div>
+                <div class="team">
+                    <div class="name">USA</div>
+                    <div class="xg">xG 8.24</div>
+                </div>
+            </div>
+            <div class="goals-line"><strong>Turkey</strong> Arda Güler 10&#8242;, Baris Alper Yilmaz 31&#8242;, Kaan Ayhan 90+8&#8242; &nbsp;·&nbsp; <strong>USA</strong> Auston Trusty 3&#8242;, Sebastian Berhalter 49&#8242;</div>
+            <div class="venue-line">SoFi Stadium · 70,492 attendance</div>
+        </div>
+
+        
+        <div class="card">
+            <div class="card-title">The story</div>
+            <p class="narrative">A genuine shock — the model gave Turkey just 17% before kick-off, and they beat USA anyway. The xG race tells a different story though: USA created more (8.24 vs 0.00) and will feel hard done by. The decisive moment came late, in the 90th minute.</p>
+        </div>
+        
+
+        
+        <div class="card">
+            <div class="card-title">Expected goals race</div>
+            <div class="chart"><svg viewBox="0 0 660 240" xmlns="http://www.w3.org/2000/svg" width="100%" role="img" aria-label="Cumulative expected goals"><line x1="34" y1="192.9" x2="646" y2="192.9" stroke="#f0f0f0" stroke-width="1"/><text x="28" y="195.9" font-size="9" font-family="Manrope,sans-serif" fill="#bbb" text-anchor="end">1</text><line x1="34" y1="171.8" x2="646" y2="171.8" stroke="#f0f0f0" stroke-width="1"/><text x="28" y="174.8" font-size="9" font-family="Manrope,sans-serif" fill="#bbb" text-anchor="end">2</text><line x1="34" y1="150.7" x2="646" y2="150.7" stroke="#f0f0f0" stroke-width="1"/><text x="28" y="153.7" font-size="9" font-family="Manrope,sans-serif" fill="#bbb" text-anchor="end">3</text><line x1="34" y1="129.6" x2="646" y2="129.6" stroke="#f0f0f0" stroke-width="1"/><text x="28" y="132.6" font-size="9" font-family="Manrope,sans-serif" fill="#bbb" text-anchor="end">4</text><line x1="34" y1="108.5" x2="646" y2="108.5" stroke="#f0f0f0" stroke-width="1"/><text x="28" y="111.5" font-size="9" font-family="Manrope,sans-serif" fill="#bbb" text-anchor="end">5</text><line x1="34" y1="87.4" x2="646" y2="87.4" stroke="#f0f0f0" stroke-width="1"/><text x="28" y="90.4" font-size="9" font-family="Manrope,sans-serif" fill="#bbb" text-anchor="end">6</text><line x1="34" y1="66.3" x2="646" y2="66.3" stroke="#f0f0f0" stroke-width="1"/><text x="28" y="69.3" font-size="9" font-family="Manrope,sans-serif" fill="#bbb" text-anchor="end">7</text><line x1="34" y1="45.2" x2="646" y2="45.2" stroke="#f0f0f0" stroke-width="1"/><text x="28" y="48.2" font-size="9" font-family="Manrope,sans-serif" fill="#bbb" text-anchor="end">8</text><line x1="34" y1="24.0" x2="646" y2="24.0" stroke="#f0f0f0" stroke-width="1"/><text x="28" y="27.0" font-size="9" font-family="Manrope,sans-serif" fill="#bbb" text-anchor="end">9</text><text x="34.0" y="232" font-size="9" font-family="Manrope,sans-serif" fill="#bbb" text-anchor="middle">0&#8242;</text><text x="130.6" y="232" font-size="9" font-family="Manrope,sans-serif" fill="#bbb" text-anchor="middle">15&#8242;</text><text x="227.3" y="232" font-size="9" font-family="Manrope,sans-serif" fill="#bbb" text-anchor="middle">30&#8242;</text><text x="323.9" y="232" font-size="9" font-family="Manrope,sans-serif" fill="#bbb" text-anchor="middle">45&#8242;</text><text x="420.5" y="232" font-size="9" font-family="Manrope,sans-serif" fill="#bbb" text-anchor="middle">60&#8242;</text><text x="517.2" y="232" font-size="9" font-family="Manrope,sans-serif" fill="#bbb" text-anchor="middle">75&#8242;</text><text x="613.8" y="232" font-size="9" font-family="Manrope,sans-serif" fill="#bbb" text-anchor="middle">90&#8242;</text><line x1="34" y1="214.0" x2="646" y2="214.0" stroke="#ddd" stroke-width="1"/><path d="M 34 214.0 L 646 214.0" fill="none" stroke="#0a0a0a" stroke-width="2.2" stroke-linejoin="round"/><text x="646" y="208.0" font-size="10" font-weight="700" font-family="Manrope,sans-serif" fill="#0a0a0a" text-anchor="end">0.00</text><path d="M 34 214.0 L 40.4 214.0 L 40.4 210.4 L 46.9 210.4 L 46.9 204.2 L 53.3 204.2 L 53.3 199.5 L 98.4 199.5 L 98.4 188.0 L 117.7 188.0 L 117.7 184.1 L 117.7 184.1 L 117.7 180.8 L 220.8 180.8 L 220.8 174.9 L 233.7 174.9 L 233.7 157.9 L 233.7 157.9 L 233.7 139.5 L 291.7 139.5 L 291.7 132.8 L 311.0 132.8 L 311.0 130.3 L 323.9 130.3 L 323.9 129.0 L 323.9 129.0 L 323.9 121.8 L 349.7 121.8 L 349.7 119.3 L 433.4 119.3 L 433.4 115.6 L 433.4 115.6 L 433.4 110.1 L 439.9 110.1 L 439.9 101.5 L 439.9 101.5 L 439.9 91.5 L 439.9 91.5 L 439.9 82.6 L 459.2 82.6 L 459.2 77.8 L 497.8 77.8 L 497.8 75.4 L 530.0 75.4 L 530.0 73.6 L 555.8 73.6 L 555.8 71.5 L 613.8 71.5 L 613.8 69.3 L 613.8 69.3 L 613.8 65.9 L 613.8 65.9 L 613.8 59.4 L 613.8 59.4 L 613.8 40.1 L 646 40.1" fill="none" stroke="#b5b5b5" stroke-width="2.2" stroke-linejoin="round"/><text x="646" y="34.1" font-size="10" font-weight="700" font-family="Manrope,sans-serif" fill="#b5b5b5" text-anchor="end">8.24</text><circle cx="53.3" cy="199.5" r="5" fill="#b5b5b5" stroke="#fff" stroke-width="1.5"/><text x="53.3" y="189.5" font-size="9.5" font-weight="700" font-family="Manrope,sans-serif" fill="#0a0a0a" text-anchor="middle">Auston Trusty 3&#8242;</text><circle cx="98.4" cy="188.0" r="5" fill="#b5b5b5" stroke="#fff" stroke-width="1.5"/><text x="98.4" y="178.0" font-size="9.5" font-weight="700" font-family="Manrope,sans-serif" fill="#0a0a0a" text-anchor="middle">Arda Güler 10&#8242;</text><circle cx="233.7" cy="139.5" r="5" fill="#b5b5b5" stroke="#fff" stroke-width="1.5"/><text x="233.7" y="129.5" font-size="9.5" font-weight="700" font-family="Manrope,sans-serif" fill="#0a0a0a" text-anchor="middle">Baris Alper Yilmaz 31&#8242;</text><circle cx="349.7" cy="119.3" r="5" fill="#b5b5b5" stroke="#fff" stroke-width="1.5"/><text x="349.7" y="109.3" font-size="9.5" font-weight="700" font-family="Manrope,sans-serif" fill="#0a0a0a" text-anchor="middle">Sebastian Berhalter 49&#8242;</text><circle cx="613.8" cy="40.1" r="5" fill="#b5b5b5" stroke="#fff" stroke-width="1.5"/><text x="613.8" y="30.1" font-size="9.5" font-weight="700" font-family="Manrope,sans-serif" fill="#0a0a0a" text-anchor="middle">Kaan Ayhan 90&#8242;</text></svg></div>
+            <div class="legend">
+                <span class="k"><span class="dot" style="background:#0a0a0a"></span>Turkey</span>
+                <span class="k"><span class="dot" style="background:#b5b5b5"></span>USA</span>
+                <span class="k">&#9679; goal</span>
+            </div>
+            <p class="card-note">Cumulative expected goals, minute by minute. ESPN's free feed has no xG, so each shot's xG is estimated with a naive distance-and-angle logistic model fitted on shot coordinates from the play-by-play.</p>
+        </div>
+        
+
+        
+        <div class="card">
+            <div class="card-title">Shot map</div>
+            <div class="chart"><svg viewBox="0 0 660 420" xmlns="http://www.w3.org/2000/svg" width="100%" role="img" aria-label="Shot map"><rect x="10" y="10" width="640" height="400" rx="6" stroke="#d8d8d8" stroke-width="1.5" fill="none"/><line x1="330" y1="10" x2="330" y2="410" stroke="#d8d8d8" stroke-width="1.5" fill="none"/><circle cx="330" cy="210" r="52" stroke="#d8d8d8" stroke-width="1.5" fill="none"/><rect x="10" y="94" width="106" height="232" stroke="#d8d8d8" stroke-width="1.5" fill="none"/><rect x="10" y="154" width="35" height="112" stroke="#d8d8d8" stroke-width="1.5" fill="none"/><rect x="544" y="94" width="106" height="232" stroke="#d8d8d8" stroke-width="1.5" fill="none"/><rect x="615" y="154" width="35" height="112" stroke="#d8d8d8" stroke-width="1.5" fill="none"/><circle cx="98.3" cy="263.2" r="6.2" fill="#fff" stroke="#0a0a0a" stroke-width="1.3" opacity="0.45"><title>Giovanni Reyna · 1&#8242; · xG 0.17 · Shot Blocked</title></circle><circle cx="84.2" cy="186.8" r="7.8" fill="#fff" stroke="#0a0a0a" stroke-width="1.3" opacity="1"><title>Auston Trusty · 2&#8242; · xG 0.29 · Shot On Target</title></circle><path d="M35.0,256.7 L37.8,263.6 L45.3,264.2 L39.6,269.1 L41.4,276.4 L35.0,272.5 L28.6,276.4 L30.3,269.1 L24.6,264.2 L32.1,263.6 Z" fill="#fff" stroke="#0a0a0a" stroke-width="1.5"><title>Auston Trusty · 3&#8242; · xG 0.22 · Goal</title></path><path d="M58.6,199.7 L62.6,209.3 L73.0,210.1 L65.1,216.9 L67.5,227.0 L58.6,221.6 L49.8,227.0 L52.2,216.9 L44.3,210.1 L54.7,209.3 Z" fill="#fff" stroke="#0a0a0a" stroke-width="1.5"><title>Arda Güler · 10&#8242; · xG 0.54 · Goal</title></path><circle cx="100.9" cy="253.6" r="6.4" fill="#fff" stroke="#0a0a0a" stroke-width="1.3" opacity="0.45"><title>Brenden Aaronson · 13&#8242; · xG 0.18 · Shot Blocked</title></circle><circle cx="104.1" cy="263.6" r="6.1" fill="#fff" stroke="#0a0a0a" stroke-width="1.3" opacity="1"><title>Brenden Aaronson · 13&#8242; · xG 0.16 · Shot On Target</title></circle><circle cx="69.5" cy="216.8" r="7.6" fill="#fff" stroke="#0a0a0a" stroke-width="1.3" opacity="0.45"><title>Miles Robinson · 29&#8242; · xG 0.28 · Shot Off Target</title></circle><circle cx="36.9" cy="200.4" r="14.5" fill="#fff" stroke="#0a0a0a" stroke-width="1.3" opacity="0.45"><title>Orkun Kökçü · 31&#8242; · xG 0.81 · Shot Off Target</title></circle><path d="M32.4,198.3 L37.5,210.6 L50.8,211.6 L40.7,220.3 L43.8,233.2 L32.4,226.3 L21.0,233.2 L24.1,220.3 L14.0,211.6 L27.3,210.6 Z" fill="#fff" stroke="#0a0a0a" stroke-width="1.5"><title>Baris Alper Yilmaz · 31&#8242; · xG 0.87 · Goal</title></path><circle cx="22.2" cy="249.6" r="8.1" fill="#fff" stroke="#0a0a0a" stroke-width="1.3" opacity="0.45"><title>Abdülkerim Bardakci · 40&#8242; · xG 0.32 · Shot Blocked</title></circle><circle cx="65.7" cy="118.0" r="5.5" fill="#fff" stroke="#0a0a0a" stroke-width="1.3" opacity="0.45"><title>Kenan Yildiz · 43&#8242; · xG 0.12 · Shot Blocked</title></circle><circle cx="185.4" cy="206.4" r="4.8" fill="#fff" stroke="#0a0a0a" stroke-width="1.3" opacity="1"><title>Weston McKennie · 45&#8242; · xG 0.06 · Shot On Target</title></circle><circle cx="60.6" cy="208.8" r="8.4" fill="#fff" stroke="#0a0a0a" stroke-width="1.3" opacity="0.45"><title>Auston Trusty · 45'+3&#8242; · xG 0.34 · Shot Off Target</title></circle><path d="M123.9,143.7 L126.4,149.7 L133.0,150.2 L128.0,154.5 L129.5,160.9 L123.9,157.5 L118.3,160.9 L119.8,154.5 L114.8,150.2 L121.4,149.7 Z" fill="#fff" stroke="#0a0a0a" stroke-width="1.5"><title>Sebastian Berhalter · 49&#8242; · xG 0.12 · Goal</title></path><circle cx="31.1" cy="143.2" r="6.3" fill="#fff" stroke="#0a0a0a" stroke-width="1.3" opacity="1"><title>Christian Pulisic · 62&#8242; · xG 0.17 · Shot On Target</title></circle><circle cx="95.1" cy="199.6" r="7.4" fill="#fff" stroke="#0a0a0a" stroke-width="1.3" opacity="0.45"><title>Brenden Aaronson · 62&#8242; · xG 0.26 · Shot Off Target</title></circle><circle cx="72.1" cy="219.2" r="9.3" fill="#fff" stroke="#0a0a0a" stroke-width="1.3" opacity="0.45"><title>Ricardo Pepi · 63&#8242; · xG 0.41 · Shot Off Target</title></circle><circle cx="63.1" cy="198.4" r="10.2" fill="#fff" stroke="#0a0a0a" stroke-width="1.3" opacity="1"><title>Christian Pulisic · 63&#8242; · xG 0.48 · Shot On Target</title></circle><circle cx="70.2" cy="218.8" r="9.5" fill="#fff" stroke="#0a0a0a" stroke-width="1.3" opacity="0.45"><title>Weston McKennie · 63&#8242; · xG 0.42 · Shot Blocked</title></circle><circle cx="72.7" cy="235.6" r="6.9" fill="#fff" stroke="#0a0a0a" stroke-width="1.3" opacity="0.45"><title>Weston McKennie · 66&#8242; · xG 0.23 · Shot Off Target</title></circle><circle cx="90.0" cy="122.0" r="5.5" fill="#fff" stroke="#0a0a0a" stroke-width="1.3" opacity="0.45"><title>Kenan Yildiz · 72&#8242; · xG 0.11 · Shot Off Target</title></circle><circle cx="144.4" cy="274.4" r="5.1" fill="#fff" stroke="#0a0a0a" stroke-width="1.3" opacity="0.45"><title>Christian Pulisic · 77&#8242; · xG 0.09 · Shot Off Target</title></circle><circle cx="140.6" cy="264.4" r="5.3" fill="#fff" stroke="#0a0a0a" stroke-width="1.3" opacity="0.45"><title>Orkun Kökçü · 81&#8242; · xG 0.10 · Shot Off Target</title></circle><circle cx="112.4" cy="292.4" r="5.3" fill="#fff" stroke="#0a0a0a" stroke-width="1.3" opacity="0.45"><title>Álex Zendejas · 90'+3&#8242; · xG 0.10 · Shot Blocked</title></circle><circle cx="81.0" cy="142.0" r="6.1" fill="#fff" stroke="#0a0a0a" stroke-width="1.3" opacity="0.45"><title>Ricardo Pepi · 90'+5&#8242; · xG 0.17 · Shot Blocked</title></circle><circle cx="29.2" cy="165.6" r="8.0" fill="#fff" stroke="#0a0a0a" stroke-width="1.3" opacity="0.45"><title>Can Uzun · 90'+8&#8242; · xG 0.31 · Shot Blocked</title></circle><path d="M25.4,202.9 L30.6,215.6 L44.3,216.7 L33.9,225.6 L37.1,238.9 L25.4,231.8 L13.7,238.9 L16.8,225.6 L6.4,216.7 L20.1,215.6 Z" fill="#fff" stroke="#0a0a0a" stroke-width="1.5"><title>Kaan Ayhan · 90'+8&#8242; · xG 0.92 · Goal</title></path></svg></div>
+            <div class="legend">
+                <span class="k"><span class="dot" style="background:#0a0a0a"></span>Turkey (attacking &rarr;)</span>
+                <span class="k"><span class="dot" style="background:#fff; border: 1.5px solid #0a0a0a;"></span>USA (attacking &larr;)</span>
+                <span class="k">size = xG · star = goal</span>
+            </div>
+        </div>
+        
+
+        
+        <div class="card">
+            <div class="card-title">Turkey &nbsp;·&nbsp; match stats &nbsp;·&nbsp; USA</div>
+            
+            <div class="sb-row">
+                <span class="v l">47.4</span>
+                <span class="sb-track l"><span style="width: 47.4%"></span></span>
+                <span class="lab">Possession</span>
+                <span class="sb-track r"><span style="width: 52.6%"></span></span>
+                <span class="v">52.6</span>
+            </div>
+            
+            <div class="sb-row">
+                <span class="v l">9</span>
+                <span class="sb-track l"><span style="width: 33.3%"></span></span>
+                <span class="lab">Shots</span>
+                <span class="sb-track r"><span style="width: 66.7%"></span></span>
+                <span class="v">18</span>
+            </div>
+            
+            <div class="sb-row">
+                <span class="v l">3</span>
+                <span class="sb-track l"><span style="width: 30.0%"></span></span>
+                <span class="lab">On Target</span>
+                <span class="sb-track r"><span style="width: 70.0%"></span></span>
+                <span class="v">7</span>
+            </div>
+            
+            <div class="sb-row">
+                <span class="v l">2</span>
+                <span class="sb-track l"><span style="width: 18.2%"></span></span>
+                <span class="lab">Corners</span>
+                <span class="sb-track r"><span style="width: 81.8%"></span></span>
+                <span class="v">9</span>
+            </div>
+            
+            <div class="sb-row">
+                <span class="v l">13</span>
+                <span class="sb-track l"><span style="width: 50.0%"></span></span>
+                <span class="lab">Fouls</span>
+                <span class="sb-track r"><span style="width: 50.0%"></span></span>
+                <span class="v">13</span>
+            </div>
+            
+            <div class="sb-row">
+                <span class="v l">2</span>
+                <span class="sb-track l"><span style="width: 28.6%"></span></span>
+                <span class="lab">Offsides</span>
+                <span class="sb-track r"><span style="width: 71.4%"></span></span>
+                <span class="v">5</span>
+            </div>
+            
+            <div class="sb-row">
+                <span class="v l">5</span>
+                <span class="sb-track l"><span style="width: 83.3%"></span></span>
+                <span class="lab">Saves</span>
+                <span class="sb-track r"><span style="width: 16.7%"></span></span>
+                <span class="v">1</span>
+            </div>
+            
+            <div class="sb-row">
+                <span class="v l">0</span>
+                <span class="sb-track l"><span style="width: 0.0%"></span></span>
+                <span class="lab">Yellows</span>
+                <span class="sb-track r"><span style="width: 100.0%"></span></span>
+                <span class="v">1</span>
+            </div>
+            
+            <div class="sb-row">
+                <span class="v l">0</span>
+                <span class="sb-track l"><span style="width: 0%"></span></span>
+                <span class="lab">Reds</span>
+                <span class="sb-track r"><span style="width: 100%"></span></span>
+                <span class="v">0</span>
+            </div>
+            
+        </div>
+        
+
+        
+        <div class="card">
+            <div class="card-title">What the model expected</div>
+            <div class="chart"><svg viewBox="0 0 660 64" xmlns="http://www.w3.org/2000/svg" width="100%" role="img" aria-label="Pre-match win probabilities"><defs><clipPath id="rnd"><rect x="4" y="26" width="652" height="26" rx="13"/></clipPath></defs><g clip-path="url(#rnd)"><rect x="4.0" y="26" width="111.4" height="26" fill="#0a0a0a"/><text x="59.7" y="43" font-size="11" font-weight="700" font-family="Manrope,sans-serif" fill="#fff" text-anchor="middle">Turkey 17%</text><rect x="115.4" y="26" width="138.7" height="26" fill="#d9d9d9"/><text x="184.7" y="43" font-size="11" font-weight="700" font-family="Manrope,sans-serif" fill="#555" text-anchor="middle">draw 21%</text><rect x="254.0" y="26" width="401.8" height="26" fill="#f1f1f1"/><text x="455.0" y="43" font-size="11" font-weight="700" font-family="Manrope,sans-serif" fill="#555" text-anchor="middle">USA 62%</text></g><line x1="115.4" y1="26" x2="115.4" y2="52" stroke="#fff" stroke-width="2"/><line x1="254.0" y1="26" x2="254.0" y2="52" stroke="#fff" stroke-width="2"/><path d="M59.7,23 l-5,-9 l10,0 Z" fill="#0a0a0a"/><text x="59.7" y="10" font-size="9.5" font-weight="800" font-family="Manrope,sans-serif" fill="#0a0a0a" text-anchor="middle">ACTUAL</text></svg></div>
+            <p class="narrative" style="margin-top: 0.8rem;">Pre-match Elo: Turkey 1776, USA 1898. The model priced this Turkey <strong>17%</strong> / draw <strong>21%</strong> / USA <strong>62%</strong>, most likely score 0–1. Reality had other plans. The result moves <strong>36 Elo points</strong> from USA to Turkey — that flows straight into the next round of tournament simulations.</p>
+        </div>
+        
+
+        
+        <div class="card">
+            <div class="card-title">Timeline</div>
+            
+            <div class="tl-item">
+                <span class="tl-min">3'</span>
+                <span class="tl-text"><span class="tag goal">GOAL</span>Goal! Türkiye 0, USA 1. Auston Trusty (USA) left footed shot from a difficult angle on the right to the bottom right corner. Assisted by Sebastian Berhalter with a cross following a corner.</span>
+            </div>
+            
+            <div class="tl-item">
+                <span class="tl-min">10'</span>
+                <span class="tl-text"><span class="tag goal">GOAL</span>Goal! Türkiye 1, USA 1. Arda Güler (Türkiye) left footed shot from the centre of the box to the centre of the goal. Assisted by Baris Alper Yilmaz.</span>
+            </div>
+            
+            <div class="tl-item">
+                <span class="tl-min">19'</span>
+                <span class="tl-text"><span class="tag">YELLOW</span>Sebastian Berhalter (USA) is shown the yellow card for a bad foul.</span>
+            </div>
+            
+            <div class="tl-item">
+                <span class="tl-min">31'</span>
+                <span class="tl-text"><span class="tag goal">GOAL</span>Goal! Türkiye 2, USA 1. Baris Alper Yilmaz (Türkiye) right footed shot from very close range to the bottom right corner. Assisted by Orkun Kökçü.</span>
+            </div>
+            
+            <div class="tl-item">
+                <span class="tl-min">49'</span>
+                <span class="tl-text"><span class="tag goal">GOAL</span>Goal! Türkiye 2, USA 2. Sebastian Berhalter (USA) right footed shot from outside the box to the bottom left corner.</span>
+            </div>
+            
+            <div class="tl-item">
+                <span class="tl-min">58'</span>
+                <span class="tl-text"><span class="tag">SUB</span>Substitution, USA. Christian Pulisic replaces Timothy Weah.</span>
+            </div>
+            
+            <div class="tl-item">
+                <span class="tl-min">76'</span>
+                <span class="tl-text"><span class="tag">SUB</span>Substitution, USA. Sergiño Dest replaces Giovanni Reyna.</span>
+            </div>
+            
+            <div class="tl-item">
+                <span class="tl-min">77'</span>
+                <span class="tl-text"><span class="tag">SUB</span>Substitution, USA. Álex Zendejas replaces Brenden Aaronson.</span>
+            </div>
+            
+            <div class="tl-item">
+                <span class="tl-min">77'</span>
+                <span class="tl-text"><span class="tag">SUB</span>Substitution, USA. Alex Freeman replaces Joe Scally.</span>
+            </div>
+            
+            <div class="tl-item">
+                <span class="tl-min">84'</span>
+                <span class="tl-text"><span class="tag">SUB</span>Substitution, Türkiye. Çaglar Söyüncü replaces Zeki Çelik.</span>
+            </div>
+            
+            <div class="tl-item">
+                <span class="tl-min">84'</span>
+                <span class="tl-text"><span class="tag">SUB</span>Substitution, Türkiye. Can Uzun replaces Kenan Yildiz.</span>
+            </div>
+            
+            <div class="tl-item">
+                <span class="tl-min">86'</span>
+                <span class="tl-text"><span class="tag">SUB</span>Substitution, USA. Malik Tillman replaces Weston McKennie.</span>
+            </div>
+            
+            <div class="tl-item">
+                <span class="tl-min">88'</span>
+                <span class="tl-text"><span class="tag">SUB</span>Substitution, Türkiye. Kaan Ayhan replaces Orkun Kökçü.</span>
+            </div>
+            
+            <div class="tl-item">
+                <span class="tl-min">90'+2'</span>
+                <span class="tl-text"><span class="tag">SUB</span>Substitution, Türkiye. Mert Müldür replaces Oguz Aydin.</span>
+            </div>
+            
+            <div class="tl-item">
+                <span class="tl-min">90'+2'</span>
+                <span class="tl-text"><span class="tag">SUB</span>Substitution, Türkiye. Irfan Can Kahveci replaces Baris Alper Yilmaz.</span>
+            </div>
+            
+            <div class="tl-item">
+                <span class="tl-min">90'+8'</span>
+                <span class="tl-text"><span class="tag goal">GOAL</span>Goal! Türkiye 3, USA 2. Kaan Ayhan (Türkiye) right footed shot from very close range to the bottom right corner.</span>
+            </div>
+            
+        </div>
+        
+
+        
+        <div class="card">
+            <div class="card-title">Lineups</div>
+            <div class="lineups">
+                
+                <div>
+                    <div class="lu-team">Türkiye</div>
+                    <div class="lu-formation">3-4-2-1</div>
+                    <ul class="lu-list">
+                        
+                        <li><span class="j">23</span>Ugurcan Çakir <span style="color:#bbb; font-size:0.66rem;">G</span></li>
+                        
+                        <li><span class="j">15</span>Ozan Kabak <span style="color:#bbb; font-size:0.66rem;">CD</span></li>
+                        
+                        <li><span class="j">14</span>Abdülkerim Bardakçi <span style="color:#bbb; font-size:0.66rem;">CD-L</span></li>
+                        
+                        <li><span class="j">2</span>Zeki Çelik <span style="color:#bbb; font-size:0.66rem;">CD-R</span></li>
+                        
+                        <li><span class="j">6</span>Orkun Kökçü <span style="color:#bbb; font-size:0.66rem;">CM-L</span></li>
+                        
+                        <li><span class="j">5</span>Salih Özcan <span style="color:#bbb; font-size:0.66rem;">CM-R</span></li>
+                        
+                        <li><span class="j">13</span>Eren Elmali <span style="color:#bbb; font-size:0.66rem;">LM</span></li>
+                        
+                        <li><span class="j">24</span>Oguz Aydin <span style="color:#bbb; font-size:0.66rem;">RM</span></li>
+                        
+                        <li><span class="j">21</span>Baris Alper Yilmaz <span style="color:#bbb; font-size:0.66rem;">F</span></li>
+                        
+                        <li><span class="j">11</span>Kenan Yildiz <span style="color:#bbb; font-size:0.66rem;">CF-L</span></li>
+                        
+                        <li><span class="j">8</span>Arda Güler <span style="color:#bbb; font-size:0.66rem;">CF-R</span></li>
+                        
+                    </ul>
+                    <div class="lu-subs"><strong>Subs:</strong> Çaglar Söyüncü, Can Uzun, Kaan Ayhan, Mert Müldür, Irfan Can Kahveci</div>
+                </div>
+                
+                <div>
+                    <div class="lu-team">United States</div>
+                    <div class="lu-formation">4-3-3</div>
+                    <ul class="lu-list">
+                        
+                        <li><span class="j">1</span>Matt Turner <span style="color:#bbb; font-size:0.66rem;">G</span></li>
+                        
+                        <li><span class="j">22</span>Mark McKenzie <span style="color:#bbb; font-size:0.66rem;">CD-L</span></li>
+                        
+                        <li><span class="j">12</span>Miles Robinson <span style="color:#bbb; font-size:0.66rem;">CD-R</span></li>
+                        
+                        <li><span class="j">6</span>Auston Trusty <span style="color:#bbb; font-size:0.66rem;">LB</span></li>
+                        
+                        <li><span class="j">23</span>Joe Scally <span style="color:#bbb; font-size:0.66rem;">RB</span></li>
+                        
+                        <li><span class="j">14</span>Sebastian Berhalter <span style="color:#bbb; font-size:0.66rem;">CM</span></li>
+                        
+                        <li><span class="j">7</span>Giovanni Reyna <span style="color:#bbb; font-size:0.66rem;">LM</span></li>
+                        
+                        <li><span class="j">8</span>Weston McKennie <span style="color:#bbb; font-size:0.66rem;">RM</span></li>
+                        
+                        <li><span class="j">9</span>Ricardo Pepi <span style="color:#bbb; font-size:0.66rem;">F</span></li>
+                        
+                        <li><span class="j">21</span>Timothy Weah <span style="color:#bbb; font-size:0.66rem;">LF</span></li>
+                        
+                        <li><span class="j">11</span>Brenden Aaronson <span style="color:#bbb; font-size:0.66rem;">RF</span></li>
+                        
+                    </ul>
+                    <div class="lu-subs"><strong>Subs:</strong> Christian Pulisic, Sergiño Dest, Alejandro Zendejas, Alex Freeman, Malik Tillman</div>
+                </div>
+                
+            </div>
+        </div>
+        
+
+        <a class="backlink" href="../index.html">&larr; Fixtures, table &amp; predictions</a>
+        <p class="foot">Generated automatically from public match data. Stats: ESPN · Results: openfootball · xG: own naive model (distance + angle).</p>
+    </div>
+</body>
+</html>
