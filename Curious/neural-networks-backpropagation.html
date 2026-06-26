@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-KVBPX8VW');</script>
+    <!-- End Google Tag Manager -->
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="How a borrowed biological metaphor and one clever piece of calculus — the backpropagation algorithm — became the engine of modern artificial intelligence.">
+    <link rel="icon" type="image/svg+xml" href="../images/favicon.svg">
+    <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon-32.png">
+    <link rel="apple-touch-icon" href="../images/apple-touch-icon.png">
+    <title>Neural Networks and Backpropagation | Prashanth Shankar</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+
+    <style>
+        *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+        html { font-size: 16px; scroll-behavior: smooth; }
+        body {
+            background: #fff;
+            color: #000;
+            font-family: 'Inter', -apple-system, sans-serif;
+            font-weight: 400;
+            line-height: 1.7;
+        }
+        ::selection { background: #000; color: #fff; }
+
+        .page {
+            max-width: 720px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        header {
+            padding: 2.5rem 0 0;
+        }
+
+        .back-link {
+            font-size: 0.75rem;
+            font-weight: 400;
+            letter-spacing: 0.04em;
+            color: #000;
+            text-decoration: none;
+            transition: opacity 0.2s ease;
+        }
+        .back-link:hover { opacity: 0.5; }
+
+        article {
+            padding: 4rem 0 3rem;
+        }
+
+        article h1 {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 2.6rem;
+            font-weight: 600;
+            line-height: 1.15;
+            margin-bottom: 1rem;
+        }
+
+        .deck {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.25rem;
+            font-style: italic;
+            line-height: 1.5;
+            color: #000;
+            margin-bottom: 2.5rem;
+        }
+
+        article h2 {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.8rem;
+            font-weight: 600;
+            line-height: 1.2;
+            margin: 3rem 0 1rem;
+        }
+
+        article p {
+            font-size: 0.95rem;
+            font-weight: 300;
+            line-height: 1.75;
+            margin-bottom: 1rem;
+        }
+
+        article em {
+            font-style: italic;
+        }
+
+        .pullquote {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.35rem;
+            font-style: italic;
+            line-height: 1.45;
+            padding: 1.5rem 0 1.5rem 1.5rem;
+            border-left: 2px solid #000;
+            margin: 2rem 0;
+            color: #000;
+        }
+
+        .figure {
+            margin: 2.5rem 0;
+        }
+        .figure svg {
+            display: block;
+            width: 100%;
+            height: auto;
+            max-width: 640px;
+            margin: 0 auto;
+        }
+        .caption {
+            font-size: 0.78rem;
+            color: #666;
+            text-align: center;
+            margin-top: 0.8rem;
+            line-height: 1.5;
+            font-style: italic;
+            font-family: 'Cormorant Garamond', serif;
+        }
+
+        hr.divider {
+            border: none;
+            border-top: 1px solid #000;
+            margin: 3rem 0;
+        }
+
+        .references {
+            font-size: 0.8rem;
+            color: #555;
+            line-height: 1.7;
+            margin-top: 2rem;
+        }
+        .references h3 {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: #000;
+            margin-bottom: 0.75rem;
+        }
+        .references ol {
+            padding-left: 1.2rem;
+        }
+        .references li {
+            margin-bottom: 0.35rem;
+        }
+
+        footer {
+            padding: 2rem 0 3rem;
+            font-size: 0.75rem;
+            color: #666;
+        }
+        footer a { color: inherit; text-decoration: underline; text-underline-offset: 0.2em; }
+    </style>
+</head>
+<body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KVBPX8VW" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+    <div class="page">
+        <header>
+            <a href="index.html" class="back-link">&larr; Wonderland</a>
+        </header>
+
+        <article>
+            <h1>Neural Networks and Backpropagation</h1>
+            <p class="deck">A handful of borrowed biology and one clever piece of calculus turned out, fifty years later, to be the most consequential algorithm of the era.</p>
+
+            <p>For most of the twentieth century, artificial intelligence was about logic &mdash; symbols, rules, theorems, proofs. The idea that a machine might think like a brain was not new, but it was treated by most serious researchers as an empty metaphor. What changed is that a small group of people took the metaphor literally enough to build something with it, then found a procedure that could teach the something to be useful. The result is the world you live in now: language models, image generators, voice assistants, cars that drive themselves. The two halves of that story are the <em>neural network</em> and <em>backpropagation</em>.</p>
+
+            <h2>The neuron &mdash; a borrowed metaphor</h2>
+
+            <p>In 1943, two researchers in Chicago &mdash; the neuroscientist Warren McCulloch and the logician Walter Pitts &mdash; wrote a paper titled &ldquo;A Logical Calculus of the Ideas Immanent in Nervous Activity.&rdquo; They proposed the crudest possible model of a brain cell. Each artificial neuron would receive inputs from other neurons, multiply each input by a weight, sum them, and fire an output if the total exceeded a threshold. That was all.</p>
+
+            <p>It was a wild simplification &mdash; real neurons are vastly more intricate &mdash; but it had two properties that mattered. It was mathematically clean, and it could, in principle, implement any logical function. In 1958 Frank Rosenblatt built a physical machine around the idea, called the Perceptron, and trained it to recognize shapes by adjusting its weights. The press got excited; the New York Times reported that the Navy expected the Perceptron to soon walk, talk, see, write, and reproduce itself.</p>
+
+            <p>It did none of those things. In 1969 Marvin Minsky and Seymour Papert proved that a single layer of perceptrons could not even compute the exclusive-or function. The field went into a freeze. The fix was obvious to anyone who looked at it &mdash; <em>stack more layers</em> &mdash; but nobody knew how to train the stack. With many layers, which weight in which hidden layer should you blame when the network gets an answer wrong? Without an answer to that, deeper networks were just elegant uselessness.</p>
+
+            <div class="figure">
+                <svg viewBox="0 0 640 280" xmlns="http://www.w3.org/2000/svg">
+                    <!-- Connections (drawn first so nodes sit on top) -->
+                    <g stroke="#000" stroke-width="0.6" opacity="0.55">
+                        <!-- Input to hidden -->
+                        <line x1="100" y1="70"  x2="320" y2="50"/>
+                        <line x1="100" y1="70"  x2="320" y2="120"/>
+                        <line x1="100" y1="70"  x2="320" y2="190"/>
+                        <line x1="100" y1="70"  x2="320" y2="260"/>
+                        <line x1="100" y1="140" x2="320" y2="50"/>
+                        <line x1="100" y1="140" x2="320" y2="120"/>
+                        <line x1="100" y1="140" x2="320" y2="190"/>
+                        <line x1="100" y1="140" x2="320" y2="260"/>
+                        <line x1="100" y1="210" x2="320" y2="50"/>
+                        <line x1="100" y1="210" x2="320" y2="120"/>
+                        <line x1="100" y1="210" x2="320" y2="190"/>
+                        <line x1="100" y1="210" x2="320" y2="260"/>
+                        <!-- Hidden to output -->
+                        <line x1="320" y1="50"  x2="540" y2="105"/>
+                        <line x1="320" y1="50"  x2="540" y2="195"/>
+                        <line x1="320" y1="120" x2="540" y2="105"/>
+                        <line x1="320" y1="120" x2="540" y2="195"/>
+                        <line x1="320" y1="190" x2="540" y2="105"/>
+                        <line x1="320" y1="190" x2="540" y2="195"/>
+                        <line x1="320" y1="260" x2="540" y2="105"/>
+                        <line x1="320" y1="260" x2="540" y2="195"/>
+                    </g>
+                    <!-- Nodes -->
+                    <g stroke="#000" stroke-width="1" fill="#fff">
+                        <circle cx="100" cy="70"  r="14"/>
+                        <circle cx="100" cy="140" r="14"/>
+                        <circle cx="100" cy="210" r="14"/>
+                        <circle cx="320" cy="50"  r="14"/>
+                        <circle cx="320" cy="120" r="14"/>
+                        <circle cx="320" cy="190" r="14"/>
+                        <circle cx="320" cy="260" r="14"/>
+                        <circle cx="540" cy="105" r="14"/>
+                        <circle cx="540" cy="195" r="14"/>
+                    </g>
+                    <!-- Layer labels -->
+                    <g font-family="'Cormorant Garamond', serif" font-style="italic" font-size="14" fill="#666" text-anchor="middle">
+                        <text x="100" y="20">input</text>
+                        <text x="320" y="20">hidden</text>
+                        <text x="540" y="20">output</text>
+                    </g>
+                    <!-- Direction arrow -->
+                    <g stroke="#000" stroke-width="1" fill="none">
+                        <path d="M 60 260 L 580 260" marker-end="url(#arr2)"/>
+                    </g>
+                    <defs>
+                        <marker id="arr2" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+                            <path d="M 0 0 L 10 5 L 0 10 z" fill="#000"/>
+                        </marker>
+                    </defs>
+                    <text x="320" y="278" font-family="'Cormorant Garamond', serif" font-style="italic" font-size="14" fill="#666" text-anchor="middle">forward pass</text>
+                </svg>
+                <p class="caption">A feedforward network. Each connection has a weight; each node sums its inputs and applies a nonlinear function.</p>
+            </div>
+
+            <h2>The forward pass &mdash; how the network thinks</h2>
+
+            <p>Strip the biology away and a modern neural network is a long chain of matrix multiplications, with a simple nonlinear function squashed in between each one. Inputs &mdash; the pixels of an image, the tokens of a sentence &mdash; come in at one end. They get multiplied by a matrix of weights, passed through a nonlinearity, multiplied by the next matrix, passed through the next nonlinearity, and so on. Whatever comes out the other end is the network's answer: a probability that this image is a cat, a guess at the next word.</p>
+
+            <p>The architecture is laughably simple. The work is all in the weights &mdash; sometimes hundreds of billions of them &mdash; that have to be set to the right numbers. With those numbers right, the network can recognize faces, translate Mandarin, fold proteins, beat humans at Go. With them wrong, it outputs gibberish. There is no clever code in between. There is just the matrix arithmetic, and the numbers.</p>
+
+            <p>So the entire problem of artificial intelligence becomes a question about the numbers: how do we find them?</p>
+
+            <h2>Backpropagation &mdash; the engine of learning</h2>
+
+            <p>The procedure that finds them is called backpropagation, and the first time it appeared in a form anyone noticed was 1986, in a short paper in <em>Nature</em> by David Rumelhart, Geoffrey Hinton, and Ronald Williams. (Paul Werbos had derived a version in his 1974 PhD thesis; Seppo Linnainmaa had done the underlying math even earlier. The idea has the usual untidy history.) The trick is high-school calculus, applied with discipline.</p>
+
+            <p>Here is the picture. Show the untrained network an input it should know &mdash; a picture of a cat &mdash; and let it predict. Compare its prediction to the right answer. The difference is the <em>loss</em>: a single number measuring how wrong the network was. The goal is to push every weight in the direction that makes the loss smaller.</p>
+
+            <p>The question is how much each weight contributed to the error. Backpropagation answers it by running the chain rule of calculus backward through the network, one layer at a time. The output layer's error tells you which weights in the last layer to blame, and by how much. Those blamed weights then tell you which weights in the previous layer to blame. And so on, all the way back to the inputs. After one backward pass you have a <em>gradient</em>: a tiny nudge for every single weight in the network. Apply the nudges. Show the next example. Repeat for a few trillion examples.</p>
+
+            <p class="pullquote">The whole edifice of modern AI sits on a single observation: if your network is built from differentiable pieces, the chain rule will tell you, for free, how to improve every part of it at once.</p>
+
+            <div class="figure">
+                <svg viewBox="0 0 640 260" xmlns="http://www.w3.org/2000/svg">
+                    <!-- Axes -->
+                    <g stroke="#000" stroke-width="1" fill="none">
+                        <line x1="50" y1="220" x2="610" y2="220"/>
+                        <line x1="50" y1="220" x2="50" y2="30"/>
+                    </g>
+                    <text x="610" y="240" font-family="'Cormorant Garamond', serif" font-style="italic" font-size="13" fill="#666" text-anchor="end">weight space</text>
+                    <text x="44" y="30" font-family="'Cormorant Garamond', serif" font-style="italic" font-size="13" fill="#666" text-anchor="end" transform="rotate(-90 44 30)">loss</text>
+                    <!-- Loss curve: a smooth bowl -->
+                    <path d="M 70 60 Q 200 250 330 200 Q 460 170 590 70" stroke="#000" stroke-width="1.4" fill="none"/>
+                    <!-- Descent steps (points along the curve, moving toward the minimum near x=330,y=200) -->
+                    <g fill="#000">
+                        <circle cx="100" cy="92"  r="4"/>
+                        <circle cx="150" cy="140" r="4"/>
+                        <circle cx="205" cy="184" r="4"/>
+                        <circle cx="260" cy="202" r="4"/>
+                        <circle cx="310" cy="203" r="4"/>
+                        <circle cx="330" cy="200" r="5"/>
+                    </g>
+                    <!-- Step arrows between successive points -->
+                    <g stroke="#000" stroke-width="0.8" fill="none" stroke-dasharray="3 3">
+                        <line x1="104" y1="96"  x2="146" y2="136"/>
+                        <line x1="154" y1="144" x2="201" y2="180"/>
+                        <line x1="209" y1="188" x2="256" y2="198"/>
+                        <line x1="264" y1="202" x2="306" y2="203"/>
+                        <line x1="314" y1="203" x2="326" y2="201"/>
+                    </g>
+                    <!-- Labels -->
+                    <text x="100" y="80" font-family="Inter, sans-serif" font-size="11" fill="#000" text-anchor="middle">start</text>
+                    <text x="345" y="195" font-family="Inter, sans-serif" font-size="11" fill="#000">minimum</text>
+                </svg>
+                <p class="caption">Gradient descent. Each backward pass yields a step downhill on the loss surface. Run it long enough and the weights settle in a valley.</p>
+            </div>
+
+            <p>This is gradient descent, and it is breathtakingly stupid in the way only the right ideas are. There is no model of language, no theory of vision, no careful engineering of features. There is just the rule: nudge every weight a little in the direction that reduces the error. Iterate. Iterate. Iterate. With enough examples and enough weights and enough patience, the network learns whatever the data quietly contains.</p>
+
+            <h2>Why it matters</h2>
+
+            <p>For two decades after Rumelhart, Hinton and Williams, almost nobody believed this would scale. Backpropagation worked on toy problems, but real networks of any depth seemed to get stuck or fall apart. The mainstream of AI moved on to other things. Hinton kept at it anyway, mostly in obscurity, mostly in Toronto.</p>
+
+            <p>What turned the world over was not a better algorithm but more of the same thing. In 2012, a network called AlexNet &mdash; built by Hinton's student Alex Krizhevsky &mdash; trained on graphics cards on the ImageNet dataset and crushed the standing image-recognition benchmark by a margin nobody had thought possible. Backpropagation had not changed. The data had grown, and the compute had grown, and that turned out to be all that was missing. Rich Sutton later called this the &ldquo;bitter lesson&rdquo;: in the long run, simple methods that scale with computation always beat clever methods that don't.</p>
+
+            <p>The same algorithm that trained AlexNet trains everything that came after. Transformers, large language models, AlphaFold, image generators, the model writing this sentence &mdash; all of it is, underneath, a stack of differentiable matrix multiplications being nudged into shape by the chain rule running backwards. Almost the entire visible surface of modern AI is one idea from 1986 applied at a scale its inventors did not imagine.</p>
+
+            <p>It is worth pausing on how strange this is. A crude metaphor for a neuron, plus a calculus trick a high schooler can follow, somehow contain enough structure to learn the patterns of human language from a slab of internet text. Nobody understands quite why it works as well as it does. We know how to do it. We do not yet know what it means that we can.</p>
+
+            <hr class="divider">
+
+            <div class="references">
+                <h3>Further reading</h3>
+                <ol>
+                    <li>McCulloch, W. &amp; Pitts, W. (1943). <em>A Logical Calculus of the Ideas Immanent in Nervous Activity</em>.</li>
+                    <li>Rosenblatt, F. (1958). <em>The Perceptron: A Probabilistic Model for Information Storage and Organization in the Brain</em>.</li>
+                    <li>Rumelhart, D., Hinton, G. &amp; Williams, R. (1986). <em>Learning representations by back-propagating errors</em>. Nature 323.</li>
+                    <li>LeCun, Y., Bengio, Y. &amp; Hinton, G. (2015). <em>Deep Learning</em>. Nature 521.</li>
+                    <li>Sutton, R. (2019). <em>The Bitter Lesson</em>.</li>
+                </ol>
+            </div>
+        </article>
+
+        <footer>
+            <a href="index.html">&larr; Back to Wonderland</a>
+        </footer>
+    </div>
+</body>
+</html>
