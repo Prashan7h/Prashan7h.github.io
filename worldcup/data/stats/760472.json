@@ -1,0 +1,889 @@
+{
+ "teams": [
+  {
+   "name": "Tunisia",
+   "stats": {
+    "possessionPct": "28.5",
+    "totalShots": "10",
+    "shotsOnTarget": "4",
+    "wonCorners": "4",
+    "foulsCommitted": "11",
+    "offsides": "2",
+    "saves": "4",
+    "yellowCards": "0",
+    "redCards": "0"
+   }
+  },
+  {
+   "name": "Netherlands",
+   "stats": {
+    "possessionPct": "71.5",
+    "totalShots": "20",
+    "shotsOnTarget": "7",
+    "wonCorners": "6",
+    "foulsCommitted": "10",
+    "offsides": "1",
+    "saves": "3",
+    "yellowCards": "0",
+    "redCards": "0"
+   }
+  }
+ ],
+ "events": [
+  {
+   "type": "Kickoff",
+   "minute": "",
+   "team": null,
+   "text": "First Half begins.",
+   "players": []
+  },
+  {
+   "type": "Own Goal",
+   "minute": "3'",
+   "team": "Netherlands",
+   "text": "Own Goal by Ellyes Skhiri, Tunisia. Tunisia 0, Netherlands 1.",
+   "players": [
+    "Ellyes Skhiri"
+   ]
+  },
+  {
+   "type": "Goal - Volley",
+   "minute": "7'",
+   "team": "Netherlands",
+   "text": "Goal! Tunisia 0, Netherlands 2. Brian Brobbey (Netherlands) right footed shot from the centre of the box to the top right corner. Assisted by Virgil van Dijk with a headed pass following a set piece situation.",
+   "players": [
+    "Brian Brobbey",
+    "Virgil van Dijk"
+   ]
+  },
+  {
+   "type": "Start Delay",
+   "minute": "23'",
+   "team": "Netherlands",
+   "text": "Delay in match for a drinks break.",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "23'",
+   "team": "Tunisia",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "26'",
+   "team": "Netherlands",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "26'",
+   "team": "Tunisia",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Halftime",
+   "minute": "45'+4'",
+   "team": null,
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Start 2nd Half",
+   "minute": "45'",
+   "team": null,
+   "text": "Second Half begins Tunisia 0, Netherlands 2.",
+   "players": []
+  },
+  {
+   "type": "Goal - Header",
+   "minute": "54'",
+   "team": "Tunisia",
+   "text": "Goal! Tunisia 1, Netherlands 2. Hazem Mastouri (Tunisia) header from the centre of the box to the bottom left corner. Assisted by Hannibal Mejbri with a cross following a corner.",
+   "players": [
+    "Hazem Mastouri",
+    "Hannibal Mejbri"
+   ]
+  },
+  {
+   "type": "Goal - Header",
+   "minute": "62'",
+   "team": "Netherlands",
+   "text": "Goal! Tunisia 1, Netherlands 3. Jan Paul van Hecke (Netherlands) header from the left side of the six yard box to the top right corner. Assisted by Tijjani Reijnders with a cross following a corner.",
+   "players": [
+    "Jan Paul van Hecke",
+    "Tijjani Reijnders"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "67'",
+   "team": "Tunisia",
+   "text": "Substitution, Tunisia. Hadj Mahmoud replaces Rani Khedira.",
+   "players": [
+    "Mohamed Hadj Mahmoud",
+    "Rani Khedira"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "68'",
+   "team": "Tunisia",
+   "text": "Substitution, Tunisia. Elias Achouri replaces Anis Ben Slimane.",
+   "players": [
+    "Elias Achouri",
+    "Anis Slimane"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "68'",
+   "team": "Tunisia",
+   "text": "Substitution, Tunisia. Mortadha Ben Ouanes replaces Mohamed Amine Ben Hmida.",
+   "players": [
+    "Mortadha Ben Ouanes",
+    "Mohamed Amine Ben Hamida"
+   ]
+  },
+  {
+   "type": "Start Delay",
+   "minute": "69'",
+   "team": "Netherlands",
+   "text": "Delay in match for a drinks break.",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "69'",
+   "team": "Tunisia",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Substitution",
+   "minute": "72'",
+   "team": "Netherlands",
+   "text": "Substitution, Netherlands. Teun Koopmeiners replaces Frenkie de Jong.",
+   "players": [
+    "Teun Koopmeiners",
+    "Frenkie de Jong"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "72'",
+   "team": "Netherlands",
+   "text": "Substitution, Netherlands. Justin Kluivert replaces Tijjani Reijnders.",
+   "players": [
+    "Justin Kluivert",
+    "Tijjani Reijnders"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "72'",
+   "team": "Netherlands",
+   "text": "Substitution, Netherlands. Crysencio Summerville replaces Donyell Malen.",
+   "players": [
+    "Crysencio Summerville",
+    "Donyell Malen"
+   ]
+  },
+  {
+   "type": "End Delay",
+   "minute": "72'",
+   "team": "Netherlands",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "72'",
+   "team": "Tunisia",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Substitution",
+   "minute": "75'",
+   "team": "Tunisia",
+   "text": "Substitution, Tunisia. Firas Chaouat replaces Ismaël Gharbi.",
+   "players": [
+    "Firas Chaouat",
+    "Ismaël Gharbi"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "77'",
+   "team": "Netherlands",
+   "text": "Substitution, Netherlands. Memphis Depay replaces Brian Brobbey.",
+   "players": [
+    "Memphis Depay",
+    "Brian Brobbey"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "84'",
+   "team": "Netherlands",
+   "text": "Substitution, Netherlands. Noa Lang replaces Cody Gakpo.",
+   "players": [
+    "Noa Lang",
+    "Cody Gakpo"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "90'",
+   "team": "Tunisia",
+   "text": "Substitution, Tunisia. Sebastian Tounekti replaces Hazem Mastouri.",
+   "players": [
+    "Sebastian Tounekti",
+    "Hazem Mastouri"
+   ]
+  },
+  {
+   "type": "End Regular Time",
+   "minute": "90'+6'",
+   "team": null,
+   "text": "Second Half ends, Tunisia 1, Netherlands 3.",
+   "players": []
+  }
+ ],
+ "shots": [
+  {
+   "minute": "2",
+   "seconds": 72.0,
+   "team": "Tunisia",
+   "player": "Ismaël Gharbi",
+   "type": "Shot Off Target",
+   "x": 89.5,
+   "y": 53.2,
+   "goal": false,
+   "xg": 0.36,
+   "text": "Attempt missed. Ismaël Gharbi (Tunisia) right footed shot from the centre of the box is too high. Assisted by Hazem Mastouri with a cross."
+  },
+  {
+   "minute": "7",
+   "seconds": 384.0,
+   "team": "Netherlands",
+   "player": "Brian Brobbey",
+   "type": "Goal - Volley",
+   "x": 93.8,
+   "y": 44.7,
+   "goal": true,
+   "xg": 0.552,
+   "text": "Goal! Tunisia 0, Netherlands 2. Brian Brobbey (Netherlands) right footed shot from the centre of the box to the top right corner. Assisted by Virgil van Dijk with a headed pass following a set piece situation."
+  },
+  {
+   "minute": "9",
+   "seconds": 484.0,
+   "team": "Tunisia",
+   "player": "Ali Abdi",
+   "type": "Shot Off Target",
+   "x": 80.0,
+   "y": 65.8,
+   "goal": false,
+   "xg": 0.094,
+   "text": "Attempt missed. Ali Abdi (Tunisia) right footed shot from outside the box misses to the left. Assisted by Anis Ben Slimane with a cross."
+  },
+  {
+   "minute": "11",
+   "seconds": 653.0,
+   "team": "Netherlands",
+   "player": "Frenkie de Jong",
+   "type": "Shot Blocked",
+   "x": 85.2,
+   "y": 51.7,
+   "goal": false,
+   "xg": 0.222,
+   "text": "Attempt blocked. Frenkie de Jong (Netherlands) left footed shot from the centre of the box is blocked."
+  },
+  {
+   "minute": "12",
+   "seconds": 719.0,
+   "team": "Tunisia",
+   "player": "Anis Ben Slimane",
+   "type": "Shot On Target",
+   "x": 91.5,
+   "y": 51.7,
+   "goal": false,
+   "xg": 0.311,
+   "text": "Attempt saved. Anis Ben Slimane (Tunisia) header from the centre of the box is saved in the centre of the goal by Bart Verbruggen (Netherlands). Assisted by Yan Valery with a cross."
+  },
+  {
+   "minute": "17",
+   "seconds": 999.0,
+   "team": "Netherlands",
+   "player": "Jan Paul van Hecke",
+   "type": "Shot Off Target",
+   "x": 91.3,
+   "y": 47.1,
+   "goal": false,
+   "xg": 0.295,
+   "text": "Attempt missed. Jan Paul van Hecke (Netherlands) header from the centre of the box is high and wide to the left. Assisted by Tijjani Reijnders with a cross following a set piece situation."
+  },
+  {
+   "minute": "19",
+   "seconds": 1130.0,
+   "team": "Netherlands",
+   "player": "Tijjani Reijnders",
+   "type": "Shot On Target",
+   "x": 95.6,
+   "y": 38.1,
+   "goal": false,
+   "xg": 0.3,
+   "text": "Attempt saved. Tijjani Reijnders (Netherlands) right footed shot from the right side of the six yard box is saved in the centre of the goal by Aymen Dahmen (Tunisia). Assisted by Donyell Malen."
+  },
+  {
+   "minute": "28",
+   "seconds": 1642.0,
+   "team": "Netherlands",
+   "player": "Ryan Gravenberch",
+   "type": "Shot Blocked",
+   "x": 86.1,
+   "y": 35.9,
+   "goal": false,
+   "xg": 0.163,
+   "text": "Attempt blocked. Ryan Gravenberch (Netherlands) right footed shot from the right side of the box is blocked. Assisted by Cody Gakpo."
+  },
+  {
+   "minute": "29",
+   "seconds": 1683.0,
+   "team": "Netherlands",
+   "player": "Donyell Malen",
+   "type": "Shot Off Target",
+   "x": 77.5,
+   "y": 64.2,
+   "goal": false,
+   "xg": 0.081,
+   "text": "Attempt missed. Donyell Malen (Netherlands) right footed shot from outside the box is high and wide to the right. Assisted by Tijjani Reijnders following a corner."
+  },
+  {
+   "minute": "30",
+   "seconds": 1744.0,
+   "team": "Netherlands",
+   "player": "Cody Gakpo",
+   "type": "Shot Off Target",
+   "x": 92.7,
+   "y": 62.4,
+   "goal": false,
+   "xg": 0.179,
+   "text": "Attempt missed. Cody Gakpo (Netherlands) header from the centre of the box misses to the right. Assisted by Donyell Malen with a cross."
+  },
+  {
+   "minute": "30",
+   "seconds": 1781.0,
+   "team": "Netherlands",
+   "player": "Denzel Dumfries",
+   "type": "Shot Blocked",
+   "x": 83.6,
+   "y": 40.0,
+   "goal": false,
+   "xg": 0.157,
+   "text": "Attempt blocked. Denzel Dumfries (Netherlands) right footed shot from the centre of the box is blocked. Assisted by Brian Brobbey."
+  },
+  {
+   "minute": "31",
+   "seconds": 1838.0,
+   "team": "Netherlands",
+   "player": "Donyell Malen",
+   "type": "Shot Off Target",
+   "x": 81.3,
+   "y": 47.8,
+   "goal": false,
+   "xg": 0.145,
+   "text": "Attempt missed. Donyell Malen (Netherlands) right footed shot from outside the box is high and wide to the left following a corner."
+  },
+  {
+   "minute": "32",
+   "seconds": 1887.0,
+   "team": "Tunisia",
+   "player": "Ismaël Gharbi",
+   "type": "Shot Off Target",
+   "x": 68.8,
+   "y": 53.3,
+   "goal": false,
+   "xg": 0.044,
+   "text": "Attempt missed. Ismaël Gharbi (Tunisia) right footed shot from outside the box misses to the left. Assisted by Hannibal Mejbri following a set piece situation."
+  },
+  {
+   "minute": "39",
+   "seconds": 2337.0,
+   "team": "Netherlands",
+   "player": "Ryan Gravenberch",
+   "type": "Shot Off Target",
+   "x": 72.5,
+   "y": 46.8,
+   "goal": false,
+   "xg": 0.062,
+   "text": "Attempt missed. Ryan Gravenberch (Netherlands) right footed shot from outside the box is high and wide to the right. Assisted by Brian Brobbey."
+  },
+  {
+   "minute": "42",
+   "seconds": 2478.0,
+   "team": "Netherlands",
+   "player": "Brian Brobbey",
+   "type": "Shot Blocked",
+   "x": 89.3,
+   "y": 41.1,
+   "goal": false,
+   "xg": 0.279,
+   "text": "Attempt blocked. Brian Brobbey (Netherlands) right footed shot from the centre of the box is blocked. Assisted by Donyell Malen."
+  },
+  {
+   "minute": "44",
+   "seconds": 2606.0,
+   "team": "Netherlands",
+   "player": "Denzel Dumfries",
+   "type": "Shot On Target",
+   "x": 85.5,
+   "y": 32.2,
+   "goal": false,
+   "xg": 0.129,
+   "text": "Attempt saved. Denzel Dumfries (Netherlands) left footed shot from the right side of the box is saved in the centre of the goal by Aymen Dahmen (Tunisia). Assisted by Frenkie de Jong."
+  },
+  {
+   "minute": "51",
+   "seconds": 3042.0,
+   "team": "Netherlands",
+   "player": "Denzel Dumfries",
+   "type": "Shot Blocked",
+   "x": 90.2,
+   "y": 46.4,
+   "goal": false,
+   "xg": 0.388,
+   "text": "Attempt blocked. Denzel Dumfries (Netherlands) right footed shot from the centre of the box is blocked."
+  },
+  {
+   "minute": "54",
+   "seconds": 3207.0,
+   "team": "Tunisia",
+   "player": "Hazem Mastouri",
+   "type": "Goal - Header",
+   "x": 92.1,
+   "y": 49.7,
+   "goal": true,
+   "xg": 0.342,
+   "text": "Goal! Tunisia 1, Netherlands 2. Hazem Mastouri (Tunisia) header from the centre of the box to the bottom left corner. Assisted by Hannibal Mejbri with a cross following a corner."
+  },
+  {
+   "minute": "61",
+   "seconds": 3603.0,
+   "team": "Netherlands",
+   "player": "Cody Gakpo",
+   "type": "Shot Blocked",
+   "x": 86.6,
+   "y": 56.3,
+   "goal": false,
+   "xg": 0.237,
+   "text": "Attempt blocked. Cody Gakpo (Netherlands) right footed shot from the centre of the box is blocked. Assisted by Nathan Aké."
+  },
+  {
+   "minute": "62",
+   "seconds": 3677.0,
+   "team": "Netherlands",
+   "player": "Jan Paul van Hecke",
+   "type": "Goal - Header",
+   "x": 95.6,
+   "y": 60.1,
+   "goal": true,
+   "xg": 0.244,
+   "text": "Goal! Tunisia 1, Netherlands 3. Jan Paul van Hecke (Netherlands) header from the left side of the six yard box to the top right corner. Assisted by Tijjani Reijnders with a cross following a corner."
+  },
+  {
+   "minute": "65",
+   "seconds": 3896.0,
+   "team": "Tunisia",
+   "player": "Hazem Mastouri",
+   "type": "Shot On Target",
+   "x": 73.4,
+   "y": 28.2,
+   "goal": false,
+   "xg": 0.046,
+   "text": "Attempt saved. Hazem Mastouri (Tunisia) right footed shot from outside the box is saved in the centre of the goal by Bart Verbruggen (Netherlands). Assisted by Yan Valery."
+  },
+  {
+   "minute": "66",
+   "seconds": 3938.0,
+   "team": "Netherlands",
+   "player": null,
+   "type": "Shot Hit Woodwork",
+   "x": 84.7,
+   "y": 65.1,
+   "goal": false,
+   "xg": 0.14,
+   "text": "Tijjani Reijnders (Netherlands) hits the bar with a right footed shot from the left side of the box."
+  },
+  {
+   "minute": "66",
+   "seconds": 3947.0,
+   "team": "Netherlands",
+   "player": "Denzel Dumfries",
+   "type": "Shot Off Target",
+   "x": 92.4,
+   "y": 36.1,
+   "goal": false,
+   "xg": 0.156,
+   "text": "Attempt missed. Denzel Dumfries (Netherlands) header from the right side of the box misses to the left."
+  },
+  {
+   "minute": "68",
+   "seconds": 4064.0,
+   "team": "Netherlands",
+   "player": "Tijjani Reijnders",
+   "type": "Shot On Target",
+   "x": 80.9,
+   "y": 48.1,
+   "goal": false,
+   "xg": 0.14,
+   "text": "Attempt saved. Tijjani Reijnders (Netherlands) right footed shot from outside the box is saved in the bottom left corner by Aymen Dahmen (Tunisia). Assisted by Brian Brobbey."
+  },
+  {
+   "minute": "76",
+   "seconds": 4530.0,
+   "team": "Tunisia",
+   "player": "Hannibal Mejbri",
+   "type": "Shot On Target",
+   "x": 78.4,
+   "y": 32.3,
+   "goal": false,
+   "xg": 0.078,
+   "text": "Attempt saved. Hannibal Mejbri (Tunisia) left footed shot from outside the box is saved in the top right corner by Bart Verbruggen (Netherlands). Assisted by Hazem Mastouri."
+  },
+  {
+   "minute": "77",
+   "seconds": 4581.0,
+   "team": "Tunisia",
+   "player": "Elias Achouri",
+   "type": "Shot Off Target",
+   "x": 79.6,
+   "y": 59.1,
+   "goal": false,
+   "xg": 0.111,
+   "text": "Attempt missed. Elias Achouri (Tunisia) right footed shot from outside the box is high and wide to the right following a corner."
+  },
+  {
+   "minute": "78",
+   "seconds": 4674.0,
+   "team": "Netherlands",
+   "player": "Virgil van Dijk",
+   "type": "Shot On Target",
+   "x": 89.3,
+   "y": 46.6,
+   "goal": false,
+   "xg": 0.227,
+   "text": "Attempt saved. Virgil van Dijk (Netherlands) header from the centre of the box is saved in the top centre of the goal by Aymen Dahmen (Tunisia). Assisted by Teun Koopmeiners."
+  },
+  {
+   "minute": "80",
+   "seconds": 4766.0,
+   "team": "Netherlands",
+   "player": "Nathan Aké",
+   "type": "Shot Off Target",
+   "x": 91.7,
+   "y": 51.5,
+   "goal": false,
+   "xg": 0.321,
+   "text": "Attempt missed. Nathan Aké (Netherlands) header from the centre of the box is too high. Assisted by Jan Paul van Hecke with a headed pass following a set piece situation."
+  },
+  {
+   "minute": "90",
+   "seconds": 5346.0,
+   "team": "Tunisia",
+   "player": "Hazem Mastouri",
+   "type": "Shot Off Target",
+   "x": 45.2,
+   "y": 53.2,
+   "goal": false,
+   "xg": 0.006,
+   "text": "Attempt missed. Hazem Mastouri (Tunisia) right footed shot from more than 35 yards misses to the right following a fast break."
+  },
+  {
+   "minute": "90'+4",
+   "seconds": 5400.0,
+   "team": "Tunisia",
+   "player": "Elias Achouri",
+   "type": "Shot Blocked",
+   "x": 84.4,
+   "y": 48.6,
+   "goal": false,
+   "xg": 0.203,
+   "text": "Attempt blocked. Elias Achouri (Tunisia) right footed shot from the centre of the box is blocked."
+  }
+ ],
+ "lineups": [
+  {
+   "team": "Tunisia",
+   "formation": "5-4-1",
+   "starters": [
+    {
+     "name": "Aymen Dahmen",
+     "jersey": "16",
+     "position": "G"
+    },
+    {
+     "name": "Ellyes Skhiri",
+     "jersey": "17",
+     "position": "CD"
+    },
+    {
+     "name": "Mohamed Amine Ben Hamida",
+     "jersey": "21",
+     "position": "CD-L"
+    },
+    {
+     "name": "Montassar Talbi",
+     "jersey": "3",
+     "position": "CD-R"
+    },
+    {
+     "name": "Ali Abdi",
+     "jersey": "2",
+     "position": "LB"
+    },
+    {
+     "name": "Yan Valery",
+     "jersey": "20",
+     "position": "RB"
+    },
+    {
+     "name": "Rani Khedira",
+     "jersey": "13",
+     "position": "CM-L"
+    },
+    {
+     "name": "Ismaël Gharbi",
+     "jersey": "11",
+     "position": "CM-R"
+    },
+    {
+     "name": "Hannibal Mejbri",
+     "jersey": "10",
+     "position": "LM"
+    },
+    {
+     "name": "Anis Slimane",
+     "jersey": "25",
+     "position": "RM"
+    },
+    {
+     "name": "Hazem Mastouri",
+     "jersey": "9",
+     "position": "F"
+    }
+   ],
+   "subs": [
+    {
+     "name": "Elias Achouri",
+     "jersey": "7",
+     "position": "SUB"
+    },
+    {
+     "name": "Dylan Bronn",
+     "jersey": "6",
+     "position": "SUB"
+    },
+    {
+     "name": "Sabri Ben Hessen",
+     "jersey": "22",
+     "position": "SUB"
+    },
+    {
+     "name": "Khalil Ayari",
+     "jersey": "14",
+     "position": "SUB"
+    },
+    {
+     "name": "Omar Rekik",
+     "jersey": "4",
+     "position": "SUB"
+    },
+    {
+     "name": "Sebastian Tounekti",
+     "jersey": "26",
+     "position": "SUB"
+    },
+    {
+     "name": "Mohamed Hadj Mahmoud",
+     "jersey": "15",
+     "position": "SUB"
+    },
+    {
+     "name": "Raed Chikhaoui",
+     "jersey": "24",
+     "position": "SUB"
+    },
+    {
+     "name": "Mouhib Chamakh",
+     "jersey": "1",
+     "position": "SUB"
+    },
+    {
+     "name": "Rayan Elloumi",
+     "jersey": "18",
+     "position": "SUB"
+    },
+    {
+     "name": "Firas Chaouat",
+     "jersey": "19",
+     "position": "SUB"
+    },
+    {
+     "name": "Elias Saad",
+     "jersey": "8",
+     "position": "SUB"
+    },
+    {
+     "name": "Mortadha Ben Ouanes",
+     "jersey": "12",
+     "position": "SUB"
+    }
+   ]
+  },
+  {
+   "team": "Netherlands",
+   "formation": "4-3-3",
+   "starters": [
+    {
+     "name": "Bart Verbruggen",
+     "jersey": "1",
+     "position": "G"
+    },
+    {
+     "name": "Virgil van Dijk",
+     "jersey": "4",
+     "position": "CD-L"
+    },
+    {
+     "name": "Jan Paul van Hecke",
+     "jersey": "6",
+     "position": "CD-R"
+    },
+    {
+     "name": "Nathan Aké",
+     "jersey": "5",
+     "position": "LB"
+    },
+    {
+     "name": "Denzel Dumfries",
+     "jersey": "22",
+     "position": "RB"
+    },
+    {
+     "name": "Frenkie de Jong",
+     "jersey": "21",
+     "position": "CM"
+    },
+    {
+     "name": "Tijjani Reijnders",
+     "jersey": "14",
+     "position": "LM"
+    },
+    {
+     "name": "Ryan Gravenberch",
+     "jersey": "8",
+     "position": "RM"
+    },
+    {
+     "name": "Brian Brobbey",
+     "jersey": "19",
+     "position": "F"
+    },
+    {
+     "name": "Cody Gakpo",
+     "jersey": "11",
+     "position": "LF"
+    },
+    {
+     "name": "Donyell Malen",
+     "jersey": "18",
+     "position": "RF"
+    }
+   ],
+   "subs": [
+    {
+     "name": "Micky van de Ven",
+     "jersey": "15",
+     "position": "SUB"
+    },
+    {
+     "name": "Lutsharel Geertruida",
+     "jersey": "2",
+     "position": "SUB"
+    },
+    {
+     "name": "Wout Weghorst",
+     "jersey": "9",
+     "position": "SUB"
+    },
+    {
+     "name": "Mark Flekken",
+     "jersey": "23",
+     "position": "SUB"
+    },
+    {
+     "name": "Memphis Depay",
+     "jersey": "10",
+     "position": "SUB"
+    },
+    {
+     "name": "Quinten Timber",
+     "jersey": "26",
+     "position": "SUB"
+    },
+    {
+     "name": "Justin Kluivert",
+     "jersey": "7",
+     "position": "SUB"
+    },
+    {
+     "name": "Crysencio Summerville",
+     "jersey": "24",
+     "position": "SUB"
+    },
+    {
+     "name": "Teun Koopmeiners",
+     "jersey": "20",
+     "position": "SUB"
+    },
+    {
+     "name": "Noa Lang",
+     "jersey": "17",
+     "position": "SUB"
+    },
+    {
+     "name": "Robin Roefs",
+     "jersey": "13",
+     "position": "SUB"
+    },
+    {
+     "name": "Mats Wieffer",
+     "jersey": "12",
+     "position": "SUB"
+    },
+    {
+     "name": "Guus Til",
+     "jersey": "16",
+     "position": "SUB"
+    },
+    {
+     "name": "Marten de Roon",
+     "jersey": "3",
+     "position": "SUB"
+    },
+    {
+     "name": "Jorrel Hato",
+     "jersey": "25",
+     "position": "SUB"
+    }
+   ]
+  }
+ ],
+ "attendance": 68391,
+ "venue": "GEHA Field at Arrowhead Stadium, Kansas City, Missouri, USA"
+}

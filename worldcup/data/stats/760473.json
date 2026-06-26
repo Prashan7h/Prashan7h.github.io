@@ -1,0 +1,803 @@
+{
+ "teams": [
+  {
+   "name": "Curaçao",
+   "stats": {
+    "possessionPct": "36.7",
+    "totalShots": "11",
+    "shotsOnTarget": "2",
+    "wonCorners": "4",
+    "foulsCommitted": "11",
+    "offsides": "2",
+    "saves": "1",
+    "yellowCards": "2",
+    "redCards": "0"
+   }
+  },
+  {
+   "name": "Ivory Coast",
+   "stats": {
+    "possessionPct": "63.3",
+    "totalShots": "7",
+    "shotsOnTarget": "3",
+    "wonCorners": "6",
+    "foulsCommitted": "6",
+    "offsides": "1",
+    "saves": "2",
+    "yellowCards": "1",
+    "redCards": "0"
+   }
+  }
+ ],
+ "events": [
+  {
+   "type": "Kickoff",
+   "minute": "",
+   "team": null,
+   "text": "First Half begins.",
+   "players": []
+  },
+  {
+   "type": "Goal",
+   "minute": "7'",
+   "team": "Ivory Coast",
+   "text": "Goal! Curaçao 0, Côte d'Ivoire 1. Nicolas Pépé (Côte d'Ivoire) left footed shot from very close range to the centre of the goal. Assisted by Yan Diomande.",
+   "players": [
+    "Nicolas Pépé",
+    "Yan Diomande"
+   ]
+  },
+  {
+   "type": "Start Delay",
+   "minute": "23'",
+   "team": "Curaçao",
+   "text": "Delay in match because of an injury Juriën Gaari (Curaçao).",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "23'",
+   "team": "Ivory Coast",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "23'",
+   "team": "Curaçao",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "23'",
+   "team": "Ivory Coast",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "23'",
+   "team": "Ivory Coast",
+   "text": "Delay in match for a drinks break.",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "23'",
+   "team": "Curaçao",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "26'",
+   "team": "Ivory Coast",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "26'",
+   "team": "Curaçao",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Yellow Card",
+   "minute": "35'",
+   "team": "Ivory Coast",
+   "text": "Nicolas Pépé (Côte d'Ivoire) is shown the yellow card for a bad foul.",
+   "players": [
+    "Nicolas Pépé"
+   ]
+  },
+  {
+   "type": "Halftime",
+   "minute": "45'+5'",
+   "team": null,
+   "text": "First Half ends, Curaçao 0, Côte d'Ivoire 1.",
+   "players": []
+  },
+  {
+   "type": "Substitution",
+   "minute": "45'",
+   "team": "Ivory Coast",
+   "text": "Substitution, Côte d'Ivoire. Christ Inao Oulaï replaces Amad Diallo.",
+   "players": [
+    "Christ Inao Oulaï",
+    "Amad Diallo"
+   ]
+  },
+  {
+   "type": "Start 2nd Half",
+   "minute": "45'",
+   "team": null,
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Substitution",
+   "minute": "61'",
+   "team": "Curaçao",
+   "text": "Substitution, Curaçao. Jeremy Antonisse replaces Livano Comenencia.",
+   "players": [
+    "Jeremy Antonisse",
+    "Livano Comenencia"
+   ]
+  },
+  {
+   "type": "Goal",
+   "minute": "64'",
+   "team": "Ivory Coast",
+   "text": "Goal! Curaçao 0, Côte d'Ivoire 2. Nicolas Pépé (Côte d'Ivoire) left footed shot from the right side of the box to the top left corner. Assisted by Ibrahim Sangaré.",
+   "players": [
+    "Nicolas Pépé",
+    "Ibrahim Sangaré"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "67'",
+   "team": "Ivory Coast",
+   "text": "Substitution, Côte d'Ivoire. Oumar Diakité replaces Ange-Yoan Bonny.",
+   "players": [
+    "Oumar Diakité",
+    "Ange-Yoan Bonny"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "67'",
+   "team": "Ivory Coast",
+   "text": "Substitution, Côte d'Ivoire. Elye Wahi replaces Nicolas Pépé.",
+   "players": [
+    "Elye Wahi",
+    "Nicolas Pépé"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "67'",
+   "team": "Ivory Coast",
+   "text": "Substitution, Côte d'Ivoire. Bazoumana Touré replaces Yan Diomande.",
+   "players": [
+    "Bazoumana Touré",
+    "Yan Diomande"
+   ]
+  },
+  {
+   "type": "Start Delay",
+   "minute": "68'",
+   "team": "Ivory Coast",
+   "text": "Delay in match for a drinks break.",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "68'",
+   "team": "Curaçao",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "71'",
+   "team": "Curaçao",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "71'",
+   "team": "Ivory Coast",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "Yellow Card",
+   "minute": "75'",
+   "team": "Curaçao",
+   "text": "Juninho Bacuna (Curaçao) is shown the yellow card for a bad foul.",
+   "players": [
+    "Juninho Bacuna"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "77'",
+   "team": "Curaçao",
+   "text": "Substitution, Curaçao. Gervane Kastaneer replaces Juriën Gaari.",
+   "players": [
+    "Gervane Kastaneer",
+    "Juriën Gaari"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "77'",
+   "team": "Curaçao",
+   "text": "Substitution, Curaçao. Tyrese Noslin replaces Deveron Fonville.",
+   "players": [
+    "Tyrese Noslin",
+    "Deveron Fonville"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "77'",
+   "team": "Ivory Coast",
+   "text": "Substitution, Côte d'Ivoire. Jean Michaël Seri replaces Franck Kessie.",
+   "players": [
+    "Jean Michaël Seri",
+    "Franck Kessié"
+   ]
+  },
+  {
+   "type": "Yellow Card",
+   "minute": "83'",
+   "team": "Curaçao",
+   "text": "Gervane Kastaneer (Curaçao) is shown the yellow card for a bad foul.",
+   "players": [
+    "Gervane Kastaneer"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "90'",
+   "team": "Curaçao",
+   "text": "Substitution, Curaçao. Shurandy Sambo replaces Joshua Brenet.",
+   "players": [
+    "Shurandy Sambo",
+    "Joshua Brenet"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "90'",
+   "team": "Curaçao",
+   "text": "Substitution, Curaçao. Brandley Kuwas replaces Jürgen Locadia.",
+   "players": [
+    "Brandley Kuwas",
+    "Jürgen Locadia"
+   ]
+  },
+  {
+   "type": "End Regular Time",
+   "minute": "90'+7'",
+   "team": null,
+   "text": "Second Half ends, Curaçao 0, Côte d'Ivoire 2.",
+   "players": []
+  }
+ ],
+ "shots": [
+  {
+   "minute": "2",
+   "seconds": 94.0,
+   "team": "Curaçao",
+   "player": "Tahith Chong",
+   "type": "Shot On Target",
+   "x": 78.1,
+   "y": 59.9,
+   "goal": false,
+   "xg": 0.095,
+   "text": "Attempt saved. Tahith Chong (Curaçao) left footed shot from outside the box is saved in the centre of the goal by Yahia Fofana (Côte d'Ivoire)."
+  },
+  {
+   "minute": "7",
+   "seconds": 364.0,
+   "team": "Ivory Coast",
+   "player": "Nicolas Pépé",
+   "type": "Goal",
+   "x": 95.5,
+   "y": 52.7,
+   "goal": true,
+   "xg": 0.773,
+   "text": "Goal! Curaçao 0, Côte d'Ivoire 1. Nicolas Pépé (Côte d'Ivoire) left footed shot from very close range to the centre of the goal. Assisted by Yan Diomande."
+  },
+  {
+   "minute": "10",
+   "seconds": 545.0,
+   "team": "Ivory Coast",
+   "player": "Amad Diallo",
+   "type": "Shot Off Target",
+   "x": 81.9,
+   "y": 34.8,
+   "goal": false,
+   "xg": 0.112,
+   "text": "Attempt missed. Amad Diallo (Côte d'Ivoire) left footed shot from outside the box is close, but misses to the left. Assisted by Nicolas Pépé."
+  },
+  {
+   "minute": "14",
+   "seconds": 827.0,
+   "team": "Curaçao",
+   "player": "Juriën Gaari",
+   "type": "Shot Off Target",
+   "x": 74.7,
+   "y": 32.1,
+   "goal": false,
+   "xg": 0.058,
+   "text": "Attempt missed. Juriën Gaari (Curaçao) right footed shot from outside the box misses to the left. Assisted by Leandro Bacuna."
+  },
+  {
+   "minute": "18",
+   "seconds": 1064.0,
+   "team": "Ivory Coast",
+   "player": "Amad Diallo",
+   "type": "Shot Off Target",
+   "x": 90.7,
+   "y": 48.1,
+   "goal": false,
+   "xg": 0.43,
+   "text": "Attempt missed. Amad Diallo (Côte d'Ivoire) left footed shot from the centre of the box misses to the right. Assisted by Yan Diomande."
+  },
+  {
+   "minute": "23",
+   "seconds": 1330.0,
+   "team": "Ivory Coast",
+   "player": "Amad Diallo",
+   "type": "Shot Off Target",
+   "x": 82.5,
+   "y": 44.8,
+   "goal": false,
+   "xg": 0.159,
+   "text": "Attempt missed. Amad Diallo (Côte d'Ivoire) left footed shot from outside the box is close, but misses to the left. Assisted by Franck Kessie."
+  },
+  {
+   "minute": "39",
+   "seconds": 2340.0,
+   "team": "Curaçao",
+   "player": "Tahith Chong",
+   "type": "Shot Off Target",
+   "x": 74.3,
+   "y": 43.8,
+   "goal": false,
+   "xg": 0.071,
+   "text": "Attempt missed. Tahith Chong (Curaçao) left footed shot from outside the box misses to the left. Assisted by Jürgen Locadia."
+  },
+  {
+   "minute": "44",
+   "seconds": 2596.0,
+   "team": "Curaçao",
+   "player": "Leandro Bacuna",
+   "type": "Shot Off Target",
+   "x": 89.5,
+   "y": 69.1,
+   "goal": false,
+   "xg": 0.148,
+   "text": "Attempt missed. Leandro Bacuna (Curaçao) right footed shot from the left side of the box is close, but misses to the left. Assisted by Sherel Floranus."
+  },
+  {
+   "minute": "45'+3",
+   "seconds": 2700.0,
+   "team": "Curaçao",
+   "player": "Juriën Gaari",
+   "type": "Shot Blocked",
+   "x": 95.8,
+   "y": 60.3,
+   "goal": false,
+   "xg": 0.237,
+   "text": "Attempt blocked. Juriën Gaari (Curaçao) header from the left side of the six yard box is blocked. Assisted by Juninho Bacuna with a cross."
+  },
+  {
+   "minute": "45'+3",
+   "seconds": 2700.0,
+   "team": "Ivory Coast",
+   "player": null,
+   "type": "Shot Blocked",
+   "x": 3.4,
+   "y": 41.2,
+   "goal": false,
+   "xg": 0.0,
+   "text": "Ange-Yoan Bonny (Ivory Coast) Shot Blocked at 45'+3'"
+  },
+  {
+   "minute": "53",
+   "seconds": 3129.0,
+   "team": "Ivory Coast",
+   "player": "Franck Kessie",
+   "type": "Shot Blocked",
+   "x": 85.1,
+   "y": 52.2,
+   "goal": false,
+   "xg": 0.218,
+   "text": "Attempt blocked. Franck Kessie (Côte d'Ivoire) left footed shot from the centre of the box is blocked. Assisted by Yan Diomande."
+  },
+  {
+   "minute": "55",
+   "seconds": 3266.0,
+   "team": "Curaçao",
+   "player": "Sherel Floranus",
+   "type": "Shot Off Target",
+   "x": 77.9,
+   "y": 52.6,
+   "goal": false,
+   "xg": 0.103,
+   "text": "Attempt missed. Sherel Floranus (Curaçao) left footed shot from outside the box is just a bit too high. Assisted by Juninho Bacuna."
+  },
+  {
+   "minute": "64",
+   "seconds": 3792.0,
+   "team": "Ivory Coast",
+   "player": "Nicolas Pépé",
+   "type": "Goal",
+   "x": 89.1,
+   "y": 34.0,
+   "goal": true,
+   "xg": 0.177,
+   "text": "Goal! Curaçao 0, Côte d'Ivoire 2. Nicolas Pépé (Côte d'Ivoire) left footed shot from the right side of the box to the top left corner. Assisted by Ibrahim Sangaré."
+  },
+  {
+   "minute": "74",
+   "seconds": 4411.0,
+   "team": "Curaçao",
+   "player": "Tahith Chong",
+   "type": "Shot On Target",
+   "x": 82.7,
+   "y": 27.4,
+   "goal": false,
+   "xg": 0.086,
+   "text": "Attempt saved. Tahith Chong (Curaçao) left footed shot from outside the box is saved in the bottom right corner by Yahia Fofana (Côte d'Ivoire). Assisted by Jürgen Locadia."
+  },
+  {
+   "minute": "79",
+   "seconds": 4686.0,
+   "team": "Curaçao",
+   "player": "Leandro Bacuna",
+   "type": "Shot Off Target",
+   "x": 92.3,
+   "y": 48.6,
+   "goal": false,
+   "xg": 0.348,
+   "text": "Attempt missed. Leandro Bacuna (Curaçao) header from the centre of the box misses to the left. Assisted by Jeremy Antonisse with a cross following a set piece situation."
+  },
+  {
+   "minute": "79",
+   "seconds": 4688.0,
+   "team": "Curaçao",
+   "player": "Juninho Bacuna",
+   "type": "Shot Off Target",
+   "x": 92.0,
+   "y": 48.7,
+   "goal": false,
+   "xg": 0.335,
+   "text": "Attempt missed. Juninho Bacuna (Curaçao) header from the centre of the box is just a bit too high. Assisted by Leandro Bacuna following a set piece situation."
+  },
+  {
+   "minute": "89",
+   "seconds": 5309.0,
+   "team": "Ivory Coast",
+   "player": "Elye Wahi",
+   "type": "Shot On Target",
+   "x": 92.3,
+   "y": 33.0,
+   "goal": false,
+   "xg": 0.186,
+   "text": "Attempt saved. Elye Wahi (Côte d'Ivoire) right footed shot from the right side of the box is saved in the bottom right corner by Eloy Room (Curaçao)."
+  },
+  {
+   "minute": "90'+2",
+   "seconds": 5400.0,
+   "team": "Curaçao",
+   "player": "Gervane Kastaneer",
+   "type": "Shot Off Target",
+   "x": 81.1,
+   "y": 51.5,
+   "goal": false,
+   "xg": 0.143,
+   "text": "Attempt missed. Gervane Kastaneer (Curaçao) left footed shot from outside the box misses to the left. Assisted by Juninho Bacuna."
+  },
+  {
+   "minute": "90'+3",
+   "seconds": 5400.0,
+   "team": "Curaçao",
+   "player": "Jeremy Antonisse",
+   "type": "Shot Blocked",
+   "x": 83.7,
+   "y": 62.2,
+   "goal": false,
+   "xg": 0.146,
+   "text": "Attempt blocked. Jeremy Antonisse (Curaçao) right footed shot from the centre of the box is blocked."
+  }
+ ],
+ "lineups": [
+  {
+   "team": "Curaçao",
+   "formation": "5-4-1",
+   "starters": [
+    {
+     "name": "Eloy Room",
+     "jersey": "1",
+     "position": "G"
+    },
+    {
+     "name": "Armando Obispo",
+     "jersey": "18",
+     "position": "CD"
+    },
+    {
+     "name": "Deveron Fonville",
+     "jersey": "24",
+     "position": "CD-L"
+    },
+    {
+     "name": "Juriën Gaari",
+     "jersey": "3",
+     "position": "CD-R"
+    },
+    {
+     "name": "Sherel Floranus",
+     "jersey": "5",
+     "position": "LB"
+    },
+    {
+     "name": "Joshua Brenet",
+     "jersey": "20",
+     "position": "RB"
+    },
+    {
+     "name": "Leandro Bacuna",
+     "jersey": "10",
+     "position": "CM-L"
+    },
+    {
+     "name": "Livano Comenencia",
+     "jersey": "8",
+     "position": "CM-R"
+    },
+    {
+     "name": "Juninho Bacuna",
+     "jersey": "7",
+     "position": "LM"
+    },
+    {
+     "name": "Tahith Chong",
+     "jersey": "21",
+     "position": "RM"
+    },
+    {
+     "name": "Jürgen Locadia",
+     "jersey": "9",
+     "position": "F"
+    }
+   ],
+   "subs": [
+    {
+     "name": "Brandley Kuwas",
+     "jersey": "17",
+     "position": "SUB"
+    },
+    {
+     "name": "Jeremy Antonisse",
+     "jersey": "11",
+     "position": "SUB"
+    },
+    {
+     "name": "Shurandy Sambo",
+     "jersey": "2",
+     "position": "SUB"
+    },
+    {
+     "name": "Jearl Margaritha",
+     "jersey": "16",
+     "position": "SUB"
+    },
+    {
+     "name": "Kevin Felida",
+     "jersey": "22",
+     "position": "SUB"
+    },
+    {
+     "name": "Gervane Kastaneer",
+     "jersey": "19",
+     "position": "SUB"
+    },
+    {
+     "name": "Tyrese Noslin",
+     "jersey": "13",
+     "position": "SUB"
+    },
+    {
+     "name": "Sontje Hansen",
+     "jersey": "12",
+     "position": "SUB"
+    },
+    {
+     "name": "Ar'jany Martha",
+     "jersey": "15",
+     "position": "SUB"
+    },
+    {
+     "name": "Roshon van Eijma",
+     "jersey": "4",
+     "position": "SUB"
+    },
+    {
+     "name": "Kenji Gorré",
+     "jersey": "14",
+     "position": "SUB"
+    },
+    {
+     "name": "Godfried Roemeratoe",
+     "jersey": "6",
+     "position": "SUB"
+    },
+    {
+     "name": "Trevor Doornbusch",
+     "jersey": "26",
+     "position": "SUB"
+    },
+    {
+     "name": "Tyrick Bodak",
+     "jersey": "25",
+     "position": "SUB"
+    },
+    {
+     "name": "Riechedly Bazoer",
+     "jersey": "23",
+     "position": "SUB"
+    }
+   ]
+  },
+  {
+   "team": "Ivory Coast",
+   "formation": "4-2-3-1",
+   "starters": [
+    {
+     "name": "Yahia Fofana",
+     "jersey": "1",
+     "position": "G"
+    },
+    {
+     "name": "Ousmane Diomande",
+     "jersey": "2",
+     "position": "CD-L"
+    },
+    {
+     "name": "Odilon Kossounou",
+     "jersey": "7",
+     "position": "CD-R"
+    },
+    {
+     "name": "Christopher Operi",
+     "jersey": "13",
+     "position": "LB"
+    },
+    {
+     "name": "Guela Doué",
+     "jersey": "17",
+     "position": "RB"
+    },
+    {
+     "name": "Nicolas Pépé",
+     "jersey": "19",
+     "position": "AM"
+    },
+    {
+     "name": "Franck Kessié",
+     "jersey": "8",
+     "position": "LM"
+    },
+    {
+     "name": "Ibrahim Sangaré",
+     "jersey": "18",
+     "position": "RM"
+    },
+    {
+     "name": "Ange-Yoan Bonny",
+     "jersey": "9",
+     "position": "F"
+    },
+    {
+     "name": "Yan Diomande",
+     "jersey": "11",
+     "position": "AM-L"
+    },
+    {
+     "name": "Amad Diallo",
+     "jersey": "15",
+     "position": "AM-R"
+    }
+   ],
+   "subs": [
+    {
+     "name": "Alban Lafont",
+     "jersey": "23",
+     "position": "SUB"
+    },
+    {
+     "name": "Parfait Guiagon",
+     "jersey": "25",
+     "position": "SUB"
+    },
+    {
+     "name": "Ghislain Konan",
+     "jersey": "3",
+     "position": "SUB"
+    },
+    {
+     "name": "Seko Fofana",
+     "jersey": "6",
+     "position": "SUB"
+    },
+    {
+     "name": "Christ Inao Oulaï",
+     "jersey": "26",
+     "position": "SUB"
+    },
+    {
+     "name": "Evann Guessand",
+     "jersey": "22",
+     "position": "SUB"
+    },
+    {
+     "name": "Wilfried Singo",
+     "jersey": "5",
+     "position": "SUB"
+    },
+    {
+     "name": "Evan Ndicka",
+     "jersey": "21",
+     "position": "SUB"
+    },
+    {
+     "name": "Mohamed Koné",
+     "jersey": "16",
+     "position": "SUB"
+    },
+    {
+     "name": "Jean Michaël Seri",
+     "jersey": "4",
+     "position": "SUB"
+    },
+    {
+     "name": "Bazoumana Touré",
+     "jersey": "24",
+     "position": "SUB"
+    },
+    {
+     "name": "Oumar Diakité",
+     "jersey": "14",
+     "position": "SUB"
+    },
+    {
+     "name": "Emmanuel Agbadou",
+     "jersey": "20",
+     "position": "SUB"
+    },
+    {
+     "name": "Elye Wahi",
+     "jersey": "12",
+     "position": "SUB"
+    },
+    {
+     "name": "Simon Adingra",
+     "jersey": "10",
+     "position": "SUB"
+    }
+   ]
+  }
+ ],
+ "attendance": 68324,
+ "venue": "Lincoln Financial Field, Philadelphia, Pennsylvania, USA"
+}

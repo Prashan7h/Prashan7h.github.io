@@ -910,7 +910,7 @@
    "goals1": [],
    "goals2": [],
    "espn_id": "760470",
-   "status": "scheduled",
+   "status": "live",
    "utc_date": "2026-06-26T02:00Z",
    "venue": "SoFi Stadium",
    "slug": "2026-06-25-turkey-vs-usa"
@@ -928,7 +928,7 @@
    "goals1": [],
    "goals2": [],
    "espn_id": "760469",
-   "status": "scheduled",
+   "status": "live",
    "utc_date": "2026-06-26T02:00Z",
    "venue": "Levi's Stadium",
    "slug": "2026-06-25-paraguay-vs-australia"
@@ -1108,12 +1108,31 @@
    "team2": "Ivory Coast",
    "group": "Group E",
    "ground": "Philadelphia",
-   "score": null,
+   "score": {
+    "ft": [
+     0,
+     2
+    ],
+    "ht": [
+     0,
+     1
+    ]
+   },
    "goals1": [],
-   "goals2": [],
+   "goals2": [
+    {
+     "name": "Nicolas Pépé",
+     "minute": "7"
+    },
+    {
+     "name": "Nicolas Pépé",
+     "minute": "64"
+    }
+   ],
    "espn_id": "760473",
-   "status": "live",
+   "status": "finished",
    "utc_date": "2026-06-25T20:00Z",
+   "attendance": 68324,
    "venue": "Lincoln Financial Field",
    "slug": "2026-06-25-curaçao-vs-ivory-coast"
   },
@@ -1126,12 +1145,36 @@
    "team2": "Germany",
    "group": "Group E",
    "ground": "New York/New Jersey (East Rutherford)",
-   "score": null,
-   "goals1": [],
-   "goals2": [],
+   "score": {
+    "ft": [
+     2,
+     1
+    ],
+    "ht": [
+     1,
+     1
+    ]
+   },
+   "goals1": [
+    {
+     "name": "Nilson Angulo",
+     "minute": "9"
+    },
+    {
+     "name": "Gonzalo Plata",
+     "minute": "77"
+    }
+   ],
+   "goals2": [
+    {
+     "name": "Leroy Sané",
+     "minute": "2"
+    }
+   ],
    "espn_id": "760468",
-   "status": "live",
+   "status": "finished",
    "utc_date": "2026-06-25T20:00Z",
+   "attendance": 80663,
    "venue": "MetLife Stadium",
    "slug": "2026-06-25-ecuador-vs-germany"
   },
@@ -1343,12 +1386,32 @@
    "team2": "Sweden",
    "group": "Group F",
    "ground": "Dallas (Arlington)",
-   "score": null,
-   "goals1": [],
-   "goals2": [],
+   "score": {
+    "ft": [
+     1,
+     1
+    ],
+    "ht": [
+     0,
+     0
+    ]
+   },
+   "goals1": [
+    {
+     "name": "Daizen Maeda",
+     "minute": "56"
+    }
+   ],
+   "goals2": [
+    {
+     "name": "Anthony Elanga",
+     "minute": "62"
+    }
+   ],
    "espn_id": "760471",
-   "status": "scheduled",
+   "status": "finished",
    "utc_date": "2026-06-25T23:00Z",
+   "attendance": 70137,
    "venue": "AT&T Stadium",
    "slug": "2026-06-25-japan-vs-sweden"
   },
@@ -1361,12 +1424,41 @@
    "team2": "Netherlands",
    "group": "Group F",
    "ground": "Kansas City",
-   "score": null,
-   "goals1": [],
-   "goals2": [],
+   "score": {
+    "ft": [
+     1,
+     3
+    ],
+    "ht": [
+     0,
+     2
+    ]
+   },
+   "goals1": [
+    {
+     "name": "Hazem Mastouri",
+     "minute": "54"
+    }
+   ],
+   "goals2": [
+    {
+     "name": "Ellyes Skhiri",
+     "minute": "3",
+     "owngoal": true
+    },
+    {
+     "name": "Brian Brobbey",
+     "minute": "7"
+    },
+    {
+     "name": "Jan Paul van Hecke",
+     "minute": "62"
+    }
+   ],
    "espn_id": "760472",
-   "status": "scheduled",
+   "status": "finished",
    "utc_date": "2026-06-25T23:00Z",
+   "attendance": 68391,
    "venue": "GEHA Field at Arrowhead Stadium",
    "slug": "2026-06-25-tunisia-vs-netherlands"
   },

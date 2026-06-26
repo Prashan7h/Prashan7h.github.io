@@ -1,0 +1,814 @@
+{
+ "teams": [
+  {
+   "name": "Ecuador",
+   "stats": {
+    "possessionPct": "38.9",
+    "totalShots": "7",
+    "shotsOnTarget": "3",
+    "wonCorners": "3",
+    "foulsCommitted": "15",
+    "offsides": "1",
+    "saves": "2",
+    "yellowCards": "3",
+    "redCards": "0"
+   }
+  },
+  {
+   "name": "Germany",
+   "stats": {
+    "possessionPct": "61.1",
+    "totalShots": "11",
+    "shotsOnTarget": "3",
+    "wonCorners": "2",
+    "foulsCommitted": "10",
+    "offsides": "0",
+    "saves": "1",
+    "yellowCards": "1",
+    "redCards": "0"
+   }
+  }
+ ],
+ "events": [
+  {
+   "type": "Kickoff",
+   "minute": "",
+   "team": null,
+   "text": "First Half begins.",
+   "players": []
+  },
+  {
+   "type": "Goal",
+   "minute": "2'",
+   "team": "Germany",
+   "text": "Goal! Ecuador 0, Germany 1. Leroy Sané (Germany) left footed shot from the centre of the box to the bottom left corner. Assisted by Florian Wirtz.",
+   "players": [
+    "Leroy Sané",
+    "Florian Wirtz"
+   ]
+  },
+  {
+   "type": "Goal",
+   "minute": "9'",
+   "team": "Ecuador",
+   "text": "Goal! Ecuador 1, Germany 1. Nilson Angulo (Ecuador) right footed shot from outside the box to the bottom right corner. Assisted by Pedro Vite.",
+   "players": [
+    "Nilson Angulo",
+    "Pedro Vite"
+   ]
+  },
+  {
+   "type": "Start Delay",
+   "minute": "27'",
+   "team": "Germany",
+   "text": "Delay in match for a drinks break.",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "27'",
+   "team": "Ecuador",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "30'",
+   "team": "Germany",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "30'",
+   "team": "Ecuador",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "38'",
+   "team": "Germany",
+   "text": "Delay in match (Germany).",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "38'",
+   "team": "Ecuador",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "38'",
+   "team": "Germany",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "38'",
+   "team": "Ecuador",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Yellow Card",
+   "minute": "43'",
+   "team": "Ecuador",
+   "text": "Piero Hincapié (Ecuador) is shown the yellow card for a bad foul.",
+   "players": [
+    "Piero Hincapié"
+   ]
+  },
+  {
+   "type": "Yellow Card",
+   "minute": "44'",
+   "team": "Germany",
+   "text": "Aleksandar Pavlovic (Germany) is shown the yellow card for a bad foul.",
+   "players": [
+    "Aleksandar Pavlovic"
+   ]
+  },
+  {
+   "type": "Halftime",
+   "minute": "45'+5'",
+   "team": null,
+   "text": "First Half ends, Ecuador 1, Germany 1.",
+   "players": []
+  },
+  {
+   "type": "Substitution",
+   "minute": "45'",
+   "team": "Germany",
+   "text": "Substitution, Germany. Angelo Stiller replaces Aleksandar Pavlovic.",
+   "players": [
+    "Angelo Stiller",
+    "Aleksandar Pavlovic"
+   ]
+  },
+  {
+   "type": "Start 2nd Half",
+   "minute": "45'",
+   "team": null,
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "47'",
+   "team": "Germany",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "48'",
+   "team": "Germany",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Yellow Card",
+   "minute": "50'",
+   "team": "Ecuador",
+   "text": "Alan Franco (Ecuador) is shown the yellow card.",
+   "players": [
+    "Alan Franco"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "60'",
+   "team": "Germany",
+   "text": "Substitution, Germany. Deniz Undav replaces Kai Havertz.",
+   "players": [
+    "Deniz Undav",
+    "Kai Havertz"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "60'",
+   "team": "Germany",
+   "text": "Substitution, Germany. Malick Thiaw replaces Joshua Kimmich.",
+   "players": [
+    "Malick Thiaw",
+    "Joshua Kimmich"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "64'",
+   "team": "Ecuador",
+   "text": "Substitution, Ecuador. Kevin Rodríguez replaces Enner Valencia.",
+   "players": [
+    "Kevin Rodríguez",
+    "Enner Valencia"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "64'",
+   "team": "Ecuador",
+   "text": "Substitution, Ecuador. Ángelo Preciado replaces Alan Franco.",
+   "players": [
+    "Ángelo Preciado",
+    "Alan Franco"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "64'",
+   "team": "Germany",
+   "text": "Substitution, Germany. Maximilian Beier replaces Felix Nmecha.",
+   "players": [
+    "Maximilian Beier",
+    "Felix Nmecha"
+   ]
+  },
+  {
+   "type": "Start Delay",
+   "minute": "69'",
+   "team": "Germany",
+   "text": "Delay in match for a drinks break.",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "69'",
+   "team": "Ecuador",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "71'",
+   "team": "Germany",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "71'",
+   "team": "Ecuador",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Substitution",
+   "minute": "71'",
+   "team": "Ecuador",
+   "text": "Substitution, Ecuador. Pervis Estupiñán replaces Piero Hincapié because of an injury.",
+   "players": [
+    "Pervis Estupiñán",
+    "Piero Hincapié"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "73'",
+   "team": "Germany",
+   "text": "Substitution, Germany. Pascal Groß replaces Florian Wirtz.",
+   "players": [
+    "Pascal Gross",
+    "Florian Wirtz"
+   ]
+  },
+  {
+   "type": "Goal - Volley",
+   "minute": "77'",
+   "team": "Ecuador",
+   "text": "Goal! Ecuador 2, Germany 1. Gonzalo Plata (Ecuador) left footed shot from very close range to the top right corner. Assisted by Kevin Rodríguez with a headed pass following a corner.",
+   "players": [
+    "Gonzalo Plata",
+    "Kevin Rodríguez"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "85'",
+   "team": "Ecuador",
+   "text": "Substitution, Ecuador. Félix Torres replaces John Yeboah.",
+   "players": [
+    "Félix Torres",
+    "John Yeboah"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "85'",
+   "team": "Ecuador",
+   "text": "Substitution, Ecuador. Jordy Caicedo replaces Nilson Angulo because of an injury.",
+   "players": [
+    "Jordy Caicedo",
+    "Nilson Angulo"
+   ]
+  },
+  {
+   "type": "Yellow Card",
+   "minute": "89'",
+   "team": "Ecuador",
+   "text": "Gonzalo Plata (Ecuador) is shown the yellow card for a bad foul.",
+   "players": [
+    "Gonzalo Plata"
+   ]
+  },
+  {
+   "type": "End Regular Time",
+   "minute": "90'+8'",
+   "team": null,
+   "text": "Second Half ends, Ecuador 2, Germany 1.",
+   "players": []
+  }
+ ],
+ "shots": [
+  {
+   "minute": "2",
+   "seconds": 109.0,
+   "team": "Germany",
+   "player": "Leroy Sané",
+   "type": "Goal",
+   "x": 85.0,
+   "y": 50.8,
+   "goal": true,
+   "xg": 0.218,
+   "text": "Goal! Ecuador 0, Germany 1. Leroy Sané (Germany) left footed shot from the centre of the box to the bottom left corner. Assisted by Florian Wirtz."
+  },
+  {
+   "minute": "7",
+   "seconds": 392.0,
+   "team": "Germany",
+   "player": "Florian Wirtz",
+   "type": "Shot Blocked",
+   "x": 79.8,
+   "y": 57.7,
+   "goal": false,
+   "xg": 0.116,
+   "text": "Attempt blocked. Florian Wirtz (Germany) right footed shot from outside the box is blocked."
+  },
+  {
+   "minute": "9",
+   "seconds": 506.0,
+   "team": "Ecuador",
+   "player": "Nilson Angulo",
+   "type": "Goal",
+   "x": 77.9,
+   "y": 58.9,
+   "goal": true,
+   "xg": 0.095,
+   "text": "Goal! Ecuador 1, Germany 1. Nilson Angulo (Ecuador) right footed shot from outside the box to the bottom right corner. Assisted by Pedro Vite."
+  },
+  {
+   "minute": "14",
+   "seconds": 823.0,
+   "team": "Germany",
+   "player": "Felix Nmecha",
+   "type": "Shot Off Target",
+   "x": 80.7,
+   "y": 28.5,
+   "goal": false,
+   "xg": 0.079,
+   "text": "Attempt missed. Felix Nmecha (Germany) right footed shot from outside the box misses to the left. Assisted by Jamal Musiala."
+  },
+  {
+   "minute": "25",
+   "seconds": 1475.0,
+   "team": "Germany",
+   "player": "Kai Havertz",
+   "type": "Shot On Target",
+   "x": 91.8,
+   "y": 48.7,
+   "goal": false,
+   "xg": 0.326,
+   "text": "Attempt saved. Kai Havertz (Germany) header from the centre of the box is saved in the top left corner by Hernán Galíndez (Ecuador). Assisted by David Raum with a cross."
+  },
+  {
+   "minute": "32",
+   "seconds": 1893.0,
+   "team": "Ecuador",
+   "player": "Enner Valencia",
+   "type": "Shot Blocked",
+   "x": 89.8,
+   "y": 28.4,
+   "goal": false,
+   "xg": 0.127,
+   "text": "Attempt blocked. Enner Valencia (Ecuador) right footed shot from the right side of the box is blocked. Assisted by Nilson Angulo."
+  },
+  {
+   "minute": "35",
+   "seconds": 2061.0,
+   "team": "Germany",
+   "player": "Jamal Musiala",
+   "type": "Shot Blocked",
+   "x": 86.6,
+   "y": 65.1,
+   "goal": false,
+   "xg": 0.16,
+   "text": "Attempt blocked. Jamal Musiala (Germany) left footed shot from the left side of the box is blocked. Assisted by Florian Wirtz."
+  },
+  {
+   "minute": "38",
+   "seconds": 2268.0,
+   "team": "Germany",
+   "player": "Felix Nmecha",
+   "type": "Shot Blocked",
+   "x": 79.3,
+   "y": 36.2,
+   "goal": false,
+   "xg": 0.095,
+   "text": "Attempt blocked. Felix Nmecha (Germany) right footed shot from outside the box is blocked. Assisted by Leroy Sané."
+  },
+  {
+   "minute": "45'+4",
+   "seconds": 2700.0,
+   "team": "Germany",
+   "player": "Florian Wirtz",
+   "type": "Shot Blocked",
+   "x": 89.5,
+   "y": 38.5,
+   "goal": false,
+   "xg": 0.243,
+   "text": "Attempt blocked. Florian Wirtz (Germany) right footed shot from the centre of the box is blocked. Assisted by David Raum with a cross."
+  },
+  {
+   "minute": "54",
+   "seconds": 3230.0,
+   "team": "Ecuador",
+   "player": "Moisés Caicedo",
+   "type": "Shot Off Target",
+   "x": 96.6,
+   "y": 65.1,
+   "goal": false,
+   "xg": 0.131,
+   "text": "Attempt missed. Moisés Caicedo (Ecuador) header from a difficult angle on the left is close, but misses to the left. Assisted by John Yeboah with a cross following a corner."
+  },
+  {
+   "minute": "62",
+   "seconds": 3711.0,
+   "team": "Ecuador",
+   "player": "Enner Valencia",
+   "type": "Shot On Target",
+   "x": 77.8,
+   "y": 38.3,
+   "goal": false,
+   "xg": 0.089,
+   "text": "Attempt saved. Enner Valencia (Ecuador) right footed shot from outside the box is saved in the bottom left corner by Manuel Neuer (Germany). Assisted by John Yeboah."
+  },
+  {
+   "minute": "63",
+   "seconds": 3775.0,
+   "team": "Germany",
+   "player": "Florian Wirtz",
+   "type": "Shot Blocked",
+   "x": 79.7,
+   "y": 54.5,
+   "goal": false,
+   "xg": 0.121,
+   "text": "Attempt blocked. Florian Wirtz (Germany) right footed shot from outside the box is blocked. Assisted by Deniz Undav."
+  },
+  {
+   "minute": "73",
+   "seconds": 4324.0,
+   "team": "Ecuador",
+   "player": "Gonzalo Plata",
+   "type": "Shot Off Target",
+   "x": 95.4,
+   "y": 48.3,
+   "goal": false,
+   "xg": 0.787,
+   "text": "Attempt missed. Gonzalo Plata (Ecuador) left footed shot from very close range is high and wide to the right. Assisted by Moisés Caicedo."
+  },
+  {
+   "minute": "76",
+   "seconds": 4538.0,
+   "team": "Germany",
+   "player": "Leroy Sané",
+   "type": "Shot On Target",
+   "x": 85.8,
+   "y": 59.5,
+   "goal": false,
+   "xg": 0.195,
+   "text": "Attempt saved. Leroy Sané (Germany) left footed shot from the centre of the box is saved in the centre of the goal by Hernán Galíndez (Ecuador). Assisted by Deniz Undav."
+  },
+  {
+   "minute": "77",
+   "seconds": 4574.0,
+   "team": "Ecuador",
+   "player": "Kevin Rodríguez",
+   "type": "Shot Blocked",
+   "x": 95.4,
+   "y": 53.4,
+   "goal": false,
+   "xg": 0.742,
+   "text": "Attempt blocked. Kevin Rodríguez (Ecuador) left footed shot from very close range is blocked. Assisted by John Yeboah with a headed pass."
+  },
+  {
+   "minute": "77",
+   "seconds": 4619.0,
+   "team": "Ecuador",
+   "player": "Gonzalo Plata",
+   "type": "Goal - Volley",
+   "x": 98.6,
+   "y": 47.2,
+   "goal": true,
+   "xg": 0.95,
+   "text": "Goal! Ecuador 2, Germany 1. Gonzalo Plata (Ecuador) left footed shot from very close range to the top right corner. Assisted by Kevin Rodríguez with a headed pass following a corner."
+  },
+  {
+   "minute": "90'+3",
+   "seconds": 5400.0,
+   "team": "Germany",
+   "player": "Deniz Undav",
+   "type": "Shot Off Target",
+   "x": 96.6,
+   "y": 68.7,
+   "goal": false,
+   "xg": 0.15,
+   "text": "Attempt missed. Deniz Undav (Germany) left footed shot from a difficult angle on the left is close, but misses to the left. Assisted by Pascal Groß."
+  },
+  {
+   "minute": "90'+5",
+   "seconds": 5400.0,
+   "team": "Germany",
+   "player": "Pascal Groß",
+   "type": "Shot Off Target",
+   "x": 77.0,
+   "y": 41.2,
+   "goal": false,
+   "xg": 0.088,
+   "text": "Attempt missed. Pascal Groß (Germany) left footed shot from outside the box is too high."
+  }
+ ],
+ "lineups": [
+  {
+   "team": "Ecuador",
+   "formation": "4-4-2",
+   "starters": [
+    {
+     "name": "Hernán Galíndez",
+     "jersey": "1",
+     "position": "G"
+    },
+    {
+     "name": "Willian Pacho",
+     "jersey": "6",
+     "position": "CD-L"
+    },
+    {
+     "name": "Joel Ordóñez",
+     "jersey": "4",
+     "position": "CD-R"
+    },
+    {
+     "name": "Piero Hincapié",
+     "jersey": "3",
+     "position": "LB"
+    },
+    {
+     "name": "Alan Franco",
+     "jersey": "21",
+     "position": "RB"
+    },
+    {
+     "name": "Pedro Vite",
+     "jersey": "15",
+     "position": "CM-L"
+    },
+    {
+     "name": "Moisés Caicedo",
+     "jersey": "23",
+     "position": "CM-R"
+    },
+    {
+     "name": "Nilson Angulo",
+     "jersey": "20",
+     "position": "LM"
+    },
+    {
+     "name": "John Yeboah",
+     "jersey": "9",
+     "position": "RM"
+    },
+    {
+     "name": "Enner Valencia",
+     "jersey": "13",
+     "position": "CF-L"
+    },
+    {
+     "name": "Gonzalo Plata",
+     "jersey": "19",
+     "position": "CF-R"
+    }
+   ],
+   "subs": [
+    {
+     "name": "Alan Minda",
+     "jersey": "14",
+     "position": "SUB"
+    },
+    {
+     "name": "Ángelo Preciado",
+     "jersey": "17",
+     "position": "SUB"
+    },
+    {
+     "name": "Félix Torres",
+     "jersey": "2",
+     "position": "SUB"
+    },
+    {
+     "name": "Anthony Valencia",
+     "jersey": "8",
+     "position": "SUB"
+    },
+    {
+     "name": "Gonzalo Valle",
+     "jersey": "22",
+     "position": "SUB"
+    },
+    {
+     "name": "Pervis Estupiñán",
+     "jersey": "7",
+     "position": "SUB"
+    },
+    {
+     "name": "Denil Castillo",
+     "jersey": "18",
+     "position": "SUB"
+    },
+    {
+     "name": "Jordy Alcívar",
+     "jersey": "5",
+     "position": "SUB"
+    },
+    {
+     "name": "Jeremy Arévalo",
+     "jersey": "24",
+     "position": "SUB"
+    },
+    {
+     "name": "Kendry Páez",
+     "jersey": "10",
+     "position": "SUB"
+    },
+    {
+     "name": "Yaimar Medina",
+     "jersey": "26",
+     "position": "SUB"
+    },
+    {
+     "name": "Jackson Porozo",
+     "jersey": "25",
+     "position": "SUB"
+    },
+    {
+     "name": "Moisés Ramírez",
+     "jersey": "12",
+     "position": "SUB"
+    },
+    {
+     "name": "Jordy Caicedo",
+     "jersey": "16",
+     "position": "SUB"
+    },
+    {
+     "name": "Kevin Rodríguez",
+     "jersey": "11",
+     "position": "SUB"
+    }
+   ]
+  },
+  {
+   "team": "Germany",
+   "formation": "3-4-2-1",
+   "starters": [
+    {
+     "name": "Manuel Neuer",
+     "jersey": "1",
+     "position": "G"
+    },
+    {
+     "name": "Jonathan Tah",
+     "jersey": "4",
+     "position": "CD"
+    },
+    {
+     "name": "Antonio Rüdiger",
+     "jersey": "2",
+     "position": "CD-L"
+    },
+    {
+     "name": "Joshua Kimmich",
+     "jersey": "6",
+     "position": "CD-R"
+    },
+    {
+     "name": "Aleksandar Pavlovic",
+     "jersey": "5",
+     "position": "CM-L"
+    },
+    {
+     "name": "Felix Nmecha",
+     "jersey": "23",
+     "position": "CM-R"
+    },
+    {
+     "name": "David Raum",
+     "jersey": "22",
+     "position": "LM"
+    },
+    {
+     "name": "Leroy Sané",
+     "jersey": "19",
+     "position": "RM"
+    },
+    {
+     "name": "Kai Havertz",
+     "jersey": "7",
+     "position": "F"
+    },
+    {
+     "name": "Florian Wirtz",
+     "jersey": "17",
+     "position": "CF-L"
+    },
+    {
+     "name": "Jamal Musiala",
+     "jersey": "10",
+     "position": "CF-R"
+    }
+   ],
+   "subs": [
+    {
+     "name": "Assan Ouédraogo",
+     "jersey": "25",
+     "position": "SUB"
+    },
+    {
+     "name": "Alexander Nübel",
+     "jersey": "21",
+     "position": "SUB"
+    },
+    {
+     "name": "Oliver Baumann",
+     "jersey": "12",
+     "position": "SUB"
+    },
+    {
+     "name": "Deniz Undav",
+     "jersey": "26",
+     "position": "SUB"
+    },
+    {
+     "name": "Malick Thiaw",
+     "jersey": "24",
+     "position": "SUB"
+    },
+    {
+     "name": "Leon Goretzka",
+     "jersey": "8",
+     "position": "SUB"
+    },
+    {
+     "name": "Nick Woltemade",
+     "jersey": "11",
+     "position": "SUB"
+    },
+    {
+     "name": "Nadiem Amiri",
+     "jersey": "20",
+     "position": "SUB"
+    },
+    {
+     "name": "Waldemar Anton",
+     "jersey": "3",
+     "position": "SUB"
+    },
+    {
+     "name": "Pascal Gross",
+     "jersey": "13",
+     "position": "SUB"
+    },
+    {
+     "name": "Jamie Leweling",
+     "jersey": "9",
+     "position": "SUB"
+    },
+    {
+     "name": "Maximilian Beier",
+     "jersey": "14",
+     "position": "SUB"
+    },
+    {
+     "name": "Angelo Stiller",
+     "jersey": "16",
+     "position": "SUB"
+    }
+   ]
+  }
+ ],
+ "attendance": 80663,
+ "venue": "MetLife Stadium, East Rutherford, New Jersey, USA"
+}

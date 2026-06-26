@@ -1,0 +1,826 @@
+{
+ "teams": [
+  {
+   "name": "Japan",
+   "stats": {
+    "possessionPct": "52.3",
+    "totalShots": "8",
+    "shotsOnTarget": "3",
+    "wonCorners": "2",
+    "foulsCommitted": "20",
+    "offsides": "3",
+    "saves": "4",
+    "yellowCards": "1",
+    "redCards": "0"
+   }
+  },
+  {
+   "name": "Sweden",
+   "stats": {
+    "possessionPct": "47.7",
+    "totalShots": "11",
+    "shotsOnTarget": "5",
+    "wonCorners": "8",
+    "foulsCommitted": "11",
+    "offsides": "2",
+    "saves": "2",
+    "yellowCards": "2",
+    "redCards": "0"
+   }
+  }
+ ],
+ "events": [
+  {
+   "type": "Kickoff",
+   "minute": "",
+   "team": null,
+   "text": "First Half begins.",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "24'",
+   "team": "Japan",
+   "text": "Delay in match for a drinks break.",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "24'",
+   "team": "Sweden",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "27'",
+   "team": "Japan",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "27'",
+   "team": "Sweden",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Yellow Card",
+   "minute": "32'",
+   "team": "Sweden",
+   "text": "Isak Hien (Sweden) is shown the yellow card for a bad foul.",
+   "players": [
+    "Isak Hien"
+   ]
+  },
+  {
+   "type": "Start Delay",
+   "minute": "35'",
+   "team": "Sweden",
+   "text": "Delay in match because of an injury Isak Hien (Sweden).",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "35'",
+   "team": "Japan",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "36'",
+   "team": "Sweden",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "36'",
+   "team": "Japan",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Substitution",
+   "minute": "37'",
+   "team": "Sweden",
+   "text": "Substitution, Sweden. Lucas Bergvall replaces Isak Hien because of an injury.",
+   "players": [
+    "Lucas Bergvall",
+    "Isak Hien"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "39'",
+   "team": "Japan",
+   "text": "Substitution, Japan. Shogo Taniguchi replaces Ko Itakura.",
+   "players": [
+    "Shogo Taniguchi",
+    "Kou Itakura"
+   ]
+  },
+  {
+   "type": "Halftime",
+   "minute": "45'+5'",
+   "team": null,
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Start 2nd Half",
+   "minute": "45'",
+   "team": null,
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Goal",
+   "minute": "56'",
+   "team": "Japan",
+   "text": "Goal! Japan 1, Sweden 0. Daizen Maeda (Japan) right footed shot from the centre of the box to the bottom left corner. Assisted by Ritsu Doan with a through ball.",
+   "players": [
+    "Daizen Maeda",
+    "Ritsu Doan"
+   ]
+  },
+  {
+   "type": "Goal",
+   "minute": "62'",
+   "team": "Sweden",
+   "text": "Goal! Japan 1, Sweden 1. Anthony Elanga (Sweden) left footed shot from outside the box to the bottom left corner. Assisted by Viktor Gyökeres.",
+   "players": [
+    "Anthony Elanga",
+    "Viktor Gyökeres"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "66'",
+   "team": "Japan",
+   "text": "Substitution, Japan. Koki Ogawa replaces Ayase Ueda.",
+   "players": [
+    "Koki Ogawa",
+    "Ayase Ueda"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "67'",
+   "team": "Japan",
+   "text": "Substitution, Japan. Junya Ito replaces Ritsu Doan.",
+   "players": [
+    "Junya Ito",
+    "Ritsu Doan"
+   ]
+  },
+  {
+   "type": "Start Delay",
+   "minute": "68'",
+   "team": "Japan",
+   "text": "Delay in match for a drinks break.",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "68'",
+   "team": "Sweden",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "71'",
+   "team": "Japan",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "71'",
+   "team": "Sweden",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Substitution",
+   "minute": "75'",
+   "team": "Sweden",
+   "text": "Substitution, Sweden. Daniel Svensson replaces Alexander Bernhardsson.",
+   "players": [
+    "Daniel Svensson",
+    "Alexander Bernhardsson"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "75'",
+   "team": "Sweden",
+   "text": "Substitution, Sweden. Ken Sema replaces Elliot Stroud.",
+   "players": [
+    "Ken Sema",
+    "Elliot Stroud"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "75'",
+   "team": "Japan",
+   "text": "Substitution, Japan. Yuto Nagatomo replaces Keito Nakamura.",
+   "players": [
+    "Yuto Nagatomo",
+    "Keito Nakamura"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "75'",
+   "team": "Japan",
+   "text": "Substitution, Japan. Tsuyoshi Watanabe replaces Ayumu Seko.",
+   "players": [
+    "Tsuyoshi Watanabe",
+    "Ayumu Seko"
+   ]
+  },
+  {
+   "type": "Yellow Card",
+   "minute": "77'",
+   "team": "Japan",
+   "text": "Shogo Taniguchi (Japan) is shown the yellow card for a bad foul.",
+   "players": [
+    "Shogo Taniguchi"
+   ]
+  },
+  {
+   "type": "Yellow Card",
+   "minute": "85'",
+   "team": "Sweden",
+   "text": "Viktor Gyökeres (Sweden) is shown the yellow card for a bad foul.",
+   "players": [
+    "Viktor Gyökeres"
+   ]
+  },
+  {
+   "type": "Start Delay",
+   "minute": "86'",
+   "team": "Sweden",
+   "text": "Delay in match because of an injury Victor Lindelöf (Sweden).",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "86'",
+   "team": "Japan",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "87'",
+   "team": "Sweden",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "87'",
+   "team": "Japan",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Substitution",
+   "minute": "87'",
+   "team": "Sweden",
+   "text": "Substitution, Sweden. Carl Starfelt replaces Victor Lindelöf because of an injury.",
+   "players": [
+    "Carl Starfelt",
+    "Victor Lindelöf"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "88'",
+   "team": "Sweden",
+   "text": "Substitution, Sweden. Benjamin Nygren replaces Gabriel Gudmundsson.",
+   "players": [
+    "Benjamin Nygren",
+    "Gabriel Gudmundsson"
+   ]
+  },
+  {
+   "type": "End Regular Time",
+   "minute": "90'+7'",
+   "team": null,
+   "text": "Second Half ends, Japan 1, Sweden 1.",
+   "players": []
+  }
+ ],
+ "shots": [
+  {
+   "minute": "6",
+   "seconds": 317.0,
+   "team": "Sweden",
+   "player": "Alexander Bernhardsson",
+   "type": "Shot On Target",
+   "x": 82.5,
+   "y": 36.4,
+   "goal": false,
+   "xg": 0.125,
+   "text": "Attempt saved. Alexander Bernhardsson (Sweden) left footed shot from outside the box is saved in the bottom left corner by Zion Suzuki (Japan). Assisted by Alexander Isak."
+  },
+  {
+   "minute": "15",
+   "seconds": 872.0,
+   "team": "Japan",
+   "player": "Ritsu Doan",
+   "type": "Shot Blocked",
+   "x": 80.3,
+   "y": 34.2,
+   "goal": false,
+   "xg": 0.097,
+   "text": "Attempt blocked. Ritsu Doan (Japan) left footed shot from outside the box is blocked. Assisted by Keito Nakamura."
+  },
+  {
+   "minute": "22",
+   "seconds": 1264.0,
+   "team": "Japan",
+   "player": "Daizen Maeda",
+   "type": "Shot Off Target",
+   "x": 91.0,
+   "y": 55.5,
+   "goal": false,
+   "xg": 0.258,
+   "text": "Attempt missed. Daizen Maeda (Japan) header from the centre of the box is too high. Assisted by Hiroki Ito with a cross."
+  },
+  {
+   "minute": "40",
+   "seconds": 2374.0,
+   "team": "Japan",
+   "player": "Yukinari Sugawara",
+   "type": "Shot On Target",
+   "x": 71.5,
+   "y": 30.9,
+   "goal": false,
+   "xg": 0.043,
+   "text": "Attempt saved. Yukinari Sugawara (Japan) right footed shot from outside the box is saved in the centre of the goal by Jacob Widell Zetterström (Sweden). Assisted by Ao Tanaka."
+  },
+  {
+   "minute": "45",
+   "seconds": 2694.0,
+   "team": "Japan",
+   "player": "Keito Nakamura",
+   "type": "Shot On Target",
+   "x": 86.6,
+   "y": 65.4,
+   "goal": false,
+   "xg": 0.158,
+   "text": "Attempt saved. Keito Nakamura (Japan) right footed shot from the left side of the box is saved in the bottom right corner by Jacob Widell Zetterström (Sweden). Assisted by Daizen Maeda."
+  },
+  {
+   "minute": "45'+3",
+   "seconds": 2700.0,
+   "team": "Sweden",
+   "player": "Viktor Gyökeres",
+   "type": "Shot Blocked",
+   "x": 74.8,
+   "y": 43.4,
+   "goal": false,
+   "xg": 0.074,
+   "text": "Attempt blocked. Viktor Gyökeres (Sweden) right footed shot from outside the box is blocked."
+  },
+  {
+   "minute": "48",
+   "seconds": 2866.0,
+   "team": "Japan",
+   "player": "Ao Tanaka",
+   "type": "Shot Off Target",
+   "x": 76.2,
+   "y": 45.4,
+   "goal": false,
+   "xg": 0.086,
+   "text": "Attempt missed. Ao Tanaka (Japan) right footed shot from outside the box is too high. Assisted by Daichi Kamada."
+  },
+  {
+   "minute": "50",
+   "seconds": 2967.0,
+   "team": "Sweden",
+   "player": "Gustaf Lagerbielke",
+   "type": "Shot Off Target",
+   "x": 95.7,
+   "y": 41.2,
+   "goal": false,
+   "xg": 0.29,
+   "text": "Attempt missed. Gustaf Lagerbielke (Sweden) header from the right side of the six yard box misses to the right. Assisted by Elliot Stroud with a cross following a corner."
+  },
+  {
+   "minute": "52",
+   "seconds": 3118.0,
+   "team": "Japan",
+   "player": "Ayase Ueda",
+   "type": "Shot Blocked",
+   "x": 78.5,
+   "y": 43.7,
+   "goal": false,
+   "xg": 0.105,
+   "text": "Attempt blocked. Ayase Ueda (Japan) right footed shot from outside the box is blocked. Assisted by Keito Nakamura."
+  },
+  {
+   "minute": "56",
+   "seconds": 3313.0,
+   "team": "Japan",
+   "player": "Daizen Maeda",
+   "type": "Goal",
+   "x": 90.1,
+   "y": 48.2,
+   "goal": true,
+   "xg": 0.398,
+   "text": "Goal! Japan 1, Sweden 0. Daizen Maeda (Japan) right footed shot from the centre of the box to the bottom left corner. Assisted by Ritsu Doan with a through ball."
+  },
+  {
+   "minute": "62",
+   "seconds": 3669.0,
+   "team": "Sweden",
+   "player": "Anthony Elanga",
+   "type": "Goal",
+   "x": 82.2,
+   "y": 21.9,
+   "goal": true,
+   "xg": 0.064,
+   "text": "Goal! Japan 1, Sweden 1. Anthony Elanga (Sweden) left footed shot from outside the box to the bottom left corner. Assisted by Viktor Gyökeres."
+  },
+  {
+   "minute": "65",
+   "seconds": 3852.0,
+   "team": "Sweden",
+   "player": "Alexander Isak",
+   "type": "Shot On Target",
+   "x": 80.0,
+   "y": 58.1,
+   "goal": false,
+   "xg": 0.118,
+   "text": "Attempt saved. Alexander Isak (Sweden) right footed shot from outside the box is saved in the bottom right corner by Zion Suzuki (Japan)."
+  },
+  {
+   "minute": "78",
+   "seconds": 4635.0,
+   "team": "Sweden",
+   "player": "Daniel Svensson",
+   "type": "Shot Blocked",
+   "x": 79.9,
+   "y": 68.9,
+   "goal": false,
+   "xg": 0.083,
+   "text": "Attempt blocked. Daniel Svensson (Sweden) left footed shot from outside the box is blocked. Assisted by Lucas Bergvall."
+  },
+  {
+   "minute": "79",
+   "seconds": 4682.0,
+   "team": "Sweden",
+   "player": "Victor Lindelöf",
+   "type": "Shot Off Target",
+   "x": 96.8,
+   "y": 55.1,
+   "goal": false,
+   "xg": 0.494,
+   "text": "Attempt missed. Victor Lindelöf (Sweden) header from very close range misses to the right. Assisted by Yasin Ayari with a cross following a corner."
+  },
+  {
+   "minute": "79",
+   "seconds": 4686.0,
+   "team": "Sweden",
+   "player": "Ken Sema",
+   "type": "Shot Blocked",
+   "x": 85.3,
+   "y": 39.9,
+   "goal": false,
+   "xg": 0.182,
+   "text": "Attempt blocked. Ken Sema (Sweden) left footed shot from the centre of the box is blocked."
+  },
+  {
+   "minute": "81",
+   "seconds": 4818.0,
+   "team": "Sweden",
+   "player": "Gustaf Lagerbielke",
+   "type": "Shot Off Target",
+   "x": 87.5,
+   "y": 57.0,
+   "goal": false,
+   "xg": 0.165,
+   "text": "Attempt missed. Gustaf Lagerbielke (Sweden) header from the centre of the box misses to the left. Assisted by Yasin Ayari with a cross following a set piece situation."
+  },
+  {
+   "minute": "83",
+   "seconds": 4944.0,
+   "team": "Japan",
+   "player": "Koki Ogawa",
+   "type": "Shot Off Target",
+   "x": 91.3,
+   "y": 45.0,
+   "goal": false,
+   "xg": 0.42,
+   "text": "Attempt missed. Koki Ogawa (Japan) left footed shot from the centre of the box is too high. Assisted by Daichi Kamada with a cross."
+  },
+  {
+   "minute": "90'+3",
+   "seconds": 5400.0,
+   "team": "Sweden",
+   "player": "Anthony Elanga",
+   "type": "Shot On Target",
+   "x": 93.0,
+   "y": 31.6,
+   "goal": false,
+   "xg": 0.168,
+   "text": "Attempt saved. Anthony Elanga (Sweden) right footed shot from the right side of the box is saved in the bottom left corner by Zion Suzuki (Japan). Assisted by Benjamin Nygren."
+  },
+  {
+   "minute": "90'+4",
+   "seconds": 5400.0,
+   "team": "Sweden",
+   "player": "Alexander Isak",
+   "type": "Shot Blocked",
+   "x": 94.9,
+   "y": 57.7,
+   "goal": false,
+   "xg": 0.32,
+   "text": "Attempt saved. Alexander Isak (Sweden) header from the left side of the six yard box is saved in the top centre of the goal by Zion Suzuki (Japan). Assisted by Yasin Ayari with a cross."
+  }
+ ],
+ "lineups": [
+  {
+   "team": "Japan",
+   "formation": "3-4-2-1",
+   "starters": [
+    {
+     "name": "Zion Suzuki",
+     "jersey": "1",
+     "position": "G"
+    },
+    {
+     "name": "Kou Itakura",
+     "jersey": "4",
+     "position": "CD"
+    },
+    {
+     "name": "Hiroki Ito",
+     "jersey": "21",
+     "position": "CD-L"
+    },
+    {
+     "name": "Ayumu Seko",
+     "jersey": "20",
+     "position": "CD-R"
+    },
+    {
+     "name": "Daichi Kamada",
+     "jersey": "15",
+     "position": "CM-L"
+    },
+    {
+     "name": "Ao Tanaka",
+     "jersey": "7",
+     "position": "CM-R"
+    },
+    {
+     "name": "Keito Nakamura",
+     "jersey": "13",
+     "position": "LM"
+    },
+    {
+     "name": "Yukinari Sugawara",
+     "jersey": "2",
+     "position": "RM"
+    },
+    {
+     "name": "Ayase Ueda",
+     "jersey": "18",
+     "position": "F"
+    },
+    {
+     "name": "Daizen Maeda",
+     "jersey": "11",
+     "position": "CF-L"
+    },
+    {
+     "name": "Ritsu Doan",
+     "jersey": "10",
+     "position": "CF-R"
+    }
+   ],
+   "subs": [
+    {
+     "name": "Junya Ito",
+     "jersey": "14",
+     "position": "SUB"
+    },
+    {
+     "name": "Shuto Machino",
+     "jersey": "6",
+     "position": "SUB"
+    },
+    {
+     "name": "Kento Shiogai",
+     "jersey": "26",
+     "position": "SUB"
+    },
+    {
+     "name": "Koki Ogawa",
+     "jersey": "19",
+     "position": "SUB"
+    },
+    {
+     "name": "Takehiro Tomiyasu",
+     "jersey": "22",
+     "position": "SUB"
+    },
+    {
+     "name": "Tomoki Hayakawa",
+     "jersey": "23",
+     "position": "SUB"
+    },
+    {
+     "name": "Yuto Nagatomo",
+     "jersey": "5",
+     "position": "SUB"
+    },
+    {
+     "name": "Keisuke Osako",
+     "jersey": "12",
+     "position": "SUB"
+    },
+    {
+     "name": "Tsuyoshi Watanabe",
+     "jersey": "16",
+     "position": "SUB"
+    },
+    {
+     "name": "Kaishu Sano",
+     "jersey": "24",
+     "position": "SUB"
+    },
+    {
+     "name": "Keisuke Goto",
+     "jersey": "9",
+     "position": "SUB"
+    },
+    {
+     "name": "Shogo Taniguchi",
+     "jersey": "3",
+     "position": "SUB"
+    },
+    {
+     "name": "Junnosuke Suzuki",
+     "jersey": "25",
+     "position": "SUB"
+    },
+    {
+     "name": "Yuito Suzuki",
+     "jersey": "17",
+     "position": "SUB"
+    }
+   ]
+  },
+  {
+   "team": "Sweden",
+   "formation": "3-4-3",
+   "starters": [
+    {
+     "name": "Jacob Widell Zetterström",
+     "jersey": "1",
+     "position": "G"
+    },
+    {
+     "name": "Isak Hien",
+     "jersey": "4",
+     "position": "CD"
+    },
+    {
+     "name": "Gabriel Gudmundsson",
+     "jersey": "5",
+     "position": "CD-L"
+    },
+    {
+     "name": "Gustaf Lagerbielke",
+     "jersey": "2",
+     "position": "CD-R"
+    },
+    {
+     "name": "Yasin Ayari",
+     "jersey": "18",
+     "position": "CM-L"
+    },
+    {
+     "name": "Victor Lindelöf",
+     "jersey": "3",
+     "position": "CM-R"
+    },
+    {
+     "name": "Elliot Stroud",
+     "jersey": "24",
+     "position": "LM"
+    },
+    {
+     "name": "Alexander Bernhardsson",
+     "jersey": "21",
+     "position": "RM"
+    },
+    {
+     "name": "Viktor Gyökeres",
+     "jersey": "17",
+     "position": "F"
+    },
+    {
+     "name": "Alexander Isak",
+     "jersey": "9",
+     "position": "CF-L"
+    },
+    {
+     "name": "Anthony Elanga",
+     "jersey": "11",
+     "position": "CF-R"
+    }
+   ],
+   "subs": [
+    {
+     "name": "Lucas Bergvall",
+     "jersey": "7",
+     "position": "SUB"
+    },
+    {
+     "name": "Taha Ali",
+     "jersey": "26",
+     "position": "SUB"
+    },
+    {
+     "name": "Daniel Svensson",
+     "jersey": "8",
+     "position": "SUB"
+    },
+    {
+     "name": "Hjalmar Ekdal",
+     "jersey": "14",
+     "position": "SUB"
+    },
+    {
+     "name": "Eric Smith",
+     "jersey": "20",
+     "position": "SUB"
+    },
+    {
+     "name": "Herman Johansson",
+     "jersey": "6",
+     "position": "SUB"
+    },
+    {
+     "name": "Jesper Karlström",
+     "jersey": "16",
+     "position": "SUB"
+    },
+    {
+     "name": "Gustaf Nilsson",
+     "jersey": "25",
+     "position": "SUB"
+    },
+    {
+     "name": "Kristoffer Nordfeldt",
+     "jersey": "23",
+     "position": "SUB"
+    },
+    {
+     "name": "Besfort Zeneli",
+     "jersey": "22",
+     "position": "SUB"
+    },
+    {
+     "name": "Benjamin Nygren",
+     "jersey": "10",
+     "position": "SUB"
+    },
+    {
+     "name": "Viktor Johansson",
+     "jersey": "12",
+     "position": "SUB"
+    },
+    {
+     "name": "Ken Sema",
+     "jersey": "13",
+     "position": "SUB"
+    },
+    {
+     "name": "Carl Starfelt",
+     "jersey": "15",
+     "position": "SUB"
+    },
+    {
+     "name": "Mattias Svanberg",
+     "jersey": "19",
+     "position": "SUB"
+    }
+   ]
+  }
+ ],
+ "attendance": 70137,
+ "venue": "AT&T Stadium, Arlington, Texas, USA"
+}
