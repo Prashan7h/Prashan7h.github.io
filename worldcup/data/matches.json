@@ -2740,16 +2740,18 @@
    "round": "Round of 32",
    "date": "2026-06-29",
    "time": "19:00 UTC-6",
-   "team1": "1F",
+   "team1": "Netherlands",
    "team2": "Morocco",
    "group": null,
    "ground": "Monterrey (Guadalupe)",
    "score": null,
    "goals1": [],
    "goals2": [],
-   "espn_id": null,
+   "espn_id": "760488",
    "status": "scheduled",
-   "slug": "2026-06-29-1f-vs-morocco"
+   "utc_date": "2026-06-30T01:00Z",
+   "venue": "Estadio BBVA",
+   "slug": "2026-06-29-netherlands-vs-morocco"
   },
   {
    "num": 76,
@@ -2757,15 +2759,17 @@
    "date": "2026-06-29",
    "time": "12:00 UTC-5",
    "team1": "Brazil",
-   "team2": "2F",
+   "team2": "Japan",
    "group": null,
    "ground": "Houston",
    "score": null,
    "goals1": [],
    "goals2": [],
-   "espn_id": null,
+   "espn_id": "760487",
    "status": "scheduled",
-   "slug": "2026-06-29-brazil-vs-2f"
+   "utc_date": "2026-06-29T17:00Z",
+   "venue": "NRG Stadium",
+   "slug": "2026-06-29-brazil-vs-japan"
   },
   {
    "num": 77,
@@ -2788,7 +2792,7 @@
    "round": "Round of 32",
    "date": "2026-06-30",
    "time": "12:00 UTC-5",
-   "team1": "2E",
+   "team1": "Ivory Coast",
    "team2": "2I",
    "group": null,
    "ground": "Dallas (Arlington)",
@@ -2797,7 +2801,7 @@
    "goals2": [],
    "espn_id": null,
    "status": "scheduled",
-   "slug": "2026-06-30-2e-vs-2i"
+   "slug": "2026-06-30-ivory-coast-vs-2i"
   },
   {
    "num": 79,
@@ -2948,7 +2952,7 @@
    "round": "Round of 32",
    "date": "2026-07-03",
    "time": "13:00 UTC-5",
-   "team1": "2D",
+   "team1": "Australia",
    "team2": "2G",
    "group": null,
    "ground": "Dallas (Arlington)",
@@ -2957,7 +2961,7 @@
    "goals2": [],
    "espn_id": null,
    "status": "scheduled",
-   "slug": "2026-07-03-2d-vs-2g"
+   "slug": "2026-07-03-australia-vs-2g"
   },
   {
    "num": 89,
