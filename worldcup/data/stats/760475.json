@@ -1,0 +1,969 @@
+{
+ "teams": [
+  {
+   "name": "Norway",
+   "stats": {
+    "possessionPct": "43.3",
+    "totalShots": "10",
+    "shotsOnTarget": "4",
+    "wonCorners": "4",
+    "foulsCommitted": "9",
+    "offsides": "1",
+    "saves": "5",
+    "yellowCards": "1",
+    "redCards": "0"
+   }
+  },
+  {
+   "name": "France",
+   "stats": {
+    "possessionPct": "56.7",
+    "totalShots": "18",
+    "shotsOnTarget": "9",
+    "wonCorners": "5",
+    "foulsCommitted": "11",
+    "offsides": "2",
+    "saves": "3",
+    "yellowCards": "1",
+    "redCards": "0"
+   }
+  }
+ ],
+ "events": [
+  {
+   "type": "Kickoff",
+   "minute": "",
+   "team": null,
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "2'",
+   "team": "France",
+   "text": "Delay in match (France).",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "2'",
+   "team": "Norway",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "2'",
+   "team": "France",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "2'",
+   "team": "Norway",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Goal",
+   "minute": "7'",
+   "team": "France",
+   "text": "Goal! Norway 0, France 1. Ousmane Dembélé (France) right footed shot from the right side of the box to the bottom left corner. Assisted by Kylian Mbappé.",
+   "players": [
+    "Ousmane Dembélé",
+    "Kylian Mbappé"
+   ]
+  },
+  {
+   "type": "Yellow Card",
+   "minute": "10'",
+   "team": "Norway",
+   "text": "Patrick Berg (Norway) is shown the yellow card for a bad foul.",
+   "players": [
+    "Patrick Berg"
+   ]
+  },
+  {
+   "type": "Goal",
+   "minute": "20'",
+   "team": "France",
+   "text": "Goal! Norway 0, France 2. Ousmane Dembélé (France) left footed shot from outside the box to the bottom left corner. Assisted by Kylian Mbappé following a fast break.",
+   "players": [
+    "Ousmane Dembélé",
+    "Kylian Mbappé"
+   ]
+  },
+  {
+   "type": "Goal",
+   "minute": "21'",
+   "team": "Norway",
+   "text": "Goal! Norway 1, France 2. Thelo Aasgaard (Norway) right footed shot from the centre of the box to the bottom left corner. Assisted by Andreas Schjelderup.",
+   "players": [
+    "Thelo Aasgaard",
+    "Andreas Schjelderup"
+   ]
+  },
+  {
+   "type": "Start Delay",
+   "minute": "24'",
+   "team": "France",
+   "text": "Delay in match for a drinks break.",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "24'",
+   "team": "Norway",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "27'",
+   "team": "France",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "27'",
+   "team": "Norway",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Goal",
+   "minute": "32'",
+   "team": "France",
+   "text": "Goal! Norway 1, France 3. Ousmane Dembélé (France) left footed shot from the centre of the box to the bottom left corner. Assisted by Aurélien Tchouaméni.",
+   "players": [
+    "Ousmane Dembélé",
+    "Aurélien Tchouaméni"
+   ]
+  },
+  {
+   "type": "Halftime",
+   "minute": "45'+6'",
+   "team": null,
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Substitution",
+   "minute": "45'",
+   "team": "Norway",
+   "text": "Substitution, Norway. Morten Thorsby replaces Kristian Thorstvedt.",
+   "players": [
+    "Morten Thorsby",
+    "Kristian Thorstvedt"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "45'",
+   "team": "Norway",
+   "text": "Substitution, Norway. Marcus Pedersen replaces Fredrik Bjørkan.",
+   "players": [
+    "Marcus Holmgren Pedersen",
+    "Fredrik André Bjørkan"
+   ]
+  },
+  {
+   "type": "Start 2nd Half",
+   "minute": "45'",
+   "team": null,
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Penalty - Saved",
+   "minute": "50'",
+   "team": "Norway",
+   "text": "Penalty saved. Jørgen Strand Larsen (Norway) right footed shot saved in the bottom right corner by Mike Maignan (France).",
+   "players": [
+    "Jørgen Strand Larsen"
+   ]
+  },
+  {
+   "type": "Start Delay",
+   "minute": "56'",
+   "team": "Norway",
+   "text": "Delay in match because of an injury Egil Selvik (Norway).",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "56'",
+   "team": "France",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "58'",
+   "team": "Norway",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "58'",
+   "team": "France",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Substitution",
+   "minute": "65'",
+   "team": "France",
+   "text": "Substitution, France. Rayan Cherki replaces Michael Olise.",
+   "players": [
+    "Rayan Cherki",
+    "Michael Olise"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "65'",
+   "team": "France",
+   "text": "Substitution, France. Bradley Barcola replaces Ousmane Dembélé.",
+   "players": [
+    "Bradley Barcola",
+    "Ousmane Dembélé"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "66'",
+   "team": "Norway",
+   "text": "Substitution, Norway. Sondre Langås replaces Henrik Falchener.",
+   "players": [
+    "Sondre Langas",
+    "Henrik Falchener"
+   ]
+  },
+  {
+   "type": "Start Delay",
+   "minute": "68'",
+   "team": "France",
+   "text": "Delay in match for a drinks break.",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "68'",
+   "team": "Norway",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "71'",
+   "team": "France",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "71'",
+   "team": "Norway",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Yellow Card",
+   "minute": "74'",
+   "team": "France",
+   "text": "Aurélien Tchouaméni (France) is shown the yellow card for a bad foul.",
+   "players": [
+    "Aurélien Tchouaméni"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "76'",
+   "team": "France",
+   "text": "Substitution, France. Ibrahima Konaté replaces Dayot Upamecano.",
+   "players": [
+    "Ibrahima Konaté",
+    "Dayot Upamecano"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "83'",
+   "team": "Norway",
+   "text": "Substitution, Norway. Antonio Nusa replaces Oscar Bobb.",
+   "players": [
+    "Antonio Nusa",
+    "Oscar Bobb"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "83'",
+   "team": "Norway",
+   "text": "Substitution, Norway. Jens Petter Hauge replaces Andreas Schjelderup.",
+   "players": [
+    "Jens Petter Hauge",
+    "Andreas Schjelderup"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "87'",
+   "team": "France",
+   "text": "Substitution, France. Malo Gusto replaces Jules Koundé.",
+   "players": [
+    "Malo Gusto",
+    "Jules Koundé"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "87'",
+   "team": "France",
+   "text": "Substitution, France. Jean-Philippe Mateta replaces Kylian Mbappé.",
+   "players": [
+    "Jean-Philippe Mateta",
+    "Kylian Mbappé"
+   ]
+  },
+  {
+   "type": "Goal - Header",
+   "minute": "90'+4'",
+   "team": "France",
+   "text": "Goal! Norway 1, France 4. Désiré Doué (France) header from the centre of the box to the bottom right corner. Assisted by Bradley Barcola with a cross.",
+   "players": [
+    "Désiré Doué",
+    "Bradley Barcola"
+   ]
+  },
+  {
+   "type": "End Regular Time",
+   "minute": "90'+6'",
+   "team": null,
+   "text": "",
+   "players": []
+  }
+ ],
+ "shots": [
+  {
+   "minute": "1",
+   "seconds": 22.0,
+   "team": "France",
+   "player": "Kylian Mbappé",
+   "type": "Shot On Target",
+   "x": 93.7,
+   "y": 26.0,
+   "goal": false,
+   "xg": 0.113,
+   "text": "Attempt saved. Kylian Mbappé (France) right footed shot from the right side of the box is saved in the top centre of the goal by Egil Selvik (Norway). Assisted by Ousmane Dembélé."
+  },
+  {
+   "minute": "4",
+   "seconds": 233.0,
+   "team": "France",
+   "player": "Manu Koné",
+   "type": "Shot On Target",
+   "x": 84.5,
+   "y": 39.2,
+   "goal": false,
+   "xg": 0.165,
+   "text": "Attempt saved. Manu Koné (France) right footed shot from the centre of the box is saved in the top right corner by Egil Selvik (Norway)."
+  },
+  {
+   "minute": "5",
+   "seconds": 275.0,
+   "team": "France",
+   "player": "Désiré Doué",
+   "type": "Shot On Target",
+   "x": 72.3,
+   "y": 52.8,
+   "goal": false,
+   "xg": 0.061,
+   "text": "Attempt saved. Désiré Doué (France) right footed shot from outside the box is saved in the centre of the goal by Egil Selvik (Norway). Assisted by Théo Hernández."
+  },
+  {
+   "minute": "7",
+   "seconds": 369.0,
+   "team": "France",
+   "player": "Ousmane Dembélé",
+   "type": "Goal",
+   "x": 89.0,
+   "y": 33.3,
+   "goal": true,
+   "xg": 0.169,
+   "text": "Goal! Norway 0, France 1. Ousmane Dembélé (France) right footed shot from the right side of the box to the bottom left corner. Assisted by Kylian Mbappé."
+  },
+  {
+   "minute": "8",
+   "seconds": 475.0,
+   "team": "France",
+   "player": "Désiré Doué",
+   "type": "Shot On Target",
+   "x": 75.0,
+   "y": 59.3,
+   "goal": false,
+   "xg": 0.073,
+   "text": "Attempt saved. Désiré Doué (France) right footed shot from outside the box is saved in the bottom right corner by Egil Selvik (Norway). Assisted by Manu Koné."
+  },
+  {
+   "minute": "11",
+   "seconds": 603.0,
+   "team": "Norway",
+   "player": "Kristian Thorstvedt",
+   "type": "Shot On Target",
+   "x": 70.3,
+   "y": 50.9,
+   "goal": false,
+   "xg": 0.051,
+   "text": "Attempt saved. Kristian Thorstvedt (Norway) left footed shot from outside the box is saved in the bottom right corner by Mike Maignan (France)."
+  },
+  {
+   "minute": "13",
+   "seconds": 726.0,
+   "team": "France",
+   "player": "Michael Olise",
+   "type": "Shot Blocked",
+   "x": 90.2,
+   "y": 61.3,
+   "goal": false,
+   "xg": 0.26,
+   "text": "Attempt blocked. Michael Olise (France) left footed shot from the centre of the box is blocked. Assisted by Kylian Mbappé."
+  },
+  {
+   "minute": "14",
+   "seconds": 825.0,
+   "team": "Norway",
+   "player": "Jørgen Strand Larsen",
+   "type": "Shot Off Target",
+   "x": 90.6,
+   "y": 51.3,
+   "goal": false,
+   "xg": 0.428,
+   "text": "Attempt missed. Jørgen Strand Larsen (Norway) right footed shot from the centre of the box is too high. Assisted by Fredrik Aursnes with a cross following a set piece situation."
+  },
+  {
+   "minute": "17",
+   "seconds": 1004.0,
+   "team": "France",
+   "player": "Kylian Mbappé",
+   "type": "Shot On Target",
+   "x": 91.4,
+   "y": 66.4,
+   "goal": false,
+   "xg": 0.19,
+   "text": "Attempt saved. Kylian Mbappé (France) right footed shot from the left side of the box is saved in the bottom left corner by Egil Selvik (Norway). Assisted by Désiré Doué with a through ball."
+  },
+  {
+   "minute": "19",
+   "seconds": 1136.0,
+   "team": "Norway",
+   "player": "Thelo Aasgaard",
+   "type": "Shot Blocked",
+   "x": 76.2,
+   "y": 63.8,
+   "goal": false,
+   "xg": 0.073,
+   "text": "Attempt blocked. Thelo Aasgaard (Norway) right footed shot from outside the box is blocked. Assisted by Fredrik Bjørkan."
+  },
+  {
+   "minute": "20",
+   "seconds": 1155.0,
+   "team": "France",
+   "player": "Ousmane Dembélé",
+   "type": "Goal",
+   "x": 77.1,
+   "y": 40.9,
+   "goal": true,
+   "xg": 0.088,
+   "text": "Goal! Norway 0, France 2. Ousmane Dembélé (France) left footed shot from outside the box to the bottom left corner. Assisted by Kylian Mbappé following a fast break."
+  },
+  {
+   "minute": "21",
+   "seconds": 1235.0,
+   "team": "Norway",
+   "player": "Thelo Aasgaard",
+   "type": "Goal",
+   "x": 85.3,
+   "y": 55.4,
+   "goal": true,
+   "xg": 0.211,
+   "text": "Goal! Norway 1, France 2. Thelo Aasgaard (Norway) right footed shot from the centre of the box to the bottom left corner. Assisted by Andreas Schjelderup."
+  },
+  {
+   "minute": "23",
+   "seconds": 1362.0,
+   "team": "France",
+   "player": "Michael Olise",
+   "type": "Shot Blocked",
+   "x": 86.1,
+   "y": 49.5,
+   "goal": false,
+   "xg": 0.247,
+   "text": "Attempt blocked. Michael Olise (France) right footed shot from the centre of the box is blocked. Assisted by Kylian Mbappé."
+  },
+  {
+   "minute": "23",
+   "seconds": 1366.0,
+   "team": "France",
+   "player": "Désiré Doué",
+   "type": "Shot Blocked",
+   "x": 72.6,
+   "y": 44.6,
+   "goal": false,
+   "xg": 0.061,
+   "text": "Attempt missed. Désiré Doué (France) right footed shot from outside the box misses to the left. Assisted by Jules Koundé following a corner."
+  },
+  {
+   "minute": "24",
+   "seconds": 1401.0,
+   "team": "France",
+   "player": "Théo Hernández",
+   "type": "Shot Off Target",
+   "x": 75.3,
+   "y": 68.7,
+   "goal": false,
+   "xg": 0.059,
+   "text": "Attempt missed. Théo Hernández (France) left footed shot from outside the box is too high. Assisted by Aurélien Tchouaméni."
+  },
+  {
+   "minute": "32",
+   "seconds": 1906.0,
+   "team": "France",
+   "player": "Ousmane Dembélé",
+   "type": "Goal",
+   "x": 85.0,
+   "y": 38.1,
+   "goal": true,
+   "xg": 0.165,
+   "text": "Goal! Norway 1, France 3. Ousmane Dembélé (France) left footed shot from the centre of the box to the bottom left corner. Assisted by Aurélien Tchouaméni."
+  },
+  {
+   "minute": "35",
+   "seconds": 2061.0,
+   "team": "France",
+   "player": "Aurélien Tchouaméni",
+   "type": "Shot Off Target",
+   "x": 80.5,
+   "y": 47.9,
+   "goal": false,
+   "xg": 0.134,
+   "text": "Attempt missed. Aurélien Tchouaméni (France) right footed shot from outside the box is too high. Assisted by Ousmane Dembélé."
+  },
+  {
+   "minute": "45'+1",
+   "seconds": 2700.0,
+   "team": "France",
+   "player": "Michael Olise",
+   "type": "Shot Off Target",
+   "x": 85.0,
+   "y": 39.1,
+   "goal": false,
+   "xg": 0.172,
+   "text": "Attempt missed. Michael Olise (France) right footed shot from the centre of the box is too high. Assisted by Désiré Doué."
+  },
+  {
+   "minute": "50",
+   "seconds": 2973.0,
+   "team": "Norway",
+   "player": "Jørgen Strand Larsen",
+   "type": "Penalty - Saved",
+   "x": 88.5,
+   "y": 50.0,
+   "goal": false,
+   "xg": 0.76,
+   "text": "Penalty saved. Jørgen Strand Larsen (Norway) right footed shot saved in the bottom right corner by Mike Maignan (France)."
+  },
+  {
+   "minute": "55",
+   "seconds": 3245.0,
+   "team": "Norway",
+   "player": "Leo Østigård",
+   "type": "Shot Off Target",
+   "x": 94.9,
+   "y": 57.3,
+   "goal": false,
+   "xg": 0.335,
+   "text": "Attempt missed. Leo Østigård (Norway) header from the left side of the six yard box misses to the right. Assisted by Patrick Berg with a cross following a corner."
+  },
+  {
+   "minute": "56",
+   "seconds": 3325.0,
+   "team": "France",
+   "player": "Kylian Mbappé",
+   "type": "Shot Off Target",
+   "x": 79.7,
+   "y": 61.3,
+   "goal": false,
+   "xg": 0.106,
+   "text": "Attempt missed. Kylian Mbappé (France) right footed shot from outside the box is just a bit too high. Assisted by Désiré Doué."
+  },
+  {
+   "minute": "63",
+   "seconds": 3780.0,
+   "team": "Norway",
+   "player": "Oscar Bobb",
+   "type": "Shot Blocked",
+   "x": 87.2,
+   "y": 32.5,
+   "goal": false,
+   "xg": 0.146,
+   "text": "Attempt blocked. Oscar Bobb (Norway) left footed shot from the right side of the box is blocked. Assisted by Jørgen Strand Larsen."
+  },
+  {
+   "minute": "64",
+   "seconds": 3805.0,
+   "team": "France",
+   "player": "Kylian Mbappé",
+   "type": "Shot Blocked",
+   "x": 85.6,
+   "y": 53.6,
+   "goal": false,
+   "xg": 0.227,
+   "text": "Attempt blocked. Kylian Mbappé (France) right footed shot from the centre of the box is blocked."
+  },
+  {
+   "minute": "72",
+   "seconds": 4291.0,
+   "team": "Norway",
+   "player": "Oscar Bobb",
+   "type": "Shot On Target",
+   "x": 88.2,
+   "y": 39.5,
+   "goal": false,
+   "xg": 0.232,
+   "text": "Attempt saved. Oscar Bobb (Norway) left footed shot from the centre of the box is saved in the bottom left corner by Mike Maignan (France). Assisted by Thelo Aasgaard."
+  },
+  {
+   "minute": "79",
+   "seconds": 4686.0,
+   "team": "Norway",
+   "player": "Patrick Berg",
+   "type": "Shot Blocked",
+   "x": 80.2,
+   "y": 52.7,
+   "goal": false,
+   "xg": 0.13,
+   "text": "Attempt blocked. Patrick Berg (Norway) right footed shot from outside the box is blocked. Assisted by Jørgen Strand Larsen."
+  },
+  {
+   "minute": "87",
+   "seconds": 5199.0,
+   "team": "Norway",
+   "player": "Fredrik Aursnes",
+   "type": "Shot Off Target",
+   "x": 75.7,
+   "y": 54.4,
+   "goal": false,
+   "xg": 0.083,
+   "text": "Attempt missed. Fredrik Aursnes (Norway) right footed shot from outside the box is high and wide to the right."
+  },
+  {
+   "minute": "90'+2",
+   "seconds": 5400.0,
+   "team": "France",
+   "player": "Théo Hernández",
+   "type": "Shot Off Target",
+   "x": 79.0,
+   "y": 73.8,
+   "goal": false,
+   "xg": 0.064,
+   "text": "Attempt missed. Théo Hernández (France) left footed shot from outside the box is too high. Assisted by Bradley Barcola."
+  },
+  {
+   "minute": "90'+4",
+   "seconds": 5400.0,
+   "team": "France",
+   "player": "Désiré Doué",
+   "type": "Goal - Header",
+   "x": 90.1,
+   "y": 49.3,
+   "goal": true,
+   "xg": 0.262,
+   "text": "Goal! Norway 1, France 4. Désiré Doué (France) header from the centre of the box to the bottom right corner. Assisted by Bradley Barcola with a cross."
+  }
+ ],
+ "lineups": [
+  {
+   "team": "Norway",
+   "formation": "4-3-3",
+   "starters": [
+    {
+     "name": "Egil Selvik",
+     "jersey": "13",
+     "position": "G"
+    },
+    {
+     "name": "Leo Østigard",
+     "jersey": "4",
+     "position": "CD-L"
+    },
+    {
+     "name": "Henrik Falchener",
+     "jersey": "25",
+     "position": "CD-R"
+    },
+    {
+     "name": "Fredrik André Bjørkan",
+     "jersey": "15",
+     "position": "LB"
+    },
+    {
+     "name": "Fredrik Aursnes",
+     "jersey": "14",
+     "position": "RB"
+    },
+    {
+     "name": "Patrick Berg",
+     "jersey": "6",
+     "position": "CM"
+    },
+    {
+     "name": "Thelo Aasgaard",
+     "jersey": "19",
+     "position": "LM"
+    },
+    {
+     "name": "Kristian Thorstvedt",
+     "jersey": "18",
+     "position": "RM"
+    },
+    {
+     "name": "Jørgen Strand Larsen",
+     "jersey": "11",
+     "position": "F"
+    },
+    {
+     "name": "Andreas Schjelderup",
+     "jersey": "21",
+     "position": "LF"
+    },
+    {
+     "name": "Oscar Bobb",
+     "jersey": "22",
+     "position": "RF"
+    }
+   ],
+   "subs": [
+    {
+     "name": "Alexander Sørloth",
+     "jersey": "7",
+     "position": "SUB"
+    },
+    {
+     "name": "Sondre Langas",
+     "jersey": "24",
+     "position": "SUB"
+    },
+    {
+     "name": "David Møller Wolfe",
+     "jersey": "5",
+     "position": "SUB"
+    },
+    {
+     "name": "Kristoffer Ajer",
+     "jersey": "3",
+     "position": "SUB"
+    },
+    {
+     "name": "Torbjørn Heggem",
+     "jersey": "17",
+     "position": "SUB"
+    },
+    {
+     "name": "Martin Ødegaard",
+     "jersey": "10",
+     "position": "SUB"
+    },
+    {
+     "name": "Sander Tangvik",
+     "jersey": "12",
+     "position": "SUB"
+    },
+    {
+     "name": "Sander Berge",
+     "jersey": "8",
+     "position": "SUB"
+    },
+    {
+     "name": "Julian Ryerson",
+     "jersey": "26",
+     "position": "SUB"
+    },
+    {
+     "name": "Marcus Holmgren Pedersen",
+     "jersey": "16",
+     "position": "SUB"
+    },
+    {
+     "name": "Erling Haaland",
+     "jersey": "9",
+     "position": "SUB"
+    },
+    {
+     "name": "Jens Petter Hauge",
+     "jersey": "23",
+     "position": "SUB"
+    },
+    {
+     "name": "Antonio Nusa",
+     "jersey": "20",
+     "position": "SUB"
+    },
+    {
+     "name": "Morten Thorsby",
+     "jersey": "2",
+     "position": "SUB"
+    },
+    {
+     "name": "Ørjan Nyland",
+     "jersey": "1",
+     "position": "SUB"
+    }
+   ]
+  },
+  {
+   "team": "France",
+   "formation": "4-2-3-1",
+   "starters": [
+    {
+     "name": "Mike Maignan",
+     "jersey": "16",
+     "position": "G"
+    },
+    {
+     "name": "Maxence Lacroix",
+     "jersey": "26",
+     "position": "CD-L"
+    },
+    {
+     "name": "Dayot Upamecano",
+     "jersey": "4",
+     "position": "CD-R"
+    },
+    {
+     "name": "Theo Hernández",
+     "jersey": "19",
+     "position": "LB"
+    },
+    {
+     "name": "Jules Koundé",
+     "jersey": "5",
+     "position": "RB"
+    },
+    {
+     "name": "Michael Olise",
+     "jersey": "11",
+     "position": "AM"
+    },
+    {
+     "name": "Manu Koné",
+     "jersey": "6",
+     "position": "LM"
+    },
+    {
+     "name": "Aurélien Tchouaméni",
+     "jersey": "8",
+     "position": "RM"
+    },
+    {
+     "name": "Kylian Mbappé",
+     "jersey": "10",
+     "position": "F"
+    },
+    {
+     "name": "Désiré Doué",
+     "jersey": "20",
+     "position": "AM-L"
+    },
+    {
+     "name": "Ousmane Dembélé",
+     "jersey": "7",
+     "position": "AM-R"
+    }
+   ],
+   "subs": [
+    {
+     "name": "Brice Samba",
+     "jersey": "1",
+     "position": "SUB"
+    },
+    {
+     "name": "Bradley Barcola",
+     "jersey": "12",
+     "position": "SUB"
+    },
+    {
+     "name": "Lucas Digne",
+     "jersey": "3",
+     "position": "SUB"
+    },
+    {
+     "name": "Malo Gusto",
+     "jersey": "2",
+     "position": "SUB"
+    },
+    {
+     "name": "William Saliba",
+     "jersey": "17",
+     "position": "SUB"
+    },
+    {
+     "name": "Lucas Hernández",
+     "jersey": "21",
+     "position": "SUB"
+    },
+    {
+     "name": "Marcus Thuram",
+     "jersey": "9",
+     "position": "SUB"
+    },
+    {
+     "name": "Maghnes Akliouche",
+     "jersey": "25",
+     "position": "SUB"
+    },
+    {
+     "name": "Jean-Philippe Mateta",
+     "jersey": "22",
+     "position": "SUB"
+    },
+    {
+     "name": "Rayan Cherki",
+     "jersey": "24",
+     "position": "SUB"
+    },
+    {
+     "name": "N'Golo Kanté",
+     "jersey": "13",
+     "position": "SUB"
+    },
+    {
+     "name": "Ibrahima Konaté",
+     "jersey": "15",
+     "position": "SUB"
+    },
+    {
+     "name": "Warren Zaïre-Emery",
+     "jersey": "18",
+     "position": "SUB"
+    },
+    {
+     "name": "Robin Risser",
+     "jersey": "23",
+     "position": "SUB"
+    },
+    {
+     "name": "Adrien Rabiot",
+     "jersey": "14",
+     "position": "SUB"
+    }
+   ]
+  }
+ ],
+ "attendance": 64146,
+ "venue": "Gillette Stadium, Foxborough, Massachusetts, USA"
+}

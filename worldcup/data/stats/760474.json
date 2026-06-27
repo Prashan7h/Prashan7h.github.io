@@ -1,0 +1,1082 @@
+{
+ "teams": [
+  {
+   "name": "Senegal",
+   "stats": {
+    "possessionPct": "69.2",
+    "totalShots": "28",
+    "shotsOnTarget": "12",
+    "wonCorners": "12",
+    "foulsCommitted": "10",
+    "offsides": "1",
+    "saves": "1",
+    "yellowCards": "2",
+    "redCards": "0"
+   }
+  },
+  {
+   "name": "Iraq",
+   "stats": {
+    "possessionPct": "30.8",
+    "totalShots": "6",
+    "shotsOnTarget": "1",
+    "wonCorners": "3",
+    "foulsCommitted": "11",
+    "offsides": "0",
+    "saves": "7",
+    "yellowCards": "2",
+    "redCards": "1"
+   }
+  }
+ ],
+ "events": [
+  {
+   "type": "Kickoff",
+   "minute": "",
+   "team": null,
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Goal",
+   "minute": "4'",
+   "team": "Senegal",
+   "text": "Goal! Senegal 1, Iraq 0. Habib Diarra (Senegal) right footed shot from very close range to the top right corner. Assisted by Abdoulaye Seck following a corner.",
+   "players": [
+    "Habib Diarra",
+    "Abdoulaye Seck"
+   ]
+  },
+  {
+   "type": "Start Delay",
+   "minute": "12'",
+   "team": "Iraq",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "13'",
+   "team": "Iraq",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Red Card",
+   "minute": "13'",
+   "team": "Iraq",
+   "text": "Rebin Sulaka (Iraq) is shown the red card.",
+   "players": [
+    "Rebin Sulaka"
+   ]
+  },
+  {
+   "type": "Start Delay",
+   "minute": "15'",
+   "team": "Iraq",
+   "text": "Delay in match because of an injury Ahmed Basil (Iraq).",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "15'",
+   "team": "Senegal",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Substitution",
+   "minute": "16'",
+   "team": "Iraq",
+   "text": "Substitution, Iraq. Munaf Younus replaces Ahmed Qasem.",
+   "players": [
+    "Munaf Younus",
+    "Ahmed Qasim"
+   ]
+  },
+  {
+   "type": "End Delay",
+   "minute": "16'",
+   "team": "Iraq",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "16'",
+   "team": "Senegal",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Yellow Card",
+   "minute": "18'",
+   "team": "Senegal",
+   "text": "Abdoulaye Seck (Senegal) is shown the yellow card for a bad foul.",
+   "players": [
+    "Abdoulaye Seck"
+   ]
+  },
+  {
+   "type": "Start Delay",
+   "minute": "23'",
+   "team": "Iraq",
+   "text": "Delay in match for a drinks break.",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "23'",
+   "team": "Senegal",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "26'",
+   "team": "Iraq",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "26'",
+   "team": "Senegal",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "43'",
+   "team": "Iraq",
+   "text": "Delay in match because of an injury Ahmed Basil (Iraq).",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "43'",
+   "team": "Senegal",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "45'",
+   "team": "Iraq",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "45'",
+   "team": "Senegal",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Halftime",
+   "minute": "45'+10'",
+   "team": null,
+   "text": "First Half ends, Senegal 1, Iraq 0.",
+   "players": []
+  },
+  {
+   "type": "Substitution",
+   "minute": "45'",
+   "team": "Iraq",
+   "text": "Substitution, Iraq. Jalal Hassan replaces Ahmed Basil because of an injury.",
+   "players": [
+    "Jalal Hassan",
+    "Ahmed Basil"
+   ]
+  },
+  {
+   "type": "Start 2nd Half",
+   "minute": "45'",
+   "team": null,
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Goal",
+   "minute": "56'",
+   "team": "Senegal",
+   "text": "Goal! Senegal 2, Iraq 0. Ismaïla Sarr (Senegal) right footed shot from very close range to the top left corner. Assisted by Lamine Camara.",
+   "players": [
+    "Ismaïla Sarr",
+    "Lamine Camara"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "57'",
+   "team": "Senegal",
+   "text": "Substitution, Senegal. Iliman Ndiaye replaces Ibrahim Mbaye.",
+   "players": [
+    "Iliman Ndiaye",
+    "Ibrahim Mbaye"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "57'",
+   "team": "Senegal",
+   "text": "Substitution, Senegal. Nicolas Jackson replaces Lamine Camara.",
+   "players": [
+    "Nicolas Jackson",
+    "Lamine Camara"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "57'",
+   "team": "Senegal",
+   "text": "Substitution, Senegal. Pape Gueye replaces Habib Diarra.",
+   "players": [
+    "Pape Gueye",
+    "Habib Diarra"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "58'",
+   "team": "Iraq",
+   "text": "Substitution, Iraq. Ahmed Maknzi replaces Ali Jasim.",
+   "players": [
+    "Ahmed Maknazi",
+    "Ali Jasim"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "58'",
+   "team": "Iraq",
+   "text": "Substitution, Iraq. Ali Yousif replaces Ali Al Hamadi.",
+   "players": [
+    "Ali Yousif",
+    "Ali Al-Hamadi"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "58'",
+   "team": "Senegal",
+   "text": "Substitution, Senegal. Pathé Ciss replaces Abdoulaye Seck.",
+   "players": [
+    "Pathé Ciss",
+    "Abdoulaye Seck"
+   ]
+  },
+  {
+   "type": "Goal",
+   "minute": "59'",
+   "team": "Senegal",
+   "text": "Goal! Senegal 3, Iraq 0. Pape Gueye (Senegal) left footed shot from outside the box to the top left corner. Assisted by Ismaïla Sarr.",
+   "players": [
+    "Pape Gueye",
+    "Ismaïla Sarr"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "67'",
+   "team": "Iraq",
+   "text": "Substitution, Iraq. Kevin Yakob replaces Zidane Iqbal.",
+   "players": [
+    "Kevin Yakob",
+    "Zidane Iqbal"
+   ]
+  },
+  {
+   "type": "Start Delay",
+   "minute": "67'",
+   "team": "Senegal",
+   "text": "Delay in match for a drinks break.",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "67'",
+   "team": "Iraq",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "69'",
+   "team": "Senegal",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "69'",
+   "team": "Iraq",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Goal",
+   "minute": "71'",
+   "team": "Senegal",
+   "text": "Goal! Senegal 4, Iraq 0. Pape Gueye (Senegal) left footed shot from the centre of the box to the bottom left corner. Assisted by Iliman Ndiaye with a headed pass.",
+   "players": [
+    "Pape Gueye",
+    "Iliman Ndiaye"
+   ]
+  },
+  {
+   "type": "Yellow Card",
+   "minute": "75'",
+   "team": "Iraq",
+   "text": "Amir Al Ammari (Iraq) is shown the yellow card for a bad foul.",
+   "players": [
+    "Amir Al-Ammari"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "81'",
+   "team": "Senegal",
+   "text": "Substitution, Senegal. Assane Diao replaces Ismaïla Sarr.",
+   "players": [
+    "Assane Diao",
+    "Ismaïla Sarr"
+   ]
+  },
+  {
+   "type": "Yellow Card",
+   "minute": "81'",
+   "team": "Senegal",
+   "text": "Pape Gueye (Senegal) is shown the yellow card for a bad foul.",
+   "players": [
+    "Pape Gueye"
+   ]
+  },
+  {
+   "type": "Goal",
+   "minute": "82'",
+   "team": "Senegal",
+   "text": "Goal! Senegal 5, Iraq 0. Iliman Ndiaye (Senegal) right footed shot from outside the box to the top right corner. Assisted by Pape Gueye.",
+   "players": [
+    "Iliman Ndiaye",
+    "Pape Gueye"
+   ]
+  },
+  {
+   "type": "Start Delay",
+   "minute": "87'",
+   "team": "Senegal",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "87'",
+   "team": "Senegal",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Yellow Card",
+   "minute": "90'",
+   "team": "Iraq",
+   "text": "Merchas Doski (Iraq) is shown the yellow card for a bad foul.",
+   "players": [
+    "Merchas Doski"
+   ]
+  },
+  {
+   "type": "End Regular Time",
+   "minute": "90'+7'",
+   "team": null,
+   "text": "",
+   "players": []
+  }
+ ],
+ "shots": [
+  {
+   "minute": "3",
+   "seconds": 169.0,
+   "team": "Senegal",
+   "player": "Idrissa Gueye",
+   "type": "Shot Blocked",
+   "x": 81.3,
+   "y": 45.7,
+   "goal": false,
+   "xg": 0.143,
+   "text": "Attempt missed. Idrissa Gueye (Senegal) right footed shot from outside the box misses to the left. Assisted by Ismaïla Sarr following a corner."
+  },
+  {
+   "minute": "4",
+   "seconds": 201.0,
+   "team": "Senegal",
+   "player": "Abdoulaye Seck",
+   "type": "Shot Blocked",
+   "x": 91.3,
+   "y": 55.7,
+   "goal": false,
+   "xg": 0.264,
+   "text": "Attempt blocked. Abdoulaye Seck (Senegal) header from the centre of the box is blocked. Assisted by Lamine Camara with a cross."
+  },
+  {
+   "minute": "4",
+   "seconds": 202.0,
+   "team": "Senegal",
+   "player": "Habib Diarra",
+   "type": "Goal",
+   "x": 96.1,
+   "y": 50.6,
+   "goal": true,
+   "xg": 0.857,
+   "text": "Goal! Senegal 1, Iraq 0. Habib Diarra (Senegal) right footed shot from very close range to the top right corner. Assisted by Abdoulaye Seck following a corner."
+  },
+  {
+   "minute": "14",
+   "seconds": 822.0,
+   "team": "Senegal",
+   "player": "Sadio Mané",
+   "type": "Shot On Target",
+   "x": 79.8,
+   "y": 40.8,
+   "goal": false,
+   "xg": 0.113,
+   "text": "Attempt saved. Sadio Mané (Senegal) right footed shot from outside the box is saved in the top left corner by Ahmed Basil (Iraq)."
+  },
+  {
+   "minute": "14",
+   "seconds": 834.0,
+   "team": "Senegal",
+   "player": "Abdoulaye Seck",
+   "type": "Shot Off Target",
+   "x": 73.1,
+   "y": 48.7,
+   "goal": false,
+   "xg": 0.066,
+   "text": "Attempt missed. Abdoulaye Seck (Senegal) right footed shot from outside the box is close, but misses to the left. Assisted by Lamine Camara following a set piece situation."
+  },
+  {
+   "minute": "17",
+   "seconds": 1001.0,
+   "team": "Senegal",
+   "player": "Ismaïla Sarr",
+   "type": "Shot Off Target",
+   "x": 94.0,
+   "y": 33.3,
+   "goal": false,
+   "xg": 0.192,
+   "text": "Attempt missed. Ismaïla Sarr (Senegal) right footed shot from the right side of the box is too high."
+  },
+  {
+   "minute": "20",
+   "seconds": 1162.0,
+   "team": "Iraq",
+   "player": "Ali Jasim",
+   "type": "Shot Blocked",
+   "x": 78.6,
+   "y": 72.9,
+   "goal": false,
+   "xg": 0.065,
+   "text": "Attempt blocked. Ali Jasim (Iraq) right footed shot from outside the box is blocked."
+  },
+  {
+   "minute": "20",
+   "seconds": 1165.0,
+   "team": "Iraq",
+   "player": "Ali Jasim",
+   "type": "Shot Blocked",
+   "x": 79.3,
+   "y": 69.7,
+   "goal": false,
+   "xg": 0.077,
+   "text": "Attempt blocked. Ali Jasim (Iraq) right footed shot from outside the box is blocked."
+  },
+  {
+   "minute": "33",
+   "seconds": 1939.0,
+   "team": "Senegal",
+   "player": "Ismail Jakobs",
+   "type": "Shot Off Target",
+   "x": 85.5,
+   "y": 63.0,
+   "goal": false,
+   "xg": 0.164,
+   "text": "Attempt missed. Ismail Jakobs (Senegal) left footed shot from the centre of the box is close, but misses to the right. Assisted by Sadio Mané."
+  },
+  {
+   "minute": "41",
+   "seconds": 2441.0,
+   "team": "Iraq",
+   "player": "Merchas Doski",
+   "type": "Shot Blocked",
+   "x": 78.8,
+   "y": 67.5,
+   "goal": false,
+   "xg": 0.081,
+   "text": "Attempt blocked. Merchas Doski (Iraq) left footed shot from outside the box is blocked. Assisted by Amir Al Ammari."
+  },
+  {
+   "minute": "41",
+   "seconds": 2445.0,
+   "team": "Iraq",
+   "player": "Ali Jasim",
+   "type": "Shot Blocked",
+   "x": 79.1,
+   "y": 70.7,
+   "goal": false,
+   "xg": 0.073,
+   "text": "Attempt blocked. Ali Jasim (Iraq) right footed shot from outside the box is blocked."
+  },
+  {
+   "minute": "45'+1",
+   "seconds": 2700.0,
+   "team": "Senegal",
+   "player": "Sadio Mané",
+   "type": "Shot Off Target",
+   "x": 87.9,
+   "y": 64.2,
+   "goal": false,
+   "xg": 0.184,
+   "text": "Attempt missed. Sadio Mané (Senegal) right footed shot from the left side of the box is just a bit too high. Assisted by Ismail Jakobs."
+  },
+  {
+   "minute": "45'+2",
+   "seconds": 2700.0,
+   "team": "Senegal",
+   "player": "Moussa Niakhaté",
+   "type": "Shot Off Target",
+   "x": 91.9,
+   "y": 48.5,
+   "goal": false,
+   "xg": 0.329,
+   "text": "Attempt missed. Moussa Niakhaté (Senegal) header from the centre of the box misses to the left. Assisted by Lamine Camara with a cross following a corner."
+  },
+  {
+   "minute": "45'+6",
+   "seconds": 2700.0,
+   "team": "Senegal",
+   "player": "Lamine Camara",
+   "type": "Shot Off Target",
+   "x": 74.0,
+   "y": 60.1,
+   "goal": false,
+   "xg": 0.065,
+   "text": "Attempt missed. Lamine Camara (Senegal) right footed shot from outside the box is high and wide to the right following a corner."
+  },
+  {
+   "minute": "46",
+   "seconds": 2755.0,
+   "team": "Senegal",
+   "player": "Habib Diarra",
+   "type": "Shot Off Target",
+   "x": 79.1,
+   "y": 35.1,
+   "goal": false,
+   "xg": 0.09,
+   "text": "Attempt missed. Habib Diarra (Senegal) left footed shot from outside the box misses to the left. Assisted by Idrissa Gueye."
+  },
+  {
+   "minute": "51",
+   "seconds": 3036.0,
+   "team": "Senegal",
+   "player": "Sadio Mané",
+   "type": "Shot Off Target",
+   "x": 92.9,
+   "y": 53.6,
+   "goal": false,
+   "xg": 0.544,
+   "text": "Attempt missed. Sadio Mané (Senegal) right footed shot from the centre of the box is high and wide to the right. Assisted by Ibrahim Mbaye with a cross."
+  },
+  {
+   "minute": "53",
+   "seconds": 3150.0,
+   "team": "Iraq",
+   "player": "Ali Jasim",
+   "type": "Shot On Target",
+   "x": 79.9,
+   "y": 81.2,
+   "goal": false,
+   "xg": 0.049,
+   "text": "Attempt saved. Ali Jasim (Iraq) right footed shot from long range on the left is saved in the bottom right corner by Mory Diaw (Senegal). Assisted by Ali Al Hamadi."
+  },
+  {
+   "minute": "54",
+   "seconds": 3229.0,
+   "team": "Senegal",
+   "player": "Ismaïla Sarr",
+   "type": "Shot On Target",
+   "x": 86.5,
+   "y": 37.8,
+   "goal": false,
+   "xg": 0.185,
+   "text": "Attempt saved. Ismaïla Sarr (Senegal) right footed shot from the centre of the box is saved in the centre of the goal by Jalal Hassan (Iraq). Assisted by Habib Diarra."
+  },
+  {
+   "minute": "56",
+   "seconds": 3321.0,
+   "team": "Senegal",
+   "player": "Ismaïla Sarr",
+   "type": "Goal",
+   "x": 96.6,
+   "y": 49.5,
+   "goal": true,
+   "xg": 0.894,
+   "text": "Goal! Senegal 2, Iraq 0. Ismaïla Sarr (Senegal) right footed shot from very close range to the top left corner. Assisted by Lamine Camara."
+  },
+  {
+   "minute": "59",
+   "seconds": 3501.0,
+   "team": "Senegal",
+   "player": "Pape Gueye",
+   "type": "Goal",
+   "x": 78.3,
+   "y": 31.8,
+   "goal": true,
+   "xg": 0.076,
+   "text": "Goal! Senegal 3, Iraq 0. Pape Gueye (Senegal) left footed shot from outside the box to the top left corner. Assisted by Ismaïla Sarr."
+  },
+  {
+   "minute": "61",
+   "seconds": 3660.0,
+   "team": "Senegal",
+   "player": "Pape Gueye",
+   "type": "Shot Off Target",
+   "x": 84.4,
+   "y": 64.2,
+   "goal": false,
+   "xg": 0.142,
+   "text": "Attempt missed. Pape Gueye (Senegal) left footed shot from the left side of the box misses to the right. Assisted by Sadio Mané."
+  },
+  {
+   "minute": "71",
+   "seconds": 4245.0,
+   "team": "Senegal",
+   "player": "Pape Gueye",
+   "type": "Goal",
+   "x": 84.7,
+   "y": 50.4,
+   "goal": true,
+   "xg": 0.211,
+   "text": "Goal! Senegal 4, Iraq 0. Pape Gueye (Senegal) left footed shot from the centre of the box to the bottom left corner. Assisted by Iliman Ndiaye with a headed pass."
+  },
+  {
+   "minute": "73",
+   "seconds": 4321.0,
+   "team": "Iraq",
+   "player": "Kevin Yakob",
+   "type": "Shot Blocked",
+   "x": 87.4,
+   "y": 33.3,
+   "goal": false,
+   "xg": 0.154,
+   "text": "Attempt missed. Kevin Yakob (Iraq) left footed shot from the right side of the box misses to the left. Assisted by Frans Putros."
+  },
+  {
+   "minute": "74",
+   "seconds": 4400.0,
+   "team": "Senegal",
+   "player": "Pape Gueye",
+   "type": "Shot Blocked",
+   "x": 81.2,
+   "y": 53.4,
+   "goal": false,
+   "xg": 0.143,
+   "text": "Attempt blocked. Pape Gueye (Senegal) left footed shot from outside the box is blocked. Assisted by Sadio Mané."
+  },
+  {
+   "minute": "74",
+   "seconds": 4403.0,
+   "team": "Senegal",
+   "player": "Krépin Diatta",
+   "type": "Shot Off Target",
+   "x": 78.7,
+   "y": 39.8,
+   "goal": false,
+   "xg": 0.1,
+   "text": "Attempt missed. Krépin Diatta (Senegal) right footed shot from outside the box is high and wide to the left. Assisted by Pape Gueye."
+  },
+  {
+   "minute": "77",
+   "seconds": 4562.0,
+   "team": "Senegal",
+   "player": "Nicolas Jackson",
+   "type": "Shot Blocked",
+   "x": 89.3,
+   "y": 46.2,
+   "goal": false,
+   "xg": 0.346,
+   "text": "Attempt blocked. Nicolas Jackson (Senegal) right footed shot from the centre of the box is blocked. Assisted by Sadio Mané."
+  },
+  {
+   "minute": "79",
+   "seconds": 4696.0,
+   "team": "Senegal",
+   "player": "Pathé Ciss",
+   "type": "Shot On Target",
+   "x": 92.7,
+   "y": 54.8,
+   "goal": false,
+   "xg": 0.326,
+   "text": "Attempt saved. Pathé Ciss (Senegal) header from the centre of the box is saved in the top centre of the goal by Jalal Hassan (Iraq). Assisted by Idrissa Gueye."
+  },
+  {
+   "minute": "79",
+   "seconds": 4736.0,
+   "team": "Senegal",
+   "player": "Nicolas Jackson",
+   "type": "Shot On Target",
+   "x": 85.1,
+   "y": 64.5,
+   "goal": false,
+   "xg": 0.148,
+   "text": "Attempt saved. Nicolas Jackson (Senegal) right footed shot from the left side of the box is saved in the bottom left corner by Jalal Hassan (Iraq). Assisted by Idrissa Gueye."
+  },
+  {
+   "minute": "82",
+   "seconds": 4900.0,
+   "team": "Senegal",
+   "player": "Iliman Ndiaye",
+   "type": "Goal",
+   "x": 79.8,
+   "y": 33.1,
+   "goal": true,
+   "xg": 0.089,
+   "text": "Goal! Senegal 5, Iraq 0. Iliman Ndiaye (Senegal) right footed shot from outside the box to the top right corner. Assisted by Pape Gueye."
+  },
+  {
+   "minute": "86",
+   "seconds": 5112.0,
+   "team": "Senegal",
+   "player": "Sadio Mané",
+   "type": "Shot Blocked",
+   "x": 89.0,
+   "y": 59.1,
+   "goal": false,
+   "xg": 0.268,
+   "text": "Attempt blocked. Sadio Mané (Senegal) left footed shot from the centre of the box is blocked. Assisted by Iliman Ndiaye."
+  },
+  {
+   "minute": "88",
+   "seconds": 5272.0,
+   "team": "Senegal",
+   "player": "Pape Gueye",
+   "type": "Shot Blocked",
+   "x": 72.3,
+   "y": 51.3,
+   "goal": false,
+   "xg": 0.061,
+   "text": "Attempt blocked. Pape Gueye (Senegal) left footed shot from outside the box is blocked. Assisted by Idrissa Gueye."
+  },
+  {
+   "minute": "90'+1",
+   "seconds": 5400.0,
+   "team": "Senegal",
+   "player": "Nicolas Jackson",
+   "type": "Shot On Target",
+   "x": 89.6,
+   "y": 46.6,
+   "goal": false,
+   "xg": 0.235,
+   "text": "Attempt saved. Nicolas Jackson (Senegal) header from the centre of the box is saved in the centre of the goal by Jalal Hassan (Iraq). Assisted by Krépin Diatta with a cross."
+  },
+  {
+   "minute": "90'+2",
+   "seconds": 5400.0,
+   "team": "Senegal",
+   "player": "Pape Gueye",
+   "type": "Shot On Target",
+   "x": 78.6,
+   "y": 28.0,
+   "goal": false,
+   "xg": 0.067,
+   "text": "Attempt saved. Pape Gueye (Senegal) left footed shot from outside the box is saved in the centre of the goal by Jalal Hassan (Iraq)."
+  },
+  {
+   "minute": "90'+5",
+   "seconds": 5400.0,
+   "team": "Senegal",
+   "player": "Iliman Ndiaye",
+   "type": "Shot On Target",
+   "x": 87.4,
+   "y": 66.0,
+   "goal": false,
+   "xg": 0.161,
+   "text": "Attempt saved. Iliman Ndiaye (Senegal) right footed shot from the left side of the box is saved in the bottom right corner by Jalal Hassan (Iraq). Assisted by Pape Gueye."
+  }
+ ],
+ "lineups": [
+  {
+   "team": "Senegal",
+   "formation": "4-3-3",
+   "starters": [
+    {
+     "name": "Mory Diaw",
+     "jersey": "23",
+     "position": "G"
+    },
+    {
+     "name": "Moussa Niakhaté",
+     "jersey": "19",
+     "position": "CD-L"
+    },
+    {
+     "name": "Abdoulaye Seck",
+     "jersey": "4",
+     "position": "CD-R"
+    },
+    {
+     "name": "Ismail Jakobs",
+     "jersey": "14",
+     "position": "LB"
+    },
+    {
+     "name": "Krépin Diatta",
+     "jersey": "15",
+     "position": "RB"
+    },
+    {
+     "name": "Idrissa Gueye",
+     "jersey": "5",
+     "position": "CM"
+    },
+    {
+     "name": "Lamine Camara",
+     "jersey": "8",
+     "position": "LM"
+    },
+    {
+     "name": "Habib Diarra",
+     "jersey": "21",
+     "position": "RM"
+    },
+    {
+     "name": "Ismaïla Sarr",
+     "jersey": "18",
+     "position": "F"
+    },
+    {
+     "name": "Sadio Mané",
+     "jersey": "10",
+     "position": "LF"
+    },
+    {
+     "name": "Ibrahim Mbaye",
+     "jersey": "20",
+     "position": "RF"
+    }
+   ],
+   "subs": [
+    {
+     "name": "Bamba Dieng",
+     "jersey": "9",
+     "position": "SUB"
+    },
+    {
+     "name": "Nicolas Jackson",
+     "jersey": "11",
+     "position": "SUB"
+    },
+    {
+     "name": "Bara Sapoko Ndiaye",
+     "jersey": "22",
+     "position": "SUB"
+    },
+    {
+     "name": "Assane Diao",
+     "jersey": "7",
+     "position": "SUB"
+    },
+    {
+     "name": "Kalidou Koulibaly",
+     "jersey": "3",
+     "position": "SUB"
+    },
+    {
+     "name": "Pape Gueye",
+     "jersey": "26",
+     "position": "SUB"
+    },
+    {
+     "name": "Yehvann Diouf",
+     "jersey": "1",
+     "position": "SUB"
+    },
+    {
+     "name": "El Hadji Malick Diouf",
+     "jersey": "25",
+     "position": "SUB"
+    },
+    {
+     "name": "Pape Matar Sarr",
+     "jersey": "17",
+     "position": "SUB"
+    },
+    {
+     "name": "Iliman Ndiaye",
+     "jersey": "13",
+     "position": "SUB"
+    },
+    {
+     "name": "Cherif Ndiaye",
+     "jersey": "12",
+     "position": "SUB"
+    },
+    {
+     "name": "Pathé Ciss",
+     "jersey": "6",
+     "position": "SUB"
+    },
+    {
+     "name": "Mamadou Sarr",
+     "jersey": "2",
+     "position": "SUB"
+    },
+    {
+     "name": "Antoine Mendy",
+     "jersey": "24",
+     "position": "SUB"
+    }
+   ]
+  },
+  {
+   "team": "Iraq",
+   "formation": "4-2-3-1",
+   "starters": [
+    {
+     "name": "Ahmed Basil",
+     "jersey": "22",
+     "position": "G"
+    },
+    {
+     "name": "Akam Hashim",
+     "jersey": "5",
+     "position": "CD-L"
+    },
+    {
+     "name": "Rebin Sulaka",
+     "jersey": "2",
+     "position": "CD-R"
+    },
+    {
+     "name": "Merchas Doski",
+     "jersey": "23",
+     "position": "LB"
+    },
+    {
+     "name": "Frans Putros",
+     "jersey": "26",
+     "position": "RB"
+    },
+    {
+     "name": "Ali Jasim",
+     "jersey": "17",
+     "position": "AM"
+    },
+    {
+     "name": "Amir Al-Ammari",
+     "jersey": "16",
+     "position": "LM"
+    },
+    {
+     "name": "Zidane Iqbal",
+     "jersey": "14",
+     "position": "RM"
+    },
+    {
+     "name": "Ali Al-Hamadi",
+     "jersey": "9",
+     "position": "F"
+    },
+    {
+     "name": "Ibrahim Bayesh",
+     "jersey": "8",
+     "position": "AM-L"
+    },
+    {
+     "name": "Ahmed Qasim",
+     "jersey": "11",
+     "position": "AM-R"
+    }
+   ],
+   "subs": [
+    {
+     "name": "Aimar Sher",
+     "jersey": "20",
+     "position": "SUB"
+    },
+    {
+     "name": "Fahad Talib",
+     "jersey": "1",
+     "position": "SUB"
+    },
+    {
+     "name": "Zaid Ismael",
+     "jersey": "24",
+     "position": "SUB"
+    },
+    {
+     "name": "Kevin Yakob",
+     "jersey": "19",
+     "position": "SUB"
+    },
+    {
+     "name": "Mohanad Ali",
+     "jersey": "10",
+     "position": "SUB"
+    },
+    {
+     "name": "Aymen Hussein",
+     "jersey": "18",
+     "position": "SUB"
+    },
+    {
+     "name": "Mustafa Saadoon",
+     "jersey": "25",
+     "position": "SUB"
+    },
+    {
+     "name": "Youssef Amyn",
+     "jersey": "7",
+     "position": "SUB"
+    },
+    {
+     "name": "Jalal Hassan",
+     "jersey": "12",
+     "position": "SUB"
+    },
+    {
+     "name": "Zaid Tahseen",
+     "jersey": "4",
+     "position": "SUB"
+    },
+    {
+     "name": "Munaf Younus",
+     "jersey": "6",
+     "position": "SUB"
+    },
+    {
+     "name": "Hussein Ali",
+     "jersey": "3",
+     "position": "SUB"
+    },
+    {
+     "name": "Ahmed Maknazi",
+     "jersey": "15",
+     "position": "SUB"
+    },
+    {
+     "name": "Marko Farji",
+     "jersey": "21",
+     "position": "SUB"
+    },
+    {
+     "name": "Ali Yousif",
+     "jersey": "13",
+     "position": "SUB"
+    }
+   ]
+  }
+ ],
+ "attendance": 43036,
+ "venue": "BMO Field, Toronto, Canada"
+}

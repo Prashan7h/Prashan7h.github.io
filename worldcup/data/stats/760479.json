@@ -1,0 +1,761 @@
+{
+ "teams": [
+  {
+   "name": "Uruguay",
+   "stats": {
+    "possessionPct": "33",
+    "totalShots": "5",
+    "shotsOnTarget": "1",
+    "wonCorners": "1",
+    "foulsCommitted": "14",
+    "offsides": "5",
+    "saves": "0",
+    "yellowCards": "3",
+    "redCards": "1"
+   }
+  },
+  {
+   "name": "Spain",
+   "stats": {
+    "possessionPct": "67",
+    "totalShots": "6",
+    "shotsOnTarget": "1",
+    "wonCorners": "6",
+    "foulsCommitted": "14",
+    "offsides": "2",
+    "saves": "2",
+    "yellowCards": "1",
+    "redCards": "0"
+   }
+  }
+ ],
+ "events": [
+  {
+   "type": "Kickoff",
+   "minute": "",
+   "team": null,
+   "text": "First Half begins.",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "23'",
+   "team": "Spain",
+   "text": "Delay in match for a drinks break.",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "23'",
+   "team": "Uruguay",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "26'",
+   "team": "Spain",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "26'",
+   "team": "Uruguay",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "39'",
+   "team": "Spain",
+   "text": "Delay in match because of an injury Mikel Oyarzabal (Spain).",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "39'",
+   "team": "Uruguay",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "40'",
+   "team": "Spain",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "40'",
+   "team": "Uruguay",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Goal",
+   "minute": "42'",
+   "team": "Spain",
+   "text": "Goal! Uruguay 0, Spain 1. Álex Baena (Spain) right footed shot from the centre of the box to the bottom left corner. Assisted by Marcos Llorente with a cross.",
+   "players": [
+    "Álex Baena",
+    "Marcos Llorente"
+   ]
+  },
+  {
+   "type": "Start Delay",
+   "minute": "42'",
+   "team": "Uruguay",
+   "text": "Delay in match because of an injury Manuel Ugarte (Uruguay).",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "42'",
+   "team": "Spain",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "45'",
+   "team": "Uruguay",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "45'",
+   "team": "Spain",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Substitution",
+   "minute": "45'",
+   "team": "Uruguay",
+   "text": "Substitution, Uruguay. Nicolás de la Cruz replaces Manuel Ugarte because of an injury.",
+   "players": [
+    "Nicolás de la Cruz",
+    "Manuel Ugarte"
+   ]
+  },
+  {
+   "type": "Halftime",
+   "minute": "45'+9'",
+   "team": null,
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Substitution",
+   "minute": "45'",
+   "team": "Uruguay",
+   "text": "Substitution, Uruguay. Sergio Rochet replaces Fernando Muslera.",
+   "players": [
+    "Sergio Rochet",
+    "Fernando Muslera"
+   ]
+  },
+  {
+   "type": "Start 2nd Half",
+   "minute": "45'",
+   "team": null,
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Yellow Card",
+   "minute": "46'",
+   "team": "Spain",
+   "text": "Álex Baena (Spain) is shown the yellow card for a bad foul.",
+   "players": [
+    "Álex Baena"
+   ]
+  },
+  {
+   "type": "Yellow Card",
+   "minute": "54'",
+   "team": "Uruguay",
+   "text": "Juan Manuel Sanabria (Uruguay) is shown the yellow card for a bad foul.",
+   "players": [
+    "Juan Manuel Sanabria"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "57'",
+   "team": "Uruguay",
+   "text": "Substitution, Uruguay. Federico Viñas replaces Federico Valverde.",
+   "players": [
+    "Federico Viñas",
+    "Federico Valverde"
+   ]
+  },
+  {
+   "type": "Yellow Card",
+   "minute": "58'",
+   "team": "Uruguay",
+   "text": "Guillermo Varela (Uruguay) is shown the yellow card.",
+   "players": [
+    "Guillermo Varela"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "60'",
+   "team": "Spain",
+   "text": "Substitution, Spain. Fabián Ruiz replaces Pedri.",
+   "players": [
+    "Fabián Ruiz",
+    "Pedri "
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "60'",
+   "team": "Spain",
+   "text": "Substitution, Spain. Dani Olmo replaces Mikel Merino.",
+   "players": [
+    "Dani Olmo",
+    "Mikel Merino"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "66'",
+   "team": "Spain",
+   "text": "Substitution, Spain. Yéremy Pino replaces Álex Baena.",
+   "players": [
+    "Yéremy Pino",
+    "Álex Baena"
+   ]
+  },
+  {
+   "type": "Start Delay",
+   "minute": "68'",
+   "team": "Spain",
+   "text": "Delay in match for a drinks break.",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "68'",
+   "team": "Uruguay",
+   "text": "Delay in match (Uruguay).",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "70'",
+   "team": "Spain",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "70'",
+   "team": "Uruguay",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Substitution",
+   "minute": "70'",
+   "team": "Uruguay",
+   "text": "Substitution, Uruguay. Brian Rodríguez replaces Juan Manuel Sanabria.",
+   "players": [
+    "Brian Rodríguez",
+    "Juan Manuel Sanabria"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "76'",
+   "team": "Spain",
+   "text": "Substitution, Spain. Nico Williams replaces Lamine Yamal.",
+   "players": [
+    "Nico Williams",
+    "Lamine Yamal"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "76'",
+   "team": "Spain",
+   "text": "Substitution, Spain. Ferran Torres replaces Mikel Oyarzabal.",
+   "players": [
+    "Ferran Torres",
+    "Mikel Oyarzabal"
+   ]
+  },
+  {
+   "type": "Start Delay",
+   "minute": "87'",
+   "team": "Spain",
+   "text": "Delay in match because of an injury Yéremy Pino (Spain).",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "87'",
+   "team": "Uruguay",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "88'",
+   "team": "Spain",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "88'",
+   "team": "Uruguay",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Yellow Card",
+   "minute": "90'+3'",
+   "team": "Uruguay",
+   "text": "Nicolás de la Cruz (Uruguay) is shown the yellow card for a bad foul.",
+   "players": [
+    "Nicolás de la Cruz"
+   ]
+  },
+  {
+   "type": "Red Card",
+   "minute": "90'+5'",
+   "team": "Uruguay",
+   "text": "Agustín Canobbio (Uruguay) is shown the red card.",
+   "players": [
+    "Agustín Canobbio"
+   ]
+  },
+  {
+   "type": "End Regular Time",
+   "minute": "90'+7'",
+   "team": null,
+   "text": "",
+   "players": []
+  }
+ ],
+ "shots": [
+  {
+   "minute": "17",
+   "seconds": 990.0,
+   "team": "Spain",
+   "player": "Lamine Yamal",
+   "type": "Shot Blocked",
+   "x": 85.3,
+   "y": 27.7,
+   "goal": false,
+   "xg": 0.101,
+   "text": "Attempt blocked. Lamine Yamal (Spain) left footed shot from the right side of the box is blocked. Assisted by Pedri."
+  },
+  {
+   "minute": "20",
+   "seconds": 1177.0,
+   "team": "Spain",
+   "player": "Pau Cubarsí",
+   "type": "Shot Off Target",
+   "x": 95.5,
+   "y": 43.7,
+   "goal": false,
+   "xg": 0.39,
+   "text": "Attempt missed. Pau Cubarsí (Spain) header from the right side of the six yard box misses to the left. Assisted by Álex Baena with a cross following a corner."
+  },
+  {
+   "minute": "32",
+   "seconds": 1917.0,
+   "team": "Uruguay",
+   "player": "Agustín Canobbio",
+   "type": "Shot Blocked",
+   "x": 85.7,
+   "y": 65.4,
+   "goal": false,
+   "xg": 0.148,
+   "text": "Attempt blocked. Agustín Canobbio (Uruguay) right footed shot from the left side of the box is blocked."
+  },
+  {
+   "minute": "36",
+   "seconds": 2133.0,
+   "team": "Uruguay",
+   "player": "Rodrigo Bentancur",
+   "type": "Shot Off Target",
+   "x": 72.5,
+   "y": 45.4,
+   "goal": false,
+   "xg": 0.061,
+   "text": "Attempt missed. Rodrigo Bentancur (Uruguay) right footed shot from outside the box is too high. Assisted by Maxi Araújo."
+  },
+  {
+   "minute": "39",
+   "seconds": 2317.0,
+   "team": "Uruguay",
+   "player": "Darwin Núñez",
+   "type": "Shot Off Target",
+   "x": 43.1,
+   "y": 50.5,
+   "goal": false,
+   "xg": 0.005,
+   "text": "Attempt missed. Darwin Núñez (Uruguay) right footed shot from more than 35 yards misses to the left. Assisted by Manuel Ugarte following a fast break."
+  },
+  {
+   "minute": "42",
+   "seconds": 2467.0,
+   "team": "Spain",
+   "player": "Álex Baena",
+   "type": "Goal",
+   "x": 85.9,
+   "y": 45.7,
+   "goal": true,
+   "xg": 0.231,
+   "text": "Goal! Uruguay 0, Spain 1. Álex Baena (Spain) right footed shot from the centre of the box to the bottom left corner. Assisted by Marcos Llorente with a cross."
+  },
+  {
+   "minute": "45'+8",
+   "seconds": 2700.0,
+   "team": "Spain",
+   "player": "Mikel Oyarzabal",
+   "type": "Shot Off Target",
+   "x": 68.2,
+   "y": 60.1,
+   "goal": false,
+   "xg": 0.039,
+   "text": "Attempt missed. Mikel Oyarzabal (Spain) left footed shot from outside the box misses to the right. Assisted by Aymeric Laporte."
+  },
+  {
+   "minute": "63",
+   "seconds": 3755.0,
+   "team": "Spain",
+   "player": "Dani Olmo",
+   "type": "Shot Off Target",
+   "x": 86.5,
+   "y": 46.2,
+   "goal": false,
+   "xg": 0.25,
+   "text": "Attempt missed. Dani Olmo (Spain) right footed shot from the centre of the box is close, but misses the top right corner. Assisted by Lamine Yamal."
+  },
+  {
+   "minute": "64",
+   "seconds": 3818.0,
+   "team": "Uruguay",
+   "player": "Federico Viñas",
+   "type": "Shot Off Target",
+   "x": 96.1,
+   "y": 60.3,
+   "goal": false,
+   "xg": 0.362,
+   "text": "Attempt missed. Federico Viñas (Uruguay) left footed shot from the left side of the six yard box is high and wide to the left. Assisted by Maxi Araújo with a cross."
+  },
+  {
+   "minute": "85",
+   "seconds": 5096.0,
+   "team": "Uruguay",
+   "player": "Nicolás de la Cruz",
+   "type": "Shot On Target",
+   "x": 70.1,
+   "y": 46.4,
+   "goal": false,
+   "xg": 0.05,
+   "text": "Attempt saved. Nicolás de la Cruz (Uruguay) right footed shot from outside the box is saved in the bottom left corner by Unai Simón (Spain). Assisted by Darwin Núñez."
+  },
+  {
+   "minute": "86",
+   "seconds": 5154.0,
+   "team": "Spain",
+   "player": null,
+   "type": "Shot Hit Woodwork",
+   "x": 84.3,
+   "y": 51.0,
+   "goal": false,
+   "xg": 0.201,
+   "text": "Ferran Torres (Spain) hits the bar with a right footed shot from the centre of the box. Assisted by Fabián Ruiz."
+  }
+ ],
+ "lineups": [
+  {
+   "team": "Uruguay",
+   "formation": "4-1-4-1",
+   "starters": [
+    {
+     "name": "Fernando Muslera",
+     "jersey": "23",
+     "position": "G"
+    },
+    {
+     "name": "Mathías Olivera",
+     "jersey": "16",
+     "position": "CD-L"
+    },
+    {
+     "name": "Sebastián Cáceres",
+     "jersey": "3",
+     "position": "CD-R"
+    },
+    {
+     "name": "Manuel Ugarte",
+     "jersey": "5",
+     "position": "DM"
+    },
+    {
+     "name": "Juan Manuel Sanabria",
+     "jersey": "25",
+     "position": "LB"
+    },
+    {
+     "name": "Guillermo Varela",
+     "jersey": "13",
+     "position": "RB"
+    },
+    {
+     "name": "Federico Valverde",
+     "jersey": "8",
+     "position": "CM-L"
+    },
+    {
+     "name": "Rodrigo Bentancur",
+     "jersey": "6",
+     "position": "CM-R"
+    },
+    {
+     "name": "Maxi Araújo",
+     "jersey": "20",
+     "position": "LM"
+    },
+    {
+     "name": "Agustín Canobbio",
+     "jersey": "14",
+     "position": "RM"
+    },
+    {
+     "name": "Darwin Núñez",
+     "jersey": "9",
+     "position": "F"
+    }
+   ],
+   "subs": [
+    {
+     "name": "Ronald Araújo",
+     "jersey": "4",
+     "position": "SUB"
+    },
+    {
+     "name": "Santiago Bueno",
+     "jersey": "24",
+     "position": "SUB"
+    },
+    {
+     "name": "Federico Viñas",
+     "jersey": "21",
+     "position": "SUB"
+    },
+    {
+     "name": "Santiago Mele",
+     "jersey": "12",
+     "position": "SUB"
+    },
+    {
+     "name": "Brian Rodríguez",
+     "jersey": "18",
+     "position": "SUB"
+    },
+    {
+     "name": "Nicolás de la Cruz",
+     "jersey": "7",
+     "position": "SUB"
+    },
+    {
+     "name": "Rodrigo Aguirre",
+     "jersey": "19",
+     "position": "SUB"
+    },
+    {
+     "name": "Giorgian de Arrascaeta",
+     "jersey": "10",
+     "position": "SUB"
+    },
+    {
+     "name": "Matías Viña",
+     "jersey": "17",
+     "position": "SUB"
+    },
+    {
+     "name": "Sergio Rochet",
+     "jersey": "1",
+     "position": "SUB"
+    },
+    {
+     "name": "José María Giménez",
+     "jersey": "2",
+     "position": "SUB"
+    },
+    {
+     "name": "Rodrigo Zalazar",
+     "jersey": "26",
+     "position": "SUB"
+    },
+    {
+     "name": "Facundo Pellistri",
+     "jersey": "11",
+     "position": "SUB"
+    },
+    {
+     "name": "Emiliano Martínez",
+     "jersey": "15",
+     "position": "SUB"
+    },
+    {
+     "name": "Joaquín Piquerez",
+     "jersey": "22",
+     "position": "SUB"
+    }
+   ]
+  },
+  {
+   "team": "Spain",
+   "formation": "4-2-3-1",
+   "starters": [
+    {
+     "name": "Unai Simón",
+     "jersey": "23",
+     "position": "G"
+    },
+    {
+     "name": "Aymeric Laporte",
+     "jersey": "14",
+     "position": "CD-L"
+    },
+    {
+     "name": "Pau Cubarsí",
+     "jersey": "22",
+     "position": "CD-R"
+    },
+    {
+     "name": "Marc Cucurella",
+     "jersey": "24",
+     "position": "LB"
+    },
+    {
+     "name": "Marcos Llorente",
+     "jersey": "5",
+     "position": "RB"
+    },
+    {
+     "name": "Mikel Merino",
+     "jersey": "6",
+     "position": "AM"
+    },
+    {
+     "name": "Rodri",
+     "jersey": "16",
+     "position": "LM"
+    },
+    {
+     "name": "Pedri ",
+     "jersey": "20",
+     "position": "RM"
+    },
+    {
+     "name": "Mikel Oyarzabal",
+     "jersey": "21",
+     "position": "F"
+    },
+    {
+     "name": "Álex Baena",
+     "jersey": "15",
+     "position": "AM-L"
+    },
+    {
+     "name": "Lamine Yamal",
+     "jersey": "19",
+     "position": "AM-R"
+    }
+   ],
+   "subs": [
+    {
+     "name": "Yéremy Pino",
+     "jersey": "11",
+     "position": "SUB"
+    },
+    {
+     "name": "Eric García",
+     "jersey": "4",
+     "position": "SUB"
+    },
+    {
+     "name": "Marc Pubill",
+     "jersey": "2",
+     "position": "SUB"
+    },
+    {
+     "name": "Nico Williams",
+     "jersey": "17",
+     "position": "SUB"
+    },
+    {
+     "name": "Dani Olmo",
+     "jersey": "10",
+     "position": "SUB"
+    },
+    {
+     "name": "Alejandro Grimaldo",
+     "jersey": "3",
+     "position": "SUB"
+    },
+    {
+     "name": "Víctor Muñoz",
+     "jersey": "25",
+     "position": "SUB"
+    },
+    {
+     "name": "Gavi ",
+     "jersey": "9",
+     "position": "SUB"
+    },
+    {
+     "name": "Joan García",
+     "jersey": "13",
+     "position": "SUB"
+    },
+    {
+     "name": "Martín Zubimendi",
+     "jersey": "18",
+     "position": "SUB"
+    },
+    {
+     "name": "Ferran Torres",
+     "jersey": "7",
+     "position": "SUB"
+    },
+    {
+     "name": "Borja Iglesias",
+     "jersey": "26",
+     "position": "SUB"
+    },
+    {
+     "name": "David Raya",
+     "jersey": "1",
+     "position": "SUB"
+    },
+    {
+     "name": "Pedro Porro",
+     "jersey": "12",
+     "position": "SUB"
+    },
+    {
+     "name": "Fabián Ruiz",
+     "jersey": "8",
+     "position": "SUB"
+    }
+   ]
+  }
+ ],
+ "attendance": 45065,
+ "venue": "Estadio Akron, Guadalajara, Mexico"
+}
