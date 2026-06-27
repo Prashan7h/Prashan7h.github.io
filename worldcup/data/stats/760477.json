@@ -1,0 +1,1111 @@
+{
+ "teams": [
+  {
+   "name": "New Zealand",
+   "stats": {
+    "possessionPct": "45.5",
+    "totalShots": "6",
+    "shotsOnTarget": "2",
+    "wonCorners": "5",
+    "foulsCommitted": "10",
+    "offsides": "1",
+    "saves": "5",
+    "yellowCards": "2",
+    "redCards": "0"
+   }
+  },
+  {
+   "name": "Belgium",
+   "stats": {
+    "possessionPct": "54.5",
+    "totalShots": "35",
+    "shotsOnTarget": "10",
+    "wonCorners": "8",
+    "foulsCommitted": "7",
+    "offsides": "1",
+    "saves": "1",
+    "yellowCards": "0",
+    "redCards": "0"
+   }
+  }
+ ],
+ "events": [
+  {
+   "type": "Kickoff",
+   "minute": "",
+   "team": null,
+   "text": "First Half begins.",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "13'",
+   "team": "Belgium",
+   "text": "Delay in match because of an injury Brandon Mechele (Belgium).",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "13'",
+   "team": "New Zealand",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "13'",
+   "team": "Belgium",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "13'",
+   "team": "New Zealand",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "21'",
+   "team": "Belgium",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "22'",
+   "team": "Belgium",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "24'",
+   "team": "Belgium",
+   "text": "Delay in match for a drinks break.",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "24'",
+   "team": "New Zealand",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "26'",
+   "team": "Belgium",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "26'",
+   "team": "New Zealand",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Goal",
+   "minute": "28'",
+   "team": "Belgium",
+   "text": "Goal! New Zealand 0, Belgium 1. Leandro Trossard (Belgium) right footed shot from very close range to the bottom right corner following a corner.",
+   "players": [
+    "Leandro Trossard"
+   ]
+  },
+  {
+   "type": "Halftime",
+   "minute": "45'+7'",
+   "team": null,
+   "text": "First Half ends, New Zealand 0, Belgium 1.",
+   "players": []
+  },
+  {
+   "type": "Substitution",
+   "minute": "45'",
+   "team": "New Zealand",
+   "text": "Substitution, New Zealand. Ben Old replaces Ryan Thomas.",
+   "players": [
+    "Ben Old",
+    "Ryan Thomas"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "45'",
+   "team": "New Zealand",
+   "text": "Substitution, New Zealand. Jesse Randall replaces Sarpreet Singh.",
+   "players": [
+    "Jesse Randall",
+    "Sarpreet Singh"
+   ]
+  },
+  {
+   "type": "Start 2nd Half",
+   "minute": "45'",
+   "team": null,
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Yellow Card",
+   "minute": "46'",
+   "team": "New Zealand",
+   "text": "Marko Stamenic (New Zealand) is shown the yellow card for a bad foul.",
+   "players": [
+    "Marko Stamenic"
+   ]
+  },
+  {
+   "type": "Goal - Volley",
+   "minute": "50'",
+   "team": "Belgium",
+   "text": "Goal! New Zealand 0, Belgium 2. Leandro Trossard (Belgium) right footed shot from the centre of the box to the top left corner. Assisted by Hans Vanaken.",
+   "players": [
+    "Leandro Trossard",
+    "Hans Vanaken"
+   ]
+  },
+  {
+   "type": "Yellow Card",
+   "minute": "56'",
+   "team": "New Zealand",
+   "text": "Elijah Just (New Zealand) is shown the yellow card for a bad foul.",
+   "players": [
+    "Elijah Just"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "56'",
+   "team": "Belgium",
+   "text": "Substitution, Belgium. Matias Fernandez-Pardo replaces Jérémy Doku.",
+   "players": [
+    "Matias Fernandez-Pardo",
+    "Jérémy Doku"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "64'",
+   "team": "New Zealand",
+   "text": "Substitution, New Zealand. Michael Boxall replaces Tim Payne.",
+   "players": [
+    "Michael Boxall",
+    "Tim Payne"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "64'",
+   "team": "New Zealand",
+   "text": "Substitution, New Zealand. Callum McCowatt replaces Joe Bell.",
+   "players": [
+    "Callum McCowatt",
+    "Joe Bell"
+   ]
+  },
+  {
+   "type": "Goal",
+   "minute": "66'",
+   "team": "Belgium",
+   "text": "Goal! New Zealand 0, Belgium 3. Kevin De Bruyne (Belgium) left footed shot from outside the box to the bottom right corner.",
+   "players": [
+    "Kevin De Bruyne"
+   ]
+  },
+  {
+   "type": "Start Delay",
+   "minute": "69'",
+   "team": "Belgium",
+   "text": "Delay in match for a drinks break.",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "69'",
+   "team": "New Zealand",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "71'",
+   "team": "Belgium",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "71'",
+   "team": "New Zealand",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Substitution",
+   "minute": "72'",
+   "team": "Belgium",
+   "text": "Substitution, Belgium. Alexis Saelemaekers replaces Leandro Trossard.",
+   "players": [
+    "Alexis Saelemaekers",
+    "Leandro Trossard"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "72'",
+   "team": "Belgium",
+   "text": "Substitution, Belgium. Amadou Onana replaces Kevin De Bruyne.",
+   "players": [
+    "Amadou Onana",
+    "Kevin De Bruyne"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "79'",
+   "team": "New Zealand",
+   "text": "Substitution, New Zealand. Francis de Vries replaces Liberato Cacace.",
+   "players": [
+    "Francis de Vries",
+    "Liberato Cacace"
+   ]
+  },
+  {
+   "type": "Goal",
+   "minute": "84'",
+   "team": "New Zealand",
+   "text": "Goal! New Zealand 1, Belgium 3. Elijah Just (New Zealand) left footed shot from the centre of the box to the high centre of the goal following a corner.",
+   "players": [
+    "Elijah Just"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "85'",
+   "team": "Belgium",
+   "text": "Substitution, Belgium. Romelu Lukaku replaces Charles De Ketelaere.",
+   "players": [
+    "Romelu Lukaku",
+    "Charles De Ketelaere"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "85'",
+   "team": "Belgium",
+   "text": "Substitution, Belgium. Nicolas Raskin replaces Youri Tielemans.",
+   "players": [
+    "Nicolas Raskin",
+    "Youri Tielemans"
+   ]
+  },
+  {
+   "type": "Goal - Header",
+   "minute": "86'",
+   "team": "Belgium",
+   "text": "Goal! New Zealand 1, Belgium 4. Romelu Lukaku (Belgium) header from very close range to the centre of the goal. Assisted by Nicolas Raskin with a cross.",
+   "players": [
+    "Romelu Lukaku",
+    "Nicolas Raskin"
+   ]
+  },
+  {
+   "type": "Goal",
+   "minute": "90'+4'",
+   "team": "Belgium",
+   "text": "Goal! New Zealand 1, Belgium 5. Alexis Saelemaekers (Belgium) right footed shot from the centre of the box to the bottom left corner. Assisted by Romelu Lukaku following a fast break.",
+   "players": [
+    "Alexis Saelemaekers",
+    "Romelu Lukaku"
+   ]
+  },
+  {
+   "type": "End Regular Time",
+   "minute": "90'+6'",
+   "team": null,
+   "text": "Second Half ends, New Zealand 1, Belgium 5.",
+   "players": []
+  }
+ ],
+ "shots": [
+  {
+   "minute": "4",
+   "seconds": 229.0,
+   "team": "Belgium",
+   "player": "Youri Tielemans",
+   "type": "Shot Off Target",
+   "x": 73.5,
+   "y": 42.7,
+   "goal": false,
+   "xg": 0.065,
+   "text": "Attempt missed. Youri Tielemans (Belgium) right footed shot from outside the box is high and wide to the right. Assisted by Hans Vanaken."
+  },
+  {
+   "minute": "11",
+   "seconds": 630.0,
+   "team": "Belgium",
+   "player": "Charles De Ketelaere",
+   "type": "Shot Blocked",
+   "x": 90.5,
+   "y": 51.9,
+   "goal": false,
+   "xg": 0.419,
+   "text": "Attempt blocked. Charles De Ketelaere (Belgium) left footed shot from the centre of the box is blocked. Assisted by Maxim De Cuyper with a cross."
+  },
+  {
+   "minute": "11",
+   "seconds": 634.0,
+   "team": "Belgium",
+   "player": null,
+   "type": "Shot Hit Woodwork",
+   "x": 95.7,
+   "y": 59.7,
+   "goal": false,
+   "xg": 0.395,
+   "text": "Leandro Trossard (Belgium) hits the right post with a left footed shot from the left side of the six yard box. Assisted by Hans Vanaken with a through ball."
+  },
+  {
+   "minute": "12",
+   "seconds": 710.0,
+   "team": "Belgium",
+   "player": "Brandon Mechele",
+   "type": "Shot Blocked",
+   "x": 90.8,
+   "y": 49.5,
+   "goal": false,
+   "xg": 0.287,
+   "text": "Attempt blocked. Brandon Mechele (Belgium) header from the centre of the box is blocked. Assisted by Kevin De Bruyne with a cross."
+  },
+  {
+   "minute": "12",
+   "seconds": 716.0,
+   "team": "Belgium",
+   "player": "Kevin De Bruyne",
+   "type": "Shot On Target",
+   "x": 75.4,
+   "y": 60.5,
+   "goal": false,
+   "xg": 0.074,
+   "text": "Attempt saved. Kevin De Bruyne (Belgium) right footed shot from outside the box is saved in the bottom left corner by Max Crocombe (New Zealand). Assisted by Hans Vanaken."
+  },
+  {
+   "minute": "16",
+   "seconds": 914.0,
+   "team": "Belgium",
+   "player": "Leandro Trossard",
+   "type": "Shot Blocked",
+   "x": 85.4,
+   "y": 64.1,
+   "goal": false,
+   "xg": 0.154,
+   "text": "Attempt blocked. Leandro Trossard (Belgium) left footed shot from the left side of the box is blocked. Assisted by Jérémy Doku."
+  },
+  {
+   "minute": "16",
+   "seconds": 921.0,
+   "team": "Belgium",
+   "player": "Jérémy Doku",
+   "type": "Shot On Target",
+   "x": 90.8,
+   "y": 69.7,
+   "goal": false,
+   "xg": 0.148,
+   "text": "Attempt saved. Jérémy Doku (Belgium) right footed shot from the left side of the box is saved in the centre of the goal by Max Crocombe (New Zealand). Assisted by Charles De Ketelaere."
+  },
+  {
+   "minute": "19",
+   "seconds": 1138.0,
+   "team": "Belgium",
+   "player": "Leandro Trossard",
+   "type": "Shot Blocked",
+   "x": 85.8,
+   "y": 64.4,
+   "goal": false,
+   "xg": 0.157,
+   "text": "Attempt blocked. Leandro Trossard (Belgium) right footed shot from the left side of the box is blocked. Assisted by Kevin De Bruyne."
+  },
+  {
+   "minute": "28",
+   "seconds": 1636.0,
+   "team": "Belgium",
+   "player": "Leandro Trossard",
+   "type": "Goal",
+   "x": 98.1,
+   "y": 47.4,
+   "goal": true,
+   "xg": 0.95,
+   "text": "Goal! New Zealand 0, Belgium 1. Leandro Trossard (Belgium) right footed shot from very close range to the bottom right corner following a corner."
+  },
+  {
+   "minute": "31",
+   "seconds": 1833.0,
+   "team": "Belgium",
+   "player": "Hans Vanaken",
+   "type": "Shot Blocked",
+   "x": 90.6,
+   "y": 50.5,
+   "goal": false,
+   "xg": 0.431,
+   "text": "Attempt blocked. Hans Vanaken (Belgium) right footed shot from the centre of the box is blocked. Assisted by Maxim De Cuyper."
+  },
+  {
+   "minute": "39",
+   "seconds": 2337.0,
+   "team": "Belgium",
+   "player": "Jérémy Doku",
+   "type": "Shot Off Target",
+   "x": 87.4,
+   "y": 72.8,
+   "goal": false,
+   "xg": 0.108,
+   "text": "Attempt missed. Jérémy Doku (Belgium) right footed shot from the left side of the box is high and wide to the right. Assisted by Maxim De Cuyper."
+  },
+  {
+   "minute": "42",
+   "seconds": 2466.0,
+   "team": "Belgium",
+   "player": "Kevin De Bruyne",
+   "type": "Shot Off Target",
+   "x": 89.2,
+   "y": 43.4,
+   "goal": false,
+   "xg": 0.309,
+   "text": "Attempt missed. Kevin De Bruyne (Belgium) right footed shot from the centre of the box is too high. Assisted by Leandro Trossard."
+  },
+  {
+   "minute": "43",
+   "seconds": 2532.0,
+   "team": "Belgium",
+   "player": "Charles De Ketelaere",
+   "type": "Shot On Target",
+   "x": 87.2,
+   "y": 56.7,
+   "goal": false,
+   "xg": 0.249,
+   "text": "Attempt saved. Charles De Ketelaere (Belgium) left footed shot from the centre of the box is saved in the centre of the goal by Max Crocombe (New Zealand). Assisted by Leandro Trossard."
+  },
+  {
+   "minute": "45",
+   "seconds": 2642.0,
+   "team": "Belgium",
+   "player": "Leandro Trossard",
+   "type": "Shot Blocked",
+   "x": 79.0,
+   "y": 31.1,
+   "goal": false,
+   "xg": 0.078,
+   "text": "Attempt blocked. Leandro Trossard (Belgium) right footed shot from outside the box is blocked."
+  },
+  {
+   "minute": "45'+2",
+   "seconds": 2700.0,
+   "team": "Belgium",
+   "player": "Hans Vanaken",
+   "type": "Shot Blocked",
+   "x": 84.6,
+   "y": 61.1,
+   "goal": false,
+   "xg": 0.165,
+   "text": "Attempt blocked. Hans Vanaken (Belgium) left footed shot from the centre of the box is blocked. Assisted by Leandro Trossard."
+  },
+  {
+   "minute": "45'+2",
+   "seconds": 2700.0,
+   "team": "Belgium",
+   "player": "Arthur Theate",
+   "type": "Shot Off Target",
+   "x": 93.3,
+   "y": 46.6,
+   "goal": false,
+   "xg": 0.375,
+   "text": "Attempt missed. Arthur Theate (Belgium) header from the centre of the box misses to the right. Assisted by Kevin De Bruyne with a cross following a corner."
+  },
+  {
+   "minute": "45'+3",
+   "seconds": 2700.0,
+   "team": "Belgium",
+   "player": "Timothy Castagne",
+   "type": "Shot Off Target",
+   "x": 86.5,
+   "y": 30.6,
+   "goal": false,
+   "xg": 0.126,
+   "text": "Attempt missed. Timothy Castagne (Belgium) right footed shot from the right side of the box is high and wide to the right. Assisted by Jérémy Doku with a cross."
+  },
+  {
+   "minute": "47",
+   "seconds": 2798.0,
+   "team": "Belgium",
+   "player": "Kevin De Bruyne",
+   "type": "Shot Off Target",
+   "x": 75.6,
+   "y": 45.6,
+   "goal": false,
+   "xg": 0.082,
+   "text": "Attempt missed. Kevin De Bruyne (Belgium) right footed shot from outside the box misses to the left. Assisted by Hans Vanaken."
+  },
+  {
+   "minute": "50",
+   "seconds": 2981.0,
+   "team": "Belgium",
+   "player": "Leandro Trossard",
+   "type": "Shot Blocked",
+   "x": 89.2,
+   "y": 59.8,
+   "goal": false,
+   "xg": 0.263,
+   "text": "Attempt blocked. Leandro Trossard (Belgium) right footed shot from the centre of the box is blocked. Assisted by Kevin De Bruyne."
+  },
+  {
+   "minute": "50",
+   "seconds": 2982.0,
+   "team": "Belgium",
+   "player": "Leandro Trossard",
+   "type": "Goal - Volley",
+   "x": 90.0,
+   "y": 56.5,
+   "goal": true,
+   "xg": 0.338,
+   "text": "Goal! New Zealand 0, Belgium 2. Leandro Trossard (Belgium) right footed shot from the centre of the box to the top left corner. Assisted by Hans Vanaken."
+  },
+  {
+   "minute": "54",
+   "seconds": 3240.0,
+   "team": "New Zealand",
+   "player": "Elijah Just",
+   "type": "Shot On Target",
+   "x": 81.7,
+   "y": 63.4,
+   "goal": false,
+   "xg": 0.118,
+   "text": "Attempt saved. Elijah Just (New Zealand) left footed shot from outside the box is saved in the bottom right corner by Thibaut Courtois (Belgium). Assisted by Chris Wood."
+  },
+  {
+   "minute": "55",
+   "seconds": 3244.0,
+   "team": "New Zealand",
+   "player": "Tim Payne",
+   "type": "Shot Off Target",
+   "x": 82.4,
+   "y": 26.6,
+   "goal": false,
+   "xg": 0.081,
+   "text": "Attempt missed. Tim Payne (New Zealand) right footed shot from outside the box misses to the left."
+  },
+  {
+   "minute": "59",
+   "seconds": 3491.0,
+   "team": "New Zealand",
+   "player": "Jesse Randall",
+   "type": "Shot Off Target",
+   "x": 81.8,
+   "y": 65.5,
+   "goal": false,
+   "xg": 0.11,
+   "text": "Attempt missed. Jesse Randall (New Zealand) left footed shot from outside the box is high and wide to the left following a corner."
+  },
+  {
+   "minute": "60",
+   "seconds": 3580.0,
+   "team": "Belgium",
+   "player": "Arthur Theate",
+   "type": "Shot Off Target",
+   "x": 94.2,
+   "y": 59.7,
+   "goal": false,
+   "xg": 0.248,
+   "text": "Attempt missed. Arthur Theate (Belgium) header from the centre of the box misses to the right. Assisted by Maxim De Cuyper with a cross following a corner."
+  },
+  {
+   "minute": "61",
+   "seconds": 3639.0,
+   "team": "Belgium",
+   "player": "Kevin De Bruyne",
+   "type": "Shot Blocked",
+   "x": 76.8,
+   "y": 62.1,
+   "goal": false,
+   "xg": 0.08,
+   "text": "Attempt blocked. Kevin De Bruyne (Belgium) right footed shot from outside the box is blocked. Assisted by Matias Fernandez-Pardo."
+  },
+  {
+   "minute": "62",
+   "seconds": 3674.0,
+   "team": "Belgium",
+   "player": "Arthur Theate",
+   "type": "Shot On Target",
+   "x": 87.3,
+   "y": 56.3,
+   "goal": false,
+   "xg": 0.255,
+   "text": "Attempt saved. Arthur Theate (Belgium) right footed shot from the centre of the box is saved in the centre of the goal by Max Crocombe (New Zealand)."
+  },
+  {
+   "minute": "62",
+   "seconds": 3694.0,
+   "team": "Belgium",
+   "player": "Kevin De Bruyne",
+   "type": "Shot Blocked",
+   "x": 80.9,
+   "y": 52.1,
+   "goal": false,
+   "xg": 0.14,
+   "text": "Attempt blocked. Kevin De Bruyne (Belgium) right footed shot from outside the box is blocked."
+  },
+  {
+   "minute": "65",
+   "seconds": 3864.0,
+   "team": "Belgium",
+   "player": "Matias Fernandez-Pardo",
+   "type": "Shot Off Target",
+   "x": 88.7,
+   "y": 57.3,
+   "goal": false,
+   "xg": 0.284,
+   "text": "Attempt missed. Matias Fernandez-Pardo (Belgium) left footed shot from the centre of the box is too high. Assisted by Leandro Trossard following a fast break."
+  },
+  {
+   "minute": "66",
+   "seconds": 3929.0,
+   "team": "Belgium",
+   "player": "Kevin De Bruyne",
+   "type": "Shot Blocked",
+   "x": 86.5,
+   "y": 43.3,
+   "goal": false,
+   "xg": 0.231,
+   "text": "Attempt blocked. Kevin De Bruyne (Belgium) left footed shot from the centre of the box is blocked. Assisted by Matias Fernandez-Pardo."
+  },
+  {
+   "minute": "66",
+   "seconds": 3958.0,
+   "team": "Belgium",
+   "player": "Kevin De Bruyne",
+   "type": "Goal",
+   "x": 80.6,
+   "y": 55.5,
+   "goal": true,
+   "xg": 0.131,
+   "text": "Goal! New Zealand 0, Belgium 3. Kevin De Bruyne (Belgium) left footed shot from outside the box to the bottom right corner."
+  },
+  {
+   "minute": "74",
+   "seconds": 4394.0,
+   "team": "Belgium",
+   "player": "Matias Fernandez-Pardo",
+   "type": "Shot Blocked",
+   "x": 85.8,
+   "y": 53.8,
+   "goal": false,
+   "xg": 0.231,
+   "text": "Attempt blocked. Matias Fernandez-Pardo (Belgium) right footed shot from the centre of the box is blocked. Assisted by Charles De Ketelaere."
+  },
+  {
+   "minute": "74",
+   "seconds": 4397.0,
+   "team": "Belgium",
+   "player": "Amadou Onana",
+   "type": "Shot Blocked",
+   "x": 74.1,
+   "y": 52.8,
+   "goal": false,
+   "xg": 0.072,
+   "text": "Attempt blocked. Amadou Onana (Belgium) left footed shot from outside the box is blocked. Assisted by Matias Fernandez-Pardo."
+  },
+  {
+   "minute": "76",
+   "seconds": 4521.0,
+   "team": "New Zealand",
+   "player": "Elijah Just",
+   "type": "Shot Blocked",
+   "x": 90.9,
+   "y": 37.0,
+   "goal": false,
+   "xg": 0.241,
+   "text": "Attempt blocked. Elijah Just (New Zealand) right footed shot from the centre of the box is blocked. Assisted by Chris Wood."
+  },
+  {
+   "minute": "76",
+   "seconds": 4553.0,
+   "team": "New Zealand",
+   "player": "Tyler Bindon",
+   "type": "Shot Off Target",
+   "x": 94.8,
+   "y": 40.3,
+   "goal": false,
+   "xg": 0.253,
+   "text": "Attempt missed. Tyler Bindon (New Zealand) header from the right side of the six yard box is too high. Assisted by Jesse Randall with a cross following a corner."
+  },
+  {
+   "minute": "78",
+   "seconds": 4679.0,
+   "team": "Belgium",
+   "player": "Maxim De Cuyper",
+   "type": "Shot Off Target",
+   "x": 77.1,
+   "y": 46.0,
+   "goal": false,
+   "xg": 0.095,
+   "text": "Attempt missed. Maxim De Cuyper (Belgium) left footed shot from outside the box is too high from a direct free kick."
+  },
+  {
+   "minute": "80",
+   "seconds": 4799.0,
+   "team": "Belgium",
+   "player": "Alexis Saelemaekers",
+   "type": "Shot Off Target",
+   "x": 91.5,
+   "y": 26.6,
+   "goal": false,
+   "xg": 0.117,
+   "text": "Attempt missed. Alexis Saelemaekers (Belgium) right footed shot from the right side of the box is too high. Assisted by Matias Fernandez-Pardo."
+  },
+  {
+   "minute": "84",
+   "seconds": 5006.0,
+   "team": "New Zealand",
+   "player": "Elijah Just",
+   "type": "Goal",
+   "x": 85.6,
+   "y": 48.4,
+   "goal": true,
+   "xg": 0.232,
+   "text": "Goal! New Zealand 1, Belgium 3. Elijah Just (New Zealand) left footed shot from the centre of the box to the high centre of the goal following a corner."
+  },
+  {
+   "minute": "86",
+   "seconds": 5120.0,
+   "team": "Belgium",
+   "player": "Romelu Lukaku",
+   "type": "Goal - Header",
+   "x": 95.8,
+   "y": 53.5,
+   "goal": true,
+   "xg": 0.501,
+   "text": "Goal! New Zealand 1, Belgium 4. Romelu Lukaku (Belgium) header from very close range to the centre of the goal. Assisted by Nicolas Raskin with a cross."
+  },
+  {
+   "minute": "90",
+   "seconds": 5358.0,
+   "team": "Belgium",
+   "player": "Amadou Onana",
+   "type": "Shot Off Target",
+   "x": 71.0,
+   "y": 49.7,
+   "goal": false,
+   "xg": 0.054,
+   "text": "Attempt missed. Amadou Onana (Belgium) right footed shot from outside the box misses to the left. Assisted by Hans Vanaken following a set piece situation."
+  },
+  {
+   "minute": "90'+2",
+   "seconds": 5400.0,
+   "team": "Belgium",
+   "player": "Maxim De Cuyper",
+   "type": "Shot On Target",
+   "x": 78.3,
+   "y": 58.8,
+   "goal": false,
+   "xg": 0.099,
+   "text": "Attempt saved. Maxim De Cuyper (Belgium) left footed shot from outside the box is saved in the top centre of the goal by Max Crocombe (New Zealand). Assisted by Hans Vanaken."
+  },
+  {
+   "minute": "90'+3",
+   "seconds": 5400.0,
+   "team": "Belgium",
+   "player": "Arthur Theate",
+   "type": "Shot Off Target",
+   "x": 71.3,
+   "y": 46.2,
+   "goal": false,
+   "xg": 0.055,
+   "text": "Attempt missed. Arthur Theate (Belgium) left footed shot from outside the box is high and wide to the left following a corner."
+  },
+  {
+   "minute": "90'+4",
+   "seconds": 5400.0,
+   "team": "Belgium",
+   "player": "Alexis Saelemaekers",
+   "type": "Goal",
+   "x": 84.4,
+   "y": 59.7,
+   "goal": true,
+   "xg": 0.17,
+   "text": "Goal! New Zealand 1, Belgium 5. Alexis Saelemaekers (Belgium) right footed shot from the centre of the box to the bottom left corner. Assisted by Romelu Lukaku following a fast break."
+  }
+ ],
+ "lineups": [
+  {
+   "team": "New Zealand",
+   "formation": "4-2-3-1",
+   "starters": [
+    {
+     "name": "Max Crocombe",
+     "jersey": "1",
+     "position": "G"
+    },
+    {
+     "name": "Tyler Bindon",
+     "jersey": "4",
+     "position": "CD-L"
+    },
+    {
+     "name": "Finn Surman",
+     "jersey": "16",
+     "position": "CD-R"
+    },
+    {
+     "name": "Liberato Cacace",
+     "jersey": "13",
+     "position": "LB"
+    },
+    {
+     "name": "Tim Payne",
+     "jersey": "2",
+     "position": "RB"
+    },
+    {
+     "name": "Ryan Thomas",
+     "jersey": "23",
+     "position": "AM"
+    },
+    {
+     "name": "Marko Stamenic",
+     "jersey": "8",
+     "position": "LM"
+    },
+    {
+     "name": "Joe Bell",
+     "jersey": "6",
+     "position": "RM"
+    },
+    {
+     "name": "Chris Wood",
+     "jersey": "9",
+     "position": "F"
+    },
+    {
+     "name": "Elijah Just",
+     "jersey": "11",
+     "position": "AM-L"
+    },
+    {
+     "name": "Sarpreet Singh",
+     "jersey": "10",
+     "position": "AM-R"
+    }
+   ],
+   "subs": [
+    {
+     "name": "Nando Pijnaker",
+     "jersey": "15",
+     "position": "SUB"
+    },
+    {
+     "name": "Logan Rogerson",
+     "jersey": "7",
+     "position": "SUB"
+    },
+    {
+     "name": "Callum McCowatt",
+     "jersey": "20",
+     "position": "SUB"
+    },
+    {
+     "name": "Alex Rufer",
+     "jersey": "14",
+     "position": "SUB"
+    },
+    {
+     "name": "Michael Boxall",
+     "jersey": "5",
+     "position": "SUB"
+    },
+    {
+     "name": "Callan Elliot",
+     "jersey": "24",
+     "position": "SUB"
+    },
+    {
+     "name": "Francis de Vries",
+     "jersey": "3",
+     "position": "SUB"
+    },
+    {
+     "name": "Kosta Barbarouses",
+     "jersey": "17",
+     "position": "SUB"
+    },
+    {
+     "name": "Jesse Randall",
+     "jersey": "21",
+     "position": "SUB"
+    },
+    {
+     "name": "Michael Woud",
+     "jersey": "22",
+     "position": "SUB"
+    },
+    {
+     "name": "Alex Paulsen",
+     "jersey": "12",
+     "position": "SUB"
+    },
+    {
+     "name": "Tommy Smith",
+     "jersey": "26",
+     "position": "SUB"
+    },
+    {
+     "name": "Lachlan Bayliss",
+     "jersey": "25",
+     "position": "SUB"
+    },
+    {
+     "name": "Ben Old",
+     "jersey": "19",
+     "position": "SUB"
+    },
+    {
+     "name": "Ben Waine",
+     "jersey": "18",
+     "position": "SUB"
+    }
+   ]
+  },
+  {
+   "team": "Belgium",
+   "formation": "4-2-3-1",
+   "starters": [
+    {
+     "name": "Thibaut Courtois",
+     "jersey": "1",
+     "position": "G"
+    },
+    {
+     "name": "Arthur Theate",
+     "jersey": "3",
+     "position": "CD-L"
+    },
+    {
+     "name": "Brandon Mechele",
+     "jersey": "4",
+     "position": "CD-R"
+    },
+    {
+     "name": "Maxim De Cuyper",
+     "jersey": "5",
+     "position": "LB"
+    },
+    {
+     "name": "Timothy Castagne",
+     "jersey": "21",
+     "position": "RB"
+    },
+    {
+     "name": "Kevin De Bruyne",
+     "jersey": "7",
+     "position": "AM"
+    },
+    {
+     "name": "Hans Vanaken",
+     "jersey": "20",
+     "position": "LM"
+    },
+    {
+     "name": "Youri Tielemans",
+     "jersey": "8",
+     "position": "RM"
+    },
+    {
+     "name": "Charles De Ketelaere",
+     "jersey": "17",
+     "position": "F"
+    },
+    {
+     "name": "Leandro Trossard",
+     "jersey": "10",
+     "position": "AM-L"
+    },
+    {
+     "name": "Jérémy Doku",
+     "jersey": "11",
+     "position": "AM-R"
+    }
+   ],
+   "subs": [
+    {
+     "name": "Diego Moreira",
+     "jersey": "19",
+     "position": "SUB"
+    },
+    {
+     "name": "Dodi Lukébakio",
+     "jersey": "14",
+     "position": "SUB"
+    },
+    {
+     "name": "Alexis Saelemaekers",
+     "jersey": "22",
+     "position": "SUB"
+    },
+    {
+     "name": "Mike Penders",
+     "jersey": "13",
+     "position": "SUB"
+    },
+    {
+     "name": "Thomas Meunier",
+     "jersey": "15",
+     "position": "SUB"
+    },
+    {
+     "name": "Senne Lammens",
+     "jersey": "12",
+     "position": "SUB"
+    },
+    {
+     "name": "Koni De Winter",
+     "jersey": "16",
+     "position": "SUB"
+    },
+    {
+     "name": "Matias Fernandez-Pardo",
+     "jersey": "26",
+     "position": "SUB"
+    },
+    {
+     "name": "Nicolas Raskin",
+     "jersey": "23",
+     "position": "SUB"
+    },
+    {
+     "name": "Axel Witsel",
+     "jersey": "6",
+     "position": "SUB"
+    },
+    {
+     "name": "Romelu Lukaku",
+     "jersey": "9",
+     "position": "SUB"
+    },
+    {
+     "name": "Joaquin Seys",
+     "jersey": "18",
+     "position": "SUB"
+    },
+    {
+     "name": "Amadou Onana",
+     "jersey": "24",
+     "position": "SUB"
+    }
+   ]
+  }
+ ],
+ "attendance": 52497,
+ "venue": "BC Place, Vancouver, Canada"
+}

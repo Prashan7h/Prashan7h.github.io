@@ -1672,12 +1672,32 @@
    "team2": "Iran",
    "group": "Group G",
    "ground": "Seattle",
-   "score": null,
-   "goals1": [],
-   "goals2": [],
+   "score": {
+    "ft": [
+     1,
+     1
+    ],
+    "ht": [
+     1,
+     1
+    ]
+   },
+   "goals1": [
+    {
+     "name": "Mahmoud Saber",
+     "minute": "5"
+    }
+   ],
+   "goals2": [
+    {
+     "name": "Ramin Rezaeian",
+     "minute": "14"
+    }
+   ],
    "espn_id": "760476",
-   "status": "live",
+   "status": "finished",
    "utc_date": "2026-06-27T03:00Z",
+   "attendance": 66925,
    "venue": "Lumen Field",
    "slug": "2026-06-26-egypt-vs-iran"
   },
@@ -1690,12 +1710,48 @@
    "team2": "Belgium",
    "group": "Group G",
    "ground": "Vancouver",
-   "score": null,
-   "goals1": [],
-   "goals2": [],
+   "score": {
+    "ft": [
+     1,
+     5
+    ],
+    "ht": [
+     0,
+     1
+    ]
+   },
+   "goals1": [
+    {
+     "name": "Elijah Just",
+     "minute": "84"
+    }
+   ],
+   "goals2": [
+    {
+     "name": "Leandro Trossard",
+     "minute": "28"
+    },
+    {
+     "name": "Leandro Trossard",
+     "minute": "50"
+    },
+    {
+     "name": "Kevin De Bruyne",
+     "minute": "66"
+    },
+    {
+     "name": "Romelu Lukaku",
+     "minute": "86"
+    },
+    {
+     "name": "Alexis Saelemaekers",
+     "minute": "90+4"
+    }
+   ],
    "espn_id": "760477",
-   "status": "live",
+   "status": "finished",
    "utc_date": "2026-06-27T03:00Z",
+   "attendance": 52497,
    "venue": "BC Place",
    "slug": "2026-06-26-new-zealand-vs-belgium"
   },
