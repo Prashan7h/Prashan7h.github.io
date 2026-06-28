@@ -2442,7 +2442,7 @@
    "goals1": [],
    "goals2": [],
    "espn_id": "760484",
-   "status": "scheduled",
+   "status": "live",
    "utc_date": "2026-06-28T02:00Z",
    "venue": "GEHA Field at Arrowhead Stadium",
    "slug": "2026-06-27-algeria-vs-austria"
@@ -2460,7 +2460,7 @@
    "goals1": [],
    "goals2": [],
    "espn_id": "760483",
-   "status": "scheduled",
+   "status": "live",
    "utc_date": "2026-06-28T02:00Z",
    "venue": "AT&T Stadium",
    "slug": "2026-06-27-jordan-vs-argentina"
@@ -2635,12 +2635,22 @@
    "team2": "Portugal",
    "group": "Group K",
    "ground": "Miami (Miami Gardens)",
-   "score": null,
+   "score": {
+    "ft": [
+     0,
+     0
+    ],
+    "ht": [
+     0,
+     0
+    ]
+   },
    "goals1": [],
    "goals2": [],
    "espn_id": "760481",
-   "status": "scheduled",
+   "status": "finished",
    "utc_date": "2026-06-27T23:30Z",
+   "attendance": 64478,
    "venue": "Hard Rock Stadium",
    "slug": "2026-06-27-colombia-vs-portugal"
   },
@@ -2653,11 +2663,39 @@
    "team2": "Uzbekistan",
    "group": "Group K",
    "ground": "Atlanta",
-   "score": null,
-   "goals1": [],
-   "goals2": [],
+   "score": {
+    "ft": [
+     3,
+     1
+    ],
+    "ht": [
+     0,
+     1
+    ]
+   },
+   "goals1": [
+    {
+     "name": "Yoane Wissa",
+     "minute": "68",
+     "penalty": true
+    },
+    {
+     "name": "Fiston Mayele",
+     "minute": "78"
+    },
+    {
+     "name": "Yoane Wissa",
+     "minute": "90+1"
+    }
+   ],
+   "goals2": [
+    {
+     "name": "Eldor Shomurodov",
+     "minute": "10"
+    }
+   ],
    "espn_id": null,
-   "status": "scheduled",
+   "status": "finished",
    "slug": "2026-06-27-dr-congo-vs-uzbekistan"
   },
   {
@@ -2818,12 +2856,31 @@
    "team2": "England",
    "group": "Group L",
    "ground": "New York/New Jersey (East Rutherford)",
-   "score": null,
+   "score": {
+    "ft": [
+     0,
+     2
+    ],
+    "ht": [
+     0,
+     0
+    ]
+   },
    "goals1": [],
-   "goals2": [],
+   "goals2": [
+    {
+     "name": "Jude Bellingham",
+     "minute": "62"
+    },
+    {
+     "name": "Harry Kane",
+     "minute": "67"
+    }
+   ],
    "espn_id": "760485",
-   "status": "scheduled",
+   "status": "finished",
    "utc_date": "2026-06-27T21:00Z",
+   "attendance": 80663,
    "venue": "MetLife Stadium",
    "slug": "2026-06-27-panama-vs-england"
   },
@@ -2836,12 +2893,36 @@
    "team2": "Ghana",
    "group": "Group L",
    "ground": "Philadelphia",
-   "score": null,
-   "goals1": [],
-   "goals2": [],
+   "score": {
+    "ft": [
+     2,
+     1
+    ],
+    "ht": [
+     1,
+     0
+    ]
+   },
+   "goals1": [
+    {
+     "name": "Petar Sucic",
+     "minute": "31"
+    },
+    {
+     "name": "Nikola Vlasic",
+     "minute": "83"
+    }
+   ],
+   "goals2": [
+    {
+     "name": "Derrick Luckassen",
+     "minute": "73"
+    }
+   ],
    "espn_id": "760480",
-   "status": "scheduled",
+   "status": "finished",
    "utc_date": "2026-06-27T21:00Z",
+   "attendance": 68324,
    "venue": "Lincoln Financial Field",
    "slug": "2026-06-27-croatia-vs-ghana"
   },

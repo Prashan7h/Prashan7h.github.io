@@ -1,0 +1,998 @@
+{
+ "teams": [
+  {
+   "name": "Panama",
+   "stats": {
+    "possessionPct": "32.9",
+    "totalShots": "13",
+    "shotsOnTarget": "2",
+    "wonCorners": "3",
+    "foulsCommitted": "16",
+    "offsides": "4",
+    "saves": "4",
+    "yellowCards": "2",
+    "redCards": "0"
+   }
+  },
+  {
+   "name": "England",
+   "stats": {
+    "possessionPct": "67.1",
+    "totalShots": "17",
+    "shotsOnTarget": "6",
+    "wonCorners": "7",
+    "foulsCommitted": "13",
+    "offsides": "4",
+    "saves": "2",
+    "yellowCards": "1",
+    "redCards": "0"
+   }
+  }
+ ],
+ "events": [
+  {
+   "type": "Kickoff",
+   "minute": "",
+   "team": null,
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "23'",
+   "team": "England",
+   "text": "Delay in match for a drinks break.",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "23'",
+   "team": "Panama",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "25'",
+   "team": "England",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "25'",
+   "team": "Panama",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Halftime",
+   "minute": "45'+4'",
+   "team": null,
+   "text": "First Half ends, Panama 0, England 0.",
+   "players": []
+  },
+  {
+   "type": "Substitution",
+   "minute": "45'",
+   "team": "Panama",
+   "text": "Substitution, Panama. José Fajardo replaces Tomás Rodríguez.",
+   "players": [
+    "José Fajardo",
+    "Tomás Rodríguez"
+   ]
+  },
+  {
+   "type": "Start 2nd Half",
+   "minute": "45'",
+   "team": null,
+   "text": "Second Half begins Panama 0, England 0.",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "49'",
+   "team": "Panama",
+   "text": "Delay in match because of an injury Cristian Martínez (Panama).",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "49'",
+   "team": "England",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "50'",
+   "team": "Panama",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "50'",
+   "team": "England",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Yellow Card",
+   "minute": "53'",
+   "team": "Panama",
+   "text": "José Fajardo (Panama) is shown the yellow card for a bad foul.",
+   "players": [
+    "José Fajardo"
+   ]
+  },
+  {
+   "type": "Start Delay",
+   "minute": "54'",
+   "team": "England",
+   "text": "Delay in match because of an injury Jarell Quansah (England).",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "54'",
+   "team": "Panama",
+   "text": "Delay in match because of an injury José Luis Rodríguez (Panama).",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "55'",
+   "team": "England",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "55'",
+   "team": "Panama",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "59'",
+   "team": "Panama",
+   "text": "Delay in match because of an injury José Luis Rodríguez (Panama).",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "59'",
+   "team": "England",
+   "text": "Delay in match because of an injury Jarell Quansah (England).",
+   "players": []
+  },
+  {
+   "type": "Yellow Card",
+   "minute": "60'",
+   "team": "England",
+   "text": "Jarell Quansah (England) is shown the yellow card for a bad foul.",
+   "players": [
+    "Jarell Quansah"
+   ]
+  },
+  {
+   "type": "End Delay",
+   "minute": "62'",
+   "team": "England",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "62'",
+   "team": "Panama",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Goal - Volley",
+   "minute": "62'",
+   "team": "England",
+   "text": "Goal! Panama 0, England 1. Jude Bellingham (England) left footed shot from the centre of the box to the bottom left corner. Assisted by Bukayo Saka with a cross following a corner.",
+   "players": [
+    "Jude Bellingham",
+    "Bukayo Saka"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "63'",
+   "team": "England",
+   "text": "Substitution, England. Djed Spence replaces Jarell Quansah because of an injury.",
+   "players": [
+    "Djed Spence",
+    "Jarell Quansah"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "63'",
+   "team": "England",
+   "text": "Substitution, England. Noni Madueke replaces Bukayo Saka.",
+   "players": [
+    "Noni Madueke",
+    "Bukayo Saka"
+   ]
+  },
+  {
+   "type": "Goal - Header",
+   "minute": "67'",
+   "team": "England",
+   "text": "Goal! Panama 0, England 2. Harry Kane (England) header from the centre of the box to the top left corner. Assisted by Jude Bellingham with a cross.",
+   "players": [
+    "Harry Kane",
+    "Jude Bellingham"
+   ]
+  },
+  {
+   "type": "Start Delay",
+   "minute": "69'",
+   "team": "England",
+   "text": "Delay in match for a drinks break.",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "69'",
+   "team": "Panama",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Substitution",
+   "minute": "71'",
+   "team": "England",
+   "text": "Substitution, England. Eberechi Eze replaces Jude Bellingham.",
+   "players": [
+    "Eberechi Eze",
+    "Jude Bellingham"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "71'",
+   "team": "Panama",
+   "text": "Substitution, Panama. Ismael Díaz replaces Yoel Bárcenas.",
+   "players": [
+    "Ismael Díaz",
+    "Édgar Yoel Bárcenas"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "71'",
+   "team": "Panama",
+   "text": "Substitution, Panama. Azarías Londoño replaces José Luis Rodríguez.",
+   "players": [
+    "Azarias Londoño",
+    "José Luis Rodríguez"
+   ]
+  },
+  {
+   "type": "End Delay",
+   "minute": "72'",
+   "team": "England",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "72'",
+   "team": "Panama",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Yellow Card",
+   "minute": "84'",
+   "team": "Panama",
+   "text": "Andrés Andrade (Panama) is shown the yellow card for a bad foul.",
+   "players": [
+    "Andrés Andrade"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "84'",
+   "team": "England",
+   "text": "Substitution, England. Jordan Henderson replaces Elliot Anderson.",
+   "players": [
+    "Jordan Henderson",
+    "Elliot Anderson"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "84'",
+   "team": "England",
+   "text": "Substitution, England. Ollie Watkins replaces Harry Kane.",
+   "players": [
+    "Ollie Watkins",
+    "Harry Kane"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "88'",
+   "team": "Panama",
+   "text": "Substitution, Panama. Alberto Quintero replaces Carlos Harvey.",
+   "players": [
+    "Alberto Quintero",
+    "Carlos Harvey"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "88'",
+   "team": "Panama",
+   "text": "Substitution, Panama. Éric Davis replaces Jorge Gutiérrez.",
+   "players": [
+    "Éric Davis",
+    "Jorge Gutiérrez"
+   ]
+  },
+  {
+   "type": "End Regular Time",
+   "minute": "90'+6'",
+   "team": null,
+   "text": "Second Half ends, Panama 0, England 2.",
+   "players": []
+  }
+ ],
+ "shots": [
+  {
+   "minute": "1",
+   "seconds": 10.0,
+   "team": "Panama",
+   "player": "Tomás Rodríguez",
+   "type": "Shot On Target",
+   "x": 76.8,
+   "y": 60.0,
+   "goal": false,
+   "xg": 0.084,
+   "text": "Attempt saved. Tomás Rodríguez (Panama) right footed shot from outside the box is saved in the centre of the goal by Jordan Pickford (England)."
+  },
+  {
+   "minute": "8",
+   "seconds": 431.0,
+   "team": "England",
+   "player": "Marcus Rashford",
+   "type": "Shot On Target",
+   "x": 79.1,
+   "y": 65.2,
+   "goal": false,
+   "xg": 0.089,
+   "text": "Attempt saved. Marcus Rashford (England) right footed shot from outside the box is saved in the bottom left corner by Orlando Mosquera (Panama). Assisted by Jude Bellingham."
+  },
+  {
+   "minute": "8",
+   "seconds": 468.0,
+   "team": "England",
+   "player": "Bukayo Saka",
+   "type": "Shot Off Target",
+   "x": 89.2,
+   "y": 39.7,
+   "goal": false,
+   "xg": 0.255,
+   "text": "Attempt missed. Bukayo Saka (England) right footed shot from the centre of the box is high and wide to the right following a corner."
+  },
+  {
+   "minute": "15",
+   "seconds": 855.0,
+   "team": "England",
+   "player": "Bukayo Saka",
+   "type": "Shot Off Target",
+   "x": 89.2,
+   "y": 28.3,
+   "goal": false,
+   "xg": 0.124,
+   "text": "Attempt missed. Bukayo Saka (England) left footed shot from the right side of the box is close, but misses to the right. Assisted by Jude Bellingham."
+  },
+  {
+   "minute": "22",
+   "seconds": 1266.0,
+   "team": "England",
+   "player": "Jude Bellingham",
+   "type": "Shot Off Target",
+   "x": 67.3,
+   "y": 19.2,
+   "goal": false,
+   "xg": 0.022,
+   "text": "Attempt missed. Jude Bellingham (England) right footed shot from long range on the right is high and wide to the right."
+  },
+  {
+   "minute": "22",
+   "seconds": 1297.0,
+   "team": "England",
+   "player": "Bukayo Saka",
+   "type": "Shot Blocked",
+   "x": 85.0,
+   "y": 47.4,
+   "goal": false,
+   "xg": 0.215,
+   "text": "Attempt blocked. Bukayo Saka (England) left footed shot from the centre of the box is blocked. Assisted by Morgan Rogers."
+  },
+  {
+   "minute": "26",
+   "seconds": 1557.0,
+   "team": "Panama",
+   "player": "José Luis Rodríguez",
+   "type": "Shot On Target",
+   "x": 87.0,
+   "y": 69.9,
+   "goal": false,
+   "xg": 0.126,
+   "text": "Attempt saved. José Luis Rodríguez (Panama) left footed shot from the left side of the box is saved in the bottom left corner by Jordan Pickford (England). Assisted by Tomás Rodríguez."
+  },
+  {
+   "minute": "28",
+   "seconds": 1633.0,
+   "team": "Panama",
+   "player": "Carlos Harvey",
+   "type": "Shot Off Target",
+   "x": 95.0,
+   "y": 33.0,
+   "goal": false,
+   "xg": 0.184,
+   "text": "Attempt missed. Carlos Harvey (Panama) right footed shot from a difficult angle on the right is close, but misses to the right. Assisted by Amir Murillo."
+  },
+  {
+   "minute": "33",
+   "seconds": 1967.0,
+   "team": "England",
+   "player": "Nico O'Reilly",
+   "type": "Shot Off Target",
+   "x": 91.1,
+   "y": 54.4,
+   "goal": false,
+   "xg": 0.274,
+   "text": "Attempt missed. Nico O'Reilly (England) header from the centre of the box is close, but misses to the left. Assisted by Marc Guéhi with a through ball."
+  },
+  {
+   "minute": "35",
+   "seconds": 2056.0,
+   "team": "England",
+   "player": "Elliot Anderson",
+   "type": "Shot On Target",
+   "x": 72.5,
+   "y": 50.9,
+   "goal": false,
+   "xg": 0.062,
+   "text": "Attempt saved. Elliot Anderson (England) right footed shot from outside the box is saved in the centre of the goal by Orlando Mosquera (Panama). Assisted by Nico O'Reilly."
+  },
+  {
+   "minute": "38",
+   "seconds": 2236.0,
+   "team": "England",
+   "player": "Marcus Rashford",
+   "type": "Shot Off Target",
+   "x": 95.4,
+   "y": 58.9,
+   "goal": false,
+   "xg": 0.284,
+   "text": "Attempt missed. Marcus Rashford (England) header from the left side of the six yard box is just a bit too high."
+  },
+  {
+   "minute": "45'+3",
+   "seconds": 2700.0,
+   "team": "England",
+   "player": "Marcus Rashford",
+   "type": "Shot Off Target",
+   "x": 71.8,
+   "y": 48.7,
+   "goal": false,
+   "xg": 0.058,
+   "text": "Attempt missed. Marcus Rashford (England) right footed shot from outside the box is close, but misses to the right from a direct free kick."
+  },
+  {
+   "minute": "55",
+   "seconds": 3275.0,
+   "team": "England",
+   "player": "Marcus Rashford",
+   "type": "Shot Off Target",
+   "x": 94.9,
+   "y": 69.5,
+   "goal": false,
+   "xg": 0.151,
+   "text": "Attempt missed. Marcus Rashford (England) left footed shot from a difficult angle on the left is close, but misses to the left. Assisted by Nico O'Reilly following a fast break."
+  },
+  {
+   "minute": "56",
+   "seconds": 3333.0,
+   "team": "Panama",
+   "player": "José Luis Rodríguez",
+   "type": "Shot Off Target",
+   "x": 79.0,
+   "y": 66.0,
+   "goal": false,
+   "xg": 0.086,
+   "text": "Attempt missed. José Luis Rodríguez (Panama) right footed shot from outside the box is close, but misses the top right corner. Assisted by Jorge Gutiérrez."
+  },
+  {
+   "minute": "57",
+   "seconds": 3417.0,
+   "team": "England",
+   "player": "Harry Kane",
+   "type": "Shot On Target",
+   "x": 87.0,
+   "y": 37.2,
+   "goal": false,
+   "xg": 0.186,
+   "text": "Attempt saved. Harry Kane (England) right footed shot from the centre of the box is saved in the top centre of the goal by Orlando Mosquera (Panama). Assisted by Jude Bellingham with a through ball."
+  },
+  {
+   "minute": "62",
+   "seconds": 3686.0,
+   "team": "England",
+   "player": "Jude Bellingham",
+   "type": "Goal - Volley",
+   "x": 92.3,
+   "y": 52.6,
+   "goal": true,
+   "xg": 0.521,
+   "text": "Goal! Panama 0, England 1. Jude Bellingham (England) left footed shot from the centre of the box to the bottom left corner. Assisted by Bukayo Saka with a cross following a corner."
+  },
+  {
+   "minute": "64",
+   "seconds": 3833.0,
+   "team": "Panama",
+   "player": "Amir Murillo",
+   "type": "Shot Off Target",
+   "x": 87.7,
+   "y": 37.6,
+   "goal": false,
+   "xg": 0.201,
+   "text": "Attempt missed. Amir Murillo (Panama) right footed shot from the centre of the box misses to the left. Assisted by Carlos Harvey."
+  },
+  {
+   "minute": "66",
+   "seconds": 3916.0,
+   "team": "England",
+   "player": "Harry Kane",
+   "type": "Shot Blocked",
+   "x": 86.2,
+   "y": 61.2,
+   "goal": false,
+   "xg": 0.189,
+   "text": "Attempt blocked. Harry Kane (England) left footed shot from the centre of the box is blocked. Assisted by Marcus Rashford."
+  },
+  {
+   "minute": "67",
+   "seconds": 3997.0,
+   "team": "England",
+   "player": "Harry Kane",
+   "type": "Goal - Header",
+   "x": 93.7,
+   "y": 47.8,
+   "goal": true,
+   "xg": 0.411,
+   "text": "Goal! Panama 0, England 2. Harry Kane (England) header from the centre of the box to the top left corner. Assisted by Jude Bellingham with a cross."
+  },
+  {
+   "minute": "74",
+   "seconds": 4408.0,
+   "team": "Panama",
+   "player": "Azarías Londoño",
+   "type": "Shot Blocked",
+   "x": 81.5,
+   "y": 22.9,
+   "goal": false,
+   "xg": 0.065,
+   "text": "Attempt missed. Azarías Londoño (Panama) left footed shot from outside the box is close, but misses to the right."
+  },
+  {
+   "minute": "74",
+   "seconds": 4420.0,
+   "team": "Panama",
+   "player": "Ismael Díaz",
+   "type": "Shot Off Target",
+   "x": 91.6,
+   "y": 55.8,
+   "goal": false,
+   "xg": 0.272,
+   "text": "Attempt missed. Ismael Díaz (Panama) header from the centre of the box is too high. Assisted by Fidel Escobar with a cross."
+  },
+  {
+   "minute": "75",
+   "seconds": 4488.0,
+   "team": "Panama",
+   "player": "Ismael Díaz",
+   "type": "Shot Blocked",
+   "x": 92.9,
+   "y": 33.8,
+   "goal": false,
+   "xg": 0.2,
+   "text": "Attempt blocked. Ismael Díaz (Panama) right footed shot from the right side of the box is blocked."
+  },
+  {
+   "minute": "76",
+   "seconds": 4538.0,
+   "team": "Panama",
+   "player": "Carlos Harvey",
+   "type": "Shot Blocked",
+   "x": 90.3,
+   "y": 53.2,
+   "goal": false,
+   "xg": 0.258,
+   "text": "Attempt blocked. Carlos Harvey (Panama) header from the centre of the box is blocked. Assisted by Amir Murillo."
+  },
+  {
+   "minute": "76",
+   "seconds": 4538.0,
+   "team": "England",
+   "player": null,
+   "type": "Shot Blocked",
+   "x": 4.23,
+   "y": 49.28,
+   "goal": false,
+   "xg": 0.0,
+   "text": "Djed Spence (England) Shot Blocked at 76'"
+  },
+  {
+   "minute": "76",
+   "seconds": 4544.0,
+   "team": "Panama",
+   "player": "Amir Murillo",
+   "type": "Shot Blocked",
+   "x": 92.7,
+   "y": 41.8,
+   "goal": false,
+   "xg": 0.397,
+   "text": "Attempt blocked. Amir Murillo (Panama) right footed shot from the centre of the box is blocked. Assisted by Cristian Martínez with a cross."
+  },
+  {
+   "minute": "76",
+   "seconds": 4548.0,
+   "team": "Panama",
+   "player": "Ismael Díaz",
+   "type": "Shot Off Target",
+   "x": 84.2,
+   "y": 46.4,
+   "goal": false,
+   "xg": 0.194,
+   "text": "Attempt missed. Ismael Díaz (Panama) right footed shot from the centre of the box is too high. Assisted by Cristian Martínez following a corner."
+  },
+  {
+   "minute": "87",
+   "seconds": 5218.0,
+   "team": "England",
+   "player": "Marcus Rashford",
+   "type": "Shot Off Target",
+   "x": 93.4,
+   "y": 64.8,
+   "goal": false,
+   "xg": 0.226,
+   "text": "Attempt missed. Marcus Rashford (England) right footed shot from the left side of the box misses to the left. Assisted by Noni Madueke with a cross."
+  },
+  {
+   "minute": "90",
+   "seconds": 5348.0,
+   "team": "Panama",
+   "player": "Ismael Díaz",
+   "type": "Shot Off Target",
+   "x": 71.5,
+   "y": 52.6,
+   "goal": false,
+   "xg": 0.057,
+   "text": "Attempt missed. Ismael Díaz (Panama) right footed shot from outside the box is close, but misses to the right. Assisted by Cristian Martínez."
+  },
+  {
+   "minute": "90'+1",
+   "seconds": 5400.0,
+   "team": "England",
+   "player": "Noni Madueke",
+   "type": "Shot On Target",
+   "x": 92.0,
+   "y": 42.1,
+   "goal": false,
+   "xg": 0.382,
+   "text": "Attempt saved. Noni Madueke (England) right footed shot from the centre of the box is saved in the centre of the goal by Orlando Mosquera (Panama)."
+  },
+  {
+   "minute": "90'+4",
+   "seconds": 5400.0,
+   "team": "Panama",
+   "player": "Éric Davis",
+   "type": "Shot Off Target",
+   "x": 99.5,
+   "y": 0.5,
+   "goal": false,
+   "xg": 0.026,
+   "text": "Attempt missed. Éric Davis (Panama) left footed shot from a difficult angle and long range on the right is close, but misses to the right following a corner."
+  },
+  {
+   "minute": "90'+4",
+   "seconds": 5400.0,
+   "team": "England",
+   "player": "Eberechi Eze",
+   "type": "Shot Blocked",
+   "x": 73.7,
+   "y": 49.9,
+   "goal": false,
+   "xg": 0.07,
+   "text": "Attempt blocked. Eberechi Eze (England) left footed shot from outside the box is blocked. Assisted by Noni Madueke."
+  }
+ ],
+ "lineups": [
+  {
+   "team": "Panama",
+   "formation": "5-4-1",
+   "starters": [
+    {
+     "name": "Orlando Mosquera",
+     "jersey": "22",
+     "position": "G"
+    },
+    {
+     "name": "José Córdoba",
+     "jersey": "3",
+     "position": "CD"
+    },
+    {
+     "name": "Andrés Andrade",
+     "jersey": "16",
+     "position": "CD-L"
+    },
+    {
+     "name": "Fidel Escobar",
+     "jersey": "4",
+     "position": "CD-R"
+    },
+    {
+     "name": "Jorge Gutiérrez",
+     "jersey": "26",
+     "position": "LB"
+    },
+    {
+     "name": "Amir Murillo",
+     "jersey": "23",
+     "position": "RB"
+    },
+    {
+     "name": "Édgar Yoel Bárcenas",
+     "jersey": "11",
+     "position": "CM-L"
+    },
+    {
+     "name": "Carlos Harvey",
+     "jersey": "14",
+     "position": "CM-R"
+    },
+    {
+     "name": "José Luis Rodríguez",
+     "jersey": "7",
+     "position": "LM"
+    },
+    {
+     "name": "Cristian Martínez",
+     "jersey": "6",
+     "position": "RM"
+    },
+    {
+     "name": "Tomás Rodríguez",
+     "jersey": "9",
+     "position": "F"
+    }
+   ],
+   "subs": [
+    {
+     "name": "Ismael Díaz",
+     "jersey": "10",
+     "position": "SUB"
+    },
+    {
+     "name": "Aníbal Godoy",
+     "jersey": "20",
+     "position": "SUB"
+    },
+    {
+     "name": "Roderick Miller",
+     "jersey": "25",
+     "position": "SUB"
+    },
+    {
+     "name": "Alberto Quintero",
+     "jersey": "19",
+     "position": "SUB"
+    },
+    {
+     "name": "César Samudio",
+     "jersey": "12",
+     "position": "SUB"
+    },
+    {
+     "name": "Jiovany Ramos",
+     "jersey": "13",
+     "position": "SUB"
+    },
+    {
+     "name": "Adalberto Carrasquilla",
+     "jersey": "8",
+     "position": "SUB"
+    },
+    {
+     "name": "Cecilio Waterman",
+     "jersey": "18",
+     "position": "SUB"
+    },
+    {
+     "name": "Luis Mejía",
+     "jersey": "1",
+     "position": "SUB"
+    },
+    {
+     "name": "Éric Davis",
+     "jersey": "15",
+     "position": "SUB"
+    },
+    {
+     "name": "Azarias Londoño",
+     "jersey": "24",
+     "position": "SUB"
+    },
+    {
+     "name": "Edgardo Fariña",
+     "jersey": "5",
+     "position": "SUB"
+    },
+    {
+     "name": "José Fajardo",
+     "jersey": "17",
+     "position": "SUB"
+    },
+    {
+     "name": "César Blackman",
+     "jersey": "2",
+     "position": "SUB"
+    },
+    {
+     "name": "César Yanis",
+     "jersey": "21",
+     "position": "SUB"
+    }
+   ]
+  },
+  {
+   "team": "England",
+   "formation": "4-1-4-1",
+   "starters": [
+    {
+     "name": "Jordan Pickford",
+     "jersey": "1",
+     "position": "G"
+    },
+    {
+     "name": "Marc Guéhi",
+     "jersey": "6",
+     "position": "CD-L"
+    },
+    {
+     "name": "Ezri Konsa",
+     "jersey": "2",
+     "position": "CD-R"
+    },
+    {
+     "name": "Elliot Anderson",
+     "jersey": "8",
+     "position": "DM"
+    },
+    {
+     "name": "Nico O'Reilly",
+     "jersey": "3",
+     "position": "LB"
+    },
+    {
+     "name": "Jarell Quansah",
+     "jersey": "26",
+     "position": "RB"
+    },
+    {
+     "name": "Jude Bellingham",
+     "jersey": "10",
+     "position": "CM-L"
+    },
+    {
+     "name": "Morgan Rogers",
+     "jersey": "17",
+     "position": "CM-R"
+    },
+    {
+     "name": "Marcus Rashford",
+     "jersey": "11",
+     "position": "LM"
+    },
+    {
+     "name": "Bukayo Saka",
+     "jersey": "7",
+     "position": "RM"
+    },
+    {
+     "name": "Harry Kane",
+     "jersey": "9",
+     "position": "F"
+    }
+   ],
+   "subs": [
+    {
+     "name": "John Stones",
+     "jersey": "5",
+     "position": "SUB"
+    },
+    {
+     "name": "Kobbie Mainoo",
+     "jersey": "16",
+     "position": "SUB"
+    },
+    {
+     "name": "Dean Henderson",
+     "jersey": "13",
+     "position": "SUB"
+    },
+    {
+     "name": "Dan Burn",
+     "jersey": "15",
+     "position": "SUB"
+    },
+    {
+     "name": "Noni Madueke",
+     "jersey": "20",
+     "position": "SUB"
+    },
+    {
+     "name": "Anthony Gordon",
+     "jersey": "18",
+     "position": "SUB"
+    },
+    {
+     "name": "Declan Rice",
+     "jersey": "4",
+     "position": "SUB"
+    },
+    {
+     "name": "Djed Spence",
+     "jersey": "25",
+     "position": "SUB"
+    },
+    {
+     "name": "James Trafford",
+     "jersey": "23",
+     "position": "SUB"
+    },
+    {
+     "name": "Ivan Toney",
+     "jersey": "22",
+     "position": "SUB"
+    },
+    {
+     "name": "Eberechi Eze",
+     "jersey": "21",
+     "position": "SUB"
+    },
+    {
+     "name": "Trevoh Chalobah",
+     "jersey": "12",
+     "position": "SUB"
+    },
+    {
+     "name": "Ollie Watkins",
+     "jersey": "19",
+     "position": "SUB"
+    },
+    {
+     "name": "Jordan Henderson",
+     "jersey": "14",
+     "position": "SUB"
+    }
+   ]
+  }
+ ],
+ "attendance": 80663,
+ "venue": "MetLife Stadium, East Rutherford, New Jersey, USA"
+}

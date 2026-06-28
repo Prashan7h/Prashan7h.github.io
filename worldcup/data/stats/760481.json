@@ -1,0 +1,995 @@
+{
+ "teams": [
+  {
+   "name": "Colombia",
+   "stats": {
+    "possessionPct": "54.6",
+    "totalShots": "24",
+    "shotsOnTarget": "6",
+    "wonCorners": "5",
+    "foulsCommitted": "12",
+    "offsides": "3",
+    "saves": "2",
+    "yellowCards": "1",
+    "redCards": "0"
+   }
+  },
+  {
+   "name": "Portugal",
+   "stats": {
+    "possessionPct": "45.4",
+    "totalShots": "13",
+    "shotsOnTarget": "2",
+    "wonCorners": "2",
+    "foulsCommitted": "6",
+    "offsides": "2",
+    "saves": "6",
+    "yellowCards": "0",
+    "redCards": "0"
+   }
+  }
+ ],
+ "events": [
+  {
+   "type": "Kickoff",
+   "minute": "",
+   "team": null,
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "24'",
+   "team": "Portugal",
+   "text": "Delay in match for a drinks break.",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "24'",
+   "team": "Colombia",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "27'",
+   "team": "Portugal",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "27'",
+   "team": "Colombia",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "31'",
+   "team": "Colombia",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "31'",
+   "team": "Colombia",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Halftime",
+   "minute": "45'+4'",
+   "team": null,
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Substitution",
+   "minute": "45'",
+   "team": "Portugal",
+   "text": "Substitution, Portugal. Diogo Dalot replaces João Cancelo.",
+   "players": [
+    "Diogo Dalot",
+    "João Cancelo"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "45'",
+   "team": "Portugal",
+   "text": "Substitution, Portugal. João Neves replaces Rúben Neves.",
+   "players": [
+    "João Neves",
+    "Rúben Neves"
+   ]
+  },
+  {
+   "type": "Start 2nd Half",
+   "minute": "45'",
+   "team": null,
+   "text": "Second Half begins Colombia 0, Portugal 0.",
+   "players": []
+  },
+  {
+   "type": "Substitution",
+   "minute": "60'",
+   "team": "Colombia",
+   "text": "Substitution, Colombia. Richard Ríos replaces Jefferson Lerma.",
+   "players": [
+    "Richard Ríos",
+    "Jefferson Lerma"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "60'",
+   "team": "Colombia",
+   "text": "Substitution, Colombia. Luis Suárez replaces Jhon Córdoba.",
+   "players": [
+    "Luis Suárez",
+    "Jhon Córdoba"
+   ]
+  },
+  {
+   "type": "Start Delay",
+   "minute": "67'",
+   "team": "Portugal",
+   "text": "Delay in match because of an injury Nuno Mendes (Portugal).",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "67'",
+   "team": "Colombia",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "67'",
+   "team": "Portugal",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "67'",
+   "team": "Colombia",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "68'",
+   "team": "Portugal",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "68'",
+   "team": "Colombia",
+   "text": "Delay in match for a drinks break.",
+   "players": []
+  },
+  {
+   "type": "Substitution",
+   "minute": "70'",
+   "team": "Portugal",
+   "text": "Substitution, Portugal. Rafael Leão replaces João Félix.",
+   "players": [
+    "Rafael Leão",
+    "João Félix"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "70'",
+   "team": "Portugal",
+   "text": "Substitution, Portugal. Samú Costa replaces Vitinha.",
+   "players": [
+    "Samú Costa",
+    "Vitinha "
+   ]
+  },
+  {
+   "type": "End Delay",
+   "minute": "71'",
+   "team": "Colombia",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "71'",
+   "team": "Portugal",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Substitution",
+   "minute": "76'",
+   "team": "Colombia",
+   "text": "Substitution, Colombia. Kevin Castaño replaces Jhon Arias.",
+   "players": [
+    "Kevin Castaño",
+    "Jhon Arias"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "76'",
+   "team": "Colombia",
+   "text": "Substitution, Colombia. Juan Fernando Quintero replaces James Rodríguez.",
+   "players": [
+    "Juan Fernando Quintero",
+    "James Rodríguez"
+   ]
+  },
+  {
+   "type": "Yellow Card",
+   "minute": "86'",
+   "team": "Colombia",
+   "text": "Gustavo Puerta (Colombia) is shown the yellow card for a bad foul.",
+   "players": [
+    "Gustavo Puerta"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "87'",
+   "team": "Colombia",
+   "text": "Substitution, Colombia. Daniel Muñoz replaces Santiago Arias.",
+   "players": [
+    "Daniel Muñoz",
+    "Santiago Arias"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "90'+3'",
+   "team": "Portugal",
+   "text": "Substitution, Portugal. Matheus Nunes replaces Nuno Mendes.",
+   "players": [
+    "Matheus Nunes",
+    "Nuno Mendes"
+   ]
+  },
+  {
+   "type": "End Regular Time",
+   "minute": "90'+6'",
+   "team": null,
+   "text": "Second Half ends, Colombia 0, Portugal 0.",
+   "players": []
+  }
+ ],
+ "shots": [
+  {
+   "minute": "1",
+   "seconds": 60.0,
+   "team": "Colombia",
+   "player": "Luis Díaz",
+   "type": "Shot Blocked",
+   "x": 86.7,
+   "y": 69.4,
+   "goal": false,
+   "xg": 0.127,
+   "text": "Attempt blocked. Luis Díaz (Colombia) right footed shot from the left side of the box is blocked. Assisted by Davinson Sánchez."
+  },
+  {
+   "minute": "2",
+   "seconds": 62.0,
+   "team": "Colombia",
+   "player": "Jhon Córdoba",
+   "type": "Shot Off Target",
+   "x": 92.6,
+   "y": 46.7,
+   "goal": false,
+   "xg": 0.344,
+   "text": "Attempt missed. Jhon Córdoba (Colombia) header from the centre of the box is just a bit too high."
+  },
+  {
+   "minute": "4",
+   "seconds": 238.0,
+   "team": "Portugal",
+   "player": "Rúben Neves",
+   "type": "Shot Off Target",
+   "x": 81.1,
+   "y": 71.1,
+   "goal": false,
+   "xg": 0.083,
+   "text": "Attempt missed. Rúben Neves (Portugal) right footed shot from outside the box misses to the left."
+  },
+  {
+   "minute": "6",
+   "seconds": 314.0,
+   "team": "Colombia",
+   "player": "Luis Díaz",
+   "type": "Shot Off Target",
+   "x": 85.3,
+   "y": 55.8,
+   "goal": false,
+   "xg": 0.209,
+   "text": "Attempt missed. Luis Díaz (Colombia) right footed shot from the centre of the box misses to the right. Assisted by Jhon Arias with a headed pass."
+  },
+  {
+   "minute": "12",
+   "seconds": 688.0,
+   "team": "Portugal",
+   "player": "Bruno Fernandes",
+   "type": "Shot Off Target",
+   "x": 70.8,
+   "y": 37.1,
+   "goal": false,
+   "xg": 0.047,
+   "text": "Attempt missed. Bruno Fernandes (Portugal) right footed shot from outside the box misses to the left. Assisted by Pedro Neto."
+  },
+  {
+   "minute": "14",
+   "seconds": 822.0,
+   "team": "Colombia",
+   "player": "Gustavo Puerta",
+   "type": "Shot Off Target",
+   "x": 76.8,
+   "y": 44.9,
+   "goal": false,
+   "xg": 0.091,
+   "text": "Attempt missed. Gustavo Puerta (Colombia) left footed shot from outside the box is high and wide to the left. Assisted by Santiago Arias."
+  },
+  {
+   "minute": "17",
+   "seconds": 976.0,
+   "team": "Colombia",
+   "player": "Jhon Córdoba",
+   "type": "Shot On Target",
+   "x": 91.6,
+   "y": 31.0,
+   "goal": false,
+   "xg": 0.158,
+   "text": "Attempt saved. Jhon Córdoba (Colombia) right footed shot from the right side of the box is saved in the centre of the goal by Diogo Costa (Portugal). Assisted by Jhon Arias."
+  },
+  {
+   "minute": "17",
+   "seconds": 982.0,
+   "team": "Colombia",
+   "player": "Luis Díaz",
+   "type": "Shot Blocked",
+   "x": 87.2,
+   "y": 60.5,
+   "goal": false,
+   "xg": 0.213,
+   "text": "Attempt blocked. Luis Díaz (Colombia) right footed shot from the centre of the box is blocked. Assisted by James Rodríguez."
+  },
+  {
+   "minute": "22",
+   "seconds": 1276.0,
+   "team": "Colombia",
+   "player": "Jhon Arias",
+   "type": "Shot Blocked",
+   "x": 90.2,
+   "y": 29.7,
+   "goal": false,
+   "xg": 0.14,
+   "text": "Attempt missed. Jhon Arias (Colombia) right footed shot from the right side of the box misses to the left. Assisted by James Rodríguez."
+  },
+  {
+   "minute": "24",
+   "seconds": 1397.0,
+   "team": "Portugal",
+   "player": "Cristiano Ronaldo",
+   "type": "Shot On Target",
+   "x": 68.8,
+   "y": 51.7,
+   "goal": false,
+   "xg": 0.044,
+   "text": "Attempt saved. Cristiano Ronaldo (Portugal) right footed shot from outside the box is saved in the centre of the goal by Camilo Vargas (Colombia)."
+  },
+  {
+   "minute": "38",
+   "seconds": 2251.0,
+   "team": "Portugal",
+   "player": "Vitinha",
+   "type": "Shot Blocked",
+   "x": 79.7,
+   "y": 64.8,
+   "goal": false,
+   "xg": 0.095,
+   "text": "Attempt blocked. Vitinha (Portugal) right footed shot from outside the box is blocked."
+  },
+  {
+   "minute": "39",
+   "seconds": 2322.0,
+   "team": "Portugal",
+   "player": "Bruno Fernandes",
+   "type": "Shot On Target",
+   "x": 90.5,
+   "y": 44.9,
+   "goal": false,
+   "xg": 0.381,
+   "text": "Attempt saved. Bruno Fernandes (Portugal) right footed shot from the centre of the box is saved in the top centre of the goal by Camilo Vargas (Colombia)."
+  },
+  {
+   "minute": "39",
+   "seconds": 2323.0,
+   "team": "Portugal",
+   "player": "Cristiano Ronaldo",
+   "type": "Shot Blocked",
+   "x": 89.6,
+   "y": 56.4,
+   "goal": false,
+   "xg": 0.326,
+   "text": "Attempt blocked. Cristiano Ronaldo (Portugal) right footed shot from the centre of the box is blocked."
+  },
+  {
+   "minute": "40",
+   "seconds": 2357.0,
+   "team": "Portugal",
+   "player": "Rúben Neves",
+   "type": "Shot Off Target",
+   "x": 71.6,
+   "y": 50.9,
+   "goal": false,
+   "xg": 0.057,
+   "text": "Attempt missed. Rúben Neves (Portugal) right footed shot from outside the box is close, but misses to the left. Assisted by Vitinha."
+  },
+  {
+   "minute": "42",
+   "seconds": 2472.0,
+   "team": "Portugal",
+   "player": "João Félix",
+   "type": "Shot Off Target",
+   "x": 90.1,
+   "y": 63.8,
+   "goal": false,
+   "xg": 0.217,
+   "text": "Attempt missed. João Félix (Portugal) right footed shot from the left side of the box is just a bit too high. Assisted by Nuno Mendes."
+  },
+  {
+   "minute": "44",
+   "seconds": 2590.0,
+   "team": "Colombia",
+   "player": "James Rodríguez",
+   "type": "Shot Blocked",
+   "x": 84.5,
+   "y": 50.9,
+   "goal": false,
+   "xg": 0.206,
+   "text": "Attempt blocked. James Rodríguez (Colombia) right footed shot from the centre of the box is blocked. Assisted by Santiago Arias."
+  },
+  {
+   "minute": "44",
+   "seconds": 2592.0,
+   "team": "Colombia",
+   "player": "Jefferson Lerma",
+   "type": "Shot Blocked",
+   "x": 76.4,
+   "y": 43.8,
+   "goal": false,
+   "xg": 0.086,
+   "text": "Attempt blocked. Jefferson Lerma (Colombia) left footed shot from outside the box is blocked."
+  },
+  {
+   "minute": "45",
+   "seconds": 2695.0,
+   "team": "Colombia",
+   "player": "Gustavo Puerta",
+   "type": "Shot On Target",
+   "x": 78.3,
+   "y": 47.8,
+   "goal": false,
+   "xg": 0.108,
+   "text": "Attempt saved. Gustavo Puerta (Colombia) right footed shot from outside the box is saved in the bottom left corner by Diogo Costa (Portugal). Assisted by Jhon Arias."
+  },
+  {
+   "minute": "45'+1",
+   "seconds": 2700.0,
+   "team": "Colombia",
+   "player": "Luis Díaz",
+   "type": "Shot Off Target",
+   "x": 78.8,
+   "y": 72.4,
+   "goal": false,
+   "xg": 0.067,
+   "text": "Attempt missed. Luis Díaz (Colombia) right footed shot from outside the box is close, but misses to the left. Assisted by James Rodríguez."
+  },
+  {
+   "minute": "45'+2",
+   "seconds": 2700.0,
+   "team": "Portugal",
+   "player": "Cristiano Ronaldo",
+   "type": "Shot Blocked",
+   "x": 78.0,
+   "y": 58.9,
+   "goal": false,
+   "xg": 0.096,
+   "text": "Attempt blocked. Cristiano Ronaldo (Portugal) left footed shot from outside the box is blocked. Assisted by Nuno Mendes."
+  },
+  {
+   "minute": "45'+3",
+   "seconds": 2700.0,
+   "team": "Colombia",
+   "player": "James Rodríguez",
+   "type": "Shot On Target",
+   "x": 77.9,
+   "y": 46.1,
+   "goal": false,
+   "xg": 0.102,
+   "text": "Attempt saved. James Rodríguez (Colombia) left footed shot from outside the box is saved in the bottom left corner by Diogo Costa (Portugal). Assisted by Jhon Arias."
+  },
+  {
+   "minute": "51",
+   "seconds": 3036.0,
+   "team": "Portugal",
+   "player": "João Félix",
+   "type": "Shot Off Target",
+   "x": 89.8,
+   "y": 51.1,
+   "goal": false,
+   "xg": 0.251,
+   "text": "Attempt missed. João Félix (Portugal) header from the centre of the box is high and wide to the left. Assisted by Diogo Dalot with a cross."
+  },
+  {
+   "minute": "55",
+   "seconds": 3251.0,
+   "team": "Colombia",
+   "player": "Jefferson Lerma",
+   "type": "Shot On Target",
+   "x": 75.1,
+   "y": 66.8,
+   "goal": false,
+   "xg": 0.062,
+   "text": "Attempt saved. Jefferson Lerma (Colombia) right footed shot from outside the box is saved in the centre of the goal by Diogo Costa (Portugal). Assisted by Deiver Machado."
+  },
+  {
+   "minute": "55",
+   "seconds": 3291.0,
+   "team": "Colombia",
+   "player": "Jhon Arias",
+   "type": "Shot On Target",
+   "x": 71.5,
+   "y": 43.8,
+   "goal": false,
+   "xg": 0.055,
+   "text": "Attempt saved. Jhon Arias (Colombia) right footed shot from outside the box is saved in the top right corner by Diogo Costa (Portugal). Assisted by Gustavo Puerta."
+  },
+  {
+   "minute": "57",
+   "seconds": 3387.0,
+   "team": "Portugal",
+   "player": "João Félix",
+   "type": "Shot Blocked",
+   "x": 80.1,
+   "y": 65.8,
+   "goal": false,
+   "xg": 0.095,
+   "text": "Attempt blocked. João Félix (Portugal) right footed shot from outside the box is blocked. Assisted by Nuno Mendes."
+  },
+  {
+   "minute": "62",
+   "seconds": 3682.0,
+   "team": "Colombia",
+   "player": "Richard Ríos",
+   "type": "Shot Off Target",
+   "x": 91.0,
+   "y": 42.4,
+   "goal": false,
+   "xg": 0.354,
+   "text": "Attempt missed. Richard Ríos (Colombia) left footed shot from the centre of the box is close, but misses to the right. Assisted by Santiago Arias."
+  },
+  {
+   "minute": "65",
+   "seconds": 3852.0,
+   "team": "Colombia",
+   "player": "Luis Suárez",
+   "type": "Shot Blocked",
+   "x": 94.0,
+   "y": 29.1,
+   "goal": false,
+   "xg": 0.139,
+   "text": "Attempt blocked. Luis Suárez (Colombia) right footed shot from the right side of the box is blocked. Assisted by James Rodríguez."
+  },
+  {
+   "minute": "65",
+   "seconds": 3885.0,
+   "team": "Colombia",
+   "player": "Davinson Sánchez",
+   "type": "Shot Off Target",
+   "x": 90.2,
+   "y": 46.6,
+   "goal": false,
+   "xg": 0.253,
+   "text": "Attempt missed. Davinson Sánchez (Colombia) header from the centre of the box misses to the right. Assisted by James Rodríguez with a cross following a corner."
+  },
+  {
+   "minute": "66",
+   "seconds": 3947.0,
+   "team": "Colombia",
+   "player": "Jhon Arias",
+   "type": "Shot On Target",
+   "x": 87.4,
+   "y": 33.5,
+   "goal": false,
+   "xg": 0.156,
+   "text": "Attempt saved. Jhon Arias (Colombia) right footed shot from the right side of the box is saved in the top right corner by Diogo Costa (Portugal). Assisted by Santiago Arias."
+  },
+  {
+   "minute": "67",
+   "seconds": 3985.0,
+   "team": "Colombia",
+   "player": "Gustavo Puerta",
+   "type": "Shot Off Target",
+   "x": 73.8,
+   "y": 58.5,
+   "goal": false,
+   "xg": 0.066,
+   "text": "Attempt missed. Gustavo Puerta (Colombia) right footed shot from outside the box is close, but misses to the left. Assisted by Luis Díaz following a corner."
+  },
+  {
+   "minute": "73",
+   "seconds": 4362.0,
+   "team": "Colombia",
+   "player": "Luis Suárez",
+   "type": "Shot Blocked",
+   "x": 86.0,
+   "y": 46.9,
+   "goal": false,
+   "xg": 0.239,
+   "text": "Attempt missed. Luis Suárez (Colombia) left footed shot from the centre of the box is close, but misses to the right. Assisted by Santiago Arias with a cross."
+  },
+  {
+   "minute": "74",
+   "seconds": 4381.0,
+   "team": "Colombia",
+   "player": "James Rodríguez",
+   "type": "Shot Blocked",
+   "x": 79.1,
+   "y": 60.5,
+   "goal": false,
+   "xg": 0.102,
+   "text": "Attempt blocked. James Rodríguez (Colombia) left footed shot from outside the box is blocked."
+  },
+  {
+   "minute": "78",
+   "seconds": 4655.0,
+   "team": "Portugal",
+   "player": "Diogo Dalot",
+   "type": "Shot Off Target",
+   "x": 78.5,
+   "y": 65.4,
+   "goal": false,
+   "xg": 0.085,
+   "text": "Attempt missed. Diogo Dalot (Portugal) right footed shot from outside the box is close, but misses to the right. Assisted by Bruno Fernandes following a corner."
+  },
+  {
+   "minute": "88",
+   "seconds": 5258.0,
+   "team": "Colombia",
+   "player": "Luis Suárez",
+   "type": "Shot Off Target",
+   "x": 87.0,
+   "y": 46.2,
+   "goal": false,
+   "xg": 0.264,
+   "text": "Attempt missed. Luis Suárez (Colombia) right footed shot from the centre of the box is high and wide to the left."
+  },
+  {
+   "minute": "90'+1",
+   "seconds": 5400.0,
+   "team": "Colombia",
+   "player": "Luis Suárez",
+   "type": "Shot Off Target",
+   "x": 90.9,
+   "y": 44.4,
+   "goal": false,
+   "xg": 0.254,
+   "text": "Attempt missed. Luis Suárez (Colombia) header from the centre of the box misses to the left. Assisted by Daniel Muñoz with a cross."
+  },
+  {
+   "minute": "90'+3",
+   "seconds": 5400.0,
+   "team": "Portugal",
+   "player": "Rafael Leão",
+   "type": "Shot Off Target",
+   "x": 91.9,
+   "y": 72.7,
+   "goal": false,
+   "xg": 0.123,
+   "text": "Attempt missed. Rafael Leão (Portugal) right footed shot from the left side of the box misses to the right. Assisted by Renato Veiga."
+  },
+  {
+   "minute": "90'+5",
+   "seconds": 5400.0,
+   "team": "Colombia",
+   "player": "Gustavo Puerta",
+   "type": "Shot Blocked",
+   "x": 83.8,
+   "y": 62.7,
+   "goal": false,
+   "xg": 0.144,
+   "text": "Attempt blocked. Gustavo Puerta (Colombia) right footed shot from the centre of the box is blocked. Assisted by Luis Díaz."
+  }
+ ],
+ "lineups": [
+  {
+   "team": "Colombia",
+   "formation": "4-3-3",
+   "starters": [
+    {
+     "name": "Camilo Vargas",
+     "jersey": "12",
+     "position": "G"
+    },
+    {
+     "name": "Jhon Lucumí",
+     "jersey": "3",
+     "position": "CD-L"
+    },
+    {
+     "name": "Davinson Sánchez",
+     "jersey": "23",
+     "position": "CD-R"
+    },
+    {
+     "name": "Deiver Machado",
+     "jersey": "22",
+     "position": "LB"
+    },
+    {
+     "name": "Santiago Arias",
+     "jersey": "4",
+     "position": "RB"
+    },
+    {
+     "name": "Jefferson Lerma",
+     "jersey": "16",
+     "position": "CM"
+    },
+    {
+     "name": "Gustavo Puerta",
+     "jersey": "14",
+     "position": "LM"
+    },
+    {
+     "name": "Jhon Arias",
+     "jersey": "11",
+     "position": "RM"
+    },
+    {
+     "name": "Jhon Córdoba",
+     "jersey": "9",
+     "position": "F"
+    },
+    {
+     "name": "Luis Díaz",
+     "jersey": "7",
+     "position": "LF"
+    },
+    {
+     "name": "James Rodríguez",
+     "jersey": "10",
+     "position": "RF"
+    }
+   ],
+   "subs": [
+    {
+     "name": "Daniel Muñoz",
+     "jersey": "2",
+     "position": "SUB"
+    },
+    {
+     "name": "Luis Suárez",
+     "jersey": "25",
+     "position": "SUB"
+    },
+    {
+     "name": "Jáminton Campaz",
+     "jersey": "21",
+     "position": "SUB"
+    },
+    {
+     "name": "Cucho Hernández",
+     "jersey": "19",
+     "position": "SUB"
+    },
+    {
+     "name": "David Ospina",
+     "jersey": "1",
+     "position": "SUB"
+    },
+    {
+     "name": "Kevin Castaño",
+     "jersey": "5",
+     "position": "SUB"
+    },
+    {
+     "name": "Willer Ditta",
+     "jersey": "18",
+     "position": "SUB"
+    },
+    {
+     "name": "Andrés Gómez",
+     "jersey": "26",
+     "position": "SUB"
+    },
+    {
+     "name": "Álvaro Montero",
+     "jersey": "24",
+     "position": "SUB"
+    },
+    {
+     "name": "Jorge Carrascal",
+     "jersey": "8",
+     "position": "SUB"
+    },
+    {
+     "name": "Yerry Mina",
+     "jersey": "13",
+     "position": "SUB"
+    },
+    {
+     "name": "Juan Portilla",
+     "jersey": "15",
+     "position": "SUB"
+    },
+    {
+     "name": "Johan Mojica",
+     "jersey": "17",
+     "position": "SUB"
+    },
+    {
+     "name": "Juan Fernando Quintero",
+     "jersey": "20",
+     "position": "SUB"
+    },
+    {
+     "name": "Richard Ríos",
+     "jersey": "6",
+     "position": "SUB"
+    }
+   ]
+  },
+  {
+   "team": "Portugal",
+   "formation": "4-2-3-1",
+   "starters": [
+    {
+     "name": "Diogo Costa",
+     "jersey": "1",
+     "position": "G"
+    },
+    {
+     "name": "Renato Veiga",
+     "jersey": "13",
+     "position": "CD-L"
+    },
+    {
+     "name": "Rúben Dias",
+     "jersey": "3",
+     "position": "CD-R"
+    },
+    {
+     "name": "Nuno Mendes",
+     "jersey": "25",
+     "position": "LB"
+    },
+    {
+     "name": "João Cancelo",
+     "jersey": "20",
+     "position": "RB"
+    },
+    {
+     "name": "Bruno Fernandes",
+     "jersey": "8",
+     "position": "AM"
+    },
+    {
+     "name": "Vitinha ",
+     "jersey": "23",
+     "position": "LM"
+    },
+    {
+     "name": "Rúben Neves",
+     "jersey": "21",
+     "position": "RM"
+    },
+    {
+     "name": "Cristiano Ronaldo",
+     "jersey": "7",
+     "position": "F"
+    },
+    {
+     "name": "João Félix",
+     "jersey": "11",
+     "position": "AM-L"
+    },
+    {
+     "name": "Pedro Neto",
+     "jersey": "18",
+     "position": "AM-R"
+    }
+   ],
+   "subs": [
+    {
+     "name": "Francisco Trincão",
+     "jersey": "16",
+     "position": "SUB"
+    },
+    {
+     "name": "João Neves",
+     "jersey": "15",
+     "position": "SUB"
+    },
+    {
+     "name": "Gonçalo Ramos",
+     "jersey": "9",
+     "position": "SUB"
+    },
+    {
+     "name": "Nélson Semedo",
+     "jersey": "2",
+     "position": "SUB"
+    },
+    {
+     "name": "Gonçalo Guedes",
+     "jersey": "19",
+     "position": "SUB"
+    },
+    {
+     "name": "Rafael Leão",
+     "jersey": "17",
+     "position": "SUB"
+    },
+    {
+     "name": "Rui Silva",
+     "jersey": "22",
+     "position": "SUB"
+    },
+    {
+     "name": "Samú Costa",
+     "jersey": "24",
+     "position": "SUB"
+    },
+    {
+     "name": "Diogo Dalot",
+     "jersey": "5",
+     "position": "SUB"
+    },
+    {
+     "name": "Bernardo Silva",
+     "jersey": "10",
+     "position": "SUB"
+    },
+    {
+     "name": "Tomás Araújo",
+     "jersey": "4",
+     "position": "SUB"
+    },
+    {
+     "name": "Gonçalo Inácio",
+     "jersey": "14",
+     "position": "SUB"
+    },
+    {
+     "name": "Matheus Nunes",
+     "jersey": "6",
+     "position": "SUB"
+    },
+    {
+     "name": "José Sá",
+     "jersey": "12",
+     "position": "SUB"
+    },
+    {
+     "name": "Francisco Conceição",
+     "jersey": "26",
+     "position": "SUB"
+    }
+   ]
+  }
+ ],
+ "attendance": 64478,
+ "venue": "Hard Rock Stadium, Miami Gardens, Florida, USA"
+}

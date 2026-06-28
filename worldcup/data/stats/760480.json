@@ -1,0 +1,748 @@
+{
+ "teams": [
+  {
+   "name": "Croatia",
+   "stats": {
+    "possessionPct": "53.3",
+    "totalShots": "8",
+    "shotsOnTarget": "4",
+    "wonCorners": "3",
+    "foulsCommitted": "9",
+    "offsides": "1",
+    "saves": "0",
+    "yellowCards": "1",
+    "redCards": "0"
+   }
+  },
+  {
+   "name": "Ghana",
+   "stats": {
+    "possessionPct": "46.7",
+    "totalShots": "6",
+    "shotsOnTarget": "1",
+    "wonCorners": "2",
+    "foulsCommitted": "13",
+    "offsides": "2",
+    "saves": "2",
+    "yellowCards": "1",
+    "redCards": "0"
+   }
+  }
+ ],
+ "events": [
+  {
+   "type": "Kickoff",
+   "minute": "",
+   "team": null,
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "25'",
+   "team": "Ghana",
+   "text": "Delay in match for a drinks break.",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "25'",
+   "team": "Croatia",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "29'",
+   "team": "Ghana",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "29'",
+   "team": "Croatia",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Goal",
+   "minute": "31'",
+   "team": "Croatia",
+   "text": "Goal! Croatia 1, Ghana 0. Petar Sucic (Croatia) right footed shot from outside the box to the bottom left corner. Assisted by Mateo Kovacic.",
+   "players": [
+    "Petar Sucic",
+    "Mateo Kovacic"
+   ]
+  },
+  {
+   "type": "Halftime",
+   "minute": "45'+4'",
+   "team": null,
+   "text": "First Half ends, Croatia 1, Ghana 0.",
+   "players": []
+  },
+  {
+   "type": "Substitution",
+   "minute": "45'",
+   "team": "Ghana",
+   "text": "Substitution, Ghana. Kojo Peprah Oppong replaces Jonas Adjetey.",
+   "players": [
+    "Kojo Peprah Oppong",
+    "Jonas Adjetey"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "45'",
+   "team": "Ghana",
+   "text": "Substitution, Ghana. Abdul Fatawu replaces Elisha Owusu.",
+   "players": [
+    "Fatawu Issahaku",
+    "Elisha Owusu"
+   ]
+  },
+  {
+   "type": "Start 2nd Half",
+   "minute": "45'",
+   "team": null,
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Substitution",
+   "minute": "66'",
+   "team": "Croatia",
+   "text": "Substitution, Croatia. Igor Matanovic replaces Ante Budimir.",
+   "players": [
+    "Igor Matanovic",
+    "Ante Budimir"
+   ]
+  },
+  {
+   "type": "Yellow Card",
+   "minute": "68'",
+   "team": "Croatia",
+   "text": "Ivan Perisic (Croatia) is shown the yellow card for a bad foul.",
+   "players": [
+    "Ivan Perisic"
+   ]
+  },
+  {
+   "type": "Start Delay",
+   "minute": "69'",
+   "team": "Croatia",
+   "text": "Delay in match for a drinks break.",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "69'",
+   "team": "Ghana",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "71'",
+   "team": "Croatia",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "71'",
+   "team": "Ghana",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Substitution",
+   "minute": "71'",
+   "team": "Ghana",
+   "text": "Substitution, Ghana. Brandon Thomas-Asante replaces Jordan Ayew.",
+   "players": [
+    "Brandon Thomas-Asante",
+    "Jordan Ayew"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "71'",
+   "team": "Ghana",
+   "text": "Substitution, Ghana. Ernest Nuamah replaces Kamaldeen Sulemana.",
+   "players": [
+    "Ernest Nuamah",
+    "Kamaldeen Sulemana"
+   ]
+  },
+  {
+   "type": "Goal - Volley",
+   "minute": "73'",
+   "team": "Ghana",
+   "text": "Goal! Croatia 1, Ghana 1. Derrick Luckassen (Ghana) left footed shot from very close range to the bottom right corner. Assisted by Ernest Nuamah with a cross following a set piece situation.Goal awarded following VAR Review.",
+   "players": [
+    "Derrick Luckassen",
+    "Ernest Nuamah"
+   ]
+  },
+  {
+   "type": "Start Delay",
+   "minute": "76'",
+   "team": "Ghana",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "77'",
+   "team": "Ghana",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Substitution",
+   "minute": "78'",
+   "team": "Croatia",
+   "text": "Substitution, Croatia. Mario Pasalic replaces Mateo Kovacic.",
+   "players": [
+    "Mario Pasalic",
+    "Mateo Kovacic"
+   ]
+  },
+  {
+   "type": "Goal - Header",
+   "minute": "83'",
+   "team": "Croatia",
+   "text": "Goal! Croatia 2, Ghana 1. Nikola Vlasic (Croatia) header from the centre of the box to the bottom left corner. Assisted by Luka Modric with a cross following a corner.",
+   "players": [
+    "Nikola Vlasic",
+    "Luka Modric"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "85'",
+   "team": "Ghana",
+   "text": "Substitution, Ghana. Caleb Yirenkyi replaces Kwasi Sibo.",
+   "players": [
+    "Caleb Yirenkyi",
+    "Kwasi Sibo"
+   ]
+  },
+  {
+   "type": "Start Delay",
+   "minute": "87'",
+   "team": "Ghana",
+   "text": "Delay in match because of an injury Antoine Semenyo (Ghana).",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "87'",
+   "team": "Croatia",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Substitution",
+   "minute": "88'",
+   "team": "Croatia",
+   "text": "Substitution, Croatia. Josko Gvardiol replaces Nikola Vlasic.",
+   "players": [
+    "Josko Gvardiol",
+    "Nikola Vlasic"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "88'",
+   "team": "Croatia",
+   "text": "Substitution, Croatia. Marco Pasalic replaces Martin Baturina.",
+   "players": [
+    "Marco Pasalic",
+    "Martin Baturina"
+   ]
+  },
+  {
+   "type": "End Delay",
+   "minute": "88'",
+   "team": "Ghana",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "88'",
+   "team": "Croatia",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Yellow Card",
+   "minute": "90'+4'",
+   "team": "Ghana",
+   "text": "Kojo Peprah Oppong (Ghana) is shown the yellow card for a bad foul.",
+   "players": [
+    "Kojo Peprah Oppong"
+   ]
+  },
+  {
+   "type": "End Regular Time",
+   "minute": "90'+8'",
+   "team": null,
+   "text": "Second Half ends, Croatia 2, Ghana 1.",
+   "players": []
+  }
+ ],
+ "shots": [
+  {
+   "minute": "17",
+   "seconds": 971.0,
+   "team": "Croatia",
+   "player": null,
+   "type": "Shot Hit Woodwork",
+   "x": 78.2,
+   "y": 39.0,
+   "goal": false,
+   "xg": 0.093,
+   "text": "Nikola Vlasic (Croatia) hits the left post with a right footed shot from outside the box. Assisted by Martin Baturina following a fast break."
+  },
+  {
+   "minute": "21",
+   "seconds": 1236.0,
+   "team": "Croatia",
+   "player": "Marin Pongracic",
+   "type": "Shot Off Target",
+   "x": 90.8,
+   "y": 51.5,
+   "goal": false,
+   "xg": 0.285,
+   "text": "Attempt missed. Marin Pongracic (Croatia) header from the centre of the box is too high. Assisted by Luka Modric with a cross following a set piece situation."
+  },
+  {
+   "minute": "30",
+   "seconds": 1784.0,
+   "team": "Croatia",
+   "player": "Ivan Perisic",
+   "type": "Shot On Target",
+   "x": 85.2,
+   "y": 47.7,
+   "goal": false,
+   "xg": 0.143,
+   "text": "Attempt saved. Ivan Perisic (Croatia) header from the centre of the box is saved in the bottom left corner by Benjamin Asare (Ghana). Assisted by Luka Modric with a cross."
+  },
+  {
+   "minute": "31",
+   "seconds": 1852.0,
+   "team": "Croatia",
+   "player": "Petar Sucic",
+   "type": "Goal",
+   "x": 73.9,
+   "y": 46.8,
+   "goal": true,
+   "xg": 0.07,
+   "text": "Goal! Croatia 1, Ghana 0. Petar Sucic (Croatia) right footed shot from outside the box to the bottom left corner. Assisted by Mateo Kovacic."
+  },
+  {
+   "minute": "38",
+   "seconds": 2226.0,
+   "team": "Croatia",
+   "player": "Mateo Kovacic",
+   "type": "Shot Blocked",
+   "x": 74.7,
+   "y": 57.5,
+   "goal": false,
+   "xg": 0.073,
+   "text": "Attempt blocked. Mateo Kovacic (Croatia) right footed shot from outside the box is blocked. Assisted by Petar Sucic."
+  },
+  {
+   "minute": "40",
+   "seconds": 2365.0,
+   "team": "Ghana",
+   "player": "Antoine Semenyo",
+   "type": "Shot Off Target",
+   "x": 90.2,
+   "y": 26.8,
+   "goal": false,
+   "xg": 0.116,
+   "text": "Attempt missed. Antoine Semenyo (Ghana) right footed shot from the right side of the box is close, but misses to the left. Assisted by Jonas Adjetey."
+  },
+  {
+   "minute": "47",
+   "seconds": 2772.0,
+   "team": "Ghana",
+   "player": "Abdul Fatawu",
+   "type": "Shot Off Target",
+   "x": 79.3,
+   "y": 30.1,
+   "goal": false,
+   "xg": 0.077,
+   "text": "Attempt missed. Abdul Fatawu (Ghana) left footed shot from outside the box is too high. Assisted by Derrick Luckassen."
+  },
+  {
+   "minute": "57",
+   "seconds": 3364.0,
+   "team": "Ghana",
+   "player": "Kamaldeen Sulemana",
+   "type": "Shot Blocked",
+   "x": 80.0,
+   "y": 61.8,
+   "goal": false,
+   "xg": 0.107,
+   "text": "Attempt blocked. Kamaldeen Sulemana (Ghana) left footed shot from outside the box is blocked."
+  },
+  {
+   "minute": "73",
+   "seconds": 4349.0,
+   "team": "Ghana",
+   "player": "Derrick Luckassen",
+   "type": "Goal - Volley",
+   "x": 95.2,
+   "y": 52.3,
+   "goal": true,
+   "xg": 0.757,
+   "text": "Goal! Croatia 1, Ghana 1. Derrick Luckassen (Ghana) left footed shot from very close range to the bottom right corner. Assisted by Ernest Nuamah with a cross following a set piece situation.Goal awarded following VAR Review."
+  },
+  {
+   "minute": "82",
+   "seconds": 4874.0,
+   "team": "Croatia",
+   "player": "Mario Pasalic",
+   "type": "Shot On Target",
+   "x": 81.8,
+   "y": 62.2,
+   "goal": false,
+   "xg": 0.124,
+   "text": "Attempt saved. Mario Pasalic (Croatia) left footed shot from outside the box is saved in the top centre of the goal by Benjamin Asare (Ghana). Assisted by Martin Baturina."
+  },
+  {
+   "minute": "83",
+   "seconds": 4929.0,
+   "team": "Croatia",
+   "player": "Nikola Vlasic",
+   "type": "Goal - Header",
+   "x": 91.3,
+   "y": 52.0,
+   "goal": true,
+   "xg": 0.302,
+   "text": "Goal! Croatia 2, Ghana 1. Nikola Vlasic (Croatia) header from the centre of the box to the bottom left corner. Assisted by Luka Modric with a cross following a corner."
+  },
+  {
+   "minute": "90'+2",
+   "seconds": 5400.0,
+   "team": "Croatia",
+   "player": "Mario Pasalic",
+   "type": "Shot Blocked",
+   "x": 81.4,
+   "y": 44.1,
+   "goal": false,
+   "xg": 0.14,
+   "text": "Attempt blocked. Mario Pasalic (Croatia) left footed shot from outside the box is blocked. Assisted by Luka Modric."
+  },
+  {
+   "minute": "90'+4",
+   "seconds": 5400.0,
+   "team": "Ghana",
+   "player": "Marvin Senaya",
+   "type": "Shot Blocked",
+   "x": 82.2,
+   "y": 32.2,
+   "goal": false,
+   "xg": 0.103,
+   "text": "Attempt blocked. Marvin Senaya (Ghana) right footed shot from outside the box is blocked. Assisted by Ernest Nuamah."
+  },
+  {
+   "minute": "90'+7",
+   "seconds": 5400.0,
+   "team": "Ghana",
+   "player": "Abdul Fatawu",
+   "type": "Shot Off Target",
+   "x": 91.2,
+   "y": 74.1,
+   "goal": false,
+   "xg": 0.111,
+   "text": "Attempt missed. Abdul Fatawu (Ghana) left footed shot from the left side of the box is high and wide to the left. Assisted by Gideon Mensah."
+  }
+ ],
+ "lineups": [
+  {
+   "team": "Croatia",
+   "formation": "4-2-3-1",
+   "starters": [
+    {
+     "name": "Dominik Livakovic",
+     "jersey": "1",
+     "position": "G"
+    },
+    {
+     "name": "Marin Pongracic",
+     "jersey": "3",
+     "position": "CD-L"
+    },
+    {
+     "name": "Josip Sutalo",
+     "jersey": "6",
+     "position": "CD-R"
+    },
+    {
+     "name": "Ivan Perisic",
+     "jersey": "14",
+     "position": "LB"
+    },
+    {
+     "name": "Josip Stanisic",
+     "jersey": "2",
+     "position": "RB"
+    },
+    {
+     "name": "Petar Sucic",
+     "jersey": "17",
+     "position": "AM"
+    },
+    {
+     "name": "Mateo Kovacic",
+     "jersey": "8",
+     "position": "LM"
+    },
+    {
+     "name": "Luka Modric",
+     "jersey": "10",
+     "position": "RM"
+    },
+    {
+     "name": "Ante Budimir",
+     "jersey": "11",
+     "position": "F"
+    },
+    {
+     "name": "Martin Baturina",
+     "jersey": "16",
+     "position": "AM-L"
+    },
+    {
+     "name": "Nikola Vlasic",
+     "jersey": "13",
+     "position": "AM-R"
+    }
+   ],
+   "subs": [
+    {
+     "name": "Duje Caleta-Car",
+     "jersey": "5",
+     "position": "SUB"
+    },
+    {
+     "name": "Martin Erlic",
+     "jersey": "25",
+     "position": "SUB"
+    },
+    {
+     "name": "Mario Pasalic",
+     "jersey": "15",
+     "position": "SUB"
+    },
+    {
+     "name": "Marco Pasalic",
+     "jersey": "24",
+     "position": "SUB"
+    },
+    {
+     "name": "Igor Matanovic",
+     "jersey": "20",
+     "position": "SUB"
+    },
+    {
+     "name": "Kristijan Jakic",
+     "jersey": "18",
+     "position": "SUB"
+    },
+    {
+     "name": "Nikola Moro",
+     "jersey": "7",
+     "position": "SUB"
+    },
+    {
+     "name": "Andrej Kramaric",
+     "jersey": "9",
+     "position": "SUB"
+    },
+    {
+     "name": "Luka Sucic",
+     "jersey": "21",
+     "position": "SUB"
+    },
+    {
+     "name": "Dominik Kotarski",
+     "jersey": "23",
+     "position": "SUB"
+    },
+    {
+     "name": "Josko Gvardiol",
+     "jersey": "4",
+     "position": "SUB"
+    },
+    {
+     "name": "Ivor Pandur",
+     "jersey": "12",
+     "position": "SUB"
+    },
+    {
+     "name": "Luka Vuskovic",
+     "jersey": "22",
+     "position": "SUB"
+    },
+    {
+     "name": "Petar Musa",
+     "jersey": "26",
+     "position": "SUB"
+    },
+    {
+     "name": "Toni Fruk",
+     "jersey": "19",
+     "position": "SUB"
+    }
+   ]
+  },
+  {
+   "team": "Ghana",
+   "formation": "4-1-4-1",
+   "starters": [
+    {
+     "name": "Benjamin Asare",
+     "jersey": "16",
+     "position": "G"
+    },
+    {
+     "name": "Derrick Luckassen",
+     "jersey": "23",
+     "position": "CD-L"
+    },
+    {
+     "name": "Jonas Adjetey",
+     "jersey": "4",
+     "position": "CD-R"
+    },
+    {
+     "name": "Thomas Partey",
+     "jersey": "5",
+     "position": "DM"
+    },
+    {
+     "name": "Gideon Mensah",
+     "jersey": "14",
+     "position": "LB"
+    },
+    {
+     "name": "Marvin Senaya",
+     "jersey": "26",
+     "position": "RB"
+    },
+    {
+     "name": "Kwasi Sibo",
+     "jersey": "8",
+     "position": "CM-L"
+    },
+    {
+     "name": "Elisha Owusu",
+     "jersey": "15",
+     "position": "CM-R"
+    },
+    {
+     "name": "Kamaldeen Sulemana",
+     "jersey": "22",
+     "position": "LM"
+    },
+    {
+     "name": "Antoine Semenyo",
+     "jersey": "11",
+     "position": "RM"
+    },
+    {
+     "name": "Jordan Ayew",
+     "jersey": "9",
+     "position": "F"
+    }
+   ],
+   "subs": [
+    {
+     "name": "Abdul Mumin",
+     "jersey": "6",
+     "position": "SUB"
+    },
+    {
+     "name": "Joseph Anang",
+     "jersey": "12",
+     "position": "SUB"
+    },
+    {
+     "name": "Jerome Opoku",
+     "jersey": "18",
+     "position": "SUB"
+    },
+    {
+     "name": "Brandon Thomas-Asante",
+     "jersey": "10",
+     "position": "SUB"
+    },
+    {
+     "name": "Iñaki Williams",
+     "jersey": "19",
+     "position": "SUB"
+    },
+    {
+     "name": "Caleb Yirenkyi",
+     "jersey": "3",
+     "position": "SUB"
+    },
+    {
+     "name": "Fatawu Issahaku",
+     "jersey": "7",
+     "position": "SUB"
+    },
+    {
+     "name": "Alidu Seidu",
+     "jersey": "2",
+     "position": "SUB"
+    },
+    {
+     "name": "Augustine Boakye",
+     "jersey": "20",
+     "position": "SUB"
+    },
+    {
+     "name": "Christopher Bonsu Baah",
+     "jersey": "13",
+     "position": "SUB"
+    },
+    {
+     "name": "Lawrence Ati Zigi",
+     "jersey": "1",
+     "position": "SUB"
+    },
+    {
+     "name": "Kojo Peprah Oppong",
+     "jersey": "21",
+     "position": "SUB"
+    },
+    {
+     "name": "Ernest Nuamah",
+     "jersey": "24",
+     "position": "SUB"
+    },
+    {
+     "name": "Prince Adu",
+     "jersey": "25",
+     "position": "SUB"
+    },
+    {
+     "name": "Baba Rahman",
+     "jersey": "17",
+     "position": "SUB"
+    }
+   ]
+  }
+ ],
+ "attendance": 68324,
+ "venue": "Lincoln Financial Field, Philadelphia, Pennsylvania, USA"
+}
