@@ -1,0 +1,838 @@
+{
+ "teams": [
+  {
+   "name": "Jordan",
+   "stats": {
+    "possessionPct": "26.7",
+    "totalShots": "5",
+    "shotsOnTarget": "1",
+    "wonCorners": "2",
+    "foulsCommitted": "13",
+    "offsides": "1",
+    "saves": "1",
+    "yellowCards": "3",
+    "redCards": "0"
+   }
+  },
+  {
+   "name": "Argentina",
+   "stats": {
+    "possessionPct": "73.3",
+    "totalShots": "12",
+    "shotsOnTarget": "4",
+    "wonCorners": "6",
+    "foulsCommitted": "7",
+    "offsides": "3",
+    "saves": "0",
+    "yellowCards": "0",
+    "redCards": "0"
+   }
+  }
+ ],
+ "events": [
+  {
+   "type": "Kickoff",
+   "minute": "",
+   "team": null,
+   "text": "First Half begins.",
+   "players": []
+  },
+  {
+   "type": "Yellow Card",
+   "minute": "17'",
+   "team": "Jordan",
+   "text": "Mohannad Abu Taha (Jordan) is shown the yellow card for a bad foul.",
+   "players": [
+    "Mohannad Abu Taha"
+   ]
+  },
+  {
+   "type": "Goal - Free-kick",
+   "minute": "19'",
+   "team": "Argentina",
+   "text": "Goal! Jordan 0, Argentina 1. Giovani Lo Celso (Argentina) from a free kick with a left footed shot to the top left corner.",
+   "players": [
+    "Giovani Lo Celso"
+   ]
+  },
+  {
+   "type": "Start Delay",
+   "minute": "23'",
+   "team": "Argentina",
+   "text": "Delay in match for a drinks break.",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "23'",
+   "team": "Jordan",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "25'",
+   "team": "Argentina",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "25'",
+   "team": "Jordan",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "28'",
+   "team": "Argentina",
+   "text": "Delay in match because of an injury Marcos Senesi (Argentina).",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "28'",
+   "team": "Jordan",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "29'",
+   "team": "Argentina",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "29'",
+   "team": "Jordan",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "29'",
+   "team": "Argentina",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "30'",
+   "team": "Argentina",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Penalty - Scored",
+   "minute": "31'",
+   "team": "Argentina",
+   "text": "Goal! Jordan 0, Argentina 2. Lautaro Martínez (Argentina) converts the penalty with a right footed shot to the bottom left corner.",
+   "players": [
+    "Lautaro Martínez"
+   ]
+  },
+  {
+   "type": "Halftime",
+   "minute": "45'+6'",
+   "team": null,
+   "text": "First Half ends, Jordan 0, Argentina 2.",
+   "players": []
+  },
+  {
+   "type": "Substitution",
+   "minute": "45'",
+   "team": "Jordan",
+   "text": "Substitution, Jordan. Mahmoud Al Mardi replaces Odeh Fakhoury.",
+   "players": [
+    "Mahmoud Al-Mardi",
+    "Odeh Fakhoury"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "45'",
+   "team": "Jordan",
+   "text": "Substitution, Jordan. Mousa Al Tamari replaces Ali Azaizeh.",
+   "players": [
+    "Mousa Al-Tamari",
+    "Ali Azaizeh"
+   ]
+  },
+  {
+   "type": "Start 2nd Half",
+   "minute": "45'",
+   "team": null,
+   "text": "Second Half begins Jordan 0, Argentina 2.",
+   "players": []
+  },
+  {
+   "type": "Goal",
+   "minute": "55'",
+   "team": "Jordan",
+   "text": "Goal! Jordan 1, Argentina 2. Mousa Al Tamari (Jordan) left footed shot from the centre of the box to the top left corner. Assisted by Ehsan Haddad with a cross.",
+   "players": [
+    "Mousa Al-Tamari",
+    "Ehsan Haddad"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "60'",
+   "team": "Argentina",
+   "text": "Substitution, Argentina. Thiago Almada replaces Giovani Lo Celso.",
+   "players": [
+    "Thiago Almada",
+    "Giovani Lo Celso"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "60'",
+   "team": "Argentina",
+   "text": "Substitution, Argentina. Lionel Messi replaces Lautaro Martínez.",
+   "players": [
+    "Lionel Messi",
+    "Lautaro Martínez"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "61'",
+   "team": "Argentina",
+   "text": "Substitution, Argentina. Alexis Mac Allister replaces Nico Paz.",
+   "players": [
+    "Alexis Mac Allister",
+    "Nico Paz"
+   ]
+  },
+  {
+   "type": "Yellow Card",
+   "minute": "64'",
+   "team": "Jordan",
+   "text": "Yazan Al Arab (Jordan) is shown the yellow card for a bad foul.",
+   "players": [
+    "Yazan Al-Arab"
+   ]
+  },
+  {
+   "type": "Start Delay",
+   "minute": "68'",
+   "team": "Argentina",
+   "text": "Delay in match for a drinks break.",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "68'",
+   "team": "Jordan",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "70'",
+   "team": "Argentina",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "70'",
+   "team": "Jordan",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Substitution",
+   "minute": "71'",
+   "team": "Argentina",
+   "text": "Substitution, Argentina. Valentín Barco replaces Giuliano Simeone.",
+   "players": [
+    "Valentín Barco",
+    "Giuliano Simeone"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "76'",
+   "team": "Jordan",
+   "text": "Substitution, Jordan. Amer Jamous replaces Nizar Al Rashdan.",
+   "players": [
+    "Amer Jamous",
+    "Nizar Al-Rashdan"
+   ]
+  },
+  {
+   "type": "Goal - Free-kick",
+   "minute": "80'",
+   "team": "Argentina",
+   "text": "Goal! Jordan 1, Argentina 3. Lionel Messi (Argentina) from a free kick with a left footed shot to the bottom left corner.",
+   "players": [
+    "Lionel Messi"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "82'",
+   "team": "Argentina",
+   "text": "Substitution, Argentina. José Manuel López replaces Julián Alvarez.",
+   "players": [
+    "José Manuel López",
+    "Julián Álvarez"
+   ]
+  },
+  {
+   "type": "Start Delay",
+   "minute": "89'",
+   "team": "Jordan",
+   "text": "Delay in match because of an injury Husam Abu Dahab (Jordan).",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "89'",
+   "team": "Argentina",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Substitution",
+   "minute": "90'",
+   "team": "Jordan",
+   "text": "Substitution, Jordan. Mohammad Abu Zraiq replaces Ali Olwan.",
+   "players": [
+    "Mohammed Abu Zraiq",
+    "Ali Olwan"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "90'",
+   "team": "Jordan",
+   "text": "Substitution, Jordan. Saleem Obaid replaces Husam Abu Dahab because of an injury.",
+   "players": [
+    "Saleem Obaid",
+    "Husam Abu Dahab"
+   ]
+  },
+  {
+   "type": "End Delay",
+   "minute": "90'+1'",
+   "team": "Jordan",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "90'+1'",
+   "team": "Argentina",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Yellow Card",
+   "minute": "90'+4'",
+   "team": "Jordan",
+   "text": "Mohammad Abu Zraiq (Jordan) is shown the yellow card for a bad foul.",
+   "players": [
+    "Mohammed Abu Zraiq"
+   ]
+  },
+  {
+   "type": "End Regular Time",
+   "minute": "90'+6'",
+   "team": null,
+   "text": "",
+   "players": []
+  }
+ ],
+ "shots": [
+  {
+   "minute": "13",
+   "seconds": 727.0,
+   "team": "Argentina",
+   "player": "Nicolás Otamendi",
+   "type": "Shot Off Target",
+   "x": 95.8,
+   "y": 38.5,
+   "goal": false,
+   "xg": 0.203,
+   "text": "Attempt missed. Nicolás Otamendi (Argentina) header from the right side of the six yard box is too high. Assisted by Giovani Lo Celso with a cross following a corner."
+  },
+  {
+   "minute": "19",
+   "seconds": 1094.0,
+   "team": "Argentina",
+   "player": "Giovani Lo Celso",
+   "type": "Goal - Free-kick",
+   "x": 81.1,
+   "y": 38.0,
+   "goal": true,
+   "xg": 0.117,
+   "text": "Goal! Jordan 0, Argentina 1. Giovani Lo Celso (Argentina) from a free kick with a left footed shot to the top left corner."
+  },
+  {
+   "minute": "28",
+   "seconds": 1627.0,
+   "team": "Argentina",
+   "player": null,
+   "type": "Shot Hit Woodwork",
+   "x": 95.9,
+   "y": 53.8,
+   "goal": false,
+   "xg": 0.767,
+   "text": "Lautaro Martínez (Argentina) hits the bar with a left footed shot from very close range. Assisted by Nicolás Tagliafico following a corner."
+  },
+  {
+   "minute": "31",
+   "seconds": 1810.0,
+   "team": "Argentina",
+   "player": "Lautaro Martínez",
+   "type": "Penalty - Scored",
+   "x": 88.5,
+   "y": 50.0,
+   "goal": true,
+   "xg": 0.76,
+   "text": "Goal! Jordan 0, Argentina 2. Lautaro Martínez (Argentina) converts the penalty with a right footed shot to the bottom left corner."
+  },
+  {
+   "minute": "35",
+   "seconds": 2047.0,
+   "team": "Jordan",
+   "player": "Odeh Fakhoury",
+   "type": "Shot Blocked",
+   "x": 72.9,
+   "y": 37.2,
+   "goal": false,
+   "xg": 0.056,
+   "text": "Attempt blocked. Odeh Fakhoury (Jordan) right footed shot from outside the box is blocked."
+  },
+  {
+   "minute": "35",
+   "seconds": 2083.0,
+   "team": "Jordan",
+   "player": "Mohannad Abu Taha",
+   "type": "Shot Blocked",
+   "x": 78.2,
+   "y": 56.2,
+   "goal": false,
+   "xg": 0.102,
+   "text": "Attempt blocked. Mohannad Abu Taha (Jordan) left footed shot from outside the box is blocked."
+  },
+  {
+   "minute": "38",
+   "seconds": 2273.0,
+   "team": "Jordan",
+   "player": "Ali Azaizeh",
+   "type": "Shot Off Target",
+   "x": 89.6,
+   "y": 51.1,
+   "goal": false,
+   "xg": 0.245,
+   "text": "Attempt missed. Ali Azaizeh (Jordan) header from the centre of the box misses to the right. Assisted by Ali Olwan with a cross."
+  },
+  {
+   "minute": "45'+5",
+   "seconds": 2700.0,
+   "team": "Argentina",
+   "player": "Julián Alvarez",
+   "type": "Shot On Target",
+   "x": 91.1,
+   "y": 64.8,
+   "goal": false,
+   "xg": 0.212,
+   "text": "Attempt saved. Julián Alvarez (Argentina) left footed shot from the left side of the box is saved in the bottom left corner by Yazeed Abulaila (Jordan). Assisted by Lautaro Martínez."
+  },
+  {
+   "minute": "51",
+   "seconds": 3046.0,
+   "team": "Jordan",
+   "player": "Mousa Al Tamari",
+   "type": "Shot Off Target",
+   "x": 81.1,
+   "y": 50.4,
+   "goal": false,
+   "xg": 0.144,
+   "text": "Attempt missed. Mousa Al Tamari (Jordan) left footed shot from outside the box is too high. Assisted by Ali Olwan."
+  },
+  {
+   "minute": "53",
+   "seconds": 3175.0,
+   "team": "Argentina",
+   "player": null,
+   "type": "Shot Hit Woodwork",
+   "x": 77.0,
+   "y": 70.0,
+   "goal": false,
+   "xg": 0.065,
+   "text": "Lautaro Martínez (Argentina) hits the bar with a right footed shot from outside the box. Assisted by Giovani Lo Celso."
+  },
+  {
+   "minute": "55",
+   "seconds": 3253.0,
+   "team": "Jordan",
+   "player": "Mousa Al Tamari",
+   "type": "Goal",
+   "x": 91.8,
+   "y": 53.0,
+   "goal": true,
+   "xg": 0.483,
+   "text": "Goal! Jordan 1, Argentina 2. Mousa Al Tamari (Jordan) left footed shot from the centre of the box to the top left corner. Assisted by Ehsan Haddad with a cross."
+  },
+  {
+   "minute": "59",
+   "seconds": 3506.0,
+   "team": "Argentina",
+   "player": "Nico Paz",
+   "type": "Shot Off Target",
+   "x": 81.2,
+   "y": 51.7,
+   "goal": false,
+   "xg": 0.144,
+   "text": "Attempt missed. Nico Paz (Argentina) right footed shot from outside the box misses to the right."
+  },
+  {
+   "minute": "65",
+   "seconds": 3863.0,
+   "team": "Argentina",
+   "player": "Lionel Messi",
+   "type": "Shot Off Target",
+   "x": 72.0,
+   "y": 50.9,
+   "goal": false,
+   "xg": 0.059,
+   "text": "Attempt missed. Lionel Messi (Argentina) left footed shot from outside the box is high and wide to the left from a direct free kick."
+  },
+  {
+   "minute": "80",
+   "seconds": 4752.0,
+   "team": "Argentina",
+   "player": "Lionel Messi",
+   "type": "Goal - Free-kick",
+   "x": 75.6,
+   "y": 48.4,
+   "goal": true,
+   "xg": 0.083,
+   "text": "Goal! Jordan 1, Argentina 3. Lionel Messi (Argentina) from a free kick with a left footed shot to the bottom left corner."
+  },
+  {
+   "minute": "82",
+   "seconds": 4868.0,
+   "team": "Argentina",
+   "player": "Thiago Almada",
+   "type": "Shot Off Target",
+   "x": 76.2,
+   "y": 47.7,
+   "goal": false,
+   "xg": 0.088,
+   "text": "Attempt missed. Thiago Almada (Argentina) right footed shot from outside the box is close, but misses to the right."
+  },
+  {
+   "minute": "86",
+   "seconds": 5145.0,
+   "team": "Argentina",
+   "player": "José Manuel López",
+   "type": "Shot Blocked",
+   "x": 90.2,
+   "y": 71.1,
+   "goal": false,
+   "xg": 0.132,
+   "text": "Attempt blocked. José Manuel López (Argentina) right footed shot from the left side of the box is blocked. Assisted by Lionel Messi."
+  },
+  {
+   "minute": "90'+1",
+   "seconds": 5400.0,
+   "team": "Argentina",
+   "player": "Marcos Senesi",
+   "type": "Shot Off Target",
+   "x": 96.4,
+   "y": 49.1,
+   "goal": false,
+   "xg": 0.877,
+   "text": "Attempt missed. Marcos Senesi (Argentina) right footed shot from very close range is too high. Assisted by Lionel Messi with a cross following a set piece situation."
+  }
+ ],
+ "lineups": [
+  {
+   "team": "Jordan",
+   "formation": "3-4-2-1",
+   "starters": [
+    {
+     "name": "Yazeed Abulaila",
+     "jersey": "1",
+     "position": "G"
+    },
+    {
+     "name": "Yazan Al-Arab",
+     "jersey": "5",
+     "position": "CD"
+    },
+    {
+     "name": "Husam Abu Dahab",
+     "jersey": "4",
+     "position": "CD-L"
+    },
+    {
+     "name": "Abdallah Nasib",
+     "jersey": "3",
+     "position": "CD-R"
+    },
+    {
+     "name": "Noor Al-Rawabdeh",
+     "jersey": "8",
+     "position": "CM-L"
+    },
+    {
+     "name": "Nizar Al-Rashdan",
+     "jersey": "21",
+     "position": "CM-R"
+    },
+    {
+     "name": "Mohannad Abu Taha",
+     "jersey": "20",
+     "position": "LM"
+    },
+    {
+     "name": "Ehsan Haddad",
+     "jersey": "23",
+     "position": "RM"
+    },
+    {
+     "name": "Odeh Fakhoury",
+     "jersey": "11",
+     "position": "F"
+    },
+    {
+     "name": "Ali Olwan",
+     "jersey": "9",
+     "position": "CF-L"
+    },
+    {
+     "name": "Ali Azaizeh",
+     "jersey": "24",
+     "position": "CF-R"
+    }
+   ],
+   "subs": [
+    {
+     "name": "Mousa Al-Tamari",
+     "jersey": "10",
+     "position": "SUB"
+    },
+    {
+     "name": "Mohammed Abu Zraiq",
+     "jersey": "7",
+     "position": "SUB"
+    },
+    {
+     "name": "Rajaei Ayed",
+     "jersey": "14",
+     "position": "SUB"
+    },
+    {
+     "name": "Mohammad Abu Hasheesh",
+     "jersey": "2",
+     "position": "SUB"
+    },
+    {
+     "name": "Abdallah Al-Fakhouri",
+     "jersey": "22",
+     "position": "SUB"
+    },
+    {
+     "name": "Mohammad Al-Daoud",
+     "jersey": "25",
+     "position": "SUB"
+    },
+    {
+     "name": "Anas Badawi",
+     "jersey": "26",
+     "position": "SUB"
+    },
+    {
+     "name": "Mohammad Abughoush",
+     "jersey": "18",
+     "position": "SUB"
+    },
+    {
+     "name": "Saleem Obaid",
+     "jersey": "17",
+     "position": "SUB"
+    },
+    {
+     "name": "Mahmoud Al-Mardi",
+     "jersey": "13",
+     "position": "SUB"
+    },
+    {
+     "name": "Saed Al-Rosan",
+     "jersey": "19",
+     "position": "SUB"
+    },
+    {
+     "name": "Nour Bani Ateyah",
+     "jersey": "12",
+     "position": "SUB"
+    },
+    {
+     "name": "Ibrahim Sadeh",
+     "jersey": "15",
+     "position": "SUB"
+    },
+    {
+     "name": "Mohammad Abualnadi",
+     "jersey": "16",
+     "position": "SUB"
+    },
+    {
+     "name": "Amer Jamous",
+     "jersey": "6",
+     "position": "SUB"
+    }
+   ]
+  },
+  {
+   "team": "Argentina",
+   "formation": "4-4-2",
+   "starters": [
+    {
+     "name": "Emiliano Martínez",
+     "jersey": "23",
+     "position": "G"
+    },
+    {
+     "name": "Marcos Senesi",
+     "jersey": "2",
+     "position": "CD-L"
+    },
+    {
+     "name": "Nicolás Otamendi",
+     "jersey": "19",
+     "position": "CD-R"
+    },
+    {
+     "name": "Nicolás Tagliafico",
+     "jersey": "3",
+     "position": "LB"
+    },
+    {
+     "name": "Exequiel Palacios",
+     "jersey": "14",
+     "position": "RB"
+    },
+    {
+     "name": "Leandro Paredes",
+     "jersey": "5",
+     "position": "CM-L"
+    },
+    {
+     "name": "Nico Paz",
+     "jersey": "18",
+     "position": "CM-R"
+    },
+    {
+     "name": "Giovani Lo Celso",
+     "jersey": "11",
+     "position": "LM"
+    },
+    {
+     "name": "Giuliano Simeone",
+     "jersey": "17",
+     "position": "RM"
+    },
+    {
+     "name": "Julián Álvarez",
+     "jersey": "9",
+     "position": "CF-L"
+    },
+    {
+     "name": "Lautaro Martínez",
+     "jersey": "22",
+     "position": "CF-R"
+    }
+   ],
+   "subs": [
+    {
+     "name": "Alexis Mac Allister",
+     "jersey": "20",
+     "position": "SUB"
+    },
+    {
+     "name": "Facundo Medina",
+     "jersey": "25",
+     "position": "SUB"
+    },
+    {
+     "name": "Lisandro Martínez",
+     "jersey": "6",
+     "position": "SUB"
+    },
+    {
+     "name": "Cristian Romero",
+     "jersey": "13",
+     "position": "SUB"
+    },
+    {
+     "name": "Gerónimo Rulli",
+     "jersey": "12",
+     "position": "SUB"
+    },
+    {
+     "name": "Nahuel Molina",
+     "jersey": "26",
+     "position": "SUB"
+    },
+    {
+     "name": "Enzo Fernández",
+     "jersey": "24",
+     "position": "SUB"
+    },
+    {
+     "name": "Nico González",
+     "jersey": "15",
+     "position": "SUB"
+    },
+    {
+     "name": "Juan Musso",
+     "jersey": "1",
+     "position": "SUB"
+    },
+    {
+     "name": "Rodrigo De Paul",
+     "jersey": "7",
+     "position": "SUB"
+    },
+    {
+     "name": "Lionel Messi",
+     "jersey": "10",
+     "position": "SUB"
+    },
+    {
+     "name": "Gonzalo Montiel",
+     "jersey": "4",
+     "position": "SUB"
+    },
+    {
+     "name": "Valentín Barco",
+     "jersey": "8",
+     "position": "SUB"
+    },
+    {
+     "name": "José Manuel López",
+     "jersey": "21",
+     "position": "SUB"
+    },
+    {
+     "name": "Thiago Almada",
+     "jersey": "16",
+     "position": "SUB"
+    }
+   ]
+  }
+ ],
+ "attendance": 70649,
+ "venue": "AT&T Stadium, Arlington, Texas, USA"
+}

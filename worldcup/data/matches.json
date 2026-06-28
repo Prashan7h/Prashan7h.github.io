@@ -2438,12 +2438,48 @@
    "team2": "Austria",
    "group": "Group J",
    "ground": "Kansas City",
-   "score": null,
-   "goals1": [],
-   "goals2": [],
+   "score": {
+    "ft": [
+     3,
+     3
+    ],
+    "ht": [
+     1,
+     1
+    ]
+   },
+   "goals1": [
+    {
+     "name": "Rafik Belghali",
+     "minute": "45"
+    },
+    {
+     "name": "Riyad Mahrez",
+     "minute": "60"
+    },
+    {
+     "name": "Riyad Mahrez",
+     "minute": "90+3"
+    }
+   ],
+   "goals2": [
+    {
+     "name": "Marko Arnautovic",
+     "minute": "28"
+    },
+    {
+     "name": "Marcel Sabitzer",
+     "minute": "55"
+    },
+    {
+     "name": "Sasa Kalajdzic",
+     "minute": "90+6"
+    }
+   ],
    "espn_id": "760484",
-   "status": "live",
+   "status": "finished",
    "utc_date": "2026-06-28T02:00Z",
+   "attendance": 69045,
    "venue": "GEHA Field at Arrowhead Stadium",
    "slug": "2026-06-27-algeria-vs-austria"
   },
@@ -2456,12 +2492,41 @@
    "team2": "Argentina",
    "group": "Group J",
    "ground": "Dallas (Arlington)",
-   "score": null,
-   "goals1": [],
-   "goals2": [],
+   "score": {
+    "ft": [
+     1,
+     3
+    ],
+    "ht": [
+     0,
+     2
+    ]
+   },
+   "goals1": [
+    {
+     "name": "Mousa Al-Tamari",
+     "minute": "55"
+    }
+   ],
+   "goals2": [
+    {
+     "name": "Giovani Lo Celso",
+     "minute": "19"
+    },
+    {
+     "name": "Lautaro Martínez",
+     "minute": "31",
+     "penalty": true
+    },
+    {
+     "name": "Lionel Messi",
+     "minute": "80"
+    }
+   ],
    "espn_id": "760483",
-   "status": "live",
+   "status": "finished",
    "utc_date": "2026-06-28T02:00Z",
+   "attendance": 70649,
    "venue": "AT&T Stadium",
    "slug": "2026-06-27-jordan-vs-argentina"
   },
@@ -2950,15 +3015,17 @@
    "date": "2026-06-29",
    "time": "16:30 UTC-4",
    "team1": "Germany",
-   "team2": "3A/B/C/D/F",
+   "team2": "Paraguay",
    "group": null,
    "ground": "Boston (Foxborough)",
    "score": null,
    "goals1": [],
    "goals2": [],
-   "espn_id": null,
+   "espn_id": "760489",
    "status": "scheduled",
-   "slug": "2026-06-29-germany-vs-3a/b/c/d/f"
+   "utc_date": "2026-06-29T20:30Z",
+   "venue": "Gillette Stadium",
+   "slug": "2026-06-29-germany-vs-paraguay"
   },
   {
    "num": 75,
@@ -3001,16 +3068,18 @@
    "round": "Round of 32",
    "date": "2026-06-30",
    "time": "17:00 UTC-4",
-   "team1": "1I",
-   "team2": "3C/D/F/G/H",
+   "team1": "France",
+   "team2": "Sweden",
    "group": null,
    "ground": "New York/New Jersey (East Rutherford)",
    "score": null,
    "goals1": [],
    "goals2": [],
-   "espn_id": null,
+   "espn_id": "760492",
    "status": "scheduled",
-   "slug": "2026-06-30-1i-vs-3c/d/f/g/h"
+   "utc_date": "2026-06-30T21:00Z",
+   "venue": "MetLife Stadium",
+   "slug": "2026-06-30-france-vs-sweden"
   },
   {
    "num": 78,
@@ -3018,15 +3087,17 @@
    "date": "2026-06-30",
    "time": "12:00 UTC-5",
    "team1": "Ivory Coast",
-   "team2": "2I",
+   "team2": "Norway",
    "group": null,
    "ground": "Dallas (Arlington)",
    "score": null,
    "goals1": [],
    "goals2": [],
-   "espn_id": null,
+   "espn_id": "760490",
    "status": "scheduled",
-   "slug": "2026-06-30-ivory-coast-vs-2i"
+   "utc_date": "2026-06-30T17:00Z",
+   "venue": "AT&T Stadium",
+   "slug": "2026-06-30-ivory-coast-vs-norway"
   },
   {
    "num": 79,
@@ -3034,23 +3105,25 @@
    "date": "2026-06-30",
    "time": "19:00 UTC-6",
    "team1": "Mexico",
-   "team2": "3C/E/F/H/I",
+   "team2": "Ecuador",
    "group": null,
    "ground": "Mexico City",
    "score": null,
    "goals1": [],
    "goals2": [],
-   "espn_id": null,
+   "espn_id": "760491",
    "status": "scheduled",
-   "slug": "2026-06-30-mexico-vs-3c/e/f/h/i"
+   "utc_date": "2026-07-01T01:00Z",
+   "venue": "Estadio Banorte",
+   "slug": "2026-06-30-mexico-vs-ecuador"
   },
   {
    "num": 80,
    "round": "Round of 32",
    "date": "2026-07-01",
    "time": "12:00 UTC-4",
-   "team1": "1L",
-   "team2": "3E/H/I/J/K",
+   "team1": "England",
+   "team2": "DR Congo",
    "group": null,
    "ground": "Atlanta",
    "score": null,
@@ -3058,7 +3131,7 @@
    "goals2": [],
    "espn_id": null,
    "status": "scheduled",
-   "slug": "2026-07-01-1l-vs-3e/h/i/j/k"
+   "slug": "2026-07-01-england-vs-dr-congo"
   },
   {
    "num": 81,
@@ -3066,63 +3139,71 @@
    "date": "2026-07-01",
    "time": "17:00 UTC-7",
    "team1": "USA",
-   "team2": "3B/E/F/I/J",
+   "team2": "Bosnia & Herzegovina",
    "group": null,
    "ground": "San Francisco Bay Area (Santa Clara)",
    "score": null,
    "goals1": [],
    "goals2": [],
-   "espn_id": null,
+   "espn_id": "760494",
    "status": "scheduled",
-   "slug": "2026-07-01-usa-vs-3b/e/f/i/j"
+   "utc_date": "2026-07-02T00:00Z",
+   "venue": "Levi's Stadium",
+   "slug": "2026-07-01-usa-vs-bosnia-and-herzegovina"
   },
   {
    "num": 82,
    "round": "Round of 32",
    "date": "2026-07-01",
    "time": "13:00 UTC-7",
-   "team1": "1G",
-   "team2": "3A/E/H/I/J",
+   "team1": "Belgium",
+   "team2": "Senegal",
    "group": null,
    "ground": "Seattle",
    "score": null,
    "goals1": [],
    "goals2": [],
-   "espn_id": null,
+   "espn_id": "760493",
    "status": "scheduled",
-   "slug": "2026-07-01-1g-vs-3a/e/h/i/j"
+   "utc_date": "2026-07-01T20:00Z",
+   "venue": "Lumen Field",
+   "slug": "2026-07-01-belgium-vs-senegal"
   },
   {
    "num": 83,
    "round": "Round of 32",
    "date": "2026-07-02",
    "time": "19:00 UTC-4",
-   "team1": "2K",
-   "team2": "2L",
+   "team1": "Portugal",
+   "team2": "Croatia",
    "group": null,
    "ground": "Toronto",
    "score": null,
    "goals1": [],
    "goals2": [],
-   "espn_id": null,
+   "espn_id": "760496",
    "status": "scheduled",
-   "slug": "2026-07-02-2k-vs-2l"
+   "utc_date": "2026-07-02T23:00Z",
+   "venue": "BMO Field",
+   "slug": "2026-07-02-portugal-vs-croatia"
   },
   {
    "num": 84,
    "round": "Round of 32",
    "date": "2026-07-02",
    "time": "12:00 UTC-7",
-   "team1": "1H",
-   "team2": "2J",
+   "team1": "Spain",
+   "team2": "Austria",
    "group": null,
    "ground": "Los Angeles (Inglewood)",
    "score": null,
    "goals1": [],
    "goals2": [],
-   "espn_id": null,
+   "espn_id": "760497",
    "status": "scheduled",
-   "slug": "2026-07-02-1h-vs-2j"
+   "utc_date": "2026-07-02T19:00Z",
+   "venue": "SoFi Stadium",
+   "slug": "2026-07-02-spain-vs-austria"
   },
   {
    "num": 85,
@@ -3130,47 +3211,53 @@
    "date": "2026-07-02",
    "time": "20:00 UTC-7",
    "team1": "Switzerland",
-   "team2": "3E/F/G/I/J",
+   "team2": "Algeria",
    "group": null,
    "ground": "Vancouver",
    "score": null,
    "goals1": [],
    "goals2": [],
-   "espn_id": null,
+   "espn_id": "760498",
    "status": "scheduled",
-   "slug": "2026-07-02-switzerland-vs-3e/f/g/i/j"
+   "utc_date": "2026-07-03T03:00Z",
+   "venue": "BC Place",
+   "slug": "2026-07-02-switzerland-vs-algeria"
   },
   {
    "num": 86,
    "round": "Round of 32",
    "date": "2026-07-03",
    "time": "18:00 UTC-4",
-   "team1": "1J",
-   "team2": "2H",
+   "team1": "Argentina",
+   "team2": "Cape Verde",
    "group": null,
    "ground": "Miami (Miami Gardens)",
    "score": null,
    "goals1": [],
    "goals2": [],
-   "espn_id": null,
+   "espn_id": "760500",
    "status": "scheduled",
-   "slug": "2026-07-03-1j-vs-2h"
+   "utc_date": "2026-07-03T22:00Z",
+   "venue": "Hard Rock Stadium",
+   "slug": "2026-07-03-argentina-vs-cape-verde"
   },
   {
    "num": 87,
    "round": "Round of 32",
    "date": "2026-07-03",
    "time": "20:30 UTC-5",
-   "team1": "1K",
-   "team2": "3D/E/I/J/L",
+   "team1": "Colombia",
+   "team2": "Ghana",
    "group": null,
    "ground": "Kansas City",
    "score": null,
    "goals1": [],
    "goals2": [],
-   "espn_id": null,
+   "espn_id": "760501",
    "status": "scheduled",
-   "slug": "2026-07-03-1k-vs-3d/e/i/j/l"
+   "utc_date": "2026-07-04T01:30Z",
+   "venue": "GEHA Field at Arrowhead Stadium",
+   "slug": "2026-07-03-colombia-vs-ghana"
   },
   {
    "num": 88,
@@ -3178,15 +3265,17 @@
    "date": "2026-07-03",
    "time": "13:00 UTC-5",
    "team1": "Australia",
-   "team2": "2G",
+   "team2": "Egypt",
    "group": null,
    "ground": "Dallas (Arlington)",
    "score": null,
    "goals1": [],
    "goals2": [],
-   "espn_id": null,
+   "espn_id": "760499",
    "status": "scheduled",
-   "slug": "2026-07-03-australia-vs-2g"
+   "utc_date": "2026-07-03T18:00Z",
+   "venue": "AT&T Stadium",
+   "slug": "2026-07-03-australia-vs-egypt"
   },
   {
    "num": 89,

@@ -1,0 +1,873 @@
+{
+ "teams": [
+  {
+   "name": "Algeria",
+   "stats": {
+    "possessionPct": "65",
+    "totalShots": "12",
+    "shotsOnTarget": "5",
+    "wonCorners": "0",
+    "foulsCommitted": "3",
+    "offsides": "1",
+    "saves": "1",
+    "yellowCards": "0",
+    "redCards": "0"
+   }
+  },
+  {
+   "name": "Austria",
+   "stats": {
+    "possessionPct": "35",
+    "totalShots": "10",
+    "shotsOnTarget": "3",
+    "wonCorners": "3",
+    "foulsCommitted": "7",
+    "offsides": "3",
+    "saves": "2",
+    "yellowCards": "1",
+    "redCards": "0"
+   }
+  }
+ ],
+ "events": [
+  {
+   "type": "Kickoff",
+   "minute": "",
+   "team": null,
+   "text": "First Half begins.",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "1'",
+   "team": "Austria",
+   "text": "Delay in match (Austria).",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "1'",
+   "team": "Algeria",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "1'",
+   "team": "Austria",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "1'",
+   "team": "Algeria",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Yellow Card",
+   "minute": "11'",
+   "team": "Austria",
+   "text": "Marko Arnautovic (Austria) is shown the yellow card for a bad foul.",
+   "players": [
+    "Marko Arnautovic"
+   ]
+  },
+  {
+   "type": "Start Delay",
+   "minute": "11'",
+   "team": "Algeria",
+   "text": "Delay in match because of an injury Aïssa Mandi (Algeria).",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "11'",
+   "team": "Austria",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "12'",
+   "team": "Algeria",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "12'",
+   "team": "Austria",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "23'",
+   "team": "Algeria",
+   "text": "Delay in match for a drinks break.",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "23'",
+   "team": "Austria",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "26'",
+   "team": "Algeria",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "26'",
+   "team": "Austria",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Goal",
+   "minute": "28'",
+   "team": "Austria",
+   "text": "Goal! Algeria 0, Austria 1. Marko Arnautovic (Austria) right footed shot from the centre of the box to the bottom right corner. Assisted by David Alaba with a through ball.",
+   "players": [
+    "Marko Arnautovic",
+    "David Alaba"
+   ]
+  },
+  {
+   "type": "Goal",
+   "minute": "45'",
+   "team": "Algeria",
+   "text": "Goal! Algeria 1, Austria 1. Rafik Belghali (Algeria) left footed shot from the centre of the box to the top right corner.",
+   "players": [
+    "Rafik Belghali"
+   ]
+  },
+  {
+   "type": "Halftime",
+   "minute": "45'+5'",
+   "team": null,
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Substitution",
+   "minute": "45'",
+   "team": "Austria",
+   "text": "Substitution, Austria. Michael Gregoritsch replaces Marko Arnautovic.",
+   "players": [
+    "Michael Gregoritsch",
+    "Marko Arnautovic"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "45'",
+   "team": "Austria",
+   "text": "Substitution, Austria. Florian Grillitsch replaces Xaver Schlager.",
+   "players": [
+    "Florian Grillitsch",
+    "Xaver Schlager"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "45'",
+   "team": "Austria",
+   "text": "Substitution, Austria. Paul Wanner replaces Romano Schmid.",
+   "players": [
+    "Paul Wanner",
+    "Romano Schmid"
+   ]
+  },
+  {
+   "type": "Start 2nd Half",
+   "minute": "45'",
+   "team": null,
+   "text": "Second Half begins Algeria 1, Austria 1.",
+   "players": []
+  },
+  {
+   "type": "Goal",
+   "minute": "55'",
+   "team": "Austria",
+   "text": "Goal! Algeria 1, Austria 2. Marcel Sabitzer (Austria) right footed shot from outside the box to the top right corner. Assisted by Konrad Laimer.",
+   "players": [
+    "Marcel Sabitzer",
+    "Konrad Laimer"
+   ]
+  },
+  {
+   "type": "Goal",
+   "minute": "60'",
+   "team": "Algeria",
+   "text": "Goal! Algeria 2, Austria 2. Riyad Mahrez (Algeria) left footed shot from the centre of the box to the top right corner. Assisted by Houssem Aouar.",
+   "players": [
+    "Riyad Mahrez",
+    "Houssem Aouar"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "62'",
+   "team": "Austria",
+   "text": "Substitution, Austria. Kevin Danso replaces David Alaba.",
+   "players": [
+    "Kevin Danso",
+    "David Alaba"
+   ]
+  },
+  {
+   "type": "Start Delay",
+   "minute": "68'",
+   "team": "Algeria",
+   "text": "Delay in match for a drinks break.",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "68'",
+   "team": "Austria",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "71'",
+   "team": "Algeria",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "71'",
+   "team": "Austria",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Substitution",
+   "minute": "71'",
+   "team": "Algeria",
+   "text": "Substitution, Algeria. Rayan Aït-Nouri replaces Jaouen Hadjam.",
+   "players": [
+    "Rayan Aït-Nouri",
+    "Jaouen Hadjam"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "71'",
+   "team": "Algeria",
+   "text": "Substitution, Algeria. Zineddine Belaïd replaces Amine Gouiri.",
+   "players": [
+    "Zineddine Belaïd",
+    "Amine Gouiri"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "71'",
+   "team": "Algeria",
+   "text": "Substitution, Algeria. Samir Chergui replaces Rafik Belghali.",
+   "players": [
+    "Samir Chergui",
+    "Rafik Belghali"
+   ]
+  },
+  {
+   "type": "Goal",
+   "minute": "90'+3'",
+   "team": "Algeria",
+   "text": "Goal! Algeria 3, Austria 2. Riyad Mahrez (Algeria) right footed shot from the centre of the box to the bottom left corner. Assisted by Houssem Aouar with a through ball.",
+   "players": [
+    "Riyad Mahrez",
+    "Houssem Aouar"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "90'+4'",
+   "team": "Algeria",
+   "text": "Substitution, Algeria. Farès Ghedjemis replaces Houssem Aouar.",
+   "players": [
+    "Farès Ghedjemis",
+    "Houssem Aouar"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "90'+5'",
+   "team": "Austria",
+   "text": "Substitution, Austria. Sasa Kalajdzic replaces Phillipp Mwene.",
+   "players": [
+    "Sasa Kalajdzic",
+    "Phillipp Mwene"
+   ]
+  },
+  {
+   "type": "Goal - Header",
+   "minute": "90'+6'",
+   "team": "Austria",
+   "text": "Goal! Algeria 3, Austria 3. Sasa Kalajdzic (Austria) header from the centre of the box to the bottom right corner. Assisted by Michael Gregoritsch with a headed pass.",
+   "players": [
+    "Sasa Kalajdzic",
+    "Michael Gregoritsch"
+   ]
+  },
+  {
+   "type": "End Regular Time",
+   "minute": "90'+7'",
+   "team": null,
+   "text": "",
+   "players": []
+  }
+ ],
+ "shots": [
+  {
+   "minute": "8",
+   "seconds": 459.0,
+   "team": "Austria",
+   "player": "Xaver Schlager",
+   "type": "Shot Off Target",
+   "x": 75.9,
+   "y": 32.4,
+   "goal": false,
+   "xg": 0.064,
+   "text": "Attempt missed. Xaver Schlager (Austria) left footed shot from outside the box is too high."
+  },
+  {
+   "minute": "10",
+   "seconds": 580.0,
+   "team": "Algeria",
+   "player": "Ibrahim Maza",
+   "type": "Shot Off Target",
+   "x": 70.3,
+   "y": 59.7,
+   "goal": false,
+   "xg": 0.048,
+   "text": "Attempt missed. Ibrahim Maza (Algeria) right footed shot from outside the box is too high. Assisted by Houssem Aouar."
+  },
+  {
+   "minute": "28",
+   "seconds": 1660.0,
+   "team": "Austria",
+   "player": "Marko Arnautovic",
+   "type": "Goal",
+   "x": 93.7,
+   "y": 53.6,
+   "goal": true,
+   "xg": 0.601,
+   "text": "Goal! Algeria 0, Austria 1. Marko Arnautovic (Austria) right footed shot from the centre of the box to the bottom right corner. Assisted by David Alaba with a through ball."
+  },
+  {
+   "minute": "32",
+   "seconds": 1916.0,
+   "team": "Algeria",
+   "player": "Rafik Belghali",
+   "type": "Shot Off Target",
+   "x": 91.8,
+   "y": 30.1,
+   "goal": false,
+   "xg": 0.148,
+   "text": "Attempt missed. Rafik Belghali (Algeria) right footed shot from the right side of the box misses to the left. Assisted by Ibrahim Maza."
+  },
+  {
+   "minute": "36",
+   "seconds": 2120.0,
+   "team": "Algeria",
+   "player": "Ibrahim Maza",
+   "type": "Shot Off Target",
+   "x": 94.3,
+   "y": 68.5,
+   "goal": false,
+   "xg": 0.165,
+   "text": "Attempt missed. Ibrahim Maza (Algeria) left footed shot from a difficult angle on the left is close, but misses to the left. Assisted by Nabil Bentaleb."
+  },
+  {
+   "minute": "38",
+   "seconds": 2223.0,
+   "team": "Austria",
+   "player": "Romano Schmid",
+   "type": "Shot Off Target",
+   "x": 75.8,
+   "y": 24.4,
+   "goal": false,
+   "xg": 0.048,
+   "text": "Attempt missed. Romano Schmid (Austria) right footed shot from outside the box is just a bit too high following a corner."
+  },
+  {
+   "minute": "40",
+   "seconds": 2344.0,
+   "team": "Algeria",
+   "player": null,
+   "type": "Shot Hit Woodwork",
+   "x": 79.8,
+   "y": 42.4,
+   "goal": false,
+   "xg": 0.117,
+   "text": "Farès Chaïbi (Algeria) hits the right post with a left footed shot from outside the box. Assisted by Riyad Mahrez."
+  },
+  {
+   "minute": "41",
+   "seconds": 2413.0,
+   "team": "Austria",
+   "player": "Phillipp Mwene",
+   "type": "Shot Off Target",
+   "x": 91.2,
+   "y": 71.1,
+   "goal": false,
+   "xg": 0.135,
+   "text": "Attempt missed. Phillipp Mwene (Austria) right footed shot from the left side of the box misses to the left."
+  },
+  {
+   "minute": "42",
+   "seconds": 2496.0,
+   "team": "Algeria",
+   "player": "Riyad Mahrez",
+   "type": "Shot Blocked",
+   "x": 82.1,
+   "y": 42.7,
+   "goal": false,
+   "xg": 0.146,
+   "text": "Attempt blocked. Riyad Mahrez (Algeria) left footed shot from outside the box is blocked. Assisted by Nabil Bentaleb."
+  },
+  {
+   "minute": "44",
+   "seconds": 2586.0,
+   "team": "Algeria",
+   "player": "Ibrahim Maza",
+   "type": "Shot On Target",
+   "x": 92.7,
+   "y": 44.2,
+   "goal": false,
+   "xg": 0.473,
+   "text": "Attempt saved. Ibrahim Maza (Algeria) left footed shot from the centre of the box is saved in the centre of the goal by Alexander Schlager (Austria). Assisted by Rafik Belghali with a headed pass."
+  },
+  {
+   "minute": "45",
+   "seconds": 2642.0,
+   "team": "Algeria",
+   "player": "Rafik Belghali",
+   "type": "Goal",
+   "x": 93.1,
+   "y": 38.5,
+   "goal": true,
+   "xg": 0.304,
+   "text": "Goal! Algeria 1, Austria 1. Rafik Belghali (Algeria) left footed shot from the centre of the box to the top right corner."
+  },
+  {
+   "minute": "45'+2",
+   "seconds": 2700.0,
+   "team": "Austria",
+   "player": "Nicolas Seiwald",
+   "type": "Shot Blocked",
+   "x": 86.8,
+   "y": 52.3,
+   "goal": false,
+   "xg": 0.264,
+   "text": "Attempt blocked. Nicolas Seiwald (Austria) left footed shot from the centre of the box is blocked."
+  },
+  {
+   "minute": "49",
+   "seconds": 2900.0,
+   "team": "Algeria",
+   "player": "Ramy Bensebaini",
+   "type": "Shot Off Target",
+   "x": 65.7,
+   "y": 65.4,
+   "goal": false,
+   "xg": 0.029,
+   "text": "Attempt missed. Ramy Bensebaini (Algeria) left footed shot from more than 35 yards is too high."
+  },
+  {
+   "minute": "54",
+   "seconds": 3205.0,
+   "team": "Algeria",
+   "player": "Farès Chaïbi",
+   "type": "Shot On Target",
+   "x": 78.1,
+   "y": 47.7,
+   "goal": false,
+   "xg": 0.106,
+   "text": "Attempt saved. Farès Chaïbi (Algeria) right footed shot from outside the box is saved in the centre of the goal by Alexander Schlager (Austria). Assisted by Riyad Mahrez."
+  },
+  {
+   "minute": "55",
+   "seconds": 3269.0,
+   "team": "Austria",
+   "player": "Marcel Sabitzer",
+   "type": "Goal",
+   "x": 81.6,
+   "y": 49.5,
+   "goal": true,
+   "xg": 0.151,
+   "text": "Goal! Algeria 1, Austria 2. Marcel Sabitzer (Austria) right footed shot from outside the box to the top right corner. Assisted by Konrad Laimer."
+  },
+  {
+   "minute": "59",
+   "seconds": 3482.0,
+   "team": "Algeria",
+   "player": "Farès Chaïbi",
+   "type": "Shot Blocked",
+   "x": 69.8,
+   "y": 38.7,
+   "goal": false,
+   "xg": 0.044,
+   "text": "Attempt blocked. Farès Chaïbi (Algeria) right footed shot from outside the box is blocked. Assisted by Aïssa Mandi."
+  },
+  {
+   "minute": "60",
+   "seconds": 3558.0,
+   "team": "Algeria",
+   "player": "Riyad Mahrez",
+   "type": "Goal",
+   "x": 91.5,
+   "y": 40.9,
+   "goal": true,
+   "xg": 0.335,
+   "text": "Goal! Algeria 2, Austria 2. Riyad Mahrez (Algeria) left footed shot from the centre of the box to the top right corner. Assisted by Houssem Aouar."
+  },
+  {
+   "minute": "65",
+   "seconds": 3887.0,
+   "team": "Austria",
+   "player": "Nicolas Seiwald",
+   "type": "Shot Off Target",
+   "x": 73.5,
+   "y": 70.1,
+   "goal": false,
+   "xg": 0.049,
+   "text": "Attempt missed. Nicolas Seiwald (Austria) right footed shot from outside the box is close, but misses to the right. Assisted by Phillipp Mwene."
+  },
+  {
+   "minute": "68",
+   "seconds": 4021.0,
+   "team": "Austria",
+   "player": "Kevin Danso",
+   "type": "Shot Off Target",
+   "x": 93.4,
+   "y": 51.7,
+   "goal": false,
+   "xg": 0.4,
+   "text": "Attempt missed. Kevin Danso (Austria) header from the centre of the box misses to the right. Assisted by Marcel Sabitzer with a cross following a corner."
+  },
+  {
+   "minute": "90'+3",
+   "seconds": 5400.0,
+   "team": "Algeria",
+   "player": "Riyad Mahrez",
+   "type": "Goal",
+   "x": 91.3,
+   "y": 38.5,
+   "goal": true,
+   "xg": 0.276,
+   "text": "Goal! Algeria 3, Austria 2. Riyad Mahrez (Algeria) right footed shot from the centre of the box to the bottom left corner. Assisted by Houssem Aouar with a through ball."
+  },
+  {
+   "minute": "90'+5",
+   "seconds": 5400.0,
+   "team": "Austria",
+   "player": "Philipp Lienhart",
+   "type": "Shot Off Target",
+   "x": 86.4,
+   "y": 54.8,
+   "goal": false,
+   "xg": 0.242,
+   "text": "Attempt missed. Philipp Lienhart (Austria) left footed shot from the centre of the box is high and wide to the left. Assisted by Michael Gregoritsch."
+  },
+  {
+   "minute": "90'+6",
+   "seconds": 5400.0,
+   "team": "Austria",
+   "player": "Sasa Kalajdzic",
+   "type": "Goal - Header",
+   "x": 92.9,
+   "y": 46.6,
+   "goal": true,
+   "xg": 0.356,
+   "text": "Goal! Algeria 3, Austria 3. Sasa Kalajdzic (Austria) header from the centre of the box to the bottom right corner. Assisted by Michael Gregoritsch with a headed pass."
+  }
+ ],
+ "lineups": [
+  {
+   "team": "Algeria",
+   "formation": "4-2-3-1",
+   "starters": [
+    {
+     "name": "Oussama Benbot",
+     "jersey": "16",
+     "position": "G"
+    },
+    {
+     "name": "Ramy Bensebaini",
+     "jersey": "21",
+     "position": "CD-L"
+    },
+    {
+     "name": "Aïssa Mandi",
+     "jersey": "2",
+     "position": "CD-R"
+    },
+    {
+     "name": "Jaouen Hadjam",
+     "jersey": "13",
+     "position": "LB"
+    },
+    {
+     "name": "Rafik Belghali",
+     "jersey": "17",
+     "position": "RB"
+    },
+    {
+     "name": "Ibrahim Maza",
+     "jersey": "22",
+     "position": "AM"
+    },
+    {
+     "name": "Nabil Bentaleb",
+     "jersey": "19",
+     "position": "LM"
+    },
+    {
+     "name": "Farès Chaïbi",
+     "jersey": "10",
+     "position": "RM"
+    },
+    {
+     "name": "Amine Gouiri",
+     "jersey": "9",
+     "position": "F"
+    },
+    {
+     "name": "Houssem Aouar",
+     "jersey": "8",
+     "position": "AM-L"
+    },
+    {
+     "name": "Riyad Mahrez",
+     "jersey": "7",
+     "position": "AM-R"
+    }
+   ],
+   "subs": [
+    {
+     "name": "Rayan Aït-Nouri",
+     "jersey": "15",
+     "position": "SUB"
+    },
+    {
+     "name": "Samir Chergui",
+     "jersey": "26",
+     "position": "SUB"
+    },
+    {
+     "name": "Ramiz Zerrouki",
+     "jersey": "6",
+     "position": "SUB"
+    },
+    {
+     "name": "Farès Ghedjemis",
+     "jersey": "25",
+     "position": "SUB"
+    },
+    {
+     "name": "Melvin Mastil",
+     "jersey": "1",
+     "position": "SUB"
+    },
+    {
+     "name": "Hicham Boudaoui",
+     "jersey": "14",
+     "position": "SUB"
+    },
+    {
+     "name": "Zineddine Belaïd",
+     "jersey": "5",
+     "position": "SUB"
+    },
+    {
+     "name": "Luca Zidane",
+     "jersey": "23",
+     "position": "SUB"
+    },
+    {
+     "name": "Anis Hadj Moussa",
+     "jersey": "11",
+     "position": "SUB"
+    },
+    {
+     "name": "Adil Boulbina",
+     "jersey": "20",
+     "position": "SUB"
+    },
+    {
+     "name": "Achraf Abada",
+     "jersey": "3",
+     "position": "SUB"
+    },
+    {
+     "name": "Nadhir Benbouali",
+     "jersey": "12",
+     "position": "SUB"
+    },
+    {
+     "name": "Yassine Titraoui",
+     "jersey": "24",
+     "position": "SUB"
+    },
+    {
+     "name": "Mohamed Amine Tougai",
+     "jersey": "4",
+     "position": "SUB"
+    }
+   ]
+  },
+  {
+   "team": "Austria",
+   "formation": "4-2-3-1",
+   "starters": [
+    {
+     "name": "Alexander Schlager",
+     "jersey": "1",
+     "position": "G"
+    },
+    {
+     "name": "David Alaba",
+     "jersey": "8",
+     "position": "CD-L"
+    },
+    {
+     "name": "Philipp Lienhart",
+     "jersey": "15",
+     "position": "CD-R"
+    },
+    {
+     "name": "Phillipp Mwene",
+     "jersey": "16",
+     "position": "LB"
+    },
+    {
+     "name": "Stefan Posch",
+     "jersey": "5",
+     "position": "RB"
+    },
+    {
+     "name": "Romano Schmid",
+     "jersey": "18",
+     "position": "AM"
+    },
+    {
+     "name": "Xaver Schlager",
+     "jersey": "4",
+     "position": "LM"
+    },
+    {
+     "name": "Nicolas Seiwald",
+     "jersey": "6",
+     "position": "RM"
+    },
+    {
+     "name": "Marko Arnautovic",
+     "jersey": "7",
+     "position": "F"
+    },
+    {
+     "name": "Marcel Sabitzer",
+     "jersey": "9",
+     "position": "AM-L"
+    },
+    {
+     "name": "Konrad Laimer",
+     "jersey": "20",
+     "position": "AM-R"
+    }
+   ],
+   "subs": [
+    {
+     "name": "Florian Grillitsch",
+     "jersey": "10",
+     "position": "SUB"
+    },
+    {
+     "name": "Kevin Danso",
+     "jersey": "3",
+     "position": "SUB"
+    },
+    {
+     "name": "Michael Svoboda",
+     "jersey": "25",
+     "position": "SUB"
+    },
+    {
+     "name": "Alexander Prass",
+     "jersey": "22",
+     "position": "SUB"
+    },
+    {
+     "name": "Carney Chukwuemeka",
+     "jersey": "17",
+     "position": "SUB"
+    },
+    {
+     "name": "Patrick Pentz",
+     "jersey": "13",
+     "position": "SUB"
+    },
+    {
+     "name": "Alessandro Schöpf",
+     "jersey": "26",
+     "position": "SUB"
+    },
+    {
+     "name": "David Affengruber",
+     "jersey": "2",
+     "position": "SUB"
+    },
+    {
+     "name": "Patrick Wimmer",
+     "jersey": "21",
+     "position": "SUB"
+    },
+    {
+     "name": "Sasa Kalajdzic",
+     "jersey": "14",
+     "position": "SUB"
+    },
+    {
+     "name": "Florian Wiegele",
+     "jersey": "12",
+     "position": "SUB"
+    },
+    {
+     "name": "Dejan Ljubicic",
+     "jersey": "19",
+     "position": "SUB"
+    },
+    {
+     "name": "Michael Gregoritsch",
+     "jersey": "11",
+     "position": "SUB"
+    },
+    {
+     "name": "Paul Wanner",
+     "jersey": "24",
+     "position": "SUB"
+    },
+    {
+     "name": "Marco Friedl",
+     "jersey": "23",
+     "position": "SUB"
+    }
+   ]
+  }
+ ],
+ "attendance": 69045,
+ "venue": "GEHA Field at Arrowhead Stadium, Kansas City, Missouri, USA"
+}
