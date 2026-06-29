@@ -3000,12 +3000,27 @@
    "team2": "Canada",
    "group": null,
    "ground": "Los Angeles (Inglewood)",
-   "score": null,
+   "score": {
+    "ft": [
+     0,
+     1
+    ],
+    "ht": [
+     0,
+     0
+    ]
+   },
    "goals1": [],
-   "goals2": [],
+   "goals2": [
+    {
+     "name": "Stephan Eustáquio",
+     "minute": "90+2"
+    }
+   ],
    "espn_id": "760486",
-   "status": "live",
+   "status": "finished",
    "utc_date": "2026-06-28T19:00Z",
+   "attendance": 69237,
    "venue": "SoFi Stadium",
    "slug": "2026-06-28-south-africa-vs-canada"
   },

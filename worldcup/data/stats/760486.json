@@ -1,0 +1,797 @@
+{
+ "teams": [
+  {
+   "name": "South Africa",
+   "stats": {
+    "possessionPct": "58.4",
+    "totalShots": "6",
+    "shotsOnTarget": "1",
+    "wonCorners": "1",
+    "foulsCommitted": "10",
+    "offsides": "1",
+    "saves": "5",
+    "yellowCards": "0",
+    "redCards": "0"
+   }
+  },
+  {
+   "name": "Canada",
+   "stats": {
+    "possessionPct": "41.6",
+    "totalShots": "12",
+    "shotsOnTarget": "7",
+    "wonCorners": "4",
+    "foulsCommitted": "16",
+    "offsides": "0",
+    "saves": "1",
+    "yellowCards": "2",
+    "redCards": "0"
+   }
+  }
+ ],
+ "events": [
+  {
+   "type": "Kickoff",
+   "minute": "",
+   "team": null,
+   "text": "First Half begins.",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "15'",
+   "team": "Canada",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "15'",
+   "team": "Canada",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "23'",
+   "team": "South Africa",
+   "text": "Delay in match for a drinks break.",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "23'",
+   "team": "Canada",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "26'",
+   "team": "South Africa",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "26'",
+   "team": "Canada",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "37'",
+   "team": "South Africa",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "37'",
+   "team": "South Africa",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Halftime",
+   "minute": "45'+4'",
+   "team": null,
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Substitution",
+   "minute": "45'",
+   "team": "South Africa",
+   "text": "Substitution, South Africa. Thalente Mbatha replaces Relebohile Mofokeng.",
+   "players": [
+    "Thalente Mbatha",
+    "Relebohile Mofokeng"
+   ]
+  },
+  {
+   "type": "Start 2nd Half",
+   "minute": "45'",
+   "team": null,
+   "text": "Second Half begins South Africa 0, Canada 0.",
+   "players": []
+  },
+  {
+   "type": "Yellow Card",
+   "minute": "54'",
+   "team": "Canada",
+   "text": "Nathan Saliba (Canada) is shown the yellow card for a bad foul.",
+   "players": [
+    "Nathan Saliba"
+   ]
+  },
+  {
+   "type": "Start Delay",
+   "minute": "57'",
+   "team": "Canada",
+   "text": "Delay in match because of an injury Stephen Eustaquio (Canada).",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "57'",
+   "team": "South Africa",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "58'",
+   "team": "Canada",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "58'",
+   "team": "South Africa",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Substitution",
+   "minute": "59'",
+   "team": "Canada",
+   "text": "Substitution, Canada. Niko Sigur replaces Nathan Saliba.",
+   "players": [
+    "Niko Sigur",
+    "Nathan Saliba"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "59'",
+   "team": "Canada",
+   "text": "Substitution, Canada. Luc De Fougerolles replaces Moïse Bombito.",
+   "players": [
+    "Luc de Fougerolles",
+    "Moïse Bombito"
+   ]
+  },
+  {
+   "type": "Start Delay",
+   "minute": "60'",
+   "team": "Canada",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "60'",
+   "team": "South Africa",
+   "text": "Delay in match (South Africa).",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "60'",
+   "team": "South Africa",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "60'",
+   "team": "Canada",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Yellow Card",
+   "minute": "67'",
+   "team": "Canada",
+   "text": "Niko Sigur (Canada) is shown the yellow card for a bad foul.",
+   "players": [
+    "Niko Sigur"
+   ]
+  },
+  {
+   "type": "Start Delay",
+   "minute": "67'",
+   "team": "South Africa",
+   "text": "Delay in match for a drinks break.",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "67'",
+   "team": "Canada",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "70'",
+   "team": "Canada",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "70'",
+   "team": "South Africa",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "Substitution",
+   "minute": "70'",
+   "team": "Canada",
+   "text": "Substitution, Canada. Promise David replaces Tani Oluwaseyi.",
+   "players": [
+    "Promise David",
+    "Tani Oluwaseyi"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "70'",
+   "team": "Canada",
+   "text": "Substitution, Canada. Jacob Shaffelburg replaces Liam Millar.",
+   "players": [
+    "Jacob Shaffelburg",
+    "Liam Millar"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "75'",
+   "team": "Canada",
+   "text": "Substitution, Canada. Alphonso Davies replaces Tajon Buchanan.",
+   "players": [
+    "Alphonso Davies",
+    "Tajon Buchanan"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "86'",
+   "team": "South Africa",
+   "text": "Substitution, South Africa. Iqraam Rayners replaces Evidence Makgopa.",
+   "players": [
+    "Iqraam Rayners",
+    "Evidence Makgopa"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "86'",
+   "team": "South Africa",
+   "text": "Substitution, South Africa. Tshepang Moremi replaces Thapelo Maseko.",
+   "players": [
+    "Tshepang Moremi",
+    "Thapelo Maseko"
+   ]
+  },
+  {
+   "type": "Goal - Volley",
+   "minute": "90'+2'",
+   "team": "Canada",
+   "text": "Goal! South Africa 0, Canada 1. Stephen Eustaquio (Canada) right footed shot from outside the box to the bottom left corner.",
+   "players": [
+    "Stephen Eustáquio"
+   ]
+  },
+  {
+   "type": "End Regular Time",
+   "minute": "90'+7'",
+   "team": null,
+   "text": "Second Half ends, South Africa 0, Canada 1.",
+   "players": []
+  }
+ ],
+ "shots": [
+  {
+   "minute": "6",
+   "seconds": 334.0,
+   "team": "South Africa",
+   "player": "Teboho Mokoena",
+   "type": "Shot On Target",
+   "x": 72.2,
+   "y": 52.9,
+   "goal": false,
+   "xg": 0.06,
+   "text": "Attempt saved. Teboho Mokoena (South Africa) right footed shot from outside the box is saved in the bottom left corner by Maxime Crépeau (Canada). Assisted by Relebohile Mofokeng."
+  },
+  {
+   "minute": "7",
+   "seconds": 380.0,
+   "team": "Canada",
+   "player": "Stephen Eustaquio",
+   "type": "Shot Off Target",
+   "x": 74.4,
+   "y": 63.8,
+   "goal": false,
+   "xg": 0.063,
+   "text": "Attempt missed. Stephen Eustaquio (Canada) right footed shot from outside the box is too high."
+  },
+  {
+   "minute": "17",
+   "seconds": 966.0,
+   "team": "Canada",
+   "player": "Jonathan David",
+   "type": "Shot Off Target",
+   "x": 89.6,
+   "y": 47.7,
+   "goal": false,
+   "xg": 0.371,
+   "text": "Attempt missed. Jonathan David (Canada) right footed shot from the centre of the box is close, but misses to the right. Assisted by Stephen Eustaquio with a cross following a corner."
+  },
+  {
+   "minute": "22",
+   "seconds": 1296.0,
+   "team": "Canada",
+   "player": "Derek Cornelius",
+   "type": "Shot On Target",
+   "x": 92.9,
+   "y": 50.9,
+   "goal": false,
+   "xg": 0.379,
+   "text": "Attempt saved. Derek Cornelius (Canada) header from the centre of the box is saved in the centre of the goal by Ronwen Williams (South Africa). Assisted by Stephen Eustaquio with a cross."
+  },
+  {
+   "minute": "23",
+   "seconds": 1326.0,
+   "team": "South Africa",
+   "player": "Teboho Mokoena",
+   "type": "Shot Blocked",
+   "x": 75.0,
+   "y": 31.1,
+   "goal": false,
+   "xg": 0.057,
+   "text": "Attempt blocked. Teboho Mokoena (South Africa) right footed shot from outside the box is blocked. Assisted by Thapelo Maseko."
+  },
+  {
+   "minute": "35",
+   "seconds": 2047.0,
+   "team": "Canada",
+   "player": "Tani Oluwaseyi",
+   "type": "Shot On Target",
+   "x": 91.6,
+   "y": 69.0,
+   "goal": false,
+   "xg": 0.158,
+   "text": "Attempt saved. Tani Oluwaseyi (Canada) left footed shot from the left side of the box is saved in the top left corner by Ronwen Williams (South Africa). Assisted by Liam Millar."
+  },
+  {
+   "minute": "36",
+   "seconds": 2111.0,
+   "team": "South Africa",
+   "player": "Ime Okon",
+   "type": "Shot Off Target",
+   "x": 87.2,
+   "y": 49.5,
+   "goal": false,
+   "xg": 0.183,
+   "text": "Attempt missed. Ime Okon (South Africa) header from the centre of the box misses to the right. Assisted by Oswin Appollis with a cross following a corner."
+  },
+  {
+   "minute": "41",
+   "seconds": 2453.0,
+   "team": "Canada",
+   "player": "Tani Oluwaseyi",
+   "type": "Shot Off Target",
+   "x": 90.8,
+   "y": 52.8,
+   "goal": false,
+   "xg": 0.278,
+   "text": "Attempt missed. Tani Oluwaseyi (Canada) header from the centre of the box is too high. Assisted by Stephen Eustaquio with a cross following a set piece situation."
+  },
+  {
+   "minute": "44",
+   "seconds": 2613.0,
+   "team": "Canada",
+   "player": "Moïse Bombito",
+   "type": "Shot Blocked",
+   "x": 95.4,
+   "y": 49.6,
+   "goal": false,
+   "xg": 0.52,
+   "text": "Attempt blocked. Moïse Bombito (Canada) header from very close range is blocked. Assisted by Stephen Eustaquio with a cross."
+  },
+  {
+   "minute": "44",
+   "seconds": 2617.0,
+   "team": "Canada",
+   "player": "Tajon Buchanan",
+   "type": "Shot On Target",
+   "x": 97.1,
+   "y": 43.6,
+   "goal": false,
+   "xg": 0.661,
+   "text": "Attempt saved. Tajon Buchanan (Canada) right footed shot from the right side of the six yard box is saved in the bottom right corner by Ronwen Williams (South Africa). Assisted by Derek Cornelius."
+  },
+  {
+   "minute": "62",
+   "seconds": 3704.0,
+   "team": "South Africa",
+   "player": "Oswin Appollis",
+   "type": "Shot Off Target",
+   "x": 76.0,
+   "y": 64.8,
+   "goal": false,
+   "xg": 0.07,
+   "text": "Attempt missed. Oswin Appollis (South Africa) right footed shot from outside the box is close, but misses to the right."
+  },
+  {
+   "minute": "65",
+   "seconds": 3851.0,
+   "team": "Canada",
+   "player": "Tani Oluwaseyi",
+   "type": "Shot On Target",
+   "x": 86.5,
+   "y": 61.5,
+   "goal": false,
+   "xg": 0.191,
+   "text": "Attempt saved. Tani Oluwaseyi (Canada) left footed shot from the centre of the box is saved in the centre of the goal by Ronwen Williams (South Africa). Assisted by Niko Sigur with a through ball."
+  },
+  {
+   "minute": "66",
+   "seconds": 3911.0,
+   "team": "Canada",
+   "player": "Luc De Fougerolles",
+   "type": "Shot Off Target",
+   "x": 90.3,
+   "y": 46.0,
+   "goal": false,
+   "xg": 0.252,
+   "text": "Attempt missed. Luc De Fougerolles (Canada) header from the centre of the box misses to the right. Assisted by Stephen Eustaquio with a cross following a corner."
+  },
+  {
+   "minute": "75",
+   "seconds": 4443.0,
+   "team": "South Africa",
+   "player": "Thalente Mbatha",
+   "type": "Shot Off Target",
+   "x": 72.8,
+   "y": 41.1,
+   "goal": false,
+   "xg": 0.06,
+   "text": "Attempt missed. Thalente Mbatha (South Africa) right footed shot from outside the box is too high. Assisted by Thapelo Maseko."
+  },
+  {
+   "minute": "76",
+   "seconds": 4540.0,
+   "team": "Canada",
+   "player": "Promise David",
+   "type": "Shot Off Target",
+   "x": 74.1,
+   "y": 50.3,
+   "goal": false,
+   "xg": 0.072,
+   "text": "Attempt missed. Promise David (Canada) right footed shot from outside the box is close, but misses to the left. Assisted by Jonathan David following a fast break."
+  },
+  {
+   "minute": "78",
+   "seconds": 4662.0,
+   "team": "Canada",
+   "player": "Jonathan David",
+   "type": "Shot On Target",
+   "x": 95.7,
+   "y": 67.3,
+   "goal": false,
+   "xg": 0.175,
+   "text": "Attempt saved. Jonathan David (Canada) left footed shot from a difficult angle on the left is saved in the top left corner by Ronwen Williams (South Africa). Assisted by Alphonso Davies."
+  },
+  {
+   "minute": "85",
+   "seconds": 5043.0,
+   "team": "South Africa",
+   "player": "Oswin Appollis",
+   "type": "Shot Off Target",
+   "x": 76.3,
+   "y": 36.0,
+   "goal": false,
+   "xg": 0.073,
+   "text": "Attempt missed. Oswin Appollis (South Africa) right footed shot from outside the box is close, but misses to the right. Assisted by Yaya Sithole."
+  },
+  {
+   "minute": "90'+2",
+   "seconds": 5400.0,
+   "team": "Canada",
+   "player": "Stephen Eustaquio",
+   "type": "Goal - Volley",
+   "x": 81.8,
+   "y": 42.5,
+   "goal": true,
+   "xg": 0.141,
+   "text": "Goal! South Africa 0, Canada 1. Stephen Eustaquio (Canada) right footed shot from outside the box to the bottom left corner."
+  }
+ ],
+ "lineups": [
+  {
+   "team": "South Africa",
+   "formation": "4-2-3-1",
+   "starters": [
+    {
+     "name": "Ronwen Williams",
+     "jersey": "1",
+     "position": "G"
+    },
+    {
+     "name": "Mbekezeli Mbokazi",
+     "jersey": "14",
+     "position": "CD-L"
+    },
+    {
+     "name": "Ime Okon",
+     "jersey": "21",
+     "position": "CD-R"
+    },
+    {
+     "name": "Aubrey Modiba",
+     "jersey": "6",
+     "position": "LB"
+    },
+    {
+     "name": "Khuliso Mudau",
+     "jersey": "20",
+     "position": "RB"
+    },
+    {
+     "name": "Relebohile Mofokeng",
+     "jersey": "10",
+     "position": "AM"
+    },
+    {
+     "name": "Sphephelo Sithole",
+     "jersey": "13",
+     "position": "LM"
+    },
+    {
+     "name": "Teboho Mokoena",
+     "jersey": "4",
+     "position": "RM"
+    },
+    {
+     "name": "Evidence Makgopa",
+     "jersey": "17",
+     "position": "F"
+    },
+    {
+     "name": "Oswin Appollis",
+     "jersey": "7",
+     "position": "AM-L"
+    },
+    {
+     "name": "Thapelo Maseko",
+     "jersey": "12",
+     "position": "AM-R"
+    }
+   ],
+   "subs": [
+    {
+     "name": "Iqraam Rayners",
+     "jersey": "15",
+     "position": "SUB"
+    },
+    {
+     "name": "Nkosinathi Sibisi",
+     "jersey": "19",
+     "position": "SUB"
+    },
+    {
+     "name": "Kamogelo Sebelebele",
+     "jersey": "25",
+     "position": "SUB"
+    },
+    {
+     "name": "Jayden Adams",
+     "jersey": "23",
+     "position": "SUB"
+    },
+    {
+     "name": "Samukele Kabini",
+     "jersey": "18",
+     "position": "SUB"
+    },
+    {
+     "name": "Sipho Chaine",
+     "jersey": "16",
+     "position": "SUB"
+    },
+    {
+     "name": "Olwethu Makhanya",
+     "jersey": "24",
+     "position": "SUB"
+    },
+    {
+     "name": "Tshepang Moremi",
+     "jersey": "8",
+     "position": "SUB"
+    },
+    {
+     "name": "Bradley Cross",
+     "jersey": "26",
+     "position": "SUB"
+    },
+    {
+     "name": "Khulumani Ndamane",
+     "jersey": "3",
+     "position": "SUB"
+    },
+    {
+     "name": "Thabang Matuludi",
+     "jersey": "2",
+     "position": "SUB"
+    },
+    {
+     "name": "Lyle Foster",
+     "jersey": "9",
+     "position": "SUB"
+    },
+    {
+     "name": "Thalente Mbatha",
+     "jersey": "5",
+     "position": "SUB"
+    },
+    {
+     "name": "Ricardo Goss",
+     "jersey": "22",
+     "position": "SUB"
+    }
+   ]
+  },
+  {
+   "team": "Canada",
+   "formation": "4-4-2",
+   "starters": [
+    {
+     "name": "Maxime Crépeau",
+     "jersey": "16",
+     "position": "G"
+    },
+    {
+     "name": "Derek Cornelius",
+     "jersey": "13",
+     "position": "CD-L"
+    },
+    {
+     "name": "Moïse Bombito",
+     "jersey": "15",
+     "position": "CD-R"
+    },
+    {
+     "name": "Richie Laryea",
+     "jersey": "22",
+     "position": "LB"
+    },
+    {
+     "name": "Alistair Johnston",
+     "jersey": "2",
+     "position": "RB"
+    },
+    {
+     "name": "Stephen Eustáquio",
+     "jersey": "7",
+     "position": "CM-L"
+    },
+    {
+     "name": "Nathan Saliba",
+     "jersey": "25",
+     "position": "CM-R"
+    },
+    {
+     "name": "Liam Millar",
+     "jersey": "11",
+     "position": "LM"
+    },
+    {
+     "name": "Tajon Buchanan",
+     "jersey": "17",
+     "position": "RM"
+    },
+    {
+     "name": "Tani Oluwaseyi",
+     "jersey": "12",
+     "position": "CF-L"
+    },
+    {
+     "name": "Jonathan David",
+     "jersey": "10",
+     "position": "CF-R"
+    }
+   ],
+   "subs": [
+    {
+     "name": "Jonathan Osorio",
+     "jersey": "21",
+     "position": "SUB"
+    },
+    {
+     "name": "Dayne St. Clair",
+     "jersey": "1",
+     "position": "SUB"
+    },
+    {
+     "name": "Jacob Shaffelburg",
+     "jersey": "14",
+     "position": "SUB"
+    },
+    {
+     "name": "Owen Goodman",
+     "jersey": "18",
+     "position": "SUB"
+    },
+    {
+     "name": "Promise David",
+     "jersey": "24",
+     "position": "SUB"
+    },
+    {
+     "name": "Jayden Nelson",
+     "jersey": "26",
+     "position": "SUB"
+    },
+    {
+     "name": "Ali Ahmed",
+     "jersey": "20",
+     "position": "SUB"
+    },
+    {
+     "name": "Joel Waterman",
+     "jersey": "5",
+     "position": "SUB"
+    },
+    {
+     "name": "Mathieu Choinière",
+     "jersey": "6",
+     "position": "SUB"
+    },
+    {
+     "name": "Alfie Jones",
+     "jersey": "3",
+     "position": "SUB"
+    },
+    {
+     "name": "Luc de Fougerolles",
+     "jersey": "4",
+     "position": "SUB"
+    },
+    {
+     "name": "Niko Sigur",
+     "jersey": "23",
+     "position": "SUB"
+    },
+    {
+     "name": "Alphonso Davies",
+     "jersey": "19",
+     "position": "SUB"
+    },
+    {
+     "name": "Cyle Larin",
+     "jersey": "9",
+     "position": "SUB"
+    }
+   ]
+  }
+ ],
+ "attendance": 69237,
+ "venue": "SoFi Stadium, Inglewood, California, USA"
+}
