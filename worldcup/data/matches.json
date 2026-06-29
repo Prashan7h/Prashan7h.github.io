@@ -3069,12 +3069,36 @@
    "team2": "Japan",
    "group": null,
    "ground": "Houston",
-   "score": null,
-   "goals1": [],
-   "goals2": [],
+   "score": {
+    "ft": [
+     2,
+     1
+    ],
+    "ht": [
+     0,
+     1
+    ]
+   },
+   "goals1": [
+    {
+     "name": "Casemiro",
+     "minute": "56"
+    },
+    {
+     "name": "Gabriel Martinelli",
+     "minute": "90+5"
+    }
+   ],
+   "goals2": [
+    {
+     "name": "Kaishu Sano",
+     "minute": "29"
+    }
+   ],
    "espn_id": "760487",
-   "status": "scheduled",
+   "status": "live",
    "utc_date": "2026-06-29T17:00Z",
+   "attendance": 68777,
    "venue": "NRG Stadium",
    "slug": "2026-06-29-brazil-vs-japan"
   },
