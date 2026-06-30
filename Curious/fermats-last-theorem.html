@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-KVBPX8VW');</script>
+    <!-- End Google Tag Manager -->
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Fermat's Last Theorem — a one-line marginal note that took 358 years to prove, and the strange detour through elliptic curves and modular forms that finally cracked it.">
+    <link rel="icon" type="image/svg+xml" href="../images/favicon.svg">
+    <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon-32.png">
+    <link rel="apple-touch-icon" href="../images/apple-touch-icon.png">
+    <title>Fermat's Last Theorem | Prashanth Shankar</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+
+    <style>
+        *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+        html { font-size: 16px; scroll-behavior: smooth; }
+        body {
+            background: #fff;
+            color: #000;
+            font-family: 'Inter', -apple-system, sans-serif;
+            font-weight: 400;
+            line-height: 1.7;
+        }
+        ::selection { background: #000; color: #fff; }
+
+        .page {
+            max-width: 720px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        header {
+            padding: 2.5rem 0 0;
+        }
+
+        .back-link {
+            font-size: 0.75rem;
+            font-weight: 400;
+            letter-spacing: 0.04em;
+            color: #000;
+            text-decoration: none;
+            transition: opacity 0.2s ease;
+        }
+        .back-link:hover { opacity: 0.5; }
+
+        article {
+            padding: 4rem 0 3rem;
+        }
+
+        article h1 {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 2.6rem;
+            font-weight: 600;
+            line-height: 1.15;
+            margin-bottom: 1rem;
+        }
+
+        .deck {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.25rem;
+            font-style: italic;
+            line-height: 1.5;
+            color: #000;
+            margin-bottom: 2.5rem;
+        }
+
+        article h2 {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.8rem;
+            font-weight: 600;
+            line-height: 1.2;
+            margin: 3rem 0 1rem;
+        }
+
+        article p {
+            font-size: 0.95rem;
+            font-weight: 300;
+            line-height: 1.75;
+            margin-bottom: 1rem;
+        }
+
+        article em {
+            font-style: italic;
+        }
+
+        .pullquote {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.35rem;
+            font-style: italic;
+            line-height: 1.45;
+            padding: 1.5rem 0 1.5rem 1.5rem;
+            border-left: 2px solid #000;
+            margin: 2rem 0;
+            color: #000;
+        }
+
+        .figure {
+            margin: 2.5rem 0;
+        }
+        .figure svg {
+            display: block;
+            width: 100%;
+            height: auto;
+            max-width: 640px;
+            margin: 0 auto;
+        }
+        .caption {
+            font-size: 0.78rem;
+            color: #666;
+            text-align: center;
+            margin-top: 0.8rem;
+            line-height: 1.5;
+            font-style: italic;
+            font-family: 'Cormorant Garamond', serif;
+        }
+
+        hr.divider {
+            border: none;
+            border-top: 1px solid #000;
+            margin: 3rem 0;
+        }
+
+        .references {
+            font-size: 0.8rem;
+            color: #555;
+            line-height: 1.7;
+            margin-top: 2rem;
+        }
+        .references h3 {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: #000;
+            margin-bottom: 0.75rem;
+        }
+        .references ol {
+            padding-left: 1.2rem;
+        }
+        .references li {
+            margin-bottom: 0.35rem;
+        }
+
+        footer {
+            padding: 2rem 0 3rem;
+            font-size: 0.75rem;
+            color: #666;
+        }
+        footer a { color: inherit; text-decoration: underline; text-underline-offset: 0.2em; }
+    </style>
+</head>
+<body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KVBPX8VW" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+    <div class="page">
+        <header>
+            <a href="index.html" class="back-link">&larr; Wonderland</a>
+        </header>
+
+        <article>
+            <h1>Fermat's Last Theorem</h1>
+            <p class="deck">A one-line note scribbled in the margin of a Greek textbook in the 1630s; 358 years and an unexpected detour through elliptic curves before anyone could finish the sentence.</p>
+
+            <p>Sometime in the late 1630s, a French magistrate named Pierre de Fermat was reading his copy of Diophantus' <em>Arithmetica</em> &mdash; the ancient Greek manual of equations that asked, again and again, for whole-number solutions. In the margin next to Problem II.8, which discusses how to split a square into two smaller squares, Fermat wrote a single sentence.</p>
+
+            <p>It claimed that the obvious generalisation &mdash; splitting a <em>cube</em> into two cubes, or a fourth power into two fourth powers, or any higher power at all &mdash; is impossible. He added, infuriatingly, that he had found a truly marvellous proof, which the margin was too narrow to contain.</p>
+
+            <p>He never wrote it down anywhere else. The margin was the only place it ever lived. And it took the rest of mathematics three and a half centuries to catch up.</p>
+
+            <h2>The conjecture, and why the &ldquo;3 or more&rdquo; matters</h2>
+
+            <p>Strip away the marginalia and the claim is this: the equation</p>
+
+            <p style="text-align: center; font-family: 'Cormorant Garamond', serif; font-size: 1.4rem; font-style: italic; margin: 1.5rem 0;">a<sup>n</sup> + b<sup>n</sup> = c<sup>n</sup></p>
+
+            <p>has no solutions in positive whole numbers when the exponent <em>n</em> is 3 or greater. For <em>n</em> = 2, of course, solutions are everywhere &mdash; the Pythagorean triples. 3, 4, 5. 5, 12, 13. 8, 15, 17. An infinite family. Every right triangle with whole-number sides is one. Hop the exponent up by one, to <em>n</em> = 3, and the well is supposed to run completely dry. Forever. For every higher exponent too.</p>
+
+            <div class="figure">
+                <svg viewBox="0 0 640 240" xmlns="http://www.w3.org/2000/svg">
+                    <!-- n=2 case: three squares forming a Pythagorean triangle (3,4,5) -->
+                    <g stroke="#000" stroke-width="1" fill="none">
+                        <!-- 3x3 square (left) -->
+                        <rect x="100" y="120" width="54" height="54"/>
+                        <!-- 4x4 square (bottom) -->
+                        <rect x="154" y="120" width="72" height="72"/>
+                        <!-- 5x5 square (right, the hypotenuse square) -->
+                        <rect x="240" y="100" width="90" height="90"/>
+                        <!-- triangle implied: 3-4-5 corner -->
+                        <path d="M 154 120 L 154 174 L 226 174 Z" stroke-dasharray="3 3"/>
+                    </g>
+                    <g font-family="'Cormorant Garamond', serif" font-size="16" font-style="italic" fill="#000" text-anchor="middle">
+                        <text x="127" y="153">3&sup2;</text>
+                        <text x="190" y="160">4&sup2;</text>
+                        <text x="285" y="150">5&sup2;</text>
+                    </g>
+                    <text x="215" y="220" font-family="'Cormorant Garamond', serif" font-size="14" font-style="italic" fill="#000" text-anchor="middle">n = 2: 3&sup2; + 4&sup2; = 5&sup2;  (and infinitely many more)</text>
+
+                    <!-- n>=3 case: an empty / barred box -->
+                    <g stroke="#000" stroke-width="1" fill="none">
+                        <rect x="420" y="100" width="160" height="90"/>
+                        <line x1="420" y1="100" x2="580" y2="190" stroke-width="0.7"/>
+                        <line x1="580" y1="100" x2="420" y2="190" stroke-width="0.7"/>
+                    </g>
+                    <text x="500" y="155" font-family="'Cormorant Garamond', serif" font-size="20" font-style="italic" fill="#000" text-anchor="middle">&empty;</text>
+                    <text x="500" y="220" font-family="'Cormorant Garamond', serif" font-size="14" font-style="italic" fill="#000" text-anchor="middle">n &ge; 3: no whole-number solutions at all</text>
+
+                    <text x="320" y="40" font-family="'Cormorant Garamond', serif" font-size="18" font-weight="600" fill="#000" text-anchor="middle">a<tspan font-style="italic">n</tspan> + b<tspan font-style="italic">n</tspan> = c<tspan font-style="italic">n</tspan></text>
+                    <text x="320" y="60" font-family="Inter, sans-serif" font-size="11" fill="#666" text-anchor="middle">the same equation, two completely different worlds</text>
+                </svg>
+                <p class="caption">For the exponent 2 the integers are generous; bump the exponent by one and they refuse to cooperate, forever.</p>
+            </div>
+
+            <p>It is a statement about <em>nothing</em> &mdash; the absence of any solution &mdash; which is a peculiar thing to try to prove. You cannot exhibit a counterexample to no-counterexamples-exist. You have to rule out an infinite set of triples and an infinite set of exponents in one breath.</p>
+
+            <h2>Three centuries of partial answers</h2>
+
+            <p>Mathematicians, taking the claim seriously, chipped away one exponent at a time. Fermat himself left a complete proof for <em>n</em> = 4, by his own method of <em>infinite descent</em>: assume a solution exists, then construct from it a strictly smaller solution, ad infinitum &mdash; impossible inside the positive integers. Euler handled <em>n</em> = 3 in 1770, though his original argument had a gap that took further work to plug. Sophie Germain, writing under a male pseudonym to get her work read at all, opened up a whole class of prime exponents in the early 1800s. Dirichlet and Legendre did <em>n</em> = 5; Lam&eacute; did <em>n</em> = 7.</p>
+
+            <p>Each victory was hard. Each was specific. None scaled. The problem with Fermat's claim was structural: there are infinitely many exponents, and the technique that killed one didn't generalise to the next.</p>
+
+            <p>In the mid-1800s, Ernst Kummer tried an audacious move. Recast the equation in a richer number system &mdash; not just ordinary integers, but the &ldquo;cyclotomic integers&rdquo; built from roots of unity &mdash; and the left-hand side <em>factors</em>. If the factors are coprime and their product is a perfect power, each factor must be a power too. That would crack the equation.</p>
+
+            <p>Except: in those richer systems, unique factorisation can fail. The number 6 = 2 &times; 3 = (1 + &radic;&minus;5)(1 &minus; &radic;&minus;5) refuses to commit to a single splitting. Kummer salvaged the approach by inventing &ldquo;ideal numbers&rdquo; &mdash; a precursor to modern ideal theory &mdash; and proved the theorem for a large class of primes (the &ldquo;regular&rdquo; ones). But the rest sat there, unmoved. By the late twentieth century, computers had verified the theorem for every exponent up to four million. Computers cannot prove infinitely many cases. Something deeper was needed.</p>
+
+            <p class="pullquote">It seems to be one of those problems that needs a tool no one has yet built. The tool turned out to be in a different country of mathematics altogether.</p>
+
+            <h2>The unexpected bridge: elliptic curves and modular forms</h2>
+
+            <p>In 1955, two Japanese mathematicians, Yutaka Taniyama and Goro Shimura, made a conjecture that on the face of it had nothing to do with Fermat. It said that every <em>elliptic curve</em> &mdash; a smooth cubic curve of the form y&sup2; = x&sup3; + ax + b &mdash; is secretly the same thing, in a precise technical sense, as a <em>modular form</em>, a kind of highly symmetric function on the upper half of the complex plane. Two universes &mdash; the geometry of curves and the analysis of symmetric functions &mdash; were, the conjecture said, just two faces of the same object.</p>
+
+            <p>This had nothing visibly to do with Fermat. The link arrived in 1985. Gerhard Frey noticed something disturbing: if a counterexample to Fermat's theorem existed &mdash; some forbidden triple a<sup>p</sup> + b<sup>p</sup> = c<sup>p</sup> &mdash; you could use it to <em>build</em> a particular elliptic curve, now called the Frey curve. And that curve, Frey argued, would have to be so pathologically strange that no modular form could correspond to it. Ken Ribet made this rigorous in 1986. The verdict: <em>if Taniyama&ndash;Shimura is true, Fermat is true</em>. A solution to Fermat's equation would force a curve to exist that broke the Taniyama&ndash;Shimura conjecture.</p>
+
+            <div class="figure">
+                <svg viewBox="0 0 640 220" xmlns="http://www.w3.org/2000/svg">
+                    <!-- Left box: Fermat -->
+                    <rect x="20" y="60" width="160" height="100" stroke="#000" stroke-width="1" fill="#fff"/>
+                    <text x="100" y="92" font-family="'Cormorant Garamond', serif" font-size="16" font-weight="600" fill="#000" text-anchor="middle">Fermat's</text>
+                    <text x="100" y="112" font-family="'Cormorant Garamond', serif" font-size="16" font-weight="600" fill="#000" text-anchor="middle">Last Theorem</text>
+                    <text x="100" y="135" font-family="Inter, sans-serif" font-size="10" fill="#666" text-anchor="middle">no a<tspan font-style="italic">n</tspan>+b<tspan font-style="italic">n</tspan>=c<tspan font-style="italic">n</tspan></text>
+
+                    <!-- Middle box: Frey curve -->
+                    <rect x="240" y="60" width="160" height="100" stroke="#000" stroke-width="1" stroke-dasharray="3 3" fill="#fff"/>
+                    <text x="320" y="92" font-family="'Cormorant Garamond', serif" font-size="15" font-style="italic" fill="#000" text-anchor="middle">Frey curve</text>
+                    <text x="320" y="115" font-family="Inter, sans-serif" font-size="10" fill="#666" text-anchor="middle">y&sup2; = x(x &minus; a<tspan font-style="italic">p</tspan>)(x + b<tspan font-style="italic">p</tspan>)</text>
+                    <text x="320" y="138" font-family="Inter, sans-serif" font-size="10" fill="#666" text-anchor="middle">would have to exist</text>
+
+                    <!-- Right box: Taniyama-Shimura -->
+                    <rect x="460" y="60" width="160" height="100" stroke="#000" stroke-width="1" fill="#fff"/>
+                    <text x="540" y="92" font-family="'Cormorant Garamond', serif" font-size="16" font-weight="600" fill="#000" text-anchor="middle">Taniyama&ndash;</text>
+                    <text x="540" y="112" font-family="'Cormorant Garamond', serif" font-size="16" font-weight="600" fill="#000" text-anchor="middle">Shimura</text>
+                    <text x="540" y="135" font-family="Inter, sans-serif" font-size="10" fill="#666" text-anchor="middle">elliptic &harr; modular</text>
+
+                    <!-- Arrows -->
+                    <g stroke="#000" stroke-width="1" fill="#000">
+                        <path d="M 185 110 L 235 110" marker-end="url(#flarrow)"/>
+                        <path d="M 405 110 L 455 110" marker-end="url(#flarrow)"/>
+                    </g>
+                    <defs>
+                        <marker id="flarrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+                            <path d="M 0 0 L 10 5 L 0 10 z"/>
+                        </marker>
+                    </defs>
+                    <text x="210" y="100" font-family="Inter, sans-serif" font-size="9" fill="#666" text-anchor="middle">Frey</text>
+                    <text x="430" y="100" font-family="Inter, sans-serif" font-size="9" fill="#666" text-anchor="middle">Ribet</text>
+
+                    <text x="320" y="35" font-family="'Cormorant Garamond', serif" font-size="16" font-weight="600" fill="#000" text-anchor="middle">The bridge that made the proof possible</text>
+                    <text x="320" y="195" font-family="'Cormorant Garamond', serif" font-size="13" font-style="italic" fill="#666" text-anchor="middle">prove Taniyama&ndash;Shimura (enough of it) &rArr; Fermat falls</text>
+                </svg>
+                <p class="caption">Frey's curve and Ribet's level-lowering theorem chained Fermat to a far more general conjecture about elliptic curves.</p>
+            </div>
+
+            <p>Andrew Wiles, an English mathematician at Princeton, had been quietly obsessed with Fermat since he was a ten-year-old in a Cambridge library. When he heard about Ribet's result, he saw a path: not to attack Fermat directly, but to prove enough of Taniyama&ndash;Shimura to capture every elliptic curve a hypothetical Fermat counterexample could produce. He told almost no one. He worked alone, in his attic, for seven years.</p>
+
+            <h2>The proof, and what it cost</h2>
+
+            <p>In June 1993, at a conference in Cambridge, Wiles gave three lectures whose final slide simply stated Fermat's Last Theorem as a corollary. The room understood what had just happened. The journalists arrived within hours.</p>
+
+            <p>Then, that autumn, a referee found a gap. One step in the long chain of inequalities did not quite close. For a year, Wiles &mdash; eventually with the help of his former student Richard Taylor &mdash; tried to patch it. He nearly gave up. The fix, when it came, was an act of mathematical jiu-jitsu: an earlier approach Wiles had abandoned turned out to fill exactly the hole his later approach had left behind. The complete proof, in two papers totalling over a hundred dense pages, appeared in 1995. Three hundred and fifty-eight years after Fermat's marginal note, the sentence was finished.</p>
+
+            <p>The proof does not use anything Fermat could have had. It uses elliptic curves, modular forms, Galois representations, deformation theory &mdash; cathedrals of twentieth-century mathematics that Fermat could not have begun to anticipate. The honest verdict is that Fermat almost certainly did not have a proof. He probably had a flawed argument he later spotted the hole in, and never bothered to update the margin.</p>
+
+            <p>But the marginal note did something extraordinary anyway. By being so simple to state and so impossible to prove, it acted as a kind of gravitational well. Generations of mathematicians, trying to crack it, built the tools &mdash; ideal theory, algebraic number theory, the whole machinery linking geometry and analysis &mdash; that turned out to matter for reasons far beyond Fermat. The wrong question, posed well enough, can be more productive than the right one. And occasionally, three and a half centuries later, somebody answers it.</p>
+
+            <hr class="divider">
+
+            <div class="references">
+                <h3>Further reading</h3>
+                <ol>
+                    <li>Singh, S. (1997). <em>Fermat's Last Theorem</em>. Fourth Estate. The definitive popular account.</li>
+                    <li>Wiles, A. (1995). <em>Modular Elliptic Curves and Fermat's Last Theorem</em>. Annals of Mathematics, 141(3).</li>
+                    <li>Taylor, R. &amp; Wiles, A. (1995). <em>Ring-Theoretic Properties of Certain Hecke Algebras</em>. Annals of Mathematics, 141(3).</li>
+                    <li>Ribet, K. (1990). <em>On Modular Representations of Gal(Q&#772;/Q) Arising from Modular Forms</em>. Inventiones Mathematicae, 100.</li>
+                    <li>Edwards, H. M. (1977). <em>Fermat's Last Theorem: A Genetic Introduction to Algebraic Number Theory</em>. Springer.</li>
+                </ol>
+            </div>
+        </article>
+
+        <footer>
+            <a href="index.html">&larr; Back to Wonderland</a>
+        </footer>
+    </div>
+</body>
+</html>
