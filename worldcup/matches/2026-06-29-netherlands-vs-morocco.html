@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-KVBPX8VW');</script>
+    <!-- End Google Tag Manager -->
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Netherlands 1–1 Morocco — full match analytics: shot map, expected goals race, lineups, stats and model verdict.">
+    <link rel="icon" type="image/svg+xml" href="../../images/favicon.svg">
+    <link rel="icon" type="image/png" sizes="32x32" href="../../images/favicon-32.png">
+    <title>Netherlands 1–1 Morocco — World Cup 2026</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+html { font-size: 16px; }
+body {
+  background: #fff;
+  color: #0a0a0a;
+  font-family: 'Manrope', -apple-system, 'Segoe UI', sans-serif;
+  line-height: 1.5;
+  font-feature-settings: 'tnum';
+  -webkit-font-smoothing: antialiased;
+}
+a { color: inherit; text-decoration: none; }
+.wrap { max-width: 700px; margin: 0 auto; padding: 0 1.1rem 5rem; }
+
+/* ---- masthead ---- */
+.masthead { padding: 2.2rem 0 1.4rem; display: flex; align-items: baseline; justify-content: space-between; gap: 1rem; flex-wrap: wrap; }
+.masthead h1 { font-size: 1.55rem; font-weight: 800; letter-spacing: -0.02em; }
+.masthead .sub { font-size: 0.78rem; color: #777; font-weight: 500; }
+.masthead a.home { font-size: 0.75rem; font-weight: 600; color: #999; }
+.masthead a.home:hover { color: #0a0a0a; }
+
+/* ---- tabs ---- */
+.tabbar {
+  position: sticky; top: 0; z-index: 10;
+  display: flex; gap: 0.4rem;
+  background: rgba(255,255,255,0.94); backdrop-filter: blur(6px);
+  padding: 0.6rem 0 0.8rem;
+}
+.tabbar button {
+  font: inherit; font-size: 0.82rem; font-weight: 700;
+  border: 1px solid #e4e4e4; background: #fff; color: #555;
+  border-radius: 999px; padding: 0.42rem 1.05rem; cursor: pointer;
+  transition: all 0.15s ease;
+}
+.tabbar button:hover { border-color: #0a0a0a; color: #0a0a0a; }
+.tabbar button.active { background: #0a0a0a; border-color: #0a0a0a; color: #fff; }
+.panel { display: none; }
+.panel.active { display: block; }
+
+/* ---- cards ---- */
+.card {
+  border: 1px solid #e9e9e9; border-radius: 16px; background: #fff;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.03);
+  padding: 1.15rem 1.25rem; margin-bottom: 1rem;
+}
+.card-title { font-size: 0.7rem; font-weight: 800; letter-spacing: 0.1em; text-transform: uppercase; color: #999; margin-bottom: 0.9rem; }
+.card-note { font-size: 0.72rem; color: #999; margin-top: 0.7rem; line-height: 1.55; }
+
+/* ---- fixtures feed ---- */
+.day-head {
+  font-size: 0.72rem; font-weight: 800; letter-spacing: 0.08em; text-transform: uppercase;
+  color: #888; margin: 1.6rem 0 0.6rem; padding-left: 0.2rem;
+}
+.day-head.today { color: #0a0a0a; }
+.day-head.today::after { content: 'TODAY'; margin-left: 0.6rem; background: #0a0a0a; color: #fff; border-radius: 5px; padding: 0.1rem 0.45rem; font-size: 0.62rem; }
+.fixture {
+  display: grid; grid-template-columns: 3.4rem 1fr auto; align-items: center; gap: 0.9rem;
+  border: 1px solid #e9e9e9; border-radius: 14px; background: #fff;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.03);
+  padding: 0.8rem 1rem; margin-bottom: 0.55rem;
+}
+a.fixture { transition: border-color 0.15s ease, transform 0.15s ease; }
+a.fixture:hover { border-color: #0a0a0a; transform: translateY(-1px); }
+.fx-status { font-size: 0.68rem; font-weight: 800; color: #999; text-align: center; line-height: 1.3; }
+.fx-status .chip { display: inline-block; background: #f1f1f1; border-radius: 6px; padding: 0.12rem 0.4rem; color: #555; }
+.fx-status .chip.ft { background: #0a0a0a; color: #fff; }
+.fx-teams { min-width: 0; }
+.fx-row { display: flex; justify-content: space-between; align-items: baseline; gap: 0.8rem; }
+.fx-row .t { font-size: 0.92rem; font-weight: 600; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.fx-row .t.win { font-weight: 800; }
+.fx-row .s { font-size: 0.95rem; font-weight: 800; }
+.fx-meta { font-size: 0.68rem; color: #aaa; font-weight: 600; text-align: right; max-width: 8rem; }
+.fx-arrow { color: #ccc; font-size: 0.9rem; }
+
+/* ---- tables ---- */
+table.t { width: 100%; border-collapse: collapse; font-size: 0.82rem; }
+table.t th { font-size: 0.64rem; font-weight: 800; letter-spacing: 0.07em; text-transform: uppercase; color: #aaa; text-align: left; padding: 0.3rem 0.45rem; border-bottom: 1px solid #eee; }
+table.t td { padding: 0.42rem 0.45rem; border-bottom: 1px solid #f4f4f4; font-weight: 500; }
+table.t tr:last-child td { border-bottom: none; }
+table.t .r { text-align: right; }
+table.t .pos { color: #bbb; font-weight: 700; width: 1.4rem; }
+table.t .pts { font-weight: 800; }
+.qual-line td { border-top: 2px solid #0a0a0a; }
+
+/* ---- group grid ---- */
+.group-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 0.9rem; }
+.group-grid .card { margin-bottom: 0; padding: 0.9rem 1rem; }
+
+/* ---- predictions ---- */
+.odds-row { display: grid; grid-template-columns: 8.2rem 1fr 3.2rem; align-items: center; gap: 0.7rem; padding: 0.32rem 0; font-size: 0.84rem; font-weight: 600; }
+.odds-track { height: 0.6rem; background: #f1f1f1; border-radius: 99px; overflow: hidden; }
+.odds-track > span { display: block; height: 100%; background: #0a0a0a; border-radius: 99px; }
+.odds-pct { text-align: right; font-weight: 800; font-size: 0.8rem; }
+.pred-line { font-size: 0.74rem; color: #888; font-weight: 600; margin-top: 0.25rem; }
+.bigstat { display: flex; gap: 0.9rem; }
+.bigstat .cell { flex: 1; border: 1px solid #eee; border-radius: 12px; padding: 0.7rem 0.85rem; }
+.bigstat .n { font-size: 1.35rem; font-weight: 800; letter-spacing: -0.02em; }
+.bigstat .l { font-size: 0.64rem; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; color: #999; margin-top: 0.1rem; }
+
+/* ---- match page: scoreboard ---- */
+.kickline { font-size: 0.72rem; font-weight: 700; color: #999; letter-spacing: 0.05em; text-transform: uppercase; margin-bottom: 0.9rem; }
+.board { display: grid; grid-template-columns: 1fr auto 1fr; align-items: center; gap: 1rem; margin: 0.4rem 0 0.9rem; }
+.board .team { text-align: center; }
+.board .team .name { font-size: 1.05rem; font-weight: 800; letter-spacing: -0.01em; }
+.board .team .xg { font-size: 0.7rem; color: #999; font-weight: 600; margin-top: 0.15rem; }
+.board .score { font-size: 2.6rem; font-weight: 800; letter-spacing: 0.02em; white-space: nowrap; }
+.board .score .ft { display: block; font-size: 0.64rem; font-weight: 800; letter-spacing: 0.15em; color: #999; text-align: center; }
+.goals-line { text-align: center; font-size: 0.76rem; color: #666; font-weight: 600; line-height: 1.7; }
+.venue-line { text-align: center; font-size: 0.7rem; color: #aaa; font-weight: 600; margin-top: 0.6rem; }
+.narrative { font-size: 0.88rem; line-height: 1.65; color: #333; }
+
+/* ---- stat bars ---- */
+.sb-row { display: grid; grid-template-columns: 2.6rem 1fr 7.5rem 1fr 2.6rem; align-items: center; gap: 0.55rem; padding: 0.34rem 0; }
+.sb-row .v { font-size: 0.84rem; font-weight: 800; }
+.sb-row .v.l { text-align: right; }
+.sb-row .lab { font-size: 0.66rem; font-weight: 700; letter-spacing: 0.05em; text-transform: uppercase; color: #999; text-align: center; }
+.sb-track { height: 0.5rem; background: #f1f1f1; border-radius: 99px; position: relative; overflow: hidden; }
+.sb-track > span { position: absolute; top: 0; height: 100%; background: #0a0a0a; border-radius: 99px; }
+.sb-track.l > span { right: 0; }
+.sb-track.r > span { left: 0; }
+
+/* ---- timeline ---- */
+.tl-item { display: grid; grid-template-columns: 3rem 1fr; gap: 0.8rem; padding: 0.45rem 0; border-bottom: 1px solid #f6f6f6; font-size: 0.82rem; }
+.tl-item:last-child { border-bottom: none; }
+.tl-min { font-weight: 800; color: #bbb; text-align: right; }
+.tl-text { font-weight: 500; color: #444; }
+.tl-text .tag { font-size: 0.62rem; font-weight: 800; letter-spacing: 0.06em; text-transform: uppercase; border-radius: 5px; padding: 0.08rem 0.4rem; margin-right: 0.45rem; background: #f1f1f1; color: #666; vertical-align: 1px; }
+.tl-text .tag.goal { background: #0a0a0a; color: #fff; }
+
+/* ---- lineups ---- */
+.lineups { display: grid; grid-template-columns: 1fr 1fr; gap: 1.4rem; }
+.lu-team { font-size: 0.85rem; font-weight: 800; }
+.lu-formation { font-size: 0.68rem; color: #999; font-weight: 700; margin-bottom: 0.5rem; }
+.lu-list { list-style: none; font-size: 0.78rem; font-weight: 500; }
+.lu-list li { padding: 0.18rem 0; border-bottom: 1px solid #f7f7f7; }
+.lu-list .j { display: inline-block; width: 1.7rem; color: #bbb; font-weight: 700; }
+.lu-subs { margin-top: 0.6rem; font-size: 0.7rem; color: #999; line-height: 1.6; }
+
+/* ---- charts ---- */
+.chart { width: 100%; }
+.legend { display: flex; gap: 1.1rem; font-size: 0.7rem; font-weight: 700; color: #777; margin-top: 0.5rem; flex-wrap: wrap; }
+.legend .k { display: inline-flex; align-items: center; gap: 0.35rem; }
+.legend .dot { width: 0.65rem; height: 0.65rem; border-radius: 50%; display: inline-block; }
+
+.backlink { display: inline-block; margin-top: 0.5rem; font-size: 0.8rem; font-weight: 700; color: #888; }
+.backlink:hover { color: #0a0a0a; }
+.foot { font-size: 0.72rem; color: #aaa; line-height: 1.6; margin-top: 2.2rem; font-weight: 500; }
+
+@media (max-width: 560px) {
+  .group-grid { grid-template-columns: 1fr; }
+  .lineups { grid-template-columns: 1fr; }
+  .board .score { font-size: 2rem; }
+  .board .team .name { font-size: 0.9rem; }
+  .odds-row { grid-template-columns: 6.4rem 1fr 3rem; }
+  .sb-row { grid-template-columns: 2.2rem 1fr 5.4rem 1fr 2.2rem; gap: 0.4rem; }
+  .bigstat { flex-wrap: wrap; }
+  .fx-meta { display: none; }
+}
+
+    </style>
+</head>
+<body>
+    <noscript><iframe aria-hidden="true" title="Google Tag Manager" src="https://www.googletagmanager.com/ns.html?id=GTM-KVBPX8VW"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+    <div class="wrap">
+        <div class="masthead">
+            <div><h1>World Cup 2026</h1></div>
+            <a class="home" href="../index.html">&larr; All matches</a>
+        </div>
+
+        <!-- scoreboard -->
+        <div class="card">
+            <div class="kickline">Round of 32 · Knockout · 2026-06-29</div>
+            <div class="board">
+                <div class="team">
+                    <div class="name">Netherlands</div>
+                    <div class="xg">xG 4.75</div>
+                </div>
+                <div class="score"><span class="ft">HT 0–0</span>1&thinsp;–&thinsp;1</div>
+                <div class="team">
+                    <div class="name">Morocco</div>
+                    <div class="xg">xG 5.68</div>
+                </div>
+            </div>
+            <div class="goals-line"><strong>Netherlands</strong> Cody Gakpo 72&#8242; &nbsp;·&nbsp; <strong>Morocco</strong> Issa Diop 90+1&#8242;</div>
+            <div class="venue-line">Estadio BBVA · 51,243 attendance</div>
+        </div>
+
+        
+        <div class="card">
+            <div class="card-title">The story</div>
+            <p class="narrative">A 1–1 draw — the model had that at 25%. The decisive moment came late, in the 90th minute.</p>
+        </div>
+        
+
+        
+        <div class="card">
+            <div class="card-title">Expected goals race</div>
+            <div class="chart"><svg viewBox="0 0 660 240" xmlns="http://www.w3.org/2000/svg" width="100%" role="img" aria-label="Cumulative expected goals"><line x1="34" y1="183.4" x2="646" y2="183.4" stroke="#f0f0f0" stroke-width="1"/><text x="28" y="186.4" font-size="9" font-family="Manrope,sans-serif" fill="#bbb" text-anchor="end">1</text><line x1="34" y1="152.8" x2="646" y2="152.8" stroke="#f0f0f0" stroke-width="1"/><text x="28" y="155.8" font-size="9" font-family="Manrope,sans-serif" fill="#bbb" text-anchor="end">2</text><line x1="34" y1="122.1" x2="646" y2="122.1" stroke="#f0f0f0" stroke-width="1"/><text x="28" y="125.1" font-size="9" font-family="Manrope,sans-serif" fill="#bbb" text-anchor="end">3</text><line x1="34" y1="91.5" x2="646" y2="91.5" stroke="#f0f0f0" stroke-width="1"/><text x="28" y="94.5" font-size="9" font-family="Manrope,sans-serif" fill="#bbb" text-anchor="end">4</text><line x1="34" y1="60.9" x2="646" y2="60.9" stroke="#f0f0f0" stroke-width="1"/><text x="28" y="63.9" font-size="9" font-family="Manrope,sans-serif" fill="#bbb" text-anchor="end">5</text><line x1="34" y1="30.3" x2="646" y2="30.3" stroke="#f0f0f0" stroke-width="1"/><text x="28" y="33.3" font-size="9" font-family="Manrope,sans-serif" fill="#bbb" text-anchor="end">6</text><text x="34.0" y="232" font-size="9" font-family="Manrope,sans-serif" fill="#bbb" text-anchor="middle">0&#8242;</text><text x="108.6" y="232" font-size="9" font-family="Manrope,sans-serif" fill="#bbb" text-anchor="middle">15&#8242;</text><text x="183.3" y="232" font-size="9" font-family="Manrope,sans-serif" fill="#bbb" text-anchor="middle">30&#8242;</text><text x="257.9" y="232" font-size="9" font-family="Manrope,sans-serif" fill="#bbb" text-anchor="middle">45&#8242;</text><text x="332.5" y="232" font-size="9" font-family="Manrope,sans-serif" fill="#bbb" text-anchor="middle">60&#8242;</text><text x="407.2" y="232" font-size="9" font-family="Manrope,sans-serif" fill="#bbb" text-anchor="middle">75&#8242;</text><text x="481.8" y="232" font-size="9" font-family="Manrope,sans-serif" fill="#bbb" text-anchor="middle">90&#8242;</text><text x="556.4" y="232" font-size="9" font-family="Manrope,sans-serif" fill="#bbb" text-anchor="middle">105&#8242;</text><text x="631.1" y="232" font-size="9" font-family="Manrope,sans-serif" fill="#bbb" text-anchor="middle">120&#8242;</text><line x1="34" y1="214.0" x2="646" y2="214.0" stroke="#ddd" stroke-width="1"/><path d="M 34 214.0 L 68.8 214.0 L 68.8 210.0 L 218.1 210.0 L 218.1 205.0 L 252.9 205.0 L 252.9 202.8 L 272.8 202.8 L 272.8 198.4 L 327.6 198.4 L 327.6 193.6 L 392.2 193.6 L 392.2 185.0 L 631.1 185.0 L 631.1 161.7 L 631.1 161.7 L 631.1 138.4 L 631.1 138.4 L 631.1 115.1 L 631.1 115.1 L 631.1 91.9 L 631.1 91.9 L 631.1 68.6 L 646 68.6" fill="none" stroke="#0a0a0a" stroke-width="2.2" stroke-linejoin="round"/><text x="646" y="62.6" font-size="10" font-weight="700" font-family="Manrope,sans-serif" fill="#0a0a0a" text-anchor="end">4.75</text><circle cx="392.2" cy="185.0" r="5" fill="#0a0a0a" stroke="#fff" stroke-width="1.5"/><text x="392.2" y="175.0" font-size="9.5" font-weight="700" font-family="Manrope,sans-serif" fill="#0a0a0a" text-anchor="middle">Cody Gakpo 72&#8242;</text><circle cx="631.1" cy="161.7" r="5" fill="#0a0a0a" stroke="#fff" stroke-width="1.5"/><text x="631.1" y="151.7" font-size="9.5" font-weight="700" font-family="Manrope,sans-serif" fill="#0a0a0a" text-anchor="middle">Teun Koopmeiners 120&#8242;</text><circle cx="631.1" cy="115.1" r="5" fill="#0a0a0a" stroke="#fff" stroke-width="1.5"/><text x="631.1" y="105.1" font-size="9.5" font-weight="700" font-family="Manrope,sans-serif" fill="#0a0a0a" text-anchor="middle">120&#8242;</text><path d="M 34 214.0 L 133.5 214.0 L 133.5 205.5 L 133.5 205.5 L 133.5 202.8 L 138.5 202.8 L 138.5 199.6 L 257.9 199.6 L 257.9 197.0 L 272.8 197.0 L 272.8 193.9 L 292.7 193.9 L 292.7 188.5 L 312.6 188.5 L 312.6 182.1 L 322.6 182.1 L 322.6 180.6 L 422.1 180.6 L 422.1 178.8 L 481.8 178.8 L 481.8 169.6 L 516.6 169.6 L 516.6 156.5 L 631.1 156.5 L 631.1 133.2 L 631.1 133.2 L 631.1 109.9 L 631.1 109.9 L 631.1 86.6 L 631.1 86.6 L 631.1 63.4 L 631.1 63.4 L 631.1 40.1 L 646 40.1" fill="none" stroke="#b5b5b5" stroke-width="2.2" stroke-linejoin="round"/><text x="646" y="34.1" font-size="10" font-weight="700" font-family="Manrope,sans-serif" fill="#b5b5b5" text-anchor="end">5.68</text><circle cx="481.8" cy="169.6" r="5" fill="#b5b5b5" stroke="#fff" stroke-width="1.5"/><text x="481.8" y="159.6" font-size="9.5" font-weight="700" font-family="Manrope,sans-serif" fill="#0a0a0a" text-anchor="middle">Issa Diop 90&#8242;</text><circle cx="631.1" cy="109.9" r="5" fill="#b5b5b5" stroke="#fff" stroke-width="1.5"/><text x="631.1" y="99.9" font-size="9.5" font-weight="700" font-family="Manrope,sans-serif" fill="#0a0a0a" text-anchor="middle">120&#8242;</text><circle cx="631.1" cy="86.6" r="5" fill="#b5b5b5" stroke="#fff" stroke-width="1.5"/><text x="631.1" y="76.6" font-size="9.5" font-weight="700" font-family="Manrope,sans-serif" fill="#0a0a0a" text-anchor="middle">120&#8242;</text><circle cx="631.1" cy="40.1" r="5" fill="#b5b5b5" stroke="#fff" stroke-width="1.5"/><text x="631.1" y="30.1" font-size="9.5" font-weight="700" font-family="Manrope,sans-serif" fill="#0a0a0a" text-anchor="middle">120&#8242;</text></svg></div>
+            <div class="legend">
+                <span class="k"><span class="dot" style="background:#0a0a0a"></span>Netherlands</span>
+                <span class="k"><span class="dot" style="background:#b5b5b5"></span>Morocco</span>
+                <span class="k">&#9679; goal</span>
+            </div>
+            <p class="card-note">Cumulative expected goals, minute by minute. ESPN's free feed has no xG, so each shot's xG is estimated with a naive distance-and-angle logistic model fitted on shot coordinates from the play-by-play.</p>
+        </div>
+        
+
+        
+        <div class="card">
+            <div class="card-title">Shot map</div>
+            <div class="chart"><svg viewBox="0 0 660 420" xmlns="http://www.w3.org/2000/svg" width="100%" role="img" aria-label="Shot map"><rect x="10" y="10" width="640" height="400" rx="6" stroke="#d8d8d8" stroke-width="1.5" fill="none"/><line x1="330" y1="10" x2="330" y2="410" stroke="#d8d8d8" stroke-width="1.5" fill="none"/><circle cx="330" cy="210" r="52" stroke="#d8d8d8" stroke-width="1.5" fill="none"/><rect x="10" y="94" width="106" height="232" stroke="#d8d8d8" stroke-width="1.5" fill="none"/><rect x="10" y="154" width="35" height="112" stroke="#d8d8d8" stroke-width="1.5" fill="none"/><rect x="544" y="94" width="106" height="232" stroke="#d8d8d8" stroke-width="1.5" fill="none"/><rect x="615" y="154" width="35" height="112" stroke="#d8d8d8" stroke-width="1.5" fill="none"/><circle cx="552.7" cy="142.0" r="5.7" fill="#0a0a0a" stroke="#0a0a0a" stroke-width="1.3" opacity="0.45"><title>Ryan Gravenberch · 7&#8242; · xG 0.13 · Shot Blocked</title></circle><circle cx="33.0" cy="246.4" r="7.6" fill="#fff" stroke="#0a0a0a" stroke-width="1.3" opacity="1"><title>Neil El Aynaoui · 20&#8242; · xG 0.28 · Shot On Target</title></circle><circle cx="161.7" cy="201.6" r="5.2" fill="#fff" stroke="#0a0a0a" stroke-width="1.3" opacity="0.45"><title>Ayyoub Bouaddi · 20&#8242; · xG 0.09 · Shot Off Target</title></circle><circle cx="114.3" cy="291.2" r="5.3" fill="#fff" stroke="#0a0a0a" stroke-width="1.3" opacity="1"><title>Achraf Hakimi · 21&#8242; · xG 0.10 · Shot On Target</title></circle><circle cx="593.0" cy="259.6" r="6.1" fill="#0a0a0a" stroke="#0a0a0a" stroke-width="1.3" opacity="0.45"><title>Denzel Dumfries · 37&#8242; · xG 0.17 · Shot Blocked</title></circle><circle cx="488.1" cy="246.4" r="4.9" fill="#0a0a0a" stroke="#0a0a0a" stroke-width="1.3" opacity="0.45"><title>Micky van de Ven · 44&#8242; · xG 0.07 · Shot Off Target</title></circle><circle cx="117.5" cy="302.0" r="5.1" fill="#fff" stroke="#0a0a0a" stroke-width="1.3" opacity="0.45"><title>Azzedine Ounahi · 45'+3&#8242; · xG 0.09 · Shot Off Target</title></circle><circle cx="581.5" cy="160.0" r="5.9" fill="#0a0a0a" stroke="#0a0a0a" stroke-width="1.3" opacity="1"><title>Micky van de Ven · 48&#8242; · xG 0.15 · Shot On Target</title></circle><circle cx="152.7" cy="200.8" r="5.3" fill="#fff" stroke="#0a0a0a" stroke-width="1.3" opacity="0.45"><title>Ayyoub Bouaddi · 48&#8242; · xG 0.10 · Shot Off Target</title></circle><circle cx="39.4" cy="279.2" r="6.3" fill="#fff" stroke="#0a0a0a" stroke-width="1.3" opacity="0.45"><title>? · 52&#8242; · xG 0.18 · Shot Hit Woodwork</title></circle><circle cx="84.9" cy="260.0" r="6.7" fill="#fff" stroke="#0a0a0a" stroke-width="1.3" opacity="0.45"><title>Achraf Hakimi · 56&#8242; · xG 0.21 · Shot Blocked</title></circle><circle cx="174.5" cy="115.2" r="4.6" fill="#fff" stroke="#0a0a0a" stroke-width="1.3" opacity="1"><title>Bilal El Khannouss · 58&#8242; · xG 0.05 · Shot On Target</title></circle><circle cx="534.2" cy="205.6" r="6.0" fill="#0a0a0a" stroke="#0a0a0a" stroke-width="1.3" opacity="0.45"><title>Ryan Gravenberch · 59&#8242; · xG 0.16 · Shot Blocked</title></circle><path d="M568.1,200.7 L571.2,208.2 L579.2,208.8 L573.1,214.0 L574.9,221.8 L568.1,217.6 L561.2,221.8 L563.1,214.0 L557.0,208.8 L565.0,208.2 Z" fill="#0a0a0a" stroke="#0a0a0a" stroke-width="1.5"><title>Cody Gakpo · 72&#8242; · xG 0.28 · Goal</title></path><circle cx="145.7" cy="111.2" r="4.8" fill="#fff" stroke="#0a0a0a" stroke-width="1.3" opacity="0.45"><title>Anass Salah-Eddine · 78&#8242; · xG 0.06 · Shot Blocked</title></circle><path d="M65.7,207.7 L68.8,215.3 L77.0,215.9 L70.8,221.3 L72.7,229.2 L65.7,224.9 L58.7,229.2 L60.6,221.3 L54.4,215.9 L62.5,215.3 Z" fill="#fff" stroke="#0a0a0a" stroke-width="1.5"><title>Issa Diop · 90'+1&#8242; · xG 0.30 · Goal - Header</title></path><circle cx="70.2" cy="205.6" r="9.6" fill="#fff" stroke="#0a0a0a" stroke-width="1.3" opacity="1"><title>Soufiane Rahimi · 97&#8242; · xG 0.43 · Shot On Target</title></circle><path d="M576.4,192.1 L581.1,203.5 L593.4,204.5 L584.1,212.5 L586.9,224.5 L576.4,218.0 L565.9,224.5 L568.7,212.5 L559.4,204.5 L571.7,203.5 Z" fill="#0a0a0a" stroke="#0a0a0a" stroke-width="1.5"><title>Teun Koopmeiners · 120&#8242; · xG 0.76 · Penalty - Scored</title></path><circle cx="83.6" cy="210.0" r="13.9" fill="#fff" stroke="#0a0a0a" stroke-width="1.3" opacity="0.45"><title>? · 120&#8242; · xG 0.76 · Penalty - Missed</title></circle><circle cx="576.4" cy="210.0" r="13.9" fill="#0a0a0a" stroke="#0a0a0a" stroke-width="1.3" opacity="0.45"><title>? · 120&#8242; · xG 0.76 · Penalty - Missed</title></circle><path d="M83.6,192.1 L88.3,203.5 L100.6,204.5 L91.3,212.5 L94.1,224.5 L83.6,218.0 L73.1,224.5 L75.9,212.5 L66.6,204.5 L78.9,203.5 Z" fill="#fff" stroke="#0a0a0a" stroke-width="1.5"><title>? · 120&#8242; · xG 0.76 · Penalty - Scored</title></path><path d="M576.4,192.1 L581.1,203.5 L593.4,204.5 L584.1,212.5 L586.9,224.5 L576.4,218.0 L565.9,224.5 L568.7,212.5 L559.4,204.5 L571.7,203.5 Z" fill="#0a0a0a" stroke="#0a0a0a" stroke-width="1.5"><title>? · 120&#8242; · xG 0.76 · Penalty - Scored</title></path><path d="M83.6,192.1 L88.3,203.5 L100.6,204.5 L91.3,212.5 L94.1,224.5 L83.6,218.0 L73.1,224.5 L75.9,212.5 L66.6,204.5 L78.9,203.5 Z" fill="#fff" stroke="#0a0a0a" stroke-width="1.5"><title>? · 120&#8242; · xG 0.76 · Penalty - Scored</title></path><circle cx="576.4" cy="210.0" r="13.9" fill="#0a0a0a" stroke="#0a0a0a" stroke-width="1.3" opacity="0.45"><title>Quinten Timber · 120&#8242; · xG 0.76 · Penalty - Missed</title></circle><circle cx="83.6" cy="210.0" r="13.9" fill="#fff" stroke="#0a0a0a" stroke-width="1.3" opacity="0.45"><title>? · 120&#8242; · xG 0.76 · Penalty - Missed</title></circle><circle cx="576.4" cy="210.0" r="13.9" fill="#0a0a0a" stroke="#0a0a0a" stroke-width="1.3" opacity="0.45"><title>Crysencio Summerville · 120&#8242; · xG 0.76 · Penalty - Saved</title></circle><path d="M83.6,192.1 L88.3,203.5 L100.6,204.5 L91.3,212.5 L94.1,224.5 L83.6,218.0 L73.1,224.5 L75.9,212.5 L66.6,204.5 L78.9,203.5 Z" fill="#fff" stroke="#0a0a0a" stroke-width="1.5"><title>? · 120&#8242; · xG 0.76 · Penalty - Scored</title></path></svg></div>
+            <div class="legend">
+                <span class="k"><span class="dot" style="background:#0a0a0a"></span>Netherlands (attacking &rarr;)</span>
+                <span class="k"><span class="dot" style="background:#fff; border: 1.5px solid #0a0a0a;"></span>Morocco (attacking &larr;)</span>
+                <span class="k">size = xG · star = goal</span>
+            </div>
+        </div>
+        
+
+        
+        <div class="card">
+            <div class="card-title">Netherlands &nbsp;·&nbsp; match stats &nbsp;·&nbsp; Morocco</div>
+            
+            <div class="sb-row">
+                <span class="v l">29.9</span>
+                <span class="sb-track l"><span style="width: 29.9%"></span></span>
+                <span class="lab">Possession</span>
+                <span class="sb-track r"><span style="width: 70.1%"></span></span>
+                <span class="v">70.1</span>
+            </div>
+            
+            <div class="sb-row">
+                <span class="v l">6</span>
+                <span class="sb-track l"><span style="width: 35.3%"></span></span>
+                <span class="lab">Shots</span>
+                <span class="sb-track r"><span style="width: 64.7%"></span></span>
+                <span class="v">11</span>
+            </div>
+            
+            <div class="sb-row">
+                <span class="v l">2</span>
+                <span class="sb-track l"><span style="width: 28.6%"></span></span>
+                <span class="lab">On Target</span>
+                <span class="sb-track r"><span style="width: 71.4%"></span></span>
+                <span class="v">5</span>
+            </div>
+            
+            <div class="sb-row">
+                <span class="v l">5</span>
+                <span class="sb-track l"><span style="width: 38.5%"></span></span>
+                <span class="lab">Corners</span>
+                <span class="sb-track r"><span style="width: 61.5%"></span></span>
+                <span class="v">8</span>
+            </div>
+            
+            <div class="sb-row">
+                <span class="v l">18</span>
+                <span class="sb-track l"><span style="width: 54.5%"></span></span>
+                <span class="lab">Fouls</span>
+                <span class="sb-track r"><span style="width: 45.5%"></span></span>
+                <span class="v">15</span>
+            </div>
+            
+            <div class="sb-row">
+                <span class="v l">3</span>
+                <span class="sb-track l"><span style="width: 100.0%"></span></span>
+                <span class="lab">Offsides</span>
+                <span class="sb-track r"><span style="width: 0.0%"></span></span>
+                <span class="v">0</span>
+            </div>
+            
+            <div class="sb-row">
+                <span class="v l">5</span>
+                <span class="sb-track l"><span style="width: 83.3%"></span></span>
+                <span class="lab">Saves</span>
+                <span class="sb-track r"><span style="width: 16.7%"></span></span>
+                <span class="v">1</span>
+            </div>
+            
+            <div class="sb-row">
+                <span class="v l">0</span>
+                <span class="sb-track l"><span style="width: 0.0%"></span></span>
+                <span class="lab">Yellows</span>
+                <span class="sb-track r"><span style="width: 100.0%"></span></span>
+                <span class="v">1</span>
+            </div>
+            
+            <div class="sb-row">
+                <span class="v l">0</span>
+                <span class="sb-track l"><span style="width: 0%"></span></span>
+                <span class="lab">Reds</span>
+                <span class="sb-track r"><span style="width: 100%"></span></span>
+                <span class="v">0</span>
+            </div>
+            
+        </div>
+        
+
+        
+        <div class="card">
+            <div class="card-title">What the model expected</div>
+            <div class="chart"><svg viewBox="0 0 660 64" xmlns="http://www.w3.org/2000/svg" width="100%" role="img" aria-label="Pre-match win probabilities"><defs><clipPath id="rnd"><rect x="4" y="26" width="652" height="26" rx="13"/></clipPath></defs><g clip-path="url(#rnd)"><rect x="4.0" y="26" width="307.7" height="26" fill="#0a0a0a"/><text x="157.8" y="43" font-size="11" font-weight="700" font-family="Manrope,sans-serif" fill="#fff" text-anchor="middle">Netherlands 47%</text><rect x="311.7" y="26" width="162.8" height="26" fill="#d9d9d9"/><text x="393.1" y="43" font-size="11" font-weight="700" font-family="Manrope,sans-serif" fill="#555" text-anchor="middle">draw 25%</text><rect x="474.5" y="26" width="181.5" height="26" fill="#f1f1f1"/><text x="565.2" y="43" font-size="11" font-weight="700" font-family="Manrope,sans-serif" fill="#555" text-anchor="middle">Morocco 28%</text></g><line x1="311.7" y1="26" x2="311.7" y2="52" stroke="#fff" stroke-width="2"/><line x1="474.5" y1="26" x2="474.5" y2="52" stroke="#fff" stroke-width="2"/><path d="M393.1,23 l-5,-9 l10,0 Z" fill="#0a0a0a"/><text x="393.1" y="10" font-size="9.5" font-weight="800" font-family="Manrope,sans-serif" fill="#0a0a0a" text-anchor="middle">ACTUAL</text></svg></div>
+            <p class="narrative" style="margin-top: 0.8rem;">Pre-match Elo: Netherlands 2022, Morocco 1950. The model priced this Netherlands <strong>47%</strong> / draw <strong>25%</strong> / Morocco <strong>28%</strong>, most likely score 1–1. Reality had other plans. The result moves <strong>5 Elo points</strong> from Netherlands to Morocco — that flows straight into the next round of tournament simulations.</p>
+        </div>
+        
+
+        
+        <div class="card">
+            <div class="card-title">Timeline</div>
+            
+            <div class="tl-item">
+                <span class="tl-min">47'</span>
+                <span class="tl-text"><span class="tag">YELLOW</span>Issa Diop (Morocco) is shown the yellow card for a bad foul.</span>
+            </div>
+            
+            <div class="tl-item">
+                <span class="tl-min">71'</span>
+                <span class="tl-text"><span class="tag">SUB</span>Substitution, Netherlands. Teun Koopmeiners replaces Nathan Aké.</span>
+            </div>
+            
+            <div class="tl-item">
+                <span class="tl-min">71'</span>
+                <span class="tl-text"><span class="tag">SUB</span>Substitution, Netherlands. Wout Weghorst replaces Brian Brobbey.</span>
+            </div>
+            
+            <div class="tl-item">
+                <span class="tl-min">72'</span>
+                <span class="tl-text"><span class="tag goal">GOAL</span>Goal! Netherlands 1, Morocco 0. Cody Gakpo (Netherlands) right footed shot from the centre of the box to the centre of the goal. Assisted by Crysencio Summerville.</span>
+            </div>
+            
+            <div class="tl-item">
+                <span class="tl-min">75'</span>
+                <span class="tl-text"><span class="tag">SUB</span>Substitution, Morocco. Anass Salah-Eddine replaces Chadi Riad because of an injury.</span>
+            </div>
+            
+            <div class="tl-item">
+                <span class="tl-min">79'</span>
+                <span class="tl-text"><span class="tag">SUB</span>Substitution, Morocco. Gessime Yassine replaces Brahim Díaz.</span>
+            </div>
+            
+            <div class="tl-item">
+                <span class="tl-min">79'</span>
+                <span class="tl-text"><span class="tag">SUB</span>Substitution, Morocco. Samir El Mourabet replaces Ayyoub Bouaddi.</span>
+            </div>
+            
+            <div class="tl-item">
+                <span class="tl-min">86'</span>
+                <span class="tl-text"><span class="tag">SUB</span>Substitution, Morocco. Soufiane Rahimi replaces Azzedine Ounahi.</span>
+            </div>
+            
+            <div class="tl-item">
+                <span class="tl-min">86'</span>
+                <span class="tl-text"><span class="tag">SUB</span>Substitution, Netherlands. Jorrel Hato replaces Micky van de Ven.</span>
+            </div>
+            
+            <div class="tl-item">
+                <span class="tl-min">86'</span>
+                <span class="tl-text"><span class="tag">SUB</span>Substitution, Netherlands. Quinten Timber replaces Ryan Gravenberch.</span>
+            </div>
+            
+            <div class="tl-item">
+                <span class="tl-min">87'</span>
+                <span class="tl-text"><span class="tag">SUB</span>Substitution, Morocco. Chemsdine Talbi replaces Bilal El Khannouss.</span>
+            </div>
+            
+            <div class="tl-item">
+                <span class="tl-min">90'+1'</span>
+                <span class="tl-text"><span class="tag goal">GOAL</span>Goal! Netherlands 1, Morocco 1. Issa Diop (Morocco) header from the centre of the box to the top right corner. Assisted by Chemsdine Talbi with a cross.</span>
+            </div>
+            
+            <div class="tl-item">
+                <span class="tl-min">110'</span>
+                <span class="tl-text"><span class="tag">SUB</span>Substitution, Netherlands. Marten de Roon replaces Frenkie de Jong.</span>
+            </div>
+            
+            <div class="tl-item">
+                <span class="tl-min">113'</span>
+                <span class="tl-text"><span class="tag">SUB</span>Substitution, Netherlands. Justin Kluivert replaces Cody Gakpo.</span>
+            </div>
+            
+        </div>
+        
+
+        
+        <div class="card">
+            <div class="card-title">Lineups</div>
+            <div class="lineups">
+                
+                <div>
+                    <div class="lu-team">Netherlands</div>
+                    <div class="lu-formation">3-4-2-1</div>
+                    <ul class="lu-list">
+                        
+                        <li><span class="j">1</span>Bart Verbruggen <span style="color:#bbb; font-size:0.66rem;">G</span></li>
+                        
+                        <li><span class="j">4</span>Virgil van Dijk <span style="color:#bbb; font-size:0.66rem;">CD</span></li>
+                        
+                        <li><span class="j">5</span>Nathan Aké <span style="color:#bbb; font-size:0.66rem;">CD-L</span></li>
+                        
+                        <li><span class="j">6</span>Jan Paul van Hecke <span style="color:#bbb; font-size:0.66rem;">CD-R</span></li>
+                        
+                        <li><span class="j">21</span>Frenkie de Jong <span style="color:#bbb; font-size:0.66rem;">CM-L</span></li>
+                        
+                        <li><span class="j">8</span>Ryan Gravenberch <span style="color:#bbb; font-size:0.66rem;">CM-R</span></li>
+                        
+                        <li><span class="j">15</span>Micky van de Ven <span style="color:#bbb; font-size:0.66rem;">LM</span></li>
+                        
+                        <li><span class="j">22</span>Denzel Dumfries <span style="color:#bbb; font-size:0.66rem;">RM</span></li>
+                        
+                        <li><span class="j">19</span>Brian Brobbey <span style="color:#bbb; font-size:0.66rem;">F</span></li>
+                        
+                        <li><span class="j">11</span>Cody Gakpo <span style="color:#bbb; font-size:0.66rem;">CF-L</span></li>
+                        
+                        <li><span class="j">24</span>Crysencio Summerville <span style="color:#bbb; font-size:0.66rem;">CF-R</span></li>
+                        
+                    </ul>
+                    <div class="lu-subs"><strong>Subs:</strong> Teun Koopmeiners, Wout Weghorst, Jorrel Hato, Quinten Timber, Marten de Roon, Justin Kluivert</div>
+                </div>
+                
+                <div>
+                    <div class="lu-team">Morocco</div>
+                    <div class="lu-formation">4-2-3-1</div>
+                    <ul class="lu-list">
+                        
+                        <li><span class="j">1</span>Yassine Bounou <span style="color:#bbb; font-size:0.66rem;">G</span></li>
+                        
+                        <li><span class="j">18</span>Chadi Riad <span style="color:#bbb; font-size:0.66rem;">CD-L</span></li>
+                        
+                        <li><span class="j">14</span>Issa Diop <span style="color:#bbb; font-size:0.66rem;">CD-R</span></li>
+                        
+                        <li><span class="j">3</span>Noussair Mazraoui <span style="color:#bbb; font-size:0.66rem;">LB</span></li>
+                        
+                        <li><span class="j">2</span>Achraf Hakimi <span style="color:#bbb; font-size:0.66rem;">RB</span></li>
+                        
+                        <li><span class="j">8</span>Azzedine Ounahi <span style="color:#bbb; font-size:0.66rem;">AM</span></li>
+                        
+                        <li><span class="j">24</span>Neil El Aynaoui <span style="color:#bbb; font-size:0.66rem;">LM</span></li>
+                        
+                        <li><span class="j">6</span>Ayyoub Bouaddi <span style="color:#bbb; font-size:0.66rem;">RM</span></li>
+                        
+                        <li><span class="j">11</span>Ismael Saibari <span style="color:#bbb; font-size:0.66rem;">F</span></li>
+                        
+                        <li><span class="j">23</span>Bilal El Khannouss <span style="color:#bbb; font-size:0.66rem;">AM-L</span></li>
+                        
+                        <li><span class="j">10</span>Brahim Díaz <span style="color:#bbb; font-size:0.66rem;">AM-R</span></li>
+                        
+                    </ul>
+                    <div class="lu-subs"><strong>Subs:</strong> Anass Salah-Eddine, Gessime Yassine, Samir El Mourabet, Soufiane Rahimi, Chemsdine Talbi</div>
+                </div>
+                
+            </div>
+        </div>
+        
+
+        <a class="backlink" href="../index.html">&larr; Fixtures, table &amp; predictions</a>
+        <p class="foot">Generated automatically from public match data. Stats: ESPN · Results: openfootball · xG: own naive model (distance + angle).</p>
+    </div>
+</body>
+</html>

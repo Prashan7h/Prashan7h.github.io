@@ -1,0 +1,989 @@
+{
+ "teams": [
+  {
+   "name": "Netherlands",
+   "stats": {
+    "possessionPct": "29.9",
+    "totalShots": "6",
+    "shotsOnTarget": "2",
+    "wonCorners": "5",
+    "foulsCommitted": "18",
+    "offsides": "3",
+    "saves": "5",
+    "yellowCards": "0",
+    "redCards": "0"
+   }
+  },
+  {
+   "name": "Morocco",
+   "stats": {
+    "possessionPct": "70.1",
+    "totalShots": "11",
+    "shotsOnTarget": "5",
+    "wonCorners": "8",
+    "foulsCommitted": "15",
+    "offsides": "0",
+    "saves": "1",
+    "yellowCards": "1",
+    "redCards": "0"
+   }
+  }
+ ],
+ "events": [
+  {
+   "type": "Kickoff",
+   "minute": "",
+   "team": null,
+   "text": "First Half begins.",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "22'",
+   "team": "Morocco",
+   "text": "Delay in match for a drinks break.",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "22'",
+   "team": "Netherlands",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "25'",
+   "team": "Morocco",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "25'",
+   "team": "Netherlands",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "38'",
+   "team": "Netherlands",
+   "text": "Delay in match because of an injury Jan Paul van Hecke (Netherlands).",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "38'",
+   "team": "Morocco",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "40'",
+   "team": "Netherlands",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "40'",
+   "team": "Morocco",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Halftime",
+   "minute": "45'+7'",
+   "team": null,
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Start 2nd Half",
+   "minute": "45'",
+   "team": null,
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Yellow Card",
+   "minute": "47'",
+   "team": "Morocco",
+   "text": "Issa Diop (Morocco) is shown the yellow card for a bad foul.",
+   "players": [
+    "Issa Diop"
+   ]
+  },
+  {
+   "type": "Start Delay",
+   "minute": "67'",
+   "team": "Morocco",
+   "text": "Delay in match for a drinks break.",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "67'",
+   "team": "Netherlands",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Substitution",
+   "minute": "71'",
+   "team": "Netherlands",
+   "text": "Substitution, Netherlands. Teun Koopmeiners replaces Nathan Aké.",
+   "players": [
+    "Teun Koopmeiners",
+    "Nathan Aké"
+   ]
+  },
+  {
+   "type": "End Delay",
+   "minute": "71'",
+   "team": "Morocco",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "71'",
+   "team": "Netherlands",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Substitution",
+   "minute": "71'",
+   "team": "Netherlands",
+   "text": "Substitution, Netherlands. Wout Weghorst replaces Brian Brobbey.",
+   "players": [
+    "Wout Weghorst",
+    "Brian Brobbey"
+   ]
+  },
+  {
+   "type": "Goal",
+   "minute": "72'",
+   "team": "Netherlands",
+   "text": "Goal! Netherlands 1, Morocco 0. Cody Gakpo (Netherlands) right footed shot from the centre of the box to the centre of the goal. Assisted by Crysencio Summerville.",
+   "players": [
+    "Cody Gakpo",
+    "Crysencio Summerville"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "75'",
+   "team": "Morocco",
+   "text": "Substitution, Morocco. Anass Salah-Eddine replaces Chadi Riad because of an injury.",
+   "players": [
+    "Anass Salah-Eddine",
+    "Chadi Riad"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "79'",
+   "team": "Morocco",
+   "text": "Substitution, Morocco. Gessime Yassine replaces Brahim Díaz.",
+   "players": [
+    "Gessime Yassine",
+    "Brahim Díaz"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "79'",
+   "team": "Morocco",
+   "text": "Substitution, Morocco. Samir El Mourabet replaces Ayyoub Bouaddi.",
+   "players": [
+    "Samir El Mourabet",
+    "Ayyoub Bouaddi"
+   ]
+  },
+  {
+   "type": "Start Delay",
+   "minute": "80'",
+   "team": "Netherlands",
+   "text": "Delay in match because of an injury Ryan Gravenberch (Netherlands).",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "80'",
+   "team": "Morocco",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "81'",
+   "team": "Netherlands",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "81'",
+   "team": "Morocco",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Substitution",
+   "minute": "86'",
+   "team": "Morocco",
+   "text": "Substitution, Morocco. Soufiane Rahimi replaces Azzedine Ounahi.",
+   "players": [
+    "Soufiane Rahimi",
+    "Azzedine Ounahi"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "86'",
+   "team": "Netherlands",
+   "text": "Substitution, Netherlands. Jorrel Hato replaces Micky van de Ven.",
+   "players": [
+    "Jorrel Hato",
+    "Micky van de Ven"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "86'",
+   "team": "Netherlands",
+   "text": "Substitution, Netherlands. Quinten Timber replaces Ryan Gravenberch.",
+   "players": [
+    "Quinten Timber",
+    "Ryan Gravenberch"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "87'",
+   "team": "Morocco",
+   "text": "Substitution, Morocco. Chemsdine Talbi replaces Bilal El Khannouss.",
+   "players": [
+    "Chemsdine Talbi",
+    "Bilal El Khannouss"
+   ]
+  },
+  {
+   "type": "Goal - Header",
+   "minute": "90'+1'",
+   "team": "Morocco",
+   "text": "Goal! Netherlands 1, Morocco 1. Issa Diop (Morocco) header from the centre of the box to the top right corner. Assisted by Chemsdine Talbi with a cross.",
+   "players": [
+    "Issa Diop",
+    "Chemsdine Talbi"
+   ]
+  },
+  {
+   "type": "End Regular Time",
+   "minute": "90'+7'",
+   "team": null,
+   "text": "Second Half ends, Netherlands 1, Morocco 1.",
+   "players": []
+  },
+  {
+   "type": "Start Extra Time",
+   "minute": "90'",
+   "team": null,
+   "text": "First Half Extra Time begins Netherlands 1, Morocco 1.",
+   "players": []
+  },
+  {
+   "type": "Halftime Extra Time",
+   "minute": "105'+1'",
+   "team": null,
+   "text": "First Half Extra Time ends, Netherlands 1, Morocco 1.",
+   "players": []
+  },
+  {
+   "type": "Start 2nd Half Extra Time",
+   "minute": "105'",
+   "team": null,
+   "text": "Second Half Extra Time begins Netherlands 1, Morocco 1.",
+   "players": []
+  },
+  {
+   "type": "Substitution",
+   "minute": "110'",
+   "team": "Netherlands",
+   "text": "Substitution, Netherlands. Marten de Roon replaces Frenkie de Jong.",
+   "players": [
+    "Marten de Roon",
+    "Frenkie de Jong"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "113'",
+   "team": "Netherlands",
+   "text": "Substitution, Netherlands. Justin Kluivert replaces Cody Gakpo.",
+   "players": [
+    "Justin Kluivert",
+    "Cody Gakpo"
+   ]
+  },
+  {
+   "type": "Start Delay",
+   "minute": "116'",
+   "team": "Netherlands",
+   "text": "Delay in match because of an injury Crysencio Summerville (Netherlands).",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "116'",
+   "team": "Morocco",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "116'",
+   "team": "Netherlands",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "116'",
+   "team": "Morocco",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "End Extra Time",
+   "minute": "120'+2'",
+   "team": null,
+   "text": "Second Half Extra Time ends, Netherlands 1, Morocco 1.",
+   "players": []
+  },
+  {
+   "type": "Start Shootout",
+   "minute": "120'",
+   "team": null,
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "End Match",
+   "minute": "120'",
+   "team": null,
+   "text": "Penalty Shootout ends, Netherlands 1(2), Morocco 1(3).",
+   "players": []
+  }
+ ],
+ "shots": [
+  {
+   "minute": "7",
+   "seconds": 373.0,
+   "team": "Netherlands",
+   "player": "Ryan Gravenberch",
+   "type": "Shot Blocked",
+   "x": 84.8,
+   "y": 33.0,
+   "goal": false,
+   "xg": 0.129,
+   "text": "Attempt blocked. Ryan Gravenberch (Netherlands) left footed shot from the right side of the box is blocked."
+  },
+  {
+   "minute": "20",
+   "seconds": 1153.0,
+   "team": "Morocco",
+   "player": "Neil El Aynaoui",
+   "type": "Shot On Target",
+   "x": 96.4,
+   "y": 40.9,
+   "goal": false,
+   "xg": 0.278,
+   "text": "Attempt saved. Neil El Aynaoui (Morocco) header from the right side of the six yard box is saved in the top centre of the goal by Bart Verbruggen (Netherlands). Assisted by Achraf Hakimi with a cross."
+  },
+  {
+   "minute": "20",
+   "seconds": 1159.0,
+   "team": "Morocco",
+   "player": "Ayyoub Bouaddi",
+   "type": "Shot Off Target",
+   "x": 76.3,
+   "y": 52.1,
+   "goal": false,
+   "xg": 0.089,
+   "text": "Attempt missed. Ayyoub Bouaddi (Morocco) right footed shot from outside the box is too high. Assisted by Azzedine Ounahi following a corner."
+  },
+  {
+   "minute": "21",
+   "seconds": 1201.0,
+   "team": "Morocco",
+   "player": "Achraf Hakimi",
+   "type": "Shot On Target",
+   "x": 83.7,
+   "y": 29.7,
+   "goal": false,
+   "xg": 0.102,
+   "text": "Attempt saved. Achraf Hakimi (Morocco) right footed shot from the right side of the box is saved in the top right corner by Bart Verbruggen (Netherlands). Assisted by Ismael Saibari."
+  },
+  {
+   "minute": "37",
+   "seconds": 2195.0,
+   "team": "Netherlands",
+   "player": "Denzel Dumfries",
+   "type": "Shot Blocked",
+   "x": 91.1,
+   "y": 62.4,
+   "goal": false,
+   "xg": 0.165,
+   "text": "Attempt blocked. Denzel Dumfries (Netherlands) header from the centre of the box is blocked. Assisted by Crysencio Summerville with a cross."
+  },
+  {
+   "minute": "44",
+   "seconds": 2585.0,
+   "team": "Netherlands",
+   "player": "Micky van de Ven",
+   "type": "Shot Off Target",
+   "x": 74.7,
+   "y": 59.1,
+   "goal": false,
+   "xg": 0.071,
+   "text": "Attempt missed. Micky van de Ven (Netherlands) left footed shot from outside the box is just a bit too high. Assisted by Crysencio Summerville."
+  },
+  {
+   "minute": "45'+3",
+   "seconds": 2700.0,
+   "team": "Morocco",
+   "player": "Azzedine Ounahi",
+   "type": "Shot Off Target",
+   "x": 83.2,
+   "y": 27.0,
+   "goal": false,
+   "xg": 0.087,
+   "text": "Attempt missed. Azzedine Ounahi (Morocco) right footed shot from the right side of the box is just a bit too high. Assisted by Neil El Aynaoui following a fast break."
+  },
+  {
+   "minute": "48",
+   "seconds": 2836.0,
+   "team": "Netherlands",
+   "player": "Micky van de Ven",
+   "type": "Shot On Target",
+   "x": 89.3,
+   "y": 37.5,
+   "goal": false,
+   "xg": 0.146,
+   "text": "Attempt saved. Micky van de Ven (Netherlands) header from the centre of the box is saved in the centre of the goal by Yassine Bounou (Morocco). Assisted by Jan Paul van Hecke with a headed pass."
+  },
+  {
+   "minute": "48",
+   "seconds": 2879.0,
+   "team": "Morocco",
+   "player": "Ayyoub Bouaddi",
+   "type": "Shot Off Target",
+   "x": 77.7,
+   "y": 52.3,
+   "goal": false,
+   "xg": 0.101,
+   "text": "Attempt missed. Ayyoub Bouaddi (Morocco) left footed shot from outside the box is high and wide to the left. Assisted by Achraf Hakimi."
+  },
+  {
+   "minute": "52",
+   "seconds": 3075.0,
+   "team": "Morocco",
+   "player": null,
+   "type": "Shot Hit Woodwork",
+   "x": 95.4,
+   "y": 32.7,
+   "goal": false,
+   "xg": 0.177,
+   "text": "Achraf Hakimi (Morocco) hits the bar with a right footed shot from a difficult angle on the right. Assisted by Azzedine Ounahi with a through ball."
+  },
+  {
+   "minute": "56",
+   "seconds": 3301.0,
+   "team": "Morocco",
+   "player": "Achraf Hakimi",
+   "type": "Shot Blocked",
+   "x": 88.3,
+   "y": 37.5,
+   "goal": false,
+   "xg": 0.209,
+   "text": "Attempt blocked. Achraf Hakimi (Morocco) right footed shot from the centre of the box is blocked. Assisted by Azzedine Ounahi with a through ball."
+  },
+  {
+   "minute": "58",
+   "seconds": 3451.0,
+   "team": "Morocco",
+   "player": "Bilal El Khannouss",
+   "type": "Shot On Target",
+   "x": 74.3,
+   "y": 73.7,
+   "goal": false,
+   "xg": 0.047,
+   "text": "Attempt saved. Bilal El Khannouss (Morocco) right footed shot from outside the box is saved in the bottom right corner by Bart Verbruggen (Netherlands)."
+  },
+  {
+   "minute": "59",
+   "seconds": 3498.0,
+   "team": "Netherlands",
+   "player": "Ryan Gravenberch",
+   "type": "Shot Blocked",
+   "x": 81.9,
+   "y": 48.9,
+   "goal": false,
+   "xg": 0.156,
+   "text": "Attempt blocked. Ryan Gravenberch (Netherlands) left footed shot from outside the box is blocked."
+  },
+  {
+   "minute": "72",
+   "seconds": 4282.0,
+   "team": "Netherlands",
+   "player": "Cody Gakpo",
+   "type": "Goal",
+   "x": 87.2,
+   "y": 50.6,
+   "goal": true,
+   "xg": 0.281,
+   "text": "Goal! Netherlands 1, Morocco 0. Cody Gakpo (Netherlands) right footed shot from the centre of the box to the centre of the goal. Assisted by Crysencio Summerville."
+  },
+  {
+   "minute": "78",
+   "seconds": 4635.0,
+   "team": "Morocco",
+   "player": "Anass Salah-Eddine",
+   "type": "Shot Blocked",
+   "x": 78.8,
+   "y": 74.7,
+   "goal": false,
+   "xg": 0.061,
+   "text": "Attempt blocked. Anass Salah-Eddine (Morocco) left footed shot from outside the box is blocked."
+  },
+  {
+   "minute": "90'+1",
+   "seconds": 5400.0,
+   "team": "Morocco",
+   "player": "Issa Diop",
+   "type": "Goal - Header",
+   "x": 91.3,
+   "y": 47.6,
+   "goal": true,
+   "xg": 0.299,
+   "text": "Goal! Netherlands 1, Morocco 1. Issa Diop (Morocco) header from the centre of the box to the top right corner. Assisted by Chemsdine Talbi with a cross."
+  },
+  {
+   "minute": "97",
+   "seconds": 5761.0,
+   "team": "Morocco",
+   "player": "Soufiane Rahimi",
+   "type": "Shot On Target",
+   "x": 90.6,
+   "y": 51.1,
+   "goal": false,
+   "xg": 0.429,
+   "text": "Attempt saved. Soufiane Rahimi (Morocco) right footed shot from the centre of the box is saved in the bottom left corner by Bart Verbruggen (Netherlands). Assisted by Ismael Saibari with a through ball."
+  },
+  {
+   "minute": "120",
+   "seconds": 7200.0,
+   "team": "Netherlands",
+   "player": "Teun Koopmeiners",
+   "type": "Penalty - Scored",
+   "x": 88.5,
+   "y": 50.0,
+   "goal": true,
+   "xg": 0.76,
+   "text": "Goal! Netherlands 1(1), Morocco 1. Teun Koopmeiners (Netherlands) converts the penalty with a left footed shot to the bottom right corner."
+  },
+  {
+   "minute": "120",
+   "seconds": 7200.0,
+   "team": "Morocco",
+   "player": null,
+   "type": "Penalty - Missed",
+   "x": 88.5,
+   "y": 50.0,
+   "goal": false,
+   "xg": 0.76,
+   "text": "Penalty missed! Still Netherlands 1(1), Morocco 1. Neil El Aynaoui (Morocco) hits the bar with a right footed shot."
+  },
+  {
+   "minute": "120",
+   "seconds": 7200.0,
+   "team": "Netherlands",
+   "player": null,
+   "type": "Penalty - Missed",
+   "x": 88.5,
+   "y": 50.0,
+   "goal": false,
+   "xg": 0.76,
+   "text": "Penalty missed! Still Netherlands 1(1), Morocco 1. Justin Kluivert (Netherlands) hits the left post with a right footed shot."
+  },
+  {
+   "minute": "120",
+   "seconds": 7200.0,
+   "team": "Morocco",
+   "player": null,
+   "type": "Penalty - Scored",
+   "x": 88.5,
+   "y": 50.0,
+   "goal": true,
+   "xg": 0.76,
+   "text": "Goal! Netherlands 1(1), Morocco 1(1). Soufiane Rahimi (Morocco) converts the penalty with a right footed shot to the bottom left corner."
+  },
+  {
+   "minute": "120",
+   "seconds": 7200.0,
+   "team": "Netherlands",
+   "player": null,
+   "type": "Penalty - Scored",
+   "x": 88.5,
+   "y": 50.0,
+   "goal": true,
+   "xg": 0.76,
+   "text": "Goal! Netherlands 1(2), Morocco 1(1). Wout Weghorst (Netherlands) converts the penalty with a right footed shot to the top left corner."
+  },
+  {
+   "minute": "120",
+   "seconds": 7200.0,
+   "team": "Morocco",
+   "player": null,
+   "type": "Penalty - Scored",
+   "x": 88.5,
+   "y": 50.0,
+   "goal": true,
+   "xg": 0.76,
+   "text": "Goal! Netherlands 1(2), Morocco 1(2). Chemsdine Talbi (Morocco) converts the penalty with a right footed shot to the top right corner."
+  },
+  {
+   "minute": "120",
+   "seconds": 7200.0,
+   "team": "Netherlands",
+   "player": "Quinten Timber",
+   "type": "Penalty - Missed",
+   "x": 88.5,
+   "y": 50.0,
+   "goal": false,
+   "xg": 0.76,
+   "text": "Penalty missed. Quinten Timber (Netherlands) right footed shot is close, but misses to the left."
+  },
+  {
+   "minute": "120",
+   "seconds": 7200.0,
+   "team": "Morocco",
+   "player": null,
+   "type": "Penalty - Missed",
+   "x": 88.5,
+   "y": 50.0,
+   "goal": false,
+   "xg": 0.76,
+   "text": "Penalty missed! Still Netherlands 1(2), Morocco 1(2). Achraf Hakimi (Morocco) hits the left post with a right footed shot."
+  },
+  {
+   "minute": "120",
+   "seconds": 7200.0,
+   "team": "Netherlands",
+   "player": "Crysencio Summerville",
+   "type": "Penalty - Saved",
+   "x": 88.5,
+   "y": 50.0,
+   "goal": false,
+   "xg": 0.76,
+   "text": "Penalty saved. Crysencio Summerville (Netherlands) right footed shot saved in the top left corner by Yassine Bounou (Morocco)."
+  },
+  {
+   "minute": "120",
+   "seconds": 7200.0,
+   "team": "Morocco",
+   "player": null,
+   "type": "Penalty - Scored",
+   "x": 88.5,
+   "y": 50.0,
+   "goal": true,
+   "xg": 0.76,
+   "text": "Goal! Netherlands 1(2), Morocco 1(3). Ismael Saibari (Morocco) converts the penalty with a right footed shot to the bottom left corner."
+  }
+ ],
+ "lineups": [
+  {
+   "team": "Netherlands",
+   "formation": "3-4-2-1",
+   "starters": [
+    {
+     "name": "Bart Verbruggen",
+     "jersey": "1",
+     "position": "G"
+    },
+    {
+     "name": "Virgil van Dijk",
+     "jersey": "4",
+     "position": "CD"
+    },
+    {
+     "name": "Nathan Aké",
+     "jersey": "5",
+     "position": "CD-L"
+    },
+    {
+     "name": "Jan Paul van Hecke",
+     "jersey": "6",
+     "position": "CD-R"
+    },
+    {
+     "name": "Frenkie de Jong",
+     "jersey": "21",
+     "position": "CM-L"
+    },
+    {
+     "name": "Ryan Gravenberch",
+     "jersey": "8",
+     "position": "CM-R"
+    },
+    {
+     "name": "Micky van de Ven",
+     "jersey": "15",
+     "position": "LM"
+    },
+    {
+     "name": "Denzel Dumfries",
+     "jersey": "22",
+     "position": "RM"
+    },
+    {
+     "name": "Brian Brobbey",
+     "jersey": "19",
+     "position": "F"
+    },
+    {
+     "name": "Cody Gakpo",
+     "jersey": "11",
+     "position": "CF-L"
+    },
+    {
+     "name": "Crysencio Summerville",
+     "jersey": "24",
+     "position": "CF-R"
+    }
+   ],
+   "subs": [
+    {
+     "name": "Marten de Roon",
+     "jersey": "3",
+     "position": "SUB"
+    },
+    {
+     "name": "Jorrel Hato",
+     "jersey": "25",
+     "position": "SUB"
+    },
+    {
+     "name": "Mats Wieffer",
+     "jersey": "12",
+     "position": "SUB"
+    },
+    {
+     "name": "Donyell Malen",
+     "jersey": "18",
+     "position": "SUB"
+    },
+    {
+     "name": "Memphis Depay",
+     "jersey": "10",
+     "position": "SUB"
+    },
+    {
+     "name": "Justin Kluivert",
+     "jersey": "7",
+     "position": "SUB"
+    },
+    {
+     "name": "Mark Flekken",
+     "jersey": "23",
+     "position": "SUB"
+    },
+    {
+     "name": "Wout Weghorst",
+     "jersey": "9",
+     "position": "SUB"
+    },
+    {
+     "name": "Guus Til",
+     "jersey": "16",
+     "position": "SUB"
+    },
+    {
+     "name": "Quinten Timber",
+     "jersey": "26",
+     "position": "SUB"
+    },
+    {
+     "name": "Lutsharel Geertruida",
+     "jersey": "2",
+     "position": "SUB"
+    },
+    {
+     "name": "Noa Lang",
+     "jersey": "17",
+     "position": "SUB"
+    },
+    {
+     "name": "Robin Roefs",
+     "jersey": "13",
+     "position": "SUB"
+    },
+    {
+     "name": "Tijjani Reijnders",
+     "jersey": "14",
+     "position": "SUB"
+    },
+    {
+     "name": "Teun Koopmeiners",
+     "jersey": "20",
+     "position": "SUB"
+    }
+   ]
+  },
+  {
+   "team": "Morocco",
+   "formation": "4-2-3-1",
+   "starters": [
+    {
+     "name": "Yassine Bounou",
+     "jersey": "1",
+     "position": "G"
+    },
+    {
+     "name": "Chadi Riad",
+     "jersey": "18",
+     "position": "CD-L"
+    },
+    {
+     "name": "Issa Diop",
+     "jersey": "14",
+     "position": "CD-R"
+    },
+    {
+     "name": "Noussair Mazraoui",
+     "jersey": "3",
+     "position": "LB"
+    },
+    {
+     "name": "Achraf Hakimi",
+     "jersey": "2",
+     "position": "RB"
+    },
+    {
+     "name": "Azzedine Ounahi",
+     "jersey": "8",
+     "position": "AM"
+    },
+    {
+     "name": "Neil El Aynaoui",
+     "jersey": "24",
+     "position": "LM"
+    },
+    {
+     "name": "Ayyoub Bouaddi",
+     "jersey": "6",
+     "position": "RM"
+    },
+    {
+     "name": "Ismael Saibari",
+     "jersey": "11",
+     "position": "F"
+    },
+    {
+     "name": "Bilal El Khannouss",
+     "jersey": "23",
+     "position": "AM-L"
+    },
+    {
+     "name": "Brahim Díaz",
+     "jersey": "10",
+     "position": "AM-R"
+    }
+   ],
+   "subs": [
+    {
+     "name": "Anass Salah-Eddine",
+     "jersey": "26",
+     "position": "SUB"
+    },
+    {
+     "name": "Amine Sbaï",
+     "jersey": "17",
+     "position": "SUB"
+    },
+    {
+     "name": "Ahmed Reda Tagnaouti",
+     "jersey": "22",
+     "position": "SUB"
+    },
+    {
+     "name": "Ayoube Amaimouni",
+     "jersey": "21",
+     "position": "SUB"
+    },
+    {
+     "name": "Samir El Mourabet",
+     "jersey": "15",
+     "position": "SUB"
+    },
+    {
+     "name": "Sofyan Amrabat",
+     "jersey": "4",
+     "position": "SUB"
+    },
+    {
+     "name": "Gessime Yassine",
+     "jersey": "16",
+     "position": "SUB"
+    },
+    {
+     "name": "Munir El Kajoui",
+     "jersey": "12",
+     "position": "SUB"
+    },
+    {
+     "name": "Youssef Belammari",
+     "jersey": "19",
+     "position": "SUB"
+    },
+    {
+     "name": "Chemsdine Talbi",
+     "jersey": "7",
+     "position": "SUB"
+    },
+    {
+     "name": "Zakaria El Ouahdi",
+     "jersey": "13",
+     "position": "SUB"
+    },
+    {
+     "name": "Soufiane Rahimi",
+     "jersey": "9",
+     "position": "SUB"
+    },
+    {
+     "name": "Ayoub El Kaabi",
+     "jersey": "20",
+     "position": "SUB"
+    },
+    {
+     "name": "Marwane Saadane",
+     "jersey": "5",
+     "position": "SUB"
+    },
+    {
+     "name": "Redouane Halhal",
+     "jersey": "25",
+     "position": "SUB"
+    }
+   ]
+  }
+ ],
+ "attendance": 51243,
+ "venue": "Estadio BBVA, Guadalupe, Mexico"
+}
