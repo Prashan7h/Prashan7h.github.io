@@ -1,0 +1,1242 @@
+{
+ "teams": [
+  {
+   "name": "Germany",
+   "stats": {
+    "possessionPct": "75.6",
+    "totalShots": "21",
+    "shotsOnTarget": "6",
+    "wonCorners": "16",
+    "foulsCommitted": "18",
+    "offsides": "4",
+    "saves": "2",
+    "yellowCards": "2",
+    "redCards": "0"
+   }
+  },
+  {
+   "name": "Paraguay",
+   "stats": {
+    "possessionPct": "24.4",
+    "totalShots": "7",
+    "shotsOnTarget": "3",
+    "wonCorners": "6",
+    "foulsCommitted": "12",
+    "offsides": "1",
+    "saves": "6",
+    "yellowCards": "2",
+    "redCards": "0"
+   }
+  }
+ ],
+ "events": [
+  {
+   "type": "Kickoff",
+   "minute": "",
+   "team": null,
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "4'",
+   "team": "Paraguay",
+   "text": "Delay in match because of an injury Gustavo Gómez (Paraguay).",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "4'",
+   "team": "Germany",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "5'",
+   "team": "Paraguay",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "5'",
+   "team": "Germany",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "13'",
+   "team": "Paraguay",
+   "text": "Delay in match because of an injury Juan José Cáceres (Paraguay).",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "13'",
+   "team": "Germany",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "14'",
+   "team": "Paraguay",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "14'",
+   "team": "Germany",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "23'",
+   "team": "Germany",
+   "text": "Delay in match for a drinks break.",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "23'",
+   "team": "Paraguay",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "26'",
+   "team": "Germany",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "26'",
+   "team": "Paraguay",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Goal - Header",
+   "minute": "42'",
+   "team": "Paraguay",
+   "text": "Goal! Germany 0, Paraguay 1. Julio Enciso (Paraguay) header from the centre of the box to the bottom left corner. Assisted by Matías Galarza with a cross following a corner.",
+   "players": [
+    "Julio Enciso",
+    "Matías Galarza"
+   ]
+  },
+  {
+   "type": "Halftime",
+   "minute": "45'+6'",
+   "team": null,
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Substitution",
+   "minute": "45'",
+   "team": "Germany",
+   "text": "Substitution, Germany. Leon Goretzka replaces Felix Nmecha.",
+   "players": [
+    "Leon Goretzka",
+    "Felix Nmecha"
+   ]
+  },
+  {
+   "type": "Start 2nd Half",
+   "minute": "45'",
+   "team": null,
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Goal - Header",
+   "minute": "54'",
+   "team": "Germany",
+   "text": "Goal! Germany 1, Paraguay 1. Kai Havertz (Germany) header from the centre of the box to the bottom right corner. Assisted by Florian Wirtz with a cross.",
+   "players": [
+    "Kai Havertz",
+    "Florian Wirtz"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "55'",
+   "team": "Paraguay",
+   "text": "Substitution, Paraguay. Gustavo Caballero replaces Gabriel Ávalos.",
+   "players": [
+    "Gustavo Caballero",
+    "Gabriel Ávalos"
+   ]
+  },
+  {
+   "type": "Start Delay",
+   "minute": "56'",
+   "team": "Paraguay",
+   "text": "Delay in match because of an injury Julio Enciso (Paraguay).",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "56'",
+   "team": "Germany",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "57'",
+   "team": "Paraguay",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "57'",
+   "team": "Germany",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Substitution",
+   "minute": "57'",
+   "team": "Paraguay",
+   "text": "Substitution, Paraguay. Mauricio replaces Julio Enciso because of an injury.",
+   "players": [
+    "Maurício",
+    "Julio Enciso"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "63'",
+   "team": "Germany",
+   "text": "Substitution, Germany. Jamal Musiala replaces Deniz Undav.",
+   "players": [
+    "Jamal Musiala",
+    "Deniz Undav"
+   ]
+  },
+  {
+   "type": "Yellow Card",
+   "minute": "65'",
+   "team": "Paraguay",
+   "text": "Andrés Cubas (Paraguay) is shown the yellow card for a bad foul.",
+   "players": [
+    "Andrés Cubas"
+   ]
+  },
+  {
+   "type": "Start Delay",
+   "minute": "70'",
+   "team": "Germany",
+   "text": "Delay in match for a drinks break.",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "70'",
+   "team": "Paraguay",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "73'",
+   "team": "Germany",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "73'",
+   "team": "Paraguay",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Substitution",
+   "minute": "79'",
+   "team": "Germany",
+   "text": "Substitution, Germany. Waldemar Anton replaces Aleksandar Pavlovic.",
+   "players": [
+    "Waldemar Anton",
+    "Aleksandar Pavlovic"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "88'",
+   "team": "Germany",
+   "text": "Substitution, Germany. Nick Woltemade replaces Leroy Sané.",
+   "players": [
+    "Nick Woltemade",
+    "Leroy Sané"
+   ]
+  },
+  {
+   "type": "End Regular Time",
+   "minute": "90'+6'",
+   "team": null,
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Substitution",
+   "minute": "90'",
+   "team": "Paraguay",
+   "text": "Substitution, Paraguay. Gustavo Velázquez replaces Miguel Almirón.",
+   "players": [
+    "Gustavo Velázquez",
+    "Miguel Almirón"
+   ]
+  },
+  {
+   "type": "Start Extra Time",
+   "minute": "90'",
+   "team": null,
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Substitution",
+   "minute": "99'",
+   "team": "Paraguay",
+   "text": "Substitution, Paraguay. Braian Ojeda replaces Juan José Cáceres.",
+   "players": [
+    "Braian Ojeda",
+    "Juan Jose Cáceres"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "99'",
+   "team": "Paraguay",
+   "text": "Substitution, Paraguay. Antonio Sanabria replaces Damián Bobadilla.",
+   "players": [
+    "Antonio Sanabria",
+    "Damián Bobadilla"
+   ]
+  },
+  {
+   "type": "Start Delay",
+   "minute": "104'",
+   "team": "Germany",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "105'",
+   "team": "Germany",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "105'+5'",
+   "team": "Paraguay",
+   "text": "Delay in match because of an injury Orlando Gill (Paraguay).",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "105'+5'",
+   "team": "Germany",
+   "text": "Delay in match (Germany).",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "105'+5'",
+   "team": "Paraguay",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "105'+5'",
+   "team": "Germany",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "Halftime Extra Time",
+   "minute": "105'+5'",
+   "team": null,
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Start 2nd Half Extra Time",
+   "minute": "105'",
+   "team": null,
+   "text": "Second Half Extra Time begins Germany 1, Paraguay 1.",
+   "players": []
+  },
+  {
+   "type": "Yellow Card",
+   "minute": "106'",
+   "team": "Germany",
+   "text": "Kai Havertz (Germany) is shown the yellow card for a bad foul.",
+   "players": [
+    "Kai Havertz"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "110'",
+   "team": "Germany",
+   "text": "Substitution, Germany. Nadiem Amiri replaces Florian Wirtz.",
+   "players": [
+    "Nadiem Amiri",
+    "Florian Wirtz"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "110'",
+   "team": "Germany",
+   "text": "Substitution, Germany. Malick Thiaw replaces Antonio Rüdiger.",
+   "players": [
+    "Malick Thiaw",
+    "Antonio Rüdiger"
+   ]
+  },
+  {
+   "type": "Yellow Card",
+   "minute": "115'",
+   "team": "Germany",
+   "text": "Jamal Musiala (Germany) is shown the yellow card for a bad foul.",
+   "players": [
+    "Jamal Musiala"
+   ]
+  },
+  {
+   "type": "Start Delay",
+   "minute": "116'",
+   "team": "Paraguay",
+   "text": "Delay in match because of an injury Matías Galarza (Paraguay).",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "116'",
+   "team": "Germany",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "117'",
+   "team": "Paraguay",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "117'",
+   "team": "Germany",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Yellow Card",
+   "minute": "117'",
+   "team": "Paraguay",
+   "text": "Matías Galarza (Paraguay) is shown the yellow card for a bad foul.",
+   "players": [
+    "Matías Galarza"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "120'+2'",
+   "team": "Paraguay",
+   "text": "Substitution, Paraguay. Fabián Balbuena replaces Júnior Alonso.",
+   "players": [
+    "Fabián Balbuena",
+    "Júnior Alonso"
+   ]
+  },
+  {
+   "type": "End Extra Time",
+   "minute": "120'+3'",
+   "team": null,
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Start Shootout",
+   "minute": "120'",
+   "team": null,
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "End Match",
+   "minute": "120'",
+   "team": null,
+   "text": "",
+   "players": []
+  }
+ ],
+ "shots": [
+  {
+   "minute": "1",
+   "seconds": 18.0,
+   "team": "Paraguay",
+   "player": "Julio Enciso",
+   "type": "Shot Blocked",
+   "x": 89.8,
+   "y": 77.5,
+   "goal": false,
+   "xg": 0.088,
+   "text": "Attempt blocked. Julio Enciso (Paraguay) right footed shot from the left side of the box is blocked. Assisted by Júnior Alonso with a headed pass."
+  },
+  {
+   "minute": "2",
+   "seconds": 63.0,
+   "team": "Paraguay",
+   "player": "Júnior Alonso",
+   "type": "Shot On Target",
+   "x": 97.1,
+   "y": 40.7,
+   "goal": false,
+   "xg": 0.401,
+   "text": "Attempt saved. Júnior Alonso (Paraguay) left footed shot from the right side of the six yard box is saved in the bottom right corner by Manuel Neuer (Germany). Assisted by Julio Enciso with a cross."
+  },
+  {
+   "minute": "6",
+   "seconds": 307.0,
+   "team": "Germany",
+   "player": "Deniz Undav",
+   "type": "Shot Off Target",
+   "x": 90.0,
+   "y": 69.3,
+   "goal": false,
+   "xg": 0.148,
+   "text": "Attempt missed. Deniz Undav (Germany) right footed shot from the left side of the box is high and wide to the right. Assisted by Kai Havertz."
+  },
+  {
+   "minute": "8",
+   "seconds": 447.0,
+   "team": "Germany",
+   "player": "Florian Wirtz",
+   "type": "Shot Off Target",
+   "x": 78.2,
+   "y": 52.6,
+   "goal": false,
+   "xg": 0.106,
+   "text": "Attempt missed. Florian Wirtz (Germany) right footed shot from outside the box is too high following a corner."
+  },
+  {
+   "minute": "33",
+   "seconds": 1970.0,
+   "team": "Germany",
+   "player": "Kai Havertz",
+   "type": "Shot Blocked",
+   "x": 81.2,
+   "y": 65.8,
+   "goal": false,
+   "xg": 0.104,
+   "text": "Attempt blocked. Kai Havertz (Germany) left footed shot from outside the box is blocked. Assisted by Aleksandar Pavlovic."
+  },
+  {
+   "minute": "42",
+   "seconds": 2480.0,
+   "team": "Paraguay",
+   "player": "Julio Enciso",
+   "type": "Goal - Header",
+   "x": 89.7,
+   "y": 49.6,
+   "goal": true,
+   "xg": 0.249,
+   "text": "Goal! Germany 0, Paraguay 1. Julio Enciso (Paraguay) header from the centre of the box to the bottom left corner. Assisted by Matías Galarza with a cross following a corner."
+  },
+  {
+   "minute": "45",
+   "seconds": 2676.0,
+   "team": "Germany",
+   "player": "Joshua Kimmich",
+   "type": "Shot Off Target",
+   "x": 78.1,
+   "y": 48.5,
+   "goal": false,
+   "xg": 0.106,
+   "text": "Attempt missed. Joshua Kimmich (Germany) left footed shot from outside the box is high and wide to the left."
+  },
+  {
+   "minute": "45'+3",
+   "seconds": 2700.0,
+   "team": "Germany",
+   "player": "Joshua Kimmich",
+   "type": "Shot Off Target",
+   "x": 96.7,
+   "y": 68.7,
+   "goal": false,
+   "xg": 0.149,
+   "text": "Attempt missed. Joshua Kimmich (Germany) right footed shot from a difficult angle on the left is close, but misses to the left following a corner."
+  },
+  {
+   "minute": "50",
+   "seconds": 2965.0,
+   "team": "Paraguay",
+   "player": "Julio Enciso",
+   "type": "Shot Off Target",
+   "x": 94.3,
+   "y": 68.4,
+   "goal": false,
+   "xg": 0.166,
+   "text": "Attempt missed. Julio Enciso (Paraguay) right footed shot from a difficult angle on the left misses to the right."
+  },
+  {
+   "minute": "54",
+   "seconds": 3222.0,
+   "team": "Germany",
+   "player": "Kai Havertz",
+   "type": "Goal - Header",
+   "x": 88.9,
+   "y": 52.2,
+   "goal": true,
+   "xg": 0.221,
+   "text": "Goal! Germany 1, Paraguay 1. Kai Havertz (Germany) header from the centre of the box to the bottom right corner. Assisted by Florian Wirtz with a cross."
+  },
+  {
+   "minute": "56",
+   "seconds": 3330.0,
+   "team": "Germany",
+   "player": "Leon Goretzka",
+   "type": "Shot Blocked",
+   "x": 87.9,
+   "y": 46.1,
+   "goal": false,
+   "xg": 0.292,
+   "text": "Attempt blocked. Leon Goretzka (Germany) right footed shot from the centre of the box is blocked."
+  },
+  {
+   "minute": "56",
+   "seconds": 3332.0,
+   "team": "Germany",
+   "player": "Aleksandar Pavlovic",
+   "type": "Shot Blocked",
+   "x": 78.0,
+   "y": 49.1,
+   "goal": false,
+   "xg": 0.105,
+   "text": "Attempt blocked. Aleksandar Pavlovic (Germany) right footed shot from outside the box is blocked. Assisted by Leon Goretzka."
+  },
+  {
+   "minute": "59",
+   "seconds": 3529.0,
+   "team": "Paraguay",
+   "player": "Gustavo Caballero",
+   "type": "Shot On Target",
+   "x": 92.6,
+   "y": 41.6,
+   "goal": false,
+   "xg": 0.252,
+   "text": "Attempt saved. Gustavo Caballero (Paraguay) header from the centre of the box is saved in the top centre of the goal by Manuel Neuer (Germany). Assisted by Mauricio with a cross."
+  },
+  {
+   "minute": "66",
+   "seconds": 3954.0,
+   "team": "Germany",
+   "player": "Leroy Sané",
+   "type": "Shot Blocked",
+   "x": 74.5,
+   "y": 31.3,
+   "goal": false,
+   "xg": 0.056,
+   "text": "Attempt blocked. Leroy Sané (Germany) left footed shot from outside the box is blocked."
+  },
+  {
+   "minute": "70",
+   "seconds": 4142.0,
+   "team": "Paraguay",
+   "player": "Gustavo Gómez",
+   "type": "Shot Off Target",
+   "x": 98.1,
+   "y": 61.5,
+   "goal": false,
+   "xg": 0.162,
+   "text": "Attempt missed. Gustavo Gómez (Paraguay) header from the left side of the six yard box is close, but misses to the left. Assisted by Mauricio with a cross following a corner."
+  },
+  {
+   "minute": "78",
+   "seconds": 4626.0,
+   "team": "Germany",
+   "player": "Kai Havertz",
+   "type": "Shot On Target",
+   "x": 92.7,
+   "y": 47.2,
+   "goal": false,
+   "xg": 0.355,
+   "text": "Attempt saved. Kai Havertz (Germany) header from the centre of the box is saved in the bottom right corner by Orlando Gill (Paraguay). Assisted by Florian Wirtz with a cross."
+  },
+  {
+   "minute": "80",
+   "seconds": 4745.0,
+   "team": "Germany",
+   "player": "Florian Wirtz",
+   "type": "Shot Blocked",
+   "x": 72.1,
+   "y": 60.3,
+   "goal": false,
+   "xg": 0.055,
+   "text": "Attempt blocked. Florian Wirtz (Germany) right footed shot from outside the box is blocked."
+  },
+  {
+   "minute": "86",
+   "seconds": 5137.0,
+   "team": "Germany",
+   "player": "Leon Goretzka",
+   "type": "Shot Off Target",
+   "x": 91.0,
+   "y": 47.1,
+   "goal": false,
+   "xg": 0.284,
+   "text": "Attempt missed. Leon Goretzka (Germany) header from the centre of the box is close, but misses to the left. Assisted by Florian Wirtz with a cross following a corner."
+  },
+  {
+   "minute": "90'+1",
+   "seconds": 5400.0,
+   "team": "Germany",
+   "player": "Joshua Kimmich",
+   "type": "Shot Blocked",
+   "x": 78.9,
+   "y": 35.7,
+   "goal": false,
+   "xg": 0.091,
+   "text": "Attempt blocked. Joshua Kimmich (Germany) right footed shot from outside the box is blocked. Assisted by Waldemar Anton."
+  },
+  {
+   "minute": "90'+2",
+   "seconds": 5400.0,
+   "team": "Germany",
+   "player": "Jonathan Tah",
+   "type": "Shot On Target",
+   "x": 92.3,
+   "y": 62.4,
+   "goal": false,
+   "xg": 0.176,
+   "text": "Attempt saved. Jonathan Tah (Germany) header from the centre of the box is saved in the bottom left corner by Orlando Gill (Paraguay). Assisted by Nathaniel Brown with a cross."
+  },
+  {
+   "minute": "90'+3",
+   "seconds": 5400.0,
+   "team": "Paraguay",
+   "player": "Miguel Almirón",
+   "type": "Shot Blocked",
+   "x": 75.4,
+   "y": 62.6,
+   "goal": false,
+   "xg": 0.07,
+   "text": "Attempt blocked. Miguel Almirón (Paraguay) left footed shot from outside the box is blocked."
+  },
+  {
+   "minute": "93",
+   "seconds": 5540.0,
+   "team": "Germany",
+   "player": "Nick Woltemade",
+   "type": "Shot Blocked",
+   "x": 86.4,
+   "y": 56.9,
+   "goal": false,
+   "xg": 0.228,
+   "text": "Attempt blocked. Nick Woltemade (Germany) left footed shot from the centre of the box is blocked."
+  },
+  {
+   "minute": "93",
+   "seconds": 5542.0,
+   "team": "Germany",
+   "player": "Joshua Kimmich",
+   "type": "Shot Blocked",
+   "x": 77.4,
+   "y": 63.4,
+   "goal": false,
+   "xg": 0.082,
+   "text": "Attempt blocked. Joshua Kimmich (Germany) right footed shot from outside the box is blocked."
+  },
+  {
+   "minute": "97",
+   "seconds": 5805.0,
+   "team": "Germany",
+   "player": "Nick Woltemade",
+   "type": "Shot Blocked",
+   "x": 90.5,
+   "y": 48.4,
+   "goal": false,
+   "xg": 0.421,
+   "text": "Attempt missed. Nick Woltemade (Germany) left footed shot from the centre of the box misses to the left."
+  },
+  {
+   "minute": "105'+4",
+   "seconds": 6300.0,
+   "team": "Germany",
+   "player": "Kai Havertz",
+   "type": "Shot On Target",
+   "x": 95.9,
+   "y": 44.5,
+   "goal": false,
+   "xg": 0.438,
+   "text": "Attempt saved. Kai Havertz (Germany) header from the right side of the six yard box is saved in the top left corner by Orlando Gill (Paraguay). Assisted by Florian Wirtz with a cross."
+  },
+  {
+   "minute": "111",
+   "seconds": 6606.0,
+   "team": "Germany",
+   "player": "Joshua Kimmich",
+   "type": "Shot Blocked",
+   "x": 99.5,
+   "y": 99.5,
+   "goal": false,
+   "xg": 0.026,
+   "text": "Attempt saved. Joshua Kimmich (Germany) right footed shot from a difficult angle and long range on the left is saved in the top centre of the goal by Orlando Gill (Paraguay)."
+  },
+  {
+   "minute": "119",
+   "seconds": 7101.0,
+   "team": "Germany",
+   "player": "Waldemar Anton",
+   "type": "Shot On Target",
+   "x": 94.9,
+   "y": 49.9,
+   "goal": false,
+   "xg": 0.492,
+   "text": "Attempt saved. Waldemar Anton (Germany) header from very close range is saved in the top centre of the goal by Orlando Gill (Paraguay). Assisted by Nathaniel Brown with a cross."
+  },
+  {
+   "minute": "120'+1",
+   "seconds": 7200.0,
+   "team": "Germany",
+   "player": "Nadiem Amiri",
+   "type": "Shot Off Target",
+   "x": 75.2,
+   "y": 26.7,
+   "goal": false,
+   "xg": 0.05,
+   "text": "Attempt missed. Nadiem Amiri (Germany) right footed shot from outside the box is close, but misses to the right from a direct free kick."
+  },
+  {
+   "minute": "120",
+   "seconds": 7200.0,
+   "team": "Germany",
+   "player": "Kai Havertz",
+   "type": "Penalty - Saved",
+   "x": 88.5,
+   "y": 50.0,
+   "goal": false,
+   "xg": 0.76,
+   "text": "Penalty saved. Kai Havertz (Germany) left footed shot saved in the top centre of the goal by Orlando Gill (Paraguay)."
+  },
+  {
+   "minute": "120",
+   "seconds": 7200.0,
+   "team": "Paraguay",
+   "player": null,
+   "type": "Penalty - Scored",
+   "x": 88.5,
+   "y": 50.0,
+   "goal": true,
+   "xg": 0.76,
+   "text": "Goal! Germany 1, Paraguay 1(1). Mauricio (Paraguay) converts the penalty with a left footed shot to the bottom right corner."
+  },
+  {
+   "minute": "120",
+   "seconds": 7200.0,
+   "team": "Germany",
+   "player": null,
+   "type": "Penalty - Scored",
+   "x": 88.5,
+   "y": 50.0,
+   "goal": true,
+   "xg": 0.76,
+   "text": "Goal! Germany 1(1), Paraguay 1(1). Joshua Kimmich (Germany) converts the penalty with a right footed shot to the bottom left corner."
+  },
+  {
+   "minute": "120",
+   "seconds": 7200.0,
+   "team": "Paraguay",
+   "player": null,
+   "type": "Penalty - Scored",
+   "x": 88.5,
+   "y": 50.0,
+   "goal": true,
+   "xg": 0.76,
+   "text": "Goal! Germany 1(1), Paraguay 1(2). Gustavo Gómez (Paraguay) converts the penalty with a right footed shot to the bottom right corner."
+  },
+  {
+   "minute": "120",
+   "seconds": 7200.0,
+   "team": "Germany",
+   "player": null,
+   "type": "Penalty - Scored",
+   "x": 88.5,
+   "y": 50.0,
+   "goal": true,
+   "xg": 0.76,
+   "text": "Goal! Germany 1(2), Paraguay 1(2). Jamal Musiala (Germany) converts the penalty with a right footed shot to the bottom left corner."
+  },
+  {
+   "minute": "120",
+   "seconds": 7200.0,
+   "team": "Paraguay",
+   "player": null,
+   "type": "Penalty - Scored",
+   "x": 88.5,
+   "y": 50.0,
+   "goal": true,
+   "xg": 0.76,
+   "text": "Goal! Germany 1(2), Paraguay 1(3). Matías Galarza (Paraguay) converts the penalty with a left footed shot to the bottom left corner."
+  },
+  {
+   "minute": "120",
+   "seconds": 7200.0,
+   "team": "Germany",
+   "player": "Nick Woltemade",
+   "type": "Penalty - Saved",
+   "x": 88.5,
+   "y": 50.0,
+   "goal": false,
+   "xg": 0.76,
+   "text": "Penalty saved. Nick Woltemade (Germany) right footed shot saved in the bottom right corner by Orlando Gill (Paraguay)."
+  },
+  {
+   "minute": "120",
+   "seconds": 7200.0,
+   "team": "Paraguay",
+   "player": "Antonio Sanabria",
+   "type": "Penalty - Missed",
+   "x": 88.5,
+   "y": 50.0,
+   "goal": false,
+   "xg": 0.76,
+   "text": "Penalty missed. Antonio Sanabria (Paraguay) right footed shot is close, but misses to the left."
+  },
+  {
+   "minute": "120",
+   "seconds": 7200.0,
+   "team": "Germany",
+   "player": null,
+   "type": "Penalty - Scored",
+   "x": 88.5,
+   "y": 50.0,
+   "goal": true,
+   "xg": 0.76,
+   "text": "Goal! Germany 1(3), Paraguay 1(3). Nadiem Amiri (Germany) converts the penalty with a right footed shot to the bottom right corner."
+  },
+  {
+   "minute": "120",
+   "seconds": 7200.0,
+   "team": "Paraguay",
+   "player": "Fabián Balbuena",
+   "type": "Penalty - Saved",
+   "x": 88.5,
+   "y": 50.0,
+   "goal": false,
+   "xg": 0.76,
+   "text": "Penalty saved. Fabián Balbuena (Paraguay) right footed shot saved in the bottom right corner by Manuel Neuer (Germany)."
+  },
+  {
+   "minute": "120",
+   "seconds": 7200.0,
+   "team": "Germany",
+   "player": "Jonathan Tah",
+   "type": "Penalty - Missed",
+   "x": 88.5,
+   "y": 50.0,
+   "goal": false,
+   "xg": 0.76,
+   "text": "Penalty missed. Jonathan Tah (Germany) right footed shot is too high."
+  },
+  {
+   "minute": "120",
+   "seconds": 7200.0,
+   "team": "Paraguay",
+   "player": null,
+   "type": "Penalty - Scored",
+   "x": 88.5,
+   "y": 50.0,
+   "goal": true,
+   "xg": 0.76,
+   "text": "Goal! Germany 1(3), Paraguay 1(4). José Canale (Paraguay) converts the penalty with a left footed shot to the top right corner."
+  }
+ ],
+ "lineups": [
+  {
+   "team": "Germany",
+   "formation": "4-4-2",
+   "starters": [
+    {
+     "name": "Manuel Neuer",
+     "jersey": "1",
+     "position": "G"
+    },
+    {
+     "name": "Antonio Rüdiger",
+     "jersey": "2",
+     "position": "CD-L"
+    },
+    {
+     "name": "Jonathan Tah",
+     "jersey": "4",
+     "position": "CD-R"
+    },
+    {
+     "name": "Nathaniel Brown",
+     "jersey": "18",
+     "position": "LB"
+    },
+    {
+     "name": "Joshua Kimmich",
+     "jersey": "6",
+     "position": "RB"
+    },
+    {
+     "name": "Aleksandar Pavlovic",
+     "jersey": "5",
+     "position": "CM-L"
+    },
+    {
+     "name": "Felix Nmecha",
+     "jersey": "23",
+     "position": "CM-R"
+    },
+    {
+     "name": "Florian Wirtz",
+     "jersey": "17",
+     "position": "LM"
+    },
+    {
+     "name": "Leroy Sané",
+     "jersey": "19",
+     "position": "RM"
+    },
+    {
+     "name": "Deniz Undav",
+     "jersey": "26",
+     "position": "CF-L"
+    },
+    {
+     "name": "Kai Havertz",
+     "jersey": "7",
+     "position": "CF-R"
+    }
+   ],
+   "subs": [
+    {
+     "name": "David Raum",
+     "jersey": "22",
+     "position": "SUB"
+    },
+    {
+     "name": "Jamie Leweling",
+     "jersey": "9",
+     "position": "SUB"
+    },
+    {
+     "name": "Waldemar Anton",
+     "jersey": "3",
+     "position": "SUB"
+    },
+    {
+     "name": "Nadiem Amiri",
+     "jersey": "20",
+     "position": "SUB"
+    },
+    {
+     "name": "Alexander Nübel",
+     "jersey": "21",
+     "position": "SUB"
+    },
+    {
+     "name": "Angelo Stiller",
+     "jersey": "16",
+     "position": "SUB"
+    },
+    {
+     "name": "Jamal Musiala",
+     "jersey": "10",
+     "position": "SUB"
+    },
+    {
+     "name": "Malick Thiaw",
+     "jersey": "24",
+     "position": "SUB"
+    },
+    {
+     "name": "Nick Woltemade",
+     "jersey": "11",
+     "position": "SUB"
+    },
+    {
+     "name": "Pascal Gross",
+     "jersey": "13",
+     "position": "SUB"
+    },
+    {
+     "name": "Assan Ouédraogo",
+     "jersey": "25",
+     "position": "SUB"
+    },
+    {
+     "name": "Maximilian Beier",
+     "jersey": "14",
+     "position": "SUB"
+    },
+    {
+     "name": "Oliver Baumann",
+     "jersey": "12",
+     "position": "SUB"
+    },
+    {
+     "name": "Leon Goretzka",
+     "jersey": "8",
+     "position": "SUB"
+    }
+   ]
+  },
+  {
+   "team": "Paraguay",
+   "formation": "4-4-2",
+   "starters": [
+    {
+     "name": "Orlando Gill",
+     "jersey": "12",
+     "position": "G"
+    },
+    {
+     "name": "José Canale",
+     "jersey": "13",
+     "position": "CD-L"
+    },
+    {
+     "name": "Gustavo Gómez",
+     "jersey": "15",
+     "position": "CD-R"
+    },
+    {
+     "name": "Júnior Alonso",
+     "jersey": "6",
+     "position": "LB"
+    },
+    {
+     "name": "Juan Jose Cáceres",
+     "jersey": "4",
+     "position": "RB"
+    },
+    {
+     "name": "Andrés Cubas",
+     "jersey": "14",
+     "position": "CM-L"
+    },
+    {
+     "name": "Damián Bobadilla",
+     "jersey": "16",
+     "position": "CM-R"
+    },
+    {
+     "name": "Matías Galarza",
+     "jersey": "23",
+     "position": "LM"
+    },
+    {
+     "name": "Miguel Almirón",
+     "jersey": "10",
+     "position": "RM"
+    },
+    {
+     "name": "Julio Enciso",
+     "jersey": "19",
+     "position": "CF-L"
+    },
+    {
+     "name": "Gabriel Ávalos",
+     "jersey": "21",
+     "position": "CF-R"
+    }
+   ],
+   "subs": [
+    {
+     "name": "Gatito Fernández",
+     "jersey": "1",
+     "position": "SUB"
+    },
+    {
+     "name": "Alex Arce",
+     "jersey": "18",
+     "position": "SUB"
+    },
+    {
+     "name": "Ramón Sosa",
+     "jersey": "7",
+     "position": "SUB"
+    },
+    {
+     "name": "Gastón Olveira",
+     "jersey": "22",
+     "position": "SUB"
+    },
+    {
+     "name": "Antonio Sanabria",
+     "jersey": "9",
+     "position": "SUB"
+    },
+    {
+     "name": "Alexandro Maidana",
+     "jersey": "26",
+     "position": "SUB"
+    },
+    {
+     "name": "Isidro Pitta",
+     "jersey": "25",
+     "position": "SUB"
+    },
+    {
+     "name": "Gustavo Velázquez",
+     "jersey": "2",
+     "position": "SUB"
+    },
+    {
+     "name": "Omar Alderete",
+     "jersey": "3",
+     "position": "SUB"
+    },
+    {
+     "name": "Braian Ojeda",
+     "jersey": "20",
+     "position": "SUB"
+    },
+    {
+     "name": "Fabián Balbuena",
+     "jersey": "5",
+     "position": "SUB"
+    },
+    {
+     "name": "Alejandro Romero Gamarra",
+     "jersey": "17",
+     "position": "SUB"
+    },
+    {
+     "name": "Gustavo Caballero",
+     "jersey": "24",
+     "position": "SUB"
+    },
+    {
+     "name": "Maurício",
+     "jersey": "11",
+     "position": "SUB"
+    }
+   ]
+  }
+ ],
+ "attendance": 63945,
+ "venue": "Gillette Stadium, Foxborough, Massachusetts, USA"
+}

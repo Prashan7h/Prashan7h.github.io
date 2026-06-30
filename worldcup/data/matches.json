@@ -3033,12 +3033,40 @@
    "team2": "Paraguay",
    "group": null,
    "ground": "Boston (Foxborough)",
-   "score": null,
-   "goals1": [],
-   "goals2": [],
+   "score": {
+    "p": [
+     3,
+     4
+    ],
+    "et": [
+     1,
+     1
+    ],
+    "ft": [
+     1,
+     1
+    ],
+    "ht": [
+     0,
+     1
+    ]
+   },
+   "goals1": [
+    {
+     "name": "Kai Havertz",
+     "minute": "54"
+    }
+   ],
+   "goals2": [
+    {
+     "name": "Julio Enciso",
+     "minute": "42"
+    }
+   ],
    "espn_id": "760489",
-   "status": "scheduled",
+   "status": "finished",
    "utc_date": "2026-06-29T20:30Z",
+   "attendance": 63945,
    "venue": "Gillette Stadium",
    "slug": "2026-06-29-germany-vs-paraguay"
   },
@@ -3055,7 +3083,7 @@
    "goals1": [],
    "goals2": [],
    "espn_id": "760488",
-   "status": "scheduled",
+   "status": "live",
    "utc_date": "2026-06-30T01:00Z",
    "venue": "Estadio BBVA",
    "slug": "2026-06-29-netherlands-vs-morocco"
@@ -3096,7 +3124,7 @@
     }
    ],
    "espn_id": "760487",
-   "status": "live",
+   "status": "finished",
    "utc_date": "2026-06-29T17:00Z",
    "attendance": 68777,
    "venue": "NRG Stadium",
