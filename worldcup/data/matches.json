@@ -3185,12 +3185,36 @@
    "team2": "Norway",
    "group": null,
    "ground": "Dallas (Arlington)",
-   "score": null,
-   "goals1": [],
-   "goals2": [],
+   "score": {
+    "ft": [
+     1,
+     2
+    ],
+    "ht": [
+     0,
+     1
+    ]
+   },
+   "goals1": [
+    {
+     "name": "Amad Diallo",
+     "minute": "74"
+    }
+   ],
+   "goals2": [
+    {
+     "name": "Antonio Nusa",
+     "minute": "39"
+    },
+    {
+     "name": "Erling Haaland",
+     "minute": "86"
+    }
+   ],
    "espn_id": "760490",
-   "status": "scheduled",
+   "status": "finished",
    "utc_date": "2026-06-30T17:00Z",
+   "attendance": 69665,
    "venue": "AT&T Stadium",
    "slug": "2026-06-30-ivory-coast-vs-norway"
   },

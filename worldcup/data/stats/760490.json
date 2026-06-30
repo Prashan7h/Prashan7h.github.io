@@ -1,0 +1,823 @@
+{
+ "teams": [
+  {
+   "name": "Ivory Coast",
+   "stats": {
+    "possessionPct": "47.1",
+    "totalShots": "14",
+    "shotsOnTarget": "5",
+    "wonCorners": "14",
+    "foulsCommitted": "6",
+    "offsides": "2",
+    "saves": "1",
+    "yellowCards": "0",
+    "redCards": "0"
+   }
+  },
+  {
+   "name": "Norway",
+   "stats": {
+    "possessionPct": "52.9",
+    "totalShots": "9",
+    "shotsOnTarget": "4",
+    "wonCorners": "3",
+    "foulsCommitted": "7",
+    "offsides": "2",
+    "saves": "4",
+    "yellowCards": "1",
+    "redCards": "0"
+   }
+  }
+ ],
+ "events": [
+  {
+   "type": "Kickoff",
+   "minute": "",
+   "team": null,
+   "text": "First Half begins.",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "24'",
+   "team": "Norway",
+   "text": "Delay in match for a drinks break.",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "24'",
+   "team": "Ivory Coast",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "27'",
+   "team": "Norway",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "27'",
+   "team": "Ivory Coast",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Goal",
+   "minute": "39'",
+   "team": "Norway",
+   "text": "Goal! Côte d'Ivoire 0, Norway 1. Antonio Nusa (Norway) right footed shot from the left side of the box to the top right corner. Assisted by Martin Ødegaard.",
+   "players": [
+    "Antonio Nusa",
+    "Martin Ødegaard"
+   ]
+  },
+  {
+   "type": "Yellow Card",
+   "minute": "45'+1'",
+   "team": "Norway",
+   "text": "Antonio Nusa (Norway) is shown the yellow card for a bad foul.",
+   "players": [
+    "Antonio Nusa"
+   ]
+  },
+  {
+   "type": "Halftime",
+   "minute": "45'+4'",
+   "team": null,
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Start 2nd Half",
+   "minute": "45'",
+   "team": null,
+   "text": "Second Half begins Côte d'Ivoire 0, Norway 1.",
+   "players": []
+  },
+  {
+   "type": "Substitution",
+   "minute": "60'",
+   "team": "Ivory Coast",
+   "text": "Substitution, Côte d'Ivoire. Amad Diallo replaces Christ Inao Oulaï.",
+   "players": [
+    "Amad Diallo",
+    "Christ Inao Oulaï"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "60'",
+   "team": "Ivory Coast",
+   "text": "Substitution, Côte d'Ivoire. Elye Wahi replaces Ange-Yoan Bonny.",
+   "players": [
+    "Elye Wahi",
+    "Ange-Yoan Bonny"
+   ]
+  },
+  {
+   "type": "Start Delay",
+   "minute": "68'",
+   "team": "Norway",
+   "text": "Delay in match for a drinks break.",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "68'",
+   "team": "Ivory Coast",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Substitution",
+   "minute": "71'",
+   "team": "Norway",
+   "text": "Substitution, Norway. Andreas Schjelderup replaces Antonio Nusa.",
+   "players": [
+    "Andreas Schjelderup",
+    "Antonio Nusa"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "71'",
+   "team": "Norway",
+   "text": "Substitution, Norway. Oscar Bobb replaces Alexander Sørloth.",
+   "players": [
+    "Oscar Bobb",
+    "Alexander Sørloth"
+   ]
+  },
+  {
+   "type": "End Delay",
+   "minute": "71'",
+   "team": "Norway",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "71'",
+   "team": "Ivory Coast",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Goal",
+   "minute": "74'",
+   "team": "Ivory Coast",
+   "text": "Goal! Côte d'Ivoire 1, Norway 1. Amad Diallo (Côte d'Ivoire) left footed shot from the right side of the six yard box to the bottom left corner. Assisted by Nicolas Pépé.",
+   "players": [
+    "Amad Diallo",
+    "Nicolas Pépé"
+   ]
+  },
+  {
+   "type": "Start Delay",
+   "minute": "81'",
+   "team": "Ivory Coast",
+   "text": "Delay in match because of an injury Amad Diallo (Côte d'Ivoire).",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "81'",
+   "team": "Norway",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "82'",
+   "team": "Ivory Coast",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "82'",
+   "team": "Norway",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Substitution",
+   "minute": "83'",
+   "team": "Norway",
+   "text": "Substitution, Norway. Fredrik Aursnes replaces Marcus Pedersen.",
+   "players": [
+    "Fredrik Aursnes",
+    "Marcus Holmgren Pedersen"
+   ]
+  },
+  {
+   "type": "Goal",
+   "minute": "86'",
+   "team": "Norway",
+   "text": "Goal! Côte d'Ivoire 1, Norway 2. Erling Haaland (Norway) left footed shot from the centre of the box to the centre of the goal. Assisted by Patrick Berg.",
+   "players": [
+    "Erling Haaland",
+    "Patrick Berg"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "87'",
+   "team": "Ivory Coast",
+   "text": "Substitution, Côte d'Ivoire. Oumar Diakité replaces Nicolas Pépé.",
+   "players": [
+    "Oumar Diakité",
+    "Nicolas Pépé"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "90'+3'",
+   "team": "Ivory Coast",
+   "text": "Substitution, Côte d'Ivoire. Evann Guessand replaces Yan Diomande.",
+   "players": [
+    "Evann Guessand",
+    "Yan Diomande"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "90'+3'",
+   "team": "Ivory Coast",
+   "text": "Substitution, Côte d'Ivoire. Bazoumana Touré replaces Ghislain Konan.",
+   "players": [
+    "Bazoumana Touré",
+    "Ghislain Konan"
+   ]
+  },
+  {
+   "type": "End Regular Time",
+   "minute": "90'+8'",
+   "team": null,
+   "text": "Second Half ends, Côte d'Ivoire 1, Norway 2.",
+   "players": []
+  }
+ ],
+ "shots": [
+  {
+   "minute": "3",
+   "seconds": 140.0,
+   "team": "Norway",
+   "player": "Erling Haaland",
+   "type": "Shot Blocked",
+   "x": 88.6,
+   "y": 58.2,
+   "goal": false,
+   "xg": 0.176,
+   "text": "Attempt blocked. Erling Haaland (Norway) header from the centre of the box is blocked. Assisted by Marcus Pedersen with a cross."
+  },
+  {
+   "minute": "8",
+   "seconds": 429.0,
+   "team": "Ivory Coast",
+   "player": "Yan Diomande",
+   "type": "Shot Off Target",
+   "x": 91.9,
+   "y": 49.8,
+   "goal": false,
+   "xg": 0.333,
+   "text": "Attempt missed. Yan Diomande (Côte d'Ivoire) header from the centre of the box misses to the left. Assisted by Guéla Doué with a cross."
+  },
+  {
+   "minute": "21",
+   "seconds": 1208.0,
+   "team": "Ivory Coast",
+   "player": "Ghislain Konan",
+   "type": "Shot Off Target",
+   "x": 93.0,
+   "y": 70.3,
+   "goal": false,
+   "xg": 0.146,
+   "text": "Attempt missed. Ghislain Konan (Côte d'Ivoire) right footed shot from the left side of the box is close, but misses to the left. Assisted by Christ Inao Oulaï."
+  },
+  {
+   "minute": "28",
+   "seconds": 1669.0,
+   "team": "Ivory Coast",
+   "player": "Nicolas Pépé",
+   "type": "Shot Off Target",
+   "x": 96.5,
+   "y": 40.6,
+   "goal": false,
+   "xg": 0.407,
+   "text": "Attempt missed. Nicolas Pépé (Côte d'Ivoire) right footed shot from the right side of the six yard box misses to the left. Assisted by Yan Diomande with a cross."
+  },
+  {
+   "minute": "35",
+   "seconds": 2043.0,
+   "team": "Ivory Coast",
+   "player": "Emmanuel Agbadou",
+   "type": "Shot On Target",
+   "x": 73.5,
+   "y": 45.6,
+   "goal": false,
+   "xg": 0.067,
+   "text": "Attempt saved. Emmanuel Agbadou (Côte d'Ivoire) right footed shot from outside the box is saved in the top centre of the goal by Ørjan Nyland (Norway)."
+  },
+  {
+   "minute": "37",
+   "seconds": 2182.0,
+   "team": "Norway",
+   "player": "Erling Haaland",
+   "type": "Shot On Target",
+   "x": 90.7,
+   "y": 53.1,
+   "goal": false,
+   "xg": 0.272,
+   "text": "Attempt saved. Erling Haaland (Norway) header from the centre of the box is saved in the bottom left corner by Yahia Fofana (Côte d'Ivoire). Assisted by Alexander Sørloth with a cross."
+  },
+  {
+   "minute": "38",
+   "seconds": 2270.0,
+   "team": "Norway",
+   "player": "Martin Ødegaard",
+   "type": "Shot Blocked",
+   "x": 74.9,
+   "y": 55.7,
+   "goal": false,
+   "xg": 0.076,
+   "text": "Attempt blocked. Martin Ødegaard (Norway) left footed shot from outside the box is blocked. Assisted by Antonio Nusa."
+  },
+  {
+   "minute": "39",
+   "seconds": 2327.0,
+   "team": "Norway",
+   "player": "Antonio Nusa",
+   "type": "Goal",
+   "x": 87.5,
+   "y": 70.5,
+   "goal": true,
+   "xg": 0.124,
+   "text": "Goal! Côte d'Ivoire 0, Norway 1. Antonio Nusa (Norway) right footed shot from the left side of the box to the top right corner. Assisted by Martin Ødegaard."
+  },
+  {
+   "minute": "42",
+   "seconds": 2470.0,
+   "team": "Norway",
+   "player": "Erling Haaland",
+   "type": "Shot Blocked",
+   "x": 95.1,
+   "y": 50.9,
+   "goal": false,
+   "xg": 0.771,
+   "text": "Attempt blocked. Erling Haaland (Norway) left footed shot from very close range is blocked."
+  },
+  {
+   "minute": "42",
+   "seconds": 2511.0,
+   "team": "Norway",
+   "player": "Alexander Sørloth",
+   "type": "Shot Off Target",
+   "x": 95.1,
+   "y": 52.1,
+   "goal": false,
+   "xg": 0.49,
+   "text": "Attempt missed. Alexander Sørloth (Norway) header from very close range is close, but misses to the right. Assisted by Patrick Berg with a cross following a corner."
+  },
+  {
+   "minute": "45'+2",
+   "seconds": 2700.0,
+   "team": "Ivory Coast",
+   "player": "Emmanuel Agbadou",
+   "type": "Shot Off Target",
+   "x": 91.1,
+   "y": 52.7,
+   "goal": false,
+   "xg": 0.289,
+   "text": "Attempt missed. Emmanuel Agbadou (Côte d'Ivoire) header from the centre of the box is close, but misses to the left. Assisted by Nicolas Pépé with a cross following a set piece situation."
+  },
+  {
+   "minute": "52",
+   "seconds": 3099.0,
+   "team": "Ivory Coast",
+   "player": "Ibrahim Sangaré",
+   "type": "Shot Off Target",
+   "x": 72.1,
+   "y": 44.3,
+   "goal": false,
+   "xg": 0.058,
+   "text": "Attempt missed. Ibrahim Sangaré (Côte d'Ivoire) right footed shot from outside the box is high and wide to the right."
+  },
+  {
+   "minute": "55",
+   "seconds": 3267.0,
+   "team": "Ivory Coast",
+   "player": "Nicolas Pépé",
+   "type": "Shot On Target",
+   "x": 92.4,
+   "y": 39.9,
+   "goal": false,
+   "xg": 0.331,
+   "text": "Attempt saved. Nicolas Pépé (Côte d'Ivoire) left footed shot from the centre of the box is saved in the bottom right corner by Ørjan Nyland (Norway)."
+  },
+  {
+   "minute": "57",
+   "seconds": 3373.0,
+   "team": "Ivory Coast",
+   "player": "Franck Kessie",
+   "type": "Shot On Target",
+   "x": 91.7,
+   "y": 41.3,
+   "goal": false,
+   "xg": 0.351,
+   "text": "Attempt saved. Franck Kessie (Côte d'Ivoire) right footed shot from the centre of the box is saved in the bottom right corner by Ørjan Nyland (Norway). Assisted by Nicolas Pépé."
+  },
+  {
+   "minute": "59",
+   "seconds": 3539.0,
+   "team": "Ivory Coast",
+   "player": "Emmanuel Agbadou",
+   "type": "Shot Off Target",
+   "x": 70.3,
+   "y": 51.9,
+   "goal": false,
+   "xg": 0.051,
+   "text": "Attempt missed. Emmanuel Agbadou (Côte d'Ivoire) right footed shot from outside the box is too high. Assisted by Christ Inao Oulaï following a corner."
+  },
+  {
+   "minute": "64",
+   "seconds": 3810.0,
+   "team": "Ivory Coast",
+   "player": "Guéla Doué",
+   "type": "Shot Off Target",
+   "x": 96.1,
+   "y": 63.4,
+   "goal": false,
+   "xg": 0.247,
+   "text": "Attempt missed. Guéla Doué (Côte d'Ivoire) left footed shot from the centre of the box misses to the right following a corner."
+  },
+  {
+   "minute": "67",
+   "seconds": 3961.0,
+   "team": "Norway",
+   "player": "Torbjørn Heggem",
+   "type": "Shot Blocked",
+   "x": 95.7,
+   "y": 51.9,
+   "goal": false,
+   "xg": 0.808,
+   "text": "Attempt blocked. Torbjørn Heggem (Norway) right footed shot from very close range is blocked. Assisted by Alexander Sørloth."
+  },
+  {
+   "minute": "72",
+   "seconds": 4291.0,
+   "team": "Ivory Coast",
+   "player": "Ghislain Konan",
+   "type": "Shot Off Target",
+   "x": 85.7,
+   "y": 63.2,
+   "goal": false,
+   "xg": 0.165,
+   "text": "Attempt missed. Ghislain Konan (Côte d'Ivoire) right footed shot from the left side of the box is high and wide to the right. Assisted by Ibrahim Sangaré."
+  },
+  {
+   "minute": "74",
+   "seconds": 4411.0,
+   "team": "Ivory Coast",
+   "player": "Amad Diallo",
+   "type": "Goal",
+   "x": 95.8,
+   "y": 41.3,
+   "goal": true,
+   "xg": 0.453,
+   "text": "Goal! Côte d'Ivoire 1, Norway 1. Amad Diallo (Côte d'Ivoire) left footed shot from the right side of the six yard box to the bottom left corner. Assisted by Nicolas Pépé."
+  },
+  {
+   "minute": "86",
+   "seconds": 5122.0,
+   "team": "Norway",
+   "player": "Erling Haaland",
+   "type": "Goal",
+   "x": 93.7,
+   "y": 51.1,
+   "goal": true,
+   "xg": 0.647,
+   "text": "Goal! Côte d'Ivoire 1, Norway 2. Erling Haaland (Norway) left footed shot from the centre of the box to the centre of the goal. Assisted by Patrick Berg."
+  },
+  {
+   "minute": "90",
+   "seconds": 5387.0,
+   "team": "Norway",
+   "player": "Andreas Schjelderup",
+   "type": "Shot Off Target",
+   "x": 88.4,
+   "y": 61.5,
+   "goal": false,
+   "xg": 0.223,
+   "text": "Attempt missed. Andreas Schjelderup (Norway) right footed shot from the centre of the box misses to the right. Assisted by Erling Haaland."
+  },
+  {
+   "minute": "90'+6",
+   "seconds": 5400.0,
+   "team": "Ivory Coast",
+   "player": "Amad Diallo",
+   "type": "Shot On Target",
+   "x": 70.4,
+   "y": 51.1,
+   "goal": false,
+   "xg": 0.051,
+   "text": "Attempt saved. Amad Diallo (Côte d'Ivoire) left footed shot from outside the box is saved in the top left corner by Ørjan Nyland (Norway)."
+  },
+  {
+   "minute": "90'+8",
+   "seconds": 5400.0,
+   "team": "Ivory Coast",
+   "player": "Evann Guessand",
+   "type": "Shot Blocked",
+   "x": 95.8,
+   "y": 51.9,
+   "goal": false,
+   "xg": 0.531,
+   "text": "Attempt missed. Evann Guessand (Côte d'Ivoire) header from very close range misses to the right. Assisted by Amad Diallo with a cross following a corner."
+  }
+ ],
+ "lineups": [
+  {
+   "team": "Ivory Coast",
+   "formation": "4-1-4-1",
+   "starters": [
+    {
+     "name": "Yahia Fofana",
+     "jersey": "1",
+     "position": "G"
+    },
+    {
+     "name": "Emmanuel Agbadou",
+     "jersey": "20",
+     "position": "CD-L"
+    },
+    {
+     "name": "Odilon Kossounou",
+     "jersey": "7",
+     "position": "CD-R"
+    },
+    {
+     "name": "Ibrahim Sangaré",
+     "jersey": "18",
+     "position": "DM"
+    },
+    {
+     "name": "Ghislain Konan",
+     "jersey": "3",
+     "position": "LB"
+    },
+    {
+     "name": "Guela Doué",
+     "jersey": "17",
+     "position": "RB"
+    },
+    {
+     "name": "Christ Inao Oulaï",
+     "jersey": "26",
+     "position": "CM-L"
+    },
+    {
+     "name": "Franck Kessié",
+     "jersey": "8",
+     "position": "CM-R"
+    },
+    {
+     "name": "Yan Diomande",
+     "jersey": "11",
+     "position": "LM"
+    },
+    {
+     "name": "Nicolas Pépé",
+     "jersey": "19",
+     "position": "RM"
+    },
+    {
+     "name": "Ange-Yoan Bonny",
+     "jersey": "9",
+     "position": "F"
+    }
+   ],
+   "subs": [
+    {
+     "name": "Jean Michaël Seri",
+     "jersey": "4",
+     "position": "SUB"
+    },
+    {
+     "name": "Alban Lafont",
+     "jersey": "23",
+     "position": "SUB"
+    },
+    {
+     "name": "Seko Fofana",
+     "jersey": "6",
+     "position": "SUB"
+    },
+    {
+     "name": "Mohamed Koné",
+     "jersey": "16",
+     "position": "SUB"
+    },
+    {
+     "name": "Evann Guessand",
+     "jersey": "22",
+     "position": "SUB"
+    },
+    {
+     "name": "Christopher Operi",
+     "jersey": "13",
+     "position": "SUB"
+    },
+    {
+     "name": "Evan Ndicka",
+     "jersey": "21",
+     "position": "SUB"
+    },
+    {
+     "name": "Bazoumana Touré",
+     "jersey": "24",
+     "position": "SUB"
+    },
+    {
+     "name": "Ousmane Diomande",
+     "jersey": "2",
+     "position": "SUB"
+    },
+    {
+     "name": "Elye Wahi",
+     "jersey": "12",
+     "position": "SUB"
+    },
+    {
+     "name": "Oumar Diakité",
+     "jersey": "14",
+     "position": "SUB"
+    },
+    {
+     "name": "Wilfried Singo",
+     "jersey": "5",
+     "position": "SUB"
+    },
+    {
+     "name": "Parfait Guiagon",
+     "jersey": "25",
+     "position": "SUB"
+    },
+    {
+     "name": "Simon Adingra",
+     "jersey": "10",
+     "position": "SUB"
+    },
+    {
+     "name": "Amad Diallo",
+     "jersey": "15",
+     "position": "SUB"
+    }
+   ]
+  },
+  {
+   "team": "Norway",
+   "formation": "4-3-3",
+   "starters": [
+    {
+     "name": "Ørjan Nyland",
+     "jersey": "1",
+     "position": "G"
+    },
+    {
+     "name": "Torbjørn Heggem",
+     "jersey": "17",
+     "position": "CD-L"
+    },
+    {
+     "name": "Kristoffer Ajer",
+     "jersey": "3",
+     "position": "CD-R"
+    },
+    {
+     "name": "David Møller Wolfe",
+     "jersey": "5",
+     "position": "LB"
+    },
+    {
+     "name": "Marcus Holmgren Pedersen",
+     "jersey": "16",
+     "position": "RB"
+    },
+    {
+     "name": "Sander Berge",
+     "jersey": "8",
+     "position": "CM"
+    },
+    {
+     "name": "Patrick Berg",
+     "jersey": "6",
+     "position": "LM"
+    },
+    {
+     "name": "Martin Ødegaard",
+     "jersey": "10",
+     "position": "RM"
+    },
+    {
+     "name": "Erling Haaland",
+     "jersey": "9",
+     "position": "F"
+    },
+    {
+     "name": "Antonio Nusa",
+     "jersey": "20",
+     "position": "LF"
+    },
+    {
+     "name": "Alexander Sørloth",
+     "jersey": "7",
+     "position": "RF"
+    }
+   ],
+   "subs": [
+    {
+     "name": "Sondre Langas",
+     "jersey": "24",
+     "position": "SUB"
+    },
+    {
+     "name": "Sander Tangvik",
+     "jersey": "12",
+     "position": "SUB"
+    },
+    {
+     "name": "Jens Petter Hauge",
+     "jersey": "23",
+     "position": "SUB"
+    },
+    {
+     "name": "Oscar Bobb",
+     "jersey": "22",
+     "position": "SUB"
+    },
+    {
+     "name": "Fredrik Aursnes",
+     "jersey": "14",
+     "position": "SUB"
+    },
+    {
+     "name": "Leo Østigard",
+     "jersey": "4",
+     "position": "SUB"
+    },
+    {
+     "name": "Egil Selvik",
+     "jersey": "13",
+     "position": "SUB"
+    },
+    {
+     "name": "Fredrik André Bjørkan",
+     "jersey": "15",
+     "position": "SUB"
+    },
+    {
+     "name": "Morten Thorsby",
+     "jersey": "2",
+     "position": "SUB"
+    },
+    {
+     "name": "Andreas Schjelderup",
+     "jersey": "21",
+     "position": "SUB"
+    },
+    {
+     "name": "Jørgen Strand Larsen",
+     "jersey": "11",
+     "position": "SUB"
+    },
+    {
+     "name": "Julian Ryerson",
+     "jersey": "26",
+     "position": "SUB"
+    },
+    {
+     "name": "Thelo Aasgaard",
+     "jersey": "19",
+     "position": "SUB"
+    },
+    {
+     "name": "Henrik Falchener",
+     "jersey": "25",
+     "position": "SUB"
+    },
+    {
+     "name": "Kristian Thorstvedt",
+     "jersey": "18",
+     "position": "SUB"
+    }
+   ]
+  }
+ ],
+ "attendance": 69665,
+ "venue": "AT&T Stadium, Arlington, Texas, USA"
+}
