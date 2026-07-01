@@ -1,0 +1,921 @@
+{
+ "teams": [
+  {
+   "name": "France",
+   "stats": {
+    "possessionPct": "61",
+    "totalShots": "25",
+    "shotsOnTarget": "12",
+    "wonCorners": "9",
+    "foulsCommitted": "14",
+    "offsides": "3",
+    "saves": "3",
+    "yellowCards": "0",
+    "redCards": "0"
+   }
+  },
+  {
+   "name": "Sweden",
+   "stats": {
+    "possessionPct": "39",
+    "totalShots": "8",
+    "shotsOnTarget": "3",
+    "wonCorners": "1",
+    "foulsCommitted": "10",
+    "offsides": "1",
+    "saves": "9",
+    "yellowCards": "0",
+    "redCards": "0"
+   }
+  }
+ ],
+ "events": [
+  {
+   "type": "Kickoff",
+   "minute": "",
+   "team": null,
+   "text": "First Half begins.",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "23'",
+   "team": "France",
+   "text": "Delay in match for a drinks break.",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "23'",
+   "team": "Sweden",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "26'",
+   "team": "Sweden",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "26'",
+   "team": "France",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "Goal",
+   "minute": "45'",
+   "team": "France",
+   "text": "Goal! France 1, Sweden 0. Kylian Mbappé (France) right footed shot from the centre of the box to the top right corner. Assisted by Ousmane Dembélé following a corner.",
+   "players": [
+    "Kylian Mbappé",
+    "Ousmane Dembélé"
+   ]
+  },
+  {
+   "type": "Halftime",
+   "minute": "45'+4'",
+   "team": null,
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Start 2nd Half",
+   "minute": "45'",
+   "team": null,
+   "text": "Second Half begins France 1, Sweden 0.",
+   "players": []
+  },
+  {
+   "type": "Goal",
+   "minute": "53'",
+   "team": "France",
+   "text": "Goal! France 2, Sweden 0. Bradley Barcola (France) right footed shot from the centre of the box to the top left corner. Assisted by Michael Olise with a through ball following a fast break.",
+   "players": [
+    "Bradley Barcola",
+    "Michael Olise"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "66'",
+   "team": "Sweden",
+   "text": "Substitution, Sweden. Taha Ali replaces Elliot Stroud.",
+   "players": [
+    "Taha Ali",
+    "Elliot Stroud"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "66'",
+   "team": "Sweden",
+   "text": "Substitution, Sweden. Besfort Zeneli replaces Lucas Bergvall.",
+   "players": [
+    "Besfort Zeneli",
+    "Lucas Bergvall"
+   ]
+  },
+  {
+   "type": "Start Delay",
+   "minute": "68'",
+   "team": "France",
+   "text": "Delay in match for a drinks break.",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "68'",
+   "team": "Sweden",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "71'",
+   "team": "France",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "71'",
+   "team": "Sweden",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Goal",
+   "minute": "74'",
+   "team": "France",
+   "text": "Goal! France 3, Sweden 0. Kylian Mbappé (France) right footed shot from the left side of the box to the bottom right corner. Assisted by Michael Olise with a through ball.",
+   "players": [
+    "Kylian Mbappé",
+    "Michael Olise"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "75'",
+   "team": "France",
+   "text": "Substitution, France. Désiré Doué replaces Ousmane Dembélé.",
+   "players": [
+    "Désiré Doué",
+    "Ousmane Dembélé"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "75'",
+   "team": "France",
+   "text": "Substitution, France. Malo Gusto replaces Jules Koundé.",
+   "players": [
+    "Malo Gusto",
+    "Jules Koundé"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "78'",
+   "team": "France",
+   "text": "Substitution, France. Théo Hernández replaces Lucas Digne.",
+   "players": [
+    "Theo Hernández",
+    "Lucas Digne"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "82'",
+   "team": "Sweden",
+   "text": "Substitution, Sweden. Mattias Svanberg replaces Daniel Svensson.",
+   "players": [
+    "Mattias Svanberg",
+    "Daniel Svensson"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "82'",
+   "team": "Sweden",
+   "text": "Substitution, Sweden. Benjamin Nygren replaces Yasin Ayari.",
+   "players": [
+    "Benjamin Nygren",
+    "Yasin Ayari"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "85'",
+   "team": "France",
+   "text": "Substitution, France. Jean-Philippe Mateta replaces Kylian Mbappé.",
+   "players": [
+    "Jean-Philippe Mateta",
+    "Kylian Mbappé"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "85'",
+   "team": "France",
+   "text": "Substitution, France. Rayan Cherki replaces Michael Olise.",
+   "players": [
+    "Rayan Cherki",
+    "Michael Olise"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "89'",
+   "team": "Sweden",
+   "text": "Substitution, Sweden. Gustaf Nilsson replaces Alexander Isak.",
+   "players": [
+    "Gustaf Nilsson",
+    "Alexander Isak"
+   ]
+  },
+  {
+   "type": "End Regular Time",
+   "minute": "90'+4'",
+   "team": null,
+   "text": "Second Half ends, France 3, Sweden 0.",
+   "players": []
+  }
+ ],
+ "shots": [
+  {
+   "minute": "3",
+   "seconds": 137.0,
+   "team": "Sweden",
+   "player": "Alexander Isak",
+   "type": "Shot On Target",
+   "x": 83.1,
+   "y": 62.0,
+   "goal": false,
+   "xg": 0.14,
+   "text": "Attempt saved. Alexander Isak (Sweden) right footed shot from the centre of the box is saved in the centre of the goal by Mike Maignan (France). Assisted by Viktor Gyökeres."
+  },
+  {
+   "minute": "15",
+   "seconds": 899.0,
+   "team": "France",
+   "player": "Lucas Digne",
+   "type": "Shot On Target",
+   "x": 76.6,
+   "y": 69.1,
+   "goal": false,
+   "xg": 0.065,
+   "text": "Attempt saved. Lucas Digne (France) left footed shot from outside the box is saved in the bottom right corner by Jacob Widell Zetterström (Sweden)."
+  },
+  {
+   "minute": "17",
+   "seconds": 971.0,
+   "team": "France",
+   "player": "Kylian Mbappé",
+   "type": "Shot On Target",
+   "x": 75.7,
+   "y": 66.4,
+   "goal": false,
+   "xg": 0.065,
+   "text": "Attempt saved. Kylian Mbappé (France) right footed shot from outside the box is saved in the bottom left corner by Jacob Widell Zetterström (Sweden). Assisted by Bradley Barcola."
+  },
+  {
+   "minute": "19",
+   "seconds": 1132.0,
+   "team": "France",
+   "player": "Bradley Barcola",
+   "type": "Shot Off Target",
+   "x": 89.6,
+   "y": 67.7,
+   "goal": false,
+   "xg": 0.162,
+   "text": "Attempt missed. Bradley Barcola (France) left footed shot from the left side of the box is too high. Assisted by Adrien Rabiot."
+  },
+  {
+   "minute": "27",
+   "seconds": 1620.0,
+   "team": "Sweden",
+   "player": "Alexander Isak",
+   "type": "Shot Off Target",
+   "x": 92.3,
+   "y": 38.3,
+   "goal": false,
+   "xg": 0.288,
+   "text": "Attempt missed. Alexander Isak (Sweden) right footed shot from the centre of the box is close, but misses to the right. Assisted by Yasin Ayari with a through ball following a set piece situation."
+  },
+  {
+   "minute": "28",
+   "seconds": 1669.0,
+   "team": "France",
+   "player": "Ousmane Dembélé",
+   "type": "Shot Blocked",
+   "x": 82.4,
+   "y": 25.0,
+   "goal": false,
+   "xg": 0.075,
+   "text": "Attempt blocked. Ousmane Dembélé (France) right footed shot from outside the box is blocked. Assisted by Aurélien Tchouaméni."
+  },
+  {
+   "minute": "30",
+   "seconds": 1795.0,
+   "team": "France",
+   "player": "Adrien Rabiot",
+   "type": "Shot On Target",
+   "x": 91.8,
+   "y": 68.3,
+   "goal": false,
+   "xg": 0.167,
+   "text": "Attempt saved. Adrien Rabiot (France) left footed shot from the left side of the box is saved in the centre of the goal by Jacob Widell Zetterström (Sweden)."
+  },
+  {
+   "minute": "32",
+   "seconds": 1865.0,
+   "team": "France",
+   "player": null,
+   "type": "Shot Hit Woodwork",
+   "x": 91.7,
+   "y": 57.7,
+   "goal": false,
+   "xg": 0.376,
+   "text": "Kylian Mbappé (France) hits the left post with a right footed shot from the centre of the box. Assisted by Jules Koundé following a corner."
+  },
+  {
+   "minute": "33",
+   "seconds": 1931.0,
+   "team": "France",
+   "player": "Adrien Rabiot",
+   "type": "Shot Off Target",
+   "x": 75.9,
+   "y": 66.4,
+   "goal": false,
+   "xg": 0.066,
+   "text": "Attempt missed. Adrien Rabiot (France) left footed shot from outside the box is too high. Assisted by Ousmane Dembélé."
+  },
+  {
+   "minute": "35",
+   "seconds": 2100.0,
+   "team": "France",
+   "player": null,
+   "type": "Shot Hit Woodwork",
+   "x": 85.3,
+   "y": 57.3,
+   "goal": false,
+   "xg": 0.201,
+   "text": "Michael Olise (France) hits the right post with a left footed shot from the centre of the box."
+  },
+  {
+   "minute": "36",
+   "seconds": 2103.0,
+   "team": "France",
+   "player": "Ousmane Dembélé",
+   "type": "Shot Off Target",
+   "x": 90.2,
+   "y": 37.2,
+   "goal": false,
+   "xg": 0.234,
+   "text": "Attempt missed. Ousmane Dembélé (France) left footed shot from the centre of the box is close, but misses to the left."
+  },
+  {
+   "minute": "39",
+   "seconds": 2316.0,
+   "team": "France",
+   "player": "Dayot Upamecano",
+   "type": "Shot Off Target",
+   "x": 91.5,
+   "y": 47.7,
+   "goal": false,
+   "xg": 0.308,
+   "text": "Attempt missed. Dayot Upamecano (France) header from the centre of the box misses to the right following a set piece situation."
+  },
+  {
+   "minute": "40",
+   "seconds": 2376.0,
+   "team": "France",
+   "player": "Kylian Mbappé",
+   "type": "Shot On Target",
+   "x": 77.2,
+   "y": 64.8,
+   "goal": false,
+   "xg": 0.077,
+   "text": "Attempt saved. Kylian Mbappé (France) right footed shot from outside the box is saved in the centre of the goal by Jacob Widell Zetterström (Sweden). Assisted by Adrien Rabiot."
+  },
+  {
+   "minute": "42",
+   "seconds": 2495.0,
+   "team": "France",
+   "player": "Michael Olise",
+   "type": "Shot Off Target",
+   "x": 78.4,
+   "y": 55.4,
+   "goal": false,
+   "xg": 0.106,
+   "text": "Attempt missed. Michael Olise (France) left footed shot from outside the box is close, but misses to the left. Assisted by Aurélien Tchouaméni."
+  },
+  {
+   "minute": "44",
+   "seconds": 2616.0,
+   "team": "France",
+   "player": "Jules Koundé",
+   "type": "Shot Blocked",
+   "x": 88.3,
+   "y": 34.2,
+   "goal": false,
+   "xg": 0.172,
+   "text": "Attempt blocked. Jules Koundé (France) left footed shot from the right side of the box is blocked. Assisted by Ousmane Dembélé."
+  },
+  {
+   "minute": "45",
+   "seconds": 2663.0,
+   "team": "France",
+   "player": "Michael Olise",
+   "type": "Shot On Target",
+   "x": 75.7,
+   "y": 47.9,
+   "goal": false,
+   "xg": 0.084,
+   "text": "Attempt saved. Michael Olise (France) left footed shot from outside the box is saved in the bottom left corner by Jacob Widell Zetterström (Sweden). Assisted by Kylian Mbappé."
+  },
+  {
+   "minute": "45",
+   "seconds": 2684.0,
+   "team": "France",
+   "player": "Kylian Mbappé",
+   "type": "Goal",
+   "x": 91.9,
+   "y": 62.5,
+   "goal": true,
+   "xg": 0.264,
+   "text": "Goal! France 1, Sweden 0. Kylian Mbappé (France) right footed shot from the centre of the box to the top right corner. Assisted by Ousmane Dembélé following a corner."
+  },
+  {
+   "minute": "45'+2",
+   "seconds": 2700.0,
+   "team": "Sweden",
+   "player": "Elliot Stroud",
+   "type": "Shot Off Target",
+   "x": 89.2,
+   "y": 41.7,
+   "goal": false,
+   "xg": 0.285,
+   "text": "Attempt missed. Elliot Stroud (Sweden) right footed shot from the centre of the box is close, but misses the top right corner."
+  },
+  {
+   "minute": "50",
+   "seconds": 2974.0,
+   "team": "France",
+   "player": "Aurélien Tchouaméni",
+   "type": "Shot Off Target",
+   "x": 72.6,
+   "y": 61.6,
+   "goal": false,
+   "xg": 0.056,
+   "text": "Attempt missed. Aurélien Tchouaméni (France) right footed shot from outside the box is too high. Assisted by Kylian Mbappé."
+  },
+  {
+   "minute": "53",
+   "seconds": 3127.0,
+   "team": "France",
+   "player": "Bradley Barcola",
+   "type": "Goal",
+   "x": 86.4,
+   "y": 53.8,
+   "goal": true,
+   "xg": 0.247,
+   "text": "Goal! France 2, Sweden 0. Bradley Barcola (France) right footed shot from the centre of the box to the top left corner. Assisted by Michael Olise with a through ball following a fast break."
+  },
+  {
+   "minute": "57",
+   "seconds": 3364.0,
+   "team": "Sweden",
+   "player": "Lucas Bergvall",
+   "type": "Shot Off Target",
+   "x": 92.0,
+   "y": 56.2,
+   "goal": false,
+   "xg": 0.278,
+   "text": "Attempt missed. Lucas Bergvall (Sweden) header from the centre of the box misses to the left. Assisted by Daniel Svensson with a cross following a corner."
+  },
+  {
+   "minute": "61",
+   "seconds": 3641.0,
+   "team": "France",
+   "player": "Michael Olise",
+   "type": "Shot On Target",
+   "x": 79.6,
+   "y": 33.1,
+   "goal": false,
+   "xg": 0.088,
+   "text": "Attempt saved. Michael Olise (France) left footed shot from outside the box is saved in the bottom left corner by Jacob Widell Zetterström (Sweden). Assisted by Ousmane Dembélé."
+  },
+  {
+   "minute": "65",
+   "seconds": 3869.0,
+   "team": "France",
+   "player": "Michael Olise",
+   "type": "Shot Blocked",
+   "x": 90.9,
+   "y": 65.8,
+   "goal": false,
+   "xg": 0.195,
+   "text": "Attempt blocked. Michael Olise (France) left footed shot from the left side of the box is blocked. Assisted by Kylian Mbappé."
+  },
+  {
+   "minute": "66",
+   "seconds": 3937.0,
+   "team": "France",
+   "player": "Dayot Upamecano",
+   "type": "Shot Blocked",
+   "x": 86.1,
+   "y": 46.6,
+   "goal": false,
+   "xg": 0.24,
+   "text": "Attempt blocked. Dayot Upamecano (France) right footed shot from the centre of the box is blocked. Assisted by Adrien Rabiot."
+  },
+  {
+   "minute": "71",
+   "seconds": 4258.0,
+   "team": "France",
+   "player": "Michael Olise",
+   "type": "Shot On Target",
+   "x": 88.7,
+   "y": 45.7,
+   "goal": false,
+   "xg": 0.317,
+   "text": "Attempt saved. Michael Olise (France) left footed shot from the centre of the box is saved in the centre of the goal by Jacob Widell Zetterström (Sweden). Assisted by Kylian Mbappé."
+  },
+  {
+   "minute": "74",
+   "seconds": 4397.0,
+   "team": "France",
+   "player": "Kylian Mbappé",
+   "type": "Goal",
+   "x": 91.2,
+   "y": 64.4,
+   "goal": true,
+   "xg": 0.22,
+   "text": "Goal! France 3, Sweden 0. Kylian Mbappé (France) right footed shot from the left side of the box to the bottom right corner. Assisted by Michael Olise with a through ball."
+  },
+  {
+   "minute": "81",
+   "seconds": 4803.0,
+   "team": "France",
+   "player": "Désiré Doué",
+   "type": "Shot On Target",
+   "x": 84.9,
+   "y": 31.5,
+   "goal": false,
+   "xg": 0.12,
+   "text": "Attempt saved. Désiré Doué (France) right footed shot from the right side of the box is saved in the bottom right corner by Jacob Widell Zetterström (Sweden). Assisted by Malo Gusto."
+  },
+  {
+   "minute": "82",
+   "seconds": 4869.0,
+   "team": "France",
+   "player": "Bradley Barcola",
+   "type": "Shot On Target",
+   "x": 96.5,
+   "y": 61.5,
+   "goal": false,
+   "xg": 0.302,
+   "text": "Attempt saved. Bradley Barcola (France) left footed shot from the left side of the six yard box is saved in the centre of the goal by Jacob Widell Zetterström (Sweden). Assisted by Théo Hernández."
+  },
+  {
+   "minute": "86",
+   "seconds": 5154.0,
+   "team": "Sweden",
+   "player": "Mattias Svanberg",
+   "type": "Shot Off Target",
+   "x": 74.4,
+   "y": 46.6,
+   "goal": false,
+   "xg": 0.074,
+   "text": "Attempt missed. Mattias Svanberg (Sweden) right footed shot from outside the box misses to the left."
+  },
+  {
+   "minute": "89",
+   "seconds": 5308.0,
+   "team": "Sweden",
+   "player": "Viktor Gyökeres",
+   "type": "Shot On Target",
+   "x": 86.7,
+   "y": 55.2,
+   "goal": false,
+   "xg": 0.247,
+   "text": "Attempt saved. Viktor Gyökeres (Sweden) right footed shot from the centre of the box is saved in the bottom right corner by Mike Maignan (France)."
+  },
+  {
+   "minute": "90'+2",
+   "seconds": 5400.0,
+   "team": "France",
+   "player": "Jean-Philippe Mateta",
+   "type": "Shot Off Target",
+   "x": 91.0,
+   "y": 57.0,
+   "goal": false,
+   "xg": 0.366,
+   "text": "Attempt missed. Jean-Philippe Mateta (France) left footed shot from the centre of the box is too high. Assisted by Désiré Doué with a cross."
+  },
+  {
+   "minute": "90'+4",
+   "seconds": 5400.0,
+   "team": "Sweden",
+   "player": "Gustaf Nilsson",
+   "type": "Shot Blocked",
+   "x": 87.4,
+   "y": 46.2,
+   "goal": false,
+   "xg": 0.18,
+   "text": "Attempt blocked. Gustaf Nilsson (Sweden) header from the centre of the box is blocked. Assisted by Benjamin Nygren with a cross."
+  },
+  {
+   "minute": "90'+4",
+   "seconds": 5400.0,
+   "team": "Sweden",
+   "player": "Mattias Svanberg",
+   "type": "Shot On Target",
+   "x": 89.2,
+   "y": 30.1,
+   "goal": false,
+   "xg": 0.139,
+   "text": "Attempt saved. Mattias Svanberg (Sweden) right footed shot from the right side of the box is saved in the bottom right corner by Mike Maignan (France). Assisted by Anthony Elanga."
+  }
+ ],
+ "lineups": [
+  {
+   "team": "France",
+   "formation": "4-2-3-1",
+   "starters": [
+    {
+     "name": "Mike Maignan",
+     "jersey": "16",
+     "position": "G"
+    },
+    {
+     "name": "William Saliba",
+     "jersey": "17",
+     "position": "CD-L"
+    },
+    {
+     "name": "Dayot Upamecano",
+     "jersey": "4",
+     "position": "CD-R"
+    },
+    {
+     "name": "Lucas Digne",
+     "jersey": "3",
+     "position": "LB"
+    },
+    {
+     "name": "Jules Koundé",
+     "jersey": "5",
+     "position": "RB"
+    },
+    {
+     "name": "Michael Olise",
+     "jersey": "11",
+     "position": "AM"
+    },
+    {
+     "name": "Adrien Rabiot",
+     "jersey": "14",
+     "position": "LM"
+    },
+    {
+     "name": "Aurélien Tchouaméni",
+     "jersey": "8",
+     "position": "RM"
+    },
+    {
+     "name": "Kylian Mbappé",
+     "jersey": "10",
+     "position": "F"
+    },
+    {
+     "name": "Bradley Barcola",
+     "jersey": "12",
+     "position": "AM-L"
+    },
+    {
+     "name": "Ousmane Dembélé",
+     "jersey": "7",
+     "position": "AM-R"
+    }
+   ],
+   "subs": [
+    {
+     "name": "Warren Zaïre-Emery",
+     "jersey": "18",
+     "position": "SUB"
+    },
+    {
+     "name": "Robin Risser",
+     "jersey": "23",
+     "position": "SUB"
+    },
+    {
+     "name": "Jean-Philippe Mateta",
+     "jersey": "22",
+     "position": "SUB"
+    },
+    {
+     "name": "Malo Gusto",
+     "jersey": "2",
+     "position": "SUB"
+    },
+    {
+     "name": "Rayan Cherki",
+     "jersey": "24",
+     "position": "SUB"
+    },
+    {
+     "name": "Ibrahima Konaté",
+     "jersey": "15",
+     "position": "SUB"
+    },
+    {
+     "name": "Désiré Doué",
+     "jersey": "20",
+     "position": "SUB"
+    },
+    {
+     "name": "Maghnes Akliouche",
+     "jersey": "25",
+     "position": "SUB"
+    },
+    {
+     "name": "Maxence Lacroix",
+     "jersey": "26",
+     "position": "SUB"
+    },
+    {
+     "name": "Theo Hernández",
+     "jersey": "19",
+     "position": "SUB"
+    },
+    {
+     "name": "Manu Koné",
+     "jersey": "6",
+     "position": "SUB"
+    },
+    {
+     "name": "Marcus Thuram",
+     "jersey": "9",
+     "position": "SUB"
+    },
+    {
+     "name": "Brice Samba",
+     "jersey": "1",
+     "position": "SUB"
+    },
+    {
+     "name": "Lucas Hernández",
+     "jersey": "21",
+     "position": "SUB"
+    },
+    {
+     "name": "N'Golo Kanté",
+     "jersey": "13",
+     "position": "SUB"
+    }
+   ]
+  },
+  {
+   "team": "Sweden",
+   "formation": "4-4-2",
+   "starters": [
+    {
+     "name": "Jacob Widell Zetterström",
+     "jersey": "1",
+     "position": "G"
+    },
+    {
+     "name": "Victor Lindelöf",
+     "jersey": "3",
+     "position": "CD-L"
+    },
+    {
+     "name": "Gustaf Lagerbielke",
+     "jersey": "2",
+     "position": "CD-R"
+    },
+    {
+     "name": "Gabriel Gudmundsson",
+     "jersey": "5",
+     "position": "LB"
+    },
+    {
+     "name": "Daniel Svensson",
+     "jersey": "8",
+     "position": "RB"
+    },
+    {
+     "name": "Yasin Ayari",
+     "jersey": "18",
+     "position": "CM-L"
+    },
+    {
+     "name": "Lucas Bergvall",
+     "jersey": "7",
+     "position": "CM-R"
+    },
+    {
+     "name": "Elliot Stroud",
+     "jersey": "24",
+     "position": "LM"
+    },
+    {
+     "name": "Anthony Elanga",
+     "jersey": "11",
+     "position": "RM"
+    },
+    {
+     "name": "Alexander Isak",
+     "jersey": "9",
+     "position": "CF-L"
+    },
+    {
+     "name": "Viktor Gyökeres",
+     "jersey": "17",
+     "position": "CF-R"
+    }
+   ],
+   "subs": [
+    {
+     "name": "Kristoffer Nordfeldt",
+     "jersey": "23",
+     "position": "SUB"
+    },
+    {
+     "name": "Besfort Zeneli",
+     "jersey": "22",
+     "position": "SUB"
+    },
+    {
+     "name": "Taha Ali",
+     "jersey": "26",
+     "position": "SUB"
+    },
+    {
+     "name": "Eric Smith",
+     "jersey": "20",
+     "position": "SUB"
+    },
+    {
+     "name": "Carl Starfelt",
+     "jersey": "15",
+     "position": "SUB"
+    },
+    {
+     "name": "Jesper Karlström",
+     "jersey": "16",
+     "position": "SUB"
+    },
+    {
+     "name": "Alexander Bernhardsson",
+     "jersey": "21",
+     "position": "SUB"
+    },
+    {
+     "name": "Viktor Johansson",
+     "jersey": "12",
+     "position": "SUB"
+    },
+    {
+     "name": "Ken Sema",
+     "jersey": "13",
+     "position": "SUB"
+    },
+    {
+     "name": "Hjalmar Ekdal",
+     "jersey": "14",
+     "position": "SUB"
+    },
+    {
+     "name": "Benjamin Nygren",
+     "jersey": "10",
+     "position": "SUB"
+    },
+    {
+     "name": "Herman Johansson",
+     "jersey": "6",
+     "position": "SUB"
+    },
+    {
+     "name": "Gustaf Nilsson",
+     "jersey": "25",
+     "position": "SUB"
+    },
+    {
+     "name": "Mattias Svanberg",
+     "jersey": "19",
+     "position": "SUB"
+    }
+   ]
+  }
+ ],
+ "attendance": 80663,
+ "venue": "MetLife Stadium, East Rutherford, New Jersey, USA"
+}

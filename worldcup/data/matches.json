@@ -3167,12 +3167,35 @@
    "team2": "Sweden",
    "group": null,
    "ground": "New York/New Jersey (East Rutherford)",
-   "score": null,
-   "goals1": [],
+   "score": {
+    "ft": [
+     3,
+     0
+    ],
+    "ht": [
+     1,
+     0
+    ]
+   },
+   "goals1": [
+    {
+     "name": "Kylian Mbappé",
+     "minute": "45"
+    },
+    {
+     "name": "Bradley Barcola",
+     "minute": "53"
+    },
+    {
+     "name": "Kylian Mbappé",
+     "minute": "74"
+    }
+   ],
    "goals2": [],
    "espn_id": "760492",
-   "status": "scheduled",
+   "status": "finished",
    "utc_date": "2026-06-30T21:00Z",
+   "attendance": 80663,
    "venue": "MetLife Stadium",
    "slug": "2026-06-30-france-vs-sweden"
   },
@@ -3231,8 +3254,8 @@
    "goals1": [],
    "goals2": [],
    "espn_id": "760491",
-   "status": "scheduled",
-   "utc_date": "2026-07-01T01:00Z",
+   "status": "live",
+   "utc_date": "2026-07-01T02:00Z",
    "venue": "Estadio Banorte",
    "slug": "2026-06-30-mexico-vs-ecuador"
   },
