@@ -3287,11 +3287,34 @@
    "team2": "DR Congo",
    "group": null,
    "ground": "Atlanta",
-   "score": null,
-   "goals1": [],
-   "goals2": [],
+   "score": {
+    "ft": [
+     2,
+     1
+    ],
+    "ht": [
+     0,
+     1
+    ]
+   },
+   "goals1": [
+    {
+     "name": "Harry Kane",
+     "minute": "75"
+    },
+    {
+     "name": "Harry Kane",
+     "minute": "86"
+    }
+   ],
+   "goals2": [
+    {
+     "name": "Brian Cipenga",
+     "minute": "7"
+    }
+   ],
    "espn_id": null,
-   "status": "scheduled",
+   "status": "finished",
    "slug": "2026-07-01-england-vs-dr-congo"
   },
   {
