@@ -3250,12 +3250,31 @@
    "team2": "Ecuador",
    "group": null,
    "ground": "Mexico City",
-   "score": null,
-   "goals1": [],
+   "score": {
+    "ft": [
+     2,
+     0
+    ],
+    "ht": [
+     1,
+     0
+    ]
+   },
+   "goals1": [
+    {
+     "name": "Julián Quiñones",
+     "minute": "31"
+    },
+    {
+     "name": "Raúl Jiménez",
+     "minute": "45+1"
+    }
+   ],
    "goals2": [],
    "espn_id": "760491",
-   "status": "live",
+   "status": "finished",
    "utc_date": "2026-07-01T02:00Z",
+   "attendance": 80824,
    "venue": "Estadio Banorte",
    "slug": "2026-06-30-mexico-vs-ecuador"
   },
@@ -3424,16 +3443,18 @@
    "round": "Round of 16",
    "date": "2026-07-04",
    "time": "17:00 UTC-4",
-   "team1": "W74",
-   "team2": "W77",
+   "team1": "Paraguay",
+   "team2": "France",
    "group": null,
    "ground": "Philadelphia",
    "score": null,
    "goals1": [],
    "goals2": [],
-   "espn_id": null,
+   "espn_id": "760503",
    "status": "scheduled",
-   "slug": "2026-07-04-w74-vs-w77"
+   "utc_date": "2026-07-04T21:00Z",
+   "venue": "Lincoln Financial Field",
+   "slug": "2026-07-04-paraguay-vs-france"
   },
   {
    "num": 90,
@@ -3441,31 +3462,35 @@
    "date": "2026-07-04",
    "time": "12:00 UTC-5",
    "team1": "Canada",
-   "team2": "W75",
+   "team2": "Morocco",
    "group": null,
    "ground": "Houston",
    "score": null,
    "goals1": [],
    "goals2": [],
-   "espn_id": null,
+   "espn_id": "760502",
    "status": "scheduled",
-   "slug": "2026-07-04-canada-vs-w75"
+   "utc_date": "2026-07-04T17:00Z",
+   "venue": "NRG Stadium",
+   "slug": "2026-07-04-canada-vs-morocco"
   },
   {
    "num": 91,
    "round": "Round of 16",
    "date": "2026-07-05",
    "time": "16:00 UTC-4",
-   "team1": "W76",
-   "team2": "W78",
+   "team1": "Brazil",
+   "team2": "Norway",
    "group": null,
    "ground": "New York/New Jersey (East Rutherford)",
    "score": null,
    "goals1": [],
    "goals2": [],
-   "espn_id": null,
+   "espn_id": "760504",
    "status": "scheduled",
-   "slug": "2026-07-05-w76-vs-w78"
+   "utc_date": "2026-07-05T20:00Z",
+   "venue": "MetLife Stadium",
+   "slug": "2026-07-05-brazil-vs-norway"
   },
   {
    "num": 92,

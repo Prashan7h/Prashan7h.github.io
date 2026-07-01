@@ -1,0 +1,869 @@
+{
+ "teams": [
+  {
+   "name": "Mexico",
+   "stats": {
+    "possessionPct": "42.8",
+    "totalShots": "15",
+    "shotsOnTarget": "3",
+    "wonCorners": "3",
+    "foulsCommitted": "10",
+    "offsides": "0",
+    "saves": "1",
+    "yellowCards": "0",
+    "redCards": "0"
+   }
+  },
+  {
+   "name": "Ecuador",
+   "stats": {
+    "possessionPct": "57.2",
+    "totalShots": "7",
+    "shotsOnTarget": "1",
+    "wonCorners": "8",
+    "foulsCommitted": "14",
+    "offsides": "1",
+    "saves": "1",
+    "yellowCards": "3",
+    "redCards": "1"
+   }
+  }
+ ],
+ "events": [
+  {
+   "type": "Start Delay",
+   "minute": "",
+   "team": "Mexico",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Kickoff",
+   "minute": "",
+   "team": null,
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Goal",
+   "minute": "22'",
+   "team": "Mexico",
+   "text": "Goal! Mexico 1, Ecuador 0. Julián Quiñones (Mexico) right footed shot from the left side of the box to the top left corner. Assisted by Roberto Alvarado with a through ball.",
+   "players": [
+    "Julián Quiñones",
+    "Roberto Alvarado"
+   ]
+  },
+  {
+   "type": "Start Delay",
+   "minute": "25'",
+   "team": "Mexico",
+   "text": "Delay in match for a drinks break.",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "25'",
+   "team": "Ecuador",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "28'",
+   "team": "Mexico",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "28'",
+   "team": "Ecuador",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Goal",
+   "minute": "31'",
+   "team": "Mexico",
+   "text": "Goal! Mexico 2, Ecuador 0. Raúl Jiménez (Mexico) right footed shot from the centre of the box to the top right corner. Assisted by Julián Quiñones.",
+   "players": [
+    "Raúl Jiménez",
+    "Julián Quiñones"
+   ]
+  },
+  {
+   "type": "Yellow Card",
+   "minute": "45'+1'",
+   "team": "Ecuador",
+   "text": "Alan Franco (Ecuador) is shown the yellow card.",
+   "players": [
+    "Alan Franco"
+   ]
+  },
+  {
+   "type": "Halftime",
+   "minute": "45'+6'",
+   "team": null,
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Substitution",
+   "minute": "45'",
+   "team": "Ecuador",
+   "text": "Substitution, Ecuador. Ángelo Preciado replaces Joel Ordóñez.",
+   "players": [
+    "Ángelo Preciado",
+    "Joel Ordóñez"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "45'",
+   "team": "Ecuador",
+   "text": "Substitution, Ecuador. Yaimar Medina replaces Alan Franco.",
+   "players": [
+    "Yaimar Medina",
+    "Alan Franco"
+   ]
+  },
+  {
+   "type": "Start 2nd Half",
+   "minute": "45'",
+   "team": null,
+   "text": "Second Half begins Mexico 2, Ecuador 0.",
+   "players": []
+  },
+  {
+   "type": "Substitution",
+   "minute": "58'",
+   "team": "Mexico",
+   "text": "Substitution, Mexico. Brian Gutiérrez replaces Gilberto Mora.",
+   "players": [
+    "Brian Gutiérrez",
+    "Gilberto Mora"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "59'",
+   "team": "Ecuador",
+   "text": "Substitution, Ecuador. Kevin Rodríguez replaces Enner Valencia.",
+   "players": [
+    "Kevin Rodríguez",
+    "Enner Valencia"
+   ]
+  },
+  {
+   "type": "Start Delay",
+   "minute": "68'",
+   "team": "Ecuador",
+   "text": "Delay in match for a drinks break.",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "68'",
+   "team": "Mexico",
+   "text": "Delay in match for a drinks break.",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "71'",
+   "team": "Ecuador",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "71'",
+   "team": "Mexico",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "Substitution",
+   "minute": "73'",
+   "team": "Mexico",
+   "text": "Substitution, Mexico. Obed Vargas replaces Luis Romo.",
+   "players": [
+    "Obed Vargas",
+    "Luis Romo"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "74'",
+   "team": "Mexico",
+   "text": "Substitution, Mexico. Santiago Giménez replaces Raúl Jiménez.",
+   "players": [
+    "Santiago Gimenez",
+    "Raúl Jiménez"
+   ]
+  },
+  {
+   "type": "Start Delay",
+   "minute": "75'",
+   "team": "Mexico",
+   "text": "Delay in match because of an injury Raúl Rangel (Mexico).",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "75'",
+   "team": "Ecuador",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "76'",
+   "team": "Mexico",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "76'",
+   "team": "Ecuador",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Substitution",
+   "minute": "79'",
+   "team": "Ecuador",
+   "text": "Substitution, Ecuador. Jordy Caicedo replaces John Yeboah.",
+   "players": [
+    "Jordy Caicedo",
+    "John Yeboah"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "79'",
+   "team": "Ecuador",
+   "text": "Substitution, Ecuador. Kendry Páez replaces Nilson Angulo.",
+   "players": [
+    "Kendry Páez",
+    "Nilson Angulo"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "80'",
+   "team": "Mexico",
+   "text": "Substitution, Mexico. Orbelín Pineda replaces Julián Quiñones.",
+   "players": [
+    "Orbelín Pineda",
+    "Julián Quiñones"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "80'",
+   "team": "Mexico",
+   "text": "Substitution, Mexico. Israel Reyes replaces Roberto Alvarado.",
+   "players": [
+    "Israel Reyes",
+    "Roberto Alvarado"
+   ]
+  },
+  {
+   "type": "Yellow Card",
+   "minute": "90'+3'",
+   "team": "Ecuador",
+   "text": "Kendry Páez (Ecuador) is shown the yellow card for a bad foul.",
+   "players": [
+    "Kendry Páez"
+   ]
+  },
+  {
+   "type": "Start Delay",
+   "minute": "90'+4'",
+   "team": "Ecuador",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "90'+5'",
+   "team": "Ecuador",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Red Card",
+   "minute": "90'+5'",
+   "team": "Ecuador",
+   "text": "Piero Hincapié (Ecuador) is shown the red card.",
+   "players": [
+    "Piero Hincapié"
+   ]
+  },
+  {
+   "type": "Yellow Card",
+   "minute": "90'+9'",
+   "team": "Ecuador",
+   "text": "Moisés Caicedo (Ecuador) is shown the yellow card for a bad foul.",
+   "players": [
+    "Moisés Caicedo"
+   ]
+  },
+  {
+   "type": "End Regular Time",
+   "minute": "90'+9'",
+   "team": null,
+   "text": "",
+   "players": []
+  }
+ ],
+ "shots": [
+  {
+   "minute": "4",
+   "seconds": 188.0,
+   "team": "Mexico",
+   "player": "Roberto Alvarado",
+   "type": "Shot Blocked",
+   "x": 77.7,
+   "y": 37.6,
+   "goal": false,
+   "xg": 0.086,
+   "text": "Attempt blocked. Roberto Alvarado (Mexico) left footed shot from outside the box is blocked. Assisted by Gilberto Mora."
+  },
+  {
+   "minute": "5",
+   "seconds": 288.0,
+   "team": "Mexico",
+   "player": "Gilberto Mora",
+   "type": "Shot Off Target",
+   "x": 75.6,
+   "y": 39.4,
+   "goal": false,
+   "xg": 0.075,
+   "text": "Attempt missed. Gilberto Mora (Mexico) right footed shot from outside the box is just a bit too high. Assisted by Jorge Sánchez."
+  },
+  {
+   "minute": "6",
+   "seconds": 322.0,
+   "team": "Mexico",
+   "player": "Luis Romo",
+   "type": "Shot Off Target",
+   "x": 71.2,
+   "y": 51.9,
+   "goal": false,
+   "xg": 0.055,
+   "text": "Attempt missed. Luis Romo (Mexico) right footed shot from outside the box is too high. Assisted by Roberto Alvarado."
+  },
+  {
+   "minute": "7",
+   "seconds": 370.0,
+   "team": "Mexico",
+   "player": "Raúl Jiménez",
+   "type": "Shot Off Target",
+   "x": 91.7,
+   "y": 54.8,
+   "goal": false,
+   "xg": 0.289,
+   "text": "Attempt missed. Raúl Jiménez (Mexico) header from the centre of the box is close, but misses to the left. Assisted by Luis Romo with a cross following a fast break."
+  },
+  {
+   "minute": "14",
+   "seconds": 809.0,
+   "team": "Mexico",
+   "player": "Roberto Alvarado",
+   "type": "Shot Blocked",
+   "x": 81.5,
+   "y": 33.0,
+   "goal": false,
+   "xg": 0.101,
+   "text": "Attempt blocked. Roberto Alvarado (Mexico) right footed shot from outside the box is blocked. Assisted by Julián Quiñones."
+  },
+  {
+   "minute": "15",
+   "seconds": 896.0,
+   "team": "Mexico",
+   "player": "Gilberto Mora",
+   "type": "Shot Off Target",
+   "x": 89.8,
+   "y": 76.3,
+   "goal": false,
+   "xg": 0.095,
+   "text": "Attempt missed. Gilberto Mora (Mexico) right footed shot from the left side of the box is close, but misses to the right following a corner."
+  },
+  {
+   "minute": "18",
+   "seconds": 1023.0,
+   "team": "Ecuador",
+   "player": null,
+   "type": "Shot Hit Woodwork",
+   "x": 87.2,
+   "y": 63.0,
+   "goal": false,
+   "xg": 0.187,
+   "text": "John Yeboah (Ecuador) hits the left post with a left footed shot from the centre of the box. Assisted by Piero Hincapié."
+  },
+  {
+   "minute": "22",
+   "seconds": 1275.0,
+   "team": "Mexico",
+   "player": "Julián Quiñones",
+   "type": "Goal",
+   "x": 86.8,
+   "y": 64.6,
+   "goal": true,
+   "xg": 0.167,
+   "text": "Goal! Mexico 1, Ecuador 0. Julián Quiñones (Mexico) right footed shot from the left side of the box to the top left corner. Assisted by Roberto Alvarado with a through ball."
+  },
+  {
+   "minute": "31",
+   "seconds": 1829.0,
+   "team": "Mexico",
+   "player": "Raúl Jiménez",
+   "type": "Goal",
+   "x": 84.7,
+   "y": 47.8,
+   "goal": true,
+   "xg": 0.209,
+   "text": "Goal! Mexico 2, Ecuador 0. Raúl Jiménez (Mexico) right footed shot from the centre of the box to the top right corner. Assisted by Julián Quiñones."
+  },
+  {
+   "minute": "40",
+   "seconds": 2350.0,
+   "team": "Ecuador",
+   "player": "John Yeboah",
+   "type": "Shot On Target",
+   "x": 84.3,
+   "y": 33.3,
+   "goal": false,
+   "xg": 0.126,
+   "text": "Attempt saved. John Yeboah (Ecuador) left footed shot from the right side of the box is saved in the top left corner by Raúl Rangel (Mexico). Assisted by Willian Pacho."
+  },
+  {
+   "minute": "44",
+   "seconds": 2588.0,
+   "team": "Mexico",
+   "player": "Raúl Jiménez",
+   "type": "Shot Off Target",
+   "x": 91.2,
+   "y": 49.3,
+   "goal": false,
+   "xg": 0.303,
+   "text": "Attempt missed. Raúl Jiménez (Mexico) header from the centre of the box is too high. Assisted by Gilberto Mora with a cross."
+  },
+  {
+   "minute": "45",
+   "seconds": 2657.0,
+   "team": "Mexico",
+   "player": "Raúl Jiménez",
+   "type": "Shot Off Target",
+   "x": 81.1,
+   "y": 51.5,
+   "goal": false,
+   "xg": 0.143,
+   "text": "Attempt missed. Raúl Jiménez (Mexico) right footed shot from outside the box misses to the right. Assisted by Jorge Sánchez."
+  },
+  {
+   "minute": "46",
+   "seconds": 2755.0,
+   "team": "Mexico",
+   "player": "Roberto Alvarado",
+   "type": "Shot Off Target",
+   "x": 85.2,
+   "y": 27.4,
+   "goal": false,
+   "xg": 0.099,
+   "text": "Attempt missed. Roberto Alvarado (Mexico) left footed shot from the right side of the box is high and wide to the left. Assisted by Julián Quiñones."
+  },
+  {
+   "minute": "51",
+   "seconds": 3016.0,
+   "team": "Ecuador",
+   "player": "Pedro Vite",
+   "type": "Shot Off Target",
+   "x": 73.7,
+   "y": 46.4,
+   "goal": false,
+   "xg": 0.069,
+   "text": "Attempt missed. Pedro Vite (Ecuador) left footed shot from outside the box is too high. Assisted by Gonzalo Plata."
+  },
+  {
+   "minute": "52",
+   "seconds": 3084.0,
+   "team": "Mexico",
+   "player": "Gilberto Mora",
+   "type": "Shot Blocked",
+   "x": 86.4,
+   "y": 33.4,
+   "goal": false,
+   "xg": 0.146,
+   "text": "Attempt blocked. Gilberto Mora (Mexico) right footed shot from the right side of the box is blocked. Assisted by Érik Lira."
+  },
+  {
+   "minute": "67",
+   "seconds": 3984.0,
+   "team": "Mexico",
+   "player": "César Montes",
+   "type": "Shot On Target",
+   "x": 92.4,
+   "y": 46.8,
+   "goal": false,
+   "xg": 0.337,
+   "text": "Attempt saved. César Montes (Mexico) header from the centre of the box is saved in the top centre of the goal by Hernán Galíndez (Ecuador). Assisted by Roberto Alvarado with a cross."
+  },
+  {
+   "minute": "67",
+   "seconds": 4015.0,
+   "team": "Mexico",
+   "player": "Johan Vásquez",
+   "type": "Shot Off Target",
+   "x": 92.6,
+   "y": 47.0,
+   "goal": false,
+   "xg": 0.348,
+   "text": "Attempt missed. Johan Vásquez (Mexico) header from the centre of the box is close, but misses to the right. Assisted by Roberto Alvarado with a cross following a corner."
+  },
+  {
+   "minute": "74",
+   "seconds": 4435.0,
+   "team": "Ecuador",
+   "player": "Kevin Rodríguez",
+   "type": "Shot Off Target",
+   "x": 90.5,
+   "y": 61.3,
+   "goal": false,
+   "xg": 0.265,
+   "text": "Attempt missed. Kevin Rodríguez (Ecuador) right footed shot from the centre of the box is close, but misses to the left. Assisted by Moisés Caicedo with a through ball."
+  },
+  {
+   "minute": "85",
+   "seconds": 5092.0,
+   "team": "Ecuador",
+   "player": "Moisés Caicedo",
+   "type": "Shot Off Target",
+   "x": 72.8,
+   "y": 48.1,
+   "goal": false,
+   "xg": 0.064,
+   "text": "Attempt missed. Moisés Caicedo (Ecuador) right footed shot from outside the box misses to the left."
+  },
+  {
+   "minute": "88",
+   "seconds": 5266.0,
+   "team": "Ecuador",
+   "player": "Yaimar Medina",
+   "type": "Shot Off Target",
+   "x": 85.8,
+   "y": 56.4,
+   "goal": false,
+   "xg": 0.141,
+   "text": "Attempt missed. Yaimar Medina (Ecuador) header from the centre of the box misses to the left. Assisted by Kendry Páez."
+  },
+  {
+   "minute": "89",
+   "seconds": 5335.0,
+   "team": "Ecuador",
+   "player": "Jordy Caicedo",
+   "type": "Shot Blocked",
+   "x": 86.0,
+   "y": 50.5,
+   "goal": false,
+   "xg": 0.244,
+   "text": "Attempt blocked. Jordy Caicedo (Ecuador) left footed shot from the centre of the box is blocked. Assisted by Kevin Rodríguez."
+  },
+  {
+   "minute": "90'+2",
+   "seconds": 5400.0,
+   "team": "Mexico",
+   "player": "Orbelín Pineda",
+   "type": "Shot Off Target",
+   "x": 86.7,
+   "y": 63.8,
+   "goal": false,
+   "xg": 0.173,
+   "text": "Attempt missed. Orbelín Pineda (Mexico) right footed shot from the left side of the box is close, but misses the top right corner. Assisted by Érik Lira."
+  }
+ ],
+ "lineups": [
+  {
+   "team": "Mexico",
+   "formation": "4-3-3",
+   "starters": [
+    {
+     "name": "Raúl Rangel",
+     "jersey": "1",
+     "position": "G"
+    },
+    {
+     "name": "Johan Vásquez",
+     "jersey": "5",
+     "position": "CD-L"
+    },
+    {
+     "name": "César Montes",
+     "jersey": "3",
+     "position": "CD-R"
+    },
+    {
+     "name": "Jesús Gallardo",
+     "jersey": "23",
+     "position": "LB"
+    },
+    {
+     "name": "Jorge Sánchez",
+     "jersey": "2",
+     "position": "RB"
+    },
+    {
+     "name": "Érik Lira",
+     "jersey": "6",
+     "position": "CM"
+    },
+    {
+     "name": "Luis Romo",
+     "jersey": "7",
+     "position": "LM"
+    },
+    {
+     "name": "Gilberto Mora",
+     "jersey": "19",
+     "position": "RM"
+    },
+    {
+     "name": "Raúl Jiménez",
+     "jersey": "9",
+     "position": "F"
+    },
+    {
+     "name": "Julián Quiñones",
+     "jersey": "16",
+     "position": "LF"
+    },
+    {
+     "name": "Roberto Alvarado",
+     "jersey": "25",
+     "position": "RF"
+    }
+   ],
+   "subs": [
+    {
+     "name": "Guillermo Ochoa",
+     "jersey": "13",
+     "position": "SUB"
+    },
+    {
+     "name": "Israel Reyes",
+     "jersey": "15",
+     "position": "SUB"
+    },
+    {
+     "name": "Alexis Vega",
+     "jersey": "10",
+     "position": "SUB"
+    },
+    {
+     "name": "Guillermo Martínez",
+     "jersey": "22",
+     "position": "SUB"
+    },
+    {
+     "name": "Luis Chávez",
+     "jersey": "24",
+     "position": "SUB"
+    },
+    {
+     "name": "Álvaro Fidalgo",
+     "jersey": "8",
+     "position": "SUB"
+    },
+    {
+     "name": "Santiago Gimenez",
+     "jersey": "11",
+     "position": "SUB"
+    },
+    {
+     "name": "Edson Álvarez",
+     "jersey": "4",
+     "position": "SUB"
+    },
+    {
+     "name": "Mateo Chávez",
+     "jersey": "20",
+     "position": "SUB"
+    },
+    {
+     "name": "Carlos Acevedo",
+     "jersey": "12",
+     "position": "SUB"
+    },
+    {
+     "name": "Brian Gutiérrez",
+     "jersey": "26",
+     "position": "SUB"
+    },
+    {
+     "name": "Orbelín Pineda",
+     "jersey": "17",
+     "position": "SUB"
+    },
+    {
+     "name": "Armando González",
+     "jersey": "14",
+     "position": "SUB"
+    },
+    {
+     "name": "Obed Vargas",
+     "jersey": "18",
+     "position": "SUB"
+    },
+    {
+     "name": "César Huerta",
+     "jersey": "21",
+     "position": "SUB"
+    }
+   ]
+  },
+  {
+   "team": "Ecuador",
+   "formation": "4-4-2",
+   "starters": [
+    {
+     "name": "Hernán Galíndez",
+     "jersey": "1",
+     "position": "G"
+    },
+    {
+     "name": "Willian Pacho",
+     "jersey": "6",
+     "position": "CD-L"
+    },
+    {
+     "name": "Joel Ordóñez",
+     "jersey": "4",
+     "position": "CD-R"
+    },
+    {
+     "name": "Piero Hincapié",
+     "jersey": "3",
+     "position": "LB"
+    },
+    {
+     "name": "Alan Franco",
+     "jersey": "21",
+     "position": "RB"
+    },
+    {
+     "name": "Pedro Vite",
+     "jersey": "15",
+     "position": "CM-L"
+    },
+    {
+     "name": "Moisés Caicedo",
+     "jersey": "23",
+     "position": "CM-R"
+    },
+    {
+     "name": "Nilson Angulo",
+     "jersey": "20",
+     "position": "LM"
+    },
+    {
+     "name": "John Yeboah",
+     "jersey": "9",
+     "position": "RM"
+    },
+    {
+     "name": "Enner Valencia",
+     "jersey": "13",
+     "position": "CF-L"
+    },
+    {
+     "name": "Gonzalo Plata",
+     "jersey": "19",
+     "position": "CF-R"
+    }
+   ],
+   "subs": [
+    {
+     "name": "Gonzalo Valle",
+     "jersey": "22",
+     "position": "SUB"
+    },
+    {
+     "name": "Yaimar Medina",
+     "jersey": "26",
+     "position": "SUB"
+    },
+    {
+     "name": "Anthony Valencia",
+     "jersey": "8",
+     "position": "SUB"
+    },
+    {
+     "name": "Jordy Alcívar",
+     "jersey": "5",
+     "position": "SUB"
+    },
+    {
+     "name": "Moisés Ramírez",
+     "jersey": "12",
+     "position": "SUB"
+    },
+    {
+     "name": "Ángelo Preciado",
+     "jersey": "17",
+     "position": "SUB"
+    },
+    {
+     "name": "Kendry Páez",
+     "jersey": "10",
+     "position": "SUB"
+    },
+    {
+     "name": "Denil Castillo",
+     "jersey": "18",
+     "position": "SUB"
+    },
+    {
+     "name": "Pervis Estupiñán",
+     "jersey": "7",
+     "position": "SUB"
+    },
+    {
+     "name": "Jeremy Arévalo",
+     "jersey": "24",
+     "position": "SUB"
+    },
+    {
+     "name": "Kevin Rodríguez",
+     "jersey": "11",
+     "position": "SUB"
+    },
+    {
+     "name": "Félix Torres",
+     "jersey": "2",
+     "position": "SUB"
+    },
+    {
+     "name": "Jordy Caicedo",
+     "jersey": "16",
+     "position": "SUB"
+    },
+    {
+     "name": "Jackson Porozo",
+     "jersey": "25",
+     "position": "SUB"
+    },
+    {
+     "name": "Alan Minda",
+     "jersey": "14",
+     "position": "SUB"
+    }
+   ]
+  }
+ ],
+ "attendance": 80824,
+ "venue": "Estadio Banorte, Mexico City, Mexico"
+}
