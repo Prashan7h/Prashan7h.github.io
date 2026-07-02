@@ -1,0 +1,904 @@
+{
+ "teams": [
+  {
+   "name": "United States",
+   "stats": {
+    "possessionPct": "48.4",
+    "totalShots": "8",
+    "shotsOnTarget": "2",
+    "wonCorners": "4",
+    "foulsCommitted": "7",
+    "offsides": "3",
+    "saves": "3",
+    "yellowCards": "0",
+    "redCards": "1"
+   }
+  },
+  {
+   "name": "Bosnia-Herzegovina",
+   "stats": {
+    "possessionPct": "51.6",
+    "totalShots": "10",
+    "shotsOnTarget": "3",
+    "wonCorners": "3",
+    "foulsCommitted": "13",
+    "offsides": "0",
+    "saves": "0",
+    "yellowCards": "1",
+    "redCards": "0"
+   }
+  }
+ ],
+ "events": [
+  {
+   "type": "Kickoff",
+   "minute": "",
+   "team": null,
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "6'",
+   "team": "Bosnia-Herzegovina",
+   "text": "Delay in match because of an injury Armin Gigovic (Bosnia and Herzegovina).",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "6'",
+   "team": "United States",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "6'",
+   "team": "Bosnia-Herzegovina",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "6'",
+   "team": "United States",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "18'",
+   "team": "Bosnia-Herzegovina",
+   "text": "Delay in match because of an injury Nikola Vasilj (Bosnia and Herzegovina).",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "18'",
+   "team": "United States",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "20'",
+   "team": "Bosnia-Herzegovina",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "20'",
+   "team": "United States",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "23'",
+   "team": "United States",
+   "text": "Delay in match for a drinks break.",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "23'",
+   "team": "Bosnia-Herzegovina",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "26'",
+   "team": "United States",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "26'",
+   "team": "Bosnia-Herzegovina",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Goal",
+   "minute": "45'",
+   "team": "United States",
+   "text": "Goal! USA 1, Bosnia and Herzegovina 0. Folarin Balogun (USA) left footed shot from the centre of the box to the centre of the goal.",
+   "players": [
+    "Folarin Balogun"
+   ]
+  },
+  {
+   "type": "Start Delay",
+   "minute": "45'+2'",
+   "team": "United States",
+   "text": "Delay in match because of an injury Tyler Adams (USA).",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "45'+2'",
+   "team": "Bosnia-Herzegovina",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "45'+5'",
+   "team": "United States",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "45'+5'",
+   "team": "Bosnia-Herzegovina",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "45'+9'",
+   "team": "Bosnia-Herzegovina",
+   "text": "Delay in match because of an injury Kerim Alajbegovic (Bosnia and Herzegovina).",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "45'+9'",
+   "team": "United States",
+   "text": "Delay in match (USA).",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "45'+10'",
+   "team": "Bosnia-Herzegovina",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "45'+10'",
+   "team": "United States",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "Halftime",
+   "minute": "45'+10'",
+   "team": null,
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Start 2nd Half",
+   "minute": "45'",
+   "team": null,
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Substitution",
+   "minute": "51'",
+   "team": "Bosnia-Herzegovina",
+   "text": "Substitution, Bosnia and Herzegovina. Esmir Bajraktarevic replaces Armin Gigovic.",
+   "players": [
+    "Esmir Bajraktarevic",
+    "Armin Gigovic"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "51'",
+   "team": "Bosnia-Herzegovina",
+   "text": "Substitution, Bosnia and Herzegovina. Benjamin Tahirovic replaces Ivan Sunjic.",
+   "players": [
+    "Benjamin Tahirovic",
+    "Ivan Sunjic"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "51'",
+   "team": "Bosnia-Herzegovina",
+   "text": "Substitution, Bosnia and Herzegovina. Ermin Mahmic replaces Edin Dzeko because of an injury.",
+   "players": [
+    "Ermin Mahmic",
+    "Edin Dzeko"
+   ]
+  },
+  {
+   "type": "Start Delay",
+   "minute": "61'",
+   "team": "Bosnia-Herzegovina",
+   "text": "Delay in match because of an injury Tarik Muharemovic (Bosnia and Herzegovina).",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "61'",
+   "team": "United States",
+   "text": "Delay in match because of an injury Folarin Balogun (USA).",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "63'",
+   "team": "United States",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "63'",
+   "team": "Bosnia-Herzegovina",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "63'",
+   "team": "United States",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "64'",
+   "team": "United States",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Red Card",
+   "minute": "64'",
+   "team": "United States",
+   "text": "Folarin Balogun (USA) is shown the red card.",
+   "players": [
+    "Folarin Balogun"
+   ]
+  },
+  {
+   "type": "Start Delay",
+   "minute": "69'",
+   "team": "United States",
+   "text": "Delay in match for a drinks break.",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "69'",
+   "team": "Bosnia-Herzegovina",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "72'",
+   "team": "United States",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "72'",
+   "team": "Bosnia-Herzegovina",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Substitution",
+   "minute": "75'",
+   "team": "Bosnia-Herzegovina",
+   "text": "Substitution, Bosnia and Herzegovina. Haris Tabakovic replaces Sead Kolasinac.",
+   "players": [
+    "Haris Tabakovic",
+    "Sead Kolasinac"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "75'",
+   "team": "Bosnia-Herzegovina",
+   "text": "Substitution, Bosnia and Herzegovina. Amar Memic replaces Nikola Katic.",
+   "players": [
+    "Amar Memic",
+    "Nikola Katic"
+   ]
+  },
+  {
+   "type": "Yellow Card",
+   "minute": "80'",
+   "team": "Bosnia-Herzegovina",
+   "text": "Stjepan Radeljic (Bosnia and Herzegovina) is shown the yellow card for a bad foul.",
+   "players": [
+    "Stjepan Radeljic"
+   ]
+  },
+  {
+   "type": "Goal - Free-kick",
+   "minute": "82'",
+   "team": "United States",
+   "text": "Goal! USA 2, Bosnia and Herzegovina 0. Malik Tillman (USA) from a free kick with a right footed shot to the top left corner.",
+   "players": [
+    "Malik Tillman"
+   ]
+  },
+  {
+   "type": "Start Delay",
+   "minute": "87'",
+   "team": "United States",
+   "text": "Delay in match because of an injury Matt Freese (USA).",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "87'",
+   "team": "Bosnia-Herzegovina",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "87'",
+   "team": "United States",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "87'",
+   "team": "Bosnia-Herzegovina",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Substitution",
+   "minute": "87'",
+   "team": "United States",
+   "text": "Substitution, USA. Sebastian Berhalter replaces Sergiño Dest.",
+   "players": [
+    "Sebastian Berhalter",
+    "Sergiño Dest"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "88'",
+   "team": "United States",
+   "text": "Substitution, USA. Ricardo Pepi replaces Christian Pulisic.",
+   "players": [
+    "Ricardo Pepi",
+    "Christian Pulisic"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "90'+5'",
+   "team": "United States",
+   "text": "Substitution, USA. Giovanni Reyna replaces Weston McKennie.",
+   "players": [
+    "Giovanni Reyna",
+    "Weston McKennie"
+   ]
+  },
+  {
+   "type": "End Regular Time",
+   "minute": "90'+10'",
+   "team": null,
+   "text": "Second Half ends, USA 2, Bosnia and Herzegovina 0.",
+   "players": []
+  }
+ ],
+ "shots": [
+  {
+   "minute": "4",
+   "seconds": 205.0,
+   "team": "United States",
+   "player": "Christian Pulisic",
+   "type": "Shot Blocked",
+   "x": 79.7,
+   "y": 49.0,
+   "goal": false,
+   "xg": 0.124,
+   "text": "Attempt blocked. Christian Pulisic (USA) right footed shot from outside the box is blocked. Assisted by Tim Ream."
+  },
+  {
+   "minute": "10",
+   "seconds": 579.0,
+   "team": "Bosnia-Herzegovina",
+   "player": "Ermedin Demirovic",
+   "type": "Shot On Target",
+   "x": 85.8,
+   "y": 35.1,
+   "goal": false,
+   "xg": 0.153,
+   "text": "Attempt saved. Ermedin Demirovic (Bosnia and Herzegovina) right footed shot from the right side of the box is saved in the top centre of the goal by Matt Freese (USA). Assisted by Edin Dzeko."
+  },
+  {
+   "minute": "15",
+   "seconds": 865.0,
+   "team": "United States",
+   "player": "Folarin Balogun",
+   "type": "Shot Off Target",
+   "x": 89.9,
+   "y": 39.7,
+   "goal": false,
+   "xg": 0.271,
+   "text": "Attempt missed. Folarin Balogun (USA) right footed shot from the centre of the box misses to the right. Assisted by Antonee Robinson following a set piece situation."
+  },
+  {
+   "minute": "42",
+   "seconds": 2512.0,
+   "team": "United States",
+   "player": "Folarin Balogun",
+   "type": "Shot Off Target",
+   "x": 95.8,
+   "y": 39.9,
+   "goal": false,
+   "xg": 0.375,
+   "text": "Attempt missed. Folarin Balogun (USA) right footed shot from the right side of the six yard box misses to the right. Assisted by Malik Tillman with a cross following a set piece situation."
+  },
+  {
+   "minute": "45",
+   "seconds": 2657.0,
+   "team": "United States",
+   "player": "Folarin Balogun",
+   "type": "Goal",
+   "x": 86.6,
+   "y": 45.5,
+   "goal": true,
+   "xg": 0.249,
+   "text": "Goal! USA 1, Bosnia and Herzegovina 0. Folarin Balogun (USA) left footed shot from the centre of the box to the centre of the goal."
+  },
+  {
+   "minute": "45'+8",
+   "seconds": 2700.0,
+   "team": "United States",
+   "player": null,
+   "type": "Shot Hit Woodwork",
+   "x": 95.0,
+   "y": 45.6,
+   "goal": false,
+   "xg": 0.671,
+   "text": "Folarin Balogun (USA) hits the bar with a right footed shot from very close range. Assisted by Sergiño Dest with a headed pass."
+  },
+  {
+   "minute": "56",
+   "seconds": 3306.0,
+   "team": "Bosnia-Herzegovina",
+   "player": "Nikola Katic",
+   "type": "Shot Off Target",
+   "x": 71.8,
+   "y": 27.0,
+   "goal": false,
+   "xg": 0.04,
+   "text": "Attempt missed. Nikola Katic (Bosnia and Herzegovina) right footed shot from outside the box misses to the right. Assisted by Esmir Bajraktarevic."
+  },
+  {
+   "minute": "66",
+   "seconds": 3926.0,
+   "team": "Bosnia-Herzegovina",
+   "player": "Ermedin Demirovic",
+   "type": "Shot On Target",
+   "x": 85.0,
+   "y": 49.5,
+   "goal": false,
+   "xg": 0.218,
+   "text": "Attempt saved. Ermedin Demirovic (Bosnia and Herzegovina) right footed shot from the centre of the box is saved in the centre of the goal by Matt Freese (USA)."
+  },
+  {
+   "minute": "68",
+   "seconds": 4032.0,
+   "team": "Bosnia-Herzegovina",
+   "player": "Esmir Bajraktarevic",
+   "type": "Shot On Target",
+   "x": 86.8,
+   "y": 73.6,
+   "goal": false,
+   "xg": 0.101,
+   "text": "Attempt saved. Esmir Bajraktarevic (Bosnia and Herzegovina) left footed shot from the left side of the box is saved in the centre of the goal by Matt Freese (USA)."
+  },
+  {
+   "minute": "74",
+   "seconds": 4404.0,
+   "team": "Bosnia-Herzegovina",
+   "player": "Amar Dedic",
+   "type": "Shot Blocked",
+   "x": 75.1,
+   "y": 42.7,
+   "goal": false,
+   "xg": 0.076,
+   "text": "Attempt blocked. Amar Dedic (Bosnia and Herzegovina) left footed shot from outside the box is blocked. Assisted by Esmir Bajraktarevic."
+  },
+  {
+   "minute": "77",
+   "seconds": 4562.0,
+   "team": "Bosnia-Herzegovina",
+   "player": "Kerim Alajbegovic",
+   "type": "Shot Blocked",
+   "x": 81.5,
+   "y": 61.2,
+   "goal": false,
+   "xg": 0.125,
+   "text": "Attempt blocked. Kerim Alajbegovic (Bosnia and Herzegovina) left footed shot from outside the box is blocked."
+  },
+  {
+   "minute": "79",
+   "seconds": 4683.0,
+   "team": "United States",
+   "player": "Malik Tillman",
+   "type": "Shot Blocked",
+   "x": 87.7,
+   "y": 51.3,
+   "goal": false,
+   "xg": 0.297,
+   "text": "Attempt blocked. Malik Tillman (USA) left footed shot from the centre of the box is blocked. Assisted by Weston McKennie."
+  },
+  {
+   "minute": "82",
+   "seconds": 4893.0,
+   "team": "United States",
+   "player": "Malik Tillman",
+   "type": "Goal - Free-kick",
+   "x": 81.6,
+   "y": 65.5,
+   "goal": true,
+   "xg": 0.108,
+   "text": "Goal! USA 2, Bosnia and Herzegovina 0. Malik Tillman (USA) from a free kick with a right footed shot to the top left corner."
+  },
+  {
+   "minute": "90",
+   "seconds": 5353.0,
+   "team": "Bosnia-Herzegovina",
+   "player": "Amar Memic",
+   "type": "Shot Blocked",
+   "x": 97.1,
+   "y": 30.9,
+   "goal": false,
+   "xg": 0.141,
+   "text": "Attempt blocked. Amar Memic (Bosnia and Herzegovina) right footed shot from a difficult angle on the right is blocked."
+  },
+  {
+   "minute": "90'+2",
+   "seconds": 5400.0,
+   "team": "Bosnia-Herzegovina",
+   "player": "Kerim Alajbegovic",
+   "type": "Shot Off Target",
+   "x": 84.9,
+   "y": 74.5,
+   "goal": false,
+   "xg": 0.088,
+   "text": "Attempt missed. Kerim Alajbegovic (Bosnia and Herzegovina) right footed shot from the left side of the box misses to the right. Assisted by Stjepan Radeljic."
+  },
+  {
+   "minute": "90'+6",
+   "seconds": 5400.0,
+   "team": "United States",
+   "player": "Alex Freeman",
+   "type": "Shot Off Target",
+   "x": 85.3,
+   "y": 33.0,
+   "goal": false,
+   "xg": 0.133,
+   "text": "Attempt missed. Alex Freeman (USA) right footed shot from the right side of the box is high and wide to the right."
+  },
+  {
+   "minute": "90'+8",
+   "seconds": 5400.0,
+   "team": "Bosnia-Herzegovina",
+   "player": "Ermin Mahmic",
+   "type": "Shot Off Target",
+   "x": 70.3,
+   "y": 67.8,
+   "goal": false,
+   "xg": 0.041,
+   "text": "Attempt missed. Ermin Mahmic (Bosnia and Herzegovina) right footed shot from outside the box is close, but misses to the right. Assisted by Amar Dedic."
+  },
+  {
+   "minute": "90'+9",
+   "seconds": 5400.0,
+   "team": "Bosnia-Herzegovina",
+   "player": "Ermin Mahmic",
+   "type": "Shot Off Target",
+   "x": 73.5,
+   "y": 33.5,
+   "goal": false,
+   "xg": 0.055,
+   "text": "Attempt missed. Ermin Mahmic (Bosnia and Herzegovina) right footed shot from outside the box is close, but misses to the left. Assisted by Benjamin Tahirovic following a fast break."
+  }
+ ],
+ "lineups": [
+  {
+   "team": "United States",
+   "formation": "4-3-3",
+   "starters": [
+    {
+     "name": "Matt Freese",
+     "jersey": "24",
+     "position": "G"
+    },
+    {
+     "name": "Tim Ream",
+     "jersey": "13",
+     "position": "CD-L"
+    },
+    {
+     "name": "Chris Richards",
+     "jersey": "3",
+     "position": "CD-R"
+    },
+    {
+     "name": "Antonee Robinson",
+     "jersey": "5",
+     "position": "LB"
+    },
+    {
+     "name": "Alex Freeman",
+     "jersey": "16",
+     "position": "RB"
+    },
+    {
+     "name": "Tyler Adams",
+     "jersey": "4",
+     "position": "CM"
+    },
+    {
+     "name": "Malik Tillman",
+     "jersey": "17",
+     "position": "LM"
+    },
+    {
+     "name": "Weston McKennie",
+     "jersey": "8",
+     "position": "RM"
+    },
+    {
+     "name": "Folarin Balogun",
+     "jersey": "20",
+     "position": "F"
+    },
+    {
+     "name": "Christian Pulisic",
+     "jersey": "10",
+     "position": "LF"
+    },
+    {
+     "name": "Sergiño Dest",
+     "jersey": "2",
+     "position": "RF"
+    }
+   ],
+   "subs": [
+    {
+     "name": "Giovanni Reyna",
+     "jersey": "7",
+     "position": "SUB"
+    },
+    {
+     "name": "Chris Brady",
+     "jersey": "25",
+     "position": "SUB"
+    },
+    {
+     "name": "Brenden Aaronson",
+     "jersey": "11",
+     "position": "SUB"
+    },
+    {
+     "name": "Auston Trusty",
+     "jersey": "6",
+     "position": "SUB"
+    },
+    {
+     "name": "Max Arfsten",
+     "jersey": "18",
+     "position": "SUB"
+    },
+    {
+     "name": "Joe Scally",
+     "jersey": "23",
+     "position": "SUB"
+    },
+    {
+     "name": "Haji Wright",
+     "jersey": "19",
+     "position": "SUB"
+    },
+    {
+     "name": "Sebastian Berhalter",
+     "jersey": "14",
+     "position": "SUB"
+    },
+    {
+     "name": "Alejandro Zendejas",
+     "jersey": "26",
+     "position": "SUB"
+    },
+    {
+     "name": "Miles Robinson",
+     "jersey": "12",
+     "position": "SUB"
+    },
+    {
+     "name": "Matt Turner",
+     "jersey": "1",
+     "position": "SUB"
+    },
+    {
+     "name": "Timothy Weah",
+     "jersey": "21",
+     "position": "SUB"
+    },
+    {
+     "name": "Ricardo Pepi",
+     "jersey": "9",
+     "position": "SUB"
+    }
+   ]
+  },
+  {
+   "team": "Bosnia-Herzegovina",
+   "formation": "5-3-2",
+   "starters": [
+    {
+     "name": "Nikola Vasilj",
+     "jersey": "1",
+     "position": "G"
+    },
+    {
+     "name": "Tarik Muharemovic",
+     "jersey": "4",
+     "position": "CD"
+    },
+    {
+     "name": "Stjepan Radeljic",
+     "jersey": "21",
+     "position": "CD-L"
+    },
+    {
+     "name": "Nikola Katic",
+     "jersey": "18",
+     "position": "CD-R"
+    },
+    {
+     "name": "Sead Kolasinac",
+     "jersey": "5",
+     "position": "LB"
+    },
+    {
+     "name": "Amar Dedic",
+     "jersey": "7",
+     "position": "RB"
+    },
+    {
+     "name": "Ivan Sunjic",
+     "jersey": "14",
+     "position": "CM"
+    },
+    {
+     "name": "Kerim Alajbegovic",
+     "jersey": "19",
+     "position": "CM-L"
+    },
+    {
+     "name": "Armin Gigovic",
+     "jersey": "8",
+     "position": "CM-R"
+    },
+    {
+     "name": "Ermedin Demirovic",
+     "jersey": "10",
+     "position": "CF-L"
+    },
+    {
+     "name": "Edin Dzeko",
+     "jersey": "11",
+     "position": "CF-R"
+    }
+   ],
+   "subs": [
+    {
+     "name": "Haris Tabakovic",
+     "jersey": "23",
+     "position": "SUB"
+    },
+    {
+     "name": "Esmir Bajraktarevic",
+     "jersey": "20",
+     "position": "SUB"
+    },
+    {
+     "name": "Samed Bazdar",
+     "jersey": "9",
+     "position": "SUB"
+    },
+    {
+     "name": "Benjamin Tahirovic",
+     "jersey": "6",
+     "position": "SUB"
+    },
+    {
+     "name": "Dzenis Burnic",
+     "jersey": "17",
+     "position": "SUB"
+    },
+    {
+     "name": "Arjan Malic",
+     "jersey": "24",
+     "position": "SUB"
+    },
+    {
+     "name": "Jovo Lukic",
+     "jersey": "25",
+     "position": "SUB"
+    },
+    {
+     "name": "Dennis Hadzikadunic",
+     "jersey": "3",
+     "position": "SUB"
+    },
+    {
+     "name": "Amir Hadziahmetovic",
+     "jersey": "16",
+     "position": "SUB"
+    },
+    {
+     "name": "Mladen Jurkas",
+     "jersey": "12",
+     "position": "SUB"
+    },
+    {
+     "name": "Amar Memic",
+     "jersey": "15",
+     "position": "SUB"
+    },
+    {
+     "name": "Martin Zlomislic",
+     "jersey": "22",
+     "position": "SUB"
+    },
+    {
+     "name": "Ermin Mahmic",
+     "jersey": "26",
+     "position": "SUB"
+    },
+    {
+     "name": "Ivan Basic",
+     "jersey": "13",
+     "position": "SUB"
+    },
+    {
+     "name": "Nihad Mujakic",
+     "jersey": "2",
+     "position": "SUB"
+    }
+   ]
+  }
+ ],
+ "attendance": 68827,
+ "venue": "Levi's Stadium, Santa Clara, California, USA"
+}
