@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-KVBPX8VW');</script>
+    <!-- End Google Tag Manager -->
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Switzerland 2–0 Algeria — full match analytics: shot map, expected goals race, lineups, stats and model verdict.">
+    <link rel="icon" type="image/svg+xml" href="../../images/favicon.svg">
+    <link rel="icon" type="image/png" sizes="32x32" href="../../images/favicon-32.png">
+    <title>Switzerland 2–0 Algeria — World Cup 2026</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+html { font-size: 16px; }
+body {
+  background: #fff;
+  color: #0a0a0a;
+  font-family: 'Manrope', -apple-system, 'Segoe UI', sans-serif;
+  line-height: 1.5;
+  font-feature-settings: 'tnum';
+  -webkit-font-smoothing: antialiased;
+}
+a { color: inherit; text-decoration: none; }
+.wrap { max-width: 700px; margin: 0 auto; padding: 0 1.1rem 5rem; }
+
+/* ---- masthead ---- */
+.masthead { padding: 2.2rem 0 1.4rem; display: flex; align-items: baseline; justify-content: space-between; gap: 1rem; flex-wrap: wrap; }
+.masthead h1 { font-size: 1.55rem; font-weight: 800; letter-spacing: -0.02em; }
+.masthead .sub { font-size: 0.78rem; color: #777; font-weight: 500; }
+.masthead a.home { font-size: 0.75rem; font-weight: 600; color: #999; }
+.masthead a.home:hover { color: #0a0a0a; }
+
+/* ---- tabs ---- */
+.tabbar {
+  position: sticky; top: 0; z-index: 10;
+  display: flex; gap: 0.4rem;
+  background: rgba(255,255,255,0.94); backdrop-filter: blur(6px);
+  padding: 0.6rem 0 0.8rem;
+}
+.tabbar button {
+  font: inherit; font-size: 0.82rem; font-weight: 700;
+  border: 1px solid #e4e4e4; background: #fff; color: #555;
+  border-radius: 999px; padding: 0.42rem 1.05rem; cursor: pointer;
+  transition: all 0.15s ease;
+}
+.tabbar button:hover { border-color: #0a0a0a; color: #0a0a0a; }
+.tabbar button.active { background: #0a0a0a; border-color: #0a0a0a; color: #fff; }
+.panel { display: none; }
+.panel.active { display: block; }
+
+/* ---- cards ---- */
+.card {
+  border: 1px solid #e9e9e9; border-radius: 16px; background: #fff;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.03);
+  padding: 1.15rem 1.25rem; margin-bottom: 1rem;
+}
+.card-title { font-size: 0.7rem; font-weight: 800; letter-spacing: 0.1em; text-transform: uppercase; color: #999; margin-bottom: 0.9rem; }
+.card-note { font-size: 0.72rem; color: #999; margin-top: 0.7rem; line-height: 1.55; }
+
+/* ---- fixtures feed ---- */
+.day-head {
+  font-size: 0.72rem; font-weight: 800; letter-spacing: 0.08em; text-transform: uppercase;
+  color: #888; margin: 1.6rem 0 0.6rem; padding-left: 0.2rem;
+}
+.day-head.today { color: #0a0a0a; }
+.day-head.today::after { content: 'TODAY'; margin-left: 0.6rem; background: #0a0a0a; color: #fff; border-radius: 5px; padding: 0.1rem 0.45rem; font-size: 0.62rem; }
+.fixture {
+  display: grid; grid-template-columns: 3.4rem 1fr auto; align-items: center; gap: 0.9rem;
+  border: 1px solid #e9e9e9; border-radius: 14px; background: #fff;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.03);
+  padding: 0.8rem 1rem; margin-bottom: 0.55rem;
+}
+a.fixture { transition: border-color 0.15s ease, transform 0.15s ease; }
+a.fixture:hover { border-color: #0a0a0a; transform: translateY(-1px); }
+.fx-status { font-size: 0.68rem; font-weight: 800; color: #999; text-align: center; line-height: 1.3; }
+.fx-status .chip { display: inline-block; background: #f1f1f1; border-radius: 6px; padding: 0.12rem 0.4rem; color: #555; }
+.fx-status .chip.ft { background: #0a0a0a; color: #fff; }
+.fx-teams { min-width: 0; }
+.fx-row { display: flex; justify-content: space-between; align-items: baseline; gap: 0.8rem; }
+.fx-row .t { font-size: 0.92rem; font-weight: 600; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.fx-row .t.win { font-weight: 800; }
+.fx-row .s { font-size: 0.95rem; font-weight: 800; }
+.fx-meta { font-size: 0.68rem; color: #aaa; font-weight: 600; text-align: right; max-width: 8rem; }
+.fx-arrow { color: #ccc; font-size: 0.9rem; }
+
+/* ---- tables ---- */
+table.t { width: 100%; border-collapse: collapse; font-size: 0.82rem; }
+table.t th { font-size: 0.64rem; font-weight: 800; letter-spacing: 0.07em; text-transform: uppercase; color: #aaa; text-align: left; padding: 0.3rem 0.45rem; border-bottom: 1px solid #eee; }
+table.t td { padding: 0.42rem 0.45rem; border-bottom: 1px solid #f4f4f4; font-weight: 500; }
+table.t tr:last-child td { border-bottom: none; }
+table.t .r { text-align: right; }
+table.t .pos { color: #bbb; font-weight: 700; width: 1.4rem; }
+table.t .pts { font-weight: 800; }
+.qual-line td { border-top: 2px solid #0a0a0a; }
+
+/* ---- group grid ---- */
+.group-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 0.9rem; }
+.group-grid .card { margin-bottom: 0; padding: 0.9rem 1rem; }
+
+/* ---- predictions ---- */
+.odds-row { display: grid; grid-template-columns: 8.2rem 1fr 3.2rem; align-items: center; gap: 0.7rem; padding: 0.32rem 0; font-size: 0.84rem; font-weight: 600; }
+.odds-track { height: 0.6rem; background: #f1f1f1; border-radius: 99px; overflow: hidden; }
+.odds-track > span { display: block; height: 100%; background: #0a0a0a; border-radius: 99px; }
+.odds-pct { text-align: right; font-weight: 800; font-size: 0.8rem; }
+.pred-line { font-size: 0.74rem; color: #888; font-weight: 600; margin-top: 0.25rem; }
+.bigstat { display: flex; gap: 0.9rem; }
+.bigstat .cell { flex: 1; border: 1px solid #eee; border-radius: 12px; padding: 0.7rem 0.85rem; }
+.bigstat .n { font-size: 1.35rem; font-weight: 800; letter-spacing: -0.02em; }
+.bigstat .l { font-size: 0.64rem; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; color: #999; margin-top: 0.1rem; }
+
+/* ---- match page: scoreboard ---- */
+.kickline { font-size: 0.72rem; font-weight: 700; color: #999; letter-spacing: 0.05em; text-transform: uppercase; margin-bottom: 0.9rem; }
+.board { display: grid; grid-template-columns: 1fr auto 1fr; align-items: center; gap: 1rem; margin: 0.4rem 0 0.9rem; }
+.board .team { text-align: center; }
+.board .team .name { font-size: 1.05rem; font-weight: 800; letter-spacing: -0.01em; }
+.board .team .xg { font-size: 0.7rem; color: #999; font-weight: 600; margin-top: 0.15rem; }
+.board .score { font-size: 2.6rem; font-weight: 800; letter-spacing: 0.02em; white-space: nowrap; }
+.board .score .ft { display: block; font-size: 0.64rem; font-weight: 800; letter-spacing: 0.15em; color: #999; text-align: center; }
+.goals-line { text-align: center; font-size: 0.76rem; color: #666; font-weight: 600; line-height: 1.7; }
+.venue-line { text-align: center; font-size: 0.7rem; color: #aaa; font-weight: 600; margin-top: 0.6rem; }
+.narrative { font-size: 0.88rem; line-height: 1.65; color: #333; }
+
+/* ---- stat bars ---- */
+.sb-row { display: grid; grid-template-columns: 2.6rem 1fr 7.5rem 1fr 2.6rem; align-items: center; gap: 0.55rem; padding: 0.34rem 0; }
+.sb-row .v { font-size: 0.84rem; font-weight: 800; }
+.sb-row .v.l { text-align: right; }
+.sb-row .lab { font-size: 0.66rem; font-weight: 700; letter-spacing: 0.05em; text-transform: uppercase; color: #999; text-align: center; }
+.sb-track { height: 0.5rem; background: #f1f1f1; border-radius: 99px; position: relative; overflow: hidden; }
+.sb-track > span { position: absolute; top: 0; height: 100%; background: #0a0a0a; border-radius: 99px; }
+.sb-track.l > span { right: 0; }
+.sb-track.r > span { left: 0; }
+
+/* ---- timeline ---- */
+.tl-item { display: grid; grid-template-columns: 3rem 1fr; gap: 0.8rem; padding: 0.45rem 0; border-bottom: 1px solid #f6f6f6; font-size: 0.82rem; }
+.tl-item:last-child { border-bottom: none; }
+.tl-min { font-weight: 800; color: #bbb; text-align: right; }
+.tl-text { font-weight: 500; color: #444; }
+.tl-text .tag { font-size: 0.62rem; font-weight: 800; letter-spacing: 0.06em; text-transform: uppercase; border-radius: 5px; padding: 0.08rem 0.4rem; margin-right: 0.45rem; background: #f1f1f1; color: #666; vertical-align: 1px; }
+.tl-text .tag.goal { background: #0a0a0a; color: #fff; }
+
+/* ---- lineups ---- */
+.lineups { display: grid; grid-template-columns: 1fr 1fr; gap: 1.4rem; }
+.lu-team { font-size: 0.85rem; font-weight: 800; }
+.lu-formation { font-size: 0.68rem; color: #999; font-weight: 700; margin-bottom: 0.5rem; }
+.lu-list { list-style: none; font-size: 0.78rem; font-weight: 500; }
+.lu-list li { padding: 0.18rem 0; border-bottom: 1px solid #f7f7f7; }
+.lu-list .j { display: inline-block; width: 1.7rem; color: #bbb; font-weight: 700; }
+.lu-subs { margin-top: 0.6rem; font-size: 0.7rem; color: #999; line-height: 1.6; }
+
+/* ---- charts ---- */
+.chart { width: 100%; }
+.legend { display: flex; gap: 1.1rem; font-size: 0.7rem; font-weight: 700; color: #777; margin-top: 0.5rem; flex-wrap: wrap; }
+.legend .k { display: inline-flex; align-items: center; gap: 0.35rem; }
+.legend .dot { width: 0.65rem; height: 0.65rem; border-radius: 50%; display: inline-block; }
+
+.backlink { display: inline-block; margin-top: 0.5rem; font-size: 0.8rem; font-weight: 700; color: #888; }
+.backlink:hover { color: #0a0a0a; }
+.foot { font-size: 0.72rem; color: #aaa; line-height: 1.6; margin-top: 2.2rem; font-weight: 500; }
+
+@media (max-width: 560px) {
+  .group-grid { grid-template-columns: 1fr; }
+  .lineups { grid-template-columns: 1fr; }
+  .board .score { font-size: 2rem; }
+  .board .team .name { font-size: 0.9rem; }
+  .odds-row { grid-template-columns: 6.4rem 1fr 3rem; }
+  .sb-row { grid-template-columns: 2.2rem 1fr 5.4rem 1fr 2.2rem; gap: 0.4rem; }
+  .bigstat { flex-wrap: wrap; }
+  .fx-meta { display: none; }
+}
+
+    </style>
+</head>
+<body>
+    <noscript><iframe aria-hidden="true" title="Google Tag Manager" src="https://www.googletagmanager.com/ns.html?id=GTM-KVBPX8VW"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+    <div class="wrap">
+        <div class="masthead">
+            <div><h1>World Cup 2026</h1></div>
+            <a class="home" href="../index.html">&larr; All matches</a>
+        </div>
+
+        <!-- scoreboard -->
+        <div class="card">
+            <div class="kickline">Round of 32 · Knockout · 2026-07-02</div>
+            <div class="board">
+                <div class="team">
+                    <div class="name">Switzerland</div>
+                    <div class="xg">xG 3.56</div>
+                </div>
+                <div class="score"><span class="ft">HT 1–0</span>2&thinsp;–&thinsp;0</div>
+                <div class="team">
+                    <div class="name">Algeria</div>
+                    <div class="xg">xG 1.44</div>
+                </div>
+            </div>
+            <div class="goals-line"><strong>Switzerland</strong> Breel Embolo 10&#8242;, Dan Ndoye 46&#8242;</div>
+            <div class="venue-line">BC Place · 52,497 attendance</div>
+        </div>
+
+        
+        <div class="card">
+            <div class="card-title">The story</div>
+            <p class="narrative">The favourite delivered: Switzerland (53% pre-match) beat Algeria 2–0.</p>
+        </div>
+        
+
+        
+        <div class="card">
+            <div class="card-title">Expected goals race</div>
+            <div class="chart"><svg viewBox="0 0 660 240" xmlns="http://www.w3.org/2000/svg" width="100%" role="img" aria-label="Cumulative expected goals"><line x1="34" y1="165.1" x2="646" y2="165.1" stroke="#f0f0f0" stroke-width="1"/><text x="28" y="168.1" font-size="9" font-family="Manrope,sans-serif" fill="#bbb" text-anchor="end">1</text><line x1="34" y1="116.2" x2="646" y2="116.2" stroke="#f0f0f0" stroke-width="1"/><text x="28" y="119.2" font-size="9" font-family="Manrope,sans-serif" fill="#bbb" text-anchor="end">2</text><line x1="34" y1="67.3" x2="646" y2="67.3" stroke="#f0f0f0" stroke-width="1"/><text x="28" y="70.3" font-size="9" font-family="Manrope,sans-serif" fill="#bbb" text-anchor="end">3</text><line x1="34" y1="18.4" x2="646" y2="18.4" stroke="#f0f0f0" stroke-width="1"/><text x="28" y="21.4" font-size="9" font-family="Manrope,sans-serif" fill="#bbb" text-anchor="end">4</text><text x="34.0" y="232" font-size="9" font-family="Manrope,sans-serif" fill="#bbb" text-anchor="middle">0&#8242;</text><text x="130.6" y="232" font-size="9" font-family="Manrope,sans-serif" fill="#bbb" text-anchor="middle">15&#8242;</text><text x="227.3" y="232" font-size="9" font-family="Manrope,sans-serif" fill="#bbb" text-anchor="middle">30&#8242;</text><text x="323.9" y="232" font-size="9" font-family="Manrope,sans-serif" fill="#bbb" text-anchor="middle">45&#8242;</text><text x="420.5" y="232" font-size="9" font-family="Manrope,sans-serif" fill="#bbb" text-anchor="middle">60&#8242;</text><text x="517.2" y="232" font-size="9" font-family="Manrope,sans-serif" fill="#bbb" text-anchor="middle">75&#8242;</text><text x="613.8" y="232" font-size="9" font-family="Manrope,sans-serif" fill="#bbb" text-anchor="middle">90&#8242;</text><line x1="34" y1="214.0" x2="646" y2="214.0" stroke="#ddd" stroke-width="1"/><path d="M 34 214.0 L 98.4 214.0 L 98.4 169.7 L 130.6 169.7 L 130.6 148.0 L 195.1 148.0 L 195.1 145.5 L 272.4 145.5 L 272.4 129.5 L 330.3 129.5 L 330.3 120.2 L 452.7 120.2 L 452.7 105.8 L 517.2 105.8 L 517.2 94.7 L 549.4 94.7 L 549.4 90.8 L 555.8 90.8 L 555.8 58.1 L 613.8 58.1 L 613.8 49.4 L 613.8 49.4 L 613.8 40.1 L 646 40.1" fill="none" stroke="#0a0a0a" stroke-width="2.2" stroke-linejoin="round"/><text x="646" y="34.1" font-size="10" font-weight="700" font-family="Manrope,sans-serif" fill="#0a0a0a" text-anchor="end">3.56</text><circle cx="98.4" cy="169.7" r="5" fill="#0a0a0a" stroke="#fff" stroke-width="1.5"/><text x="98.4" y="159.7" font-size="9.5" font-weight="700" font-family="Manrope,sans-serif" fill="#0a0a0a" text-anchor="middle">Breel Embolo 10&#8242;</text><circle cx="330.3" cy="120.2" r="5" fill="#0a0a0a" stroke="#fff" stroke-width="1.5"/><text x="330.3" y="110.2" font-size="9.5" font-weight="700" font-family="Manrope,sans-serif" fill="#0a0a0a" text-anchor="middle">Dan Ndoye 46&#8242;</text><path d="M 34 214.0 L 72.7 214.0 L 72.7 197.7 L 124.2 197.7 L 124.2 193.7 L 150.0 193.7 L 150.0 189.6 L 311.0 189.6 L 311.0 182.5 L 323.9 182.5 L 323.9 165.3 L 356.1 165.3 L 356.1 154.1 L 530.0 154.1 L 530.0 150.9 L 613.8 150.9 L 613.8 143.5 L 646 143.5" fill="none" stroke="#b5b5b5" stroke-width="2.2" stroke-linejoin="round"/><text x="646" y="137.5" font-size="10" font-weight="700" font-family="Manrope,sans-serif" fill="#b5b5b5" text-anchor="end">1.44</text></svg></div>
+            <div class="legend">
+                <span class="k"><span class="dot" style="background:#0a0a0a"></span>Switzerland</span>
+                <span class="k"><span class="dot" style="background:#b5b5b5"></span>Algeria</span>
+                <span class="k">&#9679; goal</span>
+            </div>
+            <p class="card-note">Cumulative expected goals, minute by minute. ESPN's free feed has no xG, so each shot's xG is estimated with a naive distance-and-angle logistic model fitted on shot coordinates from the play-by-play.</p>
+        </div>
+        
+
+        
+        <div class="card">
+            <div class="card-title">Shot map</div>
+            <div class="chart"><svg viewBox="0 0 660 420" xmlns="http://www.w3.org/2000/svg" width="100%" role="img" aria-label="Shot map"><rect x="10" y="10" width="640" height="400" rx="6" stroke="#d8d8d8" stroke-width="1.5" fill="none"/><line x1="330" y1="10" x2="330" y2="410" stroke="#d8d8d8" stroke-width="1.5" fill="none"/><circle cx="330" cy="210" r="52" stroke="#d8d8d8" stroke-width="1.5" fill="none"/><rect x="10" y="94" width="106" height="232" stroke="#d8d8d8" stroke-width="1.5" fill="none"/><rect x="10" y="154" width="35" height="112" stroke="#d8d8d8" stroke-width="1.5" fill="none"/><rect x="544" y="94" width="106" height="232" stroke="#d8d8d8" stroke-width="1.5" fill="none"/><rect x="615" y="154" width="35" height="112" stroke="#d8d8d8" stroke-width="1.5" fill="none"/><circle cx="80.4" cy="225.2" r="8.3" fill="#fff" stroke="#0a0a0a" stroke-width="1.3" opacity="0.45"><title>Houssem Aouar · 6&#8242; · xG 0.33 · Shot Off Target</title></circle><path d="M629.5,192.2 L634.8,204.8 L648.3,205.9 L638.0,214.8 L641.2,228.0 L629.5,220.9 L617.9,228.0 L621.0,214.8 L610.7,205.9 L624.3,204.8 Z" fill="#0a0a0a" stroke="#0a0a0a" stroke-width="1.5"><title>Breel Embolo · 10&#8242; · xG 0.91 · Goal</title></path><circle cx="162.3" cy="175.2" r="5.1" fill="#fff" stroke="#0a0a0a" stroke-width="1.3" opacity="1"><title>Houssem Aouar · 14&#8242; · xG 0.08 · Shot On Target</title></circle><circle cx="593.0" cy="198.0" r="9.7" fill="#0a0a0a" stroke="#0a0a0a" stroke-width="1.3" opacity="1"><title>Denis Zakaria · 15&#8242; · xG 0.44 · Shot On Target</title></circle><circle cx="145.0" cy="144.8" r="5.1" fill="#fff" stroke="#0a0a0a" stroke-width="1.3" opacity="0.45"><title>Ibrahim Maza · 18&#8242; · xG 0.09 · Shot Blocked</title></circle><circle cx="481.7" cy="282.4" r="4.7" fill="#0a0a0a" stroke="#0a0a0a" stroke-width="1.3" opacity="0.45"><title>Ricardo Rodríguez · 25&#8242; · xG 0.05 · Shot Off Target</title></circle><circle cx="601.4" cy="194.0" r="8.3" fill="#0a0a0a" stroke="#0a0a0a" stroke-width="1.3" opacity="0.45"><title>Denis Zakaria · 37&#8242; · xG 0.33 · Shot Off Target</title></circle><circle cx="99.0" cy="144.8" r="5.9" fill="#fff" stroke="#0a0a0a" stroke-width="1.3" opacity="1"><title>Farès Chaïbi · 43&#8242; · xG 0.14 · Shot On Target</title></circle><circle cx="77.8" cy="224.4" r="8.6" fill="#fff" stroke="#0a0a0a" stroke-width="1.3" opacity="0.45"><title>Ibrahim Maza · 45'+2&#8242; · xG 0.35 · Shot Off Target</title></circle><path d="M553.4,167.9 L556.1,174.6 L563.3,175.2 L557.8,179.9 L559.5,186.9 L553.4,183.1 L547.2,186.9 L548.9,179.9 L543.4,175.2 L550.6,174.6 Z" fill="#0a0a0a" stroke="#0a0a0a" stroke-width="1.5"><title>Dan Ndoye · 46&#8242; · xG 0.19 · Goal</title></path><circle cx="102.2" cy="197.6" r="7.0" fill="#fff" stroke="#0a0a0a" stroke-width="1.3" opacity="0.45"><title>Riyad Mahrez · 50&#8242; · xG 0.23 · Shot Blocked</title></circle><circle cx="621.2" cy="244.8" r="7.8" fill="#0a0a0a" stroke="#0a0a0a" stroke-width="1.3" opacity="0.45"><title>Nico Elvedi · 65&#8242; · xG 0.29 · Shot Blocked</title></circle><circle cx="556.6" cy="211.2" r="7.0" fill="#0a0a0a" stroke="#0a0a0a" stroke-width="1.3" opacity="0.45"><title>Fabian Rieder · 75&#8242; · xG 0.23 · Shot Blocked</title></circle><circle cx="145.0" cy="118.0" r="4.9" fill="#fff" stroke="#0a0a0a" stroke-width="1.3" opacity="0.45"><title>Jaouen Hadjam · 77&#8242; · xG 0.07 · Shot Off Target</title></circle><circle cx="523.3" cy="292.0" r="5.0" fill="#0a0a0a" stroke="#0a0a0a" stroke-width="1.3" opacity="0.45"><title>Breel Embolo · 80&#8242; · xG 0.08 · Shot Off Target</title></circle><circle cx="633.4" cy="235.6" r="12.7" fill="#0a0a0a" stroke="#0a0a0a" stroke-width="1.3" opacity="0.45"><title>Fabian Rieder · 81&#8242; · xG 0.67 · Shot Off Target</title></circle><circle cx="84.2" cy="137.6" r="6.0" fill="#fff" stroke="#0a0a0a" stroke-width="1.3" opacity="0.45"><title>Ibrahim Maza · 90'+2&#8242; · xG 0.15 · Shot Blocked</title></circle><circle cx="567.4" cy="265.2" r="6.3" fill="#0a0a0a" stroke="#0a0a0a" stroke-width="1.3" opacity="0.45"><title>Noah Okafor · 90'+6&#8242; · xG 0.18 · Shot Blocked</title></circle><circle cx="550.2" cy="186.4" r="6.5" fill="#0a0a0a" stroke="#0a0a0a" stroke-width="1.3" opacity="1"><title>Remo Freuler · 90'+6&#8242; · xG 0.19 · Shot On Target</title></circle></svg></div>
+            <div class="legend">
+                <span class="k"><span class="dot" style="background:#0a0a0a"></span>Switzerland (attacking &rarr;)</span>
+                <span class="k"><span class="dot" style="background:#fff; border: 1.5px solid #0a0a0a;"></span>Algeria (attacking &larr;)</span>
+                <span class="k">size = xG · star = goal</span>
+            </div>
+        </div>
+        
+
+        
+        <div class="card">
+            <div class="card-title">Switzerland &nbsp;·&nbsp; match stats &nbsp;·&nbsp; Algeria</div>
+            
+            <div class="sb-row">
+                <span class="v l">44.5</span>
+                <span class="sb-track l"><span style="width: 44.5%"></span></span>
+                <span class="lab">Possession</span>
+                <span class="sb-track r"><span style="width: 55.5%"></span></span>
+                <span class="v">55.5</span>
+            </div>
+            
+            <div class="sb-row">
+                <span class="v l">11</span>
+                <span class="sb-track l"><span style="width: 57.9%"></span></span>
+                <span class="lab">Shots</span>
+                <span class="sb-track r"><span style="width: 42.1%"></span></span>
+                <span class="v">8</span>
+            </div>
+            
+            <div class="sb-row">
+                <span class="v l">5</span>
+                <span class="sb-track l"><span style="width: 71.4%"></span></span>
+                <span class="lab">On Target</span>
+                <span class="sb-track r"><span style="width: 28.6%"></span></span>
+                <span class="v">2</span>
+            </div>
+            
+            <div class="sb-row">
+                <span class="v l">4</span>
+                <span class="sb-track l"><span style="width: 66.7%"></span></span>
+                <span class="lab">Corners</span>
+                <span class="sb-track r"><span style="width: 33.3%"></span></span>
+                <span class="v">2</span>
+            </div>
+            
+            <div class="sb-row">
+                <span class="v l">10</span>
+                <span class="sb-track l"><span style="width: 45.5%"></span></span>
+                <span class="lab">Fouls</span>
+                <span class="sb-track r"><span style="width: 54.5%"></span></span>
+                <span class="v">12</span>
+            </div>
+            
+            <div class="sb-row">
+                <span class="v l">0</span>
+                <span class="sb-track l"><span style="width: 0.0%"></span></span>
+                <span class="lab">Offsides</span>
+                <span class="sb-track r"><span style="width: 100.0%"></span></span>
+                <span class="v">2</span>
+            </div>
+            
+            <div class="sb-row">
+                <span class="v l">2</span>
+                <span class="sb-track l"><span style="width: 50.0%"></span></span>
+                <span class="lab">Saves</span>
+                <span class="sb-track r"><span style="width: 50.0%"></span></span>
+                <span class="v">2</span>
+            </div>
+            
+            <div class="sb-row">
+                <span class="v l">0</span>
+                <span class="sb-track l"><span style="width: 0.0%"></span></span>
+                <span class="lab">Yellows</span>
+                <span class="sb-track r"><span style="width: 100.0%"></span></span>
+                <span class="v">2</span>
+            </div>
+            
+            <div class="sb-row">
+                <span class="v l">0</span>
+                <span class="sb-track l"><span style="width: 0%"></span></span>
+                <span class="lab">Reds</span>
+                <span class="sb-track r"><span style="width: 100%"></span></span>
+                <span class="v">0</span>
+            </div>
+            
+        </div>
+        
+
+        
+        <div class="card">
+            <div class="card-title">What the model expected</div>
+            <div class="chart"><svg viewBox="0 0 660 64" xmlns="http://www.w3.org/2000/svg" width="100%" role="img" aria-label="Pre-match win probabilities"><defs><clipPath id="rnd"><rect x="4" y="26" width="652" height="26" rx="13"/></clipPath></defs><g clip-path="url(#rnd)"><rect x="4.0" y="26" width="342.4" height="26" fill="#0a0a0a"/><text x="175.2" y="43" font-size="11" font-weight="700" font-family="Manrope,sans-serif" fill="#fff" text-anchor="middle">Switzerland 53%</text><rect x="346.4" y="26" width="156.0" height="26" fill="#d9d9d9"/><text x="424.3" y="43" font-size="11" font-weight="700" font-family="Manrope,sans-serif" fill="#555" text-anchor="middle">draw 24%</text><rect x="502.3" y="26" width="153.6" height="26" fill="#f1f1f1"/><text x="579.1" y="43" font-size="11" font-weight="700" font-family="Manrope,sans-serif" fill="#555" text-anchor="middle">Algeria 24%</text></g><line x1="346.4" y1="26" x2="346.4" y2="52" stroke="#fff" stroke-width="2"/><line x1="502.3" y1="26" x2="502.3" y2="52" stroke="#fff" stroke-width="2"/><path d="M175.2,23 l-5,-9 l10,0 Z" fill="#0a0a0a"/><text x="175.2" y="10" font-size="9.5" font-weight="800" font-family="Manrope,sans-serif" fill="#0a0a0a" text-anchor="middle">ACTUAL</text></svg></div>
+            <p class="narrative" style="margin-top: 0.8rem;">Pre-match Elo: Switzerland 1898, Algeria 1790. The model priced this Switzerland <strong>53%</strong> / draw <strong>24%</strong> / Algeria <strong>24%</strong>, most likely score 1–1. The model called it. The result moves <strong>26 Elo points</strong> from Algeria to Switzerland — that flows straight into the next round of tournament simulations.</p>
+        </div>
+        
+
+        
+        <div class="card">
+            <div class="card-title">Timeline</div>
+            
+            <div class="tl-item">
+                <span class="tl-min">10'</span>
+                <span class="tl-text"><span class="tag goal">GOAL</span>Goal! Switzerland 1, Algeria 0. Breel Embolo (Switzerland) left footed shot from very close range to the bottom left corner. Assisted by Johan Manzambi following a fast break.</span>
+            </div>
+            
+            <div class="tl-item">
+                <span class="tl-min">36'</span>
+                <span class="tl-text"><span class="tag">YELLOW</span>Farès Chaïbi (Algeria) is shown the yellow card for a bad foul.</span>
+            </div>
+            
+            <div class="tl-item">
+                <span class="tl-min">46'</span>
+                <span class="tl-text"><span class="tag goal">GOAL</span>Goal! Switzerland 2, Algeria 0. Dan Ndoye (Switzerland) right footed shot from the centre of the box to the bottom left corner.</span>
+            </div>
+            
+            <div class="tl-item">
+                <span class="tl-min">58'</span>
+                <span class="tl-text"><span class="tag">SUB</span>Substitution, Algeria. Jaouen Hadjam replaces Houssem Aouar.</span>
+            </div>
+            
+            <div class="tl-item">
+                <span class="tl-min">58'</span>
+                <span class="tl-text"><span class="tag">SUB</span>Substitution, Algeria. Amine Gouiri replaces Ramiz Zerrouki.</span>
+            </div>
+            
+            <div class="tl-item">
+                <span class="tl-min">71'</span>
+                <span class="tl-text"><span class="tag">SUB</span>Substitution, Switzerland. Fabian Rieder replaces Rubén Vargas.</span>
+            </div>
+            
+            <div class="tl-item">
+                <span class="tl-min">71'</span>
+                <span class="tl-text"><span class="tag">SUB</span>Substitution, Switzerland. Noah Okafor replaces Johan Manzambi.</span>
+            </div>
+            
+            <div class="tl-item">
+                <span class="tl-min">71'</span>
+                <span class="tl-text"><span class="tag">SUB</span>Substitution, Algeria. Hicham Boudaoui replaces Nabil Bentaleb.</span>
+            </div>
+            
+            <div class="tl-item">
+                <span class="tl-min">71'</span>
+                <span class="tl-text"><span class="tag">SUB</span>Substitution, Algeria. Anis Hadj Moussa replaces Riyad Mahrez.</span>
+            </div>
+            
+            <div class="tl-item">
+                <span class="tl-min">72'</span>
+                <span class="tl-text"><span class="tag">YELLOW</span>Hicham Boudaoui (Algeria) is shown the yellow card for a bad foul.</span>
+            </div>
+            
+            <div class="tl-item">
+                <span class="tl-min">82'</span>
+                <span class="tl-text"><span class="tag">SUB</span>Substitution, Algeria. Adil Boulbina replaces Rafik Belghali because of an injury.</span>
+            </div>
+            
+            <div class="tl-item">
+                <span class="tl-min">83'</span>
+                <span class="tl-text"><span class="tag">SUB</span>Substitution, Switzerland. Zeki Amdouni replaces Breel Embolo.</span>
+            </div>
+            
+            <div class="tl-item">
+                <span class="tl-min">87'</span>
+                <span class="tl-text"><span class="tag">SUB</span>Substitution, Switzerland. Silvan Widmer replaces Denis Zakaria because of an injury.</span>
+            </div>
+            
+            <div class="tl-item">
+                <span class="tl-min">87'</span>
+                <span class="tl-text"><span class="tag">SUB</span>Substitution, Switzerland. Michel Aebischer replaces Dan Ndoye.</span>
+            </div>
+            
+        </div>
+        
+
+        
+        <div class="card">
+            <div class="card-title">Lineups</div>
+            <div class="lineups">
+                
+                <div>
+                    <div class="lu-team">Switzerland</div>
+                    <div class="lu-formation">4-2-3-1</div>
+                    <ul class="lu-list">
+                        
+                        <li><span class="j">1</span>Gregor Kobel <span style="color:#bbb; font-size:0.66rem;">G</span></li>
+                        
+                        <li><span class="j">5</span>Manuel Akanji <span style="color:#bbb; font-size:0.66rem;">CD-L</span></li>
+                        
+                        <li><span class="j">4</span>Nico Elvedi <span style="color:#bbb; font-size:0.66rem;">CD-R</span></li>
+                        
+                        <li><span class="j">13</span>Ricardo Rodríguez <span style="color:#bbb; font-size:0.66rem;">LB</span></li>
+                        
+                        <li><span class="j">6</span>Denis Zakaria <span style="color:#bbb; font-size:0.66rem;">RB</span></li>
+                        
+                        <li><span class="j">9</span>Johan Manzambi <span style="color:#bbb; font-size:0.66rem;">AM</span></li>
+                        
+                        <li><span class="j">10</span>Granit Xhaka <span style="color:#bbb; font-size:0.66rem;">LM</span></li>
+                        
+                        <li><span class="j">8</span>Remo Freuler <span style="color:#bbb; font-size:0.66rem;">RM</span></li>
+                        
+                        <li><span class="j">7</span>Breel Embolo <span style="color:#bbb; font-size:0.66rem;">F</span></li>
+                        
+                        <li><span class="j">17</span>Rubén Vargas <span style="color:#bbb; font-size:0.66rem;">AM-L</span></li>
+                        
+                        <li><span class="j">11</span>Dan Ndoye <span style="color:#bbb; font-size:0.66rem;">AM-R</span></li>
+                        
+                    </ul>
+                    <div class="lu-subs"><strong>Subs:</strong> Fabian Rieder, Noah Okafor, Zeki Amdouni, Silvan Widmer, Michel Aebischer</div>
+                </div>
+                
+                <div>
+                    <div class="lu-team">Algeria</div>
+                    <div class="lu-formation">4-3-3</div>
+                    <ul class="lu-list">
+                        
+                        <li><span class="j">23</span>Luca Zidane <span style="color:#bbb; font-size:0.66rem;">G</span></li>
+                        
+                        <li><span class="j">21</span>Ramy Bensebaini <span style="color:#bbb; font-size:0.66rem;">CD-L</span></li>
+                        
+                        <li><span class="j">2</span>Aïssa Mandi <span style="color:#bbb; font-size:0.66rem;">CD-R</span></li>
+                        
+                        <li><span class="j">15</span>Rayan Aït-Nouri <span style="color:#bbb; font-size:0.66rem;">LB</span></li>
+                        
+                        <li><span class="j">17</span>Rafik Belghali <span style="color:#bbb; font-size:0.66rem;">RB</span></li>
+                        
+                        <li><span class="j">19</span>Nabil Bentaleb <span style="color:#bbb; font-size:0.66rem;">CM</span></li>
+                        
+                        <li><span class="j">10</span>Farès Chaïbi <span style="color:#bbb; font-size:0.66rem;">LM</span></li>
+                        
+                        <li><span class="j">6</span>Ramiz Zerrouki <span style="color:#bbb; font-size:0.66rem;">RM</span></li>
+                        
+                        <li><span class="j">22</span>Ibrahim Maza <span style="color:#bbb; font-size:0.66rem;">F</span></li>
+                        
+                        <li><span class="j">8</span>Houssem Aouar <span style="color:#bbb; font-size:0.66rem;">LF</span></li>
+                        
+                        <li><span class="j">7</span>Riyad Mahrez <span style="color:#bbb; font-size:0.66rem;">RF</span></li>
+                        
+                    </ul>
+                    <div class="lu-subs"><strong>Subs:</strong> Jaouen Hadjam, Amine Gouiri, Hicham Boudaoui, Anis Hadj Moussa, Adil Boulbina</div>
+                </div>
+                
+            </div>
+        </div>
+        
+
+        <a class="backlink" href="../index.html">&larr; Fixtures, table &amp; predictions</a>
+        <p class="foot">Generated automatically from public match data. Stats: ESPN · Results: openfootball · xG: own naive model (distance + angle).</p>
+    </div>
+</body>
+</html>

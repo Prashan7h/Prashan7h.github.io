@@ -1,0 +1,862 @@
+{
+ "teams": [
+  {
+   "name": "Switzerland",
+   "stats": {
+    "possessionPct": "44.5",
+    "totalShots": "11",
+    "shotsOnTarget": "5",
+    "wonCorners": "4",
+    "foulsCommitted": "10",
+    "offsides": "0",
+    "saves": "2",
+    "yellowCards": "0",
+    "redCards": "0"
+   }
+  },
+  {
+   "name": "Algeria",
+   "stats": {
+    "possessionPct": "55.5",
+    "totalShots": "8",
+    "shotsOnTarget": "2",
+    "wonCorners": "2",
+    "foulsCommitted": "12",
+    "offsides": "2",
+    "saves": "2",
+    "yellowCards": "2",
+    "redCards": "0"
+   }
+  }
+ ],
+ "events": [
+  {
+   "type": "Kickoff",
+   "minute": "",
+   "team": null,
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Goal",
+   "minute": "10'",
+   "team": "Switzerland",
+   "text": "Goal! Switzerland 1, Algeria 0. Breel Embolo (Switzerland) left footed shot from very close range to the bottom left corner. Assisted by Johan Manzambi following a fast break.",
+   "players": [
+    "Breel Embolo",
+    "Johan Manzambi"
+   ]
+  },
+  {
+   "type": "Start Delay",
+   "minute": "16'",
+   "team": "Switzerland",
+   "text": "Delay in match because of an injury Johan Manzambi (Switzerland).",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "16'",
+   "team": "Algeria",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "17'",
+   "team": "Switzerland",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "17'",
+   "team": "Algeria",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "25'",
+   "team": "Algeria",
+   "text": "Delay in match for a drinks break.",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "25'",
+   "team": "Switzerland",
+   "text": "Delay in match for a drinks break.",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "28'",
+   "team": "Algeria",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "28'",
+   "team": "Switzerland",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "Yellow Card",
+   "minute": "36'",
+   "team": "Algeria",
+   "text": "Farès Chaïbi (Algeria) is shown the yellow card for a bad foul.",
+   "players": [
+    "Farès Chaïbi"
+   ]
+  },
+  {
+   "type": "Halftime",
+   "minute": "45'+4'",
+   "team": null,
+   "text": "First Half ends, Switzerland 1, Algeria 0.",
+   "players": []
+  },
+  {
+   "type": "Start 2nd Half",
+   "minute": "45'",
+   "team": null,
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Goal",
+   "minute": "46'",
+   "team": "Switzerland",
+   "text": "Goal! Switzerland 2, Algeria 0. Dan Ndoye (Switzerland) right footed shot from the centre of the box to the bottom left corner.",
+   "players": [
+    "Dan Ndoye"
+   ]
+  },
+  {
+   "type": "Start Delay",
+   "minute": "50'",
+   "team": "Algeria",
+   "text": "Delay in match because of an injury Ibrahim Maza (Algeria).",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "50'",
+   "team": "Switzerland",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "51'",
+   "team": "Algeria",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "51'",
+   "team": "Switzerland",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Substitution",
+   "minute": "58'",
+   "team": "Algeria",
+   "text": "Substitution, Algeria. Jaouen Hadjam replaces Houssem Aouar.",
+   "players": [
+    "Jaouen Hadjam",
+    "Houssem Aouar"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "58'",
+   "team": "Algeria",
+   "text": "Substitution, Algeria. Amine Gouiri replaces Ramiz Zerrouki.",
+   "players": [
+    "Amine Gouiri",
+    "Ramiz Zerrouki"
+   ]
+  },
+  {
+   "type": "Start Delay",
+   "minute": "67'",
+   "team": "Algeria",
+   "text": "Delay in match for a drinks break.",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "67'",
+   "team": "Switzerland",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "70'",
+   "team": "Algeria",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "70'",
+   "team": "Switzerland",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Substitution",
+   "minute": "71'",
+   "team": "Switzerland",
+   "text": "Substitution, Switzerland. Fabian Rieder replaces Rubén Vargas.",
+   "players": [
+    "Fabian Rieder",
+    "Rubén Vargas"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "71'",
+   "team": "Switzerland",
+   "text": "Substitution, Switzerland. Noah Okafor replaces Johan Manzambi.",
+   "players": [
+    "Noah Okafor",
+    "Johan Manzambi"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "71'",
+   "team": "Algeria",
+   "text": "Substitution, Algeria. Hicham Boudaoui replaces Nabil Bentaleb.",
+   "players": [
+    "Hicham Boudaoui",
+    "Nabil Bentaleb"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "71'",
+   "team": "Algeria",
+   "text": "Substitution, Algeria. Anis Hadj Moussa replaces Riyad Mahrez.",
+   "players": [
+    "Anis Hadj Moussa",
+    "Riyad Mahrez"
+   ]
+  },
+  {
+   "type": "Yellow Card",
+   "minute": "72'",
+   "team": "Algeria",
+   "text": "Hicham Boudaoui (Algeria) is shown the yellow card for a bad foul.",
+   "players": [
+    "Hicham Boudaoui"
+   ]
+  },
+  {
+   "type": "Start Delay",
+   "minute": "72'",
+   "team": "Switzerland",
+   "text": "Delay in match because of an injury Granit Xhaka (Switzerland).",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "72'",
+   "team": "Algeria",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "73'",
+   "team": "Switzerland",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "73'",
+   "team": "Algeria",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Substitution",
+   "minute": "82'",
+   "team": "Algeria",
+   "text": "Substitution, Algeria. Adil Boulbina replaces Rafik Belghali because of an injury.",
+   "players": [
+    "Adil Boulbina",
+    "Rafik Belghali"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "83'",
+   "team": "Switzerland",
+   "text": "Substitution, Switzerland. Zeki Amdouni replaces Breel Embolo.",
+   "players": [
+    "Zeki Amdouni",
+    "Breel Embolo"
+   ]
+  },
+  {
+   "type": "Start Delay",
+   "minute": "85'",
+   "team": "Switzerland",
+   "text": "Delay in match because of an injury Denis Zakaria (Switzerland).",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "85'",
+   "team": "Algeria",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "86'",
+   "team": "Switzerland",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "86'",
+   "team": "Algeria",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Substitution",
+   "minute": "87'",
+   "team": "Switzerland",
+   "text": "Substitution, Switzerland. Silvan Widmer replaces Denis Zakaria because of an injury.",
+   "players": [
+    "Silvan Widmer",
+    "Denis Zakaria"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "87'",
+   "team": "Switzerland",
+   "text": "Substitution, Switzerland. Michel Aebischer replaces Dan Ndoye.",
+   "players": [
+    "Michel Aebischer",
+    "Dan Ndoye"
+   ]
+  },
+  {
+   "type": "End Regular Time",
+   "minute": "90'+7'",
+   "team": null,
+   "text": "",
+   "players": []
+  }
+ ],
+ "shots": [
+  {
+   "minute": "6",
+   "seconds": 312.0,
+   "team": "Algeria",
+   "player": "Houssem Aouar",
+   "type": "Shot Off Target",
+   "x": 89.0,
+   "y": 46.2,
+   "goal": false,
+   "xg": 0.333,
+   "text": "Attempt missed. Houssem Aouar (Algeria) right footed shot from the centre of the box misses to the left. Assisted by Rafik Belghali."
+  },
+  {
+   "minute": "10",
+   "seconds": 599.0,
+   "team": "Switzerland",
+   "player": "Breel Embolo",
+   "type": "Goal",
+   "x": 96.8,
+   "y": 50.5,
+   "goal": true,
+   "xg": 0.907,
+   "text": "Goal! Switzerland 1, Algeria 0. Breel Embolo (Switzerland) left footed shot from very close range to the bottom left corner. Assisted by Johan Manzambi following a fast break."
+  },
+  {
+   "minute": "14",
+   "seconds": 819.0,
+   "team": "Algeria",
+   "player": "Houssem Aouar",
+   "type": "Shot On Target",
+   "x": 76.2,
+   "y": 58.7,
+   "goal": false,
+   "xg": 0.082,
+   "text": "Attempt saved. Houssem Aouar (Algeria) right footed shot from outside the box is saved in the bottom left corner by Gregor Kobel (Switzerland). Assisted by Farès Chaïbi."
+  },
+  {
+   "minute": "15",
+   "seconds": 899.0,
+   "team": "Switzerland",
+   "player": "Denis Zakaria",
+   "type": "Shot On Target",
+   "x": 91.1,
+   "y": 47.0,
+   "goal": false,
+   "xg": 0.442,
+   "text": "Attempt saved. Denis Zakaria (Switzerland) right footed shot from the centre of the box is saved in the bottom right corner by Luca Zidane (Algeria). Assisted by Remo Freuler."
+  },
+  {
+   "minute": "18",
+   "seconds": 1073.0,
+   "team": "Algeria",
+   "player": "Ibrahim Maza",
+   "type": "Shot Blocked",
+   "x": 78.9,
+   "y": 66.3,
+   "goal": false,
+   "xg": 0.085,
+   "text": "Attempt blocked. Ibrahim Maza (Algeria) right footed shot from outside the box is blocked. Assisted by Rayan Aït-Nouri."
+  },
+  {
+   "minute": "25",
+   "seconds": 1473.0,
+   "team": "Switzerland",
+   "player": "Ricardo Rodríguez",
+   "type": "Shot Off Target",
+   "x": 73.7,
+   "y": 68.1,
+   "goal": false,
+   "xg": 0.053,
+   "text": "Attempt missed. Ricardo Rodríguez (Switzerland) left footed shot from outside the box misses to the right. Assisted by Manuel Akanji."
+  },
+  {
+   "minute": "37",
+   "seconds": 2193.0,
+   "team": "Switzerland",
+   "player": "Denis Zakaria",
+   "type": "Shot Off Target",
+   "x": 92.4,
+   "y": 46.0,
+   "goal": false,
+   "xg": 0.327,
+   "text": "Attempt missed. Denis Zakaria (Switzerland) header from the centre of the box is just a bit too high. Assisted by Rubén Vargas with a cross following a set piece situation."
+  },
+  {
+   "minute": "43",
+   "seconds": 2541.0,
+   "team": "Algeria",
+   "player": "Farès Chaïbi",
+   "type": "Shot On Target",
+   "x": 86.1,
+   "y": 66.3,
+   "goal": false,
+   "xg": 0.145,
+   "text": "Attempt saved. Farès Chaïbi (Algeria) right footed shot from the left side of the box is saved in the bottom left corner by Gregor Kobel (Switzerland). Assisted by Houssem Aouar."
+  },
+  {
+   "minute": "45'+2",
+   "seconds": 2700.0,
+   "team": "Algeria",
+   "player": "Ibrahim Maza",
+   "type": "Shot Off Target",
+   "x": 89.4,
+   "y": 46.4,
+   "goal": false,
+   "xg": 0.352,
+   "text": "Attempt missed. Ibrahim Maza (Algeria) left footed shot from the centre of the box is close, but misses to the right. Assisted by Houssem Aouar."
+  },
+  {
+   "minute": "46",
+   "seconds": 2746.0,
+   "team": "Switzerland",
+   "player": "Dan Ndoye",
+   "type": "Goal",
+   "x": 84.9,
+   "y": 42.1,
+   "goal": true,
+   "xg": 0.19,
+   "text": "Goal! Switzerland 2, Algeria 0. Dan Ndoye (Switzerland) right footed shot from the centre of the box to the bottom left corner."
+  },
+  {
+   "minute": "50",
+   "seconds": 2951.0,
+   "team": "Algeria",
+   "player": "Riyad Mahrez",
+   "type": "Shot Blocked",
+   "x": 85.6,
+   "y": 53.1,
+   "goal": false,
+   "xg": 0.228,
+   "text": "Attempt blocked. Riyad Mahrez (Algeria) left footed shot from the centre of the box is blocked. Assisted by Rafik Belghali."
+  },
+  {
+   "minute": "65",
+   "seconds": 3893.0,
+   "team": "Switzerland",
+   "player": "Nico Elvedi",
+   "type": "Shot Blocked",
+   "x": 95.5,
+   "y": 58.7,
+   "goal": false,
+   "xg": 0.293,
+   "text": "Attempt blocked. Nico Elvedi (Switzerland) header from the left side of the six yard box is blocked. Assisted by Rubén Vargas with a cross."
+  },
+  {
+   "minute": "75",
+   "seconds": 4441.0,
+   "team": "Switzerland",
+   "player": "Fabian Rieder",
+   "type": "Shot Blocked",
+   "x": 85.4,
+   "y": 50.3,
+   "goal": false,
+   "xg": 0.228,
+   "text": "Attempt blocked. Fabian Rieder (Switzerland) left footed shot from the centre of the box is blocked."
+  },
+  {
+   "minute": "77",
+   "seconds": 4599.0,
+   "team": "Algeria",
+   "player": "Jaouen Hadjam",
+   "type": "Shot Off Target",
+   "x": 78.9,
+   "y": 73.0,
+   "goal": false,
+   "xg": 0.066,
+   "text": "Attempt missed. Jaouen Hadjam (Algeria) right footed shot from outside the box is too high. Assisted by Farès Chaïbi."
+  },
+  {
+   "minute": "80",
+   "seconds": 4770.0,
+   "team": "Switzerland",
+   "player": "Breel Embolo",
+   "type": "Shot Off Target",
+   "x": 80.2,
+   "y": 70.5,
+   "goal": false,
+   "xg": 0.08,
+   "text": "Attempt missed. Breel Embolo (Switzerland) right footed shot from outside the box is high and wide to the right. Assisted by Dan Ndoye."
+  },
+  {
+   "minute": "81",
+   "seconds": 4846.0,
+   "team": "Switzerland",
+   "player": "Fabian Rieder",
+   "type": "Shot Off Target",
+   "x": 97.4,
+   "y": 56.4,
+   "goal": false,
+   "xg": 0.669,
+   "text": "Attempt missed. Fabian Rieder (Switzerland) left footed shot from the left side of the six yard box is close, but misses to the right. Assisted by Denis Zakaria with a cross."
+  },
+  {
+   "minute": "90'+2",
+   "seconds": 5400.0,
+   "team": "Algeria",
+   "player": "Ibrahim Maza",
+   "type": "Shot Blocked",
+   "x": 88.4,
+   "y": 68.1,
+   "goal": false,
+   "xg": 0.15,
+   "text": "Attempt blocked. Ibrahim Maza (Algeria) right footed shot from the left side of the box is blocked. Assisted by Adil Boulbina."
+  },
+  {
+   "minute": "90'+6",
+   "seconds": 5400.0,
+   "team": "Switzerland",
+   "player": "Noah Okafor",
+   "type": "Shot Blocked",
+   "x": 87.1,
+   "y": 63.8,
+   "goal": false,
+   "xg": 0.178,
+   "text": "Attempt blocked. Noah Okafor (Switzerland) right footed shot from the left side of the box is blocked. Assisted by Fabian Rieder."
+  },
+  {
+   "minute": "90'+6",
+   "seconds": 5400.0,
+   "team": "Switzerland",
+   "player": "Remo Freuler",
+   "type": "Shot On Target",
+   "x": 84.4,
+   "y": 44.1,
+   "goal": false,
+   "xg": 0.19,
+   "text": "Attempt saved. Remo Freuler (Switzerland) right footed shot from the centre of the box is saved in the centre of the goal by Luca Zidane (Algeria)."
+  }
+ ],
+ "lineups": [
+  {
+   "team": "Switzerland",
+   "formation": "4-2-3-1",
+   "starters": [
+    {
+     "name": "Gregor Kobel",
+     "jersey": "1",
+     "position": "G"
+    },
+    {
+     "name": "Manuel Akanji",
+     "jersey": "5",
+     "position": "CD-L"
+    },
+    {
+     "name": "Nico Elvedi",
+     "jersey": "4",
+     "position": "CD-R"
+    },
+    {
+     "name": "Ricardo Rodríguez",
+     "jersey": "13",
+     "position": "LB"
+    },
+    {
+     "name": "Denis Zakaria",
+     "jersey": "6",
+     "position": "RB"
+    },
+    {
+     "name": "Johan Manzambi",
+     "jersey": "9",
+     "position": "AM"
+    },
+    {
+     "name": "Granit Xhaka",
+     "jersey": "10",
+     "position": "LM"
+    },
+    {
+     "name": "Remo Freuler",
+     "jersey": "8",
+     "position": "RM"
+    },
+    {
+     "name": "Breel Embolo",
+     "jersey": "7",
+     "position": "F"
+    },
+    {
+     "name": "Rubén Vargas",
+     "jersey": "17",
+     "position": "AM-L"
+    },
+    {
+     "name": "Dan Ndoye",
+     "jersey": "11",
+     "position": "AM-R"
+    }
+   ],
+   "subs": [
+    {
+     "name": "Michel Aebischer",
+     "jersey": "20",
+     "position": "SUB"
+    },
+    {
+     "name": "Miro Muheim",
+     "jersey": "2",
+     "position": "SUB"
+    },
+    {
+     "name": "Christian Fassnacht",
+     "jersey": "16",
+     "position": "SUB"
+    },
+    {
+     "name": "Cedric Itten",
+     "jersey": "26",
+     "position": "SUB"
+    },
+    {
+     "name": "Marvin Keller",
+     "jersey": "21",
+     "position": "SUB"
+    },
+    {
+     "name": "Djibril Sow",
+     "jersey": "15",
+     "position": "SUB"
+    },
+    {
+     "name": "Zeki Amdouni",
+     "jersey": "23",
+     "position": "SUB"
+    },
+    {
+     "name": "Noah Okafor",
+     "jersey": "19",
+     "position": "SUB"
+    },
+    {
+     "name": "Silvan Widmer",
+     "jersey": "3",
+     "position": "SUB"
+    },
+    {
+     "name": "Fabian Rieder",
+     "jersey": "22",
+     "position": "SUB"
+    },
+    {
+     "name": "Ardon Jashari",
+     "jersey": "14",
+     "position": "SUB"
+    },
+    {
+     "name": "Yvon Mvogo",
+     "jersey": "12",
+     "position": "SUB"
+    },
+    {
+     "name": "Aurèle Amenda",
+     "jersey": "24",
+     "position": "SUB"
+    },
+    {
+     "name": "Eray Cömert",
+     "jersey": "18",
+     "position": "SUB"
+    }
+   ]
+  },
+  {
+   "team": "Algeria",
+   "formation": "4-3-3",
+   "starters": [
+    {
+     "name": "Luca Zidane",
+     "jersey": "23",
+     "position": "G"
+    },
+    {
+     "name": "Ramy Bensebaini",
+     "jersey": "21",
+     "position": "CD-L"
+    },
+    {
+     "name": "Aïssa Mandi",
+     "jersey": "2",
+     "position": "CD-R"
+    },
+    {
+     "name": "Rayan Aït-Nouri",
+     "jersey": "15",
+     "position": "LB"
+    },
+    {
+     "name": "Rafik Belghali",
+     "jersey": "17",
+     "position": "RB"
+    },
+    {
+     "name": "Nabil Bentaleb",
+     "jersey": "19",
+     "position": "CM"
+    },
+    {
+     "name": "Farès Chaïbi",
+     "jersey": "10",
+     "position": "LM"
+    },
+    {
+     "name": "Ramiz Zerrouki",
+     "jersey": "6",
+     "position": "RM"
+    },
+    {
+     "name": "Ibrahim Maza",
+     "jersey": "22",
+     "position": "F"
+    },
+    {
+     "name": "Houssem Aouar",
+     "jersey": "8",
+     "position": "LF"
+    },
+    {
+     "name": "Riyad Mahrez",
+     "jersey": "7",
+     "position": "RF"
+    }
+   ],
+   "subs": [
+    {
+     "name": "Mohamed Amine Tougai",
+     "jersey": "4",
+     "position": "SUB"
+    },
+    {
+     "name": "Anis Hadj Moussa",
+     "jersey": "11",
+     "position": "SUB"
+    },
+    {
+     "name": "Yassine Titraoui",
+     "jersey": "24",
+     "position": "SUB"
+    },
+    {
+     "name": "Adil Boulbina",
+     "jersey": "20",
+     "position": "SUB"
+    },
+    {
+     "name": "Amine Gouiri",
+     "jersey": "9",
+     "position": "SUB"
+    },
+    {
+     "name": "Achraf Abada",
+     "jersey": "3",
+     "position": "SUB"
+    },
+    {
+     "name": "Hicham Boudaoui",
+     "jersey": "14",
+     "position": "SUB"
+    },
+    {
+     "name": "Jaouen Hadjam",
+     "jersey": "13",
+     "position": "SUB"
+    },
+    {
+     "name": "Samir Chergui",
+     "jersey": "26",
+     "position": "SUB"
+    },
+    {
+     "name": "Melvin Mastil",
+     "jersey": "1",
+     "position": "SUB"
+    },
+    {
+     "name": "Zineddine Belaïd",
+     "jersey": "5",
+     "position": "SUB"
+    },
+    {
+     "name": "Farès Ghedjemis",
+     "jersey": "25",
+     "position": "SUB"
+    },
+    {
+     "name": "Oussama Benbot",
+     "jersey": "16",
+     "position": "SUB"
+    }
+   ]
+  }
+ ],
+ "attendance": 52497,
+ "venue": "BC Place, Vancouver, Canada"
+}

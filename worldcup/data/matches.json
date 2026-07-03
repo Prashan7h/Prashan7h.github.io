@@ -3502,12 +3502,31 @@
    "team2": "Algeria",
    "group": null,
    "ground": "Vancouver",
-   "score": null,
-   "goals1": [],
+   "score": {
+    "ft": [
+     2,
+     0
+    ],
+    "ht": [
+     1,
+     0
+    ]
+   },
+   "goals1": [
+    {
+     "name": "Breel Embolo",
+     "minute": "10"
+    },
+    {
+     "name": "Dan Ndoye",
+     "minute": "46"
+    }
+   ],
    "goals2": [],
    "espn_id": "760498",
-   "status": "live",
+   "status": "finished",
    "utc_date": "2026-07-03T03:00Z",
+   "attendance": 52497,
    "venue": "BC Place",
    "slug": "2026-07-02-switzerland-vs-algeria"
   },
