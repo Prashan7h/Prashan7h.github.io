@@ -3183,12 +3183,12 @@
      "minute": "45"
     },
     {
-     "name": "Bradley Barcola",
-     "minute": "53"
-    },
-    {
      "name": "Kylian Mbappé",
      "minute": "74"
+    },
+    {
+     "name": "Bradley Barcola",
+     "minute": "53"
     }
    ],
    "goals2": [],
@@ -3477,12 +3477,12 @@
      "minute": "36"
     },
     {
-     "name": "Pedro Porro",
-     "minute": "66"
-    },
-    {
      "name": "Mikel Oyarzabal",
      "minute": "89"
+    },
+    {
+     "name": "Pedro Porro",
+     "minute": "66"
     }
    ],
    "goals2": [],
@@ -3579,7 +3579,7 @@
    "goals1": [],
    "goals2": [],
    "espn_id": "760499",
-   "status": "scheduled",
+   "status": "live",
    "utc_date": "2026-07-03T18:00Z",
    "venue": "AT&T Stadium",
    "slug": "2026-07-03-australia-vs-egypt"
@@ -3661,16 +3661,18 @@
    "round": "Round of 16",
    "date": "2026-07-06",
    "time": "14:00 UTC-5",
-   "team1": "W83",
-   "team2": "W84",
+   "team1": "Portugal",
+   "team2": "Spain",
    "group": null,
    "ground": "Dallas (Arlington)",
    "score": null,
    "goals1": [],
    "goals2": [],
-   "espn_id": null,
+   "espn_id": "760506",
    "status": "scheduled",
-   "slug": "2026-07-06-w83-vs-w84"
+   "utc_date": "2026-07-06T19:00Z",
+   "venue": "AT&T Stadium",
+   "slug": "2026-07-06-portugal-vs-spain"
   },
   {
    "num": 94,
@@ -3711,7 +3713,7 @@
    "round": "Round of 16",
    "date": "2026-07-07",
    "time": "13:00 UTC-7",
-   "team1": "W85",
+   "team1": "Switzerland",
    "team2": "W87",
    "group": null,
    "ground": "Vancouver",
@@ -3720,7 +3722,7 @@
    "goals2": [],
    "espn_id": null,
    "status": "scheduled",
-   "slug": "2026-07-07-w85-vs-w87"
+   "slug": "2026-07-07-switzerland-vs-w87"
   },
   {
    "num": 97,
