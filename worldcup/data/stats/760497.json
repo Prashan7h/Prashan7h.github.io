@@ -1,0 +1,945 @@
+{
+ "teams": [
+  {
+   "name": "Spain",
+   "stats": {
+    "possessionPct": "64.4",
+    "totalShots": "23",
+    "shotsOnTarget": "10",
+    "wonCorners": "9",
+    "foulsCommitted": "8",
+    "offsides": "2",
+    "saves": "0",
+    "yellowCards": "0",
+    "redCards": "0"
+   }
+  },
+  {
+   "name": "Austria",
+   "stats": {
+    "possessionPct": "35.6",
+    "totalShots": "5",
+    "shotsOnTarget": "0",
+    "wonCorners": "0",
+    "foulsCommitted": "15",
+    "offsides": "5",
+    "saves": "6",
+    "yellowCards": "1",
+    "redCards": "0"
+   }
+  }
+ ],
+ "events": [
+  {
+   "type": "Kickoff",
+   "minute": "",
+   "team": null,
+   "text": "First Half begins.",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "9'",
+   "team": "Spain",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "9'",
+   "team": "Spain",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "24'",
+   "team": "Spain",
+   "text": "Delay in match for a drinks break.",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "24'",
+   "team": "Austria",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "27'",
+   "team": "Spain",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "27'",
+   "team": "Austria",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Goal",
+   "minute": "36'",
+   "team": "Spain",
+   "text": "Goal! Spain 1, Austria 0. Mikel Oyarzabal (Spain) left footed shot from the centre of the box to the centre of the goal. Assisted by Marc Cucurella with a cross.",
+   "players": [
+    "Mikel Oyarzabal",
+    "Marc Cucurella"
+   ]
+  },
+  {
+   "type": "Start Delay",
+   "minute": "45'+3'",
+   "team": "Spain",
+   "text": "Delay in match because of an injury Pau Cubarsí (Spain).",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "45'+3'",
+   "team": "Austria",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "45'+4'",
+   "team": "Spain",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "45'+4'",
+   "team": "Austria",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Halftime",
+   "minute": "45'+5'",
+   "team": null,
+   "text": "First Half ends, Spain 1, Austria 0.",
+   "players": []
+  },
+  {
+   "type": "Substitution",
+   "minute": "45'",
+   "team": "Austria",
+   "text": "Substitution, Austria. Florian Grillitsch replaces Xaver Schlager.",
+   "players": [
+    "Florian Grillitsch",
+    "Xaver Schlager"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "45'",
+   "team": "Austria",
+   "text": "Substitution, Austria. Carney Chukwuemeka replaces Nicolas Seiwald.",
+   "players": [
+    "Carney Chukwuemeka",
+    "Nicolas Seiwald"
+   ]
+  },
+  {
+   "type": "Start 2nd Half",
+   "minute": "45'",
+   "team": null,
+   "text": "Second Half begins Spain 1, Austria 0.",
+   "players": []
+  },
+  {
+   "type": "Substitution",
+   "minute": "60'",
+   "team": "Austria",
+   "text": "Substitution, Austria. Sasa Kalajdzic replaces Romano Schmid.",
+   "players": [
+    "Sasa Kalajdzic",
+    "Romano Schmid"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "60'",
+   "team": "Austria",
+   "text": "Substitution, Austria. Marko Arnautovic replaces Michael Gregoritsch.",
+   "players": [
+    "Marko Arnautovic",
+    "Michael Gregoritsch"
+   ]
+  },
+  {
+   "type": "Start Delay",
+   "minute": "63'",
+   "team": "Austria",
+   "text": "Delay in match because of an injury Marko Arnautovic (Austria).",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "63'",
+   "team": "Spain",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "64'",
+   "team": "Austria",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "64'",
+   "team": "Spain",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Goal - Header",
+   "minute": "66'",
+   "team": "Spain",
+   "text": "Goal! Spain 2, Austria 0. Pedro Porro (Spain) header from the centre of the box to the centre of the goal. Assisted by Álex Baena.",
+   "players": [
+    "Pedro Porro",
+    "Álex Baena"
+   ]
+  },
+  {
+   "type": "Start Delay",
+   "minute": "68'",
+   "team": "Spain",
+   "text": "Delay in match for a drinks break.",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "68'",
+   "team": "Austria",
+   "text": "Delay in match for a drinks break.",
+   "players": []
+  },
+  {
+   "type": "Substitution",
+   "minute": "71'",
+   "team": "Spain",
+   "text": "Substitution, Spain. Ferran Torres replaces Álex Baena.",
+   "players": [
+    "Ferran Torres",
+    "Álex Baena"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "71'",
+   "team": "Spain",
+   "text": "Substitution, Spain. Mikel Merino replaces Dani Olmo.",
+   "players": [
+    "Mikel Merino",
+    "Dani Olmo"
+   ]
+  },
+  {
+   "type": "End Delay",
+   "minute": "71'",
+   "team": "Spain",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "71'",
+   "team": "Austria",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Yellow Card",
+   "minute": "83'",
+   "team": "Austria",
+   "text": "Stefan Posch (Austria) is shown the yellow card for a bad foul.",
+   "players": [
+    "Stefan Posch"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "85'",
+   "team": "Spain",
+   "text": "Substitution, Spain. Gavi replaces Lamine Yamal.",
+   "players": [
+    "Gavi",
+    "Lamine Yamal"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "85'",
+   "team": "Austria",
+   "text": "Substitution, Austria. Alexander Prass replaces Stefan Posch.",
+   "players": [
+    "Alexander Prass",
+    "Stefan Posch"
+   ]
+  },
+  {
+   "type": "Goal",
+   "minute": "89'",
+   "team": "Spain",
+   "text": "Goal! Spain 3, Austria 0. Mikel Oyarzabal (Spain) right footed shot from the centre of the box to the bottom right corner. Assisted by Marc Cucurella.",
+   "players": [
+    "Mikel Oyarzabal",
+    "Marc Cucurella"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "90'+3'",
+   "team": "Spain",
+   "text": "Substitution, Spain. Fabián Ruiz replaces Pedri.",
+   "players": [
+    "Fabián Ruiz",
+    "Pedri"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "90'+3'",
+   "team": "Spain",
+   "text": "Substitution, Spain. Marc Pubill replaces Aymeric Laporte.",
+   "players": [
+    "Marc Pubill",
+    "Aymeric Laporte"
+   ]
+  },
+  {
+   "type": "End Regular Time",
+   "minute": "90'+6'",
+   "team": null,
+   "text": "",
+   "players": []
+  }
+ ],
+ "shots": [
+  {
+   "minute": "1",
+   "seconds": 60.0,
+   "team": "Spain",
+   "player": "Lamine Yamal",
+   "type": "Shot On Target",
+   "x": 80.3,
+   "y": 66.7,
+   "goal": false,
+   "xg": 0.093,
+   "text": "Attempt saved. Lamine Yamal (Spain) left footed shot from outside the box is saved in the centre of the goal by Alexander Schlager (Austria). Assisted by Álex Baena."
+  },
+  {
+   "minute": "7",
+   "seconds": 420.0,
+   "team": "Spain",
+   "player": "Dani Olmo",
+   "type": "Shot Blocked",
+   "x": 86.1,
+   "y": 46.7,
+   "goal": false,
+   "xg": 0.241,
+   "text": "Attempt blocked. Dani Olmo (Spain) right footed shot from the centre of the box is blocked. Assisted by Pedro Porro with a cross."
+  },
+  {
+   "minute": "8",
+   "seconds": 471.0,
+   "team": "Spain",
+   "player": "Aymeric Laporte",
+   "type": "Shot Off Target",
+   "x": 96.5,
+   "y": 54.8,
+   "goal": false,
+   "xg": 0.494,
+   "text": "Attempt missed. Aymeric Laporte (Spain) header from very close range is close, but misses to the left. Assisted by Álex Baena with a cross following a corner."
+  },
+  {
+   "minute": "32",
+   "seconds": 1912.0,
+   "team": "Spain",
+   "player": "Lamine Yamal",
+   "type": "Shot Off Target",
+   "x": 99.3,
+   "y": 31.8,
+   "goal": false,
+   "xg": 0.125,
+   "text": "Attempt missed. Lamine Yamal (Spain) left footed shot from a difficult angle on the right misses to the left. Assisted by Pau Cubarsí."
+  },
+  {
+   "minute": "33",
+   "seconds": 1926.0,
+   "team": "Spain",
+   "player": "Mikel Oyarzabal",
+   "type": "Shot On Target",
+   "x": 85.3,
+   "y": 62.7,
+   "goal": false,
+   "xg": 0.163,
+   "text": "Attempt saved. Mikel Oyarzabal (Spain) left footed shot from the centre of the box is saved in the centre of the goal by Alexander Schlager (Austria). Assisted by Dani Olmo."
+  },
+  {
+   "minute": "35",
+   "seconds": 2044.0,
+   "team": "Austria",
+   "player": "David Alaba",
+   "type": "Shot Off Target",
+   "x": 71.3,
+   "y": 52.1,
+   "goal": false,
+   "xg": 0.056,
+   "text": "Attempt missed. David Alaba (Austria) left footed shot from outside the box is too high."
+  },
+  {
+   "minute": "36",
+   "seconds": 2155.0,
+   "team": "Spain",
+   "player": "Mikel Oyarzabal",
+   "type": "Goal",
+   "x": 89.2,
+   "y": 54.2,
+   "goal": true,
+   "xg": 0.338,
+   "text": "Goal! Spain 1, Austria 0. Mikel Oyarzabal (Spain) left footed shot from the centre of the box to the centre of the goal. Assisted by Marc Cucurella with a cross."
+  },
+  {
+   "minute": "38",
+   "seconds": 2274.0,
+   "team": "Spain",
+   "player": "Lamine Yamal",
+   "type": "Shot On Target",
+   "x": 78.0,
+   "y": 46.8,
+   "goal": false,
+   "xg": 0.104,
+   "text": "Attempt saved. Lamine Yamal (Spain) right footed shot from outside the box is saved in the centre of the goal by Alexander Schlager (Austria). Assisted by Pedro Porro."
+  },
+  {
+   "minute": "39",
+   "seconds": 2337.0,
+   "team": "Spain",
+   "player": "Mikel Oyarzabal",
+   "type": "Shot Blocked",
+   "x": 86.0,
+   "y": 44.4,
+   "goal": false,
+   "xg": 0.227,
+   "text": "Attempt blocked. Mikel Oyarzabal (Spain) left footed shot from the centre of the box is blocked. Assisted by Dani Olmo."
+  },
+  {
+   "minute": "42",
+   "seconds": 2501.0,
+   "team": "Spain",
+   "player": "Aymeric Laporte",
+   "type": "Shot Off Target",
+   "x": 45.1,
+   "y": 68.9,
+   "goal": false,
+   "xg": 0.005,
+   "text": "Attempt missed. Aymeric Laporte (Spain) left footed shot from more than 35 yards misses to the right. Assisted by Rodri."
+  },
+  {
+   "minute": "45",
+   "seconds": 2671.0,
+   "team": "Austria",
+   "player": "Nicolas Seiwald",
+   "type": "Shot Blocked",
+   "x": 87.4,
+   "y": 64.9,
+   "goal": false,
+   "xg": 0.171,
+   "text": "Attempt blocked. Nicolas Seiwald (Austria) left footed shot from the left side of the box is blocked. Assisted by Romano Schmid."
+  },
+  {
+   "minute": "45'+2",
+   "seconds": 2700.0,
+   "team": "Spain",
+   "player": "Álex Baena",
+   "type": "Shot On Target",
+   "x": 73.2,
+   "y": 69.9,
+   "goal": false,
+   "xg": 0.048,
+   "text": "Attempt saved. Álex Baena (Spain) right footed shot from outside the box is saved in the top left corner by Alexander Schlager (Austria)."
+  },
+  {
+   "minute": "45'+2",
+   "seconds": 2700.0,
+   "team": "Spain",
+   "player": "Lamine Yamal",
+   "type": "Shot On Target",
+   "x": 96.5,
+   "y": 57.7,
+   "goal": false,
+   "xg": 0.531,
+   "text": "Attempt saved. Lamine Yamal (Spain) left footed shot from the left side of the six yard box is saved in the centre of the goal by Alexander Schlager (Austria)."
+  },
+  {
+   "minute": "49",
+   "seconds": 2934.0,
+   "team": "Spain",
+   "player": "Mikel Oyarzabal",
+   "type": "Shot On Target",
+   "x": 79.1,
+   "y": 51.1,
+   "goal": false,
+   "xg": 0.117,
+   "text": "Attempt saved. Mikel Oyarzabal (Spain) left footed shot from outside the box is saved in the centre of the goal by Alexander Schlager (Austria). Assisted by Rodri."
+  },
+  {
+   "minute": "52",
+   "seconds": 3065.0,
+   "team": "Spain",
+   "player": "Mikel Oyarzabal",
+   "type": "Shot Off Target",
+   "x": 90.8,
+   "y": 48.3,
+   "goal": false,
+   "xg": 0.284,
+   "text": "Attempt missed. Mikel Oyarzabal (Spain) header from the centre of the box is too high. Assisted by Álex Baena with a cross following a corner."
+  },
+  {
+   "minute": "54",
+   "seconds": 3206.0,
+   "team": "Spain",
+   "player": "Rodri",
+   "type": "Shot Blocked",
+   "x": 73.4,
+   "y": 48.8,
+   "goal": false,
+   "xg": 0.068,
+   "text": "Attempt blocked. Rodri (Spain) right footed shot from outside the box is blocked. Assisted by Pau Cubarsí."
+  },
+  {
+   "minute": "58",
+   "seconds": 3442.0,
+   "team": "Spain",
+   "player": "Álex Baena",
+   "type": "Shot Blocked",
+   "x": 72.9,
+   "y": 63.8,
+   "goal": false,
+   "xg": 0.055,
+   "text": "Attempt blocked. Álex Baena (Spain) right footed shot from outside the box is blocked. Assisted by Pedri."
+  },
+  {
+   "minute": "59",
+   "seconds": 3482.0,
+   "team": "Spain",
+   "player": "Lamine Yamal",
+   "type": "Shot Blocked",
+   "x": 84.6,
+   "y": 28.8,
+   "goal": false,
+   "xg": 0.103,
+   "text": "Attempt blocked. Lamine Yamal (Spain) left footed shot from the right side of the box is blocked. Assisted by Pedro Porro."
+  },
+  {
+   "minute": "61",
+   "seconds": 3609.0,
+   "team": "Austria",
+   "player": "Sasa Kalajdzic",
+   "type": "Shot Off Target",
+   "x": 92.6,
+   "y": 48.9,
+   "goal": false,
+   "xg": 0.364,
+   "text": "Attempt missed. Sasa Kalajdzic (Austria) header from the centre of the box is just a bit too high. Assisted by Marcel Sabitzer with a cross."
+  },
+  {
+   "minute": "62",
+   "seconds": 3663.0,
+   "team": "Spain",
+   "player": "Dani Olmo",
+   "type": "Shot Blocked",
+   "x": 83.6,
+   "y": 37.0,
+   "goal": false,
+   "xg": 0.14,
+   "text": "Attempt blocked. Dani Olmo (Spain) right footed shot from the centre of the box is blocked. Assisted by Lamine Yamal."
+  },
+  {
+   "minute": "66",
+   "seconds": 3925.0,
+   "team": "Spain",
+   "player": "Dani Olmo",
+   "type": "Shot Blocked",
+   "x": 78.4,
+   "y": 64.4,
+   "goal": false,
+   "xg": 0.087,
+   "text": "Attempt blocked. Dani Olmo (Spain) right footed shot from outside the box is blocked. Assisted by Álex Baena."
+  },
+  {
+   "minute": "66",
+   "seconds": 3929.0,
+   "team": "Spain",
+   "player": "Pedro Porro",
+   "type": "Goal - Header",
+   "x": 92.7,
+   "y": 51.4,
+   "goal": true,
+   "xg": 0.367,
+   "text": "Goal! Spain 2, Austria 0. Pedro Porro (Spain) header from the centre of the box to the centre of the goal. Assisted by Álex Baena."
+  },
+  {
+   "minute": "78",
+   "seconds": 4648.0,
+   "team": "Spain",
+   "player": "Ferran Torres",
+   "type": "Shot Off Target",
+   "x": 93.6,
+   "y": 35.0,
+   "goal": false,
+   "xg": 0.145,
+   "text": "Attempt missed. Ferran Torres (Spain) header from the right side of the box is too high. Assisted by Lamine Yamal with a cross following a corner."
+  },
+  {
+   "minute": "79",
+   "seconds": 4732.0,
+   "team": "Austria",
+   "player": "Carney Chukwuemeka",
+   "type": "Shot Off Target",
+   "x": 87.2,
+   "y": 34.6,
+   "goal": false,
+   "xg": 0.164,
+   "text": "Attempt missed. Carney Chukwuemeka (Austria) right footed shot from the right side of the box is close, but misses the top right corner. Assisted by Marko Arnautovic."
+  },
+  {
+   "minute": "82",
+   "seconds": 4882.0,
+   "team": "Austria",
+   "player": "Stefan Posch",
+   "type": "Shot Off Target",
+   "x": 90.1,
+   "y": 48.2,
+   "goal": false,
+   "xg": 0.259,
+   "text": "Attempt missed. Stefan Posch (Austria) header from the centre of the box misses to the right. Assisted by Marcel Sabitzer with a cross."
+  },
+  {
+   "minute": "85",
+   "seconds": 5061.0,
+   "team": "Spain",
+   "player": "Lamine Yamal",
+   "type": "Shot Blocked",
+   "x": 91.1,
+   "y": 52.6,
+   "goal": false,
+   "xg": 0.446,
+   "text": "Attempt blocked. Lamine Yamal (Spain) left footed shot from the centre of the box is blocked. Assisted by Pedro Porro."
+  },
+  {
+   "minute": "89",
+   "seconds": 5295.0,
+   "team": "Spain",
+   "player": "Mikel Oyarzabal",
+   "type": "Goal",
+   "x": 89.9,
+   "y": 50.2,
+   "goal": true,
+   "xg": 0.393,
+   "text": "Goal! Spain 3, Austria 0. Mikel Oyarzabal (Spain) right footed shot from the centre of the box to the bottom right corner. Assisted by Marc Cucurella."
+  },
+  {
+   "minute": "90'+4",
+   "seconds": 5400.0,
+   "team": "Spain",
+   "player": "Ferran Torres",
+   "type": "Shot Off Target",
+   "x": 89.6,
+   "y": 29.1,
+   "goal": false,
+   "xg": 0.132,
+   "text": "Attempt missed. Ferran Torres (Spain) right footed shot from the right side of the box misses to the left. Assisted by Pedro Porro."
+  }
+ ],
+ "lineups": [
+  {
+   "team": "Spain",
+   "formation": "4-2-3-1",
+   "starters": [
+    {
+     "name": "Unai Simón",
+     "jersey": "23",
+     "position": "G"
+    },
+    {
+     "name": "Aymeric Laporte",
+     "jersey": "14",
+     "position": "CD-L"
+    },
+    {
+     "name": "Pau Cubarsí",
+     "jersey": "22",
+     "position": "CD-R"
+    },
+    {
+     "name": "Marc Cucurella",
+     "jersey": "24",
+     "position": "LB"
+    },
+    {
+     "name": "Pedro Porro",
+     "jersey": "12",
+     "position": "RB"
+    },
+    {
+     "name": "Dani Olmo",
+     "jersey": "10",
+     "position": "AM"
+    },
+    {
+     "name": "Pedri",
+     "jersey": "20",
+     "position": "LM"
+    },
+    {
+     "name": "Rodri",
+     "jersey": "16",
+     "position": "RM"
+    },
+    {
+     "name": "Mikel Oyarzabal",
+     "jersey": "21",
+     "position": "F"
+    },
+    {
+     "name": "Álex Baena",
+     "jersey": "15",
+     "position": "AM-L"
+    },
+    {
+     "name": "Lamine Yamal",
+     "jersey": "19",
+     "position": "AM-R"
+    }
+   ],
+   "subs": [
+    {
+     "name": "Mikel Merino",
+     "jersey": "6",
+     "position": "SUB"
+    },
+    {
+     "name": "Marc Pubill",
+     "jersey": "2",
+     "position": "SUB"
+    },
+    {
+     "name": "Nico Williams",
+     "jersey": "17",
+     "position": "SUB"
+    },
+    {
+     "name": "Martín Zubimendi",
+     "jersey": "18",
+     "position": "SUB"
+    },
+    {
+     "name": "Ferran Torres",
+     "jersey": "7",
+     "position": "SUB"
+    },
+    {
+     "name": "Borja Iglesias",
+     "jersey": "26",
+     "position": "SUB"
+    },
+    {
+     "name": "Yéremy Pino",
+     "jersey": "11",
+     "position": "SUB"
+    },
+    {
+     "name": "Fabián Ruiz",
+     "jersey": "8",
+     "position": "SUB"
+    },
+    {
+     "name": "Alejandro Grimaldo",
+     "jersey": "3",
+     "position": "SUB"
+    },
+    {
+     "name": "Gavi",
+     "jersey": "9",
+     "position": "SUB"
+    },
+    {
+     "name": "Joan García",
+     "jersey": "13",
+     "position": "SUB"
+    },
+    {
+     "name": "Marcos Llorente",
+     "jersey": "5",
+     "position": "SUB"
+    },
+    {
+     "name": "Eric García",
+     "jersey": "4",
+     "position": "SUB"
+    },
+    {
+     "name": "David Raya",
+     "jersey": "1",
+     "position": "SUB"
+    },
+    {
+     "name": "Víctor Muñoz",
+     "jersey": "25",
+     "position": "SUB"
+    }
+   ]
+  },
+  {
+   "team": "Austria",
+   "formation": "4-2-3-1",
+   "starters": [
+    {
+     "name": "Alexander Schlager",
+     "jersey": "1",
+     "position": "G"
+    },
+    {
+     "name": "David Alaba",
+     "jersey": "8",
+     "position": "CD-L"
+    },
+    {
+     "name": "Kevin Danso",
+     "jersey": "3",
+     "position": "CD-R"
+    },
+    {
+     "name": "Konrad Laimer",
+     "jersey": "20",
+     "position": "LB"
+    },
+    {
+     "name": "Stefan Posch",
+     "jersey": "5",
+     "position": "RB"
+    },
+    {
+     "name": "Paul Wanner",
+     "jersey": "24",
+     "position": "AM"
+    },
+    {
+     "name": "Xaver Schlager",
+     "jersey": "4",
+     "position": "LM"
+    },
+    {
+     "name": "Nicolas Seiwald",
+     "jersey": "6",
+     "position": "RM"
+    },
+    {
+     "name": "Michael Gregoritsch",
+     "jersey": "11",
+     "position": "F"
+    },
+    {
+     "name": "Marcel Sabitzer",
+     "jersey": "9",
+     "position": "AM-L"
+    },
+    {
+     "name": "Romano Schmid",
+     "jersey": "18",
+     "position": "AM-R"
+    }
+   ],
+   "subs": [
+    {
+     "name": "Florian Grillitsch",
+     "jersey": "10",
+     "position": "SUB"
+    },
+    {
+     "name": "Florian Wiegele",
+     "jersey": "12",
+     "position": "SUB"
+    },
+    {
+     "name": "David Affengruber",
+     "jersey": "2",
+     "position": "SUB"
+    },
+    {
+     "name": "Phillipp Mwene",
+     "jersey": "16",
+     "position": "SUB"
+    },
+    {
+     "name": "Patrick Pentz",
+     "jersey": "13",
+     "position": "SUB"
+    },
+    {
+     "name": "Patrick Wimmer",
+     "jersey": "21",
+     "position": "SUB"
+    },
+    {
+     "name": "Alessandro Schöpf",
+     "jersey": "26",
+     "position": "SUB"
+    },
+    {
+     "name": "Marko Arnautovic",
+     "jersey": "7",
+     "position": "SUB"
+    },
+    {
+     "name": "Michael Svoboda",
+     "jersey": "25",
+     "position": "SUB"
+    },
+    {
+     "name": "Dejan Ljubicic",
+     "jersey": "19",
+     "position": "SUB"
+    },
+    {
+     "name": "Alexander Prass",
+     "jersey": "22",
+     "position": "SUB"
+    },
+    {
+     "name": "Carney Chukwuemeka",
+     "jersey": "17",
+     "position": "SUB"
+    },
+    {
+     "name": "Marco Friedl",
+     "jersey": "23",
+     "position": "SUB"
+    },
+    {
+     "name": "Sasa Kalajdzic",
+     "jersey": "14",
+     "position": "SUB"
+    },
+    {
+     "name": "Philipp Lienhart",
+     "jersey": "15",
+     "position": "SUB"
+    }
+   ]
+  }
+ ],
+ "attendance": 70492,
+ "venue": "SoFi Stadium, Inglewood, California, USA"
+}

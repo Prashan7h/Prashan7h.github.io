@@ -3418,12 +3418,37 @@
    "team2": "Croatia",
    "group": null,
    "ground": "Toronto",
-   "score": null,
-   "goals1": [],
-   "goals2": [],
+   "score": {
+    "ft": [
+     2,
+     1
+    ],
+    "ht": [
+     0,
+     0
+    ]
+   },
+   "goals1": [
+    {
+     "name": "Cristiano Ronaldo",
+     "minute": "68",
+     "penalty": true
+    },
+    {
+     "name": "Gonçalo Ramos",
+     "minute": "90+4"
+    }
+   ],
+   "goals2": [
+    {
+     "name": "Ivan Perisic",
+     "minute": "53"
+    }
+   ],
    "espn_id": "760496",
-   "status": "scheduled",
+   "status": "finished",
    "utc_date": "2026-07-02T23:00Z",
+   "attendance": 43036,
    "venue": "BMO Field",
    "slug": "2026-07-02-portugal-vs-croatia"
   },
@@ -3436,12 +3461,35 @@
    "team2": "Austria",
    "group": null,
    "ground": "Los Angeles (Inglewood)",
-   "score": null,
-   "goals1": [],
+   "score": {
+    "ft": [
+     3,
+     0
+    ],
+    "ht": [
+     1,
+     0
+    ]
+   },
+   "goals1": [
+    {
+     "name": "Mikel Oyarzabal",
+     "minute": "36"
+    },
+    {
+     "name": "Pedro Porro",
+     "minute": "66"
+    },
+    {
+     "name": "Mikel Oyarzabal",
+     "minute": "89"
+    }
+   ],
    "goals2": [],
    "espn_id": "760497",
-   "status": "scheduled",
+   "status": "finished",
    "utc_date": "2026-07-02T19:00Z",
+   "attendance": 70492,
    "venue": "SoFi Stadium",
    "slug": "2026-07-02-spain-vs-austria"
   },
@@ -3458,7 +3506,7 @@
    "goals1": [],
    "goals2": [],
    "espn_id": "760498",
-   "status": "scheduled",
+   "status": "live",
    "utc_date": "2026-07-03T03:00Z",
    "venue": "BC Place",
    "slug": "2026-07-02-switzerland-vs-algeria"
