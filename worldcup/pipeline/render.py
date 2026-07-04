@@ -10,6 +10,8 @@ from pathlib import Path
 
 from jinja2 import Environment, FileSystemLoader
 
+from analytics import decided_on, final_score, outcome
+
 ROOT = Path(__file__).resolve().parent.parent
 DATA_DIR = ROOT / "data"
 STATS_DIR = DATA_DIR / "stats"
@@ -184,8 +186,7 @@ def prediction_svg(m, pred):
     """Rounded stacked probability bar with a marker over the actual outcome."""
     w, h = 660, 64
     x0, bw, y0, bh = 4, 652, 26, 26
-    g1, g2 = m["score"]["ft"]
-    actual = 0 if g1 > g2 else 1 if g1 == g2 else 2
+    actual = outcome(m)
     segs = [(pred["p1"], m["team1"], "#0a0a0a", "#fff"),
             (pred["pd"], "draw", "#d9d9d9", "#555"),
             (pred["p2"], m["team2"], "#f1f1f1", "#555")]
@@ -237,9 +238,11 @@ def scorer_lines(m):
 
 
 def narrative(m, info, stats, xg1, xg2):
-    g1, g2 = m["score"]["ft"]
-    winner = m["team1"] if g1 > g2 else m["team2"] if g2 > g1 else None
-    loser = m["team2"] if g1 > g2 else m["team1"] if g2 > g1 else None
+    g1, g2 = final_score(m)
+    res = outcome(m)
+    winner = m["team1"] if res == 0 else m["team2"] if res == 2 else None
+    loser = m["team2"] if res == 0 else m["team1"] if res == 2 else None
+    how = {"pen": " on penalties", "et": " after extra time"}.get(decided_on(m), "")
     sentences = []
 
     pred = info["prediction"] if info else None
@@ -247,15 +250,17 @@ def narrative(m, info, stats, xg1, xg2):
         wp = pred["p1"] if winner == m["team1"] else pred["p2"]
         if wp < 0.30:
             sentences.append(f"A genuine shock — the model gave {winner} just "
-                             f"{wp * 100:.0f}% before kick-off, and they beat {loser} anyway.")
+                             f"{wp * 100:.0f}% before kick-off, and they beat "
+                             f"{loser}{how} anyway.")
         elif wp < 0.5:
-            sentences.append(f"A mild upset: {winner} ({wp * 100:.0f}% pre-match) got past {loser}.")
+            sentences.append(f"A mild upset: {winner} ({wp * 100:.0f}% pre-match) "
+                             f"got past {loser}{how}.")
         elif abs(g1 - g2) >= 3:
             sentences.append(f"{winner} made a statement — a {max(g1,g2)}–{min(g1,g2)} "
                              f"dismantling of {loser}.")
         else:
             sentences.append(f"The favourite delivered: {winner} ({wp * 100:.0f}% pre-match) "
-                             f"beat {loser} {max(g1, g2)}–{min(g1, g2)}.")
+                             f"beat {loser} {max(g1, g2)}–{min(g1, g2)}{how}.")
     elif pred:
         sentences.append(f"A {g1}–{g2} draw — the model had that at {pred['pd'] * 100:.0f}%.")
 
@@ -385,8 +390,8 @@ def main():
         xg1 = round(sum(s["xg"] for s in shots if s["team"] == m["team1"]), 2) if shots else None
         xg2 = round(sum(s["xg"] for s in shots if s["team"] == m["team2"]), 2) if shots else None
 
-        g1, g2 = m["score"]["ft"]
-        actual_p = (pred["p1"] if g1 > g2 else pred["pd"] if g1 == g2 else pred["p2"]) if pred else None
+        res = outcome(m)
+        actual_p = (pred["p1"] if res == 0 else pred["pd"] if res == 1 else pred["p2"]) if pred else None
         verdict = ""
         if actual_p is not None:
             verdict = ("The model called it." if actual_p >= 0.5 else
@@ -398,6 +403,15 @@ def main():
             other = m["team2"] if info["elo_delta"] > 0 else m["team1"]
             elo_direction = f"from {other} to {gainer}"
 
+        m["final1"], m["final2"] = final_score(m)
+        note = []
+        if m["score"].get("p"):
+            note.append("PENS {}–{}".format(*m["score"]["p"]))
+        if m["score"].get("et"):
+            note.append("AET")
+        if m["score"].get("ht"):
+            note.append("HT {}–{}".format(*m["score"]["ht"]))
+        m["score_note"] = " · ".join(note) or "FULL TIME"
         m["scorer_lines"] = scorer_lines(m)
         lineups = stats.get("lineups", [])
         for l in lineups:
@@ -424,8 +438,9 @@ def main():
     for m in matches:
         m["has_page"] = m["num"] in pages
         if m.get("score"):
-            g1, g2 = m["score"]["ft"]
-            m["win1"], m["win2"] = g1 > g2, g2 > g1
+            res = outcome(m)
+            m["win1"], m["win2"] = res == 0, res == 2
+            m["final1"], m["final2"] = final_score(m)
         else:
             m["win1"] = m["win2"] = False
         m["time_short"] = (m.get("time") or "").split(" ")[0]

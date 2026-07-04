@@ -117,6 +117,28 @@ def elo_update(e1, e2, g1, g2):
     return delta, we
 
 
+def final_score(m):
+    """Decisive goal tally: after extra time when it was played, else 90'."""
+    s = m["score"]
+    return s.get("et") or s["ft"]
+
+
+def decided_on(m):
+    """How the match was settled: "ft", "et" or "pen"."""
+    s = m["score"]
+    return "pen" if s.get("p") else "et" if s.get("et") else "ft"
+
+
+def outcome(m):
+    """0 = team1 won, 1 = draw, 2 = team2 won — extra time and pens included."""
+    s = m["score"]
+    if s.get("p"):
+        p1, p2 = s["p"]
+        return 0 if p1 > p2 else 2
+    g1, g2 = final_score(m)
+    return 0 if g1 > g2 else 2 if g2 > g1 else 1
+
+
 # ---------------------------------------------------------------- replay
 
 def replay_elo(matches):
@@ -132,7 +154,10 @@ def replay_elo(matches):
     for m in finished:
         e1, e2 = effective_elos(elo, m)
         pred = predict(e1, e2)
-        g1, g2 = m["score"]["ft"]
+        g1, g2 = final_score(m)
+        if m["score"].get("p"):  # shootout winner rated as a one-goal win
+            p1, p2 = m["score"]["p"]
+            g1, g2 = (g1 + 1, g2) if p1 > p2 else (g1, g2 + 1)
         delta, _ = elo_update(e1, e2, g1, g2)
         per_match[m["num"]] = {
             "prediction": pred,
@@ -345,18 +370,22 @@ def upsets_and_brier(matches, per_match):
         if not info or m["status"] != "finished" or not m.get("score"):
             continue
         pred = info["prediction"]
-        g1, g2 = m["score"]["ft"]
+        g1, g2 = m["score"]["ft"]  # the model prices the 90-minute result
         actual = [int(g1 > g2), int(g1 == g2), int(g1 < g2)]
         probs = [pred["p1"], pred["pd"], pred["p2"]]
         brier_terms.append(sum((p - a) ** 2 for p, a in zip(probs, actual)))
-        winner_prob = probs[0] if g1 > g2 else probs[2] if g2 > g1 else None
+        res = outcome(m)  # but an upset is about who actually went through
+        winner_prob = probs[0] if res == 0 else probs[2] if res == 2 else None
         if winner_prob is not None and winner_prob < 0.5:
-            winner = m["team1"] if g1 > g2 else m["team2"]
-            loser = m["team2"] if g1 > g2 else m["team1"]
+            winner = m["team1"] if res == 0 else m["team2"]
+            loser = m["team2"] if res == 0 else m["team1"]
+            f1, f2 = final_score(m)
+            how = decided_on(m)
             upsets.append({
                 "num": m["num"], "slug": m["slug"], "date": m["date"],
                 "winner": winner, "loser": loser,
-                "score": f"{g1}–{g2}",
+                "score": f"{f1}–{f2}" + (" (pens)" if how == "pen"
+                                         else " (aet)" if how == "et" else ""),
                 "win_prob": round(winner_prob, 3),
             })
     upsets.sort(key=lambda u: u["win_prob"])

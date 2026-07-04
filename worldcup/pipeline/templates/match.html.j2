@@ -11,10 +11,10 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="{{ m.team1 }} {{ m.score.ft[0] }}–{{ m.score.ft[1] }} {{ m.team2 }} — full match analytics: shot map, expected goals race, lineups, stats and model verdict.">
+    <meta name="description" content="{{ m.team1 }} {{ m.final1 }}–{{ m.final2 }} {{ m.team2 }} — full match analytics: shot map, expected goals race, lineups, stats and model verdict.">
     <link rel="icon" type="image/svg+xml" href="../../images/favicon.svg">
     <link rel="icon" type="image/png" sizes="32x32" href="../../images/favicon-32.png">
-    <title>{{ m.team1 }} {{ m.score.ft[0] }}–{{ m.score.ft[1] }} {{ m.team2 }} — World Cup 2026</title>
+    <title>{{ m.team1 }} {{ m.final1 }}–{{ m.final2 }} {{ m.team2 }} — World Cup 2026</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -40,7 +40,7 @@
                     <div class="name">{{ m.team1 }}</div>
                     {% if xg1 is not none %}<div class="xg">xG {{ "%.2f" | format(xg1) }}</div>{% endif %}
                 </div>
-                <div class="score"><span class="ft">{% if m.score.ht %}HT {{ m.score.ht[0] }}–{{ m.score.ht[1] }}{% else %}FULL TIME{% endif %}</span>{{ m.score.ft[0] }}&thinsp;–&thinsp;{{ m.score.ft[1] }}</div>
+                <div class="score"><span class="ft">{{ m.score_note }}</span>{{ m.final1 }}&thinsp;–&thinsp;{{ m.final2 }}</div>
                 <div class="team">
                     <div class="name">{{ m.team2 }}</div>
                     {% if xg2 is not none %}<div class="xg">xG {{ "%.2f" | format(xg2) }}</div>{% endif %}

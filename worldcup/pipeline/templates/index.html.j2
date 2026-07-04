@@ -55,11 +55,11 @@
                 <div class="fx-teams">
                     <div class="fx-row">
                         <span class="t{{ ' win' if m.win1 }}">{{ m.team1 }}</span>
-                        {% if m.score %}<span class="s">{{ m.score.ft[0] }}</span>{% endif %}
+                        {% if m.score %}<span class="s">{{ m.final1 }}</span>{% endif %}
                     </div>
                     <div class="fx-row">
                         <span class="t{{ ' win' if m.win2 }}">{{ m.team2 }}</span>
-                        {% if m.score %}<span class="s">{{ m.score.ft[1] }}</span>{% endif %}
+                        {% if m.score %}<span class="s">{{ m.final2 }}</span>{% endif %}
                     </div>
                 </div>
                 <div class="fx-meta">{{ m.group or m.round }}<br>{{ m.ground }}{% if m.has_page %}<br><span class="fx-arrow">match report &rarr;</span>{% endif %}</div>
