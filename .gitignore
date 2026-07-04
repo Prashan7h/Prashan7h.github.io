@@ -14,3 +14,4 @@
 
 # Test files
 test_*.html
+__pycache__/
