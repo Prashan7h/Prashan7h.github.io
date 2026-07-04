@@ -1,0 +1,1021 @@
+{
+ "teams": [
+  {
+   "name": "Colombia",
+   "stats": {
+    "possessionPct": "60.7",
+    "totalShots": "20",
+    "shotsOnTarget": "8",
+    "wonCorners": "3",
+    "foulsCommitted": "14",
+    "offsides": "2",
+    "saves": "0",
+    "yellowCards": "2",
+    "redCards": "0"
+   }
+  },
+  {
+   "name": "Ghana",
+   "stats": {
+    "possessionPct": "39.3",
+    "totalShots": "8",
+    "shotsOnTarget": "0",
+    "wonCorners": "2",
+    "foulsCommitted": "10",
+    "offsides": "0",
+    "saves": "7",
+    "yellowCards": "3",
+    "redCards": "0"
+   }
+  }
+ ],
+ "events": [
+  {
+   "type": "Kickoff",
+   "minute": "",
+   "team": null,
+   "text": "First Half begins.",
+   "players": []
+  },
+  {
+   "type": "Substitution",
+   "minute": "8'",
+   "team": "Colombia",
+   "text": "Substitution, Colombia. Luis Suárez replaces Jhon Córdoba because of an injury.",
+   "players": [
+    "Luis Suárez",
+    "Jhon Córdoba"
+   ]
+  },
+  {
+   "type": "Start Delay",
+   "minute": "9'",
+   "team": "Ghana",
+   "text": "Delay in match because of an injury Marvin Senaya (Ghana).",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "9'",
+   "team": "Colombia",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "10'",
+   "team": "Ghana",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "10'",
+   "team": "Colombia",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Yellow Card",
+   "minute": "12'",
+   "team": "Colombia",
+   "text": "Jhon Arias (Colombia) is shown the yellow card for a bad foul.",
+   "players": [
+    "Jhon Arias"
+   ]
+  },
+  {
+   "type": "Start Delay",
+   "minute": "12'",
+   "team": "Ghana",
+   "text": "Delay in match because of an injury Marvin Senaya (Ghana).",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "12'",
+   "team": "Colombia",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "13'",
+   "team": "Ghana",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "13'",
+   "team": "Colombia",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Substitution",
+   "minute": "13'",
+   "team": "Ghana",
+   "text": "Substitution, Ghana. Alidu Seidu replaces Marvin Senaya because of an injury.",
+   "players": [
+    "Alidu Seidu",
+    "Marvin Senaya"
+   ]
+  },
+  {
+   "type": "Goal",
+   "minute": "14'",
+   "team": "Colombia",
+   "text": "Goal! Colombia 1, Ghana 0. Jhon Arias (Colombia) right footed shot from the centre of the box to the bottom right corner. Assisted by Luis Suárez with a cross.",
+   "players": [
+    "Jhon Arias",
+    "Luis Suárez"
+   ]
+  },
+  {
+   "type": "Start Delay",
+   "minute": "24'",
+   "team": "Colombia",
+   "text": "Delay in match for a drinks break.",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "24'",
+   "team": "Ghana",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "27'",
+   "team": "Colombia",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "27'",
+   "team": "Ghana",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "45'+1'",
+   "team": "Ghana",
+   "text": "Delay in match because of an injury Alidu Seidu (Ghana).",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "45'+1'",
+   "team": "Colombia",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "45'+3'",
+   "team": "Ghana",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "45'+3'",
+   "team": "Colombia",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Halftime",
+   "minute": "45'+8'",
+   "team": null,
+   "text": "First Half ends, Colombia 1, Ghana 0.",
+   "players": []
+  },
+  {
+   "type": "Substitution",
+   "minute": "45'",
+   "team": "Colombia",
+   "text": "Substitution, Colombia. Richard Ríos replaces James Rodríguez.",
+   "players": [
+    "Richard Ríos",
+    "James Rodríguez"
+   ]
+  },
+  {
+   "type": "Start 2nd Half",
+   "minute": "45'",
+   "team": null,
+   "text": "Second Half begins Colombia 1, Ghana 0.",
+   "players": []
+  },
+  {
+   "type": "Yellow Card",
+   "minute": "49'",
+   "team": "Ghana",
+   "text": "Caleb Yirenkyi (Ghana) is shown the yellow card for a bad foul.",
+   "players": [
+    "Caleb Yirenkyi"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "62'",
+   "team": "Ghana",
+   "text": "Substitution, Ghana. Abdul Fatawu replaces Iñaki Williams.",
+   "players": [
+    "Fatawu Issahaku",
+    "Iñaki Williams"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "62'",
+   "team": "Ghana",
+   "text": "Substitution, Ghana. Elisha Owusu replaces Kwasi Sibo because of an injury.",
+   "players": [
+    "Elisha Owusu",
+    "Kwasi Sibo"
+   ]
+  },
+  {
+   "type": "Start Delay",
+   "minute": "65'",
+   "team": "Ghana",
+   "text": "Delay in match because of an injury Abdul Fatawu (Ghana).",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "65'",
+   "team": "Colombia",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "66'",
+   "team": "Ghana",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "66'",
+   "team": "Colombia",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Yellow Card",
+   "minute": "66'",
+   "team": "Ghana",
+   "text": "Abdul Fatawu (Ghana) is shown the yellow card.",
+   "players": [
+    "Fatawu Issahaku"
+   ]
+  },
+  {
+   "type": "Start Delay",
+   "minute": "69'",
+   "team": "Colombia",
+   "text": "Delay in match for a drinks break.",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "69'",
+   "team": "Ghana",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "72'",
+   "team": "Colombia",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "72'",
+   "team": "Ghana",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Substitution",
+   "minute": "73'",
+   "team": "Colombia",
+   "text": "Substitution, Colombia. Juan Fernando Quintero replaces Jhon Arias.",
+   "players": [
+    "Juan Fernando Quintero",
+    "Jhon Arias"
+   ]
+  },
+  {
+   "type": "Yellow Card",
+   "minute": "76'",
+   "team": "Ghana",
+   "text": "Alidu Seidu (Ghana) is shown the yellow card for a bad foul.",
+   "players": [
+    "Alidu Seidu"
+   ]
+  },
+  {
+   "type": "Yellow Card",
+   "minute": "78'",
+   "team": "Colombia",
+   "text": "Richard Ríos (Colombia) is shown the yellow card for a bad foul.",
+   "players": [
+    "Richard Ríos"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "79'",
+   "team": "Ghana",
+   "text": "Substitution, Ghana. Ernest Nuamah replaces Jordan Ayew.",
+   "players": [
+    "Ernest Nuamah",
+    "Jordan Ayew"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "79'",
+   "team": "Ghana",
+   "text": "Substitution, Ghana. Prince Adu replaces Caleb Yirenkyi.",
+   "players": [
+    "Prince Adu",
+    "Caleb Yirenkyi"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "90'",
+   "team": "Colombia",
+   "text": "Substitution, Colombia. Jaminton Campaz replaces Luis Díaz.",
+   "players": [
+    "Jáminton Campaz",
+    "Luis Díaz"
+   ]
+  },
+  {
+   "type": "Start Delay",
+   "minute": "90'+2'",
+   "team": "Ghana",
+   "text": "Delay in match because of an injury Gideon Mensah (Ghana).",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "90'+2'",
+   "team": "Colombia",
+   "text": "Delay in match because of an injury Richard Ríos (Colombia).",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "90'+3'",
+   "team": "Colombia",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "90'+3'",
+   "team": "Ghana",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "End Regular Time",
+   "minute": "90'+8'",
+   "team": null,
+   "text": "Second Half ends, Colombia 1, Ghana 0.",
+   "players": []
+  }
+ ],
+ "shots": [
+  {
+   "minute": "1",
+   "seconds": 55.0,
+   "team": "Ghana",
+   "player": "Thomas Partey",
+   "type": "Shot Off Target",
+   "x": 74.1,
+   "y": 47.9,
+   "goal": false,
+   "xg": 0.072,
+   "text": "Attempt missed. Thomas Partey (Ghana) right footed shot from outside the box is close, but misses to the left."
+  },
+  {
+   "minute": "14",
+   "seconds": 829.0,
+   "team": "Colombia",
+   "player": "Jhon Arias",
+   "type": "Goal",
+   "x": 92.3,
+   "y": 54.7,
+   "goal": true,
+   "xg": 0.48,
+   "text": "Goal! Colombia 1, Ghana 0. Jhon Arias (Colombia) right footed shot from the centre of the box to the bottom right corner. Assisted by Luis Suárez with a cross."
+  },
+  {
+   "minute": "20",
+   "seconds": 1189.0,
+   "team": "Colombia",
+   "player": "Luis Díaz",
+   "type": "Shot On Target",
+   "x": 76.7,
+   "y": 52.5,
+   "goal": false,
+   "xg": 0.092,
+   "text": "Attempt saved. Luis Díaz (Colombia) right footed shot from outside the box is saved in the centre of the goal by Lawrence Ati Zigi (Ghana). Assisted by Gustavo Puerta."
+  },
+  {
+   "minute": "34",
+   "seconds": 2034.0,
+   "team": "Ghana",
+   "player": "Iñaki Williams",
+   "type": "Shot Blocked",
+   "x": 88.1,
+   "y": 65.4,
+   "goal": false,
+   "xg": 0.174,
+   "text": "Attempt blocked. Iñaki Williams (Ghana) right footed shot from the left side of the box is blocked. Assisted by Caleb Yirenkyi."
+  },
+  {
+   "minute": "37",
+   "seconds": 2191.0,
+   "team": "Ghana",
+   "player": "Antoine Semenyo",
+   "type": "Shot Blocked",
+   "x": 76.2,
+   "y": 47.7,
+   "goal": false,
+   "xg": 0.088,
+   "text": "Attempt blocked. Antoine Semenyo (Ghana) right footed shot from outside the box is blocked. Assisted by Thomas Partey."
+  },
+  {
+   "minute": "39",
+   "seconds": 2290.0,
+   "team": "Colombia",
+   "player": "Luis Díaz",
+   "type": "Shot Off Target",
+   "x": 89.8,
+   "y": 60.6,
+   "goal": false,
+   "xg": 0.263,
+   "text": "Attempt missed. Luis Díaz (Colombia) right footed shot from the centre of the box is close, but misses to the left."
+  },
+  {
+   "minute": "40",
+   "seconds": 2356.0,
+   "team": "Ghana",
+   "player": "Iñaki Williams",
+   "type": "Shot Off Target",
+   "x": 77.4,
+   "y": 28.4,
+   "goal": false,
+   "xg": 0.063,
+   "text": "Attempt missed. Iñaki Williams (Ghana) left footed shot from outside the box is high and wide to the left. Assisted by Antoine Semenyo."
+  },
+  {
+   "minute": "42",
+   "seconds": 2477.0,
+   "team": "Colombia",
+   "player": "Luis Suárez",
+   "type": "Shot Off Target",
+   "x": 86.7,
+   "y": 40.9,
+   "goal": false,
+   "xg": 0.14,
+   "text": "Attempt missed. Luis Suárez (Colombia) header from the centre of the box misses to the right. Assisted by Jefferson Lerma with a cross."
+  },
+  {
+   "minute": "44",
+   "seconds": 2626.0,
+   "team": "Ghana",
+   "player": "Antoine Semenyo",
+   "type": "Shot Blocked",
+   "x": 78.8,
+   "y": 66.6,
+   "goal": false,
+   "xg": 0.083,
+   "text": "Attempt blocked. Antoine Semenyo (Ghana) right footed shot from outside the box is blocked. Assisted by Gideon Mensah."
+  },
+  {
+   "minute": "44",
+   "seconds": 2627.0,
+   "team": "Ghana",
+   "player": "Iñaki Williams",
+   "type": "Shot Blocked",
+   "x": 83.5,
+   "y": 52.2,
+   "goal": false,
+   "xg": 0.183,
+   "text": "Attempt blocked. Iñaki Williams (Ghana) left footed shot from the centre of the box is blocked."
+  },
+  {
+   "minute": "45'+1",
+   "seconds": 2700.0,
+   "team": "Colombia",
+   "player": "Johan Mojica",
+   "type": "Shot On Target",
+   "x": 94.9,
+   "y": 53.6,
+   "goal": false,
+   "xg": 0.451,
+   "text": "Attempt saved. Johan Mojica (Colombia) header from very close range is saved in the bottom left corner by Lawrence Ati Zigi (Ghana). Assisted by Daniel Muñoz with a cross."
+  },
+  {
+   "minute": "48",
+   "seconds": 2859.0,
+   "team": "Colombia",
+   "player": "Richard Ríos",
+   "type": "Shot Off Target",
+   "x": 85.0,
+   "y": 24.4,
+   "goal": false,
+   "xg": 0.083,
+   "text": "Attempt missed. Richard Ríos (Colombia) right footed shot from the right side of the box misses to the left. Assisted by Jhon Arias."
+  },
+  {
+   "minute": "55",
+   "seconds": 3263.0,
+   "team": "Colombia",
+   "player": "Gustavo Puerta",
+   "type": "Shot On Target",
+   "x": 87.6,
+   "y": 76.9,
+   "goal": false,
+   "xg": 0.086,
+   "text": "Attempt saved. Gustavo Puerta (Colombia) right footed shot from the left side of the box is saved in the bottom right corner by Lawrence Ati Zigi (Ghana). Assisted by Luis Díaz."
+  },
+  {
+   "minute": "56",
+   "seconds": 3306.0,
+   "team": "Colombia",
+   "player": "Davinson Sánchez",
+   "type": "Shot Off Target",
+   "x": 79.1,
+   "y": 32.8,
+   "goal": false,
+   "xg": 0.084,
+   "text": "Attempt missed. Davinson Sánchez (Colombia) right footed shot from outside the box is too high."
+  },
+  {
+   "minute": "58",
+   "seconds": 3440.0,
+   "team": "Colombia",
+   "player": "Luis Díaz",
+   "type": "Shot On Target",
+   "x": 88.0,
+   "y": 57.7,
+   "goal": false,
+   "xg": 0.26,
+   "text": "Attempt saved. Luis Díaz (Colombia) right footed shot from the centre of the box is saved in the centre of the goal by Lawrence Ati Zigi (Ghana). Assisted by Gustavo Puerta."
+  },
+  {
+   "minute": "69",
+   "seconds": 4123.0,
+   "team": "Ghana",
+   "player": "Antoine Semenyo",
+   "type": "Shot Blocked",
+   "x": 75.4,
+   "y": 53.6,
+   "goal": false,
+   "xg": 0.081,
+   "text": "Attempt blocked. Antoine Semenyo (Ghana) left footed shot from outside the box is blocked. Assisted by Elisha Owusu."
+  },
+  {
+   "minute": "69",
+   "seconds": 4125.0,
+   "team": "Ghana",
+   "player": "Thomas Partey",
+   "type": "Shot Off Target",
+   "x": 76.5,
+   "y": 63.6,
+   "goal": false,
+   "xg": 0.075,
+   "text": "Attempt missed. Thomas Partey (Ghana) right footed shot from outside the box is close, but misses to the left."
+  },
+  {
+   "minute": "77",
+   "seconds": 4565.0,
+   "team": "Colombia",
+   "player": "Juan Fernando Quintero",
+   "type": "Shot Off Target",
+   "x": 70.7,
+   "y": 70.0,
+   "goal": false,
+   "xg": 0.04,
+   "text": "Attempt missed. Juan Fernando Quintero (Colombia) left footed shot from outside the box is too high from a direct free kick."
+  },
+  {
+   "minute": "80",
+   "seconds": 4765.0,
+   "team": "Colombia",
+   "player": "Luis Díaz",
+   "type": "Shot Blocked",
+   "x": 80.5,
+   "y": 66.1,
+   "goal": false,
+   "xg": 0.097,
+   "text": "Attempt blocked. Luis Díaz (Colombia) right footed shot from outside the box is blocked."
+  },
+  {
+   "minute": "81",
+   "seconds": 4812.0,
+   "team": "Colombia",
+   "player": "Davinson Sánchez",
+   "type": "Shot On Target",
+   "x": 93.4,
+   "y": 52.8,
+   "goal": false,
+   "xg": 0.388,
+   "text": "Attempt saved. Davinson Sánchez (Colombia) header from the centre of the box is saved in the centre of the goal by Lawrence Ati Zigi (Ghana). Assisted by Juan Fernando Quintero with a cross."
+  },
+  {
+   "minute": "84",
+   "seconds": 5017.0,
+   "team": "Colombia",
+   "player": "Juan Fernando Quintero",
+   "type": "Shot Off Target",
+   "x": 73.8,
+   "y": 34.0,
+   "goal": false,
+   "xg": 0.057,
+   "text": "Attempt missed. Juan Fernando Quintero (Colombia) left footed shot from outside the box is close, but misses to the right. Assisted by Davinson Sánchez."
+  },
+  {
+   "minute": "87",
+   "seconds": 5171.0,
+   "team": "Colombia",
+   "player": "Luis Díaz",
+   "type": "Shot Blocked",
+   "x": 90.5,
+   "y": 69.5,
+   "goal": false,
+   "xg": 0.149,
+   "text": "Attempt blocked. Luis Díaz (Colombia) right footed shot from the left side of the box is blocked. Assisted by Juan Fernando Quintero."
+  },
+  {
+   "minute": "90'+2",
+   "seconds": 5400.0,
+   "team": "Colombia",
+   "player": "Richard Ríos",
+   "type": "Shot Off Target",
+   "x": 95.2,
+   "y": 46.6,
+   "goal": false,
+   "xg": 0.472,
+   "text": "Attempt missed. Richard Ríos (Colombia) header from very close range misses to the left. Assisted by Juan Fernando Quintero with a cross."
+  },
+  {
+   "minute": "90'+5",
+   "seconds": 5400.0,
+   "team": "Colombia",
+   "player": "Jaminton Campaz",
+   "type": "Shot Off Target",
+   "x": 96.4,
+   "y": 64.8,
+   "goal": false,
+   "xg": 0.21,
+   "text": "Attempt missed. Jaminton Campaz (Colombia) left footed shot from a difficult angle on the left is close, but misses the top left corner. Assisted by Juan Fernando Quintero."
+  },
+  {
+   "minute": "90'+5",
+   "seconds": 5400.0,
+   "team": "Colombia",
+   "player": "Luis Suárez",
+   "type": "Shot Blocked",
+   "x": 88.6,
+   "y": 66.2,
+   "goal": false,
+   "xg": 0.171,
+   "text": "Attempt blocked. Luis Suárez (Colombia) right footed shot from the left side of the box is blocked. Assisted by Jaminton Campaz."
+  },
+  {
+   "minute": "90'+5",
+   "seconds": 5400.0,
+   "team": "Colombia",
+   "player": "Gustavo Puerta",
+   "type": "Shot Blocked",
+   "x": 72.2,
+   "y": 66.4,
+   "goal": false,
+   "xg": 0.049,
+   "text": "Attempt blocked. Gustavo Puerta (Colombia) right footed shot from outside the box is blocked."
+  },
+  {
+   "minute": "90'+6",
+   "seconds": 5400.0,
+   "team": "Colombia",
+   "player": "Richard Ríos",
+   "type": "Shot On Target",
+   "x": 81.5,
+   "y": 19.2,
+   "goal": false,
+   "xg": 0.054,
+   "text": "Attempt saved. Richard Ríos (Colombia) right footed shot from long range on the right is saved in the bottom right corner by Lawrence Ati Zigi (Ghana). Assisted by Juan Fernando Quintero."
+  },
+  {
+   "minute": "90'+6",
+   "seconds": 5400.0,
+   "team": "Colombia",
+   "player": "Jaminton Campaz",
+   "type": "Shot On Target",
+   "x": 89.5,
+   "y": 81.6,
+   "goal": false,
+   "xg": 0.069,
+   "text": "Attempt saved. Jaminton Campaz (Colombia) left footed shot from a difficult angle and long range on the left is saved in the top left corner by Lawrence Ati Zigi (Ghana). Assisted by Jhon Lucumí with a headed pass."
+  }
+ ],
+ "lineups": [
+  {
+   "team": "Colombia",
+   "formation": "4-3-3",
+   "starters": [
+    {
+     "name": "Camilo Vargas",
+     "jersey": "12",
+     "position": "G"
+    },
+    {
+     "name": "Jhon Lucumí",
+     "jersey": "3",
+     "position": "CD-L"
+    },
+    {
+     "name": "Davinson Sánchez",
+     "jersey": "23",
+     "position": "CD-R"
+    },
+    {
+     "name": "Johan Mojica",
+     "jersey": "17",
+     "position": "LB"
+    },
+    {
+     "name": "Daniel Muñoz",
+     "jersey": "2",
+     "position": "RB"
+    },
+    {
+     "name": "Jefferson Lerma",
+     "jersey": "16",
+     "position": "CM"
+    },
+    {
+     "name": "Jhon Arias",
+     "jersey": "11",
+     "position": "LM"
+    },
+    {
+     "name": "Gustavo Puerta",
+     "jersey": "14",
+     "position": "RM"
+    },
+    {
+     "name": "Jhon Córdoba",
+     "jersey": "9",
+     "position": "F"
+    },
+    {
+     "name": "Luis Díaz",
+     "jersey": "7",
+     "position": "LF"
+    },
+    {
+     "name": "James Rodríguez",
+     "jersey": "10",
+     "position": "RF"
+    }
+   ],
+   "subs": [
+    {
+     "name": "Willer Ditta",
+     "jersey": "18",
+     "position": "SUB"
+    },
+    {
+     "name": "Kevin Castaño",
+     "jersey": "5",
+     "position": "SUB"
+    },
+    {
+     "name": "David Ospina",
+     "jersey": "1",
+     "position": "SUB"
+    },
+    {
+     "name": "Álvaro Montero",
+     "jersey": "24",
+     "position": "SUB"
+    },
+    {
+     "name": "Deiver Machado",
+     "jersey": "22",
+     "position": "SUB"
+    },
+    {
+     "name": "Luis Suárez",
+     "jersey": "25",
+     "position": "SUB"
+    },
+    {
+     "name": "Andrés Gómez",
+     "jersey": "26",
+     "position": "SUB"
+    },
+    {
+     "name": "Jorge Carrascal",
+     "jersey": "8",
+     "position": "SUB"
+    },
+    {
+     "name": "Cucho Hernández",
+     "jersey": "19",
+     "position": "SUB"
+    },
+    {
+     "name": "Juan Fernando Quintero",
+     "jersey": "20",
+     "position": "SUB"
+    },
+    {
+     "name": "Richard Ríos",
+     "jersey": "6",
+     "position": "SUB"
+    },
+    {
+     "name": "Juan Portilla",
+     "jersey": "15",
+     "position": "SUB"
+    },
+    {
+     "name": "Yerry Mina",
+     "jersey": "13",
+     "position": "SUB"
+    },
+    {
+     "name": "Santiago Arias",
+     "jersey": "4",
+     "position": "SUB"
+    },
+    {
+     "name": "Jáminton Campaz",
+     "jersey": "21",
+     "position": "SUB"
+    }
+   ]
+  },
+  {
+   "team": "Ghana",
+   "formation": "4-1-4-1",
+   "starters": [
+    {
+     "name": "Lawrence Ati Zigi",
+     "jersey": "1",
+     "position": "G"
+    },
+    {
+     "name": "Jerome Opoku",
+     "jersey": "18",
+     "position": "CD-L"
+    },
+    {
+     "name": "Derrick Luckassen",
+     "jersey": "23",
+     "position": "CD-R"
+    },
+    {
+     "name": "Thomas Partey",
+     "jersey": "5",
+     "position": "DM"
+    },
+    {
+     "name": "Gideon Mensah",
+     "jersey": "14",
+     "position": "LB"
+    },
+    {
+     "name": "Marvin Senaya",
+     "jersey": "26",
+     "position": "RB"
+    },
+    {
+     "name": "Kwasi Sibo",
+     "jersey": "8",
+     "position": "CM-L"
+    },
+    {
+     "name": "Caleb Yirenkyi",
+     "jersey": "3",
+     "position": "CM-R"
+    },
+    {
+     "name": "Antoine Semenyo",
+     "jersey": "11",
+     "position": "LM"
+    },
+    {
+     "name": "Iñaki Williams",
+     "jersey": "19",
+     "position": "RM"
+    },
+    {
+     "name": "Jordan Ayew",
+     "jersey": "9",
+     "position": "F"
+    }
+   ],
+   "subs": [
+    {
+     "name": "Abdul Mumin",
+     "jersey": "6",
+     "position": "SUB"
+    },
+    {
+     "name": "Prince Adu",
+     "jersey": "25",
+     "position": "SUB"
+    },
+    {
+     "name": "Kojo Peprah Oppong",
+     "jersey": "21",
+     "position": "SUB"
+    },
+    {
+     "name": "Alidu Seidu",
+     "jersey": "2",
+     "position": "SUB"
+    },
+    {
+     "name": "Baba Rahman",
+     "jersey": "17",
+     "position": "SUB"
+    },
+    {
+     "name": "Elisha Owusu",
+     "jersey": "15",
+     "position": "SUB"
+    },
+    {
+     "name": "Jonas Adjetey",
+     "jersey": "4",
+     "position": "SUB"
+    },
+    {
+     "name": "Augustine Boakye",
+     "jersey": "20",
+     "position": "SUB"
+    },
+    {
+     "name": "Brandon Thomas-Asante",
+     "jersey": "10",
+     "position": "SUB"
+    },
+    {
+     "name": "Christopher Bonsu Baah",
+     "jersey": "13",
+     "position": "SUB"
+    },
+    {
+     "name": "Ernest Nuamah",
+     "jersey": "24",
+     "position": "SUB"
+    },
+    {
+     "name": "Benjamin Asare",
+     "jersey": "16",
+     "position": "SUB"
+    },
+    {
+     "name": "Kamaldeen Sulemana",
+     "jersey": "22",
+     "position": "SUB"
+    },
+    {
+     "name": "Joseph Anang",
+     "jersey": "12",
+     "position": "SUB"
+    },
+    {
+     "name": "Fatawu Issahaku",
+     "jersey": "7",
+     "position": "SUB"
+    }
+   ]
+  }
+ ],
+ "attendance": 69045,
+ "venue": "GEHA Field at Arrowhead Stadium, Kansas City, Missouri, USA"
+}
