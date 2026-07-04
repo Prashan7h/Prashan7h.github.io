@@ -3539,12 +3539,49 @@
    "team2": "Cape Verde",
    "group": null,
    "ground": "Miami (Miami Gardens)",
-   "score": null,
-   "goals1": [],
-   "goals2": [],
+   "score": {
+    "et": [
+     3,
+     2
+    ],
+    "ft": [
+     1,
+     1
+    ],
+    "ht": [
+     1,
+     0
+    ]
+   },
+   "goals1": [
+    {
+     "name": "Lionel Messi",
+     "minute": "29"
+    },
+    {
+     "name": "Lisandro Martínez",
+     "minute": "92"
+    },
+    {
+     "name": "Diney Borges",
+     "minute": "111",
+     "owngoal": true
+    }
+   ],
+   "goals2": [
+    {
+     "name": "Deroy Duarte",
+     "minute": "59"
+    },
+    {
+     "name": "Sidny Lopes Cabral",
+     "minute": "103"
+    }
+   ],
    "espn_id": "760500",
-   "status": "scheduled",
+   "status": "finished",
    "utc_date": "2026-07-03T22:00Z",
+   "attendance": 64478,
    "venue": "Hard Rock Stadium",
    "slug": "2026-07-03-argentina-vs-cape-verde"
   },
@@ -3561,7 +3598,7 @@
    "goals1": [],
    "goals2": [],
    "espn_id": "760501",
-   "status": "scheduled",
+   "status": "live",
    "utc_date": "2026-07-04T01:30Z",
    "venue": "GEHA Field at Arrowhead Stadium",
    "slug": "2026-07-03-colombia-vs-ghana"
@@ -3575,12 +3612,41 @@
    "team2": "Egypt",
    "group": null,
    "ground": "Dallas (Arlington)",
-   "score": null,
-   "goals1": [],
-   "goals2": [],
+   "score": {
+    "p": [
+     2,
+     4
+    ],
+    "et": [
+     1,
+     1
+    ],
+    "ft": [
+     1,
+     1
+    ],
+    "ht": [
+     0,
+     1
+    ]
+   },
+   "goals1": [
+    {
+     "name": "Mohamed Hany",
+     "minute": "55",
+     "owngoal": true
+    }
+   ],
+   "goals2": [
+    {
+     "name": "Emam Ashour",
+     "minute": "13"
+    }
+   ],
    "espn_id": "760499",
-   "status": "live",
+   "status": "finished",
    "utc_date": "2026-07-03T18:00Z",
+   "attendance": 70244,
    "venue": "AT&T Stadium",
    "slug": "2026-07-03-australia-vs-egypt"
   },
