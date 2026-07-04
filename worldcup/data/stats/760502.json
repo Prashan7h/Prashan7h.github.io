@@ -1,0 +1,833 @@
+{
+ "teams": [
+  {
+   "name": "Canada",
+   "stats": {
+    "possessionPct": "44.6",
+    "totalShots": "10",
+    "shotsOnTarget": "3",
+    "wonCorners": "11",
+    "foulsCommitted": "24",
+    "offsides": "2",
+    "saves": "1",
+    "yellowCards": "4",
+    "redCards": "0"
+   }
+  },
+  {
+   "name": "Morocco",
+   "stats": {
+    "possessionPct": "55.4",
+    "totalShots": "5",
+    "shotsOnTarget": "4",
+    "wonCorners": "1",
+    "foulsCommitted": "14",
+    "offsides": "3",
+    "saves": "3",
+    "yellowCards": "4",
+    "redCards": "0"
+   }
+  }
+ ],
+ "events": [
+  {
+   "type": "Kickoff",
+   "minute": "",
+   "team": null,
+   "text": "First Half begins.",
+   "players": []
+  },
+  {
+   "type": "Yellow Card",
+   "minute": "20'",
+   "team": "Morocco",
+   "text": "Redouane Halhal (Morocco) is shown the yellow card for a bad foul.",
+   "players": [
+    "Redouane Halhal"
+   ]
+  },
+  {
+   "type": "Start Delay",
+   "minute": "21'",
+   "team": "Morocco",
+   "text": "Delay in match because of an injury Ismael Saibari (Morocco).",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "21'",
+   "team": "Canada",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "22'",
+   "team": "Morocco",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "22'",
+   "team": "Canada",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Substitution",
+   "minute": "22'",
+   "team": "Morocco",
+   "text": "Substitution, Morocco. Soufiane Rahimi replaces Ismael Saibari because of an injury.",
+   "players": [
+    "Soufiane Rahimi",
+    "Ismael Saibari"
+   ]
+  },
+  {
+   "type": "Start Delay",
+   "minute": "24'",
+   "team": "Morocco",
+   "text": "Delay in match for a drinks break.",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "24'",
+   "team": "Canada",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "27'",
+   "team": "Morocco",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "27'",
+   "team": "Canada",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Yellow Card",
+   "minute": "40'",
+   "team": "Morocco",
+   "text": "Achraf Hakimi (Morocco) is shown the yellow card.",
+   "players": [
+    "Achraf Hakimi"
+   ]
+  },
+  {
+   "type": "Yellow Card",
+   "minute": "40'",
+   "team": "Canada",
+   "text": "Richie Laryea (Canada) is shown the yellow card.",
+   "players": [
+    "Richie Laryea"
+   ]
+  },
+  {
+   "type": "Yellow Card",
+   "minute": "43'",
+   "team": "Canada",
+   "text": "Jonathan David (Canada) is shown the yellow card for a bad foul.",
+   "players": [
+    "Jonathan David"
+   ]
+  },
+  {
+   "type": "Yellow Card",
+   "minute": "45'",
+   "team": "Morocco",
+   "text": "Azzedine Ounahi (Morocco) is shown the yellow card for a bad foul.",
+   "players": [
+    "Azzedine Ounahi"
+   ]
+  },
+  {
+   "type": "Yellow Card",
+   "minute": "45'+6'",
+   "team": "Morocco",
+   "text": "Bilal El Khannouss (Morocco) is shown the yellow card for a bad foul.",
+   "players": [
+    "Bilal El Khannouss"
+   ]
+  },
+  {
+   "type": "Halftime",
+   "minute": "45'+7'",
+   "team": null,
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Start 2nd Half",
+   "minute": "45'",
+   "team": null,
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Yellow Card",
+   "minute": "49'",
+   "team": "Canada",
+   "text": "Luc De Fougerolles (Canada) is shown the yellow card for a bad foul.",
+   "players": [
+    "Luc de Fougerolles"
+   ]
+  },
+  {
+   "type": "Goal",
+   "minute": "50'",
+   "team": "Morocco",
+   "text": "Goal! Canada 0, Morocco 1. Azzedine Ounahi (Morocco) right footed shot from outside the box to the bottom right corner. Assisted by Achraf Hakimi following a set piece situation.",
+   "players": [
+    "Azzedine Ounahi",
+    "Achraf Hakimi"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "63'",
+   "team": "Morocco",
+   "text": "Substitution, Morocco. Chemsdine Talbi replaces Bilal El Khannouss.",
+   "players": [
+    "Chemsdine Talbi",
+    "Bilal El Khannouss"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "63'",
+   "team": "Morocco",
+   "text": "Substitution, Morocco. Sofyan Amrabat replaces Ayyoub Bouaddi.",
+   "players": [
+    "Sofyan Amrabat",
+    "Ayyoub Bouaddi"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "63'",
+   "team": "Canada",
+   "text": "Substitution, Canada. Cyle Larin replaces Tani Oluwaseyi.",
+   "players": [
+    "Cyle Larin",
+    "Tani Oluwaseyi"
+   ]
+  },
+  {
+   "type": "Yellow Card",
+   "minute": "67'",
+   "team": "Canada",
+   "text": "Cyle Larin (Canada) is shown the yellow card for a bad foul.",
+   "players": [
+    "Cyle Larin"
+   ]
+  },
+  {
+   "type": "Start Delay",
+   "minute": "68'",
+   "team": "Morocco",
+   "text": "Delay in match for a drinks break.",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "68'",
+   "team": "Canada",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "71'",
+   "team": "Morocco",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "71'",
+   "team": "Canada",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Substitution",
+   "minute": "78'",
+   "team": "Canada",
+   "text": "Substitution, Canada. Promise David replaces Ali Ahmed.",
+   "players": [
+    "Promise David",
+    "Ali Ahmed"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "78'",
+   "team": "Canada",
+   "text": "Substitution, Canada. Jacob Shaffelburg replaces Richie Laryea.",
+   "players": [
+    "Jacob Shaffelburg",
+    "Richie Laryea"
+   ]
+  },
+  {
+   "type": "Goal",
+   "minute": "82'",
+   "team": "Morocco",
+   "text": "Goal! Canada 0, Morocco 2. Azzedine Ounahi (Morocco) right footed shot from the centre of the box to the top right corner. Assisted by Brahim Díaz following a fast break.",
+   "players": [
+    "Azzedine Ounahi",
+    "Brahim Díaz"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "87'",
+   "team": "Morocco",
+   "text": "Substitution, Morocco. Marwane Saadane replaces Issa Diop.",
+   "players": [
+    "Marwane Saadane",
+    "Issa Diop"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "87'",
+   "team": "Morocco",
+   "text": "Substitution, Morocco. Samir El Mourabet replaces Azzedine Ounahi.",
+   "players": [
+    "Samir El Mourabet",
+    "Azzedine Ounahi"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "87'",
+   "team": "Canada",
+   "text": "Substitution, Canada. Jonathan Osorio replaces Niko Sigur.",
+   "players": [
+    "Jonathan Osorio",
+    "Niko Sigur"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "87'",
+   "team": "Canada",
+   "text": "Substitution, Canada. Jayden Nelson replaces Tajon Buchanan.",
+   "players": [
+    "Jayden Nelson",
+    "Tajon Buchanan"
+   ]
+  },
+  {
+   "type": "Start Delay",
+   "minute": "88'",
+   "team": "Canada",
+   "text": "Delay in match because of an injury Promise David (Canada).",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "88'",
+   "team": "Morocco",
+   "text": "Delay in match because of an injury Yassine Bounou (Morocco).",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "89'",
+   "team": "Morocco",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "89'",
+   "team": "Canada",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Goal",
+   "minute": "90'+8'",
+   "team": "Morocco",
+   "text": "Goal! Canada 0, Morocco 3. Soufiane Rahimi (Morocco) left footed shot from the centre of the box to the bottom right corner. Assisted by Brahim Díaz following a fast break.",
+   "players": [
+    "Soufiane Rahimi",
+    "Brahim Díaz"
+   ]
+  },
+  {
+   "type": "End Regular Time",
+   "minute": "90'+10'",
+   "team": null,
+   "text": "",
+   "players": []
+  }
+ ],
+ "shots": [
+  {
+   "minute": "5",
+   "seconds": 280.0,
+   "team": "Canada",
+   "player": "Jonathan David",
+   "type": "Shot On Target",
+   "x": 97.0,
+   "y": 65.1,
+   "goal": false,
+   "xg": 0.195,
+   "text": "Attempt saved. Jonathan David (Canada) left footed shot from a difficult angle on the left is saved in the bottom left corner by Yassine Bounou (Morocco). Assisted by Luc De Fougerolles with a headed pass."
+  },
+  {
+   "minute": "10",
+   "seconds": 597.0,
+   "team": "Canada",
+   "player": "Tani Oluwaseyi",
+   "type": "Shot On Target",
+   "x": 89.0,
+   "y": 55.5,
+   "goal": false,
+   "xg": 0.316,
+   "text": "Attempt saved. Tani Oluwaseyi (Canada) left footed shot from the centre of the box is saved in the centre of the goal by Yassine Bounou (Morocco). Assisted by Ali Ahmed."
+  },
+  {
+   "minute": "11",
+   "seconds": 602.0,
+   "team": "Canada",
+   "player": "Tani Oluwaseyi",
+   "type": "Shot Off Target",
+   "x": 88.4,
+   "y": 59.9,
+   "goal": false,
+   "xg": 0.244,
+   "text": "Attempt missed. Tani Oluwaseyi (Canada) left footed shot from the centre of the box misses to the right."
+  },
+  {
+   "minute": "18",
+   "seconds": 1079.0,
+   "team": "Canada",
+   "player": "Alistair Johnston",
+   "type": "Shot Blocked",
+   "x": 89.3,
+   "y": 46.6,
+   "goal": false,
+   "xg": 0.227,
+   "text": "Attempt blocked. Alistair Johnston (Canada) header from the centre of the box is blocked. Assisted by Stephen Eustaquio with a cross."
+  },
+  {
+   "minute": "28",
+   "seconds": 1680.0,
+   "team": "Morocco",
+   "player": "Soufiane Rahimi",
+   "type": "Shot On Target",
+   "x": 73.1,
+   "y": 53.4,
+   "goal": false,
+   "xg": 0.065,
+   "text": "Attempt saved. Soufiane Rahimi (Morocco) right footed shot from outside the box is saved in the bottom left corner by Maxime Crépeau (Canada). Assisted by Bilal El Khannouss."
+  },
+  {
+   "minute": "49",
+   "seconds": 2890.0,
+   "team": "Canada",
+   "player": "Luc De Fougerolles",
+   "type": "Shot Off Target",
+   "x": 89.0,
+   "y": 46.9,
+   "goal": false,
+   "xg": 0.339,
+   "text": "Attempt missed. Luc De Fougerolles (Canada) right footed shot from the centre of the box is too high. Assisted by Niko Sigur with a cross following a corner."
+  },
+  {
+   "minute": "50",
+   "seconds": 2959.0,
+   "team": "Morocco",
+   "player": "Azzedine Ounahi",
+   "type": "Goal",
+   "x": 81.9,
+   "y": 47.7,
+   "goal": true,
+   "xg": 0.155,
+   "text": "Goal! Canada 0, Morocco 1. Azzedine Ounahi (Morocco) right footed shot from outside the box to the bottom right corner. Assisted by Achraf Hakimi following a set piece situation."
+  },
+  {
+   "minute": "78",
+   "seconds": 4650.0,
+   "team": "Canada",
+   "player": "Jonathan David",
+   "type": "Shot Off Target",
+   "x": 82.2,
+   "y": 51.1,
+   "goal": false,
+   "xg": 0.161,
+   "text": "Attempt missed. Jonathan David (Canada) right footed shot from outside the box is just a bit too high from a direct free kick."
+  },
+  {
+   "minute": "79",
+   "seconds": 4714.0,
+   "team": "Canada",
+   "player": "Tajon Buchanan",
+   "type": "Shot On Target",
+   "x": 70.8,
+   "y": 58.8,
+   "goal": false,
+   "xg": 0.05,
+   "text": "Attempt saved. Tajon Buchanan (Canada) right footed shot from outside the box is saved in the bottom left corner by Yassine Bounou (Morocco). Assisted by Jacob Shaffelburg."
+  },
+  {
+   "minute": "82",
+   "seconds": 4880.0,
+   "team": "Morocco",
+   "player": "Azzedine Ounahi",
+   "type": "Goal",
+   "x": 86.2,
+   "y": 43.1,
+   "goal": true,
+   "xg": 0.223,
+   "text": "Goal! Canada 0, Morocco 2. Azzedine Ounahi (Morocco) right footed shot from the centre of the box to the top right corner. Assisted by Brahim Díaz following a fast break."
+  },
+  {
+   "minute": "84",
+   "seconds": 5014.0,
+   "team": "Canada",
+   "player": "Jonathan David",
+   "type": "Shot Blocked",
+   "x": 78.6,
+   "y": 68.9,
+   "goal": false,
+   "xg": 0.076,
+   "text": "Attempt blocked. Jonathan David (Canada) left footed shot from outside the box is blocked. Assisted by Stephen Eustaquio."
+  },
+  {
+   "minute": "85",
+   "seconds": 5074.0,
+   "team": "Morocco",
+   "player": null,
+   "type": "Shot Hit Woodwork",
+   "x": 88.3,
+   "y": 49.3,
+   "goal": false,
+   "xg": 0.209,
+   "text": "Soufiane Rahimi (Morocco) hits the bar with a header from the centre of the box. Assisted by Azzedine Ounahi with a cross following a fast break."
+  },
+  {
+   "minute": "90",
+   "seconds": 5377.0,
+   "team": "Canada",
+   "player": "Jonathan Osorio",
+   "type": "Shot Blocked",
+   "x": 85.4,
+   "y": 37.3,
+   "goal": false,
+   "xg": 0.165,
+   "text": "Attempt blocked. Jonathan Osorio (Canada) right footed shot from the centre of the box is blocked. Assisted by Promise David with a headed pass."
+  },
+  {
+   "minute": "90'+6",
+   "seconds": 5400.0,
+   "team": "Canada",
+   "player": "Jayden Nelson",
+   "type": "Shot Off Target",
+   "x": 78.0,
+   "y": 61.0,
+   "goal": false,
+   "xg": 0.092,
+   "text": "Attempt missed. Jayden Nelson (Canada) right footed shot from outside the box is close, but misses to the left. Assisted by Stephen Eustaquio following a set piece situation."
+  },
+  {
+   "minute": "90'+8",
+   "seconds": 5400.0,
+   "team": "Morocco",
+   "player": "Soufiane Rahimi",
+   "type": "Goal",
+   "x": 87.2,
+   "y": 60.5,
+   "goal": true,
+   "xg": 0.213,
+   "text": "Goal! Canada 0, Morocco 3. Soufiane Rahimi (Morocco) left footed shot from the centre of the box to the bottom right corner. Assisted by Brahim Díaz following a fast break."
+  }
+ ],
+ "lineups": [
+  {
+   "team": "Canada",
+   "formation": "4-4-2",
+   "starters": [
+    {
+     "name": "Maxime Crépeau",
+     "jersey": "16",
+     "position": "G"
+    },
+    {
+     "name": "Luc de Fougerolles",
+     "jersey": "4",
+     "position": "CD-L"
+    },
+    {
+     "name": "Moïse Bombito",
+     "jersey": "15",
+     "position": "CD-R"
+    },
+    {
+     "name": "Richie Laryea",
+     "jersey": "22",
+     "position": "LB"
+    },
+    {
+     "name": "Alistair Johnston",
+     "jersey": "2",
+     "position": "RB"
+    },
+    {
+     "name": "Stephen Eustáquio",
+     "jersey": "7",
+     "position": "CM-L"
+    },
+    {
+     "name": "Niko Sigur",
+     "jersey": "23",
+     "position": "CM-R"
+    },
+    {
+     "name": "Ali Ahmed",
+     "jersey": "20",
+     "position": "LM"
+    },
+    {
+     "name": "Tajon Buchanan",
+     "jersey": "17",
+     "position": "RM"
+    },
+    {
+     "name": "Tani Oluwaseyi",
+     "jersey": "12",
+     "position": "CF-L"
+    },
+    {
+     "name": "Jonathan David",
+     "jersey": "10",
+     "position": "CF-R"
+    }
+   ],
+   "subs": [
+    {
+     "name": "Alfie Jones",
+     "jersey": "3",
+     "position": "SUB"
+    },
+    {
+     "name": "Dayne St. Clair",
+     "jersey": "1",
+     "position": "SUB"
+    },
+    {
+     "name": "Joel Waterman",
+     "jersey": "5",
+     "position": "SUB"
+    },
+    {
+     "name": "Alphonso Davies",
+     "jersey": "19",
+     "position": "SUB"
+    },
+    {
+     "name": "Promise David",
+     "jersey": "24",
+     "position": "SUB"
+    },
+    {
+     "name": "Liam Millar",
+     "jersey": "11",
+     "position": "SUB"
+    },
+    {
+     "name": "Derek Cornelius",
+     "jersey": "13",
+     "position": "SUB"
+    },
+    {
+     "name": "Owen Goodman",
+     "jersey": "18",
+     "position": "SUB"
+    },
+    {
+     "name": "Nathan Saliba",
+     "jersey": "25",
+     "position": "SUB"
+    },
+    {
+     "name": "Mathieu Choinière",
+     "jersey": "6",
+     "position": "SUB"
+    },
+    {
+     "name": "Jonathan Osorio",
+     "jersey": "21",
+     "position": "SUB"
+    },
+    {
+     "name": "Cyle Larin",
+     "jersey": "9",
+     "position": "SUB"
+    },
+    {
+     "name": "Jacob Shaffelburg",
+     "jersey": "14",
+     "position": "SUB"
+    },
+    {
+     "name": "Jayden Nelson",
+     "jersey": "26",
+     "position": "SUB"
+    }
+   ]
+  },
+  {
+   "team": "Morocco",
+   "formation": "4-2-3-1",
+   "starters": [
+    {
+     "name": "Yassine Bounou",
+     "jersey": "1",
+     "position": "G"
+    },
+    {
+     "name": "Redouane Halhal",
+     "jersey": "25",
+     "position": "CD-L"
+    },
+    {
+     "name": "Issa Diop",
+     "jersey": "14",
+     "position": "CD-R"
+    },
+    {
+     "name": "Noussair Mazraoui",
+     "jersey": "3",
+     "position": "LB"
+    },
+    {
+     "name": "Achraf Hakimi",
+     "jersey": "2",
+     "position": "RB"
+    },
+    {
+     "name": "Azzedine Ounahi",
+     "jersey": "8",
+     "position": "AM"
+    },
+    {
+     "name": "Neil El Aynaoui",
+     "jersey": "24",
+     "position": "LM"
+    },
+    {
+     "name": "Ayyoub Bouaddi",
+     "jersey": "6",
+     "position": "RM"
+    },
+    {
+     "name": "Ismael Saibari",
+     "jersey": "11",
+     "position": "F"
+    },
+    {
+     "name": "Bilal El Khannouss",
+     "jersey": "23",
+     "position": "AM-L"
+    },
+    {
+     "name": "Brahim Díaz",
+     "jersey": "10",
+     "position": "AM-R"
+    }
+   ],
+   "subs": [
+    {
+     "name": "Zakaria El Ouahdi",
+     "jersey": "13",
+     "position": "SUB"
+    },
+    {
+     "name": "Amine Sbaï",
+     "jersey": "17",
+     "position": "SUB"
+    },
+    {
+     "name": "Soufiane Rahimi",
+     "jersey": "9",
+     "position": "SUB"
+    },
+    {
+     "name": "Youssef Belammari",
+     "jersey": "19",
+     "position": "SUB"
+    },
+    {
+     "name": "Anass Salah-Eddine",
+     "jersey": "26",
+     "position": "SUB"
+    },
+    {
+     "name": "Ayoube Amaimouni",
+     "jersey": "21",
+     "position": "SUB"
+    },
+    {
+     "name": "Gessime Yassine",
+     "jersey": "16",
+     "position": "SUB"
+    },
+    {
+     "name": "Chadi Riad",
+     "jersey": "18",
+     "position": "SUB"
+    },
+    {
+     "name": "Samir El Mourabet",
+     "jersey": "15",
+     "position": "SUB"
+    },
+    {
+     "name": "Chemsdine Talbi",
+     "jersey": "7",
+     "position": "SUB"
+    },
+    {
+     "name": "Marwane Saadane",
+     "jersey": "5",
+     "position": "SUB"
+    },
+    {
+     "name": "Munir El Kajoui",
+     "jersey": "12",
+     "position": "SUB"
+    },
+    {
+     "name": "Ahmed Reda Tagnaouti",
+     "jersey": "22",
+     "position": "SUB"
+    },
+    {
+     "name": "Sofyan Amrabat",
+     "jersey": "4",
+     "position": "SUB"
+    },
+    {
+     "name": "Ayoub El Kaabi",
+     "jersey": "20",
+     "position": "SUB"
+    }
+   ]
+  }
+ ],
+ "attendance": 68777,
+ "venue": "NRG Stadium, Houston, Texas, USA"
+}

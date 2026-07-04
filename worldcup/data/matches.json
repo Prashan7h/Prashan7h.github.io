@@ -3692,12 +3692,35 @@
    "team2": "Morocco",
    "group": null,
    "ground": "Houston",
-   "score": null,
+   "score": {
+    "ft": [
+     0,
+     3
+    ],
+    "ht": [
+     0,
+     0
+    ]
+   },
    "goals1": [],
-   "goals2": [],
+   "goals2": [
+    {
+     "name": "Azzedine Ounahi",
+     "minute": "50"
+    },
+    {
+     "name": "Azzedine Ounahi",
+     "minute": "82"
+    },
+    {
+     "name": "Soufiane Rahimi",
+     "minute": "90+8"
+    }
+   ],
    "espn_id": "760502",
-   "status": "scheduled",
+   "status": "finished",
    "utc_date": "2026-07-04T17:00Z",
+   "attendance": 68777,
    "venue": "NRG Stadium",
    "slug": "2026-07-04-canada-vs-morocco"
   },
