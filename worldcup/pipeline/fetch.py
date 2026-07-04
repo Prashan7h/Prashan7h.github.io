@@ -99,12 +99,21 @@ def build_matches():
             rec["utc_date"] = ev["date"]
             status = comp["status"]["type"]
             if status.get("completed") and not rec["score"]:
-                # openfootball hasn't caught up yet; take FT score from ESPN
+                # openfootball hasn't caught up yet; take the score from ESPN.
+                # ESPN's tally already includes extra time — store it as "ft"
+                # (no way to split it), plus the shootout if there was one, so
+                # knockout winners resolve before openfootball updates.
                 by_name = {
-                    canonical(c["team"]["displayName"]): int(c.get("score", 0))
+                    canonical(c["team"]["displayName"]): c
                     for c in comp["competitors"]
                 }
-                rec["score"] = {"ft": [by_name[rec["team1"]], by_name[rec["team2"]]]}
+                c1, c2 = by_name[rec["team1"]], by_name[rec["team2"]]
+                rec["score"] = {"ft": [int(c1.get("score", 0)),
+                                       int(c2.get("score", 0))]}
+                if (c1.get("shootoutScore") is not None
+                        and c2.get("shootoutScore") is not None):
+                    rec["score"]["p"] = [int(c1["shootoutScore"]),
+                                         int(c2["shootoutScore"])]
                 rec["status"] = "finished"
             elif status.get("state") == "in":
                 rec["status"] = "live"

@@ -39,6 +39,7 @@
             <button data-tab="matches" class="active">Matches</button>
             <button data-tab="table">Table</button>
             <button data-tab="predictions">Predictions</button>
+            {% if bracket %}<button data-tab="knockout">Knockout</button>{% endif %}
         </div>
 
         <!-- ============ MATCHES ============ -->
@@ -48,7 +49,7 @@
             {% for m in day.matches %}
             {% if m.has_page %}<a class="fixture" href="matches/{{ m.slug }}.html">{% else %}<div class="fixture">{% endif %}
                 <div class="fx-status">
-                    {% if m.status == 'finished' %}<span class="chip ft">FT</span>
+                    {% if m.status == 'finished' %}<span class="chip ft">{{ m.chip or 'FT' }}</span>
                     {% elif m.status == 'live' %}<span class="chip">LIVE</span>
                     {% else %}{{ m.time_short }}{% endif %}
                 </div>
@@ -132,6 +133,52 @@
             </div>
         </div>
 
+        <!-- ============ KNOCKOUT ============ -->
+        {% if bracket %}
+        {% macro tie_card(t) %}
+        {% if t.has_page %}<a class="bk-card" href="matches/{{ t.slug }}.html">{% else %}<div class="bk-card">{% endif %}
+            <div class="bk-side{{ ' win' if t.win1 }}{{ ' ph' if t.s1.placeholder }}">
+                <span class="bk-name">{{ t.s1.name }}</span>
+                {% if t.score %}<span class="bk-score">{{ t.score[0] }}</span>{% endif %}
+            </div>
+            <div class="bk-side{{ ' win' if t.win2 }}{{ ' ph' if t.s2.placeholder }}">
+                <span class="bk-name">{{ t.s2.name }}</span>
+                {% if t.score %}<span class="bk-score">{{ t.score[1] }}</span>{% endif %}
+            </div>
+            <div class="bk-meta">{{ t.when }}{% if t.note %} · {{ t.note }}{% endif %}{% if t.has_page %} · report &rarr;{% endif %}</div>
+        {% if t.has_page %}</a>{% else %}</div>{% endif %}
+        {% endmacro %}
+        <div class="panel" id="panel-knockout">
+            <p class="bk-intro">The road to the final. Teams advance left to right; each tie fills in as results come in. Scroll sideways for the later rounds.</p>
+            <div class="bracket-wrap">
+                <div class="bracket">
+                    {% for col in bracket.columns %}
+                    <div class="bk-round{{ ' last' if loop.last }}">
+                        <div class="bk-round-head">{{ col.label }}</div>
+                        <div class="bk-seeds">
+                            {% if col.pairs %}
+                                {% for pair in col.pairs %}
+                                <div class="bk-pair">
+                                    {% for t in pair %}<div class="bk-tie">{{ tie_card(t) }}</div>{% endfor %}
+                                </div>
+                                {% endfor %}
+                            {% else %}
+                                {% for t in col.ties %}<div class="bk-tie">{{ tie_card(t) }}</div>{% endfor %}
+                            {% endif %}
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+            {% if bracket.third %}
+            <div class="card bk-third">
+                <div class="card-title">Third-place play-off</div>
+                <div class="bk-tie">{{ tie_card(bracket.third) }}</div>
+            </div>
+            {% endif %}
+        </div>
+        {% endif %}
+
         <p class="foot">Built as a fully automated pipeline: results and shot-level data are pulled from public sources, an Elo system is replayed over every result, and the tournament is re-simulated {{ "{:,}".format(n_sims) }} times — every six hours, via GitHub Actions, with no human in the loop. Last build {{ build_time }}.</p>
     </div>
 
@@ -149,7 +196,7 @@
             b.addEventListener('click', function () { show(b.dataset.tab); });
         });
         var hash = location.hash.replace('#', '');
-        if (hash === 'table' || hash === 'predictions') show(hash);
+        if (hash === 'table' || hash === 'predictions' || hash === 'knockout') show(hash);
         var today = document.getElementById('today');
         if (today && (!hash || hash === 'matches')) {
             setTimeout(function () {

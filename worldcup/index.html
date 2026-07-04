@@ -20,8 +20,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <style>
 *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
-html { font-size: 16px; }
+html { font-size: 16px; overflow-x: clip; }
 body {
+  overflow-x: clip;  /* the bracket breaks out to viewport width; never h-scroll the page */
   background: #fff;
   color: #0a0a0a;
   font-family: 'Manrope', -apple-system, 'Segoe UI', sans-serif;
@@ -166,9 +167,47 @@ table.t .pts { font-weight: 800; }
 .backlink:hover { color: #0a0a0a; }
 .foot { font-size: 0.72rem; color: #aaa; line-height: 1.6; margin-top: 2.2rem; font-weight: 500; }
 
+/* ---- knockout bracket ---- */
+.bk-intro { font-size: 0.8rem; color: #777; font-weight: 500; line-height: 1.55; margin: 0 0.2rem 1.1rem; }
+.bracket-wrap { overflow-x: auto; -webkit-overflow-scrolling: touch; margin: 0 calc(50% - 50vw); padding: 0 1.1rem 0.6rem; }
+.bracket { display: flex; min-width: 860px; max-width: 1280px; margin: 0 auto; }
+.bk-round { display: flex; flex-direction: column; flex: 1 0 0; min-width: 172px; padding: 0 16px; }
+.bk-round-head { font-size: 0.64rem; font-weight: 800; letter-spacing: 0.08em; text-transform: uppercase; color: #aaa; text-align: center; padding-bottom: 0.8rem; }
+.bk-seeds { display: flex; flex-direction: column; justify-content: space-around; flex: 1; }
+.bk-pair { display: flex; flex-direction: column; justify-content: space-around; flex: 1; position: relative; }
+.bk-tie { position: relative; padding: 0.3rem 0; }
+
+/* connectors: stub out of each tie, vertical join across the pair, stub into next round */
+.bk-round:not(.last) .bk-tie::after {
+  content: ''; position: absolute; top: 50%; right: -16px; width: 16px; height: 2px; background: #e4e4e4;
+}
+.bk-round:not(.last) .bk-pair::after {
+  content: ''; position: absolute; right: -16px; top: 25%; bottom: 25%; width: 2px; background: #e4e4e4;
+}
+.bk-round:not(.last) .bk-pair::before {
+  content: ''; position: absolute; right: -32px; top: 50%; width: 16px; height: 2px; background: #e4e4e4;
+}
+
+.bk-card {
+  display: block; border: 1px solid #e9e9e9; border-radius: 12px; background: #fff;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.03); padding: 0.5rem 0.65rem;
+}
+a.bk-card { transition: border-color 0.15s ease, transform 0.15s ease; }
+a.bk-card:hover { border-color: #0a0a0a; transform: translateY(-1px); }
+.bk-side { display: flex; align-items: baseline; justify-content: space-between; gap: 0.6rem; padding: 0.12rem 0; }
+.bk-name { font-size: 0.82rem; font-weight: 600; color: #555; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.bk-score { font-size: 0.85rem; font-weight: 800; color: #555; flex-shrink: 0; }
+.bk-side.win .bk-name { color: #0a0a0a; font-weight: 800; }
+.bk-side.win .bk-score { color: #0a0a0a; }
+.bk-side.ph .bk-name { color: #b3b3b3; font-weight: 600; font-style: italic; }
+.bk-meta { font-size: 0.6rem; font-weight: 700; letter-spacing: 0.03em; color: #bbb; text-align: center; margin-top: 0.2rem; }
+.bk-third { margin-top: 1.6rem; }
+.bk-third .bk-tie { padding: 0; max-width: 22rem; }
+
 @media (max-width: 560px) {
   .group-grid { grid-template-columns: 1fr; }
   .lineups { grid-template-columns: 1fr; }
+  .bracket-wrap { margin: 0 -1.1rem; padding: 0 1.1rem 0.6rem; }
   .board .score { font-size: 2rem; }
   .board .team .name { font-size: 0.9rem; }
   .odds-row { grid-template-columns: 6.4rem 1fr 3rem; }
@@ -196,6 +235,7 @@ table.t .pts { font-weight: 800; }
             <button data-tab="matches" class="active">Matches</button>
             <button data-tab="table">Table</button>
             <button data-tab="predictions">Predictions</button>
+            <button data-tab="knockout">Knockout</button>
         </div>
 
         <!-- ============ MATCHES ============ -->
@@ -1573,7 +1613,7 @@ table.t .pts { font-weight: 800; }
             
             <a class="fixture" href="matches/2026-06-29-germany-vs-paraguay.html">
                 <div class="fx-status">
-                    <span class="chip ft">FT</span>
+                    <span class="chip ft">PENS</span>
                     
                 </div>
                 <div class="fx-teams">
@@ -1591,7 +1631,7 @@ table.t .pts { font-weight: 800; }
             
             <a class="fixture" href="matches/2026-06-29-netherlands-vs-morocco.html">
                 <div class="fx-status">
-                    <span class="chip ft">FT</span>
+                    <span class="chip ft">PENS</span>
                     
                 </div>
                 <div class="fx-teams">
@@ -1723,7 +1763,7 @@ table.t .pts { font-weight: 800; }
             
             <a class="fixture" href="matches/2026-07-01-belgium-vs-senegal.html">
                 <div class="fx-status">
-                    <span class="chip ft">FT</span>
+                    <span class="chip ft">AET</span>
                     
                 </div>
                 <div class="fx-teams">
@@ -1801,7 +1841,7 @@ table.t .pts { font-weight: 800; }
             
             <a class="fixture" href="matches/2026-07-03-argentina-vs-cape-verde.html">
                 <div class="fx-status">
-                    <span class="chip ft">FT</span>
+                    <span class="chip ft">AET</span>
                     
                 </div>
                 <div class="fx-teams">
@@ -1837,7 +1877,7 @@ table.t .pts { font-weight: 800; }
             
             <a class="fixture" href="matches/2026-07-03-australia-vs-egypt.html">
                 <div class="fx-status">
-                    <span class="chip ft">FT</span>
+                    <span class="chip ft">PENS</span>
                     
                 </div>
                 <div class="fx-teams">
@@ -2391,87 +2431,87 @@ table.t .pts { font-weight: 800; }
                 <div class="card-title">Chance of winning the World Cup</div>
                 
                 <div class="odds-row">
-                    <span>Spain</span>
-                    <span class="odds-track"><span style="width: 100.0%"></span></span>
-                    <span class="odds-pct">20.6%</span>
-                </div>
-                
-                <div class="odds-row">
                     <span>Argentina</span>
-                    <span class="odds-track"><span style="width: 96.4%"></span></span>
-                    <span class="odds-pct">19.8%</span>
+                    <span class="odds-track"><span style="width: 100.0%"></span></span>
+                    <span class="odds-pct">29.5%</span>
                 </div>
                 
                 <div class="odds-row">
                     <span>France</span>
-                    <span class="odds-track"><span style="width: 67.8%"></span></span>
-                    <span class="odds-pct">14.0%</span>
+                    <span class="odds-track"><span style="width: 70.6%"></span></span>
+                    <span class="odds-pct">20.8%</span>
                 </div>
                 
                 <div class="odds-row">
-                    <span>Brazil</span>
-                    <span class="odds-track"><span style="width: 59.2%"></span></span>
-                    <span class="odds-pct">12.2%</span>
+                    <span>Spain</span>
+                    <span class="odds-track"><span style="width: 53.2%"></span></span>
+                    <span class="odds-pct">15.7%</span>
                 </div>
                 
                 <div class="odds-row">
                     <span>England</span>
-                    <span class="odds-track"><span style="width: 32.8%"></span></span>
-                    <span class="odds-pct">6.8%</span>
+                    <span class="odds-track"><span style="width: 30.8%"></span></span>
+                    <span class="odds-pct">9.1%</span>
                 </div>
                 
                 <div class="odds-row">
-                    <span>Morocco</span>
-                    <span class="odds-track"><span style="width: 29.5%"></span></span>
-                    <span class="odds-pct">6.1%</span>
-                </div>
-                
-                <div class="odds-row">
-                    <span>Netherlands</span>
-                    <span class="odds-track"><span style="width: 21.1%"></span></span>
-                    <span class="odds-pct">4.3%</span>
+                    <span>Brazil</span>
+                    <span class="odds-track"><span style="width: 28.0%"></span></span>
+                    <span class="odds-pct">8.3%</span>
                 </div>
                 
                 <div class="odds-row">
                     <span>Portugal</span>
-                    <span class="odds-track"><span style="width: 16.4%"></span></span>
-                    <span class="odds-pct">3.4%</span>
+                    <span class="odds-track"><span style="width: 14.8%"></span></span>
+                    <span class="odds-pct">4.4%</span>
+                </div>
+                
+                <div class="odds-row">
+                    <span>Morocco</span>
+                    <span class="odds-track"><span style="width: 13.6%"></span></span>
+                    <span class="odds-pct">4.0%</span>
                 </div>
                 
                 <div class="odds-row">
                     <span>Belgium</span>
-                    <span class="odds-track"><span style="width: 12.0%"></span></span>
-                    <span class="odds-pct">2.5%</span>
-                </div>
-                
-                <div class="odds-row">
-                    <span>Mexico</span>
-                    <span class="odds-track"><span style="width: 11.2%"></span></span>
+                    <span class="odds-track"><span style="width: 7.7%"></span></span>
                     <span class="odds-pct">2.3%</span>
                 </div>
                 
                 <div class="odds-row">
-                    <span>Switzerland</span>
-                    <span class="odds-track"><span style="width: 7.9%"></span></span>
-                    <span class="odds-pct">1.6%</span>
-                </div>
-                
-                <div class="odds-row">
-                    <span>Germany</span>
-                    <span class="odds-track"><span style="width: 5.9%"></span></span>
-                    <span class="odds-pct">1.2%</span>
-                </div>
-                
-                <div class="odds-row">
-                    <span>Japan</span>
-                    <span class="odds-track"><span style="width: 5.9%"></span></span>
-                    <span class="odds-pct">1.2%</span>
-                </div>
-                
-                <div class="odds-row">
                     <span>Colombia</span>
-                    <span class="odds-track"><span style="width: 4.4%"></span></span>
-                    <span class="odds-pct">0.9%</span>
+                    <span class="odds-track"><span style="width: 6.2%"></span></span>
+                    <span class="odds-pct">1.8%</span>
+                </div>
+                
+                <div class="odds-row">
+                    <span>Mexico</span>
+                    <span class="odds-track"><span style="width: 4.1%"></span></span>
+                    <span class="odds-pct">1.2%</span>
+                </div>
+                
+                <div class="odds-row">
+                    <span>Switzerland</span>
+                    <span class="odds-track"><span style="width: 4.0%"></span></span>
+                    <span class="odds-pct">1.2%</span>
+                </div>
+                
+                <div class="odds-row">
+                    <span>USA</span>
+                    <span class="odds-track"><span style="width: 2.1%"></span></span>
+                    <span class="odds-pct">0.6%</span>
+                </div>
+                
+                <div class="odds-row">
+                    <span>Norway</span>
+                    <span class="odds-track"><span style="width: 1.9%"></span></span>
+                    <span class="odds-pct">0.5%</span>
+                </div>
+                
+                <div class="odds-row">
+                    <span>Egypt</span>
+                    <span class="odds-track"><span style="width: 0.7%"></span></span>
+                    <span class="odds-pct">0.2%</span>
                 </div>
                 
                 <p class="card-note">From 10,000 Monte Carlo simulations of the remaining tournament, re-run after every match. Goals are Poisson-distributed with rates driven by live Elo ratings (seeded from world ratings, +50 for hosts at home).</p>
@@ -2510,7 +2550,515 @@ table.t .pts { font-weight: 800; }
             </div>
         </div>
 
-        <p class="foot">Built as a fully automated pipeline: results and shot-level data are pulled from public sources, an Elo system is replayed over every result, and the tournament is re-simulated 10,000 times — every six hours, via GitHub Actions, with no human in the loop. Last build 2026-07-04 14:31 UTC.</p>
+        <!-- ============ KNOCKOUT ============ -->
+        
+        
+        <div class="panel" id="panel-knockout">
+            <p class="bk-intro">The road to the final. Teams advance left to right; each tie fills in as results come in. Scroll sideways for the later rounds.</p>
+            <div class="bracket-wrap">
+                <div class="bracket">
+                    
+                    <div class="bk-round">
+                        <div class="bk-round-head">Round of 32</div>
+                        <div class="bk-seeds">
+                            
+                                
+                                <div class="bk-pair">
+                                    <div class="bk-tie">
+        <a class="bk-card" href="matches/2026-06-29-germany-vs-paraguay.html">
+            <div class="bk-side">
+                <span class="bk-name">Germany</span>
+                <span class="bk-score">1</span>
+            </div>
+            <div class="bk-side win">
+                <span class="bk-name">Paraguay</span>
+                <span class="bk-score">1</span>
+            </div>
+            <div class="bk-meta">Jun 29 · 3–4 pens · report &rarr;</div>
+        </a>
+        </div><div class="bk-tie">
+        <a class="bk-card" href="matches/2026-06-30-france-vs-sweden.html">
+            <div class="bk-side win">
+                <span class="bk-name">France</span>
+                <span class="bk-score">3</span>
+            </div>
+            <div class="bk-side">
+                <span class="bk-name">Sweden</span>
+                <span class="bk-score">0</span>
+            </div>
+            <div class="bk-meta">Jun 30 · report &rarr;</div>
+        </a>
+        </div>
+                                </div>
+                                
+                                <div class="bk-pair">
+                                    <div class="bk-tie">
+        <a class="bk-card" href="matches/2026-06-28-south-africa-vs-canada.html">
+            <div class="bk-side">
+                <span class="bk-name">South Africa</span>
+                <span class="bk-score">0</span>
+            </div>
+            <div class="bk-side win">
+                <span class="bk-name">Canada</span>
+                <span class="bk-score">1</span>
+            </div>
+            <div class="bk-meta">Jun 28 · report &rarr;</div>
+        </a>
+        </div><div class="bk-tie">
+        <a class="bk-card" href="matches/2026-06-29-netherlands-vs-morocco.html">
+            <div class="bk-side">
+                <span class="bk-name">Netherlands</span>
+                <span class="bk-score">1</span>
+            </div>
+            <div class="bk-side win">
+                <span class="bk-name">Morocco</span>
+                <span class="bk-score">1</span>
+            </div>
+            <div class="bk-meta">Jun 29 · 2–3 pens · report &rarr;</div>
+        </a>
+        </div>
+                                </div>
+                                
+                                <div class="bk-pair">
+                                    <div class="bk-tie">
+        <a class="bk-card" href="matches/2026-07-02-portugal-vs-croatia.html">
+            <div class="bk-side win">
+                <span class="bk-name">Portugal</span>
+                <span class="bk-score">2</span>
+            </div>
+            <div class="bk-side">
+                <span class="bk-name">Croatia</span>
+                <span class="bk-score">1</span>
+            </div>
+            <div class="bk-meta">Jul 2 · report &rarr;</div>
+        </a>
+        </div><div class="bk-tie">
+        <a class="bk-card" href="matches/2026-07-02-spain-vs-austria.html">
+            <div class="bk-side win">
+                <span class="bk-name">Spain</span>
+                <span class="bk-score">3</span>
+            </div>
+            <div class="bk-side">
+                <span class="bk-name">Austria</span>
+                <span class="bk-score">0</span>
+            </div>
+            <div class="bk-meta">Jul 2 · report &rarr;</div>
+        </a>
+        </div>
+                                </div>
+                                
+                                <div class="bk-pair">
+                                    <div class="bk-tie">
+        <a class="bk-card" href="matches/2026-07-01-usa-vs-bosnia-and-herzegovina.html">
+            <div class="bk-side win">
+                <span class="bk-name">USA</span>
+                <span class="bk-score">2</span>
+            </div>
+            <div class="bk-side">
+                <span class="bk-name">Bosnia & Herzegovina</span>
+                <span class="bk-score">0</span>
+            </div>
+            <div class="bk-meta">Jul 1 · report &rarr;</div>
+        </a>
+        </div><div class="bk-tie">
+        <a class="bk-card" href="matches/2026-07-01-belgium-vs-senegal.html">
+            <div class="bk-side win">
+                <span class="bk-name">Belgium</span>
+                <span class="bk-score">3</span>
+            </div>
+            <div class="bk-side">
+                <span class="bk-name">Senegal</span>
+                <span class="bk-score">2</span>
+            </div>
+            <div class="bk-meta">Jul 1 · aet · report &rarr;</div>
+        </a>
+        </div>
+                                </div>
+                                
+                                <div class="bk-pair">
+                                    <div class="bk-tie">
+        <a class="bk-card" href="matches/2026-06-29-brazil-vs-japan.html">
+            <div class="bk-side win">
+                <span class="bk-name">Brazil</span>
+                <span class="bk-score">2</span>
+            </div>
+            <div class="bk-side">
+                <span class="bk-name">Japan</span>
+                <span class="bk-score">1</span>
+            </div>
+            <div class="bk-meta">Jun 29 · report &rarr;</div>
+        </a>
+        </div><div class="bk-tie">
+        <a class="bk-card" href="matches/2026-06-30-ivory-coast-vs-norway.html">
+            <div class="bk-side">
+                <span class="bk-name">Ivory Coast</span>
+                <span class="bk-score">1</span>
+            </div>
+            <div class="bk-side win">
+                <span class="bk-name">Norway</span>
+                <span class="bk-score">2</span>
+            </div>
+            <div class="bk-meta">Jun 30 · report &rarr;</div>
+        </a>
+        </div>
+                                </div>
+                                
+                                <div class="bk-pair">
+                                    <div class="bk-tie">
+        <a class="bk-card" href="matches/2026-06-30-mexico-vs-ecuador.html">
+            <div class="bk-side win">
+                <span class="bk-name">Mexico</span>
+                <span class="bk-score">2</span>
+            </div>
+            <div class="bk-side">
+                <span class="bk-name">Ecuador</span>
+                <span class="bk-score">0</span>
+            </div>
+            <div class="bk-meta">Jun 30 · report &rarr;</div>
+        </a>
+        </div><div class="bk-tie">
+        <div class="bk-card">
+            <div class="bk-side win">
+                <span class="bk-name">England</span>
+                <span class="bk-score">2</span>
+            </div>
+            <div class="bk-side">
+                <span class="bk-name">DR Congo</span>
+                <span class="bk-score">1</span>
+            </div>
+            <div class="bk-meta">Jul 1</div>
+        </div>
+        </div>
+                                </div>
+                                
+                                <div class="bk-pair">
+                                    <div class="bk-tie">
+        <a class="bk-card" href="matches/2026-07-03-argentina-vs-cape-verde.html">
+            <div class="bk-side win">
+                <span class="bk-name">Argentina</span>
+                <span class="bk-score">3</span>
+            </div>
+            <div class="bk-side">
+                <span class="bk-name">Cape Verde</span>
+                <span class="bk-score">2</span>
+            </div>
+            <div class="bk-meta">Jul 3 · aet · report &rarr;</div>
+        </a>
+        </div><div class="bk-tie">
+        <a class="bk-card" href="matches/2026-07-03-australia-vs-egypt.html">
+            <div class="bk-side">
+                <span class="bk-name">Australia</span>
+                <span class="bk-score">1</span>
+            </div>
+            <div class="bk-side win">
+                <span class="bk-name">Egypt</span>
+                <span class="bk-score">1</span>
+            </div>
+            <div class="bk-meta">Jul 3 · 2–4 pens · report &rarr;</div>
+        </a>
+        </div>
+                                </div>
+                                
+                                <div class="bk-pair">
+                                    <div class="bk-tie">
+        <a class="bk-card" href="matches/2026-07-02-switzerland-vs-algeria.html">
+            <div class="bk-side win">
+                <span class="bk-name">Switzerland</span>
+                <span class="bk-score">2</span>
+            </div>
+            <div class="bk-side">
+                <span class="bk-name">Algeria</span>
+                <span class="bk-score">0</span>
+            </div>
+            <div class="bk-meta">Jul 2 · report &rarr;</div>
+        </a>
+        </div><div class="bk-tie">
+        <a class="bk-card" href="matches/2026-07-03-colombia-vs-ghana.html">
+            <div class="bk-side win">
+                <span class="bk-name">Colombia</span>
+                <span class="bk-score">1</span>
+            </div>
+            <div class="bk-side">
+                <span class="bk-name">Ghana</span>
+                <span class="bk-score">0</span>
+            </div>
+            <div class="bk-meta">Jul 3 · report &rarr;</div>
+        </a>
+        </div>
+                                </div>
+                                
+                            
+                        </div>
+                    </div>
+                    
+                    <div class="bk-round">
+                        <div class="bk-round-head">Round of 16</div>
+                        <div class="bk-seeds">
+                            
+                                
+                                <div class="bk-pair">
+                                    <div class="bk-tie">
+        <div class="bk-card">
+            <div class="bk-side">
+                <span class="bk-name">Paraguay</span>
+                
+            </div>
+            <div class="bk-side">
+                <span class="bk-name">France</span>
+                
+            </div>
+            <div class="bk-meta">Jul 4</div>
+        </div>
+        </div><div class="bk-tie">
+        <div class="bk-card">
+            <div class="bk-side">
+                <span class="bk-name">Canada</span>
+                
+            </div>
+            <div class="bk-side">
+                <span class="bk-name">Morocco</span>
+                
+            </div>
+            <div class="bk-meta">Jul 4</div>
+        </div>
+        </div>
+                                </div>
+                                
+                                <div class="bk-pair">
+                                    <div class="bk-tie">
+        <div class="bk-card">
+            <div class="bk-side">
+                <span class="bk-name">Portugal</span>
+                
+            </div>
+            <div class="bk-side">
+                <span class="bk-name">Spain</span>
+                
+            </div>
+            <div class="bk-meta">Jul 6</div>
+        </div>
+        </div><div class="bk-tie">
+        <div class="bk-card">
+            <div class="bk-side">
+                <span class="bk-name">USA</span>
+                
+            </div>
+            <div class="bk-side">
+                <span class="bk-name">Belgium</span>
+                
+            </div>
+            <div class="bk-meta">Jul 6</div>
+        </div>
+        </div>
+                                </div>
+                                
+                                <div class="bk-pair">
+                                    <div class="bk-tie">
+        <div class="bk-card">
+            <div class="bk-side">
+                <span class="bk-name">Brazil</span>
+                
+            </div>
+            <div class="bk-side">
+                <span class="bk-name">Norway</span>
+                
+            </div>
+            <div class="bk-meta">Jul 5</div>
+        </div>
+        </div><div class="bk-tie">
+        <div class="bk-card">
+            <div class="bk-side">
+                <span class="bk-name">Mexico</span>
+                
+            </div>
+            <div class="bk-side">
+                <span class="bk-name">England</span>
+                
+            </div>
+            <div class="bk-meta">Jul 5</div>
+        </div>
+        </div>
+                                </div>
+                                
+                                <div class="bk-pair">
+                                    <div class="bk-tie">
+        <div class="bk-card">
+            <div class="bk-side">
+                <span class="bk-name">Argentina</span>
+                
+            </div>
+            <div class="bk-side">
+                <span class="bk-name">Egypt</span>
+                
+            </div>
+            <div class="bk-meta">Jul 7</div>
+        </div>
+        </div><div class="bk-tie">
+        <div class="bk-card">
+            <div class="bk-side">
+                <span class="bk-name">Switzerland</span>
+                
+            </div>
+            <div class="bk-side">
+                <span class="bk-name">Colombia</span>
+                
+            </div>
+            <div class="bk-meta">Jul 7</div>
+        </div>
+        </div>
+                                </div>
+                                
+                            
+                        </div>
+                    </div>
+                    
+                    <div class="bk-round">
+                        <div class="bk-round-head">Quarter-finals</div>
+                        <div class="bk-seeds">
+                            
+                                
+                                <div class="bk-pair">
+                                    <div class="bk-tie">
+        <div class="bk-card">
+            <div class="bk-side ph">
+                <span class="bk-name">Winner 89</span>
+                
+            </div>
+            <div class="bk-side ph">
+                <span class="bk-name">Winner 90</span>
+                
+            </div>
+            <div class="bk-meta">Jul 9</div>
+        </div>
+        </div><div class="bk-tie">
+        <div class="bk-card">
+            <div class="bk-side ph">
+                <span class="bk-name">Winner 93</span>
+                
+            </div>
+            <div class="bk-side ph">
+                <span class="bk-name">Winner 94</span>
+                
+            </div>
+            <div class="bk-meta">Jul 10</div>
+        </div>
+        </div>
+                                </div>
+                                
+                                <div class="bk-pair">
+                                    <div class="bk-tie">
+        <div class="bk-card">
+            <div class="bk-side ph">
+                <span class="bk-name">Winner 91</span>
+                
+            </div>
+            <div class="bk-side ph">
+                <span class="bk-name">Winner 92</span>
+                
+            </div>
+            <div class="bk-meta">Jul 11</div>
+        </div>
+        </div><div class="bk-tie">
+        <div class="bk-card">
+            <div class="bk-side ph">
+                <span class="bk-name">Winner 95</span>
+                
+            </div>
+            <div class="bk-side ph">
+                <span class="bk-name">Winner 96</span>
+                
+            </div>
+            <div class="bk-meta">Jul 11</div>
+        </div>
+        </div>
+                                </div>
+                                
+                            
+                        </div>
+                    </div>
+                    
+                    <div class="bk-round">
+                        <div class="bk-round-head">Semi-finals</div>
+                        <div class="bk-seeds">
+                            
+                                
+                                <div class="bk-pair">
+                                    <div class="bk-tie">
+        <div class="bk-card">
+            <div class="bk-side ph">
+                <span class="bk-name">Winner 97</span>
+                
+            </div>
+            <div class="bk-side ph">
+                <span class="bk-name">Winner 98</span>
+                
+            </div>
+            <div class="bk-meta">Jul 14</div>
+        </div>
+        </div><div class="bk-tie">
+        <div class="bk-card">
+            <div class="bk-side ph">
+                <span class="bk-name">Winner 99</span>
+                
+            </div>
+            <div class="bk-side ph">
+                <span class="bk-name">Winner 100</span>
+                
+            </div>
+            <div class="bk-meta">Jul 15</div>
+        </div>
+        </div>
+                                </div>
+                                
+                            
+                        </div>
+                    </div>
+                    
+                    <div class="bk-round last">
+                        <div class="bk-round-head">Final</div>
+                        <div class="bk-seeds">
+                            
+                                <div class="bk-tie">
+        <div class="bk-card">
+            <div class="bk-side ph">
+                <span class="bk-name">Winner 101</span>
+                
+            </div>
+            <div class="bk-side ph">
+                <span class="bk-name">Winner 102</span>
+                
+            </div>
+            <div class="bk-meta">Jul 19</div>
+        </div>
+        </div>
+                            
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+            
+            <div class="card bk-third">
+                <div class="card-title">Third-place play-off</div>
+                <div class="bk-tie">
+        <div class="bk-card">
+            <div class="bk-side ph">
+                <span class="bk-name">Loser 101</span>
+                
+            </div>
+            <div class="bk-side ph">
+                <span class="bk-name">Loser 102</span>
+                
+            </div>
+            <div class="bk-meta">Jul 18</div>
+        </div>
+        </div>
+            </div>
+            
+        </div>
+        
+
+        <p class="foot">Built as a fully automated pipeline: results and shot-level data are pulled from public sources, an Elo system is replayed over every result, and the tournament is re-simulated 10,000 times — every six hours, via GitHub Actions, with no human in the loop. Last build 2026-07-04 15:33 UTC.</p>
     </div>
 
     <script>
@@ -2527,7 +3075,7 @@ table.t .pts { font-weight: 800; }
             b.addEventListener('click', function () { show(b.dataset.tab); });
         });
         var hash = location.hash.replace('#', '');
-        if (hash === 'table' || hash === 'predictions') show(hash);
+        if (hash === 'table' || hash === 'predictions' || hash === 'knockout') show(hash);
         var today = document.getElementById('today');
         if (today && (!hash || hash === 'matches')) {
             setTimeout(function () {

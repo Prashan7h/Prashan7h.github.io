@@ -350,6 +350,131 @@ def subs_used(lineup, stats):
     return on
 
 
+# --------------------------------------------------------------- bracket
+
+KO_ROUNDS = ["Round of 32", "Round of 16", "Quarter-final",
+             "Semi-final", "Final"]
+KO_LABELS = {
+    "Round of 32": "Round of 32", "Round of 16": "Round of 16",
+    "Quarter-final": "Quarter-finals", "Semi-final": "Semi-finals",
+    "Final": "Final",
+}
+REF_RE = re.compile(r"^([WL])(\d+)$")
+
+# Fixed bracket topology by match number (openfootball's 2026 schedule order):
+# match -> the two earlier matches whose winners feed it. This is a constant of
+# the tournament, so the tree survives openfootball resolving "Winner 74" slots
+# into real team names as games are played (which would otherwise break a
+# ref-parsing traversal). 73-88 = R32, 89-96 = R16, 97-100 = QF, 101-102 = SF,
+# 103 = third place, 104 = Final.
+KO_FEEDERS = {
+    89: (74, 77), 90: (73, 75), 91: (76, 78), 92: (79, 80),
+    93: (83, 84), 94: (81, 82), 95: (86, 88), 96: (85, 87),
+    97: (89, 90), 98: (93, 94), 99: (91, 92), 100: (95, 96),
+    101: (97, 98), 102: (99, 100),
+    104: (101, 102), 103: (101, 102),
+}
+
+
+def build_bracket(matches, pages):
+    """Knockout tree, ordered top-to-bottom, with each slot resolved to a
+    real team where the feeding match is decided. Slots stay as placeholders
+    (group codes like '2A', or 'Winner 74') until the result is known."""
+    ko = {m["num"]: m for m in matches if not m.get("group") and m.get("round")}
+    if not ko:
+        return None
+    real_teams = {t for m in matches if m.get("group")
+                  for t in (m["team1"], m["team2"])}
+
+    def parse_ref(slot):
+        mm = REF_RE.match(slot.strip())
+        return (mm.group(1), int(mm.group(2))) if mm else None
+
+    def ko_result(num):
+        """(winner, loser) names if match `num` is decided, else None."""
+        m = ko.get(num)
+        if not m or not m.get("score"):
+            return None
+        s1, s2 = resolve_name(m["team1"]), resolve_name(m["team2"])
+        if not s1 or not s2:
+            return None
+        res = outcome(m)
+        if res == 1:
+            return None  # level, shootout result not in the data yet
+        return (s1, s2) if res == 0 else (s2, s1)
+
+    def resolve_name(slot):
+        if slot in real_teams:
+            return slot
+        ref = parse_ref(slot)
+        if ref:
+            o = ko_result(ref[1])
+            if o:
+                return o[0] if ref[0] == "W" else o[1]
+        return None
+
+    def side(slot):
+        name = resolve_name(slot)
+        if name:
+            return {"name": name, "placeholder": False}
+        ref = parse_ref(slot)
+        label = (f"Winner {ref[1]}" if ref and ref[0] == "W"
+                 else f"Loser {ref[1]}" if ref else slot)
+        return {"name": label, "placeholder": True}
+
+    def tie(m):
+        win1 = win2 = False
+        score = note = None
+        if m.get("score"):
+            res = outcome(m)
+            win1, win2 = res == 0, res == 2
+            score = final_score(m)
+            how = decided_on(m)
+            if how == "pen":
+                note = "{}–{} pens".format(*m["score"]["p"])
+            elif how == "et":
+                note = "aet"
+        return {
+            "num": m["num"],
+            "s1": side(m["team1"]), "s2": side(m["team2"]),
+            "win1": win1, "win2": win2,
+            "score": score, "note": note,
+            "has_page": m["num"] in pages, "slug": m["slug"],
+            "when": datetime.strptime(m["date"], "%Y-%m-%d").strftime("%b %-d"),
+        }
+
+    # in-order traversal from the final over the fixed topology, so each round
+    # lists ties top-to-bottom and the pairs align with the next round.
+    cols = {r: [] for r in KO_ROUNDS}
+
+    def visit(num):
+        if num not in ko:
+            return
+        kids = KO_FEEDERS.get(num)
+        if kids:
+            visit(kids[0])
+        if ko[num]["round"] in cols:
+            cols[ko[num]["round"]].append(tie(ko[num]))
+        if kids:
+            visit(kids[1])
+
+    final = next((m for m in ko.values() if m["round"] == "Final"), None)
+    if final:
+        visit(final["num"])
+
+    columns = []
+    for r in KO_ROUNDS:
+        ties = cols[r]
+        if not ties:
+            continue
+        pairs = [ties[i:i + 2] for i in range(0, len(ties), 2)] if r != "Final" else None
+        columns.append({"label": KO_LABELS[r], "ties": ties, "pairs": pairs})
+
+    third = next((tie(m) for m in ko.values()
+                  if m["round"] == "Match for third place"), None)
+    return {"columns": columns, "third": third}
+
+
 # ----------------------------------------------------------------- main
 
 def main():
@@ -441,6 +566,7 @@ def main():
             res = outcome(m)
             m["win1"], m["win2"] = res == 0, res == 2
             m["final1"], m["final2"] = final_score(m)
+            m["chip"] = {"pen": "PENS", "et": "AET"}.get(decided_on(m), "FT")
         else:
             m["win1"] = m["win2"] = False
         m["time_short"] = (m.get("time") or "").split(" ")[0]
@@ -458,9 +584,11 @@ def main():
             upcoming.append(m)
 
     sims = analytics["sims"]
+    bracket = build_bracket(matches, pages)
     html = env.get_template("index.html.j2").render(
         style=STYLE,
         n_sims=analytics["n_sims"],
+        bracket=bracket,
         n_finished=sum(1 for m in matches if m["status"] == "finished"),
         days=days,
         standings=analytics["standings"],

@@ -206,9 +206,68 @@ def group_fixtures(matches):
 
 # ------------------------------------------------------------ simulation
 
+KO_REF_RE = re.compile(r"^([WL])(\d+)$")
+
+# Knockout match numbers → the stage the winner reaches (73-88 R32,
+# 89-96 R16, 97-100 QF, 101-102 SF, 104 final; 103 = third place, ignored).
+STAGE_AFTER = {**{n: "r16" for n in range(73, 89)},
+               **{n: "qf" for n in range(89, 97)},
+               **{n: "sf" for n in range(97, 101)},
+               101: "f", 102: "f", 104: "champ"}
+
+
+def play_knockout(t1, t2, elo):
+    lam1, lam2 = poisson_lambdas(elo[t1], elo[t2])
+    g1, g2 = sample_poisson(lam1), sample_poisson(lam2)
+    if g1 == g2:  # extra time, then effectively penalties
+        g1 += sample_poisson(lam1 / 3)
+        g2 += sample_poisson(lam2 / 3)
+        if g1 == g2:
+            return (t1, t2) if random.random() < 0.5 else (t2, t1)
+    return (t1, t2) if g1 > g2 else (t2, t1)
+
+
+def simulate_knockout_bracket(matches, elo):
+    """Simulate only the remaining knockout ties, conditioned on the real
+    bracket and on every knockout result already played — eliminated teams
+    stay eliminated. Returns None until the R32 line-up is fully known."""
+    ko = {m["num"]: m for m in matches if not m.get("group") and m.get("round")}
+    r32 = [ko[n] for n in sorted(ko) if 73 <= n <= 88]
+    if len(r32) != 16 or any(m["team1"] not in ELO_SEEDS or
+                             m["team2"] not in ELO_SEEDS for m in r32):
+        return None
+
+    reached = {}
+    for m in r32:
+        reached[m["team1"]] = reached[m["team2"]] = "r32"
+
+    results = {}  # match num -> (winner, loser)
+
+    def resolve(slot):
+        ref = KO_REF_RE.match(slot.strip())
+        if not ref:
+            return slot
+        w, l = results[int(ref.group(2))]
+        return w if ref.group(1) == "W" else l
+
+    for num in sorted(n for n in ko if n in STAGE_AFTER):
+        m = ko[num]
+        t1, t2 = resolve(m["team1"]), resolve(m["team2"])
+        played = (m["status"] == "finished" and m.get("score")
+                  and outcome(m) != 1)  # level w/o shootout data: re-sim
+        results[num] = ((t1, t2) if outcome(m) == 0 else (t2, t1)) if played \
+            else play_knockout(t1, t2, elo)
+        reached[results[num][0]] = STAGE_AFTER[num]
+    return reached
+
+
 def simulate_tournament(matches, elo):
     """One tournament simulation from the current state. Returns the round
     reached per team: g=group exit, r32, r16, qf, sf, f, champ, third."""
+    reached = simulate_knockout_bracket(matches, elo)
+    if reached is not None:
+        return reached
+
     groups = group_fixtures(matches)
     group_results = defaultdict(list)
     for m in matches:
@@ -264,27 +323,17 @@ def simulate_tournament(matches, elo):
         reached[winners[g]] = "r32"
         reached[runners[g]] = "r32"
 
-    def play_knockout(t1, t2):
-        lam1, lam2 = poisson_lambdas(elo[t1], elo[t2])
-        g1, g2 = sample_poisson(lam1), sample_poisson(lam2)
-        if g1 == g2:  # extra time, then effectively penalties
-            g1 += sample_poisson(lam1 / 3)
-            g2 += sample_poisson(lam2 / 3)
-            if g1 == g2:
-                return (t1, t2) if random.random() < 0.5 else (t2, t1)
-        return (t1, t2) if g1 > g2 else (t2, t1)
-
     stage_names = ["r16", "qf", "sf", "f", "champ"]
     field = r32
     for stage in stage_names:
         nxt = []
         for i in range(0, len(field), 2):
-            win1, lose1 = play_knockout(*field[i])
+            win1, lose1 = play_knockout(*field[i], elo)
             if stage == "champ":
                 reached[win1] = "champ"
                 reached[lose1] = "f"
                 continue
-            win2, lose2 = play_knockout(*field[i + 1])
+            win2, lose2 = play_knockout(*field[i + 1], elo)
             reached[win1] = stage
             reached[win2] = stage
             nxt.append((win1, win2))

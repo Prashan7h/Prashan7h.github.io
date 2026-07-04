@@ -20,8 +20,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <style>
 *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
-html { font-size: 16px; }
+html { font-size: 16px; overflow-x: clip; }
 body {
+  overflow-x: clip;  /* the bracket breaks out to viewport width; never h-scroll the page */
   background: #fff;
   color: #0a0a0a;
   font-family: 'Manrope', -apple-system, 'Segoe UI', sans-serif;
@@ -166,9 +167,47 @@ table.t .pts { font-weight: 800; }
 .backlink:hover { color: #0a0a0a; }
 .foot { font-size: 0.72rem; color: #aaa; line-height: 1.6; margin-top: 2.2rem; font-weight: 500; }
 
+/* ---- knockout bracket ---- */
+.bk-intro { font-size: 0.8rem; color: #777; font-weight: 500; line-height: 1.55; margin: 0 0.2rem 1.1rem; }
+.bracket-wrap { overflow-x: auto; -webkit-overflow-scrolling: touch; margin: 0 calc(50% - 50vw); padding: 0 1.1rem 0.6rem; }
+.bracket { display: flex; min-width: 860px; max-width: 1280px; margin: 0 auto; }
+.bk-round { display: flex; flex-direction: column; flex: 1 0 0; min-width: 172px; padding: 0 16px; }
+.bk-round-head { font-size: 0.64rem; font-weight: 800; letter-spacing: 0.08em; text-transform: uppercase; color: #aaa; text-align: center; padding-bottom: 0.8rem; }
+.bk-seeds { display: flex; flex-direction: column; justify-content: space-around; flex: 1; }
+.bk-pair { display: flex; flex-direction: column; justify-content: space-around; flex: 1; position: relative; }
+.bk-tie { position: relative; padding: 0.3rem 0; }
+
+/* connectors: stub out of each tie, vertical join across the pair, stub into next round */
+.bk-round:not(.last) .bk-tie::after {
+  content: ''; position: absolute; top: 50%; right: -16px; width: 16px; height: 2px; background: #e4e4e4;
+}
+.bk-round:not(.last) .bk-pair::after {
+  content: ''; position: absolute; right: -16px; top: 25%; bottom: 25%; width: 2px; background: #e4e4e4;
+}
+.bk-round:not(.last) .bk-pair::before {
+  content: ''; position: absolute; right: -32px; top: 50%; width: 16px; height: 2px; background: #e4e4e4;
+}
+
+.bk-card {
+  display: block; border: 1px solid #e9e9e9; border-radius: 12px; background: #fff;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.03); padding: 0.5rem 0.65rem;
+}
+a.bk-card { transition: border-color 0.15s ease, transform 0.15s ease; }
+a.bk-card:hover { border-color: #0a0a0a; transform: translateY(-1px); }
+.bk-side { display: flex; align-items: baseline; justify-content: space-between; gap: 0.6rem; padding: 0.12rem 0; }
+.bk-name { font-size: 0.82rem; font-weight: 600; color: #555; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.bk-score { font-size: 0.85rem; font-weight: 800; color: #555; flex-shrink: 0; }
+.bk-side.win .bk-name { color: #0a0a0a; font-weight: 800; }
+.bk-side.win .bk-score { color: #0a0a0a; }
+.bk-side.ph .bk-name { color: #b3b3b3; font-weight: 600; font-style: italic; }
+.bk-meta { font-size: 0.6rem; font-weight: 700; letter-spacing: 0.03em; color: #bbb; text-align: center; margin-top: 0.2rem; }
+.bk-third { margin-top: 1.6rem; }
+.bk-third .bk-tie { padding: 0; max-width: 22rem; }
+
 @media (max-width: 560px) {
   .group-grid { grid-template-columns: 1fr; }
   .lineups { grid-template-columns: 1fr; }
+  .bracket-wrap { margin: 0 -1.1rem; padding: 0 1.1rem 0.6rem; }
   .board .score { font-size: 2rem; }
   .board .team .name { font-size: 0.9rem; }
   .odds-row { grid-template-columns: 6.4rem 1fr 3rem; }
