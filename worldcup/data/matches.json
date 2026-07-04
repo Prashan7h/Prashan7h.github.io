@@ -3778,16 +3778,18 @@
    "round": "Round of 16",
    "date": "2026-07-07",
    "time": "12:00 UTC-4",
-   "team1": "W86",
-   "team2": "W88",
+   "team1": "Argentina",
+   "team2": "Egypt",
    "group": null,
    "ground": "Atlanta",
    "score": null,
    "goals1": [],
    "goals2": [],
-   "espn_id": null,
+   "espn_id": "760509",
    "status": "scheduled",
-   "slug": "2026-07-07-w86-vs-w88"
+   "utc_date": "2026-07-07T16:00Z",
+   "venue": "Mercedes-Benz Stadium",
+   "slug": "2026-07-07-argentina-vs-egypt"
   },
   {
    "num": 96,
@@ -3795,15 +3797,17 @@
    "date": "2026-07-07",
    "time": "13:00 UTC-7",
    "team1": "Switzerland",
-   "team2": "W87",
+   "team2": "Colombia",
    "group": null,
    "ground": "Vancouver",
    "score": null,
    "goals1": [],
    "goals2": [],
-   "espn_id": null,
+   "espn_id": "760508",
    "status": "scheduled",
-   "slug": "2026-07-07-switzerland-vs-w87"
+   "utc_date": "2026-07-07T20:00Z",
+   "venue": "BC Place",
+   "slug": "2026-07-07-switzerland-vs-colombia"
   },
   {
    "num": 97,
