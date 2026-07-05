@@ -3753,7 +3753,7 @@
    "goals1": [],
    "goals2": [],
    "espn_id": "760504",
-   "status": "scheduled",
+   "status": "live",
    "utc_date": "2026-07-05T20:00Z",
    "venue": "MetLife Stadium",
    "slug": "2026-07-05-brazil-vs-norway"
@@ -3853,16 +3853,18 @@
    "round": "Quarter-final",
    "date": "2026-07-09",
    "time": "16:00 UTC-4",
-   "team1": "W89",
-   "team2": "W90",
+   "team1": "France",
+   "team2": "Morocco",
    "group": null,
    "ground": "Boston (Foxborough)",
    "score": null,
    "goals1": [],
    "goals2": [],
-   "espn_id": null,
+   "espn_id": "760510",
    "status": "scheduled",
-   "slug": "2026-07-09-w89-vs-w90"
+   "utc_date": "2026-07-09T20:00Z",
+   "venue": "Gillette Stadium",
+   "slug": "2026-07-09-france-vs-morocco"
   },
   {
    "num": 98,
