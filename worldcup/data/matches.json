@@ -3674,12 +3674,28 @@
    "team2": "France",
    "group": null,
    "ground": "Philadelphia",
-   "score": null,
+   "score": {
+    "ft": [
+     0,
+     1
+    ],
+    "ht": [
+     0,
+     0
+    ]
+   },
    "goals1": [],
-   "goals2": [],
+   "goals2": [
+    {
+     "name": "Kylian Mbappé",
+     "minute": "70",
+     "penalty": true
+    }
+   ],
    "espn_id": "760503",
-   "status": "scheduled",
+   "status": "finished",
    "utc_date": "2026-07-04T21:00Z",
+   "attendance": 68324,
    "venue": "Lincoln Financial Field",
    "slug": "2026-07-04-paraguay-vs-france"
   },

@@ -1,0 +1,806 @@
+{
+ "teams": [
+  {
+   "name": "Paraguay",
+   "stats": {
+    "possessionPct": "24.1",
+    "totalShots": "5",
+    "shotsOnTarget": "1",
+    "wonCorners": "2",
+    "foulsCommitted": "13",
+    "offsides": "0",
+    "saves": "4",
+    "yellowCards": "0",
+    "redCards": "0"
+   }
+  },
+  {
+   "name": "France",
+   "stats": {
+    "possessionPct": "75.9",
+    "totalShots": "15",
+    "shotsOnTarget": "5",
+    "wonCorners": "12",
+    "foulsCommitted": "11",
+    "offsides": "0",
+    "saves": "1",
+    "yellowCards": "3",
+    "redCards": "0"
+   }
+  }
+ ],
+ "events": [
+  {
+   "type": "Kickoff",
+   "minute": "",
+   "team": null,
+   "text": "First Half begins.",
+   "players": []
+  },
+  {
+   "type": "Yellow Card",
+   "minute": "19'",
+   "team": "France",
+   "text": "Bradley Barcola (France) is shown the yellow card for a bad foul.",
+   "players": [
+    "Bradley Barcola"
+   ]
+  },
+  {
+   "type": "Start Delay",
+   "minute": "23'",
+   "team": "France",
+   "text": "Delay in match for a drinks break.",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "23'",
+   "team": "Paraguay",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "26'",
+   "team": "France",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "26'",
+   "team": "Paraguay",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Halftime",
+   "minute": "45'+4'",
+   "team": null,
+   "text": "First Half ends, Paraguay 0, France 0.",
+   "players": []
+  },
+  {
+   "type": "Start 2nd Half",
+   "minute": "45'",
+   "team": null,
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "52'",
+   "team": "France",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "52'",
+   "team": "Paraguay",
+   "text": "Delay in match because of an injury Orlando Gill (Paraguay).",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "53'",
+   "team": "Paraguay",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "53'",
+   "team": "France",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Substitution",
+   "minute": "58'",
+   "team": "Paraguay",
+   "text": "Substitution, Paraguay. José Canale replaces Omar Alderete because of an injury.",
+   "players": [
+    "José Canale",
+    "Omar Alderete"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "61'",
+   "team": "Paraguay",
+   "text": "Substitution, Paraguay. Gustavo Caballero replaces Julio Enciso because of an injury.",
+   "players": [
+    "Gustavo Caballero",
+    "Julio Enciso"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "61'",
+   "team": "France",
+   "text": "Substitution, France. Désiré Doué replaces Bradley Barcola.",
+   "players": [
+    "Désiré Doué",
+    "Bradley Barcola"
+   ]
+  },
+  {
+   "type": "Start Delay",
+   "minute": "66'",
+   "team": "France",
+   "text": "Delay in match because of an injury Désiré Doué (France).",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "66'",
+   "team": "Paraguay",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "67'",
+   "team": "France",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "67'",
+   "team": "Paraguay",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "67'",
+   "team": "France",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "68'",
+   "team": "France",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Penalty - Scored",
+   "minute": "70'",
+   "team": "France",
+   "text": "Goal! Paraguay 0, France 1. Kylian Mbappé (France) converts the penalty with a right footed shot to the bottom right corner.",
+   "players": [
+    "Kylian Mbappé"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "71'",
+   "team": "Paraguay",
+   "text": "Substitution, Paraguay. Mauricio replaces Diego Gómez.",
+   "players": [
+    "Maurício",
+    "Diego Gómez"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "71'",
+   "team": "Paraguay",
+   "text": "Substitution, Paraguay. Gabriel Ávalos replaces Miguel Almirón.",
+   "players": [
+    "Gabriel Ávalos",
+    "Miguel Almirón"
+   ]
+  },
+  {
+   "type": "Start Delay",
+   "minute": "73'",
+   "team": "France",
+   "text": "Delay in match for a drinks break.",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "73'",
+   "team": "Paraguay",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "76'",
+   "team": "Paraguay",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "76'",
+   "team": "France",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "Yellow Card",
+   "minute": "81'",
+   "team": "France",
+   "text": "Manu Koné (France) is shown the yellow card for a bad foul.",
+   "players": [
+    "Manu Koné"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "84'",
+   "team": "France",
+   "text": "Substitution, France. Rayan Cherki replaces Ousmane Dembélé.",
+   "players": [
+    "Rayan Cherki",
+    "Ousmane Dembélé"
+   ]
+  },
+  {
+   "type": "Yellow Card",
+   "minute": "90'+7'",
+   "team": "France",
+   "text": "Michael Olise (France) is shown the yellow card.",
+   "players": [
+    "Michael Olise"
+   ]
+  },
+  {
+   "type": "End Regular Time",
+   "minute": "90'+11'",
+   "team": null,
+   "text": "Second Half ends, Paraguay 0, France 1.",
+   "players": []
+  }
+ ],
+ "shots": [
+  {
+   "minute": "22",
+   "seconds": 1288.0,
+   "team": "France",
+   "player": "Manu Koné",
+   "type": "Shot Blocked",
+   "x": 73.2,
+   "y": 40.1,
+   "goal": false,
+   "xg": 0.061,
+   "text": "Attempt blocked. Manu Koné (France) left footed shot from outside the box is blocked. Assisted by Ousmane Dembélé."
+  },
+  {
+   "minute": "28",
+   "seconds": 1650.0,
+   "team": "Paraguay",
+   "player": "Júnior Alonso",
+   "type": "Shot Off Target",
+   "x": 72.1,
+   "y": 63.4,
+   "goal": false,
+   "xg": 0.052,
+   "text": "Attempt missed. Júnior Alonso (Paraguay) left footed shot from outside the box misses to the right. Assisted by Andrés Cubas."
+  },
+  {
+   "minute": "28",
+   "seconds": 1651.0,
+   "team": "Paraguay",
+   "player": "Diego Gómez",
+   "type": "Shot Off Target",
+   "x": 74.0,
+   "y": 38.0,
+   "goal": false,
+   "xg": 0.063,
+   "text": "Attempt missed. Diego Gómez (Paraguay) right footed shot from outside the box misses to the right."
+  },
+  {
+   "minute": "33",
+   "seconds": 1937.0,
+   "team": "France",
+   "player": "Adrien Rabiot",
+   "type": "Shot Off Target",
+   "x": 71.7,
+   "y": 53.3,
+   "goal": false,
+   "xg": 0.057,
+   "text": "Attempt missed. Adrien Rabiot (France) left footed shot from outside the box is too high. Assisted by Ousmane Dembélé."
+  },
+  {
+   "minute": "38",
+   "seconds": 2277.0,
+   "team": "France",
+   "player": "Ousmane Dembélé",
+   "type": "Shot Blocked",
+   "x": 85.3,
+   "y": 25.4,
+   "goal": false,
+   "xg": 0.089,
+   "text": "Attempt blocked. Ousmane Dembélé (France) left footed shot from the right side of the box is blocked. Assisted by Kylian Mbappé."
+  },
+  {
+   "minute": "43",
+   "seconds": 2576.0,
+   "team": "France",
+   "player": "Manu Koné",
+   "type": "Shot Off Target",
+   "x": 77.9,
+   "y": 63.4,
+   "goal": false,
+   "xg": 0.085,
+   "text": "Attempt missed. Manu Koné (France) right footed shot from outside the box is high and wide to the right. Assisted by Dayot Upamecano."
+  },
+  {
+   "minute": "45",
+   "seconds": 2697.0,
+   "team": "France",
+   "player": "Adrien Rabiot",
+   "type": "Shot Blocked",
+   "x": 76.3,
+   "y": 58.1,
+   "goal": false,
+   "xg": 0.083,
+   "text": "Attempt blocked. Adrien Rabiot (France) left footed shot from outside the box is blocked. Assisted by Bradley Barcola."
+  },
+  {
+   "minute": "49",
+   "seconds": 2909.0,
+   "team": "France",
+   "player": "Adrien Rabiot",
+   "type": "Shot Off Target",
+   "x": 74.6,
+   "y": 38.5,
+   "goal": false,
+   "xg": 0.067,
+   "text": "Attempt missed. Adrien Rabiot (France) left footed shot from outside the box is too high. Assisted by Manu Koné."
+  },
+  {
+   "minute": "50",
+   "seconds": 2950.0,
+   "team": "Paraguay",
+   "player": "Miguel Almirón",
+   "type": "Shot Blocked",
+   "x": 90.2,
+   "y": 28.0,
+   "goal": false,
+   "xg": 0.125,
+   "text": "Attempt blocked. Miguel Almirón (Paraguay) left footed shot from the right side of the box is blocked."
+  },
+  {
+   "minute": "52",
+   "seconds": 3061.0,
+   "team": "France",
+   "player": "Ousmane Dembélé",
+   "type": "Shot Off Target",
+   "x": 96.5,
+   "y": 66.1,
+   "goal": false,
+   "xg": 0.185,
+   "text": "Attempt missed. Ousmane Dembélé (France) right footed shot from a difficult angle on the left is close, but misses to the left. Assisted by Kylian Mbappé following a corner."
+  },
+  {
+   "minute": "54",
+   "seconds": 3238.0,
+   "team": "France",
+   "player": "Manu Koné",
+   "type": "Shot On Target",
+   "x": 74.3,
+   "y": 67.7,
+   "goal": false,
+   "xg": 0.056,
+   "text": "Attempt saved. Manu Koné (France) right footed shot from outside the box is saved in the top right corner by Orlando Gill (Paraguay). Assisted by Bradley Barcola."
+  },
+  {
+   "minute": "60",
+   "seconds": 3571.0,
+   "team": "France",
+   "player": "Bradley Barcola",
+   "type": "Shot Off Target",
+   "x": 74.9,
+   "y": 57.9,
+   "goal": false,
+   "xg": 0.074,
+   "text": "Attempt missed. Bradley Barcola (France) right footed shot from outside the box is too high. Assisted by Adrien Rabiot."
+  },
+  {
+   "minute": "64",
+   "seconds": 3801.0,
+   "team": "France",
+   "player": "Kylian Mbappé",
+   "type": "Shot Off Target",
+   "x": 72.8,
+   "y": 66.4,
+   "goal": false,
+   "xg": 0.052,
+   "text": "Attempt missed. Kylian Mbappé (France) right footed shot from outside the box is too high. Assisted by Désiré Doué."
+  },
+  {
+   "minute": "70",
+   "seconds": 4156.0,
+   "team": "France",
+   "player": "Kylian Mbappé",
+   "type": "Penalty - Scored",
+   "x": 88.5,
+   "y": 50.0,
+   "goal": true,
+   "xg": 0.76,
+   "text": "Goal! Paraguay 0, France 1. Kylian Mbappé (France) converts the penalty with a right footed shot to the bottom right corner."
+  },
+  {
+   "minute": "87",
+   "seconds": 5168.0,
+   "team": "Paraguay",
+   "player": "Júnior Alonso",
+   "type": "Shot Off Target",
+   "x": 79.3,
+   "y": 63.4,
+   "goal": false,
+   "xg": 0.096,
+   "text": "Attempt missed. Júnior Alonso (Paraguay) left footed shot from outside the box misses to the right. Assisted by Mauricio."
+  },
+  {
+   "minute": "89",
+   "seconds": 5289.0,
+   "team": "France",
+   "player": "Kylian Mbappé",
+   "type": "Shot On Target",
+   "x": 79.4,
+   "y": 64.0,
+   "goal": false,
+   "xg": 0.095,
+   "text": "Attempt saved. Kylian Mbappé (France) right footed shot from outside the box is saved in the bottom right corner by Orlando Gill (Paraguay). Assisted by Désiré Doué."
+  },
+  {
+   "minute": "90",
+   "seconds": 5367.0,
+   "team": "Paraguay",
+   "player": "Mauricio",
+   "type": "Shot Off Target",
+   "x": 76.6,
+   "y": 47.2,
+   "goal": false,
+   "xg": 0.091,
+   "text": "Attempt missed. Mauricio (Paraguay) right footed shot from outside the box is close, but misses to the left. Assisted by Matías Galarza with a headed pass."
+  },
+  {
+   "minute": "90'+1",
+   "seconds": 5400.0,
+   "team": "France",
+   "player": "Désiré Doué",
+   "type": "Shot Blocked",
+   "x": 81.5,
+   "y": 68.3,
+   "goal": false,
+   "xg": 0.096,
+   "text": "Attempt blocked. Désiré Doué (France) right footed shot from outside the box is blocked. Assisted by Michael Olise."
+  },
+  {
+   "minute": "90'+6",
+   "seconds": 5400.0,
+   "team": "France",
+   "player": "Kylian Mbappé",
+   "type": "Shot On Target",
+   "x": 85.8,
+   "y": 55.0,
+   "goal": false,
+   "xg": 0.225,
+   "text": "Attempt saved. Kylian Mbappé (France) left footed shot from the centre of the box is saved in the bottom left corner by Orlando Gill (Paraguay). Assisted by Désiré Doué."
+  },
+  {
+   "minute": "90'+6",
+   "seconds": 5400.0,
+   "team": "France",
+   "player": "Kylian Mbappé",
+   "type": "Shot On Target",
+   "x": 90.8,
+   "y": 56.6,
+   "goal": false,
+   "xg": 0.367,
+   "text": "Attempt saved. Kylian Mbappé (France) left footed shot from the centre of the box is saved in the centre of the goal by Orlando Gill (Paraguay)."
+  }
+ ],
+ "lineups": [
+  {
+   "team": "Paraguay",
+   "formation": "5-4-1",
+   "starters": [
+    {
+     "name": "Orlando Gill",
+     "jersey": "12",
+     "position": "G"
+    },
+    {
+     "name": "Gustavo Gómez",
+     "jersey": "15",
+     "position": "CD"
+    },
+    {
+     "name": "Omar Alderete",
+     "jersey": "3",
+     "position": "CD-L"
+    },
+    {
+     "name": "Gustavo Velázquez",
+     "jersey": "2",
+     "position": "CD-R"
+    },
+    {
+     "name": "Júnior Alonso",
+     "jersey": "6",
+     "position": "LB"
+    },
+    {
+     "name": "Juan Jose Cáceres",
+     "jersey": "4",
+     "position": "RB"
+    },
+    {
+     "name": "Andrés Cubas",
+     "jersey": "14",
+     "position": "CM-L"
+    },
+    {
+     "name": "Diego Gómez",
+     "jersey": "8",
+     "position": "CM-R"
+    },
+    {
+     "name": "Matías Galarza",
+     "jersey": "23",
+     "position": "LM"
+    },
+    {
+     "name": "Miguel Almirón",
+     "jersey": "10",
+     "position": "RM"
+    },
+    {
+     "name": "Julio Enciso",
+     "jersey": "19",
+     "position": "F"
+    }
+   ],
+   "subs": [
+    {
+     "name": "Alejandro Romero Gamarra",
+     "jersey": "17",
+     "position": "SUB"
+    },
+    {
+     "name": "Fabián Balbuena",
+     "jersey": "5",
+     "position": "SUB"
+    },
+    {
+     "name": "Alex Arce",
+     "jersey": "18",
+     "position": "SUB"
+    },
+    {
+     "name": "Maurício",
+     "jersey": "11",
+     "position": "SUB"
+    },
+    {
+     "name": "Gustavo Caballero",
+     "jersey": "24",
+     "position": "SUB"
+    },
+    {
+     "name": "Damián Bobadilla",
+     "jersey": "16",
+     "position": "SUB"
+    },
+    {
+     "name": "Antonio Sanabria",
+     "jersey": "9",
+     "position": "SUB"
+    },
+    {
+     "name": "Ramón Sosa",
+     "jersey": "7",
+     "position": "SUB"
+    },
+    {
+     "name": "Braian Ojeda",
+     "jersey": "20",
+     "position": "SUB"
+    },
+    {
+     "name": "Gastón Olveira",
+     "jersey": "22",
+     "position": "SUB"
+    },
+    {
+     "name": "Gatito Fernández",
+     "jersey": "1",
+     "position": "SUB"
+    },
+    {
+     "name": "José Canale",
+     "jersey": "13",
+     "position": "SUB"
+    },
+    {
+     "name": "Alexandro Maidana",
+     "jersey": "26",
+     "position": "SUB"
+    },
+    {
+     "name": "Isidro Pitta",
+     "jersey": "25",
+     "position": "SUB"
+    },
+    {
+     "name": "Gabriel Ávalos",
+     "jersey": "21",
+     "position": "SUB"
+    }
+   ]
+  },
+  {
+   "team": "France",
+   "formation": "4-2-3-1",
+   "starters": [
+    {
+     "name": "Mike Maignan",
+     "jersey": "16",
+     "position": "G"
+    },
+    {
+     "name": "William Saliba",
+     "jersey": "17",
+     "position": "CD-L"
+    },
+    {
+     "name": "Dayot Upamecano",
+     "jersey": "4",
+     "position": "CD-R"
+    },
+    {
+     "name": "Lucas Digne",
+     "jersey": "3",
+     "position": "LB"
+    },
+    {
+     "name": "Jules Koundé",
+     "jersey": "5",
+     "position": "RB"
+    },
+    {
+     "name": "Michael Olise",
+     "jersey": "11",
+     "position": "AM"
+    },
+    {
+     "name": "Adrien Rabiot",
+     "jersey": "14",
+     "position": "LM"
+    },
+    {
+     "name": "Manu Koné",
+     "jersey": "6",
+     "position": "RM"
+    },
+    {
+     "name": "Kylian Mbappé",
+     "jersey": "10",
+     "position": "F"
+    },
+    {
+     "name": "Bradley Barcola",
+     "jersey": "12",
+     "position": "AM-L"
+    },
+    {
+     "name": "Ousmane Dembélé",
+     "jersey": "7",
+     "position": "AM-R"
+    }
+   ],
+   "subs": [
+    {
+     "name": "Aurélien Tchouaméni",
+     "jersey": "8",
+     "position": "SUB"
+    },
+    {
+     "name": "Désiré Doué",
+     "jersey": "20",
+     "position": "SUB"
+    },
+    {
+     "name": "Jean-Philippe Mateta",
+     "jersey": "22",
+     "position": "SUB"
+    },
+    {
+     "name": "Theo Hernández",
+     "jersey": "19",
+     "position": "SUB"
+    },
+    {
+     "name": "N'Golo Kanté",
+     "jersey": "13",
+     "position": "SUB"
+    },
+    {
+     "name": "Lucas Hernández",
+     "jersey": "21",
+     "position": "SUB"
+    },
+    {
+     "name": "Maghnes Akliouche",
+     "jersey": "25",
+     "position": "SUB"
+    },
+    {
+     "name": "Maxence Lacroix",
+     "jersey": "26",
+     "position": "SUB"
+    },
+    {
+     "name": "Ibrahima Konaté",
+     "jersey": "15",
+     "position": "SUB"
+    },
+    {
+     "name": "Robin Risser",
+     "jersey": "23",
+     "position": "SUB"
+    },
+    {
+     "name": "Marcus Thuram",
+     "jersey": "9",
+     "position": "SUB"
+    },
+    {
+     "name": "Brice Samba",
+     "jersey": "1",
+     "position": "SUB"
+    },
+    {
+     "name": "Rayan Cherki",
+     "jersey": "24",
+     "position": "SUB"
+    },
+    {
+     "name": "Warren Zaïre-Emery",
+     "jersey": "18",
+     "position": "SUB"
+    },
+    {
+     "name": "Malo Gusto",
+     "jersey": "2",
+     "position": "SUB"
+    }
+   ]
+  }
+ ],
+ "attendance": 68324,
+ "venue": "Lincoln Financial Field, Philadelphia, Pennsylvania, USA"
+}
