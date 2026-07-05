@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-KVBPX8VW');</script>
+    <!-- End Google Tag Manager -->
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Hawking radiation — how quantum mechanics forced black holes to leak, and what the resulting information paradox is still doing to physics.">
+    <link rel="icon" type="image/svg+xml" href="../images/favicon.svg">
+    <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon-32.png">
+    <link rel="apple-touch-icon" href="../images/apple-touch-icon.png">
+    <title>Hawking Radiation | Prashanth Shankar</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+
+    <style>
+        *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+        html { font-size: 16px; scroll-behavior: smooth; }
+        body {
+            background: #fff;
+            color: #000;
+            font-family: 'Inter', -apple-system, sans-serif;
+            font-weight: 400;
+            line-height: 1.7;
+        }
+        ::selection { background: #000; color: #fff; }
+
+        .page {
+            max-width: 720px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        header {
+            padding: 2.5rem 0 0;
+        }
+
+        .back-link {
+            font-size: 0.75rem;
+            font-weight: 400;
+            letter-spacing: 0.04em;
+            color: #000;
+            text-decoration: none;
+            transition: opacity 0.2s ease;
+        }
+        .back-link:hover { opacity: 0.5; }
+
+        article {
+            padding: 4rem 0 3rem;
+        }
+
+        article h1 {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 2.6rem;
+            font-weight: 600;
+            line-height: 1.15;
+            margin-bottom: 1rem;
+        }
+
+        .deck {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.25rem;
+            font-style: italic;
+            line-height: 1.5;
+            color: #000;
+            margin-bottom: 2.5rem;
+        }
+
+        article h2 {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.8rem;
+            font-weight: 600;
+            line-height: 1.2;
+            margin: 3rem 0 1rem;
+        }
+
+        article p {
+            font-size: 0.95rem;
+            font-weight: 300;
+            line-height: 1.75;
+            margin-bottom: 1rem;
+        }
+
+        article em {
+            font-style: italic;
+        }
+
+        .pullquote {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.35rem;
+            font-style: italic;
+            line-height: 1.45;
+            padding: 1.5rem 0 1.5rem 1.5rem;
+            border-left: 2px solid #000;
+            margin: 2rem 0;
+            color: #000;
+        }
+
+        .figure {
+            margin: 2.5rem 0;
+        }
+        .figure svg {
+            display: block;
+            width: 100%;
+            height: auto;
+            max-width: 640px;
+            margin: 0 auto;
+        }
+        .caption {
+            font-size: 0.78rem;
+            color: #666;
+            text-align: center;
+            margin-top: 0.8rem;
+            line-height: 1.5;
+            font-style: italic;
+            font-family: 'Cormorant Garamond', serif;
+        }
+
+        hr.divider {
+            border: none;
+            border-top: 1px solid #000;
+            margin: 3rem 0;
+        }
+
+        .references {
+            font-size: 0.8rem;
+            color: #555;
+            line-height: 1.7;
+            margin-top: 2rem;
+        }
+        .references h3 {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: #000;
+            margin-bottom: 0.75rem;
+        }
+        .references ol {
+            padding-left: 1.2rem;
+        }
+        .references li {
+            margin-bottom: 0.35rem;
+        }
+
+        footer {
+            padding: 2rem 0 3rem;
+            font-size: 0.75rem;
+            color: #666;
+        }
+        footer a { color: inherit; text-decoration: underline; text-underline-offset: 0.2em; }
+    </style>
+</head>
+<body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KVBPX8VW" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+    <div class="page">
+        <header>
+            <a href="index.html" class="back-link">&larr; Wonderland</a>
+        </header>
+
+        <article>
+            <h1>Hawking Radiation</h1>
+            <p class="deck">A black hole was supposed to be the one thing that ate everything and gave nothing back. In 1974, a quantum calculation forced it to glow.</p>
+
+            <p>Classical general relativity is unambiguous about black holes. Cross the event horizon and you never come back; not a photon, not a particle, not a signal. The word &ldquo;black&rdquo; is meant literally. Yet in 1974, a 32-year-old Stephen Hawking published a short paper with a stranger-than-fiction result: black holes are not black. They radiate. They have a temperature. And, given enough time, they evaporate entirely. The calculation took thermodynamics, quantum field theory, and general relativity &mdash; three theories that famously do not fit together &mdash; and forced them to speak at once. What came out changed the questions physics is willing to ask.</p>
+
+            <h2>The setup: entropy trouble at the horizon</h2>
+
+            <p>The trouble started a few years earlier. In 1972, Jacob Bekenstein noticed a paradox. If you toss a hot cup of tea into a black hole, its entropy vanishes from the outside universe. But entropy is not supposed to just vanish; the second law of thermodynamics is a rule, not a suggestion. Something has to keep track.</p>
+
+            <p>Bekenstein made the bold proposal that black holes themselves must carry entropy, and that this entropy should be proportional to the area of the event horizon &mdash; not the volume inside, but the two-dimensional surface. Add mass to a black hole and its area grows; its entropy grows to match. Beautiful. But entropy without temperature is meaningless in thermodynamics, and a black hole with a temperature is a black hole that radiates. Bekenstein flinched at that conclusion. Hawking, initially, thought Bekenstein was wrong.</p>
+
+            <p>He tried to prove him wrong. The calculation refused to cooperate.</p>
+
+            <h2>The mechanism: pair production at the edge</h2>
+
+            <p>To see what Hawking found, picture the vacuum &mdash; not empty, but a foam. Quantum field theory permits pairs of virtual particles to pop into existence for a fleeting moment and then annihilate, borrowing energy from the uncertainty principle and paying it back before anyone notices. In flat space, nothing lasting comes of this. Near the horizon of a black hole, the geometry is different.</p>
+
+            <div class="figure">
+                <svg viewBox="0 0 640 260" xmlns="http://www.w3.org/2000/svg">
+                    <!-- Black hole disk -->
+                    <circle cx="180" cy="130" r="90" fill="#000"/>
+                    <!-- Event horizon label -->
+                    <circle cx="180" cy="130" r="90" fill="none" stroke="#000" stroke-width="1"/>
+                    <text x="180" y="240" font-family="'Cormorant Garamond', serif" font-style="italic" font-size="14" fill="#666" text-anchor="middle">event horizon</text>
+                    <!-- Vertical dashed line = horizon boundary illustrative -->
+                    <line x1="270" y1="30" x2="270" y2="230" stroke="#000" stroke-width="1" stroke-dasharray="4 4"/>
+                    <!-- Pair 1 near horizon -->
+                    <circle cx="260" cy="90" r="7" fill="#000"/>
+                    <circle cx="290" cy="90" r="7" fill="#fff" stroke="#000" stroke-width="1"/>
+                    <text x="260" y="76" font-family="Inter, sans-serif" font-size="10" fill="#000" text-anchor="middle">&minus;</text>
+                    <text x="290" y="76" font-family="Inter, sans-serif" font-size="10" fill="#000" text-anchor="middle">+</text>
+                    <!-- Arrows: negative energy in, positive out -->
+                    <g stroke="#000" stroke-width="1" fill="none">
+                        <path d="M 260 100 L 240 120" marker-end="url(#hrArrow)"/>
+                        <path d="M 290 100 L 360 60" marker-end="url(#hrArrow)"/>
+                    </g>
+                    <!-- Labels for outgoing / infalling -->
+                    <text x="380" y="60" font-family="'Cormorant Garamond', serif" font-style="italic" font-size="14" fill="#000">escapes &rarr; Hawking quantum</text>
+                    <text x="380" y="120" font-family="'Cormorant Garamond', serif" font-style="italic" font-size="14" fill="#000">infalls &rarr; carries</text>
+                    <text x="380" y="138" font-family="'Cormorant Garamond', serif" font-style="italic" font-size="14" fill="#000">negative energy</text>
+                    <text x="380" y="180" font-family="Inter, sans-serif" font-size="11" fill="#666">the black hole loses mass</text>
+                    <defs>
+                        <marker id="hrArrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+                            <path d="M 0 0 L 10 5 L 0 10 z" fill="#000"/>
+                        </marker>
+                    </defs>
+                </svg>
+                <p class="caption">A cartoon of pair production at the horizon. One partner escapes as a real quantum; the other, with negative energy, falls in and drains the hole's mass.</p>
+            </div>
+
+            <p>When a pair appears straddling the horizon, the two halves are torn apart. One partner falls in; the other, cut off from its annihilation partner forever, has nowhere to go but out. The infalling partner, by the accounting of a distant observer, has negative energy &mdash; and so, quietly, the black hole loses a sliver of its mass. To the far observer, particles seem to trickle away from a region where classically nothing should escape. That trickle is Hawking radiation.</p>
+
+            <p>The cartoon is not literally what the mathematics says &mdash; Hawking's original derivation is a subtler statement about how the very definition of a &ldquo;particle&rdquo; depends on the observer, and how a vacuum for someone falling in looks like a thermal bath to someone watching from far away. But the picture captures the outcome, and the outcome is remarkable: the spectrum is thermal. A black hole radiates almost exactly like a hot object at a specific temperature, set entirely by its mass:</p>
+
+            <p class="pullquote">A black hole is not a hole at all. It is a body with a definite temperature, a definite entropy, and a finite lifetime. Its blackness was an artefact of ignoring quantum mechanics.</p>
+
+            <h2>The consequence: black holes have a lifetime</h2>
+
+            <p>A stellar-mass black hole is exquisitely cold &mdash; its Hawking temperature is around a hundred-billionth of a degree. It absorbs cosmic microwave background photons vastly faster than it emits its own. In the present universe such a hole grows; it does not evaporate. But the universe will not stay warm forever. Once the background cools below the hole's temperature, the trickle out overtakes the trickle in, and evaporation wins.</p>
+
+            <p>The lifetime scales as the cube of the mass. A solar-mass black hole would need something like 10<sup>67</sup> years to evaporate &mdash; a number so large that &ldquo;the age of the universe&rdquo; is a rounding error next to it. A microscopic primordial black hole with the mass of a mountain, on the other hand, would finish evaporating in roughly the current age of the universe, ending its life in a bright burst of gamma rays. None has been observed. Yet.</p>
+
+            <div class="figure">
+                <svg viewBox="0 0 640 240" xmlns="http://www.w3.org/2000/svg">
+                    <!-- Axes -->
+                    <line x1="70" y1="200" x2="600" y2="200" stroke="#000" stroke-width="1"/>
+                    <line x1="70" y1="40" x2="70" y2="200" stroke="#000" stroke-width="1"/>
+                    <!-- Axis labels -->
+                    <text x="335" y="228" font-family="'Cormorant Garamond', serif" font-style="italic" font-size="14" fill="#000" text-anchor="middle">mass of the black hole &rarr;</text>
+                    <text x="30" y="120" font-family="'Cormorant Garamond', serif" font-style="italic" font-size="14" fill="#000" text-anchor="middle" transform="rotate(-90 30 120)">temperature</text>
+                    <!-- Curve: T ~ 1/M -->
+                    <path d="M 90 55 C 130 90, 170 140, 250 170 S 480 195, 590 198" stroke="#000" stroke-width="1.5" fill="none"/>
+                    <!-- Ticks: primordial vs stellar -->
+                    <line x1="140" y1="196" x2="140" y2="204" stroke="#000" stroke-width="1"/>
+                    <text x="140" y="218" font-family="Inter, sans-serif" font-size="11" fill="#000" text-anchor="middle">primordial</text>
+                    <line x1="380" y1="196" x2="380" y2="204" stroke="#000" stroke-width="1"/>
+                    <text x="380" y="218" font-family="Inter, sans-serif" font-size="11" fill="#000" text-anchor="middle">stellar</text>
+                    <line x1="540" y1="196" x2="540" y2="204" stroke="#000" stroke-width="1"/>
+                    <text x="540" y="218" font-family="Inter, sans-serif" font-size="11" fill="#000" text-anchor="middle">supermassive</text>
+                    <!-- Annotation dots -->
+                    <circle cx="140" cy="72" r="3.5" fill="#000"/>
+                    <text x="150" y="70" font-family="'Cormorant Garamond', serif" font-style="italic" font-size="13" fill="#000">hot &mdash; evaporates fast</text>
+                    <circle cx="540" cy="197" r="3.5" fill="#000"/>
+                    <text x="440" y="182" font-family="'Cormorant Garamond', serif" font-style="italic" font-size="13" fill="#000">colder than empty space</text>
+                </svg>
+                <p class="caption">The strange thermodynamics of black holes: bigger means colder. Adding mass makes a black hole harder, not easier, to boil away.</p>
+            </div>
+
+            <p>This inverted thermodynamics &mdash; hotter as they shrink &mdash; is why the endpoint is a runaway. As a hole loses mass, its temperature climbs; as its temperature climbs, it radiates more furiously; as it radiates more furiously, it loses mass faster still. The final moments are a flash.</p>
+
+            <h2>The puzzle: where did the information go?</h2>
+
+            <p>And then the trouble began. If Hawking's radiation is perfectly thermal &mdash; characterised only by a temperature, indifferent to what fell in &mdash; then the black hole is a shredder. A library dropped in yesterday and a swimming pool dropped in today come out as the same featureless glow. But quantum mechanics forbids this. The evolution of a closed quantum system is <em>unitary</em>: distinct starting states must lead to distinct ending states. Information is conserved. You should, in principle, always be able to run the film backwards.</p>
+
+            <p>This is the <em>black hole information paradox</em>, and it is the deepest open problem in fundamental physics. If Hawking is right, quantum mechanics is wrong. If quantum mechanics is right, then somewhere in the calculation &mdash; in general relativity, in quantum field theory, in the very notion of a smooth horizon &mdash; something must give. Nearly every major idea in theoretical physics since the 1990s &mdash; the holographic principle, string theory's black-hole microstate countings, AdS/CFT duality, the recent &ldquo;island&rdquo; formulae &mdash; is in some sense an attempt to answer the question: what happens to the pages of the book that fell in?</p>
+
+            <p>The evidence has been quietly shifting. Detailed calculations now suggest the information does come back out, encoded so subtly in the correlations of Hawking quanta that any single quantum looks thermal in isolation. The full story is only visible when you have the whole radiation cloud in hand &mdash; and even then, only when you take seriously that spacetime itself is not fundamental but somehow made of quantum information.</p>
+
+            <p>What began as a small correction to a purely geometric object has become a lever prying open the joint between quantum mechanics and gravity. The lever is still moving.</p>
+
+            <hr class="divider">
+
+            <div class="references">
+                <h3>Further reading</h3>
+                <ol>
+                    <li>Hawking, S. W. (1974). <em>Black hole explosions?</em> Nature, 248, 30&ndash;31.</li>
+                    <li>Hawking, S. W. (1975). <em>Particle creation by black holes</em>. Communications in Mathematical Physics, 43, 199&ndash;220.</li>
+                    <li>Bekenstein, J. D. (1973). <em>Black holes and entropy</em>. Physical Review D, 7, 2333.</li>
+                    <li>Susskind, L. (2008). <em>The Black Hole War</em>.</li>
+                    <li>Almheiri, A. et al. (2021). <em>The entropy of Hawking radiation</em>. Reviews of Modern Physics, 93, 035002.</li>
+                </ol>
+            </div>
+        </article>
+
+        <footer>
+            <a href="index.html">&larr; Back to Wonderland</a>
+        </footer>
+    </div>
+</body>
+</html>
