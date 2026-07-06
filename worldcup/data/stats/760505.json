@@ -1,0 +1,1017 @@
+{
+ "teams": [
+  {
+   "name": "Mexico",
+   "stats": {
+    "possessionPct": "66.9",
+    "totalShots": "20",
+    "shotsOnTarget": "5",
+    "wonCorners": "12",
+    "foulsCommitted": "14",
+    "offsides": "1",
+    "saves": "2",
+    "yellowCards": "2",
+    "redCards": "0"
+   }
+  },
+  {
+   "name": "England",
+   "stats": {
+    "possessionPct": "33.1",
+    "totalShots": "6",
+    "shotsOnTarget": "5",
+    "wonCorners": "2",
+    "foulsCommitted": "7",
+    "offsides": "0",
+    "saves": "3",
+    "yellowCards": "4",
+    "redCards": "1"
+   }
+  }
+ ],
+ "events": [
+  {
+   "type": "Start Delay",
+   "minute": "",
+   "team": "Mexico",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Kickoff",
+   "minute": "",
+   "team": null,
+   "text": "First Half begins.",
+   "players": []
+  },
+  {
+   "type": "Yellow Card",
+   "minute": "1'",
+   "team": "England",
+   "text": "Declan Rice (England) is shown the yellow card for a bad foul.",
+   "players": [
+    "Declan Rice"
+   ]
+  },
+  {
+   "type": "Start Delay",
+   "minute": "2'",
+   "team": "Mexico",
+   "text": "Delay in match because of an injury Luis Romo (Mexico).",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "2'",
+   "team": "England",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "3'",
+   "team": "Mexico",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "3'",
+   "team": "England",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "23'",
+   "team": "Mexico",
+   "text": "Delay in match for a drinks break.",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "23'",
+   "team": "England",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "26'",
+   "team": "Mexico",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "26'",
+   "team": "England",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Goal - Header",
+   "minute": "36'",
+   "team": "England",
+   "text": "Goal! Mexico 0, England 1. Jude Bellingham (England) header from very close range to the bottom left corner. Assisted by Bukayo Saka with a cross.",
+   "players": [
+    "Jude Bellingham",
+    "Bukayo Saka"
+   ]
+  },
+  {
+   "type": "Goal",
+   "minute": "38'",
+   "team": "England",
+   "text": "Goal! Mexico 0, England 2. Jude Bellingham (England) right footed shot from very close range to the bottom left corner. Assisted by Harry Kane.",
+   "players": [
+    "Jude Bellingham",
+    "Harry Kane"
+   ]
+  },
+  {
+   "type": "Goal - Volley",
+   "minute": "42'",
+   "team": "Mexico",
+   "text": "Goal! Mexico 1, England 2. Julián Quiñones (Mexico) right footed shot from the centre of the box to the high centre of the goal following a set piece situation.",
+   "players": [
+    "Julián Quiñones"
+   ]
+  },
+  {
+   "type": "Halftime",
+   "minute": "45'+6'",
+   "team": null,
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Substitution",
+   "minute": "45'",
+   "team": "Mexico",
+   "text": "Substitution, Mexico. Edson Álvarez replaces César Montes.",
+   "players": [
+    "Edson Álvarez",
+    "César Montes"
+   ]
+  },
+  {
+   "type": "Start 2nd Half",
+   "minute": "45'",
+   "team": null,
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "53'",
+   "team": "England",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "54'",
+   "team": "England",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Red Card",
+   "minute": "54'",
+   "team": "England",
+   "text": "Jarell Quansah (England) is shown the red card.",
+   "players": [
+    "Jarell Quansah"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "57'",
+   "team": "England",
+   "text": "Substitution, England. John Stones replaces Bukayo Saka.",
+   "players": [
+    "John Stones",
+    "Bukayo Saka"
+   ]
+  },
+  {
+   "type": "Penalty - Scored",
+   "minute": "60'",
+   "team": "England",
+   "text": "Goal! Mexico 1, England 3. Harry Kane (England) converts the penalty with a right footed shot to the bottom left corner.",
+   "players": [
+    "Harry Kane"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "61'",
+   "team": "Mexico",
+   "text": "Substitution, Mexico. Santiago Giménez replaces Gilberto Mora.",
+   "players": [
+    "Santiago Gimenez",
+    "Gilberto Mora"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "61'",
+   "team": "Mexico",
+   "text": "Substitution, Mexico. Brian Gutiérrez replaces Luis Romo.",
+   "players": [
+    "Brian Gutiérrez",
+    "Luis Romo"
+   ]
+  },
+  {
+   "type": "Start Delay",
+   "minute": "67'",
+   "team": "Mexico",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "68'",
+   "team": "Mexico",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Yellow Card",
+   "minute": "68'",
+   "team": "England",
+   "text": "Marc Guéhi (England) is shown the yellow card.",
+   "players": [
+    "Marc Guéhi"
+   ]
+  },
+  {
+   "type": "Penalty - Scored",
+   "minute": "69'",
+   "team": "Mexico",
+   "text": "Goal! Mexico 2, England 3. Raúl Jiménez (Mexico) converts the penalty with a right footed shot to the bottom left corner.",
+   "players": [
+    "Raúl Jiménez"
+   ]
+  },
+  {
+   "type": "Start Delay",
+   "minute": "70'",
+   "team": "England",
+   "text": "Delay in match because of an injury Nico O'Reilly (England).",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "70'",
+   "team": "Mexico",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Yellow Card",
+   "minute": "71'",
+   "team": "Mexico",
+   "text": "Jorge Sánchez (Mexico) is shown the yellow card.",
+   "players": [
+    "Jorge Sánchez"
+   ]
+  },
+  {
+   "type": "End Delay",
+   "minute": "71'",
+   "team": "England",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "71'",
+   "team": "Mexico",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "71'",
+   "team": "Mexico",
+   "text": "Delay in match for a drinks break.",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "71'",
+   "team": "England",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Yellow Card",
+   "minute": "72'",
+   "team": "England",
+   "text": "Nico O'Reilly (England) is shown the yellow card.",
+   "players": [
+    "Nico O'Reilly"
+   ]
+  },
+  {
+   "type": "End Delay",
+   "minute": "74'",
+   "team": "Mexico",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "74'",
+   "team": "England",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Substitution",
+   "minute": "74'",
+   "team": "England",
+   "text": "Substitution, England. Djed Spence replaces Nico O'Reilly.",
+   "players": [
+    "Djed Spence",
+    "Nico O'Reilly"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "75'",
+   "team": "England",
+   "text": "Substitution, England. Dan Burn replaces Elliot Anderson.",
+   "players": [
+    "Dan Burn",
+    "Elliot Anderson"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "79'",
+   "team": "Mexico",
+   "text": "Substitution, Mexico. Álvaro Fidalgo replaces Jorge Sánchez.",
+   "players": [
+    "Álvaro Fidalgo",
+    "Jorge Sánchez"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "81'",
+   "team": "Mexico",
+   "text": "Substitution, Mexico. Guillermo Martínez replaces Julián Quiñones.",
+   "players": [
+    "Guillermo Martínez",
+    "Julián Quiñones"
+   ]
+  },
+  {
+   "type": "Start Delay",
+   "minute": "84'",
+   "team": "Mexico",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "84'",
+   "team": "Mexico",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Substitution",
+   "minute": "90'",
+   "team": "England",
+   "text": "Substitution, England. Morgan Rogers replaces Harry Kane.",
+   "players": [
+    "Morgan Rogers",
+    "Harry Kane"
+   ]
+  },
+  {
+   "type": "Yellow Card",
+   "minute": "90'+8'",
+   "team": "Mexico",
+   "text": "Johan Vásquez (Mexico) is shown the yellow card.",
+   "players": [
+    "Johan Vásquez"
+   ]
+  },
+  {
+   "type": "Yellow Card",
+   "minute": "90'+8'",
+   "team": "England",
+   "text": "Jordan Henderson (England) is shown the yellow card.",
+   "players": [
+    "Jordan Henderson"
+   ]
+  },
+  {
+   "type": "End Regular Time",
+   "minute": "90'+13'",
+   "team": null,
+   "text": "Second Half ends, Mexico 2, England 3.",
+   "players": []
+  }
+ ],
+ "shots": [
+  {
+   "minute": "3",
+   "seconds": 158.0,
+   "team": "Mexico",
+   "player": "Raúl Jiménez",
+   "type": "Shot Blocked",
+   "x": 74.1,
+   "y": 44.6,
+   "goal": false,
+   "xg": 0.07,
+   "text": "Attempt blocked. Raúl Jiménez (Mexico) right footed shot from outside the box is blocked. Assisted by Gilberto Mora."
+  },
+  {
+   "minute": "15",
+   "seconds": 894.0,
+   "team": "Mexico",
+   "player": "Raúl Jiménez",
+   "type": "Shot On Target",
+   "x": 88.1,
+   "y": 45.8,
+   "goal": false,
+   "xg": 0.193,
+   "text": "Attempt saved. Raúl Jiménez (Mexico) header from the centre of the box is saved in the bottom right corner by Jordan Pickford (England). Assisted by Roberto Alvarado with a cross."
+  },
+  {
+   "minute": "19",
+   "seconds": 1123.0,
+   "team": "Mexico",
+   "player": "Gilberto Mora",
+   "type": "Shot Blocked",
+   "x": 83.8,
+   "y": 66.0,
+   "goal": false,
+   "xg": 0.125,
+   "text": "Attempt blocked. Gilberto Mora (Mexico) right footed shot from the left side of the box is blocked. Assisted by Julián Quiñones."
+  },
+  {
+   "minute": "26",
+   "seconds": 1548.0,
+   "team": "England",
+   "player": "Anthony Gordon",
+   "type": "Shot On Target",
+   "x": 91.1,
+   "y": 75.0,
+   "goal": false,
+   "xg": 0.105,
+   "text": "Attempt saved. Anthony Gordon (England) right footed shot from the left side of the box is saved in the centre of the goal by Raúl Rangel (Mexico). Assisted by Jordan Pickford."
+  },
+  {
+   "minute": "32",
+   "seconds": 1885.0,
+   "team": "Mexico",
+   "player": "Luis Romo",
+   "type": "Shot Off Target",
+   "x": 72.2,
+   "y": 48.9,
+   "goal": false,
+   "xg": 0.061,
+   "text": "Attempt missed. Luis Romo (Mexico) right footed shot from outside the box is too high. Assisted by Julián Quiñones."
+  },
+  {
+   "minute": "36",
+   "seconds": 2155.0,
+   "team": "England",
+   "player": "Jude Bellingham",
+   "type": "Goal - Header",
+   "x": 95.2,
+   "y": 54.5,
+   "goal": true,
+   "xg": 0.443,
+   "text": "Goal! Mexico 0, England 1. Jude Bellingham (England) header from very close range to the bottom left corner. Assisted by Bukayo Saka with a cross."
+  },
+  {
+   "minute": "38",
+   "seconds": 2253.0,
+   "team": "England",
+   "player": "Jude Bellingham",
+   "type": "Goal",
+   "x": 96.2,
+   "y": 52.2,
+   "goal": true,
+   "xg": 0.843,
+   "text": "Goal! Mexico 0, England 2. Jude Bellingham (England) right footed shot from very close range to the bottom left corner. Assisted by Harry Kane."
+  },
+  {
+   "minute": "42",
+   "seconds": 2509.0,
+   "team": "Mexico",
+   "player": "Julián Quiñones",
+   "type": "Goal - Volley",
+   "x": 90.9,
+   "y": 49.1,
+   "goal": true,
+   "xg": 0.447,
+   "text": "Goal! Mexico 1, England 2. Julián Quiñones (Mexico) right footed shot from the centre of the box to the high centre of the goal following a set piece situation."
+  },
+  {
+   "minute": "45'+1",
+   "seconds": 2700.0,
+   "team": "Mexico",
+   "player": "Raúl Jiménez",
+   "type": "Shot Off Target",
+   "x": 84.6,
+   "y": 59.9,
+   "goal": false,
+   "xg": 0.172,
+   "text": "Attempt missed. Raúl Jiménez (Mexico) left footed shot from the centre of the box misses to the right. Assisted by Julián Quiñones."
+  },
+  {
+   "minute": "45'+3",
+   "seconds": 2700.0,
+   "team": "Mexico",
+   "player": "Raúl Jiménez",
+   "type": "Shot On Target",
+   "x": 85.2,
+   "y": 53.4,
+   "goal": false,
+   "xg": 0.141,
+   "text": "Attempt saved. Raúl Jiménez (Mexico) header from the centre of the box is saved in the top left corner by Jordan Pickford (England). Assisted by Roberto Alvarado."
+  },
+  {
+   "minute": "48",
+   "seconds": 2861.0,
+   "team": "Mexico",
+   "player": "Julián Quiñones",
+   "type": "Shot Blocked",
+   "x": 69.8,
+   "y": 45.0,
+   "goal": false,
+   "xg": 0.048,
+   "text": "Attempt blocked. Julián Quiñones (Mexico) right footed shot from outside the box is blocked. Assisted by Érik Lira."
+  },
+  {
+   "minute": "49",
+   "seconds": 2927.0,
+   "team": "England",
+   "player": "Nico O'Reilly",
+   "type": "Shot Off Target",
+   "x": 80.6,
+   "y": 50.7,
+   "goal": false,
+   "xg": 0.136,
+   "text": "Attempt missed. Nico O'Reilly (England) left footed shot from outside the box misses to the right."
+  },
+  {
+   "minute": "57",
+   "seconds": 3377.0,
+   "team": "Mexico",
+   "player": "Julián Quiñones",
+   "type": "Shot Off Target",
+   "x": 77.1,
+   "y": 72.0,
+   "goal": false,
+   "xg": 0.061,
+   "text": "Attempt missed. Julián Quiñones (Mexico) right footed shot from outside the box misses to the left. Assisted by Jesús Gallardo."
+  },
+  {
+   "minute": "60",
+   "seconds": 3590.0,
+   "team": "England",
+   "player": "Harry Kane",
+   "type": "Penalty - Scored",
+   "x": 88.5,
+   "y": 50.0,
+   "goal": true,
+   "xg": 0.76,
+   "text": "Goal! Mexico 1, England 3. Harry Kane (England) converts the penalty with a right footed shot to the bottom left corner."
+  },
+  {
+   "minute": "69",
+   "seconds": 4114.0,
+   "team": "Mexico",
+   "player": "Raúl Jiménez",
+   "type": "Penalty - Scored",
+   "x": 88.5,
+   "y": 50.0,
+   "goal": true,
+   "xg": 0.76,
+   "text": "Goal! Mexico 2, England 3. Raúl Jiménez (Mexico) converts the penalty with a right footed shot to the bottom left corner."
+  },
+  {
+   "minute": "78",
+   "seconds": 4638.0,
+   "team": "Mexico",
+   "player": "Brian Gutiérrez",
+   "type": "Shot Blocked",
+   "x": 90.0,
+   "y": 71.1,
+   "goal": false,
+   "xg": 0.132,
+   "text": "Attempt blocked. Brian Gutiérrez (Mexico) right footed shot from the left side of the box is blocked. Assisted by Érik Lira."
+  },
+  {
+   "minute": "80",
+   "seconds": 4771.0,
+   "team": "Mexico",
+   "player": "Edson Álvarez",
+   "type": "Shot Off Target",
+   "x": 95.2,
+   "y": 48.6,
+   "goal": false,
+   "xg": 0.503,
+   "text": "Attempt missed. Edson Álvarez (Mexico) header from very close range misses to the right. Assisted by Roberto Alvarado with a cross following a corner."
+  },
+  {
+   "minute": "82",
+   "seconds": 4869.0,
+   "team": "Mexico",
+   "player": "Santiago Giménez",
+   "type": "Shot Off Target",
+   "x": 86.7,
+   "y": 49.7,
+   "goal": false,
+   "xg": 0.265,
+   "text": "Attempt missed. Santiago Giménez (Mexico) left footed shot from the centre of the box is high and wide to the left. Assisted by Álvaro Fidalgo with a cross."
+  },
+  {
+   "minute": "89",
+   "seconds": 5306.0,
+   "team": "Mexico",
+   "player": "Álvaro Fidalgo",
+   "type": "Shot On Target",
+   "x": 73.5,
+   "y": 60.1,
+   "goal": false,
+   "xg": 0.063,
+   "text": "Attempt saved. Álvaro Fidalgo (Mexico) right footed shot from outside the box is saved in the centre of the goal by Jordan Pickford (England). Assisted by Brian Gutiérrez."
+  },
+  {
+   "minute": "90'+3",
+   "seconds": 5400.0,
+   "team": "England",
+   "player": "Jude Bellingham",
+   "type": "Shot On Target",
+   "x": 53.2,
+   "y": 63.6,
+   "goal": false,
+   "xg": 0.011,
+   "text": "Attempt saved. Jude Bellingham (England) right footed shot from more than 35 yards is saved in the top right corner by Raúl Rangel (Mexico). Assisted by Anthony Gordon."
+  },
+  {
+   "minute": "90'+4",
+   "seconds": 5400.0,
+   "team": "Mexico",
+   "player": "Jesús Gallardo",
+   "type": "Shot Off Target",
+   "x": 77.2,
+   "y": 71.1,
+   "goal": false,
+   "xg": 0.063,
+   "text": "Attempt missed. Jesús Gallardo (Mexico) right footed shot from outside the box misses to the right. Assisted by Johan Vásquez."
+  },
+  {
+   "minute": "90'+6",
+   "seconds": 5400.0,
+   "team": "Mexico",
+   "player": "Raúl Jiménez",
+   "type": "Shot Blocked",
+   "x": 81.3,
+   "y": 47.4,
+   "goal": false,
+   "xg": 0.145,
+   "text": "Attempt blocked. Raúl Jiménez (Mexico) right footed shot from outside the box is blocked. Assisted by Álvaro Fidalgo with a cross."
+  },
+  {
+   "minute": "90'+6",
+   "seconds": 5400.0,
+   "team": "Mexico",
+   "player": "Edson Álvarez",
+   "type": "Shot Blocked",
+   "x": 71.2,
+   "y": 48.5,
+   "goal": false,
+   "xg": 0.055,
+   "text": "Attempt blocked. Edson Álvarez (Mexico) right footed shot from outside the box is blocked. Assisted by Álvaro Fidalgo."
+  },
+  {
+   "minute": "90'+7",
+   "seconds": 5400.0,
+   "team": "Mexico",
+   "player": "Raúl Jiménez",
+   "type": "Shot Off Target",
+   "x": 87.8,
+   "y": 54.0,
+   "goal": false,
+   "xg": 0.288,
+   "text": "Attempt missed. Raúl Jiménez (Mexico) right footed shot from the centre of the box is too high."
+  },
+  {
+   "minute": "90'+12",
+   "seconds": 5400.0,
+   "team": "Mexico",
+   "player": "Raúl Jiménez",
+   "type": "Shot Off Target",
+   "x": 86.4,
+   "y": 28.0,
+   "goal": false,
+   "xg": 0.108,
+   "text": "Attempt missed. Raúl Jiménez (Mexico) right footed shot from the right side of the box misses to the left following a corner."
+  },
+  {
+   "minute": "90'+12",
+   "seconds": 5400.0,
+   "team": "Mexico",
+   "player": "Álvaro Fidalgo",
+   "type": "Shot Blocked",
+   "x": 90.6,
+   "y": 31.1,
+   "goal": false,
+   "xg": 0.155,
+   "text": "Attempt blocked. Álvaro Fidalgo (Mexico) right footed shot from the right side of the box is blocked. Assisted by Edson Álvarez."
+  }
+ ],
+ "lineups": [
+  {
+   "team": "Mexico",
+   "formation": "4-3-3",
+   "starters": [
+    {
+     "name": "Raúl Rangel",
+     "jersey": "1",
+     "position": "G"
+    },
+    {
+     "name": "Johan Vásquez",
+     "jersey": "5",
+     "position": "CD-L"
+    },
+    {
+     "name": "César Montes",
+     "jersey": "3",
+     "position": "CD-R"
+    },
+    {
+     "name": "Jesús Gallardo",
+     "jersey": "23",
+     "position": "LB"
+    },
+    {
+     "name": "Jorge Sánchez",
+     "jersey": "2",
+     "position": "RB"
+    },
+    {
+     "name": "Érik Lira",
+     "jersey": "6",
+     "position": "CM"
+    },
+    {
+     "name": "Luis Romo",
+     "jersey": "7",
+     "position": "LM"
+    },
+    {
+     "name": "Gilberto Mora",
+     "jersey": "19",
+     "position": "RM"
+    },
+    {
+     "name": "Raúl Jiménez",
+     "jersey": "9",
+     "position": "F"
+    },
+    {
+     "name": "Julián Quiñones",
+     "jersey": "16",
+     "position": "LF"
+    },
+    {
+     "name": "Roberto Alvarado",
+     "jersey": "25",
+     "position": "RF"
+    }
+   ],
+   "subs": [
+    {
+     "name": "Guillermo Ochoa",
+     "jersey": "13",
+     "position": "SUB"
+    },
+    {
+     "name": "Mateo Chávez",
+     "jersey": "20",
+     "position": "SUB"
+    },
+    {
+     "name": "Armando González",
+     "jersey": "14",
+     "position": "SUB"
+    },
+    {
+     "name": "Álvaro Fidalgo",
+     "jersey": "8",
+     "position": "SUB"
+    },
+    {
+     "name": "Carlos Acevedo",
+     "jersey": "12",
+     "position": "SUB"
+    },
+    {
+     "name": "Obed Vargas",
+     "jersey": "18",
+     "position": "SUB"
+    },
+    {
+     "name": "César Huerta",
+     "jersey": "21",
+     "position": "SUB"
+    },
+    {
+     "name": "Alexis Vega",
+     "jersey": "10",
+     "position": "SUB"
+    },
+    {
+     "name": "Israel Reyes",
+     "jersey": "15",
+     "position": "SUB"
+    },
+    {
+     "name": "Santiago Gimenez",
+     "jersey": "11",
+     "position": "SUB"
+    },
+    {
+     "name": "Brian Gutiérrez",
+     "jersey": "26",
+     "position": "SUB"
+    },
+    {
+     "name": "Edson Álvarez",
+     "jersey": "4",
+     "position": "SUB"
+    },
+    {
+     "name": "Orbelín Pineda",
+     "jersey": "17",
+     "position": "SUB"
+    },
+    {
+     "name": "Guillermo Martínez",
+     "jersey": "22",
+     "position": "SUB"
+    },
+    {
+     "name": "Luis Chávez",
+     "jersey": "24",
+     "position": "SUB"
+    }
+   ]
+  },
+  {
+   "team": "England",
+   "formation": "4-2-3-1",
+   "starters": [
+    {
+     "name": "Jordan Pickford",
+     "jersey": "1",
+     "position": "G"
+    },
+    {
+     "name": "Marc Guéhi",
+     "jersey": "6",
+     "position": "CD-L"
+    },
+    {
+     "name": "Ezri Konsa",
+     "jersey": "2",
+     "position": "CD-R"
+    },
+    {
+     "name": "Nico O'Reilly",
+     "jersey": "3",
+     "position": "LB"
+    },
+    {
+     "name": "Jarell Quansah",
+     "jersey": "26",
+     "position": "RB"
+    },
+    {
+     "name": "Jude Bellingham",
+     "jersey": "10",
+     "position": "AM"
+    },
+    {
+     "name": "Elliot Anderson",
+     "jersey": "8",
+     "position": "LM"
+    },
+    {
+     "name": "Declan Rice",
+     "jersey": "4",
+     "position": "RM"
+    },
+    {
+     "name": "Harry Kane",
+     "jersey": "9",
+     "position": "F"
+    },
+    {
+     "name": "Anthony Gordon",
+     "jersey": "18",
+     "position": "AM-L"
+    },
+    {
+     "name": "Bukayo Saka",
+     "jersey": "7",
+     "position": "AM-R"
+    }
+   ],
+   "subs": [
+    {
+     "name": "John Stones",
+     "jersey": "5",
+     "position": "SUB"
+    },
+    {
+     "name": "Ollie Watkins",
+     "jersey": "19",
+     "position": "SUB"
+    },
+    {
+     "name": "Jordan Henderson",
+     "jersey": "14",
+     "position": "SUB"
+    },
+    {
+     "name": "Noni Madueke",
+     "jersey": "20",
+     "position": "SUB"
+    },
+    {
+     "name": "Dan Burn",
+     "jersey": "15",
+     "position": "SUB"
+    },
+    {
+     "name": "Trevoh Chalobah",
+     "jersey": "12",
+     "position": "SUB"
+    },
+    {
+     "name": "Kobbie Mainoo",
+     "jersey": "16",
+     "position": "SUB"
+    },
+    {
+     "name": "James Trafford",
+     "jersey": "23",
+     "position": "SUB"
+    },
+    {
+     "name": "Marcus Rashford",
+     "jersey": "11",
+     "position": "SUB"
+    },
+    {
+     "name": "Djed Spence",
+     "jersey": "25",
+     "position": "SUB"
+    },
+    {
+     "name": "Eberechi Eze",
+     "jersey": "21",
+     "position": "SUB"
+    },
+    {
+     "name": "Morgan Rogers",
+     "jersey": "17",
+     "position": "SUB"
+    },
+    {
+     "name": "Reece James",
+     "jersey": "24",
+     "position": "SUB"
+    },
+    {
+     "name": "Dean Henderson",
+     "jersey": "13",
+     "position": "SUB"
+    },
+    {
+     "name": "Ivan Toney",
+     "jersey": "22",
+     "position": "SUB"
+    }
+   ]
+  }
+ ],
+ "attendance": 80824,
+ "venue": "Estadio Banorte, Mexico City, Mexico"
+}

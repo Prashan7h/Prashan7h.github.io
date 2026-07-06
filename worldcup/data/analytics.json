@@ -17,8 +17,8 @@
   },
   {
    "team": "England",
-   "elo": 2064,
-   "delta": 24
+   "elo": 2084,
+   "delta": 44
   },
   {
    "team": "Portugal",
@@ -51,14 +51,14 @@
    "delta": 50
   },
   {
-   "team": "Mexico",
-   "elo": 1944,
-   "delta": 84
-  },
-  {
    "team": "Norway",
    "elo": 1928,
    "delta": 78
+  },
+  {
+   "team": "Mexico",
+   "elo": 1924,
+   "delta": 64
   },
   {
    "team": "Switzerland",
@@ -269,7 +269,8 @@
    2066,
    2049,
    2057,
-   2064
+   2064,
+   2084
   ],
   "Brazil": [
    2020,
@@ -347,7 +348,8 @@
    1879,
    1898,
    1918,
-   1944
+   1944,
+   1924
   ],
   "Ecuador": [
    1860,
@@ -2389,6 +2391,26 @@
     1892
    ],
    "elo_delta": -35.8
+  },
+  "92": {
+   "prediction": {
+    "p1": 0.2797,
+    "pd": 0.25,
+    "p2": 0.4703,
+    "score": [
+     1,
+     1
+    ],
+    "lambdas": [
+     1.16,
+     1.58
+    ]
+   },
+   "elo_before": [
+    1944,
+    2064
+   ],
+   "elo_delta": -20.0
   }
  },
  "sims": [
@@ -2396,118 +2418,109 @@
    "team": "Argentina",
    "r32": 1.0,
    "r16": 1.0,
-   "qf": 0.8845,
-   "sf": 0.7032,
-   "f": 0.5092,
-   "champ": 0.3083
+   "qf": 0.8764,
+   "sf": 0.7022,
+   "f": 0.4648,
+   "champ": 0.2839
   },
   {
    "team": "France",
    "r32": 1.0,
    "r16": 1.0,
    "qf": 1.0,
-   "sf": 0.671,
-   "f": 0.3991,
-   "champ": 0.228
-  },
-  {
-   "team": "Spain",
-   "r32": 1.0,
-   "r16": 1.0,
-   "qf": 0.6353,
-   "sf": 0.4849,
-   "f": 0.2736,
-   "champ": 0.1579
+   "sf": 0.666,
+   "f": 0.4107,
+   "champ": 0.2233
   },
   {
    "team": "England",
    "r32": 1.0,
    "r16": 1.0,
-   "qf": 0.6773,
-   "sf": 0.4721,
-   "f": 0.2208,
-   "champ": 0.1009
+   "qf": 1.0,
+   "sf": 0.728,
+   "f": 0.3631,
+   "champ": 0.182
+  },
+  {
+   "team": "Spain",
+   "r32": 1.0,
+   "r16": 1.0,
+   "qf": 0.6461,
+   "sf": 0.4912,
+   "f": 0.2656,
+   "champ": 0.1451
   },
   {
    "team": "Morocco",
    "r32": 1.0,
    "r16": 1.0,
    "qf": 1.0,
-   "sf": 0.329,
-   "f": 0.1422,
-   "champ": 0.06
+   "sf": 0.334,
+   "f": 0.1466,
+   "champ": 0.0542
   },
   {
    "team": "Portugal",
    "r32": 1.0,
    "r16": 1.0,
-   "qf": 0.3647,
-   "sf": 0.229,
-   "f": 0.0977,
-   "champ": 0.0411
+   "qf": 0.3539,
+   "sf": 0.223,
+   "f": 0.0909,
+   "champ": 0.0354
   },
   {
    "team": "Norway",
    "r32": 1.0,
    "r16": 1.0,
    "qf": 1.0,
-   "sf": 0.3574,
-   "f": 0.1038,
-   "champ": 0.0292
+   "sf": 0.272,
+   "f": 0.0734,
+   "champ": 0.0211
   },
   {
    "team": "Belgium",
    "r32": 1.0,
    "r16": 1.0,
-   "qf": 0.6207,
-   "sf": 0.2013,
-   "f": 0.0673,
-   "champ": 0.0237
+   "qf": 0.6247,
+   "sf": 0.2041,
+   "f": 0.0666,
+   "champ": 0.0203
   },
   {
    "team": "Colombia",
    "r32": 1.0,
    "r16": 1.0,
-   "qf": 0.5363,
-   "sf": 0.1425,
-   "f": 0.0614,
-   "champ": 0.0192
-  },
-  {
-   "team": "Mexico",
-   "r32": 1.0,
-   "r16": 1.0,
-   "qf": 0.3227,
-   "sf": 0.1705,
-   "f": 0.0504,
-   "champ": 0.0146
+   "qf": 0.542,
+   "sf": 0.1423,
+   "f": 0.053,
+   "champ": 0.0188
   },
   {
    "team": "Switzerland",
    "r32": 1.0,
    "r16": 1.0,
-   "qf": 0.4637,
-   "sf": 0.1119,
-   "f": 0.0425,
-   "champ": 0.0107
+   "qf": 0.458,
+   "sf": 0.1101,
+   "f": 0.0358,
+   "champ": 0.0104
   },
   {
    "team": "USA",
    "r32": 1.0,
    "r16": 1.0,
-   "qf": 0.3793,
-   "sf": 0.0848,
-   "f": 0.0201,
-   "champ": 0.0047
+   "qf": 0.3753,
+   "sf": 0.0817,
+   "f": 0.0196,
+   "champ": 0.0041
   },
   {
    "team": "Egypt",
    "r32": 1.0,
    "r16": 1.0,
-   "qf": 0.1155,
-   "sf": 0.0424,
-   "f": 0.0119,
-   "champ": 0.0017
+   "qf": 0.1236,
+   "sf": 0.0454,
+   "f": 0.0099,
+   "champ": 0.0014
   },
   {
    "team": "Brazil",
@@ -2558,6 +2571,15 @@
    "team": "Japan",
    "r32": 1.0,
    "r16": 0.0,
+   "qf": 0.0,
+   "sf": 0.0,
+   "f": 0.0,
+   "champ": 0.0
+  },
+  {
+   "team": "Mexico",
+   "r32": 1.0,
+   "r16": 1.0,
    "qf": 0.0,
    "sf": 0.0,
    "f": 0.0,
@@ -2999,6 +3021,15 @@
    "win_prob": 0.468
   },
   {
+   "num": 92,
+   "slug": "2026-07-05-mexico-vs-england",
+   "date": "2026-07-05",
+   "winner": "England",
+   "loser": "Mexico",
+   "score": "2–3",
+   "win_prob": 0.47
+  },
+  {
    "num": 12,
    "slug": "2026-06-24-bosnia-and-herzegovina-vs-qatar",
    "date": "2026-06-24",
@@ -3026,14 +3057,14 @@
    "win_prob": 0.495
   }
  ],
- "brier": 0.5106,
- "n_scored": 91,
+ "brier": 0.5097,
+ "n_scored": 92,
  "goal_timing": [
   35,
   29,
+  48,
   45,
-  44,
-  37,
+  38,
   74
  ],
  "top_scorers": [
@@ -3054,13 +3085,23 @@
   },
   {
    "name": "Harry Kane",
-   "goals": 5,
+   "goals": 6,
    "team": "England"
   },
   {
    "name": "Ismaïla Sarr",
    "goals": 4,
    "team": "Senegal"
+  },
+  {
+   "name": "Jude Bellingham",
+   "goals": 4,
+   "team": "England"
+  },
+  {
+   "name": "Julián Quiñones",
+   "goals": 4,
+   "team": "Mexico"
   },
   {
    "name": "Mikel Oyarzabal",
@@ -3076,16 +3117,6 @@
    "name": "Vinícius Júnior",
    "goals": 4,
    "team": "Brazil"
-  },
-  {
-   "name": "Brian Brobbey",
-   "goals": 3,
-   "team": "Netherlands"
-  },
-  {
-   "name": "Cody Gakpo",
-   "goals": 3,
-   "team": "Netherlands"
   }
  ],
  "standings": {

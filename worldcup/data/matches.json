@@ -3792,12 +3792,46 @@
    "team2": "England",
    "group": null,
    "ground": "Mexico City",
-   "score": null,
-   "goals1": [],
-   "goals2": [],
+   "score": {
+    "ft": [
+     2,
+     3
+    ],
+    "ht": [
+     1,
+     2
+    ]
+   },
+   "goals1": [
+    {
+     "name": "Julián Quiñones",
+     "minute": "42"
+    },
+    {
+     "name": "Raúl Jiménez",
+     "minute": "69",
+     "penalty": true
+    }
+   ],
+   "goals2": [
+    {
+     "name": "Jude Bellingham",
+     "minute": "36"
+    },
+    {
+     "name": "Jude Bellingham",
+     "minute": "38"
+    },
+    {
+     "name": "Harry Kane",
+     "minute": "60",
+     "penalty": true
+    }
+   ],
    "espn_id": "760505",
-   "status": "live",
+   "status": "finished",
    "utc_date": "2026-07-06T01:00Z",
+   "attendance": 80824,
    "venue": "Estadio Banorte",
    "slug": "2026-07-05-mexico-vs-england"
   },
