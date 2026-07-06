@@ -3946,16 +3946,18 @@
    "round": "Quarter-final",
    "date": "2026-07-11",
    "time": "17:00 UTC-4",
-   "team1": "W91",
-   "team2": "W92",
+   "team1": "Norway",
+   "team2": "England",
    "group": null,
    "ground": "Miami (Miami Gardens)",
    "score": null,
    "goals1": [],
    "goals2": [],
-   "espn_id": null,
+   "espn_id": "760512",
    "status": "scheduled",
-   "slug": "2026-07-11-w91-vs-w92"
+   "utc_date": "2026-07-11T21:00Z",
+   "venue": "Hard Rock Stadium",
+   "slug": "2026-07-11-norway-vs-england"
   },
   {
    "num": 100,
