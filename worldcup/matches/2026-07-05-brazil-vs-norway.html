@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-KVBPX8VW');</script>
+    <!-- End Google Tag Manager -->
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Brazil 1–2 Norway — full match analytics: shot map, expected goals race, lineups, stats and model verdict.">
+    <link rel="icon" type="image/svg+xml" href="../../images/favicon.svg">
+    <link rel="icon" type="image/png" sizes="32x32" href="../../images/favicon-32.png">
+    <title>Brazil 1–2 Norway — World Cup 2026</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+html { font-size: 16px; overflow-x: clip; }
+body {
+  overflow-x: clip;  /* the bracket breaks out to viewport width; never h-scroll the page */
+  background: #fff;
+  color: #0a0a0a;
+  font-family: 'Manrope', -apple-system, 'Segoe UI', sans-serif;
+  line-height: 1.5;
+  font-feature-settings: 'tnum';
+  -webkit-font-smoothing: antialiased;
+}
+a { color: inherit; text-decoration: none; }
+.wrap { max-width: 700px; margin: 0 auto; padding: 0 1.1rem 5rem; }
+
+/* ---- masthead ---- */
+.masthead { padding: 2.2rem 0 1.4rem; display: flex; align-items: baseline; justify-content: space-between; gap: 1rem; flex-wrap: wrap; }
+.masthead h1 { font-size: 1.55rem; font-weight: 800; letter-spacing: -0.02em; }
+.masthead .sub { font-size: 0.78rem; color: #777; font-weight: 500; }
+.masthead a.home { font-size: 0.75rem; font-weight: 600; color: #999; }
+.masthead a.home:hover { color: #0a0a0a; }
+
+/* ---- tabs ---- */
+.tabbar {
+  position: sticky; top: 0; z-index: 10;
+  display: flex; gap: 0.4rem;
+  background: rgba(255,255,255,0.94); backdrop-filter: blur(6px);
+  padding: 0.6rem 0 0.8rem;
+}
+.tabbar button {
+  font: inherit; font-size: 0.82rem; font-weight: 700;
+  border: 1px solid #e4e4e4; background: #fff; color: #555;
+  border-radius: 999px; padding: 0.42rem 1.05rem; cursor: pointer;
+  transition: all 0.15s ease;
+}
+.tabbar button:hover { border-color: #0a0a0a; color: #0a0a0a; }
+.tabbar button.active { background: #0a0a0a; border-color: #0a0a0a; color: #fff; }
+.panel { display: none; }
+.panel.active { display: block; }
+
+/* ---- cards ---- */
+.card {
+  border: 1px solid #e9e9e9; border-radius: 16px; background: #fff;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.03);
+  padding: 1.15rem 1.25rem; margin-bottom: 1rem;
+}
+.card-title { font-size: 0.7rem; font-weight: 800; letter-spacing: 0.1em; text-transform: uppercase; color: #999; margin-bottom: 0.9rem; }
+.card-note { font-size: 0.72rem; color: #999; margin-top: 0.7rem; line-height: 1.55; }
+
+/* ---- fixtures feed ---- */
+.day-head {
+  font-size: 0.72rem; font-weight: 800; letter-spacing: 0.08em; text-transform: uppercase;
+  color: #888; margin: 1.6rem 0 0.6rem; padding-left: 0.2rem;
+}
+.day-head.today { color: #0a0a0a; }
+.day-head.today::after { content: 'TODAY'; margin-left: 0.6rem; background: #0a0a0a; color: #fff; border-radius: 5px; padding: 0.1rem 0.45rem; font-size: 0.62rem; }
+.fixture {
+  display: grid; grid-template-columns: 3.4rem 1fr auto; align-items: center; gap: 0.9rem;
+  border: 1px solid #e9e9e9; border-radius: 14px; background: #fff;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.03);
+  padding: 0.8rem 1rem; margin-bottom: 0.55rem;
+}
+a.fixture { transition: border-color 0.15s ease, transform 0.15s ease; }
+a.fixture:hover { border-color: #0a0a0a; transform: translateY(-1px); }
+.fx-status { font-size: 0.68rem; font-weight: 800; color: #999; text-align: center; line-height: 1.3; }
+.fx-status .chip { display: inline-block; background: #f1f1f1; border-radius: 6px; padding: 0.12rem 0.4rem; color: #555; }
+.fx-status .chip.ft { background: #0a0a0a; color: #fff; }
+.fx-teams { min-width: 0; }
+.fx-row { display: flex; justify-content: space-between; align-items: baseline; gap: 0.8rem; }
+.fx-row .t { font-size: 0.92rem; font-weight: 600; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.fx-row .t.win { font-weight: 800; }
+.fx-row .s { font-size: 0.95rem; font-weight: 800; }
+.fx-meta { font-size: 0.68rem; color: #aaa; font-weight: 600; text-align: right; max-width: 8rem; }
+.fx-arrow { color: #ccc; font-size: 0.9rem; }
+
+/* ---- tables ---- */
+table.t { width: 100%; border-collapse: collapse; font-size: 0.82rem; }
+table.t th { font-size: 0.64rem; font-weight: 800; letter-spacing: 0.07em; text-transform: uppercase; color: #aaa; text-align: left; padding: 0.3rem 0.45rem; border-bottom: 1px solid #eee; }
+table.t td { padding: 0.42rem 0.45rem; border-bottom: 1px solid #f4f4f4; font-weight: 500; }
+table.t tr:last-child td { border-bottom: none; }
+table.t .r { text-align: right; }
+table.t .pos { color: #bbb; font-weight: 700; width: 1.4rem; }
+table.t .pts { font-weight: 800; }
+.qual-line td { border-top: 2px solid #0a0a0a; }
+
+/* ---- group grid ---- */
+.group-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 0.9rem; }
+.group-grid .card { margin-bottom: 0; padding: 0.9rem 1rem; }
+
+/* ---- predictions ---- */
+.odds-row { display: grid; grid-template-columns: 8.2rem 1fr 3.2rem; align-items: center; gap: 0.7rem; padding: 0.32rem 0; font-size: 0.84rem; font-weight: 600; }
+.odds-track { height: 0.6rem; background: #f1f1f1; border-radius: 99px; overflow: hidden; }
+.odds-track > span { display: block; height: 100%; background: #0a0a0a; border-radius: 99px; }
+.odds-pct { text-align: right; font-weight: 800; font-size: 0.8rem; }
+.pred-line { font-size: 0.74rem; color: #888; font-weight: 600; margin-top: 0.25rem; }
+.bigstat { display: flex; gap: 0.9rem; }
+.bigstat .cell { flex: 1; border: 1px solid #eee; border-radius: 12px; padding: 0.7rem 0.85rem; }
+.bigstat .n { font-size: 1.35rem; font-weight: 800; letter-spacing: -0.02em; }
+.bigstat .l { font-size: 0.64rem; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; color: #999; margin-top: 0.1rem; }
+
+/* ---- match page: scoreboard ---- */
+.kickline { font-size: 0.72rem; font-weight: 700; color: #999; letter-spacing: 0.05em; text-transform: uppercase; margin-bottom: 0.9rem; }
+.board { display: grid; grid-template-columns: 1fr auto 1fr; align-items: center; gap: 1rem; margin: 0.4rem 0 0.9rem; }
+.board .team { text-align: center; }
+.board .team .name { font-size: 1.05rem; font-weight: 800; letter-spacing: -0.01em; }
+.board .team .xg { font-size: 0.7rem; color: #999; font-weight: 600; margin-top: 0.15rem; }
+.board .score { font-size: 2.6rem; font-weight: 800; letter-spacing: 0.02em; white-space: nowrap; }
+.board .score .ft { display: block; font-size: 0.64rem; font-weight: 800; letter-spacing: 0.15em; color: #999; text-align: center; }
+.goals-line { text-align: center; font-size: 0.76rem; color: #666; font-weight: 600; line-height: 1.7; }
+.venue-line { text-align: center; font-size: 0.7rem; color: #aaa; font-weight: 600; margin-top: 0.6rem; }
+.narrative { font-size: 0.88rem; line-height: 1.65; color: #333; }
+
+/* ---- stat bars ---- */
+.sb-row { display: grid; grid-template-columns: 2.6rem 1fr 7.5rem 1fr 2.6rem; align-items: center; gap: 0.55rem; padding: 0.34rem 0; }
+.sb-row .v { font-size: 0.84rem; font-weight: 800; }
+.sb-row .v.l { text-align: right; }
+.sb-row .lab { font-size: 0.66rem; font-weight: 700; letter-spacing: 0.05em; text-transform: uppercase; color: #999; text-align: center; }
+.sb-track { height: 0.5rem; background: #f1f1f1; border-radius: 99px; position: relative; overflow: hidden; }
+.sb-track > span { position: absolute; top: 0; height: 100%; background: #0a0a0a; border-radius: 99px; }
+.sb-track.l > span { right: 0; }
+.sb-track.r > span { left: 0; }
+
+/* ---- timeline ---- */
+.tl-item { display: grid; grid-template-columns: 3rem 1fr; gap: 0.8rem; padding: 0.45rem 0; border-bottom: 1px solid #f6f6f6; font-size: 0.82rem; }
+.tl-item:last-child { border-bottom: none; }
+.tl-min { font-weight: 800; color: #bbb; text-align: right; }
+.tl-text { font-weight: 500; color: #444; }
+.tl-text .tag { font-size: 0.62rem; font-weight: 800; letter-spacing: 0.06em; text-transform: uppercase; border-radius: 5px; padding: 0.08rem 0.4rem; margin-right: 0.45rem; background: #f1f1f1; color: #666; vertical-align: 1px; }
+.tl-text .tag.goal { background: #0a0a0a; color: #fff; }
+
+/* ---- lineups ---- */
+.lineups { display: grid; grid-template-columns: 1fr 1fr; gap: 1.4rem; }
+.lu-team { font-size: 0.85rem; font-weight: 800; }
+.lu-formation { font-size: 0.68rem; color: #999; font-weight: 700; margin-bottom: 0.5rem; }
+.lu-list { list-style: none; font-size: 0.78rem; font-weight: 500; }
+.lu-list li { padding: 0.18rem 0; border-bottom: 1px solid #f7f7f7; }
+.lu-list .j { display: inline-block; width: 1.7rem; color: #bbb; font-weight: 700; }
+.lu-subs { margin-top: 0.6rem; font-size: 0.7rem; color: #999; line-height: 1.6; }
+
+/* ---- charts ---- */
+.chart { width: 100%; }
+.legend { display: flex; gap: 1.1rem; font-size: 0.7rem; font-weight: 700; color: #777; margin-top: 0.5rem; flex-wrap: wrap; }
+.legend .k { display: inline-flex; align-items: center; gap: 0.35rem; }
+.legend .dot { width: 0.65rem; height: 0.65rem; border-radius: 50%; display: inline-block; }
+
+.backlink { display: inline-block; margin-top: 0.5rem; font-size: 0.8rem; font-weight: 700; color: #888; }
+.backlink:hover { color: #0a0a0a; }
+.foot { font-size: 0.72rem; color: #aaa; line-height: 1.6; margin-top: 2.2rem; font-weight: 500; }
+
+/* ---- knockout bracket ---- */
+.bk-intro { font-size: 0.8rem; color: #777; font-weight: 500; line-height: 1.55; margin: 0 0.2rem 1.1rem; }
+.bracket-wrap { overflow-x: auto; -webkit-overflow-scrolling: touch; margin: 0 calc(50% - 50vw); padding: 0 1.1rem 0.6rem; }
+.bracket { display: flex; min-width: 860px; max-width: 1280px; margin: 0 auto; }
+.bk-round { display: flex; flex-direction: column; flex: 1 0 0; min-width: 172px; padding: 0 16px; }
+.bk-round-head { font-size: 0.64rem; font-weight: 800; letter-spacing: 0.08em; text-transform: uppercase; color: #aaa; text-align: center; padding-bottom: 0.8rem; }
+.bk-seeds { display: flex; flex-direction: column; justify-content: space-around; flex: 1; }
+.bk-pair { display: flex; flex-direction: column; justify-content: space-around; flex: 1; position: relative; }
+.bk-tie { position: relative; padding: 0.3rem 0; }
+
+/* connectors: stub out of each tie, vertical join across the pair, stub into next round */
+.bk-round:not(.last) .bk-tie::after {
+  content: ''; position: absolute; top: 50%; right: -16px; width: 16px; height: 2px; background: #e4e4e4;
+}
+.bk-round:not(.last) .bk-pair::after {
+  content: ''; position: absolute; right: -16px; top: 25%; bottom: 25%; width: 2px; background: #e4e4e4;
+}
+.bk-round:not(.last) .bk-pair::before {
+  content: ''; position: absolute; right: -32px; top: 50%; width: 16px; height: 2px; background: #e4e4e4;
+}
+
+.bk-card {
+  display: block; border: 1px solid #e9e9e9; border-radius: 12px; background: #fff;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.03); padding: 0.5rem 0.65rem;
+}
+a.bk-card { transition: border-color 0.15s ease, transform 0.15s ease; }
+a.bk-card:hover { border-color: #0a0a0a; transform: translateY(-1px); }
+.bk-side { display: flex; align-items: baseline; justify-content: space-between; gap: 0.6rem; padding: 0.12rem 0; }
+.bk-name { font-size: 0.82rem; font-weight: 600; color: #555; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.bk-score { font-size: 0.85rem; font-weight: 800; color: #555; flex-shrink: 0; }
+.bk-side.win .bk-name { color: #0a0a0a; font-weight: 800; }
+.bk-side.win .bk-score { color: #0a0a0a; }
+.bk-side.ph .bk-name { color: #b3b3b3; font-weight: 600; font-style: italic; }
+.bk-meta { font-size: 0.6rem; font-weight: 700; letter-spacing: 0.03em; color: #bbb; text-align: center; margin-top: 0.2rem; }
+.bk-third { margin-top: 1.6rem; }
+.bk-third .bk-tie { padding: 0; max-width: 22rem; }
+
+@media (max-width: 560px) {
+  .group-grid { grid-template-columns: 1fr; }
+  .lineups { grid-template-columns: 1fr; }
+  .bracket-wrap { margin: 0 -1.1rem; padding: 0 1.1rem 0.6rem; }
+  .board .score { font-size: 2rem; }
+  .board .team .name { font-size: 0.9rem; }
+  .odds-row { grid-template-columns: 6.4rem 1fr 3rem; }
+  .sb-row { grid-template-columns: 2.2rem 1fr 5.4rem 1fr 2.2rem; gap: 0.4rem; }
+  .bigstat { flex-wrap: wrap; }
+  .fx-meta { display: none; }
+}
+
+    </style>
+</head>
+<body>
+    <noscript><iframe aria-hidden="true" title="Google Tag Manager" src="https://www.googletagmanager.com/ns.html?id=GTM-KVBPX8VW"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+    <div class="wrap">
+        <div class="masthead">
+            <div><h1>World Cup 2026</h1></div>
+            <a class="home" href="../index.html">&larr; All matches</a>
+        </div>
+
+        <!-- scoreboard -->
+        <div class="card">
+            <div class="kickline">Round of 16 · Knockout · 2026-07-05</div>
+            <div class="board">
+                <div class="team">
+                    <div class="name">Brazil</div>
+                    <div class="xg">xG 3.12</div>
+                </div>
+                <div class="score"><span class="ft">HT 0–0</span>1&thinsp;–&thinsp;2</div>
+                <div class="team">
+                    <div class="name">Norway</div>
+                    <div class="xg">xG 2.02</div>
+                </div>
+            </div>
+            <div class="goals-line"><strong>Brazil</strong> Neymar 90+10&#8242; (pen.) &nbsp;·&nbsp; <strong>Norway</strong> Erling Haaland 79&#8242;, Erling Haaland 90&#8242;</div>
+            <div class="venue-line">MetLife Stadium · 80,663 attendance</div>
+        </div>
+
+        
+        <div class="card">
+            <div class="card-title">The story</div>
+            <p class="narrative">A genuine shock — the model gave Norway just 18% before kick-off, and they beat Brazil anyway. The xG race tells a different story though: Brazil created more (3.12 vs 2.02) and will feel hard done by. The decisive moment came late, in the 90th minute.</p>
+        </div>
+        
+
+        
+        <div class="card">
+            <div class="card-title">Expected goals race</div>
+            <div class="chart"><svg viewBox="0 0 660 240" xmlns="http://www.w3.org/2000/svg" width="100%" role="img" aria-label="Cumulative expected goals"><line x1="34" y1="158.3" x2="646" y2="158.3" stroke="#f0f0f0" stroke-width="1"/><text x="28" y="161.3" font-size="9" font-family="Manrope,sans-serif" fill="#bbb" text-anchor="end">1</text><line x1="34" y1="102.6" x2="646" y2="102.6" stroke="#f0f0f0" stroke-width="1"/><text x="28" y="105.6" font-size="9" font-family="Manrope,sans-serif" fill="#bbb" text-anchor="end">2</text><line x1="34" y1="46.9" x2="646" y2="46.9" stroke="#f0f0f0" stroke-width="1"/><text x="28" y="49.9" font-size="9" font-family="Manrope,sans-serif" fill="#bbb" text-anchor="end">3</text><text x="34.0" y="232" font-size="9" font-family="Manrope,sans-serif" fill="#bbb" text-anchor="middle">0&#8242;</text><text x="130.6" y="232" font-size="9" font-family="Manrope,sans-serif" fill="#bbb" text-anchor="middle">15&#8242;</text><text x="227.3" y="232" font-size="9" font-family="Manrope,sans-serif" fill="#bbb" text-anchor="middle">30&#8242;</text><text x="323.9" y="232" font-size="9" font-family="Manrope,sans-serif" fill="#bbb" text-anchor="middle">45&#8242;</text><text x="420.5" y="232" font-size="9" font-family="Manrope,sans-serif" fill="#bbb" text-anchor="middle">60&#8242;</text><text x="517.2" y="232" font-size="9" font-family="Manrope,sans-serif" fill="#bbb" text-anchor="middle">75&#8242;</text><text x="613.8" y="232" font-size="9" font-family="Manrope,sans-serif" fill="#bbb" text-anchor="middle">90&#8242;</text><line x1="34" y1="214.0" x2="646" y2="214.0" stroke="#ddd" stroke-width="1"/><path d="M 34 214.0 L 124.2 214.0 L 124.2 171.7 L 137.1 171.7 L 137.1 165.4 L 233.7 165.4 L 233.7 156.7 L 253.0 156.7 L 253.0 147.6 L 291.7 147.6 L 291.7 143.6 L 291.7 143.6 L 291.7 134.4 L 323.9 134.4 L 323.9 131.1 L 323.9 131.1 L 323.9 120.6 L 414.1 120.6 L 414.1 108.2 L 427.0 108.2 L 427.0 104.4 L 433.4 104.4 L 433.4 95.9 L 575.1 95.9 L 575.1 85.9 L 613.8 85.9 L 613.8 82.4 L 613.8 82.4 L 613.8 40.1 L 646 40.1" fill="none" stroke="#0a0a0a" stroke-width="2.2" stroke-linejoin="round"/><text x="646" y="34.1" font-size="10" font-weight="700" font-family="Manrope,sans-serif" fill="#0a0a0a" text-anchor="end">3.12</text><circle cx="613.8" cy="40.1" r="5" fill="#0a0a0a" stroke="#fff" stroke-width="1.5"/><text x="613.8" y="30.1" font-size="9.5" font-weight="700" font-family="Manrope,sans-serif" fill="#0a0a0a" text-anchor="middle">Neymar 90&#8242;</text><path d="M 34 214.0 L 259.5 214.0 L 259.5 207.5 L 272.4 207.5 L 272.4 189.3 L 311.0 189.3 L 311.0 178.2 L 323.9 178.2 L 323.9 165.7 L 349.7 165.7 L 349.7 161.5 L 465.6 161.5 L 465.6 133.6 L 517.2 133.6 L 517.2 124.2 L 542.9 124.2 L 542.9 107.0 L 613.8 107.0 L 613.8 101.3 L 646 101.3" fill="none" stroke="#b5b5b5" stroke-width="2.2" stroke-linejoin="round"/><text x="646" y="95.3" font-size="10" font-weight="700" font-family="Manrope,sans-serif" fill="#b5b5b5" text-anchor="end">2.02</text><circle cx="542.9" cy="107.0" r="5" fill="#b5b5b5" stroke="#fff" stroke-width="1.5"/><text x="542.9" y="97.0" font-size="9.5" font-weight="700" font-family="Manrope,sans-serif" fill="#0a0a0a" text-anchor="middle">Erling Haaland 79&#8242;</text><circle cx="613.8" cy="101.3" r="5" fill="#b5b5b5" stroke="#fff" stroke-width="1.5"/><text x="613.8" y="91.3" font-size="9.5" font-weight="700" font-family="Manrope,sans-serif" fill="#0a0a0a" text-anchor="middle">Erling Haaland 90&#8242;</text></svg></div>
+            <div class="legend">
+                <span class="k"><span class="dot" style="background:#0a0a0a"></span>Brazil</span>
+                <span class="k"><span class="dot" style="background:#b5b5b5"></span>Norway</span>
+                <span class="k">&#9679; goal</span>
+            </div>
+            <p class="card-note">Cumulative expected goals, minute by minute. ESPN's free feed has no xG, so each shot's xG is estimated with a naive distance-and-angle logistic model fitted on shot coordinates from the play-by-play.</p>
+        </div>
+        
+
+        
+        <div class="card">
+            <div class="card-title">Shot map</div>
+            <div class="chart"><svg viewBox="0 0 660 420" xmlns="http://www.w3.org/2000/svg" width="100%" role="img" aria-label="Shot map"><rect x="10" y="10" width="640" height="400" rx="6" stroke="#d8d8d8" stroke-width="1.5" fill="none"/><line x1="330" y1="10" x2="330" y2="410" stroke="#d8d8d8" stroke-width="1.5" fill="none"/><circle cx="330" cy="210" r="52" stroke="#d8d8d8" stroke-width="1.5" fill="none"/><rect x="10" y="94" width="106" height="232" stroke="#d8d8d8" stroke-width="1.5" fill="none"/><rect x="10" y="154" width="35" height="112" stroke="#d8d8d8" stroke-width="1.5" fill="none"/><rect x="544" y="94" width="106" height="232" stroke="#d8d8d8" stroke-width="1.5" fill="none"/><rect x="615" y="154" width="35" height="112" stroke="#d8d8d8" stroke-width="1.5" fill="none"/><circle cx="576.4" cy="210.0" r="13.9" fill="#0a0a0a" stroke="#0a0a0a" stroke-width="1.3" opacity="0.45"><title>Bruno Guimarães · 14&#8242; · xG 0.76 · Penalty - Saved</title></circle><circle cx="573.2" cy="119.6" r="5.5" fill="#0a0a0a" stroke="#0a0a0a" stroke-width="1.3" opacity="0.45"><title>Rayan · 16&#8242; · xG 0.11 · Shot Off Target</title></circle><circle cx="586.6" cy="136.0" r="6.0" fill="#0a0a0a" stroke="#0a0a0a" stroke-width="1.3" opacity="0.45"><title>Danilo · 31&#8242; · xG 0.16 · Shot Off Target</title></circle><circle cx="596.2" cy="136.0" r="6.1" fill="#0a0a0a" stroke="#0a0a0a" stroke-width="1.3" opacity="0.45"><title>Vinícius Júnior · 34&#8242; · xG 0.16 · Shot Off Target</title></circle><circle cx="108.6" cy="284.8" r="5.5" fill="#fff" stroke="#0a0a0a" stroke-width="1.3" opacity="0.45"><title>Martin Ødegaard · 35&#8242; · xG 0.12 · Shot Off Target</title></circle><circle cx="70.2" cy="176.8" r="8.2" fill="#fff" stroke="#0a0a0a" stroke-width="1.3" opacity="1"><title>Erling Haaland · 37&#8242; · xG 0.33 · Shot On Target</title></circle><circle cx="500.2" cy="147.6" r="4.9" fill="#0a0a0a" stroke="#0a0a0a" stroke-width="1.3" opacity="0.45"><title>Casemiro · 40&#8242; · xG 0.07 · Shot Blocked</title></circle><circle cx="593.0" cy="283.2" r="6.1" fill="#0a0a0a" stroke="#0a0a0a" stroke-width="1.3" opacity="1"><title>Vinícius Júnior · 40&#8242; · xG 0.16 · Shot On Target</title></circle><circle cx="44.6" cy="145.2" r="6.6" fill="#fff" stroke="#0a0a0a" stroke-width="1.3" opacity="0.45"><title>Martin Ødegaard · 43&#8242; · xG 0.20 · Shot Blocked</title></circle><circle cx="95.1" cy="177.6" r="6.9" fill="#fff" stroke="#0a0a0a" stroke-width="1.3" opacity="1"><title>Martin Ødegaard · 45'+3&#8242; · xG 0.23 · Shot On Target</title></circle><circle cx="480.4" cy="263.6" r="4.8" fill="#0a0a0a" stroke="#0a0a0a" stroke-width="1.3" opacity="0.45"><title>Bruno Guimarães · 45'+4&#8242; · xG 0.06 · Shot Blocked</title></circle><circle cx="573.2" cy="227.6" r="6.5" fill="#0a0a0a" stroke="#0a0a0a" stroke-width="1.3" opacity="0.45"><title>Matheus Cunha · 45'+4&#8242; · xG 0.19 · Shot Off Target</title></circle><circle cx="157.8" cy="269.2" r="5.0" fill="#fff" stroke="#0a0a0a" stroke-width="1.3" opacity="0.45"><title>Patrick Berg · 49&#8242; · xG 0.08 · Shot Off Target</title></circle><circle cx="555.9" cy="198.8" r="6.9" fill="#0a0a0a" stroke="#0a0a0a" stroke-width="1.3" opacity="0.45"><title>Endrick · 59&#8242; · xG 0.22 · Shot Off Target</title></circle><circle cx="501.5" cy="281.6" r="4.9" fill="#0a0a0a" stroke="#0a0a0a" stroke-width="1.3" opacity="0.45"><title>Endrick · 61&#8242; · xG 0.07 · Shot Blocked</title></circle><circle cx="545.7" cy="166.0" r="6.0" fill="#0a0a0a" stroke="#0a0a0a" stroke-width="1.3" opacity="1"><title>Rayan · 62&#8242; · xG 0.15 · Shot On Target</title></circle><circle cx="25.4" cy="241.6" r="10.5" fill="#fff" stroke="#0a0a0a" stroke-width="1.3" opacity="0.45"><title>Erling Haaland · 67&#8242; · xG 0.50 · Shot Off Target</title></circle><circle cx="88.1" cy="147.6" r="6.2" fill="#fff" stroke="#0a0a0a" stroke-width="1.3" opacity="1"><title>Andreas Schjelderup · 75&#8242; · xG 0.17 · Shot On Target</title></circle><path d="M64.4,205.6 L67.6,213.2 L75.8,213.9 L69.5,219.3 L71.5,227.3 L64.4,223.0 L57.3,227.3 L59.3,219.3 L53.0,213.9 L61.2,213.2 Z" fill="#fff" stroke="#0a0a0a" stroke-width="1.5"><title>Erling Haaland · 79&#8242; · xG 0.31 · Goal - Header</title></path><circle cx="602.6" cy="280.0" r="6.3" fill="#0a0a0a" stroke="#0a0a0a" stroke-width="1.3" opacity="0.45"><title>Neymar · 84&#8242; · xG 0.18 · Shot Off Target</title></circle><path d="M127.8,131.5 L130.2,137.4 L136.6,137.9 L131.7,142.1 L133.2,148.3 L127.8,145.0 L122.3,148.3 L123.8,142.1 L118.9,137.9 L125.3,137.4 Z" fill="#fff" stroke="#0a0a0a" stroke-width="1.5"><title>Erling Haaland · 90&#8242; · xG 0.10 · Goal</title></path><circle cx="499.6" cy="131.2" r="4.8" fill="#0a0a0a" stroke="#0a0a0a" stroke-width="1.3" opacity="0.45"><title>Éderson Silva · 90'+4&#8242; · xG 0.06 · Shot Blocked</title></circle><path d="M576.4,192.1 L581.1,203.5 L593.4,204.5 L584.1,212.5 L586.9,224.5 L576.4,218.0 L565.9,224.5 L568.7,212.5 L559.4,204.5 L571.7,203.5 Z" fill="#0a0a0a" stroke="#0a0a0a" stroke-width="1.5"><title>Neymar · 90'+10&#8242; · xG 0.76 · Penalty - Scored</title></path></svg></div>
+            <div class="legend">
+                <span class="k"><span class="dot" style="background:#0a0a0a"></span>Brazil (attacking &rarr;)</span>
+                <span class="k"><span class="dot" style="background:#fff; border: 1.5px solid #0a0a0a;"></span>Norway (attacking &larr;)</span>
+                <span class="k">size = xG · star = goal</span>
+            </div>
+        </div>
+        
+
+        
+        <div class="card">
+            <div class="card-title">Brazil &nbsp;·&nbsp; match stats &nbsp;·&nbsp; Norway</div>
+            
+            <div class="sb-row">
+                <span class="v l">33.6</span>
+                <span class="sb-track l"><span style="width: 33.6%"></span></span>
+                <span class="lab">Possession</span>
+                <span class="sb-track r"><span style="width: 66.4%"></span></span>
+                <span class="v">66.4</span>
+            </div>
+            
+            <div class="sb-row">
+                <span class="v l">14</span>
+                <span class="sb-track l"><span style="width: 60.9%"></span></span>
+                <span class="lab">Shots</span>
+                <span class="sb-track r"><span style="width: 39.1%"></span></span>
+                <span class="v">9</span>
+            </div>
+            
+            <div class="sb-row">
+                <span class="v l">4</span>
+                <span class="sb-track l"><span style="width: 44.4%"></span></span>
+                <span class="lab">On Target</span>
+                <span class="sb-track r"><span style="width: 55.6%"></span></span>
+                <span class="v">5</span>
+            </div>
+            
+            <div class="sb-row">
+                <span class="v l">5</span>
+                <span class="sb-track l"><span style="width: 50.0%"></span></span>
+                <span class="lab">Corners</span>
+                <span class="sb-track r"><span style="width: 50.0%"></span></span>
+                <span class="v">5</span>
+            </div>
+            
+            <div class="sb-row">
+                <span class="v l">7</span>
+                <span class="sb-track l"><span style="width: 53.8%"></span></span>
+                <span class="lab">Fouls</span>
+                <span class="sb-track r"><span style="width: 46.2%"></span></span>
+                <span class="v">6</span>
+            </div>
+            
+            <div class="sb-row">
+                <span class="v l">1</span>
+                <span class="sb-track l"><span style="width: 50.0%"></span></span>
+                <span class="lab">Offsides</span>
+                <span class="sb-track r"><span style="width: 50.0%"></span></span>
+                <span class="v">1</span>
+            </div>
+            
+            <div class="sb-row">
+                <span class="v l">3</span>
+                <span class="sb-track l"><span style="width: 42.9%"></span></span>
+                <span class="lab">Saves</span>
+                <span class="sb-track r"><span style="width: 57.1%"></span></span>
+                <span class="v">4</span>
+            </div>
+            
+            <div class="sb-row">
+                <span class="v l">1</span>
+                <span class="sb-track l"><span style="width: 100.0%"></span></span>
+                <span class="lab">Yellows</span>
+                <span class="sb-track r"><span style="width: 0.0%"></span></span>
+                <span class="v">0</span>
+            </div>
+            
+            <div class="sb-row">
+                <span class="v l">0</span>
+                <span class="sb-track l"><span style="width: 0%"></span></span>
+                <span class="lab">Reds</span>
+                <span class="sb-track r"><span style="width: 100%"></span></span>
+                <span class="v">0</span>
+            </div>
+            
+        </div>
+        
+
+        
+        <div class="card">
+            <div class="card-title">What the model expected</div>
+            <div class="chart"><svg viewBox="0 0 660 64" xmlns="http://www.w3.org/2000/svg" width="100%" role="img" aria-label="Pre-match win probabilities"><defs><clipPath id="rnd"><rect x="4" y="26" width="652" height="26" rx="13"/></clipPath></defs><g clip-path="url(#rnd)"><rect x="4.0" y="26" width="391.1" height="26" fill="#0a0a0a"/><text x="199.6" y="43" font-size="11" font-weight="700" font-family="Manrope,sans-serif" fill="#fff" text-anchor="middle">Brazil 60%</text><rect x="395.1" y="26" width="142.3" height="26" fill="#d9d9d9"/><text x="466.3" y="43" font-size="11" font-weight="700" font-family="Manrope,sans-serif" fill="#555" text-anchor="middle">draw 22%</text><rect x="537.4" y="26" width="118.5" height="26" fill="#f1f1f1"/><text x="596.6" y="43" font-size="11" font-weight="700" font-family="Manrope,sans-serif" fill="#555" text-anchor="middle">Norway 18%</text></g><line x1="395.1" y1="26" x2="395.1" y2="52" stroke="#fff" stroke-width="2"/><line x1="537.4" y1="26" x2="537.4" y2="52" stroke="#fff" stroke-width="2"/><path d="M596.6,23 l-5,-9 l10,0 Z" fill="#0a0a0a"/><text x="596.6" y="10" font-size="9.5" font-weight="800" font-family="Manrope,sans-serif" fill="#0a0a0a" text-anchor="middle">ACTUAL</text></svg></div>
+            <p class="narrative" style="margin-top: 0.8rem;">Pre-match Elo: Brazil 2052, Norway 1892. The model priced this Brazil <strong>60%</strong> / draw <strong>22%</strong> / Norway <strong>18%</strong>, most likely score 1–0. Reality had other plans. The result moves <strong>36 Elo points</strong> from Brazil to Norway — that flows straight into the next round of tournament simulations.</p>
+        </div>
+        
+
+        
+        <div class="card">
+            <div class="card-title">Timeline</div>
+            
+            <div class="tl-item">
+                <span class="tl-min">14'</span>
+                <span class="tl-text"><span class="tag">PEN SAVED</span>Penalty saved. Bruno Guimarães (Brazil) right footed shot saved in the bottom right corner by Ørjan Nyland (Norway).</span>
+            </div>
+            
+            <div class="tl-item">
+                <span class="tl-min">45'</span>
+                <span class="tl-text"><span class="tag">SUB</span>Substitution, Norway. Oscar Bobb replaces Alexander Sørloth.</span>
+            </div>
+            
+            <div class="tl-item">
+                <span class="tl-min">45'</span>
+                <span class="tl-text"><span class="tag">SUB</span>Substitution, Norway. Andreas Schjelderup replaces Antonio Nusa.</span>
+            </div>
+            
+            <div class="tl-item">
+                <span class="tl-min">58'</span>
+                <span class="tl-text"><span class="tag">SUB</span>Substitution, Brazil. Endrick replaces Matheus Cunha.</span>
+            </div>
+            
+            <div class="tl-item">
+                <span class="tl-min">63'</span>
+                <span class="tl-text"><span class="tag">SUB</span>Substitution, Norway. Fredrik Aursnes replaces Julian Ryerson.</span>
+            </div>
+            
+            <div class="tl-item">
+                <span class="tl-min">67'</span>
+                <span class="tl-text"><span class="tag">SUB</span>Substitution, Brazil. Neymar replaces Gabriel Martinelli.</span>
+            </div>
+            
+            <div class="tl-item">
+                <span class="tl-min">67'</span>
+                <span class="tl-text"><span class="tag">SUB</span>Substitution, Brazil. Danilo Santos replaces Rayan.</span>
+            </div>
+            
+            <div class="tl-item">
+                <span class="tl-min">79'</span>
+                <span class="tl-text"><span class="tag">SUB</span>Substitution, Brazil. Éderson Silva replaces Bruno Guimarães.</span>
+            </div>
+            
+            <div class="tl-item">
+                <span class="tl-min">79'</span>
+                <span class="tl-text"><span class="tag goal">GOAL</span>Goal! Brazil 0, Norway 1. Erling Haaland (Norway) header from the centre of the box to the bottom right corner. Assisted by Andreas Schjelderup with a cross.</span>
+            </div>
+            
+            <div class="tl-item">
+                <span class="tl-min">90'</span>
+                <span class="tl-text"><span class="tag goal">GOAL</span>Goal! Brazil 0, Norway 2. Erling Haaland (Norway) left footed shot from outside the box to the bottom right corner. Assisted by Andreas Schjelderup.</span>
+            </div>
+            
+            <div class="tl-item">
+                <span class="tl-min">90'+5'</span>
+                <span class="tl-text"><span class="tag">SUB</span>Substitution, Norway. Leo Østigård replaces David Møller Wolfe because of an injury.</span>
+            </div>
+            
+            <div class="tl-item">
+                <span class="tl-min">90'+6'</span>
+                <span class="tl-text"><span class="tag">YELLOW</span>Neymar (Brazil) is shown the yellow card for a bad foul.</span>
+            </div>
+            
+            <div class="tl-item">
+                <span class="tl-min">90'+10'</span>
+                <span class="tl-text"><span class="tag goal">PEN GOAL</span>Goal! Brazil 1, Norway 2. Neymar (Brazil) converts the penalty with a right footed shot to the bottom right corner.</span>
+            </div>
+            
+        </div>
+        
+
+        
+        <div class="card">
+            <div class="card-title">Lineups</div>
+            <div class="lineups">
+                
+                <div>
+                    <div class="lu-team">Brazil</div>
+                    <div class="lu-formation">4-4-2</div>
+                    <ul class="lu-list">
+                        
+                        <li><span class="j">1</span>Alisson Becker <span style="color:#bbb; font-size:0.66rem;">G</span></li>
+                        
+                        <li><span class="j">3</span>Gabriel Magalhães <span style="color:#bbb; font-size:0.66rem;">CD-L</span></li>
+                        
+                        <li><span class="j">4</span>Marquinhos <span style="color:#bbb; font-size:0.66rem;">CD-R</span></li>
+                        
+                        <li><span class="j">16</span>Douglas Santos <span style="color:#bbb; font-size:0.66rem;">LB</span></li>
+                        
+                        <li><span class="j">13</span>Danilo <span style="color:#bbb; font-size:0.66rem;">RB</span></li>
+                        
+                        <li><span class="j">5</span>Casemiro <span style="color:#bbb; font-size:0.66rem;">CM-L</span></li>
+                        
+                        <li><span class="j">8</span>Bruno Guimarães <span style="color:#bbb; font-size:0.66rem;">CM-R</span></li>
+                        
+                        <li><span class="j">22</span>Gabriel Martinelli <span style="color:#bbb; font-size:0.66rem;">LM</span></li>
+                        
+                        <li><span class="j">26</span>Rayan <span style="color:#bbb; font-size:0.66rem;">RM</span></li>
+                        
+                        <li><span class="j">7</span>Vinícius Júnior <span style="color:#bbb; font-size:0.66rem;">CF-L</span></li>
+                        
+                        <li><span class="j">9</span>Matheus Cunha <span style="color:#bbb; font-size:0.66rem;">CF-R</span></li>
+                        
+                    </ul>
+                    <div class="lu-subs"><strong>Subs:</strong> Endrick, Neymar, Danilo Santos, Éderson</div>
+                </div>
+                
+                <div>
+                    <div class="lu-team">Norway</div>
+                    <div class="lu-formation">4-3-3</div>
+                    <ul class="lu-list">
+                        
+                        <li><span class="j">1</span>Ørjan Nyland <span style="color:#bbb; font-size:0.66rem;">G</span></li>
+                        
+                        <li><span class="j">17</span>Torbjørn Heggem <span style="color:#bbb; font-size:0.66rem;">CD-L</span></li>
+                        
+                        <li><span class="j">3</span>Kristoffer Ajer <span style="color:#bbb; font-size:0.66rem;">CD-R</span></li>
+                        
+                        <li><span class="j">5</span>David Møller Wolfe <span style="color:#bbb; font-size:0.66rem;">LB</span></li>
+                        
+                        <li><span class="j">26</span>Julian Ryerson <span style="color:#bbb; font-size:0.66rem;">RB</span></li>
+                        
+                        <li><span class="j">8</span>Sander Berge <span style="color:#bbb; font-size:0.66rem;">CM</span></li>
+                        
+                        <li><span class="j">6</span>Patrick Berg <span style="color:#bbb; font-size:0.66rem;">LM</span></li>
+                        
+                        <li><span class="j">10</span>Martin Ødegaard <span style="color:#bbb; font-size:0.66rem;">RM</span></li>
+                        
+                        <li><span class="j">9</span>Erling Haaland <span style="color:#bbb; font-size:0.66rem;">F</span></li>
+                        
+                        <li><span class="j">20</span>Antonio Nusa <span style="color:#bbb; font-size:0.66rem;">LF</span></li>
+                        
+                        <li><span class="j">7</span>Alexander Sørloth <span style="color:#bbb; font-size:0.66rem;">RF</span></li>
+                        
+                    </ul>
+                    <div class="lu-subs"><strong>Subs:</strong> Oscar Bobb, Andreas Schjelderup, Fredrik Aursnes, Leo Østigard</div>
+                </div>
+                
+            </div>
+        </div>
+        
+
+        <a class="backlink" href="../index.html">&larr; Fixtures, table &amp; predictions</a>
+        <p class="foot">Generated automatically from public match data. Stats: ESPN · Results: openfootball · xG: own naive model (distance + angle).</p>
+    </div>
+</body>
+</html>

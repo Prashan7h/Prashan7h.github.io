@@ -1,0 +1,807 @@
+{
+ "teams": [
+  {
+   "name": "Brazil",
+   "stats": {
+    "possessionPct": "33.6",
+    "totalShots": "14",
+    "shotsOnTarget": "4",
+    "wonCorners": "5",
+    "foulsCommitted": "7",
+    "offsides": "1",
+    "saves": "3",
+    "yellowCards": "1",
+    "redCards": "0"
+   }
+  },
+  {
+   "name": "Norway",
+   "stats": {
+    "possessionPct": "66.4",
+    "totalShots": "9",
+    "shotsOnTarget": "5",
+    "wonCorners": "5",
+    "foulsCommitted": "6",
+    "offsides": "1",
+    "saves": "4",
+    "yellowCards": "0",
+    "redCards": "0"
+   }
+  }
+ ],
+ "events": [
+  {
+   "type": "Kickoff",
+   "minute": "",
+   "team": null,
+   "text": "First Half begins.",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "12'",
+   "team": "Brazil",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "12'",
+   "team": "Brazil",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Penalty - Saved",
+   "minute": "14'",
+   "team": "Brazil",
+   "text": "Penalty saved. Bruno Guimarães (Brazil) right footed shot saved in the bottom right corner by Ørjan Nyland (Norway).",
+   "players": [
+    "Bruno Guimarães"
+   ]
+  },
+  {
+   "type": "Start Delay",
+   "minute": "27'",
+   "team": "Norway",
+   "text": "Delay in match for a drinks break.",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "27'",
+   "team": "Brazil",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "29'",
+   "team": "Norway",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "29'",
+   "team": "Brazil",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Halftime",
+   "minute": "45'+7'",
+   "team": null,
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Substitution",
+   "minute": "45'",
+   "team": "Norway",
+   "text": "Substitution, Norway. Oscar Bobb replaces Alexander Sørloth.",
+   "players": [
+    "Oscar Bobb",
+    "Alexander Sørloth"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "45'",
+   "team": "Norway",
+   "text": "Substitution, Norway. Andreas Schjelderup replaces Antonio Nusa.",
+   "players": [
+    "Andreas Schjelderup",
+    "Antonio Nusa"
+   ]
+  },
+  {
+   "type": "Start 2nd Half",
+   "minute": "45'",
+   "team": null,
+   "text": "Second Half begins Brazil 0, Norway 0.",
+   "players": []
+  },
+  {
+   "type": "Substitution",
+   "minute": "58'",
+   "team": "Brazil",
+   "text": "Substitution, Brazil. Endrick replaces Matheus Cunha.",
+   "players": [
+    "Endrick",
+    "Matheus Cunha"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "63'",
+   "team": "Norway",
+   "text": "Substitution, Norway. Fredrik Aursnes replaces Julian Ryerson.",
+   "players": [
+    "Fredrik Aursnes",
+    "Julian Ryerson"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "67'",
+   "team": "Brazil",
+   "text": "Substitution, Brazil. Neymar replaces Gabriel Martinelli.",
+   "players": [
+    "Neymar",
+    "Gabriel Martinelli"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "67'",
+   "team": "Brazil",
+   "text": "Substitution, Brazil. Danilo Santos replaces Rayan.",
+   "players": [
+    "Danilo Santos",
+    "Rayan"
+   ]
+  },
+  {
+   "type": "Start Delay",
+   "minute": "68'",
+   "team": "Norway",
+   "text": "Delay in match for a drinks break.",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "68'",
+   "team": "Brazil",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "71'",
+   "team": "Norway",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "71'",
+   "team": "Brazil",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Substitution",
+   "minute": "79'",
+   "team": "Brazil",
+   "text": "Substitution, Brazil. Éderson Silva replaces Bruno Guimarães.",
+   "players": [
+    "Éderson",
+    "Bruno Guimarães"
+   ]
+  },
+  {
+   "type": "Goal - Header",
+   "minute": "79'",
+   "team": "Norway",
+   "text": "Goal! Brazil 0, Norway 1. Erling Haaland (Norway) header from the centre of the box to the bottom right corner. Assisted by Andreas Schjelderup with a cross.",
+   "players": [
+    "Erling Haaland",
+    "Andreas Schjelderup"
+   ]
+  },
+  {
+   "type": "Goal",
+   "minute": "90'",
+   "team": "Norway",
+   "text": "Goal! Brazil 0, Norway 2. Erling Haaland (Norway) left footed shot from outside the box to the bottom right corner. Assisted by Andreas Schjelderup.",
+   "players": [
+    "Erling Haaland",
+    "Andreas Schjelderup"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "90'+5'",
+   "team": "Norway",
+   "text": "Substitution, Norway. Leo Østigård replaces David Møller Wolfe because of an injury.",
+   "players": [
+    "Leo Østigard",
+    "David Møller Wolfe"
+   ]
+  },
+  {
+   "type": "Yellow Card",
+   "minute": "90'+6'",
+   "team": "Brazil",
+   "text": "Neymar (Brazil) is shown the yellow card for a bad foul.",
+   "players": [
+    "Neymar"
+   ]
+  },
+  {
+   "type": "Penalty - Scored",
+   "minute": "90'+10'",
+   "team": "Brazil",
+   "text": "Goal! Brazil 1, Norway 2. Neymar (Brazil) converts the penalty with a right footed shot to the bottom right corner.",
+   "players": [
+    "Neymar"
+   ]
+  },
+  {
+   "type": "End Regular Time",
+   "minute": "90'+12'",
+   "team": null,
+   "text": "",
+   "players": []
+  }
+ ],
+ "shots": [
+  {
+   "minute": "14",
+   "seconds": 801.0,
+   "team": "Brazil",
+   "player": "Bruno Guimarães",
+   "type": "Penalty - Saved",
+   "x": 88.5,
+   "y": 50.0,
+   "goal": false,
+   "xg": 0.76,
+   "text": "Penalty saved. Bruno Guimarães (Brazil) right footed shot saved in the bottom right corner by Ørjan Nyland (Norway)."
+  },
+  {
+   "minute": "16",
+   "seconds": 934.0,
+   "team": "Brazil",
+   "player": "Rayan",
+   "type": "Shot Off Target",
+   "x": 88.0,
+   "y": 27.4,
+   "goal": false,
+   "xg": 0.112,
+   "text": "Attempt missed. Rayan (Brazil) right footed shot from the right side of the box is high and wide to the right. Assisted by Casemiro."
+  },
+  {
+   "minute": "31",
+   "seconds": 1801.0,
+   "team": "Brazil",
+   "player": "Danilo",
+   "type": "Shot Off Target",
+   "x": 90.1,
+   "y": 31.5,
+   "goal": false,
+   "xg": 0.157,
+   "text": "Attempt missed. Danilo (Brazil) right footed shot from the right side of the box misses to the left. Assisted by Rayan."
+  },
+  {
+   "minute": "34",
+   "seconds": 2040.0,
+   "team": "Brazil",
+   "player": "Vinícius Júnior",
+   "type": "Shot Off Target",
+   "x": 91.6,
+   "y": 31.5,
+   "goal": false,
+   "xg": 0.164,
+   "text": "Attempt missed. Vinícius Júnior (Brazil) right footed shot from the right side of the box misses to the left. Assisted by Rayan."
+  },
+  {
+   "minute": "35",
+   "seconds": 2093.0,
+   "team": "Norway",
+   "player": "Martin Ødegaard",
+   "type": "Shot Off Target",
+   "x": 84.6,
+   "y": 31.3,
+   "goal": false,
+   "xg": 0.117,
+   "text": "Attempt missed. Martin Ødegaard (Norway) left footed shot from the right side of the box is close, but misses to the right."
+  },
+  {
+   "minute": "37",
+   "seconds": 2186.0,
+   "team": "Norway",
+   "player": "Erling Haaland",
+   "type": "Shot On Target",
+   "x": 90.6,
+   "y": 58.3,
+   "goal": false,
+   "xg": 0.326,
+   "text": "Attempt saved. Erling Haaland (Norway) left footed shot from the centre of the box is saved in the top right corner by Alisson Becker (Brazil)."
+  },
+  {
+   "minute": "40",
+   "seconds": 2356.0,
+   "team": "Brazil",
+   "player": "Casemiro",
+   "type": "Shot Blocked",
+   "x": 76.6,
+   "y": 34.4,
+   "goal": false,
+   "xg": 0.072,
+   "text": "Attempt blocked. Casemiro (Brazil) left footed shot from outside the box is blocked. Assisted by Rayan."
+  },
+  {
+   "minute": "40",
+   "seconds": 2392.0,
+   "team": "Brazil",
+   "player": "Vinícius Júnior",
+   "type": "Shot On Target",
+   "x": 91.1,
+   "y": 68.3,
+   "goal": false,
+   "xg": 0.164,
+   "text": "Attempt saved. Vinícius Júnior (Brazil) left footed shot from the left side of the box is saved in the bottom left corner by Ørjan Nyland (Norway). Assisted by Gabriel Martinelli."
+  },
+  {
+   "minute": "43",
+   "seconds": 2521.0,
+   "team": "Norway",
+   "player": "Martin Ødegaard",
+   "type": "Shot Blocked",
+   "x": 94.6,
+   "y": 66.2,
+   "goal": false,
+   "xg": 0.199,
+   "text": "Attempt blocked. Martin Ødegaard (Norway) left footed shot from a difficult angle on the left is blocked. Assisted by Erling Haaland."
+  },
+  {
+   "minute": "45'+3",
+   "seconds": 2700.0,
+   "team": "Norway",
+   "player": "Martin Ødegaard",
+   "type": "Shot On Target",
+   "x": 86.7,
+   "y": 58.1,
+   "goal": false,
+   "xg": 0.225,
+   "text": "Attempt saved. Martin Ødegaard (Norway) left footed shot from the centre of the box is saved in the centre of the goal by Alisson Becker (Brazil)."
+  },
+  {
+   "minute": "45'+4",
+   "seconds": 2700.0,
+   "team": "Brazil",
+   "player": "Bruno Guimarães",
+   "type": "Shot Blocked",
+   "x": 73.5,
+   "y": 63.4,
+   "goal": false,
+   "xg": 0.059,
+   "text": "Attempt blocked. Bruno Guimarães (Brazil) right footed shot from outside the box is blocked. Assisted by Vinícius Júnior."
+  },
+  {
+   "minute": "45'+4",
+   "seconds": 2700.0,
+   "team": "Brazil",
+   "player": "Matheus Cunha",
+   "type": "Shot Off Target",
+   "x": 88.0,
+   "y": 54.4,
+   "goal": false,
+   "xg": 0.19,
+   "text": "Attempt missed. Matheus Cunha (Brazil) header from the centre of the box misses to the right. Assisted by Bruno Guimarães."
+  },
+  {
+   "minute": "49",
+   "seconds": 2923.0,
+   "team": "Norway",
+   "player": "Patrick Berg",
+   "type": "Shot Off Target",
+   "x": 76.9,
+   "y": 35.2,
+   "goal": false,
+   "xg": 0.076,
+   "text": "Attempt missed. Patrick Berg (Norway) right footed shot from outside the box is too high. Assisted by Martin Ødegaard."
+  },
+  {
+   "minute": "59",
+   "seconds": 3517.0,
+   "team": "Brazil",
+   "player": "Endrick",
+   "type": "Shot Off Target",
+   "x": 85.3,
+   "y": 47.2,
+   "goal": false,
+   "xg": 0.222,
+   "text": "Attempt missed. Endrick (Brazil) left footed shot from the centre of the box misses to the left. Assisted by Vinícius Júnior with a through ball following a fast break."
+  },
+  {
+   "minute": "61",
+   "seconds": 3634.0,
+   "team": "Brazil",
+   "player": "Endrick",
+   "type": "Shot Blocked",
+   "x": 76.8,
+   "y": 67.9,
+   "goal": false,
+   "xg": 0.068,
+   "text": "Attempt blocked. Endrick (Brazil) left footed shot from outside the box is blocked. Assisted by Gabriel Martinelli."
+  },
+  {
+   "minute": "62",
+   "seconds": 3693.0,
+   "team": "Brazil",
+   "player": "Rayan",
+   "type": "Shot On Target",
+   "x": 83.7,
+   "y": 39.0,
+   "goal": false,
+   "xg": 0.153,
+   "text": "Attempt saved. Rayan (Brazil) right footed shot from the centre of the box is saved in the centre of the goal by Ørjan Nyland (Norway). Assisted by Gabriel Magalhães with a headed pass."
+  },
+  {
+   "minute": "67",
+   "seconds": 3976.0,
+   "team": "Norway",
+   "player": "Erling Haaland",
+   "type": "Shot Off Target",
+   "x": 97.6,
+   "y": 42.1,
+   "goal": false,
+   "xg": 0.5,
+   "text": "Attempt missed. Erling Haaland (Norway) left footed shot from the right side of the six yard box misses to the right. Assisted by Kristoffer Ajer following a corner."
+  },
+  {
+   "minute": "75",
+   "seconds": 4483.0,
+   "team": "Norway",
+   "player": "Andreas Schjelderup",
+   "type": "Shot On Target",
+   "x": 87.8,
+   "y": 65.6,
+   "goal": false,
+   "xg": 0.169,
+   "text": "Attempt saved. Andreas Schjelderup (Norway) right footed shot from the left side of the box is saved in the bottom left corner by Alisson Becker (Brazil). Assisted by Erling Haaland."
+  },
+  {
+   "minute": "79",
+   "seconds": 4738.0,
+   "team": "Norway",
+   "player": "Erling Haaland",
+   "type": "Goal - Header",
+   "x": 91.5,
+   "y": 48.1,
+   "goal": true,
+   "xg": 0.31,
+   "text": "Goal! Brazil 0, Norway 1. Erling Haaland (Norway) header from the centre of the box to the bottom right corner. Assisted by Andreas Schjelderup with a cross."
+  },
+  {
+   "minute": "84",
+   "seconds": 4990.0,
+   "team": "Brazil",
+   "player": "Neymar",
+   "type": "Shot Off Target",
+   "x": 92.6,
+   "y": 67.5,
+   "goal": false,
+   "xg": 0.179,
+   "text": "Attempt missed. Neymar (Brazil) right footed shot from the left side of the box misses to the left following a corner."
+  },
+  {
+   "minute": "90",
+   "seconds": 5349.0,
+   "team": "Norway",
+   "player": "Erling Haaland",
+   "type": "Goal",
+   "x": 81.6,
+   "y": 67.3,
+   "goal": true,
+   "xg": 0.101,
+   "text": "Goal! Brazil 0, Norway 2. Erling Haaland (Norway) left footed shot from outside the box to the bottom right corner. Assisted by Andreas Schjelderup."
+  },
+  {
+   "minute": "90'+4",
+   "seconds": 5400.0,
+   "team": "Brazil",
+   "player": "Éderson Silva",
+   "type": "Shot Blocked",
+   "x": 76.5,
+   "y": 30.3,
+   "goal": false,
+   "xg": 0.063,
+   "text": "Attempt blocked. Éderson Silva (Brazil) right footed shot from outside the box is blocked. Assisted by Neymar."
+  },
+  {
+   "minute": "90'+10",
+   "seconds": 5400.0,
+   "team": "Brazil",
+   "player": "Neymar",
+   "type": "Penalty - Scored",
+   "x": 88.5,
+   "y": 50.0,
+   "goal": true,
+   "xg": 0.76,
+   "text": "Goal! Brazil 1, Norway 2. Neymar (Brazil) converts the penalty with a right footed shot to the bottom right corner."
+  }
+ ],
+ "lineups": [
+  {
+   "team": "Brazil",
+   "formation": "4-4-2",
+   "starters": [
+    {
+     "name": "Alisson Becker",
+     "jersey": "1",
+     "position": "G"
+    },
+    {
+     "name": "Gabriel Magalhães",
+     "jersey": "3",
+     "position": "CD-L"
+    },
+    {
+     "name": "Marquinhos",
+     "jersey": "4",
+     "position": "CD-R"
+    },
+    {
+     "name": "Douglas Santos",
+     "jersey": "16",
+     "position": "LB"
+    },
+    {
+     "name": "Danilo",
+     "jersey": "13",
+     "position": "RB"
+    },
+    {
+     "name": "Casemiro",
+     "jersey": "5",
+     "position": "CM-L"
+    },
+    {
+     "name": "Bruno Guimarães",
+     "jersey": "8",
+     "position": "CM-R"
+    },
+    {
+     "name": "Gabriel Martinelli",
+     "jersey": "22",
+     "position": "LM"
+    },
+    {
+     "name": "Rayan",
+     "jersey": "26",
+     "position": "RM"
+    },
+    {
+     "name": "Vinícius Júnior",
+     "jersey": "7",
+     "position": "CF-L"
+    },
+    {
+     "name": "Matheus Cunha",
+     "jersey": "9",
+     "position": "CF-R"
+    }
+   ],
+   "subs": [
+    {
+     "name": "Danilo Santos",
+     "jersey": "18",
+     "position": "SUB"
+    },
+    {
+     "name": "Weverton",
+     "jersey": "12",
+     "position": "SUB"
+    },
+    {
+     "name": "Ederson",
+     "jersey": "23",
+     "position": "SUB"
+    },
+    {
+     "name": "Roger Ibañez",
+     "jersey": "24",
+     "position": "SUB"
+    },
+    {
+     "name": "Raphinha",
+     "jersey": "11",
+     "position": "SUB"
+    },
+    {
+     "name": "Bremer",
+     "jersey": "14",
+     "position": "SUB"
+    },
+    {
+     "name": "Éderson",
+     "jersey": "2",
+     "position": "SUB"
+    },
+    {
+     "name": "Neymar",
+     "jersey": "10",
+     "position": "SUB"
+    },
+    {
+     "name": "Luiz Henrique",
+     "jersey": "21",
+     "position": "SUB"
+    },
+    {
+     "name": "Igor Thiago",
+     "jersey": "25",
+     "position": "SUB"
+    },
+    {
+     "name": "Endrick",
+     "jersey": "19",
+     "position": "SUB"
+    },
+    {
+     "name": "Alex Sandro",
+     "jersey": "6",
+     "position": "SUB"
+    },
+    {
+     "name": "Léo Pereira",
+     "jersey": "15",
+     "position": "SUB"
+    },
+    {
+     "name": "Fabinho",
+     "jersey": "17",
+     "position": "SUB"
+    }
+   ]
+  },
+  {
+   "team": "Norway",
+   "formation": "4-3-3",
+   "starters": [
+    {
+     "name": "Ørjan Nyland",
+     "jersey": "1",
+     "position": "G"
+    },
+    {
+     "name": "Torbjørn Heggem",
+     "jersey": "17",
+     "position": "CD-L"
+    },
+    {
+     "name": "Kristoffer Ajer",
+     "jersey": "3",
+     "position": "CD-R"
+    },
+    {
+     "name": "David Møller Wolfe",
+     "jersey": "5",
+     "position": "LB"
+    },
+    {
+     "name": "Julian Ryerson",
+     "jersey": "26",
+     "position": "RB"
+    },
+    {
+     "name": "Sander Berge",
+     "jersey": "8",
+     "position": "CM"
+    },
+    {
+     "name": "Patrick Berg",
+     "jersey": "6",
+     "position": "LM"
+    },
+    {
+     "name": "Martin Ødegaard",
+     "jersey": "10",
+     "position": "RM"
+    },
+    {
+     "name": "Erling Haaland",
+     "jersey": "9",
+     "position": "F"
+    },
+    {
+     "name": "Antonio Nusa",
+     "jersey": "20",
+     "position": "LF"
+    },
+    {
+     "name": "Alexander Sørloth",
+     "jersey": "7",
+     "position": "RF"
+    }
+   ],
+   "subs": [
+    {
+     "name": "Oscar Bobb",
+     "jersey": "22",
+     "position": "SUB"
+    },
+    {
+     "name": "Jørgen Strand Larsen",
+     "jersey": "11",
+     "position": "SUB"
+    },
+    {
+     "name": "Henrik Falchener",
+     "jersey": "25",
+     "position": "SUB"
+    },
+    {
+     "name": "Kristian Thorstvedt",
+     "jersey": "18",
+     "position": "SUB"
+    },
+    {
+     "name": "Jens Petter Hauge",
+     "jersey": "23",
+     "position": "SUB"
+    },
+    {
+     "name": "Sondre Langas",
+     "jersey": "24",
+     "position": "SUB"
+    },
+    {
+     "name": "Andreas Schjelderup",
+     "jersey": "21",
+     "position": "SUB"
+    },
+    {
+     "name": "Thelo Aasgaard",
+     "jersey": "19",
+     "position": "SUB"
+    },
+    {
+     "name": "Sander Tangvik",
+     "jersey": "12",
+     "position": "SUB"
+    },
+    {
+     "name": "Fredrik Aursnes",
+     "jersey": "14",
+     "position": "SUB"
+    },
+    {
+     "name": "Morten Thorsby",
+     "jersey": "2",
+     "position": "SUB"
+    },
+    {
+     "name": "Egil Selvik",
+     "jersey": "13",
+     "position": "SUB"
+    },
+    {
+     "name": "Leo Østigard",
+     "jersey": "4",
+     "position": "SUB"
+    },
+    {
+     "name": "Fredrik André Bjørkan",
+     "jersey": "15",
+     "position": "SUB"
+    }
+   ]
+  }
+ ],
+ "attendance": 80663,
+ "venue": "MetLife Stadium, East Rutherford, New Jersey, USA"
+}
