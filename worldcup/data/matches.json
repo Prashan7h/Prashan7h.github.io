@@ -3977,16 +3977,18 @@
    "round": "Quarter-final",
    "date": "2026-07-10",
    "time": "12:00 UTC-7",
-   "team1": "W93",
-   "team2": "W94",
+   "team1": "Spain",
+   "team2": "Belgium",
    "group": null,
    "ground": "Los Angeles (Inglewood)",
    "score": null,
    "goals1": [],
    "goals2": [],
-   "espn_id": null,
+   "espn_id": "760511",
    "status": "scheduled",
-   "slug": "2026-07-10-w93-vs-w94"
+   "utc_date": "2026-07-10T19:00Z",
+   "venue": "SoFi Stadium",
+   "slug": "2026-07-10-spain-vs-belgium"
   },
   {
    "num": 99,
