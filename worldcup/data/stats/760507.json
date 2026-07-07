@@ -1,0 +1,952 @@
+{
+ "teams": [
+  {
+   "name": "United States",
+   "stats": {
+    "possessionPct": "56.2",
+    "totalShots": "7",
+    "shotsOnTarget": "2",
+    "wonCorners": "3",
+    "foulsCommitted": "11",
+    "offsides": "0",
+    "saves": "3",
+    "yellowCards": "2",
+    "redCards": "0"
+   }
+  },
+  {
+   "name": "Belgium",
+   "stats": {
+    "possessionPct": "43.8",
+    "totalShots": "15",
+    "shotsOnTarget": "7",
+    "wonCorners": "5",
+    "foulsCommitted": "9",
+    "offsides": "1",
+    "saves": "1",
+    "yellowCards": "0",
+    "redCards": "0"
+   }
+  }
+ ],
+ "events": [
+  {
+   "type": "Kickoff",
+   "minute": "",
+   "team": null,
+   "text": "First Half begins.",
+   "players": []
+  },
+  {
+   "type": "Goal",
+   "minute": "9'",
+   "team": "Belgium",
+   "text": "Goal! USA 0, Belgium 1. Charles De Ketelaere (Belgium) right footed shot from very close range to the centre of the goal. Assisted by Nicolas Raskin.",
+   "players": [
+    "Charles De Ketelaere",
+    "Nicolas Raskin"
+   ]
+  },
+  {
+   "type": "Start Delay",
+   "minute": "13'",
+   "team": "United States",
+   "text": "Delay in match because of an injury Chris Richards (USA).",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "13'",
+   "team": "Belgium",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "13'",
+   "team": "United States",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "13'",
+   "team": "Belgium",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "17'",
+   "team": "United States",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "17'",
+   "team": "Belgium",
+   "text": "Delay in match because of an injury Amadou Onana (Belgium).",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "18'",
+   "team": "Belgium",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "18'",
+   "team": "United States",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "20'",
+   "team": "United States",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "20'",
+   "team": "Belgium",
+   "text": "Delay in match because of an injury Brandon Mechele (Belgium).",
+   "players": []
+  },
+  {
+   "type": "Substitution",
+   "minute": "21'",
+   "team": "Belgium",
+   "text": "Substitution, Belgium. Hans Vanaken replaces Amadou Onana because of an injury.",
+   "players": [
+    "Hans Vanaken",
+    "Amadou Onana"
+   ]
+  },
+  {
+   "type": "End Delay",
+   "minute": "21'",
+   "team": "Belgium",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "21'",
+   "team": "United States",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "24'",
+   "team": "Belgium",
+   "text": "Delay in match for a drinks break.",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "24'",
+   "team": "United States",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "26'",
+   "team": "Belgium",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "26'",
+   "team": "United States",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Goal - Free-kick",
+   "minute": "31'",
+   "team": "United States",
+   "text": "Goal! USA 1, Belgium 1. Malik Tillman (USA) from a free kick with a right footed shot to the high centre of the goal.",
+   "players": [
+    "Malik Tillman"
+   ]
+  },
+  {
+   "type": "Goal - Header",
+   "minute": "33'",
+   "team": "Belgium",
+   "text": "Goal! USA 1, Belgium 2. Charles De Ketelaere (Belgium) header from very close range to the top right corner. Assisted by Leandro Trossard with a cross.",
+   "players": [
+    "Charles De Ketelaere",
+    "Leandro Trossard"
+   ]
+  },
+  {
+   "type": "Yellow Card",
+   "minute": "35'",
+   "team": "United States",
+   "text": "Weston McKennie (USA) is shown the yellow card for a bad foul.",
+   "players": [
+    "Weston McKennie"
+   ]
+  },
+  {
+   "type": "Start Delay",
+   "minute": "45'+1'",
+   "team": "United States",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "45'+1'",
+   "team": "United States",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Halftime",
+   "minute": "45'+7'",
+   "team": null,
+   "text": "First Half ends, USA 1, Belgium 2.",
+   "players": []
+  },
+  {
+   "type": "Substitution",
+   "minute": "45'",
+   "team": "United States",
+   "text": "Substitution, USA. Giovanni Reyna replaces Sergiño Dest.",
+   "players": [
+    "Giovanni Reyna",
+    "Sergiño Dest"
+   ]
+  },
+  {
+   "type": "Start 2nd Half",
+   "minute": "45'",
+   "team": null,
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "53'",
+   "team": "United States",
+   "text": "Delay in match because of an injury Christian Pulisic (USA).",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "53'",
+   "team": "Belgium",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "53'",
+   "team": "United States",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "53'",
+   "team": "Belgium",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Goal",
+   "minute": "57'",
+   "team": "Belgium",
+   "text": "Goal! USA 1, Belgium 3. Hans Vanaken (Belgium) right footed shot from outside the box to the bottom right corner. Assisted by Charles De Ketelaere.",
+   "players": [
+    "Hans Vanaken",
+    "Charles De Ketelaere"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "59'",
+   "team": "United States",
+   "text": "Substitution, USA. Sebastian Berhalter replaces Christian Pulisic because of an injury.",
+   "players": [
+    "Sebastian Berhalter",
+    "Christian Pulisic"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "67'",
+   "team": "Belgium",
+   "text": "Substitution, Belgium. Jérémy Doku replaces Dodi Lukébakio.",
+   "players": [
+    "Jérémy Doku",
+    "Dodi Lukébakio"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "67'",
+   "team": "Belgium",
+   "text": "Substitution, Belgium. Romelu Lukaku replaces Charles De Ketelaere.",
+   "players": [
+    "Romelu Lukaku",
+    "Charles De Ketelaere"
+   ]
+  },
+  {
+   "type": "Yellow Card",
+   "minute": "69'",
+   "team": "United States",
+   "text": "Malik Tillman (USA) is shown the yellow card for a bad foul.",
+   "players": [
+    "Malik Tillman"
+   ]
+  },
+  {
+   "type": "Start Delay",
+   "minute": "69'",
+   "team": "United States",
+   "text": "Delay in match for a drinks break.",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "69'",
+   "team": "Belgium",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "71'",
+   "team": "United States",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "71'",
+   "team": "Belgium",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Substitution",
+   "minute": "72'",
+   "team": "United States",
+   "text": "Substitution, USA. Ricardo Pepi replaces Tyler Adams.",
+   "players": [
+    "Ricardo Pepi",
+    "Tyler Adams"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "89'",
+   "team": "Belgium",
+   "text": "Substitution, Belgium. Alexis Saelemaekers replaces Leandro Trossard.",
+   "players": [
+    "Alexis Saelemaekers",
+    "Leandro Trossard"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "89'",
+   "team": "Belgium",
+   "text": "Substitution, Belgium. Axel Witsel replaces Nicolas Raskin.",
+   "players": [
+    "Axel Witsel",
+    "Nicolas Raskin"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "90'+2'",
+   "team": "United States",
+   "text": "Substitution, USA. Max Arfsten replaces Antonee Robinson.",
+   "players": [
+    "Max Arfsten",
+    "Antonee Robinson"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "90'+2'",
+   "team": "United States",
+   "text": "Substitution, USA. Haji Wright replaces Folarin Balogun.",
+   "players": [
+    "Haji Wright",
+    "Folarin Balogun"
+   ]
+  },
+  {
+   "type": "Goal",
+   "minute": "90'+3'",
+   "team": "Belgium",
+   "text": "Goal! USA 1, Belgium 4. Romelu Lukaku (Belgium) right footed shot from the left side of the box to the bottom right corner. Assisted by Hans Vanaken.",
+   "players": [
+    "Romelu Lukaku",
+    "Hans Vanaken"
+   ]
+  },
+  {
+   "type": "End Regular Time",
+   "minute": "90'+5'",
+   "team": null,
+   "text": "Second Half ends, USA 1, Belgium 4.",
+   "players": []
+  }
+ ],
+ "shots": [
+  {
+   "minute": "1",
+   "seconds": 12.0,
+   "team": "Belgium",
+   "player": "Leandro Trossard",
+   "type": "Shot Blocked",
+   "x": 79.9,
+   "y": 59.1,
+   "goal": false,
+   "xg": 0.114,
+   "text": "Attempt blocked. Leandro Trossard (Belgium) left footed shot from outside the box is blocked."
+  },
+  {
+   "minute": "1",
+   "seconds": 44.0,
+   "team": "Belgium",
+   "player": "Youri Tielemans",
+   "type": "Shot Blocked",
+   "x": 80.9,
+   "y": 50.5,
+   "goal": false,
+   "xg": 0.141,
+   "text": "Attempt blocked. Youri Tielemans (Belgium) left footed shot from outside the box is blocked. Assisted by Nicolas Raskin."
+  },
+  {
+   "minute": "1",
+   "seconds": 46.0,
+   "team": "Belgium",
+   "player": "Timothy Castagne",
+   "type": "Shot On Target",
+   "x": 74.6,
+   "y": 46.6,
+   "goal": false,
+   "xg": 0.075,
+   "text": "Attempt saved. Timothy Castagne (Belgium) right footed shot from outside the box is saved in the top left corner by Matt Freese (USA)."
+  },
+  {
+   "minute": "2",
+   "seconds": 110.0,
+   "team": "Belgium",
+   "player": "Charles De Ketelaere",
+   "type": "Shot On Target",
+   "x": 89.3,
+   "y": 45.4,
+   "goal": false,
+   "xg": 0.219,
+   "text": "Attempt saved. Charles De Ketelaere (Belgium) header from the centre of the box is saved in the centre of the goal by Matt Freese (USA). Assisted by Maxim De Cuyper with a cross."
+  },
+  {
+   "minute": "8",
+   "seconds": 438.0,
+   "team": "Belgium",
+   "player": "Youri Tielemans",
+   "type": "Shot Off Target",
+   "x": 91.9,
+   "y": 44.7,
+   "goal": false,
+   "xg": 0.444,
+   "text": "Attempt missed. Youri Tielemans (Belgium) right footed shot from the centre of the box misses to the left. Assisted by Timothy Castagne."
+  },
+  {
+   "minute": "9",
+   "seconds": 516.0,
+   "team": "Belgium",
+   "player": "Charles De Ketelaere",
+   "type": "Goal",
+   "x": 97.6,
+   "y": 50.6,
+   "goal": true,
+   "xg": 0.95,
+   "text": "Goal! USA 0, Belgium 1. Charles De Ketelaere (Belgium) right footed shot from very close range to the centre of the goal. Assisted by Nicolas Raskin."
+  },
+  {
+   "minute": "14",
+   "seconds": 821.0,
+   "team": "Belgium",
+   "player": "Leandro Trossard",
+   "type": "Shot Off Target",
+   "x": 72.5,
+   "y": 44.8,
+   "goal": false,
+   "xg": 0.061,
+   "text": "Attempt missed. Leandro Trossard (Belgium) right footed shot from outside the box is too high. Assisted by Charles De Ketelaere."
+  },
+  {
+   "minute": "31",
+   "seconds": 1831.0,
+   "team": "United States",
+   "player": "Malik Tillman",
+   "type": "Goal - Free-kick",
+   "x": 76.3,
+   "y": 51.9,
+   "goal": true,
+   "xg": 0.089,
+   "text": "Goal! USA 1, Belgium 1. Malik Tillman (USA) from a free kick with a right footed shot to the high centre of the goal."
+  },
+  {
+   "minute": "33",
+   "seconds": 1947.0,
+   "team": "Belgium",
+   "player": "Charles De Ketelaere",
+   "type": "Goal - Header",
+   "x": 96.9,
+   "y": 48.1,
+   "goal": true,
+   "xg": 0.585,
+   "text": "Goal! USA 1, Belgium 2. Charles De Ketelaere (Belgium) header from very close range to the top right corner. Assisted by Leandro Trossard with a cross."
+  },
+  {
+   "minute": "39",
+   "seconds": 2317.0,
+   "team": "Belgium",
+   "player": "Nicolas Raskin",
+   "type": "Shot On Target",
+   "x": 95.0,
+   "y": 38.0,
+   "goal": false,
+   "xg": 0.299,
+   "text": "Attempt saved. Nicolas Raskin (Belgium) right footed shot from the right side of the six yard box is saved in the centre of the goal by Matt Freese (USA). Assisted by Youri Tielemans with a cross."
+  },
+  {
+   "minute": "43",
+   "seconds": 2527.0,
+   "team": "Belgium",
+   "player": "Dodi Lukébakio",
+   "type": "Shot Off Target",
+   "x": 91.1,
+   "y": 52.1,
+   "goal": false,
+   "xg": 0.293,
+   "text": "Attempt missed. Dodi Lukébakio (Belgium) header from the centre of the box misses to the left. Assisted by Maxim De Cuyper with a cross following a set piece situation."
+  },
+  {
+   "minute": "45",
+   "seconds": 2676.0,
+   "team": "United States",
+   "player": "Alex Freeman",
+   "type": "Shot Off Target",
+   "x": 90.9,
+   "y": 44.6,
+   "goal": false,
+   "xg": 0.256,
+   "text": "Attempt missed. Alex Freeman (USA) header from the centre of the box misses to the left. Assisted by Malik Tillman."
+  },
+  {
+   "minute": "45",
+   "seconds": 2677.0,
+   "team": "United States",
+   "player": "Folarin Balogun",
+   "type": "Shot Off Target",
+   "x": 94.3,
+   "y": 50.9,
+   "goal": false,
+   "xg": 0.7,
+   "text": "Attempt missed. Folarin Balogun (USA) right footed shot from very close range is too high. Assisted by Alex Freeman."
+  },
+  {
+   "minute": "45'+4",
+   "seconds": 2700.0,
+   "team": "Belgium",
+   "player": "Dodi Lukébakio",
+   "type": "Shot Off Target",
+   "x": 86.8,
+   "y": 68.3,
+   "goal": false,
+   "xg": 0.136,
+   "text": "Attempt missed. Dodi Lukébakio (Belgium) left footed shot from the left side of the box misses to the right. Assisted by Nathan Ngoy following a corner."
+  },
+  {
+   "minute": "57",
+   "seconds": 3395.0,
+   "team": "Belgium",
+   "player": "Hans Vanaken",
+   "type": "Goal",
+   "x": 70.4,
+   "y": 57.3,
+   "goal": true,
+   "xg": 0.049,
+   "text": "Goal! USA 1, Belgium 3. Hans Vanaken (Belgium) right footed shot from outside the box to the bottom right corner. Assisted by Charles De Ketelaere."
+  },
+  {
+   "minute": "62",
+   "seconds": 3716.0,
+   "team": "Belgium",
+   "player": "Leandro Trossard",
+   "type": "Shot Blocked",
+   "x": 86.8,
+   "y": 68.8,
+   "goal": false,
+   "xg": 0.132,
+   "text": "Attempt blocked. Leandro Trossard (Belgium) left footed shot from the left side of the box is blocked. Assisted by Charles De Ketelaere."
+  },
+  {
+   "minute": "66",
+   "seconds": 3916.0,
+   "team": "United States",
+   "player": "Alex Freeman",
+   "type": "Shot Off Target",
+   "x": 88.7,
+   "y": 56.6,
+   "goal": false,
+   "xg": 0.19,
+   "text": "Attempt missed. Alex Freeman (USA) header from the centre of the box is high and wide to the right. Assisted by Sebastian Berhalter with a cross following a corner."
+  },
+  {
+   "minute": "79",
+   "seconds": 4702.0,
+   "team": "United States",
+   "player": "Sebastian Berhalter",
+   "type": "Shot Off Target",
+   "x": 80.2,
+   "y": 50.7,
+   "goal": false,
+   "xg": 0.131,
+   "text": "Attempt missed. Sebastian Berhalter (USA) left footed shot from outside the box is close, but misses to the left."
+  },
+  {
+   "minute": "82",
+   "seconds": 4870.0,
+   "team": "United States",
+   "player": "Folarin Balogun",
+   "type": "Shot On Target",
+   "x": 92.0,
+   "y": 67.9,
+   "goal": false,
+   "xg": 0.172,
+   "text": "Attempt saved. Folarin Balogun (USA) left footed shot from the left side of the box is saved in the bottom left corner by Thibaut Courtois (Belgium). Assisted by Giovanni Reyna."
+  },
+  {
+   "minute": "83",
+   "seconds": 4949.0,
+   "team": "United States",
+   "player": "Folarin Balogun",
+   "type": "Shot Off Target",
+   "x": 92.3,
+   "y": 47.7,
+   "goal": false,
+   "xg": 0.342,
+   "text": "Attempt missed. Folarin Balogun (USA) header from the centre of the box misses to the left. Assisted by Sebastian Berhalter with a cross following a corner."
+  },
+  {
+   "minute": "86",
+   "seconds": 5101.0,
+   "team": "Belgium",
+   "player": "Leandro Trossard",
+   "type": "Shot Blocked",
+   "x": 87.5,
+   "y": 36.0,
+   "goal": false,
+   "xg": 0.181,
+   "text": "Attempt blocked. Leandro Trossard (Belgium) left footed shot from the right side of the box is blocked. Assisted by Jérémy Doku."
+  },
+  {
+   "minute": "90'+3",
+   "seconds": 5400.0,
+   "team": "Belgium",
+   "player": "Romelu Lukaku",
+   "type": "Goal",
+   "x": 90.8,
+   "y": 66.7,
+   "goal": true,
+   "xg": 0.182,
+   "text": "Goal! USA 1, Belgium 4. Romelu Lukaku (Belgium) right footed shot from the left side of the box to the bottom right corner. Assisted by Hans Vanaken."
+  }
+ ],
+ "lineups": [
+  {
+   "team": "United States",
+   "formation": "4-3-3",
+   "starters": [
+    {
+     "name": "Matt Freese",
+     "jersey": "24",
+     "position": "G"
+    },
+    {
+     "name": "Tim Ream",
+     "jersey": "13",
+     "position": "CD-L"
+    },
+    {
+     "name": "Chris Richards",
+     "jersey": "3",
+     "position": "CD-R"
+    },
+    {
+     "name": "Antonee Robinson",
+     "jersey": "5",
+     "position": "LB"
+    },
+    {
+     "name": "Alex Freeman",
+     "jersey": "16",
+     "position": "RB"
+    },
+    {
+     "name": "Tyler Adams",
+     "jersey": "4",
+     "position": "CM"
+    },
+    {
+     "name": "Malik Tillman",
+     "jersey": "17",
+     "position": "LM"
+    },
+    {
+     "name": "Weston McKennie",
+     "jersey": "8",
+     "position": "RM"
+    },
+    {
+     "name": "Folarin Balogun",
+     "jersey": "20",
+     "position": "F"
+    },
+    {
+     "name": "Christian Pulisic",
+     "jersey": "10",
+     "position": "LF"
+    },
+    {
+     "name": "Sergiño Dest",
+     "jersey": "2",
+     "position": "RF"
+    }
+   ],
+   "subs": [
+    {
+     "name": "Miles Robinson",
+     "jersey": "12",
+     "position": "SUB"
+    },
+    {
+     "name": "Ricardo Pepi",
+     "jersey": "9",
+     "position": "SUB"
+    },
+    {
+     "name": "Timothy Weah",
+     "jersey": "21",
+     "position": "SUB"
+    },
+    {
+     "name": "Max Arfsten",
+     "jersey": "18",
+     "position": "SUB"
+    },
+    {
+     "name": "Matt Turner",
+     "jersey": "1",
+     "position": "SUB"
+    },
+    {
+     "name": "Brenden Aaronson",
+     "jersey": "11",
+     "position": "SUB"
+    },
+    {
+     "name": "Alejandro Zendejas",
+     "jersey": "26",
+     "position": "SUB"
+    },
+    {
+     "name": "Giovanni Reyna",
+     "jersey": "7",
+     "position": "SUB"
+    },
+    {
+     "name": "Joe Scally",
+     "jersey": "23",
+     "position": "SUB"
+    },
+    {
+     "name": "Chris Brady",
+     "jersey": "25",
+     "position": "SUB"
+    },
+    {
+     "name": "Auston Trusty",
+     "jersey": "6",
+     "position": "SUB"
+    },
+    {
+     "name": "Mark McKenzie",
+     "jersey": "22",
+     "position": "SUB"
+    },
+    {
+     "name": "Haji Wright",
+     "jersey": "19",
+     "position": "SUB"
+    },
+    {
+     "name": "Sebastian Berhalter",
+     "jersey": "14",
+     "position": "SUB"
+    }
+   ]
+  },
+  {
+   "team": "Belgium",
+   "formation": "4-2-3-1",
+   "starters": [
+    {
+     "name": "Thibaut Courtois",
+     "jersey": "1",
+     "position": "G"
+    },
+    {
+     "name": "Brandon Mechele",
+     "jersey": "4",
+     "position": "CD-L"
+    },
+    {
+     "name": "Nathan Ngoy",
+     "jersey": "25",
+     "position": "CD-R"
+    },
+    {
+     "name": "Maxim De Cuyper",
+     "jersey": "5",
+     "position": "LB"
+    },
+    {
+     "name": "Timothy Castagne",
+     "jersey": "21",
+     "position": "RB"
+    },
+    {
+     "name": "Youri Tielemans",
+     "jersey": "8",
+     "position": "AM"
+    },
+    {
+     "name": "Nicolas Raskin",
+     "jersey": "23",
+     "position": "LM"
+    },
+    {
+     "name": "Amadou Onana",
+     "jersey": "24",
+     "position": "RM"
+    },
+    {
+     "name": "Charles De Ketelaere",
+     "jersey": "17",
+     "position": "F"
+    },
+    {
+     "name": "Leandro Trossard",
+     "jersey": "10",
+     "position": "AM-L"
+    },
+    {
+     "name": "Dodi Lukébakio",
+     "jersey": "14",
+     "position": "AM-R"
+    }
+   ],
+   "subs": [
+    {
+     "name": "Romelu Lukaku",
+     "jersey": "9",
+     "position": "SUB"
+    },
+    {
+     "name": "Diego Moreira",
+     "jersey": "19",
+     "position": "SUB"
+    },
+    {
+     "name": "Alexis Saelemaekers",
+     "jersey": "22",
+     "position": "SUB"
+    },
+    {
+     "name": "Matias Fernandez-Pardo",
+     "jersey": "26",
+     "position": "SUB"
+    },
+    {
+     "name": "Thomas Meunier",
+     "jersey": "15",
+     "position": "SUB"
+    },
+    {
+     "name": "Hans Vanaken",
+     "jersey": "20",
+     "position": "SUB"
+    },
+    {
+     "name": "Senne Lammens",
+     "jersey": "12",
+     "position": "SUB"
+    },
+    {
+     "name": "Jérémy Doku",
+     "jersey": "11",
+     "position": "SUB"
+    },
+    {
+     "name": "Kevin De Bruyne",
+     "jersey": "7",
+     "position": "SUB"
+    },
+    {
+     "name": "Axel Witsel",
+     "jersey": "6",
+     "position": "SUB"
+    },
+    {
+     "name": "Mike Penders",
+     "jersey": "13",
+     "position": "SUB"
+    },
+    {
+     "name": "Arthur Theate",
+     "jersey": "3",
+     "position": "SUB"
+    },
+    {
+     "name": "Joaquin Seys",
+     "jersey": "18",
+     "position": "SUB"
+    },
+    {
+     "name": "Zeno Debast",
+     "jersey": "2",
+     "position": "SUB"
+    },
+    {
+     "name": "Koni De Winter",
+     "jersey": "16",
+     "position": "SUB"
+    }
+   ]
+  }
+ ],
+ "attendance": 66925,
+ "venue": "Lumen Field, Seattle, Washington, USA"
+}

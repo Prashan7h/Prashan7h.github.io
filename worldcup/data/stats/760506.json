@@ -1,0 +1,883 @@
+{
+ "teams": [
+  {
+   "name": "Portugal",
+   "stats": {
+    "possessionPct": "44.6",
+    "totalShots": "10",
+    "shotsOnTarget": "2",
+    "wonCorners": "3",
+    "foulsCommitted": "9",
+    "offsides": "2",
+    "saves": "5",
+    "yellowCards": "2",
+    "redCards": "0"
+   }
+  },
+  {
+   "name": "Spain",
+   "stats": {
+    "possessionPct": "55.4",
+    "totalShots": "15",
+    "shotsOnTarget": "6",
+    "wonCorners": "7",
+    "foulsCommitted": "13",
+    "offsides": "1",
+    "saves": "2",
+    "yellowCards": "1",
+    "redCards": "0"
+   }
+  }
+ ],
+ "events": [
+  {
+   "type": "Kickoff",
+   "minute": "",
+   "team": null,
+   "text": "First Half begins.",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "23'",
+   "team": "Spain",
+   "text": "Delay in match for a drinks break.",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "23'",
+   "team": "Portugal",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "26'",
+   "team": "Spain",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "26'",
+   "team": "Portugal",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "37'",
+   "team": "Portugal",
+   "text": "Delay in match because of an injury João Félix (Portugal).",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "37'",
+   "team": "Spain",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "38'",
+   "team": "Portugal",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "38'",
+   "team": "Spain",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Halftime",
+   "minute": "45'+7'",
+   "team": null,
+   "text": "First Half ends, Portugal 0, Spain 0.",
+   "players": []
+  },
+  {
+   "type": "Start 2nd Half",
+   "minute": "45'",
+   "team": null,
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "54'",
+   "team": "Portugal",
+   "text": "Delay in match because of an injury Nuno Mendes (Portugal).",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "54'",
+   "team": "Spain",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "55'",
+   "team": "Portugal",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "55'",
+   "team": "Spain",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Substitution",
+   "minute": "56'",
+   "team": "Portugal",
+   "text": "Substitution, Portugal. Nélson Semedo replaces Nuno Mendes because of an injury.",
+   "players": [
+    "Nélson Semedo",
+    "Nuno Mendes"
+   ]
+  },
+  {
+   "type": "Start Delay",
+   "minute": "68'",
+   "team": "Spain",
+   "text": "Delay in match for a drinks break.",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "68'",
+   "team": "Portugal",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "71'",
+   "team": "Spain",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "71'",
+   "team": "Portugal",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Substitution",
+   "minute": "71'",
+   "team": "Portugal",
+   "text": "Substitution, Portugal. Diogo Dalot replaces João Cancelo.",
+   "players": [
+    "Diogo Dalot",
+    "João Cancelo"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "71'",
+   "team": "Portugal",
+   "text": "Substitution, Portugal. Rafael Leão replaces João Félix.",
+   "players": [
+    "Rafael Leão",
+    "João Félix"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "75'",
+   "team": "Spain",
+   "text": "Substitution, Spain. Ferran Torres replaces Álex Baena.",
+   "players": [
+    "Ferran Torres",
+    "Álex Baena"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "83'",
+   "team": "Portugal",
+   "text": "Substitution, Portugal. Francisco Conceição replaces Pedro Neto.",
+   "players": [
+    "Francisco Conceição",
+    "Pedro Neto"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "83'",
+   "team": "Portugal",
+   "text": "Substitution, Portugal. Bernardo Silva replaces Vitinha.",
+   "players": [
+    "Bernardo Silva",
+    "Vitinha"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "85'",
+   "team": "Spain",
+   "text": "Substitution, Spain. Fabián Ruiz replaces Pedri.",
+   "players": [
+    "Fabián Ruiz",
+    "Pedri"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "85'",
+   "team": "Spain",
+   "text": "Substitution, Spain. Mikel Merino replaces Dani Olmo.",
+   "players": [
+    "Mikel Merino",
+    "Dani Olmo"
+   ]
+  },
+  {
+   "type": "Yellow Card",
+   "minute": "89'",
+   "team": "Portugal",
+   "text": "Bernardo Silva (Portugal) is shown the yellow card for a bad foul.",
+   "players": [
+    "Bernardo Silva"
+   ]
+  },
+  {
+   "type": "Goal",
+   "minute": "90'+1'",
+   "team": "Spain",
+   "text": "Goal! Portugal 0, Spain 1. Mikel Merino (Spain) left footed shot from the centre of the box to the bottom left corner. Assisted by Ferran Torres with a through ball.",
+   "players": [
+    "Mikel Merino",
+    "Ferran Torres"
+   ]
+  },
+  {
+   "type": "Yellow Card",
+   "minute": "90'+4'",
+   "team": "Portugal",
+   "text": "Renato Veiga (Portugal) is shown the yellow card for a bad foul.",
+   "players": [
+    "Renato Veiga"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "90'+7'",
+   "team": "Spain",
+   "text": "Substitution, Spain. Borja Iglesias replaces Mikel Oyarzabal.",
+   "players": [
+    "Borja Iglesias",
+    "Mikel Oyarzabal"
+   ]
+  },
+  {
+   "type": "Yellow Card",
+   "minute": "90'+8'",
+   "team": "Spain",
+   "text": "Ferran Torres (Spain) is shown the yellow card for a bad foul.",
+   "players": [
+    "Ferran Torres"
+   ]
+  },
+  {
+   "type": "End Regular Time",
+   "minute": "90'+9'",
+   "team": null,
+   "text": "Second Half ends, Portugal 0, Spain 1.",
+   "players": []
+  }
+ ],
+ "shots": [
+  {
+   "minute": "3",
+   "seconds": 162.0,
+   "team": "Spain",
+   "player": "Mikel Oyarzabal",
+   "type": "Shot On Target",
+   "x": 75.7,
+   "y": 62.0,
+   "goal": false,
+   "xg": 0.073,
+   "text": "Attempt saved. Mikel Oyarzabal (Spain) left footed shot from outside the box is saved in the centre of the goal by Diogo Costa (Portugal)."
+  },
+  {
+   "minute": "7",
+   "seconds": 390.0,
+   "team": "Portugal",
+   "player": "João Cancelo",
+   "type": "Shot Off Target",
+   "x": 85.0,
+   "y": 23.5,
+   "goal": false,
+   "xg": 0.08,
+   "text": "Attempt missed. João Cancelo (Portugal) right footed shot from the right side of the box is too high. Assisted by Nuno Mendes."
+  },
+  {
+   "minute": "8",
+   "seconds": 460.0,
+   "team": "Spain",
+   "player": "Mikel Oyarzabal",
+   "type": "Shot Off Target",
+   "x": 86.1,
+   "y": 58.3,
+   "goal": false,
+   "xg": 0.21,
+   "text": "Attempt missed. Mikel Oyarzabal (Spain) left footed shot from the centre of the box is close, but misses to the right. Assisted by Dani Olmo with a through ball following a fast break."
+  },
+  {
+   "minute": "10",
+   "seconds": 571.0,
+   "team": "Portugal",
+   "player": "Pedro Neto",
+   "type": "Shot Blocked",
+   "x": 70.4,
+   "y": 48.7,
+   "goal": false,
+   "xg": 0.051,
+   "text": "Attempt blocked. Pedro Neto (Portugal) left footed shot from outside the box is blocked."
+  },
+  {
+   "minute": "12",
+   "seconds": 671.0,
+   "team": "Portugal",
+   "player": "Cristiano Ronaldo",
+   "type": "Shot On Target",
+   "x": 91.5,
+   "y": 30.1,
+   "goal": false,
+   "xg": 0.148,
+   "text": "Attempt saved. Cristiano Ronaldo (Portugal) right footed shot from the right side of the box is saved in the centre of the goal by Unai Simón (Spain). Assisted by Bruno Fernandes."
+  },
+  {
+   "minute": "14",
+   "seconds": 799.0,
+   "team": "Spain",
+   "player": "Álex Baena",
+   "type": "Shot Off Target",
+   "x": 79.2,
+   "y": 70.4,
+   "goal": false,
+   "xg": 0.075,
+   "text": "Attempt missed. Álex Baena (Spain) right footed shot from outside the box is high and wide to the right."
+  },
+  {
+   "minute": "16",
+   "seconds": 937.0,
+   "team": "Spain",
+   "player": "Lamine Yamal",
+   "type": "Shot On Target",
+   "x": 86.4,
+   "y": 32.3,
+   "goal": false,
+   "xg": 0.138,
+   "text": "Attempt saved. Lamine Yamal (Spain) left footed shot from the right side of the box is saved in the bottom left corner by Diogo Costa (Portugal). Assisted by Rodri."
+  },
+  {
+   "minute": "16",
+   "seconds": 939.0,
+   "team": "Spain",
+   "player": "Álex Baena",
+   "type": "Shot On Target",
+   "x": 85.8,
+   "y": 67.7,
+   "goal": false,
+   "xg": 0.133,
+   "text": "Attempt saved. Álex Baena (Spain) right footed shot from the left side of the box is saved in the bottom right corner by Diogo Costa (Portugal)."
+  },
+  {
+   "minute": "23",
+   "seconds": 1343.0,
+   "team": "Spain",
+   "player": "Pedro Porro",
+   "type": "Shot Off Target",
+   "x": 71.9,
+   "y": 49.9,
+   "goal": false,
+   "xg": 0.059,
+   "text": "Attempt missed. Pedro Porro (Spain) right footed shot from outside the box misses to the left following a set piece situation."
+  },
+  {
+   "minute": "31",
+   "seconds": 1807.0,
+   "team": "Spain",
+   "player": "Dani Olmo",
+   "type": "Shot Off Target",
+   "x": 91.5,
+   "y": 43.4,
+   "goal": false,
+   "xg": 0.257,
+   "text": "Attempt missed. Dani Olmo (Spain) header from the centre of the box misses to the left following a corner."
+  },
+  {
+   "minute": "37",
+   "seconds": 2194.0,
+   "team": "Portugal",
+   "player": "Cristiano Ronaldo",
+   "type": "Shot On Target",
+   "x": 95.2,
+   "y": 57.3,
+   "goal": false,
+   "xg": 0.526,
+   "text": "Attempt saved. Cristiano Ronaldo (Portugal) right footed shot from the left side of the six yard box is saved in the centre of the goal by Unai Simón (Spain)."
+  },
+  {
+   "minute": "41",
+   "seconds": 2447.0,
+   "team": "Portugal",
+   "player": "Nuno Mendes",
+   "type": "Shot Blocked",
+   "x": 82.4,
+   "y": 28.0,
+   "goal": false,
+   "xg": 0.087,
+   "text": "Attempt blocked. Nuno Mendes (Portugal) left footed shot from outside the box is blocked. Assisted by João Félix."
+  },
+  {
+   "minute": "45",
+   "seconds": 2697.0,
+   "team": "Spain",
+   "player": "Rodri",
+   "type": "Shot Off Target",
+   "x": 72.1,
+   "y": 41.4,
+   "goal": false,
+   "xg": 0.057,
+   "text": "Attempt missed. Rodri (Spain) right footed shot from outside the box is too high. Assisted by Mikel Oyarzabal."
+  },
+  {
+   "minute": "59",
+   "seconds": 3518.0,
+   "team": "Portugal",
+   "player": "Cristiano Ronaldo",
+   "type": "Shot Off Target",
+   "x": 95.7,
+   "y": 36.3,
+   "goal": false,
+   "xg": 0.244,
+   "text": "Attempt missed. Cristiano Ronaldo (Portugal) right footed shot from a difficult angle on the right is close, but misses to the right. Assisted by João Félix."
+  },
+  {
+   "minute": "61",
+   "seconds": 3635.0,
+   "team": "Spain",
+   "player": "Pedri",
+   "type": "Shot Blocked",
+   "x": 80.9,
+   "y": 51.1,
+   "goal": false,
+   "xg": 0.14,
+   "text": "Attempt blocked. Pedri (Spain) right footed shot from outside the box is blocked. Assisted by Dani Olmo."
+  },
+  {
+   "minute": "62",
+   "seconds": 3668.0,
+   "team": "Spain",
+   "player": "Lamine Yamal",
+   "type": "Shot Blocked",
+   "x": 76.2,
+   "y": 60.7,
+   "goal": false,
+   "xg": 0.079,
+   "text": "Attempt blocked. Lamine Yamal (Spain) left footed shot from outside the box is blocked."
+  },
+  {
+   "minute": "65",
+   "seconds": 3887.0,
+   "team": "Spain",
+   "player": "Álex Baena",
+   "type": "Shot On Target",
+   "x": 83.5,
+   "y": 63.6,
+   "goal": false,
+   "xg": 0.136,
+   "text": "Attempt saved. Álex Baena (Spain) left footed shot from the left side of the box is saved in the bottom right corner by Diogo Costa (Portugal)."
+  },
+  {
+   "minute": "73",
+   "seconds": 4348.0,
+   "team": "Spain",
+   "player": "Lamine Yamal",
+   "type": "Shot On Target",
+   "x": 83.1,
+   "y": 17.3,
+   "goal": false,
+   "xg": 0.053,
+   "text": "Attempt saved. Lamine Yamal (Spain) left footed shot from a difficult angle and long range on the right is saved in the top centre of the goal by Diogo Costa (Portugal)."
+  },
+  {
+   "minute": "76",
+   "seconds": 4513.0,
+   "team": "Portugal",
+   "player": "Vitinha",
+   "type": "Shot Blocked",
+   "x": 72.6,
+   "y": 57.9,
+   "goal": false,
+   "xg": 0.06,
+   "text": "Attempt blocked. Vitinha (Portugal) right footed shot from outside the box is blocked. Assisted by Cristiano Ronaldo."
+  },
+  {
+   "minute": "76",
+   "seconds": 4515.0,
+   "team": "Portugal",
+   "player": "Bruno Fernandes",
+   "type": "Shot Off Target",
+   "x": 88.7,
+   "y": 36.2,
+   "goal": false,
+   "xg": 0.199,
+   "text": "Attempt missed. Bruno Fernandes (Portugal) right footed shot from the right side of the box is close, but misses to the right."
+  },
+  {
+   "minute": "77",
+   "seconds": 4610.0,
+   "team": "Spain",
+   "player": "Ferran Torres",
+   "type": "Shot Off Target",
+   "x": 98.8,
+   "y": 31.7,
+   "goal": false,
+   "xg": 0.131,
+   "text": "Attempt missed. Ferran Torres (Spain) right footed shot from a difficult angle on the right misses to the right. Assisted by Pedri with a through ball."
+  },
+  {
+   "minute": "78",
+   "seconds": 4675.0,
+   "team": "Spain",
+   "player": "Dani Olmo",
+   "type": "Shot Blocked",
+   "x": 86.9,
+   "y": 32.3,
+   "goal": false,
+   "xg": 0.142,
+   "text": "Attempt blocked. Dani Olmo (Spain) right footed shot from the right side of the box is blocked. Assisted by Mikel Oyarzabal."
+  },
+  {
+   "minute": "90'+1",
+   "seconds": 5400.0,
+   "team": "Spain",
+   "player": "Mikel Merino",
+   "type": "Goal",
+   "x": 87.9,
+   "y": 56.7,
+   "goal": true,
+   "xg": 0.268,
+   "text": "Goal! Portugal 0, Spain 1. Mikel Merino (Spain) left footed shot from the centre of the box to the bottom left corner. Assisted by Ferran Torres with a through ball."
+  },
+  {
+   "minute": "90'+7",
+   "seconds": 5400.0,
+   "team": "Portugal",
+   "player": "Bernardo Silva",
+   "type": "Shot Off Target",
+   "x": 93.0,
+   "y": 49.9,
+   "goal": false,
+   "xg": 0.386,
+   "text": "Attempt missed. Bernardo Silva (Portugal) header from the centre of the box is too high. Assisted by Francisco Conceição with a cross."
+  },
+  {
+   "minute": "90'+9",
+   "seconds": 5400.0,
+   "team": "Portugal",
+   "player": "João Neves",
+   "type": "Shot Off Target",
+   "x": 88.6,
+   "y": 40.9,
+   "goal": false,
+   "xg": 0.168,
+   "text": "Attempt missed. João Neves (Portugal) header from the centre of the box misses to the left. Assisted by Bruno Fernandes with a cross following a set piece situation."
+  }
+ ],
+ "lineups": [
+  {
+   "team": "Portugal",
+   "formation": "4-2-3-1",
+   "starters": [
+    {
+     "name": "Diogo Costa",
+     "jersey": "1",
+     "position": "G"
+    },
+    {
+     "name": "Renato Veiga",
+     "jersey": "13",
+     "position": "CD-L"
+    },
+    {
+     "name": "Rúben Dias",
+     "jersey": "3",
+     "position": "CD-R"
+    },
+    {
+     "name": "Nuno Mendes",
+     "jersey": "25",
+     "position": "LB"
+    },
+    {
+     "name": "João Cancelo",
+     "jersey": "20",
+     "position": "RB"
+    },
+    {
+     "name": "Bruno Fernandes",
+     "jersey": "8",
+     "position": "AM"
+    },
+    {
+     "name": "João Neves",
+     "jersey": "15",
+     "position": "LM"
+    },
+    {
+     "name": "Vitinha",
+     "jersey": "23",
+     "position": "RM"
+    },
+    {
+     "name": "Cristiano Ronaldo",
+     "jersey": "7",
+     "position": "F"
+    },
+    {
+     "name": "João Félix",
+     "jersey": "11",
+     "position": "AM-L"
+    },
+    {
+     "name": "Pedro Neto",
+     "jersey": "18",
+     "position": "AM-R"
+    }
+   ],
+   "subs": [
+    {
+     "name": "Gonçalo Inácio",
+     "jersey": "14",
+     "position": "SUB"
+    },
+    {
+     "name": "Gonçalo Guedes",
+     "jersey": "19",
+     "position": "SUB"
+    },
+    {
+     "name": "Matheus Nunes",
+     "jersey": "6",
+     "position": "SUB"
+    },
+    {
+     "name": "Diogo Dalot",
+     "jersey": "5",
+     "position": "SUB"
+    },
+    {
+     "name": "José Sá",
+     "jersey": "12",
+     "position": "SUB"
+    },
+    {
+     "name": "Bernardo Silva",
+     "jersey": "10",
+     "position": "SUB"
+    },
+    {
+     "name": "Nélson Semedo",
+     "jersey": "2",
+     "position": "SUB"
+    },
+    {
+     "name": "Francisco Conceição",
+     "jersey": "26",
+     "position": "SUB"
+    },
+    {
+     "name": "Gonçalo Ramos",
+     "jersey": "9",
+     "position": "SUB"
+    },
+    {
+     "name": "Rafael Leão",
+     "jersey": "17",
+     "position": "SUB"
+    },
+    {
+     "name": "Rui Silva",
+     "jersey": "22",
+     "position": "SUB"
+    },
+    {
+     "name": "Tomás Araújo",
+     "jersey": "4",
+     "position": "SUB"
+    },
+    {
+     "name": "Samú Costa",
+     "jersey": "24",
+     "position": "SUB"
+    },
+    {
+     "name": "Francisco Trincão",
+     "jersey": "16",
+     "position": "SUB"
+    },
+    {
+     "name": "Rúben Neves",
+     "jersey": "21",
+     "position": "SUB"
+    }
+   ]
+  },
+  {
+   "team": "Spain",
+   "formation": "4-2-3-1",
+   "starters": [
+    {
+     "name": "Unai Simón",
+     "jersey": "23",
+     "position": "G"
+    },
+    {
+     "name": "Aymeric Laporte",
+     "jersey": "14",
+     "position": "CD-L"
+    },
+    {
+     "name": "Pau Cubarsí",
+     "jersey": "22",
+     "position": "CD-R"
+    },
+    {
+     "name": "Marc Cucurella",
+     "jersey": "24",
+     "position": "LB"
+    },
+    {
+     "name": "Pedro Porro",
+     "jersey": "12",
+     "position": "RB"
+    },
+    {
+     "name": "Dani Olmo",
+     "jersey": "10",
+     "position": "AM"
+    },
+    {
+     "name": "Pedri",
+     "jersey": "20",
+     "position": "LM"
+    },
+    {
+     "name": "Rodri",
+     "jersey": "16",
+     "position": "RM"
+    },
+    {
+     "name": "Mikel Oyarzabal",
+     "jersey": "21",
+     "position": "F"
+    },
+    {
+     "name": "Álex Baena",
+     "jersey": "15",
+     "position": "AM-L"
+    },
+    {
+     "name": "Lamine Yamal",
+     "jersey": "19",
+     "position": "AM-R"
+    }
+   ],
+   "subs": [
+    {
+     "name": "Mikel Merino",
+     "jersey": "6",
+     "position": "SUB"
+    },
+    {
+     "name": "Eric García",
+     "jersey": "4",
+     "position": "SUB"
+    },
+    {
+     "name": "Borja Iglesias",
+     "jersey": "26",
+     "position": "SUB"
+    },
+    {
+     "name": "David Raya",
+     "jersey": "1",
+     "position": "SUB"
+    },
+    {
+     "name": "Nico Williams",
+     "jersey": "17",
+     "position": "SUB"
+    },
+    {
+     "name": "Martín Zubimendi",
+     "jersey": "18",
+     "position": "SUB"
+    },
+    {
+     "name": "Marc Pubill",
+     "jersey": "2",
+     "position": "SUB"
+    },
+    {
+     "name": "Ferran Torres",
+     "jersey": "7",
+     "position": "SUB"
+    },
+    {
+     "name": "Marcos Llorente",
+     "jersey": "5",
+     "position": "SUB"
+    },
+    {
+     "name": "Alejandro Grimaldo",
+     "jersey": "3",
+     "position": "SUB"
+    },
+    {
+     "name": "Víctor Muñoz",
+     "jersey": "25",
+     "position": "SUB"
+    },
+    {
+     "name": "Gavi",
+     "jersey": "9",
+     "position": "SUB"
+    },
+    {
+     "name": "Yéremy Pino",
+     "jersey": "11",
+     "position": "SUB"
+    },
+    {
+     "name": "Joan García",
+     "jersey": "13",
+     "position": "SUB"
+    },
+    {
+     "name": "Fabián Ruiz",
+     "jersey": "8",
+     "position": "SUB"
+    }
+   ]
+  }
+ ],
+ "attendance": 70649,
+ "venue": "AT&T Stadium, Arlington, Texas, USA"
+}

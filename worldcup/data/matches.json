@@ -3844,12 +3844,27 @@
    "team2": "Spain",
    "group": null,
    "ground": "Dallas (Arlington)",
-   "score": null,
+   "score": {
+    "ft": [
+     0,
+     1
+    ],
+    "ht": [
+     0,
+     0
+    ]
+   },
    "goals1": [],
-   "goals2": [],
+   "goals2": [
+    {
+     "name": "Mikel Merino",
+     "minute": "90+1"
+    }
+   ],
    "espn_id": "760506",
-   "status": "live",
+   "status": "finished",
    "utc_date": "2026-07-06T19:00Z",
+   "attendance": 70649,
    "venue": "AT&T Stadium",
    "slug": "2026-07-06-portugal-vs-spain"
   },
@@ -3862,12 +3877,44 @@
    "team2": "Belgium",
    "group": null,
    "ground": "Seattle",
-   "score": null,
-   "goals1": [],
-   "goals2": [],
+   "score": {
+    "ft": [
+     1,
+     4
+    ],
+    "ht": [
+     1,
+     2
+    ]
+   },
+   "goals1": [
+    {
+     "name": "Malik Tillman",
+     "minute": "31"
+    }
+   ],
+   "goals2": [
+    {
+     "name": "Charles De Ketelaere",
+     "minute": "9"
+    },
+    {
+     "name": "Charles De Ketelaere",
+     "minute": "33"
+    },
+    {
+     "name": "Hans Vanaken",
+     "minute": "57"
+    },
+    {
+     "name": "Romelu Lukaku",
+     "minute": "90+3"
+    }
+   ],
    "espn_id": "760507",
-   "status": "scheduled",
+   "status": "finished",
    "utc_date": "2026-07-07T00:00Z",
+   "attendance": 66925,
    "venue": "Lumen Field",
    "slug": "2026-07-06-usa-vs-belgium"
   },
