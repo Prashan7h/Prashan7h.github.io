@@ -3927,12 +3927,44 @@
    "team2": "Egypt",
    "group": null,
    "ground": "Atlanta",
-   "score": null,
-   "goals1": [],
-   "goals2": [],
+   "score": {
+    "ft": [
+     3,
+     2
+    ],
+    "ht": [
+     0,
+     1
+    ]
+   },
+   "goals1": [
+    {
+     "name": "Cristian Romero",
+     "minute": "79"
+    },
+    {
+     "name": "Lionel Messi",
+     "minute": "83"
+    },
+    {
+     "name": "Enzo Fernández",
+     "minute": "90+2"
+    }
+   ],
+   "goals2": [
+    {
+     "name": "Yasser Ibrahim",
+     "minute": "15"
+    },
+    {
+     "name": "Mostafa Zico",
+     "minute": "67"
+    }
+   ],
    "espn_id": "760509",
-   "status": "scheduled",
+   "status": "finished",
    "utc_date": "2026-07-07T16:00Z",
+   "attendance": 68239,
    "venue": "Mercedes-Benz Stadium",
    "slug": "2026-07-07-argentina-vs-egypt"
   },
@@ -3949,7 +3981,7 @@
    "goals1": [],
    "goals2": [],
    "espn_id": "760508",
-   "status": "scheduled",
+   "status": "live",
    "utc_date": "2026-07-07T20:00Z",
    "venue": "BC Place",
    "slug": "2026-07-07-switzerland-vs-colombia"
