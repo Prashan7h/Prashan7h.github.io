@@ -3977,12 +3977,30 @@
    "team2": "Colombia",
    "group": null,
    "ground": "Vancouver",
-   "score": null,
+   "score": {
+    "p": [
+     4,
+     3
+    ],
+    "et": [
+     0,
+     0
+    ],
+    "ft": [
+     0,
+     0
+    ],
+    "ht": [
+     0,
+     0
+    ]
+   },
    "goals1": [],
    "goals2": [],
    "espn_id": "760508",
-   "status": "live",
+   "status": "finished",
    "utc_date": "2026-07-07T20:00Z",
+   "attendance": 52497,
    "venue": "BC Place",
    "slug": "2026-07-07-switzerland-vs-colombia"
   },
