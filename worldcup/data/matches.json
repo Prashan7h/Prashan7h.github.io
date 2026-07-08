@@ -4063,16 +4063,18 @@
    "round": "Quarter-final",
    "date": "2026-07-11",
    "time": "20:00 UTC-5",
-   "team1": "W95",
-   "team2": "W96",
+   "team1": "Argentina",
+   "team2": "Switzerland",
    "group": null,
    "ground": "Kansas City",
    "score": null,
    "goals1": [],
    "goals2": [],
-   "espn_id": null,
+   "espn_id": "760513",
    "status": "scheduled",
-   "slug": "2026-07-11-w95-vs-w96"
+   "utc_date": "2026-07-12T01:00Z",
+   "venue": "GEHA Field at Arrowhead Stadium",
+   "slug": "2026-07-11-argentina-vs-switzerland"
   },
   {
    "num": 101,
