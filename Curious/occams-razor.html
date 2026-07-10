@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-KVBPX8VW');</script>
+    <!-- End Google Tag Manager -->
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Occam's Razor — from a medieval friar's caution against multiplying entities to Bayes, Solomonoff, and the mathematics of simplicity.">
+    <link rel="icon" type="image/svg+xml" href="../images/favicon.svg">
+    <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon-32.png">
+    <link rel="apple-touch-icon" href="../images/apple-touch-icon.png">
+    <title>Occam's Razor | Prashanth Shankar</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+
+    <style>
+        *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+        html { font-size: 16px; scroll-behavior: smooth; }
+        body {
+            background: #fff;
+            color: #000;
+            font-family: 'Inter', -apple-system, sans-serif;
+            font-weight: 400;
+            line-height: 1.7;
+        }
+        ::selection { background: #000; color: #fff; }
+
+        .page {
+            max-width: 720px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        header {
+            padding: 2.5rem 0 0;
+        }
+
+        .back-link {
+            font-size: 0.75rem;
+            font-weight: 400;
+            letter-spacing: 0.04em;
+            color: #000;
+            text-decoration: none;
+            transition: opacity 0.2s ease;
+        }
+        .back-link:hover { opacity: 0.5; }
+
+        article {
+            padding: 4rem 0 3rem;
+        }
+
+        article h1 {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 2.6rem;
+            font-weight: 600;
+            line-height: 1.15;
+            margin-bottom: 1rem;
+        }
+
+        .deck {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.25rem;
+            font-style: italic;
+            line-height: 1.5;
+            color: #000;
+            margin-bottom: 2.5rem;
+        }
+
+        article h2 {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.8rem;
+            font-weight: 600;
+            line-height: 1.2;
+            margin: 3rem 0 1rem;
+        }
+
+        article p {
+            font-size: 0.95rem;
+            font-weight: 300;
+            line-height: 1.75;
+            margin-bottom: 1rem;
+        }
+
+        article em {
+            font-style: italic;
+        }
+
+        .pullquote {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.35rem;
+            font-style: italic;
+            line-height: 1.45;
+            padding: 1.5rem 0 1.5rem 1.5rem;
+            border-left: 2px solid #000;
+            margin: 2rem 0;
+            color: #000;
+        }
+
+        .figure {
+            margin: 2.5rem 0;
+        }
+        .figure svg {
+            display: block;
+            width: 100%;
+            height: auto;
+            max-width: 640px;
+            margin: 0 auto;
+        }
+        .caption {
+            font-size: 0.78rem;
+            color: #666;
+            text-align: center;
+            margin-top: 0.8rem;
+            line-height: 1.5;
+            font-style: italic;
+            font-family: 'Cormorant Garamond', serif;
+        }
+
+        hr.divider {
+            border: none;
+            border-top: 1px solid #000;
+            margin: 3rem 0;
+        }
+
+        .references {
+            font-size: 0.8rem;
+            color: #555;
+            line-height: 1.7;
+            margin-top: 2rem;
+        }
+        .references h3 {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: #000;
+            margin-bottom: 0.75rem;
+        }
+        .references ol {
+            padding-left: 1.2rem;
+        }
+        .references li {
+            margin-bottom: 0.35rem;
+        }
+
+        footer {
+            padding: 2rem 0 3rem;
+            font-size: 0.75rem;
+            color: #666;
+        }
+        footer a { color: inherit; text-decoration: underline; text-underline-offset: 0.2em; }
+    </style>
+</head>
+<body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KVBPX8VW" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+    <div class="page">
+        <header>
+            <a href="index.html" class="back-link">&larr; Wonderland</a>
+        </header>
+
+        <article>
+            <h1>Occam's Razor</h1>
+            <p class="deck">A medieval friar's warning against needless entities became, seven centuries later, a theorem about learning from data.</p>
+
+            <p>Almost every intelligent person you meet endorses some version of it. Politicians invoke it, detectives use it, physicists live by it. It has a lovely mystique &mdash; a razor, sharp and small, that cuts through nonsense. And yet if you press people on what it actually says, or why it should be true, the answers dissolve. Simpler explanations are better. Why? Because they are. It is very nearly a folk theorem: everyone knows it, no one can prove it.</p>
+
+            <p>The strange thing is that a proof, or something very close to one, does exist. It just took an unusually long detour through logic, computation, and probability theory to arrive.</p>
+
+            <h2>What Ockham actually said</h2>
+
+            <p>William of Ockham was a Franciscan friar working in the early 1300s, entangled in the vicious philosophical disputes of his time about universals, essences, and the metaphysics of God. He never wrote the sentence most often attributed to him &mdash; <em>entia non sunt multiplicanda praeter necessitatem</em>, &ldquo;entities are not to be multiplied beyond necessity.&rdquo; That formulation was tidied up centuries after his death. What he actually wrote, repeatedly, was closer to: <em>it is futile to do with more what can be done with fewer</em>.</p>
+
+            <p>The point was theological before it was scientific. If two explanations of the world both fit the evidence, we have no warrant to posit the extra ghosts, essences, or angels that one of them requires. Faith might; reason cannot. His razor was epistemic humility given a sharp edge: a rule for when to <em>refuse</em> to believe in something.</p>
+
+            <p>It is important that this is a rule about explanations, not about the world. Ockham did not claim reality was simple. He claimed that our theories should not add complexity unforced. The world is allowed to be as baroque as it likes; we are just not allowed to invent extra machinery on its behalf.</p>
+
+            <h2>Why fewer moving parts win</h2>
+
+            <p>The most compelling everyday defence of the razor is not philosophical but statistical. Suppose you plot some measurements &mdash; the yield of a crop against rainfall, say &mdash; and try to draw a curve through the points. A straight line will miss most of them by a little. A wiggly polynomial with fifteen coefficients can be made to pass exactly through every point. Which curve do you trust to predict next year?</p>
+
+            <div class="figure">
+                <svg viewBox="0 0 640 260" xmlns="http://www.w3.org/2000/svg">
+                    <!-- Axes -->
+                    <g stroke="#000" stroke-width="1" fill="none">
+                        <line x1="60" y1="220" x2="600" y2="220"/>
+                        <line x1="60" y1="30" x2="60" y2="220"/>
+                    </g>
+                    <text x="330" y="248" font-family="'Cormorant Garamond', serif" font-style="italic" font-size="13" fill="#666" text-anchor="middle">input</text>
+                    <text x="30" y="130" font-family="'Cormorant Garamond', serif" font-style="italic" font-size="13" fill="#666" text-anchor="middle" transform="rotate(-90 30 130)">output</text>
+
+                    <!-- Simple line (straight, generalizing) -->
+                    <line x1="80" y1="190" x2="580" y2="70" stroke="#000" stroke-width="1.5" fill="none"/>
+
+                    <!-- Overfitting wiggle -->
+                    <path d="M 80 195 C 130 100, 150 220, 200 150 S 260 60, 300 170 S 380 90, 420 175 S 500 100, 540 120 S 580 60, 580 70"
+                          stroke="#000" stroke-width="1" stroke-dasharray="4 3" fill="none"/>
+
+                    <!-- Data points -->
+                    <g fill="#000">
+                        <circle cx="100" cy="185" r="3"/>
+                        <circle cx="160" cy="170" r="3"/>
+                        <circle cx="220" cy="155" r="3"/>
+                        <circle cx="280" cy="145" r="3"/>
+                        <circle cx="340" cy="125" r="3"/>
+                        <circle cx="400" cy="115" r="3"/>
+                        <circle cx="460" cy="100" r="3"/>
+                        <circle cx="520" cy="85" r="3"/>
+                    </g>
+
+                    <!-- Legend -->
+                    <g font-family="Inter, sans-serif" font-size="11" fill="#000">
+                        <line x1="380" y1="30" x2="410" y2="30" stroke="#000" stroke-width="1.5"/>
+                        <text x="418" y="34">simple model (line)</text>
+                        <line x1="380" y1="48" x2="410" y2="48" stroke="#000" stroke-width="1" stroke-dasharray="4 3"/>
+                        <text x="418" y="52">complex model (fits everything)</text>
+                    </g>
+                </svg>
+                <p class="caption">The straight line ignores the noise. The wiggly curve memorises it. Only one of them generalises.</p>
+            </div>
+
+            <p>A complicated model, with enough tunable parameters, can fit any dataset perfectly &mdash; including its noise. But noise is by definition the part that will not repeat. A model that fits the noise fits things that were never there to begin with. When you deploy it on new data, it fails. The simpler model, by refusing to bend to every wiggle, leaves the noise where it belongs: outside the theory. This is called <em>overfitting</em>, and it is the reason machine learning practitioners spend enormous effort on regularisation, cross-validation, and information criteria &mdash; all of which are, at heart, Occam's razor with equations.</p>
+
+            <h2>Bayes, Solomonoff, and the mathematics of simplicity</h2>
+
+            <p>The first serious formalisation is Bayesian. In Bayes' theorem, our belief in a hypothesis is proportional to two things: how well it explains the data, and how much prior weight we gave it. The clever move &mdash; sometimes called the <em>automatic Occam's razor</em> of Bayesian inference &mdash; is that a hypothesis with more free parameters spreads its predictions over a wider range of possible observations. So when the actual data comes in, a complicated hypothesis assigns only a thin sliver of probability to it, while a simple hypothesis, forced to make a sharper prediction, either wins big or loses big. Averaged across the sharp predictions and the vague ones, simplicity is rewarded automatically. No extra rule needed.</p>
+
+            <p>But this only tells us which of two given hypotheses to prefer. It does not tell us how to assign a prior in the first place. Enter Ray Solomonoff, in 1960. He proposed a shocking answer: <em>weight every hypothesis by how short a computer program is needed to describe it</em>. Programs that are short get high prior probability. Programs that are long get exponentially small prior probability. This is Occam's razor turned into arithmetic.</p>
+
+            <div class="figure">
+                <svg viewBox="0 0 640 220" xmlns="http://www.w3.org/2000/svg">
+                    <!-- Axes -->
+                    <g stroke="#000" stroke-width="1" fill="none">
+                        <line x1="80" y1="180" x2="600" y2="180"/>
+                        <line x1="80" y1="20" x2="80" y2="180"/>
+                    </g>
+                    <text x="340" y="208" font-family="'Cormorant Garamond', serif" font-style="italic" font-size="13" fill="#666" text-anchor="middle">length of hypothesis (bits)</text>
+                    <text x="30" y="100" font-family="'Cormorant Garamond', serif" font-style="italic" font-size="13" fill="#666" text-anchor="middle" transform="rotate(-90 30 100)">prior probability</text>
+
+                    <!-- Bars: exponentially decreasing -->
+                    <g fill="#000">
+                        <rect x="110" y="30" width="40" height="150"/>
+                        <rect x="170" y="105" width="40" height="75"/>
+                        <rect x="230" y="142" width="40" height="38"/>
+                        <rect x="290" y="161" width="40" height="19"/>
+                        <rect x="350" y="170" width="40" height="10"/>
+                        <rect x="410" y="175" width="40" height="5"/>
+                        <rect x="470" y="177" width="40" height="3"/>
+                        <rect x="530" y="178" width="40" height="2"/>
+                    </g>
+
+                    <!-- x-axis labels -->
+                    <g font-family="Inter, sans-serif" font-size="10" fill="#000" text-anchor="middle">
+                        <text x="130" y="196">1</text>
+                        <text x="190" y="196">2</text>
+                        <text x="250" y="196">3</text>
+                        <text x="310" y="196">4</text>
+                        <text x="370" y="196">5</text>
+                        <text x="430" y="196">6</text>
+                        <text x="490" y="196">7</text>
+                        <text x="550" y="196">8</text>
+                    </g>
+
+                    <text x="130" y="20" font-family="'Cormorant Garamond', serif" font-style="italic" font-size="12" fill="#000" text-anchor="middle">2&#8315;&#8321;</text>
+                </svg>
+                <p class="caption">Solomonoff's prior. A hypothesis that takes k bits to describe gets weight proportional to 2<tspan>&#8315;</tspan>&#8319;. Every extra bit halves your belief.</p>
+            </div>
+
+            <p>Solomonoff proved that an ideal agent using this prior would, given enough data, converge to the truth about any computable process in the universe faster than any other conceivable predictor. This is not folklore. It is a theorem. The catch, and it is a serious one, is that computing the exact prior is impossible &mdash; it depends on Kolmogorov complexity, which is uncomputable. But every practical approximation of it, from MDL to compression-based prediction to modern neural network priors, inherits its spirit: shorter descriptions win.</p>
+
+            <p class="pullquote">Simplicity is not an aesthetic preference. It is the shape of any theory of learning that hopes to generalise beyond the data it has seen.</p>
+
+            <h2>The razor cuts both ways</h2>
+
+            <p>None of this makes the razor infallible. It is a prior, not a proof. There are domains where the true story really is complicated &mdash; particle physics, biology, weather &mdash; and a stubborn insistence on simplicity would leave you with theories that are elegant and wrong. Copernicus's original heliocentric model, all circles and no ellipses, was simpler than Ptolemy's and no more accurate; Kepler had to add complexity to get it right. Einstein warned that a theory should be as simple as possible &mdash; and no simpler.</p>
+
+            <p>What Ockham's razor really does is set the burden of proof. You are free to invoke a soul, an ether, an epicycle, a hidden variable. But the extra machinery must earn its keep in fresh predictions, not just help you fit the data you already have. If it does no work, out it goes. Seven hundred years later, that is still the deal: keep what you need, cut what you can. The blade has changed hands &mdash; from Franciscan friar to Bayesian statistician to compression algorithm &mdash; but it is the same blade, and it is still very sharp.</p>
+
+            <hr class="divider">
+
+            <div class="references">
+                <h3>Further reading</h3>
+                <ol>
+                    <li>Ockham, William of. <em>Summa Logicae</em> (c. 1323).</li>
+                    <li>Solomonoff, R. (1964). <em>A Formal Theory of Inductive Inference</em>, Parts I &amp; II.</li>
+                    <li>MacKay, D. (2003). <em>Information Theory, Inference, and Learning Algorithms</em>, chapter 28 &mdash; Model Comparison and Occam's Razor.</li>
+                    <li>Li, M. &amp; Vit&aacute;nyi, P. (2019). <em>An Introduction to Kolmogorov Complexity and Its Applications</em>.</li>
+                    <li>Sober, E. (2015). <em>Ockham's Razors: A User's Manual</em>.</li>
+                </ol>
+            </div>
+        </article>
+
+        <footer>
+            <a href="index.html">&larr; Back to Wonderland</a>
+        </footer>
+    </div>
+</body>
+</html>
