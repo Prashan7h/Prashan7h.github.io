@@ -6,14 +6,14 @@
    "delta": 38
   },
   {
+   "team": "France",
+   "elo": 2145,
+   "delta": 95
+  },
+  {
    "team": "Spain",
    "elo": 2134,
    "delta": 34
-  },
-  {
-   "team": "France",
-   "elo": 2119,
-   "delta": 69
   },
   {
    "team": "England",
@@ -24,11 +24,6 @@
    "team": "Brazil",
    "elo": 2016,
    "delta": -4
-  },
-  {
-   "team": "Morocco",
-   "elo": 2004,
-   "delta": 84
   },
   {
    "team": "Portugal",
@@ -44,6 +39,11 @@
    "team": "Netherlands",
    "elo": 1991,
    "delta": 1
+  },
+  {
+   "team": "Morocco",
+   "elo": 1979,
+   "delta": 59
   },
   {
    "team": "Switzerland",
@@ -264,7 +264,8 @@
    2074,
    2097,
    2112,
-   2119
+   2119,
+   2145
   ],
   "England": [
    2040,
@@ -325,7 +326,8 @@
    1942,
    1950,
    1980,
-   2004
+   2004,
+   1979
   ],
   "Uruguay": [
    1900,
@@ -2499,80 +2501,91 @@
     1950
    ],
    "elo_delta": 26.8
+  },
+  "97": {
+   "prediction": {
+    "p1": 0.5351,
+    "pd": 0.2368,
+    "p2": 0.228,
+    "score": [
+     1,
+     1
+    ],
+    "lambdas": [
+     1.74,
+     1.05
+    ]
+   },
+   "elo_before": [
+    2119,
+    2004
+   ],
+   "elo_delta": 25.5
   }
  },
  "sims": [
+  {
+   "team": "France",
+   "r32": 1.0,
+   "r16": 1.0,
+   "qf": 1.0,
+   "sf": 1.0,
+   "f": 0.5759,
+   "champ": 0.3211
+  },
   {
    "team": "Argentina",
    "r32": 1.0,
    "r16": 1.0,
    "qf": 1.0,
-   "sf": 0.7877,
-   "f": 0.5259,
-   "champ": 0.3108
+   "sf": 0.7941,
+   "f": 0.5231,
+   "champ": 0.2822
   },
   {
    "team": "Spain",
    "r32": 1.0,
    "r16": 1.0,
    "qf": 1.0,
-   "sf": 0.7009,
-   "f": 0.4085,
-   "champ": 0.2203
-  },
-  {
-   "team": "France",
-   "r32": 1.0,
-   "r16": 1.0,
-   "qf": 1.0,
-   "sf": 0.6685,
-   "f": 0.3613,
-   "champ": 0.1904
+   "sf": 0.6834,
+   "f": 0.329,
+   "champ": 0.1799
   },
   {
    "team": "England",
    "r32": 1.0,
    "r16": 1.0,
    "qf": 1.0,
-   "sf": 0.7327,
-   "f": 0.3289,
-   "champ": 0.156
-  },
-  {
-   "team": "Morocco",
-   "r32": 1.0,
-   "r16": 1.0,
-   "qf": 1.0,
-   "sf": 0.3315,
-   "f": 0.1139,
-   "champ": 0.0419
+   "sf": 0.7356,
+   "f": 0.3389,
+   "champ": 0.1487
   },
   {
    "team": "Belgium",
    "r32": 1.0,
    "r16": 1.0,
    "qf": 1.0,
-   "sf": 0.2991,
-   "f": 0.1163,
-   "champ": 0.0395
+   "sf": 0.3166,
+   "f": 0.0951,
+   "champ": 0.0344
   },
   {
    "team": "Switzerland",
    "r32": 1.0,
    "r16": 1.0,
    "qf": 1.0,
-   "sf": 0.2123,
-   "f": 0.0829,
-   "champ": 0.0231
+   "sf": 0.2059,
+   "f": 0.0718,
+   "champ": 0.0185
   },
   {
    "team": "Norway",
    "r32": 1.0,
    "r16": 1.0,
    "qf": 1.0,
-   "sf": 0.2673,
-   "f": 0.0623,
-   "champ": 0.018
+   "sf": 0.2644,
+   "f": 0.0662,
+   "champ": 0.0152
   },
   {
    "team": "Brazil",
@@ -2615,6 +2628,15 @@
    "r32": 1.0,
    "r16": 0.0,
    "qf": 0.0,
+   "sf": 0.0,
+   "f": 0.0,
+   "champ": 0.0
+  },
+  {
+   "team": "Morocco",
+   "r32": 1.0,
+   "r16": 1.0,
+   "qf": 1.0,
    "sf": 0.0,
    "f": 0.0,
    "champ": 0.0
@@ -3163,17 +3185,22 @@
    "win_prob": 0.495
   }
  ],
- "brier": 0.5071,
- "n_scored": 96,
+ "brier": 0.5052,
+ "n_scored": 97,
  "goal_timing": [
   37,
   29,
   50,
-  46,
-  39,
+  47,
+  40,
   79
  ],
  "top_scorers": [
+  {
+   "name": "Kylian Mbappé",
+   "goals": 8,
+   "team": "France"
+  },
   {
    "name": "Lionel Messi",
    "goals": 8,
@@ -3185,14 +3212,14 @@
    "team": "Norway"
   },
   {
-   "name": "Kylian Mbappé",
-   "goals": 7,
-   "team": "France"
-  },
-  {
    "name": "Harry Kane",
    "goals": 6,
    "team": "England"
+  },
+  {
+   "name": "Ousmane Dembélé",
+   "goals": 5,
+   "team": "France"
   },
   {
    "name": "Ismaïla Sarr",
@@ -3213,11 +3240,6 @@
    "name": "Mikel Oyarzabal",
    "goals": 4,
    "team": "Spain"
-  },
-  {
-   "name": "Ousmane Dembélé",
-   "goals": 4,
-   "team": "France"
   },
   {
    "name": "Vinícius Júnior",
