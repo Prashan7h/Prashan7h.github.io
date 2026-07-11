@@ -4050,12 +4050,36 @@
    "team2": "Belgium",
    "group": null,
    "ground": "Los Angeles (Inglewood)",
-   "score": null,
-   "goals1": [],
-   "goals2": [],
+   "score": {
+    "ft": [
+     2,
+     1
+    ],
+    "ht": [
+     1,
+     1
+    ]
+   },
+   "goals1": [
+    {
+     "name": "Fabián Ruiz",
+     "minute": "30"
+    },
+    {
+     "name": "Mikel Merino",
+     "minute": "88"
+    }
+   ],
+   "goals2": [
+    {
+     "name": "Charles De Ketelaere",
+     "minute": "41"
+    }
+   ],
    "espn_id": "760511",
-   "status": "scheduled",
+   "status": "finished",
    "utc_date": "2026-07-10T19:00Z",
+   "attendance": 70492,
    "venue": "SoFi Stadium",
    "slug": "2026-07-10-spain-vs-belgium"
   },

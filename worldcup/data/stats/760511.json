@@ -1,0 +1,915 @@
+{
+ "teams": [
+  {
+   "name": "Spain",
+   "stats": {
+    "possessionPct": "67.9",
+    "totalShots": "17",
+    "shotsOnTarget": "8",
+    "wonCorners": "5",
+    "foulsCommitted": "13",
+    "offsides": "3",
+    "saves": "1",
+    "yellowCards": "2",
+    "redCards": "0"
+   }
+  },
+  {
+   "name": "Belgium",
+   "stats": {
+    "possessionPct": "32.1",
+    "totalShots": "5",
+    "shotsOnTarget": "2",
+    "wonCorners": "1",
+    "foulsCommitted": "18",
+    "offsides": "1",
+    "saves": "6",
+    "yellowCards": "2",
+    "redCards": "0"
+   }
+  }
+ ],
+ "events": [
+  {
+   "type": "Kickoff",
+   "minute": "",
+   "team": null,
+   "text": "First Half begins.",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "23'",
+   "team": "Spain",
+   "text": "Delay in match for a drinks break.",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "23'",
+   "team": "Belgium",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "26'",
+   "team": "Spain",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "26'",
+   "team": "Belgium",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Goal",
+   "minute": "30'",
+   "team": "Spain",
+   "text": "Goal! Spain 1, Belgium 0. Fabián Ruiz (Spain) right footed shot from the centre of the box to the high centre of the goal.",
+   "players": [
+    "Fabián Ruiz"
+   ]
+  },
+  {
+   "type": "Start Delay",
+   "minute": "31'",
+   "team": "Belgium",
+   "text": "Delay in match because of an injury Timothy Castagne (Belgium).",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "31'",
+   "team": "Spain",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "32'",
+   "team": "Belgium",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "32'",
+   "team": "Spain",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "35'",
+   "team": "Spain",
+   "text": "Delay in match (Spain).",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "35'",
+   "team": "Belgium",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "36'",
+   "team": "Spain",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "36'",
+   "team": "Belgium",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Goal - Header",
+   "minute": "41'",
+   "team": "Belgium",
+   "text": "Goal! Spain 1, Belgium 1. Charles De Ketelaere (Belgium) header from the centre of the box to the centre of the goal. Assisted by Timothy Castagne with a cross.",
+   "players": [
+    "Charles De Ketelaere",
+    "Timothy Castagne"
+   ]
+  },
+  {
+   "type": "Yellow Card",
+   "minute": "43'",
+   "team": "Spain",
+   "text": "Pau Cubarsí (Spain) is shown the yellow card for a bad foul.",
+   "players": [
+    "Pau Cubarsí"
+   ]
+  },
+  {
+   "type": "Start Delay",
+   "minute": "45'+3'",
+   "team": "Spain",
+   "text": "Delay in match because of an injury Dani Olmo (Spain).",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "45'+3'",
+   "team": "Belgium",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "45'+4'",
+   "team": "Spain",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "45'+4'",
+   "team": "Belgium",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Halftime",
+   "minute": "45'+6'",
+   "team": null,
+   "text": "First Half ends, Spain 1, Belgium 1.",
+   "players": []
+  },
+  {
+   "type": "Start 2nd Half",
+   "minute": "45'",
+   "team": null,
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Substitution",
+   "minute": "55'",
+   "team": "Spain",
+   "text": "Substitution, Spain. Ferran Torres replaces Álex Baena.",
+   "players": [
+    "Ferran Torres",
+    "Álex Baena"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "55'",
+   "team": "Spain",
+   "text": "Substitution, Spain. Pedri replaces Fabián Ruiz.",
+   "players": [
+    "Pedri",
+    "Fabián Ruiz"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "60'",
+   "team": "Belgium",
+   "text": "Substitution, Belgium. Axel Witsel replaces Leandro Trossard.",
+   "players": [
+    "Axel Witsel",
+    "Leandro Trossard"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "60'",
+   "team": "Belgium",
+   "text": "Substitution, Belgium. Romelu Lukaku replaces Hans Vanaken.",
+   "players": [
+    "Romelu Lukaku",
+    "Hans Vanaken"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "61'",
+   "team": "Belgium",
+   "text": "Substitution, Belgium. Joaquin Seys replaces Maxim De Cuyper.",
+   "players": [
+    "Joaquin Seys",
+    "Maxim De Cuyper"
+   ]
+  },
+  {
+   "type": "Start Delay",
+   "minute": "66'",
+   "team": "Belgium",
+   "text": "Delay in match because of an injury Thibaut Courtois (Belgium).",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "66'",
+   "team": "Spain",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "67'",
+   "team": "Belgium",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "67'",
+   "team": "Spain",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "67'",
+   "team": "Spain",
+   "text": "Delay in match for a drinks break.",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "67'",
+   "team": "Belgium",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "70'",
+   "team": "Spain",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "70'",
+   "team": "Belgium",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Substitution",
+   "minute": "71'",
+   "team": "Belgium",
+   "text": "Substitution, Belgium. Senne Lammens replaces Thibaut Courtois because of an injury.",
+   "players": [
+    "Senne Lammens",
+    "Thibaut Courtois"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "79'",
+   "team": "Spain",
+   "text": "Substitution, Spain. Nico Williams replaces Mikel Oyarzabal.",
+   "players": [
+    "Nico Williams",
+    "Mikel Oyarzabal"
+   ]
+  },
+  {
+   "type": "Yellow Card",
+   "minute": "85'",
+   "team": "Belgium",
+   "text": "Kevin De Bruyne (Belgium) is shown the yellow card for a bad foul.",
+   "players": [
+    "Kevin De Bruyne"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "86'",
+   "team": "Belgium",
+   "text": "Substitution, Belgium. Alexis Saelemaekers replaces Kevin De Bruyne.",
+   "players": [
+    "Alexis Saelemaekers",
+    "Kevin De Bruyne"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "86'",
+   "team": "Spain",
+   "text": "Substitution, Spain. Mikel Merino replaces Dani Olmo.",
+   "players": [
+    "Mikel Merino",
+    "Dani Olmo"
+   ]
+  },
+  {
+   "type": "Goal",
+   "minute": "88'",
+   "team": "Spain",
+   "text": "Goal! Spain 2, Belgium 1. Mikel Merino (Spain) left footed shot from very close range to the top left corner.",
+   "players": [
+    "Mikel Merino"
+   ]
+  },
+  {
+   "type": "Yellow Card",
+   "minute": "90'+3'",
+   "team": "Spain",
+   "text": "Aymeric Laporte (Spain) is shown the yellow card for a bad foul.",
+   "players": [
+    "Aymeric Laporte"
+   ]
+  },
+  {
+   "type": "Yellow Card",
+   "minute": "90'+5'",
+   "team": "Belgium",
+   "text": "Axel Witsel (Belgium) is shown the yellow card for a bad foul.",
+   "players": [
+    "Axel Witsel"
+   ]
+  },
+  {
+   "type": "End Regular Time",
+   "minute": "90'+8'",
+   "team": null,
+   "text": "",
+   "players": []
+  }
+ ],
+ "shots": [
+  {
+   "minute": "10",
+   "seconds": 579.0,
+   "team": "Spain",
+   "player": "Rodri",
+   "type": "Shot Blocked",
+   "x": 89.0,
+   "y": 45.8,
+   "goal": false,
+   "xg": 0.33,
+   "text": "Attempt blocked. Rodri (Spain) right footed shot from the centre of the box is blocked. Assisted by Fabián Ruiz with a cross."
+  },
+  {
+   "minute": "13",
+   "seconds": 730.0,
+   "team": "Spain",
+   "player": "Álex Baena",
+   "type": "Shot Blocked",
+   "x": 86.7,
+   "y": 42.3,
+   "goal": false,
+   "xg": 0.228,
+   "text": "Attempt blocked. Álex Baena (Spain) right footed shot from the centre of the box is blocked. Assisted by Pau Cubarsí with a through ball."
+  },
+  {
+   "minute": "15",
+   "seconds": 855.0,
+   "team": "Belgium",
+   "player": "Charles De Ketelaere",
+   "type": "Shot Blocked",
+   "x": 84.7,
+   "y": 32.7,
+   "goal": false,
+   "xg": 0.126,
+   "text": "Attempt blocked. Charles De Ketelaere (Belgium) left footed shot from the right side of the box is blocked. Assisted by Jérémy Doku."
+  },
+  {
+   "minute": "21",
+   "seconds": 1223.0,
+   "team": "Spain",
+   "player": "Lamine Yamal",
+   "type": "Shot Off Target",
+   "x": 80.5,
+   "y": 44.8,
+   "goal": false,
+   "xg": 0.13,
+   "text": "Attempt missed. Lamine Yamal (Spain) left footed shot from outside the box is close, but misses to the left. Assisted by Mikel Oyarzabal."
+  },
+  {
+   "minute": "30",
+   "seconds": 1759.0,
+   "team": "Spain",
+   "player": "Dani Olmo",
+   "type": "Shot On Target",
+   "x": 87.3,
+   "y": 42.9,
+   "goal": false,
+   "xg": 0.248,
+   "text": "Attempt saved. Dani Olmo (Spain) right footed shot from the centre of the box is saved in the centre of the goal by Thibaut Courtois (Belgium). Assisted by Pedro Porro."
+  },
+  {
+   "minute": "30",
+   "seconds": 1761.0,
+   "team": "Spain",
+   "player": "Fabián Ruiz",
+   "type": "Goal",
+   "x": 93.0,
+   "y": 52.8,
+   "goal": true,
+   "xg": 0.568,
+   "text": "Goal! Spain 1, Belgium 0. Fabián Ruiz (Spain) right footed shot from the centre of the box to the high centre of the goal."
+  },
+  {
+   "minute": "35",
+   "seconds": 2057.0,
+   "team": "Spain",
+   "player": "Lamine Yamal",
+   "type": "Shot On Target",
+   "x": 79.1,
+   "y": 39.3,
+   "goal": false,
+   "xg": 0.102,
+   "text": "Attempt saved. Lamine Yamal (Spain) left footed shot from outside the box is saved in the bottom left corner by Thibaut Courtois (Belgium)."
+  },
+  {
+   "minute": "40",
+   "seconds": 2351.0,
+   "team": "Spain",
+   "player": "Lamine Yamal",
+   "type": "Shot Off Target",
+   "x": 85.9,
+   "y": 30.1,
+   "goal": false,
+   "xg": 0.119,
+   "text": "Attempt missed. Lamine Yamal (Spain) left footed shot from the right side of the box is close, but misses to the right. Assisted by Rodri."
+  },
+  {
+   "minute": "41",
+   "seconds": 2411.0,
+   "team": "Belgium",
+   "player": "Charles De Ketelaere",
+   "type": "Goal - Header",
+   "x": 92.7,
+   "y": 47.2,
+   "goal": true,
+   "xg": 0.355,
+   "text": "Goal! Spain 1, Belgium 1. Charles De Ketelaere (Belgium) header from the centre of the box to the centre of the goal. Assisted by Timothy Castagne with a cross."
+  },
+  {
+   "minute": "45",
+   "seconds": 2681.0,
+   "team": "Spain",
+   "player": "Pedro Porro",
+   "type": "Shot Off Target",
+   "x": 81.5,
+   "y": 32.5,
+   "goal": false,
+   "xg": 0.099,
+   "text": "Attempt missed. Pedro Porro (Spain) left footed shot from outside the box is high and wide to the left. Assisted by Álex Baena."
+  },
+  {
+   "minute": "45'+2",
+   "seconds": 2700.0,
+   "team": "Spain",
+   "player": "Fabián Ruiz",
+   "type": "Shot Blocked",
+   "x": 85.0,
+   "y": 41.7,
+   "goal": false,
+   "xg": 0.189,
+   "text": "Attempt blocked. Fabián Ruiz (Spain) left footed shot from the centre of the box is blocked. Assisted by Rodri."
+  },
+  {
+   "minute": "52",
+   "seconds": 3098.0,
+   "team": "Spain",
+   "player": "Lamine Yamal",
+   "type": "Shot Blocked",
+   "x": 84.5,
+   "y": 56.0,
+   "goal": false,
+   "xg": 0.192,
+   "text": "Attempt blocked. Lamine Yamal (Spain) left footed shot from the centre of the box is blocked. Assisted by Marc Cucurella."
+  },
+  {
+   "minute": "53",
+   "seconds": 3126.0,
+   "team": "Spain",
+   "player": "Dani Olmo",
+   "type": "Shot Off Target",
+   "x": 80.2,
+   "y": 60.3,
+   "goal": false,
+   "xg": 0.114,
+   "text": "Attempt missed. Dani Olmo (Spain) right footed shot from outside the box is high and wide to the right. Assisted by Pau Cubarsí following a corner."
+  },
+  {
+   "minute": "55",
+   "seconds": 3259.0,
+   "team": "Belgium",
+   "player": "Maxim De Cuyper",
+   "type": "Shot Off Target",
+   "x": 90.8,
+   "y": 68.3,
+   "goal": false,
+   "xg": 0.163,
+   "text": "Attempt missed. Maxim De Cuyper (Belgium) left footed shot from the left side of the box is close, but misses to the left."
+  },
+  {
+   "minute": "61",
+   "seconds": 3634.0,
+   "team": "Spain",
+   "player": "Lamine Yamal",
+   "type": "Shot On Target",
+   "x": 81.1,
+   "y": 26.8,
+   "goal": false,
+   "xg": 0.076,
+   "text": "Attempt saved. Lamine Yamal (Spain) left footed shot from outside the box is saved in the bottom left corner by Thibaut Courtois (Belgium). Assisted by Mikel Oyarzabal."
+  },
+  {
+   "minute": "62",
+   "seconds": 3676.0,
+   "team": "Belgium",
+   "player": "Kevin De Bruyne",
+   "type": "Shot On Target",
+   "x": 84.4,
+   "y": 56.6,
+   "goal": false,
+   "xg": 0.187,
+   "text": "Attempt saved. Kevin De Bruyne (Belgium) right footed shot from the centre of the box is saved in the centre of the goal by Unai Simón (Spain)."
+  },
+  {
+   "minute": "62",
+   "seconds": 3712.0,
+   "team": "Spain",
+   "player": "Mikel Oyarzabal",
+   "type": "Shot On Target",
+   "x": 96.0,
+   "y": 37.2,
+   "goal": false,
+   "xg": 0.265,
+   "text": "Attempt saved. Mikel Oyarzabal (Spain) right footed shot from the right side of the six yard box is saved in the bottom right corner by Thibaut Courtois (Belgium)."
+  },
+  {
+   "minute": "74",
+   "seconds": 4439.0,
+   "team": "Spain",
+   "player": "Lamine Yamal",
+   "type": "Shot Blocked",
+   "x": 86.1,
+   "y": 26.4,
+   "goal": false,
+   "xg": 0.098,
+   "text": "Attempt blocked. Lamine Yamal (Spain) left footed shot from the right side of the box is blocked. Assisted by Dani Olmo."
+  },
+  {
+   "minute": "84",
+   "seconds": 5007.0,
+   "team": "Belgium",
+   "player": "Kevin De Bruyne",
+   "type": "Shot Blocked",
+   "x": 60.0,
+   "y": 68.5,
+   "goal": false,
+   "xg": 0.017,
+   "text": "Attempt blocked. Kevin De Bruyne (Belgium) left footed shot from more than 35 yards is blocked."
+  },
+  {
+   "minute": "88",
+   "seconds": 5239.0,
+   "team": "Spain",
+   "player": "Pau Cubarsí",
+   "type": "Shot On Target",
+   "x": 72.8,
+   "y": 37.2,
+   "goal": false,
+   "xg": 0.056,
+   "text": "Attempt saved. Pau Cubarsí (Spain) right footed shot from outside the box is saved in the bottom left corner by Senne Lammens (Belgium). Assisted by Pedri."
+  },
+  {
+   "minute": "88",
+   "seconds": 5242.0,
+   "team": "Spain",
+   "player": "Mikel Merino",
+   "type": "Goal",
+   "x": 95.2,
+   "y": 51.9,
+   "goal": true,
+   "xg": 0.766,
+   "text": "Goal! Spain 2, Belgium 1. Mikel Merino (Spain) left footed shot from very close range to the top left corner."
+  },
+  {
+   "minute": "90'+7",
+   "seconds": 5400.0,
+   "team": "Spain",
+   "player": "Marc Cucurella",
+   "type": "Shot On Target",
+   "x": 78.2,
+   "y": 66.7,
+   "goal": false,
+   "xg": 0.079,
+   "text": "Attempt saved. Marc Cucurella (Spain) left footed shot from outside the box is saved in the bottom left corner by Senne Lammens (Belgium). Assisted by Mikel Merino."
+  }
+ ],
+ "lineups": [
+  {
+   "team": "Spain",
+   "formation": "4-2-3-1",
+   "starters": [
+    {
+     "name": "Unai Simón",
+     "jersey": "23",
+     "position": "G"
+    },
+    {
+     "name": "Aymeric Laporte",
+     "jersey": "14",
+     "position": "CD-L"
+    },
+    {
+     "name": "Pau Cubarsí",
+     "jersey": "22",
+     "position": "CD-R"
+    },
+    {
+     "name": "Marc Cucurella",
+     "jersey": "24",
+     "position": "LB"
+    },
+    {
+     "name": "Pedro Porro",
+     "jersey": "12",
+     "position": "RB"
+    },
+    {
+     "name": "Dani Olmo",
+     "jersey": "10",
+     "position": "AM"
+    },
+    {
+     "name": "Fabián Ruiz",
+     "jersey": "8",
+     "position": "LM"
+    },
+    {
+     "name": "Rodri",
+     "jersey": "16",
+     "position": "RM"
+    },
+    {
+     "name": "Mikel Oyarzabal",
+     "jersey": "21",
+     "position": "F"
+    },
+    {
+     "name": "Álex Baena",
+     "jersey": "15",
+     "position": "AM-L"
+    },
+    {
+     "name": "Lamine Yamal",
+     "jersey": "19",
+     "position": "AM-R"
+    }
+   ],
+   "subs": [
+    {
+     "name": "Nico Williams",
+     "jersey": "17",
+     "position": "SUB"
+    },
+    {
+     "name": "Yéremy Pino",
+     "jersey": "11",
+     "position": "SUB"
+    },
+    {
+     "name": "Alejandro Grimaldo",
+     "jersey": "3",
+     "position": "SUB"
+    },
+    {
+     "name": "Víctor Muñoz",
+     "jersey": "25",
+     "position": "SUB"
+    },
+    {
+     "name": "Mikel Merino",
+     "jersey": "6",
+     "position": "SUB"
+    },
+    {
+     "name": "Joan García",
+     "jersey": "13",
+     "position": "SUB"
+    },
+    {
+     "name": "Eric García",
+     "jersey": "4",
+     "position": "SUB"
+    },
+    {
+     "name": "Borja Iglesias",
+     "jersey": "26",
+     "position": "SUB"
+    },
+    {
+     "name": "Gavi",
+     "jersey": "9",
+     "position": "SUB"
+    },
+    {
+     "name": "David Raya",
+     "jersey": "1",
+     "position": "SUB"
+    },
+    {
+     "name": "Marc Pubill",
+     "jersey": "2",
+     "position": "SUB"
+    },
+    {
+     "name": "Pedri",
+     "jersey": "20",
+     "position": "SUB"
+    },
+    {
+     "name": "Martín Zubimendi",
+     "jersey": "18",
+     "position": "SUB"
+    },
+    {
+     "name": "Ferran Torres",
+     "jersey": "7",
+     "position": "SUB"
+    },
+    {
+     "name": "Marcos Llorente",
+     "jersey": "5",
+     "position": "SUB"
+    }
+   ]
+  },
+  {
+   "team": "Belgium",
+   "formation": "4-2-3-1",
+   "starters": [
+    {
+     "name": "Thibaut Courtois",
+     "jersey": "1",
+     "position": "G"
+    },
+    {
+     "name": "Brandon Mechele",
+     "jersey": "4",
+     "position": "CD-L"
+    },
+    {
+     "name": "Nathan Ngoy",
+     "jersey": "25",
+     "position": "CD-R"
+    },
+    {
+     "name": "Maxim De Cuyper",
+     "jersey": "5",
+     "position": "LB"
+    },
+    {
+     "name": "Timothy Castagne",
+     "jersey": "21",
+     "position": "RB"
+    },
+    {
+     "name": "Kevin De Bruyne",
+     "jersey": "7",
+     "position": "AM"
+    },
+    {
+     "name": "Nicolas Raskin",
+     "jersey": "23",
+     "position": "LM"
+    },
+    {
+     "name": "Hans Vanaken",
+     "jersey": "20",
+     "position": "RM"
+    },
+    {
+     "name": "Charles De Ketelaere",
+     "jersey": "17",
+     "position": "F"
+    },
+    {
+     "name": "Jérémy Doku",
+     "jersey": "11",
+     "position": "AM-L"
+    },
+    {
+     "name": "Leandro Trossard",
+     "jersey": "10",
+     "position": "AM-R"
+    }
+   ],
+   "subs": [
+    {
+     "name": "Alexis Saelemaekers",
+     "jersey": "22",
+     "position": "SUB"
+    },
+    {
+     "name": "Koni De Winter",
+     "jersey": "16",
+     "position": "SUB"
+    },
+    {
+     "name": "Joaquin Seys",
+     "jersey": "18",
+     "position": "SUB"
+    },
+    {
+     "name": "Diego Moreira",
+     "jersey": "19",
+     "position": "SUB"
+    },
+    {
+     "name": "Senne Lammens",
+     "jersey": "12",
+     "position": "SUB"
+    },
+    {
+     "name": "Dodi Lukébakio",
+     "jersey": "14",
+     "position": "SUB"
+    },
+    {
+     "name": "Arthur Theate",
+     "jersey": "3",
+     "position": "SUB"
+    },
+    {
+     "name": "Matias Fernandez-Pardo",
+     "jersey": "26",
+     "position": "SUB"
+    },
+    {
+     "name": "Thomas Meunier",
+     "jersey": "15",
+     "position": "SUB"
+    },
+    {
+     "name": "Axel Witsel",
+     "jersey": "6",
+     "position": "SUB"
+    },
+    {
+     "name": "Mike Penders",
+     "jersey": "13",
+     "position": "SUB"
+    },
+    {
+     "name": "Romelu Lukaku",
+     "jersey": "9",
+     "position": "SUB"
+    }
+   ]
+  }
+ ],
+ "attendance": 70492,
+ "venue": "SoFi Stadium, Inglewood, California, USA"
+}
