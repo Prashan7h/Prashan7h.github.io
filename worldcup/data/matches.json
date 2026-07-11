@@ -4124,16 +4124,18 @@
    "round": "Semi-final",
    "date": "2026-07-14",
    "time": "14:00 UTC-5",
-   "team1": "W97",
-   "team2": "W98",
+   "team1": "France",
+   "team2": "Spain",
    "group": null,
    "ground": "Dallas (Arlington)",
    "score": null,
    "goals1": [],
    "goals2": [],
-   "espn_id": null,
+   "espn_id": "760514",
    "status": "scheduled",
-   "slug": "2026-07-14-w97-vs-w98"
+   "utc_date": "2026-07-14T19:00Z",
+   "venue": "AT&T Stadium",
+   "slug": "2026-07-14-france-vs-spain"
   },
   {
    "num": 102,
