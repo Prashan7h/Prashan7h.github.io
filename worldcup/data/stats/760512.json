@@ -1,0 +1,1045 @@
+{
+ "teams": [
+  {
+   "name": "Norway",
+   "stats": {
+    "possessionPct": "47.6",
+    "totalShots": "13",
+    "shotsOnTarget": "4",
+    "wonCorners": "7",
+    "foulsCommitted": "10",
+    "offsides": "1",
+    "saves": "6",
+    "yellowCards": "1",
+    "redCards": "0"
+   }
+  },
+  {
+   "name": "England",
+   "stats": {
+    "possessionPct": "52.4",
+    "totalShots": "14",
+    "shotsOnTarget": "8",
+    "wonCorners": "4",
+    "foulsCommitted": "8",
+    "offsides": "5",
+    "saves": "3",
+    "yellowCards": "0",
+    "redCards": "0"
+   }
+  }
+ ],
+ "events": [
+  {
+   "type": "Kickoff",
+   "minute": "",
+   "team": null,
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "23'",
+   "team": "England",
+   "text": "Delay in match for a drinks break.",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "23'",
+   "team": "Norway",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "27'",
+   "team": "England",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "27'",
+   "team": "Norway",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Goal",
+   "minute": "36'",
+   "team": "Norway",
+   "text": "Goal! Norway 1, England 0. Andreas Schjelderup (Norway) left footed shot from the left side of the box to the top right corner. Assisted by Martin Ødegaard.",
+   "players": [
+    "Andreas Schjelderup",
+    "Martin Ødegaard"
+   ]
+  },
+  {
+   "type": "Goal",
+   "minute": "45'+2'",
+   "team": "England",
+   "text": "Goal! Norway 1, England 1. Jude Bellingham (England) left footed shot from the left side of the box to the bottom right corner. Assisted by Anthony Gordon.",
+   "players": [
+    "Jude Bellingham",
+    "Anthony Gordon"
+   ]
+  },
+  {
+   "type": "Halftime",
+   "minute": "45'+5'",
+   "team": null,
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Substitution",
+   "minute": "45'",
+   "team": "England",
+   "text": "Substitution, England. Bukayo Saka replaces Noni Madueke.",
+   "players": [
+    "Bukayo Saka",
+    "Noni Madueke"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "45'",
+   "team": "England",
+   "text": "Substitution, England. Eberechi Eze replaces Declan Rice.",
+   "players": [
+    "Eberechi Eze",
+    "Declan Rice"
+   ]
+  },
+  {
+   "type": "Start 2nd Half",
+   "minute": "45'",
+   "team": null,
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "57'",
+   "team": "Norway",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "57'",
+   "team": "Norway",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "59'",
+   "team": "Norway",
+   "text": "Delay in match because of an injury Julian Ryerson (Norway).",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "59'",
+   "team": "England",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Substitution",
+   "minute": "60'",
+   "team": "Norway",
+   "text": "Substitution, Norway. Fredrik Aursnes replaces Julian Ryerson because of an injury.",
+   "players": [
+    "Fredrik Aursnes",
+    "Julian Ryerson"
+   ]
+  },
+  {
+   "type": "End Delay",
+   "minute": "60'",
+   "team": "Norway",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "60'",
+   "team": "England",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Substitution",
+   "minute": "68'",
+   "team": "Norway",
+   "text": "Substitution, Norway. Oscar Bobb replaces Alexander Sørloth.",
+   "players": [
+    "Oscar Bobb",
+    "Alexander Sørloth"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "68'",
+   "team": "Norway",
+   "text": "Substitution, Norway. Antonio Nusa replaces Andreas Schjelderup.",
+   "players": [
+    "Antonio Nusa",
+    "Andreas Schjelderup"
+   ]
+  },
+  {
+   "type": "Start Delay",
+   "minute": "68'",
+   "team": "England",
+   "text": "Delay in match for a drinks break.",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "68'",
+   "team": "Norway",
+   "text": "Delay in match for a drinks break.",
+   "players": []
+  },
+  {
+   "type": "Substitution",
+   "minute": "71'",
+   "team": "England",
+   "text": "Substitution, England. Reece James replaces Anthony Gordon.",
+   "players": [
+    "Reece James",
+    "Anthony Gordon"
+   ]
+  },
+  {
+   "type": "End Delay",
+   "minute": "71'",
+   "team": "England",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "71'",
+   "team": "Norway",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Substitution",
+   "minute": "86'",
+   "team": "England",
+   "text": "Substitution, England. Djed Spence replaces Nico O'Reilly.",
+   "players": [
+    "Djed Spence",
+    "Nico O'Reilly"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "89'",
+   "team": "England",
+   "text": "Substitution, England. Morgan Rogers replaces Ezri Konsa.",
+   "players": [
+    "Morgan Rogers",
+    "Ezri Konsa"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "90'",
+   "team": "Norway",
+   "text": "Substitution, Norway. Marcus Pedersen replaces David Møller Wolfe.",
+   "players": [
+    "Marcus Holmgren Pedersen",
+    "David Møller Wolfe"
+   ]
+  },
+  {
+   "type": "Start Delay",
+   "minute": "90'+4'",
+   "team": "Norway",
+   "text": "Delay in match because of an injury Torbjørn Heggem (Norway).",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "90'+4'",
+   "team": "England",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "90'+4'",
+   "team": "Norway",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "90'+4'",
+   "team": "England",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "90'+8'",
+   "team": "England",
+   "text": "Delay in match because of an injury Jude Bellingham (England).",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "90'+8'",
+   "team": "Norway",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "90'+8'",
+   "team": "England",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "90'+8'",
+   "team": "Norway",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "End Regular Time",
+   "minute": "90'+9'",
+   "team": null,
+   "text": "Second Half ends, Norway 1, England 1.",
+   "players": []
+  },
+  {
+   "type": "Substitution",
+   "minute": "90'",
+   "team": "Norway",
+   "text": "Substitution, Norway. Leo Østigård replaces Torbjørn Heggem.",
+   "players": [
+    "Leo Østigard",
+    "Torbjørn Heggem"
+   ]
+  },
+  {
+   "type": "Start Extra Time",
+   "minute": "90'",
+   "team": null,
+   "text": "First Half Extra Time begins Norway 1, England 1.",
+   "players": []
+  },
+  {
+   "type": "Goal",
+   "minute": "93'",
+   "team": "England",
+   "text": "Goal! Norway 1, England 2. Jude Bellingham (England) right footed shot from the centre of the box to the bottom left corner following a corner.",
+   "players": [
+    "Jude Bellingham"
+   ]
+  },
+  {
+   "type": "Start Delay",
+   "minute": "101'",
+   "team": "England",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "102'",
+   "team": "England",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Halftime Extra Time",
+   "minute": "105'+4'",
+   "team": null,
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Substitution",
+   "minute": "105'",
+   "team": "Norway",
+   "text": "Substitution, Norway. Jørgen Strand Larsen replaces Erling Haaland.",
+   "players": [
+    "Jørgen Strand Larsen",
+    "Erling Haaland"
+   ]
+  },
+  {
+   "type": "Start 2nd Half Extra Time",
+   "minute": "105'",
+   "team": null,
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Substitution",
+   "minute": "111'",
+   "team": "England",
+   "text": "Substitution, England. Dan Burn replaces Jude Bellingham.",
+   "players": [
+    "Dan Burn",
+    "Jude Bellingham"
+   ]
+  },
+  {
+   "type": "Start Delay",
+   "minute": "117'",
+   "team": "England",
+   "text": "Delay in match because of an injury Jordan Pickford (England).",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "117'",
+   "team": "Norway",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Yellow Card",
+   "minute": "117'",
+   "team": "Norway",
+   "text": "Kristoffer Ajer (Norway) is shown the yellow card.",
+   "players": [
+    "Kristoffer Ajer"
+   ]
+  },
+  {
+   "type": "End Delay",
+   "minute": "118'",
+   "team": "England",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "118'",
+   "team": "Norway",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "End Extra Time",
+   "minute": "120'+3'",
+   "team": null,
+   "text": "Second Half Extra Time ends, Norway 1, England 2.",
+   "players": []
+  }
+ ],
+ "shots": [
+  {
+   "minute": "29",
+   "seconds": 1705.0,
+   "team": "England",
+   "player": "Harry Kane",
+   "type": "Shot Off Target",
+   "x": 77.2,
+   "y": 38.6,
+   "goal": false,
+   "xg": 0.085,
+   "text": "Attempt missed. Harry Kane (England) right footed shot from outside the box is too high from a direct free kick."
+  },
+  {
+   "minute": "35",
+   "seconds": 2084.0,
+   "team": "Norway",
+   "player": "Erling Haaland",
+   "type": "Shot On Target",
+   "x": 92.1,
+   "y": 54.6,
+   "goal": false,
+   "xg": 0.306,
+   "text": "Attempt saved. Erling Haaland (Norway) header from the centre of the box is saved in the top centre of the goal by Jordan Pickford (England). Assisted by Julian Ryerson with a cross."
+  },
+  {
+   "minute": "36",
+   "seconds": 2101.0,
+   "team": "Norway",
+   "player": "Andreas Schjelderup",
+   "type": "Goal",
+   "x": 88.0,
+   "y": 76.3,
+   "goal": true,
+   "xg": 0.09,
+   "text": "Goal! Norway 1, England 0. Andreas Schjelderup (Norway) left footed shot from the left side of the box to the top right corner. Assisted by Martin Ødegaard."
+  },
+  {
+   "minute": "39",
+   "seconds": 2333.0,
+   "team": "Norway",
+   "player": "Alexander Sørloth",
+   "type": "Shot Off Target",
+   "x": 85.6,
+   "y": 36.1,
+   "goal": false,
+   "xg": 0.158,
+   "text": "Attempt missed. Alexander Sørloth (Norway) left footed shot from the right side of the box is too high. Assisted by Ørjan Nyland following a set piece situation."
+  },
+  {
+   "minute": "40",
+   "seconds": 2363.0,
+   "team": "Norway",
+   "player": "Martin Ødegaard",
+   "type": "Shot On Target",
+   "x": 80.3,
+   "y": 23.3,
+   "goal": false,
+   "xg": 0.062,
+   "text": "Attempt saved. Martin Ødegaard (Norway) left footed shot from outside the box is saved in the bottom right corner by Jordan Pickford (England). Assisted by Alexander Sørloth."
+  },
+  {
+   "minute": "44",
+   "seconds": 2593.0,
+   "team": "Norway",
+   "player": "Alexander Sørloth",
+   "type": "Shot Blocked",
+   "x": 84.9,
+   "y": 46.1,
+   "goal": false,
+   "xg": 0.209,
+   "text": "Attempt blocked. Alexander Sørloth (Norway) left footed shot from the centre of the box is blocked. Assisted by Martin Ødegaard."
+  },
+  {
+   "minute": "45",
+   "seconds": 2679.0,
+   "team": "England",
+   "player": "Jude Bellingham",
+   "type": "Shot Blocked",
+   "x": 87.5,
+   "y": 39.4,
+   "goal": false,
+   "xg": 0.217,
+   "text": "Attempt blocked. Jude Bellingham (England) right footed shot from the centre of the box is blocked. Assisted by Declan Rice with a cross."
+  },
+  {
+   "minute": "45'+2",
+   "seconds": 2700.0,
+   "team": "England",
+   "player": "Jude Bellingham",
+   "type": "Goal",
+   "x": 92.6,
+   "y": 64.0,
+   "goal": true,
+   "xg": 0.239,
+   "text": "Goal! Norway 1, England 1. Jude Bellingham (England) left footed shot from the left side of the box to the bottom right corner. Assisted by Anthony Gordon."
+  },
+  {
+   "minute": "45'+3",
+   "seconds": 2700.0,
+   "team": "England",
+   "player": "Harry Kane",
+   "type": "Shot On Target",
+   "x": 72.3,
+   "y": 54.2,
+   "goal": false,
+   "xg": 0.06,
+   "text": "Attempt saved. Harry Kane (England) right footed shot from outside the box is saved in the bottom left corner by Ørjan Nyland (Norway)."
+  },
+  {
+   "minute": "48",
+   "seconds": 2833.0,
+   "team": "England",
+   "player": "Eberechi Eze",
+   "type": "Shot Blocked",
+   "x": 73.5,
+   "y": 69.1,
+   "goal": false,
+   "xg": 0.051,
+   "text": "Attempt blocked. Eberechi Eze (England) right footed shot from outside the box is blocked."
+  },
+  {
+   "minute": "52",
+   "seconds": 3061.0,
+   "team": "England",
+   "player": "Bukayo Saka",
+   "type": "Shot Blocked",
+   "x": 88.5,
+   "y": 26.5,
+   "goal": false,
+   "xg": 0.108,
+   "text": "Attempt blocked. Bukayo Saka (England) left footed shot from the right side of the box is blocked. Assisted by Eberechi Eze."
+  },
+  {
+   "minute": "53",
+   "seconds": 3154.0,
+   "team": "Norway",
+   "player": "Erling Haaland",
+   "type": "Shot Off Target",
+   "x": 88.9,
+   "y": 54.4,
+   "goal": false,
+   "xg": 0.211,
+   "text": "Attempt missed. Erling Haaland (Norway) header from the centre of the box is close, but misses to the left. Assisted by Julian Ryerson with a cross following a corner."
+  },
+  {
+   "minute": "76",
+   "seconds": 4530.0,
+   "team": "Norway",
+   "player": "Fredrik Aursnes",
+   "type": "Shot Off Target",
+   "x": 86.7,
+   "y": 31.3,
+   "goal": false,
+   "xg": 0.132,
+   "text": "Attempt missed. Fredrik Aursnes (Norway) right footed shot from the right side of the box misses to the left following a corner."
+  },
+  {
+   "minute": "76",
+   "seconds": 4532.0,
+   "team": "Norway",
+   "player": null,
+   "type": "Shot Hit Woodwork",
+   "x": 92.1,
+   "y": 50.2,
+   "goal": false,
+   "xg": 0.342,
+   "text": "Kristoffer Ajer (Norway) hits the bar with a header from the centre of the box. Assisted by Fredrik Aursnes following a corner."
+  },
+  {
+   "minute": "85",
+   "seconds": 5063.0,
+   "team": "Norway",
+   "player": "Antonio Nusa",
+   "type": "Shot On Target",
+   "x": 87.5,
+   "y": 72.0,
+   "goal": false,
+   "xg": 0.114,
+   "text": "Attempt saved. Antonio Nusa (Norway) right footed shot from the left side of the box is saved in the bottom right corner by Jordan Pickford (England). Assisted by Sander Berge."
+  },
+  {
+   "minute": "90'+5",
+   "seconds": 5400.0,
+   "team": "England",
+   "player": "Jude Bellingham",
+   "type": "Shot Off Target",
+   "x": 88.3,
+   "y": 43.6,
+   "goal": false,
+   "xg": 0.184,
+   "text": "Attempt missed. Jude Bellingham (England) header from the centre of the box misses to the left. Assisted by John Stones with a cross."
+  },
+  {
+   "minute": "93",
+   "seconds": 5529.0,
+   "team": "England",
+   "player": "Harry Kane",
+   "type": "Shot On Target",
+   "x": 97.0,
+   "y": 67.2,
+   "goal": false,
+   "xg": 0.106,
+   "text": "Attempt saved. Harry Kane (England) header from a difficult angle on the left is saved in the top right corner by Ørjan Nyland (Norway). Assisted by Bukayo Saka with a cross."
+  },
+  {
+   "minute": "93",
+   "seconds": 5552.0,
+   "team": "England",
+   "player": "Morgan Rogers",
+   "type": "Shot On Target",
+   "x": 71.2,
+   "y": 52.2,
+   "goal": false,
+   "xg": 0.055,
+   "text": "Attempt saved. Morgan Rogers (England) right footed shot from outside the box is saved in the bottom right corner by Ørjan Nyland (Norway). Assisted by Eberechi Eze."
+  },
+  {
+   "minute": "93",
+   "seconds": 5554.0,
+   "team": "England",
+   "player": "Jude Bellingham",
+   "type": "Goal",
+   "x": 92.6,
+   "y": 50.8,
+   "goal": true,
+   "xg": 0.561,
+   "text": "Goal! Norway 1, England 2. Jude Bellingham (England) right footed shot from the centre of the box to the bottom left corner following a corner."
+  },
+  {
+   "minute": "104",
+   "seconds": 6185.0,
+   "team": "Norway",
+   "player": "Antonio Nusa",
+   "type": "Shot Blocked",
+   "x": 82.5,
+   "y": 42.3,
+   "goal": false,
+   "xg": 0.151,
+   "text": "Attempt blocked. Antonio Nusa (Norway) left footed shot from outside the box is blocked. Assisted by Oscar Bobb."
+  },
+  {
+   "minute": "105'+3",
+   "seconds": 6300.0,
+   "team": "England",
+   "player": "Jude Bellingham",
+   "type": "Shot Off Target",
+   "x": 77.7,
+   "y": 37.2,
+   "goal": false,
+   "xg": 0.085,
+   "text": "Attempt missed. Jude Bellingham (England) right footed shot from outside the box is high and wide to the left. Assisted by Bukayo Saka."
+  },
+  {
+   "minute": "109",
+   "seconds": 6492.0,
+   "team": "Norway",
+   "player": "Patrick Berg",
+   "type": "Shot Off Target",
+   "x": 81.6,
+   "y": 37.0,
+   "goal": false,
+   "xg": 0.119,
+   "text": "Attempt missed. Patrick Berg (Norway) right footed shot from outside the box is too high. Assisted by Oscar Bobb."
+  },
+  {
+   "minute": "109",
+   "seconds": 6540.0,
+   "team": "England",
+   "player": "Bukayo Saka",
+   "type": "Shot On Target",
+   "x": 91.2,
+   "y": 28.9,
+   "goal": false,
+   "xg": 0.135,
+   "text": "Attempt saved. Bukayo Saka (England) left footed shot from the right side of the box is saved in the bottom left corner by Ørjan Nyland (Norway). Assisted by Harry Kane."
+  },
+  {
+   "minute": "110",
+   "seconds": 6551.0,
+   "team": "England",
+   "player": "Djed Spence",
+   "type": "Shot On Target",
+   "x": 81.3,
+   "y": 46.4,
+   "goal": false,
+   "xg": 0.144,
+   "text": "Attempt saved. Djed Spence (England) right footed shot from outside the box is saved in the bottom right corner by Ørjan Nyland (Norway)."
+  },
+  {
+   "minute": "110",
+   "seconds": 6554.0,
+   "team": "England",
+   "player": "Bukayo Saka",
+   "type": "Shot On Target",
+   "x": 95.1,
+   "y": 32.5,
+   "goal": false,
+   "xg": 0.176,
+   "text": "Attempt saved. Bukayo Saka (England) right footed shot from a difficult angle on the right is saved in the top left corner by Ørjan Nyland (Norway)."
+  },
+  {
+   "minute": "114",
+   "seconds": 6786.0,
+   "team": "Norway",
+   "player": "Antonio Nusa",
+   "type": "Shot Blocked",
+   "x": 90.0,
+   "y": 73.8,
+   "goal": false,
+   "xg": 0.111,
+   "text": "Attempt blocked. Antonio Nusa (Norway) right footed shot from the left side of the box is blocked. Assisted by Sander Berge."
+  },
+  {
+   "minute": "114",
+   "seconds": 6826.0,
+   "team": "Norway",
+   "player": "Oscar Bobb",
+   "type": "Shot Off Target",
+   "x": 86.7,
+   "y": 47.4,
+   "goal": false,
+   "xg": 0.26,
+   "text": "Attempt missed. Oscar Bobb (Norway) left footed shot from the centre of the box is too high following a corner."
+  }
+ ],
+ "lineups": [
+  {
+   "team": "Norway",
+   "formation": "4-3-3",
+   "starters": [
+    {
+     "name": "Ørjan Nyland",
+     "jersey": "1",
+     "position": "G"
+    },
+    {
+     "name": "Torbjørn Heggem",
+     "jersey": "17",
+     "position": "CD-L"
+    },
+    {
+     "name": "Kristoffer Ajer",
+     "jersey": "3",
+     "position": "CD-R"
+    },
+    {
+     "name": "David Møller Wolfe",
+     "jersey": "5",
+     "position": "LB"
+    },
+    {
+     "name": "Julian Ryerson",
+     "jersey": "26",
+     "position": "RB"
+    },
+    {
+     "name": "Sander Berge",
+     "jersey": "8",
+     "position": "CM"
+    },
+    {
+     "name": "Patrick Berg",
+     "jersey": "6",
+     "position": "LM"
+    },
+    {
+     "name": "Martin Ødegaard",
+     "jersey": "10",
+     "position": "RM"
+    },
+    {
+     "name": "Erling Haaland",
+     "jersey": "9",
+     "position": "F"
+    },
+    {
+     "name": "Andreas Schjelderup",
+     "jersey": "21",
+     "position": "LF"
+    },
+    {
+     "name": "Alexander Sørloth",
+     "jersey": "7",
+     "position": "RF"
+    }
+   ],
+   "subs": [
+    {
+     "name": "Thelo Aasgaard",
+     "jersey": "19",
+     "position": "SUB"
+    },
+    {
+     "name": "Jens Petter Hauge",
+     "jersey": "23",
+     "position": "SUB"
+    },
+    {
+     "name": "Fredrik Aursnes",
+     "jersey": "14",
+     "position": "SUB"
+    },
+    {
+     "name": "Antonio Nusa",
+     "jersey": "20",
+     "position": "SUB"
+    },
+    {
+     "name": "Henrik Falchener",
+     "jersey": "25",
+     "position": "SUB"
+    },
+    {
+     "name": "Jørgen Strand Larsen",
+     "jersey": "11",
+     "position": "SUB"
+    },
+    {
+     "name": "Sondre Langas",
+     "jersey": "24",
+     "position": "SUB"
+    },
+    {
+     "name": "Leo Østigard",
+     "jersey": "4",
+     "position": "SUB"
+    },
+    {
+     "name": "Oscar Bobb",
+     "jersey": "22",
+     "position": "SUB"
+    },
+    {
+     "name": "Kristian Thorstvedt",
+     "jersey": "18",
+     "position": "SUB"
+    },
+    {
+     "name": "Morten Thorsby",
+     "jersey": "2",
+     "position": "SUB"
+    },
+    {
+     "name": "Marcus Holmgren Pedersen",
+     "jersey": "16",
+     "position": "SUB"
+    },
+    {
+     "name": "Sander Tangvik",
+     "jersey": "12",
+     "position": "SUB"
+    },
+    {
+     "name": "Egil Selvik",
+     "jersey": "13",
+     "position": "SUB"
+    },
+    {
+     "name": "Fredrik André Bjørkan",
+     "jersey": "15",
+     "position": "SUB"
+    }
+   ]
+  },
+  {
+   "team": "England",
+   "formation": "4-2-3-1",
+   "starters": [
+    {
+     "name": "Jordan Pickford",
+     "jersey": "1",
+     "position": "G"
+    },
+    {
+     "name": "Marc Guéhi",
+     "jersey": "6",
+     "position": "CD-L"
+    },
+    {
+     "name": "John Stones",
+     "jersey": "5",
+     "position": "CD-R"
+    },
+    {
+     "name": "Nico O'Reilly",
+     "jersey": "3",
+     "position": "LB"
+    },
+    {
+     "name": "Ezri Konsa",
+     "jersey": "2",
+     "position": "RB"
+    },
+    {
+     "name": "Jude Bellingham",
+     "jersey": "10",
+     "position": "AM"
+    },
+    {
+     "name": "Elliot Anderson",
+     "jersey": "8",
+     "position": "LM"
+    },
+    {
+     "name": "Declan Rice",
+     "jersey": "4",
+     "position": "RM"
+    },
+    {
+     "name": "Harry Kane",
+     "jersey": "9",
+     "position": "F"
+    },
+    {
+     "name": "Anthony Gordon",
+     "jersey": "18",
+     "position": "AM-L"
+    },
+    {
+     "name": "Noni Madueke",
+     "jersey": "20",
+     "position": "AM-R"
+    }
+   ],
+   "subs": [
+    {
+     "name": "Dean Henderson",
+     "jersey": "13",
+     "position": "SUB"
+    },
+    {
+     "name": "Marcus Rashford",
+     "jersey": "11",
+     "position": "SUB"
+    },
+    {
+     "name": "Morgan Rogers",
+     "jersey": "17",
+     "position": "SUB"
+    },
+    {
+     "name": "Eberechi Eze",
+     "jersey": "21",
+     "position": "SUB"
+    },
+    {
+     "name": "Ollie Watkins",
+     "jersey": "19",
+     "position": "SUB"
+    },
+    {
+     "name": "Dan Burn",
+     "jersey": "15",
+     "position": "SUB"
+    },
+    {
+     "name": "James Trafford",
+     "jersey": "23",
+     "position": "SUB"
+    },
+    {
+     "name": "Trevoh Chalobah",
+     "jersey": "12",
+     "position": "SUB"
+    },
+    {
+     "name": "Ivan Toney",
+     "jersey": "22",
+     "position": "SUB"
+    },
+    {
+     "name": "Djed Spence",
+     "jersey": "25",
+     "position": "SUB"
+    },
+    {
+     "name": "Jordan Henderson",
+     "jersey": "14",
+     "position": "SUB"
+    },
+    {
+     "name": "Kobbie Mainoo",
+     "jersey": "16",
+     "position": "SUB"
+    },
+    {
+     "name": "Bukayo Saka",
+     "jersey": "7",
+     "position": "SUB"
+    },
+    {
+     "name": "Reece James",
+     "jersey": "24",
+     "position": "SUB"
+    }
+   ]
+  }
+ ],
+ "attendance": 64478,
+ "venue": "Hard Rock Stadium, Miami Gardens, Florida, USA"
+}

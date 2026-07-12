@@ -4092,12 +4092,40 @@
    "team2": "England",
    "group": null,
    "ground": "Miami (Miami Gardens)",
-   "score": null,
-   "goals1": [],
-   "goals2": [],
+   "score": {
+    "et": [
+     1,
+     2
+    ],
+    "ft": [
+     1,
+     1
+    ],
+    "ht": [
+     1,
+     1
+    ]
+   },
+   "goals1": [
+    {
+     "name": "Andreas Schjelderup",
+     "minute": "36"
+    }
+   ],
+   "goals2": [
+    {
+     "name": "Jude Bellingham",
+     "minute": "45+2"
+    },
+    {
+     "name": "Jude Bellingham",
+     "minute": "93"
+    }
+   ],
    "espn_id": "760512",
-   "status": "scheduled",
+   "status": "finished",
    "utc_date": "2026-07-11T21:00Z",
+   "attendance": 64478,
    "venue": "Hard Rock Stadium",
    "slug": "2026-07-11-norway-vs-england"
   },
@@ -4114,7 +4142,7 @@
    "goals1": [],
    "goals2": [],
    "espn_id": "760513",
-   "status": "scheduled",
+   "status": "live",
    "utc_date": "2026-07-12T01:00Z",
    "venue": "GEHA Field at Arrowhead Stadium",
    "slug": "2026-07-11-argentina-vs-switzerland"
