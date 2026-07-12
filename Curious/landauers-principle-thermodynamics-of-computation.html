@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-KVBPX8VW');</script>
+    <!-- End Google Tag Manager -->
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Landauer's principle and the thermodynamics of computation — why erasing a bit of information has a minimum energy cost, and how it dissolves Maxwell's demon.">
+    <link rel="icon" type="image/svg+xml" href="../images/favicon.svg">
+    <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon-32.png">
+    <link rel="apple-touch-icon" href="../images/apple-touch-icon.png">
+    <title>Landauer's Principle and the Thermodynamics of Computation | Prashanth Shankar</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+
+    <style>
+        *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+        html { font-size: 16px; scroll-behavior: smooth; }
+        body {
+            background: #fff;
+            color: #000;
+            font-family: 'Inter', -apple-system, sans-serif;
+            font-weight: 400;
+            line-height: 1.7;
+        }
+        ::selection { background: #000; color: #fff; }
+
+        .page {
+            max-width: 720px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        header {
+            padding: 2.5rem 0 0;
+        }
+
+        .back-link {
+            font-size: 0.75rem;
+            font-weight: 400;
+            letter-spacing: 0.04em;
+            color: #000;
+            text-decoration: none;
+            transition: opacity 0.2s ease;
+        }
+        .back-link:hover { opacity: 0.5; }
+
+        article {
+            padding: 4rem 0 3rem;
+        }
+
+        article h1 {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 2.6rem;
+            font-weight: 600;
+            line-height: 1.15;
+            margin-bottom: 1rem;
+        }
+
+        .deck {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.25rem;
+            font-style: italic;
+            line-height: 1.5;
+            color: #000;
+            margin-bottom: 2.5rem;
+        }
+
+        article h2 {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.8rem;
+            font-weight: 600;
+            line-height: 1.2;
+            margin: 3rem 0 1rem;
+        }
+
+        article p {
+            font-size: 0.95rem;
+            font-weight: 300;
+            line-height: 1.75;
+            margin-bottom: 1rem;
+        }
+
+        article em {
+            font-style: italic;
+        }
+
+        .pullquote {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.35rem;
+            font-style: italic;
+            line-height: 1.45;
+            padding: 1.5rem 0 1.5rem 1.5rem;
+            border-left: 2px solid #000;
+            margin: 2rem 0;
+            color: #000;
+        }
+
+        .figure {
+            margin: 2.5rem 0;
+        }
+        .figure svg {
+            display: block;
+            width: 100%;
+            height: auto;
+            max-width: 640px;
+            margin: 0 auto;
+        }
+        .caption {
+            font-size: 0.78rem;
+            color: #666;
+            text-align: center;
+            margin-top: 0.8rem;
+            line-height: 1.5;
+            font-style: italic;
+            font-family: 'Cormorant Garamond', serif;
+        }
+
+        hr.divider {
+            border: none;
+            border-top: 1px solid #000;
+            margin: 3rem 0;
+        }
+
+        .references {
+            font-size: 0.8rem;
+            color: #555;
+            line-height: 1.7;
+            margin-top: 2rem;
+        }
+        .references h3 {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: #000;
+            margin-bottom: 0.75rem;
+        }
+        .references ol {
+            padding-left: 1.2rem;
+        }
+        .references li {
+            margin-bottom: 0.35rem;
+        }
+
+        footer {
+            padding: 2rem 0 3rem;
+            font-size: 0.75rem;
+            color: #666;
+        }
+        footer a { color: inherit; text-decoration: underline; text-underline-offset: 0.2em; }
+    </style>
+</head>
+<body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KVBPX8VW" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+    <div class="page">
+        <header>
+            <a href="index.html" class="back-link">&larr; Wonderland</a>
+        </header>
+
+        <article>
+            <h1>Landauer's Principle and the Thermodynamics of Computation</h1>
+            <p class="deck">Information is not free. Erasing a single bit releases a tiny puff of heat &mdash; and that puff, once you take it seriously, dissolves Maxwell's demon and sets the ultimate speed limit for every computer that will ever be built.</p>
+
+            <p>For most of the twentieth century, computation was treated as though it happened in a room without thermodynamics. Logic gates were abstractions; bits were symbols; the physical substrate was somebody else's problem. Then, in 1961, an IBM physicist named Rolf Landauer asked a question that sounds almost naive: does the act of computing have to cost energy? Not the wires, not the transistors, not the fan &mdash; the <em>computing</em> itself. His answer changed how we think about information, physics, and the limits of every machine that has ever run a program.</p>
+
+            <h2>The question &mdash; is computation free?</h2>
+
+            <p>You can imagine a perfectly reversible pendulum. It swings, it swings back, no energy is lost. If a computation were like that &mdash; a sequence of one-to-one, undoable steps &mdash; then in principle it could be run for free, borrowing energy from the environment on the way down and returning it on the way up.</p>
+
+            <p>The trouble is that most operations we care about are not reversible. Consider AND: two bits go in, one bit comes out. From the output alone, you cannot tell what the inputs were. The information about the two input bits has been thrown away. That throwing-away is called <em>erasure</em>, and Landauer's insight was that erasure is where physics puts its foot down.</p>
+
+            <p>His argument was disarmingly simple. Before erasure, a bit could be in one of two states &mdash; 0 or 1 &mdash; each equally likely. Afterwards, it is in a single, definite state (say, 0). The number of accessible microstates has been halved. In thermodynamics, halving the accessible states is exactly what reduces entropy. And the second law says entropy of a closed system cannot fall. So if the <em>bit's</em> entropy goes down by <em>k</em> ln 2, an amount at least that large must appear in its surroundings as heat.</p>
+
+            <div class="figure">
+                <svg viewBox="0 0 640 220" xmlns="http://www.w3.org/2000/svg">
+                    <!-- Before: two-well potential -->
+                    <g>
+                        <text x="160" y="30" font-family="'Cormorant Garamond', serif" font-style="italic" font-size="16" fill="#000" text-anchor="middle">Before erasure &mdash; 2 states</text>
+                        <!-- axes -->
+                        <line x1="40" y1="180" x2="280" y2="180" stroke="#000" stroke-width="1"/>
+                        <!-- two-well curve, drawn with a polyline -->
+                        <path d="M 50 90 Q 90 90 100 130 Q 110 165 130 165 Q 150 165 160 130 Q 170 90 200 130 Q 210 165 230 165 Q 250 165 260 130 Q 270 90 275 90" stroke="#000" stroke-width="1.2" fill="none"/>
+                        <!-- balls (equally probable) -->
+                        <circle cx="130" cy="158" r="7" fill="#000"/>
+                        <circle cx="230" cy="158" r="7" fill="#000"/>
+                        <text x="130" y="200" font-family="Inter, sans-serif" font-size="12" fill="#000" text-anchor="middle">0</text>
+                        <text x="230" y="200" font-family="Inter, sans-serif" font-size="12" fill="#000" text-anchor="middle">1</text>
+                    </g>
+                    <!-- arrow -->
+                    <g>
+                        <line x1="300" y1="130" x2="360" y2="130" stroke="#000" stroke-width="1.2"/>
+                        <polygon points="360,130 350,124 350,136" fill="#000"/>
+                        <text x="330" y="118" font-family="'Cormorant Garamond', serif" font-style="italic" font-size="13" fill="#000" text-anchor="middle">erase</text>
+                        <text x="330" y="150" font-family="Inter, sans-serif" font-size="11" fill="#666" text-anchor="middle">heat &ge; kT ln 2</text>
+                    </g>
+                    <!-- After: single well -->
+                    <g>
+                        <text x="500" y="30" font-family="'Cormorant Garamond', serif" font-style="italic" font-size="16" fill="#000" text-anchor="middle">After erasure &mdash; 1 state</text>
+                        <line x1="380" y1="180" x2="620" y2="180" stroke="#000" stroke-width="1"/>
+                        <path d="M 390 90 Q 440 90 470 165 Q 500 175 530 165 Q 560 90 610 90" stroke="#000" stroke-width="1.2" fill="none"/>
+                        <circle cx="500" cy="168" r="7" fill="#000"/>
+                        <text x="500" y="200" font-family="Inter, sans-serif" font-size="12" fill="#000" text-anchor="middle">0</text>
+                    </g>
+                </svg>
+                <p class="caption">Erasing a bit collapses two equally likely states into one. That collapse must be paid for in heat.</p>
+            </div>
+
+            <p>The number that falls out of the algebra is <em>kT</em> ln 2. At room temperature, that is roughly 3 &times; 10<sup>&minus;21</sup> joules per bit &mdash; a truly minuscule amount, about a hundred million times smaller than the energy a modern transistor actually burns in a single switch. But it is not zero. It is a floor. And a floor set by physics itself does not care how clever your engineers are.</p>
+
+            <h2>Reversible computing &mdash; Bennett's escape</h2>
+
+            <p>If erasure is the culprit, then a natural question follows: can we compute <em>without</em> erasing? In 1973, Landauer's colleague Charles Bennett showed that the answer, remarkably, is yes. He constructed a <em>reversible</em> universal computer &mdash; a Turing machine whose every step could be undone. It kept a growing tape of intermediate results (a &ldquo;history&rdquo;) so that no information was ever destroyed. Later he refined the trick: perform the computation forward, copy the answer, then run the whole computation in reverse to un-write the intermediate garbage. The output survives; the tape returns to blank.</p>
+
+            <p>Reversible logic implies reversible gates. AND has to be swapped out for something like the Toffoli gate &mdash; three bits in, three bits out, one-to-one, no information lost. In principle, a computer built entirely from Toffoli gates could compute anything computable, at any temperature, using arbitrarily little energy per operation. Only when you finally choose to <em>reset</em> the machine &mdash; to wipe the tape and start again &mdash; do you have to pay Landauer's toll.</p>
+
+            <div class="figure">
+                <svg viewBox="0 0 640 210" xmlns="http://www.w3.org/2000/svg">
+                    <!-- irreversible AND -->
+                    <g>
+                        <text x="150" y="30" font-family="'Cormorant Garamond', serif" font-style="italic" font-size="15" fill="#000" text-anchor="middle">Irreversible AND</text>
+                        <line x1="40" y1="70" x2="110" y2="70" stroke="#000" stroke-width="1.2"/>
+                        <line x1="40" y1="120" x2="110" y2="120" stroke="#000" stroke-width="1.2"/>
+                        <rect x="110" y="55" width="80" height="80" stroke="#000" stroke-width="1.2" fill="#fff"/>
+                        <text x="150" y="100" font-family="Inter, sans-serif" font-size="14" fill="#000" text-anchor="middle">AND</text>
+                        <line x1="190" y1="95" x2="260" y2="95" stroke="#000" stroke-width="1.2"/>
+                        <polygon points="260,95 252,91 252,99" fill="#000"/>
+                        <text x="30" y="74" font-family="Inter, sans-serif" font-size="11" fill="#000" text-anchor="end">A</text>
+                        <text x="30" y="124" font-family="Inter, sans-serif" font-size="11" fill="#000" text-anchor="end">B</text>
+                        <text x="270" y="99" font-family="Inter, sans-serif" font-size="11" fill="#000">A &and; B</text>
+                        <text x="150" y="170" font-family="Inter, sans-serif" font-size="11" fill="#666" text-anchor="middle">2 bits &rarr; 1 bit</text>
+                        <text x="150" y="188" font-family="'Cormorant Garamond', serif" font-style="italic" font-size="12" fill="#000" text-anchor="middle">information destroyed</text>
+                    </g>
+                    <!-- divider -->
+                    <line x1="320" y1="20" x2="320" y2="200" stroke="#000" stroke-width="0.5" stroke-dasharray="3 3"/>
+                    <!-- reversible Toffoli -->
+                    <g>
+                        <text x="480" y="30" font-family="'Cormorant Garamond', serif" font-style="italic" font-size="15" fill="#000" text-anchor="middle">Reversible Toffoli</text>
+                        <line x1="360" y1="60" x2="440" y2="60" stroke="#000" stroke-width="1.2"/>
+                        <line x1="360" y1="100" x2="440" y2="100" stroke="#000" stroke-width="1.2"/>
+                        <line x1="360" y1="140" x2="440" y2="140" stroke="#000" stroke-width="1.2"/>
+                        <rect x="440" y="45" width="80" height="110" stroke="#000" stroke-width="1.2" fill="#fff"/>
+                        <text x="480" y="105" font-family="Inter, sans-serif" font-size="13" fill="#000" text-anchor="middle">Toffoli</text>
+                        <line x1="520" y1="60" x2="600" y2="60" stroke="#000" stroke-width="1.2"/>
+                        <line x1="520" y1="100" x2="600" y2="100" stroke="#000" stroke-width="1.2"/>
+                        <line x1="520" y1="140" x2="600" y2="140" stroke="#000" stroke-width="1.2"/>
+                        <text x="350" y="64" font-family="Inter, sans-serif" font-size="11" fill="#000" text-anchor="end">A</text>
+                        <text x="350" y="104" font-family="Inter, sans-serif" font-size="11" fill="#000" text-anchor="end">B</text>
+                        <text x="350" y="144" font-family="Inter, sans-serif" font-size="11" fill="#000" text-anchor="end">C</text>
+                        <text x="610" y="64" font-family="Inter, sans-serif" font-size="11" fill="#000">A</text>
+                        <text x="610" y="104" font-family="Inter, sans-serif" font-size="11" fill="#000">B</text>
+                        <text x="610" y="144" font-family="Inter, sans-serif" font-size="11" fill="#000">C &oplus; (A&and;B)</text>
+                        <text x="480" y="188" font-family="'Cormorant Garamond', serif" font-style="italic" font-size="12" fill="#000" text-anchor="middle">no information lost</text>
+                    </g>
+                </svg>
+                <p class="caption">AND squeezes two bits into one; the past is unrecoverable. Toffoli preserves everything: run it twice and you're back where you started.</p>
+            </div>
+
+            <h2>Maxwell's demon &mdash; the ghost exorcised</h2>
+
+            <p>The strangest consequence of Landauer's principle is that it finally kills a ghost that had haunted physics for almost a century. In 1867, James Clerk Maxwell imagined a tiny intelligent being &mdash; later dubbed the <em>demon</em> &mdash; sitting at a trapdoor between two chambers of gas. Whenever a fast molecule approached from the left, it opened the door; slow molecules were let through the other way. Slowly, the left side would cool and the right side would heat &mdash; a temperature gradient created from nothing, in flagrant violation of the second law of thermodynamics.</p>
+
+            <p>Where was the loophole? Physicists spent generations trying to close it. Szilard argued the demon must expend energy to <em>measure</em> molecules. Later analysis showed measurement can, in principle, be done reversibly. The bookkeeping kept coming up short.</p>
+
+            <p class="pullquote">The demon does not violate the second law because it must, eventually, forget. And forgetting is not free.</p>
+
+            <p>Bennett spotted the answer in the 1980s using Landauer's principle. To sort molecules again, the demon must reset its memory of the last molecule &mdash; and that reset is an erasure. The heat released by that erasure is exactly enough to pay back the entropy the demon apparently stole from the gas. The demon is real, its measurements can be free, but the moment it clears its notebook to keep working, thermodynamics wins. The universe balances the ledger through the cost of forgetting.</p>
+
+            <h2>Why it matters &mdash; the ultimate limits of hardware</h2>
+
+            <p>Landauer's principle is not just a philosophical curio. It sets the absolute floor on the energy per operation of any classical computer. Modern chips currently dissipate roughly 10<sup>4</sup> to 10<sup>5</sup> times the Landauer limit per switch &mdash; a giant, wasteful gap. As transistors shrink, that gap narrows. Somewhere in the next few decades of Moore's-law-like scaling, we begin to feel Landauer's floor. After that, further gains require either reversible computing or a shift to entirely new physics.</p>
+
+            <p>The principle has been verified in the lab. In 2012 a group in Lyon manipulated a single colloidal particle in a double-well potential and measured the heat released by each erasure. The number sat, within uncertainty, at <em>kT</em> ln 2. Landauer had been right, half a century earlier, from first principles alone.</p>
+
+            <p>What lingers is the conceptual shift. Information is not a ghostly abstraction floating above the world; it is a physical quantity with entropy, and manipulating it moves heat around. Every deleted file, every reset register, every &ldquo;undo&rdquo; that isn't really an undo &mdash; each of them, in principle, warms the universe by a calculable amount. The next time your laptop's fan spins up, some vanishing fraction of that heat is Landauer's toll, being collected exactly as he predicted.</p>
+
+            <hr class="divider">
+
+            <div class="references">
+                <h3>Further reading</h3>
+                <ol>
+                    <li>Landauer, R. (1961). <em>Irreversibility and Heat Generation in the Computing Process</em>. IBM Journal of Research and Development.</li>
+                    <li>Bennett, C. H. (1973). <em>Logical Reversibility of Computation</em>. IBM Journal of Research and Development.</li>
+                    <li>Bennett, C. H. (1982). <em>The Thermodynamics of Computation &mdash; a Review</em>. International Journal of Theoretical Physics.</li>
+                    <li>B&eacute;rut, A. et al. (2012). <em>Experimental verification of Landauer's principle linking information and thermodynamics</em>. Nature 483, 187&ndash;189.</li>
+                    <li>Leff, H. S. &amp; Rex, A. F., eds. (2003). <em>Maxwell's Demon 2: Entropy, Classical and Quantum Information, Computing</em>.</li>
+                </ol>
+            </div>
+        </article>
+
+        <footer>
+            <a href="index.html">&larr; Back to Wonderland</a>
+        </footer>
+    </div>
+</body>
+</html>
