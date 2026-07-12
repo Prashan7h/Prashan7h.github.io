@@ -4138,12 +4138,44 @@
    "team2": "Switzerland",
    "group": null,
    "ground": "Kansas City",
-   "score": null,
-   "goals1": [],
-   "goals2": [],
+   "score": {
+    "et": [
+     3,
+     1
+    ],
+    "ft": [
+     1,
+     1
+    ],
+    "ht": [
+     1,
+     0
+    ]
+   },
+   "goals1": [
+    {
+     "name": "Alexis Mac Allister",
+     "minute": "10"
+    },
+    {
+     "name": "Julián Álvarez",
+     "minute": "112"
+    },
+    {
+     "name": "Lautaro Martínez",
+     "minute": "120+1"
+    }
+   ],
+   "goals2": [
+    {
+     "name": "Dan Ndoye",
+     "minute": "67"
+    }
+   ],
    "espn_id": "760513",
-   "status": "live",
+   "status": "finished",
    "utc_date": "2026-07-12T01:00Z",
+   "attendance": 69045,
    "venue": "GEHA Field at Arrowhead Stadium",
    "slug": "2026-07-11-argentina-vs-switzerland"
   },

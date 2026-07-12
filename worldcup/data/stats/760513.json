@@ -1,0 +1,1121 @@
+{
+ "teams": [
+  {
+   "name": "Argentina",
+   "stats": {
+    "possessionPct": "59",
+    "totalShots": "22",
+    "shotsOnTarget": "7",
+    "wonCorners": "8",
+    "foulsCommitted": "14",
+    "offsides": "4",
+    "saves": "4",
+    "yellowCards": "3",
+    "redCards": "0"
+   }
+  },
+  {
+   "name": "Switzerland",
+   "stats": {
+    "possessionPct": "41",
+    "totalShots": "11",
+    "shotsOnTarget": "5",
+    "wonCorners": "2",
+    "foulsCommitted": "18",
+    "offsides": "3",
+    "saves": "4",
+    "yellowCards": "1",
+    "redCards": "1"
+   }
+  }
+ ],
+ "events": [
+  {
+   "type": "Kickoff",
+   "minute": "",
+   "team": null,
+   "text": "First Half begins.",
+   "players": []
+  },
+  {
+   "type": "Goal - Header",
+   "minute": "10'",
+   "team": "Argentina",
+   "text": "Goal! Argentina 1, Switzerland 0. Alexis Mac Allister (Argentina) header from the left side of the six yard box to the bottom right corner. Assisted by Lionel Messi with a cross following a corner.",
+   "players": [
+    "Alexis Mac Allister",
+    "Lionel Messi"
+   ]
+  },
+  {
+   "type": "Start Delay",
+   "minute": "23'",
+   "team": "Switzerland",
+   "text": "Delay in match for a drinks break.",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "23'",
+   "team": "Argentina",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "26'",
+   "team": "Switzerland",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "26'",
+   "team": "Argentina",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Yellow Card",
+   "minute": "44'",
+   "team": "Switzerland",
+   "text": "Breel Embolo (Switzerland) is shown the yellow card for a bad foul.",
+   "players": [
+    "Breel Embolo"
+   ]
+  },
+  {
+   "type": "Start Delay",
+   "minute": "45'+4'",
+   "team": "Switzerland",
+   "text": "Delay in match because of an injury Dan Ndoye (Switzerland).",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "45'+4'",
+   "team": "Argentina",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "45'+5'",
+   "team": "Switzerland",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "45'+5'",
+   "team": "Argentina",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Halftime",
+   "minute": "45'+5'",
+   "team": null,
+   "text": "First Half ends, Argentina 1, Switzerland 0.",
+   "players": []
+  },
+  {
+   "type": "Start 2nd Half",
+   "minute": "45'",
+   "team": null,
+   "text": "Second Half begins Argentina 1, Switzerland 0.",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "56'",
+   "team": "Argentina",
+   "text": "Delay in match because of an injury Leandro Paredes (Argentina).",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "56'",
+   "team": "Switzerland",
+   "text": "Delay in match (Switzerland).",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "57'",
+   "team": "Argentina",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "57'",
+   "team": "Switzerland",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Goal",
+   "minute": "67'",
+   "team": "Switzerland",
+   "text": "Goal! Argentina 1, Switzerland 1. Dan Ndoye (Switzerland) right footed shot from a difficult angle on the left to the centre of the goal. Assisted by Ricardo Rodríguez with a through ball.",
+   "players": [
+    "Dan Ndoye",
+    "Ricardo Rodríguez"
+   ]
+  },
+  {
+   "type": "Start Delay",
+   "minute": "70'",
+   "team": "Argentina",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Red Card",
+   "minute": "72'",
+   "team": "Switzerland",
+   "text": "Second yellow card to Breel Embolo (Switzerland).",
+   "players": [
+    "Breel Embolo"
+   ]
+  },
+  {
+   "type": "End Delay",
+   "minute": "72'",
+   "team": "Argentina",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "75'",
+   "team": "Switzerland",
+   "text": "Delay in match for a drinks break.",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "75'",
+   "team": "Argentina",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Substitution",
+   "minute": "78'",
+   "team": "Argentina",
+   "text": "Substitution, Argentina. Nico González replaces Nicolás Tagliafico.",
+   "players": [
+    "Nico González",
+    "Nicolás Tagliafico"
+   ]
+  },
+  {
+   "type": "End Delay",
+   "minute": "78'",
+   "team": "Switzerland",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "78'",
+   "team": "Argentina",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Substitution",
+   "minute": "85'",
+   "team": "Argentina",
+   "text": "Substitution, Argentina. Lautaro Martínez replaces Rodrigo De Paul.",
+   "players": [
+    "Lautaro Martínez",
+    "Rodrigo De Paul"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "85'",
+   "team": "Argentina",
+   "text": "Substitution, Argentina. Gonzalo Montiel replaces Nahuel Molina.",
+   "players": [
+    "Gonzalo Montiel",
+    "Nahuel Molina"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "86'",
+   "team": "Switzerland",
+   "text": "Substitution, Switzerland. Silvan Widmer replaces Djibril Sow.",
+   "players": [
+    "Silvan Widmer",
+    "Djibril Sow"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "86'",
+   "team": "Switzerland",
+   "text": "Substitution, Switzerland. Zeki Amdouni replaces Dan Ndoye.",
+   "players": [
+    "Zeki Amdouni",
+    "Dan Ndoye"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "86'",
+   "team": "Switzerland",
+   "text": "Substitution, Switzerland. Miro Muheim replaces Fabian Rieder.",
+   "players": [
+    "Miro Muheim",
+    "Fabian Rieder"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "90'+5'",
+   "team": "Switzerland",
+   "text": "Substitution, Switzerland. Eray Cömert replaces Ricardo Rodríguez.",
+   "players": [
+    "Eray Cömert",
+    "Ricardo Rodríguez"
+   ]
+  },
+  {
+   "type": "End Regular Time",
+   "minute": "90'+10'",
+   "team": null,
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Substitution",
+   "minute": "90'",
+   "team": "Argentina",
+   "text": "Substitution, Argentina. Thiago Almada replaces Enzo Fernández.",
+   "players": [
+    "Thiago Almada",
+    "Enzo Fernández"
+   ]
+  },
+  {
+   "type": "Start Extra Time",
+   "minute": "90'",
+   "team": null,
+   "text": "First Half Extra Time begins Argentina 1, Switzerland 1.",
+   "players": []
+  },
+  {
+   "type": "Substitution",
+   "minute": "96'",
+   "team": "Switzerland",
+   "text": "Substitution, Switzerland. Ardon Jashari replaces Denis Zakaria.",
+   "players": [
+    "Ardon Jashari",
+    "Denis Zakaria"
+   ]
+  },
+  {
+   "type": "Yellow Card",
+   "minute": "97'",
+   "team": "Argentina",
+   "text": "Thiago Almada (Argentina) is shown the yellow card for a bad foul.",
+   "players": [
+    "Thiago Almada"
+   ]
+  },
+  {
+   "type": "Yellow Card",
+   "minute": "98'",
+   "team": "Argentina",
+   "text": "Lautaro Martínez (Argentina) is shown the yellow card for a bad foul.",
+   "players": [
+    "Lautaro Martínez"
+   ]
+  },
+  {
+   "type": "Halftime Extra Time",
+   "minute": "105'+2'",
+   "team": null,
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Substitution",
+   "minute": "105'",
+   "team": "Argentina",
+   "text": "Substitution, Argentina. Nicolás Otamendi replaces Cristian Romero.",
+   "players": [
+    "Nicolás Otamendi",
+    "Cristian Romero"
+   ]
+  },
+  {
+   "type": "Start 2nd Half Extra Time",
+   "minute": "105'",
+   "team": null,
+   "text": "Second Half Extra Time begins Argentina 1, Switzerland 1.",
+   "players": []
+  },
+  {
+   "type": "Substitution",
+   "minute": "110'",
+   "team": "Argentina",
+   "text": "Substitution, Argentina. José Manuel López replaces Leandro Paredes because of an injury.",
+   "players": [
+    "José Manuel López",
+    "Leandro Paredes"
+   ]
+  },
+  {
+   "type": "Goal",
+   "minute": "112'",
+   "team": "Argentina",
+   "text": "Goal! Argentina 2, Switzerland 1. Julián Alvarez (Argentina) right footed shot from outside the box to the top right corner. Assisted by José Manuel López.",
+   "players": [
+    "Julián Álvarez",
+    "José Manuel López"
+   ]
+  },
+  {
+   "type": "Yellow Card",
+   "minute": "114'",
+   "team": "Argentina",
+   "text": "José Manuel López (Argentina) is shown the yellow card.",
+   "players": [
+    "José Manuel López"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "115'",
+   "team": "Switzerland",
+   "text": "Substitution, Switzerland. Rubén Vargas replaces Remo Freuler.",
+   "players": [
+    "Rubén Vargas",
+    "Remo Freuler"
+   ]
+  },
+  {
+   "type": "Start Delay",
+   "minute": "116'",
+   "team": "Argentina",
+   "text": "Delay in match because of an injury Emiliano Martínez (Argentina).",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "116'",
+   "team": "Switzerland",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "117'",
+   "team": "Argentina",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "117'",
+   "team": "Switzerland",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Goal",
+   "minute": "120'+1'",
+   "team": "Argentina",
+   "text": "Goal! Argentina 3, Switzerland 1. Lautaro Martínez (Argentina) right footed shot from the centre of the box to the bottom right corner following a fast break.",
+   "players": [
+    "Lautaro Martínez"
+   ]
+  },
+  {
+   "type": "End Extra Time",
+   "minute": "120'+4'",
+   "team": null,
+   "text": "",
+   "players": []
+  }
+ ],
+ "shots": [
+  {
+   "minute": "1",
+   "seconds": 36.0,
+   "team": "Switzerland",
+   "player": "Denis Zakaria",
+   "type": "Shot Blocked",
+   "x": 85.7,
+   "y": 26.8,
+   "goal": false,
+   "xg": 0.098,
+   "text": "Attempt blocked. Denis Zakaria (Switzerland) right footed shot from the right side of the box is blocked. Assisted by Djibril Sow."
+  },
+  {
+   "minute": "7",
+   "seconds": 375.0,
+   "team": "Switzerland",
+   "player": "Granit Xhaka",
+   "type": "Shot Off Target",
+   "x": 77.1,
+   "y": 63.4,
+   "goal": false,
+   "xg": 0.08,
+   "text": "Attempt missed. Granit Xhaka (Switzerland) left footed shot from outside the box is too high."
+  },
+  {
+   "minute": "9",
+   "seconds": 500.0,
+   "team": "Argentina",
+   "player": "Alexis Mac Allister",
+   "type": "Shot Blocked",
+   "x": 80.9,
+   "y": 39.7,
+   "goal": false,
+   "xg": 0.121,
+   "text": "Attempt blocked. Alexis Mac Allister (Argentina) right footed shot from outside the box is blocked. Assisted by Lionel Messi."
+  },
+  {
+   "minute": "9",
+   "seconds": 530.0,
+   "team": "Argentina",
+   "player": "Alexis Mac Allister",
+   "type": "Shot Off Target",
+   "x": 95.8,
+   "y": 40.6,
+   "goal": false,
+   "xg": 0.268,
+   "text": "Attempt missed. Alexis Mac Allister (Argentina) header from the right side of the six yard box misses to the left. Assisted by Lionel Messi with a cross following a corner."
+  },
+  {
+   "minute": "10",
+   "seconds": 576.0,
+   "team": "Argentina",
+   "player": "Alexis Mac Allister",
+   "type": "Goal - Header",
+   "x": 95.0,
+   "y": 55.9,
+   "goal": true,
+   "xg": 0.388,
+   "text": "Goal! Argentina 1, Switzerland 0. Alexis Mac Allister (Argentina) header from the left side of the six yard box to the bottom right corner. Assisted by Lionel Messi with a cross following a corner."
+  },
+  {
+   "minute": "20",
+   "seconds": 1175.0,
+   "team": "Switzerland",
+   "player": "Djibril Sow",
+   "type": "Shot On Target",
+   "x": 75.2,
+   "y": 47.9,
+   "goal": false,
+   "xg": 0.08,
+   "text": "Attempt saved. Djibril Sow (Switzerland) right footed shot from outside the box is saved in the centre of the goal by Emiliano Martínez (Argentina). Assisted by Nico Elvedi."
+  },
+  {
+   "minute": "47",
+   "seconds": 2802.0,
+   "team": "Switzerland",
+   "player": "Fabian Rieder",
+   "type": "Shot Blocked",
+   "x": 76.5,
+   "y": 51.7,
+   "goal": false,
+   "xg": 0.091,
+   "text": "Attempt blocked. Fabian Rieder (Switzerland) left footed shot from outside the box is blocked. Assisted by Nico Elvedi."
+  },
+  {
+   "minute": "50",
+   "seconds": 2942.0,
+   "team": "Argentina",
+   "player": "Nahuel Molina",
+   "type": "Shot Off Target",
+   "x": 77.1,
+   "y": 28.4,
+   "goal": false,
+   "xg": 0.061,
+   "text": "Attempt missed. Nahuel Molina (Argentina) right footed shot from outside the box misses to the left. Assisted by Lionel Messi with a through ball."
+  },
+  {
+   "minute": "52",
+   "seconds": 3063.0,
+   "team": "Argentina",
+   "player": "Julián Alvarez",
+   "type": "Shot Blocked",
+   "x": 79.8,
+   "y": 65.1,
+   "goal": false,
+   "xg": 0.095,
+   "text": "Attempt blocked. Julián Alvarez (Argentina) left footed shot from outside the box is blocked."
+  },
+  {
+   "minute": "55",
+   "seconds": 3297.0,
+   "team": "Switzerland",
+   "player": "Dan Ndoye",
+   "type": "Shot Blocked",
+   "x": 88.9,
+   "y": 64.0,
+   "goal": false,
+   "xg": 0.199,
+   "text": "Attempt blocked. Dan Ndoye (Switzerland) right footed shot from the left side of the box is blocked."
+  },
+  {
+   "minute": "60",
+   "seconds": 3590.0,
+   "team": "Switzerland",
+   "player": "Breel Embolo",
+   "type": "Shot On Target",
+   "x": 91.4,
+   "y": 50.3,
+   "goal": false,
+   "xg": 0.311,
+   "text": "Attempt saved. Breel Embolo (Switzerland) header from the centre of the box is saved in the bottom left corner by Emiliano Martínez (Argentina). Assisted by Ricardo Rodríguez with a cross."
+  },
+  {
+   "minute": "65",
+   "seconds": 3884.0,
+   "team": "Switzerland",
+   "player": "Dan Ndoye",
+   "type": "Shot On Target",
+   "x": 90.8,
+   "y": 60.1,
+   "goal": false,
+   "xg": 0.192,
+   "text": "Attempt saved. Dan Ndoye (Switzerland) header from the centre of the box is saved in the bottom right corner by Emiliano Martínez (Argentina). Assisted by Ricardo Rodríguez with a cross."
+  },
+  {
+   "minute": "66",
+   "seconds": 3920.0,
+   "team": "Switzerland",
+   "player": "Granit Xhaka",
+   "type": "Shot On Target",
+   "x": 69.1,
+   "y": 34.8,
+   "goal": false,
+   "xg": 0.039,
+   "text": "Attempt saved. Granit Xhaka (Switzerland) left footed shot from outside the box is saved in the bottom right corner by Emiliano Martínez (Argentina). Assisted by Denis Zakaria."
+  },
+  {
+   "minute": "67",
+   "seconds": 4015.0,
+   "team": "Switzerland",
+   "player": "Dan Ndoye",
+   "type": "Goal",
+   "x": 96.1,
+   "y": 66.2,
+   "goal": true,
+   "xg": 0.188,
+   "text": "Goal! Argentina 1, Switzerland 1. Dan Ndoye (Switzerland) right footed shot from a difficult angle on the left to the centre of the goal. Assisted by Ricardo Rodríguez with a through ball."
+  },
+  {
+   "minute": "89",
+   "seconds": 5328.0,
+   "team": "Argentina",
+   "player": "Alexis Mac Allister",
+   "type": "Shot Off Target",
+   "x": 95.7,
+   "y": 51.9,
+   "goal": false,
+   "xg": 0.525,
+   "text": "Attempt missed. Alexis Mac Allister (Argentina) header from very close range is close, but misses the top left corner. Assisted by Nico González."
+  },
+  {
+   "minute": "90'+2",
+   "seconds": 5400.0,
+   "team": "Argentina",
+   "player": "Lionel Messi",
+   "type": "Shot Off Target",
+   "x": 78.8,
+   "y": 56.4,
+   "goal": false,
+   "xg": 0.108,
+   "text": "Attempt missed. Lionel Messi (Argentina) right footed shot from outside the box is close, but misses to the right. Assisted by Enzo Fernández following a corner."
+  },
+  {
+   "minute": "90'+3",
+   "seconds": 5400.0,
+   "team": "Argentina",
+   "player": "Nico González",
+   "type": "Shot Off Target",
+   "x": 89.5,
+   "y": 75.0,
+   "goal": false,
+   "xg": 0.102,
+   "text": "Attempt missed. Nico González (Argentina) left footed shot from the left side of the box is high and wide to the left. Assisted by Lionel Messi."
+  },
+  {
+   "minute": "90'+9",
+   "seconds": 5400.0,
+   "team": "Argentina",
+   "player": "Lisandro Martínez",
+   "type": "Shot On Target",
+   "x": 86.5,
+   "y": 45.4,
+   "goal": false,
+   "xg": 0.245,
+   "text": "Attempt saved. Lisandro Martínez (Argentina) left footed shot from the centre of the box is saved in the bottom left corner by Gregor Kobel (Switzerland)."
+  },
+  {
+   "minute": "91",
+   "seconds": 5442.0,
+   "team": "Argentina",
+   "player": "Lautaro Martínez",
+   "type": "Shot Blocked",
+   "x": 86.4,
+   "y": 41.8,
+   "goal": false,
+   "xg": 0.218,
+   "text": "Attempt blocked. Lautaro Martínez (Argentina) right footed shot from the centre of the box is blocked. Assisted by Alexis Mac Allister."
+  },
+  {
+   "minute": "91",
+   "seconds": 5444.0,
+   "team": "Argentina",
+   "player": "Nico González",
+   "type": "Shot Blocked",
+   "x": 88.1,
+   "y": 61.2,
+   "goal": false,
+   "xg": 0.222,
+   "text": "Attempt blocked. Nico González (Argentina) left footed shot from the centre of the box is blocked. Assisted by Lautaro Martínez."
+  },
+  {
+   "minute": "92",
+   "seconds": 5488.0,
+   "team": "Argentina",
+   "player": "Julián Alvarez",
+   "type": "Shot Off Target",
+   "x": 71.9,
+   "y": 64.6,
+   "goal": false,
+   "xg": 0.05,
+   "text": "Attempt missed. Julián Alvarez (Argentina) right footed shot from outside the box is high and wide to the right. Assisted by Leandro Paredes following a corner."
+  },
+  {
+   "minute": "93",
+   "seconds": 5549.0,
+   "team": "Argentina",
+   "player": "Thiago Almada",
+   "type": "Shot On Target",
+   "x": 87.1,
+   "y": 63.2,
+   "goal": false,
+   "xg": 0.184,
+   "text": "Attempt saved. Thiago Almada (Argentina) right footed shot from the left side of the box is saved in the centre of the goal by Gregor Kobel (Switzerland). Assisted by Julián Alvarez."
+  },
+  {
+   "minute": "95",
+   "seconds": 5686.0,
+   "team": "Argentina",
+   "player": null,
+   "type": "Shot Hit Woodwork",
+   "x": 79.1,
+   "y": 64.9,
+   "goal": false,
+   "xg": 0.09,
+   "text": "Thiago Almada (Argentina) hits the left post with a right footed shot from outside the box. Assisted by Leandro Paredes."
+  },
+  {
+   "minute": "99",
+   "seconds": 5928.0,
+   "team": "Switzerland",
+   "player": "Granit Xhaka",
+   "type": "Shot Off Target",
+   "x": 74.4,
+   "y": 65.8,
+   "goal": false,
+   "xg": 0.06,
+   "text": "Attempt missed. Granit Xhaka (Switzerland) left footed shot from outside the box is too high. Assisted by Ardon Jashari."
+  },
+  {
+   "minute": "103",
+   "seconds": 6174.0,
+   "team": "Argentina",
+   "player": "Lionel Messi",
+   "type": "Shot Blocked",
+   "x": 72.2,
+   "y": 41.8,
+   "goal": false,
+   "xg": 0.057,
+   "text": "Attempt blocked. Lionel Messi (Argentina) left footed shot from outside the box is blocked."
+  },
+  {
+   "minute": "105",
+   "seconds": 6286.0,
+   "team": "Switzerland",
+   "player": "Ardon Jashari",
+   "type": "Shot Off Target",
+   "x": 72.7,
+   "y": 45.0,
+   "goal": false,
+   "xg": 0.062,
+   "text": "Attempt missed. Ardon Jashari (Switzerland) left footed shot from outside the box is high and wide to the left. Assisted by Zeki Amdouni."
+  },
+  {
+   "minute": "105'+1",
+   "seconds": 6300.0,
+   "team": "Argentina",
+   "player": "Lisandro Martínez",
+   "type": "Shot Blocked",
+   "x": 77.5,
+   "y": 54.2,
+   "goal": false,
+   "xg": 0.098,
+   "text": "Attempt blocked. Lisandro Martínez (Argentina) right footed shot from outside the box is blocked."
+  },
+  {
+   "minute": "105'+2",
+   "seconds": 6300.0,
+   "team": "Argentina",
+   "player": "Cristian Romero",
+   "type": "Shot Off Target",
+   "x": 90.3,
+   "y": 53.0,
+   "goal": false,
+   "xg": 0.259,
+   "text": "Attempt missed. Cristian Romero (Argentina) header from the centre of the box is high and wide to the left. Assisted by Lionel Messi with a cross following a corner."
+  },
+  {
+   "minute": "112",
+   "seconds": 6687.0,
+   "team": "Argentina",
+   "player": "Lionel Messi",
+   "type": "Shot On Target",
+   "x": 81.2,
+   "y": 46.2,
+   "goal": false,
+   "xg": 0.142,
+   "text": "Attempt saved. Lionel Messi (Argentina) left footed shot from outside the box is saved in the bottom left corner by Gregor Kobel (Switzerland). Assisted by Thiago Almada."
+  },
+  {
+   "minute": "112",
+   "seconds": 6701.0,
+   "team": "Argentina",
+   "player": "Julián Alvarez",
+   "type": "Goal",
+   "x": 78.2,
+   "y": 68.7,
+   "goal": true,
+   "xg": 0.074,
+   "text": "Goal! Argentina 2, Switzerland 1. Julián Alvarez (Argentina) right footed shot from outside the box to the top right corner. Assisted by José Manuel López."
+  },
+  {
+   "minute": "119",
+   "seconds": 7129.0,
+   "team": "Argentina",
+   "player": "Lionel Messi",
+   "type": "Shot Blocked",
+   "x": 87.1,
+   "y": 36.6,
+   "goal": false,
+   "xg": 0.182,
+   "text": "Attempt blocked. Lionel Messi (Argentina) left footed shot from the right side of the box is blocked. Assisted by Julián Alvarez."
+  },
+  {
+   "minute": "120'+1",
+   "seconds": 7200.0,
+   "team": "Argentina",
+   "player": "Thiago Almada",
+   "type": "Shot On Target",
+   "x": 91.1,
+   "y": 52.6,
+   "goal": false,
+   "xg": 0.446,
+   "text": "Attempt saved. Thiago Almada (Argentina) right footed shot from the centre of the box is saved in the bottom left corner by Gregor Kobel (Switzerland). Assisted by Lautaro Martínez."
+  },
+  {
+   "minute": "120'+1",
+   "seconds": 7200.0,
+   "team": "Argentina",
+   "player": "Lautaro Martínez",
+   "type": "Goal",
+   "x": 85.3,
+   "y": 50.1,
+   "goal": true,
+   "xg": 0.226,
+   "text": "Goal! Argentina 3, Switzerland 1. Lautaro Martínez (Argentina) right footed shot from the centre of the box to the bottom right corner following a fast break."
+  }
+ ],
+ "lineups": [
+  {
+   "team": "Argentina",
+   "formation": "4-1-3-2",
+   "starters": [
+    {
+     "name": "Emiliano Martínez",
+     "jersey": "23",
+     "position": "G"
+    },
+    {
+     "name": "Lisandro Martínez",
+     "jersey": "6",
+     "position": "CD-L"
+    },
+    {
+     "name": "Cristian Romero",
+     "jersey": "13",
+     "position": "CD-R"
+    },
+    {
+     "name": "Leandro Paredes",
+     "jersey": "5",
+     "position": "SW"
+    },
+    {
+     "name": "Nicolás Tagliafico",
+     "jersey": "3",
+     "position": "LB"
+    },
+    {
+     "name": "Nahuel Molina",
+     "jersey": "26",
+     "position": "RB"
+    },
+    {
+     "name": "Enzo Fernández",
+     "jersey": "24",
+     "position": "CM"
+    },
+    {
+     "name": "Alexis Mac Allister",
+     "jersey": "20",
+     "position": "LM"
+    },
+    {
+     "name": "Rodrigo De Paul",
+     "jersey": "7",
+     "position": "RM"
+    },
+    {
+     "name": "Julián Álvarez",
+     "jersey": "9",
+     "position": "CF-L"
+    },
+    {
+     "name": "Lionel Messi",
+     "jersey": "10",
+     "position": "CF-R"
+    }
+   ],
+   "subs": [
+    {
+     "name": "Nicolás Otamendi",
+     "jersey": "19",
+     "position": null
+    },
+    {
+     "name": "Giuliano Simeone",
+     "jersey": "17",
+     "position": null
+    },
+    {
+     "name": "Exequiel Palacios",
+     "jersey": "14",
+     "position": null
+    },
+    {
+     "name": "Lautaro Martínez",
+     "jersey": "22",
+     "position": null
+    },
+    {
+     "name": "Nico Paz",
+     "jersey": "18",
+     "position": null
+    },
+    {
+     "name": "Facundo Medina",
+     "jersey": "25",
+     "position": null
+    },
+    {
+     "name": "Nico González",
+     "jersey": "15",
+     "position": null
+    },
+    {
+     "name": "Gerónimo Rulli",
+     "jersey": "12",
+     "position": null
+    },
+    {
+     "name": "Thiago Almada",
+     "jersey": "16",
+     "position": null
+    },
+    {
+     "name": "Juan Musso",
+     "jersey": "1",
+     "position": null
+    },
+    {
+     "name": "Valentín Barco",
+     "jersey": "8",
+     "position": null
+    },
+    {
+     "name": "Marcos Senesi",
+     "jersey": "2",
+     "position": null
+    },
+    {
+     "name": "José Manuel López",
+     "jersey": "21",
+     "position": null
+    },
+    {
+     "name": "Giovani Lo Celso",
+     "jersey": "11",
+     "position": null
+    },
+    {
+     "name": "Gonzalo Montiel",
+     "jersey": "4",
+     "position": null
+    }
+   ]
+  },
+  {
+   "team": "Switzerland",
+   "formation": "4-2-3-1",
+   "starters": [
+    {
+     "name": "Gregor Kobel",
+     "jersey": "1",
+     "position": "G"
+    },
+    {
+     "name": "Manuel Akanji",
+     "jersey": "5",
+     "position": "CD-L"
+    },
+    {
+     "name": "Nico Elvedi",
+     "jersey": "4",
+     "position": "CD-R"
+    },
+    {
+     "name": "Ricardo Rodríguez",
+     "jersey": "13",
+     "position": "LB"
+    },
+    {
+     "name": "Denis Zakaria",
+     "jersey": "6",
+     "position": "RB"
+    },
+    {
+     "name": "Fabian Rieder",
+     "jersey": "22",
+     "position": "AM"
+    },
+    {
+     "name": "Granit Xhaka",
+     "jersey": "10",
+     "position": "LM"
+    },
+    {
+     "name": "Remo Freuler",
+     "jersey": "8",
+     "position": "RM"
+    },
+    {
+     "name": "Breel Embolo",
+     "jersey": "7",
+     "position": "F"
+    },
+    {
+     "name": "Dan Ndoye",
+     "jersey": "11",
+     "position": "AM-L"
+    },
+    {
+     "name": "Djibril Sow",
+     "jersey": "15",
+     "position": "AM-R"
+    }
+   ],
+   "subs": [
+    {
+     "name": "Ardon Jashari",
+     "jersey": "14",
+     "position": "SUB"
+    },
+    {
+     "name": "Marvin Keller",
+     "jersey": "21",
+     "position": "SUB"
+    },
+    {
+     "name": "Noah Okafor",
+     "jersey": "19",
+     "position": "SUB"
+    },
+    {
+     "name": "Michel Aebischer",
+     "jersey": "20",
+     "position": "SUB"
+    },
+    {
+     "name": "Yvon Mvogo",
+     "jersey": "12",
+     "position": "SUB"
+    },
+    {
+     "name": "Miro Muheim",
+     "jersey": "2",
+     "position": "SUB"
+    },
+    {
+     "name": "Aurèle Amenda",
+     "jersey": "24",
+     "position": "SUB"
+    },
+    {
+     "name": "Rubén Vargas",
+     "jersey": "17",
+     "position": "SUB"
+    },
+    {
+     "name": "Eray Cömert",
+     "jersey": "18",
+     "position": "SUB"
+    },
+    {
+     "name": "Silvan Widmer",
+     "jersey": "3",
+     "position": "SUB"
+    },
+    {
+     "name": "Luca Jaquez",
+     "jersey": "25",
+     "position": "SUB"
+    },
+    {
+     "name": "Christian Fassnacht",
+     "jersey": "16",
+     "position": "SUB"
+    },
+    {
+     "name": "Cedric Itten",
+     "jersey": "26",
+     "position": "SUB"
+    },
+    {
+     "name": "Zeki Amdouni",
+     "jersey": "23",
+     "position": "SUB"
+    }
+   ]
+  }
+ ],
+ "attendance": 69045,
+ "venue": "GEHA Field at Arrowhead Stadium, Kansas City, Missouri, USA"
+}
