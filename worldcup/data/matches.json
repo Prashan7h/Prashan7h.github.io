@@ -4202,16 +4202,18 @@
    "round": "Semi-final",
    "date": "2026-07-15",
    "time": "15:00 UTC-4",
-   "team1": "W99",
-   "team2": "W100",
+   "team1": "England",
+   "team2": "Argentina",
    "group": null,
    "ground": "Atlanta",
    "score": null,
    "goals1": [],
    "goals2": [],
-   "espn_id": null,
+   "espn_id": "760515",
    "status": "scheduled",
-   "slug": "2026-07-15-w99-vs-w100"
+   "utc_date": "2026-07-15T19:00Z",
+   "venue": "Mercedes-Benz Stadium",
+   "slug": "2026-07-15-england-vs-argentina"
   },
   {
    "num": 103,
