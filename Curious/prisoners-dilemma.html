@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-KVBPX8VW');</script>
+    <!-- End Google Tag Manager -->
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="The Prisoner's Dilemma — a simple 2x2 game that explains why rational actors defect, why cooperation is fragile, and how repetition changes everything.">
+    <link rel="icon" type="image/svg+xml" href="../images/favicon.svg">
+    <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon-32.png">
+    <link rel="apple-touch-icon" href="../images/apple-touch-icon.png">
+    <title>The Prisoner's Dilemma | Prashanth Shankar</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+
+    <style>
+        *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+        html { font-size: 16px; scroll-behavior: smooth; }
+        body {
+            background: #fff;
+            color: #000;
+            font-family: 'Inter', -apple-system, sans-serif;
+            font-weight: 400;
+            line-height: 1.7;
+        }
+        ::selection { background: #000; color: #fff; }
+
+        .page {
+            max-width: 720px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        header {
+            padding: 2.5rem 0 0;
+        }
+
+        .back-link {
+            font-size: 0.75rem;
+            font-weight: 400;
+            letter-spacing: 0.04em;
+            color: #000;
+            text-decoration: none;
+            transition: opacity 0.2s ease;
+        }
+        .back-link:hover { opacity: 0.5; }
+
+        article {
+            padding: 4rem 0 3rem;
+        }
+
+        article h1 {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 2.6rem;
+            font-weight: 600;
+            line-height: 1.15;
+            margin-bottom: 1rem;
+        }
+
+        .deck {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.25rem;
+            font-style: italic;
+            line-height: 1.5;
+            color: #000;
+            margin-bottom: 2.5rem;
+        }
+
+        article h2 {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.8rem;
+            font-weight: 600;
+            line-height: 1.2;
+            margin: 3rem 0 1rem;
+        }
+
+        article p {
+            font-size: 0.95rem;
+            font-weight: 300;
+            line-height: 1.75;
+            margin-bottom: 1rem;
+        }
+
+        article em {
+            font-style: italic;
+        }
+
+        .pullquote {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.35rem;
+            font-style: italic;
+            line-height: 1.45;
+            padding: 1.5rem 0 1.5rem 1.5rem;
+            border-left: 2px solid #000;
+            margin: 2rem 0;
+            color: #000;
+        }
+
+        .figure {
+            margin: 2.5rem 0;
+        }
+        .figure svg {
+            display: block;
+            width: 100%;
+            height: auto;
+            max-width: 640px;
+            margin: 0 auto;
+        }
+        .caption {
+            font-size: 0.78rem;
+            color: #666;
+            text-align: center;
+            margin-top: 0.8rem;
+            line-height: 1.5;
+            font-style: italic;
+            font-family: 'Cormorant Garamond', serif;
+        }
+
+        hr.divider {
+            border: none;
+            border-top: 1px solid #000;
+            margin: 3rem 0;
+        }
+
+        .references {
+            font-size: 0.8rem;
+            color: #555;
+            line-height: 1.7;
+            margin-top: 2rem;
+        }
+        .references h3 {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: #000;
+            margin-bottom: 0.75rem;
+        }
+        .references ol {
+            padding-left: 1.2rem;
+        }
+        .references li {
+            margin-bottom: 0.35rem;
+        }
+
+        footer {
+            padding: 2rem 0 3rem;
+            font-size: 0.75rem;
+            color: #666;
+        }
+        footer a { color: inherit; text-decoration: underline; text-underline-offset: 0.2em; }
+    </style>
+</head>
+<body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KVBPX8VW" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+    <div class="page">
+        <header>
+            <a href="index.html" class="back-link">&larr; Wonderland</a>
+        </header>
+
+        <article>
+            <h1>The Prisoner's Dilemma</h1>
+            <p class="deck">A four-cell table, dreamt up at RAND in 1950, that quietly explains arms races, overfished oceans, price wars, and why trust is such a strange and valuable thing.</p>
+
+            <p>Two suspects are arrested for a serious crime. The evidence is thin. The prosecutor puts each of them in a separate room and offers the same deal: confess and implicate your partner and you walk free, while your partner does ten years. If neither of you talks, we only have you on a minor charge and you both get one year. If you both talk, you both get five.</p>
+
+            <p>Neither can see or signal the other. What do you do?</p>
+
+            <p>The awful, unavoidable answer &mdash; from the standpoint of cold self-interest &mdash; is that you should talk. And so should they. And when you both talk, you both end up with five years, when you could have had one apiece by keeping quiet. That is the <em>Prisoner's Dilemma</em>: a situation in which every individual doing what is best for themselves leaves the group worse off than if they had all resisted the temptation.</p>
+
+            <h2>Where the game comes from</h2>
+
+            <p>The dilemma was invented in 1950 by Merrill Flood and Melvin Dresher, two researchers at the RAND Corporation who were stress-testing the new mathematics of game theory that John von Neumann and Oskar Morgenstern had laid out a few years earlier. Their story, involving two prisoners and a district attorney, was added by Albert Tucker while giving a talk at Stanford, and the name stuck.</p>
+
+            <p>The setting matters less than the structure. Any situation with the same shape of payoffs is a Prisoner's Dilemma. Two firms deciding whether to advertise. Two countries deciding whether to build more missiles. Two fishing fleets deciding whether to observe a catch limit. Two strangers deciding whether to tip the waiter in a city they will never visit again. Same table, same trap.</p>
+
+            <div class="figure">
+                <svg viewBox="0 0 640 320" xmlns="http://www.w3.org/2000/svg">
+                    <!-- Column labels -->
+                    <text x="380" y="40" font-family="'Cormorant Garamond', serif" font-style="italic" font-size="16" fill="#000" text-anchor="middle">Player B</text>
+                    <text x="290" y="72" font-family="Inter, sans-serif" font-size="13" fill="#000" text-anchor="middle">Cooperate</text>
+                    <text x="470" y="72" font-family="Inter, sans-serif" font-size="13" fill="#000" text-anchor="middle">Defect</text>
+
+                    <!-- Row labels -->
+                    <text x="60" y="200" font-family="'Cormorant Garamond', serif" font-style="italic" font-size="16" fill="#000" text-anchor="middle" transform="rotate(-90 60 200)">Player A</text>
+                    <text x="170" y="146" font-family="Inter, sans-serif" font-size="13" fill="#000" text-anchor="end">Cooperate</text>
+                    <text x="170" y="246" font-family="Inter, sans-serif" font-size="13" fill="#000" text-anchor="end">Defect</text>
+
+                    <!-- Grid -->
+                    <g stroke="#000" stroke-width="1" fill="#fff">
+                        <rect x="200" y="90" width="180" height="100"/>
+                        <rect x="380" y="90" width="180" height="100"/>
+                        <rect x="200" y="190" width="180" height="100"/>
+                        <rect x="380" y="190" width="180" height="100"/>
+                    </g>
+
+                    <!-- Cell payoffs -->
+                    <g font-family="'Cormorant Garamond', serif" font-size="17" text-anchor="middle" fill="#000">
+                        <text x="290" y="132">&minus;1, &minus;1</text>
+                        <text x="470" y="132">&minus;10, 0</text>
+                        <text x="290" y="232">0, &minus;10</text>
+                        <text x="470" y="232">&minus;5, &minus;5</text>
+                    </g>
+                    <g font-family="Inter, sans-serif" font-size="11" fill="#666" font-style="italic" text-anchor="middle">
+                        <text x="290" y="160">both stay silent</text>
+                        <text x="470" y="160">A is betrayed</text>
+                        <text x="290" y="260">B is betrayed</text>
+                        <text x="470" y="260">both talk</text>
+                    </g>
+                </svg>
+                <p class="caption">The payoff matrix. Each cell shows (A's outcome, B's outcome) in years of prison, so higher is better. Defecting beats cooperating no matter what the other does &mdash; and yet both defecting is worse for both than both cooperating.</p>
+            </div>
+
+            <p>The trap is easy to see once the numbers are on the page. Suppose your partner cooperates. Then cooperating costs you one year, and defecting costs you zero &mdash; defect. Suppose your partner defects. Then cooperating costs you ten years, and defecting costs you five &mdash; defect. Whatever they do, defecting is better. So a rational, self-interested player defects. Both players reason this way. Both defect. Both end up in a cell they both would have paid money to avoid.</p>
+
+            <h2>Why it stings</h2>
+
+            <p>This result was, and remains, philosophically annoying. Adam Smith's famous claim was that markets convert private selfishness into public benefit, as if by an invisible hand. The Prisoner's Dilemma is a small counter-example: a case where private rationality reliably produces public irrationality. There is no bug in anyone's reasoning. There is no oversight, no failure of intelligence. The players are perfectly rational and they cook themselves.</p>
+
+            <p>Once you have the pattern in your head, you see it everywhere. Two countries would each be safer with fewer nuclear weapons, but neither wants to be the one holding fewer. Every fishing boat would benefit from a healthy fish stock, but each individual boat maximises its own catch by taking one more fish today. Every honest firm would prefer that no firm bribe, but a firm that unilaterally refuses to bribe loses contracts. Global carbon emissions, doping in cycling, spam in your inbox, cheating on a group project &mdash; the same shape.</p>
+
+            <p>The economist Garrett Hardin gave the multi-player version its enduring name in 1968: the <em>tragedy of the commons</em>. It is the Prisoner's Dilemma at scale.</p>
+
+            <p class="pullquote">&ldquo;Freedom in a commons brings ruin to all.&rdquo;</p>
+
+            <h2>Repetition changes the game</h2>
+
+            <p>A one-shot Prisoner's Dilemma is a dead end. Rational players defect and that is that. But almost none of the interactions that matter in real life are one-shot. You have to buy fish again next week. The two superpowers will still be here in five years. Your colleague sits opposite you every day.</p>
+
+            <p>In the 1980s the political scientist Robert Axelrod ran a famous experiment. He invited scholars from around the world to submit computer strategies to play the Prisoner's Dilemma against each other, over and over. Some entries were long and elaborate. Some tried to exploit others. Some tried to be nice.</p>
+
+            <p>The winner, in two consecutive tournaments, was the shortest program submitted. It was called <em>Tit-for-Tat</em> and had just two rules: on the first round, cooperate. On every round after that, do whatever the other player did last time.</p>
+
+            <div class="figure">
+                <svg viewBox="0 0 640 220" xmlns="http://www.w3.org/2000/svg">
+                    <!-- Row header -->
+                    <text x="40" y="60" font-family="'Cormorant Garamond', serif" font-style="italic" font-size="14" fill="#000">You</text>
+                    <text x="40" y="120" font-family="'Cormorant Garamond', serif" font-style="italic" font-size="14" fill="#000">Tit-for-Tat</text>
+
+                    <!-- Round columns -->
+                    <g font-family="Inter, sans-serif" font-size="11" fill="#666" text-anchor="middle" font-style="italic">
+                        <text x="160" y="30">round 1</text>
+                        <text x="240" y="30">2</text>
+                        <text x="320" y="30">3</text>
+                        <text x="400" y="30">4</text>
+                        <text x="480" y="30">5</text>
+                        <text x="560" y="30">6</text>
+                    </g>
+
+                    <!-- Your moves: C D C D D C -->
+                    <g stroke="#000" stroke-width="1">
+                        <rect x="140" y="40" width="40" height="30" fill="#fff"/>
+                        <rect x="220" y="40" width="40" height="30" fill="#000"/>
+                        <rect x="300" y="40" width="40" height="30" fill="#fff"/>
+                        <rect x="380" y="40" width="40" height="30" fill="#000"/>
+                        <rect x="460" y="40" width="40" height="30" fill="#000"/>
+                        <rect x="540" y="40" width="40" height="30" fill="#fff"/>
+                    </g>
+                    <g font-family="'Cormorant Garamond', serif" font-size="15" text-anchor="middle">
+                        <text x="160" y="61" fill="#000">C</text>
+                        <text x="240" y="61" fill="#fff">D</text>
+                        <text x="320" y="61" fill="#000">C</text>
+                        <text x="400" y="61" fill="#fff">D</text>
+                        <text x="480" y="61" fill="#fff">D</text>
+                        <text x="560" y="61" fill="#000">C</text>
+                    </g>
+
+                    <!-- Tit-for-Tat: C C D C D D -->
+                    <g stroke="#000" stroke-width="1">
+                        <rect x="140" y="100" width="40" height="30" fill="#fff"/>
+                        <rect x="220" y="100" width="40" height="30" fill="#fff"/>
+                        <rect x="300" y="100" width="40" height="30" fill="#000"/>
+                        <rect x="380" y="100" width="40" height="30" fill="#fff"/>
+                        <rect x="460" y="100" width="40" height="30" fill="#000"/>
+                        <rect x="540" y="100" width="40" height="30" fill="#000"/>
+                    </g>
+                    <g font-family="'Cormorant Garamond', serif" font-size="15" text-anchor="middle">
+                        <text x="160" y="121" fill="#000">C</text>
+                        <text x="240" y="121" fill="#000">C</text>
+                        <text x="320" y="121" fill="#fff">D</text>
+                        <text x="400" y="121" fill="#000">C</text>
+                        <text x="480" y="121" fill="#fff">D</text>
+                        <text x="560" y="121" fill="#fff">D</text>
+                    </g>
+
+                    <!-- Legend -->
+                    <g transform="translate(140,170)">
+                        <rect x="0" y="0" width="14" height="14" stroke="#000" fill="#fff"/>
+                        <text x="22" y="11" font-family="Inter, sans-serif" font-size="12" fill="#000">Cooperate</text>
+                        <rect x="130" y="0" width="14" height="14" stroke="#000" fill="#000"/>
+                        <text x="152" y="11" font-family="Inter, sans-serif" font-size="12" fill="#000">Defect</text>
+                    </g>
+                    <text x="320" y="205" font-family="'Cormorant Garamond', serif" font-style="italic" font-size="13" fill="#666" text-anchor="middle">Tit-for-Tat mirrors your previous move &mdash; forgiving after a defection, but only once you stop.</text>
+                </svg>
+                <p class="caption">Tit-for-Tat in action. Nice on round one, then a perfect copy of what the opponent did last time.</p>
+            </div>
+
+            <p>Axelrod distilled four properties that made the winning strategies win: be <em>nice</em> (never defect first), be <em>retaliatory</em> (punish defection so no one profits from it), be <em>forgiving</em> (return to cooperation the instant the other side does), and be <em>clear</em> (so the other side can figure you out and cooperate back). Long-lived interactions turn the Prisoner's Dilemma inside out. What was a trap becomes a mechanism for building trust.</p>
+
+            <h2>What it teaches</h2>
+
+            <p>The Prisoner's Dilemma is not just a puzzle. It is a lens. Almost every institution we have &mdash; contracts, courts, reputations, brands, professional licensing, treaties, unions, religions &mdash; can be read as a device for turning one-shot dilemmas into repeated ones, so that the shadow of the future weighs on today's choice. A firm that cheats a customer once and disappears has played a one-shot game. A firm with a name on the door has to worry about tomorrow's customer hearing about today's.</p>
+
+            <p>It also explains why cooperation is fragile. Repeated play only helps if the other player expects to see you again. Anonymity, mobility, and one-time transactions all erode the machinery. This is one reason small towns and tight professions have their own quiet enforcement: everyone will see everyone else next week. Cities and the internet, by contrast, have to invent reputation systems from scratch, and it is hard work.</p>
+
+            <p>And it explains why some of the biggest problems on Earth &mdash; climate, antibiotic resistance, ocean fisheries &mdash; are so genuinely hard. They are not failures of virtue or intelligence. They are Prisoner's Dilemmas with millions of players and only one round, or with rounds spaced so far apart that the shadow of the future is short. The players are behaving rationally. That is exactly the problem.</p>
+
+            <p>Two prisoners in two rooms. Four cells in a table. Somehow, if you keep pulling, most of civilisation is on the other end of the string.</p>
+
+            <hr class="divider">
+
+            <div class="references">
+                <h3>Further reading</h3>
+                <ol>
+                    <li>Von Neumann, J. &amp; Morgenstern, O. (1944). <em>Theory of Games and Economic Behavior</em>.</li>
+                    <li>Flood, M. (1958). <em>Some Experimental Games</em>, RAND Research Memorandum RM&ndash;789.</li>
+                    <li>Hardin, G. (1968). <em>The Tragedy of the Commons</em>, Science.</li>
+                    <li>Axelrod, R. (1984). <em>The Evolution of Cooperation</em>.</li>
+                    <li>Poundstone, W. (1992). <em>Prisoner's Dilemma</em>.</li>
+                </ol>
+            </div>
+        </article>
+
+        <footer>
+            <a href="index.html">&larr; Back to Wonderland</a>
+        </footer>
+    </div>
+</body>
+</html>
