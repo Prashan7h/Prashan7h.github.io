@@ -4188,12 +4188,32 @@
    "team2": "Spain",
    "group": null,
    "ground": "Dallas (Arlington)",
-   "score": null,
+   "score": {
+    "ft": [
+     0,
+     2
+    ],
+    "ht": [
+     0,
+     1
+    ]
+   },
    "goals1": [],
-   "goals2": [],
+   "goals2": [
+    {
+     "name": "Mikel Oyarzabal",
+     "minute": "22",
+     "penalty": true
+    },
+    {
+     "name": "Pedro Porro",
+     "minute": "58"
+    }
+   ],
    "espn_id": "760514",
-   "status": "live",
+   "status": "finished",
    "utc_date": "2026-07-14T19:00Z",
+   "attendance": 70176,
    "venue": "AT&T Stadium",
    "slug": "2026-07-14-france-vs-spain"
   },

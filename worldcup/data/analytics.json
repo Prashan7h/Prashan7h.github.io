@@ -1,19 +1,19 @@
 {
  "elo": [
   {
+   "team": "Spain",
+   "elo": 2187,
+   "delta": 87
+  },
+  {
    "team": "Argentina",
    "elo": 2175,
    "delta": 55
   },
   {
-   "team": "Spain",
-   "elo": 2150,
-   "delta": 50
-  },
-  {
    "team": "France",
-   "elo": 2145,
-   "delta": 95
+   "elo": 2108,
+   "delta": 58
   },
   {
    "team": "England",
@@ -258,7 +258,8 @@
    2100,
    2116,
    2134,
-   2150
+   2150,
+   2187
   ],
   "France": [
    2050,
@@ -267,7 +268,8 @@
    2097,
    2112,
    2119,
-   2145
+   2145,
+   2108
   ],
   "England": [
    2040,
@@ -2587,35 +2589,46 @@
     1951
    ],
    "elo_delta": 17.5
+  },
+  "101": {
+   "prediction": {
+    "p1": 0.3641,
+    "pd": 0.2581,
+    "p2": 0.3778,
+    "score": [
+     1,
+     1
+    ],
+    "lambdas": [
+     1.34,
+     1.36
+    ]
+   },
+   "elo_before": [
+    2145,
+    2150
+   ],
+   "elo_delta": -37.0
   }
  },
  "sims": [
-  {
-   "team": "Argentina",
-   "r32": 1.0,
-   "r16": 1.0,
-   "qf": 1.0,
-   "sf": 1.0,
-   "f": 0.6182,
-   "champ": 0.3379
-  },
   {
    "team": "Spain",
    "r32": 1.0,
    "r16": 1.0,
    "qf": 1.0,
    "sf": 1.0,
-   "f": 0.502,
-   "champ": 0.2513
+   "f": 1.0,
+   "champ": 0.5606
   },
   {
-   "team": "France",
+   "team": "Argentina",
    "r32": 1.0,
    "r16": 1.0,
    "qf": 1.0,
    "sf": 1.0,
-   "f": 0.498,
-   "champ": 0.2454
+   "f": 0.6193,
+   "champ": 0.3003
   },
   {
    "team": "England",
@@ -2623,8 +2636,17 @@
    "r16": 1.0,
    "qf": 1.0,
    "sf": 1.0,
-   "f": 0.3818,
-   "champ": 0.1654
+   "f": 0.3807,
+   "champ": 0.1391
+  },
+  {
+   "team": "France",
+   "r32": 1.0,
+   "r16": 1.0,
+   "qf": 1.0,
+   "sf": 1.0,
+   "f": 0.0,
+   "champ": 0.0
   },
   {
    "team": "Brazil",
@@ -3116,6 +3138,15 @@
    "win_prob": 0.337
   },
   {
+   "num": 101,
+   "slug": "2026-07-14-france-vs-spain",
+   "date": "2026-07-14",
+   "winner": "Spain",
+   "loser": "France",
+   "score": "0–2",
+   "win_prob": 0.378
+  },
+  {
    "num": 11,
    "slug": "2026-06-24-switzerland-vs-canada",
    "date": "2026-06-24",
@@ -3251,13 +3282,13 @@
    "win_prob": 0.495
   }
  ],
- "brier": 0.5141,
- "n_scored": 100,
+ "brier": 0.5148,
+ "n_scored": 101,
  "goal_timing": [
   38,
-  30,
+  31,
   53,
-  47,
+  48,
   41,
   83
  ],
@@ -3288,6 +3319,11 @@
    "team": "England"
   },
   {
+   "name": "Mikel Oyarzabal",
+   "goals": 5,
+   "team": "Spain"
+  },
+  {
    "name": "Ousmane Dembélé",
    "goals": 5,
    "team": "France"
@@ -3301,11 +3337,6 @@
    "name": "Julián Quiñones",
    "goals": 4,
    "team": "Mexico"
-  },
-  {
-   "name": "Mikel Oyarzabal",
-   "goals": 4,
-   "team": "Spain"
   },
   {
    "name": "Vinícius Júnior",

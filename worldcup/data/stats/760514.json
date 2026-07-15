@@ -1,0 +1,884 @@
+{
+ "teams": [
+  {
+   "name": "France",
+   "stats": {
+    "possessionPct": "49.1",
+    "totalShots": "10",
+    "shotsOnTarget": "3",
+    "wonCorners": "7",
+    "foulsCommitted": "11",
+    "offsides": "4",
+    "saves": "0",
+    "yellowCards": "2",
+    "redCards": "0"
+   }
+  },
+  {
+   "name": "Spain",
+   "stats": {
+    "possessionPct": "50.9",
+    "totalShots": "10",
+    "shotsOnTarget": "2",
+    "wonCorners": "1",
+    "foulsCommitted": "12",
+    "offsides": "5",
+    "saves": "3",
+    "yellowCards": "1",
+    "redCards": "0"
+   }
+  }
+ ],
+ "events": [
+  {
+   "type": "Kickoff",
+   "minute": "",
+   "team": null,
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Yellow Card",
+   "minute": "9'",
+   "team": "France",
+   "text": "Adrien Rabiot (France) is shown the yellow card for a bad foul.",
+   "players": [
+    "Adrien Rabiot"
+   ]
+  },
+  {
+   "type": "Penalty - Scored",
+   "minute": "22'",
+   "team": "Spain",
+   "text": "Goal! France 0, Spain 1. Mikel Oyarzabal (Spain) converts the penalty with a left footed shot to the top right corner.",
+   "players": [
+    "Mikel Oyarzabal"
+   ]
+  },
+  {
+   "type": "Start Delay",
+   "minute": "24'",
+   "team": "Spain",
+   "text": "Delay in match for a drinks break.",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "24'",
+   "team": "France",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "27'",
+   "team": "Spain",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "27'",
+   "team": "France",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "29'",
+   "team": "France",
+   "text": "Delay in match because of an injury William Saliba (France).",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "29'",
+   "team": "Spain",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "30'",
+   "team": "Spain",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "30'",
+   "team": "France",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "Substitution",
+   "minute": "30'",
+   "team": "France",
+   "text": "Substitution, France. Maxence Lacroix replaces William Saliba because of an injury.",
+   "players": [
+    "Maxence Lacroix",
+    "William Saliba"
+   ]
+  },
+  {
+   "type": "Yellow Card",
+   "minute": "31'",
+   "team": "Spain",
+   "text": "Marc Cucurella (Spain) is shown the yellow card for a bad foul.",
+   "players": [
+    "Marc Cucurella"
+   ]
+  },
+  {
+   "type": "Start Delay",
+   "minute": "43'",
+   "team": "Spain",
+   "text": "Delay in match because of an injury Aymeric Laporte (Spain).",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "43'",
+   "team": "France",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "44'",
+   "team": "Spain",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "44'",
+   "team": "France",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "44'",
+   "team": "Spain",
+   "text": "Delay in match (Spain).",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "44'",
+   "team": "France",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "44'",
+   "team": "Spain",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "44'",
+   "team": "France",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Halftime",
+   "minute": "45'+7'",
+   "team": null,
+   "text": "First Half ends, France 0, Spain 1.",
+   "players": []
+  },
+  {
+   "type": "Substitution",
+   "minute": "45'",
+   "team": "France",
+   "text": "Substitution, France. Manu Koné replaces Adrien Rabiot.",
+   "players": [
+    "Manu Koné",
+    "Adrien Rabiot"
+   ]
+  },
+  {
+   "type": "Start 2nd Half",
+   "minute": "45'",
+   "team": null,
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Substitution",
+   "minute": "57'",
+   "team": "France",
+   "text": "Substitution, France. Désiré Doué replaces Bradley Barcola.",
+   "players": [
+    "Désiré Doué",
+    "Bradley Barcola"
+   ]
+  },
+  {
+   "type": "Goal",
+   "minute": "58'",
+   "team": "Spain",
+   "text": "Goal! France 0, Spain 2. Pedro Porro (Spain) right footed shot from the centre of the box to the bottom right corner. Assisted by Dani Olmo.",
+   "players": [
+    "Pedro Porro",
+    "Dani Olmo"
+   ]
+  },
+  {
+   "type": "Start Delay",
+   "minute": "69'",
+   "team": "Spain",
+   "text": "Delay in match for a drinks break.",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "69'",
+   "team": "France",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "72'",
+   "team": "Spain",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "72'",
+   "team": "France",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Substitution",
+   "minute": "72'",
+   "team": "France",
+   "text": "Substitution, France. Théo Hernández replaces Lucas Digne.",
+   "players": [
+    "Theo Hernández",
+    "Lucas Digne"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "72'",
+   "team": "France",
+   "text": "Substitution, France. Rayan Cherki replaces Michael Olise.",
+   "players": [
+    "Rayan Cherki",
+    "Michael Olise"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "74'",
+   "team": "Spain",
+   "text": "Substitution, Spain. Ferran Torres replaces Mikel Oyarzabal.",
+   "players": [
+    "Ferran Torres",
+    "Mikel Oyarzabal"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "78'",
+   "team": "Spain",
+   "text": "Substitution, Spain. Mikel Merino replaces Dani Olmo.",
+   "players": [
+    "Mikel Merino",
+    "Dani Olmo"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "78'",
+   "team": "Spain",
+   "text": "Substitution, Spain. Pedri replaces Fabián Ruiz.",
+   "players": [
+    "Pedri",
+    "Fabián Ruiz"
+   ]
+  },
+  {
+   "type": "Start Delay",
+   "minute": "83'",
+   "team": "France",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "84'",
+   "team": "France",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Substitution",
+   "minute": "84'",
+   "team": "Spain",
+   "text": "Substitution, Spain. Marcos Llorente replaces Pedro Porro.",
+   "players": [
+    "Marcos Llorente",
+    "Pedro Porro"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "84'",
+   "team": "Spain",
+   "text": "Substitution, Spain. Nico Williams replaces Álex Baena.",
+   "players": [
+    "Nico Williams",
+    "Álex Baena"
+   ]
+  },
+  {
+   "type": "Yellow Card",
+   "minute": "86'",
+   "team": "France",
+   "text": "Kylian Mbappé (France) is shown the yellow card for a bad foul.",
+   "players": [
+    "Kylian Mbappé"
+   ]
+  },
+  {
+   "type": "End Regular Time",
+   "minute": "90'+7'",
+   "team": null,
+   "text": "Second Half ends, France 0, Spain 2.",
+   "players": []
+  }
+ ],
+ "shots": [
+  {
+   "minute": "6",
+   "seconds": 353.0,
+   "team": "France",
+   "player": "Adrien Rabiot",
+   "type": "Shot Off Target",
+   "x": 74.7,
+   "y": 47.7,
+   "goal": false,
+   "xg": 0.076,
+   "text": "Attempt missed. Adrien Rabiot (France) left footed shot from outside the box misses to the left following a corner."
+  },
+  {
+   "minute": "11",
+   "seconds": 601.0,
+   "team": "Spain",
+   "player": "Álex Baena",
+   "type": "Shot Blocked",
+   "x": 81.8,
+   "y": 29.2,
+   "goal": false,
+   "xg": 0.088,
+   "text": "Attempt blocked. Álex Baena (Spain) right footed shot from outside the box is blocked."
+  },
+  {
+   "minute": "22",
+   "seconds": 1312.0,
+   "team": "Spain",
+   "player": "Mikel Oyarzabal",
+   "type": "Penalty - Scored",
+   "x": 88.5,
+   "y": 50.0,
+   "goal": true,
+   "xg": 0.76,
+   "text": "Goal! France 0, Spain 1. Mikel Oyarzabal (Spain) converts the penalty with a left footed shot to the top right corner."
+  },
+  {
+   "minute": "34",
+   "seconds": 1988.0,
+   "team": "Spain",
+   "player": "Dani Olmo",
+   "type": "Shot Off Target",
+   "x": 72.7,
+   "y": 66.3,
+   "goal": false,
+   "xg": 0.051,
+   "text": "Attempt missed. Dani Olmo (Spain) right footed shot from outside the box is high and wide to the right. Assisted by Fabián Ruiz."
+  },
+  {
+   "minute": "36",
+   "seconds": 2145.0,
+   "team": "France",
+   "player": "Bradley Barcola",
+   "type": "Shot Off Target",
+   "x": 80.3,
+   "y": 68.1,
+   "goal": false,
+   "xg": 0.089,
+   "text": "Attempt missed. Bradley Barcola (France) right footed shot from outside the box is high and wide to the right. Assisted by Ousmane Dembélé."
+  },
+  {
+   "minute": "37",
+   "seconds": 2194.0,
+   "team": "Spain",
+   "player": "Pedro Porro",
+   "type": "Shot Off Target",
+   "x": 74.0,
+   "y": 28.4,
+   "goal": false,
+   "xg": 0.049,
+   "text": "Attempt missed. Pedro Porro (Spain) right footed shot from outside the box is high and wide to the left. Assisted by Fabián Ruiz."
+  },
+  {
+   "minute": "38",
+   "seconds": 2228.0,
+   "team": "Spain",
+   "player": "Fabián Ruiz",
+   "type": "Shot Blocked",
+   "x": 91.1,
+   "y": 44.9,
+   "goal": false,
+   "xg": 0.409,
+   "text": "Attempt blocked. Fabián Ruiz (Spain) left footed shot from the centre of the box is blocked. Assisted by Lamine Yamal."
+  },
+  {
+   "minute": "52",
+   "seconds": 3084.0,
+   "team": "Spain",
+   "player": "Mikel Oyarzabal",
+   "type": "Shot Off Target",
+   "x": 78.4,
+   "y": 69.5,
+   "goal": false,
+   "xg": 0.073,
+   "text": "Attempt missed. Mikel Oyarzabal (Spain) left footed shot from outside the box is too high. Assisted by Álex Baena."
+  },
+  {
+   "minute": "58",
+   "seconds": 3437.0,
+   "team": "Spain",
+   "player": "Álex Baena",
+   "type": "Shot Blocked",
+   "x": 80.8,
+   "y": 74.4,
+   "goal": false,
+   "xg": 0.07,
+   "text": "Attempt blocked. Álex Baena (Spain) right footed shot from outside the box is blocked. Assisted by Dani Olmo."
+  },
+  {
+   "minute": "58",
+   "seconds": 3453.0,
+   "team": "Spain",
+   "player": "Pedro Porro",
+   "type": "Goal",
+   "x": 88.8,
+   "y": 42.7,
+   "goal": true,
+   "xg": 0.287,
+   "text": "Goal! France 0, Spain 2. Pedro Porro (Spain) right footed shot from the centre of the box to the bottom right corner. Assisted by Dani Olmo."
+  },
+  {
+   "minute": "65",
+   "seconds": 3877.0,
+   "team": "France",
+   "player": "Aurélien Tchouaméni",
+   "type": "Shot Off Target",
+   "x": 93.9,
+   "y": 59.7,
+   "goal": false,
+   "xg": 0.376,
+   "text": "Attempt missed. Aurélien Tchouaméni (France) right footed shot from the centre of the box is too high. Assisted by Michael Olise with a cross following a corner."
+  },
+  {
+   "minute": "67",
+   "seconds": 3991.0,
+   "team": "France",
+   "player": "Kylian Mbappé",
+   "type": "Shot Blocked",
+   "x": 83.1,
+   "y": 35.4,
+   "goal": false,
+   "xg": 0.126,
+   "text": "Attempt blocked. Kylian Mbappé (France) right footed shot from the right side of the box is blocked."
+  },
+  {
+   "minute": "67",
+   "seconds": 4020.0,
+   "team": "France",
+   "player": "Désiré Doué",
+   "type": "Shot Blocked",
+   "x": 80.1,
+   "y": 63.6,
+   "goal": false,
+   "xg": 0.102,
+   "text": "Attempt blocked. Désiré Doué (France) right footed shot from outside the box is blocked. Assisted by Michael Olise."
+  },
+  {
+   "minute": "78",
+   "seconds": 4668.0,
+   "team": "Spain",
+   "player": "Ferran Torres",
+   "type": "Shot Off Target",
+   "x": 90.5,
+   "y": 51.9,
+   "goal": false,
+   "xg": 0.272,
+   "text": "Attempt missed. Ferran Torres (Spain) header from the centre of the box is close, but misses to the left."
+  },
+  {
+   "minute": "81",
+   "seconds": 4855.0,
+   "team": "France",
+   "player": "Désiré Doué",
+   "type": "Shot On Target",
+   "x": 76.2,
+   "y": 71.5,
+   "goal": false,
+   "xg": 0.058,
+   "text": "Attempt saved. Désiré Doué (France) right footed shot from outside the box is saved in the top centre of the goal by Unai Simón (Spain)."
+  },
+  {
+   "minute": "89",
+   "seconds": 5287.0,
+   "team": "France",
+   "player": "Kylian Mbappé",
+   "type": "Shot Off Target",
+   "x": 81.4,
+   "y": 74.9,
+   "goal": false,
+   "xg": 0.071,
+   "text": "Attempt missed. Kylian Mbappé (France) right footed shot from outside the box is too high from a direct free kick."
+  },
+  {
+   "minute": "90'+4",
+   "seconds": 5400.0,
+   "team": "Spain",
+   "player": "Nico Williams",
+   "type": "Shot Off Target",
+   "x": 95.5,
+   "y": 70.5,
+   "goal": false,
+   "xg": 0.138,
+   "text": "Attempt missed. Nico Williams (Spain) left footed shot from a difficult angle on the left is close, but misses to the left. Assisted by Ferran Torres."
+  },
+  {
+   "minute": "90'+5",
+   "seconds": 5400.0,
+   "team": "France",
+   "player": "Ousmane Dembélé",
+   "type": "Shot On Target",
+   "x": 90.2,
+   "y": 30.3,
+   "goal": false,
+   "xg": 0.145,
+   "text": "Attempt saved. Ousmane Dembélé (France) left footed shot from the right side of the box is saved in the top centre of the goal by Unai Simón (Spain). Assisted by Rayan Cherki."
+  },
+  {
+   "minute": "90'+7",
+   "seconds": 5400.0,
+   "team": "France",
+   "player": "Ousmane Dembélé",
+   "type": "Shot On Target",
+   "x": 88.1,
+   "y": 27.4,
+   "goal": false,
+   "xg": 0.113,
+   "text": "Attempt saved. Ousmane Dembélé (France) right footed shot from the right side of the box is saved in the centre of the goal by Unai Simón (Spain). Assisted by Désiré Doué."
+  },
+  {
+   "minute": "90'+7",
+   "seconds": 5400.0,
+   "team": "France",
+   "player": "Kylian Mbappé",
+   "type": "Shot Off Target",
+   "x": 77.1,
+   "y": 70.9,
+   "goal": false,
+   "xg": 0.063,
+   "text": "Attempt missed. Kylian Mbappé (France) right footed shot from outside the box is too high. Assisted by Désiré Doué."
+  }
+ ],
+ "lineups": [
+  {
+   "team": "France",
+   "formation": "4-2-3-1",
+   "starters": [
+    {
+     "name": "Mike Maignan",
+     "jersey": "16",
+     "position": "G"
+    },
+    {
+     "name": "William Saliba",
+     "jersey": "17",
+     "position": "CD-L"
+    },
+    {
+     "name": "Dayot Upamecano",
+     "jersey": "4",
+     "position": "CD-R"
+    },
+    {
+     "name": "Lucas Digne",
+     "jersey": "3",
+     "position": "LB"
+    },
+    {
+     "name": "Jules Koundé",
+     "jersey": "5",
+     "position": "RB"
+    },
+    {
+     "name": "Michael Olise",
+     "jersey": "11",
+     "position": "AM"
+    },
+    {
+     "name": "Adrien Rabiot",
+     "jersey": "14",
+     "position": "LM"
+    },
+    {
+     "name": "Aurélien Tchouaméni",
+     "jersey": "8",
+     "position": "RM"
+    },
+    {
+     "name": "Kylian Mbappé",
+     "jersey": "10",
+     "position": "F"
+    },
+    {
+     "name": "Bradley Barcola",
+     "jersey": "12",
+     "position": "AM-L"
+    },
+    {
+     "name": "Ousmane Dembélé",
+     "jersey": "7",
+     "position": "AM-R"
+    }
+   ],
+   "subs": [
+    {
+     "name": "Brice Samba",
+     "jersey": "1",
+     "position": "SUB"
+    },
+    {
+     "name": "Robin Risser",
+     "jersey": "23",
+     "position": "SUB"
+    },
+    {
+     "name": "Ibrahima Konaté",
+     "jersey": "15",
+     "position": "SUB"
+    },
+    {
+     "name": "Malo Gusto",
+     "jersey": "2",
+     "position": "SUB"
+    },
+    {
+     "name": "Jean-Philippe Mateta",
+     "jersey": "22",
+     "position": "SUB"
+    },
+    {
+     "name": "Marcus Thuram",
+     "jersey": "9",
+     "position": "SUB"
+    },
+    {
+     "name": "Manu Koné",
+     "jersey": "6",
+     "position": "SUB"
+    },
+    {
+     "name": "Lucas Hernández",
+     "jersey": "21",
+     "position": "SUB"
+    },
+    {
+     "name": "Theo Hernández",
+     "jersey": "19",
+     "position": "SUB"
+    },
+    {
+     "name": "Désiré Doué",
+     "jersey": "20",
+     "position": "SUB"
+    },
+    {
+     "name": "Rayan Cherki",
+     "jersey": "24",
+     "position": "SUB"
+    },
+    {
+     "name": "Maghnes Akliouche",
+     "jersey": "25",
+     "position": "SUB"
+    },
+    {
+     "name": "N'Golo Kanté",
+     "jersey": "13",
+     "position": "SUB"
+    },
+    {
+     "name": "Warren Zaïre-Emery",
+     "jersey": "18",
+     "position": "SUB"
+    },
+    {
+     "name": "Maxence Lacroix",
+     "jersey": "26",
+     "position": "SUB"
+    }
+   ]
+  },
+  {
+   "team": "Spain",
+   "formation": "4-2-3-1",
+   "starters": [
+    {
+     "name": "Unai Simón",
+     "jersey": "23",
+     "position": "G"
+    },
+    {
+     "name": "Aymeric Laporte",
+     "jersey": "14",
+     "position": "CD-L"
+    },
+    {
+     "name": "Pau Cubarsí",
+     "jersey": "22",
+     "position": "CD-R"
+    },
+    {
+     "name": "Marc Cucurella",
+     "jersey": "24",
+     "position": "LB"
+    },
+    {
+     "name": "Pedro Porro",
+     "jersey": "12",
+     "position": "RB"
+    },
+    {
+     "name": "Dani Olmo",
+     "jersey": "10",
+     "position": "AM"
+    },
+    {
+     "name": "Fabián Ruiz",
+     "jersey": "8",
+     "position": "LM"
+    },
+    {
+     "name": "Rodri",
+     "jersey": "16",
+     "position": "RM"
+    },
+    {
+     "name": "Mikel Oyarzabal",
+     "jersey": "21",
+     "position": "F"
+    },
+    {
+     "name": "Álex Baena",
+     "jersey": "15",
+     "position": "AM-L"
+    },
+    {
+     "name": "Lamine Yamal",
+     "jersey": "19",
+     "position": "AM-R"
+    }
+   ],
+   "subs": [
+    {
+     "name": "Alejandro Grimaldo",
+     "jersey": "3",
+     "position": "SUB"
+    },
+    {
+     "name": "Marc Pubill",
+     "jersey": "2",
+     "position": "SUB"
+    },
+    {
+     "name": "Ferran Torres",
+     "jersey": "7",
+     "position": "SUB"
+    },
+    {
+     "name": "Borja Iglesias",
+     "jersey": "26",
+     "position": "SUB"
+    },
+    {
+     "name": "Marcos Llorente",
+     "jersey": "5",
+     "position": "SUB"
+    },
+    {
+     "name": "Víctor Muñoz",
+     "jersey": "25",
+     "position": "SUB"
+    },
+    {
+     "name": "Nico Williams",
+     "jersey": "17",
+     "position": "SUB"
+    },
+    {
+     "name": "Yéremy Pino",
+     "jersey": "11",
+     "position": "SUB"
+    },
+    {
+     "name": "Pedri",
+     "jersey": "20",
+     "position": "SUB"
+    },
+    {
+     "name": "Eric García",
+     "jersey": "4",
+     "position": "SUB"
+    },
+    {
+     "name": "Gavi",
+     "jersey": "9",
+     "position": "SUB"
+    },
+    {
+     "name": "Martín Zubimendi",
+     "jersey": "18",
+     "position": "SUB"
+    },
+    {
+     "name": "Joan García",
+     "jersey": "13",
+     "position": "SUB"
+    },
+    {
+     "name": "David Raya",
+     "jersey": "1",
+     "position": "SUB"
+    },
+    {
+     "name": "Mikel Merino",
+     "jersey": "6",
+     "position": "SUB"
+    }
+   ]
+  }
+ ],
+ "attendance": 70176,
+ "venue": "AT&T Stadium, Arlington, Texas, USA"
+}
