@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-KVBPX8VW');</script>
+    <!-- End Google Tag Manager -->
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Group theory turns symmetry into arithmetic — the shared grammar of kaleidoscopes, Rubik's cubes, conservation laws, and the Standard Model of particle physics.">
+    <link rel="icon" type="image/svg+xml" href="../images/favicon.svg">
+    <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon-32.png">
+    <link rel="apple-touch-icon" href="../images/apple-touch-icon.png">
+    <title>Group Theory and Symmetry | Prashanth Shankar</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+
+    <style>
+        *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+        html { font-size: 16px; scroll-behavior: smooth; }
+        body {
+            background: #fff;
+            color: #000;
+            font-family: 'Inter', -apple-system, sans-serif;
+            font-weight: 400;
+            line-height: 1.7;
+        }
+        ::selection { background: #000; color: #fff; }
+
+        .page {
+            max-width: 720px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        header {
+            padding: 2.5rem 0 0;
+        }
+
+        .back-link {
+            font-size: 0.75rem;
+            font-weight: 400;
+            letter-spacing: 0.04em;
+            color: #000;
+            text-decoration: none;
+            transition: opacity 0.2s ease;
+        }
+        .back-link:hover { opacity: 0.5; }
+
+        article {
+            padding: 4rem 0 3rem;
+        }
+
+        article h1 {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 2.6rem;
+            font-weight: 600;
+            line-height: 1.15;
+            margin-bottom: 1rem;
+        }
+
+        .deck {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.25rem;
+            font-style: italic;
+            line-height: 1.5;
+            color: #000;
+            margin-bottom: 2.5rem;
+        }
+
+        article h2 {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.8rem;
+            font-weight: 600;
+            line-height: 1.2;
+            margin: 3rem 0 1rem;
+        }
+
+        article p {
+            font-size: 0.95rem;
+            font-weight: 300;
+            line-height: 1.75;
+            margin-bottom: 1rem;
+        }
+
+        article em {
+            font-style: italic;
+        }
+
+        .pullquote {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.35rem;
+            font-style: italic;
+            line-height: 1.45;
+            padding: 1.5rem 0 1.5rem 1.5rem;
+            border-left: 2px solid #000;
+            margin: 2rem 0;
+            color: #000;
+        }
+
+        .figure {
+            margin: 2.5rem 0;
+        }
+        .figure svg {
+            display: block;
+            width: 100%;
+            height: auto;
+            max-width: 640px;
+            margin: 0 auto;
+        }
+        .caption {
+            font-size: 0.78rem;
+            color: #666;
+            text-align: center;
+            margin-top: 0.8rem;
+            line-height: 1.5;
+            font-style: italic;
+            font-family: 'Cormorant Garamond', serif;
+        }
+
+        hr.divider {
+            border: none;
+            border-top: 1px solid #000;
+            margin: 3rem 0;
+        }
+
+        .references {
+            font-size: 0.8rem;
+            color: #555;
+            line-height: 1.7;
+            margin-top: 2rem;
+        }
+        .references h3 {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: #000;
+            margin-bottom: 0.75rem;
+        }
+        .references ol {
+            padding-left: 1.2rem;
+        }
+        .references li {
+            margin-bottom: 0.35rem;
+        }
+
+        footer {
+            padding: 2rem 0 3rem;
+            font-size: 0.75rem;
+            color: #666;
+        }
+        footer a { color: inherit; text-decoration: underline; text-underline-offset: 0.2em; }
+    </style>
+</head>
+<body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KVBPX8VW" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+    <div class="page">
+        <header>
+            <a href="index.html" class="back-link">&larr; Wonderland</a>
+        </header>
+
+        <article>
+            <h1>Group Theory and Symmetry</h1>
+            <p class="deck">When mathematicians noticed that rotating a triangle, shuffling a deck, and leaving the equations of physics unchanged all obeyed the same four rules, they had stumbled onto the hidden grammar of symmetry.</p>
+
+            <p>Pick up a Rubik's cube. Twist a face; twist another. The combined manoeuvre is itself a twist. Undo them in reverse order and you are back where you started. Twist nothing, and nothing changes. You already know how to think in a group; you just do not call it that.</p>
+
+            <p>A group is one of the leanest structures in all of mathematics. It is also, quietly, one of the most consequential ideas of the last two hundred years. It is the language in which chemists talk about crystals, in which physicists write the Standard Model, and in which pure mathematicians eventually pinned down every atomic building-block of finite symmetry &mdash; ending with a monster nobody had ordered.</p>
+
+            <h2>Four rules in a matchbook</h2>
+
+            <p>Take a set of things &mdash; call them <em>g</em>, <em>h</em>, <em>k</em> &mdash; and a way of combining any two into a third. If that combination obeys four rules, you have a group.</p>
+
+            <p><em>Closure</em>: combining two elements gives you another element of the set. <em>Associativity</em>: (<em>g</em>&thinsp;&middot;&thinsp;<em>h</em>)&thinsp;&middot;&thinsp;<em>k</em> equals <em>g</em>&thinsp;&middot;&thinsp;(<em>h</em>&thinsp;&middot;&thinsp;<em>k</em>); the parentheses do not matter. <em>Identity</em>: there is a do-nothing element <em>e</em> where <em>e</em>&thinsp;&middot;&thinsp;<em>g</em> = <em>g</em>. <em>Inverse</em>: every <em>g</em> has a partner <em>g</em><sup>&minus;1</sup> that undoes it, sending you back to <em>e</em>.</p>
+
+            <p>That is the whole definition. Whole numbers under addition form a group. Non-zero rationals under multiplication form a group. So do the shuffles of a deck of cards, the rotations of a molecule, the moves of a Rubik's cube, the invertible <em>n</em>&times;<em>n</em> matrices, and &mdash; the discovery of the twentieth century &mdash; the invisible transformations that leave the laws of physics unchanged.</p>
+
+            <p>The axioms look almost too weak to be useful. That is their strength. Almost any interesting structure hides a group inside it, and once you have surfaced the group, you can prove things about the structure without ever looking at it again.</p>
+
+            <h2>Symmetries of a triangle</h2>
+
+            <p>The clearest way to see this is to hold up an equilateral triangle and ask: what can you do to it without visibly changing it?</p>
+
+            <p>You can rotate it by 120&deg; or 240&deg;. You can leave it alone &mdash; rotation by 0&deg;. And you can flip it across each of three axes of reflection. Six operations in all. Perform any two in sequence and the result is still one of the same six &mdash; the triangle is still a triangle. This set of six operations, under &ldquo;do one then the other,&rdquo; is a group. Mathematicians call it the <em>dihedral group</em> D<sub>3</sub>. It is the symmetry group of the triangle.</p>
+
+            <div class="figure">
+                <svg viewBox="0 0 640 260" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                        <marker id="rotarrow" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse">
+                            <path d="M 0 0 L 10 5 L 0 10 z" fill="#000"/>
+                        </marker>
+                    </defs>
+
+                    <!-- Panel 1: Identity -->
+                    <g transform="translate(60, 30)">
+                        <polygon points="60,20 110,110 10,110" fill="none" stroke="#000" stroke-width="1"/>
+                        <text x="60" y="15" font-family="'Cormorant Garamond', serif" font-size="14" fill="#000" text-anchor="middle" font-style="italic">A</text>
+                        <text x="122" y="120" font-family="'Cormorant Garamond', serif" font-size="14" fill="#000" font-style="italic">B</text>
+                        <text x="0" y="120" font-family="'Cormorant Garamond', serif" font-size="14" fill="#000" text-anchor="end" font-style="italic">C</text>
+                        <text x="60" y="160" font-family="Inter, sans-serif" font-size="12" fill="#000" text-anchor="middle">identity</text>
+                        <text x="60" y="178" font-family="'Cormorant Garamond', serif" font-size="12" fill="#666" text-anchor="middle" font-style="italic">do nothing</text>
+                    </g>
+
+                    <!-- Panel 2: Rotation 120 -->
+                    <g transform="translate(260, 30)">
+                        <polygon points="60,20 110,110 10,110" fill="none" stroke="#000" stroke-width="1"/>
+                        <text x="60" y="15" font-family="'Cormorant Garamond', serif" font-size="14" fill="#000" text-anchor="middle" font-style="italic">C</text>
+                        <text x="122" y="120" font-family="'Cormorant Garamond', serif" font-size="14" fill="#000" font-style="italic">A</text>
+                        <text x="0" y="120" font-family="'Cormorant Garamond', serif" font-size="14" fill="#000" text-anchor="end" font-style="italic">B</text>
+                        <!-- curved rotation arrow -->
+                        <path d="M 80 60 A 30 30 0 1 1 60 40" fill="none" stroke="#000" stroke-width="1" marker-end="url(#rotarrow)"/>
+                        <text x="60" y="160" font-family="Inter, sans-serif" font-size="12" fill="#000" text-anchor="middle">rotate 120&deg;</text>
+                        <text x="60" y="178" font-family="'Cormorant Garamond', serif" font-size="12" fill="#666" text-anchor="middle" font-style="italic">r</text>
+                    </g>
+
+                    <!-- Panel 3: Reflection -->
+                    <g transform="translate(460, 30)">
+                        <polygon points="60,20 110,110 10,110" fill="none" stroke="#000" stroke-width="1"/>
+                        <text x="60" y="15" font-family="'Cormorant Garamond', serif" font-size="14" fill="#000" text-anchor="middle" font-style="italic">A</text>
+                        <text x="122" y="120" font-family="'Cormorant Garamond', serif" font-size="14" fill="#000" font-style="italic">C</text>
+                        <text x="0" y="120" font-family="'Cormorant Garamond', serif" font-size="14" fill="#000" text-anchor="end" font-style="italic">B</text>
+                        <!-- mirror axis -->
+                        <line x1="60" y1="4" x2="60" y2="126" stroke="#000" stroke-width="0.75" stroke-dasharray="3 3"/>
+                        <text x="60" y="160" font-family="Inter, sans-serif" font-size="12" fill="#000" text-anchor="middle">reflect</text>
+                        <text x="60" y="178" font-family="'Cormorant Garamond', serif" font-size="12" fill="#666" text-anchor="middle" font-style="italic">s</text>
+                    </g>
+
+                    <!-- Footer -->
+                    <text x="320" y="240" font-family="'Cormorant Garamond', serif" font-style="italic" font-size="14" fill="#666" text-anchor="middle">six operations in all: {e, r, r&sup2;, s, rs, r&sup2;s}</text>
+                </svg>
+                <p class="caption">Three of the six symmetries of an equilateral triangle. Any two, composed, land inside the same six &mdash; the four axioms are quietly satisfied.</p>
+            </div>
+
+            <p>The vocabulary generalises. Every regular <em>n</em>-sided polygon has its own dihedral group D<sub>n</sub> with 2<em>n</em> elements. Every finite object &mdash; a snowflake, a virus capsid, a benzene ring, a wallpaper pattern &mdash; has its own symmetry group. Once you have the group, you can predict things about the object without looking at it again. You have translated a <em>geometric</em> question into an <em>algebraic</em> one.</p>
+
+            <p>That translation is what makes group theory so seductive. Reflection and rotation are things you see with your eyes; multiplication and inversion are things you calculate on a page. Group theory says the two are the same subject.</p>
+
+            <p class="pullquote">&ldquo;Wherever groups disclose themselves, or can be introduced, simplicity crystallises out of comparative chaos.&rdquo; &mdash; Eric Temple Bell</p>
+
+            <h2>Symmetry, conservation, and the Standard Model</h2>
+
+            <p>The most consequential place group theory ever showed up was inside physics. In 1918, Emmy Noether proved a theorem that startled a generation of physicists: every <em>continuous symmetry</em> of a physical system corresponds to a <em>conservation law</em>.</p>
+
+            <p>Push the laws of physics forward in time &mdash; nothing changes. That symmetry gives you conservation of energy. Slide them sideways in space &mdash; nothing changes. That gives you conservation of momentum. Rotate them &mdash; nothing changes. That gives you conservation of angular momentum. Behind each conservation law is a group of transformations. The universe, it turns out, is glued together by symmetry.</p>
+
+            <div class="figure">
+                <svg viewBox="0 0 640 240" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                        <marker id="rightarrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+                            <path d="M 0 0 L 10 5 L 0 10 z" fill="#000"/>
+                        </marker>
+                    </defs>
+
+                    <!-- Column headers -->
+                    <text x="140" y="34" font-family="'Cormorant Garamond', serif" font-size="15" font-style="italic" fill="#000" text-anchor="middle">Symmetry (group)</text>
+                    <text x="500" y="34" font-family="'Cormorant Garamond', serif" font-size="15" font-style="italic" fill="#000" text-anchor="middle">Conserved quantity</text>
+                    <line x1="20" y1="46" x2="620" y2="46" stroke="#000" stroke-width="0.5"/>
+
+                    <!-- Row 1 -->
+                    <text x="140" y="82" font-family="Inter, sans-serif" font-size="13" fill="#000" text-anchor="middle">time translation</text>
+                    <text x="140" y="98" font-family="'Cormorant Garamond', serif" font-size="12" fill="#666" text-anchor="middle" font-style="italic">t &rarr; t + &Delta;t</text>
+                    <line x1="240" y1="86" x2="400" y2="86" stroke="#000" stroke-width="0.75" marker-end="url(#rightarrow)"/>
+                    <text x="500" y="90" font-family="Inter, sans-serif" font-size="13" fill="#000" text-anchor="middle">energy</text>
+
+                    <!-- Row 2 -->
+                    <text x="140" y="138" font-family="Inter, sans-serif" font-size="13" fill="#000" text-anchor="middle">space translation</text>
+                    <text x="140" y="154" font-family="'Cormorant Garamond', serif" font-size="12" fill="#666" text-anchor="middle" font-style="italic">x &rarr; x + &Delta;x</text>
+                    <line x1="240" y1="142" x2="400" y2="142" stroke="#000" stroke-width="0.75" marker-end="url(#rightarrow)"/>
+                    <text x="500" y="146" font-family="Inter, sans-serif" font-size="13" fill="#000" text-anchor="middle">momentum</text>
+
+                    <!-- Row 3 -->
+                    <text x="140" y="194" font-family="Inter, sans-serif" font-size="13" fill="#000" text-anchor="middle">rotation</text>
+                    <text x="140" y="210" font-family="'Cormorant Garamond', serif" font-size="12" fill="#666" text-anchor="middle" font-style="italic">SO(3)</text>
+                    <line x1="240" y1="198" x2="400" y2="198" stroke="#000" stroke-width="0.75" marker-end="url(#rightarrow)"/>
+                    <text x="500" y="202" font-family="Inter, sans-serif" font-size="13" fill="#000" text-anchor="middle">angular momentum</text>
+                </svg>
+                <p class="caption">Noether's theorem. For every continuous symmetry group of the laws, there is a quantity that time refuses to alter.</p>
+            </div>
+
+            <p>Twentieth-century particle physics ran with the idea and never stopped. The Standard Model &mdash; the theory that describes every non-gravitational particle we have ever seen &mdash; is, at its core, the statement that nature is invariant under a specific product of groups: SU(3) &times; SU(2) &times; U(1). Each factor generates a family of forces. The photon comes from U(1). The <em>W</em> and <em>Z</em> bosons of the weak force come from SU(2). The gluons that bind quarks come from SU(3). Even the particles themselves are packaged into <em>representations</em> of those groups.</p>
+
+            <p>If that sounds like alchemy, it is not. When Murray Gell-Mann noticed in 1961 that the known mesons and baryons fit inside patterns of the group SU(3), one slot in one pattern was suspiciously empty. He predicted a particle &mdash; the &Omega;<sup>&minus;</sup> &mdash; with a specific charge, mass, and strangeness. Three years later it was found in a bubble chamber, exactly where the group theory said it would be.</p>
+
+            <h2>The Monster at the end of the classification</h2>
+
+            <p>Once mathematicians understood how groups worked, an obvious question presented itself: how many groups are there?</p>
+
+            <p>The answer for one class &mdash; finite <em>simple</em> groups, the &ldquo;atoms&rdquo; from which every finite group is built &mdash; took a century to settle. It required the collaboration of hundreds of mathematicians across dozens of countries, a proof running to tens of thousands of journal pages, and the identification of a handful of infinite families plus twenty-six &ldquo;sporadic&rdquo; groups that fit no family at all.</p>
+
+            <p>The largest sporadic group is called the Monster. It has roughly 8 &times; 10<sup>53</sup> elements. It cannot be pictured. It can barely be constructed. And yet, in the late 1970s, mathematicians noticed that certain numbers describing the Monster kept appearing inside an area of theoretical physics called string theory. They called this coincidence <em>Monstrous Moonshine</em>. Nobody had ordered it; nobody could ignore it. Richard Borcherds won a Fields Medal in 1998 for finally explaining why the two subjects had been secretly talking to each other all along.</p>
+
+            <p>That is what the four sparse axioms of a group ultimately buy you. Start by writing down rules simple enough to fit in a matchbook. Follow them wherever they lead. Along the way you meet triangles and snowflakes, quarks and photons, and &mdash; sitting at the far end &mdash; a 196,883-dimensional monster with a mysterious connection to the fabric of spacetime. Symmetry, once you learn its grammar, does not stop talking.</p>
+
+            <hr class="divider">
+
+            <div class="references">
+                <h3>Further reading</h3>
+                <ol>
+                    <li>Armstrong, M. A. (1988). <em>Groups and Symmetry</em>.</li>
+                    <li>Noether, E. (1918). <em>Invariante Variationsprobleme</em>.</li>
+                    <li>Gell-Mann, M., &amp; Ne'eman, Y. (1964). <em>The Eightfold Way</em>.</li>
+                    <li>Ronan, M. (2006). <em>Symmetry and the Monster</em>.</li>
+                    <li>Livio, M. (2005). <em>The Equation That Couldn't Be Solved</em>.</li>
+                </ol>
+            </div>
+        </article>
+
+        <footer>
+            <a href="index.html">&larr; Back to Wonderland</a>
+        </footer>
+    </div>
+</body>
+</html>
