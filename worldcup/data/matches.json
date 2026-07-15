@@ -4240,7 +4240,7 @@
    "round": "Match for third place",
    "date": "2026-07-18",
    "time": "17:00 UTC-4",
-   "team1": "L101",
+   "team1": "France",
    "team2": "L102",
    "group": null,
    "ground": "Miami (Miami Gardens)",
@@ -4249,14 +4249,14 @@
    "goals2": [],
    "espn_id": null,
    "status": "scheduled",
-   "slug": "2026-07-18-l101-vs-l102"
+   "slug": "2026-07-18-france-vs-l102"
   },
   {
    "num": 104,
    "round": "Final",
    "date": "2026-07-19",
    "time": "15:00 UTC-4",
-   "team1": "W101",
+   "team1": "Spain",
    "team2": "W102",
    "group": null,
    "ground": "New York/New Jersey (East Rutherford)",
@@ -4265,7 +4265,7 @@
    "goals2": [],
    "espn_id": null,
    "status": "scheduled",
-   "slug": "2026-07-19-w101-vs-w102"
+   "slug": "2026-07-19-spain-vs-w102"
   }
  ]
 }
