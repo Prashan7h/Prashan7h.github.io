@@ -1,0 +1,885 @@
+{
+ "teams": [
+  {
+   "name": "England",
+   "stats": {
+    "possessionPct": "35.8",
+    "totalShots": "5",
+    "shotsOnTarget": "2",
+    "wonCorners": "2",
+    "foulsCommitted": "11",
+    "offsides": "1",
+    "saves": "3",
+    "yellowCards": "1",
+    "redCards": "0"
+   }
+  },
+  {
+   "name": "Argentina",
+   "stats": {
+    "possessionPct": "64.2",
+    "totalShots": "15",
+    "shotsOnTarget": "5",
+    "wonCorners": "6",
+    "foulsCommitted": "15",
+    "offsides": "3",
+    "saves": "1",
+    "yellowCards": "3",
+    "redCards": "0"
+   }
+  }
+ ],
+ "events": [
+  {
+   "type": "Kickoff",
+   "minute": "",
+   "team": null,
+   "text": "First Half begins.",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "12'",
+   "team": "Argentina",
+   "text": "Delay in match (Argentina).",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "12'",
+   "team": "England",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "12'",
+   "team": "Argentina",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "12'",
+   "team": "England",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "25'",
+   "team": "Argentina",
+   "text": "Delay in match for a drinks break.",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "25'",
+   "team": "England",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "28'",
+   "team": "Argentina",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "28'",
+   "team": "England",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Yellow Card",
+   "minute": "37'",
+   "team": "England",
+   "text": "Elliot Anderson (England) is shown the yellow card for a bad foul.",
+   "players": [
+    "Elliot Anderson"
+   ]
+  },
+  {
+   "type": "Yellow Card",
+   "minute": "42'",
+   "team": "Argentina",
+   "text": "Lisandro Martínez (Argentina) is shown the yellow card for a bad foul.",
+   "players": [
+    "Lisandro Martínez"
+   ]
+  },
+  {
+   "type": "Halftime",
+   "minute": "45'+4'",
+   "team": null,
+   "text": "First Half ends, England 0, Argentina 0.",
+   "players": []
+  },
+  {
+   "type": "Start 2nd Half",
+   "minute": "45'",
+   "team": null,
+   "text": "Second Half begins England 0, Argentina 0.",
+   "players": []
+  },
+  {
+   "type": "Yellow Card",
+   "minute": "51'",
+   "team": "Argentina",
+   "text": "Cristian Romero (Argentina) is shown the yellow card for a bad foul.",
+   "players": [
+    "Cristian Romero"
+   ]
+  },
+  {
+   "type": "Goal - Volley",
+   "minute": "55'",
+   "team": "England",
+   "text": "Goal! England 1, Argentina 0. Anthony Gordon (England) right footed shot from very close range to the bottom left corner. Assisted by Morgan Rogers with a cross.",
+   "players": [
+    "Anthony Gordon",
+    "Morgan Rogers"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "64'",
+   "team": "Argentina",
+   "text": "Substitution, Argentina. Nico González replaces Leandro Paredes.",
+   "players": [
+    "Nico González",
+    "Leandro Paredes"
+   ]
+  },
+  {
+   "type": "Start Delay",
+   "minute": "69'",
+   "team": "Argentina",
+   "text": "Delay in match for a drinks break.",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "69'",
+   "team": "England",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "72'",
+   "team": "Argentina",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "72'",
+   "team": "England",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Substitution",
+   "minute": "72'",
+   "team": "England",
+   "text": "Substitution, England. Ezri Konsa replaces Anthony Gordon.",
+   "players": [
+    "Ezri Konsa",
+    "Anthony Gordon"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "72'",
+   "team": "Argentina",
+   "text": "Substitution, Argentina. Gonzalo Montiel replaces Nahuel Molina.",
+   "players": [
+    "Gonzalo Montiel",
+    "Nahuel Molina"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "72'",
+   "team": "Argentina",
+   "text": "Substitution, Argentina. Rodrigo De Paul replaces Giuliano Simeone.",
+   "players": [
+    "Rodrigo De Paul",
+    "Giuliano Simeone"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "72'",
+   "team": "Argentina",
+   "text": "Substitution, Argentina. Nicolás Otamendi replaces Lisandro Martínez.",
+   "players": [
+    "Nicolás Otamendi",
+    "Lisandro Martínez"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "81'",
+   "team": "Argentina",
+   "text": "Substitution, Argentina. Lautaro Martínez replaces Nicolás Tagliafico.",
+   "players": [
+    "Lautaro Martínez",
+    "Nicolás Tagliafico"
+   ]
+  },
+  {
+   "type": "Start Delay",
+   "minute": "81'",
+   "team": "England",
+   "text": "Delay in match because of an injury Reece James (England).",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "81'",
+   "team": "Argentina",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "82'",
+   "team": "England",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "82'",
+   "team": "Argentina",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Substitution",
+   "minute": "82'",
+   "team": "England",
+   "text": "Substitution, England. Dan Burn replaces Reece James because of an injury.",
+   "players": [
+    "Dan Burn",
+    "Reece James"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "82'",
+   "team": "England",
+   "text": "Substitution, England. Nico O'Reilly replaces Declan Rice.",
+   "players": [
+    "Nico O'Reilly",
+    "Declan Rice"
+   ]
+  },
+  {
+   "type": "Goal",
+   "minute": "85'",
+   "team": "Argentina",
+   "text": "Goal! England 1, Argentina 1. Enzo Fernández (Argentina) right footed shot from outside the box to the bottom left corner. Assisted by Lionel Messi following a corner.",
+   "players": [
+    "Enzo Fernández",
+    "Lionel Messi"
+   ]
+  },
+  {
+   "type": "Start Delay",
+   "minute": "88'",
+   "team": "England",
+   "text": "Delay in match because of an injury John Stones (England).",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "88'",
+   "team": "Argentina",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "90'",
+   "team": "England",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "90'",
+   "team": "Argentina",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Goal - Header",
+   "minute": "90'+2'",
+   "team": "Argentina",
+   "text": "Goal! England 1, Argentina 2. Lautaro Martínez (Argentina) header from very close range to the top left corner. Assisted by Lionel Messi with a cross.",
+   "players": [
+    "Lautaro Martínez",
+    "Lionel Messi"
+   ]
+  },
+  {
+   "type": "Yellow Card",
+   "minute": "90'+4'",
+   "team": "Argentina",
+   "text": "Rodrigo De Paul (Argentina) is shown the yellow card.",
+   "players": [
+    "Rodrigo De Paul"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "90'+6'",
+   "team": "England",
+   "text": "Substitution, England. Ivan Toney replaces John Stones.",
+   "players": [
+    "Ivan Toney",
+    "John Stones"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "90'+6'",
+   "team": "England",
+   "text": "Substitution, England. Marcus Rashford replaces Djed Spence.",
+   "players": [
+    "Marcus Rashford",
+    "Djed Spence"
+   ]
+  },
+  {
+   "type": "End Regular Time",
+   "minute": "90'+12'",
+   "team": null,
+   "text": "Second Half ends, England 1, Argentina 2.",
+   "players": []
+  }
+ ],
+ "shots": [
+  {
+   "minute": "33",
+   "seconds": 1954.0,
+   "team": "England",
+   "player": "John Stones",
+   "type": "Shot Off Target",
+   "x": 94.0,
+   "y": 40.3,
+   "goal": false,
+   "xg": 0.245,
+   "text": "Attempt missed. John Stones (England) header from the centre of the box is close, but misses to the right. Assisted by Declan Rice with a cross following a set piece situation."
+  },
+  {
+   "minute": "38",
+   "seconds": 2270.0,
+   "team": "Argentina",
+   "player": "Lionel Messi",
+   "type": "Shot Blocked",
+   "x": 73.3,
+   "y": 58.4,
+   "goal": false,
+   "xg": 0.063,
+   "text": "Attempt blocked. Lionel Messi (Argentina) left footed shot from outside the box is blocked. Assisted by Leandro Paredes."
+  },
+  {
+   "minute": "38",
+   "seconds": 2273.0,
+   "team": "Argentina",
+   "player": "Enzo Fernández",
+   "type": "Shot Off Target",
+   "x": 73.1,
+   "y": 42.5,
+   "goal": false,
+   "xg": 0.063,
+   "text": "Attempt missed. Enzo Fernández (Argentina) right footed shot from outside the box is just a bit too high following a set piece situation."
+  },
+  {
+   "minute": "47",
+   "seconds": 2801.0,
+   "team": "Argentina",
+   "player": "Julián Alvarez",
+   "type": "Shot On Target",
+   "x": 90.9,
+   "y": 32.9,
+   "goal": false,
+   "xg": 0.178,
+   "text": "Attempt saved. Julián Alvarez (Argentina) right footed shot from the right side of the box is saved in the bottom right corner by Jordan Pickford (England). Assisted by Giuliano Simeone with a headed pass."
+  },
+  {
+   "minute": "47",
+   "seconds": 2810.0,
+   "team": "Argentina",
+   "player": "Julián Alvarez",
+   "type": "Shot Off Target",
+   "x": 94.8,
+   "y": 30.5,
+   "goal": false,
+   "xg": 0.151,
+   "text": "Attempt missed. Julián Alvarez (Argentina) right footed shot from a difficult angle on the right is close, but misses to the right. Assisted by Lionel Messi."
+  },
+  {
+   "minute": "54",
+   "seconds": 3218.0,
+   "team": "Argentina",
+   "player": "Leandro Paredes",
+   "type": "Shot Off Target",
+   "x": 73.7,
+   "y": 26.8,
+   "goal": false,
+   "xg": 0.045,
+   "text": "Attempt missed. Leandro Paredes (Argentina) right footed shot from outside the box misses to the left. Assisted by Giuliano Simeone."
+  },
+  {
+   "minute": "55",
+   "seconds": 3264.0,
+   "team": "England",
+   "player": "Anthony Gordon",
+   "type": "Goal - Volley",
+   "x": 94.8,
+   "y": 52.6,
+   "goal": true,
+   "xg": 0.716,
+   "text": "Goal! England 1, Argentina 0. Anthony Gordon (England) right footed shot from very close range to the bottom left corner. Assisted by Morgan Rogers with a cross."
+  },
+  {
+   "minute": "61",
+   "seconds": 3628.0,
+   "team": "Argentina",
+   "player": "Enzo Fernández",
+   "type": "Shot Off Target",
+   "x": 76.2,
+   "y": 30.3,
+   "goal": false,
+   "xg": 0.061,
+   "text": "Attempt missed. Enzo Fernández (Argentina) right footed shot from outside the box is too high. Assisted by Leandro Paredes."
+  },
+  {
+   "minute": "66",
+   "seconds": 3945.0,
+   "team": "England",
+   "player": "Declan Rice",
+   "type": "Shot On Target",
+   "x": 80.0,
+   "y": 26.8,
+   "goal": false,
+   "xg": 0.071,
+   "text": "Attempt saved. Declan Rice (England) right footed shot from outside the box is saved in the bottom left corner by Emiliano Martínez (Argentina). Assisted by Reece James."
+  },
+  {
+   "minute": "66",
+   "seconds": 3958.0,
+   "team": "England",
+   "player": "Harry Kane",
+   "type": "Shot Blocked",
+   "x": 72.5,
+   "y": 42.5,
+   "goal": false,
+   "xg": 0.059,
+   "text": "Attempt blocked. Harry Kane (England) right footed shot from outside the box is blocked. Assisted by Declan Rice."
+  },
+  {
+   "minute": "69",
+   "seconds": 4092.0,
+   "team": "Argentina",
+   "player": "Nico González",
+   "type": "Shot On Target",
+   "x": 91.7,
+   "y": 49.3,
+   "goal": false,
+   "xg": 0.324,
+   "text": "Attempt saved. Nico González (Argentina) header from the centre of the box is saved in the centre of the goal by Jordan Pickford (England). Assisted by Lionel Messi with a cross."
+  },
+  {
+   "minute": "76",
+   "seconds": 4502.0,
+   "team": "Argentina",
+   "player": null,
+   "type": "Shot Hit Woodwork",
+   "x": 92.5,
+   "y": 50.3,
+   "goal": false,
+   "xg": 0.361,
+   "text": "Alexis Mac Allister (Argentina) hits the left post with a header from the centre of the box. Assisted by Rodrigo De Paul with a cross."
+  },
+  {
+   "minute": "76",
+   "seconds": 4504.0,
+   "team": "Argentina",
+   "player": "Julián Alvarez",
+   "type": "Shot Off Target",
+   "x": 92.4,
+   "y": 46.0,
+   "goal": false,
+   "xg": 0.502,
+   "text": "Attempt missed. Julián Alvarez (Argentina) left footed shot from the centre of the box misses to the left."
+  },
+  {
+   "minute": "76",
+   "seconds": 4543.0,
+   "team": "Argentina",
+   "player": "Alexis Mac Allister",
+   "type": "Shot On Target",
+   "x": 90.8,
+   "y": 45.5,
+   "goal": false,
+   "xg": 0.263,
+   "text": "Attempt saved. Alexis Mac Allister (Argentina) header from the centre of the box is saved in the centre of the goal by Jordan Pickford (England). Assisted by Rodrigo De Paul with a cross."
+  },
+  {
+   "minute": "79",
+   "seconds": 4704.0,
+   "team": "England",
+   "player": "Morgan Rogers",
+   "type": "Shot Blocked",
+   "x": 78.1,
+   "y": 61.7,
+   "goal": false,
+   "xg": 0.091,
+   "text": "Attempt blocked. Morgan Rogers (England) right footed shot from outside the box is blocked."
+  },
+  {
+   "minute": "84",
+   "seconds": 4989.0,
+   "team": "Argentina",
+   "player": "Rodrigo De Paul",
+   "type": "Shot Blocked",
+   "x": 72.1,
+   "y": 49.3,
+   "goal": false,
+   "xg": 0.06,
+   "text": "Attempt blocked. Rodrigo De Paul (Argentina) right footed shot from outside the box is blocked. Assisted by Enzo Fernández."
+  },
+  {
+   "minute": "85",
+   "seconds": 5067.0,
+   "team": "Argentina",
+   "player": "Enzo Fernández",
+   "type": "Shot Off Target",
+   "x": 72.5,
+   "y": 52.1,
+   "goal": false,
+   "xg": 0.062,
+   "text": "Attempt missed. Enzo Fernández (Argentina) right footed shot from outside the box is just a bit too high. Assisted by Julián Alvarez."
+  },
+  {
+   "minute": "85",
+   "seconds": 5094.0,
+   "team": "Argentina",
+   "player": "Enzo Fernández",
+   "type": "Goal",
+   "x": 76.6,
+   "y": 41.9,
+   "goal": true,
+   "xg": 0.086,
+   "text": "Goal! England 1, Argentina 1. Enzo Fernández (Argentina) right footed shot from outside the box to the bottom left corner. Assisted by Lionel Messi following a corner."
+  },
+  {
+   "minute": "90'+2",
+   "seconds": 5400.0,
+   "team": "Argentina",
+   "player": "Alexis Mac Allister",
+   "type": "Shot Blocked",
+   "x": 82.1,
+   "y": 56.3,
+   "goal": false,
+   "xg": 0.149,
+   "text": "Attempt blocked. Alexis Mac Allister (Argentina) right footed shot from outside the box is blocked. Assisted by Nico González."
+  },
+  {
+   "minute": "90'+2",
+   "seconds": 5400.0,
+   "team": "Argentina",
+   "player": "Lautaro Martínez",
+   "type": "Goal - Header",
+   "x": 96.4,
+   "y": 52.8,
+   "goal": true,
+   "xg": 0.548,
+   "text": "Goal! England 1, Argentina 2. Lautaro Martínez (Argentina) header from very close range to the top left corner. Assisted by Lionel Messi with a cross."
+  }
+ ],
+ "lineups": [
+  {
+   "team": "England",
+   "formation": "4-2-3-1",
+   "starters": [
+    {
+     "name": "Jordan Pickford",
+     "jersey": "1",
+     "position": "G"
+    },
+    {
+     "name": "Marc Guéhi",
+     "jersey": "6",
+     "position": "CD-L"
+    },
+    {
+     "name": "John Stones",
+     "jersey": "5",
+     "position": "CD-R"
+    },
+    {
+     "name": "Djed Spence",
+     "jersey": "25",
+     "position": "LB"
+    },
+    {
+     "name": "Reece James",
+     "jersey": "24",
+     "position": "RB"
+    },
+    {
+     "name": "Jude Bellingham",
+     "jersey": "10",
+     "position": "AM"
+    },
+    {
+     "name": "Elliot Anderson",
+     "jersey": "8",
+     "position": "LM"
+    },
+    {
+     "name": "Declan Rice",
+     "jersey": "4",
+     "position": "RM"
+    },
+    {
+     "name": "Harry Kane",
+     "jersey": "9",
+     "position": "F"
+    },
+    {
+     "name": "Anthony Gordon",
+     "jersey": "18",
+     "position": "AM-L"
+    },
+    {
+     "name": "Morgan Rogers",
+     "jersey": "17",
+     "position": "AM-R"
+    }
+   ],
+   "subs": [
+    {
+     "name": "Jordan Henderson",
+     "jersey": "14",
+     "position": "SUB"
+    },
+    {
+     "name": "Noni Madueke",
+     "jersey": "20",
+     "position": "SUB"
+    },
+    {
+     "name": "Eberechi Eze",
+     "jersey": "21",
+     "position": "SUB"
+    },
+    {
+     "name": "Ollie Watkins",
+     "jersey": "19",
+     "position": "SUB"
+    },
+    {
+     "name": "Bukayo Saka",
+     "jersey": "7",
+     "position": "SUB"
+    },
+    {
+     "name": "Trevoh Chalobah",
+     "jersey": "12",
+     "position": "SUB"
+    },
+    {
+     "name": "James Trafford",
+     "jersey": "23",
+     "position": "SUB"
+    },
+    {
+     "name": "Dan Burn",
+     "jersey": "15",
+     "position": "SUB"
+    },
+    {
+     "name": "Dean Henderson",
+     "jersey": "13",
+     "position": "SUB"
+    },
+    {
+     "name": "Marcus Rashford",
+     "jersey": "11",
+     "position": "SUB"
+    },
+    {
+     "name": "Ivan Toney",
+     "jersey": "22",
+     "position": "SUB"
+    },
+    {
+     "name": "Ezri Konsa",
+     "jersey": "2",
+     "position": "SUB"
+    },
+    {
+     "name": "Kobbie Mainoo",
+     "jersey": "16",
+     "position": "SUB"
+    },
+    {
+     "name": "Nico O'Reilly",
+     "jersey": "3",
+     "position": "SUB"
+    }
+   ]
+  },
+  {
+   "team": "Argentina",
+   "formation": "4-1-4-1",
+   "starters": [
+    {
+     "name": "Emiliano Martínez",
+     "jersey": "23",
+     "position": "G"
+    },
+    {
+     "name": "Lisandro Martínez",
+     "jersey": "6",
+     "position": "CD-L"
+    },
+    {
+     "name": "Cristian Romero",
+     "jersey": "13",
+     "position": "CD-R"
+    },
+    {
+     "name": "Leandro Paredes",
+     "jersey": "5",
+     "position": "DM"
+    },
+    {
+     "name": "Nicolás Tagliafico",
+     "jersey": "3",
+     "position": "LB"
+    },
+    {
+     "name": "Nahuel Molina",
+     "jersey": "26",
+     "position": "RB"
+    },
+    {
+     "name": "Alexis Mac Allister",
+     "jersey": "20",
+     "position": "CM-L"
+    },
+    {
+     "name": "Enzo Fernández",
+     "jersey": "24",
+     "position": "CM-R"
+    },
+    {
+     "name": "Julián Álvarez",
+     "jersey": "9",
+     "position": "LM"
+    },
+    {
+     "name": "Giuliano Simeone",
+     "jersey": "17",
+     "position": "RM"
+    },
+    {
+     "name": "Lionel Messi",
+     "jersey": "10",
+     "position": "F"
+    }
+   ],
+   "subs": [
+    {
+     "name": "Gonzalo Montiel",
+     "jersey": "4",
+     "position": "SUB"
+    },
+    {
+     "name": "Lautaro Martínez",
+     "jersey": "22",
+     "position": "SUB"
+    },
+    {
+     "name": "Marcos Senesi",
+     "jersey": "2",
+     "position": "SUB"
+    },
+    {
+     "name": "Facundo Medina",
+     "jersey": "25",
+     "position": "SUB"
+    },
+    {
+     "name": "Nico González",
+     "jersey": "15",
+     "position": "SUB"
+    },
+    {
+     "name": "Juan Musso",
+     "jersey": "1",
+     "position": "SUB"
+    },
+    {
+     "name": "Valentín Barco",
+     "jersey": "8",
+     "position": "SUB"
+    },
+    {
+     "name": "Gerónimo Rulli",
+     "jersey": "12",
+     "position": "SUB"
+    },
+    {
+     "name": "Giovani Lo Celso",
+     "jersey": "11",
+     "position": "SUB"
+    },
+    {
+     "name": "Nicolás Otamendi",
+     "jersey": "19",
+     "position": "SUB"
+    },
+    {
+     "name": "Nico Paz",
+     "jersey": "18",
+     "position": "SUB"
+    },
+    {
+     "name": "Thiago Almada",
+     "jersey": "16",
+     "position": "SUB"
+    },
+    {
+     "name": "Exequiel Palacios",
+     "jersey": "14",
+     "position": "SUB"
+    },
+    {
+     "name": "Rodrigo De Paul",
+     "jersey": "7",
+     "position": "SUB"
+    },
+    {
+     "name": "José Manuel López",
+     "jersey": "21",
+     "position": "SUB"
+    }
+   ]
+  }
+ ],
+ "attendance": 68239,
+ "venue": "Mercedes-Benz Stadium, Atlanta, Georgia, USA"
+}

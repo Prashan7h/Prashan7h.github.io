@@ -4226,12 +4226,36 @@
    "team2": "Argentina",
    "group": null,
    "ground": "Atlanta",
-   "score": null,
-   "goals1": [],
-   "goals2": [],
+   "score": {
+    "ft": [
+     1,
+     2
+    ],
+    "ht": [
+     0,
+     0
+    ]
+   },
+   "goals1": [
+    {
+     "name": "Anthony Gordon",
+     "minute": "55"
+    }
+   ],
+   "goals2": [
+    {
+     "name": "Enzo Fernández",
+     "minute": "86"
+    },
+    {
+     "name": "Lautaro Martínez",
+     "minute": "92"
+    }
+   ],
    "espn_id": "760515",
-   "status": "live",
+   "status": "finished",
    "utc_date": "2026-07-15T19:00Z",
+   "attendance": 68239,
    "venue": "Mercedes-Benz Stadium",
    "slug": "2026-07-15-england-vs-argentina"
   },
@@ -4241,15 +4265,17 @@
    "date": "2026-07-18",
    "time": "17:00 UTC-4",
    "team1": "France",
-   "team2": "L102",
+   "team2": "England",
    "group": null,
    "ground": "Miami (Miami Gardens)",
    "score": null,
    "goals1": [],
    "goals2": [],
-   "espn_id": null,
+   "espn_id": "760516",
    "status": "scheduled",
-   "slug": "2026-07-18-france-vs-l102"
+   "utc_date": "2026-07-18T21:00Z",
+   "venue": "Hard Rock Stadium",
+   "slug": "2026-07-18-france-vs-england"
   },
   {
    "num": 104,
@@ -4257,15 +4283,17 @@
    "date": "2026-07-19",
    "time": "15:00 UTC-4",
    "team1": "Spain",
-   "team2": "W102",
+   "team2": "Argentina",
    "group": null,
    "ground": "New York/New Jersey (East Rutherford)",
    "score": null,
    "goals1": [],
    "goals2": [],
-   "espn_id": null,
+   "espn_id": "760517",
    "status": "scheduled",
-   "slug": "2026-07-19-spain-vs-w102"
+   "utc_date": "2026-07-19T19:00Z",
+   "venue": "MetLife Stadium",
+   "slug": "2026-07-19-spain-vs-argentina"
   }
  ]
 }

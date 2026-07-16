@@ -1,14 +1,14 @@
 {
  "elo": [
   {
+   "team": "Argentina",
+   "elo": 2195,
+   "delta": 75
+  },
+  {
    "team": "Spain",
    "elo": 2187,
    "delta": 87
-  },
-  {
-   "team": "Argentina",
-   "elo": 2175,
-   "delta": 55
   },
   {
    "team": "France",
@@ -17,8 +17,8 @@
   },
   {
    "team": "England",
-   "elo": 2099,
-   "delta": 59
+   "elo": 2079,
+   "delta": 39
   },
   {
    "team": "Brazil",
@@ -249,7 +249,8 @@
    2147,
    2150,
    2158,
-   2175
+   2175,
+   2195
   ],
   "Spain": [
    2100,
@@ -278,7 +279,8 @@
    2057,
    2064,
    2084,
-   2099
+   2099,
+   2079
   ],
   "Brazil": [
    2020,
@@ -2609,9 +2611,38 @@
     2150
    ],
    "elo_delta": -37.0
+  },
+  "102": {
+   "prediction": {
+    "p1": 0.2723,
+    "pd": 0.2485,
+    "p2": 0.4791,
+    "score": [
+     1,
+     1
+    ],
+    "lambdas": [
+     1.14,
+     1.6
+    ]
+   },
+   "elo_before": [
+    2099,
+    2175
+   ],
+   "elo_delta": -19.6
   }
  },
  "sims": [
+  {
+   "team": "Argentina",
+   "r32": 1.0,
+   "r16": 1.0,
+   "qf": 1.0,
+   "sf": 1.0,
+   "f": 1.0,
+   "champ": 0.5113
+  },
   {
    "team": "Spain",
    "r32": 1.0,
@@ -2619,28 +2650,19 @@
    "qf": 1.0,
    "sf": 1.0,
    "f": 1.0,
-   "champ": 0.5606
-  },
-  {
-   "team": "Argentina",
-   "r32": 1.0,
-   "r16": 1.0,
-   "qf": 1.0,
-   "sf": 1.0,
-   "f": 0.6193,
-   "champ": 0.3003
-  },
-  {
-   "team": "England",
-   "r32": 1.0,
-   "r16": 1.0,
-   "qf": 1.0,
-   "sf": 1.0,
-   "f": 0.3807,
-   "champ": 0.1391
+   "champ": 0.4887
   },
   {
    "team": "France",
+   "r32": 1.0,
+   "r16": 1.0,
+   "qf": 1.0,
+   "sf": 1.0,
+   "f": 0.0,
+   "champ": 0.0
+  },
+  {
+   "team": "England",
    "r32": 1.0,
    "r16": 1.0,
    "qf": 1.0,
@@ -3273,6 +3295,15 @@
    "win_prob": 0.474
   },
   {
+   "num": 102,
+   "slug": "2026-07-15-england-vs-argentina",
+   "date": "2026-07-15",
+   "winner": "Argentina",
+   "loser": "England",
+   "score": "1–2",
+   "win_prob": 0.479
+  },
+  {
    "num": 4,
    "slug": "2026-06-18-mexico-vs-south-korea",
    "date": "2026-06-18",
@@ -3282,15 +3313,15 @@
    "win_prob": 0.495
   }
  ],
- "brier": 0.5148,
- "n_scored": 101,
+ "brier": 0.5137,
+ "n_scored": 102,
  "goal_timing": [
   38,
   31,
   53,
-  48,
+  49,
   41,
-  83
+  85
  ],
  "top_scorers": [
   {

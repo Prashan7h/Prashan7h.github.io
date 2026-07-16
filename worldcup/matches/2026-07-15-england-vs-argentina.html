@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-KVBPX8VW');</script>
+    <!-- End Google Tag Manager -->
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="England 1–2 Argentina — full match analytics: shot map, expected goals race, lineups, stats and model verdict.">
+    <link rel="icon" type="image/svg+xml" href="../../images/favicon.svg">
+    <link rel="icon" type="image/png" sizes="32x32" href="../../images/favicon-32.png">
+    <title>England 1–2 Argentina — World Cup 2026</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+html { font-size: 16px; overflow-x: clip; }
+body {
+  overflow-x: clip;  /* the bracket breaks out to viewport width; never h-scroll the page */
+  background: #fff;
+  color: #0a0a0a;
+  font-family: 'Manrope', -apple-system, 'Segoe UI', sans-serif;
+  line-height: 1.5;
+  font-feature-settings: 'tnum';
+  -webkit-font-smoothing: antialiased;
+}
+a { color: inherit; text-decoration: none; }
+.wrap { max-width: 700px; margin: 0 auto; padding: 0 1.1rem 5rem; }
+
+/* ---- masthead ---- */
+.masthead { padding: 2.2rem 0 1.4rem; display: flex; align-items: baseline; justify-content: space-between; gap: 1rem; flex-wrap: wrap; }
+.masthead h1 { font-size: 1.55rem; font-weight: 800; letter-spacing: -0.02em; }
+.masthead .sub { font-size: 0.78rem; color: #777; font-weight: 500; }
+.masthead a.home { font-size: 0.75rem; font-weight: 600; color: #999; }
+.masthead a.home:hover { color: #0a0a0a; }
+
+/* ---- tabs ---- */
+.tabbar {
+  position: sticky; top: 0; z-index: 10;
+  display: flex; gap: 0.4rem;
+  background: rgba(255,255,255,0.94); backdrop-filter: blur(6px);
+  padding: 0.6rem 0 0.8rem;
+}
+.tabbar button {
+  font: inherit; font-size: 0.82rem; font-weight: 700;
+  border: 1px solid #e4e4e4; background: #fff; color: #555;
+  border-radius: 999px; padding: 0.42rem 1.05rem; cursor: pointer;
+  transition: all 0.15s ease;
+}
+.tabbar button:hover { border-color: #0a0a0a; color: #0a0a0a; }
+.tabbar button.active { background: #0a0a0a; border-color: #0a0a0a; color: #fff; }
+.panel { display: none; }
+.panel.active { display: block; }
+
+/* ---- cards ---- */
+.card {
+  border: 1px solid #e9e9e9; border-radius: 16px; background: #fff;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.03);
+  padding: 1.15rem 1.25rem; margin-bottom: 1rem;
+}
+.card-title { font-size: 0.7rem; font-weight: 800; letter-spacing: 0.1em; text-transform: uppercase; color: #999; margin-bottom: 0.9rem; }
+.card-note { font-size: 0.72rem; color: #999; margin-top: 0.7rem; line-height: 1.55; }
+
+/* ---- fixtures feed ---- */
+.day-head {
+  font-size: 0.72rem; font-weight: 800; letter-spacing: 0.08em; text-transform: uppercase;
+  color: #888; margin: 1.6rem 0 0.6rem; padding-left: 0.2rem;
+}
+.day-head.today { color: #0a0a0a; }
+.day-head.today::after { content: 'TODAY'; margin-left: 0.6rem; background: #0a0a0a; color: #fff; border-radius: 5px; padding: 0.1rem 0.45rem; font-size: 0.62rem; }
+.fixture {
+  display: grid; grid-template-columns: 3.4rem 1fr auto; align-items: center; gap: 0.9rem;
+  border: 1px solid #e9e9e9; border-radius: 14px; background: #fff;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.03);
+  padding: 0.8rem 1rem; margin-bottom: 0.55rem;
+}
+a.fixture { transition: border-color 0.15s ease, transform 0.15s ease; }
+a.fixture:hover { border-color: #0a0a0a; transform: translateY(-1px); }
+.fx-status { font-size: 0.68rem; font-weight: 800; color: #999; text-align: center; line-height: 1.3; }
+.fx-status .chip { display: inline-block; background: #f1f1f1; border-radius: 6px; padding: 0.12rem 0.4rem; color: #555; }
+.fx-status .chip.ft { background: #0a0a0a; color: #fff; }
+.fx-teams { min-width: 0; }
+.fx-row { display: flex; justify-content: space-between; align-items: baseline; gap: 0.8rem; }
+.fx-row .t { font-size: 0.92rem; font-weight: 600; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.fx-row .t.win { font-weight: 800; }
+.fx-row .s { font-size: 0.95rem; font-weight: 800; }
+.fx-meta { font-size: 0.68rem; color: #aaa; font-weight: 600; text-align: right; max-width: 8rem; }
+.fx-arrow { color: #ccc; font-size: 0.9rem; }
+
+/* ---- tables ---- */
+table.t { width: 100%; border-collapse: collapse; font-size: 0.82rem; }
+table.t th { font-size: 0.64rem; font-weight: 800; letter-spacing: 0.07em; text-transform: uppercase; color: #aaa; text-align: left; padding: 0.3rem 0.45rem; border-bottom: 1px solid #eee; }
+table.t td { padding: 0.42rem 0.45rem; border-bottom: 1px solid #f4f4f4; font-weight: 500; }
+table.t tr:last-child td { border-bottom: none; }
+table.t .r { text-align: right; }
+table.t .pos { color: #bbb; font-weight: 700; width: 1.4rem; }
+table.t .pts { font-weight: 800; }
+.qual-line td { border-top: 2px solid #0a0a0a; }
+
+/* ---- group grid ---- */
+.group-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 0.9rem; }
+.group-grid .card { margin-bottom: 0; padding: 0.9rem 1rem; }
+
+/* ---- predictions ---- */
+.odds-row { display: grid; grid-template-columns: 8.2rem 1fr 3.2rem; align-items: center; gap: 0.7rem; padding: 0.32rem 0; font-size: 0.84rem; font-weight: 600; }
+.odds-track { height: 0.6rem; background: #f1f1f1; border-radius: 99px; overflow: hidden; }
+.odds-track > span { display: block; height: 100%; background: #0a0a0a; border-radius: 99px; }
+.odds-pct { text-align: right; font-weight: 800; font-size: 0.8rem; }
+.pred-line { font-size: 0.74rem; color: #888; font-weight: 600; margin-top: 0.25rem; }
+.bigstat { display: flex; gap: 0.9rem; }
+.bigstat .cell { flex: 1; border: 1px solid #eee; border-radius: 12px; padding: 0.7rem 0.85rem; }
+.bigstat .n { font-size: 1.35rem; font-weight: 800; letter-spacing: -0.02em; }
+.bigstat .l { font-size: 0.64rem; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; color: #999; margin-top: 0.1rem; }
+
+/* ---- match page: scoreboard ---- */
+.kickline { font-size: 0.72rem; font-weight: 700; color: #999; letter-spacing: 0.05em; text-transform: uppercase; margin-bottom: 0.9rem; }
+.board { display: grid; grid-template-columns: 1fr auto 1fr; align-items: center; gap: 1rem; margin: 0.4rem 0 0.9rem; }
+.board .team { text-align: center; }
+.board .team .name { font-size: 1.05rem; font-weight: 800; letter-spacing: -0.01em; }
+.board .team .xg { font-size: 0.7rem; color: #999; font-weight: 600; margin-top: 0.15rem; }
+.board .score { font-size: 2.6rem; font-weight: 800; letter-spacing: 0.02em; white-space: nowrap; }
+.board .score .ft { display: block; font-size: 0.64rem; font-weight: 800; letter-spacing: 0.15em; color: #999; text-align: center; }
+.goals-line { text-align: center; font-size: 0.76rem; color: #666; font-weight: 600; line-height: 1.7; }
+.venue-line { text-align: center; font-size: 0.7rem; color: #aaa; font-weight: 600; margin-top: 0.6rem; }
+.narrative { font-size: 0.88rem; line-height: 1.65; color: #333; }
+
+/* ---- stat bars ---- */
+.sb-row { display: grid; grid-template-columns: 2.6rem 1fr 7.5rem 1fr 2.6rem; align-items: center; gap: 0.55rem; padding: 0.34rem 0; }
+.sb-row .v { font-size: 0.84rem; font-weight: 800; }
+.sb-row .v.l { text-align: right; }
+.sb-row .lab { font-size: 0.66rem; font-weight: 700; letter-spacing: 0.05em; text-transform: uppercase; color: #999; text-align: center; }
+.sb-track { height: 0.5rem; background: #f1f1f1; border-radius: 99px; position: relative; overflow: hidden; }
+.sb-track > span { position: absolute; top: 0; height: 100%; background: #0a0a0a; border-radius: 99px; }
+.sb-track.l > span { right: 0; }
+.sb-track.r > span { left: 0; }
+
+/* ---- timeline ---- */
+.tl-item { display: grid; grid-template-columns: 3rem 1fr; gap: 0.8rem; padding: 0.45rem 0; border-bottom: 1px solid #f6f6f6; font-size: 0.82rem; }
+.tl-item:last-child { border-bottom: none; }
+.tl-min { font-weight: 800; color: #bbb; text-align: right; }
+.tl-text { font-weight: 500; color: #444; }
+.tl-text .tag { font-size: 0.62rem; font-weight: 800; letter-spacing: 0.06em; text-transform: uppercase; border-radius: 5px; padding: 0.08rem 0.4rem; margin-right: 0.45rem; background: #f1f1f1; color: #666; vertical-align: 1px; }
+.tl-text .tag.goal { background: #0a0a0a; color: #fff; }
+
+/* ---- lineups ---- */
+.lineups { display: grid; grid-template-columns: 1fr 1fr; gap: 1.4rem; }
+.lu-team { font-size: 0.85rem; font-weight: 800; }
+.lu-formation { font-size: 0.68rem; color: #999; font-weight: 700; margin-bottom: 0.5rem; }
+.lu-list { list-style: none; font-size: 0.78rem; font-weight: 500; }
+.lu-list li { padding: 0.18rem 0; border-bottom: 1px solid #f7f7f7; }
+.lu-list .j { display: inline-block; width: 1.7rem; color: #bbb; font-weight: 700; }
+.lu-subs { margin-top: 0.6rem; font-size: 0.7rem; color: #999; line-height: 1.6; }
+
+/* ---- charts ---- */
+.chart { width: 100%; }
+.legend { display: flex; gap: 1.1rem; font-size: 0.7rem; font-weight: 700; color: #777; margin-top: 0.5rem; flex-wrap: wrap; }
+.legend .k { display: inline-flex; align-items: center; gap: 0.35rem; }
+.legend .dot { width: 0.65rem; height: 0.65rem; border-radius: 50%; display: inline-block; }
+
+.backlink { display: inline-block; margin-top: 0.5rem; font-size: 0.8rem; font-weight: 700; color: #888; }
+.backlink:hover { color: #0a0a0a; }
+.foot { font-size: 0.72rem; color: #aaa; line-height: 1.6; margin-top: 2.2rem; font-weight: 500; }
+
+/* ---- knockout bracket ---- */
+.bk-intro { font-size: 0.8rem; color: #777; font-weight: 500; line-height: 1.55; margin: 0 0.2rem 1.1rem; }
+.bracket-wrap { overflow-x: auto; -webkit-overflow-scrolling: touch; margin: 0 calc(50% - 50vw); padding: 0 1.1rem 0.6rem; }
+.bracket { display: flex; min-width: 860px; max-width: 1280px; margin: 0 auto; }
+.bk-round { display: flex; flex-direction: column; flex: 1 0 0; min-width: 172px; padding: 0 16px; }
+.bk-round-head { font-size: 0.64rem; font-weight: 800; letter-spacing: 0.08em; text-transform: uppercase; color: #aaa; text-align: center; padding-bottom: 0.8rem; }
+.bk-seeds { display: flex; flex-direction: column; justify-content: space-around; flex: 1; }
+.bk-pair { display: flex; flex-direction: column; justify-content: space-around; flex: 1; position: relative; }
+.bk-tie { position: relative; padding: 0.3rem 0; }
+
+/* connectors: stub out of each tie, vertical join across the pair, stub into next round */
+.bk-round:not(.last) .bk-tie::after {
+  content: ''; position: absolute; top: 50%; right: -16px; width: 16px; height: 2px; background: #e4e4e4;
+}
+.bk-round:not(.last) .bk-pair::after {
+  content: ''; position: absolute; right: -16px; top: 25%; bottom: 25%; width: 2px; background: #e4e4e4;
+}
+.bk-round:not(.last) .bk-pair::before {
+  content: ''; position: absolute; right: -32px; top: 50%; width: 16px; height: 2px; background: #e4e4e4;
+}
+
+.bk-card {
+  display: block; border: 1px solid #e9e9e9; border-radius: 12px; background: #fff;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.03); padding: 0.5rem 0.65rem;
+}
+a.bk-card { transition: border-color 0.15s ease, transform 0.15s ease; }
+a.bk-card:hover { border-color: #0a0a0a; transform: translateY(-1px); }
+.bk-side { display: flex; align-items: baseline; justify-content: space-between; gap: 0.6rem; padding: 0.12rem 0; }
+.bk-name { font-size: 0.82rem; font-weight: 600; color: #555; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.bk-score { font-size: 0.85rem; font-weight: 800; color: #555; flex-shrink: 0; }
+.bk-side.win .bk-name { color: #0a0a0a; font-weight: 800; }
+.bk-side.win .bk-score { color: #0a0a0a; }
+.bk-side.ph .bk-name { color: #b3b3b3; font-weight: 600; font-style: italic; }
+.bk-meta { font-size: 0.6rem; font-weight: 700; letter-spacing: 0.03em; color: #bbb; text-align: center; margin-top: 0.2rem; }
+.bk-third { margin-top: 1.6rem; }
+.bk-third .bk-tie { padding: 0; max-width: 22rem; }
+
+@media (max-width: 560px) {
+  .group-grid { grid-template-columns: 1fr; }
+  .lineups { grid-template-columns: 1fr; }
+  .bracket-wrap { margin: 0 -1.1rem; padding: 0 1.1rem 0.6rem; }
+  .board .score { font-size: 2rem; }
+  .board .team .name { font-size: 0.9rem; }
+  .odds-row { grid-template-columns: 6.4rem 1fr 3rem; }
+  .sb-row { grid-template-columns: 2.2rem 1fr 5.4rem 1fr 2.2rem; gap: 0.4rem; }
+  .bigstat { flex-wrap: wrap; }
+  .fx-meta { display: none; }
+}
+
+    </style>
+</head>
+<body>
+    <noscript><iframe aria-hidden="true" title="Google Tag Manager" src="https://www.googletagmanager.com/ns.html?id=GTM-KVBPX8VW"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+    <div class="wrap">
+        <div class="masthead">
+            <div><h1>World Cup 2026</h1></div>
+            <a class="home" href="../index.html">&larr; All matches</a>
+        </div>
+
+        <!-- scoreboard -->
+        <div class="card">
+            <div class="kickline">Semi-final · Knockout · 2026-07-15</div>
+            <div class="board">
+                <div class="team">
+                    <div class="name">England</div>
+                    <div class="xg">xG 1.18</div>
+                </div>
+                <div class="score"><span class="ft">HT 0–0</span>1&thinsp;–&thinsp;2</div>
+                <div class="team">
+                    <div class="name">Argentina</div>
+                    <div class="xg">xG 2.92</div>
+                </div>
+            </div>
+            <div class="goals-line"><strong>England</strong> Anthony Gordon 55&#8242; &nbsp;·&nbsp; <strong>Argentina</strong> Enzo Fernández 86&#8242;, Lautaro Martínez 92&#8242;</div>
+            <div class="venue-line">Mercedes-Benz Stadium · 68,239 attendance</div>
+        </div>
+
+        
+        <div class="card">
+            <div class="card-title">The story</div>
+            <p class="narrative">A mild upset: Argentina (48% pre-match) got past England. The decisive moment came late, in the 92th minute.</p>
+        </div>
+        
+
+        
+        <div class="card">
+            <div class="card-title">Expected goals race</div>
+            <div class="chart"><svg viewBox="0 0 660 240" xmlns="http://www.w3.org/2000/svg" width="100%" role="img" aria-label="Cumulative expected goals"><line x1="34" y1="154.4" x2="646" y2="154.4" stroke="#f0f0f0" stroke-width="1"/><text x="28" y="157.4" font-size="9" font-family="Manrope,sans-serif" fill="#bbb" text-anchor="end">1</text><line x1="34" y1="94.7" x2="646" y2="94.7" stroke="#f0f0f0" stroke-width="1"/><text x="28" y="97.7" font-size="9" font-family="Manrope,sans-serif" fill="#bbb" text-anchor="end">2</text><line x1="34" y1="35.1" x2="646" y2="35.1" stroke="#f0f0f0" stroke-width="1"/><text x="28" y="38.1" font-size="9" font-family="Manrope,sans-serif" fill="#bbb" text-anchor="end">3</text><text x="34.0" y="232" font-size="9" font-family="Manrope,sans-serif" fill="#bbb" text-anchor="middle">0&#8242;</text><text x="130.6" y="232" font-size="9" font-family="Manrope,sans-serif" fill="#bbb" text-anchor="middle">15&#8242;</text><text x="227.3" y="232" font-size="9" font-family="Manrope,sans-serif" fill="#bbb" text-anchor="middle">30&#8242;</text><text x="323.9" y="232" font-size="9" font-family="Manrope,sans-serif" fill="#bbb" text-anchor="middle">45&#8242;</text><text x="420.5" y="232" font-size="9" font-family="Manrope,sans-serif" fill="#bbb" text-anchor="middle">60&#8242;</text><text x="517.2" y="232" font-size="9" font-family="Manrope,sans-serif" fill="#bbb" text-anchor="middle">75&#8242;</text><text x="613.8" y="232" font-size="9" font-family="Manrope,sans-serif" fill="#bbb" text-anchor="middle">90&#8242;</text><line x1="34" y1="214.0" x2="646" y2="214.0" stroke="#ddd" stroke-width="1"/><path d="M 34 214.0 L 246.6 214.0 L 246.6 199.4 L 388.3 199.4 L 388.3 156.7 L 459.2 156.7 L 459.2 152.5 L 459.2 152.5 L 459.2 148.9 L 542.9 148.9 L 542.9 143.5 L 646 143.5" fill="none" stroke="#0a0a0a" stroke-width="2.2" stroke-linejoin="round"/><text x="646" y="137.5" font-size="10" font-weight="700" font-family="Manrope,sans-serif" fill="#0a0a0a" text-anchor="end">1.18</text><circle cx="388.3" cy="156.7" r="5" fill="#0a0a0a" stroke="#fff" stroke-width="1.5"/><text x="388.3" y="146.7" font-size="9.5" font-weight="700" font-family="Manrope,sans-serif" fill="#0a0a0a" text-anchor="middle">Anthony Gordon 55&#8242;</text><path d="M 34 214.0 L 278.8 214.0 L 278.8 210.2 L 278.8 210.2 L 278.8 206.5 L 336.8 206.5 L 336.8 195.9 L 336.8 195.9 L 336.8 186.9 L 381.9 186.9 L 381.9 184.2 L 427.0 184.2 L 427.0 180.5 L 478.5 180.5 L 478.5 161.2 L 523.6 161.2 L 523.6 139.7 L 523.6 139.7 L 523.6 109.7 L 523.6 109.7 L 523.6 94.1 L 575.1 94.1 L 575.1 90.5 L 581.6 90.5 L 581.6 86.8 L 581.6 86.8 L 581.6 81.7 L 613.8 81.7 L 613.8 72.8 L 613.8 72.8 L 613.8 40.1 L 646 40.1" fill="none" stroke="#b5b5b5" stroke-width="2.2" stroke-linejoin="round"/><text x="646" y="34.1" font-size="10" font-weight="700" font-family="Manrope,sans-serif" fill="#b5b5b5" text-anchor="end">2.92</text><circle cx="581.6" cy="81.7" r="5" fill="#b5b5b5" stroke="#fff" stroke-width="1.5"/><text x="581.6" y="71.7" font-size="9.5" font-weight="700" font-family="Manrope,sans-serif" fill="#0a0a0a" text-anchor="middle">Enzo Fernández 85&#8242;</text><circle cx="613.8" cy="40.1" r="5" fill="#b5b5b5" stroke="#fff" stroke-width="1.5"/><text x="613.8" y="30.1" font-size="9.5" font-weight="700" font-family="Manrope,sans-serif" fill="#0a0a0a" text-anchor="middle">Lautaro Martínez 90&#8242;</text></svg></div>
+            <div class="legend">
+                <span class="k"><span class="dot" style="background:#0a0a0a"></span>England</span>
+                <span class="k"><span class="dot" style="background:#b5b5b5"></span>Argentina</span>
+                <span class="k">&#9679; goal</span>
+            </div>
+            <p class="card-note">Cumulative expected goals, minute by minute. ESPN's free feed has no xG, so each shot's xG is estimated with a naive distance-and-angle logistic model fitted on shot coordinates from the play-by-play.</p>
+        </div>
+        
+
+        
+        <div class="card">
+            <div class="card-title">Shot map</div>
+            <div class="chart"><svg viewBox="0 0 660 420" xmlns="http://www.w3.org/2000/svg" width="100%" role="img" aria-label="Shot map"><rect x="10" y="10" width="640" height="400" rx="6" stroke="#d8d8d8" stroke-width="1.5" fill="none"/><line x1="330" y1="10" x2="330" y2="410" stroke="#d8d8d8" stroke-width="1.5" fill="none"/><circle cx="330" cy="210" r="52" stroke="#d8d8d8" stroke-width="1.5" fill="none"/><rect x="10" y="94" width="106" height="232" stroke="#d8d8d8" stroke-width="1.5" fill="none"/><rect x="10" y="154" width="35" height="112" stroke="#d8d8d8" stroke-width="1.5" fill="none"/><rect x="544" y="94" width="106" height="232" stroke="#d8d8d8" stroke-width="1.5" fill="none"/><rect x="615" y="154" width="35" height="112" stroke="#d8d8d8" stroke-width="1.5" fill="none"/><circle cx="611.6" cy="171.2" r="7.2" fill="#0a0a0a" stroke="#0a0a0a" stroke-width="1.3" opacity="0.45"><title>John Stones · 33&#8242; · xG 0.24 · Shot Off Target</title></circle><circle cx="180.9" cy="176.4" r="4.8" fill="#fff" stroke="#0a0a0a" stroke-width="1.3" opacity="0.45"><title>Lionel Messi · 38&#8242; · xG 0.06 · Shot Blocked</title></circle><circle cx="182.2" cy="240.0" r="4.8" fill="#fff" stroke="#0a0a0a" stroke-width="1.3" opacity="0.45"><title>Enzo Fernández · 38&#8242; · xG 0.06 · Shot Off Target</title></circle><circle cx="68.2" cy="278.4" r="6.3" fill="#fff" stroke="#0a0a0a" stroke-width="1.3" opacity="1"><title>Julián Alvarez · 47&#8242; · xG 0.18 · Shot On Target</title></circle><circle cx="43.3" cy="288.0" r="6.0" fill="#fff" stroke="#0a0a0a" stroke-width="1.3" opacity="0.45"><title>Julián Alvarez · 47&#8242; · xG 0.15 · Shot Off Target</title></circle><circle cx="178.3" cy="302.8" r="4.6" fill="#fff" stroke="#0a0a0a" stroke-width="1.3" opacity="0.45"><title>Leandro Paredes · 54&#8242; · xG 0.04 · Shot Off Target</title></circle><path d="M616.7,203.1 L621.3,214.1 L633.2,215.1 L624.1,222.8 L626.9,234.4 L616.7,228.2 L606.5,234.4 L609.3,222.8 L600.3,215.1 L612.1,214.1 Z" fill="#0a0a0a" stroke="#0a0a0a" stroke-width="1.5"><title>Anthony Gordon · 55&#8242; · xG 0.72 · Goal - Volley</title></path><circle cx="162.3" cy="288.8" r="4.8" fill="#fff" stroke="#0a0a0a" stroke-width="1.3" opacity="0.45"><title>Enzo Fernández · 61&#8242; · xG 0.06 · Shot Off Target</title></circle><circle cx="522.0" cy="117.2" r="4.9" fill="#0a0a0a" stroke="#0a0a0a" stroke-width="1.3" opacity="1"><title>Declan Rice · 66&#8242; · xG 0.07 · Shot On Target</title></circle><circle cx="474.0" cy="180.0" r="4.8" fill="#0a0a0a" stroke="#0a0a0a" stroke-width="1.3" opacity="0.45"><title>Harry Kane · 66&#8242; · xG 0.06 · Shot Blocked</title></circle><circle cx="63.1" cy="212.8" r="8.2" fill="#fff" stroke="#0a0a0a" stroke-width="1.3" opacity="1"><title>Nico González · 69&#8242; · xG 0.32 · Shot On Target</title></circle><circle cx="58.0" cy="208.8" r="8.7" fill="#fff" stroke="#0a0a0a" stroke-width="1.3" opacity="0.45"><title>? · 76&#8242; · xG 0.36 · Shot Hit Woodwork</title></circle><circle cx="58.6" cy="226.0" r="10.5" fill="#fff" stroke="#0a0a0a" stroke-width="1.3" opacity="0.45"><title>Julián Alvarez · 76&#8242; · xG 0.50 · Shot Off Target</title></circle><circle cx="68.9" cy="228.0" r="7.4" fill="#fff" stroke="#0a0a0a" stroke-width="1.3" opacity="1"><title>Alexis Mac Allister · 76&#8242; · xG 0.26 · Shot On Target</title></circle><circle cx="509.8" cy="256.8" r="5.2" fill="#0a0a0a" stroke="#0a0a0a" stroke-width="1.3" opacity="0.45"><title>Morgan Rogers · 79&#8242; · xG 0.09 · Shot Blocked</title></circle><circle cx="188.6" cy="212.8" r="4.8" fill="#fff" stroke="#0a0a0a" stroke-width="1.3" opacity="0.45"><title>Rodrigo De Paul · 84&#8242; · xG 0.06 · Shot Blocked</title></circle><circle cx="186.0" cy="201.6" r="4.8" fill="#fff" stroke="#0a0a0a" stroke-width="1.3" opacity="0.45"><title>Enzo Fernández · 85&#8242; · xG 0.06 · Shot Off Target</title></circle><path d="M159.8,233.3 L162.2,239.1 L168.4,239.6 L163.7,243.7 L165.1,249.8 L159.8,246.5 L154.4,249.8 L155.9,243.7 L151.1,239.6 L157.3,239.1 Z" fill="#fff" stroke="#0a0a0a" stroke-width="1.5"><title>Enzo Fernández · 85&#8242; · xG 0.09 · Goal</title></path><circle cx="124.6" cy="184.8" r="5.9" fill="#fff" stroke="#0a0a0a" stroke-width="1.3" opacity="0.45"><title>Alexis Mac Allister · 90'+2&#8242; · xG 0.15 · Shot Blocked</title></circle><path d="M33.0,183.7 L37.0,193.3 L47.4,194.1 L39.5,200.9 L41.9,211.0 L33.0,205.6 L24.2,211.0 L26.6,200.9 L18.7,194.1 L29.0,193.3 Z" fill="#fff" stroke="#0a0a0a" stroke-width="1.5"><title>Lautaro Martínez · 90'+2&#8242; · xG 0.55 · Goal - Header</title></path></svg></div>
+            <div class="legend">
+                <span class="k"><span class="dot" style="background:#0a0a0a"></span>England (attacking &rarr;)</span>
+                <span class="k"><span class="dot" style="background:#fff; border: 1.5px solid #0a0a0a;"></span>Argentina (attacking &larr;)</span>
+                <span class="k">size = xG · star = goal</span>
+            </div>
+        </div>
+        
+
+        
+        <div class="card">
+            <div class="card-title">England &nbsp;·&nbsp; match stats &nbsp;·&nbsp; Argentina</div>
+            
+            <div class="sb-row">
+                <span class="v l">35.8</span>
+                <span class="sb-track l"><span style="width: 35.8%"></span></span>
+                <span class="lab">Possession</span>
+                <span class="sb-track r"><span style="width: 64.2%"></span></span>
+                <span class="v">64.2</span>
+            </div>
+            
+            <div class="sb-row">
+                <span class="v l">5</span>
+                <span class="sb-track l"><span style="width: 25.0%"></span></span>
+                <span class="lab">Shots</span>
+                <span class="sb-track r"><span style="width: 75.0%"></span></span>
+                <span class="v">15</span>
+            </div>
+            
+            <div class="sb-row">
+                <span class="v l">2</span>
+                <span class="sb-track l"><span style="width: 28.6%"></span></span>
+                <span class="lab">On Target</span>
+                <span class="sb-track r"><span style="width: 71.4%"></span></span>
+                <span class="v">5</span>
+            </div>
+            
+            <div class="sb-row">
+                <span class="v l">2</span>
+                <span class="sb-track l"><span style="width: 25.0%"></span></span>
+                <span class="lab">Corners</span>
+                <span class="sb-track r"><span style="width: 75.0%"></span></span>
+                <span class="v">6</span>
+            </div>
+            
+            <div class="sb-row">
+                <span class="v l">11</span>
+                <span class="sb-track l"><span style="width: 42.3%"></span></span>
+                <span class="lab">Fouls</span>
+                <span class="sb-track r"><span style="width: 57.7%"></span></span>
+                <span class="v">15</span>
+            </div>
+            
+            <div class="sb-row">
+                <span class="v l">1</span>
+                <span class="sb-track l"><span style="width: 25.0%"></span></span>
+                <span class="lab">Offsides</span>
+                <span class="sb-track r"><span style="width: 75.0%"></span></span>
+                <span class="v">3</span>
+            </div>
+            
+            <div class="sb-row">
+                <span class="v l">3</span>
+                <span class="sb-track l"><span style="width: 75.0%"></span></span>
+                <span class="lab">Saves</span>
+                <span class="sb-track r"><span style="width: 25.0%"></span></span>
+                <span class="v">1</span>
+            </div>
+            
+            <div class="sb-row">
+                <span class="v l">1</span>
+                <span class="sb-track l"><span style="width: 25.0%"></span></span>
+                <span class="lab">Yellows</span>
+                <span class="sb-track r"><span style="width: 75.0%"></span></span>
+                <span class="v">3</span>
+            </div>
+            
+            <div class="sb-row">
+                <span class="v l">0</span>
+                <span class="sb-track l"><span style="width: 0%"></span></span>
+                <span class="lab">Reds</span>
+                <span class="sb-track r"><span style="width: 100%"></span></span>
+                <span class="v">0</span>
+            </div>
+            
+        </div>
+        
+
+        
+        <div class="card">
+            <div class="card-title">What the model expected</div>
+            <div class="chart"><svg viewBox="0 0 660 64" xmlns="http://www.w3.org/2000/svg" width="100%" role="img" aria-label="Pre-match win probabilities"><defs><clipPath id="rnd"><rect x="4" y="26" width="652" height="26" rx="13"/></clipPath></defs><g clip-path="url(#rnd)"><rect x="4.0" y="26" width="177.5" height="26" fill="#0a0a0a"/><text x="92.8" y="43" font-size="11" font-weight="700" font-family="Manrope,sans-serif" fill="#fff" text-anchor="middle">England 27%</text><rect x="181.5" y="26" width="162.0" height="26" fill="#d9d9d9"/><text x="262.6" y="43" font-size="11" font-weight="700" font-family="Manrope,sans-serif" fill="#555" text-anchor="middle">draw 25%</text><rect x="343.6" y="26" width="312.4" height="26" fill="#f1f1f1"/><text x="499.7" y="43" font-size="11" font-weight="700" font-family="Manrope,sans-serif" fill="#555" text-anchor="middle">Argentina 48%</text></g><line x1="181.5" y1="26" x2="181.5" y2="52" stroke="#fff" stroke-width="2"/><line x1="343.6" y1="26" x2="343.6" y2="52" stroke="#fff" stroke-width="2"/><path d="M499.7,23 l-5,-9 l10,0 Z" fill="#0a0a0a"/><text x="499.7" y="10" font-size="9.5" font-weight="800" font-family="Manrope,sans-serif" fill="#0a0a0a" text-anchor="middle">ACTUAL</text></svg></div>
+            <p class="narrative" style="margin-top: 0.8rem;">Pre-match Elo: England 2099, Argentina 2175. The model priced this England <strong>27%</strong> / draw <strong>25%</strong> / Argentina <strong>48%</strong>, most likely score 1–1. A plausible-but-not-favoured outcome. The result moves <strong>20 Elo points</strong> from England to Argentina — that flows straight into the next round of tournament simulations.</p>
+        </div>
+        
+
+        
+        <div class="card">
+            <div class="card-title">Timeline</div>
+            
+            <div class="tl-item">
+                <span class="tl-min">37'</span>
+                <span class="tl-text"><span class="tag">YELLOW</span>Elliot Anderson (England) is shown the yellow card for a bad foul.</span>
+            </div>
+            
+            <div class="tl-item">
+                <span class="tl-min">42'</span>
+                <span class="tl-text"><span class="tag">YELLOW</span>Lisandro Martínez (Argentina) is shown the yellow card for a bad foul.</span>
+            </div>
+            
+            <div class="tl-item">
+                <span class="tl-min">51'</span>
+                <span class="tl-text"><span class="tag">YELLOW</span>Cristian Romero (Argentina) is shown the yellow card for a bad foul.</span>
+            </div>
+            
+            <div class="tl-item">
+                <span class="tl-min">55'</span>
+                <span class="tl-text"><span class="tag goal">GOAL</span>Goal! England 1, Argentina 0. Anthony Gordon (England) right footed shot from very close range to the bottom left corner. Assisted by Morgan Rogers with a cross.</span>
+            </div>
+            
+            <div class="tl-item">
+                <span class="tl-min">64'</span>
+                <span class="tl-text"><span class="tag">SUB</span>Substitution, Argentina. Nico González replaces Leandro Paredes.</span>
+            </div>
+            
+            <div class="tl-item">
+                <span class="tl-min">72'</span>
+                <span class="tl-text"><span class="tag">SUB</span>Substitution, England. Ezri Konsa replaces Anthony Gordon.</span>
+            </div>
+            
+            <div class="tl-item">
+                <span class="tl-min">72'</span>
+                <span class="tl-text"><span class="tag">SUB</span>Substitution, Argentina. Gonzalo Montiel replaces Nahuel Molina.</span>
+            </div>
+            
+            <div class="tl-item">
+                <span class="tl-min">72'</span>
+                <span class="tl-text"><span class="tag">SUB</span>Substitution, Argentina. Rodrigo De Paul replaces Giuliano Simeone.</span>
+            </div>
+            
+            <div class="tl-item">
+                <span class="tl-min">72'</span>
+                <span class="tl-text"><span class="tag">SUB</span>Substitution, Argentina. Nicolás Otamendi replaces Lisandro Martínez.</span>
+            </div>
+            
+            <div class="tl-item">
+                <span class="tl-min">81'</span>
+                <span class="tl-text"><span class="tag">SUB</span>Substitution, Argentina. Lautaro Martínez replaces Nicolás Tagliafico.</span>
+            </div>
+            
+            <div class="tl-item">
+                <span class="tl-min">82'</span>
+                <span class="tl-text"><span class="tag">SUB</span>Substitution, England. Dan Burn replaces Reece James because of an injury.</span>
+            </div>
+            
+            <div class="tl-item">
+                <span class="tl-min">82'</span>
+                <span class="tl-text"><span class="tag">SUB</span>Substitution, England. Nico O'Reilly replaces Declan Rice.</span>
+            </div>
+            
+            <div class="tl-item">
+                <span class="tl-min">85'</span>
+                <span class="tl-text"><span class="tag goal">GOAL</span>Goal! England 1, Argentina 1. Enzo Fernández (Argentina) right footed shot from outside the box to the bottom left corner. Assisted by Lionel Messi following a corner.</span>
+            </div>
+            
+            <div class="tl-item">
+                <span class="tl-min">90'+2'</span>
+                <span class="tl-text"><span class="tag goal">GOAL</span>Goal! England 1, Argentina 2. Lautaro Martínez (Argentina) header from very close range to the top left corner. Assisted by Lionel Messi with a cross.</span>
+            </div>
+            
+            <div class="tl-item">
+                <span class="tl-min">90'+4'</span>
+                <span class="tl-text"><span class="tag">YELLOW</span>Rodrigo De Paul (Argentina) is shown the yellow card.</span>
+            </div>
+            
+            <div class="tl-item">
+                <span class="tl-min">90'+6'</span>
+                <span class="tl-text"><span class="tag">SUB</span>Substitution, England. Ivan Toney replaces John Stones.</span>
+            </div>
+            
+            <div class="tl-item">
+                <span class="tl-min">90'+6'</span>
+                <span class="tl-text"><span class="tag">SUB</span>Substitution, England. Marcus Rashford replaces Djed Spence.</span>
+            </div>
+            
+        </div>
+        
+
+        
+        <div class="card">
+            <div class="card-title">Lineups</div>
+            <div class="lineups">
+                
+                <div>
+                    <div class="lu-team">England</div>
+                    <div class="lu-formation">4-2-3-1</div>
+                    <ul class="lu-list">
+                        
+                        <li><span class="j">1</span>Jordan Pickford <span style="color:#bbb; font-size:0.66rem;">G</span></li>
+                        
+                        <li><span class="j">6</span>Marc Guéhi <span style="color:#bbb; font-size:0.66rem;">CD-L</span></li>
+                        
+                        <li><span class="j">5</span>John Stones <span style="color:#bbb; font-size:0.66rem;">CD-R</span></li>
+                        
+                        <li><span class="j">25</span>Djed Spence <span style="color:#bbb; font-size:0.66rem;">LB</span></li>
+                        
+                        <li><span class="j">24</span>Reece James <span style="color:#bbb; font-size:0.66rem;">RB</span></li>
+                        
+                        <li><span class="j">10</span>Jude Bellingham <span style="color:#bbb; font-size:0.66rem;">AM</span></li>
+                        
+                        <li><span class="j">8</span>Elliot Anderson <span style="color:#bbb; font-size:0.66rem;">LM</span></li>
+                        
+                        <li><span class="j">4</span>Declan Rice <span style="color:#bbb; font-size:0.66rem;">RM</span></li>
+                        
+                        <li><span class="j">9</span>Harry Kane <span style="color:#bbb; font-size:0.66rem;">F</span></li>
+                        
+                        <li><span class="j">18</span>Anthony Gordon <span style="color:#bbb; font-size:0.66rem;">AM-L</span></li>
+                        
+                        <li><span class="j">17</span>Morgan Rogers <span style="color:#bbb; font-size:0.66rem;">AM-R</span></li>
+                        
+                    </ul>
+                    <div class="lu-subs"><strong>Subs:</strong> Ezri Konsa, Dan Burn, Nico O'Reilly, Ivan Toney, Marcus Rashford</div>
+                </div>
+                
+                <div>
+                    <div class="lu-team">Argentina</div>
+                    <div class="lu-formation">4-1-4-1</div>
+                    <ul class="lu-list">
+                        
+                        <li><span class="j">23</span>Emiliano Martínez <span style="color:#bbb; font-size:0.66rem;">G</span></li>
+                        
+                        <li><span class="j">6</span>Lisandro Martínez <span style="color:#bbb; font-size:0.66rem;">CD-L</span></li>
+                        
+                        <li><span class="j">13</span>Cristian Romero <span style="color:#bbb; font-size:0.66rem;">CD-R</span></li>
+                        
+                        <li><span class="j">5</span>Leandro Paredes <span style="color:#bbb; font-size:0.66rem;">DM</span></li>
+                        
+                        <li><span class="j">3</span>Nicolás Tagliafico <span style="color:#bbb; font-size:0.66rem;">LB</span></li>
+                        
+                        <li><span class="j">26</span>Nahuel Molina <span style="color:#bbb; font-size:0.66rem;">RB</span></li>
+                        
+                        <li><span class="j">20</span>Alexis Mac Allister <span style="color:#bbb; font-size:0.66rem;">CM-L</span></li>
+                        
+                        <li><span class="j">24</span>Enzo Fernández <span style="color:#bbb; font-size:0.66rem;">CM-R</span></li>
+                        
+                        <li><span class="j">9</span>Julián Álvarez <span style="color:#bbb; font-size:0.66rem;">LM</span></li>
+                        
+                        <li><span class="j">17</span>Giuliano Simeone <span style="color:#bbb; font-size:0.66rem;">RM</span></li>
+                        
+                        <li><span class="j">10</span>Lionel Messi <span style="color:#bbb; font-size:0.66rem;">F</span></li>
+                        
+                    </ul>
+                    <div class="lu-subs"><strong>Subs:</strong> Nico González, Gonzalo Montiel, Rodrigo De Paul, Nicolás Otamendi, Lautaro Martínez</div>
+                </div>
+                
+            </div>
+        </div>
+        
+
+        <a class="backlink" href="../index.html">&larr; Fixtures, table &amp; predictions</a>
+        <p class="foot">Generated automatically from public match data. Stats: ESPN · Results: openfootball · xG: own naive model (distance + angle).</p>
+    </div>
+</body>
+</html>
