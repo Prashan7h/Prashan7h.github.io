@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-KVBPX8VW');</script>
+    <!-- End Google Tag Manager -->
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="The Efficient Market Hypothesis — from Bachelier's random walk to Fama's three forms and the behavioural pushback of Shiller and Kahneman.">
+    <link rel="icon" type="image/svg+xml" href="../images/favicon.svg">
+    <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon-32.png">
+    <link rel="apple-touch-icon" href="../images/apple-touch-icon.png">
+    <title>The Efficient Market Hypothesis | Prashanth Shankar</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+
+    <style>
+        *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+        html { font-size: 16px; scroll-behavior: smooth; }
+        body {
+            background: #fff;
+            color: #000;
+            font-family: 'Inter', -apple-system, sans-serif;
+            font-weight: 400;
+            line-height: 1.7;
+        }
+        ::selection { background: #000; color: #fff; }
+
+        .page {
+            max-width: 720px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        header {
+            padding: 2.5rem 0 0;
+        }
+
+        .back-link {
+            font-size: 0.75rem;
+            font-weight: 400;
+            letter-spacing: 0.04em;
+            color: #000;
+            text-decoration: none;
+            transition: opacity 0.2s ease;
+        }
+        .back-link:hover { opacity: 0.5; }
+
+        article {
+            padding: 4rem 0 3rem;
+        }
+
+        article h1 {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 2.6rem;
+            font-weight: 600;
+            line-height: 1.15;
+            margin-bottom: 1rem;
+        }
+
+        .deck {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.25rem;
+            font-style: italic;
+            line-height: 1.5;
+            color: #000;
+            margin-bottom: 2.5rem;
+        }
+
+        article h2 {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.8rem;
+            font-weight: 600;
+            line-height: 1.2;
+            margin: 3rem 0 1rem;
+        }
+
+        article p {
+            font-size: 0.95rem;
+            font-weight: 300;
+            line-height: 1.75;
+            margin-bottom: 1rem;
+        }
+
+        article em {
+            font-style: italic;
+        }
+
+        .pullquote {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.35rem;
+            font-style: italic;
+            line-height: 1.45;
+            padding: 1.5rem 0 1.5rem 1.5rem;
+            border-left: 2px solid #000;
+            margin: 2rem 0;
+            color: #000;
+        }
+
+        .figure {
+            margin: 2.5rem 0;
+        }
+        .figure svg {
+            display: block;
+            width: 100%;
+            height: auto;
+            max-width: 640px;
+            margin: 0 auto;
+        }
+        .caption {
+            font-size: 0.78rem;
+            color: #666;
+            text-align: center;
+            margin-top: 0.8rem;
+            line-height: 1.5;
+            font-style: italic;
+            font-family: 'Cormorant Garamond', serif;
+        }
+
+        hr.divider {
+            border: none;
+            border-top: 1px solid #000;
+            margin: 3rem 0;
+        }
+
+        .references {
+            font-size: 0.8rem;
+            color: #555;
+            line-height: 1.7;
+            margin-top: 2rem;
+        }
+        .references h3 {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: #000;
+            margin-bottom: 0.75rem;
+        }
+        .references ol {
+            padding-left: 1.2rem;
+        }
+        .references li {
+            margin-bottom: 0.35rem;
+        }
+
+        footer {
+            padding: 2rem 0 3rem;
+            font-size: 0.75rem;
+            color: #666;
+        }
+        footer a { color: inherit; text-decoration: underline; text-underline-offset: 0.2em; }
+    </style>
+</head>
+<body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KVBPX8VW" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+    <div class="page">
+        <header>
+            <a href="index.html" class="back-link">&larr; Wonderland</a>
+        </header>
+
+        <article>
+            <h1>The Efficient Market Hypothesis</h1>
+            <p class="deck">If prices already reflect everything anyone knows, then trying to beat the market is a bit like trying to pick up a $100 bill that a crowd has already walked past.</p>
+
+            <p>In 1900, a French graduate student named Louis Bachelier submitted a thesis on the movement of prices on the Paris Bourse. His examiners were baffled. He was applying the mathematics of heat diffusion &mdash; the equations Einstein would later use for Brownian motion &mdash; to the price of government bonds. His conclusion was that, on any given day, a price is as likely to go up as down, and its wanderings look like the drunken stagger of a pollen grain in water. He called this a <em>random walk</em>. He was ignored for half a century.</p>
+
+            <p>When his thesis was rediscovered in the 1950s, it became the foundation of what is now called the Efficient Market Hypothesis (EMH): the claim that asset prices already incorporate all available information, and therefore future price changes must be, essentially, unpredictable noise. It is one of the most influential and most contested ideas in economics.</p>
+
+            <h2>The core intuition</h2>
+
+            <p>The argument is almost embarrassingly simple. Suppose a stock is obviously underpriced. Then somebody notices, buys it, and drives the price up until it is no longer obviously underpriced. The very act of a mispricing being spotted destroys the mispricing. In a market with many alert, self-interested traders, any publicly visible free lunch will be eaten before you can reach for a fork.</p>
+
+            <p>What survives, then, are prices that already reflect the collective knowledge of the market. The remaining price changes must be driven by <em>new</em> information &mdash; and new information, by definition, is not knowable in advance. So prices should move unpredictably. They should look like a random walk.</p>
+
+            <div class="figure">
+                <svg viewBox="0 0 640 260" xmlns="http://www.w3.org/2000/svg">
+                    <!-- Axes -->
+                    <line x1="60" y1="220" x2="620" y2="220" stroke="#000" stroke-width="1"/>
+                    <line x1="60" y1="30" x2="60" y2="220" stroke="#000" stroke-width="1"/>
+                    <!-- Axis labels -->
+                    <text x="340" y="248" font-family="'Cormorant Garamond', serif" font-size="13" font-style="italic" fill="#666" text-anchor="middle">time</text>
+                    <text x="24" y="128" font-family="'Cormorant Garamond', serif" font-size="13" font-style="italic" fill="#666" text-anchor="middle" transform="rotate(-90 24 128)">price</text>
+                    <!-- Path 1 -->
+                    <path d="M 60 150 L 80 142 L 100 155 L 120 138 L 140 148 L 160 132 L 180 145 L 200 128 L 220 140 L 240 122 L 260 135 L 280 118 L 300 128 L 320 112 L 340 122 L 360 108 L 380 118 L 400 102 L 420 112 L 440 96 L 460 106 L 480 90 L 500 100 L 520 84 L 540 94 L 560 80 L 580 90 L 600 74" stroke="#000" stroke-width="1.2" fill="none"/>
+                    <!-- Path 2 -->
+                    <path d="M 60 150 L 80 158 L 100 152 L 120 162 L 140 156 L 160 168 L 180 160 L 200 172 L 220 164 L 240 178 L 260 168 L 280 182 L 300 174 L 320 188 L 340 178 L 360 192 L 380 182 L 400 196 L 420 186 L 440 200 L 460 190 L 480 204 L 500 194 L 520 208 L 540 198 L 560 210 L 580 202 L 600 214" stroke="#666" stroke-width="1.2" fill="none" stroke-dasharray="0"/>
+                    <!-- Path 3 -->
+                    <path d="M 60 150 L 80 148 L 100 156 L 120 150 L 140 142 L 160 148 L 180 138 L 200 146 L 220 138 L 240 130 L 260 138 L 280 128 L 300 136 L 320 130 L 340 122 L 360 130 L 380 124 L 400 116 L 420 124 L 440 116 L 460 110 L 480 118 L 500 112 L 520 118 L 540 110 L 560 116 L 580 108 L 600 114" stroke="#999" stroke-width="1.2" fill="none" stroke-dasharray="4 3"/>
+                    <!-- Start dot -->
+                    <circle cx="60" cy="150" r="3" fill="#000"/>
+                    <text x="46" y="148" font-family="Inter, sans-serif" font-size="10" fill="#000" text-anchor="end">start</text>
+                    <!-- Title -->
+                    <text x="340" y="20" font-family="'Cormorant Garamond', serif" font-size="14" font-style="italic" fill="#000" text-anchor="middle">three simulated random-walk price paths from the same starting point</text>
+                </svg>
+                <p class="caption">A random walk. Each step is a small independent shock, up or down with roughly equal odds. Different runs wander to wildly different places &mdash; because the past does not tell you where the next step goes.</p>
+            </div>
+
+            <p>This has a strange consequence. The chart of any real stock, over any window, looks purposeful in hindsight &mdash; peaks, troughs, trends, reversals. But so do the simulated random walks above. Our pattern-hungry eyes will find a story in noise. The EMH claims that most of what looks like a story in market data <em>is</em> noise.</p>
+
+            <h2>Fama and the three forms</h2>
+
+            <p>The economist Eugene Fama gave the hypothesis its modern shape in 1970. He noted that &ldquo;all available information&rdquo; is vague, so he split it into three concentric levels. Each level is a stronger claim than the last.</p>
+
+            <div class="figure">
+                <svg viewBox="0 0 640 280" xmlns="http://www.w3.org/2000/svg">
+                    <!-- Outer: strong form -->
+                    <circle cx="320" cy="140" r="130" stroke="#000" stroke-width="1" fill="#fff"/>
+                    <text x="320" y="34" font-family="'Cormorant Garamond', serif" font-size="16" font-style="italic" fill="#000" text-anchor="middle">Strong form</text>
+                    <text x="320" y="50" font-family="Inter, sans-serif" font-size="10" fill="#666" text-anchor="middle">+ private / insider information</text>
+
+                    <!-- Middle: semi-strong -->
+                    <circle cx="320" cy="150" r="95" stroke="#000" stroke-width="1" fill="#fff"/>
+                    <text x="320" y="76" font-family="'Cormorant Garamond', serif" font-size="15" font-style="italic" fill="#000" text-anchor="middle">Semi-strong form</text>
+                    <text x="320" y="91" font-family="Inter, sans-serif" font-size="10" fill="#666" text-anchor="middle">+ all public information (news, filings)</text>
+
+                    <!-- Inner: weak -->
+                    <circle cx="320" cy="165" r="58" stroke="#000" stroke-width="1" fill="#fff"/>
+                    <text x="320" y="152" font-family="'Cormorant Garamond', serif" font-size="14" font-style="italic" fill="#000" text-anchor="middle">Weak form</text>
+                    <text x="320" y="168" font-family="Inter, sans-serif" font-size="10" fill="#666" text-anchor="middle">past prices</text>
+                    <text x="320" y="182" font-family="Inter, sans-serif" font-size="10" fill="#666" text-anchor="middle">&amp; volumes</text>
+
+                    <!-- Bottom axis label -->
+                    <text x="320" y="266" font-family="'Cormorant Garamond', serif" font-size="13" font-style="italic" fill="#666" text-anchor="middle">what the price is claimed to already reflect</text>
+                </svg>
+                <p class="caption">Fama's three forms. Each larger ring says: prices already contain everything in it, so no strategy that uses only that information can beat the market on a risk-adjusted basis.</p>
+            </div>
+
+            <p>The <em>weak form</em> says prices already reflect all past prices and trading volumes. If true, technical analysis &mdash; drawing trendlines, spotting &ldquo;head and shoulders,&rdquo; timing moving averages &mdash; cannot systematically beat a buy-and-hold. The evidence here is unusually strong. Statistical tests find price changes are close to uncorrelated over short horizons in developed markets.</p>
+
+            <p>The <em>semi-strong form</em> adds all public information: earnings, news, filings, macro data. If true, fundamental analysis of publicly reported numbers cannot yield an edge either &mdash; because the moment any of that information becomes public, prices swallow it within minutes. Event studies broadly support this. When a firm announces surprise earnings, the stock jumps almost immediately, not gradually.</p>
+
+            <p>The <em>strong form</em> adds private information. If true, even insiders cannot systematically profit. Almost nobody actually believes this &mdash; and the fact that insider trading is illegal, and prosecuted, is a tacit admission that private information does move prices.</p>
+
+            <h2>The pushback</h2>
+
+            <p>The EMH sat comfortably at the centre of finance for decades. Then problems started to accumulate.</p>
+
+            <p>Robert Shiller, working in the early 1980s, showed that stock prices are far more volatile than the underlying stream of dividends can justify &mdash; a phenomenon he called <em>excess volatility</em>. If prices were only responding to news about future dividends, they should swing less. They swing more. Something other than pure information is moving them.</p>
+
+            <p class="pullquote">&ldquo;Markets can remain irrational longer than you can remain solvent.&rdquo; &mdash; attributed to John Maynard Keynes</p>
+
+            <p>Then came the behavioural revolution. Kahneman and Tversky demonstrated that real humans systematically deviate from the calm Bayesian agent the theory assumed. They anchor, they overreact, they follow crowds. Under Richard Thaler and others, this hardened into an alternative view: prices reflect not just information but the psychology of the traders holding it. Bubbles &mdash; the 1920s, the dot-com boom, 2008 &mdash; became less &ldquo;anomalies to be explained away&rdquo; and more &ldquo;the phenomena that any serious theory has to accommodate.&rdquo;</p>
+
+            <p>The most striking rebuttal, however, was empirical. Consistent, decades-long outperformance by a small handful of investors &mdash; Warren Buffett, Renaissance Technologies, a few quant funds &mdash; is hard to reconcile with a strong version of EMH. If markets are perfectly efficient, such records should be indistinguishable from luck. They are not obviously so.</p>
+
+            <h2>What survives</h2>
+
+            <p>The verdict, forty years on, is nuanced rather than clean. Markets are not perfectly efficient &mdash; but they are efficient <em>enough</em> that beating them, after costs, is extraordinarily hard for almost everyone. The empirical record of active fund managers is brutal: over any twenty-year window, the large majority underperform a low-cost index fund tracking the market as a whole. The practical descendant of the EMH is not a philosophical claim but an ordinary piece of financial advice: don't try to pick stocks, just buy the whole market and hold.</p>
+
+            <p>Even Fama, on receiving the 2013 Nobel Prize, shared it with Shiller &mdash; who had spent his career arguing markets are systematically wrong. The committee's implicit judgement was that both were right about different things: prices are hard to beat in the short run (Fama), and prices can be wildly detached from fundamentals over the long run (Shiller). The Efficient Market Hypothesis, in the end, is less a fact about the world than a discipline: a warning about how much easier it is to think you have an edge than to actually have one.</p>
+
+            <hr class="divider">
+
+            <div class="references">
+                <h3>Further reading</h3>
+                <ol>
+                    <li>Bachelier, L. (1900). <em>Th&eacute;orie de la Sp&eacute;culation</em>.</li>
+                    <li>Fama, E. (1970). <em>Efficient Capital Markets: A Review of Theory and Empirical Work</em>. Journal of Finance, 25(2).</li>
+                    <li>Shiller, R. (1981). <em>Do Stock Prices Move Too Much to Be Justified by Subsequent Changes in Dividends?</em> American Economic Review, 71(3).</li>
+                    <li>Malkiel, B. (1973). <em>A Random Walk Down Wall Street</em>.</li>
+                    <li>Thaler, R. (2015). <em>Misbehaving: The Making of Behavioral Economics</em>.</li>
+                </ol>
+            </div>
+        </article>
+
+        <footer>
+            <a href="index.html">&larr; Back to Wonderland</a>
+        </footer>
+    </div>
+</body>
+</html>
