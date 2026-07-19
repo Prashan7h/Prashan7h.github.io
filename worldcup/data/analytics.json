@@ -11,14 +11,14 @@
    "delta": 87
   },
   {
-   "team": "France",
-   "elo": 2108,
-   "delta": 58
+   "team": "England",
+   "elo": 2120,
+   "delta": 80
   },
   {
-   "team": "England",
-   "elo": 2079,
-   "delta": 39
+   "team": "France",
+   "elo": 2067,
+   "delta": 17
   },
   {
    "team": "Brazil",
@@ -270,7 +270,8 @@
    2112,
    2119,
    2145,
-   2108
+   2108,
+   2067
   ],
   "England": [
    2040,
@@ -280,7 +281,8 @@
    2064,
    2084,
    2099,
-   2079
+   2079,
+   2120
   ],
   "Brazil": [
    2020,
@@ -2631,6 +2633,26 @@
     2175
    ],
    "elo_delta": -19.6
+  },
+  "103": {
+   "prediction": {
+    "p1": 0.4107,
+    "pd": 0.2568,
+    "p2": 0.3324,
+    "score": [
+     1,
+     1
+    ],
+    "lambdas": [
+     1.44,
+     1.27
+    ]
+   },
+   "elo_before": [
+    2108,
+    2079
+   ],
+   "elo_delta": -40.6
   }
  },
  "sims": [
@@ -3151,6 +3173,15 @@
    "win_prob": 0.298
   },
   {
+   "num": 103,
+   "slug": "2026-07-18-france-vs-england",
+   "date": "2026-07-18",
+   "winner": "England",
+   "loser": "France",
+   "score": "4–6",
+   "win_prob": 0.332
+  },
+  {
    "num": 96,
    "slug": "2026-07-07-switzerland-vs-colombia",
    "date": "2026-07-07",
@@ -3313,20 +3344,20 @@
    "win_prob": 0.495
   }
  ],
- "brier": 0.5137,
- "n_scored": 102,
+ "brier": 0.5153,
+ "n_scored": 103,
  "goal_timing": [
-  38,
-  31,
-  53,
-  49,
-  41,
-  85
+  39,
+  32,
+  55,
+  51,
+  42,
+  88
  ],
  "top_scorers": [
   {
    "name": "Kylian Mbappé",
-   "goals": 8,
+   "goals": 10,
    "team": "France"
   },
   {
@@ -3340,24 +3371,24 @@
    "team": "Norway"
   },
   {
+   "name": "Jude Bellingham",
+   "goals": 7,
+   "team": "England"
+  },
+  {
    "name": "Harry Kane",
    "goals": 6,
    "team": "England"
   },
   {
-   "name": "Jude Bellingham",
+   "name": "Ousmane Dembélé",
    "goals": 6,
-   "team": "England"
+   "team": "France"
   },
   {
    "name": "Mikel Oyarzabal",
    "goals": 5,
    "team": "Spain"
-  },
-  {
-   "name": "Ousmane Dembélé",
-   "goals": 5,
-   "team": "France"
   },
   {
    "name": "Ismaïla Sarr",

@@ -4268,12 +4268,65 @@
    "team2": "England",
    "group": null,
    "ground": "Miami (Miami Gardens)",
-   "score": null,
-   "goals1": [],
-   "goals2": [],
+   "score": {
+    "ft": [
+     4,
+     6
+    ],
+    "ht": [
+     0,
+     4
+    ]
+   },
+   "goals1": [
+    {
+     "name": "Kylian Mbappé",
+     "minute": "48"
+    },
+    {
+     "name": "Bradley Barcola",
+     "minute": "54"
+    },
+    {
+     "name": "Kylian Mbappé",
+     "minute": "66"
+    },
+    {
+     "name": "Ousmane Dembélé",
+     "minute": "90+6"
+    }
+   ],
+   "goals2": [
+    {
+     "name": "Declan Rice",
+     "minute": "3"
+    },
+    {
+     "name": "Ezri Konsa",
+     "minute": "18"
+    },
+    {
+     "name": "Bukayo Saka",
+     "minute": "37"
+    },
+    {
+     "name": "Bukayo Saka",
+     "minute": "45+1"
+    },
+    {
+     "name": "Bukayo Saka",
+     "minute": "87",
+     "penalty": true
+    },
+    {
+     "name": "Jude Bellingham",
+     "minute": "90+8"
+    }
+   ],
    "espn_id": "760516",
-   "status": "scheduled",
+   "status": "finished",
    "utc_date": "2026-07-18T21:00Z",
+   "attendance": 64478,
    "venue": "Hard Rock Stadium",
    "slug": "2026-07-18-france-vs-england"
   },
