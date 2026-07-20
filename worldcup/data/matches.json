@@ -4340,12 +4340,25 @@
    "group": null,
    "ground": "New York/New Jersey (East Rutherford)",
    "score": {
-    "ft": [
+    "et": [
      1,
+     0
+    ],
+    "ft": [
+     0,
+     0
+    ],
+    "ht": [
+     0,
      0
     ]
    },
-   "goals1": [],
+   "goals1": [
+    {
+     "name": "Ferran Torres",
+     "minute": "106"
+    }
+   ],
    "goals2": [],
    "espn_id": "760517",
    "status": "finished",

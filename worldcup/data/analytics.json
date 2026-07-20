@@ -3218,7 +3218,7 @@
    "date": "2026-07-19",
    "winner": "Spain",
    "loser": "Argentina",
-   "score": "1–0",
+   "score": "1–0 (aet)",
    "win_prob": 0.36
   },
   {
@@ -3375,7 +3375,7 @@
    "win_prob": 0.495
   }
  ],
- "brier": 0.5164,
+ "brier": 0.5183,
  "n_scored": 104,
  "goal_timing": [
   39,
@@ -3383,7 +3383,7 @@
   55,
   51,
   42,
-  88
+  89
  ],
  "top_scorers": [
   {
