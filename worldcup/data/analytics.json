@@ -1,14 +1,14 @@
 {
  "elo": [
   {
-   "team": "Argentina",
-   "elo": 2195,
-   "delta": 75
+   "team": "Spain",
+   "elo": 2212,
+   "delta": 112
   },
   {
-   "team": "Spain",
-   "elo": 2187,
-   "delta": 87
+   "team": "Argentina",
+   "elo": 2169,
+   "delta": 49
   },
   {
    "team": "England",
@@ -250,7 +250,8 @@
    2150,
    2158,
    2175,
-   2195
+   2195,
+   2169
   ],
   "Spain": [
    2100,
@@ -260,7 +261,8 @@
    2116,
    2134,
    2150,
-   2187
+   2187,
+   2212
   ],
   "France": [
    2050,
@@ -2653,18 +2655,29 @@
     2079
    ],
    "elo_delta": -40.6
+  },
+  "104": {
+   "prediction": {
+    "p1": 0.36,
+    "pd": 0.2581,
+    "p2": 0.3819,
+    "score": [
+     1,
+     1
+    ],
+    "lambdas": [
+     1.33,
+     1.37
+    ]
+   },
+   "elo_before": [
+    2187,
+    2195
+   ],
+   "elo_delta": 25.6
   }
  },
  "sims": [
-  {
-   "team": "Argentina",
-   "r32": 1.0,
-   "r16": 1.0,
-   "qf": 1.0,
-   "sf": 1.0,
-   "f": 1.0,
-   "champ": 0.5113
-  },
   {
    "team": "Spain",
    "r32": 1.0,
@@ -2672,7 +2685,16 @@
    "qf": 1.0,
    "sf": 1.0,
    "f": 1.0,
-   "champ": 0.4887
+   "champ": 1.0
+  },
+  {
+   "team": "Argentina",
+   "r32": 1.0,
+   "r16": 1.0,
+   "qf": 1.0,
+   "sf": 1.0,
+   "f": 1.0,
+   "champ": 0.0
   },
   {
    "team": "France",
@@ -3191,6 +3213,15 @@
    "win_prob": 0.337
   },
   {
+   "num": 104,
+   "slug": "2026-07-19-spain-vs-argentina",
+   "date": "2026-07-19",
+   "winner": "Spain",
+   "loser": "Argentina",
+   "score": "1–0",
+   "win_prob": 0.36
+  },
+  {
    "num": 101,
    "slug": "2026-07-14-france-vs-spain",
    "date": "2026-07-14",
@@ -3344,8 +3375,8 @@
    "win_prob": 0.495
   }
  ],
- "brier": 0.5153,
- "n_scored": 103,
+ "brier": 0.5164,
+ "n_scored": 104,
  "goal_timing": [
   39,
   32,

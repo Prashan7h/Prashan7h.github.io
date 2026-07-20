@@ -4339,12 +4339,18 @@
    "team2": "Argentina",
    "group": null,
    "ground": "New York/New Jersey (East Rutherford)",
-   "score": null,
+   "score": {
+    "ft": [
+     1,
+     0
+    ]
+   },
    "goals1": [],
    "goals2": [],
    "espn_id": "760517",
-   "status": "live",
+   "status": "finished",
    "utc_date": "2026-07-19T19:00Z",
+   "attendance": 80663,
    "venue": "MetLife Stadium",
    "slug": "2026-07-19-spain-vs-argentina"
   }

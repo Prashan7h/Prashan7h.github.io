@@ -1,0 +1,960 @@
+{
+ "teams": [
+  {
+   "name": "Spain",
+   "stats": {
+    "possessionPct": "65.1",
+    "totalShots": "20",
+    "shotsOnTarget": "12",
+    "wonCorners": "9",
+    "foulsCommitted": "21",
+    "offsides": "4",
+    "saves": "0",
+    "yellowCards": "0",
+    "redCards": "0"
+   }
+  },
+  {
+   "name": "Argentina",
+   "stats": {
+    "possessionPct": "34.9",
+    "totalShots": "2",
+    "shotsOnTarget": "0",
+    "wonCorners": "4",
+    "foulsCommitted": "25",
+    "offsides": "1",
+    "saves": "11",
+    "yellowCards": "4",
+    "redCards": "1"
+   }
+  }
+ ],
+ "events": [
+  {
+   "type": "Kickoff",
+   "minute": "",
+   "team": null,
+   "text": "First Half begins.",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "25'",
+   "team": "Spain",
+   "text": "Delay in match for a drinks break.",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "25'",
+   "team": "Argentina",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "27'",
+   "team": "Spain",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "27'",
+   "team": "Argentina",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Yellow Card",
+   "minute": "41'",
+   "team": "Argentina",
+   "text": "Lisandro Martínez (Argentina) is shown the yellow card for a bad foul.",
+   "players": [
+    "Lisandro Martínez"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "44'",
+   "team": "Argentina",
+   "text": "Substitution, Argentina. Nicolás Otamendi replaces Lisandro Martínez because of an injury.",
+   "players": [
+    "Nicolás Otamendi",
+    "Lisandro Martínez"
+   ]
+  },
+  {
+   "type": "Halftime",
+   "minute": "45'+4'",
+   "team": null,
+   "text": "First Half ends, Spain 0, Argentina 0.",
+   "players": []
+  },
+  {
+   "type": "Substitution",
+   "minute": "45'",
+   "team": "Argentina",
+   "text": "Substitution, Argentina. Leandro Paredes replaces Nico González.",
+   "players": [
+    "Leandro Paredes",
+    "Nico González"
+   ]
+  },
+  {
+   "type": "Start 2nd Half",
+   "minute": "45'",
+   "team": null,
+   "text": "Second Half begins Spain 0, Argentina 0.",
+   "players": []
+  },
+  {
+   "type": "Yellow Card",
+   "minute": "52'",
+   "team": "Argentina",
+   "text": "Leandro Paredes (Argentina) is shown the yellow card.",
+   "players": [
+    "Leandro Paredes"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "58'",
+   "team": "Argentina",
+   "text": "Substitution, Argentina. Nahuel Molina replaces Gonzalo Montiel.",
+   "players": [
+    "Nahuel Molina",
+    "Gonzalo Montiel"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "62'",
+   "team": "Spain",
+   "text": "Substitution, Spain. Ferran Torres replaces Mikel Oyarzabal.",
+   "players": [
+    "Ferran Torres",
+    "Mikel Oyarzabal"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "62'",
+   "team": "Spain",
+   "text": "Substitution, Spain. Pedri replaces Fabián Ruiz.",
+   "players": [
+    "Pedri",
+    "Fabián Ruiz"
+   ]
+  },
+  {
+   "type": "Start Delay",
+   "minute": "67'",
+   "team": "Spain",
+   "text": "Delay in match for a drinks break.",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "67'",
+   "team": "Argentina",
+   "text": "Delay in match for a drinks break.",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "70'",
+   "team": "Spain",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "70'",
+   "team": "Argentina",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "Substitution",
+   "minute": "70'",
+   "team": "Argentina",
+   "text": "Substitution, Argentina. Facundo Medina replaces Cristian Romero because of an injury.",
+   "players": [
+    "Facundo Medina",
+    "Cristian Romero"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "70'",
+   "team": "Argentina",
+   "text": "Substitution, Argentina. Giuliano Simeone replaces Rodrigo De Paul.",
+   "players": [
+    "Giuliano Simeone",
+    "Rodrigo De Paul"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "75'",
+   "team": "Spain",
+   "text": "Substitution, Spain. Nico Williams replaces Álex Baena.",
+   "players": [
+    "Nico Williams",
+    "Álex Baena"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "75'",
+   "team": "Spain",
+   "text": "Substitution, Spain. Mikel Merino replaces Dani Olmo.",
+   "players": [
+    "Mikel Merino",
+    "Dani Olmo"
+   ]
+  },
+  {
+   "type": "Yellow Card",
+   "minute": "82'",
+   "team": "Argentina",
+   "text": "Enzo Fernández (Argentina) is shown the yellow card.",
+   "players": [
+    "Enzo Fernández"
+   ]
+  },
+  {
+   "type": "Yellow Card",
+   "minute": "90'+2'",
+   "team": "Argentina",
+   "text": "Cristian Romero (Argentina) is shown the yellow card.",
+   "players": [
+    "Cristian Romero"
+   ]
+  },
+  {
+   "type": "Red Card",
+   "minute": "90'+3'",
+   "team": "Argentina",
+   "text": "Second yellow card to Enzo Fernández (Argentina) for a bad foul.",
+   "players": [
+    "Enzo Fernández"
+   ]
+  },
+  {
+   "type": "Start Delay",
+   "minute": "90'+3'",
+   "team": "Spain",
+   "text": "Delay in match because of an injury Pau Cubarsí (Spain).",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "90'+3'",
+   "team": "Argentina",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "90'+5'",
+   "team": "Spain",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "90'+5'",
+   "team": "Argentina",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "End Regular Time",
+   "minute": "90'+9'",
+   "team": null,
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Start Extra Time",
+   "minute": "90'",
+   "team": null,
+   "text": "First Half Extra Time begins Spain 0, Argentina 0.",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "98'",
+   "team": "Argentina",
+   "text": "Delay in match because of an injury Emiliano Martínez (Argentina).",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "98'",
+   "team": "Spain",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Substitution",
+   "minute": "99'",
+   "team": "Spain",
+   "text": "Substitution, Spain. Martín Zubimendi replaces Rodri.",
+   "players": [
+    "Martín Zubimendi",
+    "Rodri"
+   ]
+  },
+  {
+   "type": "Substitution",
+   "minute": "99'",
+   "team": "Spain",
+   "text": "Substitution, Spain. Eric García replaces Aymeric Laporte.",
+   "players": [
+    "Eric García",
+    "Aymeric Laporte"
+   ]
+  },
+  {
+   "type": "End Delay",
+   "minute": "99'",
+   "team": "Argentina",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "99'",
+   "team": "Spain",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "Substitution",
+   "minute": "102'",
+   "team": "Argentina",
+   "text": "Substitution, Argentina. Marcos Senesi replaces Julián Alvarez.",
+   "players": [
+    "Marcos Senesi",
+    "Julián Álvarez"
+   ]
+  },
+  {
+   "type": "Halftime Extra Time",
+   "minute": "105'+3'",
+   "team": null,
+   "text": "First Half Extra Time ends, Spain 0, Argentina 0.",
+   "players": []
+  },
+  {
+   "type": "Start 2nd Half Extra Time",
+   "minute": "105'",
+   "team": null,
+   "text": "Second Half Extra Time begins Spain 0, Argentina 0.",
+   "players": []
+  },
+  {
+   "type": "Goal",
+   "minute": "106'",
+   "team": "Spain",
+   "text": "Goal! Spain 1, Argentina 0. Ferran Torres (Spain) left footed shot from the centre of the box to the high centre of the goal. Assisted by Nico Williams with a headed pass.",
+   "players": [
+    "Ferran Torres",
+    "Nico Williams"
+   ]
+  },
+  {
+   "type": "Yellow Card",
+   "minute": "111'",
+   "team": "Argentina",
+   "text": "Alexis Mac Allister (Argentina) is shown the yellow card for a bad foul.",
+   "players": [
+    "Alexis Mac Allister"
+   ]
+  },
+  {
+   "type": "Start Delay",
+   "minute": "117'",
+   "team": "Spain",
+   "text": "Delay in match because of an injury Mikel Merino (Spain).",
+   "players": []
+  },
+  {
+   "type": "Start Delay",
+   "minute": "117'",
+   "team": "Argentina",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "118'",
+   "team": "Spain",
+   "text": "Delay over. They are ready to continue.",
+   "players": []
+  },
+  {
+   "type": "End Delay",
+   "minute": "118'",
+   "team": "Argentina",
+   "text": "",
+   "players": []
+  },
+  {
+   "type": "End Extra Time",
+   "minute": "120'+5'",
+   "team": null,
+   "text": "",
+   "players": []
+  }
+ ],
+ "shots": [
+  {
+   "minute": "5",
+   "seconds": 257.0,
+   "team": "Spain",
+   "player": "Lamine Yamal",
+   "type": "Shot On Target",
+   "x": 93.6,
+   "y": 32.3,
+   "goal": false,
+   "xg": 0.177,
+   "text": "Attempt saved. Lamine Yamal (Spain) left footed shot from the right side of the box is saved in the bottom right corner by Emiliano Martínez (Argentina). Assisted by Dani Olmo."
+  },
+  {
+   "minute": "39",
+   "seconds": 2311.0,
+   "team": "Spain",
+   "player": "Mikel Oyarzabal",
+   "type": "Shot On Target",
+   "x": 81.1,
+   "y": 46.0,
+   "goal": false,
+   "xg": 0.14,
+   "text": "Attempt saved. Mikel Oyarzabal (Spain) left footed shot from outside the box is saved in the bottom right corner by Emiliano Martínez (Argentina). Assisted by Fabián Ruiz."
+  },
+  {
+   "minute": "43",
+   "seconds": 2553.0,
+   "team": "Spain",
+   "player": "Marc Cucurella",
+   "type": "Shot Off Target",
+   "x": 80.0,
+   "y": 74.4,
+   "goal": false,
+   "xg": 0.067,
+   "text": "Attempt missed. Marc Cucurella (Spain) left footed shot from outside the box is close, but misses to the right. Assisted by Fabián Ruiz."
+  },
+  {
+   "minute": "46",
+   "seconds": 2743.0,
+   "team": "Spain",
+   "player": "Álex Baena",
+   "type": "Shot On Target",
+   "x": 80.0,
+   "y": 59.9,
+   "goal": false,
+   "xg": 0.113,
+   "text": "Attempt saved. Álex Baena (Spain) right footed shot from outside the box is saved in the bottom right corner by Emiliano Martínez (Argentina)."
+  },
+  {
+   "minute": "61",
+   "seconds": 3638.0,
+   "team": "Spain",
+   "player": "Lamine Yamal",
+   "type": "Shot Blocked",
+   "x": 76.4,
+   "y": 26.5,
+   "goal": false,
+   "xg": 0.055,
+   "text": "Attempt blocked. Lamine Yamal (Spain) left footed shot from outside the box is blocked."
+  },
+  {
+   "minute": "64",
+   "seconds": 3805.0,
+   "team": "Spain",
+   "player": "Dani Olmo",
+   "type": "Shot On Target",
+   "x": 75.7,
+   "y": 47.9,
+   "goal": false,
+   "xg": 0.084,
+   "text": "Attempt saved. Dani Olmo (Spain) right footed shot from outside the box is saved in the centre of the goal by Emiliano Martínez (Argentina). Assisted by Pedri."
+  },
+  {
+   "minute": "65",
+   "seconds": 3891.0,
+   "team": "Spain",
+   "player": "Dani Olmo",
+   "type": "Shot Blocked",
+   "x": 94.8,
+   "y": 46.6,
+   "goal": false,
+   "xg": 0.45,
+   "text": "Attempt blocked. Dani Olmo (Spain) header from very close range is blocked."
+  },
+  {
+   "minute": "67",
+   "seconds": 3983.0,
+   "team": "Spain",
+   "player": "Ferran Torres",
+   "type": "Shot On Target",
+   "x": 91.9,
+   "y": 45.0,
+   "goal": false,
+   "xg": 0.293,
+   "text": "Attempt saved. Ferran Torres (Spain) header from the centre of the box is saved in the centre of the goal by Emiliano Martínez (Argentina). Assisted by Lamine Yamal with a cross."
+  },
+  {
+   "minute": "77",
+   "seconds": 4572.0,
+   "team": "Spain",
+   "player": "Pedri",
+   "type": "Shot On Target",
+   "x": 81.8,
+   "y": 53.6,
+   "goal": false,
+   "xg": 0.151,
+   "text": "Attempt saved. Pedri (Spain) left footed shot from outside the box is saved in the centre of the goal by Emiliano Martínez (Argentina). Assisted by Rodri."
+  },
+  {
+   "minute": "77",
+   "seconds": 4611.0,
+   "team": "Spain",
+   "player": "Pau Cubarsí",
+   "type": "Shot On Target",
+   "x": 78.5,
+   "y": 28.0,
+   "goal": false,
+   "xg": 0.067,
+   "text": "Attempt saved. Pau Cubarsí (Spain) right footed shot from outside the box is saved in the centre of the goal by Emiliano Martínez (Argentina). Assisted by Rodri."
+  },
+  {
+   "minute": "81",
+   "seconds": 4829.0,
+   "team": "Spain",
+   "player": "Aymeric Laporte",
+   "type": "Shot On Target",
+   "x": 93.3,
+   "y": 55.2,
+   "goal": false,
+   "xg": 0.341,
+   "text": "Attempt saved. Aymeric Laporte (Spain) header from the centre of the box is saved in the bottom left corner by Emiliano Martínez (Argentina)."
+  },
+  {
+   "minute": "87",
+   "seconds": 5185.0,
+   "team": "Spain",
+   "player": "Ferran Torres",
+   "type": "Shot Off Target",
+   "x": 88.3,
+   "y": 40.1,
+   "goal": false,
+   "xg": 0.241,
+   "text": "Attempt missed. Ferran Torres (Spain) right footed shot from the centre of the box is close, but misses to the right. Assisted by Mikel Merino with a through ball."
+  },
+  {
+   "minute": "89",
+   "seconds": 5335.0,
+   "team": "Spain",
+   "player": "Rodri",
+   "type": "Shot Off Target",
+   "x": 71.8,
+   "y": 45.2,
+   "goal": false,
+   "xg": 0.057,
+   "text": "Attempt missed. Rodri (Spain) right footed shot from outside the box is too high. Assisted by Pau Cubarsí."
+  },
+  {
+   "minute": "90'+3",
+   "seconds": 5400.0,
+   "team": "Spain",
+   "player": "Nico Williams",
+   "type": "Shot On Target",
+   "x": 84.2,
+   "y": 29.4,
+   "goal": false,
+   "xg": 0.104,
+   "text": "Attempt saved. Nico Williams (Spain) right footed shot from the right side of the box is saved in the top centre of the goal by Emiliano Martínez (Argentina). Assisted by Pedro Porro."
+  },
+  {
+   "minute": "90'+8",
+   "seconds": 5400.0,
+   "team": "Spain",
+   "player": "Lamine Yamal",
+   "type": "Shot On Target",
+   "x": 76.0,
+   "y": 53.0,
+   "goal": false,
+   "xg": 0.086,
+   "text": "Attempt saved. Lamine Yamal (Spain) left footed shot from outside the box is saved in the top right corner by Emiliano Martínez (Argentina)."
+  },
+  {
+   "minute": "93",
+   "seconds": 5565.0,
+   "team": "Spain",
+   "player": "Nico Williams",
+   "type": "Shot On Target",
+   "x": 92.4,
+   "y": 51.1,
+   "goal": false,
+   "xg": 0.354,
+   "text": "Attempt saved. Nico Williams (Spain) header from the centre of the box is saved in the bottom left corner by Emiliano Martínez (Argentina). Assisted by Pedri with a through ball."
+  },
+  {
+   "minute": "101",
+   "seconds": 6052.0,
+   "team": "Spain",
+   "player": "Lamine Yamal",
+   "type": "Shot Off Target",
+   "x": 78.1,
+   "y": 32.3,
+   "goal": false,
+   "xg": 0.076,
+   "text": "Attempt missed. Lamine Yamal (Spain) left footed shot from outside the box is high and wide to the left. Assisted by Pedri."
+  },
+  {
+   "minute": "103",
+   "seconds": 6138.0,
+   "team": "Spain",
+   "player": "Mikel Merino",
+   "type": "Shot Off Target",
+   "x": 92.5,
+   "y": 50.7,
+   "goal": false,
+   "xg": 0.36,
+   "text": "Attempt missed. Mikel Merino (Spain) header from the centre of the box is close, but misses to the right. Assisted by Nico Williams with a cross."
+  },
+  {
+   "minute": "104",
+   "seconds": 6209.0,
+   "team": "Spain",
+   "player": "Nico Williams",
+   "type": "Shot Blocked",
+   "x": 73.8,
+   "y": 56.8,
+   "goal": false,
+   "xg": 0.067,
+   "text": "Attempt blocked. Nico Williams (Spain) right footed shot from outside the box is blocked. Assisted by Pedri."
+  },
+  {
+   "minute": "106",
+   "seconds": 6337.0,
+   "team": "Spain",
+   "player": "Ferran Torres",
+   "type": "Goal",
+   "x": 91.2,
+   "y": 56.2,
+   "goal": true,
+   "xg": 0.391,
+   "text": "Goal! Spain 1, Argentina 0. Ferran Torres (Spain) left footed shot from the centre of the box to the high centre of the goal. Assisted by Nico Williams with a headed pass."
+  },
+  {
+   "minute": "117",
+   "seconds": 6983.0,
+   "team": "Argentina",
+   "player": "Lionel Messi",
+   "type": "Shot Blocked",
+   "x": 80.0,
+   "y": 32.1,
+   "goal": false,
+   "xg": 0.087,
+   "text": "Attempt blocked. Lionel Messi (Argentina) left footed shot from outside the box is blocked. Assisted by Giuliano Simeone."
+  },
+  {
+   "minute": "120'+2",
+   "seconds": 7200.0,
+   "team": "Argentina",
+   "player": "Giuliano Simeone",
+   "type": "Shot Off Target",
+   "x": 90.8,
+   "y": 47.6,
+   "goal": false,
+   "xg": 0.431,
+   "text": "Attempt missed. Giuliano Simeone (Argentina) right footed shot from the centre of the box is too high. Assisted by Nicolás Tagliafico following a corner."
+  }
+ ],
+ "lineups": [
+  {
+   "team": "Spain",
+   "formation": "4-2-3-1",
+   "starters": [
+    {
+     "name": "Unai Simón",
+     "jersey": "23",
+     "position": "G"
+    },
+    {
+     "name": "Aymeric Laporte",
+     "jersey": "14",
+     "position": "CD-L"
+    },
+    {
+     "name": "Pau Cubarsí",
+     "jersey": "22",
+     "position": "CD-R"
+    },
+    {
+     "name": "Marc Cucurella",
+     "jersey": "24",
+     "position": "LB"
+    },
+    {
+     "name": "Pedro Porro",
+     "jersey": "12",
+     "position": "RB"
+    },
+    {
+     "name": "Dani Olmo",
+     "jersey": "10",
+     "position": "AM"
+    },
+    {
+     "name": "Fabián Ruiz",
+     "jersey": "8",
+     "position": "LM"
+    },
+    {
+     "name": "Rodri",
+     "jersey": "16",
+     "position": "RM"
+    },
+    {
+     "name": "Mikel Oyarzabal",
+     "jersey": "21",
+     "position": "F"
+    },
+    {
+     "name": "Álex Baena",
+     "jersey": "15",
+     "position": "AM-L"
+    },
+    {
+     "name": "Lamine Yamal",
+     "jersey": "19",
+     "position": "AM-R"
+    }
+   ],
+   "subs": [
+    {
+     "name": "Alejandro Grimaldo",
+     "jersey": "3",
+     "position": "SUB"
+    },
+    {
+     "name": "Martín Zubimendi",
+     "jersey": "18",
+     "position": "SUB"
+    },
+    {
+     "name": "Nico Williams",
+     "jersey": "17",
+     "position": "SUB"
+    },
+    {
+     "name": "Borja Iglesias",
+     "jersey": "26",
+     "position": "SUB"
+    },
+    {
+     "name": "Ferran Torres",
+     "jersey": "7",
+     "position": "SUB"
+    },
+    {
+     "name": "Víctor Muñoz",
+     "jersey": "25",
+     "position": "SUB"
+    },
+    {
+     "name": "Pedri",
+     "jersey": "20",
+     "position": "SUB"
+    },
+    {
+     "name": "Mikel Merino",
+     "jersey": "6",
+     "position": "SUB"
+    },
+    {
+     "name": "Marc Pubill",
+     "jersey": "2",
+     "position": "SUB"
+    },
+    {
+     "name": "Gavi",
+     "jersey": "9",
+     "position": "SUB"
+    },
+    {
+     "name": "David Raya",
+     "jersey": "1",
+     "position": "SUB"
+    },
+    {
+     "name": "Marcos Llorente",
+     "jersey": "5",
+     "position": "SUB"
+    },
+    {
+     "name": "Yéremy Pino",
+     "jersey": "11",
+     "position": "SUB"
+    },
+    {
+     "name": "Joan García",
+     "jersey": "13",
+     "position": "SUB"
+    },
+    {
+     "name": "Eric García",
+     "jersey": "4",
+     "position": "SUB"
+    }
+   ]
+  },
+  {
+   "team": "Argentina",
+   "formation": "4-4-2",
+   "starters": [
+    {
+     "name": "Emiliano Martínez",
+     "jersey": "23",
+     "position": "G"
+    },
+    {
+     "name": "Lisandro Martínez",
+     "jersey": "6",
+     "position": "CD-L"
+    },
+    {
+     "name": "Cristian Romero",
+     "jersey": "13",
+     "position": "CD-R"
+    },
+    {
+     "name": "Nicolás Tagliafico",
+     "jersey": "3",
+     "position": "LB"
+    },
+    {
+     "name": "Gonzalo Montiel",
+     "jersey": "4",
+     "position": "RB"
+    },
+    {
+     "name": "Alexis Mac Allister",
+     "jersey": "20",
+     "position": "CM-L"
+    },
+    {
+     "name": "Enzo Fernández",
+     "jersey": "24",
+     "position": "CM-R"
+    },
+    {
+     "name": "Nico González",
+     "jersey": "15",
+     "position": "LM"
+    },
+    {
+     "name": "Rodrigo De Paul",
+     "jersey": "7",
+     "position": "RM"
+    },
+    {
+     "name": "Julián Álvarez",
+     "jersey": "9",
+     "position": "CF-L"
+    },
+    {
+     "name": "Lionel Messi",
+     "jersey": "10",
+     "position": "CF-R"
+    }
+   ],
+   "subs": [
+    {
+     "name": "Exequiel Palacios",
+     "jersey": "14",
+     "position": "SUB"
+    },
+    {
+     "name": "Leandro Paredes",
+     "jersey": "5",
+     "position": "SUB"
+    },
+    {
+     "name": "Valentín Barco",
+     "jersey": "8",
+     "position": "SUB"
+    },
+    {
+     "name": "Gerónimo Rulli",
+     "jersey": "12",
+     "position": "SUB"
+    },
+    {
+     "name": "Nicolás Otamendi",
+     "jersey": "19",
+     "position": "SUB"
+    },
+    {
+     "name": "Nahuel Molina",
+     "jersey": "26",
+     "position": "SUB"
+    },
+    {
+     "name": "Giovani Lo Celso",
+     "jersey": "11",
+     "position": "SUB"
+    },
+    {
+     "name": "Giuliano Simeone",
+     "jersey": "17",
+     "position": "SUB"
+    },
+    {
+     "name": "José Manuel López",
+     "jersey": "21",
+     "position": "SUB"
+    },
+    {
+     "name": "Thiago Almada",
+     "jersey": "16",
+     "position": "SUB"
+    },
+    {
+     "name": "Marcos Senesi",
+     "jersey": "2",
+     "position": "SUB"
+    },
+    {
+     "name": "Lautaro Martínez",
+     "jersey": "22",
+     "position": "SUB"
+    },
+    {
+     "name": "Juan Musso",
+     "jersey": "1",
+     "position": "SUB"
+    },
+    {
+     "name": "Facundo Medina",
+     "jersey": "25",
+     "position": "SUB"
+    },
+    {
+     "name": "Nico Paz",
+     "jersey": "18",
+     "position": "SUB"
+    }
+   ]
+  }
+ ],
+ "attendance": 80663,
+ "venue": "MetLife Stadium, East Rutherford, New Jersey, USA"
+}
