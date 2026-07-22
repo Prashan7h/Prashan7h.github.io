@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-KVBPX8VW');</script>
+    <!-- End Google Tag Manager -->
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="The hard problem of consciousness — David Chalmers, philosophical zombies, Mary's Room, and why explaining what the brain does never seems to explain why it feels like anything.">
+    <link rel="icon" type="image/svg+xml" href="../images/favicon.svg">
+    <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon-32.png">
+    <link rel="apple-touch-icon" href="../images/apple-touch-icon.png">
+    <title>The Hard Problem of Consciousness | Prashanth Shankar</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+
+    <style>
+        *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+        html { font-size: 16px; scroll-behavior: smooth; }
+        body {
+            background: #fff;
+            color: #000;
+            font-family: 'Inter', -apple-system, sans-serif;
+            font-weight: 400;
+            line-height: 1.7;
+        }
+        ::selection { background: #000; color: #fff; }
+
+        .page {
+            max-width: 720px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        header {
+            padding: 2.5rem 0 0;
+        }
+
+        .back-link {
+            font-size: 0.75rem;
+            font-weight: 400;
+            letter-spacing: 0.04em;
+            color: #000;
+            text-decoration: none;
+            transition: opacity 0.2s ease;
+        }
+        .back-link:hover { opacity: 0.5; }
+
+        article {
+            padding: 4rem 0 3rem;
+        }
+
+        article h1 {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 2.6rem;
+            font-weight: 600;
+            line-height: 1.15;
+            margin-bottom: 1rem;
+        }
+
+        .deck {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.25rem;
+            font-style: italic;
+            line-height: 1.5;
+            color: #000;
+            margin-bottom: 2.5rem;
+        }
+
+        article h2 {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.8rem;
+            font-weight: 600;
+            line-height: 1.2;
+            margin: 3rem 0 1rem;
+        }
+
+        article p {
+            font-size: 0.95rem;
+            font-weight: 300;
+            line-height: 1.75;
+            margin-bottom: 1rem;
+        }
+
+        article em {
+            font-style: italic;
+        }
+
+        .pullquote {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.35rem;
+            font-style: italic;
+            line-height: 1.45;
+            padding: 1.5rem 0 1.5rem 1.5rem;
+            border-left: 2px solid #000;
+            margin: 2rem 0;
+            color: #000;
+        }
+
+        .figure {
+            margin: 2.5rem 0;
+        }
+        .figure svg {
+            display: block;
+            width: 100%;
+            height: auto;
+            max-width: 640px;
+            margin: 0 auto;
+        }
+        .caption {
+            font-size: 0.78rem;
+            color: #666;
+            text-align: center;
+            margin-top: 0.8rem;
+            line-height: 1.5;
+            font-style: italic;
+            font-family: 'Cormorant Garamond', serif;
+        }
+
+        hr.divider {
+            border: none;
+            border-top: 1px solid #000;
+            margin: 3rem 0;
+        }
+
+        .references {
+            font-size: 0.8rem;
+            color: #555;
+            line-height: 1.7;
+            margin-top: 2rem;
+        }
+        .references h3 {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: #000;
+            margin-bottom: 0.75rem;
+        }
+        .references ol {
+            padding-left: 1.2rem;
+        }
+        .references li {
+            margin-bottom: 0.35rem;
+        }
+
+        footer {
+            padding: 2rem 0 3rem;
+            font-size: 0.75rem;
+            color: #666;
+        }
+        footer a { color: inherit; text-decoration: underline; text-underline-offset: 0.2em; }
+    </style>
+</head>
+<body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KVBPX8VW" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+    <div class="page">
+        <header>
+            <a href="index.html" class="back-link">&larr; Wonderland</a>
+        </header>
+
+        <article>
+            <h1>The Hard Problem of Consciousness</h1>
+            <p class="deck">In 1995 a young Australian philosopher pointed out that neuroscience keeps solving the wrong problem &mdash; and the right one may not be solvable at all.</p>
+
+            <p>Consciousness is a word that means too many things. It is used for wakefulness (you are conscious when not under anesthesia), for self-awareness (a mirror-recognising chimpanzee), for attention, for the ability to report on one's own states. Neuroscience makes real progress on all of these. Then there is the other one &mdash; the fact that there is <em>something it is like</em> to be you right now, reading this sentence, in this room. The dark ink on the screen has a felt quality. The dull hum in the background has a felt quality. Even a mild toothache has a felt quality. Nobody is quite sure why.</p>
+
+            <p>In 1995, at a small conference in Tucson, a 29-year-old philosopher named David Chalmers gave a talk that split the field. He drew a line &mdash; and then a wall &mdash; between the problems that were already yielding to normal science and the one that, he argued, was categorically different. On one side, the <em>easy</em> problems. On the other, the <em>hard</em> one.</p>
+
+            <h2>The easy problems and the hard one</h2>
+
+            <p>Chalmers called the following "easy" not because they were solved, but because they were, in principle, solvable by ordinary cognitive science. How does the brain integrate information from different senses? How does it discriminate a lemon from a lime? How does it produce reports about its own internal states? How does it focus attention, or transition between sleep and waking? These are engineering problems. Hard in practice, but tractable &mdash; you can describe what neural mechanism does the work, wire by wire, and be finished.</p>
+
+            <div class="figure">
+                <svg viewBox="0 0 640 300" xmlns="http://www.w3.org/2000/svg">
+                    <!-- Easy problems box -->
+                    <rect x="20" y="30" width="260" height="240" stroke="#000" stroke-width="1" fill="#fff"/>
+                    <text x="150" y="60" font-family="'Cormorant Garamond', serif" font-size="18" font-style="italic" text-anchor="middle" fill="#000">The easy problems</text>
+                    <line x1="60" y1="72" x2="240" y2="72" stroke="#000" stroke-width="0.5"/>
+                    <g font-family="Inter, sans-serif" font-size="12" fill="#000">
+                        <text x="40" y="105">&#8226; discriminate a lemon</text>
+                        <text x="40" y="130">&#8226; integrate the senses</text>
+                        <text x="40" y="155">&#8226; report on inner states</text>
+                        <text x="40" y="180">&#8226; direct attention</text>
+                        <text x="40" y="205">&#8226; wake, sleep, dream</text>
+                    </g>
+                    <text x="150" y="245" font-family="'Cormorant Garamond', serif" font-style="italic" font-size="13" fill="#666" text-anchor="middle">explained by</text>
+                    <text x="150" y="262" font-family="Inter, sans-serif" font-size="11" fill="#666" text-anchor="middle">neural mechanism</text>
+
+                    <!-- Gap -->
+                    <g stroke="#000" stroke-width="1" stroke-dasharray="4 4" fill="none">
+                        <line x1="290" y1="150" x2="360" y2="150"/>
+                    </g>
+                    <text x="325" y="140" font-family="'Cormorant Garamond', serif" font-style="italic" font-size="12" fill="#666" text-anchor="middle">explanatory</text>
+                    <text x="325" y="172" font-family="'Cormorant Garamond', serif" font-style="italic" font-size="12" fill="#666" text-anchor="middle">gap</text>
+
+                    <!-- Hard problem box -->
+                    <rect x="370" y="30" width="250" height="240" stroke="#000" stroke-width="1" fill="#fff"/>
+                    <text x="495" y="60" font-family="'Cormorant Garamond', serif" font-size="18" font-style="italic" text-anchor="middle" fill="#000">The hard problem</text>
+                    <line x1="410" y1="72" x2="580" y2="72" stroke="#000" stroke-width="0.5"/>
+                    <text x="495" y="130" font-family="'Cormorant Garamond', serif" font-style="italic" font-size="17" fill="#000" text-anchor="middle">why is there</text>
+                    <text x="495" y="155" font-family="'Cormorant Garamond', serif" font-style="italic" font-size="17" fill="#000" text-anchor="middle">something</text>
+                    <text x="495" y="180" font-family="'Cormorant Garamond', serif" font-style="italic" font-size="17" fill="#000" text-anchor="middle">it is like</text>
+                    <text x="495" y="205" font-family="'Cormorant Garamond', serif" font-style="italic" font-size="17" fill="#000" text-anchor="middle">at all?</text>
+                    <text x="495" y="252" font-family="Inter, sans-serif" font-size="26" fill="#000" text-anchor="middle">?</text>
+                </svg>
+                <p class="caption">Chalmers's division. Function on the left, felt quality on the right, and no known bridge between them.</p>
+            </div>
+
+            <p>The hard problem is different. Even after you have named every neuron, mapped every circuit, and traced every action potential from stimulus to speech act, you are left holding a residue. Why is any of this <em>experienced</em>? Why isn't the brain, like a very complicated thermostat, doing all this in the dark? The functions get explained. The felt quality does not. Nothing in a functional description tells you why the colour red should look like anything to the system doing the discriminating.</p>
+
+            <h2>Zombies, inverted qualia, and Mary</h2>
+
+            <p>To sharpen the point, philosophers construct thought experiments that pump the intuition.</p>
+
+            <p>The <em>philosophical zombie</em> is Chalmers's own: imagine a being physically identical to you, atom for atom, that behaves identically in every conceivable circumstance &mdash; winces at pins, laughs at jokes, insists it is conscious &mdash; but has no inner experience whatsoever. Nothing is going on inside. The lights are off. If such a being is even coherent as a possibility, Chalmers argues, then consciousness is not just physical function, because physical function has been held constant and something else has changed.</p>
+
+            <p><em>Inverted qualia</em>: imagine two people who use the word "red" for exactly the same wavelengths of light and stop at exactly the same red traffic lights, but the felt colour that one calls red is the felt colour the other calls green. No behavioural test could catch it. Their functions are identical; their experiences are not.</p>
+
+            <p><em>Mary the colour scientist</em> (Frank Jackson, 1982): Mary has lived her whole life in a black-and-white room, but she has learned every physical fact about colour vision &mdash; every wavelength, every neuron, every equation. One day she walks outside and sees a red rose. Does she learn something new? Almost everyone says yes. But if she already knew every physical fact, then this new thing &mdash; what red is <em>like</em> &mdash; was not a physical fact at all.</p>
+
+            <p class="pullquote">The really hard problem is the problem of experience. Even when we have explained the performance of all the cognitive and behavioural functions in the vicinity of experience &hellip; there may still remain a further unanswered question: why is the performance of these functions accompanied by experience? &mdash; David Chalmers</p>
+
+            <h2>Deflation, and the attempts at rescue</h2>
+
+            <p>Not everyone accepts that the hard problem is real. Daniel Dennett, its most persistent critic, calls the whole thing an illusion &mdash; a philosophical mirage produced by treating a first-person report as if it were a first-person <em>thing</em>. On his view, when the brain finishes explaining the easy problems, the hard problem will simply have evaporated, because there was never any extra "experience" apart from the reports the brain generates. The zombie, he insists, is not merely counterfactual but incoherent: what would it even mean to be atom-identical to a person yet lack whatever that person's atoms are doing?</p>
+
+            <p>Others accept the problem is real and try to solve it by expanding the ontology.</p>
+
+            <p><em>Integrated Information Theory</em> (Giulio Tononi) proposes that consciousness just <em>is</em> integrated information &mdash; a mathematical quantity, &Phi;, that measures how much a system is more than the sum of its parts. Any system with high &Phi;, including, in principle, a sufficiently wired-up thermostat network, would have some flicker of experience.</p>
+
+            <p><em>Global Workspace Theory</em> (Bernard Baars, Stanislas Dehaene) treats consciousness as what happens when information wins a competition for a shared "broadcast" across the brain. This is a serviceable theory of when things get consciously reported, but not, its critics say, of why the broadcast should feel like anything.</p>
+
+            <p><em>Panpsychism</em>, the oldest of the rescues, treats experience as a fundamental feature of the universe &mdash; like mass or charge, present in some primitive form everywhere, combining somehow to give rise to human consciousness. This sidesteps the hard problem by refusing to derive experience from anything more basic; it just <em>is</em>. The catch: nobody has a working account of how tiny bits of proto-experience add up to a unified human mind. (The literature calls this the "combination problem.")</p>
+
+            <div class="figure">
+                <svg viewBox="0 0 640 260" xmlns="http://www.w3.org/2000/svg">
+                    <!-- Left column: physical facts -->
+                    <text x="120" y="40" font-family="'Cormorant Garamond', serif" font-size="16" font-style="italic" fill="#000" text-anchor="middle">Physical facts</text>
+                    <line x1="40" y1="52" x2="200" y2="52" stroke="#000" stroke-width="0.5"/>
+                    <g font-family="Inter, sans-serif" font-size="11" fill="#000">
+                        <text x="40" y="80">wavelength: 700 nm</text>
+                        <text x="40" y="102">cone-cell response curves</text>
+                        <text x="40" y="124">V4 firing pattern</text>
+                        <text x="40" y="146">colour-word retrieval</text>
+                        <text x="40" y="168">verbal report: &ldquo;red&rdquo;</text>
+                    </g>
+                    <text x="120" y="210" font-family="'Cormorant Garamond', serif" font-style="italic" font-size="13" fill="#666" text-anchor="middle">structural</text>
+                    <text x="120" y="228" font-family="'Cormorant Garamond', serif" font-style="italic" font-size="13" fill="#666" text-anchor="middle">(what it does)</text>
+
+                    <!-- Middle: the gap -->
+                    <g stroke="#000" stroke-width="1" stroke-dasharray="5 5" fill="none">
+                        <line x1="230" y1="60" x2="230" y2="200"/>
+                        <line x1="410" y1="60" x2="410" y2="200"/>
+                    </g>
+                    <text x="320" y="115" font-family="'Cormorant Garamond', serif" font-style="italic" font-size="18" fill="#000" text-anchor="middle">???</text>
+                    <text x="320" y="140" font-family="Inter, sans-serif" font-size="10" fill="#666" text-anchor="middle">no known bridge</text>
+                    <text x="320" y="156" font-family="Inter, sans-serif" font-size="10" fill="#666" text-anchor="middle">from left to right</text>
+
+                    <!-- Right column: phenomenal experience -->
+                    <text x="520" y="40" font-family="'Cormorant Garamond', serif" font-size="16" font-style="italic" fill="#000" text-anchor="middle">Phenomenal experience</text>
+                    <line x1="440" y1="52" x2="600" y2="52" stroke="#000" stroke-width="0.5"/>
+                    <text x="520" y="115" font-family="'Cormorant Garamond', serif" font-style="italic" font-size="20" fill="#000" text-anchor="middle">the redness</text>
+                    <text x="520" y="140" font-family="'Cormorant Garamond', serif" font-style="italic" font-size="20" fill="#000" text-anchor="middle">of red</text>
+                    <text x="520" y="210" font-family="'Cormorant Garamond', serif" font-style="italic" font-size="13" fill="#666" text-anchor="middle">intrinsic</text>
+                    <text x="520" y="228" font-family="'Cormorant Garamond', serif" font-style="italic" font-size="13" fill="#666" text-anchor="middle">(what it is like)</text>
+                </svg>
+                <p class="caption">The explanatory gap. A complete description of what the brain does never seems to entail what any of it is like.</p>
+            </div>
+
+            <h2>Why it might be the deepest question left</h2>
+
+            <p>Science has an unbroken record of chewing through mysteries once considered ineffable &mdash; life, heat, lightning, disease, inheritance. Each was thought, at the time, to require some non-physical animating principle. Each turned out to yield to structural explanation. It is reasonable to bet that consciousness will too.</p>
+
+            <p>But there is a specific worry the hard problem points at, and it is not the usual worry that science hasn't gotten around to it yet. It is that <em>every</em> other explanation in physics is a structural one &mdash; a description of how things relate to other things, what they do, how they behave. Consciousness has an extra property: it doesn't merely do; it <em>is</em>. And no structural description ever seems to entail an "is like." That is the gap.</p>
+
+            <p>Whether the gap is closed by clever neuroscience, dissolved by careful philosophy, or bridged only by admitting a new fundamental into the world remains open. Thirty years after Chalmers's talk, the debate is unresolved, and the stakes are unusually clean: either we are missing a piece of the physical story, or we are asking a badly-formed question, or the universe contains something the natural sciences haven't yet found a place for.</p>
+
+            <p>That is more than can be said for most open problems.</p>
+
+            <hr class="divider">
+
+            <div class="references">
+                <h3>Further reading</h3>
+                <ol>
+                    <li>Chalmers, D. (1995). <em>Facing Up to the Problem of Consciousness</em>. Journal of Consciousness Studies, 2(3).</li>
+                    <li>Chalmers, D. (1996). <em>The Conscious Mind: In Search of a Fundamental Theory</em>.</li>
+                    <li>Jackson, F. (1982). <em>Epiphenomenal Qualia</em>. Philosophical Quarterly, 32.</li>
+                    <li>Dennett, D. (1991). <em>Consciousness Explained</em>.</li>
+                    <li>Tononi, G. (2004). <em>An information integration theory of consciousness</em>. BMC Neuroscience.</li>
+                </ol>
+            </div>
+        </article>
+
+        <footer>
+            <a href="index.html">&larr; Back to Wonderland</a>
+        </footer>
+    </div>
+</body>
+</html>
