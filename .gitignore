@@ -15,3 +15,6 @@
 # Test files
 test_*.html
 __pycache__/
+
+# Landing page design workshop (its own git repo)
+yuuki-landing/
