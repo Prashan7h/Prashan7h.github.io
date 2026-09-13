@@ -1,0 +1,16 @@
+#logo-terminal{width:100%;height:auto;max-height:none;min-width:0}
+#logo-terminal .terminal-art{position:relative;width:100%;isolation:isolate}
+#logo-terminal .terminal-illustration{display:block;width:100%;height:auto}
+/* Bounds sit inside the painted glass, independent of column width. */
+#logo-terminal .terminal-screen{position:absolute;left:19%;top:16%;width:62%;height:37%;display:flex;flex-direction:column;box-sizing:border-box;padding:3%;color:#d1dfbd;overflow:hidden;pointer-events:none}
+#logo-terminal .terminal-command-line{flex:none;white-space:nowrap;font:400 clamp(12px,1.3vw,16px)/1.5 "Courier New",monospace}
+#logo-terminal .terminal-cursor{display:inline-block;width:.5em;height:1em;margin-left:.15em;vertical-align:-.1em;background:currentColor;visibility:hidden}
+#logo-terminal.is-playing .terminal-cursor{visibility:visible;animation:terminal-blink .9s step-end infinite}
+#logo-terminal .terminal-drawing{display:block;flex:1;width:100%;height:0;min-height:0;overflow:hidden;margin-top:8px}
+#logo-terminal figcaption{display:block;margin-top:7px}
+#logo-terminal .credit{font-size:12px}
+@keyframes terminal-blink{0%,100%{opacity:1}50%{opacity:0}}
+@media(max-width:1100px) and (min-width:801px){#interactive-computing{grid-template-columns:1fr}#logo-terminal{max-width:620px;margin:auto}}
+@media(max-width:800px){#logo-terminal .terminal-command-line{font-size:clamp(12px,2.7vw,16px)}}
+@media(prefers-reduced-motion:reduce){#logo-terminal.is-playing .terminal-cursor{animation:none;visibility:hidden}}
+@media print{#logo-terminal .terminal-cursor{display:none}}

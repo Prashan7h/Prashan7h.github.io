@@ -1,0 +1,31 @@
+#logo-terminal{width:100%;height:auto;max-height:none;min-width:0}
+#logo-terminal .terminal-art{position:relative;width:100%;isolation:isolate}
+#logo-terminal .terminal-illustration{display:block;width:100%;height:auto}
+#logo-terminal .terminal-screen{position:absolute;left:19%;top:16%;width:62%;height:37%;display:flex;flex-direction:column;padding:8px;color:#d1dfbd;background:transparent;border-radius:3%;font:400 14px/1.45 "Courier New",monospace;overflow:hidden}
+#logo-terminal .terminal-display{flex:1;min-height:0;position:relative;overflow:hidden}
+#logo-terminal .terminal-output{height:100%;overflow:auto;overflow-wrap:anywhere;scrollbar-width:thin;white-space:pre-wrap}
+#logo-terminal .terminal-output>div{margin:0 0 5px}
+#logo-terminal .terminal-drawing{display:block;width:100%;height:100%}
+#logo-terminal [hidden]{display:none!important}
+#logo-terminal .terminal-status{flex-shrink:0;min-height:1.45em;overflow-wrap:anywhere;margin-top:4px}
+#logo-terminal .terminal-command{display:flex;align-items:center;gap:6px;flex-shrink:0;margin-top:4px}
+#logo-terminal .terminal-command label{flex-shrink:0}
+#logo-terminal input{width:0;min-width:0;flex:1;padding:3px 0;color:inherit;caret-color:currentColor;background:transparent;border:0;border-radius:0;font:400 16px/1.4 "Courier New",monospace;outline-offset:1px}
+#logo-terminal input::placeholder{color:#a4b298;opacity:1}
+#logo-terminal .terminal-entry{position:relative;flex:1;min-width:0}
+#logo-terminal .terminal-entry input{display:block;width:100%;box-sizing:border-box}
+#logo-terminal .terminal-entry input:placeholder-shown:not(:focus){padding-left:14px}
+#logo-terminal .terminal-idle-cursor{display:none;position:absolute;left:0;top:50%;width:8px;height:17px;transform:translateY(-50%);background:currentColor;pointer-events:none;animation:terminal-cursor-blink 1.2s step-end infinite}
+#logo-terminal input:placeholder-shown:not(:focus)+.terminal-idle-cursor{display:block}
+@keyframes terminal-cursor-blink{0%,100%{opacity:1}50%{opacity:0}}
+@media(prefers-reduced-motion:reduce){#logo-terminal .terminal-idle-cursor{animation:none}}
+#logo-terminal .terminal-command button{flex-shrink:0;font:inherit;background:transparent;color:inherit;border:1px solid #63725e;border-radius:3px;padding:4px 5px;cursor:pointer}
+#logo-terminal .terminal-screen :focus-visible{outline:2px solid #e0eacc;outline-offset:1px}
+#logo-terminal .terminal-examples{display:flex;flex-wrap:wrap;gap:4px 16px;margin:8px 0}
+#logo-terminal .terminal-examples button{padding:8px 0;min-height:44px;font:400 12px/1.4 "Courier New",monospace;letter-spacing:0;color:#52565b;background:none;border:0;cursor:pointer;text-decoration:underline;text-decoration-color:#c4c8c2;text-underline-offset:5px}
+#logo-terminal .terminal-examples button:hover{color:#111315;text-decoration-color:currentColor}
+#logo-terminal figcaption{display:block}
+#logo-terminal .credit{font-size:12px}
+@media(max-width:1100px) and (min-width:801px){#interactive-computing{grid-template-columns:1fr}#logo-terminal{max-width:620px;margin:auto}}
+@media(max-width:480px){#logo-terminal .terminal-screen{padding:8px;font-size:12px}#logo-terminal .terminal-command{gap:4px}#logo-terminal .terminal-status{font-size:12px}#logo-terminal .terminal-command button{font-size:12px;padding:5px 3px}#logo-terminal .terminal-examples{gap:0 12px}}
+@media print{#logo-terminal .terminal-examples,#logo-terminal .terminal-command{display:none}}
