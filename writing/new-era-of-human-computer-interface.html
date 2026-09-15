@@ -6,6 +6,7 @@
 <meta name="description" content="Computers are universal. How we interact with them keeps changing. An essay by Prashanth Shankar.">
 <link rel="icon" href="article-favicon.svg" type="image/svg+xml">
 <link rel="stylesheet" href="terminal-demo.css">
+<link rel="stylesheet" href="interface-motion.css?v=3">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500&display=swap" rel="stylesheet"><style>
 :root{--paper:#fff;--ink:#202124;--muted:#73777c;--line:#eceef0;--sans:"Inter","Helvetica Neue",Arial,sans-serif}*{box-sizing:border-box}html{scroll-padding-top:100px}body{margin:0;background:#fff;color:var(--ink);font-family:var(--sans);font-weight:300;-webkit-font-smoothing:antialiased}a{color:inherit;text-underline-offset:4px}button{font:inherit}a:focus-visible,button:focus-visible,summary:focus-visible{outline:2px solid #636b75;outline-offset:6px}.shell{max-width:1700px;margin:auto;padding:0 clamp(24px,5vw,88px)}header{position:sticky;top:0;z-index:5;background:rgba(255,255,255,.96);backdrop-filter:blur(18px);min-height:100px;display:flex;align-items:center;justify-content:space-between;gap:32px;border-bottom:1px solid var(--line)}header h1{font-size:clamp(21px,2.25vw,34px);font-weight:200;letter-spacing:-.055em;line-height:1.2;margin:0}header .home{font-size:13px;text-decoration:none;color:var(--muted);white-space:nowrap}.mast-label{display:none}.section{display:grid;grid-template-columns: minmax(0, .95fr) minmax(0, 1.05fr);gap:clamp(30px,5vw,85px);align-items:center;min-height:calc(100svh - 175px);padding:54px 0}.copy{max-width:590px}.number{font-style:normal;line-height:1.5;margin-top:0;font-size:12px;font-weight:400;letter-spacing:.1em;color:var(--muted);margin-bottom:25px}.copy p{font-size:clamp(16px,1.18vw,19px);font-weight:400;line-height:1.7;letter-spacing:-.018em;margin:0 0 19px;color:#454a50}.copy p:last-of-type{margin-bottom:0}figure{margin:0;min-width:0;align-self:center}.engine-art{display:block;width:100%;border:0;padding:0;background:#fff;cursor:default}.engine-art img{display:block;width:100%;height:auto;transition:transform .6s ease;will-change:transform}.engine-art:hover img{transform:scale(1.025)}figcaption{font-size:12px;line-height:1.7;color:var(--muted);margin-top:14px;display:flex;justify-content:space-between;align-items:center;gap:20px}figcaption strong{font-weight:400;color:#52565b}.zoom-hint{font-size:12px;white-space:nowrap}.credit{font-size:11px;color:#73777c}.plate-heading,.plate-note{display:none}footer{min-height:75px;border-top:1px solid var(--line);display:flex;align-items:center;justify-content:space-between;gap:24px;font-size:12px;color:var(--muted)}.section-count{display:flex;align-items:center;gap:14px}.section-count:before{content:"01";font-size:12px;color:#282c31}.pager{display:flex;gap:24px;align-items:center}.pager button{border:0;padding:12px 0 12px 14px;background:none;font-size:13px;color:#72767a}.pager button:disabled{opacity:.5;cursor:not-allowed}details{margin-top:25px;font-size:12px;line-height:1.7;color:var(--muted)}summary{cursor:pointer;width:max-content}details ul{padding-left:18px}details li{margin-bottom:10px}.skip{position:fixed;top:-100px;left:20px;background:white;padding:10px;z-index:10}.skip:focus{top:10px}.copy,figure{animation:arrive .8s both}figure{animation-delay:.1s}@keyframes arrive{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}@media(max-width:800px){header{min-height:88px;gap:18px}header h1{font-size:24px;max-width:310px}header .home{font-size:12px;white-space:normal;max-width:55px}.section{grid-template-columns:1fr;gap:30px;padding:35px 0}.copy{max-width:620px}.copy p{font-size:17px;line-height:1.8}figure{max-width:620px;width:100%;margin:auto}figcaption{margin-top:0}.pager #next-status{display:none}footer{min-height:70px}}@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}@media print{header{position:static}.section{display:block}.copy{max-width:none}figure{max-width:60%;margin:auto}footer,details,.zoom-hint{display:none}}
 .copy .opening-statement{font-size:clamp(28px,2.7vw,41px);font-weight:300;line-height:1.24;letter-spacing:-.045em;color:#202124;margin-bottom:26px}.copy{max-width:565px}@media(max-width:800px){.copy p{line-height:1.7}.copy .opening-statement{font-size:31px}}
@@ -165,22 +166,59 @@ header h1{color:#000}
 .engine-art:hover img{transform:none}
 .continuation{min-height:100svh;padding:80px 0}
 @media(max-width:800px){.continuation{min-height:0;padding:70px 0}}
+/* A quiet opening gives the main argument room before the illustrated history. */
+.section.essay-introduction{display:grid;min-height:0;padding:64px 0 80px}
+.essay-introduction .copy{max-width:590px;margin:0}
+@media(max-width:800px){.section.essay-introduction{padding:40px 0 56px}}
+/* Consistent reading rhythm and a compact opening beneath the title. */
+.section .copy p,.section .copy .opening-statement{line-height:1.85;margin-bottom:22px}
+.section .copy p:last-of-type{margin-bottom:0}
+.section.essay-introduction{padding:32px 0 48px;align-items:center}
+.essay-introduction .copy{align-self:center;padding-top:0}
+.essay-introduction .copy p,.essay-introduction .copy .opening-statement{margin-bottom:32px}
+.essay-introduction .copy p:last-of-type{margin-bottom:0}
+.essay-introduction figure{align-self:center}
+.essay-introduction .engine-art img{max-height:620px}
+@media(max-width:800px){
+ .section.essay-introduction{padding:24px 0 40px;gap:24px}
+ .essay-introduction .copy{padding-top:0}
+ .section .copy p,.section .copy .opening-statement{line-height:1.8;margin-bottom:20px}
+ .section .copy p:last-of-type{margin-bottom:0}
+}
 </style></head>
 <body><a class="skip" href="#opening">Skip to section</a><div class="shell">
 <header><div><div class="mast-label">An essay by Prashanth Shankar</div><h1>A New Era of Human Computer Interface</h1></div></header>
-<main><section class="section" id="opening" aria-labelledby="opening-statement">
+<main>
+<section class="section essay-introduction" id="opening" aria-labelledby="meaning-first">
 <div class="copy">
-<p class="opening-statement" id="opening-statement">Tools are special things. They are not naturally occurring things. They are things that are physically transformed, transformed for utility, utility of people by people.</p>
+<p class="opening-statement" id="meaning-first">AI has clearly changed how we interact with computers. But this change is not incremental.</p>
+<p>For the first time, computers “understand” what we mean. Something we have dreamed of for ages is now becoming possible.</p>
+<p>For much of computing’s history, we had to translate what we wanted into precise instructions. Commands, buttons, and clicks.</p>
+<p>Now we can say what we want, and the computer can translate our words into instructions for the machine.</p>
+</div>
+<figure><div class="engine-art"><img src="stone-to-smartphone-watercolour.png" width="1254" height="1254" fetchpriority="high" alt="Detailed watercolour illustration of a chipped stone hand tool transforming through exposed circuitry into a modern smartphone."></div></figure>
+</section>
+<section class="section" id="universal-tools" aria-labelledby="opening-statement">
+<div class="copy">
+<p class="opening-statement" id="opening-statement">It all started with building tools. Tools are special things.</p>
+<p>They are not naturally occurring things. They are things that people physically transform for their own use.</p>
 <p>Computers are the most general tool we have ever built.</p>
 <p>In fact, in theory, they are as general in their capabilities as any computing machine can be. A universal capability.</p>
 <p>We use this universality to get our day to day things done and aspire to more. We do that by interacting with them physically, through touch, sight, and sound. (Not yet through smell and taste.)</p>
 <p>While the theoretical capabilities remain the same, from the Analytical Engine of the 1830s to today’s most advanced Apple MacBook, there is a world of difference in how we interact with these tools.</p>
 </div>
-<figure><div class="engine-art" id="engine-art"><img src="analytical-engine-watercolour.png" width="1254" height="1254" alt="Watercolour-style illustration of Babbage’s Analytical Engine, with dark iron columns and brass gears fading into a soft painted ground on white."></div><figcaption><div><strong>The Analytical Engine</strong><div class="credit">An artistic interpretation of Babbage’s design</div></div></figcaption></figure>
+<figure><div class="engine-art" id="engine-art"><img src="analytical-engine-watercolour.png" width="1254" height="1254" alt="Watercolour-style illustration of Babbage’s Analytical Engine, with dark iron columns and brass gears fading into a soft painted ground on white."></div></figure>
 </section>
 
-<section class="section continuation" aria-labelledby="page-two-title"><div class="copy"><p id="page-two-title">Our first interaction with computers looked similar to operating any heavy machinery.</p><p>Changing thousands of cables and rotors manually every time we wanted these machines to do a different task.</p><p>These changes in wiring and rotors were nothing but instructions: sets of physical transformations encoded as abstract rules.</p><p>Soon we started storing programs. Instead of changing the settings for every program, we only had to tell the machine which program to run, and the machine would set up its own settings. Memory.</p><p>This still required writing programs offline on paper or punch cards, then loading them into the computer as a batch.</p></div>
-<figure><div class="engine-art"><img src="eniac-punched-cards-watercolour.png" width="1254" height="1254" loading="lazy" alt="Watercolour-style illustration of ENIAC-inspired electronic cabinets, vacuum tubes and patch cables, with a punched-card reader and cream cards in the foreground."></div><figcaption><div><strong>Electronic computing and punched cards</strong><div class="credit">An artistic interpretation of ENIAC era equipment</div></div></figcaption></figure>
+<section class="section continuation" aria-labelledby="page-two-title"><div class="copy">
+<p id="page-two-title">Our first interaction with computers looked similar to operating any heavy machinery.</p>
+<p>We changed thousands of cables and rotors manually whenever we wanted these machines to do a different task.</p>
+<p>These changes in wiring and rotors were nothing but instructions: sets of physical transformations encoded as abstract rules.</p>
+<p>Soon we started storing programs. Instead of changing the settings for every program, we only had to tell the machine which program to run, and the machine would set up its own settings.</p>
+<p>Memory.</p>
+<p>This still required writing programs offline on paper or punch cards, then loading them into the computer as a batch.</p>
+</div>
+<figure><div class="engine-art"><img src="eniac-punched-cards-watercolour.png" width="1254" height="1254" loading="lazy" alt="Watercolour-style illustration of ENIAC-inspired electronic cabinets, vacuum tubes and patch cables, with a punched-card reader and cream cards in the foreground."></div></figure>
 </section>
 
 <section class="section continuation" id="interactive-computing" aria-labelledby="page-three-title">
@@ -189,7 +227,9 @@ header h1{color:#000}
 <p>Early terminals printed the computer’s responses on paper. As CRT screens took their place, the keyboard and screen became a familiar way to use a computer.</p>
 <p>We were still pressing physical buttons, but now those buttons entered letters, numbers, and symbols. Software interpreted what we typed as instructions for the machine.</p>
 <p>We could write a program, run it, see the output, and edit it at the same terminal. Preparing the instructions and using the computer became part of the same activity.</p>
-<p>One of my fondest memories is writing Logo programs when I was eight years old. Forward 100. Right 90. Words I typed became lines on the screen. I was over the moon when I discovered that my version of Logo could also play music, with different letters producing different tones. Magical!</p>
+<p>One of my fondest memories is writing Logo programs when I was eight years old.</p>
+<p>Forward 100. Right 90. Words I typed became lines on the screen.</p>
+<p>I was over the moon when I discovered that my version of Logo could also play music, with different letters producing different tones. Magical!</p>
 </div>
 <figure id="logo-terminal" aria-label="Animated Logo demonstration: typed FORWARD, RIGHT, and LEFT commands guide a turtle around a square.">
 <div class="terminal-art">
@@ -202,59 +242,87 @@ header h1{color:#000}
 </svg>
 </div>
 </div>
-<figcaption><div><strong>Words become actions</strong><div class="credit">Forward, right, left. A few typed instructions become a square.</div></div></figcaption>
+
 </figure>
 </section>
 <section class="section continuation" id="graphical-interface" aria-labelledby="page-four-title">
 <div class="copy">
 <p id="page-four-title">But why type an instruction to move something when we could point to it and move it ourselves?</p>
 <p>The mouse gave our hand a position on the screen. Move it across the desk, and a pointer moved with it. Click to select. Hold and drag to move.</p>
-<p>Douglas Engelbart conceived the mouse, and Bill English built its first prototype in the 1960s. Work at Xerox PARC helped bring the mouse and graphical interfaces together. Later, computers like the Macintosh brought these ideas to a wider audience.</p>
-<p>Files became icons. Directories became folders. Programs appeared in windows. Instead of remembering what to type, we could see things on the screen and choose what to do with them. A graphical user interface.</p>
-<p>We were still giving the machine instructions. But now moving our hand, pointing, and clicking could express them. To draw a line, I no longer had to type Forward 100. I could drag across the screen and watch the line follow.</p>
+<p>Douglas Engelbart conceived the mouse, and Bill English built its first prototype in the 1960s.</p>
+<p>Work at Xerox PARC helped bring the mouse and graphical interfaces together. Later, computers like the Macintosh brought these ideas to a wider audience.</p>
+<p>Files became icons. Directories became folders. Programs appeared in windows.</p>
+<p>Instead of remembering what to type, we could see things on the screen and choose what to do with them. A graphical user interface.</p>
+<p>We were still giving the machine instructions. But now moving our hand, pointing, and clicking could express them.</p>
+<p>To draw a line, I no longer had to type Forward 100. I could drag across the screen and watch the line follow.</p>
 </div>
-<figure><div class="engine-art"><img src="graphical-interface-watercolour.png" width="1024" height="1024" loading="lazy" alt="Watercolour illustration of a Macintosh-inspired computer with windows and icons on its screen, a keyboard and a wired mouse."></div><figcaption><div><strong>Point, click, drag</strong><div class="credit">An artistic interpretation of an early graphical desktop · <a href="https://computerhistory.org/sri-mouse-mn052024/">Mouse history</a> · <a href="https://www.computerhistory.org/revolution/input-output/14/347">Xerox Alto</a></div></div></figcaption></figure>
+<figure><div class="engine-art animated-illustration"><img src="graphical-interface-watercolour.png" width="1024" height="1024" loading="lazy" alt="Watercolour illustration of a Macintosh-inspired computer with windows and icons on its screen, a keyboard and a wired mouse."><svg class="interface-animation" viewBox="0 0 1254 1254" aria-hidden="true">
+<image href="desktop-mouse-background.png" width="1254" height="1254"/>
+<defs><clipPath id="physical-mouse-cutout"><path d="M936 950Q957 945 985 951L1053 960Q1088 972 1088 1002L1089 1043Q1085 1057 1068 1074L954 1160Q941 1172 918 1162L808 1138Q792 1134 792 1117L792 1088Q790 1072 808 1055L913 962Z"/></clipPath></defs>
+<path class="mouse-cable" d="M1100 766 C1250 797 1220 890 1020 962" fill="none" stroke="#777973" stroke-width="9" stroke-linecap="round"/>
+<g class="physical-mouse"><image href="graphical-interface-watercolour.png" width="1254" height="1254" clip-path="url(#physical-mouse-cutout)"/></g>
+<defs><clipPath id="desktop-glass"><path d="M398 224 Q600 201 796 214 Q807 214 806 238 L797 519 Q794 538 777 536 L402 525 Q382 524 383 505 L394 244Z"/></clipPath><clipPath id="painted-window"><path d="M502 328 L686 329 L682 487 L498 483Z"/></clipPath></defs>
+<g clip-path="url(#desktop-glass)"><path fill="#99aaa6" d="M380 200H820V550H380Z"/>
+<g opacity=".7" fill="#dee1d5" stroke="#536460" stroke-width="3"><path d="M422 269H603V427H415Z"/><path fill="#86958e" d="M422 269H603V291H421Z"/><path d="M738 315h15l6 5h14v27h-36Z"/><path d="M744 257h15l9 10v24h-25Z"/></g>
+<g class="dragged-window"><image href="graphical-interface-watercolour.png" width="1254" height="1254" clip-path="url(#painted-window)"/></g>
+<g class="desktop-pointer"><path d="M0 0L0 32L8 24L15 39L22 35L15 21L28 21Z" fill="#273936" stroke="#e7e9dc" stroke-width="2"/><circle class="click-ring" cx="0" cy="0" r="16" fill="none" stroke="#e7e9dc" stroke-width="2"/></g></g></svg></div></figure>
 </section>
 
 <section class="section continuation" id="computing-today" aria-labelledby="page-five-title">
 <div class="copy">
 <p id="page-five-title">Today, we move between several ways of interacting with computers, often without thinking about it.</p>
-<p>On a trackpad, moving a finger moves the pointer. Two fingers scroll. On a touchscreen, we touch the thing itself. Tap a photograph to open it. Spread two fingers to make it bigger. Multi touch lets the machine read more than one point of contact at a time.</p>
+<p>On a trackpad, moving a finger moves the pointer. Two fingers scroll.</p>
+<p>On a touchscreen, we touch the thing itself. Tap a photograph to open it. Spread two fingers to make it bigger.</p>
+<p>Multitouch lets the machine read more than one point of contact at a time.</p>
 <p>We can use our voice too. Speak, and our words appear as text. Ask the computer to play music, and it plays. Sound becomes another way to give an instruction.</p>
-<p>In games, a thumb on a stick can steer a car. A button can make a character jump. The controller vibrates when we hit something. Our movements change what happens on the screen, and the machine responds through pictures, sound, and touch.</p>
-<p>These ways of interacting have not simply replaced one another. We still type, point, and click. We also swipe, pinch, speak, and play. The same computer, many ways to tell it what we want to do.</p>
+<p>In games, a thumb on a stick can steer a car. A button can make a character jump.</p>
+<p>The controller vibrates when we hit something. Our movements change what happens on the screen, and the machine responds through pictures, sound, and touch.</p>
+<p>These ways of interacting have not simply replaced one another. We still type, point, and click. We also swipe, pinch, speak, and play.</p>
+<p>The same computer, many ways to tell it what we want to do.</p>
 </div>
-<figure><div class="engine-art"><img src="modern-interfaces-watercolour.png" width="1024" height="1024" loading="lazy" alt="Watercolour illustration of a laptop with a trackpad, a tablet being touched, a microphone and a game controller."></div><figcaption><div><strong>Touch, speak, play</strong><div class="credit">Different physical actions, interpreted as instructions</div></div></figcaption></figure>
+<figure><div class="engine-art animated-illustration"><img src="tablet-landscape-plate.png" width="1254" height="1254" loading="lazy" alt="Watercolour illustration of a laptop, a tablet landscape with two touch points demonstrating pinch to zoom, a microphone and a game controller."><svg class="interface-animation" viewBox="0 0 1254 1254" aria-hidden="true">
+<defs><clipPath id="tablet-glass"><path d="M960 533L1205 582L1099 937L817 861Z"/></clipPath></defs>
+<g clip-path="url(#tablet-glass)"><image class="tablet-zoom" href="tablet-landscape-plate.png" width="1254" height="1254"/>
+<circle class="touch-point touch-point-left" cx="985" cy="770" r="16"/>
+<circle class="touch-point touch-point-right" cx="1055" cy="735" r="16"/>
+</g></svg></div></figure>
 </section>
 <section class="section continuation" id="beyond-predefined-options" aria-labelledby="page-six-title">
 <div class="copy">
 <p id="page-six-title">But through all these changes, something stayed the same. For most everyday tasks, we were choosing from actions someone had already defined for us.</p>
-<p>A button had a function. A menu had a list of options. Even in a game like GTA Vice City, where it feels like we can do anything, the controls have specific meanings. Move, jump, enter a car. These can combine into a world of possibilities, but what each control can do is still defined by the game.</p>
+<p>A button had a function. A menu had a list of options.</p>
+<p>Even in a game like GTA Vice City, where it feels like we can do anything, the controls have specific meanings. Move, jump, enter a car.</p>
+<p>These can combine into a world of possibilities, but what each control can do is still defined by the game.</p>
 <p>Now, when I use AI, I can say, “Hmm, I’m not sure about that.”</p>
-<p>What button is that? I have not said what is wrong. I have not picked an alternative. I have only expressed doubt. And the computer can use the context to ask what I mean, explain its answer, or try another approach.</p>
-<p>We could already type freely into documents, search boxes, and programs. Earlier systems could respond to language too. What feels different with today’s AI is how much of what we say can become part of the instruction, without someone having to design a separate option for it.</p>
-<p>“Keep this part.” “Make it less formal.” “Actually, I meant something else.” I can explain what I want in my own words, even while I am still figuring it out.</p>
-<p>This does not mean the computer can do anything, or that it will understand me correctly every time. But I am no longer limited to the choices visible on the screen. The interface can work with what I mean, not just which option I select. To me, that is profound.</p>
+<p>The fact that computers can interpret that doubt and respond appropriately feels new in my interactions with technology.</p>
+<p>We could already type freely into documents, search boxes, and programs. Earlier systems could respond to language too.</p>
+<p>What feels different with today’s AI is how much of what we say can become part of the instruction, without someone having to design a separate option for it.</p>
+<p>“Keep this part.” “Make it less formal.” “Actually, I meant something else.”</p>
+<p>I can explain what I want in my own words, even while I am still figuring it out.</p>
+<p>This does not mean the computer can do anything, or that it will understand me correctly every time.</p>
+<p>But I am no longer limited to the choices visible on the screen.</p>
+<p>The interface can work with what I mean, not just which option I select. To me, that is profound.</p>
 </div>
-<figure><div class="engine-art"><img src="ai-meaning-watercolour-v2.png" width="1254" height="1254" loading="lazy" alt="Watercolour illustration of a typed exchange: AI suggests, You could start with a short introduction. The person replies, Hmm, I'm not sure about that."></div><figcaption><div><strong>What button is that?</strong><div class="credit">A suggestion, followed by doubt, not a predefined choice</div></div></figcaption></figure>
+<figure><div class="engine-art"><img src="ai-meaning-watercolour-v2.png" width="1254" height="1254" loading="lazy" alt="Watercolour illustration of a typed exchange: AI suggests, You could start with a short introduction. The person replies, Hmm, I'm not sure about that."></div></figure>
 </section>
 
 <section class="section continuation" id="voice-and-the-screen" aria-labelledby="page-seven-title">
 <div class="copy">
-<p id="page-seven-title">And if I can explain what I want in my own words, why must I always type them?</p>
-<p>There is a reason writing fitted computers so well. Computers needed precise instructions, and written symbols gave us a way to specify them. Recognising speech was another technical challenge. But even recognising every word would not, by itself, tell the machine what we meant.</p>
-<p>We moved from codes and symbols to instructions that looked more like English. Forward 100. Right 90. The words became familiar, but the precision remained. Forward was not an invitation to work out my intention. It was a specific command, with a specific meaning defined by the program.</p>
-<p>That is the distinction I care about. Recognising the words is one thing. Interpreting what I mean is another. “Hmm, I’m not sure about that” does not name a precise action. The computer has to use the context to work out how to respond.</p>
-<p>Earlier systems explored this too. What today’s AI makes more practical is using everyday language across a much wider range of tasks. I can hesitate, correct myself, or leave something unsaid. The computer can infer an instruction, or ask me to clarify, rather than require an exact command.</p>
-<p>That is why voice becomes interesting to me. Not just because the computer can hear my words, but because it can do more with their meaning. Speaking, for many of us, is already how we explain what we want. We do not have to turn every thought into a carefully prepared instruction first.</p>
-<p>I think a significant share of our interactions will move towards voice. Not all of them. Typing is often better when we need precision, privacy, quiet, or time to work through what we want to say. A screen is still useful when we need to compare, inspect, or make something visual.</p>
-<p>But asking a question, talking through an idea, or asking for something to be done does not always need a screen. We could speak to a computer, hear its response, and bring out a screen when there is something worth looking at.</p>
-<p>That opens up room for computers without a screen at their centre. Devices we can hear and talk to, without having to look down and find the right button. They would still need to make it clear when they are listening, and ask before acting when getting it wrong matters.</p>
-<p>These are the two changes I am interested in. We can express what we want beyond a set of predefined options. And increasingly, we can do that by speaking. The screen becomes something we use when we need it, not the place where every interaction has to begin.</p>
+<p id="page-seven-title">This ability to interpret meaning opens the door to voice interaction in a new way.</p>
+<p>Recognising words is one thing. Interpreting what I mean is another.</p>
+<p>I can hesitate, correct myself, or leave something unsaid. The computer can use the context to infer an instruction, or ask me to clarify.</p>
+<p>That is why voice becomes interesting to me. Speaking is already how many of us explain what we want.</p>
+<p>I think a significant share of our interactions will move towards voice. Not all of them.</p>
+<p>Typing is often better when we need precision, privacy, quiet, or time to think. Screens are useful when we need to compare, inspect, or make something visual.</p>
+<p>But asking a question or talking through an idea does not always need a screen. We could speak to a computer, hear its response, and bring out a screen when there is something worth looking at.</p>
+<p>That opens up room for computers without a screen at their centre. Devices we can hear and talk to, without looking down to find the right button.</p>
+<p>They would still need to make it clear when they are listening, and ask before acting when getting it wrong matters.</p>
+<p>We are building tools that can work out what we want, even when we have not told them exactly what to do.</p>
 </div>
-<figure><div class="engine-art"><img src="voice-meaning-watercolour-v3.png" width="1254" height="1254" loading="lazy" alt="Watercolour illustration of a person wearing wireless earbuds at an outdoor art exhibition, asking a voice assistant: Is this based on a real place? No screen is in use."></div><figcaption><div><strong>Eyes on the world</strong><div class="credit">Asking through earbuds, without reaching for a screen · Concept illustration</div></div></figcaption></figure>
+<figure><div class="engine-art"><img src="voice-meaning-watercolour-v3.png" width="1254" height="1254" loading="lazy" alt="Watercolour illustration of a person wearing wireless earbuds at an outdoor art exhibition, asking a voice assistant: Is this based on a real place? No screen is in use."></div></figure>
 </section>
 </main>
 </div>
-<script src="terminal-demo.js" defer></script>
+<script src="terminal-demo.js?v=2" defer></script>
+<script src="interface-motion.js" defer></script>
 </body></html>

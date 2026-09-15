@@ -1,4 +1,4 @@
-/* One quiet demonstration, triggered when the illustration comes into view. */
+/* A repeating demonstration, paused off screen and when the reader asks. */
 (function () {
   'use strict';
   const root=document.getElementById('logo-terminal');
@@ -22,7 +22,10 @@
     duration=actionEnd+700;
     return {command,start,letters,actionStart,actionEnd};
   });
-  let frame=0,started=false,elapsed=0,lastTime=null,observer,inView=false;
+  let frame=0,elapsed=0,lastTime=null,inView=false,paused=false;
+  const button=document.createElement('button');
+  button.type='button';button.className='motion-toggle';button.textContent='Pause animation';
+  button.setAttribute('aria-pressed','false');root.append(button);
   function draw(time){
     let x=150,y=155,heading=0,path='M 150 155';
     typed.textContent='';
@@ -42,40 +45,26 @@
     trail.setAttribute('d',path);
     turtle.setAttribute('transform',`translate(${Number(x.toFixed(3))} ${Number(y.toFixed(3))}) rotate(${heading})`);
   }
-  function finish(){
-    cancelAnimationFrame(frame);frame=0;
-    draw(duration);
-    root.classList.remove('is-playing');
-    if(observer)observer.disconnect();
-  }
   function tick(time){
     if(lastTime!==null)elapsed+=time-lastTime;
     lastTime=time;
-    draw(elapsed);
-    if(elapsed>=duration){finish();return;}
+    // Hold the completed square briefly, then clear and begin again.
+    elapsed%=duration+1800;
+    draw(Math.min(elapsed,duration));
     frame=requestAnimationFrame(tick);
   }
-  function start(){
-    if(started||document.hidden)return;
-    started=true;
-    if(motion.matches){finish();return;}
-    root.classList.add('is-playing');
-    frame=requestAnimationFrame(tick);
+  function sync(){
+    cancelAnimationFrame(frame);frame=0;lastTime=null;
+    const playing=inView&&!paused&&!document.hidden&&!motion.matches;
+    root.classList.toggle('is-playing',playing);
+    if(motion.matches)draw(duration);
+    else if(playing)frame=requestAnimationFrame(tick);
   }
-  if(motion.matches){finish();return;}
-  // Without scripts or with reduced motion, the markup shows the final result.
-  typed.textContent='';draw(0);
+  button.addEventListener('click',()=>{paused=!paused;button.textContent=paused?'Play animation':'Pause animation';button.setAttribute('aria-pressed',String(paused));sync();});
+  draw(motion.matches?duration:0);
   if('IntersectionObserver' in window){
-    observer=new IntersectionObserver(entries=>{
-      inView=entries.some(entry=>entry.isIntersecting);
-      if(inView)start();
-    },{threshold:.35});
-    observer.observe(root.querySelector('.terminal-art'));
-  }else start();
-  document.addEventListener('visibilitychange',()=>{
-    if(document.hidden){cancelAnimationFrame(frame);frame=0;lastTime=null;}
-    else if(started&&elapsed<duration&&!motion.matches){frame=requestAnimationFrame(tick);}
-    else if(!started&&(!observer||inView))start();
-  });
-  motion.addEventListener('change',event=>{if(event.matches){started=true;elapsed=duration;finish();}});
+    new IntersectionObserver(entries=>{inView=entries[0].isIntersecting;sync();},{threshold:.1}).observe(root.querySelector('.terminal-art'));
+  }else {inView=true;sync();}
+  document.addEventListener('visibilitychange',sync);
+  motion.addEventListener('change',sync);
 })();

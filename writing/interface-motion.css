@@ -1,0 +1,32 @@
+/* Coordinates follow the original square illustrations at every viewport size. */
+.animated-illustration{position:relative;isolation:isolate}
+.animated-illustration .interface-animation{position:absolute;inset:0;width:100%;height:100%;pointer-events:none}
+.dragged-window{animation:window-drag 8s ease-in-out infinite}
+.desktop-pointer{animation:pointer-drag 8s ease-in-out infinite}
+.click-ring{animation:drag-click 8s ease-in-out infinite;transform-origin:0 0}
+.tablet-zoom{transform-origin:1020px 740px;animation:picture-zoom 7s ease-in-out infinite}
+@keyframes window-drag{0%,20%,90%,100%{transform:translate(0,0)}45%,60%{transform:translate(65px,-38px)}75%{transform:translate(-30px,24px)}}
+@keyframes pointer-drag{0%,100%{transform:translate(730px,451px)}15%,20%,90%{transform:translate(584px,340px)}45%,60%{transform:translate(649px,302px)}75%{transform:translate(554px,364px)}}
+@keyframes drag-click{0%,14%,25%,100%{opacity:0}18%,22%{opacity:.8}}
+@keyframes picture-zoom{0%,15%,100%{transform:scale(1)}45%,60%{transform:scale(1.28)}}
+.animated-illustration.motion-paused .interface-animation *{animation-play-state:paused}
+.motion-toggle{display:block;margin:10px 0 0 auto;border:0;background:none;color:#73777c;font:inherit;font-size:11px;padding:8px;cursor:pointer;text-decoration:underline;text-underline-offset:3px}
+@media(prefers-reduced-motion:reduce){.interface-animation{display:none}.motion-toggle{display:none}}
+@media print{.interface-animation,.motion-toggle{display:none}}
+
+/* Match the cursor timeline exactly: hand motion drives pointer motion. */
+.physical-mouse{animation:physical-mouse 8s ease-in-out infinite;filter:drop-shadow(2px 5px 3px #55555525)}
+.mouse-cable{animation:mouse-cable 8s ease-in-out infinite}
+@keyframes physical-mouse{0%,100%{transform:translate(0,0)}15%,20%,90%{transform:translate(-66px,-50px)}45%,60%{transform:translate(-36px,-67px)}75%{transform:translate(-79px,-39px)}}
+@keyframes mouse-cable{
+0%,100%{d:path('M1100 766 C1250 797 1220 890 1020 962')}
+15%,20%,90%{d:path('M1100 766 C1240 797 1200 859 954 912')}
+45%,60%{d:path('M1100 766 C1230 787 1190 841 984 895')}
+75%{d:path('M1100 766 C1240 807 1190 875 941 923')}
+}
+/* Touch points separate and return on the same timeline as the landscape zoom. */
+.touch-point{fill:#ffffff85;stroke:#526a70;stroke-width:3}
+.touch-point-left{animation:touch-spread-left 7s ease-in-out infinite}
+.touch-point-right{animation:touch-spread-right 7s ease-in-out infinite}
+@keyframes touch-spread-left{0%,15%,100%{transform:translate(0,0)}45%,60%{transform:translate(-34px,17px)}}
+@keyframes touch-spread-right{0%,15%,100%{transform:translate(0,0)}45%,60%{transform:translate(34px,-17px)}}
