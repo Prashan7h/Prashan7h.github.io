@@ -39,7 +39,14 @@
             padding: 0 2rem;
         }
 
-        header { padding: 2.5rem 0 0; }
+        header { padding: 2.5rem 0 0; display: flex; justify-content: space-between; align-items: baseline; gap: 1rem; }
+
+        .view-toggle { font-size: 0.75rem; letter-spacing: 0.04em; }
+        .view-toggle a, .view-toggle span { color: #000; text-decoration: none; padding: 0.5rem 0; }
+        .view-toggle a { opacity: 0.4; transition: opacity 0.2s ease; }
+        .view-toggle a:hover { opacity: 1; }
+        .view-toggle span[aria-current] { border-bottom: 1px solid #000; }
+        .view-toggle i { font-style: normal; opacity: 0.3; margin: 0 0.5rem; }
 
         .back-link {
             font-size: 0.75rem;
@@ -120,7 +127,8 @@
     <div class="page">
 
         <header>
-            <a href="home.html" class="back-link">&larr; Back</a>
+            <a href="./" class="back-link">&larr; Back</a>
+            <nav class="view-toggle" aria-label="Bookshelf view"><span aria-current="page">List</span><i>/</i><a href="shelf.html">Shelf</a></nav>
         </header>
 
         <div class="hero">

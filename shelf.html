@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-KVBPX8VW');</script>
+    <!-- End Google Tag Manager -->
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Bookshelf — favourite books of Prashanth Shankar.">
+    <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+    <title>Bookshelf | Prashanth Shankar</title>
+    <script>document.documentElement.className = document.documentElement.className.replace('no-js', 'js');</script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600&family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&family=Literata:ital,opsz,wght@0,7..72,400;1,7..72,400&display=swap" rel="stylesheet">
+
+    <style>
+        *, *::before, *::after { box-sizing: border-box; }
+        html { -webkit-text-size-adjust: 100%; }
+        body {
+            margin: 0;
+            background: #16181B;
+            color: #EDE8DF;
+            font-family: 'Bricolage Grotesque', 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.5;
+        }
+        ::selection { background: #E7D3A8; color: #16181B; }
+        a { color: #A9A397; }
+        a:hover { color: #E7D3A8; }
+
+        /* ---------- Page ---------- */
+        .page { max-width: 1200px; margin: 0 auto; padding: 48px 24px 96px; }
+        .top { display: flex; flex-direction: column; gap: 28px; margin-bottom: 64px; }
+        .top-bar { display: flex; justify-content: space-between; align-items: baseline; gap: 16px; }
+        .back-link { font-size: 15px; text-decoration: none; padding: 12px 0; }
+        .view-toggle { font-size: 15px; }
+        .view-toggle a, .view-toggle span { text-decoration: none; padding: 12px 0; }
+        .view-toggle span[aria-current] { color: #EDE8DF; border-bottom: 1px solid #E7D3A8; }
+        .view-toggle i { font-style: normal; color: #54453A; margin: 0 10px; }
+        .hero { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-end; gap: 24px; }
+        .hero h1 { margin: 0; font-size: clamp(56px, 9vw, 112px); font-weight: 800; letter-spacing: -0.04em; line-height: 0.88; }
+        .intro { margin: 0; max-width: 340px; font-size: 17px; line-height: 1.5; color: #A9A397; text-wrap: pretty; }
+        .intro .fav-key { display: inline-block; width: 7px; height: 7px; margin: 0 3px 2px; background: #E7D3A8; transform: rotate(45deg); }
+
+        /* ---------- Shelves ---------- */
+        .case { display: flex; flex-wrap: wrap; column-gap: 40px; row-gap: 56px; }
+        .bay { flex: 1 1 auto; min-width: 0; max-width: 100%; display: flex; flex-direction: column; }
+        .bay-head { display: flex; justify-content: space-between; align-items: baseline; gap: 16px; padding: 0 4px; }
+        .bay-head h2 { margin: 0; font-size: 24px; font-weight: 600; letter-spacing: -0.01em; }
+        .bay-head span {
+            font-family: 'Barlow Condensed', sans-serif; font-weight: 500; font-size: 15px;
+            letter-spacing: 0.1em; text-transform: uppercase; color: #A9A397;
+        }
+        .scroller { overflow-x: auto; overflow-y: hidden; padding-top: 34px; scrollbar-width: thin; scrollbar-color: #3A3029 transparent; }
+        .row { display: flex; align-items: flex-end; gap: 3px; padding: 0 14px; width: max-content; min-width: 100%; min-height: 314px; }
+        .slot { flex: none; transform-origin: bottom left; }
+        .spine {
+            display: flex; flex-direction: column; align-items: center; justify-content: space-between; gap: 16px;
+            margin: 0; padding: 14px 0 12px; border: 0; border-radius: 3px 3px 1px 1px;
+            font: inherit; cursor: pointer; overflow: hidden;
+            box-shadow: inset 3px 0 0 rgba(255,255,255,0.07), inset -4px 0 0 rgba(0,0,0,0.22);
+            transition: transform .18s ease, box-shadow .18s ease;
+        }
+        .spine:hover {
+            transform: translateY(-14px);
+            box-shadow: inset 3px 0 0 rgba(255,255,255,0.07), inset -4px 0 0 rgba(0,0,0,0.22), 0 12px 20px rgba(0,0,0,0.5);
+        }
+        .spine.is-on, .spine.is-on:hover {
+            transform: translateY(-24px);
+            box-shadow: inset 3px 0 0 rgba(255,255,255,0.07), inset -4px 0 0 rgba(0,0,0,0.22), 0 0 0 2px #E7D3A8, 0 14px 24px rgba(0,0,0,0.55);
+        }
+        .spine:focus-visible { outline: 2px solid #FFFFFF; outline-offset: 3px; }
+        .spine-top { display: flex; flex-direction: column; align-items: center; gap: 10px; }
+        .spine .band { display: block; height: 2px; border-top: 1px solid currentColor; border-bottom: 1px solid currentColor; }
+        .spine .fav { display: block; width: 7px; height: 7px; background: currentColor; transform: rotate(45deg); }
+        .spine .st, .spine .sa {
+            writing-mode: vertical-rl; white-space: nowrap; line-height: 1;
+            font-family: 'Barlow Condensed', sans-serif; text-transform: uppercase;
+        }
+        .spine .st { font-weight: 600; font-size: 13px; letter-spacing: 0.06em; }
+        .spine .sa { font-weight: 500; font-size: 12px; letter-spacing: 0.04em; }
+        .plank { height: 14px; background: #3A3029; border-top: 3px solid #54453A; box-shadow: 0 16px 22px -10px rgba(0,0,0,0.7); }
+
+        /* ---------- Open book ----------
+           A two-page spread in the middle of the screen. The shelf behind is
+           dimmed, not covered: the layer lets scrolling through, so the page
+           keeps moving under the book, and a click off the book closes it. */
+        .overlay {
+            position: fixed; inset: 0; z-index: 50; display: flex; align-items: center; justify-content: center;
+            padding: 24px; pointer-events: none; background: rgba(12,13,15,0.62);
+            opacity: 0; transition: opacity .2s ease;
+        }
+        .overlay[hidden] { display: none; }
+        .overlay.is-open { opacity: 1; }
+        .book {
+            position: relative; pointer-events: auto;
+            width: min(880px, 100%); height: min(680px, 100%);
+            display: flex; overflow: hidden;
+            background: #F3EEE3; color: #1A1714; border-radius: 4px;
+            /* page edges under the spread, then its shadow */
+            box-shadow: 0 3px 0 -1px #E6DFD0, 0 6px 0 -2px #D8CFBD, 0 40px 90px rgba(0,0,0,0.6);
+            transform: translateY(14px); transition: transform .25s ease;
+        }
+        .overlay.is-open .book { transform: none; }
+        .leaf-left, .leaf-right { position: relative; flex: 1 1 50%; min-width: 0; display: flex; flex-direction: column; }
+        /* the gutter: each page darkens toward the fold */
+        .leaf-left { padding: 120px 44px 32px 48px; gap: 12px; box-shadow: inset -26px 0 28px -24px rgba(70,52,30,0.5); }
+        .leaf-right {
+            padding: 72px 48px 32px 44px; gap: 16px; overflow-y: auto; overscroll-behavior: contain;
+            box-shadow: inset 26px 0 28px -24px rgba(70,52,30,0.42);
+        }
+        .ribbon { position: absolute; top: 0; left: 48px; width: 20px; height: 88px; clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 82%, 0 100%); }
+        .kicker {
+            font-family: 'Barlow Condensed', sans-serif; font-weight: 600; font-size: 14px;
+            letter-spacing: 0.1em; text-transform: uppercase; color: #6B6257;
+        }
+        .book h2 { margin: 0; font-size: clamp(30px, 3.6vw, 42px); font-weight: 800; letter-spacing: -0.03em; line-height: 1.04; text-wrap: balance; }
+        .byline { margin: 0; font-size: 19px; color: #4A433B; }
+        .about-line { margin: 6px 0 0; font-family: 'Literata', Georgia, serif; font-style: italic; font-size: 17px; line-height: 1.55; color: #4A433B; text-wrap: pretty; }
+        .about-line:empty { display: none; }
+        .review-body { font-family: 'Literata', Georgia, serif; font-size: 18px; line-height: 1.75; text-wrap: pretty; }
+        .review-body p { margin: 0; }
+        .review-body p + p { margin-top: 1em; }
+        .review-body a { color: #1A1714; }
+        .review-body blockquote { margin: 1em 0; padding-left: 1em; border-left: 2px solid #C9BFAE; font-style: italic; }
+        .review-body .empty { font-style: italic; color: #6B6257; }
+        .folio {
+            margin: auto 0 0; padding-top: 24px;
+            font-family: 'Barlow Condensed', sans-serif; font-weight: 500; font-size: 14px;
+            letter-spacing: 0.1em; text-transform: uppercase; color: #6B6257;
+        }
+        .btn {
+            font: inherit; font-size: 15px; font-weight: 600; min-height: 44px; padding: 0 18px;
+            border-radius: 999px; border: 1px solid #1A1714; background: transparent; color: #1A1714;
+            cursor: pointer; transition: background .12s ease, color .12s ease;
+        }
+        .btn:hover { background: #1A1714; color: #F3EEE3; }
+        .btn:focus-visible { outline: 2px solid #1A1714; outline-offset: 2px; }
+        .close {
+            position: absolute; top: 14px; right: 14px; width: 44px; height: 44px; padding: 0;
+            display: flex; align-items: center; justify-content: center; border-color: #C9BFAE;
+        }
+
+        /* ---------- Plain list (only shown if JavaScript is off) ---------- */
+        .js .catalogue { display: none; }
+        .no-js .case { display: none; }
+        .catalogue section { max-width: 720px; margin-bottom: 40px; }
+        .catalogue h2 { font-size: 22px; font-weight: 600; margin: 0 0 10px; padding-bottom: 6px; border-bottom: 1px solid #3A3029; }
+        .catalogue ul { margin: 0; padding-left: 1.2rem; }
+        .catalogue li { margin: 4px 0; }
+        .catalogue .a { color: #A9A397; }
+        .catalogue .a::before { content: " · "; }
+        .catalogue .review { font-family: 'Literata', Georgia, serif; color: #CFC8BB; margin: 6px 0 14px; }
+
+        @media (max-width: 640px) {
+            .page { padding: 32px 16px 72px; }
+            .top { margin-bottom: 40px; }
+            /* on a phone the spread folds into one page: title above, review below */
+            .overlay { padding: 16px 12px; }
+            .book { flex-direction: column; height: min(78vh, 640px); overflow-y: auto; overscroll-behavior: contain; }
+            .leaf-left, .leaf-right { flex: none; }
+            .leaf-left { padding: 76px 24px 18px; box-shadow: inset 0 -1px 0 #DDD3C2; }
+            .leaf-right { padding: 20px 24px 28px; overflow: visible; box-shadow: none; }
+            .ribbon { left: 24px; height: 60px; }
+            .folio { padding-top: 8px; }
+            .review-body { font-size: 17px; }
+        }
+        @media (prefers-reduced-motion: reduce) {
+            .spine, .overlay, .book { transition: none; }
+        }
+    </style>
+
+    <script src="https://cdn.amplitude.com/script/59010539cde9503811b2e9a80e47e0b4.js"></script>
+    <script>window.amplitude.add(window.sessionReplay.plugin({sampleRate: 1}));window.amplitude.init('59010539cde9503811b2e9a80e47e0b4', {"fetchRemoteConfig":true,"autocapture":{"attribution":true,"fileDownloads":true,"formInteractions":true,"pageViews":true,"sessions":true,"elementInteractions":true}});</script>
+</head>
+<body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe aria-hidden="true" title="Google Tag Manager" src="https://www.googletagmanager.com/ns.html?id=GTM-KVBPX8VW"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+    <main class="page" id="main">
+        <header class="top">
+            <div class="top-bar">
+                <a href="./" class="back-link">&larr; Back</a>
+                <nav class="view-toggle" aria-label="Bookshelf view"><a href="bookshelf.html">List</a><i>/</i><span aria-current="page">Shelf</span></nav>
+            </div>
+            <div class="hero">
+                <h1>Bookshelf</h1>
+            </div>
+        </header>
+
+        <div class="case" id="case"></div>
+
+        <!--
+            ============================================================
+            THE BOOKS. Edit this list; the shelves are built from it.
+
+            One <li> per book:
+              <li data-year="2011">
+                  <span class="t">Title</span> <span class="a">Author</span>
+                  <div class="review">
+                      <p>First paragraph of your review.</p>
+                      <p>Second paragraph.</p>
+                  </div>
+              </li>
+
+            Optional attributes on <li>:
+              data-about="..."     one line on what the book is, shown under the author
+              data-featured        gold diamond on the spine (a favourite)
+              data-spine="..."     shorter title to print on the spine
+              data-short="..."     shorter author name for the spine
+              data-year="-375"     negative years show as "c. 375 BC"
+
+            A book without <div class="review"> still opens, with a
+            "not written yet" note. Each open book gets its own link,
+            e.g. shelf.html#the-beginning-of-infinity
+            ============================================================
+        -->
+        <div class="catalogue" id="catalogue">
+
+            <section data-shelf="Ideas">
+                <h2>Ideas</h2>
+                <ul>
+                    <li data-year="2011" data-featured data-spine="Beginning of Infinity" data-about="Why good explanations make progress unbounded, in science and in civilisation."><span class="t">The Beginning of Infinity</span> <span class="a">David Deutsch</span></li>
+                    <li data-year="1997" data-featured data-spine="Fabric of Reality" data-about="Quantum physics, computation, evolution and knowledge woven into one worldview."><span class="t">The Fabric of Reality</span> <span class="a">David Deutsch</span></li>
+                    <li data-year="2021" data-spine="Science of Can &amp; Can't" data-about="Constructor theory: physics recast as which transformations are possible and which are not."><span class="t">The Science of Can and Can't</span> <span class="a">Chiara Marletto</span></li>
+                    <li data-year="1979" data-about="How self-reference and strange loops give rise to minds and meaning."><span class="t">Gödel, Escher, Bach</span> <span class="a">Douglas Hofstadter</span></li>
+                    <li data-year="1973" data-spine="Ascent of Man" data-about="The story of humanity told through its science, from the BBC series."><span class="t">The Ascent of Man</span> <span class="a">Jacob Bronowski</span></li>
+                    <li data-year="1988" data-featured data-spine="Brief History of Time" data-about="The Big Bang, black holes and the nature of time, for everyone."><span class="t">A Brief History of Time</span> <span class="a">Stephen Hawking</span></li>
+                    <li data-year="2021" data-spine="Man from the Future" data-about="The life and ideas of John von Neumann."><span class="t">The Man from the Future</span> <span class="a">Ananyo Bhattacharya</span></li>
+                    <li data-year="1965" data-spine="Character of Physical Law" data-about="Feynman&#x27;s Cornell lectures on what the laws of physics have in common."><span class="t">The Character of Physical Law</span> <span class="a">Richard Feynman</span></li>
+                    <li data-year="1994" data-about="The most accessible chapters of the Feynman Lectures."><span class="t">Six Easy Pieces</span> <span class="a">Richard Feynman</span></li>
+                    <li data-year="1997" data-about="Feynman on relativity, symmetry and the geometry of spacetime."><span class="t">Six Not-So-Easy Pieces</span> <span class="a">Richard Feynman</span></li>
+                    <li data-year="1985" data-featured data-spine="Surely You're Joking" data-about="Feynman&#x27;s stories of curiosity, safecracking and mischief."><span class="t">Surely You're Joking, Mr. Feynman!</span> <span class="a">Richard Feynman</span></li>
+                    <li data-year="2010" data-about="The universe understood as information, from physics to biology."><span class="t">Decoding Reality</span> <span class="a">Vlatko Vedral</span></li>
+                    <li data-year="2017" data-about="The case that language was invented gradually, as a cultural tool, by Homo erectus."><span class="t">How Language Began</span> <span class="a">Daniel Everett</span></li>
+                    <li data-year="2020" data-about="Innovation as gradual, collective trial and error that flourishes in freedom."><span class="t">How Innovation Works</span> <span class="a">Matt Ridley</span></li>
+                    <li data-year="1776" data-spine="Wealth of Nations" data-about="The founding text of economics: markets, the division of labour and free trade."><span class="t">The Wealth of Nations</span> <span class="a">Adam Smith</span></li>
+                    <li data-year="1960" data-spine="Constitution of Liberty" data-about="Hayek&#x27;s case for liberty under the rule of law."><span class="t">The Constitution of Liberty</span> <span class="a">F.A. Hayek</span></li>
+                    <li data-year="1983" data-spine="Knowledge, Evolution, Society" data-about="Hayek on spontaneous order and the limits of what any planner can know."><span class="t">Knowledge, Evolution, and Society</span> <span class="a">F.A. Hayek</span></li>
+                    <li data-year="2000" data-about="How prices, incentives and markets work, without a single equation."><span class="t">Basic Economics</span> <span class="a">Thomas Sowell</span></li>
+                    <li data-year="1995" data-spine="Artificial Intelligence" data-about="The standard textbook of artificial intelligence."><span class="t">Artificial Intelligence: A Modern Approach</span> <span class="a">Stuart Russell &amp; Peter Norvig</span></li>
+                    <li data-year="2026" data-spine="Infinity Machine" data-about="The story of Demis Hassabis, DeepMind and the race to build AI."><span class="t">The Infinity Machine</span> <span class="a">Sebastian Mallaby</span></li>
+                    <li data-year="2019" data-about="Twenty-five thinkers on where artificial intelligence is taking us."><span class="t">Possible Minds</span> <span class="a">John Brockman (ed.)</span></li>
+                    <li data-year="2013" data-about="How the English-speaking world developed the ideas of liberty and the rule of law."><span class="t">Inventing Freedom</span> <span class="a">Daniel Hannan</span></li>
+                    <li data-year="1848" data-spine="History of England" data-about="Macaulay&#x27;s account of England from James II to William III."><span class="t">The History of England</span> <span class="a">Thomas Babington Macaulay</span></li>
+                    <li data-year="2021" data-spine="Changing World Order" data-about="The rise and fall of empires and reserve currencies across five centuries."><span class="t">Principles for Dealing with the Changing World Order</span> <span class="a">Ray Dalio</span></li>
+                </ul>
+            </section>
+
+            <section data-shelf="Philosophy">
+                <h2>Philosophy</h2>
+                <ul>
+                    <li data-year="-375" data-about="Justice, the ideal state and the allegory of the cave."><span class="t">The Republic</span> <span class="a">Plato</span></li>
+                    <li data-year="-340" data-about="Virtue, character and what it means to live well."><span class="t">Nicomachean Ethics</span> <span class="a">Aristotle</span></li>
+                    <li data-year="-350" data-about="Aristotle on the city-state, citizenship and constitutions."><span class="t">Politics</span> <span class="a">Aristotle</span></li>
+                    <li data-year="49" data-spine="Shortness of Life" data-about="Life is long enough, if you know how to use it."><span class="t">On the Shortness of Life</span> <span class="a">Seneca</span></li>
+                    <li data-year="1748" data-spine="Human Understanding" data-about="Hume on causation, induction and the limits of reason."><span class="t">An Enquiry Concerning Human Understanding</span> <span class="a">David Hume</span></li>
+                    <li data-year="1781" data-about="Kant on what the mind can know before any experience."><span class="t">Critique of Pure Reason</span> <span class="a">Immanuel Kant</span></li>
+                    <li data-year="1886" data-about="Nietzsche&#x27;s attack on the dogmas of earlier philosophers and of morality."><span class="t">Beyond Good and Evil</span> <span class="a">Friedrich Nietzsche</span></li>
+                    <li data-year="1912" data-about="Russell&#x27;s short introduction to knowledge, appearance and reality."><span class="t">Problems of Philosophy</span> <span class="a">Bertrand Russell</span></li>
+                    <li data-year="1926" data-spine="Story of Philosophy" data-about="The lives and ideas of the great philosophers, from Plato to Dewey."><span class="t">The Story of Philosophy</span> <span class="a">Will Durant</span></li>
+                    <li data-year="1934" data-spine="Logic of Scientific Discovery" data-about="Falsifiability as the line between science and everything else."><span class="t">The Logic of Scientific Discovery</span> <span class="a">Karl Popper</span></li>
+                    <li data-year="1963" data-featured data-spine="Conjectures &amp; Refutations" data-about="Knowledge grows through bold guesses and their criticism."><span class="t">Conjectures and Refutations</span> <span class="a">Karl Popper</span></li>
+                    <li data-year="1972" data-about="Popper&#x27;s evolutionary theory of knowledge."><span class="t">Objective Knowledge</span> <span class="a">Karl Popper</span></li>
+                    <li data-year="1945" data-featured data-spine="Open Society &amp; Its Enemies" data-about="A defence of open societies against Plato, Hegel and Marx."><span class="t">The Open Society and Its Enemies (Vol. 1 &amp; 2)</span> <span class="a">Karl Popper</span></li>
+                    <li data-year="1962" data-spine="Scientific Revolutions" data-about="Science moves through paradigms and the revolutions that overturn them."><span class="t">The Structure of Scientific Revolutions</span> <span class="a">Thomas Kuhn</span></li>
+                    <li data-year="1958" data-about="Heisenberg on what quantum theory means for how we see the world."><span class="t">Physics and Philosophy</span> <span class="a">Werner Heisenberg</span></li>
+                    <li data-year="1974" data-about="Why consciousness resists explanation in purely physical terms."><span class="t">What Is It Like to Be a Bat?</span> <span class="a">Thomas Nagel</span></li>
+                    <li data-year="1984" data-spine="Minds, Brains &amp; Science" data-about="Searle&#x27;s Reith Lectures on mind and machine, including the Chinese Room."><span class="t">Minds, Brains, and Science</span> <span class="a">John Searle</span></li>
+                    <li data-year="1991" data-about="Dennett&#x27;s account of the mind with no central theatre where it all comes together."><span class="t">Consciousness Explained</span> <span class="a">Daniel Dennett</span></li>
+                    <li data-year="1989" data-spine="Emperor's New Mind" data-about="Penrose argues that human understanding cannot be computed."><span class="t">The Emperor's New Mind</span> <span class="a">Roger Penrose</span></li>
+                    <li data-year="1999" data-spine="Limits of Thought" data-about="Dialogues on thought, knowledge and where they run out."><span class="t">The Limits of Thought</span> <span class="a">J. Krishnamurti &amp; David Bohm</span></li>
+                    <li data-year="1973" data-spine="Awakening of Intelligence" data-about="Talks and dialogues on attention and freedom from conditioning."><span class="t">The Awakening of Intelligence</span> <span class="a">J. Krishnamurti</span></li>
+                    <li data-year="1970" data-about="Talks on Zen practice and keeping a beginner&#x27;s open mind."><span class="t">Zen Mind, Beginner's Mind</span> <span class="a">Shunryu Suzuki</span></li>
+                    <li data-year="2002" data-spine="Roaring Silence" data-about="An introduction to Dzogchen meditation."><span class="t">The Roaring Silence</span> <span class="a">Ngakpa Chögyam &amp; Khandro Déchen</span></li>
+                    <li data-year="1979" data-about="Lessons in Zen learned through martial arts training."><span class="t">Zen in the Martial Arts</span> <span class="a">Joe Hyams</span></li>
+                    <li data-year="2018" data-about="Self-knowledge, from Socrates to modern psychology."><span class="t">Know Thyself</span> <span class="a">Mitchell S. Green</span></li>
+                </ul>
+            </section>
+
+            <section data-shelf="Physics">
+                <h2>Physics</h2>
+                <ul>
+                    <li data-year="1973" data-spine="Introduction to Mechanics" data-short="Kleppner" data-about="The classic rigorous first course in Newtonian mechanics."><span class="t">An Introduction to Mechanics</span> <span class="a">Kleppner &amp; Kolenkow</span></li>
+                    <li data-year="2008" data-spine="Classical Mechanics" data-about="Classical mechanics learned through hundreds of hard problems."><span class="t">Introduction to Classical Mechanics</span> <span class="a">David Morin</span></li>
+                    <li data-year="2013" data-spine="Theoretical Minimum" data-about="The essential physics, taught for anyone willing to do the maths."><span class="t">The Theoretical Minimum (series)</span> <span class="a">Leonard Susskind</span></li>
+                    <li data-year="2004" data-about="A graduate introduction to general relativity."><span class="t">Spacetime and Geometry</span> <span class="a">Sean Carroll</span></li>
+                    <li data-year="1980" data-about="A thorough course in quantum mechanics that builds the mathematics first."><span class="t">Principles of Quantum Mechanics</span> <span class="a">R. Shankar</span></li>
+                    <li data-year="2022" data-about="Zwiebach&#x27;s MIT course in quantum mechanics."><span class="t">Mastering Quantum Mechanics</span> <span class="a">Barton Zwiebach</span></li>
+                    <li data-year="1981" data-spine="Electrodynamics" data-about="The standard undergraduate text on electricity and magnetism."><span class="t">Introduction to Electrodynamics</span> <span class="a">David J. Griffiths</span></li>
+                    <li data-year="1971" data-about="Oscillations and waves, from springs to light."><span class="t">Vibrations and Waves</span> <span class="a">A.P. French</span></li>
+                    <li data-year="1963" data-spine="Feynman Lectures on Physics" data-about="Feynman&#x27;s legendary introductory physics course at Caltech."><span class="t">The Feynman Lectures on Physics (Vol. 1 &amp; 2)</span> <span class="a">Feynman, Leighton &amp; Sands</span></li>
+                    <li data-year="1999" data-about="The argument that time, as we experience it, does not exist."><span class="t">The End of Time</span> <span class="a">Julian Barbour</span></li>
+                    <li data-year="2000" data-spine="Quantum Computation" data-about="The standard textbook of quantum computing."><span class="t">Quantum Computation and Quantum Information</span> <span class="a">Nielsen &amp; Chuang</span></li>
+                    <li data-year="2023" data-about="Quantum theory taught with diagrams instead of equations."><span class="t">Quantum in Pictures</span> <span class="a">Bob Coecke &amp; Stefano Gogioso</span></li>
+                    <li data-year="1995" data-spine="Quantum Field Theory" data-about="The standard graduate course in quantum field theory."><span class="t">An Introduction to Quantum Field Theory</span> <span class="a">Peskin &amp; Schroeder</span></li>
+                    <li data-year="2018" data-spine="Lectures of Sidney Coleman" data-about="Sidney Coleman&#x27;s celebrated Harvard lectures on quantum field theory."><span class="t">Quantum Field Theory: Lectures of Sidney Coleman</span> <span class="a">Sidney Coleman</span></li>
+                    <li data-year="1998" data-spine="String Theory" data-about="The graduate reference on string theory."><span class="t">String Theory (Vol. 1 &amp; 2)</span> <span class="a">Joseph Polchinski</span></li>
+                    <li data-year="1997" data-short="Di Francesco" data-about="The comprehensive reference on conformal field theory."><span class="t">Conformal Field Theory</span> <span class="a">Di Francesco, Mathieu &amp; Sénéchal</span></li>
+                    <li data-year="2009" data-spine="Introduction to CFT" data-short="Blumenhagen" data-about="A concise route into conformal field theory and its use in string theory."><span class="t">Introduction to Conformal Field Theory</span> <span class="a">Blumenhagen &amp; Plauschinn</span></li>
+                </ul>
+            </section>
+
+            <section data-shelf="Biology">
+                <h2>Biology</h2>
+                <ul>
+                    <li data-year="1976" data-featured data-about="Evolution seen from the gene&#x27;s point of view."><span class="t">The Selfish Gene</span> <span class="a">Richard Dawkins</span></li>
+                    <li data-year="1982" data-spine="Extended Phenotype" data-about="How genes reach beyond the body they build."><span class="t">The Extended Phenotype</span> <span class="a">Richard Dawkins</span></li>
+                    <li data-year="1986" data-spine="Blind Watchmaker" data-about="How natural selection produces complex design without a designer."><span class="t">The Blind Watchmaker</span> <span class="a">Richard Dawkins</span></li>
+                    <li data-year="2014" data-about="The emerging science of quantum biology."><span class="t">Life on the Edge</span> <span class="a">Jim Al-Khalili &amp; Johnjoe McFadden</span></li>
+                    <li data-year="1944" data-about="A physicist asks how physics can explain living things."><span class="t">What Is Life?</span> <span class="a">Erwin Schrödinger</span></li>
+                    <li data-year="2021" data-about="A theory of intelligence built on thousands of models in the cortex."><span class="t">A Thousand Brains</span> <span class="a">Jeff Hawkins</span></li>
+                    <li data-year="2019" data-about="Why we age, and whether we have to."><span class="t">Lifespan</span> <span class="a">David Sinclair</span></li>
+                    <li data-year="2024" data-about="A Nobel laureate on the biology of ageing and death."><span class="t">Why We Die</span> <span class="a">Venki Ramakrishnan</span></li>
+                </ul>
+            </section>
+
+            <section data-shelf="Work">
+                <h2>Work</h2>
+                <ul>
+                    <li data-year="2020" data-spine="Almanack of Naval Ravikant" data-about="Naval Ravikant on wealth and happiness."><span class="t">The Almanack of Naval Ravikant</span> <span class="a">Eric Jorgenson</span></li>
+                    <li data-year="2014" data-about="Building companies that create something genuinely new."><span class="t">Zero to One</span> <span class="a">Peter Thiel</span></li>
+                    <li data-year="2014" data-spine="Hard Thing About Hard Things" data-about="Candid lessons from running a company through crisis."><span class="t">The Hard Thing About Hard Things</span> <span class="a">Ben Horowitz</span></li>
+                    <li data-year="2011" data-about="Build, measure, learn: testing ideas quickly and cheaply."><span class="t">The Lean Startup</span> <span class="a">Eric Ries</span></li>
+                    <li data-year="2010" data-about="Unconventional rules for running a small business."><span class="t">Rework</span> <span class="a">Jason Fried &amp; David Heinemeier Hansson</span></li>
+                    <li data-year="2016" data-about="Focused, undistracted work as a rare and valuable skill."><span class="t">Deep Work</span> <span class="a">Cal Newport</span></li>
+                    <li data-year="2012" data-about="Skill, not passion, is what leads to work you love."><span class="t">So Good They Can't Ignore You</span> <span class="a">Cal Newport</span></li>
+                </ul>
+            </section>
+
+            <section data-shelf="Sports">
+                <h2>Sports</h2>
+                <ul>
+                    <li data-year="2013" data-about="What the data really says about football."><span class="t">The Numbers Game</span> <span class="a">Chris Anderson &amp; David Sally</span></li>
+                    <li data-year="2008" data-about="A history of football tactics."><span class="t">Inverting the Pyramid</span> <span class="a">Jonathan Wilson</span></li>
+                    <li data-year="2013" data-spine="My Autobiography" data-about="Ferguson looks back on his years at Manchester United."><span class="t">Alex Ferguson: My Autobiography</span> <span class="a">Alex Ferguson</span></li>
+                    <li data-year="2015" data-featured data-about="Ferguson&#x27;s lessons on leadership."><span class="t">Leading</span> <span class="a">Alex Ferguson &amp; Michael Moritz</span></li>
+                    <li data-year="1966" data-about="Programmed lessons in chess, built around checkmate patterns."><span class="t">Bobby Fischer Teaches Chess</span> <span class="a">Bobby Fischer</span></li>
+                </ul>
+            </section>
+
+        </div>
+    </main>
+
+    <div class="overlay" id="reader" hidden>
+        <div class="book" role="dialog" aria-labelledby="reader-title">
+            <div class="leaf-left">
+                <span class="ribbon" id="reader-ribbon" aria-hidden="true"></span>
+                <span class="kicker" id="reader-kicker"></span>
+                <h2 id="reader-title"></h2>
+                <p class="byline" id="reader-author"></p>
+                <p class="about-line" id="reader-about"></p>
+                <p class="folio" id="reader-folio"></p>
+            </div>
+            <div class="leaf-right" id="reader-body">
+                <span class="kicker">My review</span>
+                <div class="review-body" id="reader-review"></div>
+            </div>
+            <button type="button" class="btn close" id="reader-close" aria-label="Close the book">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><path d="M3 3l10 10M13 3L3 13"/></svg>
+            </button>
+        </div>
+    </div>
+
+    <script>
+    (function () {
+        // Spine colours per shelf. A shelf not listed here borrows one of these in turn.
+        var PALETTES = {
+            Ideas:      { bg: ['#284B7A', '#335C91', '#1F3C63', '#3B659B'], fg: '#F3EFE7' },
+            Philosophy: { bg: ['#7B2D2A', '#923A30', '#5F2321', '#9C4436'], fg: '#F6EEE6' },
+            Physics:    { bg: ['#C49A3A', '#D4AC4E', '#A97F25', '#DDB862'], fg: '#1E1A12' },
+            Biology:    { bg: ['#355E42', '#41704F', '#2A4D35', '#4B7A58'], fg: '#F1F0E8' },
+            Work:       { bg: ['#4F545B', '#5E636A', '#3F4348', '#686D74'], fg: '#F4F4F2' },
+            Sports:     { bg: ['#DCD4C3', '#E8E2D4', '#CFC5B0', '#EFEAE0'], fg: '#1E1B16' }
+        };
+        var FALLBACK = Object.keys(PALETTES).map(function (k) { return PALETTES[k]; });
+        var NO_REVIEW = "Review coming soon.";
+
+        var $ = function (id) { return document.getElementById(id); };
+        var make = function (tag, cls, text) {
+            var node = document.createElement(tag);
+            if (cls) node.className = cls;
+            if (text != null) node.textContent = text;
+            return node;
+        };
+        // Deterministic pseudo-random, so every visit shows the same shelf.
+        var rnd = function (k) { var x = Math.sin(k * 12.9898 + 78.233) * 43758.5453; return x - Math.floor(x); };
+        var fmtYear = function (raw) {
+            if (raw == null || raw === '' || isNaN(raw)) return '';
+            var y = Number(raw);
+            return y < 0 ? 'c. ' + (-y) + ' BC' : (y < 500 ? 'c. AD ' + y : String(y));
+        };
+        var slugify = function (s) {
+            return s.normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase()
+                .replace(/&/g, ' and ').replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '');
+        };
+        var shortAuthor = function (a) {
+            a = a.replace(/\s*\(.*?\)\s*/g, ' ').trim();
+            if (a.indexOf(',') !== -1) a = a.split(',')[0];
+            return a.split(' & ').map(function (part) {
+                var words = part.trim().split(/\s+/);
+                return words[words.length - 1];
+            }).join(' & ');
+        };
+        var textOf = function (li, sel) { var n = li.querySelector(sel); return n ? n.textContent.trim() : ''; };
+
+        var caseEl = $('case');
+        var books = [];
+        var count = 0;
+
+        Array.prototype.forEach.call(document.querySelectorAll('#catalogue section[data-shelf]'), function (sec, si) {
+            var name = sec.getAttribute('data-shelf');
+            var pal = PALETTES[name] || FALLBACK[si % FALLBACK.length];
+            var items = sec.querySelectorAll(':scope > ul > li');
+
+            var bay = make('section', 'bay');
+            var head = make('div', 'bay-head');
+            head.appendChild(make('h2', '', name));
+            var scroller = make('div', 'scroller');
+            var row = make('div', 'row');
+
+            Array.prototype.forEach.call(items, function (li, i) {
+                count += 1;
+                var id = count;
+                var title = textOf(li, '.t');
+                var author = textOf(li, '.a');
+                var spineTitle = li.getAttribute('data-spine') || title;
+                var au = li.getAttribute('data-short') || shortAuthor(author);
+                var featured = li.hasAttribute('data-featured');
+                var r1 = rnd(id), r2 = rnd(id + 101), r3 = rnd(id + 211), r4 = rnd(id + 307);
+                var band = r3 > 0.62;
+                var need = 14 + spineTitle.length * 7 + 16 + au.length * 6.2 + 12 + (band ? 14 : 0) + (featured ? 17 : 0);
+                var h = Math.min(312, Math.max(Math.round(206 + r2 * 54), Math.ceil(need)));
+                var w = Math.round(30 + r1 * 18);
+                var bg = pal.bg[Math.floor(r4 * pal.bg.length) % pal.bg.length];
+
+                var slot = make('div', 'slot');
+                if (items.length < 10 && i === items.length - 1) {
+                    slot.style.transform = 'rotate(-8deg)';
+                    slot.style.marginLeft = (Math.round(h * 0.14) + 2) + 'px';
+                }
+                var btn = make('button', 'spine');
+                btn.type = 'button';
+                btn.style.width = w + 'px';
+                btn.style.height = h + 'px';
+                btn.style.background = bg;
+                btn.style.color = pal.fg;
+                btn.title = title + (author ? ' · ' + author : '');
+                btn.setAttribute('aria-label', title + (author ? ' by ' + author : '') + (featured ? ', a favourite' : '') + '. Read review');
+                btn.setAttribute('aria-haspopup', 'dialog');
+
+                var top = make('span', 'spine-top');
+                if (featured) top.appendChild(make('span', 'fav'));
+                if (band) { var b = make('span', 'band'); b.style.width = (w - 12) + 'px'; top.appendChild(b); }
+                top.appendChild(make('span', 'st', spineTitle));
+                btn.appendChild(top);
+                btn.appendChild(make('span', 'sa', au));
+                slot.appendChild(btn);
+                row.appendChild(slot);
+
+                var book = {
+                    id: id, title: title, author: author, year: fmtYear(li.getAttribute('data-year')),
+                    shelf: name, bg: bg, about: li.getAttribute('data-about') || '', featured: featured, review: li.querySelector('.review'),
+                    pos: i + 1, count: items.length, slug: slugify(title), btn: btn
+                };
+                books.push(book);
+                // the open book's own spine puts it back
+                btn.addEventListener('click', function () { if (current === book) closeBook(); else openBook(book); });
+            });
+
+            scroller.appendChild(row);
+            bay.appendChild(head);
+            bay.appendChild(scroller);
+            bay.appendChild(make('div', 'plank'));
+            caseEl.appendChild(bay);
+        });
+
+        // ---------- The open book ----------
+        var overlay = $('reader');
+        var closeBtn = $('reader-close');
+        var current = null;
+        var returnFocus = null;
+
+        function render(book) {
+            if (current) current.btn.classList.remove('is-on');
+            current = book;
+            book.btn.classList.add('is-on');
+            $('reader-ribbon').style.background = book.bg;
+            $('reader-kicker').textContent = [book.shelf, book.featured ? 'A favourite' : ''].filter(Boolean).join(' · ');
+            $('reader-title').textContent = book.title;
+            $('reader-author').textContent = book.author;
+            $('reader-about').textContent = book.about;
+            $('reader-folio').textContent = book.year ? 'Published ' + book.year : '';
+            var body = $('reader-review');
+            body.innerHTML = '';
+            if (book.review && book.review.innerHTML.trim()) {
+                body.innerHTML = book.review.innerHTML;
+            } else {
+                body.appendChild(make('p', 'empty', NO_REVIEW));
+            }
+            $('reader-body').scrollTop = 0;
+            document.querySelector('.book').scrollTop = 0;
+            if (location.hash !== '#' + book.slug) history.replaceState(null, '', '#' + book.slug);
+        }
+
+        function openBook(book) {
+            if (overlay.hidden) {
+                returnFocus = book.btn;
+                overlay.hidden = false;
+                requestAnimationFrame(function () { overlay.classList.add('is-open'); });
+            }
+            render(book);
+            closeBtn.focus({ preventScroll: true });
+        }
+
+        function closeBook() {
+            if (overlay.hidden) return;
+            overlay.classList.remove('is-open');
+            overlay.hidden = true;
+            var back = current ? current.btn : returnFocus;
+            if (current) current.btn.classList.remove('is-on');
+            current = null;
+            history.replaceState(null, '', location.pathname + location.search);
+            if (back) back.focus({ preventScroll: true });
+        }
+
+        closeBtn.addEventListener('click', closeBook);
+        document.addEventListener('click', function (e) {
+            if (overlay.hidden || e.target.closest('.book, .spine')) return;
+            closeBook();
+        });
+        document.addEventListener('keydown', function (e) {
+            if (!overlay.hidden && e.key === 'Escape') { e.preventDefault(); closeBook(); }
+        });
+
+        // Open a book from a shared link, e.g. shelf.html#the-selfish-gene
+        function fromHash() {
+            var slug = decodeURIComponent(location.hash.replace(/^#/, ''));
+            var match = slug && books.filter(function (b) { return b.slug === slug; })[0];
+            if (match) openBook(match); else closeBook();
+        }
+        window.addEventListener('hashchange', fromHash);
+        if (location.hash) fromHash();
+    })();
+    </script>
+</body>
+</html>

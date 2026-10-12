@@ -13,11 +13,13 @@ a { color: inherit; text-decoration: none; }
 .wrap { max-width: 700px; margin: 0 auto; padding: 0 1.1rem 5rem; }
 
 /* ---- masthead ---- */
-.masthead { padding: 2.2rem 0 1.4rem; display: flex; align-items: baseline; justify-content: space-between; gap: 1rem; flex-wrap: wrap; }
+.masthead { padding: 1.6rem 0 1.4rem; display: flex; align-items: baseline; justify-content: space-between; gap: 1rem; flex-wrap: wrap; }
 .masthead h1 { font-size: 1.55rem; font-weight: 800; letter-spacing: -0.02em; }
 .masthead .sub { font-size: 0.78rem; color: #777; font-weight: 500; }
 .masthead a.home { font-size: 0.75rem; font-weight: 600; color: #999; }
 .masthead a.home:hover { color: #0a0a0a; }
+.back-link { display: inline-block; margin-top: 2.2rem; font-size: 0.75rem; letter-spacing: 0.04em; color: #0a0a0a; transition: opacity 0.2s ease; }
+.back-link:hover { opacity: 0.5; }
 
 /* ---- tabs ---- */
 .tabbar {

@@ -245,10 +245,22 @@
             opacity: 0.6;
         }
 
+        .mobile-back {
+            display: none;
+            font-size: 0.8rem;
+            color: #000;
+            text-decoration: none;
+            margin-bottom: 1.5rem;
+        }
+
         /* ─── RESPONSIVE ─── */
         @media (max-width: 768px) {
             .sidebar {
                 display: none;
+            }
+
+            .mobile-back {
+                display: inline-block;
             }
 
             .main {
@@ -314,6 +326,7 @@
 
     <!-- ─── MAIN ─── -->
     <div class="main">
+        <a href="../" class="mobile-back">&larr; Back</a>
 
         <div class="page-title">
             <h1>Learning Journey</h1>

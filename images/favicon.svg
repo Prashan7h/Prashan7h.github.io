@@ -1,9 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
-  <rect width="64" height="64" fill="#ffffff"/>
-  <text x="32" y="48"
-        text-anchor="middle"
-        font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif"
-        font-size="52"
-        font-weight="900"
-        fill="#000000">P</text>
+  <!-- The site's initial, set in the landing page's own Mincho and palette:
+       ink on paper, with the ember dot as its full stop. -->
+  <rect width="64" height="64" fill="#d1c1b2"/>
+  <path transform="translate(12.519,14.000) scale(0.049655,-0.049655) translate(-38.00,-758.00)" d="M204 347H269C346 347 419 356 460 371C542 400 581 461 581 557C581 642 548 700 482 731C445 748 385 758 313 758H38V734C110 731 115 724 115 631V160C115 67 109 60 38 58V33H288V58C210 60 204 68 204 160ZM204 377V728H294C421 728 484 670 484 553C484 494 467 446 438 419C407 391 353 377 275 377Z" fill="#3b3630"/>
+  <circle cx="47.98" cy="46.50" r="3.5" fill="#a35f30"/>
 </svg>
