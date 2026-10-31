@@ -191,14 +191,23 @@
             flex-direction: column;
             text-decoration: none;
             color: inherit;
+            border: 1px solid #000;
+            transition: background 0.15s ease, transform 0.15s ease;
+            cursor: pointer;
+        }
+
+        .video-item:hover {
+            background: #000;
+            color: #fff;
+            transform: translateY(-2px);
         }
 
         .video-item-title {
             font-family: 'Cormorant Garamond', serif;
             font-size: 0.9rem;
-            font-weight: 500;
+            font-weight: 600;
             line-height: 1.3;
-            margin-top: 0.6rem;
+            padding: 0.55rem 0.65rem 0.7rem;
         }
 
         .video-thumb {
@@ -207,6 +216,12 @@
             padding-bottom: 56.25%;
             height: 0;
             overflow: hidden;
+            border-bottom: 1px solid #000;
+            transition: border-color 0.15s ease;
+        }
+
+        .video-item:hover .video-thumb {
+            border-bottom-color: #333;
         }
 
         .video-thumb img {
@@ -216,11 +231,6 @@
             width: 100%;
             height: 100%;
             object-fit: cover;
-            transition: opacity 0.2s ease;
-        }
-
-        .video-item:hover .video-thumb img {
-            opacity: 0.8;
         }
 
         /* ─── ML NOTEBOOKS TEASER ─── */
@@ -905,7 +915,7 @@
             <div class="video-grid">
                 <a href="https://www.youtube.com/watch?v=9uLYOylPJr4" target="_blank" class="video-item" rel="noopener noreferrer">
                     <div class="video-thumb">
-                        <img src="https://img.youtube.com/vi/9uLYOylPJr4/maxresdefault.jpg" alt="The Four Pillars of Prosperity" loading="lazy">
+                        <img src="images/four-pillars-thumb.jpg" alt="The Four Pillars of Prosperity" loading="lazy">
                     </div>
                     <div class="video-item-title">The Four Pillars of Prosperity</div>
                 </a>
