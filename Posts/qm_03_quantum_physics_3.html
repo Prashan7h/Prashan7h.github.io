@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Quantum Physics III (8.06) — Cheat Sheet</title>
+<link rel="icon" type="image/svg+xml" href="../images/favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+/* Layout: dense reference sheet, 3 columns on wide screens, collapsing to 1 on phones */
+:root { --bg:#ffffff; --fg:#1a1d24; --accent:#1f3b73; --on-accent:#ffffff; --muted:#5a6070; --rule:#c4cad8;
+  --box:#f2f5fb; --th:#e3e9f5; --warn:#c0392b; --warn-bg:#fdf1ef; --tip:#1e8449; --tip-bg:#eef8f1;
+  --axis:#444a58; --plot-faint:#9aa1b1; --c-blue:#1f5fbf; --c-red:#c0392b; --c-green:#1e8449; --c-purple:#8e44ad; }
+
+
+
+@page { size: letter landscape; margin: 0.26in; }
+* { box-sizing: border-box; }
+body { margin:0; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); padding-block: 20px 28px; font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; font-size: 7.3pt; line-height: 1.24; color:var(--fg); background:var(--bg); }
+.katex { font-size: 1.04em; }
+.katex-display { margin: 2px 0; }
+.page { column-count: 3; column-gap: 12px; column-rule: 0.5px solid var(--rule); }
+header.title { column-span: all; display:flex; justify-content:space-between; align-items:baseline; border-bottom: 2px solid var(--accent); margin-bottom:5px; padding-bottom:2px; }
+header.title h1 { font-size: 14pt; margin:0; color:var(--accent); letter-spacing:.2px; }
+header.title span { font-size:7pt; color:var(--muted); }
+section { break-inside: auto; margin-bottom: 4px; }
+h2 { font-size: 8.6pt; margin: 4px 0 2px; padding: 1px 5px; color:var(--on-accent); background:var(--accent); border-radius:2px; break-after: avoid; }
+h2 small { font-weight:normal; opacity:.8; font-size:6.8pt; }
+h3 { font-size: 7.8pt; margin: 3px 0 1px; color:var(--accent); break-after: avoid; border-bottom: .5px solid var(--rule); }
+p { margin: 1px 0 2px; }
+ul { margin: 1px 0 2px; padding-left: 11px; }
+li { margin: 0 0 1px; }
+.box { border: 0.8px solid var(--accent); background:var(--box); border-radius:3px; padding: 2px 4px; margin: 2px 0 3px; break-inside: avoid; }
+.warn { border-left: 2.5px solid var(--warn); background:var(--warn-bg); padding: 2px 4px; margin: 2px 0 3px; break-inside: avoid; }
+.tip { border-left: 2.5px solid var(--tip); background:var(--tip-bg); padding: 2px 4px; margin: 2px 0 3px; break-inside: avoid; }
+.warn b, .tip b { font-size: 7pt; }
+table { border-collapse: collapse; width:100%; margin: 2px 0 3px; break-inside: avoid; }
+td, th { border: .5px solid var(--rule); padding: 1px 3px; vertical-align: middle; }
+th { background:var(--th); font-weight:600; text-align:left; }
+.k { color:var(--accent); font-weight:600; }
+.fig { text-align:center; break-inside: avoid; margin: 2px 0; }
+.fig > svg { width:100%; height:auto; }
+.cap { font-size: 6.4pt; color:var(--muted); text-align:center; }
+.nb { break-inside: avoid; }
+
+.big { column-span: all; break-inside: avoid; border: 1px solid var(--accent); border-radius: 3px; padding: 4px 6px 5px; margin: 0 0 6px; background: var(--box); }
+.big h2 { margin: 0 0 3px; }
+.big ol { display: grid; grid-template-columns: repeat(4, minmax(0,1fr)); gap: 2px 14px; margin: 0; padding-left: 15px; }
+.big li { margin: 0; }
+.big .route { margin: 3px 0 0; font-size: 0.95em; }
+@media screen and (max-width: 1150px) { .big ol { grid-template-columns: repeat(2, minmax(0,1fr)); } }
+@media screen and (max-width: 720px) { .big ol { grid-template-columns: minmax(0,1fr); } }
+
+@media screen { body { font-size: 9.6pt; line-height: 1.4; } .page { max-width: 1500px; margin: 0 auto; column-gap: 26px; }
+  header.title h1 { font-size: 20pt; } header.title span { font-size: 8.5pt; } h2 { font-size: 10.5pt; padding: 3px 7px; } h3 { font-size: 9.6pt; } .warn b, .tip b { font-size: 9pt; } .cap { font-size: 8pt; } }
+@media screen and (max-width: 1150px) { .page { column-count: 2; } }
+@media screen and (max-width: 720px) { .page { column-count: 1; } }
+header.title { flex-wrap: wrap; gap: 4px 16px; }
+mjx-container[display="true"] { overflow-x: auto; overflow-y: hidden; margin: 3px 0 !important; padding: 1px 0; } mjx-container { font-size: 100% !important; }
+table { display: table; } .box, .tip, .warn, td { min-width: 0; overflow-wrap: anywhere; }
+.box { overflow-x: auto; }
+svg [stroke="#444"], svg [stroke="#333"] { stroke: var(--axis); }
+svg [stroke="#555"], svg [stroke="#666"], svg [stroke="#888"], svg [stroke="#999"] { stroke: var(--plot-faint); }
+svg [stroke="#bbb"], svg [stroke="#ccc"], svg [stroke="#ddd"] { stroke: var(--rule); }
+svg [stroke="#1f3b73"] { stroke: var(--accent); } svg [fill="#1f3b73"] { fill: var(--accent); }
+svg [stroke="#1f5fbf"] { stroke: var(--c-blue); } svg [fill="#1f5fbf"] { fill: var(--c-blue); }
+svg [stroke="#c0392b"] { stroke: var(--c-red); } svg [fill="#c0392b"] { fill: var(--c-red); }
+svg [stroke="#1e8449"] { stroke: var(--c-green); } svg [fill="#1e8449"] { fill: var(--c-green); }
+svg [stroke="#8e44ad"] { stroke: var(--c-purple); } svg [fill="#8e44ad"] { fill: var(--c-purple); }
+svg text[fill="#333"] { fill: var(--fg); } svg text[fill="#555"], svg text[fill="#666"] { fill: var(--muted); }
+svg [fill="#888"] { fill: var(--plot-faint); }
+.k { color: var(--accent); }
+</style>
+<script>window.MathJax={tex:{inlineMath:[['$','$']],displayMath:[['$$','$$']]},svg:{fontCache:'global'},startup:{typeset:true}};</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/es5/tex-svg-full.js"></script>
+
+
+<style>
+/* site look: black on white, Cormorant Garamond headings, Inter body */
+:root { --fg:#000; --accent:#000; --on-accent:#fff; --muted:#666; --rule:#e4e4e4; --box:#f9f9f9; --th:#f3f3f3; --card:#fff;
+  --tip:#000; --tip-bg:#f9f9f9; --warn:#000; --warn-bg:#f9f9f9; --axis:#333; --plot-faint:#999; color-scheme: light; }
+body { font-family: 'Inter', sans-serif !important; font-weight: 300; color: #000; background: #fff; }
+b, strong { font-weight: 500; }
+h1, header.title h1 { font-family: 'Cormorant Garamond', serif !important; font-weight: 600 !important; color: #000 !important; letter-spacing: 0 !important; }
+header.title { border-bottom: 1px solid #000 !important; }
+h2, h2.band { font-family: 'Cormorant Garamond', serif !important; font-weight: 600 !important; font-size: 1.35em !important; color: #000 !important; background: none !important;
+  border-radius: 0 !important; padding: 0 0 2px !important; border-bottom: 1px solid #000; }
+h2 small { color: #666 !important; opacity: 1 !important; font-family: 'Inter', sans-serif; font-weight: 400; }
+h3, .card h3 { font-family: 'Cormorant Garamond', serif !important; font-weight: 600 !important; color: #000 !important; font-size: 1.15em !important; }
+.k, .lbl, dl.cqo dt { color: #000 !important; font-weight: 500; }
+.box, .big { border-color: #000 !important; }
+.tip, .warn { border-left-color: #000 !important; }
+.num { background: #000 !important; }
+.tag { color: #000 !important; border-color: #000 !important; }
+nav.site-nav { font-size: 0.78rem; letter-spacing: 0.04em; margin: 0 auto 1.6rem; max-width: 1500px; display: flex; flex-wrap: wrap; gap: 0.2rem 0; align-items: baseline; }
+nav.site-nav a { color: #000; text-decoration: none; }
+nav.site-nav a:hover { opacity: 0.5; }
+nav.site-nav span { margin: 0 0.5rem; opacity: 0.3; }
+nav.site-nav .pdf { margin-left: auto; border: 1px solid #000; padding: 0.15rem 0.7rem; }
+@media print { nav.site-nav { display: none; } }
+</style>
+</head>
+<body>
+<nav class="site-nav"><a href="../blog.html">&larr; Back</a><span>/</span>Quantum Physics<span>/</span>8.06 · Quantum Physics III<a class="pdf" href="pdf/qm_03_quantum_physics_3.pdf" download>Download PDF</a></nav>
+<div class="page">
+<header class="title"><h1>8.06 Quantum Physics III — Cheat Sheet</h1><span>Zwiebach, <i>Mastering Quantum Mechanics</i> Part III (Ch 24–30) + MIT 8.06 notes (2018) · Gaussian units ($\alpha=e^2/\hbar c$)</span></header>
+
+<div class="big"><h2>The course in 8 ideas</h2><ol>
+<li><b>Almost nothing is exactly solvable.</b> Start from a solved $\hat H^{(0)}$ and treat the rest as small. First order = average of the perturbation; second order = level repulsion; degenerate levels need the good basis.</li>
+<li><b>Real hydrogen:</b> relativistic, spin-orbit and Darwin terms are $\alpha^2$ corrections that depend only on $n,j$. External fields: Zeeman (B) and Stark (E).</li>
+<li><b>EM fields enter through potentials:</b> $\hat{\vec p}\to\hat{\vec p}-\frac qc\vec A$. Gauge invariance, flux quantization, Landau levels; the Pauli equation gives $g=2$.</li>
+<li><b>Semiclassical (WKB)</b> when λ varies slowly: amplitude $\propto1/\sqrt p$, phase $\frac1\hbar\int p\,dx$; quantization $\oint p\,dx=2\pi\hbar(n+\frac12)$; tunneling $\sim e^{-2\theta}$.</li>
+<li><b>Time-dependent perturbations cause transitions.</b> Into a continuum they give a constant rate (golden rule), hence exponential decay and line widths; light–atom physics and selection rules.</li>
+<li><b>Slow change</b> ⇒ the system follows the instantaneous eigenstate, gaining a dynamical phase plus a geometric Berry phase. Fast crossings jump (Landau–Zener). Molecules: Born–Oppenheimer.</li>
+<li><b>Scattering</b> is measured as cross sections. Low energy: a few partial waves (phase shifts). Weak $V$ or high energy: Born approximation, the Fourier transform of $V$.</li>
+<li><b>Identical particles:</b> (anti)symmetrize. This gives Pauli exclusion, exchange effects and Fermi–Dirac / Bose–Einstein statistics.</li>
+</ol></div>
+
+<section>
+<h2>1 · Time-independent perturbation theory <small>notes 1 · Ch 25</small></h2>
+<p>$\hat H(\lambda)=\hat H^{(0)}+\lambda\,\delta\hat H$, $\lambda\in[0,1]$. Expand $E_n(\lambda)=E_n^{(0)}+\lambda E_n^{(1)}+\lambda^2E_n^{(2)}+\dots$, $|n\rangle=|n^{(0)}\rangle+\lambda|n^{(1)}\rangle+\dots$; match powers of λ. Convenient choice $\langle n^{(0)}|n^{(k)}\rangle=0$ for $k\ge1$.</p>
+<div class="box"><b>Non-degenerate</b> ($\delta H_{kn}\equiv\langle k^{(0)}|\delta\hat H|n^{(0)}\rangle$):
+$$E_n^{(1)}=\delta H_{nn},\qquad |n^{(1)}\rangle=\sum_{k\ne n}\frac{\delta H_{kn}}{E_n^{(0)}-E_k^{(0)}}|k^{(0)}\rangle$$
+$$E_n^{(2)}=\sum_{k\ne n}\frac{|\delta H_{kn}|^2}{E_n^{(0)}-E_k^{(0)}}$$</div>
+<ul>
+<li><b>Why:</b> first order = average of the perturbation in the unperturbed state; second order = virtual mixing with other levels, weighted by 1/(energy gap).</li>
+<li>$E^{(2)}_{\rm ground}&lt;0$ always: levels <b>repel</b> at second order.</li>
+<li><b>Validity:</b> $|\delta H_{kn}|\ll|E_n^{(0)}-E_k^{(0)}|$. Series is often only asymptotic (e.g. $\alpha x^4$ with $\alpha&lt;0$ has no bound states ⇒ zero radius of convergence).</li>
+<li>Anharmonic $\delta H=\alpha\hat x^4$: $E_n^{(1)}=\frac{3\alpha\hbar^2}{4m^2\omega^2}(2n^2+2n+1)$. Use $\hat x\propto\hat a+\hat a^\dagger$.</li>
+</ul>
+<div class="box"><b>Degenerate</b> (level $E_n^{(0)}$ with subspace $V_N$, $N$-fold):
+<ol style="margin:1px 0;padding-left:13px">
+<li>Find the <b>good basis</b>: diagonalize $[\delta\hat H]_{V_N}$, the $N\times N$ matrix of $\delta\hat H$ inside $V_N$. Eigenvalues = $E^{(1)}$'s.</li>
+<li>Non-degenerate formulas then work in that basis (sums over states outside $V_N$).</li>
+<li>If $E^{(1)}$ doesn't lift degeneracy: diagonalize $M_{ij}=\sum_{p\notin V_N}\frac{\delta H_{ip}\delta H_{pj}}{E_n^{(0)}-E_p^{(0)}}$ inside the still-degenerate space (second-order lifting).</li></ol>
+<b>Why:</b> only the good basis states connect smoothly to the exact $\lambda\ne0$ eigenstates; other bases make $\frac{\delta H_{kn}}{0}$ blow up.</div>
+<div class="tip"><b>Shortcut:</b> find a Hermitian $\hat A$ with $[\hat A,\hat H^{(0)}]=[\hat A,\delta\hat H]=0$ whose eigenvalues are distinct on $V_N$ — its eigenstates are the good basis (e.g. $\hat L_z$, $\hat J^2$, parity).</div>
+<p><span class="k">Example — linear Stark effect</span> ($n=2$ H, $\delta H=e\mathcal Ez$): only $\langle200|z|210\rangle=-3a_0$ is nonzero ⇒ good states $\frac{1}{\sqrt2}(|200\rangle\pm|210\rangle)$, $E^{(1)}=\mp3e\mathcal Ea_0$; $|21\pm1\rangle$ unshifted. Ground state: no linear Stark effect (parity).</p>
+<p><span class="k">Feynman–Hellmann:</span> $\frac{dE_n}{d\lambda}=\langle n(\lambda)|\frac{d\hat H}{d\lambda}|n(\lambda)\rangle$. <span class="k">Variational:</span> $E_{\rm gs}\le\langle\psi|\hat H|\psi\rangle$.</p>
+</section>
+
+<section>
+<h2>2 · Charged particles in EM fields <small>Ch 24</small></h2>
+<div class="box">$$\vec E=-\nabla\Phi-\frac1c\partial_t\vec A,\qquad \vec B=\nabla\times\vec A,\qquad \hat H=\frac{1}{2m}\Big(\hat{\vec p}-\frac qc\vec A\Big)^2+q\Phi$$
+<b>Gauge transformation</b> $\vec A\to\vec A+\nabla\Lambda$, $\Phi\to\Phi-\frac1c\partial_t\Lambda$ is a symmetry if $\psi\to e^{iq\Lambda/\hbar c}\psi$. $\hat{\vec p}$ is canonical and gauge-dependent; the <b>mechanical momentum</b> $\hat{\vec\pi}=\hat{\vec p}-\frac qc\vec A=m\hat{\vec v}$ is physical:
+$$[\hat\pi_x,\hat\pi_y]=\frac{i\hbar q}{c}B_z,\qquad m\frac{d^2\hat{\vec x}}{dt^2}=q\Big[\vec E+\frac{1}{2c}\big(\hat{\vec v}\times\vec B-\vec B\times\hat{\vec v}\big)\Big]$$</div>
+<ul>
+<li><b>Flux quantization</b> (field on a torus): a consistent $\vec A$ exists only if $\Phi_B=n\,\Phi_0$, $\Phi_0=\frac{2\pi\hbar c}{q}$. Aharonov–Bohm: a loop around flux picks up phase $\frac{q}{\hbar c}\oint\vec A\cdot d\vec l=\frac{q\Phi_B}{\hbar c}$, even where $\vec B=0$.</li>
+</ul>
+<div class="box"><b>Landau levels</b> (uniform $B\hat z$, gauge $\vec A=Bx\,\hat y$): $p_y$ is conserved and $x$-motion is an oscillator centred at $x_0=\frac{cp_y}{qB}$:
+$$E=\hbar\omega_c\big(n+\tfrac12\big)+\frac{p_z^2}{2m},\qquad \omega_c=\frac{|q|B}{mc},\qquad \ell_B=\sqrt{\frac{\hbar c}{|q|B}}$$
+Each level holds <b>one state per flux quantum</b>: $\frac{\#\text{states}}{\text{area}}=\frac{|q|B}{2\pi\hbar c}=\frac{B}{\Phi_0}$. (Basis of the quantum Hall effect.)</div>
+</section>
+
+<section>
+<h2>3 · Hydrogen fine structure & Zeeman <small>notes 2 · Ch 24.6–7, 25.6–8</small></h2>
+<div class="box">$$E_n^{(0)}=-\frac{e^2}{2a_0n^2}=-\frac{\alpha^2mc^2}{2n^2},\quad a_0=\frac{\hbar^2}{me^2}\approx0.53\,\text{Å},\quad \alpha=\frac{e^2}{\hbar c}\approx\frac1{137}$$
+<b>Scales:</b> Bohr $\alpha^2mc^2$ ≫ fine $\alpha^4mc^2$ ≫ Lamb $\alpha^5mc^2$ ~ hyperfine $\alpha^4mc^2\,\frac{m}{m_p}$. $v/c\sim\alpha$.</div>
+<p><span class="k">Pauli equation:</span> $\hat H=\frac{(\vec\sigma\cdot\hat{\vec\pi})^2}{2m}+V$, $\hat{\vec\pi}=\hat{\vec p}-\frac qc\vec A$, and $(\vec\sigma\cdot\vec\pi)^2=\vec\pi^2-\frac{q\hbar}{c}\vec\sigma\cdot\vec B$ ⇒ predicts $g=2$.
+<span class="k">Dirac:</span> $\hat H=c\,\vec\alpha\cdot\hat{\vec p}+\beta mc^2+V$; expanding in $v/c$ gives three corrections:</p>
+<div class="box">$$\delta\hat H_{\rm rel}=-\frac{\hat p^4}{8m^3c^2},\qquad \delta\hat H_{\rm SO}=\frac{e^2}{2m^2c^2}\frac{1}{r^3}\hat{\vec S}\cdot\hat{\vec L},\qquad \delta\hat H_{\rm D}=\frac{\pi\hbar^2e^2}{2m^2c^2}\delta^3(\vec r)$$
+$$E_{\rm rel}^{(1)}=-\frac{(E_n^{(0)})^2}{2mc^2}\Big[\frac{4n}{\ell+\frac12}-3\Big],\qquad E_{\rm D}^{(1)}=\frac{\alpha^4mc^2}{2n^3}\ \ (\ell=0\text{ only})$$
+$$E_{\rm SO}^{(1)}=\frac{(E_n^{(0)})^2}{mc^2}\,\frac{n\,[\,j(j+1)-\ell(\ell+1)-\frac34\,]}{\ell(\ell+\frac12)(\ell+1)}\quad(\ell\ne0)$$
+$$\boxed{E^{(1)}_{\rm fs}=-\frac{\alpha^4mc^2}{2n^4}\Big[\frac{n}{j+\frac12}-\frac34\Big]}$$</div>
+<ul>
+<li><b>Why each term:</b> rel = next term of $\sqrt{p^2c^2+m^2c^4}$; SO = electron's magnetic moment in the proton's field seen in its rest frame (with Thomas ½); Darwin = electron position smeared over $\sim\hbar/mc$ (Zitterbewegung), only felt at $r=0$ ⇒ s-states.</li>
+<li>$\delta H_{\rm rel}$ commutes with $\hat{\vec L}$; $\delta H_{\rm SO}$ doesn't commute with $L_z,S_z$ ⇒ use the coupled basis $|n\ell jm_j\rangle$ (good basis!).</li>
+<li>Result depends only on $n,j$: $2s_{1/2}$ & $2p_{1/2}$ stay degenerate (split by Lamb shift, QED). Levels with larger $j$ lie higher.</li>
+<li>$\langle\frac1r\rangle=\frac{1}{n^2a_0}$, $\langle\frac1{r^2}\rangle=\frac{1}{n^3(\ell+\frac12)a_0^2}$, $\langle\frac1{r^3}\rangle=\frac{1}{n^3\ell(\ell+\frac12)(\ell+1)a_0^3}$, $|\psi_{n00}(0)|^2=\frac{1}{\pi n^3a_0^3}$.</li>
+</ul>
+<div class="box"><b>Zeeman effect:</b> $\delta\hat H_Z=\frac{e}{2mc}(\hat{\vec L}+2\hat{\vec S})\cdot\vec B=\frac{\mu_B}{\hbar}B(\hat L_z+2\hat S_z)$, $\mu_B=\frac{e\hbar}{2mc}\approx5.79\times10^{-9}$ eV/G.<br>
+<b>Weak field</b> ($B\ll B_{\rm int}$, treat after fine structure): basis $|n\ell jm_j\rangle$,
+$$E^{(1)}_Z=\mu_BB\,g_J\,m_j,\qquad g_J=1+\frac{j(j+1)-\ell(\ell+1)+\frac34}{2j(j+1)}$$
+removes all degeneracies. <b>Strong field</b> (Paschen–Back): basis $|n\ell m_\ell m_s\rangle$, $E=E_n^{(0)}+\mu_BB(m_\ell+2m_s)$, then fine structure as a perturbation. <b>Intermediate:</b> diagonalize $\delta H_{\rm fs}+\delta H_Z$ in the $n$ shell.</div>
+<p><span class="k">Projection lemma</span> (why $g_J$): within a $j$-multiplet, any vector operator acts as $\langle\hat{\vec V}\rangle=\frac{\langle(\hat{\vec V}\cdot\hat{\vec J})\rangle}{\hbar^2j(j+1)}\langle\hat{\vec J}\rangle$ — only the part of $\vec S$ along $\vec J$ survives time-averaging.</p>
+</section>
+
+<section>
+<h2>4 · WKB / semiclassical approximation <small>notes 3 · Ch 26</small></h2>
+<div class="box">$$p(x)=\sqrt{2m(E-V(x))},\qquad \lambda(x)=\frac{2\pi\hbar}{p(x)}$$
+$$\textbf{allowed: }\ \psi\simeq\frac{C}{\sqrt{p(x)}}\exp\Big(\pm\frac i\hbar\int^xp(x')dx'\Big)$$
+$$\textbf{forbidden: }\ \psi\simeq\frac{C}{\sqrt{|p(x)|}}\exp\Big(\pm\frac1\hbar\int^x|p(x')|dx'\Big)$$</div>
+<p><b>Derivation:</b> $\psi=e^{iS(x)/\hbar}$, $S=S_0+\hbar S_1+\dots$ ⇒ $S_0'^2=p^2$ (Hamilton–Jacobi, classical), $S_1=\frac i2\ln p$ (amplitude $\propto p^{-1/2}$: $|\psi|^2\propto$ time spent at $x$). <b>Valid when</b> $\lambda$ changes slowly: $\big|\frac{d\lambda}{dx}\big|\ll2\pi$, i.e. $\hbar|p'|\ll p^2$. Fails at turning points ($p=0$).</p>
+<div class="box"><b>Connection formulas</b> ($k=p/\hbar$, $\kappa=|p|/\hbar$). Turning point $a$, allowed on left, forbidden on right:
+$$\frac{2}{\sqrt k}\cos\Big(\int_x^ak\,dx'-\frac\pi4\Big)\ \Longleftarrow\ \frac1{\sqrt\kappa}\exp\Big(-\int_a^x\kappa\,dx'\Big)$$
+$$-\frac{1}{\sqrt k}\sin\Big(\int_x^ak\,dx'-\frac\pi4\Big)\ \Longrightarrow\ \frac1{\sqrt\kappa}\exp\Big(\int_a^x\kappa\,dx'\Big)$$
+(Mirror image for forbidden-left at $b$: $\int_b^x$.) Arrows: which direction the matching is reliable. Derived by matching to <b>Airy functions</b> of the linearized potential $V\approx V(a)+g(x-a)$.</div>
+<div class="box"><b>Bohr–Sommerfeld quantization:</b>
+$$\int_a^bk(x)\,dx=\Big(n+\tfrac12\Big)\pi,\quad n=0,1,\dots\quad(\text{two soft turning points})$$
+One hard wall: $(n+\frac34)\pi$; two hard walls: $(n+1)\pi$. Exact for the SHO. Equivalent to $\oint p\,dx=2\pi\hbar(n+\frac12)$: each state occupies phase-space area $2\pi\hbar$.</div>
+<div class="box"><b>Tunneling</b> through a barrier ($a&lt;x&lt;b$ forbidden):
+$$T\simeq e^{-2\theta},\qquad \theta=\int_a^b\kappa(x)\,dx=\frac1\hbar\int_a^b\sqrt{2m(V-E)}\,dx\ \ (\theta\gg1)$$
+Square barrier check: $T\simeq\frac{16E}{V_0}\big(1-\frac{E}{V_0}\big)e^{-2\kappa L}$ — WKB gets the exponent, not the prefactor. Uses: α-decay (Gamow), field emission, fusion.</div>
+<div class="box"><b>Double well</b> (Ch 26.7): each well alone has a level $E_0$ with classical frequency ω. Tunneling splits it into an even state (lower) and an odd state (higher):
+$$\Delta E=E_{\rm odd}-E_{\rm even}\simeq\frac{\hbar\omega}{\pi}e^{-\theta},\qquad \theta=\frac1\hbar\int_{\rm barrier}\!|p|\,dx$$
+A particle starting in one well tunnels back and forth with period $2\pi\hbar/\Delta E$ (ammonia inversion).</div>
+</section>
+
+<section>
+<h2>5 · Time-dependent perturbation theory <small>notes 4 · Ch 27</small></h2>
+<p>$\hat H(t)=\hat H^{(0)}+\delta\hat H(t)$ has no energy eigenstates; expand in eigenstates of $\hat H^{(0)}$ and ask for transition probabilities.</p>
+<div class="box"><b>Interaction picture:</b> $|\tilde\Psi(t)\rangle=e^{i\hat H^{(0)}t/\hbar}|\Psi(t)\rangle$ removes the trivial $H^{(0)}$ evolution:
+$$i\hbar\frac{d}{dt}|\tilde\Psi\rangle=\widetilde{\delta H}(t)|\tilde\Psi\rangle,\qquad \widetilde{\delta H}=e^{i\hat H^{(0)}t/\hbar}\,\delta\hat H\,e^{-i\hat H^{(0)}t/\hbar}$$
+$$|\Psi(t)\rangle=\sum_nc_n(t)e^{-iE_nt/\hbar}|n\rangle,\qquad i\hbar\,\dot c_n=\sum_m\delta H_{nm}(t)\,e^{i\omega_{nm}t}c_m$$ with $\omega_{nm}=(E_n-E_m)/\hbar$.
+$$c_f^{(1)}(t)=\frac{1}{i\hbar}\int_{t_0}^t\delta H_{fi}(t')\,e^{i\omega_{fi}t'}dt',\qquad P_{f\leftarrow i}=|c^{(1)}_f|^2$$ (1st order, starting in $|i\rangle$).</div>
+<p>Valid while $P\ll1$. Exact two-level (NMR) solution reduces to this at small $t$. Note $P_{f\leftarrow i}=P_{i\leftarrow f}$ at first order.</p>
+<div class="box"><b>Constant perturbation</b> $V$ turned on at $t=0$:
+$$P_{f\leftarrow i}(t)=\frac{4|V_{fi}|^2}{\hbar^2}\frac{\sin^2(\omega_{fi}t/2)}{\omega_{fi}^2}$$
+<b>Harmonic</b> $\delta H=2H'\cos\omega t$: same with $\omega_{fi}\to\omega_{fi}\mp\omega$ ⇒ <b>absorption</b> at $E_f=E_i+\hbar\omega$, <b>stimulated emission</b> at $E_f=E_i-\hbar\omega$.</div>
+<div class="fig"><svg id="sinc" viewBox="0 0 300 76"></svg><div class="cap">$\sin^2(\omega t/2)/\omega^2$: peak height ∝ $t^2$, width ∝ $1/t$, area ∝ $t$ ⇒ for a continuum of final states the probability grows <b>linearly</b> in $t$ → constant rate.</div></div>
+<div class="box"><b>Fermi's Golden Rule</b> (transitions into a continuum):
+$$w=\frac{2\pi}{\hbar}\,|V_{fi}|^2\,\rho(E_f),\quad E_f=E_i\qquad\Big(\text{harmonic: }|H'_{fi}|^2,\ E_f=E_i\pm\hbar\omega\Big)$$
+Uses $\frac{\sin^2(xt/2)}{x^2}\to\frac{\pi t}{2}\delta(x)$. Free particle in box $L^3$: $\rho(E)\,d\Omega=\frac{L^3}{(2\pi)^3}\frac{mk}{\hbar^2}d\Omega$ (L³ cancels against normalization). Valid for $\frac{2\pi\hbar}{\Delta E}\ll t\ll\frac1w$.</div>
+<p><span class="k">Ionization of H:</span> golden rule with plane-wave final electron; $dw\propto\cos^2\theta\,d\Omega$.</p>
+<div class="box"><b>Decay of a discrete state into a continuum</b> (Ch 27.8): beyond first order the golden-rule rate gives true exponential decay,
+$$|c_i(t)|^2=e^{-\Gamma t/\hbar},\qquad \Gamma=2\pi|V|^2\rho,\qquad \tau=\hbar/\Gamma$$
+with a Lorentzian line of full width Γ (energy–time: $\Gamma\tau=\hbar$).<br>
+<b>Helium autoionization:</b> doubly excited states (e.g. $2s^2$) lie above the $\text{He}^++e^-$ threshold. Electron–electron repulsion couples them to that continuum, so they decay by ejecting an electron.</div>
+<h3>Light and atoms</h3>
+<div class="box">Dipole approximation ($\lambda\gg a_0$): $\delta\hat H=-\hat{\vec d}\cdot\vec{\mathcal E}(t)$, $\hat{\vec d}=q\hat{\vec r}$. Isotropic, incoherent light with energy density $U(\omega)$:
+$$R_{a\leftarrow b}=\frac{4\pi^2}{3\hbar^2}|\vec d_{ab}|^2U(\omega_{ba})=B_{ab}U(\omega_{ba})$$
+<b>Einstein's argument</b> (equilibrium with Planck $U=\frac{\hbar\omega^3}{\pi^2c^3}\frac{1}{e^{\beta\hbar\omega}-1}$) needs spontaneous emission:
+$$B_{ab}=B_{ba},\qquad \frac{A}{B}=\frac{\hbar\omega^3}{\pi^2c^3}\ \Rightarrow\ A=\frac{4\omega^3}{3\hbar c^3}|\vec d_{ab}|^2,\qquad \tau=\frac1A$$
+Rates from different channels add: $\tau^{-1}=\sum_iA_i$. Spontaneous = emission stimulated by vacuum fluctuations. H $2p\to1s$: τ ≈ 1.6 ns.</div>
+<div class="box"><b>Selection rules (E1):</b> $\langle n'\ell'm'|\hat{\vec r}|n\ell m\rangle\ne0$ only if $\Delta\ell=\pm1$, $\Delta m=0,\pm1$ ($z$: $\Delta m=0$; $x\pm iy$: $\Delta m=\pm1$). Parity must flip. ⇒ $2s$ is metastable (decays by 2 photons, ~0.1 s).</div>
+</section>
+
+<section>
+<h2>6 · Adiabatic approximation <small>notes 6 · Ch 28</small></h2>
+<p><span class="k">Classical:</span> slowly varying oscillator conserves the <b>action</b> $I=\frac{1}{2\pi}\oint p\,dq=E/\omega$ (adiabatic invariant). Quantum analogue: $n$ in $E=\hbar\omega(n+\frac12)$ stays fixed. Generally, slow changes preserve $\oint p\,dq=2\pi\hbar(n+\frac12)$, so quantum numbers are adiabatic invariants.</p>
+<div class="box"><b>Adiabatic theorem.</b> Instantaneous eigenstates $\hat H(t)|\psi_n(t)\rangle=E_n(t)|\psi_n(t)\rangle$. If $\hat H$ changes slowly and $E_n$ stays non-degenerate, a system starting in $|\psi_n(0)\rangle$ stays in $|\psi_n(t)\rangle$:
+$$|\Psi(t)\rangle\simeq e^{i\theta_n(t)}e^{i\gamma_n(t)}|\psi_n(t)\rangle,$$$$\theta_n=-\frac1\hbar\int_0^tE_n(t')dt',\qquad \gamma_n=\int_0^t\nu_n\,dt',\quad \nu_n=i\langle\psi_n|\dot\psi_n\rangle$$
+<b>Condition:</b> $\hbar\,|\langle\psi_m|\dot{\hat H}|\psi_n\rangle|\ll(E_n-E_m)^2$ for all $m\ne n$ — rate of change slow compared to the gap.</div>
+<div class="box"><b>Berry (geometric) phase</b> for a closed loop $C$ in parameter space $\vec R$:
+$$\gamma_n[C]=\oint_C\vec{\mathcal A}_n\cdot d\vec R,\qquad \vec{\mathcal A}_n(\vec R)=i\langle\psi_n(\vec R)|\nabla_R\psi_n(\vec R)\rangle$$
+$$=\int_S\vec{\mathcal D}_n\cdot d\vec a,\qquad \vec{\mathcal D}_n=\nabla_R\times\vec{\mathcal A}_n\ (\text{Berry curvature})$$
+Depends only on the path's geometry, not on how fast it is traversed. Gauge: $|\psi_n\rangle\to e^{i\beta(R)}|\psi_n\rangle$ shifts $\vec{\mathcal A}\to\vec{\mathcal A}-\nabla\beta$; closed-loop γ invariant (mod 2π) ⇒ physical.</div>
+<ul>
+<li>$\gamma_n=0$ if $\psi_n$ can be chosen real, or if there is only one parameter.</li>
+<li><b>Spin in slowly rotating $\vec B$:</b> $\gamma_\pm=\mp\frac12\Omega$, Ω = solid angle traced by $\hat B$. (Spin $s$: $\gamma=-m_s\Omega$.) Berry curvature = monopole field $\mp\frac{\hat r}{2r^2}$ at the degeneracy $B=0$.</li>
+</ul>
+<div class="box"><b>Landau–Zener.</b> Diabatic levels cross linearly, $E_1-E_2=\alpha t$, coupling $H_{12}$ opens a gap $2|H_{12}|$. Probability of a <b>non-adiabatic</b> jump (staying on the diabatic line):
+$$P_{\rm jump}=\exp\Big(-\frac{2\pi|H_{12}|^2}{\hbar|\alpha|}\Big)$$
+Slow sweep ($\hbar|\alpha|\ll|H_{12}|^2$) ⇒ adiabatic, follows the curve; fast ⇒ jumps.</div>
+<div class="fig"><svg id="lz" viewBox="0 0 300 92"></svg><div class="cap">Avoided crossing: diabatic levels (dashed) vs adiabatic levels (solid), gap $2|H_{12}|$.</div></div>
+<div class="box"><b>Born–Oppenheimer (molecules):</b> electrons fast, nuclei slow ($m/M\ll1$). Solve electrons at fixed nuclear positions $\vec R$ → $E_{\rm el}(\vec R)$ is the potential for nuclear motion. Scales $E_{\rm el}:E_{\rm vib}:E_{\rm rot}\sim1:(m/M)^{1/2}:(m/M)$. Nuclear $\hat P\to\hat P-\vec{\mathcal A}$ (Berry connection from the electrons). <b>H₂⁺:</b> trial $\psi_\pm\propto\psi_{1s}(r_1)\pm\psi_{1s}(r_2)$; even (bonding) combination gives a bound molecule, odd (antibonding) doesn't.</div>
+</section>
+
+<section>
+<h2>7 · Scattering (3D, elastic, spinless) <small>notes 7 · Ch 30</small></h2>
+<div class="box">$E=\frac{\hbar^2k^2}{2m}$ ($m$ = reduced mass). Far from the target ($r\gg a$):
+$$\psi(\vec r)\simeq e^{ikz}+f_k(\theta,\phi)\frac{e^{ikr}}{r},\qquad \frac{d\sigma}{d\Omega}=|f_k(\theta,\phi)|^2,\qquad \sigma=\int|f_k|^2d\Omega$$
+$d\sigma$ = (scattered particles/time into $d\Omega$)/(incident flux) — an area.</div>
+<div class="box"><b>Partial waves</b> (central $V$): $e^{ikz}=\sum_\ell i^\ell(2\ell+1)j_\ell(kr)P_\ell(\cos\theta)$. Each $\ell$ outgoing wave acquires $e^{2i\delta_\ell}$:
+$$f_k(\theta)=\frac1k\sum_{\ell=0}^\infty(2\ell+1)\,e^{i\delta_\ell}\sin\delta_\ell\,P_\ell(\cos\theta)$$
+$$\sigma=\frac{4\pi}{k^2}\sum_\ell(2\ell+1)\sin^2\delta_\ell,\qquad \sigma_\ell\le\frac{4\pi}{k^2}(2\ell+1)\ \ (\text{unitarity bound})$$
+$$\textbf{Optical theorem: }\ \sigma=\frac{4\pi}{k}\,\text{Im}\,f_k(0)$$
+Outside the potential: $u_\ell\sim\sin(kr-\frac{\ell\pi}{2}+\delta_\ell)$, $R_\ell\propto\cos\delta_\ell\,j_\ell(kr)-\sin\delta_\ell\,n_\ell(kr)$.</div>
+<ul>
+<li><b>Why few partial waves:</b> classical impact parameter $b\sim\ell/k$; if $b&gt;a$ no scattering ⇒ $\ell_{\max}\sim ka$. Low energy ($ka\ll1$): $\delta_\ell\sim(ka)^{2\ell+1}$, s-wave dominates, isotropic.</li>
+<li><b>Computing δ<sub>ℓ</sub>:</b> match log-derivative $\beta=R_\ell'/R_\ell$ at $r=a$: $\tan\delta_\ell=\frac{kj_\ell'(ka)-\beta j_\ell(ka)}{kn_\ell'(ka)-\beta n_\ell(ka)}$.</li>
+<li><b>Hard sphere:</b> $\tan\delta_\ell=\frac{j_\ell(ka)}{n_\ell(ka)}$, $\delta_0=-ka$; low energy $\sigma\to4\pi a^2$ (4× geometric cross-section!). Scattering length: $\delta_0\simeq-ka_s$, $\sigma\to4\pi a_s^2$.</li>
+<li>Resonance: $\delta_\ell$ passes through $\pi/2$ ⇒ $\sigma_\ell$ hits the unitarity bound; Breit–Wigner shape.</li>
+</ul>
+<div class="box"><b>Integral equation:</b> $(\nabla^2+k^2)\psi=U\psi$, $U=\frac{2m}{\hbar^2}V$, Green's function $G(\vec r)=-\frac{e^{ikr}}{4\pi r}$:
+$$\psi(\vec r)=e^{i\vec k\cdot\vec r}+\int G(\vec r-\vec r')U(\vec r')\psi(\vec r')d^3r'$$$$f=-\frac{1}{4\pi}\int e^{-i\vec k'\cdot\vec r'}U(\vec r')\psi(\vec r')d^3r'$$
+<b>Born approximation</b> (replace ψ by the incident plane wave), $\vec K=\vec k'-\vec k$, $K=2k\sin\frac\theta2$:
+$$f_B(\theta)=-\frac{m}{2\pi\hbar^2}\int e^{-i\vec K\cdot\vec r}V(\vec r)\,d^3r\ \xrightarrow{\text{central}}\ -\frac{2m}{\hbar^2K}\int_0^\infty rV(r)\sin(Kr)\,dr$$
+$f_B$ ∝ Fourier transform of $V$ at momentum transfer $\hbar\vec K$. Valid for weak $V$ or high energy ($|V|a\ll\hbar v$).</div>
+<p><span class="k">Yukawa</span> $V=\beta\frac{e^{-\mu r}}{r}$: $f_B=-\frac{2m\beta}{\hbar^2(\mu^2+K^2)}$. $\mu\to0$ gives <b>Rutherford</b>: $\frac{d\sigma}{d\Omega}=\frac{(Z_1Z_2e^2)^2}{16E^2\sin^4(\theta/2)}$ (exact classically & quantum).</p>
+<p>1D half-line scattering (phase shifts, time delay $2\hbar\delta'(E)$, Levinson, Breit–Wigner) is book Ch 29 and on the 8.04 sheet §14–15.</p>
+</section>
+
+<section>
+<h2>8 · Identical particles <small>notes 8 · Ch 21</small></h2>
+<p>Identical = same intrinsic properties ⇒ no experiment distinguishes them. Classically you can still follow trajectories; quantum mechanically you can't once wavefunctions overlap ⇒ <b>exchange degeneracy</b>: $|a\rangle_1|b\rangle_2$ and $|b\rangle_1|a\rangle_2$ (and all combos) describe the same physics — ambiguity.</p>
+<div class="box"><b>Permutation operators:</b> $\hat P_{21}|u\rangle_1|v\rangle_2=|v\rangle_1|u\rangle_2$; $\hat P_{21}^2=1$, Hermitian & unitary. $N$ particles: $N!$ permutations $\hat P_\alpha$, parity $\epsilon_\alpha=\pm1$.
+$$\hat S=\frac1{N!}\sum_\alpha\hat P_\alpha,\qquad \hat A=\frac1{N!}\sum_\alpha\epsilon_\alpha\hat P_\alpha\qquad(\text{projectors})$$
+<b>Symmetrization postulate:</b> states of identical particles are <b>totally symmetric</b> (bosons, integer spin) or <b>totally antisymmetric</b> (fermions, half-integer spin). Observables commute with all $\hat P_\alpha$.</div>
+<ul>
+<li>Two particles: $\psi_\pm=\frac1{\sqrt2}[\psi_a(1)\psi_b(2)\pm\psi_b(1)\psi_a(2)]$. Fermions: $N$-particle state = <b>Slater determinant</b> $\frac{1}{\sqrt{N!}}\det[\psi_{a_i}(j)]$ ⇒ <b>Pauli exclusion</b>.</li>
+<li><b>Exchange effect:</b> $\langle(x_1-x_2)^2\rangle_\pm=\langle x^2\rangle_a+\langle x^2\rangle_b-2\langle x\rangle_a\langle x\rangle_b\mp2|\langle x\rangle_{ab}|^2$ — bosons bunch, fermions avoid each other (only if wavefunctions overlap).</li>
+<li><b>Space ⊗ spin</b> ($V\otimes W$): electrons need total antisymmetry ⇒ symmetric space × spin singlet, or antisymmetric space × triplet. Helium: para (singlet) vs ortho (triplet); triplet lower (electrons kept apart ⇒ less repulsion).</li>
+<li><b>Occupation numbers</b> $|n_1,n_2,\dots\rangle$: fully specify symmetric/antisymmetric states. Fermions $n_i\in\{0,1\}$; bosons $n_i=0,1,2,\dots$</li>
+</ul>
+<div class="box"><b>Counting</b> $N$ particles in $g$ single-particle states:
+$$\text{distinguishable: }g^N,\qquad \text{fermions: }\binom gN,\qquad \text{bosons: }\binom{N+g-1}{N}$$
+Maximizing entropy gives mean occupancy
+$$\bar n(\epsilon)=\frac{1}{e^{(\epsilon-\mu)/kT}+1}\ (\text{FD}),\quad \frac{1}{e^{(\epsilon-\mu)/kT}-1}\ (\text{BE}),\quad e^{-(\epsilon-\mu)/kT}\ (\text{MB})$$</div>
+</section>
+
+<section>
+<h2>9 · Toolkit, constants & pitfalls</h2>
+<div class="box">$$\int_{-\infty}^\infty\frac{\sin^2u}{u^2}du=\pi,\qquad \lim_{t\to\infty}\frac{\sin^2(xt/2)}{x^2}=\frac{\pi t}{2}\delta(x)$$
+$$\langle n|\hat x^2|n\rangle=\tfrac{\hbar}{2m\omega}(2n+1),\quad \langle n|\hat x^4|n\rangle=\big(\tfrac{\hbar}{2m\omega}\big)^2(6n^2+6n+3)$$
+$$\hat{\vec L}\cdot\hat{\vec S}=\tfrac12(\hat J^2-\hat L^2-\hat S^2),\quad e^{ikz}=\sum_\ell i^\ell(2\ell+1)j_\ell(kr)P_\ell(\cos\theta)$$
+$$\int P_\ell P_{\ell'}d(\cos\theta)=\tfrac{2}{2\ell+1}\delta_{\ell\ell'},\quad P_0=1,\ P_1=x,\ P_2=\tfrac12(3x^2-1)$$
+$$\textbf{Airy: }y''=xy;\ \text{Ai}(x)\xrightarrow{x\to+\infty}\tfrac{e^{-\frac23x^{3/2}}}{2\sqrt\pi x^{1/4}},\ \ \xrightarrow{x\to-\infty}\tfrac{\sin(\frac23|x|^{3/2}+\frac\pi4)}{\sqrt\pi|x|^{1/4}}$$</div>
+<table>
+<tr><td>$e^2$</td><td>$\alpha\hbar c=14.4$ eV·Å</td><td>$\mu_B$</td><td>$5.79\times10^{-9}$ eV/G</td></tr>
+<tr><td>$\hbar c$</td><td>1973 eV·Å</td><td>$m_ec^2$</td><td>0.511 MeV</td></tr>
+<tr><td>$\alpha^2m_ec^2$</td><td>27.2 eV</td><td>$\alpha^4m_ec^2$</td><td>$1.45\times10^{-3}$ eV</td></tr>
+<tr><td>$a_0$</td><td>0.529 Å</td><td>$k_BT_{300K}$</td><td>0.0259 eV</td></tr></table>
+<div class="tip"><b>Which tool?</b> small static change → TIPT (good basis first); large quantum numbers → WKB; time-dependent kick → TDPT / golden rule; slow change → adiabatic + Berry; collision → partial waves (low $E$) or Born (weak $V$); identical particles → (anti)symmetrize.</div>
+<div class="warn"><b>Pitfalls:</b> non-degenerate formulas in a degenerate level; $E^{(2)}$ sum must exclude $V_N$; SO formula at $\ell=0$; WKB at turning points; $\pi/4$ phases; golden rule without $\rho(E)$; $K=2k\sin\frac\theta2$; forgetting spin when antisymmetrizing.</div>
+</section>
+</div>
+
+<script>
+const NS="http://www.w3.org/2000/svg";
+function el(s,t,a){const e=document.createElementNS(NS,t);for(const k in a)e.setAttribute(k,a[k]);s.appendChild(e);return e;}
+function txt(s,x,y,str,size,fill,anchor){const t=el(s,'text',{x,y,'font-size':size||7,fill:fill||'#333','text-anchor':anchor||'start','font-family':'Helvetica,Arial','font-style':'italic'});t.textContent=str;}
+function path(s,pts,stroke,w,dash){let d='';pts.forEach((p,i)=>{d+=(i?'L':'M')+p[0].toFixed(2)+' '+p[1].toFixed(2)});el(s,'path',{d,fill:'none',stroke,'stroke-width':w||1,'stroke-dasharray':dash||''});}
+(function(){const s=document.getElementById('sinc');const cx=150,Y0=66,sx=16,H=56;
+ path(s,[[10,Y0],[290,Y0]],'#444',.6);path(s,[[cx,Y0],[cx,4]],'#bbb',.5,'2,2');
+ const p=[];for(let x=-8.6;x<=8.6;x+=.02){const u=x/2;const v=Math.abs(u)<1e-6?1:Math.pow(Math.sin(u)/u,2);p.push([cx+x*sx,Y0-H*v]);}path(s,p,'#1f5fbf',1.2);
+ txt(s,cx+2*Math.PI*sx,Y0+8,'2π/t',6.5,'#555','middle');txt(s,cx-2*Math.PI*sx,Y0+8,'−2π/t',6.5,'#555','middle');txt(s,288,Y0-3,'ω_fi',7,'#333','end');
+ path(s,[[cx+2*Math.PI*sx,Y0],[cx+2*Math.PI*sx,Y0-3]],'#555',.6);path(s,[[cx-2*Math.PI*sx,Y0],[cx-2*Math.PI*sx,Y0-3]],'#555',.6);})();
+(function(){const s=document.getElementById('lz');const cx=150,cy=46,sx=24,sy=7,g=1.2;
+ path(s,[[20,cy],[280,cy]],'#ddd',.4);
+ const a=[],b=[],d1=[],d2=[];for(let t=-5.4;t<=5.4;t+=.05){const e=Math.sqrt(t*t+g*g);a.push([cx+t*sx,cy-e*sy]);b.push([cx+t*sx,cy+e*sy]);d1.push([cx+t*sx,cy-t*sy]);d2.push([cx+t*sx,cy+t*sy]);}
+ path(s,d1,'#999',.9,'3,2');path(s,d2,'#999',.9,'3,2');path(s,a,'#c0392b',1.3);path(s,b,'#1f5fbf',1.3);
+ path(s,[[cx,cy-g*sy],[cx,cy+g*sy]],'#333',.6);txt(s,cx-40,cy+3,'gap 2|H₁₂|',6.5,'#333','end');
+ txt(s,cx+5.4*sx,cy-5.4*sy+8,'E₊',7,'#c0392b','end');txt(s,cx+5.4*sx,cy+5.4*sy-2,'E₋',7,'#1f5fbf','end');txt(s,282,cy+10,'t',7,'#333','end');})();
+
+</script>
+</body>
+</html>

@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Quantum Physics II (8.05) — Cheat Sheet</title>
+<link rel="icon" type="image/svg+xml" href="../images/favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+/* Layout: dense reference sheet, 3 columns on wide screens, collapsing to 1 on phones */
+:root { --bg:#ffffff; --fg:#1a1d24; --accent:#1f3b73; --on-accent:#ffffff; --muted:#5a6070; --rule:#c4cad8;
+  --box:#f2f5fb; --th:#e3e9f5; --warn:#c0392b; --warn-bg:#fdf1ef; --tip:#1e8449; --tip-bg:#eef8f1;
+  --axis:#444a58; --plot-faint:#9aa1b1; --c-blue:#1f5fbf; --c-red:#c0392b; --c-green:#1e8449; --c-purple:#8e44ad; }
+
+
+
+@page { size: letter landscape; margin: 0.32in; }
+* { box-sizing: border-box; }
+body { margin:0; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); padding-block: 20px 28px; font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; font-size: 7.6pt; line-height: 1.28; color:var(--fg); background:var(--bg); }
+.katex { font-size: 1.04em; }
+.katex-display { margin: 2px 0; }
+.page { column-count: 3; column-gap: 12px; column-rule: 0.5px solid var(--rule); }
+header.title { column-span: all; display:flex; justify-content:space-between; align-items:baseline; border-bottom: 2px solid var(--accent); margin-bottom:5px; padding-bottom:2px; }
+header.title h1 { font-size: 14pt; margin:0; color:var(--accent); letter-spacing:.2px; }
+header.title span { font-size:7pt; color:var(--muted); }
+section { break-inside: auto; margin-bottom: 4px; }
+h2 { font-size: 8.6pt; margin: 4px 0 2px; padding: 1px 5px; color:var(--on-accent); background:var(--accent); border-radius:2px; break-after: avoid; }
+h2 small { font-weight:normal; opacity:.8; font-size:6.8pt; }
+h3 { font-size: 7.8pt; margin: 3px 0 1px; color:var(--accent); break-after: avoid; border-bottom: .5px solid var(--rule); }
+p { margin: 1px 0 2px; }
+ul { margin: 1px 0 2px; padding-left: 11px; }
+li { margin: 0 0 1px; }
+.box { border: 0.8px solid var(--accent); background:var(--box); border-radius:3px; padding: 2px 4px; margin: 2px 0 3px; break-inside: avoid; }
+.warn { border-left: 2.5px solid var(--warn); background:var(--warn-bg); padding: 2px 4px; margin: 2px 0 3px; break-inside: avoid; }
+.tip { border-left: 2.5px solid var(--tip); background:var(--tip-bg); padding: 2px 4px; margin: 2px 0 3px; break-inside: avoid; }
+.warn b, .tip b { font-size: 7pt; }
+table { border-collapse: collapse; width:100%; margin: 2px 0 3px; break-inside: avoid; }
+td, th { border: .5px solid var(--rule); padding: 1px 3px; vertical-align: middle; }
+th { background:var(--th); font-weight:600; text-align:left; }
+.k { color:var(--accent); font-weight:600; }
+.fig { text-align:center; break-inside: avoid; margin: 2px 0; }
+.fig > svg { width:100%; height:auto; }
+.cap { font-size: 6.4pt; color:var(--muted); text-align:center; }
+.nb { break-inside: avoid; }
+
+.big { column-span: all; break-inside: avoid; border: 1px solid var(--accent); border-radius: 3px; padding: 4px 6px 5px; margin: 0 0 6px; background: var(--box); }
+.big h2 { margin: 0 0 3px; }
+.big ol { display: grid; grid-template-columns: repeat(4, minmax(0,1fr)); gap: 2px 14px; margin: 0; padding-left: 15px; }
+.big li { margin: 0; }
+.big .route { margin: 3px 0 0; font-size: 0.95em; }
+@media screen and (max-width: 1150px) { .big ol { grid-template-columns: repeat(2, minmax(0,1fr)); } }
+@media screen and (max-width: 720px) { .big ol { grid-template-columns: minmax(0,1fr); } }
+
+@media screen { body { font-size: 9.6pt; line-height: 1.4; } .page { max-width: 1500px; margin: 0 auto; column-gap: 26px; }
+  header.title h1 { font-size: 20pt; } header.title span { font-size: 8.5pt; } h2 { font-size: 10.5pt; padding: 3px 7px; } h3 { font-size: 9.6pt; } .warn b, .tip b { font-size: 9pt; } .cap { font-size: 8pt; } }
+@media screen and (max-width: 1150px) { .page { column-count: 2; } }
+@media screen and (max-width: 720px) { .page { column-count: 1; } }
+header.title { flex-wrap: wrap; gap: 4px 16px; }
+mjx-container[display="true"] { overflow-x: auto; overflow-y: hidden; margin: 3px 0 !important; padding: 1px 0; } mjx-container { font-size: 100% !important; }
+table { display: table; } .box, .tip, .warn, td { min-width: 0; overflow-wrap: anywhere; }
+.box { overflow-x: auto; }
+svg [stroke="#444"], svg [stroke="#333"] { stroke: var(--axis); }
+svg [stroke="#555"], svg [stroke="#666"], svg [stroke="#888"], svg [stroke="#999"] { stroke: var(--plot-faint); }
+svg [stroke="#bbb"], svg [stroke="#ccc"], svg [stroke="#ddd"] { stroke: var(--rule); }
+svg [stroke="#1f3b73"] { stroke: var(--accent); } svg [fill="#1f3b73"] { fill: var(--accent); }
+svg [stroke="#1f5fbf"] { stroke: var(--c-blue); } svg [fill="#1f5fbf"] { fill: var(--c-blue); }
+svg [stroke="#c0392b"] { stroke: var(--c-red); } svg [fill="#c0392b"] { fill: var(--c-red); }
+svg [stroke="#1e8449"] { stroke: var(--c-green); } svg [fill="#1e8449"] { fill: var(--c-green); }
+svg [stroke="#8e44ad"] { stroke: var(--c-purple); } svg [fill="#8e44ad"] { fill: var(--c-purple); }
+svg text[fill="#333"] { fill: var(--fg); } svg text[fill="#555"], svg text[fill="#666"] { fill: var(--muted); }
+svg [fill="#888"] { fill: var(--plot-faint); }
+.k { color: var(--accent); }
+</style>
+<script>window.MathJax={tex:{inlineMath:[['$','$']],displayMath:[['$$','$$']]},svg:{fontCache:'global'},startup:{typeset:true}};</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/es5/tex-svg-full.js"></script>
+
+
+<style>
+/* site look: black on white, Cormorant Garamond headings, Inter body */
+:root { --fg:#000; --accent:#000; --on-accent:#fff; --muted:#666; --rule:#e4e4e4; --box:#f9f9f9; --th:#f3f3f3; --card:#fff;
+  --tip:#000; --tip-bg:#f9f9f9; --warn:#000; --warn-bg:#f9f9f9; --axis:#333; --plot-faint:#999; color-scheme: light; }
+body { font-family: 'Inter', sans-serif !important; font-weight: 300; color: #000; background: #fff; }
+b, strong { font-weight: 500; }
+h1, header.title h1 { font-family: 'Cormorant Garamond', serif !important; font-weight: 600 !important; color: #000 !important; letter-spacing: 0 !important; }
+header.title { border-bottom: 1px solid #000 !important; }
+h2, h2.band { font-family: 'Cormorant Garamond', serif !important; font-weight: 600 !important; font-size: 1.35em !important; color: #000 !important; background: none !important;
+  border-radius: 0 !important; padding: 0 0 2px !important; border-bottom: 1px solid #000; }
+h2 small { color: #666 !important; opacity: 1 !important; font-family: 'Inter', sans-serif; font-weight: 400; }
+h3, .card h3 { font-family: 'Cormorant Garamond', serif !important; font-weight: 600 !important; color: #000 !important; font-size: 1.15em !important; }
+.k, .lbl, dl.cqo dt { color: #000 !important; font-weight: 500; }
+.box, .big { border-color: #000 !important; }
+.tip, .warn { border-left-color: #000 !important; }
+.num { background: #000 !important; }
+.tag { color: #000 !important; border-color: #000 !important; }
+nav.site-nav { font-size: 0.78rem; letter-spacing: 0.04em; margin: 0 auto 1.6rem; max-width: 1500px; display: flex; flex-wrap: wrap; gap: 0.2rem 0; align-items: baseline; }
+nav.site-nav a { color: #000; text-decoration: none; }
+nav.site-nav a:hover { opacity: 0.5; }
+nav.site-nav span { margin: 0 0.5rem; opacity: 0.3; }
+nav.site-nav .pdf { margin-left: auto; border: 1px solid #000; padding: 0.15rem 0.7rem; }
+@media print { nav.site-nav { display: none; } }
+</style>
+</head>
+<body>
+<nav class="site-nav"><a href="../blog.html">&larr; Back</a><span>/</span>Quantum Physics<span>/</span>8.05 · Quantum Physics II<a class="pdf" href="pdf/qm_02_quantum_physics_2.pdf" download>Download PDF</a></nav>
+<div class="page">
+<header class="title"><h1>8.05 Quantum Physics II — Cheat Sheet</h1><span>Zwiebach, <i>Mastering Quantum Mechanics</i> Part II (Ch 12–23) + MIT 8.05 notes (2013)</span></header>
+
+<div class="big"><h2>The course in 8 ideas</h2><ol>
+<li><b>New language, same physics:</b> a state is a vector $|\Psi\rangle$ in a complex Hilbert space; the wavefunction is its components, $\psi(x)=\langle x|\Psi\rangle$.</li>
+<li><b>It's all linear algebra:</b> Hermitian ⇒ real eigenvalues + orthonormal eigenbasis (spectral theorem). Measurement = projection onto an eigenspace.</li>
+<li><b>Compatible observables</b> commute ⇔ share an eigenbasis; a CSCO labels states uniquely. Non-commuting pairs obey $\Delta A\Delta B\ge|\langle[A,B]\rangle|/2$.</li>
+<li><b>Time evolution is unitary</b>, $\mathcal U=e^{-i\hat Ht/\hbar}$. Schrödinger (states move) and Heisenberg (operators move) pictures give identical predictions.</li>
+<li><b>Spin ½ is the simplest quantum system.</b> Any two-level system is a spin in an effective field and precesses at $\omega=2|\vec g|/\hbar$.</li>
+<li><b>Oscillator beyond $|n\rangle$:</b> coherent states move like classical particles with minimal noise; squeezed states trade $\Delta x$ for $\Delta p$.</li>
+<li><b>Composite systems = tensor products.</b> Entanglement powers teleportation and Bell violations; subsystems are described by density matrices; decoherence is entanglement with the environment.</li>
+<li><b>Angular momentum from commutators alone:</b> $j=0,\frac12,1,\dots$; ladder operators; $j_1\otimes j_2=\bigoplus j$ explains hyperfine and spin-orbit structure.</li>
+</ol></div>
+
+<section>
+<h2>1 · Wave mechanics refresher <small>notes 1 · Ch 6–7</small></h2>
+<div class="box">$$i\hbar\,\partial_t\Psi=\Big(-\frac{\hbar^2}{2m}\nabla^2+V\Big)\Psi,\qquad \Psi=\psi(x)e^{-iEt/\hbar}$$</div>
+<ul>
+<li>1D bound states: <b>non-degenerate</b>, can be chosen <b>real</b>; even $V$ ⇒ bound states even/odd; $n$-th state has $n-1$ nodes; $E&gt;V_{\min}$.</li>
+<li><b>Spectrum:</b> $E&lt;\min(V_{-\infty},V_{+\infty})$: discrete, non-degenerate. Between the two asymptotes: continuous, non-degenerate. Above both: continuous, doubly degenerate.</li>
+<li>Matching: $\psi$ always continuous; $\psi'$ continuous unless δ-function or infinite wall. $V=-\alpha\delta(x)$: $\Delta\psi'(0)=-\frac{2m\alpha}{\hbar^2}\psi(0)$.</li>
+</ul>
+<div class="box"><b>Variational principle.</b> For any normalizable $\psi$:
+$$E_{\rm gs}\le\frac{\langle\psi|\hat H|\psi\rangle}{\langle\psi|\psi\rangle}=\frac{\int\big(\frac{\hbar^2}{2m}|\psi'|^2+V|\psi|^2\big)dx}{\int|\psi|^2dx}$$
+Equality iff $\psi$ is the ground state. Error in $E$ is second order in the error in $\psi$. Use trial functions with parameters, minimize. Any attractive 1D potential has a bound state.</div>
+<p><span class="k">Position & momentum:</span> $\hat p=\frac\hbar i\partial_x$, $\tilde\psi(p)=\frac1{\sqrt{2\pi\hbar}}\int e^{-ipx/\hbar}\psi(x)dx$; in $p$-space $\hat x=i\hbar\,\partial_p$.</p>
+</section>
+
+<section>
+<h2>2 · Spin one-half <small>notes 2 · Ch 12, 14.7</small></h2>
+<p><span class="k">Stern–Gerlach:</span> $\vec F=\nabla(\vec\mu\cdot\vec B)$ splits silver atoms into 2 beams ⇒ two-state system. Sequential SG boxes: $z$-filter then $x$-filter gives ½/½; states $|z;+\rangle,|z;-\rangle$ orthogonal (not "opposite vectors").</p>
+<div class="box">$$\hat{\vec S}=\frac\hbar2\vec\sigma,\quad \sigma_1=\begin{pmatrix}0&1\\1&0\end{pmatrix},\ \sigma_2=\begin{pmatrix}0&-i\\i&0\end{pmatrix},\ \sigma_3=\begin{pmatrix}1&0\\0&-1\end{pmatrix}$$
+$$[\hat S_i,\hat S_j]=i\hbar\epsilon_{ijk}\hat S_k,\qquad \hat S^2=\tfrac34\hbar^2\,\mathbb 1$$
+$$\sigma_i\sigma_j=\delta_{ij}\mathbb 1+i\epsilon_{ijk}\sigma_k,\quad [\sigma_i,\sigma_j]=2i\epsilon_{ijk}\sigma_k,\quad\{\sigma_i,\sigma_j\}=2\delta_{ij}$$
+$$(\vec a\cdot\vec\sigma)(\vec b\cdot\vec\sigma)=(\vec a\cdot\vec b)\,\mathbb 1+i(\vec a\times\vec b)\cdot\vec\sigma$$
+$$e^{i\theta\,\hat n\cdot\vec\sigma}=\cos\theta\,\mathbb 1+i\sin\theta\,\hat n\cdot\vec\sigma\quad(|\hat n|=1)$$</div>
+<p>$\sigma_i^2=\mathbb 1$, $\text{tr}\,\sigma_i=0$, $\det\sigma_i=-1$, eigenvalues $\pm1$, $\text{tr}(\sigma_i\sigma_j)=2\delta_{ij}$. Any $2\times2$: $M=a_0\mathbb1+\vec a\cdot\vec\sigma$, $a_0=\frac12\text{tr}M$, $a_i=\frac12\text{tr}(M\sigma_i)$.</p>
+<div class="box"><b>Spin along $\hat n=(\sin\theta\cos\phi,\sin\theta\sin\phi,\cos\theta)$:</b> $\hat S_n=\hat n\cdot\hat{\vec S}$
+$$|n;+\rangle=\cos\tfrac\theta2|+\rangle+\sin\tfrac\theta2\,e^{i\phi}|-\rangle$$
+$$|n;-\rangle=\sin\tfrac\theta2|+\rangle-\cos\tfrac\theta2\,e^{i\phi}|-\rangle$$
+$$|x;\pm\rangle=\tfrac1{\sqrt2}(|+\rangle\pm|-\rangle),\qquad |y;\pm\rangle=\tfrac1{\sqrt2}(|+\rangle\pm i|-\rangle)$$
+$\langle n;+|\hat{\vec S}|n;+\rangle=\frac\hbar2\hat n$; $|\langle n';+|n;+\rangle|^2=\cos^2\frac{\gamma}{2}$ ($\gamma$ = angle between $\hat n,\hat n'$).</div>
+<p>Every spin-½ state is $|n;+\rangle$ for some $\hat n$ (Bloch sphere). Orthogonal states ↔ antipodal points.</p>
+<div class="box"><b>Rotating spin states:</b> $\hat R_{\hat n}(\alpha)=e^{-i\alpha\hat n\cdot\hat{\vec S}/\hbar}=\cos\frac\alpha2\,\mathbb1-i\sin\frac\alpha2\,\hat n\cdot\vec\sigma$ rotates $\langle\hat{\vec S}\rangle$ by α about $\hat n$; $\hat R(2\pi)=-\mathbb1$ (spinors need 4π).</div>
+<div class="box"><b>Quantum key distribution (BB84).</b> Alice sends random bits, each encoded in a random basis ($z$ or $x$). Bob measures in a random basis. They publicly compare <i>bases</i> (not bits) and keep the ~½ that match: the sifted key. An eavesdropper who intercepts and resends in a random basis causes <b>25% errors</b> in the sifted key, so comparing a sample reveals her. Security rests on no-cloning and disturbance by measurement.</div>
+</section>
+
+<section>
+<h2>3 · Linear algebra: vector spaces & operators <small>notes 3 · Ch 13–14</small></h2>
+<ul>
+<li><b>Basis</b> = linearly independent spanning list; $\dim V$ = length of any basis. $\mathcal L(V)$ = linear maps $V\to V$.</li>
+<li>Matrix of $T$ in basis $\{v_j\}$: $Tv_j=\sum_iT_{ij}v_i$. Change of basis $A$: $T'=A^{-1}TA$; $\text{tr}$, $\det$ basis-independent.</li>
+<li>$\text{null}\,T$, $\text{range}\,T$; <b>rank–nullity</b>: $\dim V=\dim\text{null}\,T+\dim\text{range}\,T$. Finite dim: injective ⇔ surjective ⇔ invertible ⇔ null $T=\{0\}$.</li>
+<li><b>Eigenvalue</b> $\lambda$: $T-\lambda\mathbb1$ not invertible ⇔ $\det(T-\lambda\mathbb1)=0$. Every operator on a finite-dim <b>complex</b> space has ≥1 eigenvalue. Eigenvectors with distinct eigenvalues are linearly independent.</li>
+<li><b>Inner product</b>: $\langle a,b\rangle$ linear in 2nd slot, $\langle a,b\rangle=\langle b,a\rangle^*$, $\langle a,a\rangle\ge0$ (=0 iff $a=0$).</li>
+</ul>
+<div class="box">$$\textbf{Cauchy–Schwarz: }|\langle u,v\rangle|\le|u|\,|v|,\qquad \textbf{Triangle: }|u+v|\le|u|+|v|$$
+<b>Gram–Schmidt:</b> $e_1=\frac{v_1}{|v_1|}$, $e_j=\frac{v_j-\sum_{i&lt;j}\langle e_i,v_j\rangle e_i}{|\cdots|}$.<br>
+<b>Orthogonal projector</b> onto $U$: $P_U v=\sum_i\langle e_i,v\rangle e_i$; $P_U^2=P_U$, $P_U^\dagger=P_U$, $V=U\oplus U^\perp$.</div>
+<ul>
+<li><b>Riesz:</b> every linear functional is $\phi(v)=\langle u,v\rangle$ for a unique $u$.</li>
+<li><b>Adjoint:</b> $\langle u,Tv\rangle=\langle T^\dagger u,v\rangle$; $(ST)^\dagger=T^\dagger S^\dagger$; $(T^\dagger)_{ij}=T^*_{ji}$ in an orthonormal basis.</li>
+<li><b>Hermitian</b> $T=T^\dagger$ ⇔ $\langle v,Tv\rangle\in\mathbb R$ ∀$v$ (complex space). Real eigenvalues; orthogonal eigenvectors.</li>
+<li>Complex space: $\langle v,Tv\rangle=0$ ∀$v$ ⇒ $T=0$. (Fails for real spaces: rotations by 90°.)</li>
+<li><b>Unitary</b> $U^\dagger U=\mathbb1$ ⇔ preserves norms ⇔ maps orthonormal bases to orthonormal bases. Eigenvalues $|\lambda|=1$.</li>
+<li><b>Functions of operators:</b> $f(\hat A)=\sum_if(\lambda_i)P_i$ for diagonalizable $\hat A$; power series otherwise. $\frac{d}{dt}e^{t\hat A}=\hat Ae^{t\hat A}$; $e^{\hat A}e^{\hat B}=e^{\hat A+\hat B}$ only if $[\hat A,\hat B]=0$.</li>
+</ul>
+</section>
+
+<section>
+<h2>4 · Dirac notation & the axioms <small>notes 4 · Ch 14, 16.6</small></h2>
+<div class="box">$$\langle a|b\rangle=\langle a,b\rangle,\quad \langle a|b\rangle^*=\langle b|a\rangle,\quad (\alpha|a\rangle)^\dagger=\alpha^*\langle a|$$
+$$\textbf{Completeness: }\sum_i|i\rangle\langle i|=\mathbb1,\qquad T=\sum_{i,j}|i\rangle\langle i|T|j\rangle\langle j|$$
+$$\langle a|T^\dagger|b\rangle=\langle b|T|a\rangle^*,\qquad (|a\rangle\langle b|)^\dagger=|b\rangle\langle a|$$</div>
+<ul>
+<li>Projector onto unit $|u\rangle$: $P=|u\rangle\langle u|$; onto subspace: $P=\sum_{i\in U}|i\rangle\langle i|$, $\text{tr}P=\dim U$.</li>
+<li>Unitary between orthonormal bases: $U=\sum_i|f_i\rangle\langle e_i|$.</li>
+<li>Insert $\mathbb1$ anywhere: $\langle a|AB|b\rangle=\sum_i\langle a|A|i\rangle\langle i|B|b\rangle$.</li>
+</ul>
+<div class="box"><b>Continuous bases:</b>
+$$\hat x|x\rangle=x|x\rangle,\quad\langle x|y\rangle=\delta(x-y),\quad \int\!dx\,|x\rangle\langle x|=\mathbb1,\quad \psi(x)=\langle x|\psi\rangle$$
+$$\langle x|p\rangle=\frac{e^{ipx/\hbar}}{\sqrt{2\pi\hbar}},\quad \langle x|\hat p|\psi\rangle=\frac\hbar i\frac{d}{dx}\psi(x),\quad\langle p|\hat x|\psi\rangle=i\hbar\frac{d}{dp}\tilde\psi(p)$$
+$$\langle\phi|\psi\rangle=\int\phi^*(x)\psi(x)dx=\int\tilde\phi^*(p)\tilde\psi(p)dp$$</div>
+<p>$|x\rangle$, $|p\rangle$ are not normalizable (not in the Hilbert space) but form complete "bases".</p>
+<div class="box"><b>Axioms</b> (any isolated system):
+<b>A1</b> a state is a ray in a Hilbert space ($|\Psi\rangle\sim c|\Psi\rangle$). <b>A2</b> observables are Hermitian operators, $\hat A=\sum_ka_kP_k$ (spectral decomposition). <b>A3</b> measurement along $\{P_k\}$ gives $k$ with $p(k)=\langle\Psi|P_k|\Psi\rangle$; the state becomes $P_k|\Psi\rangle/\sqrt{p(k)}$. <b>A4</b> time evolution is unitary.
+<b>Postulates:</b> <b>P1</b> composite system space = $\mathcal H_A\otimes\mathcal H_B$. <b>P2</b> identical particles: only totally symmetric (bosons) or antisymmetric (fermions) states. Open systems → density matrices (§11).</div>
+</section>
+
+<section>
+<h2>5 · Uncertainty & compatible observables <small>notes 5 · Ch 15</small></h2>
+<div class="box">$$\Delta A=\big|(\hat A-\langle\hat A\rangle)\Psi\big|,\qquad (\Delta A)^2=\langle\hat A^2\rangle-\langle\hat A\rangle^2$$
+$$\Delta A\,\Delta B\ \ge\ \Big|\Big\langle\Psi\Big|\frac{1}{2i}[\hat A,\hat B]\Big|\Psi\Big\rangle\Big|$$
+<b>Saturated</b> iff $(\hat B-\langle\hat B\rangle)\Psi=i\lambda(\hat A-\langle\hat A\rangle)\Psi$, $\lambda\in\mathbb R$. For $x,p$ ⇒ Gaussian $\psi\propto e^{-\lambda(x-\langle x\rangle)^2/2\hbar+i\langle p\rangle x/\hbar}$.</div>
+<p><span class="k">Proof sketch:</span> $f=(\hat A-\langle A\rangle)\Psi$, $g=(\hat B-\langle B\rangle)\Psi$; Schwarz $|f||g|\ge|\langle f,g\rangle|\ge|\text{Im}\langle f,g\rangle|$.</p>
+<div class="box"><b>Energy–time</b> (Mandelstam–Tamm): for any $\hat Q$ (no explicit $t$),
+$$\Delta H\,\Delta Q\ge\frac\hbar2\Big|\frac{d\langle\hat Q\rangle}{dt}\Big|\ \Rightarrow\ \Delta H\,\Delta t\ge\frac\hbar2,\quad \Delta t\equiv\frac{\Delta Q}{|d\langle Q\rangle/dt|}$$
+Decay: lifetime τ ↔ linewidth $\Delta E\sim\hbar/\tau$.</div>
+<div class="tip"><b>Lower bounds on $E_{\rm gs}$:</b> write $\langle H\rangle$ in terms of $\langle p^2\rangle\ge(\Delta p)^2$, $\langle x^2\rangle\ge(\Delta x)^2$, $\langle x^4\rangle\ge\langle x^2\rangle^2$, then use $\Delta p\ge\hbar/2\Delta x$ and minimize. E.g. $H=\frac{p^2}{2m}+\alpha x^4$ ⇒ $E_{\rm gs}\ge\frac38\big(\frac{2\hbar^4\alpha}{m^2}\big)^{1/3}$. (Upper bound: variational.)</div>
+<ul>
+<li><b>Diagonalizable</b> ⇔ basis of eigenvectors; then $T=ADA^{-1}$. <b>Unitarily</b> diagonalizable ⇔ orthonormal eigenbasis.</li>
+<li><b>Spectral theorem:</b> $M$ unitarily diagonalizable ⇔ $M$ is <b>normal</b> ($[M,M^\dagger]=0$). Hermitian & unitary are normal. $M=\sum_k\lambda_kP_k$.</li>
+<li><b>Simultaneous diagonalization:</b> Hermitian $A,B$ have a common orthonormal eigenbasis ⇔ $[A,B]=0$ (compatible observables). Within each degenerate eigenspace of $A$, diagonalize $B$.</li>
+<li><b>CSCO:</b> set of commuting Hermitian operators whose eigenvalues uniquely label every basis state (e.g. $\{H,L^2,L_z\}$ for hydrogen without spin).</li>
+</ul>
+</section>
+
+<section>
+<h2>6 · Quantum dynamics <small>notes 6 · Ch 16–17</small></h2>
+<h3>Harmonic oscillator (algebraic)</h3>
+<div class="box">$$\hat a=\sqrt{\tfrac{m\omega}{2\hbar}}\Big(\hat x+\tfrac{i\hat p}{m\omega}\Big),\ [\hat a,\hat a^\dagger]=1,\ \hat H=\hbar\omega\big(\hat N+\tfrac12\big),\ \hat N=\hat a^\dagger\hat a$$
+$$\hat x=\sqrt{\tfrac{\hbar}{2m\omega}}(\hat a+\hat a^\dagger),\quad \hat p=i\sqrt{\tfrac{m\omega\hbar}{2}}(\hat a^\dagger-\hat a),\quad |n\rangle=\tfrac{(\hat a^\dagger)^n}{\sqrt{n!}}|0\rangle$$
+$$\hat a|n\rangle=\sqrt n|n-1\rangle,\quad \hat a^\dagger|n\rangle=\sqrt{n+1}|n+1\rangle,\quad \langle x|0\rangle\propto e^{-m\omega x^2/2\hbar}$$</div>
+<h3>Schrödinger picture: unitary time evolution</h3>
+<div class="box">$$|\Psi,t\rangle=\mathcal U(t,t_0)|\Psi,t_0\rangle,\quad \mathcal U^\dagger\mathcal U=\mathbb1,\quad \mathcal U(t_2,t_1)\mathcal U(t_1,t_0)=\mathcal U(t_2,t_0)$$
+$$i\hbar\,\partial_t\,\mathcal U(t,t_0)=\hat H(t)\,\mathcal U(t,t_0)\quad\big(\hat H\equiv i\hbar(\partial_t\mathcal U)\mathcal U^\dagger\text{ is Hermitian}\big)$$
+$$\textbf{(1) }\hat H\text{ const: }\ \mathcal U=e^{-i\hat H(t-t_0)/\hbar}$$
+$$\textbf{(2) }[\hat H(t_1),\hat H(t_2)]=0:\ \ \mathcal U=\exp\Big[-\tfrac i\hbar\!\int_{t_0}^t\!\hat H(t')dt'\Big]$$
+$$\textbf{(3) general: }\ \mathcal U=\mathcal T\exp\Big[-\tfrac i\hbar\!\int_{t_0}^t\!\hat H(t')dt'\Big]\ \text{(time-ordered, Dyson series)}$$</div>
+<h3>Heisenberg picture</h3>
+<div class="box">$$\hat A_H(t)=\mathcal U^\dagger(t,0)\,\hat A_S\,\mathcal U(t,0),\qquad \langle\Psi,t|\hat A_S|\Psi,t\rangle=\langle\Psi,0|\hat A_H(t)|\Psi,0\rangle$$
+$$i\hbar\frac{d\hat A_H}{dt}=[\hat A_H,\hat H_H]+i\hbar\Big(\frac{\partial\hat A_S}{\partial t}\Big)_H,\qquad [\hat A_H,\hat B_H]=[\hat A,\hat B]_H$$</div>
+<p>$\hat H_H=\hat H_S$ if $\hat H_S$ is time-independent. Products: $(\hat A\hat B)_H=\hat A_H\hat B_H$.</p>
+<table><tr><th>System</th><th>Heisenberg operators</th></tr>
+<tr><td>Free particle</td><td>$\hat x_H=\hat x+\frac{\hat p}{m}t$, $\hat p_H=\hat p$</td></tr>
+<tr><td>Oscillator</td><td>$\hat x_H=\hat x\cos\omega t+\frac{\hat p}{m\omega}\sin\omega t$<br>$\hat p_H=\hat p\cos\omega t-m\omega\hat x\sin\omega t$<br>$\hat a_H=e^{-i\omega t}\hat a$, $\hat a^\dagger_H=e^{i\omega t}\hat a^\dagger$</td></tr>
+<tr><td>Linear $V=-Fx$</td><td>$\hat p_H=\hat p+Ft$, $\hat x_H=\hat x+\frac{\hat p}mt+\frac{F}{2m}t^2$</td></tr></table>
+<h3>Coherent states</h3>
+<div class="box">$$\textbf{Translation: }\hat T_{x_0}=e^{-i\hat px_0/\hbar},\quad \hat T^\dagger_{x_0}\hat x\,\hat T_{x_0}=\hat x+x_0,\quad \langle x|\hat T_{x_0}|\psi\rangle=\psi(x-x_0)$$
+$$|\alpha\rangle=\hat D(\alpha)|0\rangle=e^{\alpha\hat a^\dagger-\alpha^*\hat a}|0\rangle=e^{-|\alpha|^2/2}\sum_n\frac{\alpha^n}{\sqrt{n!}}|n\rangle$$
+$$\hat a|\alpha\rangle=\alpha|\alpha\rangle,\qquad \alpha=\frac{\langle\hat x\rangle}{\sqrt2\,d}+i\frac{\langle\hat p\rangle\,d}{\sqrt2\,\hbar},\quad d=\sqrt{\tfrac{\hbar}{m\omega}}$$
+$$|\alpha,t\rangle=e^{-i\omega t/2}\,|\alpha e^{-i\omega t}\rangle\quad\text{(stays coherent)}$$</div>
+<ul>
+<li>$\langle x\rangle(t)$, $\langle p\rangle(t)$ follow the classical orbit; $\Delta x=\frac{d}{\sqrt2}$, $\Delta p=\frac{\hbar}{\sqrt2 d}$ (vacuum values, minimum uncertainty) for all $t$.</li>
+<li>Number distribution is <b>Poisson</b>: $P(n)=e^{-|\alpha|^2}\frac{|\alpha|^{2n}}{n!}$, $\langle N\rangle=|\alpha|^2$, $\Delta N=|\alpha|$.</li>
+<li>Not orthogonal: $|\langle\beta|\alpha\rangle|^2=e^{-|\alpha-\beta|^2}$; overcomplete. $\hat D^\dagger(\alpha)\hat a\hat D(\alpha)=\hat a+\alpha$.</li>
+<li>Real $\alpha$: $\hat D(\alpha)=\hat T_{x_0}$ with $x_0=\sqrt2\,d\,\alpha$.</li>
+</ul>
+<div class="box"><b>BCH:</b> if $[\hat A,\hat B]$ commutes with $\hat A$ and $\hat B$: $e^{\hat A+\hat B}=e^{\hat A}e^{\hat B}e^{-\frac12[\hat A,\hat B]}$.
+$$e^{\hat A}\hat Be^{-\hat A}=\hat B+[\hat A,\hat B]+\tfrac1{2!}[\hat A,[\hat A,\hat B]]+\cdots$$</div>
+<h3>Squeezed states</h3>
+<div class="box">$$\hat S(\gamma)=\exp\!\Big[-\frac\gamma2\big(\hat a^\dagger\hat a^\dagger-\hat a\hat a\big)\Big],\quad |0_\gamma\rangle=\hat S(\gamma)|0\rangle=\frac{1}{\sqrt{\cosh\gamma}}e^{-\frac12\tanh\gamma\,\hat a^\dagger\hat a^\dagger}|0\rangle$$
+$$\Delta x=e^{-\gamma}\sqrt{\tfrac{\hbar}{2m\omega}},\qquad \Delta p=e^{\gamma}\sqrt{\tfrac{m\omega\hbar}{2}},\qquad \Delta x\Delta p=\tfrac\hbar2$$
+$(\hat a\cosh\gamma+\hat a^\dagger\sinh\gamma)|0_\gamma\rangle=0$. Contains only even $n$. General: $\hat D(\alpha)\hat S(\gamma)|0\rangle$.</div>
+<p>Origin: ground state of an oscillator with frequency $\omega_1$, written in terms of a different oscillator $\omega_2$; $e^{\gamma}=\sqrt{\omega_1/\omega_2}$. Uncertainty ellipse rotates at $2\omega$ under time evolution.</p>
+<div class="fig"><svg id="phase" viewBox="0 0 300 108"></svg><div class="cap">Phase space ($\langle x\rangle/d$, $\langle p\rangle d/\hbar$): coherent state = vacuum disc carried around a classical circle; squeezed state = ellipse with the same area.</div></div>
+<p><span class="k">Photon states:</span> each EM mode ↔ oscillator; $\hat E\propto(\hat a e^{-i\omega t}+\hat a^\dagger e^{i\omega t})$; $|n\rangle$ = $n$ photons, $\langle\hat E\rangle=0$; coherent state = classical wave; squeezed light reduces noise in one quadrature (LIGO).</p>
+<div class="box"><b>Factorization method</b> (Ch 17.8). Write $\hat H=\hat A^\dagger\hat A+E_0$ with $\hat A=\frac{\hbar}{\sqrt{2m}}\big(\frac{d}{dx}+W(x)\big)$, so $V=\frac{\hbar^2}{2m}(W^2-W')+E_0$. Then $\hat A\psi_0=0$ gives the ground state $\psi_0\propto e^{-\int W}$, energy $E_0$. The partner $\hat H'=\hat A\hat A^\dagger+E_0$ has the <b>same spectrum minus $E_0$</b>, and $\hat A$ maps eigenstates of $\hat H$ to those of $\hat H'$. SHO: $W=\frac{m\omega}{\hbar}x$. Works for the hydrogen radial equation too.</div>
+</section>
+
+<section>
+<h2>7 · Two-state systems <small>notes 7 · Ch 17</small></h2>
+<div class="box">$$\vec\mu=\gamma\hat{\vec S},\quad\gamma=\frac{gq}{2m},\quad \hat H=-\vec\mu\cdot\vec B=-\gamma\vec B\cdot\hat{\vec S}$$
+Electron: $g\approx2$, $\vec\mu=-\frac{e}{m}\hat{\vec S}$, $\mu_B=\frac{e\hbar}{2m}$.
+$$\textbf{Larmor: }\ \hat H=\vec\omega_L\cdot\hat{\vec S},\quad \vec\omega_L=-\gamma\vec B,\qquad \frac{d\langle\hat{\vec S}\rangle}{dt}=\vec\omega_L\times\langle\hat{\vec S}\rangle$$
+$$\hat R_{\hat n}(\alpha)=e^{-i\alpha\hat n\cdot\hat{\vec S}/\hbar}\ \text{rotates spin states by }\alpha\text{ about }\hat n$$
+$\mathcal U(t)=\hat R_{\hat\omega_L}(\omega_Lt)$. Note $\hat R_{\hat n}(2\pi)=-\mathbb1$ for spin ½.</div>
+<div class="box"><b>Any two-state Hamiltonian is a spin in a field:</b>
+$$\hat H=g_0\mathbb1+\vec g\cdot\vec\sigma=g_0\mathbb1+\frac{2}{\hbar}\vec g\cdot\hat{\vec S}\ \Rightarrow\ \vec\omega=\frac{2\vec g}{\hbar}$$
+Energies $g_0\pm|\vec g|$, eigenstates $|n;\pm\rangle$ with $\hat n=\vec g/|\vec g|$. Map state $\alpha|1\rangle+\beta|2\rangle$ to a Bloch vector and precess it about $\vec\omega$.</div>
+<h3>Ammonia molecule</h3>
+<p>Basis $|\!\uparrow\rangle,|\!\downarrow\rangle$ (N above/below H plane); tunneling couples them:</p>
+<div class="box">$$\hat H=\begin{pmatrix}E_0&-\Delta\\-\Delta&E_0\end{pmatrix}$$$$|G\rangle=\tfrac{1}{\sqrt2}(|\!\uparrow\rangle+|\!\downarrow\rangle),\ E_0-\Delta;\qquad |E\rangle=\tfrac{1}{\sqrt2}(|\!\uparrow\rangle-|\!\downarrow\rangle),\ E_0+\Delta$$
+$2\Delta\approx0.987\times10^{-4}$ eV, $\nu=23.87$ GHz (λ ≈ 1.26 cm). Starting in $|\!\uparrow\rangle$: oscillates to $|\!\downarrow\rangle$ at frequency $2\Delta/\hbar$.<br>
+<b>In a static field</b> $\mathcal E$ (dipole $\mu$): $\hat H=\begin{pmatrix}E_0+\mu\mathcal E&-\Delta\\-\Delta&E_0-\mu\mathcal E\end{pmatrix}$, $E_\pm=E_0\pm\sqrt{\Delta^2+\mu^2\mathcal E^2}$. Field gradient separates $|E\rangle$, $|G\rangle$ beams.<br>
+<b>Maser:</b> $\mathcal E(t)=2\mathcal E_0\cos\omega_0t$, $\hbar\omega_0=2\Delta$; drop $e^{\pm2i\omega_0t}$ terms (rotating-wave approx.) ⇒ $P_{E\to G}(t)=\sin^2\big(\frac{\mu\mathcal E_0t}{\hbar}\big)$.</div>
+<h3>Nuclear magnetic resonance</h3>
+<div class="box">$$\vec B(t)=B_0\hat z+B_1(\hat x\cos\omega t-\hat y\sin\omega t),\qquad \omega_0=\gamma B_0,\ \ \omega_1=\gamma B_1$$
+Rotating frame $|\Psi_R\rangle=e^{-i\omega t\hat S_z/\hbar}|\Psi\rangle$ gives a <b>time-independent</b> field
+$$\vec B_R=B_1\hat x+B_0\Big(1-\frac{\omega}{\omega_0}\Big)\hat z,\qquad |\Psi,t\rangle=e^{i\omega t\hat S_z/\hbar}e^{i\gamma\vec B_R\cdot\hat{\vec S}t/\hbar}|\Psi,0\rangle$$
+<b>Resonance</b> $\omega=\omega_0$: $\vec B_R=B_1\hat x$, spin rotates slowly ($\omega_1$) from $z$ toward the plane while precessing fast ($\omega_0$). Spin-flip prob. (Rabi): $P=\frac{\omega_1^2}{\Omega^2}\sin^2\frac{\Omega t}{2}$, $\Omega=\sqrt{(\omega-\omega_0)^2+\omega_1^2}$.</div>
+<p>90° pulse ($\omega_1t=\pi/2$) tips spins into $xy$-plane; precessing magnetization induces signal. Relaxation $T_1$ (longitudinal), $T_2$ (transverse) give MRI contrast. Proton: $\gamma/2\pi\approx42.6$ MHz/T.</p>
+<div class="fig"><svg id="rabi" viewBox="0 0 300 80"></svg><div class="cap">Rabi oscillations of spin-flip probability: on resonance (blue) full flips; detuned $|\omega-\omega_0|=\omega_1$ (red) max ½, faster.</div></div>
+</section>
+
+<section>
+<h2>8 · Tensor products & entanglement <small>notes 8 · Ch 18</small></h2>
+<ul>
+<li>$V\otimes W$: spanned by $v\otimes w$; $\dim=\dim V\cdot\dim W$. Bilinear: $(a v_1+bv_2)\otimes w=a\,v_1\otimes w+b\,v_2\otimes w$.</li>
+<li>$(\hat S\otimes\hat T)(v\otimes w)=\hat Sv\otimes\hat Tw$; $\hat S\otimes\mathbb1$ and $\mathbb1\otimes\hat T$ commute. $\langle v_1\otimes w_1|v_2\otimes w_2\rangle=\langle v_1|v_2\rangle\langle w_1|w_2\rangle$.</li>
+<li><b>Entangled</b> = not a product $v\otimes w$. Two qubits $a|{+}{+}\rangle+b|{+}{-}\rangle+c|{-}{+}\rangle+d|{-}{-}\rangle$ is a product state ⇔ $ad-bc=0$.</li>
+<li>Measuring particle 1 of $\sum_i|i\rangle_1\otimes|\phi_i\rangle_2$ with result $i$ leaves 2 in $|\phi_i\rangle$ (normalized); prob $=\langle\phi_i|\phi_i\rangle$.</li>
+</ul>
+<div class="box"><b>Bell basis</b> $|\Phi_i\rangle=(\mathbb1\otimes\sigma_i)|\Phi_0\rangle$, orthonormal, all maximally entangled:
+$$|\Phi_0\rangle=\tfrac{1}{\sqrt2}(|{+}{+}\rangle+|{-}{-}\rangle),\quad |\Phi_1\rangle=\tfrac{1}{\sqrt2}(|{+}{-}\rangle+|{-}{+}\rangle)$$
+$$|\Phi_2\rangle=\tfrac{i}{\sqrt2}(|{+}{-}\rangle-|{-}{+}\rangle),\quad |\Phi_3\rangle=\tfrac{1}{\sqrt2}(|{+}{+}\rangle-|{-}{-}\rangle)$$
+$$|{+}{+}\rangle=\tfrac1{\sqrt2}(|\Phi_0\rangle+|\Phi_3\rangle),\quad |{-}{-}\rangle=\tfrac1{\sqrt2}(|\Phi_0\rangle-|\Phi_3\rangle)$$
+$$|{+}{-}\rangle=\tfrac1{\sqrt2}(|\Phi_1\rangle-i|\Phi_2\rangle),\quad |{-}{+}\rangle=\tfrac1{\sqrt2}(|\Phi_1\rangle+i|\Phi_2\rangle)$$</div>
+<div class="box"><b>Teleportation.</b> Alice holds unknown $|\Psi\rangle_C=\alpha|+\rangle+\beta|-\rangle$ and $A$ of a shared $|\Phi_0\rangle_{AB}$. Rewriting,
+$$|\Psi\rangle_C\otimes|\Phi_0\rangle_{AB}=\tfrac12\sum_{i=0}^{3}|\Phi_i\rangle_{CA}\otimes\sigma_i|\Psi\rangle_B\quad(\text{up to phases})$$
+Alice does a Bell measurement on $CA$ (result $i$, 2 classical bits) → Bob applies $\sigma_i$ → $B$ is in $|\Psi\rangle$. Original destroyed (no-cloning); no FTL signalling.</div>
+<div class="box"><b>EPR & Bell.</b> Singlet $|\psi\rangle=\frac1{\sqrt2}(|{+}{-}\rangle-|{-}{+}\rangle)$ (rotation invariant):
+$$\langle(\vec a\cdot\vec\sigma)\otimes(\vec b\cdot\vec\sigma)\rangle=-\vec a\cdot\vec b,\qquad P(\vec a{+},\vec b{+})=\tfrac12\sin^2\tfrac{\theta_{ab}}{2}$$
+Local hidden variables ⇒ <b>Bell inequality</b> $P(a,b)\le P(a,c)+P(c,b)$. QM with coplanar $a,c,b$ at $\theta,\theta$: $\sin^2\theta\le2\sin^2\frac\theta2$ — <b>violated</b> for small θ. Experiments side with QM.</div>
+<ul>
+<li><b>Traces:</b> $\text{tr}(\hat A\otimes\hat B)=\text{tr}\hat A\,\text{tr}\hat B$. Partial trace $\text{tr}_B\big(\hat A\otimes\hat B\big)=\hat A\,\text{tr}\hat B$, extended linearly.</li>
+<li><b>No-cloning:</b> no unitary $\mathcal U|\psi\rangle|e\rangle=|\psi\rangle|\psi\rangle$ for all $|\psi\rangle$. Unitarity preserves $\langle\phi|\psi\rangle$, but cloning would need $\langle\phi|\psi\rangle=\langle\phi|\psi\rangle^2$, true only for identical or orthogonal states.</li>
+<li>Identical particles (Ch 21) are summarized on the 8.06 sheet.</li>
+</ul>
+</section>
+
+<section>
+<h2>9 · Angular momentum <small>notes 9 · Ch 19</small></h2>
+<div class="box">$$\hat{\vec L}=\hat{\vec r}\times\hat{\vec p}=-\hat{\vec p}\times\hat{\vec r},\quad \hat{\vec L}\times\hat{\vec L}=i\hbar\hat{\vec L},\quad \hat{\vec r}\cdot\hat{\vec L}=\hat{\vec p}\cdot\hat{\vec L}=0$$
+$$[\hat L_i,\hat V_j]=i\hbar\epsilon_{ijk}\hat V_k\ \ (\hat{\vec V}\text{ vector: }\hat{\vec r},\hat{\vec p},\hat{\vec L}),\qquad [\hat L_i,\hat S]=0\ \ (\hat S\text{ scalar})$$
+$$\hat{\vec L}^2=\hat r^2\hat p^2-(\hat{\vec r}\cdot\hat{\vec p})^2+i\hbar\,\hat{\vec r}\cdot\hat{\vec p}\ \Rightarrow\ \hat p^2=-\hbar^2\frac1r\partial_r^2r+\frac{\hat{\vec L}^2}{r^2}$$</div>
+<p>Vector identity trick: $(\vec a\times\vec b)_i=\epsilon_{ijk}a_jb_k$, $\epsilon_{ijk}\epsilon_{ipq}=\delta_{jp}\delta_{kq}-\delta_{jq}\delta_{kp}$; keep operator order!</p>
+<div class="box"><b>Algebraic theory</b> ($\hat J$ any angular momentum: $[\hat J_i,\hat J_j]=i\hbar\epsilon_{ijk}\hat J_k$)
+$$\hat J_\pm=\hat J_x\pm i\hat J_y,\quad [\hat J_z,\hat J_\pm]=\pm\hbar\hat J_\pm,\quad [\hat J_+,\hat J_-]=2\hbar\hat J_z,\quad [\hat J^2,\hat J_i]=0$$
+$$\hat J^2=\hat J_+\hat J_-+\hat J_z^2-\hbar\hat J_z=\hat J_-\hat J_++\hat J_z^2+\hbar\hat J_z$$
+$$\hat J^2|j,m\rangle=\hbar^2j(j+1)|j,m\rangle,\qquad \hat J_z|j,m\rangle=\hbar m|j,m\rangle$$
+$$\hat J_\pm|j,m\rangle=\hbar\sqrt{j(j+1)-m(m\pm1)}\,|j,m\pm1\rangle=\hbar\sqrt{(j\mp m)(j\pm m+1)}\,|j,m\pm1\rangle$$
+$j\in\{0,\frac12,1,\frac32,\dots\}$, $m=-j,\dots,j$ ($2j+1$ states). Orbital: only integer $\ell$ (single-valued $e^{im\phi}$).</div>
+<p><span class="k">Spherical harmonics:</span> $Y_{\ell m}(\theta,\phi)=\langle\hat n|\ell m\rangle$; $L_\pm=\hbar e^{\pm i\phi}(\pm\partial_\theta+i\cot\theta\,\partial_\phi)$; $L_+Y_{\ell\ell}=0\Rightarrow Y_{\ell\ell}\propto\sin^\ell\theta\,e^{i\ell\phi}$. Parity $(-1)^\ell$; $Y_{\ell,-m}=(-1)^mY^*_{\ell m}$; $Y_{\ell0}=\sqrt{\frac{2\ell+1}{4\pi}}P_\ell(\cos\theta)$. Cartesian: degree-$\ell$ homogeneous harmonic polynomials.</p>
+<div class="box"><b>Radial equation</b> $\psi=\frac{u_{E\ell}(r)}{r}Y_{\ell m}$:
+$$-\frac{\hbar^2}{2m}u''+\Big(V+\frac{\hbar^2\ell(\ell+1)}{2mr^2}\Big)u=Eu,\quad u(0)=0,\quad u\sim r^{\ell+1}\ (r\to0)$$</div>
+<h3>Free particle & spherical well</h3>
+<div class="box">$\rho=kr$: $u=\rho\,j_\ell(\rho)$ (regular) or $\rho\,n_\ell(\rho)$.
+$$j_0=\frac{\sin\rho}{\rho},\quad j_1=\frac{\sin\rho}{\rho^2}-\frac{\cos\rho}{\rho},\quad n_0=-\frac{\cos\rho}{\rho}$$
+$$j_\ell\xrightarrow{\rho\to0}\frac{\rho^\ell}{(2\ell+1)!!},\qquad j_\ell\xrightarrow{\rho\to\infty}\frac{\sin(\rho-\ell\pi/2)}{\rho}$$
+$$e^{ikz}=\sum_{\ell}(2\ell+1)\,i^\ell j_\ell(kr)P_\ell(\cos\theta)$$
+<b>Infinite spherical well</b> (radius $a$): $E_{n\ell}=\frac{\hbar^2z_{n\ell}^2}{2ma^2}$, $z_{n\ell}$ = $n$-th zero of $j_\ell$.</div>
+<table><tr><th>$z_{n\ell}$</th><th>$\ell=0$</th><th>1</th><th>2</th><th>3</th></tr>
+<tr><td>$n=1$</td><td>3.142</td><td>4.493</td><td>5.763</td><td>6.988</td></tr>
+<tr><td>$n=2$</td><td>6.283</td><td>7.725</td><td>9.095</td><td>10.417</td></tr></table>
+<div class="box"><b>3D isotropic oscillator:</b> $\hat H=\hbar\omega(\hat N_1+\hat N_2+\hat N_3+\frac32)$, $E=\hbar\omega(N+\frac32)$, degeneracy $\frac12(N+1)(N+2)$, $\ell=N,N-2,\dots,1\text{ or }0$. E.g. $N=2$: $\ell=2\oplus0$ (6 states).</div>
+<div class="box"><b>Hydrogen & Runge–Lenz</b> ($V=-e^2/r$):
+$$\hat{\vec R}=\frac{1}{2me^2}\big(\hat{\vec p}\times\hat{\vec L}-\hat{\vec L}\times\hat{\vec p}\big)-\frac{\hat{\vec r}}{r},\qquad [\hat{\vec R},\hat H]=0$$
+$$\hat{\vec L}\cdot\hat{\vec R}=\hat{\vec R}\cdot\hat{\vec L}=0,\qquad \hat{\vec R}^2=1+\frac{2\hat H}{me^4}\big(\hat{\vec L}^2+\hbar^2\big)$$
+$E_n=-\frac{me^4}{2\hbar^2n^2}=-\frac{13.6\,\text{eV}}{n^2}$, $n=N+\ell+1$, $\ell\le n-1$, degeneracy $n^2$ (×2 with spin). Classically $\vec R$ points to perihelion, $|\vec R|$ = eccentricity.</div>
+</section>
+
+<section>
+<h2>10 · Addition of angular momentum <small>notes 10 · Ch 20</small></h2>
+<div class="box">$$\hat{\vec J}=\hat{\vec J}^{(1)}\otimes\mathbb1+\mathbb1\otimes\hat{\vec J}^{(2)},\qquad [\hat J^{(1)}_i,\hat J^{(2)}_j]=0$$
+$$j_1\otimes j_2=(j_1+j_2)\oplus(j_1+j_2-1)\oplus\cdots\oplus|j_1-j_2|$$
+Check: $(2j_1+1)(2j_2+1)=\sum_j(2j+1)$. Uncoupled basis $\{J_1^2,J_{1z},J_2^2,J_{2z}\}$ ↔ coupled basis $\{J_1^2,J_2^2,J^2,J_z\}$; $m=m_1+m_2$.</div>
+<p><span class="k">Recipe:</span> top state $|j_1{+}j_2,j_1{+}j_2\rangle=|j_1j_1\rangle|j_2j_2\rangle$; apply $\hat J_-=\hat J_-^{(1)}+\hat J_-^{(2)}$ to get the multiplet; the state orthogonal to it at the next $m$ is the top of the next multiplet; repeat.</p>
+<div class="box"><b>½ ⊗ ½ = 1 ⊕ 0</b>
+$$|1,1\rangle=|{\uparrow\uparrow}\rangle,\quad |1,0\rangle=\tfrac{1}{\sqrt2}(|{\uparrow\downarrow}\rangle+|{\downarrow\uparrow}\rangle),\quad |1,-1\rangle=|{\downarrow\downarrow}\rangle$$
+$$|0,0\rangle=\tfrac{1}{\sqrt2}(|{\uparrow\downarrow}\rangle-|{\downarrow\uparrow}\rangle)$$
+$$\hat{\vec S}_1\cdot\hat{\vec S}_2=\tfrac12\big(\hat S^2-\hat S_1^2-\hat S_2^2\big)=\begin{cases}+\frac14\hbar^2&\text{triplet}\\-\frac34\hbar^2&\text{singlet}\end{cases}$$
+$\hat{\vec S}_1\cdot\hat{\vec S}_2=\frac12(\hat S_{1+}\hat S_{2-}+\hat S_{1-}\hat S_{2+})+\hat S_{1z}\hat S_{2z}$. Triplet symmetric, singlet antisymmetric under 1↔2.</div>
+<div class="box"><b>1 ⊗ ½ = 3/2 ⊕ 1/2</b>
+$$|\tfrac32,\tfrac32\rangle=|1,1\rangle|{\uparrow}\rangle,\quad |\tfrac32,\tfrac12\rangle=\sqrt{\tfrac23}|1,0\rangle|{\uparrow}\rangle+\sqrt{\tfrac13}|1,1\rangle|{\downarrow}\rangle$$
+$$|\tfrac12,\tfrac12\rangle=\sqrt{\tfrac13}|1,0\rangle|{\uparrow}\rangle-\sqrt{\tfrac23}|1,1\rangle|{\downarrow}\rangle\quad(\text{overall sign is convention})$$
+General $\ell\otimes\frac12$: $|j{=}\ell{\pm}\tfrac12,m\rangle=\sqrt{\tfrac{\ell\pm m+\frac12}{2\ell+1}}|m{-}\tfrac12\rangle|{\uparrow}\rangle\pm\sqrt{\tfrac{\ell\mp m+\frac12}{2\ell+1}}|m{+}\tfrac12\rangle|{\downarrow}\rangle$.</div>
+<div class="box"><b>Feynman–Hellmann:</b> $\hat H(\lambda)\psi(\lambda)=E(\lambda)\psi(\lambda)$ ⇒ $\displaystyle\frac{dE}{d\lambda}=\Big\langle\psi(\lambda)\Big|\frac{d\hat H}{d\lambda}\Big|\psi(\lambda)\Big\rangle$.<br>
+⇒ first-order shift $\Delta E=\langle\psi^{(0)}|\Delta\hat H|\psi^{(0)}\rangle$ (non-degenerate, or in a basis that diagonalizes $\Delta\hat H$ within the degenerate space).</div>
+<div class="box"><b>Hyperfine splitting</b> (H ground state): $\Delta\hat H\propto\hat{\vec S}_e\cdot\hat{\vec S}_p\,|\psi_{100}(0)|^2$
+$$E_{\rm triplet}-E_{\rm singlet}=\tfrac43\,g_p\frac{m_e}{m_p}\,\alpha^4m_ec^2\approx5.88\times10^{-6}\,\text{eV}$$
+⇒ $\nu\approx1420$ MHz, $\lambda\approx21$ cm (radio astronomy). Singlet ($F=0$) is lower; $g_p\approx5.59$.</div>
+<div class="box"><b>Spin–orbit coupling</b> (with Thomas factor ½):
+$$\Delta\hat H=\frac{e^2}{2m^2c^2}\frac{1}{r^3}\hat{\vec S}\cdot\hat{\vec L},\qquad \hat{\vec L}\cdot\hat{\vec S}=\tfrac12\big(\hat J^2-\hat L^2-\hat S^2\big)$$
+$[\Delta\hat H,\hat L_z]\ne0$ ⇒ use CSCO $\{\hat H_0,\hat L^2,\hat S^2,\hat J^2,\hat J_z\}$. $j=\ell\pm\frac12$:
+$$\langle\hat{\vec L}\cdot\hat{\vec S}\rangle=\frac{\hbar^2}{2}\big[j(j+1)-\ell(\ell+1)-\tfrac34\big]=\begin{cases}\frac{\hbar^2\ell}{2}&j=\ell+\frac12\\-\frac{\hbar^2(\ell+1)}{2}&j=\ell-\frac12\end{cases}$$
+Splitting ~ $\alpha^4mc^2$ (fine structure). Notation $n\ell_j$: $2p_{3/2}$, $2p_{1/2}$. Trace check: $\sum_j(2j+1)\langle\vec L\cdot\vec S\rangle=0$.</div>
+<div class="box"><b>Hydrogen hidden symmetry:</b> on states of energy $E_n$, define $\hat{\vec J}_{1,2}=\frac12(\hat{\vec L}\pm\tilde{\vec R})$ with $\tilde{\vec R}=\sqrt{-\frac{me^4}{2E}}\,\hat{\vec R}$. These are two commuting angular momenta with $j_1=j_2=j$, $n=2j+1$:
+$$j\otimes j=0\oplus1\oplus\cdots\oplus2j$$$$\Rightarrow\ \ell=0,\dots,n-1,\quad\text{degeneracy }(2j+1)^2=n^2$$</div>
+</section>
+
+<section>
+<h2>11 · Density matrix & decoherence <small>Ch 22</small></h2>
+<p><b>Why:</b> a state vector can't describe a subsystem of an entangled pair, or a classical mixture from an imperfect source. The density matrix handles both.</p>
+<div class="box">$$\hat\rho=\sum_ip_i|\psi_i\rangle\langle\psi_i|,\qquad \hat\rho^\dagger=\hat\rho,\quad \hat\rho\ge0,\quad \text{tr}\,\hat\rho=1$$
+$$\langle\hat A\rangle=\text{tr}(\hat\rho\hat A),\qquad p(k)=\text{tr}(P_k\hat\rho),\qquad i\hbar\frac{d\hat\rho}{dt}=[\hat H,\hat\rho]$$
+<b>Pure</b> ⇔ $\hat\rho^2=\hat\rho$ ⇔ $\text{tr}\,\hat\rho^2=1$; mixed: $\text{tr}\,\hat\rho^2&lt;1$. Different ensembles can give the same $\hat\rho$, and then no measurement can tell them apart.<br>
+<b>Qubit:</b> $\hat\rho=\frac12(\mathbb1+\vec a\cdot\vec\sigma)$, $|\vec a|\le1$: surface of the Bloch ball = pure, interior = mixed, centre = maximally mixed.</div>
+<div class="box"><b>Subsystems:</b> $\hat\rho_A=\text{tr}_B\hat\rho_{AB}$ gives every prediction for measurements on $A$ alone.<br>
+<b>Schmidt decomposition:</b> any $|\psi\rangle_{AB}=\sum_i\sqrt{p_i}\,|a_i\rangle|b_i\rangle$ (orthonormal sets). $\hat\rho_A$ and $\hat\rho_B$ share eigenvalues $p_i$. Entangled ⇔ Schmidt rank &gt; 1. Entanglement entropy $S=-\sum_ip_i\ln p_i$ (singlet: $\ln2$, maximal).</div>
+<div class="box"><b>Open systems & decoherence:</b> system $S$ becomes entangled with environment $E$, so $\hat\rho_S$ loses its off-diagonal terms in a preferred (pointer) basis: superposition → effectively classical mixture. Markovian evolution is the <b>Lindblad equation</b>
+$$\frac{d\hat\rho}{dt}=-\frac i\hbar[\hat H,\hat\rho]+\sum_k\Big(\hat L_k\hat\rho\hat L_k^\dagger-\tfrac12\{\hat L_k^\dagger\hat L_k,\hat\rho\}\Big)$$
+e.g. dephasing $\hat L=\sqrt{\gamma}\,\sigma_z$ shrinks the off-diagonal $\rho_{01}$ by $e^{-2\gamma t}$; decay $\hat L=\sqrt{\Gamma}\,\sigma_-$ relaxes to $|0\rangle$.</div>
+<p><b>Measurement problem:</b> decoherence explains why we never see superpositions of pointer states, but not why one particular outcome occurs. Interpretations (Copenhagen, many-worlds, …) differ on that point.</p>
+</section>
+
+<section>
+<h2>12 · Quantum computation <small>Ch 23</small></h2>
+<div class="box"><b>Qubits & gates:</b> $|0\rangle,|1\rangle$; $n$ qubits span $2^n$ dimensions. Gates are unitaries:
+$$X=\sigma_1,\quad Z=\sigma_3,\quad H=\tfrac{1}{\sqrt2}\begin{pmatrix}1&1\\1&-1\end{pmatrix},\quad \text{CNOT}|x\rangle|y\rangle=|x\rangle|y\oplus x\rangle$$
+$H|0\rangle=|+\rangle$, $H|1\rangle=|-\rangle$; $H^2=\mathbb1$; $HXH=Z$. H then CNOT on $|00\rangle$ makes the Bell state $|\Phi_0\rangle$.</div>
+<div class="box"><b>Oracle:</b> $U_f|x\rangle|y\rangle=|x\rangle|y\oplus f(x)\rangle$. With the target in $|-\rangle$: $U_f|x\rangle|-\rangle=(-1)^{f(x)}|x\rangle|-\rangle$ (<b>phase kickback</b>).<br>
+<b>Deutsch:</b> $f:\{0,1\}\to\{0,1\}$. Prepare $|+\rangle|-\rangle$, apply $U_f$, then $H$ on qubit 1: it reads $0$ if $f$ is constant and $1$ if balanced. One query instead of two: interference extracts a global property.</div>
+<div class="box"><b>Grover search</b> ($N$ items, one marked $|w\rangle$, uniform start $|s\rangle$): repeat oracle $\mathbb1-2|w\rangle\langle w|$ then diffusion $2|s\rangle\langle s|-\mathbb1$. Each round rotates the state by $2\theta$ toward $|w\rangle$ in the $(|w\rangle,|s\rangle)$ plane, $\sin\theta=1/\sqrt N$:
+$$P_{\rm success}(k)=\sin^2\big((2k+1)\theta\big),$$$$k_{\rm opt}\simeq\frac\pi4\sqrt N\quad(\text{vs }\sim N/2\text{ classically})$$
+Overshooting lowers the success probability.</div>
+</section>
+
+<section>
+<h2>13 · Toolkit, constants & pitfalls</h2>
+<div class="box">$$\int e^{-ax^2+bx}dx=\sqrt{\tfrac\pi a}e^{b^2/4a},\qquad \delta(x)=\tfrac{1}{2\pi}\int e^{ikx}dk$$
+$$[\hat A,\hat B\hat C]=[\hat A,\hat B]\hat C+\hat B[\hat A,\hat C]$$$$[\hat x,f(\hat p)]=i\hbar f'(\hat p),\quad [\hat p,f(\hat x)]=-i\hbar f'(\hat x)$$
+$$[\hat a,f(\hat a^\dagger)]=f'(\hat a^\dagger),\qquad e^{\lambda\hat N}\hat a\,e^{-\lambda\hat N}=e^{-\lambda}\hat a$$
+$$\text{tr}(AB)=\text{tr}(BA),\quad \det e^{A}=e^{\text{tr}A},\quad e^{i\theta\sigma_3}=\text{diag}(e^{i\theta},e^{-i\theta})$$</div>
+<table>
+<tr><td>$\hbar c$</td><td>197.3 MeV·fm = 1973 eV·Å</td><td>$\alpha$</td><td>1/137.04</td></tr>
+<tr><td>$m_ec^2$</td><td>0.511 MeV</td><td>$m_p/m_e$</td><td>1836</td></tr>
+<tr><td>$\mu_B$</td><td>$5.79\times10^{-5}$ eV/T</td><td>$a_0$</td><td>0.529 Å</td></tr>
+<tr><td>$\hbar$</td><td>$6.58\times10^{-16}$ eV·s</td><td>Ry</td><td>13.6 eV</td></tr></table>
+<div class="tip"><b>Strategy:</b> (1) find the CSCO & symmetries first; (2) work in the basis where the perturbation is diagonal (coupled vs uncoupled); (3) two-level problem? → write $g_0\mathbb1+\vec g\cdot\vec\sigma$ and think precession; (4) oscillator problem? → go to $\hat a,\hat a^\dagger$; (5) time-dependent $H$? → try a rotating frame; (6) entanglement question? → test $ad-bc$ / expand in Bell basis.</div>
+<div class="warn"><b>Common mistakes:</b> $\langle a|T|b\rangle^*=\langle b|T^\dagger|a\rangle$ (dagger!); forgetting $e^{-i\omega t/2}$ zero-point phase; $\hat R(2\pi)=-1$ for spinors; mixing $\vec\omega_L=-\gamma\vec B$ sign; $|n;\pm\rangle$ uses $\theta/2$; $\hat J_\pm$ coefficient $\sqrt{(j\mp m)(j\pm m+1)}$; Heisenberg EOM sign $[\hat A,\hat H]$; $\hat{\vec L}\cdot\hat{\vec S}\ne\hat L_z\hat S_z$; tensor-product ordering of factors.</div>
+</section>
+</div>
+
+<script>
+const NS="http://www.w3.org/2000/svg";
+function el(s,t,a){const e=document.createElementNS(NS,t);for(const k in a)e.setAttribute(k,a[k]);s.appendChild(e);return e;}
+function txt(s,x,y,str,size,fill,anchor){const t=el(s,'text',{x,y,'font-size':size||7,fill:fill||'#333','text-anchor':anchor||'start','font-family':'Helvetica,Arial','font-style':'italic'});t.textContent=str;}
+function path(s,pts,stroke,w,dash,fill){let d='';pts.forEach((p,i)=>{d+=(i?'L':'M')+p[0].toFixed(2)+' '+p[1].toFixed(2)});el(s,'path',{d,fill:fill||'none',stroke,'stroke-width':w||1,'stroke-dasharray':dash||''});}
+(function(){const s=document.getElementById('phase');
+ const L=(cx,cy)=>{path(s,[[cx-48,cy],[cx+48,cy]],'#444',.6);path(s,[[cx,cy-48],[cx,cy+48]],'#444',.6);};
+ let cx=75,cy=54;L(cx,cy);const R=34;const c=[];for(let t=0;t<=6.3;t+=.05)c.push([cx+R*Math.cos(t),cy-R*Math.sin(t)]);path(s,c,'#999',.8,'3,2');
+ for(const t of [0.5,2.2,4.0]){const x=cx+R*Math.cos(t),y=cy-R*Math.sin(t);el(s,'circle',{cx:x,cy:y,r:7,fill:'#1f5fbf','fill-opacity':.35,stroke:'#1f5fbf','stroke-width':.8});}
+ el(s,'circle',{cx,cy,r:7,fill:'#888','fill-opacity':.3,stroke:'#666','stroke-width':.6});
+ txt(s,cx+46,cy+9,'x',7,'#333','end');txt(s,cx+3,cy-42,'p',7);txt(s,cx,104,'coherent |α⟩ (clockwise)',6.5,'#1f5fbf','middle');
+ cx=225;L(cx,cy);el(s,'ellipse',{cx,cy,rx:3.5,ry:14,fill:'#c0392b','fill-opacity':.35,stroke:'#c0392b','stroke-width':.8});
+ el(s,'ellipse',{cx:cx+30,cy:cy-20,rx:3.5,ry:14,fill:'#c0392b','fill-opacity':.35,stroke:'#c0392b','stroke-width':.8});
+ el(s,'circle',{cx,cy,r:7,fill:'none',stroke:'#666','stroke-width':.6,'stroke-dasharray':'2,1.5'});
+ txt(s,cx+46,cy+9,'x',7,'#333','end');txt(s,cx+3,cy-42,'p',7);txt(s,cx,104,'squeezed (γ>0): Δx↓ Δp↑',6.5,'#c0392b','middle');})();
+(function(){const s=document.getElementById('rabi');const X0=18,Y0=70,W=272,H=58;
+ path(s,[[X0,Y0],[X0+W,Y0]],'#444',.6);path(s,[[X0,Y0],[X0,Y0-H-6]],'#444',.6);
+ path(s,[[X0,Y0-H],[X0+W,Y0-H]],'#ccc',.5,'2,2');txt(s,X0-3,Y0-H+3,'1',6.5,'#555','end');txt(s,X0-3,Y0+2,'0',6.5,'#555','end');
+ const f=(d)=>{const p=[];const O=Math.sqrt(1+d*d);for(let t=0;t<=4*Math.PI;t+=.04)p.push([X0+t/(4*Math.PI)*W,Y0-H*(1/(O*O))*Math.pow(Math.sin(O*t/2),2)]);return p;};
+ path(s,f(0),'#1f5fbf',1.2);path(s,f(1),'#c0392b',1.2);txt(s,X0+W,Y0+9,'ω₁t',7,'#333','end');txt(s,X0+W*0.25,Y0+9,'π',6.5,'#555','middle');txt(s,X0+W*0.5,Y0+9,'2π',6.5,'#555','middle');})();
+
+</script>
+</body>
+</html>

@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Experiments Behind Quantum Mechanics — Quantum Physics</title>
+<link rel="icon" type="image/svg+xml" href="../images/favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+/* Layout: experiment cards in two columns (print: landscape letter), apparatus left, measured data right */
+:root { --bg:#ffffff; --fg:#1a1d24; --accent:#1f3b73; --on-accent:#ffffff; --muted:#5a6070; --rule:#c9cfdc;
+  --box:#f2f5fb; --card:#fbfcfe; --tip:#1e8449; --tip-bg:#eef8f1; --axis:#444a58; --metal:#d9dde6; --glass:#e8f0fb;
+  --c-blue:#1f5fbf; --c-red:#c0392b; --c-green:#1e8449; --c-purple:#8e44ad; --c-orange:#c96a12; }
+
+
+@page { size: letter landscape; margin: 0.3in; }
+* { box-sizing: border-box; }
+body { margin:0; background: var(--bg); color: var(--fg); font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 15px; line-height: 1.45; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); padding-block: 20px 32px; }
+.wrap { max-width: 1400px; margin: 0 auto; }
+header.title { display:flex; flex-wrap: wrap; justify-content:space-between; align-items:baseline; gap: 4px 16px; border-bottom: 2px solid var(--accent); padding-bottom: 4px; margin-bottom: 10px; }
+header.title h1 { margin:0; font-size: 1.75em; color: var(--accent); text-wrap: balance; }
+header.title p { margin:0; color: var(--muted); font-size: .9em; }
+h2.band { font-size: 1.02em; margin: 0 0 6px; padding: 3px 8px; color: var(--on-accent); background: var(--accent); border-radius: 3px; }
+.intro { display:grid; grid-template-columns: minmax(0,1.15fr) minmax(0,1fr); gap: 14px; margin-bottom: 12px; }
+.intro ol { margin: 0; padding-left: 18px; display:grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap: 3px 16px; }
+.cards { display:grid; grid-template-columns: minmax(0,1fr) minmax(0,1fr); gap: 14px 16px; align-items: start; }
+.card { break-inside: avoid; background: var(--card); border: 1px solid var(--rule); border-radius: 4px; padding: 8px 10px 9px; margin: 0; display:flow-root; }
+.card > header { display:flex; align-items: baseline; gap: 8px; flex-wrap: wrap; border-bottom: 1px solid var(--rule); padding-bottom: 3px; margin-bottom: 6px; }
+.num { display:inline-grid; place-items:center; min-width: 1.6em; height: 1.6em; border-radius: 50%; background: var(--accent); color: var(--on-accent); font-weight: 700; font-size: .85em; }
+.card h3 { margin: 0; font-size: 1.12em; color: var(--accent); }
+.who { color: var(--muted); font-size: .85em; }
+.tag { margin-left: auto; font-size: .78em; color: var(--accent); border: 1px solid var(--accent); border-radius: 10px; padding: 0 7px; }
+.figs { display:grid; grid-template-columns: minmax(0,1fr) minmax(0,1fr); gap: 8px; margin: 0 0 6px; }
+.figs .wide { grid-column: 1 / -1; }
+figure { margin:0; }
+figure > svg { display:block; width: 100%; height: auto; }
+figcaption { font-size: .78em; color: var(--muted); line-height: 1.3; margin-top: 1px; }
+dl.cqo { display:grid; grid-template-columns: max-content minmax(0,1fr); gap: 2px 8px; margin: 0 0 5px; }
+dl.cqo dt { font-weight: 700; color: var(--accent); }
+dl.cqo dd { margin: 0; }
+.box { background: var(--box); border: 1px solid var(--rule); border-radius: 3px; padding: 2px 8px; overflow-x: auto; }
+.tip { background: var(--tip-bg); border-left: 3px solid var(--tip); padding: 5px 9px; border-radius: 2px; }
+table { border-collapse: collapse; width: 100%; font-size: .92em; }
+th, td { border: 1px solid var(--rule); padding: 3px 6px; text-align: left; vertical-align: top; }
+th { background: var(--box); }
+.tablewrap { overflow-x: auto; }
+mjx-container[display="true"] { margin: 3px 0 !important; overflow-x: auto; overflow-y: hidden; }
+/* SVG drawing classes */
+svg { font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; overflow: visible; }
+.ink { stroke: var(--fg); color: var(--fg); fill: none; stroke-width: 1; }
+.ax { stroke: var(--axis); color: var(--axis); fill: none; stroke-width: .8; }
+.grid { stroke: var(--rule); fill: none; stroke-width: .5; }
+.dash { stroke-dasharray: 3 2; }
+.b { stroke: var(--c-blue); color: var(--c-blue); fill: none; stroke-width: 1.4; }
+.r { stroke: var(--c-red); color: var(--c-red); fill: none; stroke-width: 1.4; }
+.g { stroke: var(--c-green); color: var(--c-green); fill: none; stroke-width: 1.4; }
+.p { stroke: var(--c-purple); color: var(--c-purple); fill: none; stroke-width: 1.4; }
+.o { stroke: var(--c-orange); color: var(--c-orange); fill: none; stroke-width: 1.4; }
+.ah, .solid { fill: currentColor; }
+.metal { fill: var(--metal); stroke: var(--fg); stroke-width: .8; }
+.glass { fill: var(--glass); stroke: var(--fg); stroke-width: .8; }
+.soft { fill: var(--box); stroke: var(--rule); stroke-width: .6; }
+.t { fill: var(--fg); font-size: 7.5px; }
+.tm { fill: var(--muted); font-size: 6.5px; }
+.tb { fill: var(--c-blue); font-size: 7px; } .tr { fill: var(--c-red); font-size: 7px; } .tg { fill: var(--c-green); font-size: 7px; } .tp { fill: var(--c-purple); font-size: 7px; } .to { fill: var(--c-orange); font-size: 7px; }
+.dot { fill: var(--fg); }
+.spec { fill: #0b0d12; }
+@media screen and (max-width: 980px) { .cards { grid-template-columns: minmax(0,1fr); } .intro { grid-template-columns: minmax(0,1fr); } }
+@media screen and (max-width: 560px) { .figs { grid-template-columns: minmax(0,1fr); } .intro ol { grid-template-columns: minmax(0,1fr); } }
+@media print { body { font-size: 8.1pt; line-height: 1.32; padding: 0; } .card { padding: 5px 7px 6px; } .cards { gap: 8px 12px; }
+  header.title h1 { font-size: 15pt; } .intro { gap: 10px; margin-bottom: 8px; } }
+</style>
+<script>window.MathJax={tex:{inlineMath:[['$','$']],displayMath:[['$$','$$']]},svg:{fontCache:'global'}};</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/es5/tex-svg-full.js"></script>
+
+
+<style>
+/* site look: black on white, Cormorant Garamond headings, Inter body */
+:root { --fg:#000; --accent:#000; --on-accent:#fff; --muted:#666; --rule:#e4e4e4; --box:#f9f9f9; --th:#f3f3f3; --card:#fff;
+  --tip:#000; --tip-bg:#f9f9f9; --warn:#000; --warn-bg:#f9f9f9; --axis:#333; --plot-faint:#999; color-scheme: light; }
+body { font-family: 'Inter', sans-serif !important; font-weight: 300; color: #000; background: #fff; }
+b, strong { font-weight: 500; }
+h1, header.title h1 { font-family: 'Cormorant Garamond', serif !important; font-weight: 600 !important; color: #000 !important; letter-spacing: 0 !important; }
+header.title { border-bottom: 1px solid #000 !important; }
+h2, h2.band { font-family: 'Cormorant Garamond', serif !important; font-weight: 600 !important; font-size: 1.35em !important; color: #000 !important; background: none !important;
+  border-radius: 0 !important; padding: 0 0 2px !important; border-bottom: 1px solid #000; }
+h2 small { color: #666 !important; opacity: 1 !important; font-family: 'Inter', sans-serif; font-weight: 400; }
+h3, .card h3 { font-family: 'Cormorant Garamond', serif !important; font-weight: 600 !important; color: #000 !important; font-size: 1.15em !important; }
+.k, .lbl, dl.cqo dt { color: #000 !important; font-weight: 500; }
+.box, .big { border-color: #000 !important; }
+.tip, .warn { border-left-color: #000 !important; }
+.num { background: #000 !important; }
+.tag { color: #000 !important; border-color: #000 !important; }
+nav.site-nav { font-size: 0.78rem; letter-spacing: 0.04em; margin: 0 auto 1.6rem; max-width: 1500px; display: flex; flex-wrap: wrap; gap: 0.2rem 0; align-items: baseline; }
+nav.site-nav a { color: #000; text-decoration: none; }
+nav.site-nav a:hover { opacity: 0.5; }
+nav.site-nav span { margin: 0 0.5rem; opacity: 0.3; }
+nav.site-nav .pdf { margin-left: auto; border: 1px solid #000; padding: 0.15rem 0.7rem; }
+@media print { nav.site-nav { display: none; } }
+</style>
+</head>
+<body>
+<nav class="site-nav"><a href="../blog.html">&larr; Back</a><span>/</span>Quantum Physics<span>/</span>0 · Experiments<a class="pdf" href="pdf/qm_00_experiments.pdf" download>Download PDF</a></nav>
+<div class="wrap">
+<header class="title"><h1>0 · The Experiments Behind Quantum Mechanics</h1><p>Companion to the 8.04 / 8.05 / 8.06 sheets · apparatus schematics and measured results</p></header>
+
+<div class="intro">
+<section><h2 class="band">Where classical physics broke</h2>
+<ol>
+<li><b>Hot objects:</b> classical theory predicts infinite radiated energy (ultraviolet catastrophe).</li>
+<li><b>Light on metals:</b> electron energy depends on colour, not brightness; sharp threshold.</li>
+<li><b>Atoms:</b> an orbiting electron should radiate and collapse in ~$10^{-11}$ s and give a continuous spectrum. Atoms are stable, with sharp lines.</li>
+<li><b>Cold solids:</b> heat capacities fall to zero as $T\to0$ instead of staying at $3k_B$ per atom.</li>
+<li><b>Particles vs waves:</b> light arrives in lumps; electrons interfere.</li>
+<li><b>Magnetic atoms:</b> angular momentum along any axis takes only discrete values.</li>
+<li><b>Correlations:</b> entangled pairs beat every local classical model.</li>
+<li><b>Identical particles:</b> photons and electrons have no individual identity.</li>
+</ol></section>
+<section><h2 class="band">Timeline</h2><figure><svg id="timeline" viewBox="0 0 330 118"></svg></figure></section>
+</div>
+
+<div class="cards">
+
+<article class="card"><header><span class="num">1</span><h3>Blackbody radiation</h3><span class="who">Lummer–Pringsheim, Rubens–Kurlbaum 1899–1900 · Planck 1900</span><span class="tag">energy quanta</span></header>
+<div class="figs"><figure><svg id="bb-app" viewBox="0 0 200 118"></svg><figcaption>A heated cavity with a small hole is a near-perfect blackbody. A prism or grating spreads its light; a bolometer measures power at each wavelength.</figcaption></figure>
+<figure><svg id="bb-data" viewBox="0 0 200 118"></svg><figcaption>Planck's law at three temperatures; Rayleigh–Jeans (dashed) for 5000 K diverges at short λ. Peaks follow Wien's law, $\lambda_{\max}T=2898\ \mu$m·K.</figcaption></figure></div>
+<dl class="cqo"><dt>Classical</dt><dd>Every cavity mode gets $k_BT$, and there are ∝ $\nu^2$ modes, so the energy density grows without bound at high frequency.</dd>
+<dt>Observed</dt><dd>The spectrum peaks and falls off; the peak moves to shorter λ as $T$ rises. Today's best blackbody: the cosmic microwave background (COBE 1990, $T=2.725$ K).</dd>
+<dt>Lesson</dt><dd>Oscillators exchange energy only in steps $h\nu$, so high-frequency modes are frozen out. The same idea explains heat capacities vanishing as $T\to0$ (Einstein 1907).</dd></dl>
+<div class="box">$$u(\nu,T)=\frac{8\pi h\nu^3}{c^3}\frac{1}{e^{h\nu/k_BT}-1}\ \xrightarrow{\ h\nu\ll k_BT\ }\ \frac{8\pi\nu^2}{c^3}k_BT$$</div>
+</article>
+
+<article class="card"><header><span class="num">2</span><h3>Photoelectric effect</h3><span class="who">Hertz 1887 · Lenard 1902 · Einstein 1905 · Millikan 1916</span><span class="tag">photons</span></header>
+<div class="figs"><figure><svg id="pe-app" viewBox="0 0 200 118"></svg><figcaption>Light frees electrons from a metal cathode. A reverse voltage is raised until the current stops: the stopping voltage $V_s$ measures the fastest electrons' energy.</figcaption></figure>
+<figure><svg id="pe-data" viewBox="0 0 200 118"></svg><figcaption>Millikan's sodium result: $V_s$ is linear in ν with slope $h/e=4.12\times10^{-15}$ V·s, giving $h=6.57\times10^{-34}$ J·s. Dots: the mercury lines he used.</figcaption></figure></div>
+<dl class="cqo"><dt>Classical</dt><dd>Brighter light carries more energy, so it should eject faster electrons; any colour should work after a delay.</dd>
+<dt>Observed</dt><dd>Electron energy depends only on frequency; below a threshold $\nu_0$ nothing comes out however bright; no delay. Intensity changes only the <i>number</i> of electrons.</dd>
+<dt>Lesson</dt><dd>Light itself comes in quanta (photons), each giving its whole energy $h\nu$ to one electron.</dd></dl>
+<div class="box">$$eV_s=K_{\max}=h\nu-W,\qquad \nu_0=W/h$$</div>
+</article>
+
+<article class="card"><header><span class="num">3</span><h3>Compton scattering</h3><span class="who">A. H. Compton 1923</span><span class="tag">photon momentum</span></header>
+<div class="figs"><figure><svg id="co-app" viewBox="0 0 200 118"></svg><figcaption>Molybdenum Kα X-rays (λ = 70.9 pm) hit a graphite block. A rotating crystal spectrometer measures the wavelength scattered at angle θ.</figcaption></figure>
+<figure><svg id="co-data" viewBox="0 0 200 118"></svg><figcaption>Spectra at four angles (redrawn from Compton's values): an unshifted peak from tightly bound electrons and a shifted peak at $\lambda_0+\lambda_C(1-\cos\theta)$.</figcaption></figure></div>
+<dl class="cqo"><dt>Classical</dt><dd>An EM wave shakes the electron at its own frequency, so scattered light keeps the same wavelength.</dd>
+<dt>Observed</dt><dd>A second, longer-wavelength peak whose shift depends only on angle, not on the target material.</dd>
+<dt>Lesson</dt><dd>Photons carry momentum $p=h/\lambda$; the shift is exactly a relativistic billiard-ball collision.</dd></dl>
+<div class="box">$$\lambda'-\lambda=\frac{h}{m_ec}(1-\cos\theta),\qquad \lambda_C=\frac{h}{m_ec}=2.43\ \text{pm}$$</div>
+</article>
+
+<article class="card"><header><span class="num">4</span><h3>Atomic spectra & stable atoms</h3><span class="who">Balmer 1885 · Rutherford 1911 · Bohr 1913</span><span class="tag">discrete levels</span></header>
+<div class="figs"><figure><svg id="sp-lev" viewBox="0 0 200 128"></svg><figcaption>Hydrogen levels $E_n=-13.6/n^2$ eV. Lyman lines end on $n=1$ (UV), Balmer lines on $n=2$ (visible).</figcaption></figure>
+<figure><svg id="sp-data" viewBox="0 0 200 128"></svg><figcaption>Hydrogen discharge tube → slit → grating: the visible Balmer lines at 656, 486, 434, 410, 397 nm, crowding toward the 365 nm series limit.</figcaption></figure></div>
+<dl class="cqo"><dt>Classical</dt><dd>Rutherford's atom (electron orbiting a tiny nucleus) radiates continuously and spirals in within ~$10^{-11}$ s.</dd>
+<dt>Observed</dt><dd>Atoms are stable and emit only sharp, element-specific lines that fit simple integer formulas.</dd>
+<dt>Lesson</dt><dd>Bound systems have discrete energies; a photon carries the difference. Stability comes from the uncertainty principle: confining the electron costs kinetic energy.</dd></dl>
+<div class="box">$$\frac1\lambda=R_\infty\Big(\frac1{n_f^2}-\frac1{n_i^2}\Big),\quad R_\infty=1.097\times10^7\ \text{m}^{-1},\quad h\nu=E_i-E_f$$</div>
+</article>
+
+<article class="card"><header><span class="num">5</span><h3>Franck–Hertz experiment</h3><span class="who">J. Franck & G. Hertz 1914</span><span class="tag">levels via collisions</span></header>
+<div class="figs"><figure><svg id="fh-app" viewBox="0 0 200 118"></svg><figcaption>Electrons from a hot cathode K are accelerated toward grid G through mercury vapour. A small retarding voltage stops slow electrons from reaching anode A.</figcaption></figure>
+<figure><svg id="fh-data" viewBox="0 0 200 118"></svg><figcaption>Anode current vs accelerating voltage (schematic of the 1914 curve): drops every 4.9 V, each time electrons gain enough energy to excite one more Hg atom.</figcaption></figure></div>
+<dl class="cqo"><dt>Classical</dt><dd>Electrons should lose energy to atoms in any amount, so current rises smoothly with voltage.</dd>
+<dt>Observed</dt><dd>Sharp current drops at 4.9 V spacing; the vapour then glows at 254 nm $=hc/4.9$ eV.</dd>
+<dt>Lesson</dt><dd>Discrete levels show up in collisions too, not just in light: atoms accept energy only in fixed amounts.</dd></dl>
+</article>
+
+<article class="card"><header><span class="num">6</span><h3>Double slit with single electrons</h3><span class="who">Davisson–Germer 1927 · Jönsson 1961 · Tonomura 1989</span><span class="tag">amplitudes & Born rule</span></header>
+<div class="figs"><figure><svg id="ds-app" viewBox="0 0 200 118"></svg><figcaption>Tonomura's version: a weak electron beam passes an electron biprism (equivalent to two slits). A position-sensitive detector records each arrival as a dot.</figcaption></figure>
+<figure><svg id="ds-data" viewBox="0 0 200 118"></svg><figcaption>Build-up of arrivals (simulated from the interference law, as in Tonomura's frames). Each dot is random; the pattern emerges only statistically.</figcaption></figure></div>
+<dl class="cqo"><dt>Classical</dt><dd>Particles go through one slit or the other: two overlapping bumps. Waves would arrive spread out, not as dots.</dd>
+<dt>Observed</dt><dd>Single dots, one at a time, building fringes with spacing $\lambda L/d$, $\lambda=h/p$. Davisson–Germer: 54 eV electrons on nickel diffract at 50°, matching $\lambda=1.67$ Å. Determining which slit erases the fringes.</dd>
+<dt>Lesson</dt><dd>Amplitudes add, then square (Born rule); outcomes are random; which-path information destroys interference. Seen with neutrons, atoms, even $C_{60}$.</dd></dl>
+<div class="box">$$P(x)=|\psi_1+\psi_2|^2=|\psi_1|^2+|\psi_2|^2+2\,\text{Re}\,\psi_1^*\psi_2$$</div>
+</article>
+
+<article class="card"><header><span class="num">7</span><h3>Single-photon Mach–Zehnder</h3><span class="who">Grangier, Roger & Aspect 1986</span><span class="tag">superposition of paths</span></header>
+<div class="figs"><figure><svg id="mz-app" viewBox="0 -16 200 134"></svg><figcaption>One photon at a time: beam splitter BS1, two mirrors, a phase shifter δ in one arm, recombining splitter BS2 and detectors $D_0$, $D_1$.</figcaption></figure>
+<figure><svg id="mz-data" viewBox="0 0 200 118"></svg><figcaption>Detection probabilities vs phase δ: full-contrast fringes even with single photons. With only BS1, the two outputs never fire together (anticorrelation α = 0.18 ≪ 1).</figcaption></figure></div>
+<dl class="cqo"><dt>Classical</dt><dd>A particle takes one arm (no interference); a wave splits and could trigger both detectors at once.</dd>
+<dt>Observed</dt><dd>At one splitter the photon is found on one side only, yet in the full interferometer the two paths interfere.</dd>
+<dt>Lesson</dt><dd>The photon is in a superposition of paths, and relative phases are physical. Elitzur–Vaidman: a live bomb in one arm is found without being touched (¼ of the time; near 100% with the Zeno trick).</dd></dl>
+<div class="box">$$P(D_0)=\cos^2\frac\delta2,\qquad P(D_1)=\sin^2\frac\delta2$$</div>
+</article>
+
+<article class="card"><header><span class="num">8</span><h3>Stern–Gerlach</h3><span class="who">O. Stern & W. Gerlach 1922</span><span class="tag">spin & measurement</span></header>
+<div class="figs"><figure><svg id="sg-app" viewBox="0 0 200 118"></svg><figcaption>Silver atoms from an oven pass a magnet with one pointed pole, which makes a strong field gradient: force $F_z=\mu_z\,\partial B_z/\partial z$.</figcaption></figure>
+<figure><svg id="sg-data" viewBox="0 0 200 118"></svg><figcaption>The deposit on the glass plate: classically a continuous smear; observed, two separate "lips" (Gerlach's famous postcard to Bohr).</figcaption></figure>
+<figure class="wide"><svg id="sg-seq" viewBox="0 0 400 66"></svg><figcaption>Sequential analysers: after selecting $z{+}$ and then $x{+}$, a final $z$ measurement gives $z{-}$ half the time. The $x$ measurement erased the $z$ information.</figcaption></figure></div>
+<dl class="cqo"><dt>Classical</dt><dd>Atomic magnets point in random directions, so deflections should be continuous.</dd>
+<dt>Observed</dt><dd>Exactly two outcomes, along any axis you choose.</dd>
+<dt>Lesson</dt><dd>Intrinsic spin ½ (a two-state system); quantized angular momentum; measurement changes the state; $S_x$ and $S_z$ are incompatible.</dd></dl>
+<div class="box">$$|z;+\rangle=\tfrac{1}{\sqrt2}\big(|x;+\rangle+|x;-\rangle\big),\qquad [\hat S_x,\hat S_z]=-i\hbar\hat S_y\neq0$$</div>
+</article>
+
+<article class="card"><header><span class="num">9</span><h3>Bell tests</h3><span class="who">EPR 1935 · Bell 1964 · Aspect, Grangier & Roger 1982 · loophole-free 2015</span><span class="tag">entanglement</span></header>
+<div class="figs"><figure><svg id="be-app" viewBox="0 0 200 118"></svg><figcaption>Calcium atoms emit polarization-entangled photon pairs in opposite directions. Each side has a two-channel polarizer at angle $a$ or $b$; coincidences are counted.</figcaption></figure>
+<figure><svg id="be-data" viewBox="0 0 200 118"></svg><figcaption>Correlation vs relative angle: quantum $E=\cos2\theta$ (blue) vs the best local hidden-variable model (red). Measured: $S=2.697\pm0.015$ (Aspect 1982), QM predicts 2.70.</figcaption></figure></div>
+<dl class="cqo"><dt>Classical</dt><dd>EPR: perfect correlations mean outcomes were fixed in advance by local hidden variables. Then the CHSH combination $S\le2$.</dd>
+<dt>Observed</dt><dd>$S\approx2.7$, violating the bound by tens of standard deviations. 2015 experiments (Delft, NIST, Vienna) closed the locality and detection loopholes; Nobel 2022.</dd>
+<dt>Lesson</dt><dd>Nature is not locally realistic. Entanglement is a resource (teleportation, QKD) but still can't send signals faster than light.</dd></dl>
+<div class="box">$$S=|E(a,b)-E(a,b')+E(a',b)+E(a',b')|\le2\ \ (\text{local}),\qquad S_{\rm QM}^{\max}=2\sqrt2$$</div>
+</article>
+
+<article class="card"><header><span class="num">10</span><h3>Hong–Ou–Mandel</h3><span class="who">C. K. Hong, Z. Y. Ou & L. Mandel 1987</span><span class="tag">identical particles</span></header>
+<div class="figs"><figure><svg id="ho-app" viewBox="0 0 200 118"></svg><figcaption>A UV pump in a nonlinear crystal makes twin photons. They meet at a 50/50 beam splitter from opposite sides; a movable mirror sets their relative delay τ.</figcaption></figure>
+<figure><svg id="ho-data" viewBox="0 0 200 118"></svg><figcaption>Coincidence rate vs delay: it drops nearly to zero when the photons arrive together (the "HOM dip"). The dip width is the photons' coherence time, ~100 fs.</figcaption></figure></div>
+<dl class="cqo"><dt>Classical</dt><dd>Two independent particles exit on opposite sides half the time.</dd>
+<dt>Observed</dt><dd>Identical photons arriving together always leave by the same port.</dd>
+<dt>Lesson</dt><dd>"Both transmitted" and "both reflected" are indistinguishable and their amplitudes cancel. Bosons bunch; fermions would always separate (Pauli).</dd></dl>
+<div class="box">$$A_{\rm coinc}=t^2+r^2=\Big(\tfrac{1}{\sqrt2}\Big)^2+\Big(\tfrac{i}{\sqrt2}\Big)^2=0$$</div>
+</article>
+
+<article class="card"><header><span class="num">11</span><h3>Alpha decay</h3><span class="who">Geiger & Nuttall 1911 · Gamow, Gurney & Condon 1928</span><span class="tag">tunneling</span></header>
+<div class="figs"><figure><svg id="al-app" viewBox="0 0 200 118"></svg><figcaption>The α particle sits in the nuclear well below the top of the Coulomb barrier. Its wavefunction oscillates inside, decays through the barrier, and leaks out.</figcaption></figure>
+<figure><svg id="al-data" viewBox="0 0 200 118"></svg><figcaption>Real half-lives vs $1/\sqrt{E_\alpha}$: a factor of 2 in energy changes the half-life by 24 orders of magnitude, just as tunneling predicts.</figcaption></figure></div>
+<dl class="cqo"><dt>Classical</dt><dd>An α particle with 4–9 MeV can never cross a ~25 MeV Coulomb barrier.</dd>
+<dt>Observed</dt><dd>Nuclei emit α particles with half-lives from $10^{-7}$ s to $10^{17}$ s, and $\log\tau$ is linear in $Z/\sqrt E$ (Geiger–Nuttall).</dd>
+<dt>Lesson</dt><dd>Wavefunctions penetrate classically forbidden regions with exponential sensitivity. Same physics: scanning tunnelling microscope, fusion in stars.</dd></dl>
+<div class="box">$$T\sim e^{-2\theta},\quad\theta=\frac1\hbar\int_R^{b}\sqrt{2m(V-E)}\,dr\ \Rightarrow\ \ln\tau\approx a+\frac{bZ}{\sqrt E}$$</div>
+</article>
+
+<article class="card"><header><span class="num">+</span><h3>Further confirmations</h3></header>
+<ul style="margin:0;padding-left:18px">
+<li><b>Aharonov–Bohm</b> (1959; Tonomura 1986): electron fringes shift around a shielded solenoid where $\vec B=0$, so potentials and phases are physical.</li>
+<li><b>Lamb shift</b> (1947) and electron $g-2$: tiny shifts that need quantum fields (QED).</li>
+<li><b>Zeeman & fine structure:</b> spin–orbit coupling, $g=2$, relativistic corrections.</li>
+<li><b>Quantum Zeno effect</b> (Itano 1990): frequent measurement freezes a transition.</li>
+<li><b>Decoherence</b> (Haroche 1996): a cavity "cat state" observed losing coherence, showing why the everyday world looks classical.</li>
+</ul>
+</article>
+
+<article class="card"><header><span class="num">∑</span><h3>What each experiment forces on the theory</h3></header>
+<div class="tablewrap"><table>
+<tr><th>Principle</th><th>Forced by</th><th>Sheet</th></tr>
+<tr><td>Quanta: $E=\hbar\omega$, $p=\hbar k$</td><td>1 Blackbody · 2 Photoelectric · 3 Compton</td><td>8.04 §3</td></tr>
+<tr><td>Discrete bound-state energies</td><td>4 Spectra · 5 Franck–Hertz</td><td>8.04 §9–17</td></tr>
+<tr><td>Matter waves $\lambda=h/p$</td><td>6 Davisson–Germer</td><td>8.04 §3–4</td></tr>
+<tr><td>Complex amplitudes add; superposition</td><td>6 Double slit · 7 Mach–Zehnder</td><td>8.04 §1–2</td></tr>
+<tr><td>Probability $=|\psi|^2$; randomness</td><td>6 Single-electron build-up</td><td>8.04 §5</td></tr>
+<tr><td>Measurement disturbs; incompatible observables</td><td>8 Stern–Gerlach sequences · 6 which-path</td><td>8.04 §7 · 8.05 §5</td></tr>
+<tr><td>Spin ½; quantized angular momentum</td><td>8 Stern–Gerlach</td><td>8.05 §2, §9</td></tr>
+<tr><td>Entanglement; no local realism</td><td>9 Bell tests</td><td>8.05 §8</td></tr>
+<tr><td>Indistinguishable particles</td><td>10 Hong–Ou–Mandel</td><td>8.06 §8</td></tr>
+<tr><td>Tunneling</td><td>11 Alpha decay</td><td>8.06 §4</td></tr>
+</table></div>
+<p class="tip" style="margin:6px 0 0"><b>The minimal set.</b> Photoelectric (quanta) + Franck–Hertz (levels) + single-electron double slit (amplitudes, Born rule, complementarity) + Stern–Gerlach sequences (spin, measurement, non-commutation) + a Bell test (entanglement) together demand every axiom of quantum mechanics. Exchange symmetry needs Hong–Ou–Mandel as well.</p>
+</article>
+
+</div>
+</div>
+
+<script>
+(function(){
+const NS="http://www.w3.org/2000/svg";
+function mk(s,tag,a,cls){const e=document.createElementNS(NS,tag);for(const k in a)e.setAttribute(k,a[k]);if(cls)e.setAttribute('class',cls);s.appendChild(e);return e;}
+const $=id=>document.getElementById(id);
+const L=(s,x1,y1,x2,y2,c='ink')=>mk(s,'line',{x1,y1,x2,y2},c);
+const R=(s,x,y,w,h,c='ink',rx=0)=>mk(s,'rect',{x,y,width:w,height:h,rx},c);
+const C=(s,cx,cy,r,c='ink')=>mk(s,'circle',{cx,cy,r},c);
+const D=(s,d,c='ink')=>mk(s,'path',{d},c);
+const P=(s,pts,c='ink')=>D(s,pts.map((p,i)=>(i?'L':'M')+p[0].toFixed(2)+' '+p[1].toFixed(2)).join(''),c);
+const T=(s,x,y,str,c='t',an='start')=>{const e=mk(s,'text',{x,y,'text-anchor':an},c);e.textContent=str;return e;};
+function A(s,x1,y1,x2,y2,c='ink'){L(s,x1,y1,x2,y2,c);const a=Math.atan2(y2-y1,x2-x1),h=4;D(s,`M${x2} ${y2}L${x2-h*Math.cos(a-0.45)} ${y2-h*Math.sin(a-0.45)}L${x2-h*Math.cos(a+0.45)} ${y2-h*Math.sin(a+0.45)}Z`,c+' ah');}
+function wave(s,x1,y1,x2,y2,amp,n,c){const pts=[],dx=x2-x1,dy=y2-y1,len=Math.hypot(dx,dy),ux=dx/len,uy=dy/len;for(let i=0;i<=120;i++){const t=i/120,w=amp*Math.sin(t*n*2*Math.PI);pts.push([x1+dx*t-uy*w,y1+dy*t+ux*w]);}P(s,pts,c);}
+function plot(s,o){const {x,y,w,h,xr,yr}=o;const X=v=>x+(v-xr[0])/(xr[1]-xr[0])*w,Y=v=>y+h-(v-yr[0])/(yr[1]-yr[0])*h;
+ (o.xt||[]).forEach(v=>{L(s,X(v),y+h,X(v),y+h+2,'ax');T(s,X(v),y+h+8.5,o.xf?o.xf(v):String(v),'tm','middle');});
+ (o.yt||[]).forEach(v=>{L(s,x-2,Y(v),x,Y(v),'ax');T(s,x-3.5,Y(v)+2.3,o.yf?o.yf(v):String(v),'tm','end');});
+ L(s,x,y+h,x+w,y+h,'ax');L(s,x,y,x,y+h,'ax');
+ if(o.xl)T(s,x+w,y+h+17,o.xl,'tm','end');if(o.yl)T(s,x+3,y-3,o.yl,'tm');return {X,Y};}
+function curve(s,f,a,b,X,Y,c,n=240){const pts=[];for(let i=0;i<=n;i++){const v=a+(b-a)*i/n,fv=f(v);if(isFinite(fv))pts.push([X(v),Y(fv)]);}return P(s,pts,c);}
+function rng(seed){return function(){seed|=0;seed=seed+0x6D2B79F5|0;let t=Math.imul(seed^seed>>>15,1|seed);t=t+Math.imul(t^t>>>7,61|t)^t;return((t^t>>>14)>>>0)/4294967296;};}
+
+/* timeline */
+(function(){const s=$('timeline');const X=yr=>12+(yr-1880)/(2020-1880)*306;L(s,X(1880),58,X(2020),58,'ax');
+ [1880,1900,1920,1940,1960,1980,2000,2020].forEach(y=>{L(s,X(y),56,X(y),60,'ax');T(s,X(y),68,String(y),'tm','middle');});
+ const ev=[[1887,'2 Hertz','up',1],[1900,'1 Planck','up',2],[1905,'2 Einstein','dn',1],[1911,'4 Rutherford','up',3],[1913,'4 Bohr','dn',2],[1914,'5 Franck–Hertz','up',4],[1922,'8 Stern–Gerlach','dn',3],[1923,'3 Compton','up',1],[1927,'6 Davisson–Germer','dn',4],[1928,'11 Gamow','up',2],[1935,'9 EPR','dn',1],[1964,'9 Bell','up',1],[1982,'9 Aspect','dn',1],[1986,'7 Grangier','up',2],[1987,'10 HOM','dn',2],[1989,'6 Tonomura','up',3],[2015,'9 loophole-free','dn',2]];
+ ev.forEach(([yr,lab,dir,lvl])=>{const x=X(yr),y=dir==='up'?58-8-lvl*9.5:58+8+lvl*9.5;L(s,x,58,x,dir==='up'?y+2:y-7,'grid');C(s,x,58,1.8,'ink solid');T(s,x,y,lab,'t',yr>2010?'end':'middle');});
+ T(s,X(2020),116,'quantum mechanics formulated 1925–27','tm','end');D(s,`M${X(1925)} 56 h${X(1927)-X(1925)} v4 h-${X(1927)-X(1925)} Z`,'ink solid');})();
+
+/* 1 blackbody */
+(function(){const s=$('bb-app');R(s,8,30,62,52,'metal',4);R(s,16,38,46,36,'soft',3);C(s,39,56,4,'ink');
+ for(let i=0;i<5;i++)wave(s,22+i*7,72,22+i*7,44,1.3,2.5,'o');T(s,39,96,'heated cavity','tm','middle');R(s,68,52,4,8,'ink solid');
+ A(s,72,56,112,56,'o');D(s,'M112 74 L132 38 L152 74 Z','glass');T(s,132,86,'prism','tm','middle');
+ [['r',-14],['o',-6],['g',2],['b',10]].forEach(([c,dy])=>A(s,143,57,178,40+dy*2.2,c));R(s,180,22,10,48,'metal');T(s,185,80,'bolometer','tm','middle');
+ const s2=$('bb-data');const {X,Y}=plot(s2,{x:28,y:10,w:160,h:82,xr:[0,3],yr:[0,1.25],xt:[0,0.5,1,1.5,2,2.5,3],yt:[0,0.5,1],xl:'λ (μm)',yl:'spectral radiance (rel.)'});
+ const B=(l,T)=>Math.pow(l,-5)/(Math.exp(14388/(l*T))-1);const n=B(2.898/5000*1000,5000);
+ curve(s2,l=>B(l,5000)/n,0.08,3,X,Y,'b');curve(s2,l=>B(l,4000)/n,0.1,3,X,Y,'g');curve(s2,l=>B(l,3000)/n,0.12,3,X,Y,'r');
+ curve(s2,l=>{const v=5000/(14388*Math.pow(l,4))/n;return v<1.24?v:NaN;},0.55,3,X,Y,'b dash');
+ T(s2,X(0.58),Y(1.03),'5000 K','tb');T(s2,X(0.78),Y(0.43),'4000 K','tg');T(s2,X(1.05),Y(0.16),'3000 K','tr');T(s2,X(1.12),Y(0.96),'Rayleigh–Jeans','tb');
+ L(s2,X(0.38),Y(1.25),X(0.38),Y(0),'grid dash');T(s2,X(0.40),Y(1.18),'visible','tm');})();
+
+/* 2 photoelectric */
+(function(){const s=$('pe-app');R(s,14,14,120,56,'glass',26);R(s,26,26,8,32,'metal');T(s,30,22,'C','t','middle');R(s,104,26,6,32,'metal');T(s,107,22,'A','t','middle');
+ for(let i=0;i<3;i++)wave(s,2+i*6,0,28,30+i*8,1.4,4,'p');T(s,4,8,'light ν','tp');
+ for(let i=0;i<3;i++)A(s,36,36+i*8,64+i*6,34+i*8,'b');T(s,58,30,'e⁻','tb');
+ P(s,[[30,58],[30,96],[60,96]],'ink');P(s,[[107,58],[107,96],[80,96]],'ink');L(s,60,90,60,102,'ink');L(s,64,93,64,99,'ink');T(s,62,112,'V (variable)','tm','middle');
+ C(s,90,96,6,'ink');T(s,90,98.5,'A','t','middle');L(s,80,96,84,96,'ink');L(s,64,96,70,96,'ink');L(s,70,96,80,96,'ink');
+ T(s,170,40,'stopping','tm','middle');T(s,170,48,'voltage V_s','tm','middle');
+ const s2=$('pe-data');const {X,Y}=plot(s2,{x:24,y:10,w:166,h:82,xr:[4,12],yr:[-0.5,3.5],xt:[4,6,8,10,12],yt:[0,1,2,3],xl:'ν (10¹⁴ Hz)',yl:'V_s (V)'});
+ const hv=0.4124,nu0=4.39;curve(s2,v=>hv*(v-nu0),nu0,12,X,Y,'b');L(s2,X(4),Y(0),X(12),Y(0),'grid');
+ [5.19,5.49,6.88,7.41,8.22,9.58,11.83].forEach(v=>C(s2,X(v),Y(hv*(v-nu0)),1.9,'b solid'));
+ C(s2,X(nu0),Y(0),2,'r solid');T(s2,X(nu0)+3,Y(0)+9,'ν₀ = 4.39 (threshold)','tr');T(s2,X(7.2),Y(2.75),'slope h/e','tb');})();
+
+/* 3 Compton */
+(function(){const s=$('co-app');R(s,4,44,30,22,'metal',3);T(s,19,76,'Mo X-ray','tm','middle');T(s,19,83,'tube','tm','middle');A(s,34,55,82,55,'p');T(s,58,50,'λ₀','tp','middle');
+ R(s,84,46,16,18,'soft');T(s,92,74,'graphite','tm','middle');L(s,100,55,190,55,'grid dash');A(s,100,55,150,22,'r');
+ D(s,'M120 55 A20 20 0 0 0 117 44','ink');T(s,124,47,'θ','t');R(s,150,12,14,10,'glass');T(s,157,9,'crystal','tm','middle');A(s,163,18,182,30,'r');R(s,180,28,14,10,'metal');T(s,187,48,'detector','tm','middle');T(s,150,32,"λ′","tr","middle");
+ const s2=$('co-data');const {X,Y}=plot(s2,{x:22,y:6,w:168,h:90,xr:[69,77],yr:[0,4.2],xt:[70,71,72,73,74,75,76],xl:'λ (pm)'});
+ const l0=70.9,lc=2.43;[[0,0],[45,1],[90,2],[135,3]].forEach(([th,k])=>{const ls=l0+lc*(1-Math.cos(th*Math.PI/180));const base=k;const g=(x,m,a)=>a*Math.exp(-Math.pow((x-m)/0.32,2));
+  curve(s2,x=>base+0.15+g(x,l0,th?0.55:0.75)+(th?g(x,ls,0.62):0),69,77,X,Y,th?'b':'ax');L(s2,X(69),Y(base+0.15),X(77),Y(base+0.15),'grid');T(s2,X(76.9),Y(base+0.35),th+'°','t','end');
+  if(th)T(s2,X(ls),Y(base+0.95),'+'+(lc*(1-Math.cos(th*Math.PI/180))).toFixed(2),'tb','middle');});
+ L(s2,X(l0),Y(0),X(l0),Y(4.2),'grid dash');T(s2,X(l0),Y(4.2)-1,'λ₀ = 70.9','tm','middle');})();
+
+/* 4 spectra */
+(function(){const s=$('sp-lev');const E=n=>-13.6/(n*n);const Y=e=>8+(e+13.6)/13.6*0+ (1-(e+13.6)/13.6)*0;const y=e=>112-((e+13.6)/13.6)*100;
+ [1,2,3,4,5,6].forEach(n=>{L(s,40,y(E(n)),190,y(E(n)),'ink');if(n<=3)T(s,36,y(E(n))+2.5,'n='+n,'tm','end');});L(s,40,y(0),190,y(0),'ink dash');T(s,36,y(0)+2.5,'∞','tm','end');
+ T(s,193,y(E(1))+2.5,'−13.6','tm');T(s,193,y(E(2))+2.5,'−3.40','tm');T(s,193,y(0)+2.5,'0 eV','tm');
+ [2,3,4,5].forEach((n,i)=>A(s,52+i*9,y(E(n)),52+i*9,y(E(1)),'p'));T(s,92,y(E(1))-30,'Lyman (UV)','tp');
+ const col=['r','b','p','p'];[3,4,5,6].forEach((n,i)=>A(s,110+i*10,y(E(n)),110+i*10,y(E(2)),col[i]));T(s,126,y(E(2))+9,'Balmer (visible)','tb','middle');
+ [3,4,5].forEach((n,i)=>A(s,165+i*7,y(E(n)),165+i*7,y(E(3)),'o'));T(s,172,y(E(3))+9,'Paschen (IR)','to','middle');
+ const s2=$('sp-data');R(s2,6,8,40,12,'glass',5);T(s2,26,30,'H₂ discharge','tm','middle');A(s2,46,14,62,14,'ink');L(s2,64,8,64,20,'ink');T(s2,64,30,'slit','tm','middle');A(s2,66,14,84,14,'ink');R(s2,86,6,4,16,'metal');T(s2,88,30,'grating','tm','middle');
+ A(s2,92,14,110,6,'r');A(s2,92,14,110,12,'b');A(s2,92,14,110,18,'p');
+ const x0=12,x1=192,lam=l=>x0+(l-360)/(680-360)*(x1-x0);R(s2,x0,46,x1-x0,40,'spec');
+ const lines=[[656.3,'#ff3b30'],[486.1,'#22c3ff'],[434.0,'#5b5bff'],[410.2,'#8b2bff'],[397.0,'#7a2bd0'],[388.9,'#6a2bb0'],[383.5,'#5a2b90']];
+ lines.forEach(([l,c],i)=>{const e=mk(s2,'rect',{x:lam(l)-0.9,y:46,width:1.8,height:40});e.setAttribute('style','fill:'+c);if(i<5)T(s2,lam(l),96,String(Math.round(l)),'tm','middle');});
+ L(s2,lam(364.6),42,lam(364.6),90,'ink dash');T(s2,lam(364.6)+1,40,'limit 365','tm');T(s2,lam(656.3),40,'Hα','t','middle');T(s2,lam(486.1),40,'Hβ','t','middle');T(s2,lam(434),40,'Hγ','t','middle');T(s2,102,108,'wavelength (nm)','tm','middle');})();
+
+/* 5 Franck-Hertz */
+(function(){const s=$('fh-app');R(s,10,18,150,44,'glass',22);L(s,30,28,30,52,'ink');D(s,'M24 30 l3 3 l-3 3 l3 3 l-3 3 l3 3 l-3 3','o');T(s,30,72,'K','t','middle');
+ for(let i=0;i<6;i++)L(s,110,24+i*7,110,28+i*7,'ink');T(s,110,72,'G','t','middle');R(s,138,26,5,28,'metal');T(s,141,72,'A','t','middle');
+ for(let i=0;i<9;i++)C(s,48+(i%3)*18+(i>2?6:0),30+Math.floor(i/3)*10,1.6,'ax');T(s,70,58,'Hg vapour','tm','middle');A(s,36,40,100,40,'b');T(s,68,36,'e⁻','tb','middle');
+ P(s,[[30,62],[30,96],[64,96]],'ink');L(s,64,90,64,102,'ink');L(s,68,93,68,99,'ink');P(s,[[68,96],[110,96],[110,62]],'ink');T(s,66,110,'V_acc (0–30 V)','tm','middle');
+ P(s,[[110,96],[124,96]],'ink');L(s,124,92,124,100,'ink');L(s,128,90,128,102,'ink');P(s,[[128,96],[141,96],[141,92]],'ink');T(s,126,110,'0.5 V','tm','middle');
+ C(s,141,84,5,'ink');T(s,141,86.5,'I','t','middle');L(s,141,62,141,79,'ink');
+ const s2=$('fh-data');const {X,Y}=plot(s2,{x:24,y:10,w:166,h:82,xr:[0,30],yr:[0,1.05],xt:[0,5,10,15,20,25,30],xl:'accelerating voltage (V)',yl:'anode current (rel.)'});
+ const f=v=>{const off=1.2,sp=4.9;const u=v-off;if(u<0)return 0;const ph=u%sp,k=Math.floor(u/sp);const env=0.06+0.028*u;const rise=Math.pow(ph/sp,1.6);const drop=ph>sp*0.88?(1-(ph-sp*0.88)/(sp*0.12)):1;return env*(0.25+0.75*rise*drop+0.0)*(1+0.05*k);};
+ curve(s2,f,0,30,X,Y,'b',600);[6.1,11.0,15.9,20.8,25.7].forEach((v,i)=>{L(s2,X(v),Y(0),X(v),Y(0.04),'ax');});
+ A(s2,X(11.0),Y(0.62),X(15.9),Y(0.62),'r');A(s2,X(15.9),Y(0.62),X(11.0),Y(0.62),'r');T(s2,X(13.45),Y(0.66),'4.9 V','tr','middle');})();
+
+/* 6 double slit */
+(function(){const s=$('ds-app');C(s,10,56,5,'metal');T(s,10,72,'e⁻ gun','tm','middle');A(s,16,56,40,56,'b');
+ for(let r=8;r<=32;r+=8)D(s,`M${30+r} ${56-r*0.9} A${r} ${r} 0 0 1 ${30+r} ${56+r*0.9}`,'grid');
+ L(s,70,10,70,48,'ink');L(s,70,52,70,60,'ink');L(s,70,64,70,102,'ink');T(s,70,110,'two slits / biprism','tm','middle');
+ [50,62].forEach(yy=>{for(let r=10;r<=70;r+=12)D(s,`M${70+r*0.5} ${yy-r*0.85} A${r} ${r} 0 0 1 ${70+r*0.5} ${yy+r*0.85}`,'b');});
+ R(s,170,8,10,96,'metal');T(s,175,112,'detector','tm','middle');
+ const rnd=rng(7);for(let i=0;i<260;){const u=rnd()*2-1;const p=Math.pow(Math.cos(u*3.2*Math.PI),2)*Math.exp(-u*u*1.2);if(rnd()<p){C(s,171+rnd()*8,56+u*46,0.55,'dot');i++;}}
+ const s2=$('ds-data');const Ns=[12,120,1200,9000],labs=['12','120','1 200','9 000'];const r2=rng(42);
+ Ns.forEach((N,k)=>{const x0=4+k*49,w=45,y0=6,h=96;R(s2,x0,y0,w,h,'soft');let c=0;while(c<N){const u=r2()*2-1;const p=Math.pow(Math.cos(u*3.4*Math.PI),2)*Math.exp(-u*u*1.4);if(r2()<p){mk(s2,'circle',{cx:(x0+w/2+u*w*0.47).toFixed(1),cy:(y0+2+r2()*(h-4)).toFixed(1),r:N>2000?0.38:0.6},'dot');c++;}}
+  T(s2,x0+w/2,y0+h+9,labs[k]+' e⁻','tm','middle');});})();
+
+/* 7 Mach-Zehnder */
+(function(){const s=$('mz-app');const bs=(x,y)=>{L(s,x-7,y+7,x+7,y-7,'ink');mk(s,'line',{x1:x-7,y1:y+7,x2:x+7,y2:y-7},'ax');};
+ A(s,4,92,30,92,'p');T(s,4,86,'1 photon','tp');bs(40,92);L(s,33,22,47,8,'ink');T(s,40,4,'M','tm','middle');L(s,143,99,157,85,'ink');T(s,160,104,'M','tm','middle');bs(150,15);
+ T(s,30,104,'BS1','t','middle');T(s,138,8,'BS2','t','middle');
+ A(s,40,92,40,18,'b');A(s,40,15,145,15,'b');A(s,44,92,147,92,'r');A(s,150,92,150,22,'r');R(s,92,86,12,12,'glass');T(s,98,108,'phase δ','tm','middle');
+ A(s,154,15,180,15,'ink');R(s,180,8,14,14,'metal');T(s,187,30,'D₀','t','middle');A(s,150,12,150,-2,'ink');R(s,143,-12,14,10,'metal');T(s,166,-4,'D₁','t');
+ const s2=$('mz-data');const {X,Y}=plot(s2,{x:24,y:10,w:166,h:80,xr:[0,4*Math.PI],yr:[0,1.05],xt:[0,Math.PI,2*Math.PI,3*Math.PI,4*Math.PI],xf:v=>['0','π','2π','3π','4π'][Math.round(v/Math.PI)],yt:[0,0.5,1],xl:'phase δ',yl:'probability'});
+ curve(s2,d=>Math.pow(Math.cos(d/2),2),0,4*Math.PI,X,Y,'b');curve(s2,d=>Math.pow(Math.sin(d/2),2),0,4*Math.PI,X,Y,'r');T(s2,X(0.35),Y(0.93),'D₀','tb');T(s2,X(Math.PI)+3,Y(0.93),'D₁','tr');})();
+
+/* 8 Stern-Gerlach */
+(function(){const s=$('sg-app');R(s,2,46,22,22,'metal',3);T(s,13,78,'Ag oven','tm','middle');A(s,24,57,58,57,'b');L(s,36,46,36,54,'ink');L(s,36,60,36,68,'ink');L(s,48,48,48,55,'ink');L(s,48,59,48,66,'ink');T(s,42,78,'slits','tm','middle');
+ D(s,'M64 20 L120 20 L120 44 L95 52 L89 52 L64 44 Z','metal');T(s,92,16,'N (pointed)','tm','middle');D(s,'M64 92 L120 92 L120 70 L100 70 L96 64 L88 64 L84 70 L64 70 Z','metal');T(s,92,102,'S (grooved)','tm','middle');
+ A(s,62,57,122,57,'b');A(s,122,57,170,38,'b');A(s,122,57,170,76,'b');R(s,172,20,8,74,'glass');T(s,176,104,'glass plate','tm','middle');T(s,150,30,'+ħ/2','tb','middle');T(s,150,92,'−ħ/2','tb','middle');
+ const s2=$('sg-data');T(s2,48,10,'classical expectation','tm','middle');mk(s2,'ellipse',{cx:48,cy:60,rx:30,ry:38},'soft');for(let i=0;i<5;i++)mk(s2,'ellipse',{cx:48,cy:60,rx:30-i*5,ry:38-i*6},'grid');
+ T(s2,148,10,'observed (1922)','tm','middle');D(s2,'M108 60 C120 18, 176 18, 188 60 C176 40, 120 40, 108 60 Z','b solid');D(s2,'M108 60 C120 102, 176 102, 188 60 C176 80, 120 80, 108 60 Z','b solid');
+ T(s2,148,112,'two separated lips','tb','middle');
+ const s3=$('sg-seq');const box=(x,lab)=>{R(s3,x,20,46,26,'soft',3);T(s3,x+23,37,lab,'t','middle');};A(s3,2,33,24,33,'b');T(s3,4,27,'atoms','tm');
+ box(26,'SG z');A(s3,72,28,110,28,'b');T(s3,90,22,'z+ (½)','tb','middle');A(s3,72,40,98,58,'grid');T(s3,98,64,'z− blocked','tm');
+ box(112,'SG x');A(s3,158,28,196,28,'b');T(s3,176,22,'x+ (½)','tb','middle');A(s3,158,40,184,58,'grid');T(s3,184,64,'x− blocked','tm');
+ box(198,'SG z');A(s3,244,28,300,16,'b');T(s3,304,18,'z+  ½','tb');A(s3,244,40,300,52,'r');T(s3,304,56,'z−  ½  (came back!)','tr');})();
+
+/* 9 Bell */
+(function(){const s=$('be-app');C(s,100,56,7,'metal');T(s,100,74,'Ca cascade','tm','middle');wave(s,93,56,52,56,1.6,5,'g');wave(s,107,56,148,56,1.6,5,'p');T(s,72,48,'ν₁','tg','middle');T(s,128,48,'ν₂','tp','middle');
+ const pol=(x,lab,dir)=>{R(s,x-8,46,16,20,'glass');L(s,x-8,66,x+8,46,'ink');T(s,x,40,lab,'t','middle');A(s,x+dir*8,56,x+dir*26,56,'ink');A(s,x,66,x,86,'ink');R(s,x+dir*26-(dir<0?10:0),50,10,12,'metal');R(s,x-5,86,10,10,'metal');};
+ pol(44,'a',-1);pol(156,'b',1);T(s,10,46,'+','t');T(s,44,106,'−','t','middle');T(s,190,46,'+','t');T(s,156,106,'−','t','middle');
+ R(s,82,92,36,16,'soft',3);T(s,100,103,'coincidence','tm','middle');L(s,49,91,82,100,'grid');L(s,151,91,118,100,'grid');
+ const s2=$('be-data');const {X,Y}=plot(s2,{x:28,y:8,w:160,h:84,xr:[0,90],yr:[-1.05,1.05],xt:[0,22.5,45,67.5,90],xf:v=>v+'°',yt:[-1,0,1],xl:'relative angle θ = b − a',yl:'correlation E(θ)'});
+ L(s2,X(0),Y(0),X(90),Y(0),'grid');curve(s2,t=>Math.cos(2*t*Math.PI/180),0,90,X,Y,'b');curve(s2,t=>1-4*t/180,0,90,X,Y,'r dash');
+ [22.5,67.5].forEach(t=>L(s2,X(t),Y(-1.05),X(t),Y(1.05),'grid dash'));T(s2,X(26),Y(0.86),'quantum cos 2θ','tb');T(s2,X(48),Y(-0.15),'local bound','tr');T(s2,X(23.5),Y(-0.85),'CHSH angles','tm');})();
+
+/* 10 HOM */
+(function(){const s=$('ho-app');A(s,2,60,26,60,'p');T(s,2,46,'UV pump','tp');R(s,28,52,14,16,'glass');T(s,35,78,'crystal','tm','middle');
+ A(s,42,57,80,22,'r');A(s,42,63,80,98,'r');L(s,74,16,86,28,'ink');L(s,74,104,86,92,'ink');R(s,74,104,12,5,'ink');A(s,92,112,72,112,'ax');T(s,60,116,'delay τ','tm','middle');
+ A(s,80,22,118,58,'r');A(s,80,98,118,62,'r');L(s,113,67,127,53,'ink');T(s,120,50,'50/50','tm','middle');
+ A(s,122,60,160,28,'ink');A(s,122,60,160,92,'ink');R(s,160,20,14,14,'metal');R(s,160,86,14,14,'metal');T(s,184,30,'D₁','t');T(s,184,96,'D₂','t');
+ R(s,166,48,30,16,'soft',3);T(s,181,59,'coinc.','tm','middle');L(s,167,34,173,48,'grid');L(s,167,86,173,64,'grid');
+ const s2=$('ho-data');const {X,Y}=plot(s2,{x:28,y:8,w:160,h:84,xr:[-300,300],yr:[0,1.1],xt:[-300,-150,0,150,300],yt:[0,0.5,1],xl:'delay τ (fs)',yl:'coincidences (rel.)'});
+ curve(s2,t=>1-0.9*Math.exp(-Math.pow(t/60,2)),-300,300,X,Y,'b');L(s2,X(-300),Y(1),X(300),Y(1),'grid dash');T(s2,X(110),Y(1)-3,'distinguishable (no dip)','tm');T(s2,X(0),Y(0.06)-2,'HOM dip','tb','middle');})();
+
+/* 11 alpha decay */
+(function(){const s=$('al-app');const x0=10,R0=50,y0=78,top=14,Ey=56,xe=196;
+ L(s,x0,y0,xe,y0,'grid');T(s,xe,y0+8,'V = 0','tm','end');
+ const V=r=>y0-(y0-top)*R0/r;D(s,`M${x0} 110 L${R0} 110 L${R0} ${top}`,'ink');curve(s,V,R0,xe,r=>r,v=>v,'ink');
+ L(s,x0,Ey,xe,Ey,'o dash');T(s,xe,Ey-4,'E_α','to','end');const rb=(y0-top)*R0/(y0-Ey);
+ const pts=[];const amp=7,k=6.5*Math.PI/40;for(let x=x0;x<=xe;x+=0.5){let w;if(x<R0)w=amp*Math.sin((x-x0)*k);else if(x<rb)w=amp*Math.sin((R0-x0)*k)*Math.exp(-(x-R0)*0.018);else w=amp*Math.sin((R0-x0)*k)*Math.exp(-(rb-R0)*0.018)*Math.cos((x-rb)*0.6);pts.push([x,Ey+w*0.8]);}P(s,pts,'b');
+ T(s,(x0+R0)/2,118,'nuclear well','tm','middle');T(s,(R0+rb)/2+6,Ey+11,'tunnels through','tb','middle');T(s,R0+5,top+4,'Coulomb barrier (~25 MeV)','tm');T(s,rb+4,Ey+11,'escapes','tb');
+ L(s,rb,Ey,rb,y0,'grid dash');T(s,rb,y0+8,'r_out','tm','middle');T(s,R0,y0+8,'R','tm','middle');
+const s2=$('al-data');const {X,Y}=plot(s2,{x:28,y:8,w:160,h:84,xr:[0.32,0.52],yr:[-8,19],xt:[0.33,0.37,0.41,0.45,0.49],xf:v=>v.toFixed(2),yt:[-5,0,5,10,15],xl:'1/√E_α (MeV^−½)',yl:'log₁₀ t½ (s)'});
+ const d=[['²¹²Po',8.785,-6.52],['²¹⁴Po',7.687,-3.78],['²¹⁸Po',6.002,2.27],['²²²Rn',5.490,5.52],['²¹⁰Po',5.304,7.08],['²²⁶Ra',4.784,10.70],['²³⁴U',4.775,12.89],['²³⁸U',4.198,17.15],['²³²Th',4.012,17.65]];
+ L(s2,X(0.33),Y(-7.9),X(0.505),Y(18.6),'grid dash');d.forEach(([n,E,lg],i)=>{const x=X(1/Math.sqrt(E)),y=Y(lg);C(s2,x,y,2,'b solid');T(s2,x+(i%2?3:-3),y+(i%2?6:-3),n,'tm',i%2?'start':'end');});})();
+})();
+</script>
+</body>
+</html>
